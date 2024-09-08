@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #result {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        #levelComplete {
+            margin-top: 20px;
+            font-size: 18px;
+            color: blue;
+            font-weight: bold;
+        }
+        /* Стили для кнопки "Сбросить прогресс" */
+        #resetProgressButton {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            padding: 5px 10px;
+            font-size: 12px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #resetProgressButton:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>Угадай перевод с корейского!</h1>
+        <p id="word">Здесь будет слово на корейском</p>
+        <button id="option1" onclick="checkWord(this)"></button>
+        <button id="option2" onclick="checkWord(this)"></button>
+        <p id="timer">Время: <span id="timeLeft">30</span> секунд</p>
+        <p id="points">Очки: 0</p>
+        <p id="level">Уровень: 1</p>
+        <p id="result"></p>
+        <p id="levelComplete"></p>
+        <button id="restartButton" onclick="startGame()" style="display:none;">Начать заново</button>
+        <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button> <!-- Кнопка -->
+    </div>
+
+    <script>
+        const words = [
+            { ko: "사과", ru: "яблоко" },
+            { ko: "바나나", ru: "банан" },
+            { ko: "포도", ru: "виноград" },
+            { ko: "배", ru: "груша" },
+            { ko: "오렌지", ru: "апельсин" }
+        ];
+
+        let points = 0, correctAnswers = 0, level = 1, timeLeft = 30, baseTime = 30, usedWords = [], timer;
+
+        /*** Функции для работы с LocalStorage ***/
+        function saveProgress() {
+            localStorage.setItem("level", level);
+            localStorage.setItem("points", points);
+            localStorage.setItem("correctAnswers", correctAnswers);
+        }
+
+        function loadProgress() {
+            level = parseInt(localStorage.getItem("level")) || 1;
+            points = parseInt(localStorage.getItem("points")) || 0;
+            correctAnswers = parseInt(localStorage.getItem("correctAnswers")) || 0;
+            updateUI();
+        }
+
+        /*** Основная логика игры ***/
+        function startGame() {
+            resetUI();
+            if (correctAnswers >= 5) return levelUp();
+            setRandomWord();
+            startTimer();
+        }
+
+        function setRandomWord() {
+            if (usedWords.length === words.length) usedWords = []; // Сброс используемых слов
+            let randomIndex;
+            do { randomIndex = Math.floor(Math.random() * words.length); } 
+            while (usedWords.includes(randomIndex));
+            usedWords.push(randomIndex);
+
+            const currentWord = words[randomIndex];
+            const correctOption = Math.random() > 0.5 ? "option1" : "option2";
+            document.getElementById("word").innerText = `Переведите слово: ${currentWord.ko}`;
+            document.getElementById(correctOption).innerText = currentWord.ru;
+            document.getElementById(correctOption === "option1" ? "option2" : "option1").innerText = getRandomIncorrectTranslation(randomIndex);
+        }
+
+        function checkWord(selectedButton) {
+            const selectedWord = selectedButton.innerText;
+            const correctWord = document.getElementById("word").innerText.split(": ")[1];
+
+            if (words.some(word => word.ru === selectedWord && word.ko === correctWord)) {
+                correctAnswers++;
+                points++;
+                updateResult("Правильно!", "correct");
+            } else {
+                points--;
+                updateResult("Неправильно!", "incorrect");
+            }
+
+            saveProgress();
+            setTimeout(startGame, 1000);
+        }
+
+        /*** Вспомогательные функции ***/
+        function getRandomIncorrectTranslation(correctIndex) {
+            let randomIndex;
+            do { randomIndex = Math.floor(Math.random() * words.length); } 
+            while (randomIndex === correctIndex);
+            return words[randomIndex].ru;
+        }
+
+        function resetProgress() {
+            localStorage.clear();
+            points = 0;
+            level = 1;
+            correctAnswers = 0;
+            startGame();
+        }
+
+        function resetUI() {
+            document.getElementById("result").innerText = "";
+            document.getElementById("restartButton").style.display = "none";
+            document.getElementById("option1").disabled = false;
+            document.getElementById("option2").disabled = false;
+            timeLeft = baseTime - (level - 1);
+        }
+
+        function updateResult(message, className) {
+            document.getElementById("result").innerText = message;
+            document.getElementById("result").className = className;
+        }
+
+        function updateUI() {
+            document.getElementById("points").innerText = `Очки: ${points}`;
+            document.getElementById("level").innerText = `Уровень: ${level}`;
+            document.getElementById("timeLeft").innerText = timeLeft;
+        }
+
+        /*** Работа с таймером ***/
+        function startTimer() {
+            clearInterval(timer);
+            updateUI();
+            timer = setInterval(() => {
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    document.getElementById("timeLeft").innerText = timeLeft;
+                } else {
+                    clearInterval(timer);
+                    document.getElementById("result").innerText = "Время вышло!";
+                    document.getElementById("restartButton").style.display = "block";
+                }
+            }, 1000);
+        }
+
+        function levelUp() {
+            level++;
+            correctAnswers = 0;
+            document.getElementById("levelComplete").innerText = `Уровень ${level - 1} пройден! Новый уровень: ${level}`;
+            saveProgress();
+            setTimeout(startGame, 2000);
+        }
+
+        /*** Инициализация игры ***/
+        loadProgress();
+        startGame();
+    </script>
+</body>
+</html>
