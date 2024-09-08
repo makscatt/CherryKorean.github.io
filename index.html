@@ -131,21 +131,24 @@
         }
 
         function checkWord(selectedButton) {
-            const selectedWord = selectedButton.innerText;
-            const correctWord = document.getElementById("word").innerText.split(": ")[1];
+    const selectedWord = selectedButton.innerText;
+    const correctWord = document.getElementById("word").innerText.split(": ")[1];
 
-            if (words.some(word => word.ru === selectedWord && word.ko === correctWord)) {
-                correctAnswers++;
-                points++;
-                updateResult("Правильно!", "correct");
-            } else {
-                points--;
-                updateResult("Неправильно!", "incorrect");
-            }
-
-            saveProgress();
-            setTimeout(startGame, 1000);
+    if (words.some(word => word.ru === selectedWord && word.ko === correctWord)) {
+        correctAnswers++;
+        points++;
+        updateResult("Правильно!", "correct");
+    } else {
+        // Убедитесь, что очки не опускаются ниже 0
+        if (points > 0) {
+            points--;
         }
+        updateResult("Неправильно!", "incorrect");
+    }
+
+    saveProgress();
+    setTimeout(startGame, 1000);
+}
 
         /*** Вспомогательные функции ***/
         function getRandomIncorrectTranslation(correctIndex) {
