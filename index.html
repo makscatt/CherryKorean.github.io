@@ -6,6 +6,7 @@
     <title>Telegram Mini App</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
+     
         body {
             margin: 0;
             padding: 0;
@@ -22,6 +23,11 @@
         #startScreen.active, #gameContainer.active {
             display: block;
         }
+        #startGameImage {
+    width: 50%; /* Уменьшение размера на 50% от родительского элемента */
+    max-width: 300px; /* Опционально, чтобы ограничить максимальную ширину */
+    transform: translateX(50%); /* Центрируем по горизонтали */
+}
         button {
             margin: 10px;
             padding: 10px 20px;
@@ -43,16 +49,27 @@
             background-color: #45a049;
         }
         #gameContainer {
-            text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+    /* Добавляем фиксированное соотношение сторон 9:16 */
+    aspect-ratio: 9 / 16;
+    
+    /* Максимальная высота 100% экрана */
+    height: 100%;
+    
+    /* Ширина будет автоматически рассчитана */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
         #result {
             font-weight: bold;
             font-size: 18px;
@@ -86,9 +103,14 @@
             background-color: #d32f2f;
         }
         #stars {
-            font-size: 20px;
-            margin-top: 10px;
+            font-size: 30px; /* Увеличиваем размер эмодзи */
+            position: absolute;
+            bottom: 30px; /* Отступ 30 единиц от нижней границы */
+            left: 50%;
+            transform: translateX(-50%); /* Центрируем по горизонтали */
         }
+        /* Новые стили */
+      
     </style>
 </head>
 <body>
@@ -96,7 +118,7 @@
     <!-- Стартовый экран -->
     <div id="startScreen" class="active">
         <h1>Добро пожаловать!</h1>
-        <button onclick="showGameScreen()">Начать игру</button>
+            <img src="startgameButton.png" alt="Начать игру" id="startGameImage">
     </div>
 
     <!-- Игровой экран -->
@@ -110,7 +132,7 @@
         <p id="level">Уровень: 1</p>
         <p id="result"></p>
         <p id="levelComplete"></p>
-        <p id="stars">Звездочки: 0</p> <!-- Валюта -->
+        <p id="stars">⭐ 0</p> <!-- Звездочки в виде эмодзи -->
         <button id="restartButton" onclick="startGame()" style="display:none;">Начать заново</button>
         <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button>
     </div>
@@ -170,7 +192,7 @@ const Timer = {
     intervalId: null,
 
     start(level, updateCallback, endCallback) {
-        this.timeLeft = baseTime - (level - 1);
+        this.timeLeft = Math.max(5, baseTime - (level - 1));  // Устанавливаем минимальное время в 5 секунд
         clearInterval(this.intervalId);
         updateCallback(this.timeLeft); // Сразу обновляем UI
         this.intervalId = setInterval(() => {
@@ -213,7 +235,7 @@ const Game = {
     updateUI() {
         document.getElementById("points").innerText = `Очки: ${this.points} / 5`;
         document.getElementById("level").innerText = `Уровень: ${this.level}`;
-        document.getElementById("stars").innerText = `Звездочки: ${this.stars}`;
+        document.getElementById("stars").innerText = `⭐ ${this.stars}`; // Обновление звездочек с эмодзи
         document.getElementById("timeLeft").innerText = Timer.timeLeft;
     }
 };
@@ -328,7 +350,10 @@ function updateResult(message, className) {
 loadEasyWords();
 loadProgress();
 startGame();
-
+// Добавление обработчика клика для изображения
+document.getElementById('startGameImage').onclick = function() {
+    showGameScreen();
+};
 </script>
 </body>
 </html>
