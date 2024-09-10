@@ -27,6 +27,20 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px #999;
+            transition: all 0.1s ease-in-out;
+        }
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 2px #666;
+            transform: translateY(4px); /* Вдавливание кнопки */
+        }
+        button:hover {
+            background-color: #45a049; /* Изменение цвета при наведении */
         }
         #gameContainer {
             text-align: center;
@@ -85,8 +99,8 @@
     <div id="gameContainer">
         <h1>Угадай перевод с корейского!</h1>
         <p id="word">Здесь будет слово на корейском</p>
-        <button id="option1" onclick="checkWord(this)"></button>
-        <button id="option2" onclick="checkWord(this)"></button>
+        <button id="option1" onclick="checkWord(this)">Вариант 1</button>
+        <button id="option2" onclick="checkWord(this)">Вариант 2</button>
         <p id="timer">Время: <span id="timeLeft">30</span> секунд</p>
         <p id="points">Очки: 0</p>
         <p id="level">Уровень: 1</p>
