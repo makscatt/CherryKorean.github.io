@@ -16,6 +16,18 @@
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
         }
+        #startScreen, #gameContainer {
+            display: none; /* Скрываем оба экрана по умолчанию */
+        }
+        #startScreen.active, #gameContainer.active {
+            display: block; /* Активный экран будет виден */
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
         #gameContainer {
             text-align: center;
             background-color: white;
@@ -23,12 +35,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
-        }
-        button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
         }
         h1 {
             margin-bottom: 20px;
@@ -50,7 +56,6 @@
             color: blue;
             font-weight: bold;
         }
-        /* Стили для кнопки "Сбросить прогресс" */
         #resetProgressButton {
             position: absolute;
             right: 10px;
@@ -69,6 +74,14 @@
     </style>
 </head>
 <body>
+
+    <!-- Экран с кнопкой начать игру -->
+    <div id="startScreen" class="active">
+        <h1>Добро пожаловать!</h1>
+        <button onclick="showGameScreen()">Начать игру</button>
+    </div>
+
+    <!-- Экран с игрой -->
     <div id="gameContainer">
         <h1>Угадай перевод с корейского!</h1>
         <p id="word">Здесь будет слово на корейском</p>
@@ -80,10 +93,17 @@
         <p id="result"></p>
         <p id="levelComplete"></p>
         <button id="restartButton" onclick="startGame()" style="display:none;">Начать заново</button>
-        <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button> <!-- Кнопка -->
+        <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button>
     </div>
 
     <script>
+        // Функция для показа игрового экрана
+        function showGameScreen() {
+            document.getElementById("startScreen").classList.remove("active");
+            document.getElementById("gameContainer").classList.add("active");
+            startGame();  // Начинаем игру
+        }
+
         const words = [
             { ko: "사과", ru: "яблоко" },
             { ko: "바나나", ru: "банан" },
@@ -94,7 +114,6 @@
 
         let points = 0, correctAnswers = 0, level = 1, timeLeft = 30, baseTime = 30, usedWords = [], timer;
 
-        /*** Функции для работы с LocalStorage ***/
         function saveProgress() {
             localStorage.setItem("level", level);
             localStorage.setItem("points", points);
@@ -108,7 +127,6 @@
             updateUI();
         }
 
-        /*** Основная логика игры ***/
         function startGame() {
             resetUI();
             if (correctAnswers >= 5) return levelUp();
@@ -117,7 +135,7 @@
         }
 
         function setRandomWord() {
-            if (usedWords.length === words.length) usedWords = []; // Сброс используемых слов
+            if (usedWords.length === words.length) usedWords = [];
             let randomIndex;
             do { randomIndex = Math.floor(Math.random() * words.length); } 
             while (usedWords.includes(randomIndex));
@@ -131,26 +149,24 @@
         }
 
         function checkWord(selectedButton) {
-    const selectedWord = selectedButton.innerText;
-    const correctWord = document.getElementById("word").innerText.split(": ")[1];
+            const selectedWord = selectedButton.innerText;
+            const correctWord = document.getElementById("word").innerText.split(": ")[1];
 
-    if (words.some(word => word.ru === selectedWord && word.ko === correctWord)) {
-        correctAnswers++;
-        points++;
-        updateResult("Правильно!", "correct");
-    } else {
-        // Убедитесь, что очки не опускаются ниже 0
-        if (points > 0) {
-            points--;
+            if (words.some(word => word.ru === selectedWord && word.ko === correctWord)) {
+                correctAnswers++;
+                points++;
+                updateResult("Правильно!", "correct");
+            } else {
+                if (points > 0) {
+                    points--;
+                }
+                updateResult("Неправильно!", "incorrect");
+            }
+
+            saveProgress();
+            setTimeout(startGame, 1000);
         }
-        updateResult("Неправильно!", "incorrect");
-    }
 
-    saveProgress();
-    setTimeout(startGame, 1000);
-}
-
-        /*** Вспомогательные функции ***/
         function getRandomIncorrectTranslation(correctIndex) {
             let randomIndex;
             do { randomIndex = Math.floor(Math.random() * words.length); } 
@@ -185,7 +201,6 @@
             document.getElementById("timeLeft").innerText = timeLeft;
         }
 
-        /*** Работа с таймером ***/
         function startTimer() {
             clearInterval(timer);
             updateUI();
