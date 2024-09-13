@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+     
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #startScreen, #gameContainer {
+            display: block;
+        }
+        #startScreen.active, #gameContainer.active {
+            display: block;
+        }
+        
+        #startGameImage {
+    width: 50%; /* Уменьшение размера на 50% от родительского элемента */
+    max-width: 300px; /* Опционально, чтобы ограничить максимальную ширину */
+    transform: translateX(50%); /* Центрируем по горизонтали */
+}
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 30px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px #999;
+            transition: all 0.1s ease-in-out;
+        }
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #gameContainer {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+    /* Добавляем фиксированное соотношение сторон 9:16 */
+    aspect-ratio: 9 / 16;
+    
+    /* Максимальная высота 100% экрана */
+    height: 100%;
+    
+    /* Ширина будет автоматически рассчитана */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+        #result {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        #levelComplete {
+            margin-top: 20px;
+            font-size: 18px;
+            color: blue;
+            font-weight: bold;
+        }
+        #resetProgressButton {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            padding: 5px 10px;
+            font-size: 12px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #resetProgressButton:hover {
+            background-color: #d32f2f;
+        }
+        #stars {
+    font-size: 30px; /* Размер эмодзи */
+    position: absolute;
+    bottom: 30px; /* Отступ 30 единиц от нижней границы */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    display: inline-block;
+}
+
+#stars.pulsing {
+    animation: pulse 0.3s ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scale(1); /* Центрируем и сохраняем начальный размер */
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-50%) scale(1.5); /* Увеличиваем звезду, но сохраняем центрирование */
+        opacity: 1.5;
+    }
+    
+    100% {
+        transform: translateX(-50%) scale(1); /* Возвращаем к исходному размеру */
+        opacity: 1;
+    }
+
+}
+
+    #continueButton {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #2196F3; /* Синий цвет */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px #999;
+            transition: all 0.1s ease-in-out;
+            display: none; /* Скрыто по умолчанию */
+        }
+        #continueButton:active {
+            background-color: #1976D2;
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+        }
+        #continueButton:hover {
+            background-color: #1E88E5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Звук для анимации -->
+            <audio id="starSound" src="starsuccess.mp3" preload="auto"></audio>
+    
+
+    <!-- Игровой экран -->
+    <div id="gameContainer">
+        <h1>Угадай перевод с корейского!</h1>
+        <p id="word">Здесь будет слово на корейском</p>
+        <button id="option1" onclick="checkWord(this)">Вариант 1</button>
+        <button id="option2" onclick="checkWord(this)">Вариант 2</button>
+        <p id="timer">Время: <span id="timeLeft">30</span> секунд</p>
+        <p id="points">Очки: 0 / 10</p> <!-- Очки за уровень -->
+        <p id="level">Уровень: 1</p>
+        <p id="result"></p>
+        <p id="levelComplete"></p>
+        <p id="stars">⭐ 0</p> <!-- Звездочки в виде эмодзи -->
+        <button id="restartButton" onclick="startGame()" style="display:none;">Начать заново</button>
+        <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button>
+        <button id="continueButton" onclick="startGame()">Продолжить</button>
+    </div>
+
+    <script>
+        let wordUsageCount = {};  // Объект для отслеживания количества использования слов
+        let usedWords = [];
+        let currentWordIndex = null;  // Индекс текущего слова
+        const baseTime = 30;
+        let currentLevelWords = [];  // Массив для хранения слов, использованных на текущем уровне
+        let easywords = [];
+
+
+
+
+// Функция для загрузки JSON-файла
+async function loadEasyWords() {
+    try {
+        const response = await fetch('easywords.json'); // Убедитесь, что путь к файлу корректен
+        if (!response.ok) {
+            throw new Error(`Ошибка загрузки файла: ${response.status} ${response.statusText}`);
+        }
+        easywords = await response.json();  // Обрабатываем JSON и присваиваем массиву
+        console.log('Слова загружены успешно:', easywords); // Проверка загрузки слов
+
+        // Проверяем, если список слов не пуст
+        if (easywords.length === 0) {
+            throw new Error('Список слов пуст');
+        }
+
+        // Только после успешной загрузки слов запускаем игру
+        startGame();
+
+    } catch (error) {
+        console.error('Ошибка загрузки JSON:', error);
+    }
+}
+
+
+function saveProgress() {
+    localStorage.setItem("level", Game.level);
+    localStorage.setItem("points", Game.points);
+    localStorage.setItem("correctAnswers", Game.correctAnswers);
+    localStorage.setItem("stars", Game.stars);  // Сохранение звездочек
+}
+
+function loadProgress() {
+    console.log("Загрузка данных");
+    Game.level = parseInt(localStorage.getItem("level")) || 1;
+    Game.points = parseInt(localStorage.getItem("points")) || 0;
+    Game.correctAnswers = parseInt(localStorage.getItem("correctAnswers")) || 0;
+    Game.stars = parseInt(localStorage.getItem("stars")) || 0;  // Загрузка звездочек
+    Game.updateUI();
+}
+
+const Timer = {
+    timeLeft: 30,
+    intervalId: null,
+
+    start(level, updateCallback, endCallback) {
+        this.timeLeft = Math.max(5, baseTime - (level - 1));  // Устанавливаем минимальное время в 5 секунд
+        clearInterval(this.intervalId);
+        updateCallback(this.timeLeft); // Сразу обновляем UI
+        this.intervalId = setInterval(() => {
+            this.timeLeft--;
+            updateCallback(this.timeLeft);
+            if (this.timeLeft <= 0) {
+                clearInterval(this.intervalId);
+                endCallback();  // Вызов функции, если время закончилось
+            }
+        }, 1000);
+    },
+
+    reset() {
+        clearInterval(this.intervalId);
+    }
+};
+
+const Game = {
+    points: 0,
+    correctAnswers: 0,
+    level: 1,
+    stars: 0,
+
+    levelUp() {
+    this.level++;
+    this.correctAnswers = 0;
+    this.points = 0;
+    this.stars++;  // Начисляем звездочки
+
+    currentLevelWords = [];  // Сбрасываем использованные слова для нового уровня
+
+    document.getElementById("levelComplete").innerText = `Уровень ${this.level - 1} пройден! Новый уровень: ${this.level}`;
+    saveProgress();
+    Game.updateUI();  // Обновляем интерфейс после начисления звездочек
+    triggerStarPulse();  // Запускаем анимацию пульсации звезды
+    
+    Timer.reset();  // Останавливаем таймер при завершении уровня
+    showContinueButton();  // Показываем кнопку "Продолжить"
+},
+
+    updateUI() {
+        document.getElementById("points").innerText = `Очки: ${this.points} / 10`;
+        document.getElementById("level").innerText = `Уровень: ${this.level}`;
+        document.getElementById("stars").innerText = `⭐ ${this.stars}`; // Обновление звездочек с эмодзи
+        document.getElementById("timeLeft").innerText = Timer.timeLeft;
+    }
+    
+};
+
+function triggerStarPulse() {
+    const starsElement = document.getElementById("stars");
+    const starSound = document.getElementById("starSound");
+
+    // Удаляем класс перед его повторным добавлением, чтобы гарантировать перезапуск анимации
+    starsElement.classList.remove("pulsing");
+
+    // Задержка, чтобы браузер "увидел" изменение
+    setTimeout(() => {
+        starsElement.classList.add("pulsing");
+        starSound.currentTime = 0;  // Сброс звука к началу
+        starSound.play();           // Проигрываем звуковой эффект
+    }, 20);  // Небольшая задержка для перезапуска анимации
+}
+function startGame() {
+    if (!easywords || easywords.length === 0) {
+        console.error('Список слов пуст или не загружен');
+        return;
+    }
+    hideContinueButton();  // Скрываем кнопку "Продолжить" и показываем кнопки выбора ответа
+    console.log('Игра началась с загруженными словами:', easywords);
+    resetUI();
+    resetWordUsageCount();  // Сбрасываем количество использования слов для нового старта
+
+    if (Game.correctAnswers >= 10) {
+        return Game.levelUp();
+    }
+
+    setTimeout(() => {
+        setRandomWord();  // Устанавливаем слово с небольшой задержкой
+        startTimer();     // Запускаем таймер только после установки слова
+    }, 150);  // Небольшая задержка перед установкой слова для уровня
+}
+function startTimer() {
+    Timer.start(Game.level, (timeLeft) => {
+        document.getElementById("timeLeft").innerText = timeLeft;
+    }, timeRanOut);  // Вызов функции при истечении времени
+}
+
+function timeRanOut() {
+    // Сброс очков текущего уровня
+    Game.points = 0;
+    Game.correctAnswers = 0;
+
+    // Вывод сообщения об окончании времени
+    document.getElementById("result").innerText = "Время вышло! Начните уровень заново.";
+
+    // Показываем кнопку "Начать заново"
+    document.getElementById("restartButton").style.display = "block";
+
+    // Обновляем интерфейс
+    Game.updateUI();
+}
+
+// Функция для выбора случайного слова
+function getRandomUnusedWordIndex() {
+    if (currentLevelWords.length === easywords.length) {
+        currentLevelWords = [];  // Сбрасываем слова уровня после его завершения
+    }
+
+    let randomIndex;
+    let attempts = 0;
+    do {
+        randomIndex = Math.floor(Math.random() * easywords.length);
+        attempts++;
+        if (attempts > easywords.length) {  // Избегаем бесконечного цикла, если все слова были переиспользованы
+            throw new Error("Нет доступных слов для использования");
+        }
+    } while (currentLevelWords.includes(randomIndex) || getUsageCount(randomIndex) >= 5);
+
+    currentLevelWords.push(randomIndex);
+    updateUsageCount(randomIndex);  // Обновляем количество использования выбранного слова
+
+    return randomIndex;
+}
+// Функция для получения количества использования слова
+function getUsageCount(index) {
+    return wordUsageCount[index] || 0;
+}
+
+// Функция для обновления количества использования слова
+function updateUsageCount(index) {
+    wordUsageCount[index] = (wordUsageCount[index] || 0) + 1;
+}
+
+// Функция для сброса глобального количества использования слов (например, при сбросе игры)
+function resetWordUsageCount() {
+    wordUsageCount = {};
+}
+// Функция для установки случайного слова
+function setRandomWord() {
+    const randomIndex = getRandomUnusedWordIndex();
+    currentLevelWords.push(randomIndex);  // Добавляем слово в массив текущего уровня
+    currentWordIndex = randomIndex;  // Обновляем текущий индекс
+
+    const currentWord = easywords[randomIndex];
+    const correctOption = Math.random() > 0.5 ? "option1" : "option2";
+
+    const wordElement = document.getElementById("word");
+    wordElement.innerText = `Переведите слово: ${currentWord.ko}`;
+    wordElement.style.fontSize = "30px";  // Устанавливаем увеличенный шрифт
+    wordElement.style.fontWeight = "bold";  // Опционально делаем текст жирным
+
+    document.getElementById(correctOption).innerText = currentWord.ru;
+    document.getElementById(correctOption === "option1" ? "option2" : "option1").innerText = getRandomIncorrectTranslation(randomIndex);
+}
+
+function showContinueButton() {
+    document.getElementById("option1").style.display = "none";
+    document.getElementById("option2").style.display = "none";
+    document.getElementById("continueButton").style.display = "inline-block";  // Показываем кнопку "Продолжить"
+}
+
+function hideContinueButton() {
+    document.getElementById("continueButton").style.display = "none";  // Скрываем кнопку "Продолжить"
+    document.getElementById("option1").style.display = "inline-block"; // Показываем кнопки выбора ответа
+    document.getElementById("option2").style.display = "inline-block";
+}
+function checkWord(selectedButton) {
+    const selectedWord = selectedButton.innerText;
+    const correctWord = easywords[currentWordIndex].ru;  // Используем правильный массив
+
+    if (selectedWord === correctWord) {
+        Game.correctAnswers++;
+        Game.points++;
+        updateResult("Правильно!", "correct");
+    } else {
+        Game.points = Math.max(Game.points - 1, 0); // Уменьшаем очки на 1, не допуская отрицательных значений
+        updateResult("Неправильно!", "incorrect");
+    }
+
+    Game.updateUI();  // Обновляем интерфейс
+    saveProgress();
+
+    if (Game.points >= 10) {
+        setTimeout(() => {
+            Game.levelUp(); // Переходим на новый уровень
+        }, 500);
+    } else {
+        setTimeout(startGame, 500);  // Переходим к следующему слову
+    }
+}
+function getRandomIncorrectTranslation(correctIndex) {
+    let randomIndex;
+    do { 
+        randomIndex = Math.floor(Math.random() * easywords.length); 
+    } while (randomIndex === correctIndex);
+    return easywords[randomIndex].ru;
+}
+
+function resetProgress() {
+    localStorage.clear();
+    Game.points = 0;
+    Game.level = 1;
+    Game.correctAnswers = 0;
+    Game.stars = 0;  // Обнуление звездочек
+    Game.updateUI();  // Обновление интерфейса
+    startGame();
+}
+
+function resetUI() {
+    document.getElementById("result").innerText = "";
+    document.getElementById("restartButton").style.display = "none";  // Скрываем кнопку "Начать заново"
+    document.getElementById("option1").disabled = false;
+    document.getElementById("option2").disabled = false;
+    Timer.timeLeft = baseTime - (Game.level - 1);  // Сброс таймера
+}
+
+function updateResult(message, className) {
+    document.getElementById("result").innerText = message;
+    document.getElementById("result").className = className;
+}
+
+// Обработчик для кнопки "Начать заново"
+document.getElementById("restartButton").onclick = function () {
+    document.getElementById("restartButton").style.display = "none";  // Скрываем кнопку после нажатия
+    startGame();  // Перезапускаем игру
+};
+
+// Инициализация игры
+loadEasyWords();
+loadProgress();
+startGame();
+
+</script>
+</body>
+</html>
