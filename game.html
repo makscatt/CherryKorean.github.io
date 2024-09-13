@@ -154,6 +154,18 @@ h1 {
         #continueButton:hover {
             background-color: #1E88E5;
         }
+        #phrase {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #word {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -164,6 +176,7 @@ h1 {
     <!-- Игровой экран -->
     <div id="gameContainer">
         <h1>Угадай перевод с корейского!</h1>
+        <p id="phrase">Переведите слово:</p>
         <p id="word">Здесь будет слово на корейском</p>
         <button id="option1" onclick="checkWord(this)">Вариант 1</button>
         <button id="option2" onclick="checkWord(this)">Вариант 2</button>
@@ -383,7 +396,7 @@ function setRandomWord() {
     const correctOption = Math.random() > 0.5 ? "option1" : "option2";
 
     const wordElement = document.getElementById("word");
-    wordElement.innerText = `Переведите слово: ${currentWord.ko}`;
+    wordElement.innerText = `${currentWord.ko}`;
     wordElement.style.fontSize = "30px";  // Устанавливаем увеличенный шрифт
     wordElement.style.fontWeight = "bold";  // Опционально делаем текст жирным
 
