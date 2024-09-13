@@ -103,6 +103,10 @@ h1 {
         #resetProgressButton:hover {
             background-color: #d32f2f;
         }
+        .time-out {
+    color: red;
+    font-weight: bold;
+}
         #stars {
     font-size: 30px; /* Размер эмодзи */
     position: absolute;
@@ -132,7 +136,30 @@ h1 {
     }
 
 }
+#restartButton {
+    display: none; /* Скрываем кнопку по умолчанию */
+    margin: 10px auto; /* Центрируем кнопку */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #999;
+    transition: all 0.1s ease-in-out;
+    text-align: center; /* Центрирование текста на кнопке */
+}
 
+#restartButton:active {
+    background-color: #1976D2;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+#restartButton:hover {
+    background-color: #1E88E5;
+}
     #continueButton {
             margin: 10px;
             padding: 10px 20px;
@@ -317,6 +344,10 @@ function startGame() {
         return;
     }
     hideContinueButton();  // Скрываем кнопку "Продолжить" и показываем кнопки выбора ответа
+    
+    // Очищаем сообщение о завершении уровня
+    document.getElementById("levelComplete").innerText = ""; 
+    
     console.log('Игра началась с загруженными словами:', easywords);
     resetUI();
     resetWordUsageCount();  // Сбрасываем количество использования слов для нового старта
@@ -342,7 +373,9 @@ function timeRanOut() {
     Game.correctAnswers = 0;
 
     // Вывод сообщения об окончании времени
-    document.getElementById("result").innerText = "Время вышло! Начните уровень заново.";
+    const resultElement = document.getElementById("result");
+    resultElement.innerText = "Время вышло! Начните уровень заново.";
+    resultElement.className = "time-out"; // Присваиваем красный цвет через класс
 
     // Показываем кнопку "Начать заново"
     document.getElementById("restartButton").style.display = "block";
