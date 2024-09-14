@@ -370,7 +370,9 @@ function startGame() {
 
     setTimeout(() => {
         setRandomWord();  // Устанавливаем слово с небольшой задержкой
-        startTimer();     // Запускаем таймер только после установки слова
+        Timer.start(Game.level, (timeLeft) => {  // Непосредственно запускаем таймер
+            document.getElementById("timeLeft").innerText = timeLeft;
+        }, timeRanOut);  // Вызов функции при истечении времени
     }, 150);
 }
 Game.levelUp = function() {
