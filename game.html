@@ -352,6 +352,10 @@ function startGame() {
     resetUI();
     resetWordUsageCount();
 
+    // Включаем кнопки снова для нового раунда
+    document.getElementById("option1").disabled = false;
+    document.getElementById("option2").disabled = false;
+
     // Определяем уровень в JSON на основе текущего уровня игры
     const jsonLevel = Math.floor((Game.level - 1) / 5) + 1;
     const currentLevelKey = `Lvl${jsonLevel}`;
@@ -455,7 +459,7 @@ function setRandomWord() {
 
     const wordElement = document.getElementById("word");
     wordElement.innerText = `${currentWord.ko}`;
-    wordElement.style.fontSize = "70px";  // Устанавливаем увеличенный шрифт
+    wordElement.style.fontSize = "60px";  // Устанавливаем увеличенный шрифт
     wordElement.style.fontWeight = "normal";  // Опционально делаем текст жирным
 
     document.getElementById(correctOption).innerText = currentWord.ru;
@@ -474,6 +478,10 @@ function hideContinueButton() {
     document.getElementById("option2").style.display = "inline-block";
 }
 function checkWord(selectedButton) {
+    // Отключаем обе кнопки, чтобы предотвратить повторные нажатия
+    document.getElementById("option1").disabled = true;
+    document.getElementById("option2").disabled = true;
+
     const selectedWord = selectedButton.innerText;
     const correctWord = easywords[currentWordIndex].ru;  // Используем правильный массив
 
