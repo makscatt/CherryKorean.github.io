@@ -116,6 +116,7 @@
 
         let currentCardIndex = 0;
         let cardsData = [];
+        let currentAudio = null; // To keep track of the current audio object
 
         // Variables for touch event handling
         let startX = 0;
@@ -133,6 +134,7 @@
                 .then(data => {
                     cardsData = data;
                     createCard(cardsData[currentCardIndex]);
+                    playSound(cardsData[currentCardIndex].audio); // Play sound for the first card
                 })
                 .catch(error => console.error('Ошибка загрузки JSON:', error));
         });
@@ -208,6 +210,27 @@
             }
         }
 
+        // Function to play sound
+        function playSound(audioSrc) {
+            // If there's an existing audio playing, stop it first
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+
+            // Create a new audio object and play it
+            currentAudio = new Audio(audioSrc);
+            currentAudio.play();
+
+            // Disable sound button until audio finishes playing
+            document.getElementById('sound-button').style.pointerEvents = 'none';
+
+            currentAudio.onended = () => {
+                // Re-enable the sound button after the audio finishes
+                document.getElementById('sound-button').style.pointerEvents = 'auto';
+            };
+        }
+
         // Обработка стрелок навигации
         document.getElementById('prev-arrow').addEventListener('click', () => {
             showPreviousCard();
@@ -219,8 +242,9 @@
 
         // Обработка кнопки звука
         document.getElementById('sound-button').addEventListener('click', () => {
-            const currentAudio = new Audio(cardsData[currentCardIndex].audio);
-            currentAudio.play();
+            if (currentAudio && currentAudio.paused) {
+                currentAudio.play();
+            }
         });
 
         // Touch event handlers
@@ -247,6 +271,7 @@
                 setTimeout(() => {
                     currentCardIndex++;
                     createCard(cardsData[currentCardIndex]);
+                    playSound(cardsData[currentCardIndex].audio); // Play sound for the new card
                     const newCard = document.querySelector('.card');
                     newCard.style.opacity = 0; // Set the new card to invisible
                     setTimeout(() => {
@@ -264,6 +289,7 @@
                 setTimeout(() => {
                     currentCardIndex--;
                     createCard(cardsData[currentCardIndex]);
+                    playSound(cardsData[currentCardIndex].audio); // Play sound for the new card
                     const newCard = document.querySelector('.card');
                     newCard.style.opacity = 0; // Set the new card to invisible
                     setTimeout(() => {
