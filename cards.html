@@ -11,14 +11,24 @@
             src: url('coockierun.ttf') format('truetype');
         }
 
-        /* Контейнер для игры */
+        /* Новый контейнер для игры */
         #game-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 80vh;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    max-width: 500px;
+    max-height: 900px;
+}
 
         /* Контейнер для карточек и стрелок */
         #card-nav-container {
@@ -36,8 +46,8 @@
 
         /* Ваши стили для карточек */
         .card {
-            width: 200px;
-            height: 300px;
+            width: 300px;
+            height: 500px;
             perspective: 1000px;
             margin: 0 auto;
             opacity: 1;
@@ -94,15 +104,18 @@
     </style>
 </head>
 <body>
-    <div id="game-container">
-        <!-- Контейнер для карточек и стрелок -->
-        <div id="card-nav-container">
-            <div class="nav-arrow" id="prev-arrow">&#9664;</div>
-            <div id="card-container"></div>
-            <div class="nav-arrow" id="next-arrow">&#9654;</div>
+    <!-- Новый контейнер для игры -->
+    <div id="gameContainer">
+        <div id="game-container">
+            <!-- Контейнер для карточек и стрелок -->
+            <div id="card-nav-container">
+                <div class="nav-arrow" id="prev-arrow">&#9664;</div>
+                <div id="card-container"></div>
+                <div class="nav-arrow" id="next-arrow">&#9654;</div>
+            </div>
+            <!-- Кнопка звука -->
+            <img src="sound_on.png" id="sound-button" alt="Включить звук" />
         </div>
-        <!-- Кнопка звука -->
-        <img src="sound_on.png" id="sound-button" alt="Включить звук" />
     </div>
     
     <script>
@@ -133,11 +146,20 @@
                 })
                 .then(data => {
                     cardsData = data;
+                    shuffleArray(cardsData); // Перемешиваем карточки
                     createCard(cardsData[currentCardIndex]);
                     playSound(cardsData[currentCardIndex].audio); // Play sound for the first card
                 })
                 .catch(error => console.error('Ошибка загрузки JSON:', error));
         });
+
+        // Функция для случайного перемешивания массива
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
 
         function createCard(cardData) {
             const container = document.getElementById('card-container');
@@ -247,7 +269,7 @@
             }
         });
 
-        // Touch event handlers
+        // Обработчики событий для свайпа
         function handleTouchStart(event) {
             startX = event.touches[0].clientX;
         }
@@ -255,45 +277,45 @@
         function handleTouchEnd(event) {
             endX = event.changedTouches[0].clientX;
             if (startX > endX + 30) {
-                // Swipe left
+                // Свайп влево
                 showNextCard();
             } else if (startX < endX - 30) {
-                // Swipe right
+                // Свайп вправо
                 showPreviousCard();
             }
         }
 
-        // Show the next card
+        // Показать следующую карточку
         function showNextCard() {
             if (currentCardIndex < cardsData.length - 1) {
                 const currentCard = document.querySelector('.card');
-                currentCard.style.opacity = 0; // Fade out the current card
+                currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
                 setTimeout(() => {
                     currentCardIndex++;
                     createCard(cardsData[currentCardIndex]);
-                    playSound(cardsData[currentCardIndex].audio); // Play sound for the new card
+                    playSound(cardsData[currentCardIndex].audio); // Проиграть звук для новой карточки
                     const newCard = document.querySelector('.card');
-                    newCard.style.opacity = 0; // Set the new card to invisible
+                    newCard.style.opacity = 0; // Установить новую карточку невидимой
                     setTimeout(() => {
-                        newCard.style.opacity = 1; // Fade in the new card
+                        newCard.style.opacity = 1; // Плавное появление новой карточки
                     }, 50);
                 }, 500);
             }
         }
 
-        // Show the previous card
+        // Показать предыдущую карточку
         function showPreviousCard() {
             if (currentCardIndex > 0) {
                 const currentCard = document.querySelector('.card');
-                currentCard.style.opacity = 0; // Fade out the current card
+                currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
                 setTimeout(() => {
                     currentCardIndex--;
                     createCard(cardsData[currentCardIndex]);
-                    playSound(cardsData[currentCardIndex].audio); // Play sound for the new card
+                    playSound(cardsData[currentCardIndex].audio); // Проиграть звук для новой карточки
                     const newCard = document.querySelector('.card');
-                    newCard.style.opacity = 0; // Set the new card to invisible
+                    newCard.style.opacity = 0; // Установить новую карточку невидимой
                     setTimeout(() => {
-                        newCard.style.opacity = 1; // Fade in the new card
+                        newCard.style.opacity = 1; // Плавное появление новой карточки
                     }, 50);
                 }, 500);
             }
