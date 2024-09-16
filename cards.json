@@ -10,5 +10,17 @@
       "audio": "cards/audio/케이크 먹어요.mp3",
       "korean": "케이크 먹어요",
       "russian": "Ем торт"
-    }
+    },
+    {
+        "image": "cards/고양이.png",
+        "audio": "cards/audio/고양이.mp3",
+        "korean": "고양이",
+        "russian": "Кошка"
+      },
+      {
+        "image": "cards/고양이 만져요.png",
+        "audio": "cards/audio/고양이 만져요.mp3",
+        "korean": "고양이 만져요",
+        "russian": "Глажу кошку"
+      }
   ]

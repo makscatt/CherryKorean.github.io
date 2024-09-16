@@ -37,18 +37,12 @@
             color: #333;
         }
 
-        /* Контейнер для карточек и стрелок */
-        #card-nav-container {
+        /* Контейнер для карточек */
+        #card-container {
             display: flex;
             align-items: center;
-        }
-
-        /* Стрелки навигации */
-        .nav-arrow {
-            font-size: 2em;
-            cursor: pointer;
-            user-select: none;
-            margin: 0 20px;
+            margin-bottom: 20px; /* Добавляем отступ снизу для кнопок */
+            position: relative; /* Для позиционирования меню */
         }
 
         /* Ваши стили для карточек */
@@ -92,6 +86,7 @@
             justify-content: center;
             align-items: center;
             padding: 10px;
+            font-size: 35px;
             font-family: 'CoockieRun', sans-serif;
             color: #333;
         }
@@ -101,28 +96,98 @@
             height: auto;
         }
 
-        /* Кнопка звука */
-        #sound-button {
-            margin-top: 20px;
-            cursor: pointer;
-            width: 50px;
-            height: 50px;
+       /* Изменяем стили для меню */
+       #menu-button {
+    position: absolute;
+    right: 0; /* Прижимаем кнопку к правому краю */
+    top: 50%; /* Располагаем по центру вертикали относительно родителя */
+    transform: translateY(-50%); /* Корректируем по вертикали для точного центрирования */
+    width: auto;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+#menu-button::before {
+    content: "Меню";
+    font-size: 16px;
+    color: #333;
+}
+
+        /* Контейнер для кнопок управления */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px; /* Убираем margin-top и добавляем margin-bottom */
         }
+
+        .control-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px; /* Отступ между кнопками */
+        }
+
+        .control-button.bad {
+            background-color: #f44336;
+        }
+
+        .control-button.excellent {
+            background-color: #2196F3; /* Синий цвет для кнопки "Отлично помню" */
+        }
+
+      /* Обновляем контейнер кнопок */
+      #sound-button-container {
+    display: flex;
+    justify-content: center; /* Центрируем элементы */
+    align-items: center;
+    width: 100%; /* Растягиваем контейнер на всю ширину */
+    padding-right: 10px;
+    margin-top: 20px;
+    position: relative; /* Для абсолютного позиционирования кнопки меню */
+}
+/* Центрирование кнопки звука */
+#sound-button {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
     <!-- Новый контейнер для игры -->
     <div id="game-container">
+          
         <!-- Текст над карточкой -->
         <div id="flip-instruction">Нажми, чтобы перевернуть</div>
-        <!-- Контейнер для карточек и стрелок -->
-        <div id="card-nav-container">
-            <div class="nav-arrow" id="prev-arrow">&#9664;</div>
-            <div id="card-container"></div>
-            <div class="nav-arrow" id="next-arrow">&#9654;</div>
+        <!-- Контейнер для карточек -->
+        <div id="card-container">
+          
         </div>
-        <!-- Кнопка звука -->
-        <img src="sound_on.png" id="sound-button" alt="Включить звук" />
+        <!-- Контейнер для кнопок управления -->
+        <div class="button-container">
+            <button class="control-button bad" id="bad-button">Помню плохо</button>
+            <button class="control-button good" id="good-button">Помню хорошо</button>
+            <button class="control-button excellent" id="excellent-button">Отлично помню</button>
+        </div>
+        <!-- Контейнер для кнопки звука -->
+        <div id="sound-button-container">
+            <!-- Кнопка меню -->
+          <div id="menu-button" onclick="showMenu()"></div>
+            <img src="sound_on.png" id="sound-button" alt="Включить звук" />
+        </div>
     </div>
 
     <script>
@@ -136,11 +201,10 @@
 
         let currentCardIndex = 0;
         let cardsData = [];
+        let cardPriorities = {}; // Объект для хранения приоритетов карточек
+        let goodButtonPressCount = {}; // Счетчик для кнопки "Помню хорошо"
+        let removedCards = []; // Массив удаленных карточек для временного исключения
         let currentAudio = null; // To keep track of the current audio object
-
-        // Variables for touch event handling
-        let startX = 0;
-        let endX = 0;
 
         // Загружаем данные и создаем карточки
         document.addEventListener('DOMContentLoaded', () => {
@@ -153,8 +217,13 @@
                 })
                 .then(data => {
                     cardsData = data;
+                    // Инициализируем приоритеты карточек и счетчики нажатий
+                    cardsData.forEach((card, index) => {
+                        cardPriorities[index] = { priority: 0 }; // Начальный приоритет для каждой карточки
+                        goodButtonPressCount[index] = 0; // Счетчик для каждой карточки
+                    });
                     shuffleArray(cardsData); // Перемешиваем карточки
-                    createCard(cardsData[currentCardIndex]);
+                    showNextCard();
                 })
                 .catch(error => console.error('Ошибка загрузки JSON:', error));
         });
@@ -167,6 +236,35 @@
             }
         }
 
+        // Функция для показа следующей карточки
+        function showNextCard() {
+            const currentCard = document.querySelector('.card');
+            if (currentCard) {
+                currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
+            }
+            setTimeout(() => {
+                // Проверяем, достиг ли индекс конца колоды, и начинаем новый круг
+                if (currentCardIndex >= cardsData.length) {
+                    currentCardIndex = 0;
+                }
+
+                if (cardsData.length > 0) {
+                    createCard(cardsData[currentCardIndex]);
+                } else {
+                    alert('Все карточки в настоящее время удалены.');
+                }
+
+                const newCard = document.querySelector('.card');
+                if (newCard) {
+                    newCard.style.opacity = 0; // Установить новую карточку невидимой
+                    setTimeout(() => {
+                        newCard.style.opacity = 1; // Плавное появление новой карточки
+                    }, 50);
+                }
+            }, 500);
+        }
+
+        // Функция для создания карточки
         function createCard(cardData) {
             const container = document.getElementById('card-container');
             container.innerHTML = ''; // Очистить контейнер перед добавлением новой карточки
@@ -184,8 +282,7 @@
             const img = document.createElement('img');
             img.src = cardData.image;
             cardFront.appendChild(img);
-            
-            cardFront.addEventListener('click', () => {
+                        cardFront.addEventListener('click', () => {
                 card.classList.add('flipped');
             });
             
@@ -199,10 +296,6 @@
             const russianWord = document.createElement('p');
             russianWord.textContent = cardData.russian;
 
-            // Adjust font size based on text length
-            adjustFontSize(koreanWord);
-            adjustFontSize(russianWord);
-            
             cardBack.appendChild(koreanWord);
             cardBack.appendChild(russianWord);
             
@@ -210,35 +303,11 @@
             cardInner.appendChild(cardBack);
             card.appendChild(cardInner);
 
-            // Flip back to front
-            cardBack.addEventListener('click', () => {
-                card.classList.remove('flipped');
-            });
-
+            // Add the card to the container
             container.appendChild(card);
-
-            // Add swipe event listeners
-            card.addEventListener('touchstart', handleTouchStart, false);
-            card.addEventListener('touchend', handleTouchEnd, false);
 
             // Play sound for the created card
             playSound(cardData.audio);
-        }
-
-        // Function to adjust the font size based on text length
-        function adjustFontSize(element) {
-            let maxFontSize = 30; // Maximum font size
-            let minFontSize = 10; // Minimum font size
-            let containerWidth = 180; // Width of the card-back minus padding
-            let containerHeight = 130; // Approximate height for each line of text
-
-            element.style.fontSize = maxFontSize + 'px';
-
-            // Reduce font size until text fits within container
-            while ((element.scrollWidth > containerWidth || element.scrollHeight > containerHeight) && maxFontSize > minFontSize) {
-                maxFontSize -= 1;
-                element.style.fontSize = maxFontSize + 'px';
-            }
         }
 
         // Function to play sound
@@ -262,14 +331,60 @@
             };
         }
 
-        // Обработка стрелок навигации
-        document.getElementById('prev-arrow').addEventListener('click', () => {
-            showPreviousCard();
+        // Обработка кнопок "Помню плохо" и "Помню хорошо"
+        document.getElementById('bad-button').addEventListener('click', () => {
+            cardPriorities[currentCardIndex].priority += 1; // Увеличиваем приоритет
+            goodButtonPressCount[currentCardIndex] = 0; // Сбросить счетчик "Помню хорошо"
+            currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Переход к следующей карточке
+            showNextCard(); // Показываем следующую карточку
         });
 
-        document.getElementById('next-arrow').addEventListener('click', () => {
-            showNextCard();
+        document.getElementById('good-button').addEventListener('click', () => {
+            const indexToRemove = currentCardIndex; // Сохраняем индекс текущей карточки
+            cardPriorities[indexToRemove].priority -= 1; // Уменьшаем приоритет
+            goodButtonPressCount[indexToRemove] += 1; // Увеличиваем счетчик "Помню хорошо"
+
+            // Если нажали дважды "Помню хорошо", исключаем карточку на 30 минут
+            if (goodButtonPressCount[indexToRemove] >= 2) {
+                removeCardTemporarily(indexToRemove);
+            } else {
+                currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Переход к следующей карточке
+                showNextCard(); // Показываем следующую карточку
+            }
         });
+
+        // Обработка кнопки "Отлично помню"
+        document.getElementById('excellent-button').addEventListener('click', () => {
+            removeCardPermanently(currentCardIndex); // Убираем карточку из колоды
+        });
+
+        // Функция для временного удаления карточки на 30 минут
+        function removeCardTemporarily(cardIndex) {
+            const removedCard = cardsData[cardIndex]; // Сохраняем удаляемую карточку
+            cardsData.splice(cardIndex, 1); // Удаляем карточку из колоды
+            removedCards.push(removedCard); // Добавляем карточку в массив удаленных
+            
+            setTimeout(() => {
+                cardsData.push(removedCard); // Добавляем карточку обратно в колоду
+                removedCards.splice(removedCards.indexOf(removedCard), 1); // Удаляем из массива удаленных
+                shuffleArray(cardsData); // Перемешиваем колоду после возврата карточки
+            }, 1800000); // 30 минут = 1800000 миллисекунд
+
+            // Обновляем индексы для правильного отображения следующей карточки
+            if (currentCardIndex >= cardsData.length) {
+                currentCardIndex = 0;
+            }
+            showNextCard(); // Показываем следующую карточку
+        }
+
+        // Функция для постоянного удаления карточки
+        function removeCardPermanently(cardIndex) {
+            cardsData.splice(cardIndex, 1); // Удаляем карточку из колоды навсегда
+            if (currentCardIndex >= cardsData.length) {
+                currentCardIndex = 0; // Если индекс вне диапазона, сбросить на 0
+            }
+            showNextCard(); // Показываем следующую карточку
+        }
 
         // Обработка кнопки звука
         document.getElementById('sound-button').addEventListener('click', () => {
@@ -278,53 +393,12 @@
             }
         });
 
-        // Обработчики событий для свайпа
-        function handleTouchStart(event) {
-            startX = event.touches[0].clientX;
-        }
-
-        function handleTouchEnd(event) {
-            endX = event.changedTouches[0].clientX;
-            if (startX > endX + 30) {
-                // Свайп влево
-                showNextCard();
-            } else if (startX < endX - 30) {
-                // Свайп вправо
-                showPreviousCard();
-            }
-        }
-
-        // Показать следующую карточку с бесконечной прокруткой
-        function showNextCard() {
-            const currentCard = document.querySelector('.card');
-            currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
-            setTimeout(() => {
-                currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Перемещаемся к следующей карточке, возвращаемся к первой в конце
-                createCard(cardsData[currentCardIndex]);
-                playSound(cardsData[currentCardIndex].audio); // Проиграть звук для новой карточки
-                const newCard = document.querySelector('.card');
-                newCard.style.opacity = 0; // Установить новую карточку невидимой
-                setTimeout(() => {
-                    newCard.style.opacity = 1; // Плавное появление новой карточки
-                }, 50);
-            }, 500);
-        }
-
-        // Показать предыдущую карточку с бесконечной прокруткой
-        function showPreviousCard() {
-            const currentCard = document.querySelector('.card');
-            currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
-            setTimeout(() => {
-                currentCardIndex = (currentCardIndex - 1 + cardsData.length) % cardsData.length; // Перемещаемся к предыдущей карточке, возвращаемся к последней в начале
-                createCard(cardsData[currentCardIndex]);
-                playSound(cardsData[currentCardIndex].audio); // Проиграть звук для новой карточки
-                const newCard = document.querySelector('.card');
-                newCard.style.opacity = 0; // Установить новую карточку невидимой
-                setTimeout(() => {
-                    newCard.style.opacity = 1; // Плавное появление новой карточки
-                }, 50);
-            }, 500);
+        // Функция для отображения меню (пустая пока что)
+        function showMenu() {
+            window.location.href = 'index.html'; // Временная реализация для отображения, что меню открыто
         }
     </script>
 </body>
 </html>
+
+            
