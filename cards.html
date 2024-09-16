@@ -14,20 +14,16 @@
         /* Контейнер для игры */
         #game-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: 100vh;
-            position: relative;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh;
         }
 
         /* Контейнер для карточек и стрелок */
         #card-nav-container {
             display: flex;
             align-items: center;
-            justify-content: center;
-            width: 100%;
-            position: relative;
         }
 
         /* Стрелки навигации */
@@ -44,7 +40,8 @@
             height: 300px;
             perspective: 1000px;
             margin: 0 auto;
-            transition: transform 0.3s ease;
+            opacity: 1;
+            transition: opacity 0.5s;
         }
 
         .card-inner {
@@ -78,9 +75,8 @@
             justify-content: center;
             align-items: center;
             padding: 10px;
-            font-family: 'CoockieRun', sans-serif; /* Устанавливаем шрифт */
-            font-size: 30px; /* Размер шрифта */
-            color: #333; /* Цвет шрифта */
+            font-family: 'CoockieRun', sans-serif;
+            color: #333;
         }
 
         img {
@@ -92,8 +88,8 @@
         #sound-button {
             margin-top: 20px;
             cursor: pointer;
-            width: 70px; /* Ширина кнопки */
-            height: 70px; /* Высота кнопки */
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
@@ -120,8 +116,10 @@
 
         let currentCardIndex = 0;
         let cardsData = [];
+
+        // Variables for touch event handling
         let startX = 0;
-        let isSwiping = false;
+        let endX = 0;
 
         // Загружаем данные и создаем карточки
         document.addEventListener('DOMContentLoaded', () => {
@@ -157,7 +155,6 @@
             img.src = cardData.image;
             cardFront.appendChild(img);
             
-            // Удалено воспроизведение аудио при клике на карточку
             cardFront.addEventListener('click', () => {
                 card.classList.add('flipped');
             });
@@ -171,6 +168,10 @@
             
             const russianWord = document.createElement('p');
             russianWord.textContent = cardData.russian;
+
+            // Adjust font size based on text length
+            adjustFontSize(koreanWord);
+            adjustFontSize(russianWord);
             
             cardBack.appendChild(koreanWord);
             cardBack.appendChild(russianWord);
@@ -186,55 +187,91 @@
 
             container.appendChild(card);
 
-            // Добавляем обработчики для свайпа
+            // Add swipe event listeners
             card.addEventListener('touchstart', handleTouchStart, false);
-            card.addEventListener('touchmove', handleTouchMove, false);
+            card.addEventListener('touchend', handleTouchEnd, false);
         }
 
-        function handleTouchStart(event) {
-            startX = event.touches[0].clientX;
-            isSwiping = true;
-        }
+        // Function to adjust the font size based on text length
+        function adjustFontSize(element) {
+            let maxFontSize = 30; // Maximum font size
+            let minFontSize = 10; // Minimum font size
+            let containerWidth = 180; // Width of the card-back minus padding
+            let containerHeight = 130; // Approximate height for each line of text
 
-        function handleTouchMove(event) {
-            if (!isSwiping) return;
-            const currentX = event.touches[0].clientX;
-            const diffX = currentX - startX;
+            element.style.fontSize = maxFontSize + 'px';
 
-            if (diffX > 50) {
-                // Свайп вправо
-                isSwiping = false;
-                showPreviousCard();
-            } else if (diffX < -50) {
-                // Свайп влево
-                isSwiping = false;
-                showNextCard();
+            // Reduce font size until text fits within container
+            while ((element.scrollWidth > containerWidth || element.scrollHeight > containerHeight) && maxFontSize > minFontSize) {
+                maxFontSize -= 1;
+                element.style.fontSize = maxFontSize + 'px';
             }
         }
 
         // Обработка стрелок навигации
-        document.getElementById('prev-arrow').addEventListener('click', showPreviousCard);
-        document.getElementById('next-arrow').addEventListener('click', showNextCard);
+        document.getElementById('prev-arrow').addEventListener('click', () => {
+            showPreviousCard();
+        });
 
-        function showPreviousCard() {
-            if (currentCardIndex > 0) {
-                currentCardIndex--;
-                createCard(cardsData[currentCardIndex]);
-            }
-        }
-
-        function showNextCard() {
-            if (currentCardIndex < cardsData.length - 1) {
-                currentCardIndex++;
-                createCard(cardsData[currentCardIndex]);
-            }
-        }
+        document.getElementById('next-arrow').addEventListener('click', () => {
+            showNextCard();
+        });
 
         // Обработка кнопки звука
         document.getElementById('sound-button').addEventListener('click', () => {
             const currentAudio = new Audio(cardsData[currentCardIndex].audio);
             currentAudio.play();
         });
+
+        // Touch event handlers
+        function handleTouchStart(event) {
+            startX = event.touches[0].clientX;
+        }
+
+        function handleTouchEnd(event) {
+            endX = event.changedTouches[0].clientX;
+            if (startX > endX + 30) {
+                // Swipe left
+                showNextCard();
+            } else if (startX < endX - 30) {
+                // Swipe right
+                showPreviousCard();
+            }
+        }
+
+        // Show the next card
+        function showNextCard() {
+            if (currentCardIndex < cardsData.length - 1) {
+                const currentCard = document.querySelector('.card');
+                currentCard.style.opacity = 0; // Fade out the current card
+                setTimeout(() => {
+                    currentCardIndex++;
+                    createCard(cardsData[currentCardIndex]);
+                    const newCard = document.querySelector('.card');
+                    newCard.style.opacity = 0; // Set the new card to invisible
+                    setTimeout(() => {
+                        newCard.style.opacity = 1; // Fade in the new card
+                    }, 50);
+                }, 500);
+            }
+        }
+
+        // Show the previous card
+        function showPreviousCard() {
+            if (currentCardIndex > 0) {
+                const currentCard = document.querySelector('.card');
+                currentCard.style.opacity = 0; // Fade out the current card
+                setTimeout(() => {
+                    currentCardIndex--;
+                    createCard(cardsData[currentCardIndex]);
+                    const newCard = document.querySelector('.card');
+                    newCard.style.opacity = 0; // Set the new card to invisible
+                    setTimeout(() => {
+                        newCard.style.opacity = 1; // Fade in the new card
+                    }, 50);
+                }, 500);
+            }
+        }
     </script>
 </body>
 </html>
