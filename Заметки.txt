@@ -1,0 +1,6 @@
+Заметки
+Чтобы обновить файлы в гитхабе
+git add index.html
+git add .
+git commit -m "Обновление кода: исправление отрицательных значений очков"
+git push origin main

@@ -46,14 +46,30 @@
             object-fit: contain; /* Изображение адаптируется по размеру, не обрезаясь */
         }
 
-        #startGameImage {
-            width: 50%;
-            max-width: 300px; /* Максимальная ширина для кнопки */
-            cursor: pointer;
-            position: relative; /* Оставляем кнопку поверх изображения */
-            margin-top: 50px; /* Отступ сверху для опускания кнопки */
+        /* Контейнер для кнопок */
+        #buttonsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Оставляем поверх изображения */
+            z-index: 1; /* Обеспечивает расположение поверх фонового изображения */
         }
 
+        /* Контейнер для двух рядов кнопок */
+        .buttonsRow {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0; /* Отступ между рядами */
+        }
+
+        /* Стили для кнопок */
+        .startButton {
+            width: 150px;
+            height: 150px;
+            margin: 0 10px; /* Отступ между кнопками в ряду */
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -63,15 +79,34 @@
             <img src="startscreenBG.png" alt="Фоновое изображение" id="backgroundImage">
         </div>
         
-        <!-- Кнопка "Начать игру" -->
-        <img src="startgameButton.png" alt="Начать игру" id="startGameImage">
+        <!-- Контейнер для кнопок -->
+        <div id="buttonsContainer">
+            <div class="buttonsRow">
+                <!-- Первая строка кнопок -->
+                <img src="button1.png" alt="Отгадай перевод" class="startButton" onclick="startGame('translate')">
+                <img src="button2.png" alt="На слух" class="startButton" onclick="startGame('audio')">
+            </div>
+            <div class="buttonsRow">
+                <!-- Вторая строка кнопок -->
+                <img src="button3.png" alt="По картинкам" class="startButton" onclick="startGame('pictures')">
+                <img src="button4.png" alt="Тренировка" class="startButton" onclick="startGame('training')">
+            </div>
+        </div>
     </div>
 
     <script>
-        // Меняем запуск игры на переход на другую HTML страницу
-        document.getElementById('startGameImage').onclick = function() {
-            window.location.href = "game.html";  // Переход на страницу игры
-        };
+        // Функция для перехода на страницу режима игры
+        function startGame(gameMode) {
+            if (gameMode === 'translate') {
+                window.location.href = "game.html";  // Переход на страницу для "Отгадай перевод"
+            } else if (gameMode === 'audio') {
+                window.location.href = "audio.html";  // Переход на страницу для "На слух"
+            } else if (gameMode === 'pictures') {
+                window.location.href = "pictures.html";  // Переход на страницу для "По картинкам"
+            } else if (gameMode === 'training') {
+                window.location.href = "cards.html";  // Переход на страницу для "Тренировка"
+            }
+        }
 
         // Телеграмм расширение для получения размеров окна
         if (window.Telegram.WebApp) {

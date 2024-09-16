@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Cards</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        @font-face {
+            font-family: 'CoockieRun';
+            src: url('coockierun.ttf') format('truetype');
+        }
+
+        /* Контейнер для игры */
+        #game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Контейнер для карточек и стрелок */
+        #card-nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Стрелки навигации */
+        .nav-arrow {
+            font-size: 2em;
+            cursor: pointer;
+            user-select: none;
+            margin: 0 20px;
+        }
+
+        /* Ваши стили для карточек */
+        .card {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s;
+            transform-style: preserve-3d;
+        }
+
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .card-front {
+            background: #fff;
+        }
+
+        .card-back {
+            background: #f8f8f8;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-family: 'CoockieRun', sans-serif; /* Устанавливаем шрифт */
+            font-size: 30px; /* Размер шрифта */
+            color: #333; /* Цвет шрифта */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Кнопка звука */
+        #sound-button {
+            margin-top: 20px;
+            cursor: pointer;
+            width: 70px; /* Ширина кнопки */
+            height: 70px; /* Высота кнопки */
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Контейнер для карточек и стрелок -->
+        <div id="card-nav-container">
+            <div class="nav-arrow" id="prev-arrow">&#9664;</div>
+            <div id="card-container"></div>
+            <div class="nav-arrow" id="next-arrow">&#9654;</div>
+        </div>
+        <!-- Кнопка звука -->
+        <img src="sound_on.png" id="sound-button" alt="Включить звук" />
+    </div>
+    
+    <script>
+        // Инициализация Telegram Mini App
+        Telegram.WebApp.ready();
+        
+        // Установка темы в зависимости от темы Telegram
+        if (Telegram.WebApp.themeParams.backgroundColor) {
+            document.body.style.backgroundColor = Telegram.WebApp.themeParams.backgroundColor;
+        }
+
+        let currentCardIndex = 0;
+        let cardsData = [];
+        let startX = 0;
+        let isSwiping = false;
+
+        // Загружаем данные и создаем карточки
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('cards.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    cardsData = data;
+                    createCard(cardsData[currentCardIndex]);
+                })
+                .catch(error => console.error('Ошибка загрузки JSON:', error));
+        });
+
+        function createCard(cardData) {
+            const container = document.getElementById('card-container');
+            container.innerHTML = ''; // Очистить контейнер перед добавлением новой карточки
+
+            const card = document.createElement('div');
+            card.classList.add('card');
+            
+            const cardInner = document.createElement('div');
+            cardInner.classList.add('card-inner');
+            
+            // Front of the card
+            const cardFront = document.createElement('div');
+            cardFront.classList.add('card-front');
+            
+            const img = document.createElement('img');
+            img.src = cardData.image;
+            cardFront.appendChild(img);
+            
+            // Удалено воспроизведение аудио при клике на карточку
+            cardFront.addEventListener('click', () => {
+                card.classList.add('flipped');
+            });
+            
+            // Back of the card
+            const cardBack = document.createElement('div');
+            cardBack.classList.add('card-back');
+            
+            const koreanWord = document.createElement('p');
+            koreanWord.textContent = cardData.korean;
+            
+            const russianWord = document.createElement('p');
+            russianWord.textContent = cardData.russian;
+            
+            cardBack.appendChild(koreanWord);
+            cardBack.appendChild(russianWord);
+            
+            cardInner.appendChild(cardFront);
+            cardInner.appendChild(cardBack);
+            card.appendChild(cardInner);
+
+            // Flip back to front
+            cardBack.addEventListener('click', () => {
+                card.classList.remove('flipped');
+            });
+
+            container.appendChild(card);
+
+            // Добавляем обработчики для свайпа
+            card.addEventListener('touchstart', handleTouchStart, false);
+            card.addEventListener('touchmove', handleTouchMove, false);
+        }
+
+        function handleTouchStart(event) {
+            startX = event.touches[0].clientX;
+            isSwiping = true;
+        }
+
+        function handleTouchMove(event) {
+            if (!isSwiping) return;
+            const currentX = event.touches[0].clientX;
+            const diffX = currentX - startX;
+
+            if (diffX > 50) {
+                // Свайп вправо
+                isSwiping = false;
+                showPreviousCard();
+            } else if (diffX < -50) {
+                // Свайп влево
+                isSwiping = false;
+                showNextCard();
+            }
+        }
+
+        // Обработка стрелок навигации
+        document.getElementById('prev-arrow').addEventListener('click', showPreviousCard);
+        document.getElementById('next-arrow').addEventListener('click', showNextCard);
+
+        function showPreviousCard() {
+            if (currentCardIndex > 0) {
+                currentCardIndex--;
+                createCard(cardsData[currentCardIndex]);
+            }
+        }
+
+        function showNextCard() {
+            if (currentCardIndex < cardsData.length - 1) {
+                currentCardIndex++;
+                createCard(cardsData[currentCardIndex]);
+            }
+        }
+
+        // Обработка кнопки звука
+        document.getElementById('sound-button').addEventListener('click', () => {
+            const currentAudio = new Audio(cardsData[currentCardIndex].audio);
+            currentAudio.play();
+        });
+    </script>
+</body>
+</html>
