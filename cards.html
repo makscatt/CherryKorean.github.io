@@ -155,7 +155,6 @@
                     cardsData = data;
                     shuffleArray(cardsData); // Перемешиваем карточки
                     createCard(cardsData[currentCardIndex]);
-                    playSound(cardsData[currentCardIndex].audio); // Play sound for the first card
                 })
                 .catch(error => console.error('Ошибка загрузки JSON:', error));
         });
@@ -221,6 +220,9 @@
             // Add swipe event listeners
             card.addEventListener('touchstart', handleTouchStart, false);
             card.addEventListener('touchend', handleTouchEnd, false);
+
+            // Play sound for the created card
+            playSound(cardData.audio);
         }
 
         // Function to adjust the font size based on text length
