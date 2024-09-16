@@ -13,22 +13,29 @@
 
         /* Новый контейнер для игры */
         #game-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 90vw;
-    height: 90vh;
-    margin: auto;
-    max-width: 500px;
-    max-height: 900px;
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            width: 90vw;
+            height: 90vh;
+            margin: auto;
+            max-width: 500px;
+            max-height: 900px;
+        }
+
+        #flip-instruction {
+            font-family: 'CoockieRun', sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
 
         /* Контейнер для карточек и стрелок */
         #card-nav-container {
@@ -105,19 +112,19 @@
 </head>
 <body>
     <!-- Новый контейнер для игры -->
-    <div id="gameContainer">
-        <div id="game-container">
-            <!-- Контейнер для карточек и стрелок -->
-            <div id="card-nav-container">
-                <div class="nav-arrow" id="prev-arrow">&#9664;</div>
-                <div id="card-container"></div>
-                <div class="nav-arrow" id="next-arrow">&#9654;</div>
-            </div>
-            <!-- Кнопка звука -->
-            <img src="sound_on.png" id="sound-button" alt="Включить звук" />
+    <div id="game-container">
+        <!-- Текст над карточкой -->
+        <div id="flip-instruction">Нажми, чтобы перевернуть</div>
+        <!-- Контейнер для карточек и стрелок -->
+        <div id="card-nav-container">
+            <div class="nav-arrow" id="prev-arrow">&#9664;</div>
+            <div id="card-container"></div>
+            <div class="nav-arrow" id="next-arrow">&#9654;</div>
         </div>
+        <!-- Кнопка звука -->
+        <img src="sound_on.png" id="sound-button" alt="Включить звук" />
     </div>
-    
+
     <script>
         // Инициализация Telegram Mini App
         Telegram.WebApp.ready();
@@ -285,40 +292,36 @@
             }
         }
 
-        // Показать следующую карточку
+        // Показать следующую карточку с бесконечной прокруткой
         function showNextCard() {
-            if (currentCardIndex < cardsData.length - 1) {
-                const currentCard = document.querySelector('.card');
-                currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
+            const currentCard = document.querySelector('.card');
+            currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
+            setTimeout(() => {
+                currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Перемещаемся к следующей карточке, возвращаемся к первой в конце
+                createCard(cardsData[currentCardIndex]);
+                playSound(cardsData[currentCardIndex].audio); // Проиграть звук для новой карточки
+                const newCard = document.querySelector('.card');
+                newCard.style.opacity = 0; // Установить новую карточку невидимой
                 setTimeout(() => {
-                    currentCardIndex++;
-                    createCard(cardsData[currentCardIndex]);
-                    playSound(cardsData[currentCardIndex].audio); // Проиграть звук для новой карточки
-                    const newCard = document.querySelector('.card');
-                    newCard.style.opacity = 0; // Установить новую карточку невидимой
-                    setTimeout(() => {
-                        newCard.style.opacity = 1; // Плавное появление новой карточки
-                    }, 50);
-                }, 500);
-            }
+                    newCard.style.opacity = 1; // Плавное появление новой карточки
+                }, 50);
+            }, 500);
         }
 
-        // Показать предыдущую карточку
+        // Показать предыдущую карточку с бесконечной прокруткой
         function showPreviousCard() {
-            if (currentCardIndex > 0) {
-                const currentCard = document.querySelector('.card');
-                currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
+            const currentCard = document.querySelector('.card');
+            currentCard.style.opacity = 0; // Плавное исчезновение текущей карточки
+            setTimeout(() => {
+                currentCardIndex = (currentCardIndex - 1 + cardsData.length) % cardsData.length; // Перемещаемся к предыдущей карточке, возвращаемся к последней в начале
+                createCard(cardsData[currentCardIndex]);
+                playSound(cardsData[currentCardIndex].audio); // Проиграть звук для новой карточки
+                const newCard = document.querySelector('.card');
+                newCard.style.opacity = 0; // Установить новую карточку невидимой
                 setTimeout(() => {
-                    currentCardIndex--;
-                    createCard(cardsData[currentCardIndex]);
-                    playSound(cardsData[currentCardIndex].audio); // Проиграть звук для новой карточки
-                    const newCard = document.querySelector('.card');
-                    newCard.style.opacity = 0; // Установить новую карточку невидимой
-                    setTimeout(() => {
-                        newCard.style.opacity = 1; // Плавное появление новой карточки
-                    }, 50);
-                }, 500);
-            }
+                    newCard.style.opacity = 1; // Плавное появление новой карточки
+                }, 50);
+            }, 500);
         }
     </script>
 </body>
