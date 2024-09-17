@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +10,46 @@
             font-family: 'CoockieRun';
             src: url('coockierun.ttf') format('truetype');
         }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
 
-        /* Новый контейнер для игры */
-    #game-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    margin: auto;
-    aspect-ratio: 9 / 16; /* Устанавливаем точное соотношение сторон */
-    width: 100%; /* Адаптивная ширина в процентах от доступного пространства */
-    height: 100vh; /* Высота во вьюпорт-высотах, обеспечивает адаптивность */
-    max-width: 500px; /* Ограничиваем максимальную ширину */
-    max-height: 900px; /* Ограничиваем максимальную высоту */
-}
+        /* Добавляем обёртку и стили для контейнера */
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin: auto;
+            width: 90vw; /* Используем относительную единицу измерения */
+            height: auto;
+            aspect-ratio: 9 / 16;
+            max-width: 400px; 
+            max-height: 90vh; /* Используем относительную единицу измерения */
+        }
+
         #flip-instruction {
             font-family: 'CoockieRun', sans-serif;
             font-size: 18px;
@@ -41,7 +61,7 @@
         #card-container {
             display: flex;
             align-items: center;
-            margin-bottom: 20px; /* Добавляем отступ снизу для кнопок */
+            margin-bottom: auto; /* Добавляем отступ снизу для кнопок */
             position: relative; /* Для позиционирования меню */
         }
 
@@ -52,7 +72,7 @@
             perspective: 1000px;
             margin: 0 auto;
             opacity: 1;
-            transition: opacity 0.5s;
+            transition: opacity 0.3s;
         }
 
         .card-inner {
@@ -96,40 +116,40 @@
             height: auto;
         }
 
-       /* Изменяем стили для меню */
-   /* Кнопка меню */
-#menu-button {
-    position: absolute;
-    right: 20px; /* Уменьшаем отступ с правой стороны */
-    top: 20px; /* Отступ сверху для лучшего расположения */
-    padding: 5px 15px;
-}
+        /* Изменяем стили для меню */
+        /* Кнопка меню */
+        #menu-button {
+            position: absolute;
+            right: 20px; /* Уменьшаем отступ с правой стороны */
+            top: 20px; /* Отступ сверху для лучшего расположения */
+            padding: 5px 15px;
+        }
 
-#menu-button::before {
-    content: "Меню";
-    font-size: 16px;
-    color: #333;
-}
+        #menu-button::before {
+            content: "Меню";
+            font-size: 16px;
+            color: #333;
+        }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Растягиваем на всю ширину контейнера */
-    margin-top: auto; /* Автоматический верхний отступ для выравнивания внизу */
-}
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Растягиваем на всю ширину контейнера */
+            margin-top: auto; /* Автоматический верхний отступ для выравнивания внизу */
+        }
 
-    /* Кнопки управления */
-.control-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px; /* Отступ между кнопками */
-}
+        /* Кнопки управления */
+        .control-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px; /* Отступ между кнопками */
+        }
 
         .control-button.bad {
             background-color: #f44336;
@@ -139,45 +159,40 @@
             background-color: #2196F3; /* Синий цвет для кнопки "Отлично помню" */
         }
 
-      /* Обновляем контейнер кнопок */
-      #sound-button-container {
-    display: flex;
-    justify-content: center; /* Центрируем элементы */
-    align-items: center;
-    width: 100%; /* Растягиваем контейнер на всю ширину */
-    padding-right: 10px;
-    margin-top: 00px;
-    position: relative; /* Для абсолютного позиционирования кнопки меню */
-}
-/* Центрирование кнопки звука */
-#sound-button {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-}
+        /* Обновляем контейнер кнопок */
+        #sound-button-container {
+            display: flex;
+            justify-content: center; /* Центрируем элементы */
+            align-items: center;
+            width: 80%; /* Растягиваем контейнер на всю ширину */
+            padding-right: 10px;
+            margin-top: 0px;
+            position: relative; /* Для абсолютного позиционирования кнопки меню */
+        }
+
+        /* Центрирование кнопки звука */
+        #sound-button {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <!-- Новый контейнер для игры -->
-    <div id="game-container">
-          
-        <!-- Текст над карточкой -->
-        <div id="flip-instruction">Нажми, чтобы перевернуть</div>
-        <!-- Контейнер для карточек -->
-        <div id="card-container">
-          
-        </div>
-        <!-- Контейнер для кнопок управления -->
-        <div class="button-container">
-            <button class="control-button bad" id="bad-button">Помню плохо</button>
-            <button class="control-button good" id="good-button">Помню хорошо</button>
-            <button class="control-button excellent" id="excellent-button">Отлично помню</button>
-        </div>
-        <!-- Контейнер для кнопки звука -->
-        <div id="sound-button-container">
-            <!-- Кнопка меню -->
-          <div id="menu-button" onclick="showMenu()"></div>
-            <img src="sound_on.png" id="sound-button" alt="Включить звук" />
+    <!-- Новый контейнер для игры с обёрткой -->
+    <div id="wrapper">
+        <div id="gameContainer">
+            <div id="flip-instruction">Нажми, чтобы перевернуть</div>
+            <div id="card-container"></div>
+            <div class="button-container">
+                <button class="control-button bad" id="bad-button">Помню плохо</button>
+                <button class="control-button good" id="good-button">Помню хорошо</button>
+                <button class="control-button excellent" id="excellent-button">Отлично помню</button>
+            </div>
+            <div id="sound-button-container">
+                <div id="menu-button" onclick="showMenu()"></div>
+                <img src="sound_on.png" id="sound-button" alt="Включить звук" />
+            </div>
         </div>
     </div>
 
@@ -388,7 +403,12 @@
         function showMenu() {
             window.location.href = 'index.html'; // Временная реализация для отображения, что меню открыто
         }
+         // Телеграмм расширение для получения размеров окна
+ if (window.Telegram.WebApp) {
+            Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
+        }
     </script>
+    
 </body>
 </html>
 

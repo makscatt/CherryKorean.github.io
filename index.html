@@ -15,15 +15,36 @@
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
         }
-        
-        /* Контейнер с соотношением сторон 9:16 */
-        #startScreen {
-            width: 100%;
-            height: 100%;
+
+        /* Контейнер для игры */
+        #wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Контейнер с соотношением сторон 9:16 */
+        #startScreen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
+            margin: auto;
+            width: 90vw; /* Используем относительную единицу измерения */
+            height: auto;
+            aspect-ratio: 9 / 16;
+            max-width: 400px;
+            max-height: 90vh; /* Используем относительную единицу измерения */
+            overflow: hidden; /* Добавляем, чтобы изображение не выходило за пределы контейнера */
         }
 
         /* Контейнер для фонового изображения, который адаптируется к экрану */
@@ -41,9 +62,8 @@
         /* Само фоновое изображение */
         #backgroundImage {
             width: 100%;
-            height: auto; /* Сохраняем соотношение сторон */
-            max-height: 100vh; /* Максимальная высота равна высоте экрана */
-            object-fit: contain; /* Изображение адаптируется по размеру, не обрезаясь */
+            height: 100%; /* Устанавливаем высоту на 100% */
+            object-fit: cover; /* Заполняем контейнер, сохраняя соотношение сторон */
         }
 
         /* Контейнер для кнопок */
@@ -73,23 +93,26 @@
     </style>
 </head>
 <body>
-    <div id="startScreen">
-        <!-- Контейнер для фонового изображения -->
-        <div id="backgroundImageContainer">
-            <img src="startscreenBG.png" alt="Фоновое изображение" id="backgroundImage">
-        </div>
-        
-        <!-- Контейнер для кнопок -->
-        <div id="buttonsContainer">
-            <div class="buttonsRow">
-                <!-- Первая строка кнопок -->
-                <img src="button1.png" alt="Отгадай перевод" class="startButton" onclick="startGame('translate')">
-                <img src="button2.png" alt="На слух" class="startButton" onclick="startGame('audio')">
+    <!-- Оборачиваем в #wrapper -->
+    <div id="wrapper">
+        <div id="startScreen">
+            <!-- Контейнер для фонового изображения -->
+            <div id="backgroundImageContainer">
+                <img src="startscreenBG.png" alt="Фоновое изображение" id="backgroundImage">
             </div>
-            <div class="buttonsRow">
-                <!-- Вторая строка кнопок -->
-                <img src="button3.png" alt="По картинкам" class="startButton" onclick="startGame('pictures')">
-                <img src="button4.png" alt="Карточки" class="startButton" onclick="startGame('training')">
+
+            <!-- Контейнер для кнопок -->
+            <div id="buttonsContainer">
+                <div class="buttonsRow">
+                    <!-- Первая строка кнопок -->
+                    <img src="button1.png" alt="Отгадай перевод" class="startButton" onclick="startGame('translate')">
+                    <img src="button2.png" alt="На слух" class="startButton" onclick="startGame('audio')">
+                </div>
+                <div class="buttonsRow">
+                    <!-- Вторая строка кнопок -->
+                    <img src="button3.png" alt="По картинкам" class="startButton" onclick="startGame('pictures')">
+                    <img src="button4.png" alt="Карточки" class="startButton" onclick="startGame('training')">
+                </div>
             </div>
         </div>
     </div>

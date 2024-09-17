@@ -6,11 +6,11 @@
     <title>Telegram Mini App</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
-   @font-face {
-    font-family: 'CoockieRun';
-    src: url('coockierun.ttf') format('truetype'),
-       
-}
+        @font-face {
+            font-family: 'CoockieRun';
+            src: url('coockierun.ttf') format('truetype');
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -21,26 +21,58 @@
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
         }
+
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin: auto;
+            width: 90vw; /* Используем относительную единицу измерения */
+            height: auto;
+            aspect-ratio: 9 / 16;
+            max-width: 400px; 
+            max-height: 90vh; /* Используем относительную единицу измерения */
+        }
+
         #word {
-            font-family: 'CookieRun', sans-serif; /* Применяем пользовательский шрифт */
+            font-family: 'CoockieRun', sans-serif;
             font-size: 70px; 
             font-weight: normal;
             text-align: center;
             margin: 0;
             color: #616161;
         }
+
         #startScreen, #gameContainer {
             display: block;
         }
+
         #startScreen.active, #gameContainer.active {
             display: block;
         }
-        
+
         #startGameImage {
-    width: 50%; /* Уменьшение размера на 50% от родительского элемента */
-    max-width: 300px; /* Опционально, чтобы ограничить максимальную ширину */
-    transform: translateX(50%); /* Центрируем по горизонтали */
-}
+            width: 50%;
+            max-width: 300px;
+            transform: translateX(50%);
+        }
+
         button {
             margin: 10px;
             padding: 10px 20px;
@@ -53,53 +85,42 @@
             box-shadow: 0 4px #999;
             transition: all 0.1s ease-in-out;
         }
+
         button:active {
             background-color: #3e8e41;
             box-shadow: 0 2px #666;
             transform: translateY(4px);
         }
+
         button:hover {
             background-color: #45a049;
         }
-        #gameContainer {
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    
-    /* Добавляем фиксированное соотношение сторон 9:16 */
-    aspect-ratio: 9 / 16;
-    
-    /* Максимальная высота 100% экрана */
-    height: 100%;
-    
-    /* Ширина будет автоматически рассчитана */
-    max-width: 100%;
-    max-height: 100%;
-}
 
-h1 {
-    margin-bottom: 20px;
-}
+        h1 {
+            margin-bottom: 20px;
+        }
+
         #result {
             font-weight: bold;
             font-size: 18px;
             margin-top: 10px;
         }
+
         .correct {
             color: green;
         }
+
         .incorrect {
             color: red;
         }
+
         #levelComplete {
             margin-top: 20px;
             font-size: 18px;
             color: blue;
             font-weight: bold;
         }
+
         #resetProgressButton {
             position: absolute;
             right: 10px;
@@ -112,87 +133,93 @@ h1 {
             border-radius: 5px;
             cursor: pointer;
         }
+
         #resetProgressButton:hover {
             background-color: #d32f2f;
         }
+
         .time-out {
-    color: red;
-    font-weight: bold;
-}
+            color: red;
+            font-weight: bold;
+        }
+
         #stars {
-    font-size: 30px; /* Размер эмодзи */
-    position: absolute;
-    bottom: 30px; /* Отступ 30 единиц от нижней границы */
-    left: 50%;
-    transform: translateX(-50%); /* Центрируем по горизонтали */
-    display: inline-block;
-}
+            font-size: 30px;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+        }
 
-#stars.pulsing {
-    animation: pulse 0.3s ease-out;
-}
+        #stars.pulsing {
+            animation: pulse 0.3s ease-out;
+        }
 
-@keyframes pulse {
-    0% {
-        transform: translateX(-50%) scale(1); /* Центрируем и сохраняем начальный размер */
-        opacity: 1;
-    }
-    50% {
-        transform: translateX(-50%) scale(1.5); /* Увеличиваем звезду, но сохраняем центрирование */
-        opacity: 1.5;
-    }
-    
-    100% {
-        transform: translateX(-50%) scale(1); /* Возвращаем к исходному размеру */
-        opacity: 1;
-    }
+        @keyframes pulse {
+            0% {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateX(-50%) scale(1.5);
+                opacity: 1.5;
+            }
+            100% {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+            }
+        }
 
-}
-#restartButton {
-    display: none; /* Скрываем кнопку по умолчанию */
-    margin: 10px auto; /* Центрируем кнопку */
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #2196F3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px #999;
-    transition: all 0.1s ease-in-out;
-    text-align: center; /* Центрирование текста на кнопке */
-}
-
-#restartButton:active {
-    background-color: #1976D2;
-    box-shadow: 0 2px #666;
-    transform: translateY(4px);
-}
-
-#restartButton:hover {
-    background-color: #1E88E5;
-}
-    #continueButton {
-            margin: 10px;
+        #restartButton {
+            display: none;
+            margin: 10px auto;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            background-color: #2196F3; /* Синий цвет */
+            background-color: #2196F3;
             color: white;
             border: none;
             border-radius: 5px;
             box-shadow: 0 4px #999;
             transition: all 0.1s ease-in-out;
-            display: none; /* Скрыто по умолчанию */
+            text-align: center;
         }
+
+        #restartButton:active {
+            background-color: #1976D2;
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+        }
+
+        #restartButton:hover {
+            background-color: #1E88E5;
+        }
+
+        #continueButton {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px #999;
+            transition: all 0.1s ease-in-out;
+            display: none;
+        }
+
         #continueButton:active {
             background-color: #1976D2;
             box-shadow: 0 2px #666;
             transform: translateY(4px);
         }
+
         #continueButton:hover {
             background-color: #1E88E5;
         }
+
         #phrase {
             font-size: 24px;
             text-align: center;
@@ -208,28 +235,27 @@ h1 {
     </style>
 </head>
 <body>
-    
-    <!-- Звук для анимации -->
-            <audio id="starSound" src="starsuccess.mp3" preload="auto"></audio>
-    
-
-    <!-- Игровой экран -->
-    <div id="gameContainer">
-        <h1>Угадай перевод с корейского!</h1>
-        <p id="phrase">Переведите слово:</p>
-        <p id="word"></p> 
-        <button id="option1" onclick="checkWord(this)"></button>
-        <button id="option2" onclick="checkWord(this)"></button>
-        <p id="timer">Время: <span id="timeLeft">30</span> секунд</p>
-        <p id="points">Очки: 0 / 10</p> <!-- Очки за уровень -->
-        <p id="level">Уровень: 1</p>
-        <p id="result"></p>
-        <p id="levelComplete"></p>
-        <p id="stars">⭐ 0</p> <!-- Звездочки в виде эмодзи -->
-        <button id="restartButton" onclick="startGame()" style="display:none;">Начать заново</button>
-        <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button>
-        <button id="continueButton" onclick="startGame()">Продолжить</button>
+    <div id="wrapper">
+        <div id="gameContainer">
+            <h1>Угадай перевод с корейского!</h1>
+            <p id="phrase">Переведите слово:</p>
+            <p id="word"></p> 
+            <button id="option1" onclick="checkWord(this)"></button>
+            <button id="option2" onclick="checkWord(this)"></button>
+            <p id="timer">Время: <span id="timeLeft">30</span> секунд</p>
+            <p id="points">Очки: 0 / 10</p>
+            <p id="level">Уровень: 1</p>
+            <p id="result"></p>
+            <p id="levelComplete"></p>
+            <p id="stars">⭐ 0</p>
+            <button id="restartButton" onclick="startGame()" style="display:none;">Начать заново</button>
+            <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button>
+            <button id="continueButton" onclick="startGame()">Продолжить</button>
+        </div>
     </div>
+
+    <!-- Звук для анимации -->
+    <audio id="starSound" src="starsuccess.mp3" preload="auto"></audio>
 
     <script>
         let wordUsageCount = {};  // Объект для отслеживания количества использования слов
@@ -545,6 +571,10 @@ document.getElementById("restartButton").onclick = function () {
 loadWordsByLevel();
 loadProgress();
 startGame();
+ // Телеграмм расширение для получения размеров окна
+ if (window.Telegram.WebApp) {
+            Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
+        }
 
 </script>
 </body>
