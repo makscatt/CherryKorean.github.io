@@ -12,24 +12,24 @@
         }
 
         /* Новый контейнер для игры */
-        #game-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-            width: 90vw;
-            height: 90vh;
-            margin: auto;
-            max-width: 500px;
-            max-height: 900px;
-        }
-
+    #game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: auto;
+    aspect-ratio: 9 / 16; /* Устанавливаем точное соотношение сторон */
+    width: 100%; /* Адаптивная ширина в процентах от доступного пространства */
+    height: 100vh; /* Высота во вьюпорт-высотах, обеспечивает адаптивность */
+    max-width: 500px; /* Ограничиваем максимальную ширину */
+    max-height: 900px; /* Ограничиваем максимальную высоту */
+}
         #flip-instruction {
             font-family: 'CoockieRun', sans-serif;
             font-size: 18px;
@@ -97,23 +97,12 @@
         }
 
        /* Изменяем стили для меню */
-       #menu-button {
+   /* Кнопка меню */
+#menu-button {
     position: absolute;
-    right: 0; /* Прижимаем кнопку к правому краю */
-    top: 50%; /* Располагаем по центру вертикали относительно родителя */
-    transform: translateY(-50%); /* Корректируем по вертикали для точного центрирования */
-    width: auto;
-    height: 40px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    background-color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 15px;
-    font-size: 16px;
-    color: #333;
+    right: 20px; /* Уменьшаем отступ с правой стороны */
+    top: 20px; /* Отступ сверху для лучшего расположения */
+    padding: 5px 15px;
 }
 
 #menu-button::before {
@@ -122,23 +111,25 @@
     color: #333;
 }
 
-        /* Контейнер для кнопок управления */
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px; /* Убираем margin-top и добавляем margin-bottom */
-        }
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Растягиваем на всю ширину контейнера */
+    margin-top: auto; /* Автоматический верхний отступ для выравнивания внизу */
+}
 
-        .control-button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 10px; /* Отступ между кнопками */
-        }
+    /* Кнопки управления */
+.control-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px; /* Отступ между кнопками */
+}
 
         .control-button.bad {
             background-color: #f44336;
@@ -155,7 +146,7 @@
     align-items: center;
     width: 100%; /* Растягиваем контейнер на всю ширину */
     padding-right: 10px;
-    margin-top: 20px;
+    margin-top: 00px;
     position: relative; /* Для абсолютного позиционирования кнопки меню */
 }
 /* Центрирование кнопки звука */
