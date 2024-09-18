@@ -232,6 +232,22 @@
             text-align: center;
             margin: 0;
         }
+        #menuButton {
+    position: absolute;
+   right: 10px; 
+    bottom: 50px; /* Отступ снизу */
+    padding: 5px 10px;
+    font-size: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menuButton:hover {
+    background-color: #45a049; /* Цвет при наведении */
+}
     </style>
 </head>
 <body>
@@ -248,6 +264,7 @@
             <p id="result"></p>
             <p id="levelComplete"></p>
             <p id="stars">⭐ 0</p>
+            <button id="menuButton" onclick="navigateToMenu()">Меню</button>
             <button id="restartButton" onclick="startGame()" style="display:none;">Начать заново</button>
             <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button>
             <button id="continueButton" onclick="startGame()">Продолжить</button>
@@ -284,7 +301,9 @@
 }
 
 
-
+function navigateToMenu() {
+    window.location.href = 'index.html'; // Переход на страницу меню
+}
 
 function saveProgress() {
     localStorage.setItem("level", Game.level);
@@ -566,15 +585,15 @@ document.getElementById("restartButton").onclick = function () {
     document.getElementById("restartButton").style.display = "none";  // Скрываем кнопку после нажатия
     startGame();  // Перезапускаем игру
 };
+ // Телеграмм расширение для получения размеров окна
+ if (window.Telegram.WebApp) {
+            Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
+        }
 
 // Инициализация игры
 loadWordsByLevel();
 loadProgress();
 startGame();
- // Телеграмм расширение для получения размеров окна
- if (window.Telegram.WebApp) {
-            Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
-        }
 
 </script>
 </body>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Темы</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin: auto;
+            width: 90vw;
+            height: auto;
+            aspect-ratio: 9 / 16;
+            max-width: 400px;
+            max-height: 90vh;
+        }
+
+        .theme-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .theme-button {
+            width: 130px; /* Устанавливаем фиксированную ширину */
+            height: 130px; /* Устанавливаем фиксированную высоту */
+            background-size: cover;
+            background-position: center;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 1px solid #ddd; /* Временная граница для видимости */
+        }
+
+        .navigation-bar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="theme-grid">
+            <!-- Кнопки тем, расположенные в сетке 3x4 -->
+            <div class="theme-button" style="background-image: url('themes/theme1.png');" onclick="selectTheme(1)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme2.png');" onclick="selectTheme(2)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme3.png');" onclick="selectTheme(3)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme4.png');" onclick="selectTheme(4)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme5.png');" onclick="selectTheme(5)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme6.png');" onclick="selectTheme(6)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme7.png');" onclick="selectTheme(7)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme8.png');" onclick="selectTheme(8)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme9.png');" onclick="selectTheme(9)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme10.png');" onclick="selectTheme(10)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme11.png');" onclick="selectTheme(11)"></div>
+            <div class="theme-button" style="background-image: url('themes/theme12.png');" onclick="selectTheme(12)"></div>
+        </div>
+
+        <div class="navigation-bar">
+            <button class="nav-button" onclick="navigate('back')">Назад</button>
+            <button class="nav-button" onclick="navigate('forward')">Вперед</button>
+            <button class="nav-button" onclick="navigate('menu')">Меню</button>
+        </div>
+    </div>
+
+    <script>
+        function selectTheme(themeId) {
+            // Переход на соответствующую страницу темы
+            window.location.href = 'theme' + themeId + '.html';
+        }
+
+        function navigate(direction) {
+            if (direction === 'menu') {
+                // Переход на главную страницу (index.html)
+                window.location.href = 'index.html';
+            }
+            // Логика для навигации "back" и "forward" может быть добавлена здесь
+            console.log("Навигация:", direction);
+        }
+
+        // Инициализация Telegram Mini App
+        if (window.Telegram.WebApp) {
+            Telegram.WebApp.ready();
+            Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
+        }
+    </script>
+</body>
+</html>

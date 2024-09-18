@@ -68,7 +68,7 @@
         /* Ваши стили для карточек */
         .card {
             width: 300px;
-            height: 500px;
+            height: 450px;
             perspective: 1000px;
             margin: 0 auto;
             opacity: 1;
@@ -92,6 +92,9 @@
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
+            padding: 0px;
+            
+            border-radius: 10px;
         }
 
         .card-front {
@@ -105,10 +108,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 10px;
+            padding: 0px;
             font-size: 35px;
             font-family: 'CoockieRun', sans-serif;
             color: #333;
+            border: 1px solid black;
         }
 
         img {
@@ -120,15 +124,22 @@
         /* Кнопка меню */
         #menu-button {
             position: absolute;
-            right: 20px; /* Уменьшаем отступ с правой стороны */
+            right: 10px; /* Уменьшаем отступ с правой стороны */
             top: 20px; /* Отступ сверху для лучшего расположения */
-            padding: 5px 15px;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         #menu-button::before {
             content: "Меню";
             font-size: 16px;
-            color: #333;
+            color: #ffffff;
         }
 
         .button-container {
@@ -137,6 +148,7 @@
             align-items: center;
             width: 100%; /* Растягиваем на всю ширину контейнера */
             margin-top: auto; /* Автоматический верхний отступ для выравнивания внизу */
+            padding: 10px;
         }
 
         /* Кнопки управления */
@@ -164,8 +176,8 @@
             display: flex;
             justify-content: center; /* Центрируем элементы */
             align-items: center;
-            width: 80%; /* Растягиваем контейнер на всю ширину */
-            padding-right: 10px;
+            width: 100%; /* Растягиваем контейнер на всю ширину */
+            padding-right: 0px;
             margin-top: 0px;
             position: relative; /* Для абсолютного позиционирования кнопки меню */
         }
@@ -204,14 +216,16 @@
         if (Telegram.WebApp.themeParams.backgroundColor) {
             document.body.style.backgroundColor = Telegram.WebApp.themeParams.backgroundColor;
         }
-
+    
         let currentCardIndex = 0;
         let cardsData = [];
         let cardPriorities = {}; // Объект для хранения приоритетов карточек
         let goodButtonPressCount = {}; // Счетчик для кнопки "Помню хорошо"
         let removedCards = []; // Массив удаленных карточек для временного исключения
         let currentAudio = null; // To keep track of the current audio object
-
+        let sleepDuration = 30 * 60 * 1000; // 30 минут в миллисекундах
+        let countdownInterval = null;
+    
         // Загружаем данные и создаем карточки
         document.addEventListener('DOMContentLoaded', () => {
             fetch('cards.json')
@@ -223,17 +237,38 @@
                 })
                 .then(data => {
                     cardsData = data;
-                    // Инициализируем приоритеты карточек и счетчики нажатий
-                    cardsData.forEach((card, index) => {
-                        cardPriorities[index] = { priority: 0 }; // Начальный приоритет для каждой карточки
-                        goodButtonPressCount[index] = 0; // Счетчик для каждой карточки
-                    });
-                    shuffleArray(cardsData); // Перемешиваем карточки
-                    showNextCard();
+                    initializeCardData();
+                    shuffleArray(cardsData);
+                    
+                    // Проверяем состояние таймера в localStorage
+                    const sleepEndTime = localStorage.getItem('sleepEndTime');
+                    if (sleepEndTime && Date.now() < sleepEndTime) {
+                        startSleepTimer(sleepEndTime - Date.now());
+                    } else {
+                        showNextCard();
+                    }
                 })
                 .catch(error => console.error('Ошибка загрузки JSON:', error));
         });
-
+    
+        // Инициализация данных карточек в localStorage
+        function initializeCardData() {
+            cardsData.forEach((card, index) => {
+                const cardData = localStorage.getItem(`card_${index}`);
+                if (cardData) {
+                    cardPriorities[index] = JSON.parse(cardData).priority;
+                } else {
+                    cardPriorities[index] = { priority: 0 };
+                }
+                goodButtonPressCount[index] = 0;
+            });
+        }
+    
+        // Функция для сохранения данных карточки в localStorage
+        function saveCardData(index) {
+            localStorage.setItem(`card_${index}`, JSON.stringify({ priority: cardPriorities[index].priority }));
+        }
+    
         // Функция для случайного перемешивания массива
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
@@ -241,7 +276,7 @@
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
-
+    
         // Функция для показа следующей карточки
         function showNextCard() {
             const currentCard = document.querySelector('.card');
@@ -253,13 +288,13 @@
                 if (currentCardIndex >= cardsData.length) {
                     currentCardIndex = 0;
                 }
-
+    
                 if (cardsData.length > 0) {
                     createCard(cardsData[currentCardIndex]);
                 } else {
-                    alert('Все карточки в настоящее время удалены.');
+                    startSleepTimer(sleepDuration); // Запускаем таймер для сна карточек
                 }
-
+    
                 const newCard = document.querySelector('.card');
                 if (newCard) {
                     newCard.style.opacity = 0; // Установить новую карточку невидимой
@@ -269,12 +304,12 @@
                 }
             }, 500);
         }
-
+    
         // Функция для создания карточки
         function createCard(cardData) {
             const container = document.getElementById('card-container');
             container.innerHTML = ''; // Очистить контейнер перед добавлением новой карточки
-
+    
             const card = document.createElement('div');
             card.classList.add('card');
             
@@ -288,68 +323,76 @@
             const img = document.createElement('img');
             img.src = cardData.image;
             cardFront.appendChild(img);
-                        cardFront.addEventListener('click', () => {
+            cardFront.addEventListener('click', () => {
                 card.classList.add('flipped');
             });
             
             // Back of the card
             const cardBack = document.createElement('div');
             cardBack.classList.add('card-back');
-            
+    
             const koreanWord = document.createElement('p');
             koreanWord.textContent = cardData.korean;
-            
+    
             const russianWord = document.createElement('p');
             russianWord.textContent = cardData.russian;
-
+    
             cardBack.appendChild(koreanWord);
             cardBack.appendChild(russianWord);
-            
+    
+            // Here we add the event listener to the back of the card as well
+            cardBack.addEventListener('click', () => {
+                card.classList.remove('flipped');
+            });
+    
             cardInner.appendChild(cardFront);
             cardInner.appendChild(cardBack);
             card.appendChild(cardInner);
-
+    
             // Add the card to the container
             container.appendChild(card);
-
+    
             // Play sound for the created card
             playSound(cardData.audio);
         }
-
-        // Function to play sound
+    
         function playSound(audioSrc) {
-            // If there's an existing audio playing, stop it first
-            if (currentAudio) {
-                currentAudio.pause();
-                currentAudio.currentTime = 0;
-            }
+    // If there's an existing audio playing, stop it first
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+    }
 
-            // Create a new audio object and play it
-            currentAudio = new Audio(audioSrc);
-            currentAudio.play();
+    // Create a new audio object
+    currentAudio = new Audio(audioSrc);
 
-            // Disable sound button until audio finishes playing
-            document.getElementById('sound-button').style.pointerEvents = 'none';
+    // Try to play the audio
+    currentAudio.play().catch(error => {
+        console.log('Autoplay was prevented:', error);
+    });
 
-            currentAudio.onended = () => {
-                // Re-enable the sound button after the audio finishes
-                document.getElementById('sound-button').style.pointerEvents = 'auto';
-            };
-        }
-
+    // Отслеживаем завершение воспроизведения
+    currentAudio.onended = () => {
+        // Оставляем кнопку звука активной после окончания воспроизведения
+        document.getElementById('sound-button').style.pointerEvents = 'auto';
+    };
+}
+    
         // Обработка кнопок "Помню плохо" и "Помню хорошо"
         document.getElementById('bad-button').addEventListener('click', () => {
             cardPriorities[currentCardIndex].priority += 1; // Увеличиваем приоритет
             goodButtonPressCount[currentCardIndex] = 0; // Сбросить счетчик "Помню хорошо"
+            saveCardData(currentCardIndex);
             currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Переход к следующей карточке
             showNextCard(); // Показываем следующую карточку
         });
-
+    
         document.getElementById('good-button').addEventListener('click', () => {
             const indexToRemove = currentCardIndex; // Сохраняем индекс текущей карточки
             cardPriorities[indexToRemove].priority -= 1; // Уменьшаем приоритет
             goodButtonPressCount[indexToRemove] += 1; // Увеличиваем счетчик "Помню хорошо"
-
+            saveCardData(indexToRemove);
+    
             // Если нажали дважды "Помню хорошо", исключаем карточку на 30 минут
             if (goodButtonPressCount[indexToRemove] >= 2) {
                 removeCardTemporarily(indexToRemove);
@@ -358,56 +401,113 @@
                 showNextCard(); // Показываем следующую карточку
             }
         });
-
+    
         // Обработка кнопки "Отлично помню"
         document.getElementById('excellent-button').addEventListener('click', () => {
             removeCardPermanently(currentCardIndex); // Убираем карточку из колоды
         });
-
+    
         // Функция для временного удаления карточки на 30 минут
         function removeCardTemporarily(cardIndex) {
             const removedCard = cardsData[cardIndex]; // Сохраняем удаляемую карточку
             cardsData.splice(cardIndex, 1); // Удаляем карточку из колоды
             removedCards.push(removedCard); // Добавляем карточку в массив удаленных
-            
-            setTimeout(() => {
-                cardsData.push(removedCard); // Добавляем карточку обратно в колоду
-                removedCards.splice(removedCards.indexOf(removedCard), 1); // Удаляем из массива удаленных
-                shuffleArray(cardsData); // Перемешиваем колоду после возврата карточки
-            }, 1800000); // 30 минут = 1800000 миллисекунд
-
-            // Обновляем индексы для правильного отображения следующей карточки
-            if (currentCardIndex >= cardsData.length) {
-                currentCardIndex = 0;
+            saveCardData(cardIndex);
+    
+            // Если все карточки временно удалены, запускаем таймер сна
+            if (cardsData.length === 0) {
+                startSleepTimer(sleepDuration);
             }
-            showNextCard(); // Показываем следующую карточку
         }
+    
+        // Функция для запуска таймера сна карточек
+        function startSleepTimer(duration) {
+    const container = document.getElementById('card-container');
+    container.innerHTML = ''; // Очистить контейнер
 
-        // Функция для постоянного удаления карточки
-        function removeCardPermanently(cardIndex) {
-            cardsData.splice(cardIndex, 1); // Удаляем карточку из колоды навсегда
-            if (currentCardIndex >= cardsData.length) {
-                currentCardIndex = 0; // Если индекс вне диапазона, сбросить на 0
-            }
-            showNextCard(); // Показываем следующую карточку
-        }
+    // Создаем обертку для центрирования текста и таймера
+    const wrapper = document.createElement('div');
+    wrapper.style.display = 'flex';
+    wrapper.style.flexDirection = 'column';
+    wrapper.style.justifyContent = 'center';
+    wrapper.style.alignItems = 'center';
+    wrapper.style.height = '100%'; // Занимаем всю высоту контейнера
+    wrapper.style.fontFamily = 'CoockieRun, Arial, sans-serif'; // Используем подключенный шрифт
+    wrapper.style.paddingTop = '200px';
 
-        // Обработка кнопки звука
-        document.getElementById('sound-button').addEventListener('click', () => {
-            if (currentAudio && currentAudio.paused) {
-                currentAudio.play();
-            }
-        });
+    // Создаем сообщение "Карточки закончились"
+    const message = document.createElement('div');
+    message.textContent = 'Карточки закончились';
+    message.style.fontSize = '24px';
+    message.style.color = '#333';
+    message.style.textAlign = 'center';
+    message.style.marginBottom = '10px'; // Отступ между текстом и таймером
 
-        // Функция для отображения меню (пустая пока что)
-        function showMenu() {
-            window.location.href = 'index.html'; // Временная реализация для отображения, что меню открыто
+    // Создаем элемент для таймера
+    const countdownElement = document.createElement('div');
+    countdownElement.style.fontSize = '20px';
+
+    // Добавляем элементы в обертку
+    wrapper.appendChild(message);
+    wrapper.appendChild(countdownElement);
+    container.appendChild(wrapper);
+
+    // Устанавливаем время завершения таймера в localStorage
+    const sleepEndTime = Date.now() + duration;
+    localStorage.setItem('sleepEndTime', sleepEndTime);
+
+    // Начинаем обратный отсчет
+    let countdown = Math.floor(duration / 1000); // Время обратного отсчета в секундах
+    countdownElement.textContent = `Новые карточки через: ${Math.floor(countdown / 60)}:${countdown % 60 < 10 ? '0' : ''}${countdown % 60}`;
+
+    // Запуск таймера обратного отсчета
+    countdownInterval = setInterval(() => {
+        countdown--;
+        countdownElement.textContent = `Новые карточки через: ${Math.floor(countdown / 60)}:${countdown % 60 < 10 ? '0' : ''}${countdown % 60}`;
+        if (countdown <= 0) {
+            clearInterval(countdownInterval);
+            resetCardDeck(); // Перезапустить карточки
         }
-         // Телеграмм расширение для получения размеров окна
- if (window.Telegram.WebApp) {
-            Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
+    }, 1000);
+}
+
+    // Функция для возврата карточек после сна
+    function resetCardDeck() {
+        localStorage.removeItem('sleepEndTime'); // Удаляем время окончания сна из localStorage
+        cardsData = cardsData.concat(removedCards); // Возвращаем временно удаленные карточки
+        removedCards = []; // Очищаем массив удаленных карточек
+        shuffleArray(cardsData); // Перемешиваем колоду
+        currentCardIndex = 0; // Сбрасываем индекс текущей карточки
+        showNextCard(); // Показываем следующую карточку
+    }
+
+    // Функция для постоянного удаления карточки
+    function removeCardPermanently(cardIndex) {
+        cardsData.splice(cardIndex, 1); // Удаляем карточку из колоды навсегда
+        if (currentCardIndex >= cardsData.length) {
+            currentCardIndex = 0; // Если индекс вне диапазона, сбросить на 0
         }
-    </script>
+        showNextCard(); // Показываем следующую карточку
+    }
+
+    // Обработка кнопки звука
+    document.getElementById('sound-button').addEventListener('click', () => {
+        if (currentAudio && currentAudio.paused) {
+            currentAudio.play();
+        }
+    });
+
+    // Функция для отображения меню (пустая пока что)
+    function showMenu() {
+        window.location.href = 'index.html'; // Временная реализация для отображения, что меню открыто
+    }
+
+    // Телеграмм расширение для получения размеров окна
+    if (window.Telegram.WebApp) {
+        Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
+    }
+</script>
+
     
 </body>
 </html>
