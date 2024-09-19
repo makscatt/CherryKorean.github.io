@@ -37,7 +37,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color: white;
+            background-color: rgb(247, 246, 246);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -68,17 +68,18 @@
         /* Ваши стили для карточек */
         .card {
             width: 300px;
-            height: 450px;
+            aspect-ratio: 9 / 16;
             perspective: 1000px;
             margin: 0 auto;
             opacity: 1;
             transition: opacity 0.3s;
+            
         }
 
         .card-inner {
             position: relative;
             width: 100%;
-            height: 100%;
+            aspect-ratio: 9 / 16;
             transition: transform 0.3s;
             transform-style: preserve-3d;
         }
@@ -90,7 +91,7 @@
         .card-front, .card-back {
             position: absolute;
             width: 100%;
-            height: 100%;
+            aspect-ratio: 9 / 16;
             backface-visibility: hidden;
             padding: 0px;
             
@@ -99,10 +100,11 @@
 
         .card-front {
             background: #fff;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .card-back {
-            background: #f8f8f8;
+            background: #ffffff;
             transform: rotateY(180deg);
             display: flex;
             flex-direction: column;
@@ -112,7 +114,7 @@
             font-size: 35px;
             font-family: 'CoockieRun', sans-serif;
             color: #333;
-            border: 1px solid black;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         img {
@@ -202,6 +204,8 @@
                 <button class="control-button excellent" id="excellent-button">Отлично помню</button>
             </div>
             <div id="sound-button-container">
+                <button id="resetProgressButton" onclick="resetProgress()">Сброс</button>
+
                 <div id="menu-button" onclick="showMenu()"></div>
                 <img src="sound_on.png" id="sound-button" alt="Включить звук" />
             </div>
@@ -247,10 +251,17 @@
                     } else {
                         showNextCard();
                     }
+                    
                 })
                 .catch(error => console.error('Ошибка загрузки JSON:', error));
         });
-    
+        function resetProgress() {
+    // Сбрасываем сохраненные данные в localStorage или в переменных
+    localStorage.clear(); // Если вы используете localStorage для сохранения прогресса
+
+    location.reload();
+}
+
         // Инициализация данных карточек в localStorage
         function initializeCardData() {
             cardsData.forEach((card, index) => {

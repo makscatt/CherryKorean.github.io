@@ -1,26 +1,45 @@
 [
     {
-      "image": "cards/케이크.png",
-      "audio": "cards/audio/케이크.mp3",
-      "korean": "케이크",
-      "russian": "Торт"
+      "image": "cards/안녕.png",
+      "audio": "cards/audio/안녕.mp3",
+      "korean": "안녕",
+      "russian": "Привет"
     },
     {
-      "image": "cards/케이크 먹어요.png",
-      "audio": "cards/audio/케이크 먹어요.mp3",
-      "korean": "케이크 먹어요",
-      "russian": "Ем торт"
+      "image": "cards/안녕하세요.png",
+      "audio": "cards/audio/안녕하세요.mp3",
+      "korean": "안녕하세요",
+      "russian": "Здравствуйте"
     },
     {
-        "image": "cards/고양이.png",
-        "audio": "cards/audio/고양이.mp3",
-        "korean": "고양이",
-        "russian": "Кошка"
-      },
-      {
-        "image": "cards/고양이 만져요.png",
-        "audio": "cards/audio/고양이 만져요.mp3",
-        "korean": "고양이 만져요",
-        "russian": "Глажу кошку"
-      }
+      "image": "cards/잘 가요.png",
+      "audio": "cards/audio/잘 가요.mp3",
+      "korean": "잘 가요",
+      "russian": "До свидания/Хорошего пути"
+    },
+    {
+      "image": "cards/감사합니다.png",
+      "audio": "cards/audio/감사합니다.mp3",
+      "korean": "감사합니다",
+      "russian": "Спасибо"
+    },
+    {
+      "image": "cards/저기요.png",
+      "audio": "cards/audio/저기요.mp3",
+      "korean": "저기요",
+      "russian": "Можно вас? Когда хотим обратиться к незнакомцу"
+    },
+    {
+      "image": "cards/잘 지냈어요.png",
+      "audio": "cards/audio/잘 지냈어요.mp3",
+      "korean": "잘 지냈어요?",
+      "russian": "У вас все хорошо?/Хорошо поживаете?"
+    },
+    {
+      "image": "cards/괜찮아요.png",
+      "audio": "cards/audio/괜찮아요.mp3",
+      "korean": "괜찮아요",
+      "russian": "Все в порядке"
+    }
+ 
   ]
