@@ -392,28 +392,29 @@
 }
     
         // Обработка кнопок "Помню плохо" и "Помню хорошо"
-        document.getElementById('bad-button').addEventListener('click', () => {
-            cardPriorities[currentCardIndex].priority += 1; // Увеличиваем приоритет
-            goodButtonPressCount[currentCardIndex] = 0; // Сбросить счетчик "Помню хорошо"
-            saveCardData(currentCardIndex);
-            currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Переход к следующей карточке
-            showNextCard(); // Показываем следующую карточку
-        });
-    
-        document.getElementById('good-button').addEventListener('click', () => {
-            const indexToRemove = currentCardIndex; // Сохраняем индекс текущей карточки
-            cardPriorities[indexToRemove].priority -= 1; // Уменьшаем приоритет
-            goodButtonPressCount[indexToRemove] += 1; // Увеличиваем счетчик "Помню хорошо"
-            saveCardData(indexToRemove);
-    
-            // Если нажали дважды "Помню хорошо", исключаем карточку на 30 минут
-            if (goodButtonPressCount[indexToRemove] >= 2) {
-                removeCardTemporarily(indexToRemove);
-            } else {
-                currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Переход к следующей карточке
-                showNextCard(); // Показываем следующую карточку
-            }
-        });
+       // Обработка кнопок "Помню плохо" и "Помню хорошо"
+document.getElementById('bad-button').addEventListener('click', () => {
+    cardPriorities[currentCardIndex].priority += 1; // Увеличиваем приоритет
+    goodButtonPressCount[currentCardIndex] = 0; // Сбросить счетчик "Помню хорошо"
+    saveCardData(currentCardIndex);
+    currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Переход к следующей карточке
+    showNextCard(); // Показываем следующую карточку
+});
+
+document.getElementById('good-button').addEventListener('click', () => {
+    const indexToRemove = currentCardIndex; // Сохраняем индекс текущей карточки
+    cardPriorities[indexToRemove].priority -= 1; // Уменьшаем приоритет
+    goodButtonPressCount[indexToRemove] += 1; // Увеличиваем счетчик "Помню хорошо"
+    saveCardData(indexToRemove);
+
+    // Если нажали дважды "Помню хорошо", исключаем карточку на 30 минут
+    if (goodButtonPressCount[indexToRemove] >= 2) {
+        removeCardTemporarily(indexToRemove);
+    } else {
+        currentCardIndex = (currentCardIndex + 1) % cardsData.length; // Переход к следующей карточке
+        showNextCard(); // Показываем следующую карточку
+    }
+});
     
         // Обработка кнопки "Отлично помню"
         document.getElementById('excellent-button').addEventListener('click', () => {
