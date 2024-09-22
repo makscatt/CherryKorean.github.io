@@ -23,13 +23,17 @@
         }
 
         #wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+    height: auto; /* Высота автоматически определяется на основе aspect-ratio */
+    aspect-ratio: 9 / 16; /* Соотношение сторон 9:16 */
+   
+    overflow: hidden;
+    border: 1px solid #6f00ff;
+}
 
         #gameContainer {
             display: flex;
@@ -48,6 +52,7 @@
             aspect-ratio: 9 / 16;
             max-width: 400px; 
             max-height: 90vh; /* Используем относительную единицу измерения */
+            border: 1px solid #ff0000;
         }
 
         #word {
@@ -74,26 +79,25 @@
         }
 
         button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 30px;
+            margin: 5px;
+            padding: 5px 10px;
+            font-size: 35px;
             cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
+            background-color: #616161;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 2px 4px #616161;
             border-radius: 5px;
-            box-shadow: 0 4px #999;
             transition: all 0.1s ease-in-out;
         }
 
         button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 2px #666;
+            background-color: #8ac1ff;
+            box-shadow: 0 1px 8px #616161;
             transform: translateY(4px);
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #8ac1ff;
         }
 
         h1 {
@@ -117,21 +121,40 @@
         #levelComplete {
             margin-top: 20px;
             font-size: 18px;
-            color: blue;
+            color: rgb(47, 127, 255);
             font-weight: bold;
         }
-
-        #resetProgressButton {
+        #menu-button {
             position: absolute;
-            right: 10px;
-            bottom: 10px;
-            padding: 5px 10px;
-            font-size: 12px;
-            background-color: #f44336;
+            right: 10px; /* Уменьшаем отступ с правой стороны */
+            top: 10px; /* Отступ сверху для лучшего расположения */
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 20px;
+            background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+        }
+        #resetProgressButton {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 10px; /* Отступ слева в 10px от края экрана или контейнера */
+    top: 10px; 
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#resetProgressButton:before {
+            content: "Сброс";
+            font-size: 16px;
+            color: #ffffff;
         }
 
         #resetProgressButton:hover {
@@ -146,10 +169,10 @@
         #stars {
             font-size: 30px;
             position: absolute;
-            bottom: 30px;
+            left: 10px; /* Отступ слева в 10px от края экрана или контейнера */
             left: 50%;
             transform: translateX(-50%);
-            display: inline-block;
+            
         }
 
         #stars.pulsing {
@@ -173,8 +196,8 @@
 
         #restartButton {
             display: none;
-            margin: 10px auto;
-            padding: 10px 20px;
+            margin: 10px;
+            padding-top: 10px;
             font-size: 16px;
             cursor: pointer;
             background-color: #2196F3;
@@ -192,21 +215,19 @@
             transform: translateY(4px);
         }
 
-        #restartButton:hover {
-            background-color: #1E88E5;
-        }
+        
 
         #continueButton {
-            margin: 10px;
-            padding: 10px 20px;
+            
+            
             font-size: 16px;
             cursor: pointer;
             background-color: #2196F3;
             color: white;
             border: none;
             border-radius: 5px;
-            box-shadow: 0 4px #999;
-            transition: all 0.1s ease-in-out;
+            box-shadow: 0 2px 4px #999;
+            transition: all 0.2s ease-in-out;
             display: none;
         }
 
@@ -232,43 +253,79 @@
             text-align: center;
             margin: 0;
         }
-        #menuButton {
-    position: absolute;
-   right: 10px; 
-    bottom: 50px; /* Отступ снизу */
-    padding: 5px 10px;
-    font-size: 30px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+       #word-container{
+        display: block;
+        margin-bottom: 10px;
+        justify-content: center; /* Центрируем элементы */
+        align-items: center;
+        width: 100%; /* Растягиваем контейнер на всю ширину */
+        height: 300px; 
+        border: 1px solid #49ffe1;
+       }
 
-#menuButton:hover {
-    background-color: #45a049; /* Цвет при наведении */
-}
+        #menu-button::before {
+            content: "Меню";
+            font-size: 16px;
+            color: #ffffff;
+        }
+        #menu-button-container {
+            position: absolute;
+            bottom: 0;
+            height: 70px; /* Фиксированная высота */
+            display: flex;
+            justify-content: center; /* Центрируем элементы */
+            align-items: center;
+            width: 100%; /* Растягиваем контейнер на всю ширину */
+         margin: 5;
+         left: 0; /* Чтобы зафиксировать по ширине */
+         right: 0; /* Чтобы зафиксировать по ширине */
+            border: 1px solid #ddd;
+        }
+        #control-button-container {
+          
+            height: 70px; /* Фиксированная высота */
+            display: flex;
+            justify-content: center; /* Центрируем элементы */
+            align-items: center;
+            width: 100%; /* Растягиваем контейнер на всю ширину */
+            padding-top: 0px;
+            padding-right: 0px;
+            margin-top: 0px;
+            position: relative;
+           
+            border: 1px solid #00ff11;
+        }
+        
     </style>
 </head>
 <body>
     <div id="wrapper">
         <div id="gameContainer">
             <h1>Угадай перевод с корейского!</h1>
-            <p id="phrase">Переведите слово:</p>
+            <div id="word-container">
             <p id="word"></p> 
             <button id="option1" onclick="checkWord(this)"></button>
             <button id="option2" onclick="checkWord(this)"></button>
             <p id="timer">Время: <span id="timeLeft">30</span> секунд</p>
             <p id="points">Очки: 0 / 10</p>
             <p id="level">Уровень: 1</p>
-            <p id="result"></p>
-            <p id="levelComplete"></p>
-            <p id="stars">⭐ 0</p>
-            <button id="menuButton" onclick="navigateToMenu()">Меню</button>
-            <button id="restartButton" onclick="startGame()" style="display:none;">Начать заново</button>
-            <button id="resetProgressButton" onclick="resetProgress()">Сбросить прогресс</button>
-            <button id="continueButton" onclick="startGame()">Продолжить</button>
         </div>
+         
+        <div id="control-button-container">
+              <p id="result"></p>
+            <p id="levelComplete"></p>
+            <button id="restartButton" onclick="startGame()" style="display:none;">Заново</button>
+            <button id="continueButton" onclick="startGame()">Следующий уровень</button>
+        </div>
+        
+        <div id="menu-button-container">
+            <p id="stars">⭐ 0</p>
+            <div id="resetProgressButton" onclick="resetProgress()"></div>
+            <div id="menu-button" onclick="showMenu()"></div>
+        </div>
+       
+        </div>
+        
     </div>
 
     <!-- Звук для анимации -->
@@ -301,9 +358,10 @@
 }
 
 
-function navigateToMenu() {
-    window.location.href = 'index.html'; // Переход на страницу меню
-}
+ // Функция для отображения меню (пустая пока что)
+ function showMenu() {
+        window.location.href = 'index.html'; // Временная реализация для отображения, что меню открыто
+    }
 
 function saveProgress() {
     localStorage.setItem("level", Game.level);
@@ -358,7 +416,7 @@ const Game = {
 
     currentLevelWords = [];  // Сбрасываем использованные слова для нового уровня
 
-    document.getElementById("levelComplete").innerText = `Уровень ${this.level - 1} пройден! Новый уровень: ${this.level}`;
+    document.getElementById("levelComplete").innerText = `Уровень ${this.level - 1}`;
     saveProgress();
     Game.updateUI();  // Обновляем интерфейс после начисления звездочек
     triggerStarPulse();  // Запускаем анимацию пульсации звезды
@@ -432,7 +490,7 @@ Game.levelUp = function() {
 
     currentLevelWords = [];  // Сбрасываем использованные слова для нового уровня
 
-    document.getElementById("levelComplete").innerText = `Уровень ${this.level - 1} пройден! Новый уровень: ${this.level}`;
+    document.getElementById("levelComplete").innerText = `Уровень ${this.level - 1} пройден!`;
     saveProgress();
     Game.updateUI();  // Обновляем интерфейс после начисления звездочек
     triggerStarPulse();  // Запускаем анимацию пульсации звезды
@@ -448,7 +506,7 @@ function timeRanOut() {
 
     // Вывод сообщения об окончании времени
     const resultElement = document.getElementById("result");
-    resultElement.innerText = "Время вышло! Начните уровень заново.";
+    resultElement.innerText = "Время вышло!\n Начните уровень заново.";
     resultElement.className = "time-out"; // Присваиваем красный цвет через класс
 
     // Показываем кнопку "Начать заново"
@@ -533,10 +591,10 @@ function checkWord(selectedButton) {
     if (selectedWord === correctWord) {
         Game.correctAnswers++;
         Game.points++;
-        updateResult("Правильно!", "correct");
+        updateResult("✅", "correct");
     } else {
         Game.points = Math.max(Game.points - 1, 0); // Уменьшаем очки на 1, не допуская отрицательных значений
-        updateResult("Неправильно!", "incorrect");
+        updateResult("❌", "incorrect");
     }
 
     Game.updateUI();  // Обновляем интерфейс

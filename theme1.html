@@ -126,18 +126,17 @@
         /* Изменяем стили для меню */
         /* Кнопка меню */
         #menu-button {
-            position: absolute;
-            right: 10px; /* Уменьшаем отступ с правой стороны */
-            top: 20px; /* Отступ сверху для лучшего расположения */
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+            position: absolute; /* Абсолютное позиционирование */
+    right: 30px; /* Отступ слева в 10px от края экрана или контейнера */
+    top: 20px; /* Отступ сверху, можно настроить по желанию */
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+        } 
 
         #menu-button::before {
             content: "Меню";
@@ -164,34 +163,53 @@
             cursor: pointer;
             font-size: 16px;
             margin-right: 10px; /* Отступ между кнопками */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Добавляем тень */
             
         }
 
         .control-button.bad {
             background-color: #f44336;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Добавляем тень */
         }
 
         .control-button.excellent {
             background-color: #2196F3; /* Синий цвет для кнопки "Отлично помню" */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Добавляем тень */
         }
 
         /* Обновляем контейнер кнопок */
         #sound-button-container {
-            display: flex;
-            justify-content: center; /* Центрируем элементы */
-            align-items: center;
-            width: 100%; /* Растягиваем контейнер на всю ширину */
-            padding-right: 0px;
-            margin-top: 0px;
-            position: relative; /* Для абсолютного позиционирования кнопки меню */
-        }
+    display: flex;
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center;
+    width: 100%; /* Растягиваем контейнер на всю ширину */
+    
+    padding-right: 0px;
+    margin-top: 0px;
+    position: absolute; /* Абсолютное позиционирование относительно родительского элемента */
+    bottom: 0; /* Привязка к нижнему краю родительского элемента */
+    left: 0; /* Выравнивание по левой стороне */
+    padding-bottom: 10px; /* Опционально: небольшой отступ от нижнего края */
+}
 
         /* Центрирование кнопки звука */
         #sound-button {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             cursor: pointer;
         }
+        #resetProgressButton {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; /* Отступ слева в 10px от края экрана или контейнера */
+    top: 20px; /* Отступ сверху, можно настроить по желанию */
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -205,12 +223,15 @@
                 <button class="control-button good" id="good-button">Помню хорошо</button>
                 <button class="control-button excellent" id="excellent-button">Отлично помню</button>
             </div>
+            
             <div id="sound-button-container">
-                <button id="resetProgressButton" onclick="resetProgress()">Сброс</button>
+                
 
                 <div id="menu-button" onclick="showMenu()"></div>
                 <img src="sound_on.png" id="sound-button" alt="Включить звук" />
+                <button id="resetProgressButton" onclick="resetProgress()">Сброс</button>
             </div>
+          
         </div>
     </div>
 
@@ -234,7 +255,7 @@
     
         // Загружаем данные и создаем карточки
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('cards.json')
+            fetch('theme1.json')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
@@ -486,14 +507,23 @@ document.getElementById('good-button').addEventListener('click', () => {
 }
 
     // Функция для возврата карточек после сна
-    function resetCardDeck() {
-        localStorage.removeItem('sleepEndTime'); // Удаляем время окончания сна из localStorage
-        cardsData = cardsData.concat(removedCards); // Возвращаем временно удаленные карточки
-        removedCards = []; // Очищаем массив удаленных карточек
-        shuffleArray(cardsData); // Перемешиваем колоду
-        currentCardIndex = 0; // Сбрасываем индекс текущей карточки
-        showNextCard(); // Показываем следующую карточку
-    }
+    // Функция для возврата карточек после сна
+function resetCardDeck() {
+    localStorage.removeItem('sleepEndTime'); // Удаляем время окончания сна из localStorage
+    cardsData = cardsData.concat(removedCards); // Возвращаем временно удаленные карточки
+    removedCards = []; // Очищаем массив удаленных карточек
+
+    // Сбрасываем приоритеты всех карточек
+    cardsData.forEach((card, index) => {
+        cardPriorities[index] = { priority: 0 }; // Сбрасываем приоритет на 0
+        saveCardData(index); // Сохраняем изменения
+    });
+
+    shuffleArray(cardsData); // Перемешиваем колоду
+    currentCardIndex = 0; // Сбрасываем индекс текущей карточки
+    showNextCard(); // Показываем следующую карточку
+}
+
 
     // Функция для постоянного удаления карточки
     function removeCardPermanently(cardIndex) {

@@ -6,7 +6,7 @@
     <title>Темы</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
-        body {
+      body {
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,63 +17,105 @@
             font-family: Arial, sans-serif;
         }
 
+        /* Контейнер для игры */
         #wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Контейнер с соотношением сторон 9:16 */
+        #startScreen {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgb(247, 246, 246);
+            text-align: center;
+            background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
             margin: auto;
-            width: 90vw;
+            width: 90vw; /* Используем относительную единицу измерения */
             height: auto;
             aspect-ratio: 9 / 16;
             max-width: 400px;
-            max-height: 90vh;
+            max-height: 90vh; /* Используем относительную единицу измерения */
+            overflow: hidden;
+        }
+
+        /* Контейнер для кнопок */
+        #themes-container {
+            position: absolute;
+            top: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%; /* Высота контейнера для тем */
+            border: 1px solid #49ffe1;
+        
+            overflow-y: auto;
         }
 
         .theme-grid {
+            position: absolute;
+            top: 10px;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr); /* Сетка 3x4 */
             grid-gap: 10px;
-            margin-bottom: 20px;
+            margin: 10px 0; /* Отступы сверху и снизу */
         }
 
         .theme-button {
-            width: 130px; /* Устанавливаем фиксированную ширину */
-            height: 130px; /* Устанавливаем фиксированную высоту */
+            width: 120px;
+            height: 120px;
             background-size: cover;
             background-position: center;
             border: none;
-            border-radius: 11px;
+            border-radius: 12px;
             cursor: pointer;
-            border: 1px solid #ddd; /* Временная граница для видимости */
+            border: 1px solid #7e7e7e;
         }
 
-        .navigation-bar {
+        #navigation-bar-container {
+            position: absolute;
+            bottom: 0px;
+        
+            height: 70px;
             display: flex;
             justify-content: space-between;
+            gap: 5px;
+            align-items: center;
             width: 100%;
+            padding: 0 10px;
+            border: 1px solid #ff0000;
         }
 
-        .nav-button {
+        #back-button, #forward-button, #menu-button {
             padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
+            font-size: 20px;
             background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-right: 20px; /* Расстояние между кнопками */
+            margin-left: 20px;
         }
+     
     </style>
 </head>
 <body>
     <div id="wrapper">
-        <div class="theme-grid">
+        <div id="startScreen">
+            <div id="themes-container">
+                <div class="theme-grid">
             <!-- Кнопки тем, расположенные в сетке 3x4 -->
             <div class="theme-button" style="background-image: url('themes/theme1.png');" onclick="selectTheme(1)"></div>
             <div class="theme-button" style="background-image: url('themes/theme2.png');" onclick="selectTheme(2)"></div>
@@ -88,15 +130,24 @@
             <div class="theme-button" style="background-image: url('themes/theme11.png');" onclick="selectTheme(11)"></div>
             <div class="theme-button" style="background-image: url('themes/theme12.png');" onclick="selectTheme(12)"></div>
         </div>
-
-        <div class="navigation-bar">
-            <button class="nav-button" onclick="navigate('back')">Назад</button>
-            <button class="nav-button" onclick="navigate('forward')">Вперед</button>
-            <button class="nav-button" onclick="navigate('menu')">Меню</button>
+    </div>
+        <div id="navigation-bar-container">
+            <div id="back-button" onclick="previousPage()">Назад</div>
+            <div id="forward-button" onclick="nextPage()">Вперед</div>
+            <div id="menu-button" onclick="showMenu()">Меню</div>
         </div>
     </div>
-
+</div>
     <script>
+         function previousPage() {
+        window.location.href = 'themes.html'; // Временная реализация для отображения, что меню открыто
+    }
+         function nextPage() {
+        window.location.href = 'p2.html'; // Временная реализация для отображения, что меню открыто
+    }
+        function showMenu() {
+        window.location.href = 'index.html'; // Временная реализация для отображения, что меню открыто
+    }
         function selectTheme(themeId) {
             // Переход на соответствующую страницу темы
             window.location.href = 'theme' + themeId + '.html';
