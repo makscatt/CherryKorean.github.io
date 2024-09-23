@@ -104,17 +104,19 @@
         }
 
         #result {
-            font-weight: bold;
+            font-weight: normal;
             font-size: 18px;
-            margin-top: 10px;
+            margin: 10px;
         }
 
         .correct {
-            color: green;
+                        color: green;
+                        font-size: 80px; 
         }
 
         .incorrect {
-            color: red;
+                       color: red;
+            font-size: 80px; 
         }
 
         #levelComplete {
@@ -584,10 +586,10 @@ function checkWord(selectedButton) {
     if (selectedWord === correctWord) {
         Game.correctAnswers++;
         Game.points++;
-        updateResult("✅", "correct");
+        updateResult("Верно✅", "correct");
     } else {
         Game.points = Math.max(Game.points - 1, 0); // Уменьшаем очки на 1, не допуская отрицательных значений
-        updateResult("❌", "incorrect");
+        updateResult("Неверно❌", "incorrect");
     }
 
     Game.updateUI();  // Обновляем интерфейс
@@ -627,8 +629,18 @@ function resetUI() {
 }
 
 function updateResult(message, className) {
-    document.getElementById("result").innerText = message;
-    document.getElementById("result").className = className;
+    const resultElement = document.getElementById("result");
+    resultElement.innerText = message;
+    resultElement.className = className;
+
+    // Устанавливаем специфический размер шрифта для каждого класса
+    if (className === "correct") {
+        resultElement.style.fontSize = "30px"; // Для правильного ответа
+    } else if (className === "incorrect") {
+        resultElement.style.fontSize = "30px"; // Для неправильного ответа
+    } else {
+        resultElement.style.fontSize = "18px"; // Размер по умолчанию
+    }
 }
 
 // Обработчик для кнопки "Начать заново"
