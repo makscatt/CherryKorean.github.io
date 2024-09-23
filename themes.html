@@ -30,36 +30,35 @@
 
         /* Контейнер с соотношением сторон 9:16 */
         #startScreen {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-            margin: auto;
-            width: 90vw; /* Используем относительную единицу измерения */
-            height: auto;
-            aspect-ratio: 9 / 16;
-            max-width: 400px;
-            max-height: 90vh; /* Используем относительную единицу измерения */
-            overflow: hidden;
-        }
-
+    position: relative; /* Устанавливаем родительский контейнер как относительный */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 90vw;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    max-width: 400px;
+    max-height: 90vh;
+    overflow: hidden;
+}
+        
         /* Контейнер для кнопок */
         #themes-container {
-            position: absolute;
-            top: 0px;
+           position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 100%; /* Высота контейнера для тем */
             border: 1px solid #49ffe1;
-        
+            margin-bottom: 10%; 
             overflow-y: auto;
         }
 
@@ -84,36 +83,38 @@
         }
 
         #navigation-bar-container {
-            position: absolute;
-            bottom: 0px;
-        
-            height: 70px;
-            display: flex;
-            justify-content: space-between;
-            gap: 5px;
-            align-items: center;
-            width: 100%;
-            padding: 0 10px;
-            border: 1px solid #ff0000;
-        }
-
-        #back-button, #forward-button, #menu-button {
-            padding: 10px 20px;
-            font-size: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 20px; /* Расстояние между кнопками */
-            margin-left: 20px;
-        }
+    position: absolute;
+    bottom: 10px; /* Отступ от нижнего края */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Подгоняем под ширину родителя */
+    padding: 0 10px;
+    box-sizing: border-box; /* Убедимся, что padding не влияет на размеры */
+    border: 1px solid #ff0000; /* Для отладки */
+}
+#back-button, #forward-button, #menu-button {
+    padding: 10px 20px;
+    font-size: 20px; /* Устанавливаем фиксированный размер шрифта */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    flex-shrink: 0; /* Убеждаемся, что кнопки не сжимаются */
+    box-sizing: border-box;
+    max-width: 100px; /* Фиксированный максимальный размер кнопок */
+    max-height: 50px; /* Фиксированный максимальный размер кнопок */
+}
      
     </style>
 </head>
 <body>
     <div id="wrapper">
-        <div id="startScreen">
+        <div id="startScreen" style="position: relative;">
             <div id="themes-container">
                 <div class="theme-grid">
             <!-- Кнопки тем, расположенные в сетке 3x4 -->

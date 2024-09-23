@@ -44,7 +44,7 @@
             background-color: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(138, 138, 138, 0.1);
             position: relative;
             margin: auto;
             width: 90vw; /* Используем относительную единицу измерения */
@@ -83,22 +83,21 @@
             padding: 5px 10px;
             font-size: 35px;
             cursor: pointer;
-            background-color: #616161;
+            background-color: #b7b7b7;
             color: rgb(255, 255, 255);
-            box-shadow: 0 2px 4px #616161;
+            box-shadow: 0 2px 4px #b7b7b7;
             border-radius: 5px;
             transition: all 0.1s ease-in-out;
+            border: none;
         }
 
         button:active {
-            background-color: #8ac1ff;
-            box-shadow: 0 1px 8px #616161;
+           
+            box-shadow: 0 1px 8px #b7b7b7;
             transform: translateY(4px);
         }
 
-        button:hover {
-            background-color: #8ac1ff;
-        }
+       
 
         h1 {
             margin-bottom: 20px;
@@ -124,19 +123,7 @@
             color: rgb(47, 127, 255);
             font-weight: bold;
         }
-        #menu-button {
-            position: absolute;
-            right: 10px; /* Уменьшаем отступ с правой стороны */
-            top: 10px; /* Отступ сверху для лучшего расположения */
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+       
         #resetProgressButton {
     position: absolute; /* Абсолютное позиционирование */
     left: 10px; /* Отступ слева в 10px от края экрана или контейнера */
@@ -151,11 +138,7 @@
     cursor: pointer;
     
 }
-#resetProgressButton:before {
-            content: "Сброс";
-            font-size: 16px;
-            color: #ffffff;
-        }
+
 
         #resetProgressButton:hover {
             background-color: #d32f2f;
@@ -204,14 +187,14 @@
             color: white;
             border: none;
             border-radius: 5px;
-            box-shadow: 0 4px #999;
+            box-shadow: 0 4px #b7b7b7;
             transition: all 0.1s ease-in-out;
             text-align: center;
         }
 
         #restartButton:active {
             background-color: #1976D2;
-            box-shadow: 0 2px #666;
+            box-shadow: 0 2px #b7b7b7;
             transform: translateY(4px);
         }
 
@@ -226,14 +209,14 @@
             color: white;
             border: none;
             border-radius: 5px;
-            box-shadow: 0 2px 4px #999;
+            box-shadow: 0 2px 4px #b7b7b7;
             transition: all 0.2s ease-in-out;
             display: none;
         }
 
         #continueButton:active {
             background-color: #1976D2;
-            box-shadow: 0 2px #666;
+            box-shadow: 0 2px #b7b7b7;
             transform: translateY(4px);
         }
 
@@ -263,14 +246,24 @@
         border: 1px solid #49ffe1;
        }
 
-        #menu-button::before {
-            content: "Меню";
-            font-size: 16px;
-            color: #ffffff;
-        }
+    
+        #menu-button {
+            position: absolute; /* Абсолютное позиционирование */
+    right: 20px; /* Отступ слева в 10px от края экрана или контейнера */
+    top: 10px; /* Отступ сверху, можно настроить по желанию */
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
         #menu-button-container {
             position: absolute;
-            bottom: 0;
+            bottom: 10px;
             height: 70px; /* Фиксированная высота */
             display: flex;
             justify-content: center; /* Центрируем элементы */
@@ -320,8 +313,8 @@
         
         <div id="menu-button-container">
             <p id="stars">⭐ 0</p>
-            <div id="resetProgressButton" onclick="resetProgress()"></div>
-            <div id="menu-button" onclick="showMenu()"></div>
+            <div id="resetProgressButton" onclick="resetProgress()">Сброс</div>
+            <div id="menu-button" onclick="showMenu()">Меню</div>
         </div>
        
         </div>

@@ -40,6 +40,37 @@
       "audio": "cards/audio/괜찮아요.mp3",
       "korean": "괜찮아요",
       "russian": "Все в порядке"
+    },
+    {
+      "image": "cards/몇 살이에요.png",
+      "audio": "cards/audio/몇 살이에요.mp3",
+      "korean": "몇 살이에요?",
+      "russian": "Сколько тебе/вам лет?"
+    },
+    {
+      "image": "cards/어디에서 왔어요.png",
+      "audio": "cards/audio/어디에서 왔어요.mp3",
+      "korean": "어디에서 왔어요?",
+      "russian": "Откуда вы?"
+    },
+    {
+      "image": "cards/좋은 하루 되세요.png",
+      "audio": "cards/audio/좋은 하루 되세요.mp3",
+      "korean": "좋은 하루 되세요",
+      "russian": "Хорошего вам дня"
+    },
+    {
+      "image": "cards/좋은 저녁 되세요.png",
+      "audio": "cards/audio/좋은 저녁 되세요.mp3",
+      "korean": "좋은 저녁 되세요",
+      "russian": "Хорошего вам вечера"
+    },
+    {
+      "image": "cards/잘 자요.png",
+      "audio": "cards/audio/잘 자요.mp3",
+      "korean": "잘 자요",
+      "russian": "Спокойной ночи"
     }
+ 
  
   ]
