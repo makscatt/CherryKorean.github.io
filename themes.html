@@ -86,7 +86,7 @@
 
         #navigation-bar-container {
     position: absolute;
-    bottom: 10px; /* Отступ от нижнего края */
+    bottom: 20px; /* Отступ от нижнего края */
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -105,12 +105,14 @@
     border-radius: 5px;
     cursor: pointer;
     margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 200px;
     flex-shrink: 0; /* Убеждаемся, что кнопки не сжимаются */
     box-sizing: border-box;
     max-width: 100px; /* Фиксированный максимальный размер кнопок */
     max-height: 50px; /* Фиксированный максимальный размер кнопок */
+    
 }
+
      
     </style>
 </head>
@@ -135,8 +137,8 @@
         </div>
     </div>
         <div id="navigation-bar-container">
-            <div id="back-button" onclick="previousPage()">Назад</div>
-            <div id="forward-button" onclick="nextPage()">Вперед</div>
+           <!--   <div id="back-button" onclick="previousPage()">Назад</div>-->
+           <!--   <div id="forward-button" onclick="nextPage()">Вперед</div>-->
             <div id="menu-button" onclick="showMenu()">Меню</div>
         </div>
     </div>
