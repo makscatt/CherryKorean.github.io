@@ -12,6 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100vw;
             height: 100vh;
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
@@ -24,7 +25,7 @@
             align-items: center;
             width: 100vw;
             height: 100vh;
-            overflow: hidden;
+            overflow: visible;
             position: relative;
         }
 
@@ -44,9 +45,9 @@
     width: 90vw;
     height: auto;
     aspect-ratio: 9 / 16;
-    max-width: 400px;
-    max-height: 90vh;
-    overflow: hidden;
+    max-width: 360px;
+    max-height: 640px;
+    overflow: visible;
 }
         
         /* Контейнер для кнопок */
@@ -56,9 +57,9 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 100%; /* Высота контейнера для тем */
+            height: 90%; /* Высота контейнера для тем */
             border: 1px solid #49ffe1;
-            margin-bottom: 10%; 
+            margin-bottom: 20%; 
             overflow: visible;
             overflow-y: auto;
         }
@@ -73,8 +74,8 @@
         }
 
         .theme-button {
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            height: 100px;
             background-size: cover;
             background-position: center;
             border: none;
@@ -90,8 +91,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Подгоняем под ширину родителя */
-    padding: 0 10px;
+    width: 340px; /* Подгоняем под ширину родителя */
+    padding: 0 5px;
     box-sizing: border-box; /* Убедимся, что padding не влияет на размеры */
     border: 1px solid #ff0000; /* Для отладки */
 }
