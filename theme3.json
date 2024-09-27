@@ -1,0 +1,92 @@
+[
+    {
+      "image": "cards/theme2/사과 다섯 개 주세요.png",
+      "audio": "cards/theme2/audio/사과 다섯 개 주세요.mp3",
+      "korean": "사과 다섯 개 주세요",
+      "russian": "Пожалуйста, дайте мне пять яблок"
+    },
+    {
+      "image": "cards/theme2/책 세 개가 필요해요.png",
+      "audio": "cards/theme2/audio/책 세 개가 필요해요.mp3",
+      "korean": "책 세 개가 필요해요",
+      "russian": "Мне нужны три книги"
+    },
+    {
+      "image": "cards/theme2/저는 스물다섯 살이에요.png",
+      "audio": "cards/theme2/audio/저는 스물다섯 살이에요.mp3",
+      "korean": "저는 스물다섯 살이에요",
+      "russian": "Мне двадцать пять лет"
+    },
+    {
+      "image": "cards/theme2/아이가 일곱 살입니다.png",
+      "audio": "cards/theme2/audio/아이가 일곱 살입니다.mp3",
+      "korean": "아이가 일곱 살입니다",
+      "russian": "Ребенку семь лет"
+    },
+    {
+      "image": "cards/theme2/지금은 여섯 시입니다.png",
+      "audio": "cards/theme2/audio/지금은 여섯 시입니다.mp3",
+      "korean": "지금은 여섯 시입니다",
+      "russian": "Сейчас шесть часов"
+    },
+    {
+      "image": "cards/theme2/우리는 열 시에 만날 거예요.png",
+      "audio": "cards/theme2/audio/우리는 열 시에 만날 거예요.mp3",
+      "korean": "우리는 열 시에 만날 거예요",
+      "russian": "Мы встретимся в десять часов"
+    },
+    {
+      "image": "cards/theme2/그는 사십 살이에요.png",
+      "audio": "cards/theme2/audio/그는 사십 살이에요.mp3",
+      "korean": "그는 사십 살이에요",
+      "russian": "Ему сорок лет"
+    },
+    {
+      "image": "cards/theme2/한 시간 후에 전화할게요.png",
+      "audio": "cards/theme2/audio/한 시간 후에 전화할게요.mp3",
+      "korean": "한 시간 후에 전화할게요",
+      "russian": "Я позвоню через час"
+    },
+    {
+      "image": "cards/theme2/커피 두 개 주세요.png",
+      "audio": "cards/theme2/audio/커피 두 개 주세요.mp3",
+      "korean": "커피 두 개 주세요",
+      "russian": "Дайте два кофе, пожалуйста"
+    },
+    {
+      "image": "cards/theme2/점심은 몇 시에 먹나요.png",
+      "audio": "cards/theme2/audio/점심은 몇 시에 먹나요.mp3",
+      "korean": "점심은 몇 시에 먹나요",
+      "russian": "Во сколько обед?"
+    },
+    {
+      "image": "cards/theme2/저는 삼십 살보다 많아요.png",
+      "audio": "cards/theme2/audio/저는 삼십 살보다 많아요.mp3",
+      "korean": "저는 삼십 살보다 많아요",
+      "russian": "Мне больше тридцати лет"
+    },
+    {
+      "image": "cards/theme2/연필 한 개가 필요합니다.png",
+      "audio": "cards/theme2/audio/연필 한 개가 필요합니다.mp3",
+      "korean": "연필 한 개가 필요합니다",
+      "russian": "Мне нужен один карандаш"
+    },
+    {
+      "image": "cards/theme2/물통 네 개를 샀어요.png",
+      "audio": "cards/theme2/audio/물통 네 개를 샀어요.mp3",
+      "korean": "물통 네 개를 샀어요",
+      "russian": "Я купил четыре бутылки воды"
+    },
+    {
+      "image": "cards/theme2/이 방에 사람 다섯 명 있어요.png",
+      "audio": "cards/theme2/audio/이 방에 사람 다섯 명 있어요.mp3",
+      "korean": "이 방에 사람 다섯 명 있어요",
+      "russian": "В этой комнате пять человек"
+    },
+    {
+      "image": "cards/theme2/고양이 두 마리를 키워요.png",
+      "audio": "cards/theme2/audio/고양이 두 마리를 키워요.mp3",
+      "korean": "고양이 두 마리를 키워요",
+      "russian": "у меня дома две кошки"
+    }
+]

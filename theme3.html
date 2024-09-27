@@ -54,7 +54,7 @@
     
         // Загружаем данные и создаем карточки
         document.addEventListener('DOMContentLoaded', () => {
-    fetch('theme2.json')
+    fetch('theme3.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -73,7 +73,7 @@
             // Устанавливаем продолжительность перерыва на основе циклов
             updateSleepDuration(cyclesCompleted);
 
-            const sleepEndTime = localStorage.getItem('sleepEndTime2');
+            const sleepEndTime = localStorage.getItem('sleepEndTime3');
             if (sleepEndTime && Date.now() < sleepEndTime) {
                 startSleepTimer(sleepEndTime - Date.now());
             } else {
@@ -276,7 +276,7 @@ document.getElementById('good-button').addEventListener('click', () => {
     
         // Функция для запуска таймера сна карточек
         function startSleepTimer(duration) {
-            completeTheme(3);
+            completeTheme(4);
     isOnBreak = true; // Устанавливаем флаг, что начался перерыв
     const container = document.getElementById('card-container');
     container.innerHTML = ''; // Очищаем контейнер
@@ -318,7 +318,7 @@ document.getElementById('good-button').addEventListener('click', () => {
     container.appendChild(wrapper);
 
     const sleepEndTime = Date.now() + duration; // Устанавливаем время окончания перерыва
-    localStorage.setItem('sleepEndTime2', sleepEndTime); // Сохраняем его в localStorage
+    localStorage.setItem('sleepEndTime3', sleepEndTime); // Сохраняем его в localStorage
 
     // Обновляем обратный отсчет
     let countdown = Math.floor(duration / 1000); // Преобразуем длительность в секунды
@@ -343,7 +343,7 @@ function completeTheme(themeId) {
     // Функция для возврата карточек после сна
     function resetCardDeck() {
     isOnBreak = false; // Сбрасываем флаг перерыва
-    localStorage.removeItem('sleepEndTime2'); // Удаляем время окончания перерыва из localStorage
+    localStorage.removeItem('sleepEndTime3'); // Удаляем время окончания перерыва из localStorage
 
     // Восстанавливаем cardsData из initialCardsData, исключая навсегда удалённые карточки
     cardsData = initialCardsData.filter(card => {
