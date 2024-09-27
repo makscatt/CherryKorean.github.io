@@ -1,76 +1,74 @@
 [
-    {
-      "image": "cards/안녕.png",
-      "audio": "cards/audio/안녕.mp3",
-      "korean": "안녕",
-      "russian": "Привет"
-    },
-    {
-      "image": "cards/안녕하세요.png",
-      "audio": "cards/audio/안녕하세요.mp3",
-      "korean": "안녕하세요",
-      "russian": "Здравствуйте"
-    },
-    {
-      "image": "cards/잘 가요.png",
-      "audio": "cards/audio/잘 가요.mp3",
-      "korean": "잘 가요",
-      "russian": "До свидания/Хорошего пути"
-    },
-    {
-      "image": "cards/감사합니다.png",
-      "audio": "cards/audio/감사합니다.mp3",
-      "korean": "감사합니다",
-      "russian": "Спасибо"
-    },
-    {
-      "image": "cards/저기요.png",
-      "audio": "cards/audio/저기요.mp3",
-      "korean": "저기요",
-      "russian": "Можно вас? Когда хотим обратиться к незнакомцу"
-    },
-    {
-      "image": "cards/잘 지냈어요.png",
-      "audio": "cards/audio/잘 지냈어요.mp3",
-      "korean": "잘 지냈어요?",
-      "russian": "У вас все хорошо?/Хорошо поживаете?"
-    },
-    {
-      "image": "cards/괜찮아요.png",
-      "audio": "cards/audio/괜찮아요.mp3",
-      "korean": "괜찮아요",
-      "russian": "Все в порядке"
-    },
-    {
-      "image": "cards/몇 살이에요.png",
-      "audio": "cards/audio/몇 살이에요.mp3",
-      "korean": "몇 살이에요?",
-      "russian": "Сколько тебе/вам лет?"
-    },
-    {
-      "image": "cards/어디에서 왔어요.png",
-      "audio": "cards/audio/어디에서 왔어요.mp3",
-      "korean": "어디에서 왔어요?",
-      "russian": "Откуда вы?"
-    },
-    {
-      "image": "cards/좋은 하루 되세요.png",
-      "audio": "cards/audio/좋은 하루 되세요.mp3",
-      "korean": "좋은 하루 되세요",
-      "russian": "Хорошего вам дня"
-    },
-    {
-      "image": "cards/좋은 저녁 되세요.png",
-      "audio": "cards/audio/좋은 저녁 되세요.mp3",
-      "korean": "좋은 저녁 되세요",
-      "russian": "Хорошего вам вечера"
-    },
-    {
-      "image": "cards/잘 자요.png",
-      "audio": "cards/audio/잘 자요.mp3",
-      "korean": "잘 자요",
-      "russian": "Спокойной ночи"
-    }
- 
- 
-  ]
+  {
+    "image": "cards/theme1/안녕.png",
+    "audio": "cards/theme1/audio/안녕.mp3",
+    "korean": "안녕",
+    "russian": "Привет"
+  },
+  {
+    "image": "cards/theme1/안녕하세요.png",
+    "audio": "cards/theme1/audio/안녕하세요.mp3",
+    "korean": "안녕하세요",
+    "russian": "Здравствуйте"
+  },
+  {
+    "image": "cards/theme1/잘 가요.png",
+    "audio": "cards/theme1/audio/잘 가요.mp3",
+    "korean": "잘 가요",
+    "russian": "До свидания/Хорошего пути"
+  },
+  {
+    "image": "cards/theme1/감사합니다.png",
+    "audio": "cards/theme1/audio/감사합니다.mp3",
+    "korean": "감사합니다",
+    "russian": "Спасибо"
+  },
+  {
+    "image": "cards/theme1/저기요.png",
+    "audio": "cards/theme1/audio/저기요.mp3",
+    "korean": "저기요",
+    "russian": "Можно вас? Когда хотим обратиться к незнакомцу"
+  },
+  {
+    "image": "cards/theme1/잘 지냈어요.png",
+    "audio": "cards/theme1/audio/잘 지냈어요.mp3",
+    "korean": "잘 지냈어요?",
+    "russian": "У вас все хорошо?/Хорошо поживаете?"
+  },
+  {
+    "image": "cards/theme1/괜찮아요.png",
+    "audio": "cards/theme1/audio/괜찮아요.mp3",
+    "korean": "괜찮아요",
+    "russian": "Все в порядке"
+  },
+  {
+    "image": "cards/theme1/몇 살이에요.png",
+    "audio": "cards/theme1/audio/몇 살이에요.mp3",
+    "korean": "몇 살이에요?",
+    "russian": "Сколько тебе/вам лет?"
+  },
+  {
+    "image": "cards/theme1/어디에서 왔어요.png",
+    "audio": "cards/theme1/audio/어디에서 왔어요.mp3",
+    "korean": "어디에서 왔어요?",
+    "russian": "Откуда вы?"
+  },
+  {
+    "image": "cards/theme1/좋은 하루 되세요.png",
+    "audio": "cards/theme1/audio/좋은 하루 되세요.mp3",
+    "korean": "좋은 하루 되세요",
+    "russian": "Хорошего вам дня"
+  },
+  {
+    "image": "cards/theme1/좋은 저녁 되세요.png",
+    "audio": "cards/theme1/audio/좋은 저녁 되세요.mp3",
+    "korean": "좋은 저녁 되세요",
+    "russian": "Хорошего вам вечера"
+  },
+  {
+    "image": "cards/theme1/잘 자요.png",
+    "audio": "cards/theme1/audio/잘 자요.mp3",
+    "korean": "잘 자요",
+    "russian": "Спокойной ночи"
+  }
+]
