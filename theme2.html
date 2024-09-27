@@ -21,7 +21,7 @@
             
             <div id="sound-button-container">
                 
-
+                <div id="back-button" onclick="themes()"></div>
                 <div id="menu-button" onclick="showMenu()"></div>
                 <img src="sound_on.png" id="sound-button" alt="Включить звук" />
                 <button id="resetProgressButton" onclick="resetProgress()">Сброс</button>
@@ -82,6 +82,7 @@
         })
         .catch(error => console.error('Ошибка загрузки JSON:', error));
 });
+
 function updateSleepDuration(cycles) {
     if (cycles >= 6) {
         sleepDuration = sleepDurations[5]; // Максимальный перерыв 24 часа
@@ -388,7 +389,9 @@ document.getElementById('good-button').addEventListener('click', () => {
         currentAudio.play();
     }
 });
-
+function themes() {
+        window.location.href = 'themes.html'; // Временная реализация для отображения, что меню открыто
+    }
     // Функция для отображения меню (пустая пока что)
     function showMenu() {
         window.location.href = 'index.html'; // Временная реализация для отображения, что меню открыто

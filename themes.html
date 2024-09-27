@@ -74,6 +74,9 @@
         }
 
         .theme-button {
+            filter: grayscale(100%);
+    pointer-events: none; /* Запрещаем кликать по неактивным кнопкам */
+    opacity: 0.5; /* Делаем кнопку полупрозрачной */
             width: 100px;
             height: 100px;
             background-size: cover;
@@ -83,7 +86,11 @@
             cursor: pointer;
             border: 1px solid #7e7e7e;
         }
-
+        .theme-button.active {
+    filter: none;
+    pointer-events: auto; /* Разрешаем клики */
+    opacity: 1;
+}
         #navigation-bar-container {
     position: absolute;
     bottom: 20px; /* Отступ от нижнего края */
@@ -122,18 +129,18 @@
             <div id="themes-container">
                 <div class="theme-grid">
             <!-- Кнопки тем, расположенные в сетке 3x4 -->
-            <div class="theme-button" style="background-image: url('themes/theme1.png');" onclick="selectTheme(1)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme2.png');" onclick="selectTheme(2)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme3.png');" onclick="selectTheme(3)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme4.png');" onclick="selectTheme(4)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme5.png');" onclick="selectTheme(5)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme6.png');" onclick="selectTheme(6)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme7.png');" onclick="selectTheme(7)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme8.png');" onclick="selectTheme(8)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme9.png');" onclick="selectTheme(9)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme10.png');" onclick="selectTheme(10)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme11.png');" onclick="selectTheme(11)"></div>
-            <div class="theme-button" style="background-image: url('themes/theme12.png');" onclick="selectTheme(12)"></div>
+            <div class="theme-button" id="theme1" style="background-image: url('themes/theme1.png');" onclick="selectTheme(1)"></div>
+            <div class="theme-button" id="theme2" style="background-image: url('themes/theme2.png');" onclick="selectTheme(2)"></div>
+            <div class="theme-button" id="theme3" style="background-image: url('themes/theme3.png');" onclick="selectTheme(3)"></div>
+            <div class="theme-button" id="theme4" style="background-image: url('themes/theme4.png');" onclick="selectTheme(4)"></div>
+            <div class="theme-button" id="theme5" style="background-image: url('themes/theme5.png');" onclick="selectTheme(5)"></div>
+            <div class="theme-button" id="theme6" style="background-image: url('themes/theme6.png');" onclick="selectTheme(6)"></div>
+            <div class="theme-button" id="theme7" style="background-image: url('themes/theme7.png');" onclick="selectTheme(7)"></div>
+            <div class="theme-button" id="theme8" style="background-image: url('themes/theme8.png');" onclick="selectTheme(8)"></div>
+            <div class="theme-button" id="theme9" style="background-image: url('themes/theme9.png');" onclick="selectTheme(9)"></div>
+            <div class="theme-button" id="theme10" style="background-image: url('themes/theme10.png');" onclick="selectTheme(10)"></div>
+            <div class="theme-button" id="theme11" style="background-image: url('themes/theme11.png');" onclick="selectTheme(11)"></div>
+            <div class="theme-button" id="theme12" style="background-image: url('themes/theme12.png');" onclick="selectTheme(12)"></div>
         </div>
     </div>
         <div id="navigation-bar-container">
@@ -144,7 +151,16 @@
     </div>
 </div>
     <script>
-        
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('theme1').classList.add('active');
+    // Проверяем состояние каждой темы в localStorage
+    for (let i = 1; i <= 12; i++) {
+        if (localStorage.getItem('theme' + i) === 'true') {
+            // Делаем кнопку активной
+            document.getElementById('theme' + i).classList.add('active');
+        }
+    }
+});
          function previousPage() {
         window.location.href = 'themes.html'; // Временная реализация для отображения, что меню открыто
     }

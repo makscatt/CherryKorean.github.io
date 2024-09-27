@@ -6,8 +6,7 @@
     <title>Learning Cards</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="buttonstyles.css">
-   
-</head>
+   </head>
 <body>
     <!-- Новый контейнер для игры с обёрткой -->
     <div id="wrapper">
@@ -22,7 +21,7 @@
             
             <div id="sound-button-container">
                 
-
+                <div id="back-button" onclick="themes()"></div>
                 <div id="menu-button" onclick="showMenu()"></div>
                 <img src="sound_on.png" id="sound-button" alt="Включить звук" />
                 <button id="resetProgressButton" onclick="resetProgress()">Сброс</button>
@@ -74,7 +73,7 @@
             // Устанавливаем продолжительность перерыва на основе циклов
             updateSleepDuration(cyclesCompleted);
 
-            const sleepEndTime = localStorage.getItem('sleepEndTime');
+            const sleepEndTime = localStorage.getItem('sleepEndTime1');
             if (sleepEndTime && Date.now() < sleepEndTime) {
                 startSleepTimer(sleepEndTime - Date.now());
             } else {
@@ -277,6 +276,7 @@ document.getElementById('good-button').addEventListener('click', () => {
     
         // Функция для запуска таймера сна карточек
         function startSleepTimer(duration) {
+            completeTheme(2);
     isOnBreak = true; // Устанавливаем флаг, что начался перерыв
     const container = document.getElementById('card-container');
     container.innerHTML = ''; // Очищаем контейнер
@@ -318,7 +318,7 @@ document.getElementById('good-button').addEventListener('click', () => {
     container.appendChild(wrapper);
 
     const sleepEndTime = Date.now() + duration; // Устанавливаем время окончания перерыва
-    localStorage.setItem('sleepEndTime', sleepEndTime); // Сохраняем его в localStorage
+    localStorage.setItem('sleepEndTime1', sleepEndTime); // Сохраняем его в localStorage
 
     // Обновляем обратный отсчет
     let countdown = Math.floor(duration / 1000); // Преобразуем длительность в секунды
@@ -334,11 +334,16 @@ document.getElementById('good-button').addEventListener('click', () => {
         }
     }, 1000);
 }
+function completeTheme(themeId) {
+    // Сохраняем прогресс, когда пользователь завершил тему
+    localStorage.setItem('theme' + themeId, 'true');
+   
+}
 
     // Функция для возврата карточек после сна
     function resetCardDeck() {
     isOnBreak = false; // Сбрасываем флаг перерыва
-    localStorage.removeItem('sleepEndTime'); // Удаляем время окончания перерыва из localStorage
+    localStorage.removeItem('sleepEndTime1'); // Удаляем время окончания перерыва из localStorage
 
     // Восстанавливаем cardsData из initialCardsData, исключая навсегда удалённые карточки
     cardsData = initialCardsData.filter(card => {
@@ -389,6 +394,9 @@ document.getElementById('good-button').addEventListener('click', () => {
         currentAudio.play();
     }
 });
+function themes() {
+        window.location.href = 'themes.html'; // Временная реализация для отображения, что меню открыто
+    }
 
     // Функция для отображения меню (пустая пока что)
     function showMenu() {

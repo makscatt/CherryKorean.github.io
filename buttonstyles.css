@@ -117,8 +117,8 @@ img {
 #menu-button {
     position: absolute;
     right: 30px;
-    top: 20px;
-    padding: 10px 20px;
+    top: 0px;
+    padding: 5px 10px;
     font-size: 14px;
     background-color: #4CAF50;
     color: white;
@@ -126,9 +126,26 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
-
 #menu-button::before {
     content: "Меню";
+    font-size: 16px;
+    color: #ffffff;
+}
+#back-button {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #72afff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-button::before {
+    content: "Назад";
     font-size: 16px;
     color: #ffffff;
 }
