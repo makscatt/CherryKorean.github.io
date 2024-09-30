@@ -106,7 +106,7 @@
                 <div class="buttonsRow">
                     <!-- Первая строка кнопок -->
                     <img src="button1.png" alt="Отгадай перевод" class="startButton" onclick="startGame('translate')">
-                    <!-- <img src="button2.png" alt="На слух" class="startButton" onclick="startGame('audio')">-->
+                     <img src="button2.png" alt="На слух" class="startButton" onclick="startGame('audio')">
                 </div>
                 <div class="buttonsRow">
                     <!-- Вторая строка кнопок -->
@@ -121,7 +121,7 @@
         // Функция для перехода на страницу режима игры
         function startGame(gameMode) {
             if (gameMode === 'translate') {
-                window.location.href = "game.html";  // Переход на страницу для "Отгадай перевод"
+                window.location.href = "textwords.html";  // Переход на страницу для "Отгадай перевод"
             } else if (gameMode === 'audio') {
                 window.location.href = "audio.html";  // Переход на страницу для "На слух"
             } else if (gameMode === 'pictures') {

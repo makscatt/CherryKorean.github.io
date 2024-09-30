@@ -1,0 +1,256 @@
+{
+    "Lvl1": [
+        
+            {
+              "image": "cards/theme1/안녕.png",
+              "audio": "cards/theme1/audio/안녕.mp3",
+              "korean": "안녕",
+              "russian": "Привет"
+            },
+            {
+              "image": "cards/theme1/안녕하세요.png",
+              "audio": "cards/theme1/audio/안녕하세요.mp3",
+              "korean": "안녕하세요",
+              "russian": "Здравствуйте"
+            },
+            {
+              "image": "cards/theme1/잘 가요.png",
+              "audio": "cards/theme1/audio/잘 가요.mp3",
+              "korean": "잘 가요",
+              "russian": "До свидания"
+            },
+            {
+              "image": "cards/theme1/감사합니다.png",
+              "audio": "cards/theme1/audio/감사합니다.mp3",
+              "korean": "감사합니다",
+              "russian": "Спасибо"
+            },
+            {
+              "image": "cards/theme1/저기요.png",
+              "audio": "cards/theme1/audio/저기요.mp3",
+              "korean": "저기요",
+              "russian": "Можно вас?"
+            },
+            {
+              "image": "cards/theme1/잘 지냈어요.png",
+              "audio": "cards/theme1/audio/잘 지냈어요.mp3",
+              "korean": "잘 지냈어요?",
+              "russian": "У вас все хорошо?"
+            },
+            {
+              "image": "cards/theme1/괜찮아요.png",
+              "audio": "cards/theme1/audio/괜찮아요.mp3",
+              "korean": "괜찮아요",
+              "russian": "Все в порядке"
+            },
+            {
+              "image": "cards/theme1/몇 살이에요.png",
+              "audio": "cards/theme1/audio/몇 살이에요.mp3",
+              "korean": "몇 살이에요?",
+              "russian": "Сколько тебе/вам лет?"
+            },
+            {
+              "image": "cards/theme1/어디에서 왔어요.png",
+              "audio": "cards/theme1/audio/어디에서 왔어요.mp3",
+              "korean": "어디에서 왔어요?",
+              "russian": "Откуда вы?"
+            },
+            {
+              "image": "cards/theme1/좋은 하루 되세요.png",
+              "audio": "cards/theme1/audio/좋은 하루 되세요.mp3",
+              "korean": "좋은 하루 되세요",
+              "russian": "Хорошего вам дня"
+            },
+            {
+              "image": "cards/theme1/좋은 저녁 되세요.png",
+              "audio": "cards/theme1/audio/좋은 저녁 되세요.mp3",
+              "korean": "좋은 저녁 되세요",
+              "russian": "Хорошего вам вечера"
+            },
+            {
+              "image": "cards/theme1/잘 자요.png",
+              "audio": "cards/theme1/audio/잘 자요.mp3",
+              "korean": "잘 자요",
+              "russian": "Спокойной ночи"
+            }
+          
+          
+       
+    ],
+  "Lvl2": [
+  {
+    "image": "cards/theme2/하나.png",
+    "audio": "cards/theme2/audio/하나.mp3",
+    "korean": "하나",
+    "russian": "Один"
+  },
+  {
+    "image": "cards/theme2/둘.png",
+    "audio": "cards/theme2/audio/둘.mp3",
+    "korean": "둘",
+    "russian": "Два"
+  },
+  {
+    "image": "cards/theme2/셋.png",
+    "audio": "cards/theme2/audio/셋.mp3",
+    "korean": "셋",
+    "russian": "Три"
+  },
+  {
+    "image": "cards/theme2/넷.png",
+    "audio": "cards/theme2/audio/넷.mp3",
+    "korean": "넷",
+    "russian": "Четыре"
+  },
+  {
+    "image": "cards/theme2/다섯.png",
+    "audio": "cards/theme2/audio/다섯.mp3",
+    "korean": "다섯",
+    "russian": "Пять"
+  },
+  {
+    "image": "cards/theme2/여섯.png",
+    "audio": "cards/theme2/audio/여섯.mp3",
+    "korean": "여섯",
+    "russian": "Шесть"
+  },
+  {
+    "image": "cards/theme2/일곱.png",
+    "audio": "cards/theme2/audio/일곱.mp3",
+    "korean": "일곱",
+    "russian": "Семь"
+  },
+  {
+    "image": "cards/theme2/여덟.png",
+    "audio": "cards/theme2/audio/여덟.mp3",
+    "korean": "여덟",
+    "russian": "Восемь"
+  },
+  {
+    "image": "cards/theme2/아홉.png",
+    "audio": "cards/theme2/audio/아홉.mp3",
+    "korean": "아홉",
+    "russian": "Девять"
+  },
+  {
+    "image": "cards/theme2/열.png",
+    "audio": "cards/theme2/audio/열.mp3",
+    "korean": "열",
+    "russian": "Десять"
+  },
+  {
+    "image": "cards/theme2/몇 시예요.png",
+    "audio": "cards/theme2/audio/몇 시예요.mp3",
+    "korean": "몇 시예요?",
+    "russian": "Который час?"
+  },
+  {
+    "image": "cards/theme2/몇 살이에요.png",
+    "audio": "cards/theme2/audio/몇 살이에요.mp3",
+    "korean": "몇 살이에요?",
+    "russian": "Сколько вам лет?"
+  },
+      {
+    "image": "cards/theme2/첫 번째.png",
+    "audio": "cards/theme2/audio/첫 번째.mp3",
+    "korean": "첫 번째",
+    "russian": "Первый"
+  },
+  {
+    "image": "cards/theme2/두 번째.png",
+    "audio": "cards/theme2/audio/두 번째.mp3",
+    "korean": "두 번째",
+    "russian": "Второй"
+  },
+  {
+    "image": "cards/theme2/세 번째.png",
+    "audio": "cards/theme2/audio/세 번째.mp3",
+    "korean": "세 번째",
+    "russian": "Третий"
+  },
+  {
+    "image": "cards/theme2/네 번째.png",
+    "audio": "cards/theme2/audio/네 번째.mp3",
+    "korean": "네 번째",
+    "russian": "Четвертый"
+  },
+  {
+    "image": "cards/theme2/다섯 번째.png",
+    "audio": "cards/theme2/audio/다섯 번째.mp3",
+    "korean": "다섯 번째",
+    "russian": "Пятый"
+  },
+  {
+    "image": "cards/theme1/안녕.png",
+    "audio": "cards/theme1/audio/안녕.mp3",
+    "korean": "안녕",
+    "russian": "Привет"
+  },
+  {
+    "image": "cards/theme1/안녕하세요.png",
+    "audio": "cards/theme1/audio/안녕하세요.mp3",
+    "korean": "안녕하세요",
+    "russian": "Здравствуйте"
+  },
+  {
+    "image": "cards/theme1/잘 가요.png",
+    "audio": "cards/theme1/audio/잘 가요.mp3",
+    "korean": "잘 가요",
+    "russian": "До свидания"
+  },
+  {
+    "image": "cards/theme1/감사합니다.png",
+    "audio": "cards/theme1/audio/감사합니다.mp3",
+    "korean": "감사합니다",
+    "russian": "Спасибо"
+  },
+  {
+    "image": "cards/theme1/저기요.png",
+    "audio": "cards/theme1/audio/저기요.mp3",
+    "korean": "저기요",
+    "russian": "Можно вас?"
+  },
+  {
+    "image": "cards/theme1/잘 지냈어요.png",
+    "audio": "cards/theme1/audio/잘 지냈어요.mp3",
+    "korean": "잘 지냈어요?",
+    "russian": "У вас все хорошо?"
+  },
+  {
+    "image": "cards/theme1/괜찮아요.png",
+    "audio": "cards/theme1/audio/괜찮아요.mp3",
+    "korean": "괜찮아요",
+    "russian": "Все в порядке"
+  },
+  {
+    "image": "cards/theme1/몇 살이에요.png",
+    "audio": "cards/theme1/audio/몇 살이에요.mp3",
+    "korean": "몇 살이에요?",
+    "russian": "Сколько тебе/вам лет?"
+  },
+  {
+    "image": "cards/theme1/어디에서 왔어요.png",
+    "audio": "cards/theme1/audio/어디에서 왔어요.mp3",
+    "korean": "어디에서 왔어요?",
+    "russian": "Откуда вы?"
+  },
+  {
+    "image": "cards/theme1/좋은 하루 되세요.png",
+    "audio": "cards/theme1/audio/좋은 하루 되세요.mp3",
+    "korean": "좋은 하루 되세요",
+    "russian": "Хорошего вам дня"
+  },
+  {
+    "image": "cards/theme1/좋은 저녁 되세요.png",
+    "audio": "cards/theme1/audio/좋은 저녁 되세요.mp3",
+    "korean": "좋은 저녁 되세요",
+    "russian": "Хорошего вам вечера"
+  },
+  {
+    "image": "cards/theme1/잘 자요.png",
+    "audio": "cards/theme1/audio/잘 자요.mp3",
+    "korean": "잘 자요",
+    "russian": "Спокойной ночи"
+  }
+]
+}
