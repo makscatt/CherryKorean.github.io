@@ -122,24 +122,25 @@
          if (window.Telegram && window.Telegram.WebApp) {
     const user = window.Telegram.WebApp.initDataUnsafe.user;
     if (user && user.id) {
-        alert("User ID: " + user.id);
+        console.log("User ID: ", user.id);  // Выводим ID пользователя в консоль для проверки
         checkGroupMembership(user.id);
     } else {
-        alert("User ID не найден");
+        console.error("User ID не найден");
+        alert("Это приложение должно быть запущено внутри Telegram.");
     }
 } else {
+    console.error("Это приложение должно быть запущено внутри Telegram.");
     alert("Это приложение должно быть запущено внутри Telegram.");
 }
         // Функция для отправки запроса на сервер, чтобы проверить, является ли пользователь членом группы
         async function checkGroupMembership(userId) {
-    const response = await fetch('/.netlify/functions/checkGroupMembership', {
-        method: 'POST', // Убедитесь, что запрос отправляется как POST
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ userId: userId }) // Передаем userId в теле запроса
-    });
-
+            const response = await fetch('https://dainty-mochi-5c9845.netlify.app/.netlify/functions/checkGroupMembership', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ userId: userId })
+});
     if (!response.ok) {
         console.error("Ошибка при отправке запроса:", response.statusText);
         return null;
