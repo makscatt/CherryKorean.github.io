@@ -127,6 +127,9 @@ if (!userId) {
     window.Telegram.WebApp.close(); // Закрываем приложение
 } else {
     alert("Полученный userId: " + userId); 
+
+    alert("Отправляем запрос на сервер для проверки членства...");
+
     fetch('https://dainty-mochi-5c9845.netlify.app/.netlify/functions/checkGroupMembership', {
         method: 'POST',
         headers: {
@@ -134,17 +137,26 @@ if (!userId) {
         },
         body: JSON.stringify({ userId: userId })
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            alert(`Ошибка сети: ${response.status}`);
+            throw new Error(`Ошибка сети: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
+        alert("Ответ от сервера получен");
+
         if (data.isMember) {
-            // Доступ предоставлен, можно продолжить
-            console.log("Доступ предоставлен");
+            alert("Доступ предоставлен");
         } else {
-            // Доступ запрещен
-            document.body.innerHTML = "<h1>Приобретите подписку</h1>"; // Очищаем экран и выводим сообщение
+            alert("Доступ запрещен. Покупай подписку.");
+            document.body.innerHTML = "<h1>Приобретите подписку</h1>";
         }
     })
-    .catch(error => alert('Ошибка: ' + error)); // Используем алерт для ошибки
+    .catch(error => {
+        alert("Ошибка при выполнении запроса: " + error.message); // Показываем ошибку через alert
+    });
 }
 
 
