@@ -1,9 +1,11 @@
+const axios = require('axios');
+
 exports.handler = async function(event, context) {
     const BOT_TOKEN = '6974834378:AAEckz1HNBH9RiKvz-uqM2Upcdi7KKjAwe8'; // Вставьте ваш токен бота
     const CHAT_ID = '-1002123915695'; // Вставьте ID группы/чата
 
     let userId;
-    
+
     // Проверка на наличие тела запроса
     try {
         const body = event.body ? JSON.parse(event.body) : {};
