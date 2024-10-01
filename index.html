@@ -119,6 +119,17 @@
     </div>
 
     <script>
+         if (window.Telegram && window.Telegram.WebApp) {
+    const user = window.Telegram.WebApp.initDataUnsafe.user;
+    if (user && user.id) {
+        alert("User ID: " + user.id);
+        checkGroupMembership(user.id);
+    } else {
+        alert("User ID не найден");
+    }
+} else {
+    alert("Это приложение должно быть запущено внутри Telegram.");
+}
         // Функция для отправки запроса на сервер, чтобы проверить, является ли пользователь членом группы
         async function checkGroupMembership(userId) {
     const response = await fetch('/.netlify/functions/checkGroupMembership', {
