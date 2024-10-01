@@ -13,8 +13,8 @@
             <h1>Угадай перевод с корейского!</h1>
             <div id="word-container">
                 <div id="buttonContainer">
-                    <button id="playSoundButton" onclick="playWordSound()">🔊 Воспроизвести звук</button>
-                    <button id="playSlowSoundButton" onclick="playWordSoundSlow()">🐢 Медленно</button>
+                    <button id="playSoundButton" onclick="playWordSound()">Прослушать</button>
+                    <button id="playSlowSoundButton" onclick="playWordSoundSlow()">🐢0.7</button>
                 </div>
                 <audio id="wordAudio" src="" preload="auto"></audio>
                 <!-- Кнопки выбора ответа остаются -->
@@ -56,23 +56,15 @@
         let wordsByLevel = {};
 
 
-    async function loadWordsByLevel() {
+        async function loadWords() {
     try {
-        const response = await fetch('audiotest.json'); // Убедитесь, что путь корректен
+        const response = await fetch('audiobox.json'); // Убедитесь, что путь корректен
         if (!response.ok) {
             throw new Error(`Ошибка загрузки файла: ${response.status} ${response.statusText}`);
         }
-        
-        wordsByLevel = await response.json(); // Загружаем JSON
-        console.log('Загруженные данные:', wordsByLevel); // Отладочный вывод
-        
-        const currentLevelKey = "Lvl1";
-        if (!wordsByLevel[currentLevelKey] || wordsByLevel[currentLevelKey].length === 0) {
-            console.error(`Не найдено слов для уровня: ${currentLevelKey}`);
-            return;
-        }
-        
-        console.log('Слова для уровня Lvl1:', wordsByLevel[currentLevelKey]); // Отладочный вывод
+
+        easywords = await response.json(); // Загружаем JSON как простой массив
+        console.log('Загруженные данные:', easywords); // Отладочный вывод
 
         // Начинаем игру после загрузки слов
         loadProgress();
@@ -192,18 +184,6 @@ function startGame() {
     document.getElementById("option1").disabled = false;
     document.getElementById("option2").disabled = false;
 
-    // Определяем уровень в JSON на основе текущего уровня игры
-    const jsonLevel = Math.floor((Game.level - 1) / 5) + 1;
-    const currentLevelKey = `Lvl${jsonLevel}`;
-
-    if (!wordsByLevel[currentLevelKey] || wordsByLevel[currentLevelKey].length === 0) {
-        console.error(`Не найдено слов для уровня: ${currentLevelKey}`);
-        return;
-    }
-
-    // Загружаем слова для текущего уровня
-    easywords = wordsByLevel[currentLevelKey];
-
     if (Game.correctAnswers >= 10) {
         return Game.levelUp();
     }
@@ -287,7 +267,6 @@ function resetWordUsageCount() {
 // Функция для установки случайного слова
 function setRandomWord() {
     const randomIndex = getRandomUnusedWordIndex();
-    currentLevelWords.push(randomIndex);  // Добавляем слово в массив текущего уровня
     currentWordIndex = randomIndex;  // Обновляем текущий индекс
 
     const currentWord = easywords[randomIndex];
@@ -304,7 +283,6 @@ function setRandomWord() {
     // Автоматически воспроизводим звук при появлении нового слова
     playWordSound();
 }
-
 function showContinueButton() {
     document.getElementById("option1").style.display = "none";
     document.getElementById("option2").style.display = "none";
@@ -395,7 +373,7 @@ document.getElementById("restartButton").onclick = function () {
         }
 
 // Инициализация игры
-loadWordsByLevel();
+loadWords();
 loadProgress();
 startGame();
 

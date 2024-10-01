@@ -5,18 +5,318 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram Mini App</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <link rel="stylesheet" href="audiostyles.css">
+    <style>
+        @font-face {
+            font-family: 'CoockieRun';
+            src: url('coockierun.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        #wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+    height: auto; /* Высота автоматически определяется на основе aspect-ratio */
+    aspect-ratio: 9 / 16; /* Соотношение сторон 9:16 */
+   
+    overflow: hidden;
+    border: 1px solid #6f00ff;
+}
+
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(138, 138, 138, 0.1);
+            position: relative;
+            margin: auto;
+            width: 90vw; /* Используем относительную единицу измерения */
+            height: auto;
+            aspect-ratio: 9 / 16;
+            max-width: 400px; 
+            max-height: 90vh; /* Используем относительную единицу измерения */
+            border: 1px solid #ff0000;
+        }
+
+        #word {
+            font-family: 'CoockieRun', sans-serif;
+            font-size: 30px; 
+            font-weight: normal;
+            text-align: center;
+            margin: 0;
+            color: #616161;
+        }
+
+        #startScreen, #gameContainer {
+            display: block;
+        }
+
+        #startScreen.active, #gameContainer.active {
+            display: block;
+        }
+
+        #startGameImage {
+            width: 50%;
+            max-width: 300px;
+            transform: translateX(50%);
+        }
+
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #ffffff;
+            color: rgb(51, 51, 51);
+            border-radius: 5px;
+            transition: all 0.1s ease-in-out;
+            border: none;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+           
+            box-shadow: 0 1px 8px #b7b7b7;
+            transform: translateY(4px);
+        }
+
+       
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #result {
+            font-weight: normal;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .correct {
+                        color: green;
+                        font-size: 80px; 
+        }
+
+        .incorrect {
+                       color: red;
+            font-size: 80px; 
+        }
+
+        #levelComplete {
+            margin-top: 20px;
+            font-size: 18px;
+            color: rgb(47, 127, 255);
+            font-weight: bold;
+        }
+       
+        #resetProgressButton {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 10px; /* Отступ слева в 10px от края экрана или контейнера */
+    top: 10px; 
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+        #resetProgressButton:hover {
+            background-color: #d32f2f;
+        }
+
+        .time-out {
+            color: red;
+            font-weight: bold;
+        }
+
+        #stars {
+            font-size: 30px;
+            position: absolute;
+            left: 10px; /* Отступ слева в 10px от края экрана или контейнера */
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+
+        #stars.pulsing {
+            animation: pulse 0.3s ease-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateX(-50%) scale(1.5);
+                opacity: 1.5;
+            }
+            100% {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+            }
+        }
+
+        #restartButton {
+            display: none;
+            margin: 10px;
+            padding-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px #b7b7b7;
+            transition: all 0.1s ease-in-out;
+            text-align: center;
+        }
+
+        #restartButton:active {
+            background-color: #1976D2;
+            box-shadow: 0 2px #b7b7b7;
+            transform: translateY(4px);
+        }
+
+        
+
+        #continueButton {
+            
+            
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px #b7b7b7;
+            transition: all 0.2s ease-in-out;
+            display: none;
+        }
+
+        #continueButton:active {
+            background-color: #1976D2;
+            box-shadow: 0 2px #b7b7b7;
+            transform: translateY(4px);
+        }
+
+        #continueButton:hover {
+            background-color: #1E88E5;
+        }
+
+        #phrase {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #word {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+       #word-container{
+        display: block;
+        margin-bottom: 10px;
+        justify-content: center; /* Центрируем элементы */
+        align-items: center;
+        width: 100%; /* Растягиваем контейнер на всю ширину */
+        height: 300px; 
+        border: 1px solid #49ffe1;
+       }
+       #playSoundButton {
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    display: block;
+    width: calc(100% - 20px); /* Учитываем отступы для точной ширины */
+}
+    
+        #menu-button {
+            position: absolute; /* Абсолютное позиционирование */
+    right: 20px; /* Отступ слева в 10px от края экрана или контейнера */
+    top: 10px; /* Отступ сверху, можно настроить по желанию */
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+        #menu-button-container {
+            position: absolute;
+            bottom: 10px;
+            height: 70px; /* Фиксированная высота */
+            display: flex;
+            justify-content: center; /* Центрируем элементы */
+            align-items: center;
+            width: 100%; /* Растягиваем контейнер на всю ширину */
+         margin: 5;
+         left: 0; /* Чтобы зафиксировать по ширине */
+         right: 0; /* Чтобы зафиксировать по ширине */
+            border: 1px solid #ddd;
+        }
+        #control-button-container {
+          
+            height: 70px; /* Фиксированная высота */
+            display: flex;
+            justify-content: center; /* Центрируем элементы */
+            align-items: center;
+            width: 100%; /* Растягиваем контейнер на всю ширину */
+            padding-top: 0px;
+            padding-right: 0px;
+            margin-top: 0px;
+            position: relative;
+           
+            border: 1px solid #00ff11;
+        }
+      
+
+        #playSoundButton:active {
+            background-color: #45a049;
+        }
+        
+    </style>
 </head>
 <body>
     <div id="wrapper">
         <div id="gameContainer">
             <h1>Угадай перевод с корейского!</h1>
             <div id="word-container">
-                <div id="buttonContainer">
-                    <button id="playSoundButton" onclick="playWordSound()">🔊 Воспроизвести звук</button>
-                    <button id="playSlowSoundButton" onclick="playWordSoundSlow()">🐢 Медленно</button>
-                </div>
-                <audio id="wordAudio" src="" preload="auto"></audio>
+                <!-- Заменяем отображение слова на кнопку воспроизведения звука -->
+                <button id="playSoundButton" onclick="playWordSound()">🔊 Воспроизвести звук</button>
                 <!-- Кнопки выбора ответа остаются -->
                 <button id="option1" onclick="checkWord(this)"></button>
                 <button id="option2" onclick="checkWord(this)"></button>
@@ -88,12 +388,6 @@
     }
     function playWordSound() {
     const wordAudio = document.getElementById("wordAudio");
-    wordAudio.playbackRate = 1.0;  // Обычная скорость
-    wordAudio.play();
-}
-function playWordSoundSlow() {
-    const wordAudio = document.getElementById("wordAudio");
-    wordAudio.playbackRate = 0.7;  // Замедленная скорость (0.7x)
     wordAudio.play();
 }
 function saveProgress() {

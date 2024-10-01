@@ -111,6 +111,7 @@
                 <div class="buttonsRow">
                     <!-- Вторая строка кнопок -->
                    <!-- <img src="button3.png" alt="По картинкам" class="startButton" onclick="startGame('pictures')">-->
+                   <img src="button3.png" alt="Качать слух" class="startButton" onclick="startGame('audiobox')">
                     <img src="button4.png" alt="Карточки" class="startButton" onclick="startGame('training')">
                 </div>
             </div>
@@ -124,7 +125,9 @@
                 window.location.href = "textwords.html";  // Переход на страницу для "Отгадай перевод"
             } else if (gameMode === 'audio') {
                 window.location.href = "audio.html";  // Переход на страницу для "На слух"
-            } else if (gameMode === 'pictures') {
+            } else if (gameMode === 'audiobox') {
+                window.location.href = "audiobox.html";  // Переход на страницу для "На слух"
+            }             else if (gameMode === 'pictures') {
                 window.location.href = "pictures.html";  // Переход на страницу для "По картинкам"
             } else if (gameMode === 'training') {
                 window.location.href = "themes.html";  // Переход на страницу для "Тренировка"
