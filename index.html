@@ -119,19 +119,15 @@
     </div>
 
     <script>
-         if (window.Telegram && window.Telegram.WebApp) {
-    const user = window.Telegram.WebApp.initDataUnsafe.user;
-    if (user && user.id) {
-        console.log("User ID: ", user.id);  // Выводим ID пользователя в консоль для проверки
-        checkGroupMembership(user.id);
-    } else {
-        console.error("User ID не найден");
-        alert("Это приложение должно быть запущено внутри Telegram.");
-    }
+    if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initDataUnsafe.user && window.Telegram.WebApp.initDataUnsafe.user.id) {
+    const userId = window.Telegram.WebApp.initDataUnsafe.user.id;
+    alert("User ID: " + userId);
+    checkGroupMembership(userId);
 } else {
-    console.error("Это приложение должно быть запущено внутри Telegram.");
-    alert("Это приложение должно быть запущено внутри Telegram.");
+    document.body.innerHTML = ''; // Очищаем содержимое страницы, чтобы заблокировать доступ
+    alert("User ID не найден. Доступ к приложению заблокирован.");
 }
+
         // Функция для отправки запроса на сервер, чтобы проверить, является ли пользователь членом группы
         async function checkGroupMembership(userId) {
             const response = await fetch('https://dainty-mochi-5c9845.netlify.app/.netlify/functions/checkGroupMembership', {
