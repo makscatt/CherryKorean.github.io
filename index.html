@@ -119,6 +119,33 @@
     </div>
 
     <script>
+        // Функция для отправки запроса на сервер, чтобы проверить, является ли пользователь членом группы
+        async function checkGroupMembership(userId) {
+            const response = await fetch('/.netlify/functions/checkGroupMembership', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ userId: userId })
+            });
+            const data = await response.json();
+            return data.isMember;
+        }
+
+        // Получение информации о пользователе через Telegram WebApp
+        const user = window.Telegram.WebApp.initDataUnsafe.user;
+        if (user) {
+            checkGroupMembership(user.id).then(isMember => {
+                if (isMember) {
+                    console.log("Доступ разрешен.");
+                    // Здесь можно продолжить работу приложения
+                } else {
+                    alert("У вас нет доступа к этому приложению.");
+                    // Например, перенаправить пользователя на другую страницу
+                    window.location.href = "access_denied.html";
+                }
+            });
+        }
         // Функция для перехода на страницу режима игры
         function startGame(gameMode) {
             if (gameMode === 'translate') {
