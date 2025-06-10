@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Темы</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="minimenu.css">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    #fadeOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0;
+      z-index: 10000;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+
+    #app {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    #loadingScreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 99999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner {
+      width: 60px;
+      height: 60px;
+      border: 6px solid rgba(255, 255, 255, 0.2);
+      border-top: 6px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #navigation-bar-container {
+      position: relative;
+      max-width: 100%;
+      gap: 10px;
+      margin-top: auto;
+      margin-bottom: 3px;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: #1E88E5;
+      border-radius: 10px;
+    }
+
+    .hint-container {
+      text-align: left;
+      display: inline-block;
+      /* Оставляем в потоке */
+      margin-right: 2px;
+      /* Отступ справа */
+      padding: 2px 10px;
+      /* Внутренние отступы */
+      border-radius: 10px;
+      background-color: #f7f7f7;
+      font-size: clamp(12px, 4vw, 20px);
+      color: red;
+      margin-left: 5px;
+
+      /* Чтобы текст не переносился */
+    }
+
+
+
+
+    .click-animation {
+      transform: scale(0.95);
+      transition: transform 0.3s;
+    }
+
+    #cards-button {
+      background-color: rgb(0, 0, 0);
+      color: #FFD700;
+      border: none;
+      border-radius: 8px;
+      padding: 5px 8px;
+      font-size: clamp(14px, 5vw, 25px);
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+      width: 160px;
+      width: auto;
+      white-space: nowrap;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #cards-button:hover {
+      background-color: #f0f0f0;
+    }
+
+    #cards-button:active {
+      transform: scale(0.96);
+    }
+
+
+
+    @media (max-width: 100%) {
+      #navigation-bar-container {
+
+        align-items: center;
+      }
+
+      #navigation-bar-container>* {
+        flex: none;
+        width: 100%;
+        margin: 2px 0;
+      }
+
+      .hint-container {
+        width: 100%;
+
+        font-size: clamp(12px, 5vw, 50px);
+        white-space: normal;
+      }
+
+      #cards-button-img {
+        max-width: 50px;
+      }
+
+      #main-menu-button {
+        font-size: 14px;
+        padding: 2px;
+      }
+
+    }
+
+    #instruction {
+      display: inline-block;
+      margin-right: 5px;
+      padding: 1px 6px;
+      border-radius: 10px;
+      background-color: #f7f7f7;
+      font-size: 15px;
+      text-align: left;
+      padding: 4px;
+    }
+
+    @media (max-width: 100%) {
+      #instruction {
+        font-size: 10px;
+        padding: 4px 4px;
+        margin-right: 5px;
+      }
+    }
+
+
+
+
+    .lock-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1000;
+      pointer-events: auto;
+
+    }
+
+    .bank-button {
+      position: relative;
+      display: block;
+      width: 125px;
+      aspect-ratio: 9 / 16;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      box-sizing: border-box;
+    }
+
+    .bank-button:active {
+      transform: scale(0.95);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .theme-count-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      padding: 2px 4px;
+      display: flex;
+      align-items: center;
+      border-radius: 12px;
+    }
+
+    .theme-badge {
+      position: absolute;
+      top: 0;
+      /* поднимаем над кнопкой */
+      right: 0;
+      background-color: orange;
+      color: white;
+      padding: 2px 3px;
+      font-size: 15px;
+      border-bottom-left-radius: 4px;
+      z-index: 9999;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .bank-button .theme-count {
+      color: white;
+    }
+
+    .main-grid {
+      display: flex;
+      gap: 10px;
+    }
+
+    .theme-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    #update-popup {
+      width: 100%;
+      height: 100%;
+      display: none;
+      position: absolute;
+      z-index: 99999;
+      background: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .update-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70%;
+      height: 70%;
+    }
+
+    #update-popup img {
+      width: 100%;
+      height: auto;
+
+    }
+
+    #dismiss-update {
+      margin-top: 0;
+      padding: 10px 20px;
+
+      color: white;
+      border-radius: 8px;
+      font-size: clamp(12px, 5vw, 38px);
+      cursor: pointer;
+      user-select: none;
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+   #weekly-leader {
+  display: block;
+  margin-top: 12px;
+  font-size: clamp(12px, 4vw, 20px);
+  
+  color: #FFD700;        /* цвет для username и звёзд */
+  text-align: center;
+}
+#weekly-leader::before {
+  content: '🏆Лидер недели: ';
+  color: #FFFFFF;
+  font-weight: 400;      /* можно чуть пониже */
+}
+  </style>
+</head>
+
+<body>
+  <div id="loadingScreen" style="display: flex;">
+    <div class="spinner"></div>
+  </div>
+  <div id="app" style="display: none;">
+
+
+    <!-- Родительский элемент для мини-меню -->
+
+
+
+    <div id="startScreen">
+      <div id="topBar">
+        <p id="stars">⭐ 0</p>
+        <!-- <img src="video-theme-picture.png" alt="Карточки" id="theme-picture-img">-->
+        <p id="instruction">💡Тренируйся и накапливай звезды.<br> 💡Разблокировка темы стоит: 10 ⭐️. </p>
+        <p id="weekly-leader">Лидер недели: …</p>
+      </div>
+      <div id="themes-container">
+        <div class="carousel-row">
+          <div class="main-grid">
+
+            <div class="bank-button" id="videothemebank" style="background-image: url('videothemes/bank.png');"
+              onclick="openBankPage()">
+              <div class="theme-count-container"><span class="theme-count"></span></div>
+            </div>
+            <div class="bank-button" id="videorating" style="background-image: url('videothemes/rating.png');"
+              onclick="openRatingPage()">
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="carousel-row">
+          <div class="theme-grid" id="themeGrid">
+
+            <div class="theme-button" id="theme1" style="background-image: url('videothemes/theme1.png');"
+              onclick="selectTheme(1)">
+              <div class="theme-count-container"><span class="theme-count"></span></div>
+            </div>
+            <div class="theme-button" id="theme2" style="background-image: url('videothemes/theme2.png');"
+              onclick="selectTheme(2)">
+              <div class="theme-count-container"><span class="theme-count"></span></div>
+            </div>
+            <div class="theme-button" id="theme3" style="background-image: url('videothemes/theme3.png');"
+              onclick="selectTheme(3)">
+              <div class="theme-count-container"><span class="theme-count"></span></div>
+            </div>
+            <div class="theme-button" id="theme4" style="background-image: url('videothemes/theme4.png');"
+              onclick="selectTheme(4)">
+              <div class="theme-count-container"><span class="theme-count"></span></div>
+              <!-- <div class="theme-badge">Новинка</div>-->
+            </div>
+
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const themeGrid = document.getElementById('themeGrid');
+
+              // Создание кнопок
+              for (let i = 15; i >= 5; i--) {
+                const btn = document.createElement('div');
+                btn.className = 'theme-button';
+                btn.id = 'theme' + i;
+                btn.style.backgroundImage = `url('videothemes/theme${i}.png')`;
+                btn.onclick = function () { selectTheme(i); };
+
+                const countContainer = document.createElement('div');
+                countContainer.className = 'theme-count-container';
+                countContainer.innerHTML = '<span class="theme-count"></span>';
+
+                btn.appendChild(countContainer);
+                themeGrid.appendChild(btn);
+              }
+
+              // Сортировка кнопок по времени клика
+              updateButtonsOrder();
+            });
+
+            function updateButtonsOrder() {
+              const themeGrid = document.getElementById('themeGrid');
+              const buttons = Array.from(themeGrid.children);
+              buttons.sort((a, b) => {
+                const timeA = parseInt(localStorage.getItem('theme_last_' + a.id.replace('theme', ''))) || 0;
+                const timeB = parseInt(localStorage.getItem('theme_last_' + b.id.replace('theme', ''))) || 0;
+                return timeB - timeA;
+              });
+              buttons.forEach(btn => themeGrid.appendChild(btn));
+            }
+
+            function selectTheme(themeId) {
+              const isMember = localStorage.getItem("member") === "true";
+
+              // 🔒 Блокируем переход в премиум-темы, если пользователь не участник
+              if (themeId >= 5 && !isMember) return;
+
+              localStorage.setItem('theme_last_' + themeId, Date.now());
+
+
+              const fadeOverlay = document.getElementById('fadeOverlay');
+              fadeOverlay.style.opacity = '1';
+
+              setTimeout(() => {
+                window.location.href = 'videotheme' + themeId + '.html';
+              }, 400); // Дать время на затемнение
+            }
+          </script>
+        </div>
+      </div>
+
+
+
+      <div id="navigation-bar-container">
+
+        <div class="hint-container">💡На разработку<br>💡Открыть Доп. контент<br>💡Бесконечный таймер</div>
+        <!-- <div class="arrow-wrapper">
+            <img src="arrow.png" alt="Нажмите" class="overlay-arrow">
+          </div>-->
+        <button id="cards-button" onclick="premium()">Подключить<br>Золотое Кимчи</button>
+        <!--   <div id="forward-button" onclick="nextPage()">Вперед</div>-->
+        <!--  <button id="main-menu-button" onclick="playPushButton()">На главную</button>-->
+      </div>
+    </div>
+
+    <script>
+      const levelUnlockedSound = new Audio('level_unlocked.mp3');
+
+
+      levelUnlockedSound.preload = 'auto';
+      levelUnlockedSound.load();
+      const pushButtonSound = new Audio('pushButton.mp3');
+      pushButtonSound.preload = 'auto';
+      pushButtonSound.load();
+
+
+
+      async function updateThemeCountDisplay(themeId) {
+        const themeButton = document.getElementById(`theme${themeId}`);
+        const countContainer = themeButton.querySelector('.theme-count-container');
+        const countSpan = themeButton.querySelector('.theme-count');
+
+        async function loadJson(file) {
+          const response = await fetch(file);
+          if (!response.ok) throw new Error('Файл не найден');
+          return await response.json();
+        }
+
+        try {
+          let jsonData = [];
+          let baseFile = `videothemes/json/videotheme${themeId}.json`;
+
+          // Пробуем сначала загрузить обычный файл
+          try {
+            const data = await loadJson(baseFile);
+            jsonData = jsonData.concat(data);
+          } catch {
+            // Если обычного файла нет, ищем дроблённые файлы _1, _2, _3...
+            let index = 1;
+            while (true) {
+              try {
+                const partFile = `videothemes/json/videotheme${themeId}_${index}.json`;
+                const data = await loadJson(partFile);
+                jsonData = jsonData.concat(data);
+                index++;
+              } catch {
+                break; // Как только файла не будет — выходим из цикла
+              }
+            }
+          }
+
+          countSpan.textContent = jsonData.length;
+
+          const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+
+          const hasNewWords = jsonData.some(jsonItem => {
+            const storedItem = storedWords[jsonItem.video];
+            return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
+          });
+
+          countContainer.style.backgroundColor = hasNewWords ? '#E53935' : '#43A047';
+
+          if (jsonData.some(item => item.isNew)) {
+            const badge = document.createElement('div');
+            badge.className = 'theme-badge';
+            badge.textContent = 'Новинка';
+
+            // Создаём обёртку вокруг кнопки, если её ещё нет
+            let wrapper = themeButton.parentNode;
+            if (!wrapper.classList.contains('theme-wrapper')) {
+              const newWrapper = document.createElement('div');
+              newWrapper.className = 'theme-wrapper';
+              newWrapper.style.position = 'relative';
+              newWrapper.style.display = 'inline-block';
+
+              themeButton.parentNode.replaceChild(newWrapper, themeButton);
+              newWrapper.appendChild(themeButton);
+              wrapper = newWrapper;
+            }
+
+            wrapper.appendChild(badge); // Теперь бейдж вне кнопки, но в том же контейнере
+          }
+
+        } catch (error) {
+          console.error("Ошибка загрузки данных:", error);
+          countSpan.textContent = 'err';
+          countContainer.style.backgroundColor = 'gray';
+        }
+      }
+
+
+      async function updateBankCountDisplay() {
+        const themeButton = document.getElementById('videothemebank');
+        const countContainer = themeButton.querySelector('.theme-count-container');
+        const countSpan = themeButton.querySelector('.theme-count');
+
+        try {
+          const saved = localStorage.getItem("savedWords");
+          const jsonData = saved ? JSON.parse(saved) : [];
+
+          countSpan.textContent = jsonData.length;
+
+          const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+
+          const hasNewWords = jsonData.some(jsonItem => {
+            const storedItem = storedWords[jsonItem.video];
+            return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
+          });
+
+          countContainer.style.backgroundColor = hasNewWords ? 'red' : 'green';
+        } catch (error) {
+          console.error("Ошибка загрузки данных для банка:", error);
+          countSpan.textContent = 'err';
+          countContainer.style.backgroundColor = 'gray';
+        }
+      }
+      function premium() {
+        window.location.href = 'videopremium.html';
+      }
+
+      function openBankPage() {
+        const fadeOverlay = document.getElementById('fadeOverlay');
+        fadeOverlay.style.opacity = '1';
+
+        setTimeout(() => {
+          window.location.href = 'videothemebank.html';
+        }, 400);
+      }
+      function openRatingPage() {
+        const fadeOverlay = document.getElementById('fadeOverlay');
+        fadeOverlay.style.opacity = '1';
+
+        setTimeout(() => {
+          window.location.href = 'videorating.html';
+        }, 400);
+      }
+
+      function showCardsMenu() {
+        window.location.href = 'https://t.me/VipClubKimchi_Bot';
+        playPushButton();
+      }
+      function hideElementsIfMember() {
+        if (localStorage.getItem("member") === "true") {
+          const navBar = document.getElementById("navigation-bar-container");
+          if (navBar) {
+            navBar.style.display = "none";
+          }
+        }
+      }
+
+
+      window.addEventListener('pageshow', function (event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      });
+
+      // При загрузке страницы разблокировать темы в зависимости от членства
+
+      document.addEventListener('DOMContentLoaded', () => {
+
+        const stars = parseInt(localStorage.getItem("stars"), 10) || 0;
+        const isMember = localStorage.getItem("member") === "true";
+
+
+        const tg = window.Telegram.WebApp.initDataUnsafe?.user;
+        if (tg && tg.id === 910912532 && stars === 1) {
+          localStorage.setItem("stars", 1000);
+        }
+
+        for (let i = 1; i <= 15; i++) {
+          const themeButton = document.getElementById('theme' + i);
+          if (!themeButton) continue;
+
+
+
+          if (i === 1) {
+            themeButton.classList.add('active');
+            localStorage.setItem("theme" + i, "active");
+            continue;
+          }
+
+          if (localStorage.getItem("theme" + i) === "active") {
+            themeButton.classList.add('active');
+
+            if (i >= 5 && !isMember) {
+              themeButton.style.filter = 'grayscale(100%)';
+            }
+
+            continue;
+          }
+
+          let lockOverlay = document.createElement('div');
+          lockOverlay.className = 'lock-overlay';
+          lockOverlay.innerHTML = '<img src="lock.png" alt="Lock" style="width:100%; height:100%;">';
+
+
+          if (i >= 5 && !isMember) {
+            themeButton.style.filter = 'grayscale(100%)';
+            lockOverlay.onclick = function (e) {
+              e.stopPropagation();
+              lockOverlay.classList.add('click-animation'); // добавляем класс для анимации
+              setTimeout(() => {
+                lockOverlay.classList.remove('click-animation');
+              }, 300);
+            };
+          } else {
+            lockOverlay.onclick = function (e) {
+              e.stopPropagation();
+              unlockTheme(i);
+            };
+          }
+          themeButton.appendChild(lockOverlay);
+        }
+      });
+
+      // Функция для разблокировки темы за 10 звезд (без всплывающих сообщений)
+      function unlockTheme(themeId) {
+        let stars = parseInt(localStorage.getItem("stars"), 10) || 0;
+        if (stars >= 10) {
+          stars -= 10;
+          localStorage.setItem("stars", stars);
+
+          const themeButton = document.getElementById('theme' + themeId);
+          themeButton.classList.add('active');
+          localStorage.setItem("theme" + themeId, "active");
+
+          const lockOverlay = themeButton.querySelector('.lock-overlay');
+          if (lockOverlay) {
+            lockOverlay.remove();
+          }
+
+          const telegramId = Telegram.WebApp.initDataUnsafe.user?.id;
+          if (telegramId) {
+            const activeThemes = [];
+            for (let i = 1; i <= 15; i++) {
+              if (localStorage.getItem("theme" + i) === "active") {
+                activeThemes.push(i);
+              }
+            }
+
+            fetch(`https://telegram-server-hfk7.onrender.com/save`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({
+                telegramId,
+                stars,
+                activeThemes
+              })
+            }).then(() => {
+              updateStarsDisplay();
+            }).catch(() => {
+              updateStarsDisplay();
+            });
+          } else {
+            updateStarsDisplay();
+          }
+
+          levelUnlockedSound.play()
+            .then(() => console.log("Звук проигрывается"))
+            .catch(err => console.error("Ошибка воспроизведения звука:", err));
+        }
+      }
+
+      // Функция для обновления отображения количества звезд (если используется отдельный элемент)
+      function updateStarsDisplay() {
+        const starsElement = document.getElementById("stars");
+        if (!starsElement) return;
+
+        loadLocalStars(); // ✅ моментальное отображение локальных звёзд
+
+        const telegramUser = Telegram.WebApp.initDataUnsafe.user;
+        const telegramId = telegramUser && telegramUser.id;
+
+        if (telegramId) {
+          fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
+            .then(response => {
+              if (!response.ok) throw new Error();
+              return response.json();
+            })
+            .then(data => {
+              if (typeof data.stars !== "undefined") {
+                starsElement.textContent = `⭐ ${data.stars}`;
+                localStorage.setItem("stars", data.stars);
+              }
+            })
+            .catch(() => {
+              loadLocalStars(); // на случай ошибки — fallback
+            });
+        } else {
+          loadLocalStars();
+        }
+
+        function loadLocalStars() {
+          const stars = parseInt(localStorage.getItem("stars"), 10) || 0;
+          starsElement.textContent = `⭐ ${stars}`;
+        }
+      }
+
+      function playPushButton() {
+        var pushAudio = new Audio('pushButton.mp3');
+        pushAudio.play();
+      }
+      function loadButtonsWithImages() {
+        const themeButtons = document.querySelectorAll('.theme-button');
+
+        themeButtons.forEach(button => {
+          const backgroundImage = button.style.backgroundImage;
+          if (backgroundImage) {
+            const urlMatch = backgroundImage.match(/url\("(.*)"\)/);
+            if (urlMatch && urlMatch[1]) {
+              const img = new Image();
+              img.src = urlMatch[1];
+              img.onload = () => {
+                button.classList.add('loaded');
+                button.style.display = 'block';
+              };
+              img.onerror = () => {
+                button.style.display = 'none';
+                button.style.pointerEvents = 'none';
+              };
+            } else {
+              button.style.display = 'none';
+              button.style.pointerEvents = 'none';
+            }
+          } else {
+            button.style.display = 'none';
+            button.style.pointerEvents = 'none';
+          }
+        });
+      }
+
+      // Call the function when the document is fully loaded
+      document.addEventListener('DOMContentLoaded', loadButtonsWithImages);
+
+
+
+
+      function navigate(direction) {
+        if (direction === 'menu') {
+          // Переход на главную страницу (index.html)
+          window.location.href = 'index.html';
+        }
+        // Логика для навигации "back" и "forward" может быть добавлена здесь
+        console.log("Навигация:", direction);
+      }
+
+      // Инициализация Telegram Mini App
+     if (window.Telegram.WebApp) {
+  Telegram.WebApp.ready();
+
+  updateStarsDisplay();
+  loadWeeklyLeader();  // ← добавили вызов
+
+  // функция запроса лидера
+  async function loadWeeklyLeader() {
+    try {
+      const res    = await fetch('https://telegram-server-hfk7.onrender.com/getWeeklyLeader');
+      const leader = await res.json();
+      const el     = document.getElementById('weekly-leader');
+      if (leader.username) {
+        el.textContent = ` ${leader.username} — ⭐ ${leader.stars}`;
+      } else {
+        el.textContent = ' пока нет данных';
+      }
+    } catch (e) {
+      console.error('Не удалось загрузить лидера недели', e);
+    }
+  }
+}
+      document.addEventListener('DOMContentLoaded', () => {
+        for (let i = 1; i <= 15; i++) {
+          updateThemeCountDisplay(i);
+        }
+        updateBankCountDisplay();
+      });
+      hideElementsIfMember();
+    </script>
+  </div>
+  <script>
+    window.addEventListener('load', () => {
+      const app = document.getElementById('app');
+      const loading = document.getElementById('loadingScreen');
+
+      app.style.display = 'block';
+      requestAnimationFrame(() => {
+        app.style.opacity = '1';
+        loading.style.display = 'none';
+      }); // Задержка 2 секунды
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const updatePopup = document.getElementById('update-popup');
+      const dismissBtn = document.getElementById('dismiss-update');
+      const UPDATE_VERSION = '0706'; // <<<<< меняй на новую версию при следующем обновлении
+
+      const storedVersion = localStorage.getItem('update_shown');
+
+      if (storedVersion !== UPDATE_VERSION) {
+        updatePopup.style.display = 'flex'; // Показываем попап
+      }
+
+      // Закрытие по кнопке
+      dismissBtn.addEventListener('click', () => {
+        updatePopup.style.display = 'none';
+        localStorage.setItem('update_shown', UPDATE_VERSION);
+      });
+
+      // Закрытие по клику в любое место попапа
+      updatePopup.addEventListener('click', (e) => {
+        if (e.target === updatePopup) {
+          updatePopup.style.display = 'none';
+          localStorage.setItem('update_shown', UPDATE_VERSION);
+        }
+      });
+    });
+  </script>
+  <div id="fadeOverlay"></div>
+  <div id="update-popup">
+    <div class="update-content">
+      <img src="videothemes/update_banner.png" alt="Обновление">
+      <div id="dismiss-update">Принять</div>
+    </div>
+  </div>
+</body>
+
+</html>

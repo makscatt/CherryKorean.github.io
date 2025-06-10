@@ -1,0 +1,417 @@
+[
+  {
+    "video": "video/healer/내가 하지 말랬지.webm",
+    "videoMp4": "video/healer/mp4/내가 하지 말랬지.mp4",
+    "korean": "내가 하지 말랬지",
+    "russian": "Я же говорил не делать так"
+  },
+  {
+    "video": "video/healer/뭔데.webm",
+    "videoMp4": "video/healer/mp4/뭔데.mp4",
+    "korean": "뭔데?",
+    "russian": "Что?"
+  },
+  {
+    "video": "video/healer/완전 간단한 거.webm",
+    "videoMp4": "video/healer/mp4/완전 간단한 거.mp4",
+    "korean": "완전 간단한 거",
+    "russian": "Кое-что очень простое"
+  },
+  {
+    "video": "video/healer/언제.webm",
+    "videoMp4": "video/healer/mp4/언제.mp4",
+    "korean": "언제?",
+    "russian": "Когда?"
+  },
+  {
+    "video": "video/healer/지금.webm",
+    "videoMp4": "video/healer/mp4/지금.mp4",
+    "korean": "지금",
+    "russian": "Сейчас"
+  },
+  {
+    "video": "video/healer/이거 뭐야 근데 완전 간단해.webm",
+    "videoMp4": "video/healer/mp4/이거 뭐야 근데 완전 간단해.mp4",
+    "korean": "이거 뭐야 근데 완전 간단해?",
+    "russian": "Это по твоему просто?"
+  },
+  {
+    "video": "video/healer/나에겐 꿈이 있다.webm",
+    "videoMp4": "video/healer/mp4/나에겐 꿈이 있다.mp4",
+    "korean": "나에겐 꿈이 있다",
+    "russian": "У меня есть мечта"
+  },
+  {
+    "video": "video/healer/미치게 파란 바다 가운데.webm",
+    "videoMp4": "video/healer/mp4/미치게 파란 바다 가운데.mp4",
+    "korean": "미치게 파란 바다 가운데",
+    "russian": "Посреди безумно синего моря"
+  },
+  {
+    "video": "video/healer/쾌속정을 타고 두 간 반 거리.webm",
+    "videoMp4": "video/healer/mp4/쾌속정을 타고 두 간 반 거리.mp4",
+    "korean": "쾌속정을 타고 두 시간 반 거리",
+    "russian": "2 с половиной часа на Лодке"
+  },
+  {
+    "video": "video/healer/나무가 빽빽하고.webm",
+    "videoMp4": "video/healer/mp4/나무가 빽빽하고.mp4",
+    "korean": "나무가 빽빽하고",
+    "russian": "Густые деревья"
+  },
+  {
+    "video": "video/healer/천연샘물까지 있다는.webm",
+    "videoMp4": "video/healer/mp4/천연샘물까지 있다는.mp4",
+    "korean": "천연샘물까지 있다는",
+    "russian": "Даже природный родник имеется"
+  },
+  {
+    "video": "video/healer/내 꿈이다.webm",
+    "videoMp4": "video/healer/mp4/내 꿈이다.mp4",
+    "korean": "내 꿈이다",
+    "russian": "Моя мечта"
+  },
+  {
+    "video": "video/healer/저기 앉아 있는 저 놈.webm",
+    "videoMp4": "video/healer/mp4/저기 앉아 있는 저 놈.mp4",
+    "korean": "저기 앉아 있는 저 놈",
+    "russian": "Тот мужик, что сидит вдалеке"
+  },
+  {
+    "video": "video/healer/잠깐만.webm",
+    "videoMp4": "video/healer/mp4/잠깐만.mp4",
+    "korean": "잠깐만",
+    "russian": "Ми-ну-точ-ку"
+  },
+  {
+    "video": "video/healer/뭐야 이거.webm",
+    "videoMp4": "video/healer/mp4/뭐야 이거.mp4",
+    "korean": "뭐야 이거?",
+    "russian": "Это еще что?"
+  },
+  {
+    "video": "video/healer/지금 함정에 네 발로 기어 들어온 거야.webm",
+    "videoMp4": "video/healer/mp4/지금 함정에 네 발로 기어 들어온 거야.mp4",
+    "korean": "지금 함정에 네 발로 기어 들어온 거야?",
+    "russian": "Ты, что, заманила меня в ловушку?"
+  },
+  {
+    "video": "video/healer/경찰은 아니고.webm",
+    "videoMp4": "video/healer/mp4/경찰은 아니고.mp4",
+    "korean": "경찰은 아니고",
+    "russian": "Это не полицейский"
+  },
+  {
+    "video": "video/healer/얼마 받기로 했냐고.webm",
+    "videoMp4": "video/healer/mp4/얼마 받기로 했냐고.mp4",
+    "korean": "얼마 받기로 했냐고?",
+    "russian": "Так сколько мы получим за это?"
+  },
+  {
+    "video": "video/healer/오백이면.webm",
+    "videoMp4": "video/healer/mp4/오백이면.mp4",
+    "korean": "오백이면",
+    "russian": "Если 500"
+  },
+  {
+    "video": "video/healer/나 이백오심 아줌마 이백오십.webm",
+    "videoMp4": "video/healer/mp4/나 이백오심 아줌마 이백오십.mp4",
+    "korean": "나 이백오십 아줌마 이백오십",
+    "russian": "Мне 250, тётушке 250"
+  },
+  {
+    "video": "video/healer/어떤 회사에 다니시는 놈이시냐.webm",
+    "videoMp4": "video/healer/mp4/어떤 회사에 다니시는 놈이시냐.mp4",
+    "korean": "어떤 회사에 다니시는 놈이시냐?",
+    "russian": "Ну и где же работает этот тип?"
+  },
+  {
+    "video": "video/healer/어디라고.webm",
+    "videoMp4": "video/healer/mp4/어디라고.mp4",
+    "korean": "어디라고?",
+    "russian": "Где говоришь?"
+  },
+  {
+    "video": "video/healer/아니 아줌마.webm",
+    "videoMp4": "video/healer/mp4/아니 아줌마.mp4",
+    "korean": "아니 아줌마",
+    "russian": "Так тёть, погоди"
+  },
+  {
+    "video": "video/healer/힐러 만나러 오시죠.webm",
+    "videoMp4": "video/healer/mp4/힐러 만나러 오시죠.mp4",
+    "korean": "힐러 만나러 오시죠?",
+    "russian": "Вы на встречу к Хиллеру?"
+  },
+  {
+    "video": "video/healer/이거 제가 가져갈게요.webm",
+    "videoMp4": "video/healer/mp4/이거 제가 가져갈게요.mp4",
+    "korean": "이거 제가 가져갈게요",
+    "russian": "Я отнесу это",
+    "new": true
+  },
+  {
+    "video": "video/healer/칠백삼호 이거 우리 집인데.webm",
+    "videoMp4": "video/healer/mp4/칠백삼호 이거 우리 집인데.mp4",
+    "korean": "칠백삼호 이거 우리 집인데",
+    "russian": "703-я, это наша квартира",
+    "new": true
+  },
+  {
+    "video": "video/healer/수고하세요.webm",
+    "videoMp4": "video/healer/mp4/수고하세요.mp4",
+    "korean": "수고하세요",
+    "russian": "Хорошей вам работы",
+    "new": true
+  },
+  {
+    "video": "video/healer/누구세요.webm",
+    "videoMp4": "video/healer/mp4/누구세요.mp4",
+    "korean": "누구세요?",
+    "russian": "Кто там?",
+    "new": true
+  },
+  {
+    "video": "video/healer/택배요.webm",
+    "videoMp4": "video/healer/mp4/택배요.mp4",
+    "korean": "택배요",
+    "russian": "Доставка"
+  },
+  {
+    "video": "video/healer/왜 그래요.webm",
+    "videoMp4": "video/healer/mp4/왜 그래요.mp4",
+    "korean": "왜 그래요?",
+    "russian": "Что с вами?"
+  },
+  {
+    "video": "video/healer/괜찮습니다.webm",
+    "videoMp4": "video/healer/mp4/괜찮습니다.mp4",
+    "korean": "괜찮습니다",
+    "russian": "Все в порядке"
+  },
+  {
+    "video": "video/healer/약 좀 먹게 물 좀 주실 수 있어요.webm",
+    "videoMp4": "video/healer/mp4/약 좀 먹게 물 좀 주실 수 있어요.mp4",
+    "korean": "약 좀 먹게 물 좀 주실 수 있어요?",
+    "russian": "Дадите воды, чтобы я выпила лекарство?"
+  },
+  {
+    "video": "video/healer/내가 사진을 제대로 찍었다니까요.webm",
+    "videoMp4": "video/healer/mp4/내가 사진을 제대로 찍었다니까요.mp4",
+    "korean": "내가 사진을 제대로 찍었다니까요",
+    "russian": "Я все сфоткала, как надо"
+  },
+  {
+    "video": "video/healer/또 약하다 약해 약해.webm",
+    "videoMp4": "video/healer/mp4/또 약하다 약해 약해.mp4",
+    "korean": "또 약하다 약해 약해",
+    "russian": "Снова слабовато"
+  },
+  {
+    "video": "video/healer/딱 기다려 보셔.webm",
+    "videoMp4": "video/healer/mp4/딱 기다려 보셔.mp4",
+    "korean": "딱 기다려 보셔",
+    "russian": "Просто подождите"
+  },
+  {
+    "video": "video/healer/지 맘대로 끌어.webm",
+    "videoMp4": "video/healer/mp4/지 맘대로 끌어.mp4",
+    "korean": "지 맘대로 끌어",
+    "russian": "Делает, что ей вздумается"
+  },
+  {
+    "video": "video/healer/이거 뭐지.webm",
+    "videoMp4": "video/healer/mp4/이거 뭐지.mp4",
+    "korean": "이거 뭐지?",
+    "russian": "Это че такое?"
+  },
+  {
+    "video": "video/healer/내가 오늘 니 엄마 대신에.webm",
+    "videoMp4": "video/healer/mp4/내가 오늘 니 엄마 대신에.mp4",
+    "korean": "내가 오늘 니 엄마 대신에",
+    "russian": "Я тебе сегодня вместо мамки твоей"
+  },
+  {
+    "video": "video/healer/공중도덕이란 걸 알려 주마.webm",
+    "videoMp4": "video/healer/mp4/공중도덕이란 걸 알려 주마.mp4",
+    "korean": "공중도덕이란 걸 알려 주마",
+    "russian": "Преподам тебе урок поведения"
+  },
+  {
+    "video": "video/healer/추격전 중입니다.webm",
+    "videoMp4": "video/healer/mp4/추격전 중입니다.mp4",
+    "korean": "추격전 중입니다?",
+    "russian": "Погоня говоришь?"
+  },
+  {
+    "video": "video/healer/그놈 같다고.webm",
+    "videoMp4": "video/healer/mp4/그놈 같다고.mp4",
+    "korean": "그놈 같다고",
+    "russian": "На мужика того похож?"
+  },
+  {
+    "video": "video/healer/말이 많아.webm",
+    "videoMp4": "video/healer/mp4/말이 많아.mp4",
+    "korean": "말이 많아!",
+    "russian": "Базаришь много!"
+  },
+  {
+    "video": "video/healer/반드시 잡아와.webm",
+    "videoMp4": "video/healer/mp4/반드시 잡아와.mp4",
+    "korean": "반드시 잡아와!",
+    "russian": "Обязательно поймай его!"
+  },
+  {
+    "video": "video/healer/새끼 같은 놈.webm",
+    "videoMp4": "video/healer/mp4/새끼 같은 놈.mp4",
+    "korean": "새끼 같은 놈!",
+    "russian": "Тварь!"
+  },
+  {
+    "video": "video/healer/무슨 소리야.webm",
+    "videoMp4": "video/healer/mp4/무슨 소리야.mp4",
+    "korean": "무슨 소리야?",
+    "russian": "Что за чушь?"
+  },
+  {
+    "video": "video/healer/따라 와.webm",
+    "videoMp4": "video/healer/mp4/따라 와.mp4",
+    "korean": "따라 와",
+    "russian": "За мной"
+  },
+  {
+    "video": "video/healer/잠시 뵐 수 있을까요.webm",
+    "videoMp4": "video/healer/mp4/잠시 뵐 수 있을까요.mp4",
+    "korean": "잠시 뵐 수 있을까요?",
+    "russian": "Мы можем увидеться на минутку?"
+  },
+  {
+    "video": "video/healer/인터뷰를 할 수 있을까 해서 왔는데.webm",
+    "videoMp4": "video/healer/mp4/인터뷰를 할 수 있을까 해서 왔는데.mp4",
+    "korean": "인터뷰를 할 수 있을까 해서 왔는데",
+    "russian": "Пришел, так как подумал, что вы сможете дать на интервью"
+  },
+  {
+    "video": "video/healer/말 못해요.webm",
+    "videoMp4": "video/healer/mp4/말 못해요.mp4",
+    "korean": "말 못해요",
+    "russian": "Он не может говорить"
+  },
+  {
+    "video": "video/healer/오른손만 움직여요.webm",
+    "videoMp4": "video/healer/mp4/오른손만 움직여요.mp4",
+    "korean": "오른손만 움직여요",
+    "russian": "Только правой рукой шевелит"
+  },
+  {
+    "video": "video/healer/할 말 있을 땐 그랬어요.webm",
+    "videoMp4": "video/healer/mp4/할 말 있을 땐 그랬어요.mp4",
+    "korean": "할 말 있을 땐 그랬어요",
+    "russian": "У него так, когда хочет сказать что-то"
+  },
+  {
+    "video": "video/healer/그래서.webm",
+    "videoMp4": "video/healer/mp4/그래서.mp4",
+    "korean": "그래서",
+    "russian": "Поэтому"
+  },
+  {
+    "video": "video/healer/지금부터 날 믿으세요.webm",
+    "videoMp4": "video/healer/mp4/지금부터 날 믿으세요.mp4",
+    "korean": "지금부터 날 믿으세요",
+    "russian": "С этого момента, верьте мне"
+  },
+  {
+    "video": "video/healer/내가 힐러거든요 살려줄게요.webm",
+    "videoMp4": "video/healer/mp4/내가 힐러거든요 살려줄게요.mp4",
+    "korean": "내가 힐러거든요 살려줄게요",
+    "russian": "Я Хилер, так что спасу вас"
+  },
+  {
+    "video": "video/healer/먼저 저를 살려주십시오.webm",
+    "videoMp4": "video/healer/mp4/먼저 저를 살려주십시오.mp4",
+    "korean": "먼저 저를 살려주십시오",
+    "russian": "Прошу, сначала спасите меня"
+  },
+  {
+    "video": "video/healer/물건 주세요.webm",
+    "videoMp4": "video/healer/mp4/물건 주세요.mp4",
+    "korean": "물건 주세요",
+    "russian": "Дайте мне предмет"
+  },
+  {
+    "video": "video/healer/나를 죽일 겁니다.webm",
+    "videoMp4": "video/healer/mp4/나를 죽일 겁니다.mp4",
+    "korean": "나를 죽일 겁니다",
+    "russian": "Меня убьют"
+  },
+  {
+    "video": "video/healer/그럼 전 여기까지 알겠습니다.webm",
+    "videoMp4": "video/healer/mp4/그럼 전 여기까지 알겠습니다.mp4",
+    "korean": "그럼 전 여기까지만 알겠습니다",
+    "russian": "Тогда на этом всё, мне все понятно"
+  },
+  {
+    "video": "video/healer/또 연락드리죠.webm",
+    "videoMp4": "video/healer/mp4/또 연락드리죠.mp4",
+    "korean": "또 연락드리죠",
+    "russian": "Я перезвоню",
+    "new": true
+  },
+  {
+    "video": "video/healer/오늘 우리 쪽 일을 처리한 애는 누구라고.webm",
+    "videoMp4": "video/healer/mp4/오늘 우리 쪽 일을 처리한 애는 누구라고.mp4",
+    "korean": "오늘 우리 쪽 일을 처리한 애는 누구라고?",
+    "russian": "Кто, говорите, делал нашу работу?",
+    "new": true
+  },
+  {
+    "video": "video/healer/고객께서 조건을 나눠 붙이셨어.webm",
+    "videoMp4": "video/healer/mp4/고객께서 조건을 나눠 붙이셨어.mp4",
+    "korean": "고객께서 조건을 나눠 붙이셨어",
+    "russian": "Клиент добавил условия по отдельности",
+    "new": true
+  },
+  {
+    "video": "video/healer/미국으로 돌아가고 싶으신데.webm",
+    "videoMp4": "video/healer/mp4/미국으로 돌아가고 싶으신데.mp4",
+    "korean": "미국으로 돌아가고 싶으신데",
+    "russian": "Вы же хотите вернуться в США",
+    "new": true
+  },
+  {
+    "video": "video/healer/이 말을 잘하세요 자.webm",
+    "videoMp4": "video/healer/mp4/이 말을 잘하세요 자.mp4",
+    "korean": "이 말을 잘하세요 자",
+    "russian": "Так то вы складно говорите",
+    "new": true
+  },
+  {
+    "video": "video/healer/목숨이 왔다 갔다 하는데.webm",
+    "videoMp4": "video/healer/mp4/목숨이 왔다 갔다 하는데.mp4",
+    "korean": "목숨이 왔다 갔다 하는데",
+    "russian": "Туда Сюда мою жизнь дергаете",
+    "new": true
+  },
+  {
+    "video": "video/healer/이름이 뭐라 그랬지.webm",
+    "videoMp4": "video/healer/mp4/이름이 뭐라 그랬지.mp4",
+    "korean": "이름이 뭐라 그랬지?",
+    "russian": "Как там его зовут?",
+    "new": true
+  },
+  {
+    "video": "video/healer/힐러라고 합니다.webm",
+    "videoMp4": "video/healer/mp4/힐러라고 합니다.mp4",
+    "korean": "힐러라고 합니다",
+    "russian": "Его зовут Хилер",
+    "new": true
+  },
+  {
+    "video": "video/healer/실수도 있어서는 안 돼.webm",
+    "videoMp4": "video/healer/mp4/실수도 있어서는 안 돼.mp4",
+    "korean": "실수도 있어서는 안 돼",
+    "russian": "Ошибок тоже не должно быть",
+    "new": true
+  }
+]

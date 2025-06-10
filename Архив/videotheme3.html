@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="/trackActivity.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="videostyles.css">
+    <link rel="stylesheet" href="minimenu.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="videoplayer.css">
+</head>
+<style>
+     .timer {
+        display: none;
+        /* Изначально скрыто */
+        margin-left: 5px;
+
+
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+
+        background-color: #ffffff;
+        border-radius: 10px;
+
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 9998;
+
+    }
+
+  .overlay-timer {
+        margin-left: 5px;
+
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        /* Полупрозрачный черный фон */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        z-index: 1000;
+        /* Поверх всех элементов */
+    }
+
+    #newbieOverlay {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.checkRiddleButton {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #444444;
+    color: #f6fd6a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.checkRiddleButton:active {
+    transform: scale(0.96);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+</style>
+
+<body>
+    <div id="fadeOverlay" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    z-index: 100000;
+    transition: opacity 0.4s ease;">
+  </div>
+  <div id="newbieOverlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; color: white; background: #000000; display: none; flex-direction: column; justify-content: center; align-items: center; text-align: center; z-index: 100001;">
+    <h1 style="font-size: 36px;">힐러</h1>
+    <h3 style="font-size: 30px;">Новое испытание</h3>
+    <p style="font-size: 24px; color: #ffc0cb">Как зовут актера,<br>который играет Хилера</p>
+    <input type="text" id="riddleInput" placeholder="поле ввода ответа" autocomplete="off" style="font-size: 35px; padding: 2px; border-radius: 10px; text-align: center; border: 4px solid black;" />
+    <button id="checkRiddleButton" class="checkRiddleButton" style="margin-top: 20px;">Проверить</button>
+
+</div>
+
+    <!-- Родительский элемент для мини-меню -->
+
+    <div id="wrapper">
+
+        <div id="gameContainer">
+
+            <div id="video-container">
+                <div id="subvideoContainer">
+                    <div id="custom-video-container">
+                        <video id="wordVideo" playsinline webkit-playsinline></video>
+                    </div>
+                </div>
+
+                <!-- КОНТРОЛЫ ПЕРЕНОСИМ СЮДА, ВНЕ subvideoContainer -->
+                <div id="custom-controls-wrapper">
+                    <div id="custom-controls">
+                        <button id="play-btn"><img src="customcontrolbuttons/play.png" alt="Play"
+                                style="height:24px;"></button>
+                        <button id="repeat-btn"><img src="customcontrolbuttons/repeat.png" alt="Repeat"
+                                style="height:24px;"></button>
+
+                        <select id="speed-select">
+                            <option value="0.5">0.5x</option>
+                            <option value="0.75">0.75x</option>
+                            <option value="1" selected>1x</option>
+                            <option value="1.25">1.25x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="option1" onclick="checkWord(this)"></button>
+                <button id="option2" onclick="checkWord(this)"></button>
+                <button id="showKoreanButton" onclick="showKoreanText()">Показать корейский текст</button>
+                <p id="koreanText" style="display: none;"></p>
+                <p id="countdownText" style="display:none;"></p>
+                <div id="resultWrapper">
+                    <p id="result"></p>
+                    <p id="levelComplete"></p>
+                </div>
+            </div>
+            <div id="uiContainer_v">
+                <!--Остальные элементы интерфейса-->
+
+                <p id="points">Очки: 0 / 10</p>
+                <p id="level">Уровень: 1</p>
+                <button id="continueButton" onclick="startGame()">Следующий уровень</button>
+                <button id="restartButton" onclick="startGame()" style="display:none;">Заново</button>
+            </div>
+            <!-- Остальная часть интерфейса -->
+
+
+            <div id="menu-button-container">
+                <div class="timer">00:00</div>
+                <p id="stars">⭐ 0</p>
+            <button id="save-to-bank-button" onclick="saveToBank()">
+  <img id="bank-icon" src="videothemes/icons/outbank.png" alt="В копилку">
+</button>
+                 <button id="main-menu-button" class="nav-button" onclick="playPushButton()">⌂</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Добавляем аудиоэлемент для воспроизведения звуков слов -->
+    <audio id="wordVideo" src="" preload="auto"></audio>
+
+    <!-- Звук для анимации звездочки -->
+    <audio id="starSound" src="starsuccess.mp3" preload="auto"></audio>
+
+    <script>
+        let wordUsageCount = {};  // Объект для отслеживания количества использования слов
+        let usedWords = [];
+        let currentWordIndex = null;  // Индекс текущего слова
+        const baseTime = 60;
+        let currentLevelWords = [];  // Массив для хранения слов, использованных на текущем уровне
+        let wordsByLevel = {};
+        let newWords = [];  // Массив для новых слов
+        let playCount = 0;
+        const wordVideo = document.getElementById("wordVideo");
+        let isKoreanTextShown = false;
+        let preloadedWord = null;
+        let preloadedVideo = null;
+        let preloadedVideoSrc = null;
+
+        window.addEventListener('DOMContentLoaded', () => {
+    const newbiehealer = localStorage.getItem('newbiehealer');
+    const overlay = document.getElementById('newbieOverlay');
+
+    if (newbiehealer !== '1') {
+        overlay.style.display = 'flex';
+
+        document.getElementById('checkRiddleButton').addEventListener('click', () => {
+            const input = document.getElementById('riddleInput');
+            const answer = input.value.trim().toLowerCase();
+
+            if (answer === 'чжи чан ук' || answer === 'чжи чанук' || answer === 'чи чан ук' || answer === 'чи чанук' || answer === 'джи чанук'|| answer === 'джи чан ук') {
+                localStorage.setItem('newbiehealer', '1');
+                overlay.style.opacity = '0';
+
+                const img = document.createElement('img');
+                img.src = '/videothemes/riddle/healer.png';
+                img.style.maxWidth = '100%';
+                img.style.height = 'auto';
+                img.style.margin = '0 auto';
+                img.style.display = 'block';
+
+                setTimeout(() => {
+                    overlay.innerHTML = '';
+                    overlay.appendChild(img);
+                    overlay.style.opacity = '1';
+
+                    const audio = new Audio('level_unlocked.mp3');
+                    audio.play();
+
+                    audio.onended = () => {
+                        overlay.style.opacity = '0';
+                        setTimeout(() => {
+                            overlay.style.display = 'none';
+                            location.reload();
+                        }, 500);
+                    };
+                }, 500);
+            } else {
+                input.value = '';
+                input.placeholder = 'Попробуй ещё раз';
+                input.style.setProperty('--placeholder-color', '#f9898f');
+
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    #riddleInput::placeholder {
+                        color: var(--placeholder-color);
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        });
+    }
+});
+
+        document.getElementById('main-menu-button').addEventListener('click', () => {
+            window.location.href = 'videothemes.html';
+        });
+
+        function saveToBank() {
+    const word = easywords[currentWordIndex];
+    if (!word) return;
+
+    let savedWords = JSON.parse(localStorage.getItem("savedWords")) || [];
+    const index = savedWords.findIndex(item => item.video === word.video);
+    const button = document.getElementById("save-to-bank-button");
+    const icon = document.getElementById("bank-icon");
+
+    if (index !== -1) {
+        // Удаляем из избранного
+        savedWords.splice(index, 1);
+        button.classList.remove("active");
+        icon.src = "videothemes/icons/outbank.png";
+    } else {
+        // Добавляем в избранное
+        savedWords.push({
+            video: word.video,
+            korean: word.korean,
+            russian: word.russian
+        });
+        button.classList.add("active");
+        icon.src = "videothemes/icons/inbank.png";
+    }
+
+    localStorage.setItem("savedWords", JSON.stringify(savedWords));
+}
+
+      function updateSaveButtonState() {
+    const word = easywords[currentWordIndex];
+    if (!word) return;
+
+    const savedWords = JSON.parse(localStorage.getItem("savedWords")) || [];
+    const exists = savedWords.some(item => item.video === word.video);
+
+    const button = document.getElementById("save-to-bank-button");
+    const icon = document.getElementById("bank-icon");
+
+    if (exists) {
+        button.classList.add("active");
+        icon.src = "videothemes/icons/inbank.png";
+    } else {
+        button.classList.remove("active");
+        icon.src = "videothemes/icons/outbank.png";
+    }
+}
+
+
+
+        function preloadNextVideo() {
+            let nextWord;
+            const newWords = easywords.filter(word => word.new === true);
+            if (newWords.length > 0) {
+                nextWord = newWords[Math.floor(Math.random() * newWords.length)];
+            } else {
+                const remainingWords = easywords.filter(word => getUsageCount(word) < 5);
+                if (remainingWords.length > 0) {
+                    nextWord = remainingWords[Math.floor(Math.random() * remainingWords.length)];
+                } else {
+                    resetWordUsageIfNeeded();
+                    nextWord = easywords[Math.floor(Math.random() * easywords.length)];
+                }
+            }
+            preloadedWord = nextWord;
+preloadedVideoSrc = nextWord.video;
+
+const videoPreload = document.createElement("video");
+videoPreload.src = preloadedVideoSrc;
+videoPreload.preload = "auto";
+videoPreload.style.display = "none";
+document.body.appendChild(videoPreload);
+
+        }
+
+
+     
+
+
+
+        async function loadWords() {
+            try {
+                const response = await fetch('videothemes/json/videotheme3.json?nocache=' + new Date().getTime());
+
+                const data = await response.json();
+
+                easywords = data;
+
+                // Проверяем сохраненные данные в localStorage
+                const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+
+                // Обновляем состояние слов из localStorage (если есть)
+                easywords.forEach(word => {
+                    if (storedWords[word.video]) {
+                        word.new = storedWords[word.video].new;
+                    }
+                });
+
+                if (localStorage.getItem('newbiehealer') === '1') {
+    startGame();  // Запуск игры только если загадка разгадана
+}  // Запуск игры после загрузки
+            } catch (error) {
+                console.error('Ошибка при загрузке JSON:', error);
+            }
+        }
+        function playPushButton() {
+            var pushAudio = new Audio('pushButton.mp3');
+            pushAudio.play();
+        }
+        function showKoreanText() {
+            // Получаем элемент кнопки и параграфа для корейского текста
+            const showKoreanButton = document.getElementById("showKoreanButton");
+            const koreanTextElement = document.getElementById("koreanText");
+
+            // Получаем корейский текст из текущего слова
+            const koreanText = easywords[currentWordIndex].korean;
+
+            // Устанавливаем корейский текст в элемент
+            koreanTextElement.innerText = koreanText;
+
+            // Скрываем кнопку и отображаем корейский текст
+            showKoreanButton.style.display = "none";
+            koreanTextElement.style.display = "block";
+            isKoreanTextShown = true;
+        }
+        function resetShowKoreanButton() {
+            const showKoreanButton = document.getElementById("showKoreanButton");
+            const koreanTextElement = document.getElementById("koreanText");
+            const countdownTextElement = document.getElementById("countdownText"); // Добавьте этот элемент в HTML для отображения текста
+            if (playCount == 0) {
+                koreanTextElement.style.display = "none";  // Скрываем корейский текст
+                koreanTextElement.innerText = "";          // Очищаем текст
+            }
+            // Если playCount меньше 3, скрываем кнопку и показываем текст с формулой
+            if (playCount < 3) {
+                showKoreanButton.style.display = "none";  // Скрываем кнопку
+                countdownTextElement.innerText = `Кор.Текст появится через: ${3 - playCount} включения`;  // Отображаем оставшееся количество воспроизведений
+                countdownTextElement.style.display = "block";  // Показываем текст с отсчетом
+            }
+            // Если playCount равно 3 или больше, показываем кнопку и скрываем текст
+            else if (playCount == 3) {
+                showKoreanButton.style.display = "block";  // Показываем кнопку
+                countdownTextElement.style.display = "none";  // Скрываем текст с отсчетом
+            }
+
+
+        }
+
+
+
+        // Функция для отображения меню (пустая пока что)
+
+        function playWordSound() {
+            const wordVideo = document.getElementById("wordVideo");
+
+            wordVideo.play();
+        }
+
+        function saveProgress() {
+    const pageName = window.location.pathname.split("/").pop().replace(".html", "");
+    localStorage.setItem(`level_${pageName}`, Game.level);
+    localStorage.setItem(`points_${pageName}`, Game.points);
+    localStorage.setItem(`correctAnswers_${pageName}`, Game.correctAnswers);
+    localStorage.setItem(`stars`, Game.stars);
+
+    const user = Telegram.WebApp.initDataUnsafe.user;
+    const telegramId = user?.id;
+    const username = user?.username;
+
+    if (telegramId) {
+        fetch("https://telegram-server-hfk7.onrender.com/save", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                telegramId,
+                username,
+                stars: Game.stars
+            })
+        }).catch(err => console.error("Ошибка сохранения звёзд на сервер:", err));
+    }
+}
+
+function loadProgress() {
+    const pageName = window.location.pathname.split("/").pop().replace(".html", "");
+    console.log("Загрузка данных");
+
+    Game.level = parseInt(localStorage.getItem(`level_${pageName}`)) || 1;
+    Game.points = parseInt(localStorage.getItem(`points_${pageName}`)) || 0;
+    Game.correctAnswers = parseInt(localStorage.getItem(`correctAnswers_${pageName}`)) || 0;
+
+    const telegramUser = Telegram.WebApp.initDataUnsafe.user;
+    const telegramId = telegramUser && telegramUser.id;
+
+    if (!telegramId) {
+        console.warn("Telegram ID отсутствует, пропускаем загрузку звезд с сервера.");
+        Game.stars = parseInt(localStorage.getItem("stars")) || 0;
+        Game.updateUI();
+        return;
+    }
+
+    fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
+        .then(response => response.json())
+        .then(data => {
+            Game.stars = (data && typeof data.stars !== "undefined")
+                ? parseInt(data.stars)
+                : (parseInt(localStorage.getItem("stars")) || 0);
+            Game.updateUI();
+        })
+        .catch(err => {
+            console.error("Ошибка загрузки звёзд с сервера:", err);
+            Game.stars = parseInt(localStorage.getItem("stars")) || 0;
+            Game.updateUI();
+        });
+}
+
+
+        const Game = {
+            points: 0,
+            correctAnswers: 0,
+            level: 1,
+            stars: 0,
+
+            
+
+            updateUI() {
+                document.getElementById("points").innerText = `Очки: ${this.points} / 10`;
+                document.getElementById("level").innerText = `Уровень: ${this.level}`;
+                document.getElementById("stars").innerText = `⭐ ${this.stars}`; // Обновление звездочек с эмодзи
+
+            }
+
+        };
+
+        function triggerStarPulse() {
+            const starsElement = document.getElementById("stars");
+            const starSound = document.getElementById("starSound");
+
+            // Удаляем класс перед его повторным добавлением, чтобы гарантировать перезапуск анимации
+            starsElement.classList.remove("pulsing");
+
+            // Задержка, чтобы браузер "увидел" изменение
+            setTimeout(() => {
+                starsElement.classList.add("pulsing");
+                starSound.currentTime = 0;  // Сброс звука к началу
+                starSound.play();           // Проигрываем звуковой эффект
+            }, 20);  // Небольшая задержка для перезапуска анимации
+        }
+        function startGame() {
+            hideContinueButton();  // Скрываем кнопку "Продолжить" и показываем кнопки выбора ответа
+            document.getElementById("levelComplete").innerText = ""; // Очищаем сообщение о завершении уровня
+
+            resetUI();
+
+            // Включаем кнопки снова для нового раунда
+            document.getElementById("option1").disabled = false;
+            document.getElementById("option2").disabled = false;
+
+            // Здесь убираем автоматический переход на новый уровень, проверка по очкам будет в checkWord
+            if (Game.points >= 10) {
+                return;
+            }
+
+            setTimeout(() => {
+                setRandomWord();  // Устанавливаем слово с небольшой задержкой
+            }, 150);
+        }
+        Game.levelUp = function () {
+            this.level++;
+            this.correctAnswers = 0;
+            this.points = 0;
+            this.stars++;  // Начисляем звездочки
+
+            currentLevelWords = [];  // Сбрасываем использованные слова для нового уровня
+
+            fetch('videothemes/motivation/motivation.json')
+    .then(response => response.json())
+    .then(data => {
+        if (data && data[0]) {
+            const motivations = Object.values(data[0]);
+            const randomIndex = Math.floor(Math.random() * motivations.length);
+            document.getElementById("levelComplete").innerText = motivations[randomIndex];
+        }
+    })
+    .catch(error => {
+        console.error("Ошибка загрузки motivation.json:", error);
+    });
+            launchConfetti();
+            updateResult("");
+            saveProgress();
+            Game.updateUI();  // Обновляем интерфейс после начисления звездочек
+            triggerStarPulse();  // Запускаем анимацию пульсации звезды
+
+
+            showContinueButton();  // Показываем кнопку "Продолжить"
+        }
+        function launchConfetti() {
+            console.log("Конфетти запускается!"); // Проверка вызова функции
+            confetti({
+                particleCount: 1000, // Количество частиц
+                spread: 70,         // Угол распространения конфетти
+                origin: { y: 0.6 }  // Точка появления конфетти (y = 0.6 это чуть ниже середины экрана)
+            });
+        }
+
+
+        // Функция для выбора случайного слова
+
+        // Функция для получения количества использования слова
+        function getUsageCount(word) {
+            return wordUsageCount[word.video] || 0;
+        }
+
+        // Функция для обновления количества использования слова
+        function updateUsageCount(word) {
+            // Если слово было новым, изменяем его статус на false
+            if (word.new) {
+                word.new = false;
+                console.log(`Слово ${word.russian} больше не новое.`);
+
+                // Сохраняем обновленные данные в localStorage
+                const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+                storedWords[word.video] = { new: false };
+                localStorage.setItem('easywords', JSON.stringify(storedWords));
+            }
+
+            // Обновляем счетчик использования
+            wordUsageCount[word.video] = (wordUsageCount[word.video] || 0) + 1;
+            saveWordUsageCount();  // Сохраняем обновленный счетчик в localStorage
+        }
+
+
+        // Функция для сброса глобального количества использования слов (например, при сбросе игры)
+        function resetWordUsageIfNeeded() {
+            // Проверяем, если все слова использованы 5 раз
+            const allWordsUsedFiveTimes = easywords.every(word => (wordUsageCount[word.video] || 0) >= 5);
+            if (allWordsUsedFiveTimes) {
+                wordUsageCount = {};  // Сбрасываем счетчик
+                saveWordUsageCount();  // Сохраняем пустой счетчик
+                console.log("Все слова использованы 5 раз. Счетчик сброшен.");
+            }
+        }
+        // Функция для установки случайного слова
+        function setRandomWord() {
+            resetWordUsageIfNeeded();
+            let selectedWord;
+            if (preloadedWord) {
+                selectedWord = preloadedWord;
+                preloadedWord = null;
+            } else {
+                const newWords = easywords.filter(word => word.new === true);
+                if (newWords.length > 0) {
+                    selectedWord = newWords[Math.floor(Math.random() * newWords.length)];
+                } else {
+                    const remainingWords = easywords.filter(word => getUsageCount(word) < 5);
+                    if (remainingWords.length > 0) {
+                        selectedWord = remainingWords[Math.floor(Math.random() * remainingWords.length)];
+                    } else {
+                        resetWordUsageIfNeeded();
+                        selectedWord = easywords[Math.floor(Math.random() * easywords.length)];
+                    }
+                }
+            }
+            currentWordIndex = easywords.indexOf(selectedWord);
+            const correctOption = Math.random() > 0.5 ? "option1" : "option2";
+            document.getElementById(correctOption).innerText = selectedWord.russian;
+            document.getElementById(correctOption === "option1" ? "option2" : "option1").innerText = getRandomIncorrectTranslation(currentWordIndex);
+            const wordVideo = document.getElementById("wordVideo");
+            playCount = 0;
+            wordVideo.src = preloadedVideo ? preloadedVideo.src : selectedWord.video; 
+wordVideo.preload = "auto"; //подгрузка видео
+wordVideo.load();//подгрузка видео
+video.loop = false;
+repeatActive = false;
+video.playbackRate = 1;
+document.getElementById("speed-select").value = "1";
+            playWordSound();
+            resetShowKoreanButton();
+            preloadNextVideo();
+            updateSaveButtonState();
+        }
+
+
+
+
+
+        function showContinueButton() {
+            document.getElementById("option1").style.display = "none";
+            document.getElementById("option2").style.display = "none";
+            document.getElementById("points").style.display = "none";  // Скрываем элемент "Очки"
+            document.getElementById("level").style.display = "none";   // Скрываем элемент "Уровень"
+            document.getElementById("continueButton").style.display = "inline-block";  // Показываем кнопку "Продолжить"
+        }
+
+        function hideContinueButton() {
+            document.getElementById("continueButton").style.display = "none";  // Скрываем кнопку "Продолжить"
+            document.getElementById("option1").style.display = "inline-block"; // Показываем кнопки выбора ответа
+            document.getElementById("option2").style.display = "inline-block";
+            document.getElementById("points").style.display = "block";         // Показываем элемент "Очки"
+            document.getElementById("level").style.display = "block";          // Показываем элемент "Уровень"
+        }
+        function checkWord(selectedButton) {
+            // Отключаем обе кнопки, чтобы предотвратить повторные нажатия
+            document.getElementById("option1").disabled = true;
+            document.getElementById("option2").disabled = true;
+
+            const selectedWord = selectedButton.innerText;
+            const correctWord = easywords[currentWordIndex].russian;
+
+            // Проверяем правильность ответа
+            if (selectedWord === correctWord) {
+                Game.correctAnswers++;
+
+                // Увеличиваем очки только если правильный ответ и очков меньше 10
+                if (Game.points < 10) {
+                    Game.points++;
+                }
+                updateResult("");
+                var successAudio = new Audio('excellent.mp3');
+                successAudio.play();
+
+                // Анимация для правильного ответа
+                selectedButton.style.backgroundColor = "lightgreen";
+                setTimeout(() => {
+                    selectedButton.style.backgroundColor = "";
+                }, 200);
+
+
+                // Обновляем статус new на false только при правильном ответе
+                if (easywords[currentWordIndex].new) {
+                    easywords[currentWordIndex].new = false;
+
+                    // Обновляем в localStorage только это слово
+                    const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+                    storedWords[easywords[currentWordIndex].video] = { new: false };
+                    localStorage.setItem('easywords', JSON.stringify(storedWords));
+
+                    console.log(`Слово ${easywords[currentWordIndex].russian} больше не новое.`);
+                }
+            } else {
+                // При ошибке уменьшаем очки, но не даем упасть ниже 0
+                Game.points = Math.max(Game.points - 1, 0);
+                updateResult("");
+                var clickAudio = new Audio('click.mp3');
+                clickAudio.play();
+                // Анимация для неправильного ответа
+                selectedButton.style.backgroundColor = "lightcoral";
+                setTimeout(() => {
+                    selectedButton.style.backgroundColor = "";
+                }, 200);
+            }
+
+            Game.updateUI();  // Обновляем интерфейс
+            saveProgress();
+
+            // Переход на следующий уровень только при точных 10 очках
+            if (Game.points === 10) {
+                setTimeout(() => {
+                    Game.levelUp(); // Переход на новый уровень
+                }, 500);
+            } else {
+                // Продолжаем игру, если очков не 10
+                setTimeout(startGame, 500);
+
+            }
+        }
+
+        function getRandomIncorrectTranslation(correctWord) {
+            let randomWord;
+            do {
+                randomWord = easywords[Math.floor(Math.random() * easywords.length)];
+            } while (randomWord === correctWord);
+            return randomWord.russian;
+        }
+        function resetProgress() {
+            // Сохраняем значение member, если оно есть
+            const isMember = localStorage.getItem("member");
+
+            // Очищаем localStorage
+            localStorage.clear();
+
+            // Если member было "true", восстанавливаем его
+            if (isMember === "true") {
+                localStorage.setItem("member", "true");
+            }
+
+            // Сброс данных игры
+            Game.points = 0;
+            Game.level = 1;
+            Game.correctAnswers = 0;
+            Game.stars = 0; // Обнуление звездочек
+            Game.updateUI(); // Обновление интерфейса
+            location.reload();
+            startGame();
+        }
+
+
+        function resetUI() {
+            document.getElementById("result").innerText = "";
+            document.getElementById("restartButton").style.display = "none";  // Скрываем кнопку "Начать заново"
+            document.getElementById("option1").disabled = false;
+            document.getElementById("option2").disabled = false;
+
+        }
+
+        function updateResult(message, className) {
+            const resultElement = document.getElementById("result");
+            resultElement.innerText = message;
+            resultElement.className = className;
+
+            // Устанавливаем специфический размер шрифта для каждого класса
+            if (className === "correct") {
+                resultElement.style.fontSize = "30px"; // Для правильного ответа
+            } else if (className === "incorrect") {
+                resultElement.style.fontSize = "30px"; // Для неправильного ответа
+            } else {
+                resultElement.style.fontSize = "18px"; // Размер по умолчанию
+            }
+        }
+
+        // Обработчик для кнопки "Начать заново"
+        document.getElementById("restartButton").onclick = function () {
+            document.getElementById("restartButton").style.display = "none";  // Скрываем кнопку после нажатия
+            startGame();  // Перезапускаем игру
+        };
+        // Телеграмм расширение для получения размеров окна
+        if (window.Telegram.WebApp) {
+            Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
+        }
+        // Функция для инициализации таймера
+        function startTimerOnPage() {
+            const isMember = localStorage.getItem("member") === "true";
+            if (isMember) {
+                // Если член, таймер не запускаем и отображаем сообщение о доступе
+                return; // Выходим из функции, чтобы не запускать таймер
+            }
+
+            let remainingTime = parseInt(localStorage.getItem("remainingTime"), 10);
+
+            // Проверка, если данные отсутствуют, устанавливаем значение по умолчанию (5 минут)
+            if (isNaN(remainingTime)) {
+                remainingTime = 5 * 60; // 10 минут в секундах
+                localStorage.setItem("remainingTime", remainingTime);
+            }
+
+            const display = document.querySelector('.timer');
+            display.style.display = "block"; // Делаем таймер видимым при запуске
+            let timerInterval;
+            let showTime = false; // Флаг для переключения отображения времени
+
+            // Функция для обновления отображения таймера
+            function updateDisplay() {
+                if (showTime) {
+                    const minutes = Math.floor(remainingTime / 60);
+                    const seconds = remainingTime % 60;
+                    display.style.color = remainingTime <= 60 ? 'red' : 'black';
+                    display.textContent = `${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+                } else {
+                    display.textContent = "⏳"; // Значок по умолчанию
+                }
+            }
+
+            // Функция для запуска таймера
+            function startCountdown() {
+                timerInterval = setInterval(() => {
+                    remainingTime--;
+
+                    if (remainingTime <= 0) {
+                        clearInterval(timerInterval);
+                        remainingTime = 0;
+                        localStorage.setItem("remainingTime", remainingTime);
+
+                        // Перенаправление на главную страницу, если время истекло
+                        window.location.href = "index.html"; // Замените "index.html" на URL вашей главной страницы
+                    }
+
+                    // Обновляем отображение и сохраняем текущее время
+                    if (showTime) updateDisplay();
+                    localStorage.setItem("remainingTime", remainingTime);
+                }, 1000);
+            }
+
+            // Функция для остановки таймера
+            function stopCountdown() {
+                clearInterval(timerInterval);
+            }
+
+            display.addEventListener("click", () => {
+                showTime = !showTime; // Переключаем флаг
+                updateDisplay(); // Обновляем отображение в зависимости от флага
+            });
+
+            // Обработчик изменения видимости страницы
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    // Если страница скрыта, останавливаем таймер
+                    stopCountdown();
+                } else {
+                    // Если страница видима, запускаем таймер
+                    startCountdown();
+                }
+            });
+
+            // Запуск отображения и отсчета
+            updateDisplay();
+
+            // Проверяем, видима ли страница при загрузке
+            if (!document.hidden) {
+                startCountdown();
+            }
+
+            // Остановка таймера и сохранение времени при уходе со страницы
+            window.addEventListener("beforeunload", () => {
+                stopCountdown();
+                localStorage.setItem("remainingTime", remainingTime);
+            });
+        }
+
+        // Запуск функции, когда DOM полностью загружен
+        document.addEventListener("DOMContentLoaded", startTimerOnPage);
+
+
+        // Инициализация игры
+        loadWords();
+        loadProgress();
+        if (localStorage.getItem('newbiehealer') === '1') {
+    startGame();  // Запуск игры только если загадка разгадана
+}
+
+window.addEventListener('load', () => {
+  const fadeOverlay = document.getElementById('fadeOverlay');
+  const newbiehealer = localStorage.getItem('newbiehealer');
+
+  if (newbiehealer === '1') {
+    fadeOverlay.style.opacity = '0';
+    setTimeout(() => {
+      fadeOverlay.style.display = 'none';
+    }, 400);
+  }
+  
+});
+
+const video = document.getElementById("wordVideo");
+let lastTime = 0;
+
+video.addEventListener("timeupdate", function () {
+    if (!video.loop) return;
+
+    if (video.currentTime < lastTime) {
+        playCount++;
+        resetShowKoreanButton();
+    }
+    lastTime = video.currentTime;
+});
+
+
+
+// Play / Pause
+document.getElementById("play-btn").onclick = () => {
+    video.loop = false; // всегда выключаем repeat при ручном управлении
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+};
+
+// Repeat — включить/выключить режим повтора
+let repeatActive = false;
+
+document.getElementById("repeat-btn").onclick = () => {
+    if (!repeatActive) {
+        video.loop = true;
+        video.play();
+        repeatActive = true;
+    } else {
+        video.loop = false;
+        video.pause();
+        repeatActive = false;
+    }
+};
+
+// Скорость
+document.getElementById("speed-select").onchange = (e) => {
+    video.playbackRate = parseFloat(e.target.value);
+};
+    </script>
+</body>
+
+</html>

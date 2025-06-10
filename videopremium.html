@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Премиум</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      font-family: Arial, sans-serif;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal {
+      width: 90%;
+      max-width: 320px;
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    .modal ul {
+      list-style-type: disc;
+      text-align: left;
+      padding-left: 20px;
+      margin: 10px 0 20px;
+    }
+
+    .modal .price {
+      font-size: 20px;
+      margin-bottom: 15px;
+      font-weight: bold; 
+    }
+
+    .modal .old-price {
+      text-decoration: line-through;
+      color: #cc0000;
+      margin-right: 8px;
+      font-size: 30px;
+    }
+
+    .pay-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3b49ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    .pay-button:hover {
+      background-color: #2d3ad8;
+    }
+
+    .pay-button:active {
+      transform: scale(0.96);
+    }
+
+    .offer-button {
+      margin-top: 20px;
+      font-size: 14px;
+      color: white;
+      text-decoration: underline;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .offer-button:active {
+      transform: scale(0.95);
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .close-button:active {
+      transform: scale(0.9);
+    }
+
+    #loader {
+  display: none; /* будет показан через JS */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+ 
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-top: 6px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+ul {
+  margin-top: 0px; /* или 2px, если нужно совсем маленькое */
+}
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <button class="close-button" onclick="goBack()">×</button>
+    <h2>Золотое Кимчи</h2>
+    <ul>
+      <li>Нет органичения по времени.</li>
+      <li>Можно открывать все темы.</li>
+      <li>Доступ к закрытому чату "Кимчи Клаб"</li>
+      </ul>
+<h2 style="margin-bottom: 0; text-align: left;">В чате:</h2>
+      <ul style="margin-top: 0;">
+    <li>Общение</li>
+  <li>Тренировки по чтению</li>
+  <li>Доп материалы для обучения</li>
+  <li>Я всегда на связи по любым вопросам</li>
+</ul>
+   
+    <div class="price">
+     <!-- <span class="old-price">600 руб</span>-->
+      <span>Стоимость: 300 руб/мес</span>
+      <button onclick="openModal()" style="background: none; border: none; color: blue; text-decoration: underline; cursor: pointer; margin-left: 10px;">Как отключить подписку?</button>
+
+<div id="subscriptionModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+  <div style="background: white; width: 300px; padding: 20px; border-radius: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <button onclick="closeModal()" style="position: absolute; top: 10px; right: 10px; border: none; background: none; font-size: 20px; cursor: pointer;">×</button>
+    <p>Отключить подписку можно будет в боте – "Кимчи Хангуго", с которого вы запускаете приложение.<br/>ㅡㅡㅡ<br/> После оплаты вам придет приглашение в закрытый чат.<br/>ㅡㅡㅡ<br/> А также придет инструкция по управлению подпиской.</p>
+  </div>
+</div>
+    </div>
+    <button class="pay-button" onclick="redirectToPayment()">Оплатить</button>
+  </div>
+
+  <!-- Оферта под белым блоком -->
+  <button class="offer-button" onclick="openOffer()">Оферта</button>
+
+  <script>
+
+window.addEventListener("pageshow", function (event) {
+  // Событие pageshow с persisted = true означает, что страница загружена из бэк-кеша
+  if (event.persisted) {
+    document.getElementById("loader").style.display = "none";
+  }
+});
+    function goBack() {
+      window.history.back();
+    }
+
+    function openOffer() {
+      window.location.href = "videooffer.html";
+    }
+
+     function openModal() {
+    document.getElementById('subscriptionModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('subscriptionModal').style.display = 'none';
+  }
+
+    async function redirectToPayment() {
+  // Показать загрузку
+  document.getElementById("loader").style.display = "flex";
+
+  const telegramId = Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId") || 910912532;
+  if (!telegramId) return;
+
+  try {
+    const res = await fetch(`https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}`);
+    const data = await res.json();
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      document.getElementById("loader").style.display = "none";
+      alert("Ошибка получения ссылки.");
+    }
+  } catch (err) {
+    console.error("Ошибка при получении ссылки:", err);
+    document.getElementById("loader").style.display = "none";
+    alert("Не удалось загрузить ссылку.");
+  }
+}
+
+    if (window.Telegram.WebApp) {
+      Telegram.WebApp.ready();
+    }
+  </script>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+</body>
+</html>

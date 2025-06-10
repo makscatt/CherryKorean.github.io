@@ -1,0 +1,122 @@
+[
+    {
+      "image": "cards/theme4/사과.png",
+      "audio": "cards/theme4/audio/사과.mp3",
+      "korean": "사과",
+      "russian": "яблоко"
+    },
+    {
+      "image": "cards/theme4/빵.png",
+      "audio": "cards/theme4/audio/빵.mp3",
+      "korean": "빵",
+      "russian": "хлеб"
+    },
+    {
+      "image": "cards/theme4/계란.png",
+      "audio": "cards/theme4/audio/계란.mp3",
+      "korean": "계란",
+      "russian": "яйцо"
+    },
+    {
+      "image": "cards/theme4/우유.png",
+      "audio": "cards/theme4/audio/우유.mp3",
+      "korean": "우유",
+      "russian": "молоко"
+    },
+    {
+      "image": "cards/theme4/오렌지.png",
+      "audio": "cards/theme4/audio/오렌지.mp3",
+      "korean": "오렌지",
+      "russian": "апельсин"
+    },
+    {
+      "image": "cards/theme4/커피.png",
+      "audio": "cards/theme4/audio/커피.mp3",
+      "korean": "커피",
+      "russian": "кофе"
+    },
+    {
+      "image": "cards/theme4/밥.png",
+      "audio": "cards/theme4/audio/밥.mp3",
+      "korean": "밥",
+      "russian": "рис"
+    },
+    {
+      "image": "cards/theme4/고기.png",
+      "audio": "cards/theme4/audio/고기.mp3",
+      "korean": "고기",
+      "russian": "мясо"
+    },
+    {
+      "image": "cards/theme4/바나나.png",
+      "audio": "cards/theme4/audio/바나나.mp3",
+      "korean": "바나나",
+      "russian": "банан"
+    },
+    {
+      "image": "cards/theme4/과자.png",
+      "audio": "cards/theme4/audio/과자.mp3",
+      "korean": "과자",
+      "russian": "печенье"
+    },
+    {
+      "image": "cards/theme4/맛있어요.png",
+      "audio": "cards/theme4/audio/맛있어요.mp3",
+      "korean": "맛있어요",
+      "russian": "Вкусно"
+    },
+    {
+      "image": "cards/theme4/배고파요.png",
+      "audio": "cards/theme4/audio/배고파요.mp3",
+      "korean": "배고파요",
+      "russian": "Я голоден"
+    },
+    {
+      "image": "cards/theme4/잘 먹겠습니다.png",
+      "audio": "cards/theme4/audio/잘 먹겠습니다.mp3",
+      "korean": "잘 먹겠습니다",
+      "russian": "Приятного аппетита (перед едой)"
+    },
+    {
+      "image": "cards/theme4/잘 먹었습니다.png",
+      "audio": "cards/theme4/audio/잘 먹었습니다.mp3",
+      "korean": "잘 먹었습니다",
+      "russian": "Спасибо за еду (после еды)"
+    },
+    {
+      "image": "cards/theme4/물 주세요.png",
+      "audio": "cards/theme4/audio/물 주세요.mp3",
+      "korean": "물 주세요",
+      "russian": "Пожалуйста, дайте мне воду"
+    },
+    {
+      "image": "cards/theme4/더 주세요.png",
+      "audio": "cards/theme4/audio/더 주세요.mp3",
+      "korean": "더 주세요",
+      "russian": "Пожалуйста, дайте ещё"
+    },
+    {
+      "image": "cards/theme4/배불러요.png",
+      "audio": "cards/theme4/audio/배불러요.mp3",
+      "korean": "배불러요",
+      "russian": "Я наелся"
+    },
+    {
+      "image": "cards/theme4/요리 잘해요.png",
+      "audio": "cards/theme4/audio/요리 잘해요.mp3",
+      "korean": "요리 잘해요",
+      "russian": "Вы хорошо готовите"
+    },
+    {
+      "image": "cards/theme4/식사 준비됐어요.png",
+      "audio": "cards/theme4/audio/식사 준비됐어요.mp3",
+      "korean": "식사 준비됐어요",
+      "russian": "Еда готова"
+    },
+    {
+      "image": "cards/theme4/냄새 좋아요.png",
+      "audio": "cards/theme4/audio/냄새 좋아요.mp3",
+      "korean": "냄새 좋아요",
+      "russian": "Приятный запах"
+    }
+  ]

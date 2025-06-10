@@ -1,0 +1,68 @@
+[
+  {
+      "image": "cards/theme10/잠 자요.png",
+      "audio": "cards/theme10/audio/잠 자요.mp3",
+      "korean": "잠 자요.",
+      "russian": "Сплю/Спокойной ночи"
+  },
+  {
+    "image": "cards/theme10/몸을 풀어요.png",
+    "audio": "cards/theme10/audio/몸을 풀어요.mp3",
+    "korean": "몸을 풀어요.",
+    "russian": "Делаю зарядку"
+},
+{
+  "image": "cards/theme10/세수해요.png",
+  "audio": "cards/theme10/audio/세수해요.mp3",
+  "korean": "세수해요.",
+  "russian": "Умываюсь"
+},
+{
+  "image": "cards/theme10/아침을 먹어요.png",
+  "audio": "cards/theme10/audio/아침을 먹어요.mp3",
+  "korean": "아침을 먹어요.",
+  "russian": "Завтракаю"
+},
+{
+  "image": "cards/theme10/출근해요.png",
+  "audio": "cards/theme10/audio/출근해요.mp3",
+  "korean": "출근해요.",
+  "russian": "Ухожу на работу"
+},
+{
+  "image": "cards/theme10/일해요.png",
+  "audio": "cards/theme10/audio/일해요.mp3",
+  "korean": "일해요.",
+  "russian": "Работаю"
+},
+{
+  "image": "cards/theme10/점심을 먹어요.png",
+  "audio": "cards/theme10/audio/점심을 먹어요.mp3",
+  "korean": "점심을 먹어요.",
+  "russian": "Обедаю"
+},
+{
+  "image": "cards/theme10/쉬어요.png",
+  "audio": "cards/theme10/audio/쉬어요.mp3",
+  "korean": "쉬어요.",
+  "russian": "Отдыхаю"
+},
+{
+  "image": "cards/theme10/저녁을 먹어요.png",
+  "audio": "cards/theme10/audio/저녁을 먹어요.mp3",
+  "korean": "저녁을 먹어요.",
+  "russian": "Ужинаю"
+},
+{
+  "image": "cards/theme10/집에 왔어요.png",
+  "audio": "cards/theme10/audio/집에 왔어요.mp3",
+  "korean": "집에 왔어요.",
+  "russian": "Пришла домой"
+},
+{
+  "image": "cards/theme10/샤워해요.png",
+  "audio": "cards/theme10/audio/샤워해요.mp3",
+  "korean": "샤워해요.",
+  "russian": "Принимаю душ"
+}
+]

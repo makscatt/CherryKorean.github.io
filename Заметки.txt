@@ -1,6 +1,28 @@
 Заметки
-Чтобы обновить файлы в гитхабе
-git add index.html
+
+localStorage.setItem('member', 'true');
+localStorage.setItem('stars', '100');
+localStorage.setItem('bankinstruction', 'false');
+
+
+локальный сервер, как serve .
+netlify dev
+
+Пуш на нетлифай
+netlify deploy --prod
+.
+
+Гит:
 git add .
-git commit -m "Обновление кода: исправление отрицательных значений очков"
-git push origin main
+git commit -m "Обновление версии"
+git push
+git push --set-upstream origin main
+
+
+Трудности:
+
+Работа с конвертером:
+cd "C:\Users\MakscattSchool\Desktop\Видео"
+mkdir mp4
+mkdir webm
+for %f in (*.mp4) do ffmpeg -i "%f" -c:v libvpx-vp9 -b:v 1M -c:a libopus "webm\%~nf.webm"

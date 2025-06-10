@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кнопки</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="font.css" />
+  <link rel="stylesheet" href="videostyles.css">
+    <link rel="stylesheet" href="minimenu.css">
+    <link rel="stylesheet" href="videosubmenustyles.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+    <div id="fadeOverlay" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    z-index: 100000;
+    transition: opacity 0.4s ease;">
+  </div>
+    <div id="newbieOverlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; color: white; background: #000000; display: none; flex-direction: column; justify-content: center; align-items: center; text-align: center; z-index: 100001;">
+        <h1 style="font-size: 36px;">RunBTS</h1>
+        <h3 style="font-size: 30px;">Новое испытание</h3>
+        <p style="font-size: 24px; color: #ffc0cb">Как называетя Рыба,<br>про которую Джин спел песню?</p>
+        <input type="text" id="riddleInput" placeholder="поле ввода ответа" autocomplete="off" style="font-size: 35px; padding: 2px; border-radius: 10px; text-align: center; border: 4px solid black;" />
+        <button id="checkRiddleButton" class="checkRiddleButton" style="margin-top: 20px;">Проверить</button>
+      </div>
+    <div id="wrapper">
+        <div id="gameContainer">
+  <div id="stars">⭐ 0</div>
+  <img id="bg-image" src="videothemes/subthemebc/runbtsbackground.png" alt="фон" />
+  <div id="buttons-container"></div>
+
+  <div id="menu-button-container">
+    <button id="main-menu-button" onclick="playPushButton()">⌂</button>
+  </div>
+</div>
+</div>
+  <script>
+    const levelUnlockedSound = new Audio('level_unlocked.mp3');
+    const totalButtons = 4;
+    const cost = 10;
+    const starsKey = "stars";
+    const pageName = window.location.pathname
+  .split('/')
+  .pop()
+  .replace(/\.[^.]+$/, '');
+
+// формируем уникальный ключ
+const unlockedKey = `unlockedButtons_${pageName}`;
+
+    window.addEventListener('DOMContentLoaded', () => {
+    const newbierunbts = localStorage.getItem('newbierunbts');
+    const overlay = document.getElementById('newbieOverlay');
+
+    if (newbierunbts !== '1') {
+        overlay.style.display = 'flex';
+
+        document.getElementById('checkRiddleButton').addEventListener('click', () => {
+            const input = document.getElementById('riddleInput');
+            const answer = input.value.trim().toLowerCase();
+
+            if (answer === 'тунец') {
+                localStorage.setItem('newbierunbts', '1');
+                overlay.style.opacity = '0';
+
+                const img = document.createElement('img');
+                img.src = '/videothemes/riddle/runbts.png';
+                img.style.maxWidth = '100%';
+                img.style.height = 'auto';
+                img.style.margin = '0 auto';
+                img.style.display = 'block';
+
+                setTimeout(() => {
+                    overlay.innerHTML = '';
+                    overlay.appendChild(img);
+                    overlay.style.opacity = '1';
+
+                    const audio = new Audio('level_unlocked.mp3');
+                    audio.play();
+
+                    audio.onended = () => {
+                        overlay.style.opacity = '0';
+                        setTimeout(() => {
+                            overlay.style.display = 'none';
+                            location.reload();
+                        }, 500);
+                    };
+                }, 500);
+            } else {
+                input.value = '';
+                input.placeholder = 'Попробуй ещё раз';
+                input.style.setProperty('--placeholder-color', '#f9898f');
+
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    #riddleInput::placeholder {
+                        color: var(--placeholder-color);
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        });
+    }
+});
+
+    function getStars() {
+      return parseInt(localStorage.getItem(starsKey)) || 0;
+    }
+
+    function setStars(value) {
+      localStorage.setItem(starsKey, value);
+      document.getElementById('stars').textContent = `⭐ ${value}`;
+    }
+
+    function getUnlockedButtons() {
+      const data = localStorage.getItem(unlockedKey);
+      return data ? JSON.parse(data) : [true];
+    }
+
+    function saveUnlockedButtons(arr) {
+      localStorage.setItem(unlockedKey, JSON.stringify(arr));
+    }
+
+    async function updateButtonCounts() {
+  const buttons = document.querySelectorAll('#buttons-container .submenubutton');
+
+  for (let i = 0; i < buttons.length; i++) {
+    const themeId = `4_${i + 1}`;
+    const btn = buttons[i];
+    const countContainer = btn.querySelector('.theme-count-container');
+    const countSpan = btn.querySelector('.theme-count');
+
+    try {
+      const response = await fetch(`videothemes/json/videotheme${themeId}.json`);
+      const jsonData = await response.json();
+
+      countSpan.textContent = jsonData.length;
+
+      const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+      const hasNewWords = jsonData.some(jsonItem => {
+        const storedItem = storedWords[jsonItem.video];
+        return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
+      });
+
+     countContainer.style.backgroundColor = hasNewWords ? '#E53935' : '#43A047';
+
+      if (jsonData.some(item => item.isNew)) {
+        const badge = document.createElement('div');
+        badge.className = 'theme-badge';
+        badge.textContent = 'Новинка';
+        btn.appendChild(badge);
+      }
+    } catch (error) {
+      console.error(`Ошибка загрузки videotheme${themeId}.json:`, error);
+      countSpan.textContent = 'err';
+      countContainer.style.backgroundColor = 'gray';
+    }
+  }
+}
+
+
+
+    function renderButtons() {
+  const container = document.getElementById("buttons-container");
+  container.innerHTML = "";
+  const unlocked = getUnlockedButtons();
+
+  for (let i = 0; i < totalButtons; i++) {
+    const btn = document.createElement("button");
+    btn.className = "submenubutton";
+
+    // Создаем контейнер слева, как .theme-count-container
+    const countContainer = document.createElement("div");
+    countContainer.className = "theme-count-container";
+    const span = document.createElement("span");
+    span.className = "theme-count";
+    countContainer.appendChild(span);
+
+    // Обернем текст внутри <span>, чтобы соблюсти структуру
+    const textSpan = document.createElement("span");
+    textSpan.textContent = `BTS ${i + 1}`;
+
+    btn.appendChild(countContainer);
+    btn.appendChild(textSpan);
+
+    if (!unlocked[i]) {
+      btn.classList.add("locked");
+      btn.addEventListener("click", () => tryUnlock(i));
+    } else {
+      btn.addEventListener("click", () => {
+        window.location.href = `videosubtheme4_${i + 1}.html`;
+      });
+    }
+
+    container.appendChild(btn);
+  }
+}
+
+function tryUnlock(index) {
+  let stars = getStars();
+  if (stars < cost) return;
+
+  stars -= cost;
+  setStars(stars);
+  levelUnlockedSound.play();
+
+  const unlocked = getUnlockedButtons();
+  unlocked[index] = true;
+  saveUnlockedButtons(unlocked);
+
+  // 🔥 Вместо renderButtons обновляем только одну кнопку
+  const container = document.getElementById("buttons-container");
+  const button = container.querySelectorAll(".submenubutton")[index];
+
+  button.classList.remove("locked");
+
+  // Удаляем псевдоэлемент ::after (замок) не требуется — он пропадёт при снятии класса
+  // Но если бы overlay-элемент был отдельным — удалили бы его так:
+  // const lockOverlay = button.querySelector('.lock-overlay');
+  // if (lockOverlay) lockOverlay.remove();
+
+  // Заменяем обработчик клика
+  const newButton = button.cloneNode(true);
+  newButton.onclick = () => {
+    window.location.href = `videosubtheme4_${index + 1}.html`;
+  };
+  button.replaceWith(newButton);
+
+ 
+  
+  // Отправка на сервер остаётся как есть
+  const telegramId = Telegram.WebApp.initDataUnsafe?.user?.id;
+  if (telegramId) {
+    const subThemes = unlocked
+      .map((isActive, idx) => isActive ? idx + 1 : null)
+      .filter(v => v !== null);
+
+    fetch(`https://telegram-server-hfk7.onrender.com/save`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        telegramId,
+        stars,
+        subThemes
+      })
+    }).catch(() => {});
+  }
+}
+
+
+    function playPushButton() {
+      var pushAudio = new Audio('pushButton.mp3');
+      pushAudio.play();
+    }
+
+    document.getElementById('main-menu-button').addEventListener('click', () => {
+      window.location.href = 'videothemes.html';
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      setStars(getStars()); // показать текущие звёзды
+      renderButtons();
+      updateButtonCounts();
+    });
+
+    window.addEventListener('load', () => {
+  const fadeOverlay = document.getElementById('fadeOverlay');
+  const newbiehealer = localStorage.getItem('newbierunbts');
+
+  if (newbiehealer === '1') {
+    fadeOverlay.style.opacity = '0';
+    setTimeout(() => {
+      fadeOverlay.style.display = 'none';
+    }, 400);
+  }
+  
+});
+  </script>
+</body>
+</html>

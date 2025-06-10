@@ -1,5 +1,8 @@
 [build]
-  functions = "netlify/functions" # Указываем папку с функциями
+  functions = "netlify/functions"
+
+[functions]
+  directory = "netlify/functions"
 
 [[redirects]]
   from = "/api/*"

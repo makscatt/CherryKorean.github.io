@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'NetflixSans-Regular';
+    src: url('./NetflixSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    font-family: 'NetflixSans-Regular', Arial, sans-serif;
+    
+}
+
+
+
+#uiContainer {
+    display: block;
+    
+    margin-bottom: 10px;
+    width: 100%; /* Растягиваем контейнер на всю ширину */
+    height: 150px; 
+    /*border: 1px solid #ffffff; */
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+#uiContainer_v {
+    display: flex; /* Используем flexbox для размещения в строку */
+    flex-direction: row; /* Элементы располагаются в строку */
+    margin-bottom: 10px;
+    width: 100%; /* Растягиваем контейнер на всю ширину */
+    height: 50px;
+    /*border: 1px solid #ffffff;*/
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+}
+#uiContainer_v > * {
+    border-left: 2px solid #ccc; /* Черта слева */
+    border-right: 2px solid #ccc; /* Черта справа */
+    padding: 10px; /* Отступ справа от разделителя */
+}
+
+#uiContainer_v p {
+    display: inline-block; /* Размещение элементов в одну строку */
+    margin-right: 10px; /* Отступ между элементами */
+}
+
+#word-container{
+    display: block;
+    margin-bottom: 10px;
+    justify-content: center; /* Центрируем элементы */
+    align-items: center;
+    width: 90%; /* Растягиваем контейнер на всю ширину */
+    height: 230px; 
+    /* border: 1px solid #ffffff;*/
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+
+#word {
+    font-family: 'NetflixSans-Regular', sans-serif;
+    font-size: 28px; 
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    color: #616161;
+}
+
+
+
+#startGameImage {
+    width: 50%;
+    max-width: 300px;
+    transform: translateX(50%);
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(51, 51, 51);
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+   
+    box-shadow: 0 1px 8px #b7b7b7;
+    transform: translateY(4px);
+}
+
+
+
+h1 {
+    font-size: 20px; /* Измените размер на нужный */
+margin-bottom: 20px;
+}
+
+#result {
+    
+font-weight: normal;
+font-size: 18px;
+margin: 10px;
+}
+
+.correct {
+color: green;
+font-size: 80px; 
+}
+
+.incorrect {
+color: red;
+font-size: 80px; 
+}
+
+#levelComplete {
+    margin: 20px auto; /* сверху-снизу 20px, по бокам авто */
+    padding: 0 20px;   /* внутренний отступ по бокам */
+    font-size: 18px;
+    color: rgb(47, 127, 255);
+    font-weight: bold;
+    max-width: 90%;    /* чтобы не растягивался на всю ширину */
+    text-align: center;
+  }
+
+
+
+.time-out {
+    color: red;
+  
+    font-size: 16px !important;
+}
+
+#stars {
+    display: flex;
+    font-size: 30px;
+    color: white;  
+    }
+   
+    
+
+#stars.pulsing {
+    animation: pulse 0.3s ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(0%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0%) scale(1.5);
+        opacity: 1.5;
+    }
+    100% {
+        transform: translateX(0%) scale(1);
+        opacity: 1;
+    }
+}
+
+#restartButton {
+    display: none;
+    margin: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #b7b7b7;
+    transition: all 0.1s ease-in-out;
+    text-align: center;
+}
+
+#restartButton:active {
+    background-color: #1976D2;
+    box-shadow: 0 2px #b7b7b7;
+    transform: translateY(4px);
+}
+
+
+
+#continueButton {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #b7b7b7;
+    transition: all 0.2s ease-in-out;
+    display: none;
+}
+
+#continueButton:active {
+    background-color: #1976D2;
+    box-shadow: 0 2px #b7b7b7;
+    transform: translateY(4px);
+}
+
+#continueButton:hover {
+    background-color: #1E88E5;
+}
+
+#phrase {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#word {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Разделяет кнопки на равное расстояние */
+    width: 100%; /* Контейнер на всю ширину */
+    margin-bottom: 20px; /* Отступ снизу для контейнера */
+}
+
+#playSoundButton {
+    width: 70%; /* Длинная кнопка */
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #323232;
+    border-radius: 5px;
+   
+}
+
+#playSlowSoundButton {
+    width: 25%; /* Короткая кнопка */
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #323232;
+    border-radius: 5px;
+    
+}
+
+#playSoundButton:active, #playSlowSoundButton:active {
+    background-color: #90d093;
+}
+#menu-button-container {
+    gap: 10px;
+    margin-top: 10px;
+    height: 70px; /* Фиксированная высота */
+    display: flex;
+    justify-content: center; /* Центрируем элементы */
+    align-items: center;
+    width: 100%; /* Растягиваем контейнер на всю ширину */
+    margin: 5;
+    left: 0; /* Чтобы зафиксировать по ширине */
+    right: 0; /* Чтобы зафиксировать по ширине */
+    background-color: #1E88E5;
+    border-radius: 10px;
+    /*border: 1px solid #ddd;*/
+}
+
+#control-button-container {
+  
+    height: 70px; /* Фиксированная высота */
+    display: flex;
+    justify-content: center; /* Центрируем элементы */
+    align-items: center;
+    width: 100%; /* Растягиваем контейнер на всю ширину */
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    position: relative;
+   
+   /* border: 1px solid #00ff11;*/
+}
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    }
+#gameContainer {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to bottom, #000000 50%, #ffffff 50%);
+    border-radius: 10px;
+   }
+#video-container {
+    position: relative;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+   
+   /* border: 1px solid #2f00ff;*/
+    height: 500px;
+    background-color: #ffffff;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+#subvideoContainer {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* <<< ВАЖНО: теперь элементы идут В СТОЛБИК */
+    height: auto; 
+    width: 100%;
+   
+    background-color: #000000;
+   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    max-height: 250px;
+}
+
+#video-container video {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto; /* Смещение к центру по оси X */
+   
+    
+   
+}
+#option1, #option2 {
+    margin-top: 5px;
+}
+
+#showKoreanButton {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    color: #ffffff; /* Белый цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 15px; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход для изменения цвета фона */
+    opacity: 0.3; /* Полупрозрачность */
+    margin: 10px auto; /* Отступ сверху и автоматическое выравнивание по центру */
+    display: none; /* Скрываем кнопку по умолчанию */
+    text-align: center; /* Центрируем текст в кнопке */
+}
+
+#showKoreanButton:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Темнее при наведении */
+    opacity: 1; /* Снимаем полупрозрачность при наведении */
+}
+#koreanText {
+    margin: 10px auto; /* Отступ сверху и автоматическое выравнивание по центру */
+    font-size: 25px; /* Размер текста */
+    text-align: center; /* Центрируем текст */
+    word-wrap: break-word; /* Перенос строк по словам */
+    overflow-wrap: break-word; /* Альтернативный способ для переноса по словам */
+    word-break: keep-all; /* Запрещает перенос текста внутри слов */
+}
+#resultWrapper {
+    height: 45px; /* чуть больше, чем .correct/.incorrect */
+  }

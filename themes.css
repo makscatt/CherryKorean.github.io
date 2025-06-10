@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'NetflixSans-Regular';
+    src: url('./NetflixSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html {
+    -webkit-text-size-adjust: none;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'NetflixSans-Regular', Arial, sans-serif;
+}
+
+
+
+
+
+/* Контейнер с соотношением сторон 9:16 */
+#startScreen {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    width: 100vw; /* Используем относительную единицу измерения */
+    height: 100vh;
+    padding-top: 0px;
+    overflow: hidden; /* Добавляем, чтобы изображение не выходило за пределы контейнера */
+  background-color: black;
+}
+#topBar {
+      top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+   /* background-color: rgba(255, 255, 255, 0.6);*/
+    padding: 0px 0;
+     }
+
+    
+
+#stars {
+    font-size: 30px;
+    color: white;  
+}
+
+
+/* Контейнер для кнопок */
+#themes-container {
+   position: relative;
+    display: block;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto; /* Высота контейнера для тем */
+    max-height: 80vh;
+   /* border: 1px solid #49ffe1; */
+    overflow:auto;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 255, 255) transparent;
+}
+#themes-container::-webkit-scrollbar {
+    width: 4px;
+}
+#themes-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+#themes-container::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.carousel-row {
+    padding-left: 10px; /* убедись, что нет отступов */
+    margin-left: 0;
+    overflow-x: auto;
+    margin-bottom: 5px;
+  }
+  
+
+  .theme-grid {
+    justify-content: flex-start;
+    display: flex;
+  
+    gap: 10px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+ 
+  }
+
+.theme-grid::-webkit-scrollbar {
+    display: none;                    /* Chrome, Safari и Telegram WebView */
+}
+
+.theme-button {
+    position: relative;
+    display: none;
+    pointer-events: none;
+    opacity: 1;
+    width: 125px;
+    aspect-ratio: 9 / 16;
+    background-size: cover;
+    background-position: center;
+   
+    cursor: pointer;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    
+}
+.theme-grid .theme-button {
+    
+    box-sizing: border-box;
+  }
+.theme-button.loaded {
+    display: block; /* Показать, если изображение успешно загружено */
+}
+.theme-button.active {
+filter: none;
+pointer-events: auto; /* Разрешаем клики */
+opacity: 1;
+
+}
+.theme-button:active {
+transform: scale(0.95); /* Эффект уменьшения при нажатии */
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* Уменьшение тени при нажатии */
+}
+#theme-picture-img {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 30px;
+   
+}
+.bank-button .theme-count-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 68, 68);
+    padding: 2px 4px;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+
+    
+    
+    .theme-count {
+      color: rgb(255, 255, 255);
+    }

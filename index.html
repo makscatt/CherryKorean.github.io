@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Стартовый экран</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="/trackActivity.js"></script>
+
+
     <style>
+        html,
         body {
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+            background-color: black;
         }
 
-        /* Контейнер для игры */
-        #wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
+        
+        
+        #fadeOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 10000;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+        @font-face {
+            font-family: 'NetflixSans-Regular';
+            src: url('./NetflixSans-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
         }
 
-        /* Контейнер с соотношением сторон 9:16 */
-        #startScreen {
+        body {
+
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-            margin: auto;
-            width: 90vw; /* Используем относительную единицу измерения */
-            height: auto;
-            aspect-ratio: 9 / 16;
-            max-width: 400px;
-            max-height: 90vh; /* Используем относительную единицу измерения */
-            overflow: hidden; /* Добавляем, чтобы изображение не выходило за пределы контейнера */
+            width: 100vw;
+            height: 100vh;
+            font-family: 'NetflixSans-Regular', Arial, sans-serif;
         }
+
+
+
+
+        /* Контейнер с соотношением сторон 9:16 */
+
 
         /* Контейнер для фонового изображения, который адаптируется к экрану */
         #backgroundImageContainer {
@@ -63,8 +72,10 @@
         /* Само фоновое изображение */
         #backgroundImage {
             width: 100%;
-            height: 100%; /* Устанавливаем высоту на 100% */
-            object-fit: cover; /* Заполняем контейнер, сохраняя соотношение сторон */
+            height: 100%;
+            /* Устанавливаем высоту на 100% */
+            object-fit: cover;
+            /* Заполняем контейнер, сохраняя соотношение сторон */
         }
 
         /* Контейнер для кнопок */
@@ -73,108 +84,277 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative; /* Оставляем поверх изображения */
-            z-index: 1; /* Обеспечивает расположение поверх фонового изображения */
+            position: relative;
+            /* Оставляем поверх изображения */
+            z-index: 1;
+            /* Обеспечивает расположение поверх фонового изображения */
+            transform: translateY(-100px);
+
         }
 
         /* Контейнер для двух рядов кнопок */
         .buttonsRow {
             display: flex;
             justify-content: center;
-            margin: 10px 0; /* Отступ между рядами */
+            margin: 10px 0;
+            /* Отступ между рядами */
         }
 
         /* Стили для кнопок */
         .startButton {
-            width: 150px;
-            height: 150px;
-            margin: 0 10px; /* Отступ между кнопками в ряду */
+            padding: 10px 15px;
+            font-size: 35px;
+            background-color: #E50914;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 10px;
             cursor: pointer;
+            font-family: 'NetflixSans-Regular', Arial, sans-serif;
+
+            box-shadow:
+                inset 1px 1px 0 #fff,
+                inset -1px -1px 0 #800000,
+                2px 2px 4px rgba(0, 0, 0, 0.6);
+
         }
+
+        .startButton:active {
+            transform: translateY(4px);
+            box-shadow:
+                inset 4px 4px 0 #5a0000,
+                inset -2px -2px 0 #ff5c5c;
+            transition: transform 0.05s ease-in, box-shadow 0.05s ease-in;
+        }
+
+
+
+
+
+
+
+        .timer {
+            display: none;
+            /* Изначально скрыто */
+            position: fixed;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            width: 100px;
+            margin: 0 auto;
+            z-index: 9998;
+            top: 2%;
+        }
+
+        .overlay-timer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            /* Полупрозрачный черный фон */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 10000;
+            /* Поверх всех элементов */
+        }
+
+        .subscribe-button {
+
+            padding: 10px 15px;
+            font-size: 20px;
+            background-color: #E50914;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            z-index: 1001;
+            /* Поверх всех элементов */
+
+        }
+
+       
     </style>
 </head>
-<body>
-    <!-- Оборачиваем в #wrapper -->
-    <div id="wrapper">
-        <div id="startScreen">
-            <!-- Контейнер для фонового изображения -->
-            <div id="backgroundImageContainer">
-                <img src="startscreenBG.png" alt="Фоновое изображение" id="backgroundImage">
-            </div>
 
-            <!-- Контейнер для кнопок -->
-            <div id="buttonsContainer">
-                <div class="buttonsRow">
-                    <!-- Первая строка кнопок -->
-                    <img src="button1.png" alt="Отгадай перевод" class="startButton" onclick="startGame('translate')">
-                     <img src="button2.png" alt="На слух" class="startButton" onclick="startGame('audio')">
-                </div>
-                <div class="buttonsRow">
-                    <!-- Вторая строка кнопок -->
-                   <!-- <img src="button3.png" alt="По картинкам" class="startButton" onclick="startGame('pictures')">-->
-                   <img src="button3.png" alt="Качать слух" class="startButton" onclick="startGame('audiobox')">
-                    <img src="button4.png" alt="Карточки" class="startButton" onclick="startGame('training')">
-                </div>
-            </div>
+<body>
+
+
+    
+    <div class="timer">00:00</div>
+    <!-- Контейнер для фонового изображения -->
+    <div id="backgroundImageContainer">
+
+        <img src="startscreenBGnew.png" alt="Фоновое изображение" id="backgroundImage">
+
+    </div>
+
+    <!-- Контейнер для кнопок -->
+    <div id="buttonsContainer">
+
+        <img src="app_name.png" alt="App Name" style="width: 70%; ">
+        <div class="buttonsRow">
+            <!-- Вторая строка кнопок -->
+            <!-- <img src="button3.png" alt="По картинкам" class="startButton" onclick="startGame('pictures')">-->
+            <!-- <img src="button2.png" alt="На слух" class="startButton" onclick="startGame('audiomenu')">-->
+            <button class="startButton" onclick="startGame('video')">Начать</button>
         </div>
     </div>
 
+
+
     <script>
-const userId = window.Telegram.WebApp.initDataUnsafe.user.id; // Получаем userId
 
-if (!userId) {
-    alert("User ID не найден. Приложение будет закрыто."); 
-    window.Telegram.WebApp.close(); // Закрываем приложение
-} else {
-    alert("Полученный userId: " + userId); 
 
-    alert("Отправляем запрос на сервер для проверки членства...");
 
-    fetch('https://dainty-mochi-5c9845.netlify.app/.netlify/functions/checkGroupMembership', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ userId: userId })
-    })
-    .then(response => {
-        if (!response.ok) {
-            alert(`Ошибка сети: ${response.status}`);
-            throw new Error(`Ошибка сети: ${response.status}`);
+        const gameStartsSound = new Audio('game_starts.mp3');
+        gameStartsSound.preload = 'auto';
+        gameStartsSound.load();
+
+        function activityTrackerLoaded() {
+            console.log("trackActivity.js загружен и функция работает");
         }
-        return response.json();
-    })
-    .then(data => {
-        alert("Ответ от сервера получен");
-
-        if (data.isMember) {
-            alert("Доступ предоставлен");
+        if (typeof activityTrackerLoaded === "function") {
+            activityTrackerLoaded(); // Вызовет консольное сообщение, если функция загружена
         } else {
-            alert("Доступ запрещен. Покупай подписку.");
-            document.body.innerHTML = "<h1>Приобретите подписку</h1>";
+            console.log("trackActivity.js не загрузился");
         }
-    })
-    .catch(error => {
-        alert("Ошибка при выполнении запроса: " + error.message); // Показываем ошибку через alert
-    });
+        function initTimer() {
+            const savedDate = localStorage.getItem("timerDate");
+            const currentDate = new Date().toISOString().split('T')[0];
+            const display = document.querySelector('.timer');
+            let remainingTime = parseInt(localStorage.getItem("remainingTime"), 10);
+
+
+
+            // Делаем таймер видимым при запуске
+            display.style.display = "none";
+
+            // Проверка даты: если это новый день, сбрасываем таймер до 10 минут
+            if (savedDate !== currentDate || isNaN(remainingTime)) {
+                remainingTime = 5 * 60; // Устанавливаем 10 минут, если это первый запуск или новый день
+                localStorage.setItem("remainingTime", remainingTime);
+                localStorage.setItem("timerDate", currentDate);
+            }
+
+
+            // Если время истекло, отображаем блокировку 
+            if (remainingTime <= 0) {
+                const overlay = document.createElement("div");
+                overlay.className = "overlay-timer";
+                overlay.innerHTML = `
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center;">
+        <p>На сегодня тренировка завершена. Приходи завтра🤗</p>
+        <p>Если хочешь тренироваться без ограничений - нужно Золотое Кимчи</p>
+        <button class="subscribe-button" onclick="window.open('https://videopremium.html', '_blank')">Подключить</button>
+       
+    </div>
+`;
+                document.body.appendChild(overlay);
+
+
+
+            } else {
+                // Просто отображаем оставшееся время
+                displayRemainingTime(display, remainingTime);
+            }
+
+        }
+
+        function displayRemainingTime(display, remainingTime) {
+            const minutes = Math.floor(remainingTime / 60);
+            const seconds = remainingTime % 60;
+            display.textContent = `${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+        }
+
+
+
+
+        const initData = window.Telegram.WebApp.initDataUnsafe;
+const telegramId = initData?.user?.id;
+
+if (!telegramId) {
+    
+    window.Telegram.WebApp.close();
+} else {
+    // Запрос 1: проверка членства в группе (userId в теле)
+    const checkGroup = fetch('https://dainty-mochi-5c9845.netlify.app/.netlify/functions/checkGroupMembership', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId: telegramId })
+    }).then(res => res.json())
+      .catch(() => ({ isMember: false }));
+
+    // Запрос 2: проверка премиума (telegramId в URL)
+    const checkPremium = fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
+        .then(res => res.json())
+        .catch(() => ({ promember: false }));
+
+    Promise.all([checkGroup, checkPremium])
+        .then(([groupData, premiumData]) => {
+            const isMember = groupData.isMember === true || premiumData.promember === true;
+
+            if (isMember) {
+                localStorage.setItem("member", "true");
+            } else {
+                localStorage.setItem("member", "false");
+                initTimer(); // ограничиваем доступ
+            }
+
+            // Отправляем событие трекинга
+            fetch('https://telegram-server-hfk7.onrender.com/track_user', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    userId: telegramId,
+                   
+                }),
+            });
+        });
+}
+
+// Анимация исчезновения фейда
+window.addEventListener('load', () => {
+    const fade = document.getElementById('fadeOverlay');
+    fade.style.opacity = '0';
+    setTimeout(() => {
+        fade.style.display = 'none';
+    }, 500);
+});
+
+
+        function startGame() {
+    const fadeOverlay = document.getElementById('fadeOverlay');
+    const backgroundImage = document.getElementById('backgroundImage');
+    const buttonsContainer = document.getElementById('buttonsContainer');
+
+    backgroundImage.style.transition = 'opacity 0.4s ease';
+    buttonsContainer.style.transition = 'opacity 0.4s ease';
+    fadeOverlay.style.transition = 'opacity 0.4s ease';
+
+    backgroundImage.style.opacity = '0';
+    buttonsContainer.style.opacity = '0';
+    fadeOverlay.style.opacity = '1';
+
+    setTimeout(() => {
+        window.location.href = "videothemes.html";
+    }, 400);
 }
 
 
-function startGame(gameMode) {
-    if (gameMode === 'translate') {
-        window.location.href = "textwords.html";
-    } else if (gameMode === 'audio') {
-        window.location.href = "audio.html";
-    } else if (gameMode === 'audiobox') {
-        window.location.href = "audiobox.html";
-    } else if (gameMode === 'training') {
-        window.location.href = "themes.html";
-    }
-}
+        if (window.Telegram.WebApp) {
+            Telegram.WebApp.requestFullscreen();
+        }
 
-if (window.Telegram.WebApp) {
-    Telegram.WebApp.expand();
-}
     </script>
+    <div id="fadeOverlay"></div>
 </body>
+
 </html>

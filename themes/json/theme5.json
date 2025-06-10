@@ -1,0 +1,122 @@
+[
+    {
+      "image": "cards/theme5/물.png",
+      "audio": "cards/theme5/audio/물.mp3",
+      "korean": "물",
+      "russian": "вода"
+    },
+    {
+      "image": "cards/theme5/커피.png",
+      "audio": "cards/theme5/audio/커피.mp3",
+      "korean": "커피",
+      "russian": "кофе"
+    },
+    {
+      "image": "cards/theme5/차.png",
+      "audio": "cards/theme5/audio/차.mp3",
+      "korean": "차",
+      "russian": "чай"
+    },
+    {
+      "image": "cards/theme5/주스.png",
+      "audio": "cards/theme5/audio/주스.mp3",
+      "korean": "주스",
+      "russian": "сок"
+    },
+    {
+      "image": "cards/theme5/우유.png",
+      "audio": "cards/theme5/audio/우유.mp3",
+      "korean": "우유",
+      "russian": "молоко"
+    },
+    {
+      "image": "cards/theme5/맥주.png",
+      "audio": "cards/theme5/audio/맥주.mp3",
+      "korean": "맥주",
+      "russian": "пиво"
+    },
+    {
+      "image": "cards/theme5/와인.png",
+      "audio": "cards/theme5/audio/와인.mp3",
+      "korean": "와인",
+      "russian": "вино"
+    },
+    {
+      "image": "cards/theme5/소주.png",
+      "audio": "cards/theme5/audio/소주.mp3",
+      "korean": "소주",
+      "russian": "соджу"
+    },
+    {
+      "image": "cards/theme5/에너지 드링크.png",
+      "audio": "cards/theme5/audio/에너지 드링크.mp3",
+      "korean": "에너지 드링크",
+      "russian": "энергетический напиток"
+    },
+    {
+      "image": "cards/theme5/탄산수.png",
+      "audio": "cards/theme5/audio/탄산수.mp3",
+      "korean": "탄산수",
+      "russian": "газированная вода"
+    },
+    {
+      "image": "cards/theme5/차가운 차.png",
+      "audio": "cards/theme5/audio/차가운 차.mp3",
+      "korean": "차가운 차",
+      "russian": "холодный чай"
+    },
+    {
+      "image": "cards/theme5/뜨거운 커피.png",
+      "audio": "cards/theme5/audio/뜨거운 커피.mp3",
+      "korean": "뜨거운 커피",
+      "russian": "горячий кофе"
+    },
+    {
+      "image": "cards/theme5/과일 주스.png",
+      "audio": "cards/theme5/audio/과일 주스.mp3",
+      "korean": "과일 주스",
+      "russian": "фруктовый сок"
+    },
+    {
+      "image": "cards/theme5/우유 마셔요.png",
+      "audio": "cards/theme5/audio/우유 마셔요.mp3",
+      "korean": "우유 마셔요",
+      "russian": "пью молоко"
+    },
+    {
+      "image": "cards/theme5/맥주 좋아해요.png",
+      "audio": "cards/theme5/audio/맥주 좋아해요.mp3",
+      "korean": "맥주 좋아해요",
+      "russian": "мне нравится пиво"
+    },
+    {
+      "image": "cards/theme5/차 마실래요.png",
+      "audio": "cards/theme5/audio/차 마실래요.mp3",
+      "korean": "차 마실래요?",
+      "russian": "хочешь чаю?"
+    },
+    {
+      "image": "cards/theme5/술 취했어요.png",
+      "audio": "cards/theme5/audio/술 취했어요.mp3",
+      "korean": "술 취했어요",
+      "russian": "я пьян"
+    },
+    {
+      "image": "cards/theme5/건배하다.png",
+      "audio": "cards/theme5/audio/건배하다.mp3",
+      "korean": "건배하다",
+      "russian": "Чокаться"
+    },
+    {
+      "image": "cards/theme5/물이 시원해요.png",
+      "audio": "cards/theme5/audio/물이 시원해요.mp3",
+      "korean": "물이 시원해요",
+      "russian": "вода освежающая"
+    },
+    {
+      "image": "cards/theme5/커피 마시고 싶어요.png",
+      "audio": "cards/theme5/audio/커피 마시고 싶어요.mp3",
+      "korean": "커피 마시고 싶어요",
+      "russian": "я хочу кофе"
+    }
+  ]

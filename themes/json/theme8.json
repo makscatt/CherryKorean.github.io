@@ -1,0 +1,92 @@
+[
+  {
+    "image": "cards/theme8/오늘 날씨가 어때요.png",
+    "audio": "cards/theme8/audio/오늘 날씨가 어때요.mp3",
+    "korean": "오늘 날씨가 어때요?",
+    "russian": "Какая сегодня погода?"
+  },
+  {
+    "image": "cards/theme8/날씨가 맑아요.png",
+    "audio": "cards/theme8/audio/날씨가 맑아요.mp3",
+    "korean": "날씨가 맑아요.",
+    "russian": "Погода солнечная."
+  },
+  {
+    "image": "cards/theme8/비가 와요.png",
+    "audio": "cards/theme8/audio/비가 와요.mp3",
+    "korean": "비가 와요.",
+    "russian": "Идет дождь."
+  },
+  {
+    "image": "cards/theme8/눈이 와요.png",
+    "audio": "cards/theme8/audio/눈이 와요.mp3",
+    "korean": "눈이 와요.",
+    "russian": "Идет снег."
+  },
+  {
+    "image": "cards/theme8/날씨가 추워요.png",
+    "audio": "cards/theme8/audio/날씨가 추워요.mp3",
+    "korean": "날씨가 추워요.",
+    "russian": "Погода холодная."
+  },
+  {
+    "image": "cards/theme8/날씨가 더워요.png",
+    "audio": "cards/theme8/audio/날씨가 더워요.mp3",
+    "korean": "날씨가 더워요.",
+    "russian": "Погода жаркая."
+  },
+  {
+    "image": "cards/theme8/바람이 불어요.png",
+    "audio": "cards/theme8/audio/바람이 불어요.mp3",
+    "korean": "바람이 불어요.",
+    "russian": "Дует ветер."
+  },
+  {
+    "image": "cards/theme8/흐린 날씨예요.png",
+    "audio": "cards/theme8/audio/흐린 날씨예요.mp3",
+    "korean": "흐린 날씨예요.",
+    "russian": "Погода пасмурная."
+  },
+  {
+    "image": "cards/theme8/오늘 기온이 몇 도예요.png",
+    "audio": "cards/theme8/audio/오늘 기온이 몇 도예요.mp3",
+    "korean": "오늘 기온이 몇 도예요?",
+    "russian": "Какая сегодня температура?"
+  },
+  {
+    "image": "cards/theme8/봄이 왔어요.png",
+    "audio": "cards/theme8/audio/봄이 왔어요.mp3",
+    "korean": "봄이 왔어요.",
+    "russian": "Пришла весна."
+  },
+  {
+    "image": "cards/theme8/여름이 너무 더워요.png",
+    "audio": "cards/theme8/audio/여름이 너무 더워요.mp3",
+    "korean": "여름이 너무 더워요.",
+    "russian": "Лето очень жаркое."
+  },
+  {
+    "image": "cards/theme8/가을이 좋아요.png",
+    "audio": "cards/theme8/audio/가을이 좋아요.mp3",
+    "korean": "가을이 좋아요.",
+    "russian": "Я люблю осень."
+  },
+  {
+    "image": "cards/theme8/겨울이 왔어요.png",
+    "audio": "cards/theme8/audio/겨울이 왔어요.mp3",
+    "korean": "겨울이 왔어요.",
+    "russian": "Зима пришла."
+  },
+  {
+    "image": "cards/theme8/내일 비가 올 거예요.png",
+    "audio": "cards/theme8/audio/내일 비가 올 거예요.mp3",
+    "korean": "내일 비가 올 거예요.",
+    "russian": "Завтра будет дождь."
+  },
+  {
+    "image": "cards/theme8/이번 주말에 날씨가 좋을까요.png",
+    "audio": "cards/theme8/audio/이번 주말에 날씨가 좋을까요.mp3",
+    "korean": "이번 주말에 날씨가 좋을까요?",
+    "russian": "В эти выходные будет хорошая погода?"
+  }
+]

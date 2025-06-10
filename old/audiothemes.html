@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Темы</title>
+     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="/trackActivity.js"></script>
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="minimenu.css">
+    <style>
+       
+        #navigation-bar-container {
+    position: absolute;
+    bottom: 20px; /* Отступ от нижнего края */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%; /* Подгоняем под ширину родителя */
+    padding: 0 5px;
+    box-sizing: border-box; /* Убедимся, что padding не влияет на размеры */
+  
+
+}.hint-container {
+    border: 2px dashed #ff0000;
+    left: 0;
+    width: 55%;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+}
+#cards-button {
+    width: 15%;
+    height: 90%;
+    position: absolute;
+    right: 102px;
+   
+  
+    
+    
+    color: rgb(32, 32, 32);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1001; /* Поверх всех элементов */
+  
+   
+}
+#cards-button-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.overlay-arrow {
+    position: absolute; /* Абсолютное позиционирование для наложения */
+    top: 0x; /* Поднимаем стрелку чуть выше кнопки */
+    left: -5%;
+    bottom: 0px;
+    transform: translateX(-50%); /* Центруем стрелку по горизонтали */
+    width: 50px; /* Установите размеры стрелки по необходимости */
+    height: auto;
+   
+   
+}
+
+
+
+
+     
+    </style>
+</head>
+<body>
+    
+
+    <!-- Родительский элемент для мини-меню -->
+    
+    <div id="wrapper">
+        <div id="startScreen" style="position: relative;">
+      
+            <img src="audio-theme-picture.png" alt="Карточки" id="theme-picture-img">
+       
+            <div id="themes-container">
+                <div class="theme-grid">
+            <!-- Кнопки тем, расположенные в сетке 3x4 -->
+            <div class="theme-button" id="theme1" style="background-image: url('audiothemes/theme1.png');" onclick="selectTheme(1)"></div>
+            <div class="theme-button" id="theme2" style="background-image: url('audiothemes/theme2.png');" onclick="selectTheme(2)"></div>
+            <div class="theme-button" id="theme3" style="background-image: url('audiothemes/theme3.png');" onclick="selectTheme(3)"></div>
+            <div class="theme-button" id="theme4" style="background-image: url('audiothemes/theme4.png');" onclick="selectTheme(4)"></div>
+            <div class="theme-button" id="theme5" style="background-image: url('audiothemes/theme5.png');" onclick="selectTheme(5)"></div>
+            <div class="theme-button" id="theme6" style="background-image: url('audiothemes/theme6.png');" onclick="selectTheme(6)"></div>
+            <div class="theme-button" id="theme7" style="background-image: url('audiothemes/theme7.png');" onclick="selectTheme(7)"></div>
+            <div class="theme-button" id="theme8" style="background-image: url('audiothemes/theme8.png');" onclick="selectTheme(8)"></div>
+            <div class="theme-button" id="theme9" style="background-image: url('audiothemes/theme9.png');" onclick="selectTheme(9)"></div>
+            <div class="theme-button" id="theme10" style="background-image: url('audiothemes/theme10.png');" onclick="selectTheme(10)"></div>
+            <div class="theme-button" id="theme11" style="background-image: url('audiothemes/theme11.png');" onclick="selectTheme(11)"></div>
+            <div class="theme-button" id="theme12" style="background-image: url('audiothemes/theme12.png');" onclick="selectTheme(12)"></div>
+            
+        </div>
+      
+    </div>
+    
+   
+        <div id="navigation-bar-container">
+            <p class="hint-container" style="text-align: center; font-size: 17px;">💡: пройди карточки, чтобы<br>открыть новые темы</p>
+           <!--   <div id="forward-button" onclick="nextPage()">Вперед</div>-->
+           <div id="cards-button" onclick="showCardsMenu()">
+    <img src="cards-button.png" alt="Карты" id="cards-button-img">
+    <img src="arrow.png" alt="Нажмите" class="overlay-arrow">
+</div>
+ <button id="main-menu-button" class="nav-button" onclick="playPushButton()">⌂</button>
+        </div>
+    </div>
+</div>
+    <script>
+ window.addEventListener('DOMContentLoaded', function() {
+    const miniMenu = document.getElementById('mini-menu');
+    const overlay = document.getElementById('overlay');
+    const gameContainer = document.getElementById('gameContainer'); // Элементы игры
+
+    // Убедитесь, что меню и подложка скрыты при загрузке страницы
+    miniMenu.style.display = 'none';
+    overlay.style.display = 'none';
+
+    // Кнопка для открытия/закрытия меню
+    const mainMenuButton = document.getElementById('main-menu-button');
+
+    // Открытие меню
+    mainMenuButton.addEventListener('click', function() {
+        if (miniMenu.style.display === 'none' || miniMenu.style.display === '') {
+            miniMenu.style.display = 'flex'; // Показываем мини-меню
+            overlay.style.display = 'block'; // Показываем подложку
+            gameContainer.classList.add('blur'); // Применяем размытие к игровым элементам
+        } else {
+            miniMenu.style.display = 'none'; // Скрываем мини-меню
+            overlay.style.display = 'none'; // Скрываем подложку
+            gameContainer.classList.remove('blur'); // Убираем размытие
+        }
+    });
+
+    // Закрытие меню при клике вне меню
+    overlay.addEventListener('click', function() {
+        miniMenu.style.display = 'none'; // Скрываем мини-меню
+        overlay.style.display = 'none'; // Скрываем подложку
+        gameContainer.classList.remove('blur'); // Убираем размытие
+    });
+
+    // Обработка кнопок внутри мини-меню
+    document.getElementById('menu-button').addEventListener('click', function() {
+        console.log('Меню нажато');
+        // Здесь ваша логика для действия кнопки "Меню"
+        // Например, переход на другую страницу
+        window.location.href = 'index.html';
+    });
+
+    document.getElementById('back-button').addEventListener('click', function() {
+        console.log('Назад нажато');
+        // Логика для кнопки "Назад"
+        // Например, возвращение на предыдущий экран
+        window.history.back();
+    });
+
+    document.getElementById('resetProgressButton').addEventListener('click', function() {
+        console.log('Сброс прогресса');
+        
+        // Логика для кнопки "Сброс"
+        resetProgress(); // Ваш существующий метод для сброса прогресса
+    });
+});
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('theme1').classList.add('active');
+            document.getElementById('theme9').classList.add('active');
+    // Проверяем состояние каждой темы в localStorage
+    for (let i = 1; i <= 12; i++) {
+        if (localStorage.getItem('theme' + i) === 'true') {
+            // Делаем кнопку активной
+            document.getElementById('theme' + i).classList.add('active');
+        }
+    }
+});
+function playPushButton(){
+    var pushAudio = new Audio('pushButton.mp3');
+        pushAudio.play();
+}
+function loadButtonsWithImages() {
+    const themeButtons = document.querySelectorAll('.theme-button');
+
+    themeButtons.forEach(button => {
+        const backgroundImage = button.style.backgroundImage;
+        if (backgroundImage) {
+            const urlMatch = backgroundImage.match(/url\("(.*)"\)/);
+            if (urlMatch && urlMatch[1]) {
+                const img = new Image();
+                img.src = urlMatch[1];
+                img.onload = () => {
+                    button.classList.add('loaded');
+                    button.style.display = 'block';
+                };
+                img.onerror = () => {
+                    button.style.display = 'none';
+                    button.style.pointerEvents = 'none';
+                };
+            } else {
+                button.style.display = 'none';
+                button.style.pointerEvents = 'none';
+            }
+        } else {
+            button.style.display = 'none';
+            button.style.pointerEvents = 'none';
+        }
+    });
+}
+
+// Call the function when the document is fully loaded
+document.addEventListener('DOMContentLoaded', loadButtonsWithImages);
+
+function showCardsMenu() {
+        window.location.href = 'themes.html'; 
+        playPushButton();
+    }
+         function previousPage() {
+        window.location.href = 'themes.html'; // Временная реализация для отображения, что меню открыто
+    }
+         function nextPage() {
+        window.location.href = 'p2.html'; // Временная реализация для отображения, что меню открыто
+    }
+    function showMenu() {
+    window.history.back(); // Возвращает на предыдущую страницу
+    playPushButton();
+}
+        function selectTheme(themeId) {
+            // Переход на соответствующую страницу темы
+            window.location.href = 'audiotheme' + themeId + '.html';
+            playPushButton();
+        }
+
+        function navigate(direction) {
+            if (direction === 'menu') {
+                // Переход на главную страницу (index.html)
+                window.location.href = 'index.html';
+            }
+            // Логика для навигации "back" и "forward" может быть добавлена здесь
+            console.log("Навигация:", direction);
+        }
+
+        // Инициализация Telegram Mini App
+        if (window.Telegram.WebApp) {
+            Telegram.WebApp.ready();
+            Telegram.WebApp.expand(); // Расширяем приложение до полного экрана
+        }
+    </script>
+</body>
+</html>
