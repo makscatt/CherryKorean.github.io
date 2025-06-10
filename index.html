@@ -285,39 +285,29 @@ if (!telegramId) {
     window.Telegram.WebApp.close();
 } else {
     // Запрос 1: проверка членства в группе (userId в теле)
-    const checkGroup = fetch('https://dainty-mochi-5c9845.netlify.app/.netlify/functions/checkGroupMembership', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userId: telegramId })
-    }).then(res => res.json())
-      .catch(() => ({ isMember: false }));
+    fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
+    .then(res => res.json())
+    .then(data => {
+        const isMember = data.promember === true || data.tgmembership === true;
 
-    // Запрос 2: проверка премиума (telegramId в URL)
-    const checkPremium = fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
-        .then(res => res.json())
-        .catch(() => ({ promember: false }));
+        if (isMember) {
+            localStorage.setItem("member", "true");
+        } else {
+            localStorage.setItem("member", "false");
+            initTimer(); // ограничиваем доступ
+        }
 
-    Promise.all([checkGroup, checkPremium])
-        .then(([groupData, premiumData]) => {
-            const isMember = groupData.isMember === true || premiumData.promember === true;
-
-            if (isMember) {
-                localStorage.setItem("member", "true");
-            } else {
-                localStorage.setItem("member", "false");
-                initTimer(); // ограничиваем доступ
-            }
-
-            // Отправляем событие трекинга
-            fetch('https://telegram-server-hfk7.onrender.com/track_user', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    userId: telegramId,
-                   
-                }),
-            });
+        // Трекинг пользователя
+        fetch('https://telegram-server-hfk7.onrender.com/track_user', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ userId: telegramId }),
         });
+    })
+    .catch(() => {
+        localStorage.setItem("member", "false");
+        initTimer();
+    });
 }
 
 // Анимация исчезновения фейда
