@@ -1,0 +1,21 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Khabarovsk",
+			"country": {
+				"code": "RU",
+				"name": "Russia"
+			},
+			"subdivision": {
+				"code": "KHA",
+				"name": "Khabarovsk"
+			},
+			"timezone": "Asia/Vladivostok",
+			"latitude": 48.4817,
+			"longitude": 135.083,
+			"postalCode": "680000"
+		},
+		"timestamp": 1740652350231
+	},
+	"siteId": "6ea84834-e706-483d-bda7-8bef4fbb6cbf"
+}
