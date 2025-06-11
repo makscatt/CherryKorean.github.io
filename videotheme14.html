@@ -473,7 +473,9 @@
         async function loadWordsAndSetOptions() {
             try {
                 if (easywords.length === 0) {
-                    const response = await fetch('videothemes/json/videotheme14.json?nocache=' + new Date().getTime());
+                    const pageName = window.location.pathname.split('/').pop(); // "videotheme14.html"
+                    const index = pageName.match(/\d+/)[0]; // "14"
+                    const response = await fetch(`videothemes/json/videotheme${index}.json?nocache=${Date.now()}`);
                     easywords = await response.json();
                     const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
                     easywords.forEach(word => {
@@ -580,46 +582,46 @@
                     return;
                 }
             } else {
-                 if (progressCount > 0) {
-            const index = Math.min(progressCount - 1, boxes.length - 1);
-            boxes[index].style.backgroundColor = 'lightcoral';
+                if (progressCount > 0) {
+                    const index = Math.min(progressCount - 1, boxes.length - 1);
+                    boxes[index].style.backgroundColor = 'lightcoral';
+                    setTimeout(() => {
+                        boxes[index].style.backgroundColor = 'white';
+                        progressCount = index; // откатываем на скорректированное значение
+                        saveProgressBoxes();
+                    }, 300);
+                }
+            }
+
             setTimeout(() => {
-                boxes[index].style.backgroundColor = 'white';
-                progressCount = index; // откатываем на скорректированное значение
-                saveProgressBoxes();
-            }, 300);
+                button.style.backgroundColor = "";
+                loadWordsAndSetOptions();
+            }, 500);
         }
-    }
 
-    setTimeout(() => {
-        button.style.backgroundColor = "";
-        loadWordsAndSetOptions();
-    }, 500);
-}
 
-            
 
         function saveProgressBoxes() {
             localStorage.setItem(window.location.pathname + "_progressCount", progressCount);
         }
 
         function loadProgressBoxes() {
-        const boxes = document.querySelectorAll('.progress-box');
-    const saved = parseInt(localStorage.getItem(window.location.pathname + "_progressCount"));
-    progressCount = Math.min(saved, boxes.length);
-    
-    const totalBoxes = boxes.length;
+            const boxes = document.querySelectorAll('.progress-box');
+            const saved = parseInt(localStorage.getItem(window.location.pathname + "_progressCount"));
+            progressCount = Math.min(saved, boxes.length);
 
-    if (!isNaN(saved)) {
-        progressCount = Math.min(saved, boxes.length);
-    } else {
-        progressCount = 0;
-    }
+            const totalBoxes = boxes.length;
 
-    for (let i = 0; i < boxes.length; i++) {
-        boxes[i].style.backgroundColor = i < progressCount ? 'lightgreen' : 'white';
-    }
-}
+            if (!isNaN(saved)) {
+                progressCount = Math.min(saved, boxes.length);
+            } else {
+                progressCount = 0;
+            }
+
+            for (let i = 0; i < boxes.length; i++) {
+                boxes[i].style.backgroundColor = i < progressCount ? 'lightgreen' : 'white';
+            }
+        }
 
 
 

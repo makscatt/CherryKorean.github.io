@@ -94,32 +94,26 @@
         }
 
         #gameContainer {
-            width: 450px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             position: relative;
-            height: 700px;
-            border-radius: 10px;
-            background: linear-gradient(to bottom, #000000 50%, #ffffff 50%);
+            margin: auto;
+            width: 100vw;
+            /* Используем относительную единицу измерения */
+            height: 100vh;
+            padding-top: 0px;
+            background: linear-gradient(to bottom, #000000 30%, #ffffff 30%);
 
-        }
-
-        #interaction-block {
-            margin-top: auto;
-            margin-bottom: auto;
         }
 
         #video-container {
-            max-width: 445px;
-
+            max-width: 100%;
             border-radius: 10px;
             margin-top: 40px;
             width: 100%;
-
-
         }
 
         #custom-video-container {
@@ -132,57 +126,28 @@
             width: 100%;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            height: 253px;
-            /* Жестко зафиксированная высота */
+
             margin: 0;
 
 
         }
 
-        #menu-button-container {
-            position: relative;
-            max-width: 445px;
-            gap: 10px;
-            margin-top: auto;
-            margin-bottom: 3px;
-            height: 70px;
-            /* Фиксированная высота */
+        #interaction-block {
             display: flex;
-            justify-content: center;
-            /* Центрируем элементы */
-            align-items: center;
-            width: 100%;
-            /* Растягиваем контейнер на всю ширину */
-            left: 0;
-            /* Чтобы зафиксировать по ширине */
-            right: 0;
-            /* Чтобы зафиксировать по ширине */
-            background-color: #1E88E5;
-            border-radius: 10px;
-            /*border: 1px solid #ddd;*/
-        }
-
-        .progress-box {
-            width: 25px;
-            height: 25px;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 6px;
-            background-color: white;
-        }
-
-        #answer-buttons {
-            margin-top: 15px;
-            display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            gap: 10px;
-            height: 110px;
-            /* фиксированная высота */
+            width: 100%;
+            margin-top: clamp(1%, 5vw, 5%);
+            margin-bottom: 1%;
+            height: 50%;
+
+
         }
 
         button {
             margin: 5px;
             padding: 5px 10px;
-            font-size: 18px;
+            font-size: clamp(15px, 5vw, 50px);
             cursor: pointer;
             background-color: #ffffff;
             color: rgb(51, 51, 51);
@@ -197,12 +162,81 @@
             transform: translateY(4px);
         }
 
+        #answer-buttons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin: 10px;
+
+            justify-content: space-between;
+            gap: 10px;
+            height: 110px;
+            /* фиксированная высота */
+        }
+
+        #showKoreanButton {
+            margin-top: 0px;
+            font-size: clamp(15px, 5vw, 30px);
+            height: clamp(50px, 5vw, 80px);
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            opacity: 0.7;
+        }
+
+        #koreanText {
+            display: none;
+            margin: 0px;
+            padding: 0px;
+            font-size: clamp(15px, 5vw, 50px);
+            background-color: #fff;
+            height: clamp(50px, 5vw, 80px);
+            border-radius: 10px;
+            white-space: normal;
+            overflow-wrap: break-word;
+            word-break: keep-all;
+            opacity: 0.8;
+        }
+
+        #progress-bar {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(10, 30px);
+            gap: 2vw;
+            justify-content: center;
+            margin-top: clamp(1%, 4vw, 5%);
+        }
+
+        .progress-box {
+            width: clamp(30px, 5vw, 40px);
+            height: clamp(30px, 5vw, 40px);
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            background-color: white;
+
+        }
+
+        #menu-button-container {
+            position: relative;
+            max-width: 100%;
+            gap: 10px;
+            margin-top: auto;
+            margin-bottom: 3px;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #1E88E5;
+            border-radius: 10px;
+        }
+
         #stars {
             position: absolute;
-            left: 90px;
+            left: 85px;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 28px;
+            font-size: 20px;
             color: white;
             background: none;
             border: none;
@@ -216,26 +250,21 @@
             justify-content: center;
         }
 
-
-
         #stars.pulsing {
             animation: pulse 0.3s ease-out;
         }
 
         @keyframes pulse {
             0% {
-                transform: translateX(0%) scale(1);
-                opacity: 1;
+                transform: translateY(-50%) scale(1);
             }
 
             50% {
-                transform: translateX(0%) scale(1.5);
-                opacity: 1.5;
+                transform: translateY(-50%) scale(1.5);
             }
 
             100% {
-                transform: translateX(0%) scale(1);
-                opacity: 1;
+                transform: translateY(-50%) scale(1);
             }
         }
 
@@ -248,6 +277,7 @@
             top: 50%;
             transform: translateY(-58%);
             padding: 1px 6px;
+
         }
 
         #back-button {
@@ -288,15 +318,6 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-        }
-
-        #progress-bar {
-            display: grid;
-            grid-template-columns: repeat(10, 30px);
-            grid-auto-rows: 30px;
-            gap: 5px;
-            justify-content: center;
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -452,7 +473,9 @@
         async function loadWordsAndSetOptions() {
             try {
                 if (easywords.length === 0) {
-                    const response = await fetch('videothemes/json/videotheme5.json?nocache=' + new Date().getTime());
+                    const pageName = window.location.pathname.split('/').pop(); // "videotheme14.html"
+                    const index = pageName.match(/\d+/)[0]; // "14"
+                    const response = await fetch(`videothemes/json/videotheme${index}.json?nocache=${Date.now()}`);
                     easywords = await response.json();
                     const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
                     easywords.forEach(word => {
@@ -559,46 +582,46 @@
                     return;
                 }
             } else {
-                 if (progressCount > 0) {
-            const index = Math.min(progressCount - 1, boxes.length - 1);
-            boxes[index].style.backgroundColor = 'lightcoral';
+                if (progressCount > 0) {
+                    const index = Math.min(progressCount - 1, boxes.length - 1);
+                    boxes[index].style.backgroundColor = 'lightcoral';
+                    setTimeout(() => {
+                        boxes[index].style.backgroundColor = 'white';
+                        progressCount = index; // откатываем на скорректированное значение
+                        saveProgressBoxes();
+                    }, 300);
+                }
+            }
+
             setTimeout(() => {
-                boxes[index].style.backgroundColor = 'white';
-                progressCount = index; // откатываем на скорректированное значение
-                saveProgressBoxes();
-            }, 300);
+                button.style.backgroundColor = "";
+                loadWordsAndSetOptions();
+            }, 500);
         }
-    }
 
-    setTimeout(() => {
-        button.style.backgroundColor = "";
-        loadWordsAndSetOptions();
-    }, 500);
-}
 
-            
 
         function saveProgressBoxes() {
             localStorage.setItem(window.location.pathname + "_progressCount", progressCount);
         }
 
         function loadProgressBoxes() {
-        const boxes = document.querySelectorAll('.progress-box');
-    const saved = parseInt(localStorage.getItem(window.location.pathname + "_progressCount"));
-    progressCount = Math.min(saved, boxes.length);
-    
-    const totalBoxes = boxes.length;
+            const boxes = document.querySelectorAll('.progress-box');
+            const saved = parseInt(localStorage.getItem(window.location.pathname + "_progressCount"));
+            progressCount = Math.min(saved, boxes.length);
 
-    if (!isNaN(saved)) {
-        progressCount = Math.min(saved, boxes.length);
-    } else {
-        progressCount = 0;
-    }
+            const totalBoxes = boxes.length;
 
-    for (let i = 0; i < boxes.length; i++) {
-        boxes[i].style.backgroundColor = i < progressCount ? 'lightgreen' : 'white';
-    }
-}
+            if (!isNaN(saved)) {
+                progressCount = Math.min(saved, boxes.length);
+            } else {
+                progressCount = 0;
+            }
+
+            for (let i = 0; i < boxes.length; i++) {
+                boxes[i].style.backgroundColor = i < progressCount ? 'lightgreen' : 'white';
+            }
+        }
 
 
 
