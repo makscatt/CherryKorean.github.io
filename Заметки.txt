@@ -3,6 +3,7 @@
 localStorage.setItem('member', 'true');
 localStorage.setItem('stars', '100');
 localStorage.setItem('bankinstruction', 'false');
+window.Telegram={WebApp:{initDataUnsafe:{user:{id:910912532}}}};
 
 
 локальный сервер, как serve .
@@ -25,4 +26,28 @@ git push --set-upstream origin main
 cd "C:\Users\MakscattSchool\Desktop\Видео"
 mkdir mp4
 mkdir webm
-for %f in (*.mp4) do ffmpeg -i "%f" -c:v libvpx-vp9 -b:v 1M -c:a libopus "webm\%~nf.webm"
+for %f in (*.mkv) do ffmpeg -i "%f" -c:v libvpx-vp9 -b:v 1M -c:a libopus "webm\%~nf.webm"
+
+
+скачать с юутб: 
+yt-dlp.exe https://www.youtube.com/watch?v=ID_видео
+yt-dlp https://www.instagram.com/reel/КОД/
+yt-dlp https://www.youtube.com/shorts/ID
+
+только звук:
+yt-dlp.exe -x --audio-format mp3 https://www.youtube.com/watch?v=ID
+
+в лучшем качестве:
+yt-dlp.exe -f best https://www.youtube.com/watch?v=ID
+
+плейлист:
+yt-dlp https://www.youtube.com/playlist?list=ID_плейлиста
+
+открыть папку:
+cd
+
+Редактировать среды
+sysdm.cpl 
+
+запуск cmd
+cmd

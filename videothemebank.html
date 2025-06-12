@@ -791,7 +791,6 @@ function analyzeKoreanText() {
            <strong>${text}</strong>
          </div>`;
 
-      // Разбор с цветом в строке морфем
       const breakdown = data.tokens
         .map(t => `<span style="color:${t.color}">${t.word}</span>`)
         .join(' + ');
@@ -800,24 +799,31 @@ function analyzeKoreanText() {
            <strong>Разбор:</strong><br>${breakdown}
          </div>`;
 
-      // POS без цвета
-      const tokenBlock = 
-        `<div style="margin-bottom:10px;">
-           <strong>Разбор с POS:</strong><br>` +
-           data.tokens
-             .map(t => `${t.word} / ${t.pos}`)
-             .join(' ') +
-        `</div>`;
+      let tokenBlock = '';
+      if (window.Telegram && Telegram.WebApp.initDataUnsafe?.user?.id === 910912532) {
+        tokenBlock = 
+          `<div style="margin-bottom:10px;">
+             <strong>Разбор с POS:</strong><br>` +
+             data.tokens
+               .map(t => `${t.word} / ${t.pos}`)
+               .join(' ') +
+          `</div>`;
+      }
 
       const grammarBlocks = data.grammar_matches.map(g => {
+        const showMeaning = typeof g.meaning === 'string' && g.meaning !== '';
+        const showExample = typeof g.example === 'string' && g.example !== '';
+
         const pattern = `<strong>${g.pattern}</strong>:`;
-        const meaning = `${g.meaning}`;
-        const example = g.example
+        const meaning = showMeaning ? `${g.meaning}<br>` : '';
+        const example = showExample
           ? `<div style="margin-left:10px;"><em>${g.example}</em></div>`
           : '';
-        return `${pattern}<br>${meaning}<br>${example}
+
+        return `${pattern}<br>${meaning}${example}
                 <hr style="margin:6px 0;">`;
       }).join('');
+
       const grammarBlock = grammarBlocks || '<div>Грамматики: Нет</div>';
 
       const content = original + breakdownBlock + tokenBlock + grammarBlock;
@@ -830,6 +836,9 @@ function analyzeKoreanText() {
       document.getElementById("popup").style.display = "block";
     });
 }
+
+
+
 
 function closePopup() {
   document.getElementById("popup").style.display = "none";
