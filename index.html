@@ -281,7 +281,7 @@
 const telegramId = initData?.user?.id;
 
 if (!telegramId) {
-    
+    document.body.style.visibility = "visible";
     window.Telegram.WebApp.close();
 } else {
     // Запрос 1: проверка членства в группе (userId в теле)
