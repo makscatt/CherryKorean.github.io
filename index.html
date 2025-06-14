@@ -184,7 +184,7 @@
     </style>
 </head>
 
-<body style="display: none">
+<body style="visibility: hidden">
 
 
     
@@ -309,7 +309,7 @@ if (!telegramId) {
         initTimer();
     })
     .finally(() => {
-        document.body.style.display = "block"; // ← показываем страницу
+        document.body.style.visibility = "visible"; // ← показываем страницу
     });
     
 }
