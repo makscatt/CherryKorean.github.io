@@ -27,4 +27,8 @@ jobs:
 
       - name: Upload to bucket
         run: |
-          s3cmd put --recursive ./ s3://${{ secrets.YANDEX_BUCKET }}
+          s3cmd put --recursive ./ s3://${{ secrets.YANDEX_BUCKET }} \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "*.md" \
+            --exclude "deploy.yml"
