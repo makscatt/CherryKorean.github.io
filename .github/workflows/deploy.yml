@@ -1,0 +1,30 @@
+name: Deploy to Yandex Object Storage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install s3cmd
+        run: sudo apt-get install -y s3cmd
+
+      - name: Configure s3cmd
+        run: |
+          echo "[default]" > ~/.s3cfg
+          echo "access_key = ${{ secrets.YANDEX_ACCESS_KEY }}" >> ~/.s3cfg
+          echo "secret_key = ${{ secrets.YANDEX_SECRET_KEY }}" >> ~/.s3cfg
+          echo "host_base = storage.yandexcloud.net" >> ~/.s3cfg
+          echo "host_bucket = storage.yandexcloud.net" >> ~/.s3cfg
+          echo "bucket_location = ru-central1" >> ~/.s3cfg
+          echo "use_https = True" >> ~/.s3cfg
+
+      - name: Upload to bucket
+        run: |
+          s3cmd put --recursive ./ s3://${{ secrets.YANDEX_BUCKET }}
