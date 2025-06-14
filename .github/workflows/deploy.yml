@@ -25,10 +25,18 @@ jobs:
           echo "bucket_location = ru-central1" >> ~/.s3cfg
           echo "use_https = True" >> ~/.s3cfg
 
-      - name: Upload to bucket
+      - name: Upload all CSS files with correct MIME
+        run: |
+          find . -type f -name "*.css" | while read file; do
+            s3cmd put "$file" "s3://${{ secrets.YANDEX_BUCKET }}/${file#./}" \
+              --mime-type="text/css" --acl-public
+          done
+
+      - name: Sync all other files
         run: |
           s3cmd sync --delete-removed ./ s3://${{ secrets.YANDEX_BUCKET }} \
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude "*.md" \
-            --exclude "deploy.yml"
+            --exclude "deploy.yml" \
+            --exclude "*.css"
