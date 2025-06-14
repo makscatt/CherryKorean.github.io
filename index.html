@@ -184,7 +184,7 @@
     </style>
 </head>
 
-<body>
+<body style="display: none">
 
 
     
@@ -307,7 +307,11 @@ if (!telegramId) {
     .catch(() => {
         localStorage.setItem("member", "false");
         initTimer();
+    })
+    .finally(() => {
+        document.body.style.display = "block"; // ← показываем страницу
     });
+    
 }
 
 // Анимация исчезновения фейда
