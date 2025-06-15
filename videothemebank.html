@@ -430,6 +430,7 @@
         }
 
         #popupHeader {
+            padding-top: 15px;
             position: sticky;
             top: 0;
             background: white;
@@ -840,7 +841,7 @@
                         .join(' + ');
                     const breakdownBlock =
                         `<div style="text-align:center; font-size:16px; margin:8px 0;">
-           <strong>Разбор:</strong><span style="font-weight:normal; opacity:0.6;">(Разбирает не всегда идеально)</span><br>${breakdown}
+           <strong>Разбор:</strong><span style="font-weight:normal; opacity:0.6;">(Работаю над идеальностью разбора)</span><br>${breakdown}
          </div>`;
 
                     let tokenBlock = '';
@@ -870,7 +871,7 @@
                 <hr style="margin:6px 0;">`;
                     }).join('');
 
-                    const grammarBlock = grammarBlocks || '<div>Грамматики: Еще не все грамматики добавил...</div>';
+                    const grammarBlock = grammarBlocks || '<div>Грамматики: Еще не все добавил...</div>';
 
                     const headerFixed = `<div id="popupHeader">${original}${breakdownBlock}</div>`;
                     const content = headerFixed + tokenBlock + grammarBlock;
