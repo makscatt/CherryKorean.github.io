@@ -365,7 +365,7 @@
             opacity: 0.7;
         }
 
-        #koreanText {           
+        #koreanText {
             display: none;
             position: relative;
             overflow: visible;
@@ -385,7 +385,7 @@
             user-select: none;
             padding-right: 50px;
             white-space: normal;
-    word-break: keep-all;
+            word-break: keep-all;
         }
 
         #koreanText:active {
@@ -788,6 +788,7 @@
                 // Добавляем в избранное
                 savedWords.push({
                     video: word.video,
+                    videoMp4: word.video,
                     korean: word.korean,
                     russian: word.russian
                 });
