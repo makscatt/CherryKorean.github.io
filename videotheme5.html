@@ -186,16 +186,79 @@
 
         #koreanText {
             display: none;
-            margin: 0px;
-            padding: 0px;
-            font-size: clamp(15px, 5vw, 50px);
-            background-color: #fff;
+            /* по умолчанию скрыт */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: clamp(15px, 5vw, 30px);
             height: clamp(50px, 5vw, 80px);
             border-radius: 10px;
-            white-space: normal;
-            overflow-wrap: break-word;
-            word-break: keep-all;
-            opacity: 0.8;
+            background-color: #b8e7fc;
+            color: #333;
+            padding: 0 12px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            opacity: 0.9;
+            user-select: none;
+        }
+        #koreanText:active {
+            transform: translateY(4px);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        #popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+        }
+
+        #popup-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #popup-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            font-size: 16px;
+            z-index: 100000;
+            max-height: 90vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        #popup-content-wrapper>div:last-child {
+            flex-shrink: 0;
+            /* футер не сжимается и не скроллится */
+        }
+
+        #popupHeader {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 100001;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #popupContent {
+            flex: 1 1 auto;
+            overflow-y: auto;
         }
 
         #progress-bar {
@@ -355,7 +418,7 @@
 
                 <div id="KoreanButton">
                     <button id="showKoreanButton" onclick="showKoreanText()">Показать корейский текст</button>
-                    <p id="koreanText"></p>
+                    <div id="koreanText" onclick="analyzeKoreanText()"></div>
                 </div>
                 <div id="progress-bar"></div>
             </div>
@@ -473,8 +536,9 @@
         async function loadWordsAndSetOptions() {
             try {
                 if (easywords.length === 0) {
-                    const pageName = window.location.pathname.split('/').pop(); // "videotheme14.html"
-                    const index = pageName.match(/\d+/)[0]; // "14"
+                    const pageName = window.location.pathname.split('/').pop(); // "videosubtheme8_2.html"
+                    const match = pageName.match(/\d+(_\d+)?/); // извлекает "8_2"
+                    const index = match ? match[0] : '';
                     const response = await fetch(`videothemes/json/videotheme${index}.json?nocache=${Date.now()}`);
                     easywords = await response.json();
                     const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
@@ -626,7 +690,7 @@
 
 
         function showKoreanText() {
-            document.getElementById("koreanText").style.display = "block";
+            document.getElementById("koreanText").style.display = "flex";
             document.getElementById("showKoreanButton").style.display = "none";
         }
         document.addEventListener("DOMContentLoaded", () => {
@@ -792,6 +856,89 @@
             preload.style.display = "none";
             document.body.appendChild(preload);
         }
+
+function analyzeKoreanText() {
+            const textElem = document.getElementById("koreanText");
+            const text = textElem.innerText.trim();
+            if (!text) return;
+
+            fetch("https://koreanhelper-api.onrender.com/analyze", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    const original =
+                        `<div style="text-align:center; font-size:18px; margin-bottom:10px;">
+           <strong>${text}</strong>
+         </div>`;
+
+                    const breakdown = data.tokens
+                        .map(t => `<span style="color:${t.color}">${t.word}</span>`)
+                        .join(' + ');
+                    const breakdownBlock =
+                        `<div style="text-align:center; font-size:16px; margin:8px 0;">
+           <strong>Разбор:</strong><span style="font-weight:normal; opacity:0.6;">(Разбирает не всегда идеально)</span><br>${breakdown}
+         </div>`;
+
+                    let tokenBlock = '';
+                    if (window.Telegram && Telegram.WebApp.initDataUnsafe?.user?.id === 910912532) {
+                        tokenBlock =
+                            `<div style="margin-bottom:10px;">
+             <strong>Разбор с POS:</strong><br>` +
+                            data.tokens
+                                .map(t => `${t.word} / ${t.pos}`)
+                                .join(' ') +
+                            `</div>`;
+                    }
+
+                    const grammarBlocks = data.grammar_matches.map(g => {
+                        const showMeaning = typeof g.meaning === 'string' && g.meaning !== '';
+                        const showExample = typeof g.example === 'string' && g.example !== '';
+
+                        const pattern = `<strong>${g.pattern}</strong>:`;
+                        const meaning = showMeaning
+                            ? `<div style="margin-left:10px; color:#003366;">${g.meaning}</div>` // тёмно-синий
+                            : '';
+                        const example = showExample
+                            ? `<div style="margin-left:10px; color:#004d00;"><em>${g.example}</em></div>` // тёмно-зелёный
+                            : '';
+
+                        return `${pattern}<br>${meaning}${example}
+                <hr style="margin:6px 0;">`;
+                    }).join('');
+
+                    const grammarBlock = grammarBlocks || '<div>Грамматики: Еще не все грамматики добавил...</div>';
+
+                    const headerFixed = `<div id="popupHeader">${original}${breakdownBlock}</div>`;
+                    const content = headerFixed + tokenBlock + grammarBlock;
+                    const popup = document.getElementById("popup");
+                    document.getElementById("popupContent").innerHTML = content;
+                    popup.style.display = "block";
+                })
+                .catch(() => {
+                    document.getElementById("popupContent").innerText = "Ошибка при анализе.";
+                    document.getElementById("popup").style.display = "block";
+                });
+        }
+
+
+
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        // Закрытие при клике вне окна
+        document.addEventListener("click", function (e) {
+            const popup = document.getElementById("popup");
+            const contentWrapper = document.getElementById("popup-content-wrapper");
+            if (popup.style.display === "block" && !contentWrapper.contains(e.target)) {
+                closePopup();
+            }
+        }, true);
+
         function goHome() {
             var pushAudio = new Audio('pushButton.mp3');
             pushAudio.play();
@@ -828,6 +975,17 @@
             video.playbackRate = parseFloat(e.target.value);
         };
     </script>
+     <div id="popup" style="display: none;">
+        <div id="popup-overlay"></div>
+        <div id="popup-content-wrapper">
+            <div id="popupContent"></div>
+            <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <button onclick="closePopup()">Закрыть</button>
+                <button style="opacity: 0.7;" onclick="window.open('https://t.me/KoreanMakscatt', '_blank')">Сообщить об
+                    ошибке</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

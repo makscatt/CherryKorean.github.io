@@ -374,13 +374,13 @@
             font-size: clamp(15px, 5vw, 30px);
             height: clamp(50px, 5vw, 80px);
             border-radius: 10px;
-            background-color: #ffffff;
+            background-color: #b8e7fc;
             color: #333;
             padding: 0 12px;
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
             cursor: pointer;
             transition: transform 0.1s ease, box-shadow 0.1s ease;
-            opacity: 0.8;
+            opacity: 0.9;
             user-select: none;
         }
 
@@ -870,7 +870,7 @@
                 <hr style="margin:6px 0;">`;
                     }).join('');
 
-                    const grammarBlock = grammarBlocks || '<div>Грамматики: Нет</div>';
+                    const grammarBlock = grammarBlocks || '<div>Грамматики: Еще не все грамматики добавил...</div>';
 
                     const headerFixed = `<div id="popupHeader">${original}${breakdownBlock}</div>`;
                     const content = headerFixed + tokenBlock + grammarBlock;
