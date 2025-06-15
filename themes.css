@@ -43,7 +43,7 @@ body {
 }
 
 #topBar {
-  margin-top: 15%;
+  margin-top: auto;
   top: 0;
   width: 100%;
   text-align: center;
