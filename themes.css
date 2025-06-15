@@ -43,6 +43,7 @@ body {
 }
 
 #topBar {
+  margin-top: 15%;
   top: 0;
   width: 100%;
   text-align: center;
@@ -54,6 +55,7 @@ body {
 
 
 #stars {
+  
   font-size: 30px;
   color: white;
 }
