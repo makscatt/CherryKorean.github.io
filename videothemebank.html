@@ -365,9 +365,10 @@
             opacity: 0.7;
         }
 
-        #koreanText {
+        #koreanText {           
             display: none;
-            /* по умолчанию скрыт */
+            position: relative;
+            overflow: visible;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -382,11 +383,25 @@
             transition: transform 0.1s ease, box-shadow 0.1s ease;
             opacity: 0.9;
             user-select: none;
+            padding-right: 50px;
+            white-space: normal;
+    word-break: keep-all;
         }
 
         #koreanText:active {
             transform: translateY(4px);
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            bottom: -10px;
+            top: 25px;
+            right: 0px;
+            z-index: 10;
+            pointer-events: auto;
         }
 
         #popup {
@@ -479,7 +494,10 @@
 
                 <div id="KoreanButton">
                     <button id="showKoreanButton" onclick="showKoreanText()">Показать корейский текст</button>
-                    <div id="koreanText" onclick="analyzeKoreanText()"></div>
+                    <div id="koreanText" onclick="analyzeKoreanText()">
+                        <span id="koreanTextContent"></span>
+                        <img src="videothemes/icons/search.png" class="search-icon" alt="лупа">
+                    </div>
                 </div>
             </div>
         </div>
@@ -629,7 +647,7 @@
                 video.load();
                 video.play();
 
-                document.getElementById("koreanText").innerText = correctWord.korean;
+                document.getElementById("koreanTextContent").innerText = correctWord.korean;
                 document.getElementById("koreanText").style.display = "none";
                 document.getElementById("showKoreanButton").style.display = "inline-block";
 

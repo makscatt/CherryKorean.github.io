@@ -23,16 +23,19 @@ git push --set-upstream origin main
 Трудности:
 
 Работа с конвертером:
-cd "C:\Users\MakscattSchool\Desktop\Видео"
+cd "C:\Users\MakscattSchool\Desktop\youtube"
 mkdir mp4
 mkdir webm
 for %f in (*.mkv) do ffmpeg -i "%f" -c:v libvpx-vp9 -b:v 1M -c:a libopus "webm\%~nf.webm"
+for %f in (jhope.webm) do ffmpeg -i "%f" -c:v libx264 -crf 23 -c:a aac -b:a 128k "mp4\%~nf.mp4"
 
 
 скачать с юутб: 
 yt-dlp.exe https://www.youtube.com/watch?v=ID_видео
 yt-dlp https://www.instagram.com/reel/КОД/
-yt-dlp https://www.youtube.com/shorts/ID
+yt-dlp https://www.youtube.com/shorts/hcr9roJmB-w?si=4Exlic_XSNDRNGtW
+yt-dlp -x --audio-format mp3 "https://www.youtube.com/shorts/hcr9roJmB-w?si=4Exlic_XSNDRNGtW"
+
 
 только звук:
 yt-dlp.exe -x --audio-format mp3 https://www.youtube.com/watch?v=ID
