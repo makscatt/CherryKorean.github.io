@@ -79,18 +79,26 @@
 
         }
 
+        @media (hover: hover) and (pointer: fine) {
+            #gameContainer,
+            #popup-content-wrapper {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            #video-container {
+                max-width: 400px;
+
+            }
+        }
+
         #video-container {
             border-radius: 10px;
             margin-top: 40px;
             width: 100%;
         }
 
-        @media (hover: hover) and (pointer: fine) {
-            #video-container {
-                max-width: 445px;
-                margin: 0 auto;
-            }
-        }
+
 
         #custom-video-container {
             margin: 0;
@@ -112,7 +120,7 @@
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
-            margin-top: clamp(1%, 5vw, 5%);
+            margin-top: 1%;
             margin-bottom: 1%;
             height: 50%;
 
@@ -162,7 +170,7 @@
         button {
             margin: 5px;
             padding: 5px 10px;
-            font-size: 18px;
+            font-size: clamp(20px, 3vw, 30px);
             cursor: pointer;
             background-color: #ffffff;
             color: rgb(51, 51, 51);
@@ -276,6 +284,7 @@
             gap: 5px;
             justify-content: center;
             margin-top: 10px;
+            
         }
 
         .phrase-item {
@@ -373,7 +382,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            font-size: clamp(15px, 5vw, 30px);
+            font-size: clamp(20px, 3vw, 30px);
             height: clamp(50px, 5vw, 80px);
             border-radius: 10px;
             background-color: #b8e7fc;
@@ -433,6 +442,7 @@
             padding: 20px;
             width: 90%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
             font-size: 16px;
             z-index: 100000;
             max-height: 90vh;

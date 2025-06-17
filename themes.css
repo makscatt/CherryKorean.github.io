@@ -7,6 +7,9 @@
 
 html {
   -webkit-text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
 body {
@@ -16,12 +19,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #000000;
   font-family: 'NetflixSans-Regular', Arial, sans-serif;
 }
-
-
-
 
 
 /* Контейнер с соотношением сторон 9:16 */
@@ -41,7 +41,13 @@ body {
   /* Добавляем, чтобы изображение не выходило за пределы контейнера */
   background-color: black;
 }
-
+@media (hover: hover) and (pointer: fine) {
+            
+            #startScreen {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
 #topBar {
   margin-top: 15%;
   top: 0;
@@ -55,7 +61,7 @@ body {
 
 
 #stars {
-  
+
   font-size: 30px;
   color: white;
 }

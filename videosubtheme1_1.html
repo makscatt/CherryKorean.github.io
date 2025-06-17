@@ -115,12 +115,20 @@
             margin-top: 40px;
             width: 100%;
         }
+
         @media (hover: hover) and (pointer: fine) {
-            #video-container {
-                max-width: 445px;
+            #gameContainer,
+            #popup-content-wrapper {
+                max-width: 600px;
                 margin: 0 auto;
             }
+
+            #video-container {
+                max-width: 400px;
+
+            }
         }
+        
 
         #custom-video-container {
             margin: 0;
@@ -143,7 +151,7 @@
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
-            margin-top: clamp(1%, 5vw, 5%);
+            margin-top: 1%;
             margin-bottom: 1%;
             height: 50%;
 
@@ -153,7 +161,7 @@
         button {
             margin: 5px;
             padding: 5px 10px;
-            font-size: clamp(15px, 5vw, 50px);
+            font-size: clamp(20px, 3vw, 30px);
             cursor: pointer;
             background-color: #ffffff;
             color: rgb(51, 51, 51);
@@ -197,7 +205,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            font-size: clamp(15px, 5vw, 30px);
+            font-size: clamp(20px, 3vw, 30px);
             height: clamp(50px, 5vw, 80px);
             border-radius: 10px;
             background-color: #b8e7fc;
@@ -257,6 +265,7 @@
             padding: 20px;
             width: 90%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
             font-size: 16px;
             z-index: 100000;
             max-height: 90vh;
@@ -285,12 +294,14 @@
         }
 
         #progress-bar {
-            width: 100%;
+            width: 90%;
             display: grid;
             grid-template-columns: repeat(10, 30px);
-            gap: 2vw;
+            gap: 3%;
             justify-content: center;
-            margin-top: clamp(1%, 4vw, 5%);
+            margin: 1.5%;
+            
+            
         }
 
         .progress-box {
