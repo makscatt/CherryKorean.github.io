@@ -80,13 +80,16 @@
         }
 
         #video-container {
-            max-width: 445px;
-
             border-radius: 10px;
             margin-top: 40px;
             width: 100%;
+        }
 
-
+        @media (hover: hover) and (pointer: fine) {
+            #video-container {
+                max-width: 445px;
+                margin: 0 auto;
+            }
         }
 
         #custom-video-container {
@@ -99,12 +102,10 @@
             width: 100%;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            height: 253px;
-            /* Жестко зафиксированная высота */
             margin: 0;
-
-
         }
+
+
 
         #interaction-block {
             display: flex;
