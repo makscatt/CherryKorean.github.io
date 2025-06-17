@@ -52,12 +52,13 @@
 
 
     @media (hover: hover) and (pointer: fine) {
-            #gameContainer{
-                max-width: 600px;
-                margin: 0 auto;
-            }
+      #gameContainer {
+        max-width: 600px;
+        margin: 0 auto;
+      }
 
-        }
+    }
+
     #menu-button-container {
       position: relative;
       max-width: 100%;
@@ -265,6 +266,10 @@
 
     // формируем уникальный ключ
     const unlockedKey = `unlockedButtons_${pageName}`;
+    const customTitles = {
+      4: "Паразиты 1",       // index 1 — вторая кнопка (0 — это первая)
+      5: "Паразиты 2" // index 4 — пятая кнопка
+    };
 
     function getStars() {
       return parseInt(localStorage.getItem(starsKey)) || 0;
@@ -350,7 +355,7 @@
 
         // Обернем текст внутри <span>, чтобы соблюсти структуру
         const textSpan = document.createElement("span");
-        textSpan.textContent = `Сборник ${i + 1}`;
+        textSpan.textContent = customTitles[i] || `Сборник ${i + 1}`;
 
         btn.appendChild(textSpan);
         btn.appendChild(countContainer);

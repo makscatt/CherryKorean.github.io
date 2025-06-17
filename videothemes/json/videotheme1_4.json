@@ -154,59 +154,5 @@
     "videoMp4": "video/allkdrama/mp4/그래 알았어.mp4",
     "korean": "그래 알았어",
     "russian": "Да, хорошо"
-  },
-  {
-    "video": "video/squidgame 2/얼마나요.webm",
-    "videoMp4": "video/squidgame 2/mp4/얼마나요.mp4",
-    "korean": "얼마나요?",
-    "russian": "Сколько?"
-  },
-  {
-    "video": "video/squidgame 2/술들 마시지 말고.webm",
-    "videoMp4": "video/squidgame 2/mp4/술들 마시지 말고.mp4",
-    "korean": "술들 마시지 말고!",
-    "russian": "Не пить!"
-  },
-  {
-    "video": "video/squidgame 2/알면 닥치고.webm",
-    "videoMp4": "video/squidgame 2/mp4/알면 닥치고.mp4",
-    "korean": "알면 닥치고",
-    "russian": "Так молчи, если знаешь"
-  },
-  {
-    "video": "video/squidgame 2/딱지가 들어 있습니다.webm",
-    "videoMp4": "video/squidgame 2/mp4/딱지가 들어 있습니다.mp4",
-    "korean": "딱지가 들어 있습니다",
-    "russian": "У него есть фишки для Такчи(игра)"
-  },
-  {
-    "video": "video/squidgame 2/이런 명함을.webm",
-    "videoMp4": "video/squidgame 2/mp4/이런 명함을.mp4",
-    "korean": "이런 명함을",
-    "russian": "Вот такую визитку"
-  },
-  {
-    "video": "video/squidgame 2/성 사장 찾았어 그놈이야.webm",
-    "videoMp4": "video/squidgame 2/mp4/성 사장 찾았어 그놈이야.mp4",
-    "korean": "성 사장 찾았어 그놈이야",
-    "russian": "Сон Мы нашли этого мужика"
-  },
-  {
-    "video": "video/squidgame 2/확실합니까.webm",
-    "videoMp4": "video/squidgame 2/mp4/확실합니까.mp4",
-    "korean": "확실합니까?",
-    "russian": "Вы уверены?"
-  },
-  {
-    "video": "video/squidgame 2/명함 주고 있어.webm",
-    "videoMp4": "video/squidgame 2/mp4/명함 주고 있어.mp4",
-    "korean": "명함 주고 있어",
-    "russian": "Он даёт визитку"
-  },
-  {
-    "video": "video/squidgame 2/이동한다.webm",
-    "videoMp4": "video/squidgame 2/mp4/이동한다.mp4",
-    "korean": "이동한다",
-    "russian": "Он уходит"
   }
 ]
