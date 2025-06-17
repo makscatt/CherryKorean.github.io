@@ -57,21 +57,193 @@
     "video": "video/tngerines/선생님 뭐래.webm",
     "videoMp4": "video/tngerines/mp4/선생님 뭐래.mp4",
     "korean": "선생님 뭐래?",
-    "russian": "Что сказал учитель?",
-    "new": true
+    "russian": "Что сказал учитель?"
   },
   {
     "video": "video/tngerines/선생님 말씀 잘 들어.webm",
     "videoMp4": "video/tngerines/mp4/선생님 말씀 잘 들어.mp4",
     "korean": "선생님 말씀 잘 들어",
-    "russian": "Слушай внимательно учителя",
-    "new": true
+    "russian": "Слушай внимательно учителя"
   },
   {
     "video": "video/tngerines/어떡하지.webm",
     "videoMp4": "video/tngerines/mp4/어떡하지.mp4",
     "korean": "어떡하지?",
-    "russian": "Как же быть?",
+    "russian": "Как же быть?"
+  },
+  {
+    "video": "video/tngerines/할머니는 방도 없어.webm",
+    "videoMp4": "video/tngerines/mp4/할머니는 방도 없어.mp4",
+    "korean": "할머니는 방도 없어",
+    "russian": "У бабушки даже комнаты нет",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/좋았어.webm",
+    "videoMp4": "video/tngerines/mp4/좋았어.mp4",
+    "korean": "좋았어?",
+    "russian": "Понравлось?",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/절대.webm",
+    "videoMp4": "video/tngerines/mp4/절대.mp4",
+    "korean": "절대",
+    "russian": "Никогда",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/저도 안 가죠 저도.webm",
+    "videoMp4": "video/tngerines/mp4/저도 안 가죠 저도.mp4",
+    "korean": "저도 안 가죠 저도",
+    "russian": "Я тоже не поеду, я тоже",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/이제 배 타고 제주 뜨면.webm",
+    "videoMp4": "video/tngerines/mp4/이제 배 타고 제주 뜨면.mp4",
+    "korean": "이제 배 타고 제주 뜨면",
+    "russian": "Теперь, если отправиться на корабле на Чеджу",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/옷이 좀 많아.webm",
+    "videoMp4": "video/tngerines/mp4/옷이 좀 많아.mp4",
+    "korean": "옷이 좀 많아",
+    "russian": "Одежды так-то много",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/양배추도 내가 다 팔았는데 왜 내 돈 안 줘요.webm",
+    "videoMp4": "video/tngerines/mp4/양배추도 내가 다 팔았는데 왜 내 돈 안 줘요.mp4",
+    "korean": "양배추도 내가 다 팔았는데 왜 내 돈 안 줘요?",
+    "russian": "Я же всю капусту продала, почему вы не даёте мне мои деньги?",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/안 갈래요.webm",
+    "videoMp4": "video/tngerines/mp4/안 갈래요.mp4",
+    "korean": "안 갈래요",
+    "russian": "Не хочу ехать",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/아줌마 것도 아니면서.webm",
+    "videoMp4": "video/tngerines/mp4/아줌마 것도 아니면서.mp4",
+    "korean": "아줌마 것도 아니면서",
+    "russian": "Это ведь даже не твоё, тётенька!",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/아시면서 그러시네.webm",
+    "videoMp4": "video/tngerines/mp4/아시면서 그러시네.mp4",
+    "korean": "아시면서 그러시네",
+    "russian": "Знаете, и все равно делаете",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/아무것도 없기는 없는데요.webm",
+    "videoMp4": "video/tngerines/mp4/아무것도 없기는 없는데요.mp4",
+    "korean": "아무것도 없기는 없는데요",
+    "russian": "Правда, ничего нет",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/생선집 아들이나 해녀 딸이나.webm",
+    "videoMp4": "video/tngerines/mp4/생선집 아들이나 해녀 딸이나.mp4",
+    "korean": "생선집 아들이나 해녀 딸이나",
+    "russian": "Будь то сын продавца рыбы или дочь ныряльщицы",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/뭔 소리고.webm",
+    "videoMp4": "video/tngerines/mp4/뭔 소리고.mp4",
+    "korean": "뭔 소리고?",
+    "russian": "В смысле?",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/뭐가 고달퍼.webm",
+    "videoMp4": "video/tngerines/mp4/뭐가 고달퍼.mp4",
+    "korean": "뭐가 고달퍼?",
+    "russian": "Что тут тяжелого?",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/뭐.webm",
+    "videoMp4": "video/tngerines/mp4/뭐.mp4",
+    "korean": "뭐?",
+    "russian": "ЧО?",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/무조건 서울 놈한테 시집 갈 거야.webm",
+    "videoMp4": "video/tngerines/mp4/무조건 서울 놈한테 시집 갈 거야.mp4",
+    "korean": "무조건 서울 놈한테 시집 갈 거야",
+    "russian": "Я обязательно выйду замуж за парня из Сеула",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/대학 가고 싶어서.webm",
+    "videoMp4": "video/tngerines/mp4/대학 가고 싶어서.mp4",
+    "korean": "대학 가고 싶어서?",
+    "russian": "В универ хотела пойти?",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/다 아니까, 다 봤으니까.webm",
+    "videoMp4": "video/tngerines/mp4/다 아니까, 다 봤으니까.mp4",
+    "korean": "다 아니까, 다 봤으니까",
+    "russian": "Я все знаю, я все видела",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/놓고 왔는데요.webm",
+    "videoMp4": "video/tngerines/mp4/놓고 왔는데요.mp4",
+    "korean": "놓고 왔는데요",
+    "russian": "Забыли(взять с собой)",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/너무 물지 마세요.webm",
+    "videoMp4": "video/tngerines/mp4/너무 물지 마세요.mp4",
+    "korean": "너무 물지 마세요",
+    "russian": "Не кусайтесь сильно",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/너무 물면 사고 쳐요.webm",
+    "videoMp4": "video/tngerines/mp4/너무 물면 사고 쳐요.mp4",
+    "korean": "너무 물면 사고 쳐요",
+    "russian": "Если сильно укусить - можно и влипнуть",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/나도 다 됐고요.webm",
+    "videoMp4": "video/tngerines/mp4/나도 다 됐고요.mp4",
+    "korean": "나도 다 됐고요",
+    "russian": "Я тоже все сделала",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/나는 민옥이랑 귤을 까먹은 적이 없는데.webm",
+    "videoMp4": "video/tngerines/mp4/나는 민옥이랑 귤을 까먹은 적이 없는데.mp4",
+    "korean": "나는 민옥이랑 귤을 까먹은 적이 없는데",
+    "russian": "Я с МинОк так то мандарины не чистил",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/나는 몰라.webm",
+    "videoMp4": "video/tngerines/mp4/나는 몰라.mp4",
+    "korean": "나는 몰라",
+    "russian": "Я не знаю",
+    "new": true
+  },
+  {
+    "video": "video/tngerines/나 이제 집도 없어.webm",
+    "videoMp4": "video/tngerines/mp4/나 이제 집도 없어.mp4",
+    "korean": "나 이제 집도 없어",
+    "russian": "У меня даже дома теперь нет",
     "new": true
   }
 ]
