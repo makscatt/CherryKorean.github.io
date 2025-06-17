@@ -1,58 +1,6 @@
 [
-  {
-    "video": "video/squidgame 2/위치 알려 주세요.webm",
-    "videoMp4": "video/squidgame 2/mp4/위치 알려 주세요.mp4",
-    "korean": "위치 알려 주세요",
-    "russian": "Говорите где он"
-  },
-  {
-    "video": "video/parasites/안녕하세요 사무님.webm",
-    "videoMp4": "video/parasites/mp4/안녕하세요 사무님.mp4",
-    "korean": "안녕하세요 사무님",
-    "russian": "Здравствуйте, хозяйка"
-  },
-  {
-    "video": "video/parasites/문법 어휘 작문 회화.webm",
-    "videoMp4": "video/parasites/mp4/문법 어휘 작문 회화.mp4",
-    "korean": "문법 어휘 작문 회화",
-    "russian": "Грамматика, лексика, сочинение, разговор"
-  },
-  {
-    "video": "video/parasites/그냥 집에 있냐 학원 안 가고.webm",
-    "videoMp4": "video/parasites/mp4/그냥 집에 있냐 학원 안 가고.mp4",
-    "korean": "그냥 집에 있냐 학원 안 가고",
-    "russian": "Ты просто дома, не учишься?"
-  },
-  {
-    "video": "video/parasites/할아버님께 꼭 감사해.webm",
-    "videoMp4": "video/parasites/mp4/할아버님께 꼭 감사해.mp4",
-    "korean": "할아버님께 꼭 감사해",
-    "russian": "Обязательно поблагодари дедушку"
-  },
-  {
-    "video": "video/parasites/죄송합니다 식사 중이에요.webm",
-    "videoMp4": "video/parasites/mp4/죄송합니다 식사 중이에요.mp4",
-    "korean": "죄송합니다 식사 중이에요",
-    "russian": "Извините, я во время еды"
-  },
-  {
-    "video": "video/parasites/웬일이야.webm",
-    "videoMp4": "video/parasites/mp4/웬일이야.mp4",
-    "korean": "웬일이야",
-    "russian": "Ты зачем пришел?"
-  },
-  {
-    "video": "video/parasites/친구 우리 집은 온 거야.webm",
-    "videoMp4": "video/parasites/mp4/친구 우리 집은 온 거야.mp4",
-    "korean": "친구 우리 집은 온 거야",
-    "russian": "Твой друг к нам пришел?"
-  },
-  {
-    "video": "video/parasites/정신차려 정신.webm",
-    "videoMp4": "video/parasites/mp4/정신차려 정신.mp4",
-    "korean": "정신차려 정신",
-    "russian": "Приди в себя!"
-  },
+  
+  
   {
     "video": "video/parasites/그러면.webm",
     "videoMp4": "video/parasites/mp4/그러면.mp4",
