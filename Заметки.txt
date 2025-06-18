@@ -23,10 +23,10 @@ git push --set-upstream origin main
 Трудности:
 
 Работа с конвертером:
-cd "C:\Users\MakscattSchool\Desktop\youtube"
+cd "C:\Users\MakscattSchool\Desktop\Видео"
 mkdir mp4
 mkdir webm
-for %f in (*.mkv) do ffmpeg -i "%f" -c:v libvpx-vp9 -b:v 1M -c:a libopus "webm\%~nf.webm"
+for %f in (*.mp4) do ffmpeg -i "%f" -c:v libvpx-vp9 -b:v 1M -c:a libopus "webm\%~nf.webm"
 for %f in (jhope.webm) do ffmpeg -i "%f" -c:v libx264 -crf 23 -c:a aac -b:a 128k "mp4\%~nf.mp4"
 
 

@@ -154,5 +154,11 @@
     "videoMp4": "video/allkdrama/mp4/그래 알았어.mp4",
     "korean": "그래 알았어",
     "russian": "Да, хорошо"
+  },
+  {
+    "video": "video/allkdrama/가격 또라이네.webm",
+    "videoMp4": "video/allkdrama/mp4/가격 또라이네.mp4",
+    "korean": "가격 또라이네",
+    "russian": "Цена безумная просто"
   }
 ]
