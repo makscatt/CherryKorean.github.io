@@ -187,11 +187,15 @@
             /* фиксированная высота */
         }
 
+        
+        #KoreanButton
+        {
+            margin-top: 25px;
+        }
         #showKoreanButton {
             margin-top: 0px;
             font-size: clamp(15px, 5vw, 30px);
             height: clamp(50px, 5vw, 80px);
-            margin: 0px;
             padding: 0px;
             width: 100%;
             opacity: 0.7;
@@ -295,21 +299,25 @@
         #progress-bar {
             width: 90%;
             display: grid;
-            grid-template-columns: repeat(10, 30px);
-            gap: 3%;
-            justify-content: center;
-            margin: 1.5%;
-            
-            
+            grid-template-columns: repeat(10, 1fr);
+            /* всегда 10 колонок */
+            gap: 5px;
+            justify-items: center;
+            margin: 1.5% auto;
+            box-sizing: border-box;
+            grid-auto-rows: auto;
         }
 
         .progress-box {
-            width: clamp(30px, 5vw, 40px);
-            height: clamp(30px, 5vw, 40px);
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            /* заполнит 1fr */
+            max-width: 36px;
+            /* ограничим рост */
+            aspect-ratio: 1 / 1;
+            /* квадрат */
             border-radius: 6px;
             background-color: white;
-
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
         }
 
         #menu-button-container {

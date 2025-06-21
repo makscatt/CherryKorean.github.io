@@ -368,7 +368,11 @@ font-size: 80px;
     margin-top: 5px;
 }
 
-#showKoreanButton {
+#KoreanButton
+        {
+            margin-top: 25px;
+        }
+        #showKoreanButton {
     background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
     color: #ffffff; /* Белый цвет текста */
     font-size: 16px; /* Размер шрифта */
