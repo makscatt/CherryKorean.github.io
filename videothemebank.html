@@ -80,6 +80,7 @@
         }
 
         @media (hover: hover) and (pointer: fine) {
+
             #gameContainer,
             #popup-content-wrapper {
                 max-width: 600px;
@@ -115,17 +116,7 @@
 
 
 
-        #interaction-block {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 1%;
-            margin-bottom: 1%;
-            height: 50%;
 
-
-        }
 
         #menu-button-container {
             position: relative;
@@ -159,17 +150,36 @@
         }
 
         #answer-buttons {
-            margin-top: 15px;
             display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin: 10px;
             justify-content: space-between;
             gap: 10px;
             height: 110px;
             /* фиксированная высота */
         }
 
+        #option1,
+        #option2 {
+            background-color: #eff2f9;
+        }
+
+        #interaction-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            height: 50%;
+
+
+        }
+
         button {
             margin: 5px;
-            padding: 5px 10px;
+            padding: 10px 10px;
             font-size: clamp(20px, 3vw, 30px);
             cursor: pointer;
             background-color: #ffffff;
@@ -177,12 +187,14 @@
             border-radius: 5px;
             transition: all 0.1s ease-in-out;
             border: none;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+            outline-offset: -1px;
+            box-shadow: 0 4px 0 #bbb;
         }
 
         button:active {
-            box-shadow: 0 1px 8px #b7b7b7;
             transform: translateY(4px);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
         }
 
         #stars {
@@ -223,7 +235,9 @@
             top: 50%;
             transform: translateY(-58%);
             padding: 1px 6px;
-
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+            outline-offset: -1px;
+            box-shadow: 0 4px 0 #bbb;
         }
 
         #back-button {
@@ -235,6 +249,9 @@
             right: 5px;
             top: 50%;
             transform: translateY(-58%);
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+            outline-offset: -1px;
+            box-shadow: 0 4px 0 #bbb;
         }
 
         #list-button {
@@ -246,6 +263,16 @@
             left: 5px;
             top: 50%;
             transform: translateY(-58%);
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+            outline-offset: -1px;
+            box-shadow: 0 4px 0 #bbb;
+        }
+
+        #back-button:active,
+        #list-button:active,
+        #main-menu-button:active {
+            transform: translateY(-54%);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
         }
 
         #save-to-bank-button {
@@ -284,7 +311,7 @@
             gap: 5px;
             justify-content: center;
             margin-top: 10px;
-            
+
         }
 
         .phrase-item {
@@ -365,10 +392,14 @@
             border-radius: 10px;
         }
 
-        #KoreanButton
-        {
+        #KoreanButton {
             margin-top: 25px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
         #showKoreanButton {
             margin-top: 0px;
             font-size: clamp(15px, 5vw, 30px);
@@ -400,12 +431,17 @@
             padding-right: 50px;
             white-space: normal;
             word-break: keep-all;
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+            outline-offset: -1px;
+            box-shadow: 0 4px 0 #bbb;
         }
 
         #koreanText:active {
             transform: translateY(4px);
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
         }
+
+
 
         .search-icon {
             position: absolute;
