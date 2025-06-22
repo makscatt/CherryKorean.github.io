@@ -172,10 +172,39 @@
       transform: translate(-50%, -50%);
     }
 
-    #loader,
+    #loader {
+      display: none;
+      /* будет показан через JS */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9999;
+
+      align-items: center;
+      justify-content: center;
+    }
+
     .spinner {
-      /* стили лоадера можно оставить */
-      /* ... */
+      width: 60px;
+      height: 60px;
+      border: 6px solid rgba(255, 255, 255, 0.2);
+      border-top: 6px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    ul {
+      margin-top: 0px;
+      /* или 2px, если нужно совсем маленькое */
     }
   </style>
 </head>
