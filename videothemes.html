@@ -826,15 +826,13 @@
 
 
           if (i >= 5 && !isMember) {
-            themeButton.style.filter = 'grayscale(100%)';
-            lockOverlay.onclick = function (e) {
-              e.stopPropagation();
-              lockOverlay.classList.add('click-animation'); // добавляем класс для анимации
-              setTimeout(() => {
-                lockOverlay.classList.remove('click-animation');
-              }, 300);
-            };
-          } else {
+  themeButton.style.filter = 'grayscale(100%)';
+  // ИЗМЕНЕНИЕ ЗДЕСЬ:
+  lockOverlay.onclick = function (e) {
+    e.stopPropagation();
+    showPremiumPopup(); // Вместо анимации вызываем ваш попап
+  };
+} else {
             lockOverlay.onclick = function (e) {
               e.stopPropagation();
               unlockTheme(i);
