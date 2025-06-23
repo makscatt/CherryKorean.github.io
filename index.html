@@ -17,20 +17,20 @@
             background-color: black;
         }
 
-        
-        
+
+
         #fadeOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0;
-  z-index: 10000;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0;
+            z-index: 10000;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
 
         @font-face {
             font-family: 'NetflixSans-Regular';
@@ -126,46 +126,6 @@
             transition: transform 0.05s ease-in, box-shadow 0.05s ease-in;
         }
 
-
-
-
-
-
-
-        .timer {
-            display: none;
-            /* Изначально скрыто */
-            position: fixed;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            text-align: center;
-            padding: 10px;
-            background-color: #f3f3f3;
-            border-radius: 8px;
-            width: 100px;
-            margin: 0 auto;
-            z-index: 9998;
-            top: 2%;
-        }
-
-        .overlay-timer {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            /* Полупрозрачный черный фон */
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            z-index: 10000;
-            /* Поверх всех элементов */
-        }
-
         .subscribe-button {
 
             padding: 10px 15px;
@@ -179,16 +139,14 @@
             /* Поверх всех элементов */
 
         }
-
-       
     </style>
 </head>
 
 <body style="visibility: hidden">
 
 
-    
-    
+
+
     <!-- Контейнер для фонового изображения -->
     <div id="backgroundImageContainer">
 
@@ -226,121 +184,69 @@
         } else {
             console.log("trackActivity.js не загрузился");
         }
-        function initTimer() {
-            const savedDate = localStorage.getItem("timerDate");
-            const currentDate = new Date().toISOString().split('T')[0];
-            const display = document.querySelector('.timer');
-            let remainingTime = parseInt(localStorage.getItem("remainingTime"), 10);
-
-
-
-            // Делаем таймер видимым при запуске
-            display.style.display = "none";
-
-            // Проверка даты: если это новый день, сбрасываем таймер до 10 минут
-            if (savedDate !== currentDate || isNaN(remainingTime)) {
-                remainingTime = 5 * 60; // Устанавливаем 10 минут, если это первый запуск или новый день
-                localStorage.setItem("remainingTime", remainingTime);
-                localStorage.setItem("timerDate", currentDate);
-            }
-
-
-            // Если время истекло, отображаем блокировку 
-            if (remainingTime <= 0) {
-                const overlay = document.createElement("div");
-                overlay.className = "overlay-timer";
-                overlay.innerHTML = `
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center;">
-        <p>На сегодня тренировка завершена. Приходи завтра🤗</p>
-        <p>Если хочешь тренироваться без ограничений - нужно Золотое Кимчи</p>
-        <button class="subscribe-button" onclick="window.open('https://videopremium.html', '_blank')">Подключить</button>
-       
-    </div>
-`;
-                document.body.appendChild(overlay);
-
-
-
-            } else {
-                // Просто отображаем оставшееся время
-                displayRemainingTime(display, remainingTime);
-            }
-
-        }
-
-        function displayRemainingTime(display, remainingTime) {
-            const minutes = Math.floor(remainingTime / 60);
-            const seconds = remainingTime % 60;
-            display.textContent = `${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
-        }
-
-
-
 
         const initData = window.Telegram.WebApp.initDataUnsafe;
-const telegramId = initData?.user?.id;
+        const telegramId = initData?.user?.id;
 
-if (!telegramId) {
-    document.body.style.visibility = "visible";
-    window.Telegram.WebApp.close();
-} else {
-    // Запрос 1: проверка членства в группе (userId в теле)
-    fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
-    .then(res => res.json())
-    .then(data => {
-        const isMember = data.promember === true || data.tgmembership === true;
-
-        if (isMember) {
-            localStorage.setItem("member", "true");
+        if (!telegramId) {
+            document.body.style.visibility = "visible";
+            window.Telegram.WebApp.close();
         } else {
-            localStorage.setItem("member", "false");
-            initTimer(); // ограничиваем доступ
+            // Запрос 1: проверка членства в группе (userId в теле)
+            fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
+                .then(res => res.json())
+                .then(data => {
+                    const isMember = data.promember === true || data.tgmembership === true;
+
+                    if (isMember) {
+                        localStorage.setItem("member", "true");
+                    } else {
+                        localStorage.setItem("member", "false");
+                    }
+
+                    // Трекинг пользователя
+                    fetch('https://telegram-server-hfk7.onrender.com/track_user', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ userId: telegramId }),
+                    });
+                })
+                .catch(() => {
+                    localStorage.setItem("member", "false");
+                })
+                .finally(() => {
+                    document.body.style.visibility = "visible"; // ← показываем страницу
+                });
+
         }
 
-        // Трекинг пользователя
-        fetch('https://telegram-server-hfk7.onrender.com/track_user', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ userId: telegramId }),
+        // Анимация исчезновения фейда
+        window.addEventListener('load', () => {
+            const fade = document.getElementById('fadeOverlay');
+            fade.style.opacity = '0';
+            setTimeout(() => {
+                fade.style.display = 'none';
+            }, 500);
         });
-    })
-    .catch(() => {
-        localStorage.setItem("member", "false");
-        initTimer();
-    })
-    .finally(() => {
-        document.body.style.visibility = "visible"; // ← показываем страницу
-    });
-    
-}
-
-// Анимация исчезновения фейда
-window.addEventListener('load', () => {
-    const fade = document.getElementById('fadeOverlay');
-    fade.style.opacity = '0';
-    setTimeout(() => {
-        fade.style.display = 'none';
-    }, 500);
-});
 
 
         function startGame() {
-    const fadeOverlay = document.getElementById('fadeOverlay');
-    const backgroundImage = document.getElementById('backgroundImage');
-    const buttonsContainer = document.getElementById('buttonsContainer');
+            const fadeOverlay = document.getElementById('fadeOverlay');
+            const backgroundImage = document.getElementById('backgroundImage');
+            const buttonsContainer = document.getElementById('buttonsContainer');
 
-    backgroundImage.style.transition = 'opacity 0.4s ease';
-    buttonsContainer.style.transition = 'opacity 0.4s ease';
-    fadeOverlay.style.transition = 'opacity 0.4s ease';
+            backgroundImage.style.transition = 'opacity 0.4s ease';
+            buttonsContainer.style.transition = 'opacity 0.4s ease';
+            fadeOverlay.style.transition = 'opacity 0.4s ease';
 
-    backgroundImage.style.opacity = '0';
-    buttonsContainer.style.opacity = '0';
-    fadeOverlay.style.opacity = '1';
+            backgroundImage.style.opacity = '0';
+            buttonsContainer.style.opacity = '0';
+            fadeOverlay.style.opacity = '1';
 
-    setTimeout(() => {
-        window.location.href = "videothemes.html";
-    }, 400);
-}
+            setTimeout(() => {
+                window.location.href = "videothemes.html";
+            }, 400);
+        }
 
 
         if (window.Telegram.WebApp) {
