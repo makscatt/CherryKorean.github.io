@@ -287,7 +287,7 @@ button:active {
         </div>
        
             <div id="menu-button-container">
-                <div class="timer">00:00</div>
+                
                 <p id="stars">⭐ 0</p>
             <button id="save-to-bank-button" onclick="saveToBank()">
   <img id="bank-icon" src="videothemes/icons/outbank.png" alt="В копилку">
@@ -544,7 +544,7 @@ function showKoreanText() {
 }
     document.addEventListener("DOMContentLoaded", () => {
   loadStars();
-  startTimerOnPage();
+  
 
   const seen = localStorage.getItem("bankinstruction") === "true";
   if (!seen) {

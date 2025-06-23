@@ -145,7 +145,7 @@
 
 
             <div id="menu-button-container">
-                <div class="timer">00:00</div>
+                
                 <p id="stars">⭐ 0</p>
             <button id="save-to-bank-button" onclick="saveToBank()">
   <img id="bank-icon" src="videothemes/icons/outbank.png" alt="В копилку">
@@ -816,9 +816,7 @@ document.getElementById("speed-select").value = "1";
             }
 
             // Функция для остановки таймера
-            function stopCountdown() {
-                clearInterval(timerInterval);
-            }
+            
 
             display.addEventListener("click", () => {
                 showTime = !showTime; // Переключаем флаг

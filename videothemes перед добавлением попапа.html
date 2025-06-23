@@ -386,154 +386,57 @@
 
           </div>
           <script>
-    // --- Начало кода для управления Premium попапом ---
+            document.addEventListener('DOMContentLoaded', () => {
+              const themeGrid = document.getElementById('themeGrid');
 
-    // Глобальная переменная для доступа к попапу из разных функций
-    let premiumPopupOverlay;
+              // Создание кнопок
+              for (let i = 15; i >= 5; i--) {
+                const btn = document.createElement('div');
+                btn.className = 'theme-button';
+                btn.id = 'theme' + i;
+                btn.style.backgroundImage = `url('videothemes/theme${i}.png')`;
+                btn.onclick = function () { selectTheme(i); };
 
-    // Функция для показа попапа
-   function showPremiumPopup() {
-    if (premiumPopupOverlay) {
-        premiumPopupOverlay.style.opacity = '1';
-        premiumPopupOverlay.style.pointerEvents = 'auto';
-    }
-}
+                const countContainer = document.createElement('div');
+                countContainer.className = 'theme-count-container';
+                countContainer.innerHTML = '<span class="theme-count"></span>';
 
-function hidePremiumPopup() {
-    if (premiumPopupOverlay) {
-        premiumPopupOverlay.style.opacity = '0';
-        premiumPopupOverlay.style.pointerEvents = 'none';
-    }
-}
+                btn.appendChild(countContainer);
+                themeGrid.appendChild(btn);
+              }
 
-    // --- Конец кода для управления Premium попапом ---
+              // Сортировка кнопок по времени клика
+              updateButtonsOrder();
+            });
+
+            function updateButtonsOrder() {
+              const themeGrid = document.getElementById('themeGrid');
+              const buttons = Array.from(themeGrid.children);
+              buttons.sort((a, b) => {
+                const timeA = parseInt(localStorage.getItem('theme_last_' + a.id.replace('theme', ''))) || 0;
+                const timeB = parseInt(localStorage.getItem('theme_last_' + b.id.replace('theme', ''))) || 0;
+                return timeB - timeA;
+              });
+              buttons.forEach(btn => themeGrid.appendChild(btn));
+            }
+
+            function selectTheme(themeId) {
+              const isMember = localStorage.getItem("member") === "true";
+
+              // 🔒 Блокируем переход в премиум-темы, если пользователь не участник
+              if (themeId >= 5 && !isMember) return;
+
+              localStorage.setItem('theme_last_' + themeId, Date.now());
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // --- Динамическое создание попапа при загрузке страницы ---
+              const fadeOverlay = document.getElementById('fadeOverlay');
+              fadeOverlay.style.opacity = '1';
 
-        // 1. Создаем элементы
-        const overlay = document.createElement('div');
-        const content = document.createElement('div');
-        const closeBtn = document.createElement('span');
-        const heading = document.createElement('h2');
-        const paragraph = document.createElement('p');
-        const premiumBtn = document.createElement('button');
-        
-        // 2. Назначаем ID и классы для стилизации
-        overlay.id = 'premium-popup-overlay';
-        content.id = 'premium-popup-content';
-        closeBtn.id = 'close-popup';
-        premiumBtn.id = 'premium-popup-button';
-
-        // 3. Добавляем контент
-        closeBtn.innerHTML = '×'; // Крестик
-        heading.textContent = 'Дополнительный контент';
-        paragraph.textContent = 'Эти темы и функции доступны только с подпиской "Золотое Кимчи". Разблокируйте все возможности!';
-        premiumBtn.textContent = 'Подключить премиум';
-
-        // 4. Применяем стили через JavaScript
-        Object.assign(overlay.style, {
-    position: 'fixed', top: '0', left: '0', width: '100%', height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.6)', 
-    display: 'flex', // Оставляем flex для центрирования
-    justifyContent: 'center', alignItems: 'center', zIndex: '20000',
-    // --- НОВЫЕ СТРОКИ ДЛЯ ПЛАВНОСТИ ---
-    opacity: '0',
-    pointerEvents: 'none',
-    transition: 'opacity 0.3s ease-in-out'
-});
-        Object.assign(content.style, {
-            backgroundColor: 'white', padding: '25px', borderRadius: '12px',
-            textAlign: 'center', width: '85%', maxWidth: '380px',
-            boxShadow: '0 5px 15px rgba(0, 0, 0, 0.3)', position: 'relative', color: '#333'
-        });
-        Object.assign(closeBtn.style, {
-            position: 'absolute', top: '10px', right: '15px', fontSize: '28px',
-            fontWeight: 'bold', color: '#999', cursor: 'pointer'
-        });
-        Object.assign(heading.style, { marginTop: '0', color: '#000' });
-        Object.assign(paragraph.style, { fontSize: '16px', lineHeight: '1.5', marginBottom: '20px' });
-        Object.assign(premiumBtn.style, {
-            backgroundColor: '#FFD700', color: '#000', border: 'none', padding: '12px 25px',
-            borderRadius: '8px', fontSize: '18px', fontWeight: 'bold', cursor: 'pointer'
-        });
-
-        // 5. Собираем попап вместе
-        content.appendChild(closeBtn);
-        content.appendChild(heading);
-        content.appendChild(paragraph);
-        content.appendChild(premiumBtn);
-        overlay.appendChild(content);
-
-        // 6. Добавляем готовый попап на страницу и сохраняем ссылку на него
-        document.body.appendChild(overlay);
-        premiumPopupOverlay = overlay;
-
-        // 7. Назначаем события
-        closeBtn.addEventListener('click', hidePremiumPopup);
-        overlay.addEventListener('click', (event) => {
-            if (event.target === overlay) hidePremiumPopup();
-        });
-        premiumBtn.addEventListener('click', () => {
-            window.location.href = 'videopremium.html';
-        });
-
-        // --- Существующий код из вашего скрипта ---
-        const themeGrid = document.getElementById('themeGrid');
-
-        // Создание кнопок
-        for (let i = 15; i >= 5; i--) {
-            const btn = document.createElement('div');
-            btn.className = 'theme-button';
-            btn.id = 'theme' + i;
-            btn.style.backgroundImage = `url('videothemes/theme${i}.png')`;
-            btn.onclick = function () { selectTheme(i); };
-
-            const countContainer = document.createElement('div');
-            countContainer.className = 'theme-count-container';
-            countContainer.innerHTML = '<span class="theme-count"></span>';
-
-            btn.appendChild(countContainer);
-            themeGrid.appendChild(btn);
-        }
-
-        // Сортировка кнопок по времени клика
-        updateButtonsOrder();
-    });
-
-    function updateButtonsOrder() {
-        const themeGrid = document.getElementById('themeGrid');
-        const buttons = Array.from(themeGrid.children);
-        buttons.sort((a, b) => {
-            const timeA = parseInt(localStorage.getItem('theme_last_' + a.id.replace('theme', ''))) || 0;
-            const timeB = parseInt(localStorage.getItem('theme_last_' + b.id.replace('theme', ''))) || 0;
-            return timeB - timeA;
-        });
-        buttons.forEach(btn => themeGrid.appendChild(btn));
-    }
-
-    // ИЗМЕНЕННАЯ ФУНКЦИЯ selectTheme
-    function selectTheme(themeId) {
-        const isMember = localStorage.getItem("member") === "true";
-
-        // 🔒 Если тема премиальная и пользователь не участник, показываем попап
-        if (themeId >= 5 && !isMember) {
-            showPremiumPopup(); // <--- ВОТ ИЗМЕНЕНИЕ
-            return;
-        }
-
-        // Этот код выполнится только для доступных тем
-        localStorage.setItem('theme_last_' + themeId, Date.now());
-
-        const fadeOverlay = document.getElementById('fadeOverlay');
-        fadeOverlay.style.opacity = '1';
-
-        setTimeout(() => {
-            window.location.href = 'videotheme' + themeId + '.html';
-        }, 400); // Дать время на затемнение
-    }
-</script>
+              setTimeout(() => {
+                window.location.href = 'videotheme' + themeId + '.html';
+              }, 400); // Дать время на затемнение
+            }
+          </script>
         </div>
       </div>
 
@@ -743,6 +646,21 @@ function hidePremiumPopup() {
           lockOverlay.innerHTML = '<img src="lock.png" alt="Lock" style="width:100%; height:100%;">';
 
 
+          if (i >= 5 && !isMember) {
+            themeButton.style.filter = 'grayscale(100%)';
+            lockOverlay.onclick = function (e) {
+              e.stopPropagation();
+              lockOverlay.classList.add('click-animation'); // добавляем класс для анимации
+              setTimeout(() => {
+                lockOverlay.classList.remove('click-animation');
+              }, 300);
+            };
+          } else {
+            lockOverlay.onclick = function (e) {
+              e.stopPropagation();
+              unlockTheme(i);
+            };
+          }
           themeButton.appendChild(lockOverlay);
         }
       });

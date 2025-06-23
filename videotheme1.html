@@ -62,22 +62,32 @@
     #menu-button-container {
       position: relative;
       max-width: 100%;
-      gap: 10px;
+      gap: 5px;
       margin-top: auto;
-      margin-bottom: 3px;
+
       height: 10%;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      background-color: #1E88E5;
-      border-radius: 10px;
+      background-color: #1C1C1E;
+      border: 1px solid rgba(255, 215, 0, 0.5);
+      border-radius: 10px 10px 0 0;
     }
 
     #stars {
       display: flex;
-      font-size: 30px;
+      font-size: 20px;
       color: white;
+    }
+
+    #starsInstruction {
+      width: 100%;
+      height: 100%;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     button {
@@ -172,7 +182,7 @@
     }
 
     .theme-count-container {
-      margin-right: 0;
+      margin-left: 0;
       display: flex;
       align-items: center;
       border-radius: 8px;
@@ -182,8 +192,8 @@
     }
 
     .theme-tape-icon {
-      width: clamp(30px, 5vw, 100px);
-      height: clamp(30px, 5vw, 100px);
+      width: clamp(50px, 5vw, 100px);
+      height: clamp(50px, 5vw, 100px);
       object-fit: contain;
       margin-right: -6px;
       display: block;
@@ -245,11 +255,12 @@
 
   <div id="gameContainer">
 
-    <img id="bg-image" src="videothemes/subthemebc/allkdrama.png" alt="фон" />
+    <img id="bg-image" src="videothemes/subthemebc/runbtsbackground.png" alt="фон" />
     <div id="buttons-container"></div>
 
     <div id="menu-button-container">
       <div id="stars">⭐ 0</div>
+      <div id="starsInstruction">За правильные ответы получай ⭐<br>Октрыть блок BTS - 10⭐</div>
       <button id="main-menu-button" class="nav-button" onclick="goHome()">
         <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
       </button>
@@ -258,7 +269,8 @@
 
   <script>
     const levelUnlockedSound = new Audio('level_unlocked.mp3');
-    const totalButtons = 6;
+    let isMember = false;
+    const totalButtons = 4;
     const cost = 10;
     const starsKey = "stars";
     const pageName = window.location.pathname
@@ -268,10 +280,6 @@
 
     // формируем уникальный ключ
     const unlockedKey = `unlockedButtons_${pageName}`;
-    const customTitles = {
-      4: "Паразиты 1",       // index 1 — вторая кнопка (0 — это первая)
-      5: "Паразиты 2" // index 4 — пятая кнопка
-    };
 
     function getStars() {
       return parseInt(localStorage.getItem(starsKey)) || 0;
@@ -357,19 +365,19 @@
 
         // Обернем текст внутри <span>, чтобы соблюсти структуру
         const textSpan = document.createElement("span");
-        textSpan.textContent = customTitles[i] || `Сборник ${i + 1}`;
+        textSpan.textContent = `BTS ${i + 1}`;
 
         btn.appendChild(textSpan);
         btn.appendChild(countContainer);
 
 
-        if (!unlocked[i]) {
-          btn.classList.add("locked");
-          btn.addEventListener("click", () => tryUnlock(i));
-        } else {
+        if (isMember || unlocked[i]) {
           btn.addEventListener("click", () => {
             window.location.href = `videosubtheme1_${i + 1}.html`;
           });
+        } else {
+          btn.classList.add("locked");
+          btn.addEventListener("click", () => tryUnlock(i));
         }
 
         container.appendChild(btn);
@@ -436,6 +444,7 @@
 
     window.addEventListener("DOMContentLoaded", () => {
       setStars(getStars()); // показать текущие звёзды
+      isMember = localStorage.getItem("member") === "true";
       renderButtons();
       updateButtonCounts();
 

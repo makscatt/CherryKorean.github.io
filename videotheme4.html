@@ -52,25 +52,27 @@
 
 
     @media (hover: hover) and (pointer: fine) {
-            #gameContainer{
-                max-width: 600px;
-                margin: 0 auto;
-            }
+      #gameContainer {
+        max-width: 600px;
+        margin: 0 auto;
+      }
 
-        }
-    #menu-button-container {
+    }
+
+     #menu-button-container {
       position: relative;
       max-width: 100%;
       gap: 10px;
       margin-top: auto;
-      margin-bottom: 3px;
+      
       height: 10%;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      background-color: #1E88E5;
-      border-radius: 10px;
+      background-color: #1C1C1E;
+      border: 1px solid rgba(255, 215, 0, 0.5);
+      border-radius: 10px 10px 0 0;
     }
 
     #stars {
@@ -171,7 +173,7 @@
     }
 
     .theme-count-container {
-      margin-left: 0;
+      margin-right: 0;
       display: flex;
       align-items: center;
       border-radius: 8px;
@@ -181,8 +183,8 @@
     }
 
     .theme-tape-icon {
-      width: clamp(50px, 5vw, 100px);
-      height: clamp(50px, 5vw, 100px);
+      width: clamp(30px, 5vw, 100px);
+      height: clamp(30px, 5vw, 100px);
       object-fit: contain;
       margin-right: -6px;
       display: block;
@@ -244,7 +246,7 @@
 
   <div id="gameContainer">
 
-    <img id="bg-image" src="videothemes/subthemebc/runbtsbackground.png" alt="фон" />
+    <img id="bg-image" src="videothemes/subthemebc/allkdrama.png" alt="фон" />
     <div id="buttons-container"></div>
 
     <div id="menu-button-container">
@@ -257,7 +259,7 @@
 
   <script>
     const levelUnlockedSound = new Audio('level_unlocked.mp3');
-    const totalButtons = 4;
+    const totalButtons = 6;
     const cost = 10;
     const starsKey = "stars";
     const pageName = window.location.pathname
@@ -267,6 +269,10 @@
 
     // формируем уникальный ключ
     const unlockedKey = `unlockedButtons_${pageName}`;
+    const customTitles = {
+      4: "Паразиты 1",       // index 1 — вторая кнопка (0 — это первая)
+      5: "Паразиты 2" // index 4 — пятая кнопка
+    };
 
     function getStars() {
       return parseInt(localStorage.getItem(starsKey)) || 0;
@@ -277,14 +283,7 @@
       document.getElementById('stars').textContent = `⭐ ${value}`;
     }
 
-    function getUnlockedButtons() {
-      const data = localStorage.getItem(unlockedKey);
-      return data ? JSON.parse(data) : [true];
-    }
 
-    function saveUnlockedButtons(arr) {
-      localStorage.setItem(unlockedKey, JSON.stringify(arr));
-    }
 
     async function updateButtonCounts() {
       const buttons = document.querySelectorAll('#buttons-container .submenubutton');
@@ -328,7 +327,6 @@
     function renderButtons() {
       const container = document.getElementById("buttons-container");
       container.innerHTML = "";
-      const unlocked = getUnlockedButtons();
 
       for (let i = 0; i < totalButtons; i++) {
         const btn = document.createElement("button");
@@ -352,72 +350,21 @@
 
         // Обернем текст внутри <span>, чтобы соблюсти структуру
         const textSpan = document.createElement("span");
-        textSpan.textContent = `BTS ${i + 1}`;
+        textSpan.textContent = customTitles[i] || `Сборник ${i + 1}`;
 
         btn.appendChild(textSpan);
         btn.appendChild(countContainer);
 
 
-        if (!unlocked[i]) {
-          btn.classList.add("locked");
-          btn.addEventListener("click", () => tryUnlock(i));
-        } else {
-          btn.addEventListener("click", () => {
-            window.location.href = `videosubtheme4_${i + 1}.html`;
-          });
-        }
+        btn.addEventListener("click", () => {
+          window.location.href = `videosubtheme4_${i + 1}.html`;
+        });
 
         container.appendChild(btn);
       }
     }
 
-    function tryUnlock(index) {
-      let stars = getStars();
-      if (stars < cost) return;
-
-      stars -= cost;
-      setStars(stars);
-      levelUnlockedSound.play();
-
-      const unlocked = getUnlockedButtons();
-      unlocked[index] = true;
-      saveUnlockedButtons(unlocked);
-
-      // 🔥 Вместо renderButtons обновляем только одну кнопку
-      const container = document.getElementById("buttons-container");
-      const button = container.querySelectorAll(".submenubutton")[index];
-
-      button.classList.remove("locked");
-
-
-      // Заменяем обработчик клика
-      const newButton = button.cloneNode(true);
-      newButton.onclick = () => {
-        window.location.href = `videosubtheme4_${index + 1}.html`;
-      };
-      button.replaceWith(newButton);
-
-
-      // Отправка на сервер остаётся как есть
-      const telegramId = Telegram.WebApp.initDataUnsafe?.user?.id;
-      if (telegramId) {
-        const subThemes = unlocked
-          .map((isActive, idx) => isActive ? idx + 1 : null)
-          .filter(v => v !== null);
-
-        fetch(`https://telegram-server-hfk7.onrender.com/save`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            telegramId,
-            stars,
-            subThemes
-          })
-        }).catch(() => { });
-      }
-    }
+    
 
 
     function goHome() {

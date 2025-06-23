@@ -432,19 +432,7 @@
               onclick="selectTheme(1)">
               <div class="theme-count-container"><span class="theme-count"></span></div>
             </div>
-            <div class="theme-button" id="theme2" style="background-image: url('videothemes/theme2.png');"
-              onclick="selectTheme(2)">
-              <div class="theme-count-container"><span class="theme-count"></span></div>
-            </div>
-            <div class="theme-button" id="theme3" style="background-image: url('videothemes/theme3.png');"
-              onclick="selectTheme(3)">
-              <div class="theme-count-container"><span class="theme-count"></span></div>
-            </div>
-            <div class="theme-button" id="theme4" style="background-image: url('videothemes/theme4.png');"
-              onclick="selectTheme(4)">
-              <div class="theme-count-container"><span class="theme-count"></span></div>
-              <!-- <div class="theme-badge">Новинка</div>-->
-            </div>
+
 
           </div>
           <script>
@@ -556,7 +544,7 @@
 
               // Основной попап
               kimchiImage.src = 'videothemes/icons/goldkimchi.png'; // ИСПРАВЛЕННЫЙ ПУТЬ
-              mainText.textContent = 'Подключи «Золотое Кимчи»,\nчтобы открыть эту тему';
+              mainText.textContent = 'Подключи «Золотое Кимчи»,\nчтобы открыть все темы';
               priceText1.innerHTML = 'Первый месяц <span style="color: #FFD700; font-size: 26px;">99 руб</span>';
               priceText2.innerHTML = '<span style="color: gray;">Затем 300 руб/мес</span>';
               priceText2.style.display = 'block';
@@ -644,7 +632,7 @@
 
               // --- Существующий код для создания кнопок тем ---
               const themeGrid = document.getElementById('themeGrid');
-              for (let i = 15; i >= 5; i--) {
+              for (let i = 15; i >= 2; i--) {
                 const btn = document.createElement('div');
                 btn.className = 'theme-button';
                 btn.id = 'theme' + i;
@@ -672,7 +660,7 @@
 
             function selectTheme(themeId) {
               const isMember = localStorage.getItem("member") === "true";
-              if (themeId >= 5 && !isMember) {
+              if (themeId >= 2 && !isMember) {
                 showPremiumPopup();
                 return;
               }
@@ -693,7 +681,7 @@
           <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="">
           <div class="banner-text-wrapper">
             <span class="banner-text-main">Подключи Золотое Кимчи</span>
-            <span class="banner-text-sub">Открой все темы и убери таймер</span>
+            <span class="banner-text-sub">Полный доступ ко всем темам</span>
           </div>
           <span class="banner-arrow">›</span> <!-- ВОТ ЭТА СТРЕЛКА -->
         </button>
@@ -870,7 +858,10 @@
           const themeButton = document.getElementById('theme' + i);
           if (!themeButton) continue;
 
-
+          if (isMember) {
+            themeButton.classList.add('active');
+            continue; 
+          }
 
           if (i === 1) {
             themeButton.classList.add('active');
@@ -878,23 +869,12 @@
             continue;
           }
 
-          if (localStorage.getItem("theme" + i) === "active") {
-            themeButton.classList.add('active');
-
-            if (i >= 5 && !isMember) {
-              themeButton.style.filter = 'grayscale(100%)';
-            }
-
-            continue;
-          }
-
           let lockOverlay = document.createElement('div');
           lockOverlay.className = 'lock-overlay';
-          lockOverlay.innerHTML = '<img src="lock.png" alt="Lock" style="width:100%; height:100%;">';
+          lockOverlay.innerHTML = '<img src="redlock.png" alt="Lock" style="width:100%; height:100%;">';
 
 
-          if (i >= 5 && !isMember) {
-            themeButton.style.filter = 'grayscale(100%)';
+          if (i >= 2 && !isMember) {
             // ИЗМЕНЕНИЕ ЗДЕСЬ:
             lockOverlay.onclick = function (e) {
               e.stopPropagation();
@@ -909,56 +889,6 @@
           themeButton.appendChild(lockOverlay);
         }
       });
-
-      // Функция для разблокировки темы за 10 звезд (без всплывающих сообщений)
-      function unlockTheme(themeId) {
-        let stars = parseInt(localStorage.getItem("stars"), 10) || 0;
-        if (stars >= 10) {
-          stars -= 10;
-          localStorage.setItem("stars", stars);
-
-          const themeButton = document.getElementById('theme' + themeId);
-          themeButton.classList.add('active');
-          localStorage.setItem("theme" + themeId, "active");
-
-          const lockOverlay = themeButton.querySelector('.lock-overlay');
-          if (lockOverlay) {
-            lockOverlay.remove();
-          }
-
-          const telegramId = Telegram.WebApp.initDataUnsafe.user?.id;
-          if (telegramId) {
-            const activeThemes = [];
-            for (let i = 1; i <= 15; i++) {
-              if (localStorage.getItem("theme" + i) === "active") {
-                activeThemes.push(i);
-              }
-            }
-
-            fetch(`https://telegram-server-hfk7.onrender.com/save`, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify({
-                telegramId,
-                stars,
-                activeThemes
-              })
-            }).then(() => {
-              updateStarsDisplay();
-            }).catch(() => {
-              updateStarsDisplay();
-            });
-          } else {
-            updateStarsDisplay();
-          }
-
-          levelUnlockedSound.play()
-            .then(() => console.log("Звук проигрывается"))
-            .catch(err => console.error("Ошибка воспроизведения звука:", err));
-        }
-      }
 
       // Функция для обновления отображения количества звезд (если используется отдельный элемент)
       function updateStarsDisplay() {

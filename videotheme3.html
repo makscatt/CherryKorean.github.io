@@ -58,19 +58,20 @@
             }
 
         }
-    #menu-button-container {
+     #menu-button-container {
       position: relative;
       max-width: 100%;
       gap: 10px;
       margin-top: auto;
-      margin-bottom: 3px;
+      
       height: 10%;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      background-color: #1E88E5;
-      border-radius: 10px;
+      background-color: #1C1C1E;
+      border: 1px solid rgba(255, 215, 0, 0.5);
+      border-radius: 10px 10px 0 0;
     }
 
     #stars {
@@ -277,14 +278,7 @@
       document.getElementById('stars').textContent = `⭐ ${value}`;
     }
 
-    function getUnlockedButtons() {
-      const data = localStorage.getItem(unlockedKey);
-      return data ? JSON.parse(data) : [true];
-    }
 
-    function saveUnlockedButtons(arr) {
-      localStorage.setItem(unlockedKey, JSON.stringify(arr));
-    }
 
     async function updateButtonCounts() {
       const buttons = document.querySelectorAll('#buttons-container .submenubutton');
@@ -328,7 +322,6 @@
     async function renderButtons() {
   const container = document.getElementById("buttons-container");
   container.innerHTML = "";
-  const unlocked = getUnlockedButtons();
   const seasonMap = new Map();
 
   for (let i = 0; i < totalButtons; i++) {
@@ -373,14 +366,9 @@
       btn.appendChild(textSpan);
       btn.appendChild(countContainer);
 
-      if (!unlocked[i]) {
-        btn.classList.add("locked");
-        btn.addEventListener("click", () => tryUnlock(i));
-      } else {
-        btn.addEventListener("click", () => {
-          window.location.href = `videosubtheme3_${i + 1}.html`;
-        });
-      }
+      btn.addEventListener("click", () => {
+  window.location.href = `videosubtheme3_${i + 1}.html`;
+});
 
       container.appendChild(btn);
     });
@@ -389,53 +377,7 @@
   updateButtonCounts();
 }
 
-    function tryUnlock(index) {
-      let stars = getStars();
-      if (stars < cost) return;
-
-      stars -= cost;
-      setStars(stars);
-      levelUnlockedSound.play();
-
-      const unlocked = getUnlockedButtons();
-      unlocked[index] = true;
-      saveUnlockedButtons(unlocked);
-
-      // 🔥 Вместо renderButtons обновляем только одну кнопку
-      const container = document.getElementById("buttons-container");
-      const button = container.querySelectorAll(".submenubutton")[index];
-
-      button.classList.remove("locked");
-
-
-      // Заменяем обработчик клика
-      const newButton = button.cloneNode(true);
-      newButton.onclick = () => {
-        window.location.href = `videosubtheme3_${index + 1}.html`;
-      };
-      button.replaceWith(newButton);
-
-
-      // Отправка на сервер остаётся как есть
-      const telegramId = Telegram.WebApp.initDataUnsafe?.user?.id;
-      if (telegramId) {
-        const subThemes = unlocked
-          .map((isActive, idx) => isActive ? idx + 1 : null)
-          .filter(v => v !== null);
-
-        fetch(`https://telegram-server-hfk7.onrender.com/save`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            telegramId,
-            stars,
-            subThemes
-          })
-        }).catch(() => { });
-      }
-    }
+    
 
 
     function goHome() {
