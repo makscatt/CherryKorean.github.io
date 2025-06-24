@@ -82,7 +82,7 @@
     "video": "video/biglig/오케이 옷 좀 입어볼까.webm",
     "videoMp4": "video/biglig/mp4/오케이 옷 좀 입어볼까.mp4",
     "korean": "오케이 옷 좀 입어볼까",
-    "russian": "окей, попробуем одеться"
+    "russian": "Окей, попробуем одеться"
   },
   {
     "video": "video/biglig/오늘 오신 여자 관객분들 중에서.webm",
@@ -161,5 +161,59 @@
     "videoMp4": "video/biglig/mp4/두 명만 웃겨볼게요.mp4",
     "korean": " 두 명만 웃겨볼게요",
     "russian": "Хотя бы парочку попробуем рассмешить"
+  },
+  {
+    "video": "video/biglig/화장실만 금방 갔다 될까요.webm",
+    "videoMp4": "video/biglig/mp4/화장실만 금방 갔다 될까요.mp4",
+    "korean": "화장실만 금방 갔다 될까요?",
+    "russian": "Я только в туалет быстро схожу?"
+  },
+  {
+    "video": "video/biglig/저도 말씀 많이 들었거든요.webm",
+    "videoMp4": "video/biglig/mp4/저도 말씀 많이 들었거든요.mp4",
+    "korean": "저도 말씀 많이 들었거든요",
+    "russian": "Я тоже о вас много слышала"
+  },
+  {
+    "video": "video/biglig/왜케 잘생겼어 와.webm",
+    "videoMp4": "video/biglig/mp4/왜케 잘생겼어 와.mp4",
+    "korean": "왜케 잘생겼어?! 와",
+    "russian": "А че это он такой красавчик?!"
+  },
+  {
+    "video": "video/biglig/여자분들 다 이랬을 거예요.webm",
+    "videoMp4": "video/biglig/mp4/여자분들 다 이랬을 거예요.mp4",
+    "korean": "여자분들 다 이랬을 거예요",
+    "russian": "Наверняка, все девушки так делали"
+  },
+  {
+    "video": "video/biglig/어머 안녕하세요.webm",
+    "videoMp4": "video/biglig/mp4/어머 안녕하세요.mp4",
+    "korean": "어머 안녕하세요",
+    "russian": "Ой, здравствуйте!"
+  },
+  {
+    "video": "video/biglig/소개팅을 해 본 적이 있다.webm",
+    "videoMp4": "video/biglig/mp4/소개팅을 해 본 적이 있다.mp4",
+    "korean": "소개팅을 해 본 적이 있다",
+    "russian": "Было у меня свидание в слепую"
+  },
+  {
+    "video": "video/biglig/말씀 많이 들었습니다.webm",
+    "videoMp4": "video/biglig/mp4/말씀 많이 들었습니다.mp4",
+    "korean": "말씀 많이 들었습니다",
+    "russian": "Много о вас слышал"
+  },
+  {
+    "video": "video/biglig/댁이 어디라고 하셨죠.webm",
+    "videoMp4": "video/biglig/mp4/댁이 어디라고 하셨죠.mp4",
+    "korean": "댁이 어디라고 하셨죠?",
+    "russian": "А где, вы говорите, живете?"
+  },
+  {
+    "video": "video/biglig/다섯 명만 웃겨볼게요.webm",
+    "videoMp4": "video/biglig/mp4/다섯 명만 웃겨볼게요.mp4",
+    "korean": "다섯 명만 웃겨볼게요",
+    "russian": "Пятерых хотя бы попробуем рассмешить"
   }
 ]
