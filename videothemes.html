@@ -251,11 +251,14 @@
 
     }
 
-    .bank-button {
+    .user-button {
+      border: 1px solid rgba(255, 215, 0, 0.5);
+      border-radius: 10px;
       position: relative;
       display: block;
       width: 125px;
-      aspect-ratio: 9 / 16;
+      height: 125px;
+
       background-size: cover;
       background-position: center;
       cursor: pointer;
@@ -264,7 +267,7 @@
       box-sizing: border-box;
     }
 
-    .bank-button:active {
+    .user-button:active {
       transform: scale(0.95);
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     }
@@ -295,7 +298,7 @@
     }
 
 
-    .bank-button .theme-count {
+    .user-button .theme-count {
       color: white;
     }
 
@@ -374,7 +377,8 @@
 
     #weekly-leader {
       display: block;
-      margin-top: 12px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       font-size: clamp(12px, 4vw, 20px);
 
       color: #FFD700;
@@ -387,6 +391,22 @@
       color: #FFFFFF;
       font-weight: 400;
       /* можно чуть пониже */
+    }
+
+    #user-zone {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      gap: 10px;
+      display: flex;
+      padding-left: 20px;
+      width: 100%;
+      height: 125px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    #user-zone::-webkit-scrollbar {
+      display: none;
     }
   </style>
 </head>
@@ -409,10 +429,18 @@
         <!--<p id="instruction">💡Тренируйся и накапливай звезды<br> 💡Разблокировка темы стоит: 10 ⭐️ </p>-->
         <p id="weekly-leader" onclick="openRatingPage()" style="cursor: pointer;">Лидер недели: …</p>
       </div>
+      <div id="user-zone">
+        <div class="user-button" id="videothemebank" style="background-image: url('videothemes/bank.png');"
+          onclick="openBankPage()">
+          <div class="theme-count-container"><span class="theme-count"></span></div>
+        </div>
+        <div class="user-button" id="videorating" style="background-image: url('videothemes/rating.png');"
+          onclick="openRatingPage()">
+        </div>
+      </div>
       <div id="themes-container">
-        <div class="carousel-row">
+        <!--<div class="carousel-row">
           <div class="main-grid">
-
             <div class="bank-button" id="videothemebank" style="background-image: url('videothemes/bank.png');"
               onclick="openBankPage()">
               <div class="theme-count-container"><span class="theme-count"></span></div>
@@ -420,11 +448,8 @@
             <div class="bank-button" id="videorating" style="background-image: url('videothemes/rating.png');"
               onclick="openRatingPage()">
             </div>
-
-
           </div>
-        </div>
-
+        </div>-->
         <div class="carousel-row">
           <div class="theme-grid" id="themeGrid">
 
@@ -860,7 +885,7 @@
 
           if (isMember) {
             themeButton.classList.add('active');
-            continue; 
+            continue;
           }
 
           if (i === 1) {

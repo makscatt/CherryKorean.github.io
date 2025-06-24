@@ -27,9 +27,9 @@
 
         }
 
-        
 
-        
+
+
 
         #gameContainer {
             display: flex;
@@ -88,25 +88,18 @@
 
         #menu-button-container {
             position: relative;
-            max-width: 445px;
+            max-width: 100%;
             gap: 10px;
             margin-top: auto;
-            margin-bottom: 3px;
-            height: 70px;
-            /* Фиксированная высота */
+
+            height: 10%;
             display: flex;
             justify-content: center;
-            /* Центрируем элементы */
             align-items: center;
             width: 100%;
-            /* Растягиваем контейнер на всю ширину */
-            left: 0;
-            /* Чтобы зафиксировать по ширине */
-            right: 0;
-            /* Чтобы зафиксировать по ширине */
-            background-color: #1E88E5;
-            border-radius: 10px;
-            /*border: 1px solid #ddd;*/
+            background-color: #1C1C1E;
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            border-radius: 10px 10px 0 0;
         }
 
         .progress-box {
@@ -707,13 +700,13 @@
 
 
             loadWordsAndSetOptions();
-            
+
         });
         function updateTapeCount() {
             const tapeCount = easywords.length;
             document.getElementById("tape-count").textContent = "x" + tapeCount;
         }
-        
+
         function saveToBank() {
             const word = easywords[currentWordIndex];
             if (!word) return;
