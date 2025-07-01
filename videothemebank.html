@@ -188,33 +188,25 @@
         }
 
         #main-menu-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: 80px;
-            top: 50%;
-            transform: translateY(-58%);
-            padding: 1px 6px;
-            outline: 1px solid rgba(0, 0, 0, 0.1);
-            outline-offset: -1px;
-            box-shadow: 0 4px 0 #bbb;
-        }
+      margin: 5px;
+      padding: 5px 10px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #ffffff;
+      color: rgb(51, 51, 51);
+      border-radius: 5px;
+      transition: all 0.1s ease-in-out;
+      border: none;
+      outline: 1px solid rgba(0, 0, 0, 0.1);
+      outline-offset: -1px;
+      box-shadow: 0 4px 0 #bbb;
+      margin-left: auto;
+    }
 
-        #back-button {
-            padding: 1px 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: 5px;
-            top: 50%;
-            transform: translateY(-58%);
-            outline: 1px solid rgba(0, 0, 0, 0.1);
-            outline-offset: -1px;
-            box-shadow: 0 4px 0 #bbb;
-        }
-
+#main-menu-button:active {
+      box-shadow: 0 1px 8px #b7b7b7;
+      transform: translateY(4px);
+    }
         #list-button {
             padding: 1px 6px;
             display: flex;
@@ -229,9 +221,8 @@
             box-shadow: 0 4px 0 #bbb;
         }
 
-        #back-button:active,
-        #list-button:active,
-        #main-menu-button:active {
+        
+        #list-button:active {
             transform: translateY(-54%);
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
         }
@@ -530,9 +521,7 @@
             <button id="main-menu-button" class="nav-button" onclick="goHome()">
                 <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
             </button>
-            <button id="back-button" class="nav-button" onclick="goBack()">
-                <img src="videothemes/icons/back.png" alt="Back" style="width: 45px; height: 45px;">
-            </button>
+            
         </div>
     </div>
     </div>

@@ -462,7 +462,12 @@
         <div class="user-button" id="videorating" style="background-image: url('videothemes/rating.png');"
           onclick="openRatingPage()">
         </div>
+        <div class="user-button" id="videorating" style="background-image: url('videothemes/reviews.png');"
+          onclick="reviewsPage()">
+        </div>
       </div>
+      
+      
 
       <div id="themes-container">
         <div id="info">
@@ -880,6 +885,14 @@
 
         setTimeout(() => {
           window.location.href = 'videorating.html';
+        }, 400);
+      }
+      function reviewsPage() {
+        const fadeOverlay = document.getElementById('fadeOverlay');
+        fadeOverlay.style.opacity = '1';
+
+        setTimeout(() => {
+          window.location.href = 'videoreviews.html';
         }, 400);
       }
 
