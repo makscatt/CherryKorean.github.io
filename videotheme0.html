@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Кнопки</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="font.css" />
+
+  <link rel="stylesheet" href="minimenu.css">
+  <link rel="stylesheet" href="videosubmenustyles.css">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000000;
+      font-family: 'NetflixSans-Regular', Arial, sans-serif;
+    }
+
+    #bg-image {
+      width: 100%;
+      height: auto;
+      display: block;
+
+    }
+
+    #gameContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      margin: auto;
+      width: 100vw;
+      /* Используем относительную единицу измерения */
+      height: 100vh;
+      padding-top: 0px;
+      background: linear-gradient(to bottom, #000000 20%, #ffffff 20%);
+
+    }
+
+
+    @media (hover: hover) and (pointer: fine) {
+      #gameContainer {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+    }
+
+    #menu-button-container {
+      position: relative;
+      max-width: 100%;
+      gap: 5px;
+      margin-top: auto;
+
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: #1C1C1E;
+      border: 1px solid rgba(255, 215, 0, 0.5);
+      border-radius: 10px 10px 0 0;
+    }
+
+    #stars {
+      display: flex;
+      font-size: 20px;
+      color: white;
+    }
+
+    #starsInstruction {
+      width: 100%;
+      height: 100%;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      margin: 5px;
+      padding: 5px 10px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #ffffff;
+      color: rgb(51, 51, 51);
+      border-radius: 5px;
+      transition: all 0.1s ease-in-out;
+      border: none;
+      outline: 1px solid rgba(0, 0, 0, 0.1);
+      outline-offset: -1px;
+      box-shadow: 0 4px 0 #bbb;
+    }
+
+    button:active {
+      box-shadow: 0 1px 8px #b7b7b7;
+      transform: translateY(4px);
+    }
+
+
+    #main-menu-button {
+      font-size: 28px;
+      margin-left: auto;
+      margin-right: 15px;
+    }
+
+    #back-button {
+      font-size: 28px;
+      margin-right: auto;
+    }
+
+    #buttons-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      overflow-y: auto;
+      padding: 10px;
+
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    #buttons-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    #buttons-container .submenubutton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      background-color: #f9f9f9;
+      color: #000000;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      font-size: clamp(18px, 4vw, 36px);
+      border: 1px solid #ccc;
+      text-align: left;
+      font-weight: normal;
+      border-radius: 8px;
+      box-sizing: border-box;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s ease;
+      height: clamp(100px, 5vw, 120px);
+    }
+
+    #buttons-container .submenubutton:hover {
+      background-color: #eeeeee;
+    }
+
+    .submenubutton.locked {
+      position: relative;
+    }
+
+    .submenubutton.locked::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: clamp(25%, 5vw, 100%);
+      height: 100px;
+      background: url('lockhorizont.png') no-repeat center center;
+      background-size: contain;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .theme-count-container {
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      position: relative;
+      gap: 1px;
+
+    }
+
+    .theme-tape-icon {
+      width: clamp(50px, 5vw, 100px);
+      height: clamp(50px, 5vw, 100px);
+      object-fit: contain;
+      margin-right: -6px;
+      display: block;
+
+    }
+
+    .theme-count {
+      font-size: clamp(20px, 5vw, 40px);
+      font-weight: bold;
+      color: #000000;
+
+      min-width: 18px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    .lock-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.6);
+      pointer-events: none;
+    }
+
+    .theme-badge {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      background-color: red;
+      color: white;
+      font-size: 14px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      z-index: 2;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  <div id="fadeOverlay" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    z-index: 100000;
+    transition: opacity 0.4s ease;">
+  </div>
+
+
+  <div id="gameContainer">
+
+    <img id="bg-image" src="videothemes/subthemebc/demo.png" alt="фон" />
+    <div id="buttons-container"></div>
+    
+    <div id="menu-button-container">
+      <div id="stars">⭐ 0</div>
+      <!--<div id="starsInstruction">За правильные ответы получай ⭐<br>Октрыть блок BTS - 10⭐</div>-->
+      <button id="main-menu-button" class="nav-button" onclick="goHome()">
+        <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // --- КОНФИГУРАЦИЯ ---
+    // ▼▼▼ ПРОСТО ИЗМЕНИТЕ НАЗВАНИЯ В ЭТОМ СПИСКЕ ▼▼▼
+    const BLOCK_NAMES = [
+      "BTS",
+      "Хиллер",
+      "Большая Лига😂",
+      "Хватай Сон Дже И Беги",
+      "Слабый Герой 2"
+    ];
+
+    const MASTER_JSON_PATH = 'videothemes/json/videotheme0.json';
+    const TARGET_PAGE_URL = 'videosubtheme0.html';
+    const starsKey = "stars";
+
+    function getStars() {
+      return parseInt(localStorage.getItem(starsKey)) || 0;
+    }
+
+    function setStars(value) {
+      localStorage.setItem(starsKey, value);
+      document.getElementById('stars').textContent = `⭐ ${value}`;
+    }
+
+    // Переходит на страницу контента, сохранив ключ блока
+    function goToContentPage(buttonIndex) {
+      const blockKey = `b${buttonIndex + 1}`; // Формируем ключ: b1, b2, ...
+      localStorage.setItem('selectedVideoBlock', blockKey); // Сохраняем ключ
+      window.location.href = TARGET_PAGE_URL; // Переходим на общую страницу
+    }
+
+    // Загружает счетчики из одного общего файла
+    async function updateButtonCounts() {
+      const buttons = document.querySelectorAll('#buttons-container .submenubutton');
+      try {
+        const response = await fetch(MASTER_JSON_PATH);
+        const jsonData = await response.json();
+
+        for (let i = 0; i < buttons.length; i++) {
+          const btn = buttons[i];
+          const countSpan = btn.querySelector('.theme-count');
+          const blockKey = `b${i + 1}`;
+          const blockData = jsonData[blockKey] || [];
+
+          countSpan.textContent = blockData.length;
+
+          const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+          const hasNewWords = blockData.some(jsonItem => {
+            const storedItem = storedWords[jsonItem.video];
+            return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
+          });
+
+          if (blockData.some(item => item.isNew)) {
+            const badge = document.createElement('div');
+            badge.className = 'theme-badge';
+            badge.textContent = 'Новинка';
+            btn.appendChild(badge);
+          }
+        }
+      } catch (error) {
+        console.error(`Ошибка загрузки ${MASTER_JSON_PATH}:`, error);
+        buttons.forEach(btn => {
+          const countSpan = btn.querySelector('.theme-count');
+          if (countSpan) countSpan.textContent = 'err';
+        });
+      }
+    }
+
+    // Создает кнопки, используя названия из массива BLOCK_NAMES
+    function renderButtons() {
+      const container = document.getElementById("buttons-container");
+      container.innerHTML = "";
+
+      // Используем длину массива BLOCK_NAMES для определения количества кнопок
+      for (let i = 0; i < BLOCK_NAMES.length; i++) {
+        const btn = document.createElement("button");
+        btn.className = "submenubutton";
+
+        const countContainer = document.createElement("div");
+        countContainer.className = "theme-count-container";
+
+        const img = document.createElement("img");
+        img.src = "videothemes/icons/tape.png";
+        img.className = "theme-tape-icon";
+        img.alt = "Tape";
+
+        const span = document.createElement("span");
+        span.className = "theme-count";
+        countContainer.appendChild(img);
+        countContainer.append("x");
+        countContainer.appendChild(span);
+
+        const textSpan = document.createElement("span");
+        // Используем название из нашего массива
+        textSpan.textContent = BLOCK_NAMES[i];
+
+        btn.appendChild(textSpan);
+        btn.appendChild(countContainer);
+
+        // Кнопка всегда активна и ведет на страницу контента
+        btn.addEventListener("click", () => goToContentPage(i));
+
+        container.appendChild(btn);
+      }
+    }
+
+    function goHome() {
+      var pushAudio = new Audio('pushButton.mp3');
+      pushAudio.play();
+    }
+
+    document.getElementById('main-menu-button').addEventListener('click', () => {
+      window.location.href = 'videothemes.html';
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      setStars(getStars()); // Показываем звёзды, но не используем для покупок
+      renderButtons();
+      updateButtonCounts();
+
+      const overlay = document.getElementById("fadeOverlay");
+      overlay.style.opacity = "0";
+      setTimeout(() => overlay.remove(), 400);
+    });
+  </script>
+</body>
+
+</html>

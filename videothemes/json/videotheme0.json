@@ -1,0 +1,230 @@
+{
+  "b1": [
+    {
+      "video": "video/runbts/사람이 이렇게 서 있어요.webm",
+      "videoMp4": "video/runbts/mp4/사람이 이렇게 서 있어요.mp4",
+      "korean": "사람이 이렇게 서 있어요",
+      "russian": "Человек вот так стоит"
+    },
+    {
+      "video": "video/runbts/정국 어떡하냐.webm",
+      "videoMp4": "video/runbts/mp4/정국 어떡하냐.mp4",
+      "korean": "정국 어떡하냐?!",
+      "russian": "Как же так?!"
+    },
+    {
+      "video": "video/runbts/한번 신나게 외쳐 보고 싶었어요 아미.webm",
+      "videoMp4": "video/runbts/mp4/한번 신나게 외쳐 보고 싶었어요 아미.mp4",
+      "korean": "한번 신나게 외쳐 보고 싶었어요 아미",
+      "russian": "Хотел однажды с душой закричать АРМИ"
+    },
+    {
+      "video": "video/runbts/내가 먼저 했어.webm",
+      "videoMp4": "video/runbts/mp4/내가 먼저 했어.mp4",
+      "korean": "내가 먼저 했어",
+      "russian": "Я первее был"
+    },
+    {
+      "video": "video/runbts/형은 좀 아는 척 좀 하지 마요.webm",
+      "videoMp4": "video/runbts/mp4/형은 좀 아는 척 좀 하지 마요.mp4",
+      "korean": "형은 좀 아는 척 좀 하지 마요",
+      "russian": "Не притворяйся, что знаешь"
+    },
+    {
+      "video": "video/runbts/일어나 친구야.webm",
+      "videoMp4": "video/runbts/mp4/일어나 친구야.mp4",
+      "korean": "일어나 친구야",
+      "russian": "Вставай, дружок"
+    },
+    {
+      "video": "video/runbts/저 이 뭐요 이게.webm",
+      "videoMp4": "video/runbts/mp4/저 이 뭐요 이게.mp4",
+      "korean": "저 이 뭐요 이게?",
+      "russian": "Что это значит?"
+    }
+  ],
+  "b2": [
+    {
+      "video": "video/healer/미국으로 돌아가고 싶으신데.webm",
+      "videoMp4": "video/healer/mp4/미국으로 돌아가고 싶으신데.mp4",
+      "korean": "미국으로 돌아가고 싶으신데",
+      "russian": "Вы же хотите вернуться в США",
+      "new": true
+    },
+    {
+      "video": "video/healer/물건 주세요.webm",
+      "videoMp4": "video/healer/mp4/물건 주세요.mp4",
+      "korean": "물건 주세요",
+      "russian": "Дайте мне предмет"
+    },
+    {
+      "video": "video/healer/내가 오늘 니 엄마 대신에.webm",
+      "videoMp4": "video/healer/mp4/내가 오늘 니 엄마 대신에.mp4",
+      "korean": "내가 오늘 니 엄마 대신에",
+      "russian": "Я тебе сегодня вместо мамки твоей"
+    },
+    {
+      "video": "video/healer/말이 많아.webm",
+      "videoMp4": "video/healer/mp4/말이 많아.mp4",
+      "korean": "말이 많아!",
+      "russian": "Базаришь много!"
+    },
+    {
+      "video": "video/healer/힐러 만나러 오시죠.webm",
+      "videoMp4": "video/healer/mp4/힐러 만나러 오시죠.mp4",
+      "korean": "힐러 만나러 오시죠?",
+      "russian": "Вы на встречу к Хиллеру?"
+    },
+    {
+      "video": "video/healer/이거 뭐지.webm",
+      "videoMp4": "video/healer/mp4/이거 뭐지.mp4",
+      "korean": "이거 뭐지?",
+      "russian": "Это че такое?"
+    },
+    {
+      "video": "video/healer/새끼 같은 놈.webm",
+      "videoMp4": "video/healer/mp4/새끼 같은 놈.mp4",
+      "korean": "새끼 같은 놈!",
+      "russian": "Тварь!"
+    }
+  ],
+  "b3": [
+    {
+      "video": "video/biglig/어머 안녕하세요.webm",
+      "videoMp4": "video/biglig/mp4/어머 안녕하세요.mp4",
+      "korean": "어머 안녕하세요",
+      "russian": "Ой, здравствуйте!"
+    },
+    {
+      "video": "video/biglig/왜케 잘생겼어 와.webm",
+      "videoMp4": "video/biglig/mp4/왜케 잘생겼어 와.mp4",
+      "korean": "왜케 잘생겼어?! 와",
+      "russian": "А че это он такой красавчик?!"
+    },
+    {
+      "video": "video/biglig/벗을 때는 어떻게 벗어.webm",
+      "videoMp4": "video/biglig/mp4/벗을 때는 어떻게 벗어.mp4",
+      "korean": "벗을 때는 어떻게 벗어?",
+      "russian": "А как раздеваешься?"
+    },
+    {
+      "video": "video/biglig/알았어 끝나고 전화해.webm",
+      "videoMp4": "video/biglig/mp4/알았어 끝나고 전화해.mp4",
+      "korean": "알았어 끝나고 전화해",
+      "russian": "Хорошо, закончу перезвоню"
+    },
+    {
+      "video": "video/biglig/오케이 옷 좀 입어볼까.webm",
+      "videoMp4": "video/biglig/mp4/오케이 옷 좀 입어볼까.mp4",
+      "korean": "오케이 옷 좀 입어볼까",
+      "russian": "Окей, попробуем одеться"
+    },
+    {
+      "video": "video/biglig/자 메이크업 다 됐고.webm",
+      "videoMp4": "video/biglig/mp4/자 메이크업 다 됐고.mp4",
+      "korean": "자 메이크업 다 됐고",
+      "russian": "Так, все, накрасилась"
+    },
+    {
+      "video": "video/biglig/댁이 어디라고 하셨죠.webm",
+      "videoMp4": "video/biglig/mp4/댁이 어디라고 하셨죠.mp4",
+      "korean": "댁이 어디라고 하셨죠?",
+      "russian": "А где, вы говорите, живете?"
+    }
+  ],
+  "b4": [
+    {
+      "video": "video/hvatai/저 아세요.webm",
+      "videoMp4": "video/hvatai/mp4/저 아세요.mp4",
+      "korean": "저 아세요?",
+      "russian": "Знаете меня?"
+    },
+    {
+      "video": "video/hvatai/필요없어요.webm",
+      "videoMp4": "video/hvatai/mp4/필요없어요.mp4",
+      "korean": "필요없어요",
+      "russian": "Не нужно"
+    },
+    {
+      "video": "video/hvatai/시끄러워 죽겠다 1.webm",
+      "videoMp4": "video/hvatai/mp4/시끄러워 죽겠다 1.mp4",
+      "korean": "시끄러워 죽겠다",
+      "russian": "Шумно досмерти"
+    },
+    {
+      "video": "video/hvatai/선재 씨가 한번 도전해 볼까요.webm",
+      "videoMp4": "video/hvatai/mp4/선재 씨가 한번 도전해 볼까요.mp4",
+      "korean": "선재 씨가 한번 도전해 볼까요?",
+      "russian": "Сон Джэ, может вы разок попробуете?"
+    },
+    {
+      "video": "video/hvatai/괜찮아.webm",
+      "videoMp4": "video/hvatai/mp4/괜찮아.mp4",
+      "korean": "괜찮아?",
+      "russian": "ты в порядке?"
+    },
+    {
+      "video": "video/hvatai/우리 산책 나갈까.webm",
+      "videoMp4": "video/hvatai/mp4/우리 산책 나갈까.mp4",
+      "korean": "우리 산책 나갈까?",
+      "russian": "Может прогуляемся?"
+    },
+    {
+      "video": "video/hvatai/필요없다잖아요.webm",
+      "videoMp4": "video/hvatai/mp4/필요없다잖아요.mp4",
+      "korean": "필요없다잖아요",
+      "russian": "Я же сказала, не нужно!"
+    }
+  ],
+  "b5": [
+    {
+      "video": "video/weakhero2/어떤 사업입니다 사업.webm",
+      "videoMp4": "video/weakhero2/mp4/어떤 사업입니다 사업.mp4",
+      "korean": "어떤 사업입니다 사업",
+      "russian": "Это бизнес, бизнес",
+      "new": true
+    },
+    {
+      "video": "video/weakhero2/한 번만 말할게.webm",
+      "videoMp4": "video/weakhero2/mp4/한 번만 말할게.mp4",
+      "korean": "한 번만 말할게",
+      "russian": "Скажу только раз",
+      "new": true
+    },
+    {
+      "video": "video/weakhero2/잘 들어.webm",
+      "videoMp4": "video/weakhero2/mp4/잘 들어.mp4",
+      "korean": "잘 들어",
+      "russian": "Слушай внимательно",
+      "new": true
+    },
+    {
+      "video": "video/weakhero2/폰은 기종 어떤 거 써.webm",
+      "videoMp4": "video/weakhero2/mp4/폰은 기종 어떤 거 써.mp4",
+      "korean": "폰은 기종 어떤 거 써?",
+      "russian": "Какой у тебя телефон?",
+      "new": true
+    },
+    {
+      "video": "video/weakhero2/처맞기 싫으면 말 걸지 마라.webm",
+      "videoMp4": "video/weakhero2/mp4/처맞기 싫으면 말 걸지 마라.mp4",
+      "korean": "처맞기 싫으면 말 걸지 마라",
+      "russian": "Молчи, если не хочешь по морде получить",
+      "new": true
+    },
+    {
+      "video": "video/weakhero2/웬일이냐.webm",
+      "videoMp4": "video/weakhero2/mp4/웬일이냐.mp4",
+      "korean": "웬일이냐?",
+      "russian": "Какими судьбами?",
+      "new": true
+    },
+    {
+      "video": "video/weakhero2/아닌 거 같은데.webm",
+      "videoMp4": "video/weakhero2/mp4/아닌 거 같은데.mp4",
+      "korean": "아닌 거 같은데",
+      "russian": "Кажется, это не так",
+      "new": true
+    }
+  ]
+}

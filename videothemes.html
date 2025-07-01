@@ -394,8 +394,8 @@
     }
 
     #user-zone {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       gap: 10px;
       display: flex;
       padding-left: 20px;
@@ -407,6 +407,31 @@
 
     #user-zone::-webkit-scrollbar {
       display: none;
+    }
+
+    #info {
+      height: 70px;
+      width: 80%;
+      background-color: #ffffff;
+      margin: 0 auto;
+    }
+
+    #info-text {
+      font-size: 17px;
+      color: #000000;
+      /* text-align: left;*/
+    }
+
+    #theme-name {
+      height: 30px;
+      width: 100%;
+
+    }
+
+    #theme-name-text {
+      font-size: 25px;
+      color: #FFFFFF;
+      text-align: left;
     }
   </style>
 </head>
@@ -438,21 +463,22 @@
           onclick="openRatingPage()">
         </div>
       </div>
+
       <div id="themes-container">
-        <!--<div class="carousel-row">
-          <div class="main-grid">
-            <div class="bank-button" id="videothemebank" style="background-image: url('videothemes/bank.png');"
-              onclick="openBankPage()">
-              <div class="theme-count-container"><span class="theme-count"></span></div>
-            </div>
-            <div class="bank-button" id="videorating" style="background-image: url('videothemes/rating.png');"
-              onclick="openRatingPage()">
-            </div>
-          </div>
-        </div>-->
+        <div id="info">
+          <p id="info-text">Это тренажер вашего слуха<br>Чтобы понимать корейскую речь<br>И смотреть
+            дорамы без субтитров</p>
+        </div>
         <div class="carousel-row">
+          <div id="theme-name">
+            <p id="theme-name-text">Дорамы и Шоу</p>
+          </div>
           <div class="theme-grid" id="themeGrid">
 
+            <div class="theme-button" id="theme0" style="background-image: url('videothemes/theme0.png');"
+              onclick="selectTheme(0)">
+              <div class="theme-count-container"><span class="theme-count"></span></div>
+            </div>
             <div class="theme-button" id="theme1" style="background-image: url('videothemes/theme1.png');"
               onclick="selectTheme(1)">
               <div class="theme-count-container"><span class="theme-count"></span></div>
@@ -511,7 +537,7 @@
               const telegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");
               if (!telegramId) {
                 if (loader) loader.style.display = "none";
-                alert("Не удалось определить ID пользователя. Попробуйте перезапустить приложение.");
+
                 return;
               };
 
@@ -522,12 +548,12 @@
                   window.location.href = data.url;
                 } else {
                   if (loader) loader.style.display = "none";
-                  alert("Ошибка получения ссылки на оплату.");
+                  console.error("Ошибка получения ссылки на оплату.", err);
                 }
               } catch (err) {
                 console.error("Ошибка при получении ссылки:", err);
                 if (loader) loader.style.display = "none";
-                alert("Не удалось загрузить ссылку для оплаты.");
+
               }
             }
 
@@ -728,6 +754,8 @@
 
       async function updateThemeCountDisplay(themeId) {
         const themeButton = document.getElementById(`theme${themeId}`);
+        if (!themeButton) return; // Выход, если кнопки нет
+
         const countContainer = themeButton.querySelector('.theme-count-container');
         const countSpan = themeButton.querySelector('.theme-count');
 
@@ -738,58 +766,67 @@
         }
 
         try {
-          let jsonData = [];
-          let baseFile = `videothemes/json/videotheme${themeId}.json`;
+          let jsonData = []; // Массив для всех данных темы (для проверки 'new')
+          let totalCount = 0;
 
-          // Пробуем сначала загрузить обычный файл
-          try {
-            const data = await loadJson(baseFile);
-            jsonData = jsonData.concat(data);
-          } catch {
-            // Если обычного файла нет, ищем дроблённые файлы _1, _2, _3...
-            let index = 1;
-            while (true) {
-              try {
-                const partFile = `videothemes/json/videotheme${themeId}_${index}.json`;
-                const data = await loadJson(partFile);
-                jsonData = jsonData.concat(data);
-                index++;
-              } catch {
-                break; // Как только файла не будет — выходим из цикла
+          // Специальная логика ТОЛЬКО для theme0
+          if (themeId === 0) {
+            const data = await loadJson(`videothemes/json/videotheme0.json`);
+            // Проходим по всем ключам объекта (b1, b2 и т.д.)
+            for (const key in data) {
+              if (Array.isArray(data[key])) {
+                // Считаем только те объекты, у которых есть поле "video"
+                const blockCount = data[key].filter(item => item.hasOwnProperty('video')).length;
+                totalCount += blockCount;
+                // Собираем все данные в один массив для дальнейшей проверки
+                jsonData.push(...data[key]);
               }
             }
+            countSpan.textContent = totalCount;
+          } else {
+            // Старая логика для всех остальных тем
+            let baseFile = `videothemes/json/videotheme${themeId}.json`;
+            try {
+              const data = await loadJson(baseFile);
+              jsonData = jsonData.concat(data);
+            } catch {
+              let index = 1;
+              while (true) {
+                try {
+                  const partFile = `videothemes/json/videotheme${themeId}_${index}.json`;
+                  const data = await loadJson(partFile);
+                  jsonData = jsonData.concat(data);
+                  index++;
+                } catch {
+                  break;
+                }
+              }
+            }
+            countSpan.textContent = jsonData.length;
           }
 
-          countSpan.textContent = jsonData.length;
-
+          // Общая логика для всех тем (проверка на новизну)
           const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
-
           const hasNewWords = jsonData.some(jsonItem => {
             const storedItem = storedWords[jsonItem.video];
             return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
           });
-
           countContainer.style.backgroundColor = hasNewWords ? '#E53935' : '#43A047';
 
           if (jsonData.some(item => item.isNew)) {
             const badge = document.createElement('div');
             badge.className = 'theme-badge';
             badge.textContent = 'Новинка';
-
-            // Создаём обёртку вокруг кнопки, если её ещё нет
-            let wrapper = themeButton.parentNode;
-            if (!wrapper.classList.contains('theme-wrapper')) {
-              const newWrapper = document.createElement('div');
-              newWrapper.className = 'theme-wrapper';
-              newWrapper.style.position = 'relative';
-              newWrapper.style.display = 'inline-block';
-
-              themeButton.parentNode.replaceChild(newWrapper, themeButton);
-              newWrapper.appendChild(themeButton);
-              wrapper = newWrapper;
+            let wrapper = themeButton.closest('.theme-wrapper');
+            if (!wrapper) {
+              wrapper = document.createElement('div');
+              wrapper.className = 'theme-wrapper';
+              themeButton.parentNode.insertBefore(wrapper, themeButton);
+              wrapper.appendChild(themeButton);
             }
-
-            wrapper.appendChild(badge); // Теперь бейдж вне кнопки, но в том же контейнере
+            if (!wrapper.querySelector('.theme-badge')) {
+              wrapper.appendChild(badge);
+            }
           }
 
         } catch (error) {
@@ -851,20 +888,35 @@
         playPushButton();
       }
       function hideElementsIfMember() {
-        if (localStorage.getItem("member") === "true") {
-          const navBar = document.getElementById("navigation-bar-container");
-          if (navBar) {
-            navBar.style.display = "none";
-          }
-        }
-      }
+  if (localStorage.getItem("member") === "true") {
+    // Скрываем премиум-баннер
+    const navBar = document.getElementById("navigation-bar-container");
+    if (navBar) {
+      navBar.style.display = "none";
+    }
+
+    const theme0Button = document.getElementById("theme0");
+    if (theme0Button) {
+      theme0Button.remove(); // Удаляем элемент полностью
+    }
+    
+    // Скрываем блок "Это тренажер вашего слуха..."
+     const infoBlock = document.getElementById("info");
+    if (infoBlock) {
+      infoBlock.style.display = "none";
+    }
+  }
+}
 
 
-      window.addEventListener('pageshow', function (event) {
-        if (event.persisted) {
-          window.location.reload();
-        }
-      });
+      window.addEventListener('pageshow', function(event) {
+    // Эта функция сработает и при первой загрузке, и при возврате на страницу
+    if (window.Telegram.WebApp) {
+        Telegram.WebApp.ready();
+        updateStarsDisplay();
+        loadWeeklyLeader();
+    }
+});
 
       // При загрузке страницы разблокировать темы в зависимости от членства
 
@@ -879,7 +931,7 @@
           localStorage.setItem("stars", 1000);
         }
 
-        for (let i = 1; i <= 15; i++) {
+        for (let i = 0; i <= 15; i++) {
           const themeButton = document.getElementById('theme' + i);
           if (!themeButton) continue;
 
@@ -888,7 +940,7 @@
             continue;
           }
 
-          if (i === 1) {
+          if (i === 0) {
             themeButton.classList.add('active');
             localStorage.setItem("theme" + i, "active");
             continue;
@@ -899,7 +951,7 @@
           lockOverlay.innerHTML = '<img src="redlock.png" alt="Lock" style="width:100%; height:100%;">';
 
 
-          if (i >= 2 && !isMember) {
+          if (i >= 1 && !isMember) {
             // ИЗМЕНЕНИЕ ЗДЕСЬ:
             lockOverlay.onclick = function (e) {
               e.stopPropagation();
@@ -998,13 +1050,8 @@
         console.log("Навигация:", direction);
       }
 
-      // Инициализация Telegram Mini App
-      if (window.Telegram.WebApp) {
-        Telegram.WebApp.ready();
 
-        updateStarsDisplay();
-        loadWeeklyLeader();  // ← добавили вызов
-
+      
         // функция запроса лидера
         async function loadWeeklyLeader() {
           try {
@@ -1020,9 +1067,9 @@
             console.error('Не удалось загрузить лидера недели', e);
           }
         }
-      }
+      
       document.addEventListener('DOMContentLoaded', () => {
-        for (let i = 1; i <= 15; i++) {
+        for (let i = 0; i <= 15; i++) {
           updateThemeCountDisplay(i);
         }
         updateBankCountDisplay();
