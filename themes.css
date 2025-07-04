@@ -28,13 +28,13 @@ body {
 #startScreen {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   position: relative;
   margin: auto;
   width: 100vw;
-  /* Используем относительную единицу измерения */
+  
   height: 100vh;
   padding-top: 0px;
   overflow: hidden;
@@ -52,7 +52,7 @@ body {
   margin-top: 15%;
   top: 0;
   width: 100%;
-  text-align: center;
+  text-align: flex-start;;
   z-index: 999;
   /* background-color: rgba(255, 255, 255, 0.6);*/
   padding: 0px 0;
@@ -74,10 +74,10 @@ body {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  height: auto;
-  /* Высота контейнера для тем */
-  max-height: 80vh;
-  /* border: 1px solid #49ffe1; */
+  height: 300px;
+  flex: 1; 
+  
+  min-height: 0; 
   overflow: auto;
   overflow-y: auto;
   scrollbar-width: thin;

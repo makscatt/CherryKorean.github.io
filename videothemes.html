@@ -60,9 +60,9 @@
     #navigation-bar-container {
       position: relative;
       max-width: 100%;
-
+      
       margin-top: auto;
-      margin-bottom: 3px;
+      margin-bottom: 25px;
       height: 10%;
       display: flex;
       justify-content: center;
@@ -89,7 +89,7 @@
       transition: transform 0.2s;
       box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
       z-index: 2000;
-      margin-bottom: 20%;
+
     }
 
     #premium-banner:active {
@@ -109,8 +109,8 @@
     }
 
     .banner-text-main {
-      font-size: clamp(18px, 4vw, 22px);
-      font-weight: 700;
+      font-size: clamp(24px, 4vw, 28px);
+      font-weight: 600;
     }
 
     .banner-text-sub {
@@ -314,7 +314,7 @@
 
     #update-popup {
       width: 100%;
-      height: 100%;
+      height: 110%;
       display: none;
       position: absolute;
       z-index: 99999;
@@ -337,43 +337,76 @@
     }
 
     .update-content {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 70%;
-      height: 70%;
+      background-color: #2c2c2e;
+      /* Темный фон для контента */
+      padding: 20px;
+      border-radius: 16px;
+      width: 100%;
+
+      /* Ограничиваем максимальную ширину */
+      height: auto;
+      /* Высота будет автоматической */
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     }
 
-    #update-popup img {
-      width: 100%;
-      height: auto;
 
+    #update-popup img {
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #update-text-content {
+      color: #ffffff;
+      font-size: clamp(19px, 4vw, 25px);
+      text-align: left;
+      margin-top: 15px;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      /* Чтобы переносы строк из JS работали */
+    }
+
+    #update-title {
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      /* Отступ до картинки */
+      margin-top: 0;
     }
 
     #dismiss-update {
-      margin-top: 0;
-      padding: 10px 20px;
-
+      width: 40%;
+      padding: 12px 20px;
+      margin: 20px auto 0;
+      /* Отступ от текста */
+      background-color: #7d7d7d;
+      /* Синий цвет в стиле Telegram */
       color: white;
-      border-radius: 8px;
-      font-size: clamp(12px, 5vw, 38px);
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
       cursor: pointer;
       user-select: none;
-      animation: blink 1.2s infinite;
+      transition: background-color 0.2s ease, transform 0.1s ease;
     }
 
-    @keyframes blink {
-
-      0%,
-      100% {
-        opacity: 0.5;
-      }
-
-      50% {
-        opacity: 1;
-      }
+    #dismiss-update:active {
+      background-color: #7d7d7d;
+      /* Темнее при нажатии */
+      transform: scale(0.98);
+      /* Эффект нажатия */
     }
+
+
 
     #weekly-leader {
       display: block;
@@ -400,7 +433,7 @@
       display: flex;
       padding-left: 20px;
       width: 100%;
-      height: 125px;
+      height: 135px;
       overflow-x: auto;
       scrollbar-width: none;
     }
@@ -410,8 +443,8 @@
     }
 
     #info {
-      height: 70px;
-      width: 80%;
+      height: 100px;
+      width: 100%;
       background-color: #ffffff;
       margin: 0 auto;
     }
@@ -423,7 +456,7 @@
     }
 
     #theme-name {
-      height: 30px;
+      height: 26px;
       width: 100%;
 
     }
@@ -432,6 +465,8 @@
       font-size: 25px;
       color: #FFFFFF;
       text-align: left;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   </style>
 </head>
@@ -462,21 +497,19 @@
         <div class="user-button" id="videorating" style="background-image: url('videothemes/rating.png');"
           onclick="openRatingPage()">
         </div>
-        <div class="user-button" id="videorating" style="background-image: url('videothemes/reviews.png');"
+        <div class="user-button" id="reviewsButton" style="background-image: url('videothemes/reviews.png');"
           onclick="reviewsPage()">
         </div>
       </div>
-      
-      
-
+      <div id="info">
+        <p id="info-text">Это тренажер вашего слуха<br>Чтобы понимать корейскую речь<br>И смотреть
+          дорамы без субтитров</p>
+      </div>
       <div id="themes-container">
-        <div id="info">
-          <p id="info-text">Это тренажер вашего слуха<br>Чтобы понимать корейскую речь<br>И смотреть
-            дорамы без субтитров</p>
-        </div>
+
         <div class="carousel-row">
           <div id="theme-name">
-            <p id="theme-name-text">Дорамы и Шоу</p>
+            <p id="theme-name-text">Дорамы и Шоу ▶▶▶</p>
           </div>
           <div class="theme-grid" id="themeGrid">
 
@@ -488,607 +521,663 @@
               onclick="selectTheme(1)">
               <div class="theme-count-container"><span class="theme-count"></span></div>
             </div>
-
-
           </div>
-          <script>
-            // --- Начало блока функций ---
-
-            // Глобальные переменные для доступа к элементам
-            let premiumPopupOverlay, subscriptionModal, loader, offerPopupOverlay;
-
-            // Показ/скрытие основного попапа (с плавной анимацией)
-            function showPremiumPopup() {
-              if (premiumPopupOverlay) {
-                premiumPopupOverlay.style.opacity = '1';
-                premiumPopupOverlay.style.pointerEvents = 'auto';
-              }
-            }
-            function hidePremiumPopup() {
-              if (premiumPopupOverlay) {
-                premiumPopupOverlay.style.opacity = '0';
-                premiumPopupOverlay.style.pointerEvents = 'none';
-              }
-            }
-
-            // Показ/скрытие модального окна об отписке
-            function openModal() {
-              if (subscriptionModal) subscriptionModal.style.display = 'block';
-            }
-            function closeModal() {
-              if (subscriptionModal) subscriptionModal.style.display = 'none';
-            }
-
-            // НОВЫЕ ФУНКЦИИ ДЛЯ ПОПАПА ОФЕРТЫ
-            function showOfferPopup() {
-              if (offerPopupOverlay) {
-                const iframe = offerPopupOverlay.querySelector('iframe');
-                const offerUrl = "videooffer.html"; // URL без параметров
-
-                if (iframe && iframe.getAttribute('src') !== offerUrl) {
-                  iframe.setAttribute('src', offerUrl);
-                }
-                offerPopupOverlay.style.display = 'flex';
-              }
-            }
-            function hideOfferPopup() {
-              if (offerPopupOverlay) offerPopupOverlay.style.display = 'none';
-            }
-
-            // Перенаправление на оплату
-            async function redirectToPayment() {
-              if (loader) loader.style.display = "flex";
-
-              const telegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");
-              if (!telegramId) {
-                if (loader) loader.style.display = "none";
-
-                return;
-              };
-
-              try {
-                const res = await fetch(`https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}`);
-                const data = await res.json();
-                if (data.url) {
-                  window.location.href = data.url;
-                } else {
-                  if (loader) loader.style.display = "none";
-                  console.error("Ошибка получения ссылки на оплату.", err);
-                }
-              } catch (err) {
-                console.error("Ошибка при получении ссылки:", err);
-                if (loader) loader.style.display = "none";
-
-              }
-            }
-
-            // --- Конец блока функций ---
-
-
-            document.addEventListener('DOMContentLoaded', () => {
-              // --- Динамическое создание всех элементов ---
-
-              // 1. ОСНОВНОЙ ПОПАП
-              const overlay = document.createElement('div');
-              const content = document.createElement('div');
-              const closeBtn = document.createElement('span');
-              // const heading = document.createElement('h2'); // УДАЛЕНО
-              const kimchiImage = document.createElement('img');
-              const mainText = document.createElement('p');
-              const priceDiv = document.createElement('div');
-              const priceText1 = document.createElement('span');
-              const priceText2 = document.createElement('span');
-              const howToCancelBtn = document.createElement('button');
-              const premiumBtn = document.createElement('button');
-              const offerBtn = document.createElement('button');
-
-              // ... (Код для модалки отписки, лоадера и оферты остается без изменений) ...
-              const subModal = document.createElement('div');
-              const subModalContent = document.createElement('div');
-              const subModalCloseBtn = document.createElement('button');
-              const subModalText = document.createElement('p');
-              const loaderDiv = document.createElement('div');
-              const spinner = document.createElement('div');
-              const offerOverlay = document.createElement('div');
-              const offerContainer = document.createElement('div');
-              const offerIframe = document.createElement('iframe');
-              const offerCloseBtn = document.createElement('button');
-
-              // --- Наполнение и стилизация ---
-
-              // ----- КЛЮЧЕВЫЕ ИЗМЕНЕНИЯ ЗДЕСЬ -----
-
-              // Основной попап
-              kimchiImage.src = 'videothemes/icons/goldkimchi.png'; // ИСПРАВЛЕННЫЙ ПУТЬ
-              mainText.textContent = 'Подключи «Золотое Кимчи»,\nчтобы открыть все темы';
-              priceText1.innerHTML = 'Первый месяц <span style="color: #FFD700; font-size: 26px;">99 руб</span>';
-              priceText2.innerHTML = '<span style="color: gray;">Затем 300 руб/мес</span>';
-              priceText2.style.display = 'block';
-              howToCancelBtn.textContent = 'Как отключить подписку?';
-              premiumBtn.textContent = 'Подключить за 99 руб';
-              offerBtn.textContent = 'Оферта';
-              closeBtn.innerHTML = '×';
-
-              // Стилизация
-              Object.assign(overlay.style, { position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.6)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '20000', opacity: '0', pointerEvents: 'none', transition: 'opacity 0.3s ease-in-out' });
-              // Стили для ОБЩЕГО КОНТЕЙНЕРА, который будет центрироваться
-              Object.assign(offerContainer.style, { position: 'relative', width: '90%', maxWidth: '700px', height: '85%' });
-              Object.assign(content.style, { backgroundColor: '#1C1C1E', padding: '20px', borderRadius: '16px', textAlign: 'center', width: '90%', maxWidth: '380px', boxShadow: '0 5px 15px rgba(0,0,0,0.3)', position: 'relative', color: '#FFFFFF', border: '1px solid rgba(255, 215, 0, 0.9)' });
-              Object.assign(closeBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '28px', height: '28px', background: '#3A3A3C', color: '#E5E5EA', borderRadius: '50%', border: 'none', fontSize: '18px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' });
-              Object.assign(kimchiImage.style, { width: '60px', height: 'auto', margin: '10px 0' });
-              Object.assign(mainText.style, { fontSize: '18px', color: '#FFFFFF', margin: '10px 0 15px 0', padding: '0 10px', fontWeight: '500', whiteSpace: 'pre-line' });
-              Object.assign(priceDiv.style, { margin: '15px 0', lineHeight: '1.4' });
-              Object.assign(howToCancelBtn.style, { background: 'none', border: 'none', color: '#8E8E93', textDecoration: 'underline', cursor: 'pointer', marginTop: '10px' });
-              Object.assign(premiumBtn.style, { width: '100%', padding: '13px', backgroundColor: '#FFD700', color: '#000000', border: 'none', borderRadius: '8px', fontSize: '18px', cursor: 'pointer', transition: 'transform 0.2s', fontWeight: '700' });
-              Object.assign(offerBtn.style, { marginTop: '15px', color: '#666', textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer' });
-
-              // ... (Стили для модалки, лоадера и оферты остаются без изменений) ...
-              subModalText.innerHTML = 'Отключить подписку можно будет в боте – "Кимчи Хангуго", с которого вы запускаете приложение.<br />ㅡㅡㅡ<br /> После оплаты вам придет приглашение в закрытый чат.<br />ㅡㅡㅡ<br /> А также придет инструкция по управлению подпиской.';
-              Object.assign(subModal.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', background: 'rgba(0,0,0,0.5)', zIndex: '99999', backdropFilter: 'blur(5px)' });
-              Object.assign(subModalContent.style, { background: 'white', width: '300px', padding: '20px', borderRadius: '8px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' });
-              Object.assign(subModalCloseBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '30px', height: '30px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
-              subModalCloseBtn.innerHTML = '×';
-              Object.assign(loaderDiv.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100vw', height: '100vh', backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: '99999', alignItems: 'center', justifyContent: 'center' });
-              Object.assign(spinner.style, { width: '60px', height: '60px', border: '6px solid rgba(255, 255, 255, 0.2)', borderTop: '6px solid white', borderRadius: '50%', animation: 'spin 1s linear infinite' });
-              if (!document.querySelector('style[data-spin-animation]')) {
-                const styleSheet = document.createElement("style");
-                styleSheet.setAttribute('data-spin-animation', 'true');
-                styleSheet.innerHTML = `@keyframes spin { to { transform: rotate(360deg); } }`;
-                document.head.appendChild(styleSheet);
-              }
-              Object.assign(offerOverlay.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.7)', zIndex: '30000', justifyContent: 'center', alignItems: 'center' });
-              Object.assign(offerIframe.style, { width: '100%', maxWidth: '700px', height: '85%', border: 'none', borderRadius: '12px', backgroundColor: 'white' });
-              Object.assign(offerCloseBtn.style, { position: 'absolute', top: '0%', right: '0%', width: '40px', height: '40px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
-              offerCloseBtn.innerHTML = '×';
-              offerIframe.setAttribute('src', '');
-
-              // --- Сборка элементов в НОВОМ ПОРЯДКЕ ---
-              priceDiv.appendChild(priceText1);
-              priceDiv.appendChild(priceText2);
-              priceDiv.appendChild(howToCancelBtn);
-
-              content.appendChild(closeBtn);
-              content.appendChild(mainText);    // 1. Текст
-              content.appendChild(kimchiImage); // 2. Картинка
-              content.appendChild(priceDiv);    // 3. Цены
-              content.appendChild(premiumBtn);  // 4. Кнопка
-              content.appendChild(offerBtn);    // 5. Оферта
-
-              overlay.appendChild(content);
-
-              subModalContent.appendChild(subModalCloseBtn);
-              subModalContent.appendChild(subModalText);
-              subModal.appendChild(subModalContent);
-
-              loaderDiv.appendChild(spinner);
-
-              offerContainer.appendChild(offerIframe);
-              offerContainer.appendChild(offerCloseBtn);
-              offerOverlay.appendChild(offerContainer);
-
-              document.body.appendChild(overlay);
-              document.body.appendChild(subModal);
-              document.body.appendChild(loaderDiv);
-              document.body.appendChild(offerOverlay);
-
-              premiumPopupOverlay = overlay;
-              subscriptionModal = subModal;
-              loader = loaderDiv;
-              offerPopupOverlay = offerOverlay;
-
-              // Назначаем события
-              closeBtn.addEventListener('click', hidePremiumPopup);
-              premiumBtn.addEventListener('click', redirectToPayment);
-              howToCancelBtn.addEventListener('click', openModal);
-              offerBtn.addEventListener('click', showOfferPopup);
-              subModalCloseBtn.addEventListener('click', closeModal);
-              offerCloseBtn.addEventListener('click', hideOfferPopup);
-              overlay.addEventListener('click', (e) => { if (e.target === overlay) hidePremiumPopup(); });
-              subModal.addEventListener('click', (e) => { if (e.target === subModal) closeModal(); });
-
-              // --- Существующий код для создания кнопок тем ---
-              const themeGrid = document.getElementById('themeGrid');
-              for (let i = 15; i >= 2; i--) {
-                const btn = document.createElement('div');
-                btn.className = 'theme-button';
-                btn.id = 'theme' + i;
-                btn.style.backgroundImage = `url('videothemes/theme${i}.png')`;
-                btn.onclick = function () { selectTheme(i); };
-                const countContainer = document.createElement('div');
-                countContainer.className = 'theme-count-container';
-                countContainer.innerHTML = '<span class="theme-count"></span>';
-                btn.appendChild(countContainer);
-                themeGrid.appendChild(btn);
-              }
-              updateButtonsOrder();
-            });
-
-            function updateButtonsOrder() {
-              const themeGrid = document.getElementById('themeGrid');
-              const buttons = Array.from(themeGrid.children);
-              buttons.sort((a, b) => {
-                const timeA = parseInt(localStorage.getItem('theme_last_' + a.id.replace('theme', ''))) || 0;
-                const timeB = parseInt(localStorage.getItem('theme_last_' + b.id.replace('theme', ''))) || 0;
-                return timeB - timeA;
-              });
-              buttons.forEach(btn => themeGrid.appendChild(btn));
-            }
-
-            function selectTheme(themeId) {
-              const isMember = localStorage.getItem("member") === "true";
-              if (themeId >= 2 && !isMember) {
-                showPremiumPopup();
-                return;
-              }
-              localStorage.setItem('theme_last_' + themeId, Date.now());
-              const fadeOverlay = document.getElementById('fadeOverlay');
-              fadeOverlay.style.opacity = '1';
-              setTimeout(() => { window.location.href = 'videotheme' + themeId + '.html'; }, 400);
-            }
-          </script>
+        </div>
+        <div class="carousel-row">
+          <div id="theme-name">
+            <p id="theme-name-text">🔥 Новинки</p>
+          </div>
+          <div class="theme-grid" id="newThemesGrid">
+            <!-- Этот блок пока пустой, скрипт заполнит его сам -->
+          </div>
         </div>
       </div>
-
-
-
       <div id="navigation-bar-container">
 
         <button id="premium-banner" onclick="premium()">
           <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="">
           <div class="banner-text-wrapper">
-            <span class="banner-text-main">Подключи Золотое Кимчи</span>
-            <span class="banner-text-sub">Полный доступ ко всем темам</span>
+            <span class="banner-text-main">Открыть все темы</span>
+            <span class="banner-text-sub">Подключи «Золотое Кимчи»</span>
           </div>
           <span class="banner-arrow">›</span> <!-- ВОТ ЭТА СТРЕЛКА -->
         </button>
 
       </div>
+      <script>
+        // --- Начало блока функций ---
+
+        // Глобальные переменные для доступа к элементам
+        let premiumPopupOverlay, subscriptionModal, loader, offerPopupOverlay;
+
+        // Показ/скрытие основного попапа (с плавной анимацией)
+        function showPremiumPopup() {
+          if (premiumPopupOverlay) {
+            premiumPopupOverlay.style.opacity = '1';
+            premiumPopupOverlay.style.pointerEvents = 'auto';
+          }
+        }
+        function hidePremiumPopup() {
+          if (premiumPopupOverlay) {
+            premiumPopupOverlay.style.opacity = '0';
+            premiumPopupOverlay.style.pointerEvents = 'none';
+          }
+        }
+
+        // Показ/скрытие модального окна об отписке
+        function openModal() {
+          if (subscriptionModal) subscriptionModal.style.display = 'block';
+        }
+        function closeModal() {
+          if (subscriptionModal) subscriptionModal.style.display = 'none';
+        }
+
+        // НОВЫЕ ФУНКЦИИ ДЛЯ ПОПАПА ОФЕРТЫ
+        function showOfferPopup() {
+          if (offerPopupOverlay) {
+            const iframe = offerPopupOverlay.querySelector('iframe');
+            const offerUrl = "videooffer.html"; // URL без параметров
+
+            if (iframe && iframe.getAttribute('src') !== offerUrl) {
+              iframe.setAttribute('src', offerUrl);
+            }
+            offerPopupOverlay.style.display = 'flex';
+          }
+        }
+        function hideOfferPopup() {
+          if (offerPopupOverlay) offerPopupOverlay.style.display = 'none';
+        }
+
+        // Перенаправление на оплату
+        async function redirectToPayment() {
+          if (loader) loader.style.display = "flex";
+
+          const telegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");
+          if (!telegramId) {
+            if (loader) loader.style.display = "none";
+
+            return;
+          };
+
+          try {
+            const res = await fetch(`https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}`);
+            const data = await res.json();
+            if (data.url) {
+              window.location.href = data.url;
+            } else {
+              if (loader) loader.style.display = "none";
+              console.error("Ошибка получения ссылки на оплату.", err);
+            }
+          } catch (err) {
+            console.error("Ошибка при получении ссылки:", err);
+            if (loader) loader.style.display = "none";
+
+          }
+        }
+
+        // --- Конец блока функций ---
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+          // --- Динамическое создание всех элементов ---
+
+          // 1. ОСНОВНОЙ ПОПАП
+          const overlay = document.createElement('div');
+          const content = document.createElement('div');
+          const closeBtn = document.createElement('span');
+          // const heading = document.createElement('h2'); // УДАЛЕНО
+          const kimchiImage = document.createElement('img');
+          const mainText = document.createElement('p');
+          const priceDiv = document.createElement('div');
+          const priceText1 = document.createElement('span');
+          const priceText2 = document.createElement('span');
+          const howToCancelBtn = document.createElement('button');
+          const premiumBtn = document.createElement('button');
+          const offerBtn = document.createElement('button');
+
+          // ... (Код для модалки отписки, лоадера и оферты остается без изменений) ...
+          const subModal = document.createElement('div');
+          const subModalContent = document.createElement('div');
+          const subModalCloseBtn = document.createElement('button');
+          const subModalText = document.createElement('p');
+          const loaderDiv = document.createElement('div');
+          const spinner = document.createElement('div');
+          const offerOverlay = document.createElement('div');
+          const offerContainer = document.createElement('div');
+          const offerIframe = document.createElement('iframe');
+          const offerCloseBtn = document.createElement('button');
+
+          // --- Наполнение и стилизация ---
+
+          // ----- КЛЮЧЕВЫЕ ИЗМЕНЕНИЯ ЗДЕСЬ -----
+
+          // Основной попап
+          kimchiImage.src = 'videothemes/icons/goldkimchi.png'; // ИСПРАВЛЕННЫЙ ПУТЬ
+          mainText.textContent = 'Подключи «Золотое Кимчи»,\nчтобы открыть все темы';
+          priceText1.innerHTML = 'Первый месяц <span style="color: #FFD700; font-size: 26px;">99 руб</span>';
+          priceText2.innerHTML = '<span style="color: gray;">Затем 300 руб/мес</span>';
+          priceText2.style.display = 'block';
+          howToCancelBtn.textContent = 'Как отключить подписку?';
+          premiumBtn.textContent = 'Подключить за 99 руб';
+          offerBtn.textContent = 'Оферта';
+          closeBtn.innerHTML = '×';
+
+          // Стилизация
+          Object.assign(overlay.style, { position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.6)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '20000', opacity: '0', pointerEvents: 'none', transition: 'opacity 0.3s ease-in-out' });
+          // Стили для ОБЩЕГО КОНТЕЙНЕРА, который будет центрироваться
+          Object.assign(offerContainer.style, { position: 'relative', width: '90%', maxWidth: '700px', height: '85%' });
+          Object.assign(content.style, { backgroundColor: '#1C1C1E', padding: '20px', borderRadius: '16px', textAlign: 'center', width: '90%', maxWidth: '380px', boxShadow: '0 5px 15px rgba(0,0,0,0.3)', position: 'relative', color: '#FFFFFF', border: '1px solid rgba(255, 215, 0, 0.9)' });
+          Object.assign(closeBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '28px', height: '28px', background: '#3A3A3C', color: '#E5E5EA', borderRadius: '50%', border: 'none', fontSize: '18px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' });
+          Object.assign(kimchiImage.style, { width: '60px', height: 'auto', margin: '10px 0' });
+          Object.assign(mainText.style, { fontSize: '18px', color: '#FFFFFF', margin: '10px 0 15px 0', padding: '0 10px', fontWeight: '500', whiteSpace: 'pre-line' });
+          Object.assign(priceDiv.style, { margin: '15px 0', lineHeight: '1.4' });
+          Object.assign(howToCancelBtn.style, { background: 'none', border: 'none', color: '#8E8E93', textDecoration: 'underline', cursor: 'pointer', marginTop: '10px' });
+          Object.assign(premiumBtn.style, { width: '100%', padding: '13px', backgroundColor: '#FFD700', color: '#000000', border: 'none', borderRadius: '8px', fontSize: '18px', cursor: 'pointer', transition: 'transform 0.2s', fontWeight: '700' });
+          Object.assign(offerBtn.style, { marginTop: '15px', color: '#666', textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer' });
+
+          // ... (Стили для модалки, лоадера и оферты остаются без изменений) ...
+          subModalText.innerHTML = 'Отключить подписку можно будет в боте – "Кимчи Хангуго", с которого вы запускаете приложение.<br />ㅡㅡㅡ<br /> После оплаты вам придет приглашение в закрытый чат.<br />ㅡㅡㅡ<br /> А также придет инструкция по управлению подпиской.';
+          Object.assign(subModal.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', background: 'rgba(0,0,0,0.5)', zIndex: '99999', backdropFilter: 'blur(5px)' });
+          Object.assign(subModalContent.style, { background: 'white', width: '300px', padding: '20px', borderRadius: '8px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' });
+          Object.assign(subModalCloseBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '30px', height: '30px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
+          subModalCloseBtn.innerHTML = '×';
+          Object.assign(loaderDiv.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100vw', height: '100vh', backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: '99999', alignItems: 'center', justifyContent: 'center' });
+          Object.assign(spinner.style, { width: '60px', height: '60px', border: '6px solid rgba(255, 255, 255, 0.2)', borderTop: '6px solid white', borderRadius: '50%', animation: 'spin 1s linear infinite' });
+          if (!document.querySelector('style[data-spin-animation]')) {
+            const styleSheet = document.createElement("style");
+            styleSheet.setAttribute('data-spin-animation', 'true');
+            styleSheet.innerHTML = `@keyframes spin { to { transform: rotate(360deg); } }`;
+            document.head.appendChild(styleSheet);
+          }
+          Object.assign(offerOverlay.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.7)', zIndex: '30000', justifyContent: 'center', alignItems: 'center' });
+          Object.assign(offerIframe.style, { width: '100%', maxWidth: '700px', height: '85%', border: 'none', borderRadius: '12px', backgroundColor: 'white' });
+          Object.assign(offerCloseBtn.style, { position: 'absolute', top: '0%', right: '0%', width: '40px', height: '40px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
+          offerCloseBtn.innerHTML = '×';
+          offerIframe.setAttribute('src', '');
+
+          // --- Сборка элементов в НОВОМ ПОРЯДКЕ ---
+          priceDiv.appendChild(priceText1);
+          priceDiv.appendChild(priceText2);
+          priceDiv.appendChild(howToCancelBtn);
+
+          content.appendChild(closeBtn);
+          content.appendChild(mainText);    // 1. Текст
+          content.appendChild(kimchiImage); // 2. Картинка
+          content.appendChild(priceDiv);    // 3. Цены
+          content.appendChild(premiumBtn);  // 4. Кнопка
+          content.appendChild(offerBtn);    // 5. Оферта
+
+          overlay.appendChild(content);
+
+          subModalContent.appendChild(subModalCloseBtn);
+          subModalContent.appendChild(subModalText);
+          subModal.appendChild(subModalContent);
+
+          loaderDiv.appendChild(spinner);
+
+          offerContainer.appendChild(offerIframe);
+          offerContainer.appendChild(offerCloseBtn);
+          offerOverlay.appendChild(offerContainer);
+
+          document.body.appendChild(overlay);
+          document.body.appendChild(subModal);
+          document.body.appendChild(loaderDiv);
+          document.body.appendChild(offerOverlay);
+
+          premiumPopupOverlay = overlay;
+          subscriptionModal = subModal;
+          loader = loaderDiv;
+          offerPopupOverlay = offerOverlay;
+
+          // Назначаем события
+          closeBtn.addEventListener('click', hidePremiumPopup);
+          premiumBtn.addEventListener('click', redirectToPayment);
+          howToCancelBtn.addEventListener('click', openModal);
+          offerBtn.addEventListener('click', showOfferPopup);
+          subModalCloseBtn.addEventListener('click', closeModal);
+          offerCloseBtn.addEventListener('click', hideOfferPopup);
+          overlay.addEventListener('click', (e) => { if (e.target === overlay) hidePremiumPopup(); });
+          subModal.addEventListener('click', (e) => { if (e.target === subModal) closeModal(); });
+
+          // --- Существующий код для создания кнопок тем ---
+          const themeGrid = document.getElementById('themeGrid');
+          for (let i = 16; i >= 2; i--) {
+            const btn = document.createElement('div');
+            btn.className = 'theme-button';
+            btn.id = 'theme' + i;
+            btn.style.backgroundImage = `url('videothemes/theme${i}.png')`;
+            btn.onclick = function () { selectTheme(i); };
+            const countContainer = document.createElement('div');
+            countContainer.className = 'theme-count-container';
+            countContainer.innerHTML = '<span class="theme-count"></span>';
+            btn.appendChild(countContainer);
+            themeGrid.appendChild(btn);
+          }
+          updateButtonsOrder();
+          setTimeout(sortNewThemes, 500);
+        });
+
+        function updateButtonsOrder() {
+          const themeGrid = document.getElementById('themeGrid');
+          const buttons = Array.from(themeGrid.children);
+          buttons.sort((a, b) => {
+            const timeA = parseInt(localStorage.getItem('theme_last_' + a.id.replace('theme', ''))) || 0;
+            const timeB = parseInt(localStorage.getItem('theme_last_' + b.id.replace('theme', ''))) || 0;
+            return timeB - timeA;
+          });
+          buttons.forEach(btn => themeGrid.appendChild(btn));
+        }
+
+        function selectTheme(themeId) {
+          const isMember = localStorage.getItem("member") === "true";
+          if (themeId >= 2 && !isMember) {
+            showPremiumPopup();
+            return;
+          }
+          localStorage.setItem('theme_last_' + themeId, Date.now());
+          const fadeOverlay = document.getElementById('fadeOverlay');
+          fadeOverlay.style.opacity = '1';
+          setTimeout(() => { window.location.href = 'videotheme' + themeId + '.html'; }, 400);
+        }
+
+        function sortNewThemes() {
+          const newGrid = document.getElementById('newThemesGrid');
+          if (!newGrid) return; // Если контейнера для новинок нет, ничего не делаем
+
+          // 1. Сначала, как и раньше, находим все обертки с новинками и ПЕРЕМЕЩАЕМ их в newGrid
+          const allThemeWrappers = document.querySelectorAll('.theme-wrapper');
+          allThemeWrappers.forEach(wrapper => {
+            const isNew = wrapper.querySelector('.theme-badge');
+            if (isNew) {
+              newGrid.appendChild(wrapper);
+            }
+          });
+
+          // 2. Теперь, когда все новинки собраны в newGrid, мы их СОРТИРУЕМ
+          const newThemesToSort = Array.from(newGrid.children); // Получаем их как массив
+
+          newThemesToSort.sort((a, b) => {
+            // Находим кнопку внутри каждой обертки, чтобы получить её ID
+            const buttonA = a.querySelector('.theme-button');
+            const buttonB = b.querySelector('.theme-button');
+
+            if (!buttonA || !buttonB) return 0; // На всякий случай
+
+            // Извлекаем число из ID (например, из 'theme16' получаем 16)
+            const numA = parseInt(buttonA.id.replace('theme', ''));
+            const numB = parseInt(buttonB.id.replace('theme', ''));
+
+            // Сортируем по убыванию (чтобы 16 было раньше 15)
+            return numB - numA;
+          });
+
+          // 3. Вставляем отсортированные элементы обратно в newGrid. Они заменят старые.
+          newThemesToSort.forEach(theme => newGrid.appendChild(theme));
+        }
+      </script>
     </div>
-
-    <script>
-      const levelUnlockedSound = new Audio('level_unlocked.mp3');
-
-
-      levelUnlockedSound.preload = 'auto';
-      levelUnlockedSound.load();
-      const pushButtonSound = new Audio('pushButton.mp3');
-      pushButtonSound.preload = 'auto';
-      pushButtonSound.load();
+  </div>
 
 
 
-      async function updateThemeCountDisplay(themeId) {
-        const themeButton = document.getElementById(`theme${themeId}`);
-        if (!themeButton) return; // Выход, если кнопки нет
 
-        const countContainer = themeButton.querySelector('.theme-count-container');
-        const countSpan = themeButton.querySelector('.theme-count');
+  </div>
 
-        async function loadJson(file) {
-          const response = await fetch(file);
-          if (!response.ok) throw new Error('Файл не найден');
-          return await response.json();
-        }
+  <script>
+    const levelUnlockedSound = new Audio('level_unlocked.mp3');
 
-        try {
-          let jsonData = []; // Массив для всех данных темы (для проверки 'new')
-          let totalCount = 0;
 
-          // Специальная логика ТОЛЬКО для theme0
-          if (themeId === 0) {
-            const data = await loadJson(`videothemes/json/videotheme0.json`);
-            // Проходим по всем ключам объекта (b1, b2 и т.д.)
-            for (const key in data) {
-              if (Array.isArray(data[key])) {
-                // Считаем только те объекты, у которых есть поле "video"
-                const blockCount = data[key].filter(item => item.hasOwnProperty('video')).length;
-                totalCount += blockCount;
-                // Собираем все данные в один массив для дальнейшей проверки
-                jsonData.push(...data[key]);
-              }
-            }
-            countSpan.textContent = totalCount;
-          } else {
-            // Старая логика для всех остальных тем
-            let baseFile = `videothemes/json/videotheme${themeId}.json`;
-            try {
-              const data = await loadJson(baseFile);
-              jsonData = jsonData.concat(data);
-            } catch {
-              let index = 1;
-              while (true) {
-                try {
-                  const partFile = `videothemes/json/videotheme${themeId}_${index}.json`;
-                  const data = await loadJson(partFile);
-                  jsonData = jsonData.concat(data);
-                  index++;
-                } catch {
-                  break;
-                }
-              }
-            }
-            countSpan.textContent = jsonData.length;
-          }
+    levelUnlockedSound.preload = 'auto';
+    levelUnlockedSound.load();
+    const pushButtonSound = new Audio('pushButton.mp3');
+    pushButtonSound.preload = 'auto';
+    pushButtonSound.load();
 
-          // Общая логика для всех тем (проверка на новизну)
-          const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
-          const hasNewWords = jsonData.some(jsonItem => {
-            const storedItem = storedWords[jsonItem.video];
-            return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
-          });
-          countContainer.style.backgroundColor = hasNewWords ? '#E53935' : '#43A047';
 
-          if (jsonData.some(item => item.isNew)) {
-            const badge = document.createElement('div');
-            badge.className = 'theme-badge';
-            badge.textContent = 'Новинка';
-            let wrapper = themeButton.closest('.theme-wrapper');
-            if (!wrapper) {
-              wrapper = document.createElement('div');
-              wrapper.className = 'theme-wrapper';
-              themeButton.parentNode.insertBefore(wrapper, themeButton);
-              wrapper.appendChild(themeButton);
-            }
-            if (!wrapper.querySelector('.theme-badge')) {
-              wrapper.appendChild(badge);
-            }
-          }
 
-        } catch (error) {
-          console.error("Ошибка загрузки данных:", error);
-          countSpan.textContent = 'err';
-          countContainer.style.backgroundColor = 'gray';
-        }
+    async function updateThemeCountDisplay(themeId) {
+      const themeButton = document.getElementById(`theme${themeId}`);
+      if (!themeButton) return; // Выход, если кнопки нет
+
+      const countContainer = themeButton.querySelector('.theme-count-container');
+      const countSpan = themeButton.querySelector('.theme-count');
+
+      async function loadJson(file) {
+        const response = await fetch(file);
+        if (!response.ok) throw new Error('Файл не найден');
+        return await response.json();
       }
 
+      try {
+        let jsonData = []; // Массив для всех данных темы (для проверки 'new')
+        let totalCount = 0;
 
-      async function updateBankCountDisplay() {
-        const themeButton = document.getElementById('videothemebank');
-        const countContainer = themeButton.querySelector('.theme-count-container');
-        const countSpan = themeButton.querySelector('.theme-count');
-
-        try {
-          const saved = localStorage.getItem("savedWords");
-          const jsonData = saved ? JSON.parse(saved) : [];
-
+        // Специальная логика ТОЛЬКО для theme0
+        if (themeId === 0) {
+          const data = await loadJson(`videothemes/json/videotheme0.json`);
+          // Проходим по всем ключам объекта (b1, b2 и т.д.)
+          for (const key in data) {
+            if (Array.isArray(data[key])) {
+              // Считаем только те объекты, у которых есть поле "video"
+              const blockCount = data[key].filter(item => item.hasOwnProperty('video')).length;
+              totalCount += blockCount;
+              // Собираем все данные в один массив для дальнейшей проверки
+              jsonData.push(...data[key]);
+            }
+          }
+          countSpan.textContent = totalCount;
+        } else {
+          // Старая логика для всех остальных тем
+          let baseFile = `videothemes/json/videotheme${themeId}.json`;
+          try {
+            const data = await loadJson(baseFile);
+            jsonData = jsonData.concat(data);
+          } catch {
+            let index = 1;
+            while (true) {
+              try {
+                const partFile = `videothemes/json/videotheme${themeId}_${index}.json`;
+                const data = await loadJson(partFile);
+                jsonData = jsonData.concat(data);
+                index++;
+              } catch {
+                break;
+              }
+            }
+          }
           countSpan.textContent = jsonData.length;
+        }
 
-          const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+        // Общая логика для всех тем (проверка на новизну)
+        const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+        const hasNewWords = jsonData.some(jsonItem => {
+          const storedItem = storedWords[jsonItem.video];
+          return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
+        });
+        countContainer.style.backgroundColor = hasNewWords ? '#E53935' : '#43A047';
 
-          const hasNewWords = jsonData.some(jsonItem => {
-            const storedItem = storedWords[jsonItem.video];
-            return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
-          });
+        if (jsonData.some(item => item.isNew)) {
+          const badge = document.createElement('div');
+          badge.className = 'theme-badge';
+          badge.textContent = 'Новинка';
+          let wrapper = themeButton.closest('.theme-wrapper');
+          if (!wrapper) {
+            wrapper = document.createElement('div');
+            wrapper.className = 'theme-wrapper';
+            themeButton.parentNode.insertBefore(wrapper, themeButton);
+            wrapper.appendChild(themeButton);
+          }
+          if (!wrapper.querySelector('.theme-badge')) {
+            wrapper.appendChild(badge);
+          }
+        }
 
-          countContainer.style.backgroundColor = hasNewWords ? 'red' : 'green';
-        } catch (error) {
-          console.error("Ошибка загрузки данных для банка:", error);
-          countSpan.textContent = 'err';
-          countContainer.style.backgroundColor = 'gray';
+      } catch (error) {
+        console.error("Ошибка загрузки данных:", error);
+        countSpan.textContent = 'err';
+        countContainer.style.backgroundColor = 'gray';
+      }
+    }
+
+
+    async function updateBankCountDisplay() {
+      const themeButton = document.getElementById('videothemebank');
+      const countContainer = themeButton.querySelector('.theme-count-container');
+      const countSpan = themeButton.querySelector('.theme-count');
+
+      try {
+        const saved = localStorage.getItem("savedWords");
+        const jsonData = saved ? JSON.parse(saved) : [];
+
+        countSpan.textContent = jsonData.length;
+
+        const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+
+        const hasNewWords = jsonData.some(jsonItem => {
+          const storedItem = storedWords[jsonItem.video];
+          return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
+        });
+
+        countContainer.style.backgroundColor = hasNewWords ? 'red' : 'green';
+      } catch (error) {
+        console.error("Ошибка загрузки данных для банка:", error);
+        countSpan.textContent = 'err';
+        countContainer.style.backgroundColor = 'gray';
+      }
+    }
+    function premium() {
+      window.location.href = 'videopremium.html';
+    }
+
+    function openBankPage() {
+      const fadeOverlay = document.getElementById('fadeOverlay');
+      fadeOverlay.style.opacity = '1';
+
+      setTimeout(() => {
+        window.location.href = 'videothemebank.html';
+      }, 400);
+    }
+    function openRatingPage() {
+      const fadeOverlay = document.getElementById('fadeOverlay');
+      fadeOverlay.style.opacity = '1';
+
+      setTimeout(() => {
+        window.location.href = 'videorating.html';
+      }, 400);
+    }
+    function reviewsPage() {
+      const fadeOverlay = document.getElementById('fadeOverlay');
+      fadeOverlay.style.opacity = '1';
+
+      setTimeout(() => {
+        window.location.href = 'videoreviews.html';
+      }, 400);
+    }
+
+    function showCardsMenu() {
+      window.location.href = 'https://t.me/VipClubKimchi_Bot';
+      playPushButton();
+    }
+    function hideElementsIfMember() {
+      if (localStorage.getItem("member") === "true") {
+        // Скрываем премиум-баннер
+        const navBar = document.getElementById("navigation-bar-container");
+        if (navBar) {
+          navBar.style.display = "none";
+        }
+
+        const theme0Button = document.getElementById("theme0");
+        if (theme0Button) {
+          theme0Button.remove(); // Удаляем элемент полностью
+        }
+
+        // Скрываем блок "Это тренажер вашего слуха..."
+        const infoBlock = document.getElementById("info");
+        if (infoBlock) {
+          infoBlock.style.display = "none";
+        }
+        // Скрываем кнопку отзывов
+        const reviewsBtn = document.getElementById("reviewsButton");
+        if (reviewsBtn) {
+          reviewsBtn.style.display = "none";
         }
       }
-      function premium() {
-        window.location.href = 'videopremium.html';
-      }
-
-      function openBankPage() {
-        const fadeOverlay = document.getElementById('fadeOverlay');
-        fadeOverlay.style.opacity = '1';
-
-        setTimeout(() => {
-          window.location.href = 'videothemebank.html';
-        }, 400);
-      }
-      function openRatingPage() {
-        const fadeOverlay = document.getElementById('fadeOverlay');
-        fadeOverlay.style.opacity = '1';
-
-        setTimeout(() => {
-          window.location.href = 'videorating.html';
-        }, 400);
-      }
-      function reviewsPage() {
-        const fadeOverlay = document.getElementById('fadeOverlay');
-        fadeOverlay.style.opacity = '1';
-
-        setTimeout(() => {
-          window.location.href = 'videoreviews.html';
-        }, 400);
-      }
-
-      function showCardsMenu() {
-        window.location.href = 'https://t.me/VipClubKimchi_Bot';
-        playPushButton();
-      }
-      function hideElementsIfMember() {
-  if (localStorage.getItem("member") === "true") {
-    // Скрываем премиум-баннер
-    const navBar = document.getElementById("navigation-bar-container");
-    if (navBar) {
-      navBar.style.display = "none";
     }
 
-    const theme0Button = document.getElementById("theme0");
-    if (theme0Button) {
-      theme0Button.remove(); // Удаляем элемент полностью
-    }
-    
-    // Скрываем блок "Это тренажер вашего слуха..."
-     const infoBlock = document.getElementById("info");
-    if (infoBlock) {
-      infoBlock.style.display = "none";
-    }
-  }
-}
 
+    window.addEventListener('pageshow', function (event) {
+      if (event.persisted) {
+        // Страница загружается из bfcache — принудительно перезагружаем
+        location.reload();
+        return;
+      }
 
-      window.addEventListener('pageshow', function(event) {
-    // Эта функция сработает и при первой загрузке, и при возврате на страницу
-    if (window.Telegram.WebApp) {
+      // Обычная загрузка
+      if (window.Telegram.WebApp) {
         Telegram.WebApp.ready();
         updateStarsDisplay();
         loadWeeklyLeader();
-    }
-});
+      }
+    });
 
-      // При загрузке страницы разблокировать темы в зависимости от членства
+    // При загрузке страницы разблокировать темы в зависимости от членства
 
-      document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
 
-        const stars = parseInt(localStorage.getItem("stars"), 10) || 0;
-        const isMember = localStorage.getItem("member") === "true";
+      const stars = parseInt(localStorage.getItem("stars"), 10) || 0;
+      const isMember = localStorage.getItem("member") === "true";
 
 
-        const tg = window.Telegram.WebApp.initDataUnsafe?.user;
-        if (tg && tg.id === 910912532 && stars === 1) {
-          localStorage.setItem("stars", 1000);
+      const tg = window.Telegram.WebApp.initDataUnsafe?.user;
+      if (tg && tg.id === 910912532 && stars === 1) {
+        localStorage.setItem("stars", 1000);
+      }
+
+      for (let i = 0; i <= 16; i++) {
+        const themeButton = document.getElementById('theme' + i);
+        if (!themeButton) continue;
+
+        if (isMember) {
+          themeButton.classList.add('active');
+          continue;
         }
 
-        for (let i = 0; i <= 15; i++) {
-          const themeButton = document.getElementById('theme' + i);
-          if (!themeButton) continue;
-
-          if (isMember) {
-            themeButton.classList.add('active');
-            continue;
-          }
-
-          if (i === 0) {
-            themeButton.classList.add('active');
-            localStorage.setItem("theme" + i, "active");
-            continue;
-          }
-
-          let lockOverlay = document.createElement('div');
-          lockOverlay.className = 'lock-overlay';
-          lockOverlay.innerHTML = '<img src="redlock.png" alt="Lock" style="width:100%; height:100%;">';
-
-
-          if (i >= 1 && !isMember) {
-            // ИЗМЕНЕНИЕ ЗДЕСЬ:
-            lockOverlay.onclick = function (e) {
-              e.stopPropagation();
-              showPremiumPopup(); // Вместо анимации вызываем ваш попап
-            };
-          } else {
-            lockOverlay.onclick = function (e) {
-              e.stopPropagation();
-              unlockTheme(i);
-            };
-          }
-          themeButton.appendChild(lockOverlay);
+        if (i === 0) {
+          themeButton.classList.add('active');
+          localStorage.setItem("theme" + i, "active");
+          continue;
         }
-      });
 
-      // Функция для обновления отображения количества звезд (если используется отдельный элемент)
-      function updateStarsDisplay() {
-        const starsElement = document.getElementById("stars");
-        if (!starsElement) return;
+        let lockOverlay = document.createElement('div');
+        lockOverlay.className = 'lock-overlay';
+        lockOverlay.innerHTML = '<img src="redlock.png" alt="Lock" style="width:100%; height:100%;">';
 
-        loadLocalStars(); // ✅ моментальное отображение локальных звёзд
 
-        const telegramUser = Telegram.WebApp.initDataUnsafe.user;
-        const telegramId = telegramUser && telegramUser.id;
-
-        if (telegramId) {
-          fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
-            .then(response => {
-              if (!response.ok) throw new Error();
-              return response.json();
-            })
-            .then(data => {
-              if (typeof data.stars !== "undefined") {
-                starsElement.textContent = `⭐ ${data.stars}`;
-                localStorage.setItem("stars", data.stars);
-              }
-            })
-            .catch(() => {
-              loadLocalStars(); // на случай ошибки — fallback
-            });
+        if (i >= 1 && !isMember) {
+          // ИЗМЕНЕНИЕ ЗДЕСЬ:
+          lockOverlay.onclick = function (e) {
+            e.stopPropagation();
+            showPremiumPopup(); // Вместо анимации вызываем ваш попап
+          };
         } else {
-          loadLocalStars();
+          lockOverlay.onclick = function (e) {
+            e.stopPropagation();
+            unlockTheme(i);
+          };
         }
+        themeButton.appendChild(lockOverlay);
+      }
+    });
 
-        function loadLocalStars() {
-          const stars = parseInt(localStorage.getItem("stars"), 10) || 0;
-          starsElement.textContent = `⭐ ${stars}`;
-        }
+    // Функция для обновления отображения количества звезд (если используется отдельный элемент)
+    function updateStarsDisplay() {
+      const starsElement = document.getElementById("stars");
+      if (!starsElement) return;
+
+      loadLocalStars(); // ✅ моментальное отображение локальных звёзд
+
+      const telegramUser = Telegram.WebApp.initDataUnsafe.user;
+      const telegramId = telegramUser && telegramUser.id;
+
+      if (telegramId) {
+        fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
+          .then(response => {
+            if (!response.ok) throw new Error();
+            return response.json();
+          })
+          .then(data => {
+            if (typeof data.stars !== "undefined") {
+              starsElement.textContent = `⭐ ${data.stars}`;
+              localStorage.setItem("stars", data.stars);
+            }
+          })
+          .catch(() => {
+            loadLocalStars(); // на случай ошибки — fallback
+          });
+      } else {
+        loadLocalStars();
       }
 
-      function playPushButton() {
-        var pushAudio = new Audio('pushButton.mp3');
-        pushAudio.play();
+      function loadLocalStars() {
+        const stars = parseInt(localStorage.getItem("stars"), 10) || 0;
+        starsElement.textContent = `⭐ ${stars}`;
       }
-      function loadButtonsWithImages() {
-        const themeButtons = document.querySelectorAll('.theme-button');
+    }
 
-        themeButtons.forEach(button => {
-          const backgroundImage = button.style.backgroundImage;
-          if (backgroundImage) {
-            const urlMatch = backgroundImage.match(/url\("(.*)"\)/);
-            if (urlMatch && urlMatch[1]) {
-              const img = new Image();
-              img.src = urlMatch[1];
-              img.onload = () => {
-                button.classList.add('loaded');
-                button.style.display = 'block';
-              };
-              img.onerror = () => {
-                button.style.display = 'none';
-                button.style.pointerEvents = 'none';
-              };
-            } else {
+    function playPushButton() {
+      var pushAudio = new Audio('pushButton.mp3');
+      pushAudio.play();
+    }
+    function loadButtonsWithImages() {
+      const themeButtons = document.querySelectorAll('.theme-button');
+
+      themeButtons.forEach(button => {
+        const backgroundImage = button.style.backgroundImage;
+        if (backgroundImage) {
+          const urlMatch = backgroundImage.match(/url\("(.*)"\)/);
+          if (urlMatch && urlMatch[1]) {
+            const img = new Image();
+            img.src = urlMatch[1];
+            img.onload = () => {
+              button.classList.add('loaded');
+              button.style.display = 'block';
+            };
+            img.onerror = () => {
               button.style.display = 'none';
               button.style.pointerEvents = 'none';
-            }
+            };
           } else {
             button.style.display = 'none';
             button.style.pointerEvents = 'none';
           }
-        });
-      }
-
-      // Call the function when the document is fully loaded
-      document.addEventListener('DOMContentLoaded', loadButtonsWithImages);
-
-
-
-
-      function navigate(direction) {
-        if (direction === 'menu') {
-          // Переход на главную страницу (index.html)
-          window.location.href = 'index.html';
+        } else {
+          button.style.display = 'none';
+          button.style.pointerEvents = 'none';
         }
-        // Логика для навигации "back" и "forward" может быть добавлена здесь
-        console.log("Навигация:", direction);
-      }
-
-
-      
-        // функция запроса лидера
-        async function loadWeeklyLeader() {
-          try {
-            const res = await fetch('https://telegram-server-hfk7.onrender.com/getWeeklyLeader');
-            const leader = await res.json();
-            const el = document.getElementById('weekly-leader');
-            if (leader.username) {
-              el.textContent = ` ${leader.username} — ⭐ ${leader.stars}`;
-            } else {
-              el.textContent = ' пока нет данных';
-            }
-          } catch (e) {
-            console.error('Не удалось загрузить лидера недели', e);
-          }
-        }
-      
-      document.addEventListener('DOMContentLoaded', () => {
-        for (let i = 0; i <= 15; i++) {
-          updateThemeCountDisplay(i);
-        }
-        updateBankCountDisplay();
       });
-      hideElementsIfMember();
-    </script>
+    }
+
+    // Call the function when the document is fully loaded
+    document.addEventListener('DOMContentLoaded', loadButtonsWithImages);
+
+
+
+
+    function navigate(direction) {
+      if (direction === 'menu') {
+        // Переход на главную страницу (index.html)
+        window.location.href = 'index.html';
+      }
+      // Логика для навигации "back" и "forward" может быть добавлена здесь
+      console.log("Навигация:", direction);
+    }
+
+
+
+    // функция запроса лидера
+    async function loadWeeklyLeader() {
+      try {
+        const res = await fetch('https://telegram-server-hfk7.onrender.com/getWeeklyLeader');
+        const leader = await res.json();
+        const el = document.getElementById('weekly-leader');
+        if (leader.username) {
+          el.textContent = ` ${leader.username} — ⭐ ${leader.stars}`;
+        } else {
+          el.textContent = ' пока нет данных';
+        }
+      } catch (e) {
+        console.error('Не удалось загрузить лидера недели', e);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      for (let i = 0; i <= 16; i++) {
+        updateThemeCountDisplay(i);
+      }
+      updateBankCountDisplay();
+    });
+    hideElementsIfMember();
+  </script>
   </div>
   <script>
     window.addEventListener('load', () => {
@@ -1103,27 +1192,39 @@
     });
 
     document.addEventListener('DOMContentLoaded', () => {
+      // --- НАСТРОЙКИ ПОПАПА ОБНОВЛЕНИЯ ---
+      const updateConfig = {
+        version: '0407', // <<<< МЕНЯЙ ЗДЕСЬ ВЕРСИЮ
+        title: 'Обновление от 04.07', // <<<< МЕНЯЙ ЗДЕСЬ ЗАГОЛОВОК И ДАТУ
+        image: 'videothemes/update_banner.png', // Путь к картинке
+        text: `• Добавил Аниме "Лукизм".\n• 34 Видео.` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+      };
+      // ------------------------------------
+
       const updatePopup = document.getElementById('update-popup');
       const dismissBtn = document.getElementById('dismiss-update');
-      const UPDATE_VERSION = '2906'; // <<<<< меняй на новую версию при следующем обновлении
+      const updateTitle = document.getElementById('update-title');
+      const updateImage = updatePopup.querySelector('img');
+      const updateText = document.getElementById('update-text-content');
 
       const storedVersion = localStorage.getItem('update_shown');
 
-      if (storedVersion !== UPDATE_VERSION) {
-        updatePopup.style.display = 'flex'; // Показываем попап
+      if (storedVersion !== updateConfig.version) {
+        if (updateTitle) updateTitle.textContent = updateConfig.title;
+        if (updateImage) updateImage.src = updateConfig.image;
+        if (updateText) updateText.textContent = updateConfig.text;
+        updatePopup.style.display = 'flex';
       }
 
-      // Закрытие по кнопке
-      dismissBtn.addEventListener('click', () => {
+      function closeUpdatePopup() {
         updatePopup.style.display = 'none';
-        localStorage.setItem('update_shown', UPDATE_VERSION);
-      });
+        localStorage.setItem('update_shown', updateConfig.version);
+      }
 
-      // Закрытие по клику в любое место попапа
+      dismissBtn.addEventListener('click', closeUpdatePopup);
       updatePopup.addEventListener('click', (e) => {
         if (e.target === updatePopup) {
-          updatePopup.style.display = 'none';
-          localStorage.setItem('update_shown', UPDATE_VERSION);
+          closeUpdatePopup();
         }
       });
     });
@@ -1131,8 +1232,10 @@
   <div id="fadeOverlay"></div>
   <div id="update-popup">
     <div class="update-content">
+      <h2 id="update-title">Обновление</h2>
       <img src="videothemes/update_banner.png" alt="Обновление">
-      <div id="dismiss-update">Принять</div>
+      <p id="update-text-content">Здесь будет текст вашего обновления.</p>
+      <div id="dismiss-update">Продолжить</div>
     </div>
   </div>
 </body>
