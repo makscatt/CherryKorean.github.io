@@ -60,7 +60,7 @@
     #navigation-bar-container {
       position: relative;
       max-width: 100%;
-      
+
       margin-top: auto;
       margin-bottom: 25px;
       height: 10%;
@@ -753,8 +753,6 @@
             btn.appendChild(countContainer);
             themeGrid.appendChild(btn);
           }
-          updateButtonsOrder();
-          setTimeout(sortNewThemes, 500);
         });
 
         function updateButtonsOrder() {
@@ -1171,10 +1169,22 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
+      // Создаем массив, куда сложим все обещания (промисы) обновлений
+      const promises = [];
+
+      // Запускаем обновление для всех тем и для банка
       for (let i = 0; i <= 16; i++) {
-        updateThemeCountDisplay(i);
+        promises.push(updateThemeCountDisplay(i));
       }
-      updateBankCountDisplay();
+      promises.push(updateBankCountDisplay());
+
+      // Promise.allSettled дожидается, пока ВСЕ до единого промиса завершатся
+      Promise.allSettled(promises).finally(() => {
+        // Этот код выполнится ГАРАНТИРОВАННО после всех обновлений
+        console.log("Все темы обработаны. Запускаю сортировку.");
+        updateButtonsOrder(); // Сортируем по последнему использованию
+        sortNewThemes();    // Сортируем новинки
+      });
     });
     hideElementsIfMember();
   </script>
