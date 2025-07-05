@@ -1,0 +1,172 @@
+
+{
+  "b1": [
+    {
+    "card": "twocards/bts/1.png"
+  },
+  {
+    "card": "twocards/bts/2.png"
+  },
+  {
+    "card": "twocards/bts/3.png"
+  },
+  {
+    "card": "twocards/bts/4.png"
+  },
+  {
+    "card": "twocards/bts/5.png"
+  },
+  {
+    "card": "twocards/bts/6.png"
+  },
+  {
+    "card": "twocards/bts/7.png"
+  },
+  {
+    "card": "twocards/bts/8.png"
+  },
+  {
+    "card": "twocards/bts/9.png"
+  },
+  {
+    "card": "twocards/bts/10.png"
+  },
+  {
+    "card": "twocards/bts/11.png"
+  },
+  {
+    "card": "twocards/bts/12.png"
+  }
+  ],
+  "b2": [
+    {
+    "card": "twocards/actors/1.png"
+  },
+  {
+    "card": "twocards/actors/2.png"
+  },
+  {
+    "card": "twocards/actors/3.png"
+  },
+  {
+    "card": "twocards/actors/4.png"
+  },
+  {
+    "card": "twocards/actors/5.png"
+  },
+  {
+    "card": "twocards/actors/6.png"
+  },
+  {
+    "card": "twocards/actors/7.png"
+  },
+  {
+    "card": "twocards/actors/8.png"
+  },
+  {
+    "card": "twocards/actors/9.png"
+  },
+  {
+    "card": "twocards/actors/10.png"
+  },
+  {
+    "card": "twocards/actors/11.png"
+  },
+  {
+    "card": "twocards/actors/12.png"
+  }
+  ],
+  "b3": [
+   {
+    "card": "twocards/shirtless/1.png"
+  },
+  {
+    "card": "twocards/shirtless/2.png"
+  },
+  {
+    "card": "twocards/shirtless/3.png"
+  },
+  {
+    "card": "twocards/shirtless/4.png"
+  },
+  {
+    "card": "twocards/shirtless/5.png"
+  },
+  {
+    "card": "twocards/shirtless/6.png"
+  },
+  {
+    "card": "twocards/shirtless/7.png"
+  },
+  {
+    "card": "twocards/shirtless/8.png"
+  },
+  {
+    "card": "twocards/shirtless/9.png"
+  },
+  {
+    "card": "twocards/shirtless/10.png"
+  },
+  {
+    "card": "twocards/shirtless/11.png"
+  },
+  {
+    "card": "twocards/shirtless/12.png"
+  },
+  {
+    "card": "twocards/shirtless/13.png"
+  }
+  ],
+  "b4": [
+    {
+    "card": "twocards/1.png"
+  },
+  {
+    "card": "twocards/2.png"
+  },
+  {
+    "card": "twocards/3.png"
+  },
+  {
+    "card": "twocards/4.png"
+  },
+  {
+    "card": "twocards/5.png"
+  },
+  {
+    "card": "twocards/6.png"
+  },
+  {
+    "card": "twocards/7.png"
+  },
+  {
+    "card": "twocards/8.png"
+  }
+  ],
+  "b5": [
+    {
+    "card": "twocards/1.png"
+  },
+  {
+    "card": "twocards/2.png"
+  },
+  {
+    "card": "twocards/3.png"
+  },
+  {
+    "card": "twocards/4.png"
+  },
+  {
+    "card": "twocards/5.png"
+  },
+  {
+    "card": "twocards/6.png"
+  },
+  {
+    "card": "twocards/7.png"
+  },
+  {
+    "card": "twocards/8.png"
+  }
+  ]
+}

@@ -34,25 +34,28 @@ body {
   position: relative;
   margin: auto;
   width: 100vw;
-  
+
   height: 100vh;
   padding-top: 0px;
   overflow: hidden;
   /* Добавляем, чтобы изображение не выходило за пределы контейнера */
   background-color: black;
 }
+
 @media (hover: hover) and (pointer: fine) {
-            
-            #startScreen {
-                max-width: 600px;
-                margin: 0 auto;
-            }
-        }
+
+  #startScreen {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
 #topBar {
   margin-top: 15%;
   top: 0;
   width: 100%;
-  text-align: flex-start;;
+  text-align: flex-start;
+  ;
   z-index: 999;
   /* background-color: rgba(255, 255, 255, 0.6);*/
   padding: 0px 0;
@@ -75,9 +78,9 @@ body {
   align-items: flex-start;
   width: 100%;
   height: 300px;
-  flex: 1; 
-  
-  min-height: 0; 
+  flex: 1;
+
+  min-height: 0;
   overflow: auto;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -116,7 +119,17 @@ body {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  overflow-y: hidden;
+  /* Важно, чтобы скрыть контент при анимации */
+  transition: max-height 0.4s ease-out, padding-top 0.4s ease-out, padding-bottom 0.4s ease-out;
+  max-height: 500px;
+  /* Изначальная максимальная высота */
+}
 
+.theme-grid.collapsed {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .theme-grid::-webkit-scrollbar {
@@ -189,4 +202,37 @@ body {
 
 .theme-count {
   color: rgb(255, 255, 255);
+}
+
+/* Стили для заголовка-кнопки */
+.theme-name-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  /* чтобы текст не выделялся при клике */
+  padding-right: 10px;
+  /* небольшой отступ для стрелки */
+  background-color: #212121;
+}
+
+/* Стили для текста заголовка (вместо #theme-name-text) */
+.theme-name-text {
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
+}
+
+/* Стили для стрелки */
+.toggle-arrow {
+  font-size: 20px;
+  color: #FFFFFF;
+  transition: transform 0.3s ease;
+}
+
+/* Поворот стрелки, когда секция свернута */
+.theme-name-toggle.collapsed .toggle-arrow {
+  transform: rotate(-90deg);
 }

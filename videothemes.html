@@ -251,26 +251,7 @@
 
     }
 
-    .user-button {
-      border: 1px solid rgba(255, 215, 0, 0.5);
-      border-radius: 10px;
-      position: relative;
-      display: block;
-      width: 125px;
-      height: 125px;
 
-      background-size: cover;
-      background-position: center;
-      cursor: pointer;
-      flex: 0 0 auto;
-      scroll-snap-align: start;
-      box-sizing: border-box;
-    }
-
-    .user-button:active {
-      transform: scale(0.95);
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
-    }
 
     .theme-count-container {
       position: absolute;
@@ -442,31 +423,41 @@
       display: none;
     }
 
-    #info {
+    .user-button {
+      border: 1px solid rgba(255, 215, 0, 0.5);
+      border-radius: 10px;
+      position: relative;
+      display: block;
+      width: 100px;
       height: 100px;
+
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      box-sizing: border-box;
+    }
+
+    .user-button:active {
+      transform: scale(0.95);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    #info {
+      height: 80px;
       width: 100%;
       background-color: #ffffff;
-      margin: 0 auto;
+      margin-bottom: 20px;
+      padding: 0;
     }
 
     #info-text {
-      font-size: 17px;
+      font-size: 20px;
       color: #000000;
-      /* text-align: left;*/
-    }
-
-    #theme-name {
-      height: 26px;
-      width: 100%;
-
-    }
-
-    #theme-name-text {
-      font-size: 25px;
-      color: #FFFFFF;
-      text-align: left;
-      margin-top: 0;
-      margin-bottom: 0;
+      margin: 0;
+      padding: 0;
+      line-height: 1.2;
     }
   </style>
 </head>
@@ -500,6 +491,8 @@
         <div class="user-button" id="reviewsButton" style="background-image: url('videothemes/reviews.png');"
           onclick="reviewsPage()">
         </div>
+        <div class="user-button" id="game" style="background-image: url('videothemes/game.png');" onclick="gamePage()">
+        </div>
       </div>
       <div id="info">
         <p id="info-text">Это тренажер вашего слуха<br>Чтобы понимать корейскую речь<br>И смотреть
@@ -508,8 +501,9 @@
       <div id="themes-container">
 
         <div class="carousel-row">
-          <div id="theme-name">
-            <p id="theme-name-text">Дорамы и Шоу ▶▶▶</p>
+          <div class="theme-name-toggle">
+            <p class="theme-name-text">🎬Дорамы и Шоу</p>
+            <span class="toggle-arrow">▼</span>
           </div>
           <div class="theme-grid" id="themeGrid">
 
@@ -524,8 +518,9 @@
           </div>
         </div>
         <div class="carousel-row">
-          <div id="theme-name">
-            <p id="theme-name-text">🔥 Новинки</p>
+          <div class="theme-name-toggle">
+            <p class="theme-name-text">🔥 Новинки</p>
+            <span class="toggle-arrow">▼</span>
           </div>
           <div class="theme-grid" id="newThemesGrid">
             <!-- Этот блок пока пустой, скрипт заполнит его сам -->
@@ -753,6 +748,22 @@
             btn.appendChild(countContainer);
             themeGrid.appendChild(btn);
           }
+          const toggles = document.querySelectorAll('.theme-name-toggle');
+
+          toggles.forEach((toggle, index) => {
+            const content = toggle.nextElementSibling;
+
+            // Сворачиваем все, кроме первого
+            if (index > 0) {
+              toggle.classList.add('collapsed');
+              content.classList.add('collapsed');
+            }
+
+            toggle.addEventListener('click', () => {
+              toggle.classList.toggle('collapsed');
+              content.classList.toggle('collapsed');
+            });
+          });
         });
 
         function updateButtonsOrder() {
@@ -969,6 +980,14 @@
 
       setTimeout(() => {
         window.location.href = 'videoreviews.html';
+      }, 400);
+    }
+    function gamePage() {
+      const fadeOverlay = document.getElementById('fadeOverlay');
+      fadeOverlay.style.opacity = '1';
+
+      setTimeout(() => {
+        window.location.href = 'twocardsmenu.html';
       }, 400);
     }
 

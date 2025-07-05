@@ -27,11 +27,11 @@
 
         }
 
-        
 
-        
 
-        
+
+
+
 
         .goldkimchi-label {
             position: absolute;
@@ -77,6 +77,7 @@
         }
 
         @media (hover: hover) and (pointer: fine) {
+
             #gameContainer,
             #popup-content-wrapper {
                 max-width: 600px;
@@ -88,7 +89,7 @@
 
             }
         }
-        
+
 
         #custom-video-container {
             margin: 0;
@@ -304,21 +305,21 @@
             box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
         }
 
-         #menu-button-container {
-      position: relative;
-      max-width: 100%;
-      gap: 10px;
-      margin-top: auto;
-      
-      height: 10%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      background-color: #1C1C1E;
-      border: 1px solid rgba(255, 215, 0, 0.5);
-      border-radius: 10px 10px 0 0;
-    }
+        #menu-button-container {
+            position: relative;
+            max-width: 100%;
+            gap: 10px;
+            margin-top: auto;
+
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #1C1C1E;
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            border-radius: 10px 10px 0 0;
+        }
 
         #stars {
             position: absolute;
@@ -459,7 +460,7 @@
             </div>
         </div>
         <div id="menu-button-container">
-            
+
             <button id="stars" disabled>⭐ 0</button>
             <button id="save-to-bank-button" onclick="saveToBank()">
                 <img id="bank-icon" src="videothemes/icons/outbank.png" alt="В копилку">
@@ -731,22 +732,22 @@
         document.addEventListener("DOMContentLoaded", () => {
             loadStars();
             loadWordsAndSetOptions();
-            
+
         });
 
-        
 
-            
 
-            
 
-            
 
-            
 
-            
 
-            
+
+
+
+
+
+
+
 
 
 
@@ -818,7 +819,7 @@
             document.body.appendChild(preload);
         }
 
-function analyzeKoreanText() {
+        function analyzeKoreanText() {
             const textElem = document.getElementById("koreanText");
             const text = textElem.innerText.trim();
             if (!text) return;
@@ -936,7 +937,7 @@ function analyzeKoreanText() {
             video.playbackRate = parseFloat(e.target.value);
         };
     </script>
-     <div id="popup" style="display: none;">
+    <div id="popup" style="display: none;">
         <div id="popup-overlay"></div>
         <div id="popup-content-wrapper">
             <div id="popupContent"></div>
