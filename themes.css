@@ -207,7 +207,7 @@ body {
 /* Стили для заголовка-кнопки */
 .theme-name-toggle {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   cursor: pointer;
   user-select: none;
@@ -227,12 +227,17 @@ body {
 
 /* Стили для стрелки */
 .toggle-arrow {
-  font-size: 20px;
-  color: #FFFFFF;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
   transition: transform 0.3s ease;
 }
 
 /* Поворот стрелки, когда секция свернута */
 .theme-name-toggle.collapsed .toggle-arrow {
   transform: rotate(-90deg);
+  background-color: rgb(189, 189, 189);
 }
