@@ -414,7 +414,7 @@
       display: flex;
       padding-left: 20px;
       width: 100%;
-      height: 135px;
+      height: 120px;
       overflow-x: auto;
       scrollbar-width: none;
     }
@@ -444,20 +444,150 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     }
 
-    #info {
-      height: 80px;
+
+
+    #instruction-container {
       width: 100%;
-      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
       margin-bottom: 20px;
-      padding: 0;
+      /* Отступ как у старого блока */
     }
 
-    #info-text {
+    #instruction-button {
+      padding: 10px 25px;
+      font-size: clamp(18px, 2.5vw, 20px);
+      color: var(--tg-theme-button-text-color, #000000);
+      background-color: var(--tg-theme-button-color, #fff350);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 500;
+      box-shadow: 0 4px 0 #8e8e8e;
+    }
+
+    #instruction-button:active {
+      box-shadow: 0 1px 4px #b7b7b7;
+      transform: translateY(4px);
+    }
+
+    #instruction-popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      /* Скрыт по умолчанию */
+      justify-content: center;
+      align-items: center;
+      z-index: 30000;
+    }
+
+    #instruction-popup {
+      background-color: #2c2c2e;
+      padding: 20px;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 350px;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    #instruction-popup h2 {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    #instruction-popup-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 28px;
+      height: 28px;
+      background: #3A3A3C;
+      color: #E5E5EA;
+      border-radius: 50%;
+      border: none;
       font-size: 20px;
-      color: #000000;
-      margin: 0;
-      padding: 0;
-      line-height: 1.2;
+      cursor: pointer;
+    }
+
+    .instruction-video-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #444;
+      background-color: #3A3A3C;
+      color: white;
+      font-size: 16px;
+      text-align: left;
+      cursor: pointer;
+      box-shadow: 0 4px 0 #8e8e8e;
+
+    }
+
+    .instruction-video-btn:active {
+      box-shadow: 0 1px 4px #b7b7b7;
+      transform: translateY(4px);
+    }
+
+    .instruction-video-btn:last-child {
+      margin-bottom: 0;
+    }
+
+    #video-player-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      display: none;
+      /* Скрыт по умолчанию */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 40000;
+    }
+
+    #instruction-video {
+      width: 100%;
+      max-width: 90vw;
+      max-height: 80vh;
+      border: 3px solid #ffffff;
+      /* Белый полупрозрачный контур */
+      border-radius: 8px;
+      /* Немного скруглим углы */
+    }
+
+    #video-close-btn {
+      position: static;
+      /* Убираем позиционирование по углам */
+      margin-top: 20px;
+      /* Добавляем отступ сверху от видео */
+      padding: 12px 30px;
+      /* Увеличиваем отступы */
+      background: #666666;
+      /* Цвет как у кнопки "Инструкция" */
+      color: rgb(255, 255, 255);
+      border: none;
+      /* Убираем рамку */
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      /* Увеличиваем шрифт */
+      font-weight: 500;
+      box-shadow: 0 4px 0 #8e8e8e;
+    }
+
+    #video-close-btn:active {
+      box-shadow: 0 1px 4px #b7b7b7;
+      transform: translateY(4px);
     }
   </style>
 </head>
@@ -481,6 +611,9 @@
         <p id="weekly-leader" onclick="openRatingPage()" style="cursor: pointer;">Лидер недели: …</p>
       </div>
       <div id="user-zone">
+        <div class="user-button" id="reviewsButton" style="background-image: url('videothemes/reviews.png');"
+          onclick="reviewsPage()">
+        </div>
         <div class="user-button" id="videothemebank" style="background-image: url('videothemes/bank.png');"
           onclick="openBankPage()">
           <div class="theme-count-container"><span class="theme-count"></span></div>
@@ -488,17 +621,22 @@
         <div class="user-button" id="videorating" style="background-image: url('videothemes/rating.png');"
           onclick="openRatingPage()">
         </div>
-        <div class="user-button" id="reviewsButton" style="background-image: url('videothemes/reviews.png');"
-          onclick="reviewsPage()">
-        </div>
         <div class="user-button" id="game" style="background-image: url('videothemes/game.png');" onclick="gamePage()">
         </div>
       </div>
-      <div id="info">
-        <p id="info-text">Это тренажер вашего слуха<br>Чтобы понимать корейскую речь<br>И смотреть
-          дорамы без субтитров</p>
+      <div id="instruction-container">
+        <button id="instruction-button">Инструкция</button>
       </div>
       <div id="themes-container">
+        <div class="carousel-row">
+          <div class="theme-name-toggle">
+            <span class="toggle-arrow">▼</span>
+            <p class="theme-name-text">🐟Путь Новичка</p>
+          </div>
+          <div class="theme-grid" id="pathwayGrid">
+            <!-- Кнопки для глав "Тропинки" будут созданы здесь -->
+          </div>
+        </div>
 
         <div class="carousel-row">
           <div class="theme-name-toggle">
@@ -533,8 +671,8 @@
         <button id="premium-banner" onclick="premium()">
           <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="">
           <div class="banner-text-wrapper">
-            <span class="banner-text-main">Открыть все темы</span>
-            <span class="banner-text-sub">Подключи «Золотое Кимчи»</span>
+            <span class="banner-text-main">Премиум режим</span>
+            <span class="banner-text-sub">«Золотое Кимчи»</span>
           </div>
           <span class="banner-arrow">›</span> <!-- ВОТ ЭТА СТРЕЛКА -->
         </button>
@@ -615,6 +753,7 @@
 
 
         document.addEventListener('DOMContentLoaded', () => {
+          loadConfigAndRender();
           // --- Динамическое создание всех элементов ---
 
           // 1. ОСНОВНОЙ ПОПАП
@@ -737,7 +876,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 16; i >= 2; i--) {
+          for (let i = 15; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -749,6 +888,7 @@
             btn.appendChild(countContainer);
             themeGrid.appendChild(btn);
           }
+
           const toggles = document.querySelectorAll('.theme-name-toggle');
 
           toggles.forEach((toggle, index) => {
@@ -784,11 +924,22 @@
             showPremiumPopup();
             return;
           }
+
+          // 1. Сохраняем ID темы для новой страницы
+          localStorage.setItem('selectedThemeId', 'theme' + themeId);
+
+          // Это сохраняем для старой логики сортировки
           localStorage.setItem('theme_last_' + themeId, Date.now());
+
           const fadeOverlay = document.getElementById('fadeOverlay');
           fadeOverlay.style.opacity = '1';
-          setTimeout(() => { window.location.href = 'videotheme' + themeId + '.html'; }, 400);
+
+          // 2. Переходим на единую страницу-шаблон
+          setTimeout(() => {
+            window.location.href = 'theme_menu_template.html';
+          }, 400);
         }
+
 
         function sortNewThemes() {
           const newGrid = document.getElementById('newThemesGrid');
@@ -824,6 +975,68 @@
           // 3. Вставляем отсортированные элементы обратно в newGrid. Они заменят старые.
           newThemesToSort.forEach(theme => newGrid.appendChild(theme));
         }
+        // Функция для создания кнопок глав "Тропинки"
+        function createPathwayButtons(pathwayConfig) {
+          const pathwayGrid = document.getElementById('pathwayGrid');
+          if (!pathwayGrid) return;
+
+          pathwayGrid.innerHTML = '';
+
+          const completedChapters = JSON.parse(localStorage.getItem('completedChapters')) || [];
+
+          Object.keys(pathwayConfig).forEach((chapterKey, index) => {
+            const chapterData = pathwayConfig[chapterKey];
+
+            const btn = document.createElement('div');
+            btn.className = 'theme-button';
+            btn.id = chapterKey;
+            btn.style.backgroundImage = `url('${chapterData.cover}')`;
+
+            btn.dataset.masterJsonPath = chapterData.masterJsonPath;
+
+            btn.onclick = function () {
+              // Сохраняем ID главы и путь к ее JSON
+              localStorage.setItem('selectedThemeId', this.id); // Используем тот же ключ, что и для обычных тем
+              localStorage.setItem('masterJsonPath', this.dataset.masterJsonPath);
+
+              const fadeOverlay = document.getElementById('fadeOverlay');
+              fadeOverlay.style.opacity = '1';
+              setTimeout(() => {
+                // Переход всегда на страницу-меню
+                window.location.href = 'theme_menu_template.html';
+              }, 400);
+            };
+
+            const isLocked = index > 0 && !completedChapters.includes(`chapter_${index}`);
+            if (isLocked) {
+              let lockOverlay = document.createElement('div');
+              lockOverlay.className = 'lock-overlay';
+              lockOverlay.innerHTML = '<img src="redlock.png" alt="Lock" style="width:100%; height:100%;">';
+              lockOverlay.onclick = (e) => e.stopPropagation();
+              btn.appendChild(lockOverlay);
+            }
+
+            pathwayGrid.appendChild(btn);
+            btn.classList.add('loaded');
+            btn.classList.add('active');
+          });
+        }
+
+        // Новая функция для загрузки всего конфига
+        async function loadConfigAndRender() {
+          try {
+            const response = await fetch(`videothemes/json/config.json?v=${new Date().getTime()}`);
+            if (!response.ok) throw new Error('Не удалось загрузить config.json');
+            const config = await response.json();
+
+            if (config.pathway) {
+              createPathwayButtons(config.pathway);
+            }
+
+          } catch (error) {
+            console.error("Ошибка при загрузке и рендеринге по конфигу:", error);
+          }
+        }
       </script>
     </div>
   </div>
@@ -847,66 +1060,56 @@
 
     async function updateThemeCountDisplay(themeId) {
       const themeButton = document.getElementById(`theme${themeId}`);
-      if (!themeButton) return; // Выход, если кнопки нет
+      if (!themeButton) return;
 
       const countContainer = themeButton.querySelector('.theme-count-container');
       const countSpan = themeButton.querySelector('.theme-count');
 
+      // Эта функция остается без изменений
       async function loadJson(file) {
         const response = await fetch(file);
-        if (!response.ok) throw new Error('Файл не найден');
+        // Добавим '?v=' для обхода кэша, как делали ранее
+        // const response = await fetch(`${file}?v=${new Date().getTime()}`);
+        if (!response.ok) throw new Error(`Файл не найден: ${file}`);
         return await response.json();
       }
 
       try {
-        let jsonData = []; // Массив для всех данных темы (для проверки 'new')
-        let totalCount = 0;
+        // Путь к JSON теперь всегда динамический
+        const jsonPath = `videothemes/json/videotheme${themeId}.json`;
+        const data = await loadJson(jsonPath);
 
-        // Специальная логика ТОЛЬКО для theme0
-        if (themeId === 0) {
-          const data = await loadJson(`videothemes/json/videotheme0.json`);
-          // Проходим по всем ключам объекта (b1, b2 и т.д.)
-          for (const key in data) {
-            if (Array.isArray(data[key])) {
-              // Считаем только те объекты, у которых есть поле "video"
-              const blockCount = data[key].filter(item => item.hasOwnProperty('video')).length;
-              totalCount += blockCount;
-              // Собираем все данные в один массив для дальнейшей проверки
-              jsonData.push(...data[key]);
-            }
+        let totalCount = 0;
+        let allItems = []; // Массив для всех видео из всех блоков
+
+        // Эта логика теперь применяется для ЛЮБОЙ темы, а не только для theme0
+        for (const key in data) {
+          if (Array.isArray(data[key])) {
+            // Считаем только элементы с полем "video"
+            const blockCount = data[key].filter(item => item.hasOwnProperty('video')).length;
+            totalCount += blockCount;
+            // Собираем все элементы в один массив для проверки новизны
+            allItems.push(...data[key]);
           }
-          countSpan.textContent = totalCount;
-        } else {
-          // Старая логика для всех остальных тем
-          let baseFile = `videothemes/json/videotheme${themeId}.json`;
-          try {
-            const data = await loadJson(baseFile);
-            jsonData = jsonData.concat(data);
-          } catch {
-            let index = 1;
-            while (true) {
-              try {
-                const partFile = `videothemes/json/videotheme${themeId}_${index}.json`;
-                const data = await loadJson(partFile);
-                jsonData = jsonData.concat(data);
-                index++;
-              } catch {
-                break;
-              }
-            }
-          }
-          countSpan.textContent = jsonData.length;
         }
 
-        // Общая логика для всех тем (проверка на новизну)
+        // Если data - это не объект с блоками, а просто массив (для старых тем без блоков)
+        if (totalCount === 0 && Array.isArray(data)) {
+          totalCount = data.length;
+          allItems = data;
+        }
+
+        countSpan.textContent = totalCount;
+
+        // Общая логика для проверки "новизны" и значка "Новинка" остается прежней
         const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
-        const hasNewWords = jsonData.some(jsonItem => {
-          const storedItem = storedWords[jsonItem.video];
-          return (!storedItem && jsonItem.new === true) || (storedItem && storedItem.new === true);
+        const hasNewWords = allItems.some(item => {
+          const storedItem = storedWords[item.video];
+          return (!storedItem && item.new === true) || (storedItem && storedItem.new === true);
         });
         countContainer.style.backgroundColor = hasNewWords ? '#E53935' : '#43A047';
 
-        if (jsonData.some(item => item.isNew)) {
+        if (allItems.some(item => item.isNew)) {
           const badge = document.createElement('div');
           badge.className = 'theme-badge';
           badge.textContent = 'Новинка';
@@ -923,8 +1126,8 @@
         }
 
       } catch (error) {
-        console.error("Ошибка загрузки данных:", error);
-        countSpan.textContent = 'err';
+        console.error(`Ошибка загрузки данных для theme${themeId}:`, error);
+        countSpan.textContent = '?'; // Показываем '?' вместо 'err'
         countContainer.style.backgroundColor = 'gray';
       }
     }
@@ -1006,15 +1209,20 @@
 
         const theme0Button = document.getElementById("theme0");
         if (theme0Button) {
-          theme0Button.remove(); // Удаляем элемент полностью
+          theme0Button.remove();
         }
 
-        // Скрываем блок "Это тренажер вашего слуха..."
         const infoBlock = document.getElementById("info");
         if (infoBlock) {
           infoBlock.style.display = "none";
         }
-        // Скрываем кнопку отзывов
+
+        // ДОБАВЬТЕ ЭТОТ БЛОК
+        const instructionContainer = document.getElementById("instruction-container");
+        if (instructionContainer) {
+          instructionContainer.style.display = "flex";
+        }
+
         const reviewsBtn = document.getElementById("reviewsButton");
         if (reviewsBtn) {
           reviewsBtn.style.display = "none";
@@ -1051,7 +1259,7 @@
         localStorage.setItem("stars", 1000);
       }
 
-      for (let i = 0; i <= 16; i++) {
+      for (let i = 0; i <= 15; i++) {
         const themeButton = document.getElementById('theme' + i);
         if (!themeButton) continue;
 
@@ -1189,11 +1397,12 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
+
       // Создаем массив, куда сложим все обещания (промисы) обновлений
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 0; i <= 16; i++) {
+      for (let i = 0; i <= 15; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1258,6 +1467,64 @@
         }
       });
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Элементы для поп-апа с инструкциями
+      const instructionBtn = document.getElementById('instruction-button');
+      const popupOverlay = document.getElementById('instruction-popup-overlay');
+      const popupCloseBtn = document.getElementById('instruction-popup-close');
+      const videoBtns = document.querySelectorAll('.instruction-video-btn');
+
+      // Элементы для видеоплеера
+      const videoPlayerOverlay = document.getElementById('video-player-overlay');
+      const videoPlayer = document.getElementById('instruction-video');
+      const videoCloseBtn = document.getElementById('video-close-btn');
+
+      // --- Функции для видео ---
+      function showVideo(videoFile) {
+        videoPlayer.src = videoFile; // Устанавливаем источник видео
+        videoPlayerOverlay.style.display = 'flex'; // Показываем оверлей с плеером
+        videoPlayer.play(); // Запускаем воспроизведение
+      }
+
+      function hideVideo() {
+        videoPlayer.pause();
+        videoPlayer.src = "";
+        videoPlayerOverlay.style.display = 'none';
+
+        // Возвращаем поп-ап с инструкциями
+        const popupOverlay = document.getElementById('instruction-popup-overlay');
+        popupOverlay.style.display = 'flex';
+      }
+
+      // --- События для поп-апа ---
+      if (instructionBtn) {
+        instructionBtn.addEventListener('click', () => {
+          popupOverlay.style.display = 'flex';
+        });
+      }
+
+      popupCloseBtn.addEventListener('click', () => {
+        popupOverlay.style.display = 'none';
+      });
+
+      popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = 'none';
+        }
+      });
+
+      // --- События для кнопок ВИДЕО и закрытия плеера ---
+      videoBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const videoFile = btn.dataset.video;
+          popupOverlay.style.display = 'none'; // Сначала скроем поп-ап
+          showVideo(videoFile); // Затем покажем видео
+        });
+      });
+
+      videoCloseBtn.addEventListener('click', hideVideo);
+    });
   </script>
   <div id="fadeOverlay"></div>
   <div id="update-popup">
@@ -1267,6 +1534,19 @@
       <p id="update-text-content">Здесь будет текст вашего обновления.</p>
       <div id="dismiss-update">Продолжить</div>
     </div>
+  </div>
+  <div id="instruction-popup-overlay">
+    <div id="instruction-popup">
+      <button id="instruction-popup-close">×</button>
+      <h2>Инструкция</h2>
+      <button class="instruction-video-btn" data-video="pathway.mp4">🐟 Путь Новичка</button>
+      <button class="instruction-video-btn" data-video="show.mp4">🎬 Дорамы и Шоу</button>
+      <button class="instruction-video-btn" data-video="game.mp4">🧠 Игра на память</button>
+    </div>
+  </div>
+  <div id="video-player-overlay">
+    <video id="instruction-video" controls controlslist="nodownload noplaybackrate"></video>
+    <button id="video-close-btn">Закрыть</button>
   </div>
 </body>
 

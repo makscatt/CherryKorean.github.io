@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Кнопки</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="font.css" />
+
+  <link rel="stylesheet" href="minimenu.css">
+  <link rel="stylesheet" href="videosubmenustyles.css">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: #000000;
+      font-family: 'NetflixSans-Regular', Arial, sans-serif;
+    }
+
+    #bg-image {
+      width: 100%;
+      height: auto;
+      display: block;
+
+    }
+
+    #gameContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      margin: auto;
+      width: 100vw;
+      /* Используем относительную единицу измерения */
+      height: 100vh;
+      padding-top: 0px;
+      background: linear-gradient(to bottom, #000000 20%, #ffffff 20%);
+
+    }
+
+
+    @media (hover: hover) and (pointer: fine) {
+      #gameContainer {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+    }
+
+    #menu-button-container {
+      position: relative;
+      max-width: 100%;
+      gap: 5px;
+      margin-top: auto;
+
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: #1C1C1E;
+      border: 1px solid rgba(255, 215, 0, 0.5);
+      border-radius: 10px 10px 0 0;
+    }
+
+    #stars {
+      display: flex;
+      font-size: 20px;
+      color: white;
+    }
+
+    #starsInstruction {
+      width: 100%;
+      height: 100%;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      margin: 5px;
+      padding: 5px 10px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #ffffff;
+      color: rgb(51, 51, 51);
+      border-radius: 5px;
+      transition: all 0.1s ease-in-out;
+      border: none;
+      outline: 1px solid rgba(0, 0, 0, 0.1);
+      outline-offset: -1px;
+      box-shadow: 0 4px 0 #bbb;
+    }
+
+    button:active {
+      box-shadow: 0 1px 8px #b7b7b7;
+      transform: translateY(4px);
+    }
+
+
+    #main-menu-button {
+      font-size: 28px;
+      margin-left: auto;
+      margin-right: 15px;
+    }
+
+    #back-button {
+      font-size: 28px;
+      margin-right: auto;
+    }
+
+    #buttons-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      overflow-y: auto;
+      padding: 10px;
+
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    #buttons-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    #buttons-container .submenubutton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      background-color: #f9f9f9;
+      color: #000000;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      font-size: clamp(18px, 4vw, 36px);
+      border: 1px solid #ccc;
+      text-align: left;
+      font-weight: normal;
+      border-radius: 8px;
+      box-sizing: border-box;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s ease;
+      height: clamp(100px, 5vw, 120px);
+    }
+
+    #buttons-container .submenubutton:hover {
+      background-color: #eeeeee;
+    }
+
+    .submenubutton.locked {
+      position: relative;
+    }
+
+    .submenubutton.locked::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: clamp(25%, 5vw, 100%);
+      height: 100px;
+      background: url('lockhorizont.png') no-repeat center center;
+      background-size: contain;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .theme-count-container {
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      position: relative;
+      gap: 1px;
+
+    }
+
+    .theme-tape-icon {
+      width: clamp(50px, 5vw, 100px);
+      height: clamp(50px, 5vw, 100px);
+      object-fit: contain;
+      margin-right: -6px;
+      display: block;
+
+    }
+
+    .theme-count {
+      font-size: clamp(20px, 5vw, 40px);
+      font-weight: bold;
+      color: #000000;
+
+      min-width: 18px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    .lock-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.6);
+      pointer-events: none;
+    }
+
+    .theme-badge {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      background-color: red;
+      color: white;
+      font-size: 14px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      z-index: 2;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="fadeOverlay" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    z-index: 100000;
+    transition: opacity 0.4s ease;">
+  </div>
+
+
+  <div id="gameContainer">
+
+    <img id="bg-image" src="videothemes/subthemebc/demo.png" alt="фон" />
+    <div id="buttons-container"></div>
+
+    <div id="menu-button-container">
+      <div id="stars">⭐ 0</div>
+      <!--<div id="starsInstruction">За правильные ответы получай ⭐<br>Октрыть блок BTS - 10⭐</div>-->
+      <button id="main-menu-button" class="nav-button" onclick="goHome()">
+        <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // --- КОНФИГУРАЦИЯ ---
+    const CONFIG_PATH = 'videothemes/json/config.json'; // Убедитесь, что путь верный
+    const starsKey = "stars";
+
+    // --- УТИЛИТЫ ---
+    function getStars() {
+      return parseInt(localStorage.getItem(starsKey)) || 0;
+    }
+
+    function setStars(value) {
+      localStorage.setItem(starsKey, value);
+      const starsEl = document.getElementById('stars');
+      if (starsEl) starsEl.textContent = `⭐ ${value}`;
+    }
+
+    // --- ОСНОВНАЯ ЛОГИКА ---
+
+    // 1. Переход на страницу с видео (для УРОКОВ и старых тем)
+    function goToContentPage(blockKey, masterJsonPath) {
+      localStorage.setItem('selectedBlockKey', blockKey);
+      localStorage.setItem('masterJsonPath', masterJsonPath);
+      // Всегда ведет на один и тот же шаблон видео
+      window.location.href = 'video_list_template.html';
+    }
+
+    // 2. Рендер кнопок для обычной ТЕМЫ (дорамы)
+    function renderThemeMenu(themeConfig) {
+      const container = document.getElementById("buttons-container");
+      container.innerHTML = "";
+
+      themeConfig.blocks.forEach(block => {
+        const btn = document.createElement("button");
+        btn.className = "submenubutton";
+        btn.dataset.blockKey = block.key;
+
+        const textSpan = document.createElement("span");
+        textSpan.textContent = block.name;
+
+        const countContainer = document.createElement("div");
+        countContainer.className = "theme-count-container";
+        countContainer.innerHTML = `<img src="videothemes/icons/tape.png" class="theme-tape-icon" alt="Tape"> x <span class="theme-count">0</span>`;
+
+        btn.appendChild(textSpan);
+        btn.appendChild(countContainer);
+
+        btn.addEventListener("click", () => goToContentPage(block.key, themeConfig.masterJsonPath));
+
+        container.appendChild(btn);
+      });
+    }
+
+    // 3. Рендер кнопок для ГЛАВЫ "Тропинки"
+    async function renderPathwayMenu(chapterConfig) {
+      const container = document.getElementById("buttons-container");
+      container.innerHTML = "";
+
+      // Загружаем JSON этой главы, чтобы узнать, какие в ней есть уроки
+      const response = await fetch(`${chapterConfig.masterJsonPath}?v=${new Date().getTime()}`);
+      const lessonsData = await response.json();
+      const lessonKeys = Object.keys(lessonsData);
+
+      // Получаем прогресс по урокам этой главы
+      const chapterId = localStorage.getItem('selectedThemeId'); // e.g., 'chapter_1'
+      const completedLessons = JSON.parse(localStorage.getItem(`completedLessons_${chapterId}`)) || [];
+
+      lessonKeys.forEach((lessonKey, index) => {
+        const lessonName = `Урок ${lessonKey.split('_')[1]}.${lessonKey.split('_')[2]}`;
+
+        const btn = document.createElement("button");
+        btn.className = "submenubutton";
+        btn.dataset.blockKey = lessonKey;
+
+        const textSpan = document.createElement("span");
+        textSpan.textContent = lessonName;
+
+        const countContainer = document.createElement("div");
+        countContainer.className = "theme-count-container";
+        const lessonPhrasesCount = lessonsData[lessonKey].length;
+        countContainer.innerHTML = `<img src="videothemes/icons/tape.png" class="theme-tape-icon" alt="Tape"> x <span class="theme-count">${lessonPhrasesCount}</span>`;
+
+        btn.appendChild(textSpan);
+        btn.appendChild(countContainer);
+
+        // Логика блокировки уроков
+        const isLocked = index > 0 && !completedLessons.includes(lessonKeys[index - 1]);
+        if (isLocked) {
+          btn.classList.add('locked');
+        } else {
+          btn.addEventListener("click", () => {
+            localStorage.setItem('selectedBlockKey', lessonKey);
+            localStorage.setItem('masterJsonPath', chapterConfig.masterJsonPath);
+            window.location.href = 'pathway_player.html'; // <--- ВОТ ПРАВИЛЬНОЕ ИЗМЕНЕНИЕ
+          });
+        }
+
+        container.appendChild(btn);
+      });
+    }
+
+    // 4. Обновление счетчиков (для ОБЫЧНЫХ тем)
+    async function updateThemeButtonCounts(masterJsonPath) {
+      // Эта функция осталась почти без изменений, просто для ясности
+      const buttons = document.querySelectorAll('#buttons-container .submenubutton');
+      try {
+        const response = await fetch(`${masterJsonPath}?v=${new Date().getTime()}`);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const jsonData = await response.json();
+
+        buttons.forEach(btn => {
+          const countSpan = btn.querySelector('.theme-count');
+          const blockKey = btn.dataset.blockKey;
+          if (!blockKey || !countSpan) return;
+
+          const blockData = jsonData[blockKey] || [];
+          countSpan.textContent = blockData.length;
+        });
+      } catch (error) {
+        console.error(`Ошибка загрузки ${masterJsonPath}:`, error);
+      }
+    }
+
+    // 5. Главная функция инициализации страницы
+    async function initializePage() {
+      const themeId = localStorage.getItem('selectedThemeId');
+      if (!themeId) {
+        document.body.innerHTML = '<h1>Ошибка: Тема не выбрана.</h1>';
+        return;
+      }
+
+      try {
+        const response = await fetch(`${CONFIG_PATH}?v=${new Date().getTime()}`);
+        const configData = await response.json();
+
+        // Определяем, это "Тропинка" или обычная тема
+        const isPathway = themeId.startsWith('chapter_');
+        const configSection = isPathway ? configData.pathway : configData;
+        const themeConfig = configSection[themeId];
+
+        if (!themeConfig) {
+          document.body.innerHTML = `<h1>Ошибка: Конфигурация для "${themeId}" не найдена.</h1>`;
+          return;
+        }
+
+        // Устанавливаем фон
+        const bgImage = document.getElementById('bg-image');
+        if (bgImage) bgImage.src = themeConfig.coverImage;
+
+        // Вызываем нужный рендер
+        if (isPathway) {
+          await renderPathwayMenu(themeConfig);
+          // Для "Тропинки" счетчики уже встроены в рендер, доп. вызов не нужен
+        } else {
+          renderThemeMenu(themeConfig);
+          await updateThemeButtonCounts(themeConfig.masterJsonPath);
+        }
+
+      } catch (error) {
+        console.error("Ошибка при инициализации страницы меню:", error);
+        document.body.innerHTML = '<h1>Ошибка загрузки страницы.</h1>';
+      } finally {
+        const overlay = document.getElementById("fadeOverlay");
+        if (overlay) {
+          overlay.style.opacity = "0";
+          setTimeout(() => overlay.style.display = 'none', 400);
+        }
+      }
+    }
+
+    // --- ЗАПУСК ---
+    document.getElementById('main-menu-button').addEventListener('click', () => {
+      window.location.href = 'videothemes.html';
+    });
+
+    window.addEventListener("pageshow", () => {
+      setStars(getStars());
+      initializePage();
+    });
+  </script>
+</body>
+
+</html>

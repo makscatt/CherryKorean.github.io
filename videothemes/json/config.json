@@ -1,0 +1,198 @@
+
+{
+  "pathway": {
+    "chapter_1": {
+      "name": "Глава 1: Основы",
+      "cover": "videothemes/pathway_covers/cover1.png",
+      "coverImage": "videothemes/pathway_covers/coverImage1.png",
+      "masterJsonPath": "videothemes/pathway/path_level_1.json"
+    },
+    "chapter_2": {
+      "name": "Глава 2: Простые фразы",
+      "cover": "videothemes/pathway_covers/cover2.png",
+      "coverImage": "videothemes/pathway_covers/coverImage2.png",
+      "masterJsonPath": "videothemes/pathway/path_level_2.json"
+    },
+    "chapter_3": {
+      "name": "Глава 3: Вопросы и ответы",
+      "cover": "videothemes/pathway_covers/cover3.png",
+      "coverImage": "videothemes/pathway_covers/coverImage3.png",
+      "masterJsonPath": "videothemes/pathway/path_level_3.json"
+    },
+    "chapter_4": {
+      "name": "Глава 4: Повседневность",
+      "cover": "videothemes/pathway_covers/cover4.png",
+      "coverImage": "videothemes/pathway_covers/coverImage4.png",
+      "masterJsonPath": "videothemes/pathway/path_level_4.json"
+    },
+    "chapter_5": {
+      "name": "Глава 5: Эмоции и мнения",
+      "cover": "videothemes/pathway_covers/cover5.png",
+      "coverImage": "videothemes/pathway_covers/coverImage5.png",
+      "masterJsonPath": "videothemes/pathway/path_level_5.json"
+    },
+    "chapter_6": {
+      "name": "Глава 6: Усложняем",
+      "cover": "videothemes/pathway_covers/cover6.png",
+      "coverImage": "videothemes/pathway_covers/coverImage6.png",
+      "masterJsonPath": "videothemes/pathway/path_level_6.json"
+    },
+    "chapter_7": {
+      "name": "Глава 7: Разговорный стиль",
+      "cover": "videothemes/pathway_covers/cover7.png",
+      "coverImage": "videothemes/pathway_covers/coverImage7.png",
+      "masterJsonPath": "videothemes/pathway/path_level_7.json"
+    }
+  },
+  
+  "theme0": {
+    "coverImage": "videothemes/subthemebc/demo.png",
+    "masterJsonPath": "videothemes/json/videotheme0.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "BTS", "key": "b1" },
+      { "name": "Хиллер", "key": "b2" },
+      { "name": "Большая Лига😂", "key": "b3" },
+      { "name": "Хватай Сон Дже И Беги", "key": "b4" },
+      { "name": "Слабый Герой 2", "key": "b5" }
+    ]
+  },
+  "theme1": {
+    "coverImage": "videothemes/subthemebc/runbtsbackground.png",
+    "masterJsonPath": "videothemes/json/videotheme1.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "BTS 1", "key": "b1" },
+      { "name": "BTS 2", "key": "b2" },
+      { "name": "BTS 3", "key": "b3" },
+      { "name": "BTS 4", "key": "b4" }
+    ]
+  },
+  "theme2": {
+    "coverImage": "videothemes/subthemebc/squidgamebackground.png",
+    "masterJsonPath": "videothemes/json/videotheme2.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Сезон 1", "key": "b1" },
+      { "name": "Сезон 2", "key": "b2" }
+    ]
+  },
+  "theme3": {
+    "coverImage": "videothemes/subthemebc/healerbackground.png",
+    "masterJsonPath": "videothemes/json/videotheme3.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Хиллер 1", "key": "b1" },
+      { "name": "Хиллер 2", "key": "b2" }
+    ]
+  },
+  "theme4": {
+    "coverImage": "videothemes/subthemebc/allkdrama.png",
+    "masterJsonPath": "videothemes/json/videotheme4.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Сборник 1", "key": "b1" },
+      { "name": "Сборник 2", "key": "b2" },
+      { "name": "Сборник 3", "key": "b3" },
+      { "name": "Сборник 4", "key": "b4" },
+      { "name": "Паразиты 1", "key": "b5" },
+      { "name": "Паразиты 2", "key": "b6" } ,
+      { "name": "Жизнь дает мандарины", "key": "b7" }   
+    ]
+  },
+  "theme5": {
+    "coverImage": "videothemes/subthemebc/moonlovers.png",
+    "masterJsonPath": "videothemes/json/videotheme5.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Сердца Корё 1", "key": "b1" },
+      { "name": "Сердца Корё 2", "key": "b2" } 
+    ]
+  },
+  "theme6": {
+    "coverImage": "videothemes/subthemebc/hwaran.png",
+    "masterJsonPath": "videothemes/json/videotheme6.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Хваран 1", "key": "b1" },
+      { "name": "Хваран 2", "key": "b2" } 
+    ]
+  },
+  "theme7": {
+    "coverImage": "videothemes/subthemebc/vin.png",
+    "masterJsonPath": "videothemes/json/videotheme7.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Винченцо 1", "key": "b1" },
+      { "name": "Винченцо 2", "key": "b2" } 
+    ]
+  },
+  "theme8": {
+    "coverImage": "videothemes/subthemebc/weakherobackground.png",
+    "masterJsonPath": "videothemes/json/videotheme8.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Сезон 1-1", "key": "b1" },
+      { "name": "Сезон 1-1", "key": "b2" },
+      { "name": "Сезон 2-1", "key": "b3" },
+      { "name": "Сезон 2-4", "key": "b4" }
+    ]
+  },
+  "theme9": {
+    "coverImage": "videothemes/subthemebc/weakherobackground.png",
+    "masterJsonPath": "videothemes/json/videotheme9.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Игра смерти 1", "key": "b1" },
+      { "name": "Игра смерти 2", "key": "b2" }
+    ]
+  },
+  "theme10": {
+    "coverImage": "videothemes/subthemebc/bloodhounds.png",
+    "masterJsonPath": "videothemes/json/videotheme10.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Словно гончие 1", "key": "b1" }
+    ]
+  },
+  "theme11": {
+    "coverImage": "videothemes/subthemebc/glory.png",
+    "masterJsonPath": "videothemes/json/videotheme11.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Слава 1", "key": "b1" }
+    ]
+  },
+  "theme12": {
+    "coverImage": "videothemes/subthemebc/killershop.png",
+    "masterJsonPath": "videothemes/json/videotheme12.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Магазин для убииц 1", "key": "b1" }
+    ]
+  },
+  "theme13": {
+    "coverImage": "videothemes/subthemebc/hvatai.png",
+    "masterJsonPath": "videothemes/json/videotheme13.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Хватай Сон Дже и беги 1", "key": "b1" }
+    ]
+  },
+  "theme14": {
+    "coverImage": "videothemes/subthemebc/biglig.png",
+    "masterJsonPath": "videothemes/json/videotheme14.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Большая лига 1", "key": "b1" }
+    ]
+  },
+  "theme15": {
+    "coverImage": "videothemes/subthemebc/lookism.png",
+    "masterJsonPath": "videothemes/json/videotheme15.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Лукизм 1", "key": "b1" }
+    ]
+  }
+}

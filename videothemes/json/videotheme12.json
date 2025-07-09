@@ -1,177 +1,183 @@
-[
-  {
-    "video": "video/killershop/가족 사진은.webm",
-    "videoMp4": "video/killershop/mp4/가족 사진은.mp4",
-    "korean": "가족 사진은",
-    "russian": "Семейное фото"
-  },
-  {
-    "video": "video/killershop/사각을 아주 잘 활용해서.webm",
-    "videoMp4": "video/killershop/mp4/사각을 아주 잘 활용해서.mp4",
-    "korean": "사각을 아주 잘 활용해서",
-    "russian": "Хорошо использует слепые зоны"
-  },
-  {
-    "video": "video/killershop/총알을 피하고 있네.webm",
-    "videoMp4": "video/killershop/mp4/총알을 피하고 있네.mp4",
-    "korean": "총알을 피하고 있네",
-    "russian": "Избегает пуль"
-  },
-  {
-    "video": "video/killershop/이 순간.webm",
-    "videoMp4": "video/killershop/mp4/이 순간.mp4",
-    "korean": "이 순간",
-    "russian": "Этот момент"
-  },
-  {
-    "video": "video/killershop/네가 모든 걸 완벽히 다 볼 수 있다고 생각해.webm",
-    "videoMp4": "video/killershop/mp4/네가 모든 걸 완벽히 다 볼 수 있다고 생각해.mp4",
-    "korean": "네가 모든 걸 완벽히 다 볼 수 있다고 생각해?",
-    "russian": "Думаешь, ты видишь абсолютно все?"
-  },
-  {
-    "video": "video/killershop/주인공 죽으면 영화 끝나니까 그렇지.webm",
-    "videoMp4": "video/killershop/mp4/주인공 죽으면 영화 끝나니까 그렇지.mp4",
-    "korean": "주인공 죽으면 영화 끝나니까 그렇지",
-    "russian": "Если герой погибнет, то и кина не будет"
-  },
-  {
-    "video": "video/killershop/당연하지.webm",
-    "videoMp4": "video/killershop/mp4/당연하지.mp4",
-    "korean": "당연하지",
-    "russian": "Разумеется"
-  },
-  {
-    "video": "video/killershop/잘 들어 준지안.webm",
-    "videoMp4": "video/killershop/mp4/잘 들어 준지안.mp4",
-    "korean": "잘 들어 준지안",
-    "russian": "Слушай внимательно, ЧунЧжиАн"
-  },
-  {
-    "video": "video/killershop/네가 잠자리가 아닌 이상.webm",
-    "videoMp4": "video/killershop/mp4/네가 잠자리가 아닌 이상.mp4",
-    "korean": "네가 잠자리가 아닌 이상",
-    "russian": "Если только ты не стрекоза"
-  },
-  {
-    "video": "video/killershop/인간의 눈으로.webm",
-    "videoMp4": "video/killershop/mp4/인간의 눈으로.mp4",
-    "korean": "인간의 눈으로",
-    "russian": "Человеческими глазами"
-  },
-  {
-    "video": "video/killershop/착각하면 안 돼.webm",
-    "videoMp4": "video/killershop/mp4/착각하면 안 돼.mp4",
-    "korean": "착각하면 안 돼",
-    "russian": "Не заблуждайся"
-  },
-  {
-    "video": "video/killershop/모든 공간에는.webm",
-    "videoMp4": "video/killershop/mp4/모든 공간에는.mp4",
-    "korean": "모든 공간에는",
-    "russian": "В каждом пространстве"
-  },
-  {
-    "video": "video/killershop/다 사각 있어.webm",
-    "videoMp4": "video/killershop/mp4/다 사각 있어.mp4",
-    "korean": "다 사각 있어",
-    "russian": "Всегде есть слепые зоны"
-  },
-  {
-    "video": "video/killershop/불구덩이에서도 살아 돌아올 수 있어.webm",
-    "videoMp4": "video/killershop/mp4/불구덩이에서도 살아 돌아올 수 있어.mp4",
-    "korean": "불구덩이에서도 살아 돌아올 수 있어",
-    "russian": "Даже из огненной ямы можно выбраться"
-  },
-  {
-    "video": "video/killershop/부모님이나 가족한테 전화할 수 있어요.webm",
-    "videoMp4": "video/killershop/mp4/부모님이나 가족한테 전화할 수 있어요.mp4",
-    "korean": "부모님이나 가족한테 전화할 수 있어요?",
-    "russian": "Родителям или родственикам можешь позвонить?",
-    "new": true
-  },
-  {
-    "video": "video/killershop/혼자 이걸 못 해요.webm",
-    "videoMp4": "video/killershop/mp4/혼자 이걸 못 해요.mp4",
-    "korean": "혼자 이걸 못 해요",
-    "russian": "Ты не можешь делать это одна",
-    "new": true
-  },
-  {
-    "video": "video/killershop/경찰이 왜요.webm",
-    "videoMp4": "video/killershop/mp4/경찰이 왜요.mp4",
-    "korean": "경찰이 왜요?",
-    "russian": "В смысле полицейский?",
-    "new": true
-  },
-  {
-    "video": "video/killershop/놀라지 말고 들어 주십시오.webm",
-    "videoMp4": "video/killershop/mp4/놀라지 말고 들어 주십시오.mp4",
-    "korean": "놀라지 말고 들어 주십시오",
-    "russian": "Не пугайтесь и послушайте",
-    "new": true
-  },
-  {
-    "video": "video/killershop/사망하셨습니다.webm",
-    "videoMp4": "video/killershop/mp4/사망하셨습니다.mp4",
-    "korean": "사망하셨습니다",
-    "russian": "Скончался",
-    "new": true
-  },
-  {
-    "video": "video/killershop/여기를 털러 와.webm",
-    "videoMp4": "video/killershop/mp4/여기를 털러 와.mp4",
-    "korean": "여기를 털러 와?",
-    "russian": "Прийти здесь воровать?",
-    "new": true
-  },
-  {
-    "video": "video/killershop/그리고 봐 봐.webm",
-    "videoMp4": "video/killershop/mp4/그리고 봐 봐.mp4",
-    "korean": "그리고 봐 봐",
-    "russian": "И взгляни",
-    "new": true
-  },
-  {
-    "video": "video/killershop/아주 비싼 거지.webm",
-    "videoMp4": "video/killershop/mp4/아주 비싼 거지.mp4",
-    "korean": "아주 비싼 거지",
-    "russian": "Очень дорогая штука",
-    "new": true
-  },
-  {
-    "video": "video/killershop/총알도 못 들어.webm",
-    "videoMp4": "video/killershop/mp4/총알도 못 들어.mp4",
-    "korean": "총알도 못 들어",
-    "russian": "И пуля не проскочит",
-    "new": true
-  },
-  {
-    "video": "video/killershop/근데 만약에 총알이 빗발친다.webm",
-    "videoMp4": "video/killershop/mp4/근데 만약에 총알이 빗발친다.mp4",
-    "korean": "근데 만약에 총알이 빗발친다",
-    "russian": "Но если вдруг будет обстрел",
-    "new": true
-  },
-  {
-    "video": "video/killershop/이렇게 있으면 안전해.webm",
-    "videoMp4": "video/killershop/mp4/이렇게 있으면 안전해.mp4",
-    "korean": "이렇게 있으면 안전해",
-    "russian": "Так будет безопасно",
-    "new": true
-  },
-  {
-    "video": "video/killershop/여기 총알이 왜 빗발 쳐.webm",
-    "videoMp4": "video/killershop/mp4/여기 총알이 왜 빗발 쳐.mp4",
-    "korean": "여기 총알이 왜 빗발 쳐?",
-    "russian": "С какой стати должен быть обстрел?",
-    "new": true
-  },
-  {
-    "video": "video/killershop/됐다.webm",
-    "videoMp4": "video/killershop/mp4/됐다.mp4",
-    "korean": "됐다?",
-    "russian": "Закончил?",
-    "new": true
-  }
-]
+{
+  "b1": [
+    {
+      "video": "video/killershop/가족 사진은.webm",
+      "videoMp4": "video/killershop/mp4/가족 사진은.mp4",
+      "korean": "가족 사진은",
+      "russian": "Семейное фото"
+    },
+    {
+      "video": "video/killershop/사각을 아주 잘 활용해서.webm",
+      "videoMp4": "video/killershop/mp4/사각을 아주 잘 활용해서.mp4",
+      "korean": "사각을 아주 잘 활용해서",
+      "russian": "Хорошо использует слепые зоны"
+    },
+    {
+      "video": "video/killershop/총알을 피하고 있네.webm",
+      "videoMp4": "video/killershop/mp4/총알을 피하고 있네.mp4",
+      "korean": "총알을 피하고 있네",
+      "russian": "Избегает пуль"
+    },
+    {
+      "video": "video/killershop/이 순간.webm",
+      "videoMp4": "video/killershop/mp4/이 순간.mp4",
+      "korean": "이 순간",
+      "russian": "Этот момент"
+    },
+    {
+      "video": "video/killershop/네가 모든 걸 완벽히 다 볼 수 있다고 생각해.webm",
+      "videoMp4": "video/killershop/mp4/네가 모든 걸 완벽히 다 볼 수 있다고 생각해.mp4",
+      "korean": "네가 모든 걸 완벽히 다 볼 수 있다고 생각해?",
+      "russian": "Думаешь, ты видишь абсолютно все?"
+    },
+    {
+      "video": "video/killershop/주인공 죽으면 영화 끝나니까 그렇지.webm",
+      "videoMp4": "video/killershop/mp4/주인공 죽으면 영화 끝나니까 그렇지.mp4",
+      "korean": "주인공 죽으면 영화 끝나니까 그렇지",
+      "russian": "Если герой погибнет, то и кина не будет"
+    },
+    {
+      "video": "video/killershop/당연하지.webm",
+      "videoMp4": "video/killershop/mp4/당연하지.mp4",
+      "korean": "당연하지",
+      "russian": "Разумеется"
+    },
+    {
+      "video": "video/killershop/잘 들어 준지안.webm",
+      "videoMp4": "video/killershop/mp4/잘 들어 준지안.mp4",
+      "korean": "잘 들어 준지안",
+      "russian": "Слушай внимательно, ЧунЧжиАн"
+    },
+    {
+      "video": "video/killershop/네가 잠자리가 아닌 이상.webm",
+      "videoMp4": "video/killershop/mp4/네가 잠자리가 아닌 이상.mp4",
+      "korean": "네가 잠자리가 아닌 이상",
+      "russian": "Если только ты не стрекоза"
+    },
+    {
+      "video": "video/killershop/인간의 눈으로.webm",
+      "videoMp4": "video/killershop/mp4/인간의 눈으로.mp4",
+      "korean": "인간의 눈으로",
+      "russian": "Человеческими глазами"
+    },
+    {
+      "video": "video/killershop/착각하면 안 돼.webm",
+      "videoMp4": "video/killershop/mp4/착각하면 안 돼.mp4",
+      "korean": "착각하면 안 돼",
+      "russian": "Не заблуждайся"
+    },
+    {
+      "video": "video/killershop/모든 공간에는.webm",
+      "videoMp4": "video/killershop/mp4/모든 공간에는.mp4",
+      "korean": "모든 공간에는",
+      "russian": "В каждом пространстве"
+    },
+    {
+      "video": "video/killershop/다 사각 있어.webm",
+      "videoMp4": "video/killershop/mp4/다 사각 있어.mp4",
+      "korean": "다 사각 있어",
+      "russian": "Всегде есть слепые зоны"
+    },
+    {
+      "video": "video/killershop/불구덩이에서도 살아 돌아올 수 있어.webm",
+      "videoMp4": "video/killershop/mp4/불구덩이에서도 살아 돌아올 수 있어.mp4",
+      "korean": "불구덩이에서도 살아 돌아올 수 있어",
+      "russian": "Даже из огненной ямы можно выбраться"
+    },
+    {
+      "video": "video/killershop/부모님이나 가족한테 전화할 수 있어요.webm",
+      "videoMp4": "video/killershop/mp4/부모님이나 가족한테 전화할 수 있어요.mp4",
+      "korean": "부모님이나 가족한테 전화할 수 있어요?",
+      "russian": "Родителям или родственикам можешь позвонить?",
+      "new": true
+    },
+    {
+      "video": "video/killershop/혼자 이걸 못 해요.webm",
+      "videoMp4": "video/killershop/mp4/혼자 이걸 못 해요.mp4",
+      "korean": "혼자 이걸 못 해요",
+      "russian": "Ты не можешь делать это одна",
+      "new": true
+    },
+    {
+      "video": "video/killershop/경찰이 왜요.webm",
+      "videoMp4": "video/killershop/mp4/경찰이 왜요.mp4",
+      "korean": "경찰이 왜요?",
+      "russian": "В смысле полицейский?",
+      "new": true
+    },
+    {
+      "video": "video/killershop/놀라지 말고 들어 주십시오.webm",
+      "videoMp4": "video/killershop/mp4/놀라지 말고 들어 주십시오.mp4",
+      "korean": "놀라지 말고 들어 주십시오",
+      "russian": "Не пугайтесь и послушайте",
+      "new": true
+    },
+    {
+      "video": "video/killershop/사망하셨습니다.webm",
+      "videoMp4": "video/killershop/mp4/사망하셨습니다.mp4",
+      "korean": "사망하셨습니다",
+      "russian": "Скончался",
+      "new": true
+    },
+    {
+      "video": "video/killershop/여기를 털러 와.webm",
+      "videoMp4": "video/killershop/mp4/여기를 털러 와.mp4",
+      "korean": "여기를 털러 와?",
+      "russian": "Прийти здесь воровать?",
+      "new": true
+    },
+    {
+      "video": "video/killershop/그리고 봐 봐.webm",
+      "videoMp4": "video/killershop/mp4/그리고 봐 봐.mp4",
+      "korean": "그리고 봐 봐",
+      "russian": "И взгляни",
+      "new": true
+    },
+    {
+      "video": "video/killershop/아주 비싼 거지.webm",
+      "videoMp4": "video/killershop/mp4/아주 비싼 거지.mp4",
+      "korean": "아주 비싼 거지",
+      "russian": "Очень дорогая штука",
+      "new": true
+    },
+    {
+      "video": "video/killershop/총알도 못 들어.webm",
+      "videoMp4": "video/killershop/mp4/총알도 못 들어.mp4",
+      "korean": "총알도 못 들어",
+      "russian": "И пуля не проскочит",
+      "new": true
+    },
+    {
+      "video": "video/killershop/근데 만약에 총알이 빗발친다.webm",
+      "videoMp4": "video/killershop/mp4/근데 만약에 총알이 빗발친다.mp4",
+      "korean": "근데 만약에 총알이 빗발친다",
+      "russian": "Но если вдруг будет обстрел",
+      "new": true
+    },
+    {
+      "video": "video/killershop/이렇게 있으면 안전해.webm",
+      "videoMp4": "video/killershop/mp4/이렇게 있으면 안전해.mp4",
+      "korean": "이렇게 있으면 안전해",
+      "russian": "Так будет безопасно",
+      "new": true
+    },
+    {
+      "video": "video/killershop/여기 총알이 왜 빗발 쳐.webm",
+      "videoMp4": "video/killershop/mp4/여기 총알이 왜 빗발 쳐.mp4",
+      "korean": "여기 총알이 왜 빗발 쳐?",
+      "russian": "С какой стати должен быть обстрел?",
+      "new": true
+    },
+    {
+      "video": "video/killershop/됐다.webm",
+      "videoMp4": "video/killershop/mp4/됐다.mp4",
+      "korean": "됐다?",
+      "russian": "Закончил?",
+      "new": true
+    }
+  ],
+  "b2": [],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}

@@ -1,242 +1,245 @@
-[
-  {
-    "video": "video/tngerines/너는 입만 살아 잘난 척해.webm",
-    "videoMp4": "video/tngerines/mp4/너는 입만 살아 잘난 척해.mp4",
-    "korean": "너는 입만 살아 잘난 척해",
-    "russian": "Только болтаешь и выпендриваешься"
-  },
-  {
-    "video": "video/tngerines/그렇지.webm",
-    "videoMp4": "video/tngerines/mp4/그렇지.mp4",
-    "korean": "그렇지",
-    "russian": "Вот так"
-  },
-  {
-    "video": "video/tngerines/여기서 먹는다고 했어.webm",
-    "videoMp4": "video/tngerines/mp4/여기서 먹는다고 했어.mp4",
-    "korean": "여기서 먹는다고 했어",
-    "russian": "Сказали здесь поесть"
-  },
-  {
-    "video": "video/tngerines/아저씨 금방 와.webm",
-    "videoMp4": "video/tngerines/mp4/아저씨 금방 와.mp4",
-    "korean": "아저씨 금방 와",
-    "russian": "Дядька скоро придет"
-  },
-  {
-    "video": "video/tngerines/집에 가 툭하면 상장 받고 백점이라.webm",
-    "videoMp4": "video/tngerines/mp4/집에 가 툭하면 상장 받고 백점이라.mp4",
-    "korean": "집에 가 툭하면 상장 받고 백점이라",
-    "russian": "Приходит домой и хвастается, что медаль получил, да сто балов набрал"
-  },
-  {
-    "video": "video/tngerines/목이 왜 맥혀 목이.webm",
-    "videoMp4": "video/tngerines/mp4/목이 왜 맥혀 목이.mp4",
-    "korean": "목이 왜 맥혀 목이?",
-    "russian": "Чего на жалость давишь?"
-  },
-  {
-    "video": "video/tngerines/그러지 마.webm",
-    "videoMp4": "video/tngerines/mp4/그러지 마.mp4",
-    "korean": "그러지 마",
-    "russian": "Так нельзя"
-  },
-  {
-    "video": "video/tngerines/내가 찾아가요.webm",
-    "videoMp4": "video/tngerines/mp4/내가 찾아가요.mp4",
-    "korean": "내가 찾아가요",
-    "russian": "Я сама зайду"
-  },
-  {
-    "video": "video/tngerines/불편하게 진짜.webm",
-    "videoMp4": "video/tngerines/mp4/불편하게 진짜.mp4",
-    "korean": "불편하게 진짜",
-    "russian": "Как же неловко"
-  },
-  {
-    "video": "video/tngerines/선생님 뭐래.webm",
-    "videoMp4": "video/tngerines/mp4/선생님 뭐래.mp4",
-    "korean": "선생님 뭐래?",
-    "russian": "Что сказал учитель?"
-  },
-  {
-    "video": "video/tngerines/선생님 말씀 잘 들어.webm",
-    "videoMp4": "video/tngerines/mp4/선생님 말씀 잘 들어.mp4",
-    "korean": "선생님 말씀 잘 들어",
-    "russian": "Слушай внимательно учителя"
-  },
-  {
-    "video": "video/tngerines/어떡하지.webm",
-    "videoMp4": "video/tngerines/mp4/어떡하지.mp4",
-    "korean": "어떡하지?",
-    "russian": "Как же быть?"
-  },
-  {
-    "video": "video/tngerines/할머니는 방도 없어.webm",
-    "videoMp4": "video/tngerines/mp4/할머니는 방도 없어.mp4",
-    "korean": "할머니는 방도 없어",
-    "russian": "У бабушки даже комнаты нет",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/좋았어.webm",
-    "videoMp4": "video/tngerines/mp4/좋았어.mp4",
-    "korean": "좋았어?",
-    "russian": "Понравлось?",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/절대.webm",
-    "videoMp4": "video/tngerines/mp4/절대.mp4",
-    "korean": "절대",
-    "russian": "Никогда",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/저도 안 가죠 저도.webm",
-    "videoMp4": "video/tngerines/mp4/저도 안 가죠 저도.mp4",
-    "korean": "저도 안 가죠 저도",
-    "russian": "Я тоже не поеду, я тоже",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/이제 배 타고 제주 뜨면.webm",
-    "videoMp4": "video/tngerines/mp4/이제 배 타고 제주 뜨면.mp4",
-    "korean": "이제 배 타고 제주 뜨면",
-    "russian": "Теперь, если отправиться на корабле на Чеджу",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/옷이 좀 많아.webm",
-    "videoMp4": "video/tngerines/mp4/옷이 좀 많아.mp4",
-    "korean": "옷이 좀 많아",
-    "russian": "Одежды так-то много",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/양배추도 내가 다 팔았는데 왜 내 돈 안 줘요.webm",
-    "videoMp4": "video/tngerines/mp4/양배추도 내가 다 팔았는데 왜 내 돈 안 줘요.mp4",
-    "korean": "양배추도 내가 다 팔았는데 왜 내 돈 안 줘요?",
-    "russian": "Я же всю капусту продала, почему вы не даёте мне мои деньги?",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/안 갈래요.webm",
-    "videoMp4": "video/tngerines/mp4/안 갈래요.mp4",
-    "korean": "안 갈래요",
-    "russian": "Не хочу ехать",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/아줌마 것도 아니면서.webm",
-    "videoMp4": "video/tngerines/mp4/아줌마 것도 아니면서.mp4",
-    "korean": "아줌마 것도 아니면서",
-    "russian": "Это ведь даже не твоё, тётенька!",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/아시면서 그러시네.webm",
-    "videoMp4": "video/tngerines/mp4/아시면서 그러시네.mp4",
-    "korean": "아시면서 그러시네",
-    "russian": "Знаете, и все равно делаете",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/아무것도 없기는 없는데요.webm",
-    "videoMp4": "video/tngerines/mp4/아무것도 없기는 없는데요.mp4",
-    "korean": "아무것도 없기는 없는데요",
-    "russian": "Правда, ничего нет",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/생선집 아들이나 해녀 딸이나.webm",
-    "videoMp4": "video/tngerines/mp4/생선집 아들이나 해녀 딸이나.mp4",
-    "korean": "생선집 아들이나 해녀 딸이나",
-    "russian": "Будь то сын продавца рыбы или дочь ныряльщицы",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/뭔 소리고.webm",
-    "videoMp4": "video/tngerines/mp4/뭔 소리고.mp4",
-    "korean": "뭔 소리고?",
-    "russian": "В смысле?",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/뭐가 고달퍼.webm",
-    "videoMp4": "video/tngerines/mp4/뭐가 고달퍼.mp4",
-    "korean": "뭐가 고달퍼?",
-    "russian": "Что тут тяжелого?",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/뭐.webm",
-    "videoMp4": "video/tngerines/mp4/뭐.mp4",
-    "korean": "뭐?",
-    "russian": "ЧО?",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/무조건 서울 놈한테 시집 갈 거야.webm",
-    "videoMp4": "video/tngerines/mp4/무조건 서울 놈한테 시집 갈 거야.mp4",
-    "korean": "무조건 서울 놈한테 시집 갈 거야",
-    "russian": "Я обязательно выйду замуж за парня из Сеула",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/대학 가고 싶어서.webm",
-    "videoMp4": "video/tngerines/mp4/대학 가고 싶어서.mp4",
-    "korean": "대학 가고 싶어서?",
-    "russian": "В универ хотела пойти?",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/다 아니까, 다 봤으니까.webm",
-    "videoMp4": "video/tngerines/mp4/다 아니까, 다 봤으니까.mp4",
-    "korean": "다 아니까, 다 봤으니까",
-    "russian": "Я все знаю, я все видела",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/놓고 왔는데요.webm",
-    "videoMp4": "video/tngerines/mp4/놓고 왔는데요.mp4",
-    "korean": "놓고 왔는데요",
-    "russian": "Забыли(взять с собой)",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/너무 물지 마세요.webm",
-    "videoMp4": "video/tngerines/mp4/너무 물지 마세요.mp4",
-    "korean": "너무 물지 마세요",
-    "russian": "Не кусайтесь сильно",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/너무 물면 사고 쳐요.webm",
-    "videoMp4": "video/tngerines/mp4/너무 물면 사고 쳐요.mp4",
-    "korean": "너무 물면 사고 쳐요",
-    "russian": "Если сильно укусить - можно и влипнуть",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/나도 다 됐고요.webm",
-    "videoMp4": "video/tngerines/mp4/나도 다 됐고요.mp4",
-    "korean": "나도 다 됐고요",
-    "russian": "Я тоже все сделала",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/나는 몰라.webm",
-    "videoMp4": "video/tngerines/mp4/나는 몰라.mp4",
-    "korean": "나는 몰라",
-    "russian": "Я не знаю",
-    "new": true
-  },
-  {
-    "video": "video/tngerines/나 이제 집도 없어.webm",
-    "videoMp4": "video/tngerines/mp4/나 이제 집도 없어.mp4",
-    "korean": "나 이제 집도 없어",
-    "russian": "У меня даже дома теперь нет",
-    "new": true
-  }
-]
+{
+  "b1": [
+    {
+      "video": "video/hvatai/예쁘게 매니큐어 발라 줘야 되겠다.webm",
+      "videoMp4": "video/hvatai/mp4/예쁘게 매니큐어 발라 줘야 되겠다.mp4",
+      "korean": "예쁘게 매니큐어 발라 줘야 되겠다",
+      "russian": "Надо будет ногти красиво накрасить"
+    },
+    {
+      "video": "video/hvatai/너 좋아하는 노란색으로.webm",
+      "videoMp4": "video/hvatai/mp4/너 좋아하는 노란색으로.mp4",
+      "korean": "너 좋아하는 노란색으로",
+      "russian": "В твой любимый желтый цвет"
+    },
+    {
+      "video": "video/hvatai/우리 산책 나갈까.webm",
+      "videoMp4": "video/hvatai/mp4/우리 산책 나갈까.mp4",
+      "korean": "우리 산책 나갈까?",
+      "russian": "Может прогуляемся?"
+    },
+    {
+      "video": "video/hvatai/조금이라도 움직여 보자.webm",
+      "videoMp4": "video/hvatai/mp4/조금이라도 움직여 보자.mp4",
+      "korean": "조금이라도 움직여 보자",
+      "russian": "Хотя бы немного подвигаемся"
+    },
+    {
+      "video": "video/hvatai/아프겠다.webm",
+      "videoMp4": "video/hvatai/mp4/아프겠다.mp4",
+      "korean": "아프겠다",
+      "russian": "Больно наверно"
+    },
+    {
+      "video": "video/hvatai/괜찮아.webm",
+      "videoMp4": "video/hvatai/mp4/괜찮아.mp4",
+      "korean": "괜찮아?",
+      "russian": "ты в порядке?"
+    },
+    {
+      "video": "video/hvatai/얼른 가서 연고 얻어올게.webm",
+      "videoMp4": "video/hvatai/mp4/얼른 가서 연고 얻어올게.mp4",
+      "korean": "얼른 가서 연고 얻어올게",
+      "russian": "Сейчас быстро схожу за мазью"
+    },
+    {
+      "video": "video/hvatai/미안해 엄마가 너무 바짝 깎았어.webm",
+      "videoMp4": "video/hvatai/mp4/미안해 엄마가 너무 바짝 깎았어.mp4",
+      "korean": "미안해 엄마가 너무 바짝 깎았어",
+      "russian": "Прости маму, очень уж коротко подстригла"
+    },
+    {
+      "video": "video/hvatai/선재 씨가 한번 도전해 볼까요.webm",
+      "videoMp4": "video/hvatai/mp4/선재 씨가 한번 도전해 볼까요.mp4",
+      "korean": "선재 씨가 한번 도전해 볼까요?",
+      "russian": "Сон Джэ, может вы разок попробуете?"
+    },
+    {
+      "video": "video/hvatai/전화 오잖아.webm",
+      "videoMp4": "video/hvatai/mp4/전화 오잖아.mp4",
+      "korean": "전화 오잖아",
+      "russian": "У тебя ж телефон звонит"
+    },
+    {
+      "video": "video/hvatai/전화를 안 받으시네요.webm",
+      "videoMp4": "video/hvatai/mp4/전화를 안 받으시네요.mp4",
+      "korean": "전화를 안 받으시네요",
+      "russian": "Не берут трубку"
+    },
+    {
+      "video": "video/hvatai/시끄러워 죽겠다 1.webm",
+      "videoMp4": "video/hvatai/mp4/시끄러워 죽겠다 1.mp4",
+      "korean": "시끄러워 죽겠다",
+      "russian": "Шумно досмерти"
+    },
+    {
+      "video": "video/hvatai/끊을게요.webm",
+      "videoMp4": "video/hvatai/mp4/끊을게요.mp4",
+      "korean": "끊을게요",
+      "russian": "Кладу трубку"
+    },
+    {
+      "video": "video/hvatai/모르는데요.webm",
+      "videoMp4": "video/hvatai/mp4/모르는데요.mp4",
+      "korean": "모르는데요?",
+      "russian": "Не знаю вас"
+    },
+    {
+      "video": "video/hvatai/저 아세요.webm",
+      "videoMp4": "video/hvatai/mp4/저 아세요.mp4",
+      "korean": "저 아세요?",
+      "russian": "Знаете меня?"
+    },
+    {
+      "video": "video/hvatai/모른다고요.webm",
+      "videoMp4": "video/hvatai/mp4/모른다고요.mp4",
+      "korean": "모른다고요",
+      "russian": "Не знаю, сказала же"
+    },
+    {
+      "video": "video/hvatai/어 잠깐만요.webm",
+      "videoMp4": "video/hvatai/mp4/어 잠깐만요.mp4",
+      "korean": "어 잠깐만요",
+      "russian": "Постойте"
+    },
+    {
+      "video": "video/hvatai/필요없어요.webm",
+      "videoMp4": "video/hvatai/mp4/필요없어요.mp4",
+      "korean": "필요없어요",
+      "russian": "Не нужно"
+    },
+    {
+      "video": "video/hvatai/선물 받아 가셔야죠.webm",
+      "videoMp4": "video/hvatai/mp4/선물 받아 가셔야죠.mp4",
+      "korean": "선물 받아 가셔야죠",
+      "russian": "Вам полагается подарок"
+    },
+    {
+      "video": "video/hvatai/필요없다잖아요.webm",
+      "videoMp4": "video/hvatai/mp4/필요없다잖아요.mp4",
+      "korean": "필요없다잖아요",
+      "russian": "Я же сказала, не нужно!"
+    },
+    {
+      "video": "video/hvatai/다신 이딴 전화하지 마세요.webm",
+      "videoMp4": "video/hvatai/mp4/다신 이딴 전화하지 마세요.mp4",
+      "korean": "다신 이딴 전화하지 마세요",
+      "russian": "Никогда больше не звони с такой хернёй"
+    },
+    {
+      "video": "video/hvatai/방송국 꽉 불질러 버리고 싶으니까.webm",
+      "videoMp4": "video/hvatai/mp4/방송국 꽉 불질러 버리고 싶으니까.mp4",
+      "korean": "방송국 꽉 불질러 버리고 싶으니까",
+      "russian": "Хочется просто сжечь вашу телестудию"
+    },
+    {
+      "video": "video/hvatai/정말 죄송합니다.webm",
+      "videoMp4": "video/hvatai/mp4/정말 죄송합니다.mp4",
+      "korean": "정말 죄송합니다",
+      "russian": "Нам очень жаль",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/듣고 있어요.webm",
+      "videoMp4": "video/hvatai/mp4/듣고 있어요.mp4",
+      "korean": "듣고 있어요?",
+      "russian": "Вы слушаете?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/이렇게 살아준 것만으로도 다행이라고.webm",
+      "videoMp4": "video/hvatai/mp4/이렇게 살아준 것만으로도 다행이라고.mp4",
+      "korean": "이렇게 살아준 것만으로도 다행이라고",
+      "russian": "Счастье, что вы вообще живете",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/고맙다고 할 거예요.webm",
+      "videoMp4": "video/hvatai/mp4/고맙다고 할 거예요.mp4",
+      "korean": "고맙다고 할 거예요",
+      "russian": "Хочу поблагодарить вас",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/내일은 비가 온대요.webm",
+      "videoMp4": "video/hvatai/mp4/내일은 비가 온대요.mp4",
+      "korean": "내일은 비가 온대요",
+      "russian": "Завтра будет дождь",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/그 비가 그치길 기다리면서.webm",
+      "videoMp4": "video/hvatai/mp4/그 비가 그치길 기다리면서.mp4",
+      "korean": "그 비가 그치길 기다리면서",
+      "russian": "Подождите пока дождь закончится",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/또 살아 봐요.webm",
+      "videoMp4": "video/hvatai/mp4/또 살아 봐요.mp4",
+      "korean": "또 살아 봐요",
+      "russian": "Живите дальше",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/내가 말했잖아.webm",
+      "videoMp4": "video/hvatai/mp4/내가 말했잖아.mp4",
+      "korean": "내가 말했잖아",
+      "russian": "Я же говорил уже",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/밖에 한번 나가 봐.webm",
+      "videoMp4": "video/hvatai/mp4/밖에 한번 나가 봐.mp4",
+      "korean": "밖에 한번 나가 봐",
+      "russian": "Выйди хоть раз на улицу",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/갑자기 이렇게 수정해 달라시면 어떡해요.webm",
+      "videoMp4": "video/hvatai/mp4/갑자기 이렇게 수정해 달라시면 어떡해요.mp4",
+      "korean": "갑자기 이렇게 수정해 달라시면 어떡해요",
+      "russian": "Внезапно просите все переделать, как так то?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/지금 바로 올릴게요.webm",
+      "videoMp4": "video/hvatai/mp4/지금 바로 올릴게요.mp4",
+      "korean": "지금 바로 올릴게요",
+      "russian": "Сейчас сразу загружу",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/거기 쇼핑백이나 봐 봐.webm",
+      "videoMp4": "video/hvatai/mp4/거기 쇼핑백이나 봐 봐.mp4",
+      "korean": "거기 쇼핑백이나 봐 봐",
+      "russian": "Глянь ка тот шопер",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/어떻게 오셨어요.webm",
+      "videoMp4": "video/hvatai/mp4/어떻게 오셨어요.mp4",
+      "korean": "어떻게 오셨어요?",
+      "russian": "По какому делу вы пришли?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/좀 전에 연락받고 인턴 면접 보러 왔는데요.webm",
+      "videoMp4": "video/hvatai/mp4/좀 전에 연락받고 인턴 면접 보러 왔는데요.mp4",
+      "korean": "좀 전에 연락받고 인턴 면접 보러 왔는데요",
+      "russian": "Мне звонили, я на собеседование по стажировке",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/꼭 같이 이제 일하고 싶긴 한데.webm",
+      "videoMp4": "video/hvatai/mp4/꼭 같이 이제 일하고 싶긴 한데.mp4",
+      "korean": "꼭 같이 이제 일하고 싶긴 한데",
+      "russian": "Очень хочу поработать вместе",
+      "new": true
+    }
+  ],
+  "b2": [],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}

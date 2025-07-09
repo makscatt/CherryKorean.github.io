@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео Тренировка</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="videoplayer.css">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+            font-family: 'NetflixSans-Regular', Arial, sans-serif;
+
+        }
+
+
+
+
+
+
+
+        .goldkimchi-label {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-30%);
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            display: none;
+            z-index: 9999;
+            text-align: center;
+            line-height: 1.4;
+            min-width: 160px;
+            max-width: 200px;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            margin: auto;
+            width: 100vw;
+            /* Используем относительную единицу измерения */
+            height: 100vh;
+            padding-top: 0px;
+            background: linear-gradient(to bottom, #000000 30%, #ffffff 30%);
+
+        }
+
+        #video-container {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+
+            #gameContainer,
+            #popup-content-wrapper {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            #video-container {
+                max-width: 400px;
+
+            }
+        }
+
+
+        #custom-video-container {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        #custom-video-container video {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            margin: 0;
+
+
+        }
+
+        #interaction-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            height: 50%;
+
+
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 10px;
+            font-size: clamp(20px, 3vw, 30px);
+            cursor: pointer;
+            background-color: #ffffff;
+            color: rgb(51, 51, 51);
+            border-radius: 5px;
+            transition: all 0.1s ease-in-out;
+            border: none;
+            box-shadow: 0 4px 0 #bbb;
+        }
+
+        button:active {
+            box-shadow: 0 1px 4px #b7b7b7;
+            transform: translateY(4px);
+        }
+
+        #answer-buttons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin: 10px;
+            justify-content: space-between;
+            gap: 10px;
+            height: 110px;
+            /* фиксированная высота */
+        }
+
+        #option1,
+        #option2 {
+            background-color: #eff2f9;
+        }
+
+
+
+        #KoreanButton {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #showKoreanButton {
+            background-color: #fff350;
+            margin-top: 0px;
+            font-size: clamp(15px, 5vw, 30px);
+            height: clamp(50px, 5vw, 80px);
+            padding: 0px;
+            width: 100%;
+            opacity: 0.7;
+        }
+
+        #KoreanButton:active {
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+
+        #showKoreanButton:active {
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+            transform: translateY(2px);
+            transition: transform 0.05s ease, box-shadow 0.05s ease;
+        }
+
+        #koreanText {
+            display: none;
+            position: relative;
+            overflow: visible;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: clamp(20px, 3vw, 30px);
+            height: clamp(50px, 5vw, 80px);
+            border-radius: 10px;
+            background-color: #b8e7fc;
+            color: #333;
+            padding: 0 12px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            opacity: 0.9;
+            user-select: none;
+            padding-right: 50px;
+            white-space: normal;
+            word-break: keep-all;
+            outline: 1px solid rgba(0, 0, 0, 0.1);
+            outline-offset: -1px;
+            box-shadow: 0 4px 0 #bbb;
+        }
+
+        #koreanText:active {
+            transform: translateY(4px);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            bottom: -10px;
+            top: 25px;
+            right: 0px;
+            z-index: 10;
+            pointer-events: auto;
+        }
+
+        #popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+        }
+
+        #popup-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #popup-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            font-size: 16px;
+            z-index: 100000;
+            max-height: 90vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        #popup-content-wrapper>div:last-child {
+            flex-shrink: 0;
+            /* футер не сжимается и не скроллится */
+        }
+
+        #popupHeader {
+            padding-top: 15px;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 100001;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #popupContent {
+            flex: 1 1 auto;
+            overflow-y: auto;
+        }
+
+        #progress-bar {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            /* всегда 10 колонок */
+            gap: 5px;
+            justify-items: center;
+            margin: 2px auto;
+            box-sizing: border-box;
+            grid-auto-rows: auto;
+        }
+
+        .progress-box {
+            width: 100%;
+            /* заполнит 1fr */
+            max-width: 36px;
+            /* ограничим рост */
+            aspect-ratio: 1 / 1;
+            /* квадрат */
+            border-radius: 6px;
+            background-color: white;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #menu-button-container {
+            position: relative;
+            max-width: 100%;
+            gap: 10px;
+            margin-top: auto;
+
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #1C1C1E;
+            border: 1px solid rgba(255, 215, 0, 0.5);
+            border-radius: 10px 10px 0 0;
+        }
+
+        #stars {
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: white;
+            background: none;
+            border: none;
+            box-shadow: none;
+            cursor: default;
+            padding: 0;
+            line-height: 1;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #stars.pulsing {
+            animation: pulse 0.3s ease-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translateY(-50%) scale(1);
+            }
+
+            50% {
+                transform: translateY(-50%) scale(1.5);
+            }
+
+            100% {
+                transform: translateY(-50%) scale(1);
+            }
+        }
+
+        #main-menu-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 50%;
+            transform: translateY(-58%);
+            padding: 1px 6px;
+
+        }
+
+        #back-button {
+            padding: 1px 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-58%);
+        }
+
+        #back-button:active,
+        #main-menu-button:active {
+            transform: translateY(-54%);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        #save-to-bank-button {
+            all: unset;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        #save-to-bank-button:active {
+            transform: scale(0.95);
+            box-shadow: none;
+        }
+
+        #save-to-bank-button.active {
+            background: none;
+        }
+
+        #bank-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #hint-button {
+            width: 90%;
+            margin: 10px auto;
+            display: block;
+            background-color: #fff350;
+            border: 1px solid #ccc;
+            font-size: clamp(16px, 2.5vw, 20px);
+            padding: 10px;
+            height: auto;
+        }
+
+        #hint-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 100001;
+            /* Выше чем основной popup */
+            display: none;
+            /* Управляется через JS */
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        #hint-popup-content-wrapper {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            cursor: default;
+        }
+
+        #hint-popup-content-wrapper h2 {
+            margin-top: 0;
+            font-size: 25px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #hint-popup-content-wrapper ul {
+            list-style-position: inside;
+            text-align: left;
+            padding-left: 0;
+            margin-bottom: 25px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        #hint-popup-content-wrapper li {
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        #hint-popup-content-wrapper .close-btn {
+            width: auto;
+            min-width: 120px;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gameContainer">
+        <div id="video-container">
+            <div id="custom-video-container">
+                <video id="wordVideo" playsinline webkit-playsinline></video>
+            </div>
+            <div id="custom-controls-wrapper">
+                <div id="custom-controls">
+                    <button id="play-btn">
+                        <img src="customcontrolbuttons/play.png" alt="Play">
+                    </button>
+                    <button id="repeat-btn">
+                        <img src="customcontrolbuttons/repeat.png" alt="Repeat">
+                    </button>
+                    <select id="speed-select">
+                        <option value="0.5">0.5x</option>
+                        <option value="0.75">0.75x</option>
+                        <option value="1" selected>1x</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2x</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="interaction-block">
+            <div id="answer-buttons">
+
+                <button id="option1" onclick="checkWord(this)" style="flex: 1;"></button>
+                <button id="option2" onclick="checkWord(this)" style="flex: 1;"></button>
+
+                <div id="KoreanButton">
+                    <button id="showKoreanButton" onclick="showKoreanText()">Показать корейский текст</button>
+                    <div id="koreanText" onclick="analyzeKoreanText()">
+                        <span id="koreanTextContent"></span>
+                        <img src="videothemes/icons/search.png" class="search-icon" alt="лупа">
+                    </div>
+                </div>
+                <div id="progress-bar"></div>
+                <button id="hint-button" onclick="showHintPopup()">Подсказка</button>
+            </div>
+        </div>
+
+        <div id="menu-button-container">
+
+            <button id="stars" disabled>⭐ 0</button>
+            <button id="save-to-bank-button" onclick="saveToBank()">
+                <img id="bank-icon" src="videothemes/icons/outbank.png" alt="В копилку">
+            </button>
+            <button id="main-menu-button" class="nav-button" onclick="goHome()">
+                <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
+            </button>
+            <button id="back-button" class="nav-button" onclick="goBack()">
+                <img src="videothemes/icons/back.png" alt="Back" style="width: 45px; height: 45px;">
+            </button>
+        </div>
+    </div>
+    </div>
+    <script>
+
+        let correctAnswer = "";
+        let progressCount = 0;
+        const Game = { stars: 0 };
+        let easywords = [];
+        let currentWordIndex = null;
+        let preloadedWord = null;
+        let preloadedVideoSrc = null;
+        let recentWords = [];
+        const recentLimit = 10;
+        let isPathwayMode = false;
+        let wordsInLesson = [];
+
+        function showHintPopup() {
+            document.getElementById('hint-popup').style.display = 'flex';
+        }
+
+        function closeHintPopup() {
+            document.getElementById('hint-popup').style.display = 'none';
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+        function hideHintForMembers() {
+            const isMember = localStorage.getItem("member") === "true";
+            if (isMember) {
+                const hintButton = document.getElementById('hint-button');
+                if (hintButton) {
+                    hintButton.style.display = 'none';
+                }
+            }
+        }
+
+        function saveStars() {
+            try {
+                const user = Telegram.WebApp.initDataUnsafe?.user;
+                const telegramId = user?.id;
+                const username = user?.username;
+
+                if (telegramId) {
+                    fetch("https://telegram-server-hfk7.onrender.com/save", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ telegramId, username, stars: Game.stars })
+                    }).catch(err => console.error("Ошибка сохранения звёзд:", err));
+                }
+
+                localStorage.setItem("stars", Game.stars);
+            } catch (e) {
+                console.error("Ошибка при сохранении звёзд:", e);
+                localStorage.setItem("stars", Game.stars);
+            }
+            updateProgressBoxes();
+        }
+        function updateProgressBoxes() {
+            const bar = document.getElementById("progress-bar");
+            const currentBoxes = bar.children.length;
+            const totalBoxes = Math.min(3 + Math.floor(Game.stars / 20), 20);
+
+            if (currentBoxes === totalBoxes) return; // ничего не менять
+
+            bar.innerHTML = "";
+
+            for (let i = 0; i < totalBoxes; i++) {
+                const box = document.createElement("div");
+                box.className = "progress-box";
+                bar.appendChild(box);
+            }
+
+            progressCount = Math.min(progressCount, totalBoxes);
+        }
+        function loadStars() {
+            try {
+                // ✅ Всегда сразу показываем stars из localStorage
+                Game.stars = parseInt(localStorage.getItem("stars")) || 0;
+                updateStarsUI();
+                updateProgressBoxes();
+                loadProgressBoxes();
+                const user = Telegram.WebApp.initDataUnsafe?.user;
+                const telegramId = user?.id;
+
+                if (!telegramId) return;
+
+                fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data && typeof data.stars !== "undefined") {
+                            Game.stars = parseInt(data.stars);
+                        } else {
+                            Game.stars = parseInt(localStorage.getItem("stars")) || 0;
+                        }
+                        updateStarsUI();
+                        updateProgressBoxes();
+                        loadProgressBoxes();
+                    })
+                    .catch(() => {
+                        updateStarsUI();
+                        updateProgressBoxes();
+                        loadProgressBoxes();
+                    });
+            } catch (e) {
+                console.error("Ошибка при загрузке звёзд:", e);
+                updateStarsUI();
+                updateProgressBoxes();
+                loadProgressBoxes();
+            }
+        }
+
+        function updateStarsUI() {
+            document.getElementById("stars").innerText = `⭐ ${Game.stars}`;
+        }
+
+        async function loadWordsAndSetOptions() {
+            try {
+                if (easywords.length === 0) {
+                    
+                    // 1. Получаем ключ блока и путь к JSON из localStorage
+                    const blockKey = localStorage.getItem('selectedBlockKey');
+                    const masterJsonPath = localStorage.getItem('masterJsonPath');
+
+                    // 2. Проверяем, что все данные на месте
+                    if (!blockKey || !masterJsonPath) {
+                        console.error("Ключ блока ('selectedBlockKey') или путь к JSON ('masterJsonPath') не найдены в localStorage!");
+                        document.body.innerHTML = '<h1>Ошибка: Не удалось загрузить данные для этого раздела. Вернитесь назад и попробуйте снова.</h1>';
+                        return;
+                    }
+
+                    // 3. Загружаем нужный JSON-файл
+                    const response = await fetch(`${masterJsonPath}?nocache=${Date.now()}`);
+                    if (!response.ok) throw new Error(`Не удалось загрузить ${masterJsonPath}`);
+                    const allBlocksData = await response.json();
+
+                    // 4. Извлекаем массив слов по нашему ключу
+                    easywords = allBlocksData[blockKey];
+
+                    // 5. Проверяем, что данные для этого блока существуют
+                    if (!easywords || !Array.isArray(easywords)) {
+                        console.error(`Блок с ключом '${blockKey}' не найден в ${masterJsonPath}`);
+                        document.body.innerHTML = `<h1>Ошибка: Данные для блока "${blockKey}" не найдены.</h1>`;
+                        return;
+                    }
+
+                    // Логика для "новых" слов остается
+                    const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+                    easywords.forEach(word => {
+                        if (storedWords[word.video]) {
+                            word.new = storedWords[word.video].new;
+                        }
+                    });
+                }
+
+                // --- Дальше вся остальная логика функции остается БЕЗ ИЗМЕНЕНИЙ ---
+
+                let correctWord;
+                if (preloadedWord) {
+                    correctWord = preloadedWord;
+                    preloadedWord = null;
+                } else {
+                    const newWords = easywords.filter(w => w.new === true);
+                    let pool = newWords.length > 0 ? newWords : easywords;
+                    pool = pool.filter(w => !recentWords.includes(w.video));
+                    if (pool.length === 0) pool = easywords;
+
+                    if (pool.length === 0) {
+                        document.getElementById('interaction-block').innerHTML = '<h1>В этом разделе пока нет видео.</h1>';
+                        document.getElementById('video-container').style.display = 'none';
+                        return;
+                    }
+
+                    correctWord = pool[Math.floor(Math.random() * pool.length)];
+                }
+
+                currentWordIndex = easywords.indexOf(correctWord);
+
+                let wrongWord;
+                do {
+                    wrongWord = easywords[Math.floor(Math.random() * easywords.length)].russian;
+                } while (wrongWord === correctWord.russian && easywords.length > 1);
+
+                const options = [correctWord.russian, wrongWord];
+                const shuffledIndex = Math.random() < 0.5 ? 0 : 1;
+
+                document.getElementById("option1").innerText = options[shuffledIndex];
+                document.getElementById("option2").innerText = options[1 - shuffledIndex];
+
+                const video = document.getElementById("wordVideo");
+                // Проверяем, есть ли поле videoMp4 и является ли устройство Apple
+                if (correctWord.videoMp4 && /iPhone|iPad|iPod/.test(navigator.userAgent)) {
+                    video.src = correctWord.videoMp4;
+                } else {
+                    video.src = correctWord.video;
+                }
+                video.load();
+                video.play().catch(e => console.log("Autoplay был заблокирован."));
+
+                document.getElementById("koreanTextContent").innerText = correctWord.korean;
+                document.getElementById("koreanText").style.display = "none";
+                document.getElementById("showKoreanButton").style.display = "inline-block";
+
+                updateSaveButtonState();
+                correctAnswer = correctWord.russian;
+
+                recentWords.push(correctWord.video);
+                if (recentWords.length > recentLimit) recentWords.shift();
+
+                preloadNextVideo();
+
+            } catch (e) {
+                console.error("Ошибка загрузки слов:", e);
+                document.body.innerHTML = `<h1>Произошла ошибка при загрузке видео. Попробуйте обновить страницу.</h1><p>${e.message}</p>`;
+            }
+        }
+
+
+        function checkWord(button) {
+            const isCorrect = button.innerText === correctAnswer;
+            button.style.backgroundColor = isCorrect ? "lightgreen" : "lightcoral";
+
+            const boxes = document.querySelectorAll('.progress-box');
+            const totalBoxes = boxes.length;
+
+            if (isCorrect) {
+                new Audio('excellent.mp3').play();
+                const word = easywords[currentWordIndex];
+                if (word.new) {
+                    word.new = false;
+                    const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
+                    storedWords[word.video] = { new: false };
+                    localStorage.setItem('easywords', JSON.stringify(storedWords));
+                }
+
+                if (progressCount < totalBoxes) {
+                    boxes[progressCount].style.backgroundColor = 'lightgreen';
+                    progressCount++;
+                    saveProgressBoxes();
+                }
+
+                if (progressCount === totalBoxes) {
+                    Game.stars++;
+                    updateStarsUI();
+                    const starsElement = document.getElementById("stars");
+                    starsElement.classList.add("pulsing");
+
+                    setTimeout(() => {
+                        starsElement.classList.remove("pulsing");
+                    }, 300); // длительность анимации = 0.3s
+                    new Audio('starsuccess.mp3').play();
+                    saveStars();
+                    setTimeout(() => {
+                        progressCount = 0;
+                        boxes.forEach(box => box.style.backgroundColor = 'white');
+                        localStorage.setItem(window.location.pathname + "_progressCount", 0);
+                        button.style.backgroundColor = "";
+                        loadWordsAndSetOptions();
+                    }, 1000);
+                    return;
+                }
+            } else {
+                if (progressCount > 0) {
+                    const index = Math.min(progressCount - 1, boxes.length - 1);
+                    boxes[index].style.backgroundColor = 'lightcoral';
+                    setTimeout(() => {
+                        boxes[index].style.backgroundColor = 'white';
+                        progressCount = index; // откатываем на скорректированное значение
+                        saveProgressBoxes();
+                    }, 300);
+                }
+            }
+
+            setTimeout(() => {
+                button.style.backgroundColor = "";
+                loadWordsAndSetOptions();
+            }, 500);
+        }
+
+
+
+        function saveProgressBoxes() {
+            localStorage.setItem(window.location.pathname + "_progressCount", progressCount);
+        }
+
+        function loadProgressBoxes() {
+            const boxes = document.querySelectorAll('.progress-box');
+            const saved = parseInt(localStorage.getItem(window.location.pathname + "_progressCount"));
+            progressCount = Math.min(saved, boxes.length);
+
+            const totalBoxes = boxes.length;
+
+            if (!isNaN(saved)) {
+                progressCount = Math.min(saved, boxes.length);
+            } else {
+                progressCount = 0;
+            }
+
+            for (let i = 0; i < boxes.length; i++) {
+                boxes[i].style.backgroundColor = i < progressCount ? 'lightgreen' : 'white';
+            }
+        }
+
+
+
+        function showKoreanText() {
+            document.getElementById("koreanText").style.display = "flex";
+            document.getElementById("showKoreanButton").style.display = "none";
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            hideHintForMembers();
+            loadStars();
+            loadWordsAndSetOptions();
+
+        });
+
+        function saveToBank() {
+            const word = easywords[currentWordIndex];
+            if (!word) return;
+
+            let savedWords = JSON.parse(localStorage.getItem("savedWords")) || [];
+            const index = savedWords.findIndex(item => item.video === word.video);
+            const button = document.getElementById("save-to-bank-button");
+            const icon = document.getElementById("bank-icon");
+
+            if (index !== -1) {
+                // Удаляем из избранного
+                savedWords.splice(index, 1);
+                button.classList.remove("active");
+                icon.src = "videothemes/icons/outbank.png";
+            } else {
+                // Добавляем в избранное
+                savedWords.push({
+                    video: word.video,
+                    videoMp4: word.video,
+                    korean: word.korean,
+                    russian: word.russian
+                });
+                button.classList.add("active");
+                icon.src = "videothemes/icons/inbank.png";
+            }
+
+            localStorage.setItem("savedWords", JSON.stringify(savedWords));
+        }
+
+        function updateSaveButtonState() {
+            const word = easywords[currentWordIndex];
+            if (!word) return;
+
+            const savedWords = JSON.parse(localStorage.getItem("savedWords")) || [];
+            const exists = savedWords.some(item => item.video === word.video);
+
+            const button = document.getElementById("save-to-bank-button");
+            const icon = document.getElementById("bank-icon");
+
+            if (exists) {
+                button.classList.add("active");
+                icon.src = "videothemes/icons/inbank.png";
+            } else {
+                button.classList.remove("active");
+                icon.src = "videothemes/icons/outbank.png";
+            }
+        }
+
+
+        function preloadNextVideo() {
+            let nextWord;
+            const newWords = easywords.filter(word => word.new === true);
+            let pool = newWords.length > 0 ? newWords : easywords;
+
+            pool = pool.filter(w => !recentWords.includes(w.video));
+            if (pool.length === 0) pool = easywords;
+
+            nextWord = pool[Math.floor(Math.random() * pool.length)];
+            preloadedWord = nextWord;
+            preloadedVideoSrc = nextWord.video;
+
+            const preload = document.createElement("video");
+            preload.src = preloadedVideoSrc;
+            preload.preload = "auto";
+            preload.style.display = "none";
+            document.body.appendChild(preload);
+        }
+
+        function analyzeKoreanText() {
+            const textElem = document.getElementById("koreanText");
+            const text = textElem.innerText.trim();
+            if (!text) return;
+
+            fetch("https://koreanhelper-api.onrender.com/analyze", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    const original =
+                        `<div style="text-align:center; font-size:18px; margin-bottom:10px;">
+           <strong>${text}</strong>
+         </div>`;
+
+                    const breakdown = data.tokens
+                        .map(t => `<span style="color:${t.color}">${t.word}</span>`)
+                        .join(' + ');
+                    const breakdownBlock =
+                        `<div style="text-align:center; font-size:16px; margin:8px 0;">
+           <strong>Разбор:</strong><span style="font-weight:normal; opacity:0.6;">(Работаю над идеальностью разбора)</span><br>${breakdown}
+         </div>`;
+
+                    let tokenBlock = '';
+                    if (window.Telegram && Telegram.WebApp.initDataUnsafe?.user?.id === 910912532) {
+                        tokenBlock =
+                            `<div style="margin-bottom:10px;">
+             <strong>Разбор с POS:</strong><br>` +
+                            data.tokens
+                                .map(t => `${t.word} / ${t.pos}`)
+                                .join(' ') +
+                            `</div>`;
+                    }
+
+                    const grammarBlocks = data.grammar_matches.map(g => {
+                        const showMeaning = typeof g.meaning === 'string' && g.meaning !== '';
+                        const showExample = typeof g.example === 'string' && g.example !== '';
+
+                        const pattern = `<strong>${g.pattern}</strong>:`;
+                        const meaning = showMeaning
+                            ? `<div style="margin-left:10px; color:#003366;">${g.meaning}</div>` // тёмно-синий
+                            : '';
+                        const example = showExample
+                            ? `<div style="margin-left:10px; color:#004d00;"><em>${g.example}</em></div>` // тёмно-зелёный
+                            : '';
+
+                        return `${pattern}<br>${meaning}${example}
+                <hr style="margin:6px 0;">`;
+                    }).join('');
+
+                    const grammarBlock = grammarBlocks || '<div>Грамматики: Еще не все добавил...</div>';
+
+                    const headerFixed = `<div id="popupHeader">${original}${breakdownBlock}</div>`;
+                    const content = headerFixed + tokenBlock + grammarBlock;
+                    const popup = document.getElementById("popup");
+                    document.getElementById("popupContent").innerHTML = content;
+                    popup.style.display = "block";
+                })
+                .catch(() => {
+                    document.getElementById("popupContent").innerText = "Ошибка при анализе.";
+                    document.getElementById("popup").style.display = "block";
+                });
+        }
+
+
+
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        // Закрытие при клике вне окна
+        document.addEventListener("click", function (e) {
+            const popup = document.getElementById("popup");
+            const contentWrapper = document.getElementById("popup-content-wrapper");
+            if (popup.style.display === "block" && !contentWrapper.contains(e.target)) {
+                closePopup();
+            }
+        }, true);
+
+        function goHome() {
+            var pushAudio = new Audio('pushButton.mp3');
+            pushAudio.play();
+            setTimeout(() => {
+                window.location.href = "videothemes.html";
+            }, 150); // небольшая задержка, чтобы звук успел сыграть
+        }
+
+        const video = document.getElementById("wordVideo");
+        let repeatActive = false;
+
+        document.getElementById("play-btn").onclick = () => {
+            video.loop = false;
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        };
+
+        document.getElementById("repeat-btn").onclick = () => {
+            if (!repeatActive) {
+                video.loop = true;
+                video.play();
+                repeatActive = true;
+            } else {
+                video.loop = false;
+                video.pause();
+                repeatActive = false;
+            }
+        };
+
+        document.getElementById("speed-select").onchange = (e) => {
+            video.playbackRate = parseFloat(e.target.value);
+        };
+    </script>
+    <div id="popup" style="display: none;">
+        <div id="popup-overlay"></div>
+        <div id="popup-content-wrapper">
+            <div id="popupContent"></div>
+            <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <button onclick="closePopup()">Закрыть</button>
+                <button style="opacity: 0.7;" onclick="window.open('https://t.me/KoreanMakscatt', '_blank')">Сообщить об
+                    ошибке</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Новый попап для подсказки -->
+    <div id="hint-popup" onclick="closeHintPopup()">
+        <div id="hint-popup-content-wrapper" onclick="event.stopPropagation()">
+            <h2>Подсказка</h2>
+            <ul>
+                <li>Выбирайте правильный ответ, чтобы продвигаться к следующим видео</li>
+                <li>Откройте корейский текст, когда трудно</li>
+                <li>Читайте вместе с персонажами</li>
+                <li>Лупа откроет разбор грамматик</li>
+                <li>Нажмите на свинью внизу, чтобы отложить видео в копилку</li>
+                <li>Копилка на главном экране - чтобы тренировать конкретные видео</li>
+            </ul>
+            <button class="close-btn" onclick="closeHintPopup()">Закрыть</button>
+        </div>
+    </div>
+</body>
+
+</html>

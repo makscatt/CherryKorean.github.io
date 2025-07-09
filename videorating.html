@@ -460,6 +460,19 @@
 
       // --- Динамическое создание всех элементов ---
       const overlay = document.createElement('div');
+      if (!document.getElementById('custom-bullet-styles')) {
+        const styleSheet = document.createElement("style");
+        styleSheet.id = 'custom-bullet-styles'; // ID, чтобы не добавлять стиль повторно
+        styleSheet.innerText = `
+        #premium-popup-overlay ul li::before {
+            content: '⭐';
+            position: absolute;
+            left: 0;
+            top: 2px; /* Небольшая коррекция для выравнивания по вертикали */
+        }
+    `;
+        document.head.appendChild(styleSheet);
+      }
       overlay.id = 'premium-popup-overlay';
       const content = document.createElement('div');
       const closeBtn = document.createElement('span');
@@ -467,20 +480,22 @@
       const heading = document.createElement('h2');
 
       // Создаем контейнер для списка преимуществ
-      const benefitsList = document.createElement('div');
+      const benefitsList = document.createElement('ul');
 
       // Создаем элементы списка
-      const benefit1 = document.createElement('p');
-      const benefit_league = document.createElement('p');
-      const benefit2 = document.createElement('p');
-      const benefit3_title = document.createElement('p');
-      const benefit4 = document.createElement('p');
-      const benefit5 = document.createElement('p');
+      const benefit1 = document.createElement('li');
+      const benefit2 = document.createElement('li');
+      const benefit3 = document.createElement('li');
+      const benefit4 = document.createElement('li');
 
       const priceDiv = document.createElement('div');
+      priceDiv.className = 'price';
       const priceTitle = document.createElement('span');
       const priceText1 = document.createElement('span');
+      priceText1.className = 'main-price';
+
       const priceText2 = document.createElement('span');
+      priceText2.className = 'sub-price';
 
       const premiumBtn = document.createElement('button');
       const offerBtn = document.createElement('button');
@@ -502,19 +517,18 @@
 
       // Заголовки и тексты
       kimchiImage.src = 'videothemes/icons/goldkimchi.png';
-      heading.textContent = 'Золотое Кимчи';
-      benefit1.innerHTML = '⭐ Открыты все темы без ограничений';
-      benefit_league.innerHTML = '⭐ Участие в Золотой Лиге Кимчи';
-      benefit2.innerHTML = '⭐ Доступ к чату "Кимчи Клаб" — <span>только для своих</span>';
-      benefit3_title.innerHTML = '💬 В чате вы получите:';
-      benefit4.innerHTML = '⭐ Общение и живую практику с другими участниками';
-      benefit5.innerHTML = '⭐ Мгновенные ответы от меня — я на связи каждый день';
+      heading.innerHTML = 'Золотое Кимчи'; // Используем innerHTML для <br>
+      benefit1.innerHTML = '<strong>Убирается таймер в</strong><br>🐟Путь новичка';
+      benefit2.innerHTML = '<strong>Открываются все темы в</strong><br>🎬Дорамы и Шоу';
+      benefit3.innerHTML = '<strong>Доступ к сообществу</strong><br>"Кимчи Клаб"';
+      benefit4.innerHTML = '<strong>Участие в Лиге Золотого Кимчи</strong><br>Лидер отображается на главной странице';
 
       priceTitle.textContent = 'Стоимость:';
       priceText1.textContent = 'Первый месяц 99 руб';
       priceText2.textContent = 'Затем 300 руб/мес';
 
       premiumBtn.textContent = 'Подключить за 99 руб';
+      premiumBtn.className = 'pay-button';
       offerBtn.textContent = 'Оферта';
       howToCancelBtn.textContent = 'Как отключить подписку?';
       closeBtn.innerHTML = '×';
@@ -527,23 +541,30 @@
       Object.assign(heading.style, { fontSize: '22px', fontWeight: 'bold', margin: '0 0 20px 0' });
 
       // Стили для списка преимуществ
-      Object.assign(benefitsList.style, { textAlign: 'left', margin: '0 0 25px 0', paddingLeft: '10px' });
-      [benefit1, benefit_league, benefit2, benefit4, benefit5].forEach(p => Object.assign(p.style, { fontSize: '17px', margin: '0 0 12px 0' }));
-      Object.assign(benefit2.querySelector('span').style, { display: 'block', fontSize: '15px', color: '#8e8e93', paddingLeft: '27px' });
-      Object.assign(benefit3_title.style, { fontSize: '17px', margin: '20px 0 12px 0', fontWeight: 'bold' });
+      Object.assign(benefitsList.style, { textAlign: 'left', margin: '0 0 25px 0', paddingLeft: '0', listStyleType: 'none' }); // Убираем маркеры и стандартный отступ
+      [benefit1, benefit2, benefit3, benefit4].forEach(li => {
+        Object.assign(li.style, {
+          fontSize: '19px',
+          margin: '0 0 15px 0',
+          lineHeight: '1.4',
+          position: 'relative',      // <-- Делаем li контейнером для позиционирования
+          paddingLeft: '30px'         // <-- Добавляем отступ для текста, чтобы он не наезжал на звезду
+        });
+      });
+
 
       // Стили для цены и кнопок
       Object.assign(priceDiv.style, { margin: '20px 0' });
       Object.assign(priceTitle.style, { display: 'block', fontSize: '16px', color: '#8e8e93', marginBottom: '5px' });
-      Object.assign(priceText1.style, { fontSize: '26px', fontWeight: 'bold', color: '#FFD700' });
+      Object.assign(priceText1.style, { fontSize: '23px', fontWeight: 'bold', color: '#FFD700' });
       Object.assign(priceText2.style, { display: 'block', fontSize: '16px', color: '#8e8e93' });
 
-      Object.assign(premiumBtn.style, { width: '100%', padding: '15px', backgroundColor: '#FFD700', color: '#000000', border: 'none', borderRadius: '12px', fontSize: '18px', cursor: 'pointer', fontWeight: 'bold', margin: '0 0 15px 0' });
+      Object.assign(premiumBtn.style, { width: '100%', padding: '10px', backgroundColor: '#FFD700', color: '#000000', border: 'none', borderRadius: '12px', fontSize: '25px', cursor: 'pointer', fontWeight: 'bold', margin: '0 0 15px 0' });
       Object.assign(offerBtn.style, { background: 'none', border: 'none', color: '#8E8E93', textDecoration: 'underline', cursor: 'pointer', fontSize: '15px' });
       Object.assign(howToCancelBtn.style, { display: 'block', margin: '10px auto 0 auto', background: 'none', border: 'none', color: '#8E8E93', textDecoration: 'underline', cursor: 'pointer', fontSize: '15px' });
 
       // --- Сборка элементов в правильном порядке ---
-      benefitsList.append(benefit1, benefit_league, benefit2, benefit3_title, benefit4, benefit5);
+      benefitsList.append(benefit1, benefit2, benefit3, benefit4); // Собираем li в ul
       priceDiv.append(priceTitle, priceText1, priceText2);
 
       content.append(closeBtn, kimchiImage, heading, benefitsList, priceDiv, premiumBtn, offerBtn, howToCancelBtn);
@@ -587,6 +608,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", async () => {
+      const isMemberLocally = localStorage.getItem('member') === 'true';
       const leagueKimchiContainer = document.getElementById("league-golden-kimchi");
       const leagueOthersContainer = document.getElementById("league-others");
       const ratingsWrapper = document.getElementById("ratings-wrapper");
@@ -664,10 +686,10 @@
         const currentUserData = users.find(u => String(u.telegramId) === currentId);
 
         // Показываем кнопку "Вступить", если пользователь не подписчик (или его нет в рейтинге)
-        if (!currentUserData || !currentUserData.isSubscriber) {
-          joinButton.style.display = 'flex'; // Показываем кнопку
-          setupPremiumPopup(); // Создаем HTML для попапа
-          joinButton.onclick = showPremiumPopup; // Назначаем открытие попапа по клику
+        if (!isMemberLocally && (!currentUserData || !currentUserData.isSubscriber)) {
+          joinButton.style.display = 'flex';
+          setupPremiumPopup();
+          joinButton.onclick = showPremiumPopup;
         }
 
       } catch (err) {

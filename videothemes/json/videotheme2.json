@@ -1,0 +1,529 @@
+{
+  "b1": [
+    {
+      "video": "video/squid game/저 뭐냐.webm",
+      "videoMp4": "video/squid game/mp4/저 뭐냐.mp4",
+      "korean": "저 뭐냐",
+      "russian": "Что это?"
+    },
+    {
+      "video": "video/squid game/아이 그리고 아까 그 소리 또 뭐야.webm",
+      "videoMp4": "video/squid game/mp4/아이 그리고 아까 그 소리 또 뭐야.mp4",
+      "korean": "아이 그리고 아까 그 소리 또 뭐야?",
+      "russian": "Что это они говорили про тебя?"
+    },
+    {
+      "video": "video/squid game/상금이 대충 얼마나 되나요.webm",
+      "videoMp4": "video/squid game/mp4/상금이 대충 얼마나 되나요.mp4",
+      "korean": "상금이 대충 얼마나 되나요?",
+      "russian": "Сколько примерно призовых?"
+    },
+    {
+      "video": "video/squid game/한 판 더 해.webm",
+      "videoMp4": "video/squid game/mp4/한 판 더 해.mp4",
+      "korean": "한 판 더 해",
+      "russian": "Еще раунд"
+    },
+    {
+      "video": "video/squid game/어떤 컬러로 하시겠습니까.webm",
+      "videoMp4": "video/squid game/mp4/어떤 컬러로 하시겠습니까.mp4",
+      "korean": "어떤 컬러로 하시겠습니까?",
+      "russian": "Какой цвет вы выберете?"
+    },
+    {
+      "video": "video/squid game/십만원을 드리겠습니다.webm",
+      "videoMp4": "video/squid game/mp4/십만원을 드리겠습니다.mp4",
+      "korean": "십만원을 드리겠습니다",
+      "russian": "Дам 100 тысяч вон"
+    },
+    {
+      "video": "video/squid game/딱지치기 해 보셨죠.webm",
+      "videoMp4": "video/squid game/mp4/딱지치기 해 보셨죠.mp4",
+      "korean": "딱지치기 해 보셨죠?",
+      "russian": "Вы пробовали играть в такчи?"
+    },
+    {
+      "video": "video/squid game/뭐야.webm",
+      "videoMp4": "video/squid game/mp4/뭐야.mp4",
+      "korean": "뭐야?",
+      "russian": "Что?"
+    },
+    {
+      "video": "video/squid game/선생님.webm",
+      "videoMp4": "video/squid game/mp4/선생님.mp4",
+      "korean": "선생님",
+      "russian": "Господин"
+    },
+    {
+      "video": "video/squid game/왜 이렇게 늦게 데려와.webm",
+      "videoMp4": "video/squid game/mp4/왜 이렇게 늦게 데려와.mp4",
+      "korean": "왜 이렇게 늦게 데려와?",
+      "russian": "Почему ты так поздно ее привел?"
+    },
+    {
+      "video": "video/squid game/그걸로 담배는 피지 말고.webm",
+      "videoMp4": "video/squid game/mp4/그걸로 담배는 피지 말고.mp4",
+      "korean": "그걸로 담배는 피지 말고",
+      "russian": "Не вздумай курить с этим"
+    },
+    {
+      "video": "video/squid game/아빠 또 혼날 거 같은데.webm",
+      "videoMp4": "video/squid game/mp4/아빠 또 혼날 거 같은데.mp4",
+      "korean": "아빠 또 혼날 거 같은데",
+      "russian": "У папы снова будут неприятности"
+    },
+    {
+      "video": "video/squid game/이거 엄마가 보면.webm",
+      "videoMp4": "video/squid game/mp4/이거 엄마가 보면.mp4",
+      "korean": "이거 엄마가 보면",
+      "russian": "Если мама это увидит"
+    },
+    {
+      "video": "video/squid game/근데 난 떡볶이가 훨씬 더 맛있어.webm",
+      "videoMp4": "video/squid game/mp4/근데 난 떡볶이가 훨씬 더 맛있어.mp4",
+      "korean": "근데 난 떡볶이가 훨씬 더 맛있어",
+      "russian": "Но мне ттокпокки гораздо вкуснее"
+    },
+    {
+      "video": "video/squid game/어제 엄마랑 새아빠랑 스테이크하우스 갔었어.webm",
+      "videoMp4": "video/squid game/mp4/어제 엄마랑 새아빠랑 스테이크하우스 갔었어.mp4",
+      "korean": "어제 엄마랑 새아빠랑 스테이크하우스 갔었어",
+      "russian": "Вчера я ходила с мамой и отчимом в стейкхаус"
+    },
+    {
+      "video": "video/squid game/만원만 빌려 주시면 안될까요.webm",
+      "videoMp4": "video/squid game/mp4/만원만 빌려 주시면 안될까요.mp4",
+      "korean": "만원만 빌려 주시면 안될까요",
+      "russian": "Одолжите мне 10 тысяч вон?"
+    },
+    {
+      "video": "video/squid game/잘했어.webm",
+      "videoMp4": "video/squid game/mp4/잘했어.mp4",
+      "korean": "잘했어",
+      "russian": "Молодец"
+    },
+    {
+      "video": "video/squid game/알았어 7시.webm",
+      "videoMp4": "video/squid game/mp4/알았어 7시.mp4",
+      "korean": "알았어 7시",
+      "russian": "Понял, в 7 часов"
+    },
+    {
+      "video": "video/squid game/생각 잘해 뭐 다른 거 없어.webm",
+      "videoMp4": "video/squid game/mp4/생각 잘해 뭐 다른 거 없어.mp4",
+      "korean": "생각 잘해 뭐 다른 거 없어",
+      "russian": "Подумай хорошенько, больше шансов нет"
+    },
+    {
+      "video": "video/squid game/배고파.webm",
+      "videoMp4": "video/squid game/mp4/배고파.mp4",
+      "korean": "배고파?",
+      "russian": "Голодный?"
+    },
+    {
+      "video": "video/squid game/빈 자리가 얼마 안 남았습니다.webm",
+      "videoMp4": "video/squid game/mp4/빈 자리가 얼마 안 남았습니다.mp4",
+      "korean": "빈 자리가 얼마 안 남았습니다",
+      "russian": "Свободных мест не так много"
+    },
+    {
+      "video": "video/squid game/좋은 선물을 사 줄게.webm",
+      "videoMp4": "video/squid game/mp4/좋은 선물을 사 줄게.mp4",
+      "korean": "좋은 선물을 사 줄게",
+      "russian": "Хороший подарок куплю"
+    },
+    {
+      "video": "video/squid game/안녕하십니까.webm",
+      "videoMp4": "video/squid game/mp4/안녕하십니까.mp4",
+      "korean": "안녕하십니까",
+      "russian": "Здравствуйте"
+    },
+    {
+      "video": "video/squid game/낮에 명함 받은 사람인데요.webm",
+      "videoMp4": "video/squid game/mp4/낮에 명함 받은 사람인데요.mp4",
+      "korean": "낮에 명함 받은 사람인데요",
+      "russian": "Я днем взял у вас визитку"
+    },
+    {
+      "video": "video/squid game/얼마 안 남았어.webm",
+      "videoMp4": "video/squid game/mp4/얼마 안 남았어.mp4",
+      "korean": "얼마 안 남았어",
+      "russian": "Мне недолго осталось"
+    },
+    {
+      "video": "video/squid game/너 여기서 또 만났네.webm",
+      "videoMp4": "video/squid game/mp4/너 여기서 또 만났네.mp4",
+      "korean": "너 여기서 또 만났네",
+      "russian": "Я тебя и здесь встретил"
+    },
+    {
+      "video": "video/squid game/너 뭐야.webm",
+      "videoMp4": "video/squid game/mp4/너 뭐야.mp4",
+      "korean": "너 뭐야?",
+      "russian": "Ты кто?"
+    },
+    {
+      "video": "video/squid game/넌 뭐야 이 새끼야.webm",
+      "videoMp4": "video/squid game/mp4/넌 뭐야 이 새끼야.mp4",
+      "korean": "넌 뭐야 이 새끼야?",
+      "russian": "Ты кто С*ка такой?"
+    },
+    {
+      "video": "video/squid game/그 말을 어떻게 믿습니까.webm",
+      "videoMp4": "video/squid game/mp4/그 말을 어떻게 믿습니까.mp4",
+      "korean": "그 말을 어떻게 믿습니까?",
+      "russian": "Как верить вашим словам?"
+    },
+    {
+      "video": "video/squid game/핸드폰 지갑 다 뺏고.webm",
+      "videoMp4": "video/squid game/mp4/핸드폰 지갑 다 뺏고.mp4",
+      "korean": "핸드폰 지갑 다 뺏고",
+      "russian": "Телефон, кошелек, все отобрали"
+    },
+    {
+      "video": "video/squid game/상금이 지급됩니다.webm",
+      "videoMp4": "video/squid game/mp4/상금이 지급됩니다.mp4",
+      "korean": "상금이 지급됩니다",
+      "russian": "Достанется приз"
+    },
+    {
+      "video": "video/squid game/그걸 지금 믿으라는 겁니까.webm",
+      "videoMp4": "video/squid game/mp4/그걸 지금 믿으라는 겁니까.mp4",
+      "korean": "그걸 지금 믿으라는 겁니까?",
+      "russian": "Говорите, чтобы мы просто верили?"
+    },
+    {
+      "video": "video/squid game/우리가 당신들 말을 믿어야 할 이유를 하나만 대봐.webm",
+      "videoMp4": "video/squid game/mp4/우리가 당신들 말을 믿어야 할 이유를 하나만 대봐.mp4",
+      "korean": "우리가 당신들 말을 믿어야 할 이유를 하나만 대봐",
+      "russian": "Назовите хотя бы одну причину верить вам"
+    },
+    {
+      "video": "video/squid game/이백십팔번(218).webm",
+      "videoMp4": "video/squid game/mp4/이백십팔번(218).mp4",
+      "korean": "이백십팔번(218)",
+      "russian": "Номер 218"
+    },
+    {
+      "video": "video/squid game/무슨 게임 합니까.webm",
+      "videoMp4": "video/squid game/mp4/무슨 게임 합니까.mp4",
+      "korean": "무슨 게임 합니까?",
+      "russian": "В какие игры будем играть?"
+    },
+    {
+      "video": "video/squid game/그렇게 있으면 어차피 죽어.webm",
+      "videoMp4": "video/squid game/mp4/그렇게 있으면 어차피 죽어.mp4",
+      "korean": "그렇게 있으면 어차피 죽어",
+      "russian": "Будешь так сидеть - умрешь"
+    },
+    {
+      "video": "video/squid game/돈 없어요.webm",
+      "videoMp4": "video/squid game/mp4/돈 없어요.mp4",
+      "korean": "돈 없어요",
+      "russian": "Денег нету"
+    },
+    {
+      "video": "video/squid game/걸어가요.webm",
+      "videoMp4": "video/squid game/mp4/걸어가요.mp4",
+      "korean": "걸어가요",
+      "russian": "Пешком пойду"
+    },
+    {
+      "video": "video/squid game/기다렸다가 버스 타고 가요.webm",
+      "videoMp4": "video/squid game/mp4/기다렸다가 버스 타고 가요.mp4",
+      "korean": "기다렸다가 버스 타고 가요",
+      "russian": "Дождись автобус и езжай"
+    },
+    {
+      "video": "video/squid game/안돼요.webm",
+      "videoMp4": "video/squid game/mp4/안돼요.mp4",
+      "korean": "안돼요",
+      "russian": "Так не пойдет"
+    },
+    {
+      "video": "video/squid game/돈 못 갚아요.webm",
+      "videoMp4": "video/squid game/mp4/돈 못 갚아요.mp4",
+      "korean": "돈 못 갚아요",
+      "russian": "Я не смогу вернуть деньги"
+    },
+    {
+      "video": "video/squid game/그냥 가져 가요.webm",
+      "videoMp4": "video/squid game/mp4/그냥 가져 가요.mp4",
+      "korean": "그냥 가져 가요",
+      "russian": "Просто бери и езжай"
+    },
+    {
+      "video": "video/squid game/감사합니다 사장님.webm",
+      "videoMp4": "video/squid game/mp4/감사합니다 사장님.mp4",
+      "korean": "감사합니다 사장님",
+      "russian": "Спасибо вам, Господин"
+    }
+  ],
+  "b2": [
+    {
+      "video": "video/squidgame 2/널 찾아낼 거야.webm",
+      "videoMp4": "video/squidgame 2/mp4/널 찾아낼 거야.mp4",
+      "korean": "널 찾아낼 거야",
+      "russian": "Я найду тебя"
+    },
+    {
+      "video": "video/squidgame 2/어디로 모실까요.webm",
+      "videoMp4": "video/squidgame 2/mp4/어디로 모실까요.mp4",
+      "korean": "어디로 모실까요?",
+      "russian": "Куда вас отвезти?"
+    },
+    {
+      "video": "video/squidgame 2/서울로 가 주세요.webm",
+      "videoMp4": "video/squidgame 2/mp4/서울로 가 주세요.mp4",
+      "korean": "서울로 가 주세요",
+      "russian": "Отвезите меня в Сеул"
+    },
+    {
+      "video": "video/squidgame 2/미안한데.webm",
+      "videoMp4": "video/squidgame 2/mp4/미안한데.mp4",
+      "korean": "미안한데",
+      "russian": "Прошу прощения"
+    },
+    {
+      "video": "video/squidgame 2/5 분만 있다 와 줄래.webm",
+      "videoMp4": "video/squidgame 2/mp4/5 분만 있다 와 줄래.mp4",
+      "korean": "오 분만 있다 와 줄래?",
+      "russian": "Ты не мог бы зайти через 5 минут?"
+    },
+    {
+      "video": "video/squidgame 2/아저씨.webm",
+      "videoMp4": "video/squidgame 2/mp4/아저씨.mp4",
+      "korean": "아저씨",
+      "russian": "Дяденька"
+    },
+    {
+      "video": "video/squidgame 2/안됩니다.webm",
+      "videoMp4": "video/squidgame 2/mp4/안됩니다.mp4",
+      "korean": "안됩니다",
+      "russian": "Нельзя"
+    },
+    {
+      "video": "video/squidgame 2/너무 잘 생기셨어요.webm",
+      "videoMp4": "video/squidgame 2/mp4/너무 잘 생기셨어요.mp4",
+      "korean": "너무 잘 생기셨어요",
+      "russian": "Вы такой красавчик"
+    },
+    {
+      "video": "video/squidgame 2/이 사진 올려도 돼요.webm",
+      "videoMp4": "video/squidgame 2/mp4/이 사진 올려도 돼요.mp4",
+      "korean": "이 사진 올려도 돼요?",
+      "russian": "Можно выложить эту фотку?"
+    },
+    {
+      "video": "video/squidgame 2/넌 그 섬 위치도 기억 못 하고.webm",
+      "videoMp4": "video/squidgame 2/mp4/넌 그 섬 위치도 기억 못 하고.mp4",
+      "korean": "넌 그 섬 위치도 기억 못 하고",
+      "russian": "Ты даже не помнишь, где находится тот остров"
+    },
+    {
+      "video": "video/squidgame 2/우리는 경찰이야.webm",
+      "videoMp4": "video/squidgame 2/mp4/우리는 경찰이야.mp4",
+      "korean": "우리는 경찰이야",
+      "russian": "Мы полицейские"
+    },
+    {
+      "video": "video/squidgame 2/너가 그런 걸 어떻게 알아.webm",
+      "videoMp4": "video/squidgame 2/mp4/너가 그런 걸 어떻게 알아.mp4",
+      "korean": "너가 그런 걸 어떻게 알아?",
+      "russian": "А ты откуда знаешь?"
+    },
+    {
+      "video": "video/squidgame 2/병신.webm",
+      "videoMp4": "video/squidgame 2/mp4/병신.mp4",
+      "korean": "병신",
+      "russian": "Дурак"
+    },
+    {
+      "video": "video/squidgame 2/누구야.webm",
+      "videoMp4": "video/squidgame 2/mp4/누구야.mp4",
+      "korean": "누구야?",
+      "russian": "Кто там?"
+    },
+    {
+      "video": "video/squidgame 2/괜찮습니다.webm",
+      "videoMp4": "video/squidgame 2/mp4/괜찮습니다.mp4",
+      "korean": "괜찮습니다",
+      "russian": "Все в порядке"
+    },
+    {
+      "video": "video/squidgame 2/아침 열시부터 밤 열시까지.webm",
+      "videoMp4": "video/squidgame 2/mp4/아침 열시부터 밤 열시까지.mp4",
+      "korean": "아침 열시부터 밤 열시까지",
+      "russian": "С 10 утра до 10 вечера"
+    },
+    {
+      "video": "video/squidgame 2/다시 일년을 기다려야 할 수도 있어요.webm",
+      "videoMp4": "video/squidgame 2/mp4/다시 일년을 기다려야 할 수도 있어요.mp4",
+      "korean": "다시 일년을 기다려야 할 수도 있어요",
+      "russian": "Снова буду вынужден ждать целый год"
+    },
+    {
+      "video": "video/squidgame 2/애들 더 불러.webm",
+      "videoMp4": "video/squidgame 2/mp4/애들 더 불러.mp4",
+      "korean": "애들 더 불러",
+      "russian": "Зови еще ребят"
+    },
+    {
+      "video": "video/squidgame 2/얼마나요.webm",
+      "videoMp4": "video/squidgame 2/mp4/얼마나요.mp4",
+      "korean": "얼마나요?",
+      "russian": "Сколько?"
+    },
+    {
+      "video": "video/squidgame 2/술들 마시지 말고.webm",
+      "videoMp4": "video/squidgame 2/mp4/술들 마시지 말고.mp4",
+      "korean": "술들 마시지 말고!",
+      "russian": "Не пить!"
+    },
+    {
+      "video": "video/squidgame 2/알면 닥치고.webm",
+      "videoMp4": "video/squidgame 2/mp4/알면 닥치고.mp4",
+      "korean": "알면 닥치고",
+      "russian": "Так молчи, если знаешь"
+    },
+    {
+      "video": "video/squidgame 2/딱지가 들어 있습니다.webm",
+      "videoMp4": "video/squidgame 2/mp4/딱지가 들어 있습니다.mp4",
+      "korean": "딱지가 들어 있습니다",
+      "russian": "У него есть фишки для Такчи(игра)"
+    },
+    {
+      "video": "video/squidgame 2/이런 명함을.webm",
+      "videoMp4": "video/squidgame 2/mp4/이런 명함을.mp4",
+      "korean": "이런 명함을",
+      "russian": "Вот такую визитку"
+    },
+    {
+      "video": "video/squidgame 2/성 사장 찾았어 그놈이야.webm",
+      "videoMp4": "video/squidgame 2/mp4/성 사장 찾았어 그놈이야.mp4",
+      "korean": "성 사장 찾았어 그놈이야",
+      "russian": "Сон Мы нашли этого мужика"
+    },
+    {
+      "video": "video/squidgame 2/확실합니까.webm",
+      "videoMp4": "video/squidgame 2/mp4/확실합니까.mp4",
+      "korean": "확실합니까?",
+      "russian": "Вы уверены?"
+    },
+    {
+      "video": "video/squidgame 2/명함 주고 있어.webm",
+      "videoMp4": "video/squidgame 2/mp4/명함 주고 있어.mp4",
+      "korean": "명함 주고 있어",
+      "russian": "Он даёт визитку"
+    },
+    {
+      "video": "video/squidgame 2/이동한다.webm",
+      "videoMp4": "video/squidgame 2/mp4/이동한다.mp4",
+      "korean": "이동한다",
+      "russian": "Он уходит"
+    },
+    {
+      "video": "video/squidgame 2/위치 알려 주세요.webm",
+      "videoMp4": "video/squidgame 2/mp4/위치 알려 주세요.mp4",
+      "korean": "위치 알려 주세요",
+      "russian": "Говорите где он"
+    },
+    {
+      "video": "video/squidgame 2/선물은 하나.webm",
+      "videoMp4": "video/squidgame 2/mp4/선물은 하나.mp4",
+      "korean": "선물은 하나",
+      "russian": "Один подарок"
+    },
+    {
+      "video": "video/squidgame 2/이 빵을 버린 건 제가 아니라.webm",
+      "videoMp4": "video/squidgame 2/mp4/이 빵을 버린 건 제가 아니라.mp4",
+      "korean": "이 빵을 버린 건 제가 아니라",
+      "russian": "Не я выбросил этот хлеб"
+    },
+    {
+      "video": "video/squidgame 2/뭐 이렇게 금방 끝났어.webm",
+      "videoMp4": "video/squidgame 2/mp4/뭐 이렇게 금방 끝났어.mp4",
+      "korean": "뭐 이렇게 금방 끝났어",
+      "russian": "Чего так быстро закончили?"
+    },
+    {
+      "video": "video/squidgame 2/너 나 못믿어.webm",
+      "videoMp4": "video/squidgame 2/mp4/너 나 못믿어.mp4",
+      "korean": "너 나 못믿어?",
+      "russian": "Не веришь мне?"
+    },
+    {
+      "video": "video/squidgame 2/저랑 게임 한번 하시죠.webm",
+      "videoMp4": "video/squidgame 2/mp4/저랑 게임 한번 하시죠.mp4",
+      "korean": "저랑 게임 한번 하시죠?",
+      "russian": "Сыграете со мной в игру?",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/생각이 많아지셨나요.webm",
+      "videoMp4": "video/squidgame 2/mp4/생각이 많아지셨나요.mp4",
+      "korean": "생각이 많아지셨나요?",
+      "russian": "О чем-то задумались?",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/총은 내 손에 있어.webm",
+      "videoMp4": "video/squidgame 2/mp4/총은 내 손에 있어.mp4",
+      "korean": "총은 내 손에 있어",
+      "russian": "Пистолет у меня в руках",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/맞죠.webm",
+      "videoMp4": "video/squidgame 2/mp4/맞죠.mp4",
+      "korean": "맞죠?",
+      "russian": "Верно?",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/제 주머니에 있습니다.webm",
+      "videoMp4": "video/squidgame 2/mp4/제 주머니에 있습니다.mp4",
+      "korean": "제 주머니에 있습니다",
+      "russian": "У меня в кармане",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/너도 다른 놈들이랑 똑같은 쓰레기야.webm",
+      "videoMp4": "video/squidgame 2/mp4/너도 다른 놈들이랑 똑같은 쓰레기야.mp4",
+      "korean": "너도 다른 놈들이랑 똑같은 쓰레기야",
+      "russian": "Ты такой же кусок дерьма, как и другие",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/생각이 많아졌나.webm",
+      "videoMp4": "video/squidgame 2/mp4/생각이 많아졌나.mp4",
+      "korean": "생각이 많아졌나",
+      "russian": "О чем-то задумался?",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/날 죽일 수 있어.webm",
+      "videoMp4": "video/squidgame 2/mp4/날 죽일 수 있어.mp4",
+      "korean": "날 죽일 수 있어",
+      "russian": "Ты можешь меня убить",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/이거 하나만 인정해.webm",
+      "videoMp4": "video/squidgame 2/mp4/이거 하나만 인정해.mp4",
+      "korean": "이거 하나만 인정해",
+      "russian": "Признайся только в одном",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/개새끼라는 건.webm",
+      "videoMp4": "video/squidgame 2/mp4/개새끼라는 건.mp4",
+      "korean": "개새끼라는 건",
+      "russian": "Ты маленький песик",
+      "new": true
+    }
+  ],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}
