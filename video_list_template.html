@@ -604,7 +604,7 @@
         function updateProgressBoxes() {
             const bar = document.getElementById("progress-bar");
             const currentBoxes = bar.children.length;
-            const totalBoxes = Math.min(3 + Math.floor(Game.stars / 20), 20);
+            const totalBoxes = Math.min(3 + Math.floor(Game.stars / 20), 16);
 
             if (currentBoxes === totalBoxes) return; // ничего не менять
 

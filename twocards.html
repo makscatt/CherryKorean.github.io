@@ -227,13 +227,64 @@
             box-shadow: 0 1px 4px #b7b7b7;
             transform: translateY(4px);
         }
+
+        #statusContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            /* Высота как у старого gameStatus */
+            margin-bottom: 15px;
+        }
+
+        #progressIndicator {
+            display: flex;
+            gap: 10px;
+            /* Расстояние между кружочками */
+            margin-bottom: 8px;
+        }
+
+        .level-circle {
+            width: 25px;
+            height: 25px;
+            border: 2px solid white;
+            border-radius: 50%;
+            /* Делает элемент круглым */
+            transition: all 0.4s ease;
+            background-color: rgba(255, 255, 255, 0.2);
+            /* Полупрозрачный фон для пустого кружка */
+        }
+
+        .level-circle.completed {
+            background-image: url('win.png');
+            /* Ваше лого */
+            background-size: cover;
+            background-position: center;
+            border-color: #FFD700;
+            /* Золотая рамка для завершенного */
+        }
+
+        #gameStatusText {
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
     <div id="gameContainer">
         <div id="game-content-wrapper">
-            <div id="gameStatus">Загрузка...</div>
+            <div id="statusContainer">
+                <div id="progressIndicator">
+                    <div class="level-circle"></div>
+                    <div class="level-circle"></div>
+                    <div class="level-circle"></div>
+                    <div class="level-circle"></div>
+                </div>
+                <div id="gameStatusText">Загрузка...</div>
+            </div>
             <div id="gameBoard"></div>
             <button id="restartButton" disabled>Играть</button>
         </div>
@@ -255,7 +306,7 @@
 
     <script>
         const gameBoard = document.getElementById('gameBoard');
-        const gameStatus = document.getElementById('gameStatus');
+        const gameStatusText = document.getElementById('gameStatusText');
         const restartButton = document.getElementById('restartButton');
         const Game = { stars: 0 };
         let COST_TO_PLAY = 5;
@@ -342,7 +393,7 @@
 
             // Затем проверяем, хватает ли звезд, и обновляем UI
             if (Game.stars < COST_TO_PLAY) {
-                gameStatus.textContent = `Нужно ${COST_TO_PLAY} звезд для игры!`;
+                gameStatusText.textContent = `Нужно ${COST_TO_PLAY} звезд для игры!`;
                 gameBoard.style.opacity = '0.5';
                 restartButton.disabled = true;
                 restartButton.textContent = "Недостаточно звезд";
@@ -350,7 +401,7 @@
             }
 
             // Если звезд хватает, настраиваем кнопку и статус
-            gameStatus.textContent = `Игра стоит ${COST_TO_PLAY} звезд`;
+            gameStatusText.textContent = `Игра стоит ${COST_TO_PLAY} звезд`;
             restartButton.disabled = false;
             restartButton.textContent = `Играть (-${COST_TO_PLAY}⭐)`;
 
@@ -366,11 +417,11 @@
 
                 loadedSymbols = blockData.map(item => item.card);
                 if (loadedSymbols.length < 12) {
-                    gameStatus.textContent = 'В этой теме пока недостаточно карт!';
+                    gameStatusText.textContent = 'В этой теме пока недостаточно карт!';
                     restartButton.disabled = true;
                 }
             } catch (error) {
-                gameStatus.textContent = error.message || 'Ошибка загрузки карт!';
+                gameStatusText.textContent = error.message || 'Ошибка загрузки карт!';
                 console.error(error);
                 restartButton.disabled = true;
             }
@@ -378,14 +429,17 @@
 
         // --- ИЗМЕНЕНА ---
         function handlePlayAgain() {
+            const circles = document.querySelectorAll('.level-circle');
+            circles.forEach(circle => circle.classList.remove('completed'));
             if (Game.stars < COST_TO_PLAY) {
-                gameStatus.textContent = `Нужно ${COST_TO_PLAY} звезд!`;
+                gameStatusText.textContent = `Нужно ${COST_TO_PLAY} звезд!`;
                 restartButton.disabled = true;
                 return;
             }
             Game.stars -= COST_TO_PLAY;
             updateStarsUI();
             saveStars();
+            restartButton.style.display = 'none';
 
             // Сброс счетчиков игры
             movesMade = 0;
@@ -411,7 +465,7 @@
 
             matchedPairs = 0;
             // Обновляем статус с учетом ходов
-            gameStatus.textContent = `Уровень ${currentLevel + 1} | Ходов: ${totalAllowedMoves - movesMade}`;
+            gameStatusText.textContent = `Уровень ${currentLevel + 1} | Ходов: ${totalAllowedMoves - movesMade}`;
             gameBoard.innerHTML = '';
 
             shuffle(loadedSymbols);
@@ -452,7 +506,7 @@
         function checkForMatch() {
             movesMade++; // Считаем ход
             const isMatch = flippedCards[0].dataset.symbol === flippedCards[1].dataset.symbol;
-            gameStatus.textContent = `Уровень ${currentLevel + 1} | Ходов: ${totalAllowedMoves - movesMade}`;
+            gameStatusText.textContent = `Уровень ${currentLevel + 1} | Ходов: ${totalAllowedMoves - movesMade}`;
             isMatch ? disableCards() : unflipCards();
         }
 
@@ -461,9 +515,10 @@
             if (gameIsOver) return;
             gameIsOver = true;
             lockBoard = true;
-            gameStatus.textContent = `Ходы закончились! Попробуй снова.`;
+            gameStatusText.textContent = `Ходы закончились! Попробуй снова.`;
             gameBoard.style.display = 'none'; // Прячем доску
             restartButton.disabled = false;
+            restartButton.style.display = 'block';
             restartButton.textContent = `Начать заново (-${COST_TO_PLAY}⭐)`;
         }
 
@@ -477,15 +532,17 @@
                 resetBoard();
 
                 if (matchedPairs === config.pairs) {
+                    document.querySelectorAll('.level-circle')[currentLevel].classList.add('completed');
                     currentLevel++;
                     if (currentLevel < levelConfig.length) {
-                        gameStatus.textContent = `Отлично! Готовься к уровню ${currentLevel + 1}`;
+                        gameStatusText.textContent = `Отлично! Готовься к уровню ${currentLevel + 1}`;
                         setTimeout(startLevel, 1500);
                     } else {
                         gameIsOver = true;
-                        gameStatus.textContent = 'Победа! 🎉';
+                        gameStatusText.textContent = 'Победа! 🎉';
                         gameBoard.style.display = 'none';
                         restartButton.disabled = false;
+                        restartButton.style.display = 'block';
                         restartButton.textContent = `Играть еще (-${COST_TO_PLAY}⭐)`;
                     }
                 } else if (movesMade >= totalAllowedMoves) { // Проверяем на проигрыш после успешного хода
