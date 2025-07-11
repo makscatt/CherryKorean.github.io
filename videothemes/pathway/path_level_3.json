@@ -87,14 +87,14 @@
             "russian": "Вали"
         },
         {
-            "video": "video/weakhero2/앉아.webm",
-            "videoMp4": "video/weakhero2/mp4/앉아.mp4",
+            "video": "video/weakhero/앉아.webm",
+            "videoMp4": "video/weakhero/mp4/앉아.mp4",
             "korean": "앉아",
             "russian": "Садись"
         },
         {
-            "video": "video/weakhero2/비켜.webm",
-            "videoMp4": "video/weakhero2/mp4/비켜.mp4",
+            "video": "video/weakhero/비켜.webm",
+            "videoMp4": "video/weakhero/mp4/비켜.mp4",
             "korean": "비켜",
             "russian": "Отойди"
         },
@@ -235,7 +235,7 @@
             "russian": "Не парься"
         },
         {
-            "video": "video/runbts/알겠어요.webm",
+            "video": "video/runbts/저 알겠어요.webm",
             "videoMp4": "video/runbts/mp4/저 알겠어요.mp4",
             "korean": "저 알겠어요",
             "russian": "Я понял"
@@ -291,8 +291,8 @@
             "russian": "Бизнес"
         },
         {
-            "video": "video/weakhero2/비켜라고.webm",
-            "videoMp4": "video/weakhero2/mp4/비켜라고.mp4",
+            "video": "video/weakhero/비켜라고.webm",
+            "videoMp4": "video/weakhero/mp4/비켜라고.mp4",
             "korean": "비켜라고",
             "russian": "Отойди, сказал"
         },
