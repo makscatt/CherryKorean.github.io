@@ -236,7 +236,6 @@
       border-radius: 4px;
       z-index: 2;
     }
-    
   </style>
 </head>
 
@@ -295,30 +294,6 @@
     }
 
     // 2. Рендер кнопок для обычной ТЕМЫ (дорамы)
-    function renderThemeMenu(themeConfig) {
-      const container = document.getElementById("buttons-container");
-      container.innerHTML = "";
-
-      themeConfig.blocks.forEach(block => {
-        const btn = document.createElement("button");
-        btn.className = "submenubutton";
-        btn.dataset.blockKey = block.key;
-
-        const textSpan = document.createElement("span");
-        textSpan.textContent = block.name;
-
-        const countContainer = document.createElement("div");
-        countContainer.className = "theme-count-container";
-        countContainer.innerHTML = `<img src="videothemes/icons/tape.png" class="theme-tape-icon" alt="Tape"> x <span class="theme-count">0</span>`;
-
-        btn.appendChild(textSpan);
-        btn.appendChild(countContainer);
-
-        btn.addEventListener("click", () => goToContentPage(block.key, themeConfig.masterJsonPath));
-
-        container.appendChild(btn);
-      });
-    }
 
     // 3. Рендер кнопок для ГЛАВЫ "Тропинки"
     async function renderPathwayMenu(chapterConfig) {
@@ -368,29 +343,67 @@
       });
     }
 
-    // 4. Обновление счетчиков (для ОБЫЧНЫХ тем)
-    async function updateThemeButtonCounts(masterJsonPath) {
-      // Эта функция осталась почти без изменений, просто для ясности
-      const buttons = document.querySelectorAll('#buttons-container .submenubutton');
-      try {
-        const response = await fetch(`${masterJsonPath}?v=${new Date().getTime()}`);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const jsonData = await response.json();
+    async function renderSortedThemeMenu(themeConfig) {
+      const container = document.getElementById("buttons-container");
+      container.innerHTML = ""; // Очищаем
 
-        buttons.forEach(btn => {
-          const countSpan = btn.querySelector('.theme-count');
-          const blockKey = btn.dataset.blockKey;
-          if (!blockKey || !countSpan) return;
+      // 1. Загружаем JSON с фразами, чтобы узнать, какие блоки новые
+      const response = await fetch(`${themeConfig.masterJsonPath}?v=${new Date().getTime()}`);
+      const masterJsonData = await response.json();
 
-          const blockData = jsonData[blockKey] || [];
-          countSpan.textContent = blockData.length;
-        });
-      } catch (error) {
-        console.error(`Ошибка загрузки ${masterJsonPath}:`, error);
-      }
+      // 2. "Обогащаем" информацию о блоках: добавляем флаг isNew и кол-во видео
+      const enrichedBlocks = themeConfig.blocks.map(block => {
+        const blockData = masterJsonData[block.key] || [];
+        return {
+          key: block.key,
+          name: block.name,
+          isNew: blockData.some(item => item.isNew === true), // Проверяем новизну
+          videoCount: blockData.length
+        };
+      });
+
+      // 3. Сортируем по вашим правилам
+      enrichedBlocks.sort((a, b) => {
+        if (a.isNew !== b.isNew) {
+          return a.isNew ? -1 : 1; // Новинки всегда выше
+        }
+        const numA = parseInt(a.key.replace('b', ''));
+        const numB = parseInt(b.key.replace('b', ''));
+        // Если оба - новинки, то b3 > b2 (по убыванию)
+        if (a.isNew) {
+          return numB - numA;
+        }
+        // Если оба - старые, то b4 < b5 (по возрастанию)
+        return numA - numB;
+      });
+
+      // 4. Рендерим кнопки в уже правильном порядке
+      enrichedBlocks.forEach(block => {
+        const btn = document.createElement("button");
+        btn.className = "submenubutton";
+        btn.dataset.blockKey = block.key;
+
+        if (block.isNew) {
+          const badge = document.createElement("span");
+          badge.className = "theme-badge";
+          badge.textContent = "Новинка";
+          btn.appendChild(badge);
+        }
+
+        const textSpan = document.createElement("span");
+        textSpan.textContent = block.name;
+
+        const countContainer = document.createElement("div");
+        countContainer.className = "theme-count-container";
+        countContainer.innerHTML = `<img src="videothemes/icons/tape.png" class="theme-tape-icon" alt="Tape"> x <span class="theme-count">${block.videoCount}</span>`;
+
+        btn.appendChild(textSpan);
+        btn.appendChild(countContainer);
+
+        btn.addEventListener("click", () => goToContentPage(block.key, themeConfig.masterJsonPath));
+        container.appendChild(btn);
+      });
     }
-
-    // 5. Главная функция инициализации страницы
     async function initializePage() {
       const themeId = localStorage.getItem('selectedThemeId');
       if (!themeId) {
@@ -421,8 +434,7 @@
           await renderPathwayMenu(themeConfig);
           // Для "Тропинки" счетчики уже встроены в рендер, доп. вызов не нужен
         } else {
-          renderThemeMenu(themeConfig);
-          await updateThemeButtonCounts(themeConfig.masterJsonPath);
+          await renderSortedThemeMenu(themeConfig);
         }
 
       } catch (error) {

@@ -458,7 +458,7 @@
       padding: 10px 25px;
       font-size: clamp(18px, 2.5vw, 20px);
       color: #000000;
-      background-color:#fff350;
+      background-color: #fff350;
       border: none;
       border-radius: 10px;
       cursor: pointer;
@@ -901,6 +901,12 @@
             }
 
             toggle.addEventListener('click', () => {
+              toggles.forEach(otherToggle => {
+                if (otherToggle !== toggle) {
+                  otherToggle.classList.add('collapsed');
+                  otherToggle.nextElementSibling.classList.add('collapsed');
+                }
+              });
               toggle.classList.toggle('collapsed');
               content.classList.toggle('collapsed');
             });
