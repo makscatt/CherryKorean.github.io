@@ -273,7 +273,7 @@
       // Показать загрузку
       document.getElementById("loader").style.display = "flex";
 
-      const telegramId = Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId") || 910912532;
+      const telegramId = Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");
       if (!telegramId) return;
 
       try {
