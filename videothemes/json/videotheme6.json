@@ -1,4 +1,50 @@
 {
+  "b0": [
+    {
+      "video": "video/hwarang/그쪽도 모가지를 내놔.webm",
+      "videoMp4": "video/hwarang/mp4/그쪽도 모가지를 내놔.mp4",
+      "korean": "그쪽도 모가지를 내놔",
+      "russian": "Ты отдашь мне свою шею"
+    },
+    {
+      "video": "video/hwarang/너 바보냐.webm",
+      "videoMp4": "video/hwarang/mp4/너 바보냐.mp4",
+      "korean": "너 바보냐?",
+      "russian": "Ты дурак?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/말을 하지 말아.webm",
+      "videoMp4": "video/hwarang/mp4/말을 하지 말아.mp4",
+      "korean": "말을 하지 말아",
+      "russian": "Ни слова более"
+    },
+    {
+      "video": "video/hwarang/싫은데.webm",
+      "videoMp4": "video/hwarang/mp4/싫은데.mp4",
+      "korean": "싫은데",
+      "russian": "Так не пойдет"
+    },
+    {
+      "video": "video/hwarang/나 너 사랑 아냐.webm",
+      "videoMp4": "video/hwarang/mp4/나 너 사랑 아냐.mp4",
+      "korean": "나 너 사랑 아냐?",
+      "russian": "Я разве не твоя любовь?"
+    },
+    {
+      "video": "video/hwarang/사람이 그렇게 쉽게 안 죽지.webm",
+      "videoMp4": "video/hwarang/mp4/사람이 그렇게 쉽게 안 죽지.mp4",
+      "korean": "사람이 그렇게 쉽게 안 죽지",
+      "russian": "Люди так просто не умирают"
+    },
+    {
+      "video": "video/hwarang/빨리 말 안 하냐.webm",
+      "videoMp4": "video/hwarang/mp4/빨리 말 안 하냐.mp4",
+      "korean": "빨리 말 안 하냐?",
+      "russian": "Не расскажешь?",
+      "new": true
+    }
+  ],
   "b1": [
     {
       "video": "video/hwarang/마음에 안 들 수 밖이에요.webm",

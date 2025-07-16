@@ -1,4 +1,53 @@
 {
+  "b0": [
+    {
+      "video": "video/weakhero/개새끼야.webm",
+      "videoMp4": "video/weakhero/mp4/개새끼야.mp4",
+      "korean": "개새끼야!",
+      "russian": "Сукин Сын!"
+    },
+    {
+      "video": "video/weakhero2/니들 다 죽일 거야.webm",
+      "videoMp4": "video/weakhero2/mp4/니들 다 죽일 거야.mp4",
+      "korean": "니들 다 죽일 거야",
+      "russian": "Я вас всех убью",
+      "new": true
+    },
+    {
+      "video": "video/weakhero2/눈깔 다 뽑기 전에.webm",
+      "videoMp4": "video/weakhero2/mp4/눈깔 다 뽑기 전에.mp4",
+      "korean": "눈깔 다 뽑기 전에",
+      "russian": "Пока я тебе глазища не вырвал",
+      "new": true
+    },
+    {
+      "video": "video/weakhero2/처맞기 싫으면 말 걸지 마라.webm",
+      "videoMp4": "video/weakhero2/mp4/처맞기 싫으면 말 걸지 마라.mp4",
+      "korean": "처맞기 싫으면 말 걸지 마라",
+      "russian": "Молчи, если не хочешь по морде получить",
+      "new": true
+    },
+    {
+      "video": "video/weakhero/사람들이 너 존나 재수 없어 하는 거.webm",
+      "videoMp4": "video/weakhero/mp4/사람들이 너 존나 재수 없어 하는 거.mp4",
+      "korean": "사람들이 너 존나 재수 없어 하는 거",
+      "russian": "Тебя тут пи*дец как все ненавидят"
+    },
+    {
+      "video": "video/weakhero2/꺼져.webm",
+      "videoMp4": "video/weakhero2/mp4/꺼져.mp4",
+      "korean": "꺼져",
+      "russian": "Проваливай",
+      "new": true
+    },
+    {
+      "video": "video/weakhero/선은 넘지 마시고.webm",
+      "videoMp4": "video/weakhero/mp4/선은 넘지 마시고.mp4",
+      "korean": "선은 넘지 마시고",
+      "russian": "Не переходи черту",
+      "new": true
+    }
+  ],
   "b1": [
     {
       "video": "video/weakhero/잘했어 시윤.webm",

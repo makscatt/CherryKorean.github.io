@@ -1,4 +1,47 @@
-{
+{"b0": [
+    {
+      "video": "video/killershop/네가 모든 걸 완벽히 다 볼 수 있다고 생각해.webm",
+      "videoMp4": "video/killershop/mp4/네가 모든 걸 완벽히 다 볼 수 있다고 생각해.mp4",
+      "korean": "네가 모든 걸 완벽히 다 볼 수 있다고 생각해?",
+      "russian": "Думаешь, ты видишь абсолютно все?"
+    },
+    {
+      "video": "video/killershop/주인공 죽으면 영화 끝나니까 그렇지.webm",
+      "videoMp4": "video/killershop/mp4/주인공 죽으면 영화 끝나니까 그렇지.mp4",
+      "korean": "주인공 죽으면 영화 끝나니까 그렇지",
+      "russian": "Если герой погибнет, то и кина не будет"
+    },
+    {
+      "video": "video/killershop/불구덩이에서도 살아 돌아올 수 있어.webm",
+      "videoMp4": "video/killershop/mp4/불구덩이에서도 살아 돌아올 수 있어.mp4",
+      "korean": "불구덩이에서도 살아 돌아올 수 있어",
+      "russian": "Даже из огненной ямы можно выбраться"
+    },
+    {
+      "video": "video/killershop/착각하면 안 돼.webm",
+      "videoMp4": "video/killershop/mp4/착각하면 안 돼.mp4",
+      "korean": "착각하면 안 돼",
+      "russian": "Не заблуждайся"
+    },
+    {
+      "video": "video/killershop/여기 총알이 왜 빗발 쳐.webm",
+      "videoMp4": "video/killershop/mp4/여기 총알이 왜 빗발 쳐.mp4",
+      "korean": "여기 총알이 왜 빗발 쳐?",
+      "russian": "С какой стати должен быть обстрел?"
+    },
+    {
+      "video": "video/killershop/네가 잠자리가 아닌 이상.webm",
+      "videoMp4": "video/killershop/mp4/네가 잠자리가 아닌 이상.mp4",
+      "korean": "네가 잠자리가 아닌 이상",
+      "russian": "Если только ты не стрекоза"
+    },
+    {
+      "video": "video/killershop/당연하지.webm",
+      "videoMp4": "video/killershop/mp4/당연하지.mp4",
+      "korean": "당연하지",
+      "russian": "Разумеется"
+    }
+  ],
   "b1": [
     {
       "video": "video/killershop/가족 사진은.webm",

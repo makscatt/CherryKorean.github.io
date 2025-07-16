@@ -1,4 +1,53 @@
 {
+  "b0": [
+    {
+      "video": "video/deathgame/나 죽은 건가.webm",
+      "videoMp4": "video/deathgame/mp4/나 죽은 건가.mp4",
+      "korean": "나 죽은 건가?",
+      "russian": "Я что, умер?",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/넌 죽었어.webm",
+      "videoMp4": "video/deathgame/mp4/넌 죽었어.mp4",
+      "korean": "넌 죽었어",
+      "russian": "Ты умер",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/너 언제까지 이렇게 살 거야.webm",
+      "videoMp4": "video/deathgame/mp4/너 언제까지 이렇게 살 거야.mp4",
+      "korean": "너 언제까지 이렇게 살 거야?",
+      "russian": "Сколько ты еще так будешь жить?"
+    },
+    {
+      "video": "video/deathgame/이제 그만하자.webm",
+      "videoMp4": "video/deathgame/mp4/이제 그만하자.mp4",
+      "korean": "이제 그만하자",
+      "russian": "Давай на этом закончим",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/그 새끼 때문에.webm",
+      "videoMp4": "video/deathgame/mp4/그 새끼 때문에.mp4",
+      "korean": "그 새끼 때문에",
+      "russian": "Из-за этого ублюдка",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/저승은 비행기를 타고 가는 건가.webm",
+      "videoMp4": "video/deathgame/mp4/저승은 비행기를 타고 가는 건가.mp4",
+      "korean": "저승은 비행기를 타고 가는 건가?",
+      "russian": "А в загробный мир на самолёте летают?",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/그런 법이 어딨어요.webm",
+      "videoMp4": "video/deathgame/mp4/그런 법이 어딨어요.mp4",
+      "korean": "그런 법이 어딨어요?",
+      "russian": "Разве есть такой закон?"
+    }
+  ],
   "b1": [
     {
       "video": "video/deathgame/감사합니다.webm",

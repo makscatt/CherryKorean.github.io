@@ -1,4 +1,55 @@
 {
+  "b0": [
+    {
+      "video": "video/theglory/고데기 열 체크 좀 해줄래.webm",
+      "videoMp4": "video/theglory/mp4/고데기 열 체크 좀 해줄래.mp4",
+      "korean": "고데기 열 체크 좀 해줄래?",
+      "russian": "Проверишь температуру утюжка?",
+      "new": true
+    },
+    {
+      "video": "video/theglory/널 죽일 이유가 하나 더 늘었잖아.webm",
+      "videoMp4": "video/theglory/mp4/널 죽일 이유가 하나 더 늘었잖아.mp4",
+      "korean": "널 죽일 이유가 하나 더 늘었잖아",
+      "russian": "У меня появился еще один повод тебя убить",
+      "new": true
+    },
+    {
+      "video": "video/theglory/아무도 안 와.webm",
+      "videoMp4": "video/theglory/mp4/아무도 안 와.mp4",
+      "korean": "아무도 안 와",
+      "russian": "Никто не придет",
+      "new": true
+    },
+    {
+      "video": "video/theglory/누가 이랬어.webm",
+      "videoMp4": "video/theglory/mp4/누가 이랬어.mp4",
+      "korean": "누가 이랬어?",
+      "russian": "Кто это сделал?",
+      "new": true
+    },
+    {
+      "video": "video/theglory/단 하루도 잊어본 적이 없어.webm",
+      "videoMp4": "video/theglory/mp4/단 하루도 잊어본 적이 없어.mp4",
+      "korean": "단 하루도 잊어본 적이 없어",
+      "russian": "Не забывала ни на день",
+      "new": true
+    },
+    {
+      "video": "video/theglory/들어와.webm",
+      "videoMp4": "video/theglory/mp4/들어와.mp4",
+      "korean": "들어와",
+      "russian": "Заходи",
+      "new": true
+    },
+    {
+      "video": "video/theglory/약자.webm",
+      "videoMp4": "video/theglory/mp4/약자.mp4",
+      "korean": "약자",
+      "russian": "Слабачка",
+      "new": true
+    }
+  ],
   "b1": [
     {
       "video": "video/theglory/안녕하셨어요.webm",

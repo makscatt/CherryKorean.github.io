@@ -64,15 +64,29 @@
       max-width: 100%;
       gap: 5px;
       margin-top: auto;
-
       height: 10%;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      background-color: #1C1C1E;
-      border: 1px solid rgba(255, 215, 0, 0.5);
       border-radius: 10px 10px 0 0;
+
+      /* --- ГЛЯНЦЕВЫЙ ЭФФЕКТ ДЛЯ ТЕМНОЙ ПАНЕЛИ --- */
+
+      /* 1. Темный градиент для имитации объема */
+      background: linear-gradient(to bottom, #2f2f31, #1C1C1E);
+
+      /* 2. Только верхняя граница для отделения от контента */
+      border: none;
+      /* Сначала сбрасываем старую рамку */
+      border-top: 1px solid rgba(255, 215, 0, 0.4);
+
+      /* 3. Тень: внутренний блик + тень ВВЕРХ для отделения от контента */
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.1),
+        /* Внутренний блик сверху */
+        0 -2px 5px rgba(0, 0, 0, 0.5);
+      /* Внешняя тень, отбрасываемая вверх на контент */
     }
 
     #stars {
@@ -92,22 +106,32 @@
 
     button {
       margin: 5px;
-      padding: 5px 10px;
-      font-size: 18px;
+      padding: 10px 10px;
+      font-size: clamp(20px, 3vw, 30px);
       cursor: pointer;
-      background-color: #ffffff;
-      color: rgb(51, 51, 51);
       border-radius: 5px;
       transition: all 0.1s ease-in-out;
-      border: none;
-      outline: 1px solid rgba(0, 0, 0, 0.1);
-      outline-offset: -1px;
-      box-shadow: 0 4px 0 #bbb;
+
+      /* --- ГЛЯНЦЕВЫЙ ЭФФЕКТ --- */
+      background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
+      border: 1px solid #b8b8b8;
+      /* Рамка для объема */
+      color: #333;
+      /* Чуть темнее текст для контраста */
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+      /* Тень для текста */
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.6),
+        /* Внутренний блик */
+        0 2px 3px rgba(0, 0, 0, 0.1);
+      /* Внешняя тень */
     }
 
     button:active {
-      box-shadow: 0 1px 8px #b7b7b7;
-      transform: translateY(4px);
+      /* Эффект вдавленной кнопки */
+      background: linear-gradient(to bottom, #e9e9e9, #f1f1f1);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+      transform: translateY(1px);
     }
 
 
@@ -236,8 +260,6 @@
       border-radius: 4px;
       z-index: 2;
     }
-
-   
   </style>
 </head>
 
@@ -259,7 +281,7 @@
 
     <img id="bg-image" src="videothemes/subthemebc/game.png" alt="фон" />
     <div id="buttons-container"></div>
-    
+
     <div id="menu-button-container">
       <div id="stars">⭐ 0</div>
       <!--<div id="starsInstruction">За правильные ответы получай ⭐<br>Октрыть блок BTS - 10⭐</div>-->

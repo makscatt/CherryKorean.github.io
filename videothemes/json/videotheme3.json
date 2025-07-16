@@ -1,4 +1,48 @@
 {
+  "b0": [
+    {
+      "video": "video/healer/말이 많아.webm",
+      "videoMp4": "video/healer/mp4/말이 많아.mp4",
+      "korean": "말이 많아!",
+      "russian": "Базаришь много!"
+    },
+    {
+      "video": "video/healer/새끼 같은 놈.webm",
+      "videoMp4": "video/healer/mp4/새끼 같은 놈.mp4",
+      "korean": "새끼 같은 놈!",
+      "russian": "Тварь!"
+    },
+    {
+      "video": "video/healer/내가 하지 말랬지.webm",
+      "videoMp4": "video/healer/mp4/내가 하지 말랬지.mp4",
+      "korean": "내가 하지 말랬지",
+      "russian": "Я же говорил не делать так"
+    },
+    {
+      "video": "video/healer/무슨 소리야.webm",
+      "videoMp4": "video/healer/mp4/무슨 소리야.mp4",
+      "korean": "무슨 소리야?",
+      "russian": "Что за чушь?"
+    },
+    {
+      "video": "video/healer/따라 와.webm",
+      "videoMp4": "video/healer/mp4/따라 와.mp4",
+      "korean": "따라 와",
+      "russian": "За мной"
+    },
+    {
+      "video": "video/healer/지금부터 날 믿으세요.webm",
+      "videoMp4": "video/healer/mp4/지금부터 날 믿으세요.mp4",
+      "korean": "지금부터 날 믿으세요",
+      "russian": "С этого момента, верьте мне"
+    },
+    {
+      "video": "video/healer/나에겐 꿈이 있다.webm",
+      "videoMp4": "video/healer/mp4/나에겐 꿈이 있다.mp4",
+      "korean": "나에겐 꿈이 있다",
+      "russian": "У меня есть мечта"
+    }
+  ],
   "b1": [
     {
       "video": "video/healer/내가 하지 말랬지.webm",

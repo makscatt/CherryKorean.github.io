@@ -130,15 +130,35 @@
             padding: 10px 20px;
             font-size: 1em;
             cursor: pointer;
-            border: none;
             border-radius: 5px;
-            background-color: #4CAF50;
-            /* Зеленый цвет */
             color: white;
+            transition: all 0.1s ease;
+
+            /* Глянцевый зеленый эффект */
+            background: linear-gradient(to bottom, #66bb6a, #4CAF50);
+            border: 1px solid #388E3C;
+            text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+            box-shadow:
+                inset 0 1px 1px rgba(255, 255, 255, 0.2),
+                0 2px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        #restartButton:active {
+            /* Эффект вдавливания */
+            background: linear-gradient(to bottom, #4CAF50, #5cb85c);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+            transform: translateY(1px);
         }
 
         #restartButton:disabled {
-            background-color: #9E9E9E;
+            /* Глянцевый, но "выключенный" вид */
+            background: linear-gradient(to bottom, #b0b0b0, #9E9E9E);
+            border: 1px solid #757575;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.1);
+            color: #d6d6d6;
+            /* Блеклый цвет текста */
+            text-shadow: none;
+            /* Убираем тень у текста */
             cursor: not-allowed;
         }
 
@@ -146,17 +166,31 @@
         #menu-button-container {
             position: relative;
             max-width: 100%;
-            gap: 10px;
+            gap: 5px;
             margin-top: auto;
-
             height: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            background-color: #1C1C1E;
-            border: 1px solid rgba(255, 215, 0, 0.5);
             border-radius: 10px 10px 0 0;
+
+            /* --- ГЛЯНЦЕВЫЙ ЭФФЕКТ ДЛЯ ТЕМНОЙ ПАНЕЛИ --- */
+
+            /* 1. Темный градиент для имитации объема */
+            background: linear-gradient(to bottom, #2f2f31, #1C1C1E);
+
+            /* 2. Только верхняя граница для отделения от контента */
+            border: none;
+            /* Сначала сбрасываем старую рамку */
+            border-top: 1px solid rgba(255, 215, 0, 0.4);
+
+            /* 3. Тень: внутренний блик + тень ВВЕРХ для отделения от контента */
+            box-shadow:
+                inset 0 1px 1px rgba(255, 255, 255, 0.1),
+                /* Внутренний блик сверху */
+                0 -2px 5px rgba(0, 0, 0, 0.5);
+            /* Внешняя тень, отбрасываемая вверх на контент */
         }
 
         @media (hover: hover) and (pointer: fine) {

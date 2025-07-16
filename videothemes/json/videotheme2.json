@@ -1,4 +1,50 @@
 {
+  "b0": [
+    {
+      "video": "video/squid game/넌 뭐야 이 새끼야.webm",
+      "videoMp4": "video/squid game/mp4/넌 뭐야 이 새끼야.mp4",
+      "korean": "넌 뭐야 이 새끼야?",
+      "russian": "Ты кто С*ка такой?"
+    },
+    {
+      "video": "video/squidgame 2/널 찾아낼 거야.webm",
+      "videoMp4": "video/squidgame 2/mp4/널 찾아낼 거야.mp4",
+      "korean": "널 찾아낼 거야",
+      "russian": "Я найду тебя"
+    },
+    {
+      "video": "video/squidgame 2/총은 내 손에 있어.webm",
+      "videoMp4": "video/squidgame 2/mp4/총은 내 손에 있어.mp4",
+      "korean": "총은 내 손에 있어",
+      "russian": "Пистолет у меня в руках",
+      "new": true
+    },
+    {
+      "video": "video/squidgame 2/너도 다른 놈들이랑 똑같은 쓰레기야.webm",
+      "videoMp4": "video/squidgame 2/mp4/너도 다른 놈들이랑 똑같은 쓰레기야.mp4",
+      "korean": "너도 다른 놈들이랑 똑같은 쓰레기야.",
+      "russian": "Ты такой же кусок дерьма, как и другие",
+      "new": true
+    },
+    {
+      "video": "video/squid game/돈 없어요.webm",
+      "videoMp4": "video/squid game/mp4/돈 없어요.mp4",
+      "korean": "돈 없어요",
+      "russian": "Денег нету"
+    },
+    {
+      "video": "video/squidgame 2/병신.webm",
+      "videoMp4": "video/squidgame 2/mp4/병신.mp4",
+      "korean": "병신",
+      "russian": "Дурак"
+    },
+    {
+      "video": "video/squid game/한 판 더 해.webm",
+      "videoMp4": "video/squid game/mp4/한 판 더 해.mp4",
+      "korean": "한 판 더 해",
+      "russian": "Еще раунд"
+    }
+  ],
   "b1": [
     {
       "video": "video/squid game/저 뭐냐.webm",

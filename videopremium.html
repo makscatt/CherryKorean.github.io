@@ -103,20 +103,24 @@
     .pay-button {
       width: 100%;
       padding: 13px;
-      background-color: #FFD700;
-      /* Золотой фон */
-      color: #000000;
-      /* Черный текст */
-      border: none;
       border-radius: 8px;
       font-size: 18px;
       font-weight: 700;
       cursor: pointer;
-      transition: transform 0.2s;
+      color: #000000;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+      background: linear-gradient(to bottom, #ffe86e, #FFD700);
+      border: 1px solid #e6b400;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.6),
+        0 2px 3px rgba(0, 0, 0, 0.2);
+      transition: all 0.1s ease;
     }
 
     .pay-button:active {
-      transform: scale(0.98);
+      background: linear-gradient(to bottom, #ffd700, #ffe86e);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+      transform: translateY(1px);
     }
 
     .offer-button {
@@ -224,7 +228,7 @@
       <li><strong>Доступ к сообществу</strong> "Кимчи Клаб"</li>
       <li><strong>Участие в Лиге Золотого Кимчи</strong><br>Лидер отображается на главной странице</li>
     </ul>
-    
+
 
     <div class="price">
       Стоимость:<br>
@@ -236,8 +240,10 @@
     <div id="subscriptionModal">
       <div class="subscription-content">
         <button class="close-button" onclick="closeModal()">×</button>
-        <p>Отключить подписку можно будет в боте – "Кимчи Хангуго".<br />ㅡㅡㅡ<br />После оплаты вам придет приглашение в
-          закрытый чат и инструкция.</p>
+        <p style="text-align: left;">Отключить подписку можно будет в боте – "Кимчи Хангуго" по команде
+          /sub<br />ㅡㅡㅡ<br />"Кимчи Хангуго" это бот
+          с которого вы запускаете приложение.<br />ㅡㅡㅡ<br />После оплаты, в боте, вам также придет приглашение в
+          закрытый чат - "Кимчи Клаб".</p>
       </div>
     </div>
   </div>

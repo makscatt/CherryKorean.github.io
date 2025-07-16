@@ -1,4 +1,49 @@
 {
+  "b0": [
+    {
+      "video": "video/hvatai/방송국 꽉 불질러 버리고 싶으니까.webm",
+      "videoMp4": "video/hvatai/mp4/방송국 꽉 불질러 버리고 싶으니까.mp4",
+      "korean": "방송국 꽉 불질러 버리고 싶으니까",
+      "russian": "Хочется просто сжечь вашу телестудию"
+    },
+    {
+      "video": "video/hvatai/다신 이딴 전화하지 마세요.webm",
+      "videoMp4": "video/hvatai/mp4/다신 이딴 전화하지 마세요.mp4",
+      "korean": "다신 이딴 전화하지 마세요",
+      "russian": "Никогда больше не звони с такой хернёй"
+    },
+    {
+      "video": "video/hvatai/시끄러워 죽겠다 1.webm",
+      "videoMp4": "video/hvatai/mp4/시끄러워 죽겠다 1.mp4",
+      "korean": "시끄러워 죽겠다",
+      "russian": "Шумно досмерти"
+    },
+    {
+      "video": "video/hvatai/또 살아 봐요.webm",
+      "videoMp4": "video/hvatai/mp4/또 살아 봐요.mp4",
+      "korean": "또 살아 봐요",
+      "russian": "Живите дальше",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/우리 산책 나갈까.webm",
+      "videoMp4": "video/hvatai/mp4/우리 산책 나갈까.mp4",
+      "korean": "우리 산책 나갈까?",
+      "russian": "Может прогуляемся?"
+    },
+    {
+      "video": "video/hvatai/필요없다잖아요.webm",
+      "videoMp4": "video/hvatai/mp4/필요없다잖아요.mp4",
+      "korean": "필요없다잖아요",
+      "russian": "Я же сказала, не нужно!"
+    },
+    {
+      "video": "video/hvatai/저 아세요.webm",
+      "videoMp4": "video/hvatai/mp4/저 아세요.mp4",
+      "korean": "저 아세요?",
+      "russian": "Знаете меня?"
+    }
+  ],
   "b1": [
     {
       "video": "video/hvatai/예쁘게 매니큐어 발라 줘야 되겠다.webm",

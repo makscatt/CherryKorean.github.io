@@ -1,4 +1,48 @@
 {
+  "b0": [
+    {
+      "video": "video/biglig/벗을 때 조금 다른데 보여 드려요.webm",
+      "videoMp4": "video/biglig/mp4/벗을 때 조금 다른데 보여 드려요.mp4",
+      "korean": "벗을 때 조금 다른데 보여 드려요",
+      "russian": "Когда раздеваюсь, немного иначе, я покажу"
+    },
+    {
+      "video": "video/biglig/남자친구 눈칠 왜케 보세요.webm",
+      "videoMp4": "video/biglig/mp4/남자친구 눈칠 왜케 보세요.mp4",
+      "korean": "남자친구 눈칠 왜케 보세요?",
+      "russian": "А чего это вы на реакцию своих парней смотрите?"
+    },
+    {
+      "video": "video/biglig/왜케 잘생겼어 와.webm",
+      "videoMp4": "video/biglig/mp4/왜케 잘생겼어 와.mp4",
+      "korean": "왜케 잘생겼어?! 와",
+      "russian": "А че это он такой красавчик?!"
+    },
+    {
+      "video": "video/biglig/해봤을 수도 있잖아요.webm",
+      "videoMp4": "video/biglig/mp4/해봤을 수도 있잖아요.mp4",
+      "korean": "해봤을 수도 있잖아요",
+      "russian": "Да по-любому вы так делали"
+    },
+    {
+      "video": "video/biglig/여자분들 다 이랬을 거예요.webm",
+      "videoMp4": "video/biglig/mp4/여자분들 다 이랬을 거예요.mp4",
+      "korean": "여자분들 다 이랬을 거예요",
+      "russian": "Наверняка, все девушки так делали"
+    },
+    {
+      "video": "video/biglig/벗을 때는 어떻게 벗어.webm",
+      "videoMp4": "video/biglig/mp4/벗을 때는 어떻게 벗어.mp4",
+      "korean": "벗을 때는 어떻게 벗어?",
+      "russian": "А как раздеваешься?"
+    },
+    {
+      "video": "video/biglig/그래서 다 지워졌구나.webm",
+      "videoMp4": "video/biglig/mp4/그래서 다 지워졌구나.mp4",
+      "korean": "그래서 다 지워졌구나",
+      "russian": "Так вот почему у всех так стерся(макияж)"
+    }
+  ],
   "b1": [
     {
       "isNew": true,

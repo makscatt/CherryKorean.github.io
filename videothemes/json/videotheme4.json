@@ -1,4 +1,48 @@
 {
+  "b0": [
+    {
+      "video": "video/allkdrama/너 진짜 앞니 없이 살아볼래.webm",
+      "videoMp4": "video/allkdrama/mp4/너 진짜 앞니 없이 살아볼래.mp4",
+      "korean": "너 진짜 앞니 없이 살아볼래?",
+      "russian": "Хочешь без зубов остаться?"
+    },
+    {
+      "video": "video/allkdrama/라면 먹고 갈래.webm",
+      "videoMp4": "video/allkdrama/mp4/라면 먹고 갈래.mp4",
+      "korean": "라면 먹고 갈래",
+      "russian": "Как насчет рамена?"
+    },
+    {
+      "video": "video/allkdrama/니가 뭔데.webm",
+      "videoMp4": "video/allkdrama/mp4/니가 뭔데.mp4",
+      "korean": "니가 뭔데",
+      "russian": "Ты кто такая?"
+    },
+    {
+      "video": "video/parasites/정신차려 정신.webm",
+      "videoMp4": "video/parasites/mp4/정신차려 정신.mp4",
+      "korean": "정신차려 정신",
+      "russian": "Приди в себя!"
+    },
+    {
+      "video": "video/allkdrama/잘생긴 거 아는데 바빠서.webm",
+      "videoMp4": "video/allkdrama/mp4/잘생긴 거 아는데 바빠서.mp4",
+      "korean": "잘생긴 거 아는데 바빠서",
+      "russian": "Знаю что красивый, но я занят"
+    },
+    {
+      "video": "video/allkdrama/야 장난하냐.webm",
+      "videoMp4": "video/allkdrama/mp4/야 장난하냐.mp4",
+      "korean": "야 장난하냐",
+      "russian": "Издеваешься?"
+    },
+    {
+      "video": "video/allkdrama/가격 또라이네.webm",
+      "videoMp4": "video/allkdrama/mp4/가격 또라이네.mp4",
+      "korean": "가격 또라이네",
+      "russian": "Цена безумная просто"
+    }
+  ],
   "b1": [
     {
       "video": "video/allkdrama/잠시만요 들어갈게요.webm",
@@ -1103,8 +1147,7 @@
       "russian": "Присядьте рядом со мной"
     }
   ],
-
-  "b7":[
+  "b7": [
     {
       "video": "video/tngerines/너는 입만 살아 잘난 척해.webm",
       "videoMp4": "video/tngerines/mp4/너는 입만 살아 잘난 척해.mp4",

@@ -1,4 +1,48 @@
 {
+  "b0": [
+    {
+      "video": "video/lookism/커피 한 잔이 저렇게 비싸.webm",
+      "videoMp4": "video/lookism/mp4/커피 한 잔이 저렇게 비싸.mp4",
+      "korean": "커피 한 잔이 저렇게 비싸?!",
+      "russian": "Настолько дорогой кофе?!"
+    },
+    {
+      "video": "video/lookism/누구세요.webm",
+      "videoMp4": "video/lookism/mp4/누구세요.mp4",
+      "korean": "누구세요?",
+      "russian": "Кто вы?"
+    },
+    {
+      "video": "video/lookism/안 돼 깨우지 마.webm",
+      "videoMp4": "video/lookism/mp4/안 돼 깨우지 마.mp4",
+      "korean": "안 돼 깨우지 마",
+      "russian": "Нет, не будите"
+    },
+    {
+      "video": "video/lookism/어릴 땐 정말 똑똑하고 잘생겼었어.webm",
+      "videoMp4": "video/lookism/mp4/어릴 땐 정말 똑똑하고 잘생겼었어.mp4",
+      "korean": "어릴 땐 정말 똑똑하고 잘생겼었어",
+      "russian": "В детстве он был умным и красивым"
+    },
+    {
+      "video": "video/lookism/이렇게 좁은 방에 둘이서.webm",
+      "videoMp4": "video/lookism/mp4/이렇게 좁은 방에 둘이서.mp4",
+      "korean": "이렇게 좁은 방에 둘이서",
+      "russian": "В такой тесной комнате вдвоём"
+    },
+    {
+      "video": "video/lookism/아줌마랑 얘기 좀 할 수 있을까.webm",
+      "videoMp4": "video/lookism/mp4/아줌마랑 얘기 좀 할 수 있을까.mp4",
+      "korean": "아줌마랑 얘기 좀 할 수 있을까",
+      "russian": "Можешь немного поговорить с тетушкой?(со мной)"
+    },
+    {
+      "video": "video/lookism/글쎄 잘 모르겠네.webm",
+      "videoMp4": "video/lookism/mp4/글쎄 잘 모르겠네.mp4",
+      "korean": "글쎄 잘 모르겠네",
+      "russian": "Ну, даже не знаю"
+    }
+  ],
   "b1": [
     {
       "isNew": true,

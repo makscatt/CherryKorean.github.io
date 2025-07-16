@@ -1,4 +1,48 @@
 {
+  "b0": [
+    {
+      "video": "video/moon lovers/죽을래.webm",
+      "videoMp4": "video/moon lovers/mp4/죽을래.mp4",
+      "korean": "죽을래?",
+      "russian": "Умереть хочешь?"
+    },
+    {
+      "video": "video/moon lovers/닥쳐.webm",
+      "videoMp4": "video/moon lovers/mp4/닥쳐.mp4",
+      "korean": "닥쳐",
+      "russian": "Замолчите"
+    },
+    {
+      "video": "video/moon lovers/사과해 얼른.webm",
+      "videoMp4": "video/moon lovers/mp4/사과해 얼른.mp4",
+      "korean": "사과해 얼른!",
+      "russian": "Извиняйся Быстро!"
+    },
+    {
+      "video": "video/moon lovers/답해라.webm",
+      "videoMp4": "video/moon lovers/mp4/답해라.mp4",
+      "korean": "답해라!",
+      "russian": "Отвечай!"
+    },
+    {
+      "video": "video/moon lovers/저리가.webm",
+      "videoMp4": "video/moon lovers/mp4/저리가.mp4",
+      "korean": "저리가!",
+      "russian": "С дороги!"
+    },
+    {
+      "video": "video/moon lovers/살고 싶어.webm",
+      "videoMp4": "video/moon lovers/mp4/살고 싶어.mp4",
+      "korean": "살고 싶어",
+      "russian": "Хочу жить"
+    },
+    {
+      "video": "video/moon lovers/알겠느냐.webm",
+      "videoMp4": "video/moon lovers/mp4/알겠느냐.mp4",
+      "korean": "알겠느냐?",
+      "russian": "Вам все ясно?"
+    }
+  ],
   "b1": [
     {
       "video": "video/moon lovers/같이 가요.webm",

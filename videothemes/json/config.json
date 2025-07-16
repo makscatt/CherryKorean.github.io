@@ -62,6 +62,7 @@
     "masterJsonPath": "videothemes/json/videotheme1.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо BTS", "key": "b0" },
       { "name": "BTS 1", "key": "b1" },
       { "name": "BTS 2", "key": "b2" },
       { "name": "BTS 3", "key": "b3" },
@@ -74,6 +75,7 @@
     "masterJsonPath": "videothemes/json/videotheme2.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Сезон 1", "key": "b1" },
       { "name": "Сезон 2", "key": "b2" }
     ]
@@ -83,6 +85,7 @@
     "masterJsonPath": "videothemes/json/videotheme3.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Хиллер 1", "key": "b1" },
       { "name": "Хиллер 2", "key": "b2" }
     ]
@@ -92,6 +95,7 @@
     "masterJsonPath": "videothemes/json/videotheme4.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Сборник 1", "key": "b1" },
       { "name": "Сборник 2", "key": "b2" },
       { "name": "Сборник 3", "key": "b3" },
@@ -106,6 +110,7 @@
     "masterJsonPath": "videothemes/json/videotheme5.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Сердца Корё 1", "key": "b1" },
       { "name": "Сердца Корё 2", "key": "b2" } 
     ]
@@ -115,6 +120,7 @@
     "masterJsonPath": "videothemes/json/videotheme6.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Хваран 1", "key": "b1" },
       { "name": "Хваран 2", "key": "b2" } 
     ]
@@ -124,6 +130,7 @@
     "masterJsonPath": "videothemes/json/videotheme7.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Винченцо 1", "key": "b1" },
       { "name": "Винченцо 2", "key": "b2" } 
     ]
@@ -133,6 +140,7 @@
     "masterJsonPath": "videothemes/json/videotheme8.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Сезон 1-1", "key": "b1" },
       { "name": "Сезон 1-1", "key": "b2" },
       { "name": "Сезон 2-1", "key": "b3" },
@@ -144,6 +152,7 @@
     "masterJsonPath": "videothemes/json/videotheme9.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Игра смерти 1", "key": "b1" },
       { "name": "Игра смерти 2", "key": "b2" }
     ]
@@ -153,6 +162,7 @@
     "masterJsonPath": "videothemes/json/videotheme10.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Словно гончие 1", "key": "b1" }
     ]
   },
@@ -161,6 +171,7 @@
     "masterJsonPath": "videothemes/json/videotheme11.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Слава 1", "key": "b1" }
     ]
   },
@@ -169,6 +180,7 @@
     "masterJsonPath": "videothemes/json/videotheme12.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Магазин для убииц 1", "key": "b1" }
     ]
   },
@@ -177,6 +189,7 @@
     "masterJsonPath": "videothemes/json/videotheme13.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Хватай Сон Дже и беги 1", "key": "b1" }
     ]
   },
@@ -185,6 +198,7 @@
     "masterJsonPath": "videothemes/json/videotheme14.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Большая лига 1", "key": "b1" }
     ]
   },
@@ -193,6 +207,7 @@
     "masterJsonPath": "videothemes/json/videotheme15.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
+      { "name": "Демо", "key": "b0" },
       { "name": "Лукизм 1", "key": "b1" }
     ]
   }

@@ -1,4 +1,50 @@
 {
+  "b0": [
+    {
+      "video": "video/bloodhounds/이 새끼 이거.webm",
+      "videoMp4": "video/bloodhounds/mp4/이 새끼 이거.mp4",
+      "korean": "이 새끼 이거",
+      "russian": "Ах ты пи*дюк"
+    },
+    {
+      "video": "video/bloodhounds/완벽주의자 새끼.webm",
+      "videoMp4": "video/bloodhounds/mp4/완벽주의자 새끼.mp4",
+      "korean": "완벽주의자 새끼",
+      "russian": "Чертов перфекционист"
+    },
+    {
+      "video": "video/bloodhounds/나 해병이야.webm",
+      "videoMp4": "video/bloodhounds/mp4/나 해병이야.mp4",
+      "korean": "나 해병이야",
+      "russian": "Я пехотинец"
+    },
+    {
+      "video": "video/bloodhounds/세상에 나쁜 돈은 없습니다.webm",
+      "videoMp4": "video/bloodhounds/mp4/세상에 나쁜 돈은 없습니다.mp4",
+      "korean": "세상에 나쁜 돈은 없습니다",
+      "russian": "В мире нет плохих денег"
+    },
+    {
+      "video": "video/bloodhounds/너 이제부터 똑바로 해 알았어.webm",
+      "videoMp4": "video/bloodhounds/mp4/너 이제부터 똑바로 해 알았어.mp4",
+      "korean": "너 이제부터 똑바로 해 알았어?",
+      "russian": "Делай все, как я скажу, понял?"
+    },
+    {
+      "video": "video/bloodhounds/왜 이렇게 비싸.webm",
+      "videoMp4": "video/bloodhounds/mp4/왜 이렇게 비싸.mp4",
+      "korean": "왜 이렇게 비싸?",
+      "russian": "Почему так дорого?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/재수 없어.webm",
+      "videoMp4": "video/bloodhounds/mp4/재수 없어.mp4",
+      "korean": "재수 없어",
+      "russian": "Неудачник",
+      "new": true
+    }
+  ],
   "b1": [
     {
       "video": "video/bloodhounds/나중에 제가 따로 연락 드리겠습니다.webm",

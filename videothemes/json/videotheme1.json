@@ -1,4 +1,49 @@
 {
+  "b0": [
+    {
+      "video": "video/runbts/진짜 미치겠다.webm",
+      "videoMp4": "video/runbts/mp4/진짜 미치겠다.mp4",
+      "korean": "진짜 미치겠다",
+      "russian": "Реально бесит"
+    },
+    {
+      "video": "video/runbts/왜 이렇게 못하지 나.webm",
+      "videoMp4": "video/runbts/mp4/왜 이렇게 못하지 나.mp4",
+      "korean": "왜 이렇게 못하지? 나?",
+      "russian": "Почему у меня не получается?!"
+    },
+    {
+      "video": "video/runbts/무슨 소리야.webm",
+      "videoMp4": "video/runbts/mp4/무슨 소리야.mp4",
+      "korean": "무슨 소리야",
+      "russian": "Что ты говоришь такое"
+    },
+    {
+      "video": "video/runbts/맛있게 드세요.webm",
+      "videoMp4": "video/runbts/mp4/맛있게 드세요.mp4",
+      "korean": "맛있게 드세요",
+      "russian": "Приятного аппетита"
+    },
+    {
+      "video": "video/runbts/밥 줘.webm",
+      "videoMp4": "video/runbts/mp4/밥 줘.mp4",
+      "korean": "밥 줘",
+      "russian": "Дай еды",
+      "new": true
+    },
+    {
+      "video": "video/runbts/감사합니다 사랑합니다.webm",
+      "videoMp4": "video/runbts/mp4/감사합니다 사랑합니다.mp4",
+      "korean": "감사합니다 사랑합니다",
+      "russian": "Спасибо, Люблю!"
+    },
+    {
+      "video": "video/runbts/어때요.webm",
+      "videoMp4": "video/runbts/mp4/어때요.mp4",
+      "korean": "어때요?",
+      "russian": "Как тебе?"
+    }
+  ],
   "b1": [
     {
       "video": "video/runbts/숨이 잘 안 죽나 봐.webm",

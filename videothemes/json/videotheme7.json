@@ -1,4 +1,51 @@
 {
+  "b0": [
+    {
+      "video": "video/vincenco/이 미개한 새끼야.webm",
+      "videoMp4": "video/vincenco/mp4/이 미개한 새끼야.mp4",
+      "korean": "이 미개한 새끼야",
+      "russian": "Ты, дикое отродье"
+    },
+    {
+      "video": "video/vincenco/나의 목표는 이 건물을 무너뜨리는 것이다.webm",
+      "videoMp4": "video/vincenco/mp4/나의 목표는 이 건물을 무너뜨리는 것이다.mp4",
+      "korean": "나의 목표는 이 건물을 무너뜨리는 것이다",
+      "russian": "Моя цель - снести это здание",
+      "new": true
+    },
+    {
+      "video": "video/vincenco/곧 치르게 될 거야.webm",
+      "videoMp4": "video/vincenco/mp4/곧 치르게 될 거야.mp4",
+      "korean": "곧 치르게 될 거야",
+      "russian": "Скоро поплатишься"
+    },
+    {
+      "video": "video/vincenco/아버지는 저 못 이겨요.webm",
+      "videoMp4": "video/vincenco/mp4/아버지는 저 못 이겨요.mp4",
+      "korean": "아버지는 저 못 이겨요",
+      "russian": "Отец, тебе меня не выиграть"
+    },
+    {
+      "video": "video/vincenco/니들 뭐야.webm",
+      "videoMp4": "video/vincenco/mp4/니들 뭐야.mp4",
+      "korean": "니들 뭐야?",
+      "russian": "Вы кто такие?",
+      "new": true
+    },
+    {
+      "video": "video/vincenco/담배 하나 주고 가.webm",
+      "videoMp4": "video/vincenco/mp4/담배 하나 주고 가.mp4",
+      "korean": "담배 하나 주고 가",
+      "russian": "Дай сигарету и иди"
+    },
+    {
+      "video": "video/vincenco/이런 놈들이 한국 망신 다 시키는데.webm",
+      "videoMp4": "video/vincenco/mp4/이런 놈들이 한국 망신 다 시키는데.mp4",
+      "korean": "이런 놈들이 한국 망신 다 시키는데",
+      "russian": "Такие ублюдки позорят всю Корею",
+      "new": true
+    }
+  ],
   "b1": [
     {
       "video": "video/vincenco/나의 목표는.webm",
