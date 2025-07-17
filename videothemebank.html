@@ -703,6 +703,9 @@
                 document.getElementById("option1").innerText = options[shuffledIndex];
                 document.getElementById("option2").innerText = options[1 - shuffledIndex];
 
+                document.getElementById('option1').disabled = false;
+                document.getElementById('option2').disabled = false;
+
                 const video = document.getElementById("wordVideo");
                 if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
                     video.src = correctWord.videoMp4;
@@ -731,6 +734,8 @@
         }
 
         function checkWord(button) {
+            document.getElementById('option1').disabled = true;
+            document.getElementById('option2').disabled = true;
             const isCorrect = button.innerText === correctAnswer;
             button.style.backgroundColor = isCorrect ? "lightgreen" : "lightcoral";
 

@@ -163,7 +163,8 @@
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "Демо", "key": "b0" },
-      { "name": "Словно гончие 1", "key": "b1" }
+      { "name": "Словно гончие 1", "key": "b1" },
+      { "name": "Словно гончие 2", "key": "b2" }
     ]
   },
   "theme11": {

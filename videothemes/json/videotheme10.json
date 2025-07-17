@@ -34,15 +34,13 @@
       "video": "video/bloodhounds/왜 이렇게 비싸.webm",
       "videoMp4": "video/bloodhounds/mp4/왜 이렇게 비싸.mp4",
       "korean": "왜 이렇게 비싸?",
-      "russian": "Почему так дорого?",
-      "new": true
+      "russian": "Почему так дорого?"
     },
     {
       "video": "video/bloodhounds/재수 없어.webm",
       "videoMp4": "video/bloodhounds/mp4/재수 없어.mp4",
       "korean": "재수 없어",
-      "russian": "Неудачник",
-      "new": true
+      "russian": "Неудачник"
     }
   ],
   "b1": [
@@ -200,74 +198,311 @@
       "video": "video/bloodhounds/재수 없어.webm",
       "videoMp4": "video/bloodhounds/mp4/재수 없어.mp4",
       "korean": "재수 없어",
-      "russian": "Неудачник",
-      "new": true
+      "russian": "Неудачник"
     },
     {
       "video": "video/bloodhounds/이모님.webm",
       "videoMp4": "video/bloodhounds/mp4/이모님.mp4",
       "korean": "이모님",
-      "russian": "Тётушка",
-      "new": true
+      "russian": "Тётушка"
     },
     {
       "video": "video/bloodhounds/신발이 얼마야.webm",
       "videoMp4": "video/bloodhounds/mp4/신발이 얼마야.mp4",
       "korean": "신발이 얼마야?",
-      "russian": "Сколько стоят ботинки?",
-      "new": true
+      "russian": "Сколько стоят ботинки?"
     },
     {
       "video": "video/bloodhounds/백이십.webm",
       "videoMp4": "video/bloodhounds/mp4/백이십.mp4",
       "korean": "백이십",
-      "russian": "120",
-      "new": true
+      "russian": "120"
     },
     {
       "video": "video/bloodhounds/왜 이렇게 비싸.webm",
       "videoMp4": "video/bloodhounds/mp4/왜 이렇게 비싸.mp4",
       "korean": "왜 이렇게 비싸?",
-      "russian": "Почему так дорого?",
-      "new": true
+      "russian": "Почему так дорого?"
     },
     {
       "video": "video/bloodhounds/형이랑 놀면서 세상을 좀 배우자.webm",
       "videoMp4": "video/bloodhounds/mp4/형이랑 놀면서 세상을 좀 배우자.mp4",
       "korean": "형이랑 놀면서 세상을 좀 배우자",
-      "russian": "Туси со мной, давай познавать мир",
-      "new": true
+      "russian": "Туси со мной, давай познавать мир"
     },
     {
       "video": "video/bloodhounds/형 이거 알아.webm",
       "videoMp4": "video/bloodhounds/mp4/형 이거 알아.mp4",
       "korean": "형 이거 알아?",
-      "russian": "Брат, ты знаешь это?",
-      "new": true
+      "russian": "Брат, ты знаешь это?"
     },
     {
       "video": "video/bloodhounds/요즘에 이런 거 진짜 많대.webm",
       "videoMp4": "video/bloodhounds/mp4/요즘에 이런 거 진짜 많대.mp4",
       "korean": "요즘에 이런 거 진짜 많대",
-      "russian": "Последнее время много такого",
-      "new": true
+      "russian": "Последнее время много такого"
     },
     {
       "video": "video/bloodhounds/우리 엄마도.webm",
       "videoMp4": "video/bloodhounds/mp4/우리 엄마도.mp4",
       "korean": "우리 엄마도",
-      "russian": "У меня мама тоже",
-      "new": true
+      "russian": "У меня мама тоже"
     },
     {
       "video": "video/bloodhounds/카페 월세 때문에 진짜 힘들어요.webm",
       "videoMp4": "video/bloodhounds/mp4/카페 월세 때문에 진짜 힘들어요.mp4",
       "korean": "카페 월세 때문에 진짜 힘들어요",
-      "russian": "Из-за аренды в кафе очень трудно",
+      "russian": "Из-за аренды в кафе очень трудно"
+    }
+  ],
+  "b2": [
+    {
+      "isNew": true,
+      "video": "video/bloodhounds/다 익었다 먹자.webm",
+      "videoMp4": "video/bloodhounds/mp4/다 익었다 먹자.mp4",
+      "korean": "다 익었다 먹자",
+      "russian": "Всё приготовилось, давай есть",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/가만히 좀 있어봐.webm",
+      "videoMp4": "video/bloodhounds/mp4/가만히 좀 있어봐.mp4",
+      "korean": "가만히 좀 있어봐",
+      "russian": "Просто посиди спокойно",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/아무것도 하지 말고 그냥 쉬어.webm",
+      "videoMp4": "video/bloodhounds/mp4/아무것도 하지 말고 그냥 쉬어.mp4",
+      "korean": "아무것도 하지 말고 그냥 쉬어",
+      "russian": "Ничего не делай, просто отдохни",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/저 운동하려고요.webm",
+      "videoMp4": "video/bloodhounds/mp4/저 운동하려고요.mp4",
+      "korean": "저 운동하려고요",
+      "russian": "Я собираюсь тренироваться",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/저 검사 안 받아도 괜찮아요.webm",
+      "videoMp4": "video/bloodhounds/mp4/저 검사 안 받아도 괜찮아요.mp4",
+      "korean": "저 검사 안 받아도 괜찮아요?",
+      "russian": "Можно я не буду проходить обследование?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/준비했어.webm",
+      "videoMp4": "video/bloodhounds/mp4/준비했어.mp4",
+      "korean": "준비했어?",
+      "russian": "Готов?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/이번 주까지는 안 되니.webm",
+      "videoMp4": "video/bloodhounds/mp4/이번 주까지는 안 되니.mp4",
+      "korean": "이번 주까지는 안 되니?",
+      "russian": "До конца этой недели никак нельзя?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/아니야 나 이거 엄마 주려고 따는 거야.webm",
+      "videoMp4": "video/bloodhounds/mp4/아니야 나 이거 엄마 주려고 따는 거야.mp4",
+      "korean": "아니야 나 이거 엄마 주려고 따는 거야",
+      "russian": "Нет, я это выиграл, чтобы тебе(маме) отдать",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/이게 뭐야.webm",
+      "videoMp4": "video/bloodhounds/mp4/이게 뭐야.mp4",
+      "korean": "이게 뭐야?",
+      "russian": "Это что такое?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/알았어 앞으로 불 안 칠게.webm",
+      "videoMp4": "video/bloodhounds/mp4/알았어 앞으로 불 안 칠게.mp4",
+      "korean": "알았어 앞으로 불 안 칠게",
+      "russian": "Ладно, больше не буду подливать масла в огонь",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/우린 그냥 버티고 있어.webm",
+      "videoMp4": "video/bloodhounds/mp4/우린 그냥 버티고 있어.mp4",
+      "korean": "우린 그냥 버티고 있어",
+      "russian": "Мы просто держимся из последних сил",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/매출은 옛날에 반에 반도 안 나오는데.webm",
+      "videoMp4": "video/bloodhounds/mp4/매출은 옛날에 반에 반도 안 나오는데.mp4",
+      "korean": "매출은 옛날에 반에 반도 안 나오는데",
+      "russian": "Выручка сейчас даже до четверти от прежней не дотягивает",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/절대 안 끊겠습니다.webm",
+      "videoMp4": "video/bloodhounds/mp4/절대 안 끊겠습니다.mp4",
+      "korean": "절대 안 끊겠습니다",
+      "russian": "Я ни за что не прекращу",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/알았어_1.webm",
+      "videoMp4": "video/bloodhounds/mp4/알았어_1.mp4",
+      "korean": "알았어",
+      "russian": "Понял",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/뭘 하면 그건 쉬는 게 아니지.webm",
+      "videoMp4": "video/bloodhounds/mp4/뭘 하면 그건 쉬는 게 아니지.mp4",
+      "korean": "뭘 하면 그건 쉬는 게 아니지",
+      "russian": "Если что-то делаешь — это уже не отдых",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/오늘 왜 나왔냐 체육관에.webm",
+      "videoMp4": "video/bloodhounds/mp4/오늘 왜 나왔냐 체육관에.mp4",
+      "korean": "오늘 왜 나왔냐 체육관에?",
+      "russian": "Зачем ты сегодня пришёл в спортзал?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/이런 시기에는 버티는 게 이기는 겁니다.webm",
+      "videoMp4": "video/bloodhounds/mp4/이런 시기에는 버티는 게 이기는 겁니다.mp4",
+      "korean": "이런 시기에는 버티는 게 이기는 겁니다",
+      "russian": "В такие времена выстоять — значит победить",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/영업팀이 제일 중요해 알지 주민아.webm",
+      "videoMp4": "video/bloodhounds/mp4/영업팀이 제일 중요해 알지 주민아.mp4",
+      "korean": "영업팀이 제일 중요해 알지 주민아",
+      "russian": "Чумин,ты же знаешь, что Отдел продаж — самый важный?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/엄마 밥 먹었어.webm",
+      "videoMp4": "video/bloodhounds/mp4/엄마 밥 먹었어.mp4",
+      "korean": "엄마 밥 먹었어?",
+      "russian": "Мама, ты поела?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/나 이거 못 받아.webm",
+      "videoMp4": "video/bloodhounds/mp4/나 이거 못 받아.mp4",
+      "korean": "나 이거 못 받아",
+      "russian": "Я не могу это принять",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/너 오늘 너무 멋있었어.webm",
+      "videoMp4": "video/bloodhounds/mp4/너 오늘 너무 멋있었어.mp4",
+      "korean": "너 오늘 너무 멋있었어",
+      "russian": "Ты сегодня был очень крутым",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/장난이었지 이 새끼야 이씨.webm",
+      "videoMp4": "video/bloodhounds/mp4/장난이었지 이 새끼야 이씨.mp4",
+      "korean": "장난이었지 이 새끼야 이씨",
+      "russian": "Да это же шутка была, блин, ты чё",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/지금 잡으면 철거비용이 더 들어가니까.webm",
+      "videoMp4": "video/bloodhounds/mp4/지금 잡으면 철거비용이 더 들어가니까.mp4",
+      "korean": "지금 잡으면 철거비용이 더 들어가니까",
+      "russian": "Если сейчас снести, выйдет дороже из-за затрат на демонтаж",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/하루에 이십도 벌 수 있을 걸.webm",
+      "videoMp4": "video/bloodhounds/mp4/하루에 이십도 벌 수 있을 걸.mp4",
+      "korean": "하루에 이십도 벌 수 있을 걸",
+      "russian": "За день можно зарабатывать по 20манов(200 тысяч)",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/죄송합니다 해병님.webm",
+      "videoMp4": "video/bloodhounds/mp4/죄송합니다 해병님.mp4",
+      "korean": "죄송합니다 해병님",
+      "russian": "Извините, морпех",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/형 운동 안 할래.webm",
+      "videoMp4": "video/bloodhounds/mp4/형 운동 안 할래.mp4",
+      "korean": "형 운동 안 할래?",
+      "russian": "Брат, не хочешь позаниматься?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/일주일은 쉬어라.webm",
+      "videoMp4": "video/bloodhounds/mp4/일주일은 쉬어라.mp4",
+      "korean": "일주일은 쉬어라",
+      "russian": "Отдохни хотя бы неделю",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/근데 너 어제 시합이 끝났는데.webm",
+      "videoMp4": "video/bloodhounds/mp4/근데 너 어제 시합이 끝났는데.mp4",
+      "korean": "근데 너 어제 시합이 끝났는데",
+      "russian": "Но у тебя же вчера уже закончились соревнования",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/혹시 잠시간 되시면 말씀 좀 나누실 수 있을까요.webm",
+      "videoMp4": "video/bloodhounds/mp4/혹시 잠시간 되시면 말씀 좀 나누실 수 있을까요.mp4",
+      "korean": "혹시 잠시간 되시면 말씀 좀 나누실 수 있을까요?",
+      "russian": "Если у вас найдётся минутка, можно с вами поговорить?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/제가 해 보겠습니다.webm",
+      "videoMp4": "video/bloodhounds/mp4/제가 해 보겠습니다.mp4",
+      "korean": "제가 해 보겠습니다",
+      "russian": "Я попробую сделать это",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/너 그거 어떻게 알았어.webm",
+      "videoMp4": "video/bloodhounds/mp4/너 그거 어떻게 알았어.mp4",
+      "korean": "너 그거 어떻게 알았어?",
+      "russian": "Откуда ты это узнал?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/상금.webm",
+      "videoMp4": "video/bloodhounds/mp4/상금.mp4",
+      "korean": "상금",
+      "russian": "Призовые",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/마련을 못 했어요.webm",
+      "videoMp4": "video/bloodhounds/mp4/마련을 못 했어요.mp4",
+      "korean": "마련을 못 했어요",
+      "russian": "Не смогла подготовить",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/거짓말 아니지.webm",
+      "videoMp4": "video/bloodhounds/mp4/거짓말 아니지.mp4",
+      "korean": "거짓말 아니지?",
+      "russian": "Ты ведь не врёшь, да?",
+      "new": true
+    },
+    {
+      "video": "video/bloodhounds/건물주는 월세를 그대로 받아.webm",
+      "videoMp4": "video/bloodhounds/mp4/건물주는 월세를 그대로 받아.mp4",
+      "korean": "건물주는 월세를 그대로 받아",
+      "russian": "Арендодатель как получал аренду, так и получает",
       "new": true
     }
   ],
-  "b2": [],
   "b3": [],
   "b4": [],
   "b5": []

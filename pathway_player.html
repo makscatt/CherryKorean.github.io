@@ -940,18 +940,22 @@
 
         // ИЗМЕНЕННАЯ ФУНКЦИЯ
         function checkWord(button) {
-            const isCorrect = button.innerText === correctAnswer;
             const allButtons = [document.getElementById('option1'), document.getElementById('option2'), document.getElementById('option3')];
+
+            // <<<<<< НОВОЕ: Немедленно блокируем все кнопки
+            allButtons.forEach(btn => btn.disabled = true);
+
+            const isCorrect = button.innerText === correctAnswer;
             const progressBarBoxes = document.querySelectorAll('.progress-box');
 
-            // 1. Блокируем кнопки и показываем результат
+            // 1. Показываем результат
             allButtons.forEach(btn => {
                 if (btn.innerText === correctAnswer) {
                     btn.style.backgroundColor = "lightgreen";
                 } else if (btn === button && !isCorrect) {
                     btn.style.backgroundColor = "lightcoral";
                 }
-                btn.onclick = null; // Блокируем кнопки после ответа
+                // btn.onclick = null; // Это больше не нужно, так как мы используем disabled
             });
 
             // 2. Обновляем прогресс-бар и счетчики
@@ -974,14 +978,13 @@
                 } else {
                     // Переход к следующему слову
                     allButtons.forEach(btn => {
-                        btn.style.backgroundColor = "#eff2f9"; // Возвращаем исходный цвет
-                        btn.onclick = () => checkWord(btn); // Восстанавливаем обработчики
+                        btn.style.backgroundColor = "#eff2f9";
+                        btn.disabled = false; // <<<<<< НОВОЕ: Включаем кнопки обратно
                     });
                     loadWordsAndSetOptions();
                 }
-            }, 1000); // Задержка, чтобы пользователь увидел результат
+            }, 1000);
         }
-
         function endLesson() {
             // 1. Рассчитываем звезды
             let starsAwarded = 0;

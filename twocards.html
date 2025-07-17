@@ -524,6 +524,7 @@
 
         function flipCard() {
             if (lockBoard || this.classList.contains('flipped') || this.classList.contains('matched') || gameIsOver) return;
+            new Audio('card.mp3').play();
             this.classList.add('flipped');
             if (flippedCards.length === 0) {
                 flippedCards.push(this);
