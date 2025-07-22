@@ -95,16 +95,33 @@
             margin: 0;
             padding: 0;
             background-color: #000000;
+            /* --- НОВЫЕ СВОЙСТВА --- */
+            aspect-ratio: 16 / 9;
+            /* Задает стабильные пропорции */
+            display: flex;
+            /* Включает flex для центрирования */
+            justify-content: center;
+            /* Центрирует видео по горизонтали */
+            align-items: center;
+            /* Центрирует видео по вертикали */
+            overflow: hidden;
+            /* Скрывает все, что выходит за рамки */
+            border-radius: 10px 10px 0 0;
+            /* Переносим скругление сюда */
         }
 
         #custom-video-container video {
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-
-            margin: 0;
-
-
+            /* --- НОВЫЕ СВОЙСТВА --- */
+            max-width: 100%;
+            /* Ограничивает ширину контейнером */
+            max-height: 100%;
+            /* Ограничивает высоту контейнером */
+            width: auto;
+            /* Позволяет видео сохранять пропорции */
+            height: auto;
+            /* Позволяет видео сохранять пропорции */
+            border-radius: 0;
+            /* Убираем радиус, т.к. он на контейнере */
         }
 
         #interaction-block {

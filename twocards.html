@@ -304,6 +304,16 @@
             font-size: 1.2em;
             font-weight: bold;
         }
+
+        @keyframes pulse {
+            50% {
+                transform: scale(1.3);
+            }
+        }
+
+        .level-circle.pulsing {
+            animation: pulse 0.5s ease-in-out;
+        }
     </style>
 </head>
 
@@ -418,6 +428,8 @@
         async function initGame() {
             await loadStars();
             restartButton.addEventListener('click', handlePlayAgain);
+            
+
 
             // Сначала определяем стоимость
             const blockKey = localStorage.getItem('selectedVideoBlock');
@@ -470,6 +482,7 @@
                 restartButton.disabled = true;
                 return;
             }
+            new Audio('startcardsgame.mp3').play();
             Game.stars -= COST_TO_PLAY;
             updateStarsUI();
             saveStars();
@@ -490,6 +503,7 @@
 
         // --- ИЗМЕНЕНА ---
         function startLevel() {
+            new Audio('startcardsgame.mp3').play();
             resetBoard();
             gameBoard.style.display = 'grid';
 
@@ -567,12 +581,17 @@
                 resetBoard();
 
                 if (matchedPairs === config.pairs) {
-                    document.querySelectorAll('.level-circle')[currentLevel].classList.add('completed');
+                    const completedCircle = document.querySelectorAll('.level-circle')[currentLevel];
+                    completedCircle.classList.add('completed', 'pulsing');
+                    setTimeout(() => completedCircle.classList.remove('pulsing'), 500);
+
                     currentLevel++;
                     if (currentLevel < levelConfig.length) {
+                        new Audio('starsuccess.mp3').play(); // Звук успеха уровня
                         gameStatusText.textContent = `Отлично! Готовься к уровню ${currentLevel + 1}`;
                         setTimeout(startLevel, 1500);
                     } else {
+                        new Audio('lvl_complete.mp3').play(); // Звук победы в игре
                         gameIsOver = true;
                         gameStatusText.textContent = 'Победа! 🎉';
                         gameBoard.style.display = 'none';
@@ -580,7 +599,7 @@
                         restartButton.style.display = 'block';
                         restartButton.textContent = `Играть еще (-${COST_TO_PLAY}⭐)`;
                     }
-                } else if (movesMade >= totalAllowedMoves) { // Проверяем на проигрыш после успешного хода
+                } else if (movesMade >= totalAllowedMoves) {
                     handleLoss();
                 }
             }, 500);
