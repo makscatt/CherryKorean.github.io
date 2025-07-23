@@ -211,5 +211,14 @@
       { "name": "Демо", "key": "b0" },
       { "name": "Лукизм 1", "key": "b1" }
     ]
+  },
+  "theme16": {
+    "coverImage": "videothemes/subthemebc/kalmar3.png",
+    "masterJsonPath": "videothemes/json/videotheme16.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Демо", "key": "b0" },
+      { "name": "1 Серия", "key": "b1" }
+    ]
   }
 }
