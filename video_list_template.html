@@ -549,6 +549,8 @@
             font-size: 16px;
             padding: 10px 20px;
         }
+
+        
     </style>
 </head>
 
@@ -1016,10 +1018,10 @@
 
                     const breakdown = data.tokens
                         .map(t => `<span style="color:${t.color}">${t.word}</span>`)
-                        .join(' + ');
+                        .join('_');
                     const breakdownBlock =
-                        `<div style="text-align:center; font-size:16px; margin:8px 0;">
-           <strong>Разбор:</strong><span style="font-weight:normal; opacity:0.6;">(Работаю над идеальностью разбора)</span><br>${breakdown}
+                        `<div style="text-align:center; font-size:18px; margin:8px 0;">
+           ${breakdown}
          </div>`;
 
                     let tokenBlock = '';
