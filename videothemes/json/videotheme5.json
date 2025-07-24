@@ -223,6 +223,13 @@
       "videoMp4": "video/moon lovers/mp4/머리가 좋아요.mp4",
       "korean": "머리가 좋아요",
       "russian": "Вы умный"
+    },
+    {
+      "video": "video/moon lovers/그만 둬요.webm",
+      "videoMp4": "video/moon lovers/mp4/그만 둬요.mp4",
+      "korean": "그만 둬요",
+      "russian": "Прекратите",
+      "new": true
     }
   ],
   "b2": [
@@ -427,6 +434,34 @@
       "videoMp4": "video/moon lovers/mp4/그 반지 아주 잘 어울린다 연화야.mp4",
       "korean": "그 반지 아주 잘 어울린다 연화야",
       "russian": "Это кольцо тебе очень идёт, Ёнхва",
+      "new": true
+    },
+    {
+      "video": "video/moon lovers/경찰.webm",
+      "videoMp4": "video/moon lovers/mp4/경찰.mp4",
+      "korean": "경찰",
+      "russian": "Полиция",
+      "new": true
+    },
+    {
+      "video": "video/moon lovers/사 왕자.webm",
+      "videoMp4": "video/moon lovers/mp4/사 왕자.mp4",
+      "korean": "사 왕자?",
+      "russian": "Принц Са?",
+      "new": true
+    },
+    {
+      "video": "video/moon lovers/아이구 아가씨.webm",
+      "videoMp4": "video/moon lovers/mp4/아이구 아가씨.mp4",
+      "korean": "아이구 아가씨",
+      "russian": "Айгу, барышня",
+      "new": true
+    },
+    {
+      "video": "video/moon lovers/포졸 포졸 없어요.webm",
+      "videoMp4": "video/moon lovers/mp4/포졸 포졸 없어요.mp4",
+      "korean": "포졸 포졸 없어요?",
+      "russian": "Стражников совсем нет?",
       "new": true
     }
   ],

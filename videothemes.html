@@ -694,7 +694,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 16; i >= 2; i--) {
+          for (let i = 17; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -1221,7 +1221,7 @@
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 1; i <= 16; i++) {
+      for (let i = 1; i <= 17; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1252,10 +1252,10 @@
     document.addEventListener('DOMContentLoaded', () => {
       // --- НАСТРОЙКИ ПОПАПА ОБНОВЛЕНИЯ ---
       const updateConfig = {
-        version: '1707', // <<<< МЕНЯЙ ЗДЕСЬ ВЕРСИЮ
-        title: 'Обновление от 17.07', // <<<< МЕНЯЙ ЗДЕСЬ ЗАГОЛОВОК И ДАТУ
+        version: '2407', // <<<< МЕНЯЙ ЗДЕСЬ ВЕРСИЮ
+        title: 'Обновление от 24.07', // <<<< МЕНЯЙ ЗДЕСЬ ЗАГОЛОВОК И ДАТУ
         image: 'videothemes/update_banner.png', // Путь к картинке
-        text: `Добавил Новые видео:\nJ-Hope в папке BTS - 35 видео\nСловно гончие - 35 видео` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+        text: `Добавил Новые видео:\n🎬Игра в кальмара 3\n🎬Мой демон\n🎬Сердца Корё` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
       };
       // ------------------------------------
 
