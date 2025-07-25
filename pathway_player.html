@@ -598,6 +598,9 @@
             margin-bottom: 5px;
             color: #555;
             line-height: 1.5;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 25px;
         }
 
         #completion-popup-content-wrapper button {
@@ -1007,14 +1010,14 @@
                 }
             }, 1000);
         }
-        function endLesson() {
+        async function endLesson() {
             // 1. Рассчитываем звезды
             let starsAwarded = 0;
             if (correctAnswersCount === 10) {
                 starsAwarded = 3;
-            } else if (correctAnswersCount >= 8) { // 8-9
+            } else if (correctAnswersCount >= 8) {
                 starsAwarded = 2;
-            } else { // 7 и меньше
+            } else {
                 starsAwarded = 1;
             }
 
@@ -1025,7 +1028,25 @@
 
             // 3. Отображаем звезды в попапе
             const completionStarsEl = document.getElementById('completion-stars');
-            completionStarsEl.innerHTML = '⭐'.repeat(starsAwarded); // Просто вставляем строку
+            completionStarsEl.innerHTML = '⭐'.repeat(starsAwarded);
+
+            // --- НОВЫЙ БЛОК: Загрузка и установка мотивационной фразы ---
+            try {
+                const response = await fetch('videothemes/motivation/motivation.json');
+                const data = await response.json();
+                const phrasesObject = data[0]; // Получаем объект из массива
+                const phrases = Object.values(phrasesObject); // Извлекаем все фразы в массив
+                const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)]; // Выбираем случайную
+
+                // Находим <p> в попапе и меняем его текст
+                document.querySelector('#completion-popup-content-wrapper p').textContent = randomPhrase;
+
+            } catch (error) {
+                console.error("Ошибка загрузки мотивационной фразы:", error);
+                // Стандартный текст, если файл не загрузился
+                document.querySelector('#completion-popup-content-wrapper p').textContent = "Вы успешно прошли урок. Так держать!";
+            }
+            // --- КОНЕЦ НОВОГО БЛОКА ---
 
             // 4. Сохраняем прогресс урока
             handlePathwayCompletion();
