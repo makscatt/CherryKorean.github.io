@@ -229,5 +229,14 @@
       { "name": "Демо", "key": "b0" },
       { "name": "1 Серия", "key": "b1" }
     ]
+  },
+  "theme18": {
+    "coverImage": "videothemes/subthemebc/kumiho.png",
+    "masterJsonPath": "videothemes/json/videotheme18.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Демо", "key": "b0" },
+      { "name": "1 Серия", "key": "b1" }
+    ]
   }
 }
