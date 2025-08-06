@@ -44,7 +44,7 @@ yt-dlp -x --audio-format mp3 "https://www.youtube.com/shorts/hcr9roJmB-w?si=4Exl
 yt-dlp.exe -x --audio-format mp3 https://www.youtube.com/watch?v=RQmSN-DksME
 
 в лучшем качестве:
-yt-dlp.exe -f best https://www.youtube.com/watch?v=ID
+yt-dlp.exe -f b https://www.youtube.com/watch?v=ID
 
 плейлист:
 yt-dlp https://www.youtube.com/playlist?list=ID_плейлиста
