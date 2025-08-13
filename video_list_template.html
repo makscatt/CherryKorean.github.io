@@ -549,6 +549,7 @@
             font-size: 16px;
             padding: 10px 20px;
         }
+
     </style>
 </head>
 
@@ -575,6 +576,7 @@
                         <option value="2">2x</option>
                     </select>
                 </div>
+                <span id="streak-indicator">🔥</span>
             </div>
         </div>
         <div id="interaction-block">
@@ -703,6 +705,10 @@
             if (activityData.count === STREAK_GOAL) {
                 console.log("Streak: Цель на день достигнута! Отправка на сервер...");
                 sendStreakUpdate();
+                const indicator = document.getElementById('streak-indicator');
+                if (indicator) {
+                    indicator.classList.add('visible');
+                }
             }
         }
 
@@ -990,7 +996,11 @@
             hideHintForMembers();
             loadStars();
             loadWordsAndSetOptions();
-
+            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { count: 0 };
+            if (activityData.count >= STREAK_GOAL) {
+                const indicator = document.getElementById('streak-indicator');
+                if (indicator) indicator.classList.add('visible');
+            }
         });
 
         function saveToBank() {

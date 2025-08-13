@@ -693,6 +693,7 @@
                         <option value="2">2x</option>
                     </select>
                 </div>
+                <span id="streak-indicator">🔥</span>
             </div>
         </div>
         <div id="interaction-block">
@@ -810,6 +811,10 @@
             if (activityData.count === STREAK_GOAL) {
                 console.log("Streak: Цель на день достигнута! Отправка на сервер...");
                 sendStreakUpdate();
+                const indicator = document.getElementById('streak-indicator');
+                if (indicator) {
+                    indicator.classList.add('visible');
+                }
             }
         }
 
@@ -1128,6 +1133,11 @@
             hideHintForMembers();
             initializeTimer(); // <-- Главное изменение здесь
 
+            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { count: 0 };
+            if (activityData.count >= STREAK_GOAL) {
+                const indicator = document.getElementById('streak-indicator');
+                if (indicator) indicator.classList.add('visible');
+            }
             // --- Добавляем обработчики для новых элементов ---
             document.addEventListener('visibilitychange', handleVisibilityChange);
 

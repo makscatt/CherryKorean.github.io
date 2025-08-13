@@ -67,6 +67,42 @@
             margin-top: 5px;
         }
 
+        /* --- Стили для блока заморозки --- */
+        #streak-freeze-container {
+            background-color: #1c1c1e;
+            border: 2px solid #366782;
+            border-radius: 12px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            /* Делаем блок кликабельным */
+            transition: background-color 0.2s ease;
+        }
+
+        #streak-freeze-container:active {
+            background-color: #2a2a2e;
+            /* Легкое затемнение при клике */
+        }
+
+        .freeze-icon {
+            font-size: 32px;
+            color: #5ac8fa;
+            /* Голубой цвет */
+        }
+
+        .freeze-text h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+
+        .freeze-text p {
+            margin: 0;
+            font-size: 14px;
+            color: #aaa;
+        }
+
         /* --- Блок с целями (milestones) --- */
         #milestones-container {
             display: flex;
@@ -193,6 +229,69 @@
             top: 50%;
             transform: translateY(-50%);
         }
+
+        /* --- Стили для информационного попапа --- */
+        #streak-info-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            display: none;
+            /* По умолчанию скрыт */
+            justify-content: center;
+            align-items: center;
+            z-index: 200;
+        }
+
+        #streak-info-popup-overlay .popup-content {
+            background-color: #2c2c2e;
+            padding: 25px;
+            border-radius: 16px;
+            text-align: center;
+            width: 90%;
+            max-width: 350px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .popup-content h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .popup-content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #ddd;
+            margin-bottom: 25px;
+        }
+
+        .popup-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .popup-buttons button {
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #popup-ok-btn {
+            background-color: #FFD700;
+            color: #000;
+        }
+
+        #popup-dismiss-btn {
+            background-color: transparent;
+            color: #8e8e93;
+        }
     </style>
 </head>
 
@@ -207,7 +306,13 @@
             <div class="count" id="streak-count">0</div>
             <div class="label">дней подряд</div>
         </div>
-
+        <div id="streak-freeze-container">
+            <div class="freeze-icon">❄️</div>
+            <div class="freeze-text">
+                <h3>Заморозка стрика</h3>
+                <p id="freeze-count-label">Осталось: 3/3</p>
+            </div>
+        </div>
         <!-- Контейнер для целей -->
         <div id="milestones-container">
             <div class="milestone" data-goal="5">
@@ -295,13 +400,35 @@
             });
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // Теперь здесь НЕТ функции updateMilestones
-            // ...
-        });
+
 
 
         document.addEventListener('DOMContentLoaded', () => {
+            const popupOverlay = document.getElementById('streak-info-popup-overlay');
+            const okBtn = document.getElementById('popup-ok-btn');
+            const dismissBtn = document.getElementById('popup-dismiss-btn');
+
+            // Проверяем, нужно ли показывать попап
+            const shouldShowPopup = !localStorage.getItem('streakInfoDismissed');
+
+            if (shouldShowPopup) {
+                popupOverlay.style.display = 'flex';
+            }
+
+            // Функция для закрытия попапа
+            function closeInfoPopup() {
+                popupOverlay.style.display = 'none';
+            }
+
+            // Назначаем события на кнопки
+            okBtn.addEventListener('click', closeInfoPopup);
+
+            dismissBtn.addEventListener('click', () => {
+                localStorage.setItem('streakInfoDismissed', 'true'); // Запоминаем выбор
+                closeInfoPopup();
+            });
+
+
             // Переменные для управления календарем
             let currentDate = new Date();
             let activeDays = new Set();
@@ -322,7 +449,14 @@
                     icon.style.textShadow = 'none';
                 }
             }
-
+            function updateFreezeDisplay(freezes) {
+                const freezeLabel = document.getElementById('freeze-count-label');
+                if (freezeLabel) {
+                    // Если freezes не определено, считаем, что их 3
+                    const count = typeof freezes !== 'undefined' ? freezes : 3;
+                    freezeLabel.innerText = `Осталось: ${count}/3`;
+                }
+            }
             // Генерирует календарь на заданный месяц и год
             function generateCalendar(year, month) {
                 const grid = document.getElementById('calendar-grid');
@@ -393,12 +527,14 @@
 
                         // Обновляем весь интерфейс
                         updateStreakDisplay(currentStreak, isActiveToday);
+                        updateFreezeDisplay(data.freezes);
                         updateMilestones(currentStreak);
                         generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
                     })
                     .catch(err => {
                         console.error("Ошибка загрузки данных стрика:", err);
                         updateStreakDisplay(0, false);
+                        updateFreezeDisplay(3);
                         updateMilestones(0);
                         generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
                     });
@@ -423,6 +559,19 @@
         // --- КОНЕЦ БЛОКА JAVASCRIPT ---
     </script>
 
+    <!-- ===== НАЧАЛО БЛОКА ДЛЯ ПОПАПА ===== -->
+    <div id="streak-info-popup-overlay">
+        <div class="popup-content">
+            <h2>Как работает стрик?</h2>
+            <p>Чтобы день засчитался, нужно правильно угадать <strong>10 фраз</strong> в любой из тренировок. После
+                этого на экране появится иконка 🔥 — это значит, что ваш стрик на сегодня засчитан!</p>
+            <div class="popup-buttons">
+                <button id="popup-ok-btn">Понятно</button>
+                <button id="popup-dismiss-btn">Больше не показывать</button>
+            </div>
+        </div>
+    </div>
+    <!-- ===== КОНЕЦ БЛОКА ДЛЯ ПОПАПА ===== -->
 </body>
 
 </html>
