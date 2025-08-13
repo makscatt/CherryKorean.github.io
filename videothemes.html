@@ -283,6 +283,32 @@
       color: white;
     }
 
+    #streakButton {
+      background-color: #1c1c1e;
+      /* Темный фон, как у других кнопок */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      line-height: 1.3;
+      padding: 5px;
+      box-sizing: border-box;
+      /* Чтобы padding не ломал размеры */
+    }
+
+    #streakButton .streak-icon {
+      font-size: 36px;
+      /* Размер иконки огня */
+      margin-bottom: 5px;
+    }
+
+    #streakButton .streak-text {
+      font-weight: bold;
+    }
+
     .main-grid {
       display: flex;
       gap: 10px;
@@ -623,6 +649,9 @@
         <div class="user-button" id="videothemebank" style="background-image: url('videothemes/bank.png');"
           onclick="openBankPage()">
           <div class="theme-count-container"><span class="theme-count"></span></div>
+        </div>
+        <div class="user-button" id="streakButton">
+          <!-- Сюда будем выводить текст стрика -->
         </div>
         <div class="user-button" id="videorating" style="background-image: url('videothemes/rating.png');"
           onclick="openRatingPage()">
@@ -1114,12 +1143,43 @@
       // }
     });
 
-    // Функция для обновления отображения количества звезд (если используется отдельный элемент)
+    // ===== НОВАЯ ФУНКЦИЯ ДЛЯ ОБНОВЛЕНИЯ КНОПКИ СТРИКА =====
+    function updateStreakButton(data = {}) {
+      const streakButton = document.getElementById('streakButton');
+      if (!streakButton) return; // Если кнопки нет, выходим
+
+      const today = new Date().toISOString().split('T')[0];
+      const currentStreak = data.streak || 0;
+      const isActiveToday = data.lastActivityDate === today;
+
+      // Определяем цвет иконки
+      const iconColor = isActiveToday ? '#FFD700' : '#666';
+
+      streakButton.innerHTML = `
+      <span class="streak-icon" style="color: ${iconColor};">🔥</span>
+      <span class="streak-text">Дней подряд: ${currentStreak}</span>
+  `;
+
+      // Добавляем обработчик клика
+      streakButton.onclick = openStreakPage;
+    }
+
+    function openStreakPage() {
+      const fadeOverlay = document.getElementById('fadeOverlay');
+      fadeOverlay.style.opacity = '1';
+
+      setTimeout(() => {
+        window.location.href = 'streak.html';
+      }, 400); // Задержка для красивой анимации затухания
+    }
+
+    // Функция для обновления отображения количества звезд и стрика
     function updateStarsDisplay() {
       const starsElement = document.getElementById("stars");
       if (!starsElement) return;
 
-      loadLocalStars(); // ✅ моментальное отображение локальных звёзд
+      loadLocalStars();     // Моментальное отображение локальных звёзд
+      updateStreakButton(); // <<< СРАЗУ ПОКАЗЫВАЕМ КНОПКУ СТРИКА С НУЛЁМ
 
       const telegramUser = Telegram.WebApp.initDataUnsafe.user;
       const telegramId = telegramUser && telegramUser.id;
@@ -1127,22 +1187,29 @@
       if (telegramId) {
         fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
           .then(response => {
-            if (!response.ok) throw new Error();
+            if (!response.ok) throw new Error('Server response was not ok.');
             return response.json();
           })
           .then(data => {
+            // Обновляем звезды
             if (typeof data.stars !== "undefined") {
               starsElement.textContent = `⭐ ${data.stars}`;
               localStorage.setItem("stars", data.stars);
             }
+            // Обновляем стрик данными с сервера
+            updateStreakButton(data); // <<< ОБНОВЛЯЕМ ДАННЫМИ С СЕРВЕРА
           })
-          .catch(() => {
-            loadLocalStars(); // на случай ошибки — fallback
+          .catch((error) => {
+            console.error("Ошибка загрузки данных:", error);
+            loadLocalStars(); // Возвращаем локальные звезды при ошибке
+            updateStreakButton(); // Возвращаем стрик в "0" при ошибке
           });
       } else {
         loadLocalStars();
+        updateStreakButton(); // Если нет telegramId, тоже показываем стрик с нулем
       }
 
+      // Вложенная функция для звезд, ее оставляем как есть
       function loadLocalStars() {
         const stars = parseInt(localStorage.getItem("stars"), 10) || 0;
         starsElement.textContent = `⭐ ${stars}`;

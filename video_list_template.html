@@ -549,8 +549,6 @@
             font-size: 16px;
             padding: 10px 20px;
         }
-
-        
     </style>
 </head>
 
@@ -646,6 +644,69 @@
                 }
             }
         }
+
+        // --- НАЧАЛО БЛОКА ДЛЯ СТРИКА ---
+
+        const STREAK_GOAL = 10; // Наша цель - 10 правильных ответов
+
+        // Функция для отправки запроса на сервер
+        function sendStreakUpdate() {
+            try {
+                const user = Telegram.WebApp.initDataUnsafe?.user;
+                const telegramId = user?.id;
+
+                if (!telegramId) {
+                    console.log("Streak: telegramId не найден, запрос не отправлен.");
+                    return;
+                }
+
+                // ВАЖНО: '/log_activity' - это новый эндпоинт, который мы создадим на сервере
+                fetch("https://telegram-server-hfk7.onrender.com/log_activity", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ userId: telegramId })
+                })
+                    .then(res => {
+                        if (res.ok) console.log("Streak: Активность успешно засчитана на сервере.");
+                        else console.error("Streak: Ошибка ответа сервера.");
+                    })
+                    .catch(err => console.error("Streak: Ошибка отправки запроса:", err));
+
+            } catch (e) {
+                console.error("Streak: Ошибка в функции sendStreakUpdate:", e);
+            }
+        }
+
+        // Главная функция для отслеживания прогресса
+        function trackDailyActivity() {
+            const today = new Date().toISOString().split('T')[0]; // Дата в формате 'YYYY-MM-DD'
+            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
+
+            // Если дата не совпадает, значит это новый день. Сбрасываем счетчик.
+            if (activityData.date !== today) {
+                activityData.date = today;
+                activityData.count = 0;
+            }
+
+            // Если цель на сегодня уже достигнута, ничего не делаем
+            if (activityData.count >= STREAK_GOAL) {
+                return;
+            }
+
+            // Увеличиваем счетчик и сохраняем
+            activityData.count++;
+            localStorage.setItem('dailyActivityTracker', JSON.stringify(activityData));
+
+            console.log(`Streak progress: ${activityData.count}/${STREAK_GOAL}`);
+
+            // Если достигли цели, отправляем запрос на сервер
+            if (activityData.count === STREAK_GOAL) {
+                console.log("Streak: Цель на день достигнута! Отправка на сервер...");
+                sendStreakUpdate();
+            }
+        }
+
+        // --- КОНЕЦ БЛОКА ДЛЯ СТРИКА ---
 
         function saveStars() {
             try {
@@ -841,6 +902,7 @@
             const totalBoxes = boxes.length;
 
             if (isCorrect) {
+                trackDailyActivity();
                 new Audio('excellent.mp3').play();
                 const word = easywords[currentWordIndex];
                 if (word.new) {
