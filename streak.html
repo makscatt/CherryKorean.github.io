@@ -69,6 +69,8 @@
 
         /* --- Стили для блока заморозки --- */
         #streak-freeze-container {
+            position: relative;
+            /* Обязательно для позиционирования иконки "?" */
             background-color: #1c1c1e;
             border: 2px solid #366782;
             border-radius: 12px;
@@ -77,19 +79,16 @@
             align-items: center;
             gap: 15px;
             cursor: pointer;
-            /* Делаем блок кликабельным */
             transition: background-color 0.2s ease;
         }
 
         #streak-freeze-container:active {
             background-color: #2a2a2e;
-            /* Легкое затемнение при клике */
         }
 
         .freeze-icon {
             font-size: 32px;
             color: #5ac8fa;
-            /* Голубой цвет */
         }
 
         .freeze-text h3 {
@@ -101,6 +100,29 @@
             margin: 0;
             font-size: 14px;
             color: #aaa;
+        }
+
+        /* --- Иконка информации "?" --- */
+        .info-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-color: #444;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .info-icon:active {
+            background-color: #666;
         }
 
         /* --- Блок с целями (milestones) --- */
@@ -123,9 +145,7 @@
 
         .milestone.achieved {
             background-color: #2c2500;
-            /* Темно-золотой фон */
             border-color: #FFD700;
-            /* Золотая рамка */
         }
 
         .milestone-icon {
@@ -201,28 +221,24 @@
             box-shadow: 0 0 10px #ffc700;
         }
 
+        /* --- Нижнее меню --- */
         #menu-button-container {
             position: fixed;
-            /* Фиксируем внизу экрана */
             bottom: 0;
             left: 0;
             right: 0;
             max-width: 100%;
-
-            /* Центрируем и добавляем отступ снизу */
             height: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
-            /* Отступ между кнопками */
             background: linear-gradient(to bottom, #2f2f31, #1C1C1E);
             border-top: 1px solid rgba(255, 215, 0, 0.4);
             box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 -2px 5px rgba(0, 0, 0, 0.5);
             z-index: 100;
         }
 
-        /* Располагаем кнопки по краям */
         #main-menu-button {
             position: absolute;
             right: 5px;
@@ -230,8 +246,14 @@
             transform: translateY(-50%);
         }
 
-        /* --- Стили для информационного попапа --- */
-        #streak-info-popup-overlay {
+        /* 
+==================================================================
+    УНИВЕРСАЛЬНЫЕ СТИЛИ ДЛЯ ВСЕХ ПОПАПОВ (ИСПРАВЛЕННЫЙ БЛОК)
+==================================================================
+*/
+
+        /* ОБЩИЙ КЛАСС для фона-оверлея любого попапа */
+        .popup-overlay {
             position: fixed;
             top: 0;
             left: 0;
@@ -240,13 +262,14 @@
             background-color: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(5px);
             display: none;
-            /* По умолчанию скрыт */
+            /* По умолчанию скрыт, управляется JS */
             justify-content: center;
             align-items: center;
             z-index: 200;
         }
 
-        #streak-info-popup-overlay .popup-content {
+        /* ОБЩИЙ КЛАСС для контентного окна попапа */
+        .popup-content {
             background-color: #2c2c2e;
             padding: 25px;
             border-radius: 16px;
@@ -254,6 +277,8 @@
             width: 90%;
             max-width: 350px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
         }
 
         .popup-content h2 {
@@ -268,29 +293,64 @@
             margin-bottom: 25px;
         }
 
+        /* ОБЩИЙ КЛАСС для контейнера с кнопками */
         .popup-buttons {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            margin-top: auto;
+            /* Прижимает кнопки к низу */
         }
 
-        .popup-buttons button {
+        /* ОБЩИЙ БАЗОВЫЙ КЛАСС для всех кнопок в попапах */
+        .popup-btn {
+            width: 100%;
             padding: 12px;
             border: none;
             border-radius: 10px;
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
+            transition: opacity 0.2s ease;
         }
 
-        #popup-ok-btn {
+        .popup-btn:active {
+            opacity: 0.8;
+        }
+
+        /* МОДИФИКАТОР для основной (желтой) кнопки */
+        .popup-btn--primary {
             background-color: #FFD700;
             color: #000;
         }
 
-        #popup-dismiss-btn {
+        /* МОДИФИКАТОР для второстепенной (прозрачной) кнопки */
+        .popup-btn--secondary {
             background-color: transparent;
             color: #8e8e93;
+        }
+
+        /* Стили для списка в попапе заморозки (остаются как есть) */
+        .popup-list {
+            text-align: left;
+            padding-left: 20px;
+            list-style-type: none;
+            margin-bottom: 25px;
+        }
+
+        .popup-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .popup-list li::before {
+            content: '🔹';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #5ac8fa;
         }
     </style>
 </head>
@@ -312,6 +372,7 @@
                 <h3>Заморозка стрика</h3>
                 <p id="freeze-count-label">Осталось: 3/3</p>
             </div>
+            <div class="info-icon" id="freeze-info-btn">?</div>
         </div>
         <!-- Контейнер для целей -->
         <div id="milestones-container">
@@ -404,6 +465,27 @@
 
 
         document.addEventListener('DOMContentLoaded', () => {
+            const freezeInfoBtn = document.getElementById('freeze-info-btn');
+            const freezePopupOverlay = document.getElementById('freeze-info-popup-overlay');
+            const freezeOkBtn = document.getElementById('freeze-ok-btn');
+
+            if (freezeInfoBtn) {
+                freezeInfoBtn.addEventListener('click', () => {
+                    freezePopupOverlay.style.display = 'flex';
+                });
+            }
+
+            function closeFreezePopup() {
+                freezePopupOverlay.style.display = 'none';
+            }
+
+            freezeOkBtn.addEventListener('click', closeFreezePopup);
+            freezePopupOverlay.addEventListener('click', (event) => {
+                // Закрываем, только если клик был по темному фону, а не по контенту
+                if (event.target === freezePopupOverlay) {
+                    closeFreezePopup();
+                }
+            });
             const popupOverlay = document.getElementById('streak-info-popup-overlay');
             const okBtn = document.getElementById('popup-ok-btn');
             const dismissBtn = document.getElementById('popup-dismiss-btn');
@@ -559,19 +641,37 @@
         // --- КОНЕЦ БЛОКА JAVASCRIPT ---
     </script>
 
-    <!-- ===== НАЧАЛО БЛОКА ДЛЯ ПОПАПА ===== -->
-    <div id="streak-info-popup-overlay">
+    <!-- ===== НАЧАЛО БЛОКА ДЛЯ ПОПАПА (ИСПРАВЛЕНО) ===== -->
+
+    <!-- Попап с инструкцией стрика -->
+    <div id="streak-info-popup-overlay" class="popup-overlay"> <!-- ДОБАВЛЕН класс -->
         <div class="popup-content">
             <h2>Как работает стрик?</h2>
             <p>Чтобы день засчитался, нужно правильно угадать <strong>10 фраз</strong> в любой из тренировок. После
                 этого на экране появится иконка 🔥 — это значит, что ваш стрик на сегодня засчитан!</p>
             <div class="popup-buttons">
-                <button id="popup-ok-btn">Понятно</button>
-                <button id="popup-dismiss-btn">Больше не показывать</button>
+                <!-- ИЗМЕНЕНЫ классы у кнопок -->
+                <button id="popup-ok-btn" class="popup-btn popup-btn--primary">Понятно</button>
+                <button id="popup-dismiss-btn" class="popup-btn popup-btn--secondary">Больше не показывать</button>
             </div>
         </div>
     </div>
-    <!-- ===== КОНЕЦ БЛОКА ДЛЯ ПОПАПА ===== -->
+
+    <!-- Попап с информацией о заморозке -->
+    <div id="freeze-info-popup-overlay" class="popup-overlay"> <!-- ДОБАВЛЕН класс -->
+        <div class="popup-content">
+            <h2>Как работает заморозка?</h2>
+            <ul class="popup-list">
+                <li>Спасает ваш стрик, если вы пропустили <strong>ровно 1 день</strong>.</li>
+                <li>Срабатывает <strong>автоматически</strong>, когда вы выполняете норму после пропущенного дня.</li>
+                <li>Если пропустить 2+ дня подряд — стрик <strong>сбросится</strong>.</li>
+            </ul>
+            <div class="popup-buttons">
+                <!-- ИЗМЕНЕНЫ классы у кнопки -->
+                <button id="freeze-ok-btn" class="popup-btn popup-btn--primary">Понятно</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
