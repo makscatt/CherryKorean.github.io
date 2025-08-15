@@ -769,10 +769,12 @@
                 }
 
                 // ВАЖНО: '/log_activity' - это новый эндпоинт, который мы создадим на сервере
+                const localDate = new Date().toISOString().split('T')[0]; // Получаем локальную дату YYYY-MM-DD
+
                 fetch("https://telegram-server-hfk7.onrender.com/log_activity", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ userId: telegramId })
+                    body: JSON.stringify({ userId: telegramId, localDate: localDate }) // <-- Отправляем дату на сервер
                 })
                     .then(res => {
                         if (res.ok) console.log("Streak: Активность успешно засчитана на сервере.");
