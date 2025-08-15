@@ -794,6 +794,7 @@
             if (activityData.date !== today) {
                 activityData.date = today;
                 activityData.count = 0;
+                document.getElementById('streak-indicator').classList.remove('visible');
             }
 
             // Если цель на сегодня уже достигнута, ничего не делаем

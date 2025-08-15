@@ -549,7 +549,6 @@
             font-size: 16px;
             padding: 10px 20px;
         }
-
     </style>
 </head>
 
@@ -681,6 +680,7 @@
 
         // Главная функция для отслеживания прогресса
         function trackDailyActivity() {
+
             const today = new Date().toISOString().split('T')[0]; // Дата в формате 'YYYY-MM-DD'
             const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
 
@@ -688,6 +688,7 @@
             if (activityData.date !== today) {
                 activityData.date = today;
                 activityData.count = 0;
+                document.getElementById('streak-indicator').classList.remove('visible');
             }
 
             // Если цель на сегодня уже достигнута, ничего не делаем
