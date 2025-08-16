@@ -221,6 +221,15 @@
             box-shadow: 0 0 10px #ffc700;
         }
 
+        .calendar-cell.day.frozen {
+            background-color: #5ac8fa;
+            /* Голубой цвет из иконки */
+            color: #fff;
+            border-radius: 50%;
+            font-weight: bold;
+            box-shadow: 0 0 10px #5ac8fa88;
+        }
+
         /* --- Нижнее меню --- */
         #menu-button-container {
             position: fixed;
@@ -514,6 +523,7 @@
             // Переменные для управления календарем
             let currentDate = new Date();
             let activeDays = new Set();
+            let frozenDayString = null;
 
             const monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
@@ -571,7 +581,9 @@
                     cell.innerText = day;
 
                     const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-                    if (activeDays.has(dateString)) {
+                    if (dateString === frozenDayString) {
+                        cell.classList.add('frozen');
+                    } else if (activeDays.has(dateString)) {
                         cell.classList.add('active');
                     }
                     grid.appendChild(cell);
@@ -597,6 +609,19 @@
                         const currentStreak = data.streak || 0;
                         const isActiveToday = data.lastActivityDate === today;
 
+
+                        if (data.lastActivityDate && !isActiveToday && currentStreak > 0) {
+                            const lastActivity = new Date(data.lastActivityDate);
+                            const todayDateObj = new Date(); // Создаем объект Date для вычислений
+                            const diffTime = todayDateObj - lastActivity;
+                            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+                            if (diffDays === 2) { // Если последняя активность была позавчера
+                                const yesterday = new Date();
+                                yesterday.setDate(todayDateObj.getDate() - 1);
+                                frozenDayString = yesterday.toISOString().split('T')[0];
+                            }
+                        }
                         // Загружаем историю из localStorage и обновляем ее
                         // ВАЖНО: История хранится на клиенте. При очистке кэша она пропадет.
                         const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
