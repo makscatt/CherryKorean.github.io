@@ -695,7 +695,7 @@
 
             // Если цель на сегодня уже достигнута, ничего не делаем
             if (activityData.count >= STREAK_GOAL) {
-                return;
+                return true;
             }
 
             // Увеличиваем счетчик и сохраняем
@@ -713,10 +713,10 @@
                     indicator.classList.add('visible');
                     new Audio('torch.mp3').play();
                 }
+                return true;
             }
+            return false;
         }
-
-        // Функция для проверки и сброса при загрузке
 
 
         // --- КОНЕЦ БЛОКА ДЛЯ СТРИКА ---
@@ -934,8 +934,10 @@
             const totalBoxes = boxes.length;
 
             if (isCorrect) {
-                trackDailyActivity();
-                new Audio('excellent.mp3').play();
+                const goalReached = trackDailyActivity();
+                if (!goalReached) {                       
+                    new Audio('excellent.mp3').play();     
+                }
                 const word = easywords[currentWordIndex];
                 if (word.new) {
                     word.new = false;

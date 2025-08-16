@@ -789,6 +789,7 @@
 
         // Главная функция для отслеживания прогресса
         function trackDailyActivity() {
+
             const today = new Date().toISOString().split('T')[0]; // Дата в формате 'YYYY-MM-DD'
             const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
 
@@ -801,7 +802,7 @@
 
             // Если цель на сегодня уже достигнута, ничего не делаем
             if (activityData.count >= STREAK_GOAL) {
-                return;
+                return true;
             }
 
             // Увеличиваем счетчик и сохраняем
@@ -819,21 +820,11 @@
                     indicator.classList.add('visible');
                     new Audio('torch.mp3').play();
                 }
+                return true;
             }
+            return false;
         }
-        // Функция для проверки и сброса при загрузке
-        function checkAndResetStreakOnLoad() {
-            const today = new Date().toISOString().split('T')[0];
-            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
 
-            if (activityData.date !== today) {
-                // Новый день! Сбрасываем данные.
-                activityData.date = today;
-                activityData.count = 0;
-                localStorage.setItem('dailyActivityTracker', JSON.stringify(activityData));
-                document.getElementById('streak-indicator').classList.remove('visible');
-            }
-        }
         // --- КОНЕЦ БЛОКА ДЛЯ СТРИКА ---
 
         function showHintPopup() {
@@ -899,10 +890,8 @@
 
         function loadStars() {
             try {
-                // ✅ Всегда сразу показываем stars из localStorage
                 Game.stars = parseInt(localStorage.getItem("stars")) || 0;
                 updateStarsUI();
-
 
                 const user = Telegram.WebApp.initDataUnsafe?.user;
                 const telegramId = user?.id;
@@ -917,17 +906,32 @@
                         } else {
                             Game.stars = parseInt(localStorage.getItem("stars")) || 0;
                         }
-                        updateStarsUI();
 
+                        const today = new Date().toISOString().split('T')[0];
+                        const indicator = document.getElementById('streak-indicator');
+
+                        if (data && data.lastActivityDate === today) {
+                            indicator.classList.add('visible');
+                        } else {
+                            indicator.classList.remove('visible');
+                            // Если сервер говорит, что сегодня новый день, сбрасываем локальный счетчик
+                            localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
+                            console.log("Local streak tracker has been reset for a new day.");
+                        }
+
+                        updateStarsUI();
                     })
                     .catch(() => {
-                        updateStarsUI();
+                        // При ошибке тоже скрываем индикатор и сбрасываем локальный счетчик
+                        document.getElementById('streak-indicator').classList.remove('visible');
+                        const today = new Date().toISOString().split('T')[0];
+                        localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
 
+                        updateStarsUI();
                     });
             } catch (e) {
                 console.error("Ошибка при загрузке звёзд:", e);
                 updateStarsUI();
-
             }
         }
 
@@ -1070,8 +1074,10 @@
             // 2. Обновляем прогресс-бар и счетчики
             const currentBox = progressBarBoxes[currentQuestionIndex];
             if (isCorrect) {
-                trackDailyActivity();
-                new Audio('excellent.mp3').play();
+                const goalReached = trackDailyActivity();
+                if (!goalReached) {
+                    new Audio('excellent.mp3').play();
+                }
                 currentBox.style.backgroundColor = 'lightgreen';
                 correctAnswersCount++;
             } else {
@@ -1146,7 +1152,7 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            checkAndResetStreakOnLoad();
+
             hideHintForMembers();
             initializeTimer(); // <-- Главное изменение здесь
 
