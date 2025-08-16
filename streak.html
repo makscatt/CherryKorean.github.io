@@ -617,60 +617,59 @@
             function initialize() {
                 const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
                 if (!user) {
-                    // ... (ваш код обработки ошибки)
+                    // ... ваш код обработки ошибки ...
                     return;
                 }
 
                 fetch(`https://telegram-server-hfk7.onrender.com/load/${user.id}`)
                     .then(res => res.json())
                     .then(data => {
-                        // --- НАЧАЛО БЛОКА МИГРАЦИИ ---
-                        // Этот блок сработает только если на сервере нет даты начала стрика
+                        // --- Блок миграции (остается как есть, он безопасен) ---
                         if (!data.streakStartDate) {
                             const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
                             if (localHistory.length > 0) {
-                                // Используем новую функцию
                                 const calculatedStartDate = getStreakStartDateFromHistory(localHistory);
-
                                 if (calculatedStartDate) {
                                     fetch('https://telegram-server-hfk7.onrender.com/save', {
                                         method: 'POST',
                                         headers: { 'Content-Type': 'application/json' },
-                                        body: JSON.stringify({
-                                            telegramId: user.id,
-                                            streakStartDate: calculatedStartDate
-                                        })
+                                        body: JSON.stringify({ telegramId: user.id, streakStartDate: calculatedStartDate })
                                     }).then(() => console.log(`[Миграция] Дата начала стрика (${calculatedStartDate}) отправлена на сервер.`));
                                 }
                             }
                         }
-                        // --- КОНЕЦ БЛОКА МИГРАЦИИ ---
+                        // --- Конец блока миграции ---
 
+                        // 1. Загружаем то, что есть в localStorage
+                        const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
+                        activeDays = new Set(localHistory);
+
+                        // 2. ДОБАВЛЯЕМ актуальные данные с сервера. Set сам уберет дубликаты.
+                        if (data.lastActivityDate) {
+                            activeDays.add(data.lastActivityDate);
+                        }
+                        if (data.frozenDates && Array.isArray(data.frozenDates)) {
+                            data.frozenDates.forEach(date => activeDays.add(date));
+                        }
+
+                        // 3. Сохраняем объединенную и актуальную историю обратно.
+                        localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
+
+
+                        // 4. Обновляем интерфейс, используя данные с сервера (для счетчиков)
+                        // и объединенные данные (для календаря).
                         const today = new Date().toISOString().split('T')[0];
                         const currentStreak = data.streak || 0;
                         const isActiveToday = data.lastActivityDate === today;
 
-                        const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
-                        activeDays = new Set(localHistory);
-
-                        // Добавляем замороженные дни и активные дни в календарь
-                        if (data.frozenDates) {
-                            data.frozenDates.forEach(date => activeDays.add(date));
-                        }
-                        if (data.lastActivityDate && !activeDays.has(data.lastActivityDate)) {
-                            activeDays.add(data.lastActivityDate);
-                            // Сохранять историю больше не обязательно, т.к. правда на сервере, но оставим для календаря
-                            localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
-                        }
-
-                        // Обновляем весь интерфейс
                         updateStreakDisplay(currentStreak, isActiveToday);
                         updateFreezeDisplay(data.freezes);
                         updateMilestones(currentStreak);
-                        generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+                        generateCalendar(currentDate.getFullYear(), currentDate.getMonth()); // Эта функция уже использует `activeDays`
                     })
                     .catch(err => {
-                        // ... (ваш код обработки ошибки)
+                        console.error("Ошибка загрузки данных стрика:", err);
+                        // ... ваш код обработки ошибки ...
                     });
             }
 
