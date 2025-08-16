@@ -717,18 +717,7 @@
         }
 
         // Функция для проверки и сброса при загрузке
-        function checkAndResetStreakOnLoad() {
-            const today = new Date().toISOString().split('T')[0];
-            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
 
-            if (activityData.date !== today) {
-                // Новый день! Сбрасываем данные.
-                activityData.date = today;
-                activityData.count = 0;
-                localStorage.setItem('dailyActivityTracker', JSON.stringify(activityData));
-                document.getElementById('streak-indicator').classList.remove('visible');
-            }
-        }
 
         // --- КОНЕЦ БЛОКА ДЛЯ СТРИКА ---
 
@@ -772,7 +761,6 @@
         }
         function loadStars() {
             try {
-                // ✅ Всегда сразу показываем stars из localStorage
                 Game.stars = parseInt(localStorage.getItem("stars")) || 0;
                 updateStarsUI();
                 updateProgressBoxes();
@@ -791,21 +779,30 @@
                             Game.stars = parseInt(localStorage.getItem("stars")) || 0;
                         }
 
-                        // <<< НАЧАЛО НОВОГО КОДА
                         const today = new Date().toISOString().split('T')[0];
                         const indicator = document.getElementById('streak-indicator');
+
                         if (data && data.lastActivityDate === today) {
                             indicator.classList.add('visible');
                         } else {
+                            // <<< НАЧАЛО ИЗМЕНЕНИЙ
                             indicator.classList.remove('visible');
+                            // Если сервер говорит, что сегодня новый день, сбрасываем локальный счетчик
+                            localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
+                            console.log("Local streak tracker has been reset for a new day.");
+                            // <<< КОНЕЦ ИЗМЕНЕНИЙ
                         }
-                        // <<< КОНЕЦ НОВОГО КОДА
 
                         updateStarsUI();
                         updateProgressBoxes();
                         loadProgressBoxes();
                     })
                     .catch(() => {
+                        // При ошибке тоже скрываем индикатор и сбрасываем локальный счетчик на всякий случай
+                        document.getElementById('streak-indicator').classList.remove('visible');
+                        const today = new Date().toISOString().split('T')[0];
+                        localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
+
                         updateStarsUI();
                         updateProgressBoxes();
                         loadProgressBoxes();
@@ -1022,7 +1019,7 @@
             document.getElementById("showKoreanButton").style.display = "none";
         }
         document.addEventListener("DOMContentLoaded", () => {
-            checkAndResetStreakOnLoad();
+
             hideHintForMembers();
             loadStars();
             loadWordsAndSetOptions();
