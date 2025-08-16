@@ -633,6 +633,7 @@
                                 const frozenDate = new Date(prevDate);
                                 frozenDate.setDate(prevDate.getDate() + 1);
                                 frozenDayString = frozenDate.toISOString().split('T')[0];
+                                activeDays.delete(frozenDayString);
                             }
                         }
 
