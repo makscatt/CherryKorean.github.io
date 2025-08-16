@@ -970,5 +970,197 @@
       "russian": "Когда я раньше приезжал...",
       "new": true
     }
+  ],
+  "b6": [
+    {
+      "isNew": true,
+      "video": "video/runbts/설마 이거 보라 색깔 맞춘 거예요.webm",
+      "videoMp4": "video/runbts/mp4/설마 이거 보라 색깔 맞춘 거예요.mp4",
+      "korean": "설마 이거 보라 색깔 맞춘 거예요?",
+      "russian": "Неужели специально фиолетовый подобрали?",
+      "new": true
+    },
+    {
+      "video": "video/runbts/몸에 근육이.webm",
+      "videoMp4": "video/runbts/mp4/몸에 근육이.mp4",
+      "korean": "몸에 근육이",
+      "russian": "В теле мышцы",
+      "new": true
+    },
+    {
+      "video": "video/runbts/아래에서 위로.webm",
+      "videoMp4": "video/runbts/mp4/아래에서 위로.mp4",
+      "korean": "아래에서 위로",
+      "russian": "Снизу вверх",
+      "new": true
+    },
+    {
+      "video": "video/runbts/그러면.webm",
+      "videoMp4": "video/runbts/mp4/그러면.mp4",
+      "korean": "그러면",
+      "russian": "Тогда",
+      "new": true
+    },
+    {
+      "video": "video/runbts/2호가 있나요.webm",
+      "videoMp4": "video/runbts/mp4/2호가 있나요.mp4",
+      "korean": "2호가 있나요?",
+      "russian": "А есть второй номер?",
+      "new": true
+    },
+    {
+      "video": "video/runbts/그게 사실 병이긴 해.webm",
+      "videoMp4": "video/runbts/mp4/그게 사실 병이긴 해.mp4",
+      "korean": "그게 사실 병이긴 해",
+      "russian": "На самом деле это ведь болезнь",
+      "new": true
+    },
+    {
+      "video": "video/runbts/나 진짜 듣고 충격 먹었잖아요.webm",
+      "videoMp4": "video/runbts/mp4/나 진짜 듣고 충격 먹었잖아요.mp4",
+      "korean": "나 진짜 듣고 충격 먹었잖아요",
+      "russian": "Я ведь правда был в шоке, когда это услышал",
+      "new": true
+    },
+    {
+      "video": "video/runbts/너무 아파.webm",
+      "videoMp4": "video/runbts/mp4/너무 아파.mp4",
+      "korean": "너무 아파",
+      "russian": "Очень больно",
+      "new": true
+    },
+    {
+      "video": "video/runbts/농사 짓기 어때.webm",
+      "videoMp4": "video/runbts/mp4/농사 짓기 어때.mp4",
+      "korean": "농사 짓기 어때?",
+      "russian": "Что на счет фермерства?",
+      "new": true
+    },
+    {
+      "video": "video/runbts/멋있다.webm",
+      "videoMp4": "video/runbts/mp4/멋있다.mp4",
+      "korean": "멋있다",
+      "russian": "Классно / Круто",
+      "new": true
+    },
+    {
+      "video": "video/runbts/멋지게 나올 수 있을까요.webm",
+      "videoMp4": "video/runbts/mp4/멋지게 나올 수 있을까요.mp4",
+      "korean": "멋지게 나올 수 있을까요?",
+      "russian": "Получится ли у меня круто?",
+      "new": true
+    },
+    {
+      "video": "video/runbts/멋진 자세가 돼요.webm",
+      "videoMp4": "video/runbts/mp4/멋진 자세가 돼요.mp4",
+      "korean": "멋진 자세가 돼요?",
+      "russian": "Получается красивая поза?",
+      "new": true
+    },
+    {
+      "video": "video/runbts/몸 풀어야 돼.webm",
+      "videoMp4": "video/runbts/mp4/몸 풀어야 돼.mp4",
+      "korean": "몸 풀어야 돼",
+      "russian": "Надо размяться",
+      "new": true
+    },
+    {
+      "video": "video/runbts/보라색이야.webm",
+      "videoMp4": "video/runbts/mp4/보라색이야.mp4",
+      "korean": "보라색이야",
+      "russian": "Это фиолетовый",
+      "new": true
+    },
+    {
+      "video": "video/runbts/진지하게 임해.webm",
+      "videoMp4": "video/runbts/mp4/진지하게 임해.mp4",
+      "korean": "진지하게 임해",
+      "russian": "Относись серьёзно",
+      "new": true
+    },
+    {
+      "video": "video/runbts/나 이거 안 되는데.webm",
+      "videoMp4": "video/runbts/mp4/나 이거 안 되는데.mp4",
+      "korean": "나 이거 안 되는데",
+      "russian": "У меня не получается",
+      "new": true
+    },
+    {
+      "video": "video/runbts/이미 땡겨요.webm",
+      "videoMp4": "video/runbts/mp4/이미 땡겨요.mp4",
+      "korean": "이미 땡겨요",
+      "russian": "Уже тяну",
+      "new": true
+    },
+    {
+      "video": "video/runbts/재밌다.webm",
+      "videoMp4": "video/runbts/mp4/재밌다.mp4",
+      "korean": "재밌다",
+      "russian": "Интересно",
+      "new": true
+    },
+    {
+      "video": "video/runbts/오늘 뭐 하긴요 이거 하죠.webm",
+      "videoMp4": "video/runbts/mp4/오늘 뭐 하긴요 이거 하죠.mp4",
+      "korean": "오늘 뭐 하긴요? 이거 하죠",
+      "russian": "Что мы сегодня делаем? Конечно, это!",
+      "new": true
+    },
+    {
+      "video": "video/runbts/오늘 뭐 하나요.webm",
+      "videoMp4": "video/runbts/mp4/오늘 뭐 하나요.mp4",
+      "korean": "오늘 뭐 하나요?",
+      "russian": "Что мы сегодня делаем?",
+      "new": true
+    },
+    {
+      "video": "video/runbts/나 방금 내 머리 깨졌다.webm",
+      "videoMp4": "video/runbts/mp4/나 방금 내 머리 깨졌다.mp4",
+      "korean": "나 방금 내 머리 깨졌다",
+      "russian": "Мне только что голову снесло",
+      "new": true
+    },
+    {
+      "video": "video/runbts/미쳤습니다.webm",
+      "videoMp4": "video/runbts/mp4/미쳤습니다.mp4",
+      "korean": "미쳤습니다",
+      "russian": "Обалдеть",
+      "new": true
+    },
+    {
+      "video": "video/runbts/이것도 안 돼 지금.webm",
+      "videoMp4": "video/runbts/mp4/이것도 안 돼 지금.mp4",
+      "korean": "이것도 안 돼 지금",
+      "russian": "Это тоже сейчас не получается",
+      "new": true
+    },
+    {
+      "video": "video/runbts/폴 댄스도 해보고 싶어.webm",
+      "videoMp4": "video/runbts/mp4/폴 댄스도 해보고 싶어.mp4",
+      "korean": "폴 댄스도 해보고 싶어",
+      "russian": "Танец на шесте тоже хочу попробовать",
+      "new": true
+    },
+    {
+      "video": "video/runbts/풀었어.webm",
+      "videoMp4": "video/runbts/mp4/풀었어.mp4",
+      "korean": "풀었어",
+      "russian": "Развязал",
+      "new": true
+    },
+    {
+      "video": "video/runbts/플라잉 요가로 그 몸을 만드신 거예요.webm",
+      "videoMp4": "video/runbts/mp4/플라잉 요가로 그 몸을 만드신 거예요.mp4",
+      "korean": "플라잉 요가로 그 몸을 만드신 거예요?",
+      "russian": "Вы с помощью Аэро-йоги сделали такое тело?",
+      "new": true
+    },
+    {
+      "video": "video/runbts/화려하게.webm",
+      "videoMp4": "video/runbts/mp4/화려하게.mp4",
+      "korean": "화려하게",
+      "russian": "Шикарно",
+      "new": true
+    }
   ]
 }
