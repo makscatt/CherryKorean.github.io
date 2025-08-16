@@ -820,7 +820,19 @@
                 }
             }
         }
+        // Функция для проверки и сброса при загрузке
+        function checkAndResetStreakOnLoad() {
+            const today = new Date().toISOString().split('T')[0];
+            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
 
+            if (activityData.date !== today) {
+                // Новый день! Сбрасываем данные.
+                activityData.date = today;
+                activityData.count = 0;
+                localStorage.setItem('dailyActivityTracker', JSON.stringify(activityData));
+                document.getElementById('streak-indicator').classList.remove('visible');
+            }
+        }
         // --- КОНЕЦ БЛОКА ДЛЯ СТРИКА ---
 
         function showHintPopup() {
@@ -1133,6 +1145,7 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
+            checkAndResetStreakOnLoad();
             hideHintForMembers();
             initializeTimer(); // <-- Главное изменение здесь
 
