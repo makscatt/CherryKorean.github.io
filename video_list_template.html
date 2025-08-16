@@ -612,7 +612,7 @@
     </div>
     </div>
     <script>
-        const excellentSound = new Audio('excellent.mp3');
+
         let correctAnswer = "";
         let progressCount = 0;
         const Game = { stars: 0 };
@@ -926,8 +926,7 @@
 
             if (isCorrect) {
                 trackDailyActivity();
-                excellentSound.currentTime = 0; // На случай повторного нажатия
-                excellentSound.play();
+                new Audio('excellent.mp3').play();
                 const word = easywords[currentWordIndex];
                 if (word.new) {
                     word.new = false;

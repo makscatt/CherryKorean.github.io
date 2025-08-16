@@ -737,7 +737,6 @@
     </div>
     </div>
     <script>
-        const excellentSound = new Audio('excellent.mp3');
         // --- Глобальные переменные ---
         let correctAnswer = "";
         const Game = { stars: 0 };
@@ -1071,8 +1070,7 @@
             const currentBox = progressBarBoxes[currentQuestionIndex];
             if (isCorrect) {
                 trackDailyActivity();
-                excellentSound.currentTime = 0; // На случай повторного нажатия
-                excellentSound.play();
+                new Audio('excellent.mp3').play();
                 currentBox.style.backgroundColor = 'lightgreen';
                 correctAnswersCount++;
             } else {
