@@ -610,27 +610,35 @@
                         const isActiveToday = data.lastActivityDate === today;
 
 
-                        if (data.lastActivityDate && !isActiveToday && currentStreak > 0) {
-                            const lastActivity = new Date(data.lastActivityDate);
-                            const todayDateObj = new Date(); // Создаем объект Date для вычислений
-                            const diffTime = todayDateObj - lastActivity;
-                            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-                            if (diffDays === 2) { // Если последняя активность была позавчера
-                                const yesterday = new Date();
-                                yesterday.setDate(todayDateObj.getDate() - 1);
-                                frozenDayString = yesterday.toISOString().split('T')[0];
-                            }
-                        }
-                        // Загружаем историю из localStorage и обновляем ее
-                        // ВАЖНО: История хранится на клиенте. При очистке кэша она пропадет.
+                        // --- ВСТАВИТЬ ЭТОТ БЛОК ---
                         const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
                         activeDays = new Set(localHistory);
 
-                        if (data.lastActivityDate && !activeDays.has(data.lastActivityDate)) {
+                        // Добавляем последнюю активность от сервера в историю для анализа
+                        if (data.lastActivityDate) {
                             activeDays.add(data.lastActivityDate);
-                            localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
                         }
+
+                        // Анализируем историю на "дырку" в 1 день
+                        const sortedHistory = [...activeDays].sort();
+                        if (sortedHistory.length >= 2) {
+                            const lastDate = new Date(sortedHistory[sortedHistory.length - 1]);
+                            const prevDate = new Date(sortedHistory[sortedHistory.length - 2]);
+
+                            const diffTime = lastDate.getTime() - prevDate.getTime();
+                            const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+
+                            // Если между последними активностями ровно 2 дня, значит день между ними был заморожен
+                            if (diffDays === 2) {
+                                const frozenDate = new Date(prevDate);
+                                frozenDate.setDate(prevDate.getDate() + 1);
+                                frozenDayString = frozenDate.toISOString().split('T')[0];
+                            }
+                        }
+
+                        // Сохраняем обновленную историю обратно
+                        localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
+                        // --- КОНЕЦ БЛОКА ---
 
                         // Обновляем весь интерфейс
                         updateStreakDisplay(currentStreak, isActiveToday);
