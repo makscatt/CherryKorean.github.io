@@ -617,14 +617,14 @@
             function initialize() {
                 const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
                 if (!user) {
-                    // ... ваш код обработки ошибки ...
+                    // ... (код обработки ошибки, можно оставить как есть)
                     return;
                 }
 
                 fetch(`https://telegram-server-hfk7.onrender.com/load/${user.id}`)
                     .then(res => res.json())
                     .then(data => {
-                        // --- Блок миграции (остается как есть, он безопасен) ---
+                        // --- Блок миграции (не трогаем, он работает правильно) ---
                         if (!data.streakStartDate) {
                             const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
                             if (localHistory.length > 0) {
@@ -640,11 +640,23 @@
                         }
                         // --- Конец блока миграции ---
 
-                        // 1. Загружаем то, что есть в localStorage
-                        const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
+
+                        // =========================================================
+                        //            👇 ВОТ ИСПРАВЛЕННАЯ ЛОГИКА 👇
+                        // =========================================================
+
+                        let localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
+
+                        // 1. ОЧИСТКА: Если на сервере есть дата, убираем из localHistory все, что новее.
+                        // Это исправляет ошибку, когда в localStorage дата "из будущего".
+                        if (data.lastActivityDate) {
+                            localHistory = localHistory.filter(date => date <= data.lastActivityDate);
+                        }
+
+                        // 2. Создаем Set из ОЧИЩЕННОЙ истории.
                         activeDays = new Set(localHistory);
 
-                        // 2. ДОБАВЛЯЕМ актуальные данные с сервера. Set сам уберет дубликаты.
+                        // 3. ДОБАВЛЯЕМ актуальные данные с сервера.
                         if (data.lastActivityDate) {
                             activeDays.add(data.lastActivityDate);
                         }
@@ -652,12 +664,15 @@
                             data.frozenDates.forEach(date => activeDays.add(date));
                         }
 
-                        // 3. Сохраняем объединенную и актуальную историю обратно.
+                        // 4. Сохраняем обратно уже чистые и полные данные.
                         localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
 
 
-                        // 4. Обновляем интерфейс, используя данные с сервера (для счетчиков)
-                        // и объединенные данные (для календаря).
+                        // =========================================================
+                        //                  КОНЕЦ ИСПРАВЛЕНИЙ
+                        // =========================================================
+
+                        // 5. Обновляем интерфейс как обычно.
                         const today = new Date().toISOString().split('T')[0];
                         const currentStreak = data.streak || 0;
                         const isActiveToday = data.lastActivityDate === today;
@@ -665,11 +680,11 @@
                         updateStreakDisplay(currentStreak, isActiveToday);
                         updateFreezeDisplay(data.freezes);
                         updateMilestones(currentStreak);
-                        generateCalendar(currentDate.getFullYear(), currentDate.getMonth()); // Эта функция уже использует `activeDays`
+                        generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
                     })
                     .catch(err => {
                         console.error("Ошибка загрузки данных стрика:", err);
-                        // ... ваш код обработки ошибки ...
+                        // ... (код обработки ошибки)
                     });
             }
 
