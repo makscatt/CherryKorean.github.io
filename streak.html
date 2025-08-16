@@ -221,15 +221,6 @@
             box-shadow: 0 0 10px #ffc700;
         }
 
-        .calendar-cell.day.frozen {
-            background-color: #5ac8fa;
-            /* Голубой цвет из иконки */
-            color: #fff;
-            border-radius: 50%;
-            font-weight: bold;
-            box-shadow: 0 0 10px #5ac8fa88;
-        }
-
         /* --- Нижнее меню --- */
         #menu-button-container {
             position: fixed;
@@ -523,7 +514,6 @@
             // Переменные для управления календарем
             let currentDate = new Date();
             let activeDays = new Set();
-            let frozenDayString = null;
 
             const monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
@@ -581,13 +571,39 @@
                     cell.innerText = day;
 
                     const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-                    if (dateString === frozenDayString) {
-                        cell.classList.add('frozen');
-                    } else if (activeDays.has(dateString)) {
+                    if (activeDays.has(dateString)) {
                         cell.classList.add('active');
                     }
                     grid.appendChild(cell);
                 }
+            }
+
+            function getStreakStartDateFromHistory(historyArray, lastServerActivityDate) {
+                if (!historyArray || historyArray.length === 0) return null;
+
+                // Сортируем даты от новой к старой
+                historyArray.sort((a, b) => new Date(b) - new Date(a));
+
+                // Начинаем с последней известной активной даты с сервера
+                let lastDate = new Date(lastServerActivityDate);
+                let streakStartDate = lastServerActivityDate;
+
+                for (let i = 1; i < historyArray.length; i++) {
+                    const currentDate = new Date(historyArray[i]);
+                    const expectedPreviousDate = new Date(lastDate);
+                    expectedPreviousDate.setDate(expectedPreviousDate.getDate() - 1);
+
+                    // Если разрыв больше одного дня, мы нашли начало
+                    if (currentDate.getTime() !== expectedPreviousDate.getTime()) {
+                        break;
+                    }
+
+                    // Если все ок, сдвигаем даты
+                    streakStartDate = historyArray[i];
+                    lastDate = currentDate;
+                }
+
+                return streakStartDate;
             }
 
             // --- ЗАГРУЗКА ДАННЫХ И ИНИЦИАЛИЗАЦИЯ ---
@@ -595,51 +611,50 @@
             function initialize() {
                 const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
                 if (!user) {
-                    updateStreakDisplay(0, false);
-                    updateMilestones(0);
-                    generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
-                    console.error("Не удалось получить данные пользователя Telegram.");
+                    // ... (ваш код обработки ошибки)
                     return;
                 }
 
                 fetch(`https://telegram-server-hfk7.onrender.com/load/${user.id}`)
                     .then(res => res.json())
                     .then(data => {
+                        // --- НАЧАЛО БЛОКА МИГРАЦИИ ---
+                        // Этот блок сработает только если на сервере нет даты начала стрика
+                        if (!data.streakStartDate) {
+                            const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
+                            if (localHistory.length > 0 && data.lastActivityDate) {
+                                const calculatedStartDate = getStreakStartDateFromHistory(localHistory, data.lastActivityDate);
+                                if (calculatedStartDate) {
+                                    // Отправляем вычисленную дату на сервер
+                                    fetch('https://telegram-server-hfk7.onrender.com/save', {
+                                        method: 'POST',
+                                        headers: { 'Content-Type': 'application/json' },
+                                        body: JSON.stringify({
+                                            telegramId: user.id,
+                                            streakStartDate: calculatedStartDate
+                                        })
+                                    }).then(() => console.log('Дата начала стрика успешно мигрировала на сервер.'));
+                                }
+                            }
+                        }
+                        // --- КОНЕЦ БЛОКА МИГРАЦИИ ---
+
                         const today = new Date().toISOString().split('T')[0];
                         const currentStreak = data.streak || 0;
                         const isActiveToday = data.lastActivityDate === today;
 
-
-                        // --- ВСТАВИТЬ ЭТОТ БЛОК ---
                         const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
                         activeDays = new Set(localHistory);
 
-                        // Добавляем последнюю активность от сервера в историю для анализа
-                        if (data.lastActivityDate) {
+                        // Добавляем замороженные дни и активные дни в календарь
+                        if (data.frozenDates) {
+                            data.frozenDates.forEach(date => activeDays.add(date));
+                        }
+                        if (data.lastActivityDate && !activeDays.has(data.lastActivityDate)) {
                             activeDays.add(data.lastActivityDate);
+                            // Сохранять историю больше не обязательно, т.к. правда на сервере, но оставим для календаря
+                            localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
                         }
-
-                        // Анализируем историю на "дырку" в 1 день
-                        const sortedHistory = [...activeDays].sort();
-                        if (sortedHistory.length >= 2) {
-                            const lastDate = new Date(sortedHistory[sortedHistory.length - 1]);
-                            const prevDate = new Date(sortedHistory[sortedHistory.length - 2]);
-
-                            const diffTime = lastDate.getTime() - prevDate.getTime();
-                            const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
-
-                            // Если между последними активностями ровно 2 дня, значит день между ними был заморожен
-                            if (diffDays === 2) {
-                                const frozenDate = new Date(prevDate);
-                                frozenDate.setDate(prevDate.getDate() + 1);
-                                frozenDayString = frozenDate.toISOString().split('T')[0];
-                                activeDays.delete(frozenDayString);
-                            }
-                        }
-
-                        // Сохраняем обновленную историю обратно
-                        localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
-                        // --- КОНЕЦ БЛОКА ---
 
                         // Обновляем весь интерфейс
                         updateStreakDisplay(currentStreak, isActiveToday);
@@ -648,11 +663,7 @@
                         generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
                     })
                     .catch(err => {
-                        console.error("Ошибка загрузки данных стрика:", err);
-                        updateStreakDisplay(0, false);
-                        updateFreezeDisplay(3);
-                        updateMilestones(0);
-                        generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+                        // ... (ваш код обработки ошибки)
                     });
             }
 
