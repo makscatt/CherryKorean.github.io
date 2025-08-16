@@ -221,6 +221,17 @@
             box-shadow: 0 0 10px #ffc700;
         }
 
+        .calendar-cell.day.frozen {
+            background-color: #5ac8fa;
+            /* Голубой цвет */
+            color: #fff;
+            /* Белый текст для контраста */
+            border-radius: 50%;
+            font-weight: bold;
+            box-shadow: 0 0 10px #5ac8fa88;
+            /* Тень в том же цвете */
+        }
+
         /* --- Нижнее меню --- */
         #menu-button-container {
             position: fixed;
@@ -514,6 +525,7 @@
             // Переменные для управления календарем
             let currentDate = new Date();
             let activeDays = new Set();
+            let frozenDays = new Set();
 
             const monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
@@ -573,6 +585,11 @@
                     const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
                     if (activeDays.has(dateString)) {
                         cell.classList.add('active');
+                    }
+                    // Проверяем замороженные дни ПОСЛЕ активных, чтобы перекрасить их
+                    if (frozenDays.has(dateString)) {
+                        cell.classList.remove('active'); // убираем желтый, если он есть
+                        cell.classList.add('frozen');    // добавляем голубой
                     }
                     grid.appendChild(cell);
                 }
@@ -667,10 +684,15 @@
                         // 4. Сохраняем обратно уже чистые и полные данные.
                         localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
 
-
                         // =========================================================
                         //                  КОНЕЦ ИСПРАВЛЕНИЙ
                         // =========================================================
+
+                        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        // !!!!! ВОТ ЭТА ОДНА СТРОКА, КОТОРУЮ НУЖНО БЫЛО ДОБАВИТЬ !!!!!
+                        frozenDays = new Set(data.frozenDates || []);
+                        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
                         // 5. Обновляем интерфейс как обычно.
                         const today = new Date().toISOString().split('T')[0];
