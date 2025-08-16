@@ -578,29 +578,35 @@
                 }
             }
 
-            function getStreakStartDateFromHistory(historyArray, lastServerActivityDate) {
-                if (!historyArray || historyArray.length === 0) return null;
+            function getStreakStartDateFromHistory(historyArray) {
+                if (!historyArray || historyArray.length === 0) {
+                    return null;
+                }
 
-                // Сортируем даты от новой к старой
-                historyArray.sort((a, b) => new Date(b) - new Date(a));
+                // Создаем Set для быстрого поиска дат
+                const activeDaysSet = new Set(historyArray);
 
-                // Начинаем с последней известной активной даты с сервера
-                let lastDate = new Date(lastServerActivityDate);
-                let streakStartDate = lastServerActivityDate;
+                // Сортируем, чтобы найти самую последнюю дату
+                const sortedHistory = [...historyArray].sort((a, b) => new Date(b) - new Date(a));
+                const lastActivityDate = sortedHistory[0];
 
-                for (let i = 1; i < historyArray.length; i++) {
-                    const currentDate = new Date(historyArray[i]);
-                    const expectedPreviousDate = new Date(lastDate);
-                    expectedPreviousDate.setDate(expectedPreviousDate.getDate() - 1);
+                let currentDate = new Date(lastActivityDate);
+                let streakStartDate = lastActivityDate; // Начинаем с предположения, что стрик = 1 день
 
-                    // Если разрыв больше одного дня, мы нашли начало
-                    if (currentDate.getTime() !== expectedPreviousDate.getTime()) {
+                while (true) {
+                    const previousDay = new Date(currentDate);
+                    previousDay.setDate(previousDay.getDate() - 1);
+                    const previousDayString = previousDay.toISOString().split('T')[0];
+
+                    // Если в истории есть предыдущий день...
+                    if (activeDaysSet.has(previousDayString)) {
+                        // ...то он становится новым кандидатом на дату начала стрика
+                        streakStartDate = previousDayString;
+                        currentDate = previousDay; // и мы продолжаем идти назад от него
+                    } else {
+                        // Если предыдущего дня нет — значит, мы нашли начало. Выходим.
                         break;
                     }
-
-                    // Если все ок, сдвигаем даты
-                    streakStartDate = historyArray[i];
-                    lastDate = currentDate;
                 }
 
                 return streakStartDate;
@@ -622,10 +628,11 @@
                         // Этот блок сработает только если на сервере нет даты начала стрика
                         if (!data.streakStartDate) {
                             const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
-                            if (localHistory.length > 0 && data.lastActivityDate) {
-                                const calculatedStartDate = getStreakStartDateFromHistory(localHistory, data.lastActivityDate);
+                            if (localHistory.length > 0) {
+                                // Используем новую функцию
+                                const calculatedStartDate = getStreakStartDateFromHistory(localHistory);
+
                                 if (calculatedStartDate) {
-                                    // Отправляем вычисленную дату на сервер
                                     fetch('https://telegram-server-hfk7.onrender.com/save', {
                                         method: 'POST',
                                         headers: { 'Content-Type': 'application/json' },
@@ -633,7 +640,7 @@
                                             telegramId: user.id,
                                             streakStartDate: calculatedStartDate
                                         })
-                                    }).then(() => console.log('Дата начала стрика успешно мигрировала на сервер.'));
+                                    }).then(() => console.log(`[Миграция] Дата начала стрика (${calculatedStartDate}) отправлена на сервер.`));
                                 }
                             }
                         }
