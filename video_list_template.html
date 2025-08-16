@@ -716,19 +716,8 @@
             }
         }
 
-        // Функция для проверки и сброса при загрузке
-        function checkAndResetStreakOnLoad() {
-            const today = new Date().toISOString().split('T')[0];
-            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
 
-            if (activityData.date !== today) {
-                // Новый день! Сбрасываем данные.
-                activityData.date = today;
-                activityData.count = 0;
-                localStorage.setItem('dailyActivityTracker', JSON.stringify(activityData));
-                document.getElementById('streak-indicator').classList.remove('visible');
-            }
-        }
+
 
         // --- КОНЕЦ БЛОКА ДЛЯ СТРИКА ---
 
@@ -1011,7 +1000,28 @@
             document.getElementById("showKoreanButton").style.display = "none";
         }
         document.addEventListener("DOMContentLoaded", () => {
-            checkAndResetStreakOnLoad();
+            // --- НАЧАЛО НОВОГО БЛОКА ДЛЯ СТРИКА ---
+            try {
+                const today = new Date().toISOString().split('T')[0];
+                let activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
+                const indicator = document.getElementById('streak-indicator');
+
+                // Если дата не совпадает, сбрасываем счетчик на новый день
+                if (activityData.date !== today) {
+                    activityData = { date: today, count: 0 };
+                    localStorage.setItem('dailyActivityTracker', JSON.stringify(activityData));
+                }
+
+                // Теперь устанавливаем видимость индикатора на основе актуальных данных
+                if (activityData.count >= STREAK_GOAL) {
+                    if (indicator) indicator.classList.add('visible');
+                } else {
+                    if (indicator) indicator.classList.remove('visible');
+                }
+            } catch (e) {
+                console.error("Ошибка при проверке стрика при загрузке:", e);
+            }
+            // --- КОНЕЦ НОВОГО БЛОКА ---
             hideHintForMembers();
             loadStars();
             loadWordsAndSetOptions();
