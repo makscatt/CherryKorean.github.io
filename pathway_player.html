@@ -693,7 +693,7 @@
                         <option value="2">2x</option>
                     </select>
                 </div>
-                <span id="streak-indicator">🔥</span>
+                <span id="streak-indicator"></span>
             </div>
         </div>
         <div id="interaction-block">
@@ -757,6 +757,22 @@
 
         const STREAK_GOAL = 10; // Наша цель - 10 правильных ответов
 
+
+        function updateStreakDisplay() {
+            const indicator = document.getElementById('streak-indicator');
+            const today = new Date().toISOString().split('T')[0];
+            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: today, count: 0 };
+
+            const currentCount = (activityData.date === today) ? activityData.count : 0;
+
+            // Проверяем, достигнута ли цель
+            if (currentCount >= STREAK_GOAL) {
+                indicator.textContent = '🔥'; // Показываем огонь
+            } else {
+                indicator.textContent = `${currentCount}/${STREAK_GOAL}`; // Показываем счетчик
+            }
+            indicator.classList.add('visible'); // Убеждаемся, что элемент виден
+        }
         // Функция для отправки запроса на сервер
         function sendStreakUpdate() {
             try {
@@ -769,7 +785,11 @@
                 }
 
                 // ВАЖНО: '/log_activity' - это новый эндпоинт, который мы создадим на сервере
-                const localDate = new Date().toISOString().split('T')[0]; // Получаем локальную дату YYYY-MM-DD
+                const d = new Date();
+                const year = d.getFullYear();
+                const month = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                const localDate = `${year}-${month}-${day}`;// Получаем локальную дату YYYY-MM-DD
 
                 fetch("https://telegram-server-hfk7.onrender.com/log_activity", {
                     method: "POST",
@@ -789,7 +809,6 @@
 
         // Главная функция для отслеживания прогресса
         function trackDailyActivity() {
-
             const today = new Date().toISOString().split('T')[0]; // Дата в формате 'YYYY-MM-DD'
             const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
 
@@ -797,10 +816,7 @@
             if (activityData.date !== today) {
                 activityData.date = today;
                 activityData.count = 0;
-                document.getElementById('streak-indicator').classList.remove('visible');
             }
-
-           
 
             // Увеличиваем счетчик и сохраняем
             activityData.count++;
@@ -808,15 +824,14 @@
 
             console.log(`Streak progress: ${activityData.count}/${STREAK_GOAL}`);
 
+            // Вызываем функцию обновления отображения
+            updateStreakDisplay();
+
             // Если достигли цели, отправляем запрос на сервер
             if (activityData.count === STREAK_GOAL) {
                 console.log("Streak: Цель на день достигнута! Отправка на сервер...");
                 sendStreakUpdate();
-                const indicator = document.getElementById('streak-indicator');
-                if (indicator) {
-                    indicator.classList.add('visible');
-                    new Audio('torch.mp3').play();
-                }
+                new Audio('torch.mp3').play();
                 return true;
             }
             return false;
@@ -905,21 +920,25 @@
                         }
 
                         const today = new Date().toISOString().split('T')[0];
-                        const indicator = document.getElementById('streak-indicator');
 
                         if (data && data.lastActivityDate === today) {
-                            indicator.classList.add('visible');
+                            // Если сервер говорит, что стрик сегодня выполнен, 
+                            // принудительно обновляем локальные данные
+                            localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: STREAK_GOAL }));
                         } else {
-                            indicator.classList.remove('visible');
-                            // Если сервер говорит, что сегодня новый день, сбрасываем локальный счетчик
-                            localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
-                            console.log("Local streak tracker has been reset for a new day.");
+                            // Если сегодня новый день, сбрасываем локальный счетчик
+                            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || {};
+                            if (activityData.date !== today) {
+                                localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
+                                console.log("Local streak tracker has been reset for a new day.");
+                            }
                         }
 
+                        updateStreakDisplay(); // Обновляем отображение (покажет 🔥 или 0/10)
                         updateStarsUI();
                     })
                     .catch(() => {
-                        // При ошибке тоже скрываем индикатор и сбрасываем локальный счетчик
+                        // Блок catch оставлен таким, каким он был в вашем оригинальном коде
                         document.getElementById('streak-indicator').classList.remove('visible');
                         const today = new Date().toISOString().split('T')[0];
                         localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
@@ -1151,6 +1170,7 @@
         document.addEventListener("DOMContentLoaded", () => {
 
             hideHintForMembers();
+            updateStreakDisplay();
             initializeTimer(); // <-- Главное изменение здесь
 
             const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { count: 0 };

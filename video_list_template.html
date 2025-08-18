@@ -575,7 +575,7 @@
                         <option value="2">2x</option>
                     </select>
                 </div>
-                <span id="streak-indicator">🔥</span>
+                <span id="streak-indicator"></span>
             </div>
         </div>
         <div id="interaction-block">
@@ -662,7 +662,11 @@
                 }
 
                 // ВАЖНО: '/log_activity' - это новый эндпоинт, который мы создадим на сервере
-                const localDate = new Date().toISOString().split('T')[0]; // Получаем локальную дату YYYY-MM-DD
+                const d = new Date();
+                const year = d.getFullYear();
+                const month = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                const localDate = `${year}-${month}-${day}`; // Получаем локальную дату YYYY-MM-DD
 
                 fetch("https://telegram-server-hfk7.onrender.com/log_activity", {
                     method: "POST",
@@ -680,6 +684,22 @@
             }
         }
 
+        function updateStreakDisplay() {
+            const indicator = document.getElementById('streak-indicator');
+            const today = new Date().toISOString().split('T')[0];
+            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: today, count: 0 };
+
+            const currentCount = (activityData.date === today) ? activityData.count : 0;
+
+            // Проверяем, достигнута ли цель
+            if (currentCount >= STREAK_GOAL) {
+                indicator.textContent = '🔥'; // Показываем огонь
+            } else {
+                indicator.textContent = `${currentCount}/${STREAK_GOAL}`; // Показываем счетчик
+            }
+            indicator.classList.add('visible'); // Убеждаемся, что элемент виден
+        }
+
         // Главная функция для отслеживания прогресса
         function trackDailyActivity() {
 
@@ -693,7 +713,7 @@
                 document.getElementById('streak-indicator').classList.remove('visible');
             }
 
-            
+
 
             // Увеличиваем счетчик и сохраняем
             activityData.count++;
@@ -702,6 +722,7 @@
             console.log(`Streak progress: ${activityData.count}/${STREAK_GOAL}`);
 
             // Если достигли цели, отправляем запрос на сервер
+            updateStreakDisplay();
             if (activityData.count === STREAK_GOAL) {
                 console.log("Streak: Цель на день достигнута! Отправка на сервер...");
                 sendStreakUpdate();
@@ -777,18 +798,23 @@
                         }
 
                         const today = new Date().toISOString().split('T')[0];
-                        const indicator = document.getElementById('streak-indicator');
 
+                        // --- НАЧАЛО ИЗМЕНЕНИЙ ---
                         if (data && data.lastActivityDate === today) {
-                            indicator.classList.add('visible');
+                            // Если сервер говорит, что стрик сегодня выполнен, 
+                            // принудительно обновляем локальные данные и отображение
+                            localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: STREAK_GOAL }));
                         } else {
-                            // <<< НАЧАЛО ИЗМЕНЕНИЙ
-                            indicator.classList.remove('visible');
-                            // Если сервер говорит, что сегодня новый день, сбрасываем локальный счетчик
-                            localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
-                            console.log("Local streak tracker has been reset for a new day.");
-                            // <<< КОНЕЦ ИЗМЕНЕНИЙ
+                            // Если сегодня новый день, сбрасываем локальный счетчик
+                            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || {};
+                            if (activityData.date !== today) {
+                                localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
+                                console.log("Local streak tracker has been reset for a new day.");
+                            }
                         }
+
+                        updateStreakDisplay(); // Обновляем отображение (покажет 🔥 или 0/10)
+                        // --- КОНЕЦ ИЗМЕНЕНИЙ ---
 
                         updateStarsUI();
                         updateProgressBoxes();
@@ -932,8 +958,8 @@
 
             if (isCorrect) {
                 const goalReached = trackDailyActivity();
-                if (!goalReached) {                       
-                    new Audio('excellent.mp3').play();     
+                if (!goalReached) {
+                    new Audio('excellent.mp3').play();
                 }
                 const word = easywords[currentWordIndex];
                 if (word.new) {
@@ -1022,6 +1048,7 @@
             hideHintForMembers();
             loadStars();
             loadWordsAndSetOptions();
+            updateStreakDisplay();
         });
 
         function saveToBank() {

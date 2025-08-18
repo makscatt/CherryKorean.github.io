@@ -27,6 +27,7 @@ git push --set-upstream origin main
 
 Работа с конвертером:
 cd "C:\Users\MakscattSchool\Desktop\Видео"
+cd "C:\Users\MakscattSchool\Desktop\Видео\проект"
 mkdir mp4
 mkdir webm
 for %f in (*.mp4) do ffmpeg -i "%f" -c:v libvpx-vp9 -b:v 1M -c:a libopus "webm\%~nf.webm"
