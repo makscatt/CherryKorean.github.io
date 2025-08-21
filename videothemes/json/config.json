@@ -63,12 +63,13 @@
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "Демо BTS", "key": "b0" },
-      { "name": "BTS 1", "key": "b1" },
-      { "name": "BTS 2", "key": "b2" },
-      { "name": "BTS 3", "key": "b3" },
-      { "name": "BTS 4", "key": "b4" },
+      { "name": "Разное 1", "key": "b1" },
+      { "name": "Разное 2", "key": "b2" },
+      { "name": "Разное 3", "key": "b3" },
+      { "name": "Разное 4", "key": "b4" },
       { "name": "J-hope", "key": "b5" },
-      { "name": "Аэро-Йога", "key": "b6" }
+      { "name": "Аэро-Йога-1", "key": "b6" },
+      { "name": "Аэро-Йога-2", "key": "b7" }
     ]
   },
   "theme2": {
