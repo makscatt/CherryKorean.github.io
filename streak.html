@@ -25,6 +25,7 @@
             display: flex;
             flex-direction: column;
             gap: 25px;
+            padding-bottom: 90px;
         }
 
         /* --- Кнопка "Назад" --- */
@@ -633,81 +634,81 @@
 
             function initialize() {
                 const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
-                if (!user) {
-                    // ... (код обработки ошибки, можно оставить как есть)
-                    return;
-                }
 
-                fetch(`https://telegram-server-hfk7.onrender.com/load/${user.id}`)
-                    .then(res => res.json())
-                    .then(data => {
-                        // --- Блок миграции (не трогаем, он работает правильно) ---
-                        if (!data.streakStartDate) {
-                            const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
-                            if (localHistory.length > 0) {
-                                const calculatedStartDate = getStreakStartDateFromHistory(localHistory);
-                                if (calculatedStartDate) {
-                                    fetch('https://telegram-server-hfk7.onrender.com/save', {
-                                        method: 'POST',
-                                        headers: { 'Content-Type': 'application/json' },
-                                        body: JSON.stringify({ telegramId: user.id, streakStartDate: calculatedStartDate })
-                                    }).then(() => console.log(`[Миграция] Дата начала стрика (${calculatedStartDate}) отправлена на сервер.`));
+                // ЕСЛИ ЕСТЬ USER (работа в Telegram)
+                if (user) {
+                    fetch(`https://telegram-server-hfk7.onrender.com/load/${user.id}`)
+                        .then(res => res.json())
+                        .then(data => {
+                            // --- Блок миграции (не трогаем, он работает правильно) ---
+                            if (!data.streakStartDate) {
+                                const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
+                                if (localHistory.length > 0) {
+                                    const calculatedStartDate = getStreakStartDateFromHistory(localHistory);
+                                    if (calculatedStartDate) {
+                                        fetch('https://telegram-server-hfk7.onrender.com/save', {
+                                            method: 'POST',
+                                            headers: { 'Content-Type': 'application/json' },
+                                            body: JSON.stringify({ telegramId: user.id, streakStartDate: calculatedStartDate })
+                                        }).then(() => console.log(`[Миграция] Дата начала стрика (${calculatedStartDate}) отправлена на сервер.`));
+                                    }
                                 }
                             }
-                        }
-                        // --- Конец блока миграции ---
+                            // --- Конец блока миграции ---
 
+                            let localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
 
-                        // =========================================================
-                        //            👇 ВОТ ИСПРАВЛЕННАЯ ЛОГИКА 👇
-                        // =========================================================
+                            if (data.lastActivityDate) {
+                                localHistory = localHistory.filter(date => date <= data.lastActivityDate);
+                            }
 
-                        let localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
+                            activeDays = new Set(localHistory);
 
-                        // 1. ОЧИСТКА: Если на сервере есть дата, убираем из localHistory все, что новее.
-                        // Это исправляет ошибку, когда в localStorage дата "из будущего".
-                        if (data.lastActivityDate) {
-                            localHistory = localHistory.filter(date => date <= data.lastActivityDate);
-                        }
+                            if (data.lastActivityDate) {
+                                activeDays.add(data.lastActivityDate);
+                            }
+                            if (data.frozenDates && Array.isArray(data.frozenDates)) {
+                                data.frozenDates.forEach(date => activeDays.add(date));
+                            }
 
-                        // 2. Создаем Set из ОЧИЩЕННОЙ истории.
-                        activeDays = new Set(localHistory);
+                            localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
 
-                        // 3. ДОБАВЛЯЕМ актуальные данные с сервера.
-                        if (data.lastActivityDate) {
-                            activeDays.add(data.lastActivityDate);
-                        }
-                        if (data.frozenDates && Array.isArray(data.frozenDates)) {
-                            data.frozenDates.forEach(date => activeDays.add(date));
-                        }
+                            frozenDays = new Set(data.frozenDates || []);
 
-                        // 4. Сохраняем обратно уже чистые и полные данные.
-                        localStorage.setItem('streakHistory', JSON.stringify([...activeDays]));
+                            const today = new Date().toISOString().split('T')[0];
+                            const currentStreak = data.streak || 0;
+                            const isActiveToday = data.lastActivityDate === today;
 
-                        // =========================================================
-                        //                  КОНЕЦ ИСПРАВЛЕНИЙ
-                        // =========================================================
+                            updateStreakDisplay(currentStreak, isActiveToday);
+                            updateFreezeDisplay(data.freezes);
+                            updateMilestones(currentStreak);
+                            generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+                        })
+                        .catch(err => {
+                            console.error("Ошибка загрузки данных стрика:", err);
+                            // На случай ошибки сервера, тоже отрисуем пустой календарь
+                            updateStreakDisplay(0, false);
+                            updateFreezeDisplay(3);
+                            updateMilestones(0);
+                            generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+                        });
+                }
+                // ЕСЛИ НЕТ USER (тест в браузере)
+                else {
+                    console.log("Тестовый режим (без Telegram ID). Отображение по умолчанию.");
 
-                        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                        // !!!!! ВОТ ЭТА ОДНА СТРОКА, КОТОРУЮ НУЖНО БЫЛО ДОБАВИТЬ !!!!!
-                        frozenDays = new Set(data.frozenDates || []);
-                        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    // Получаем тестовые данные из localStorage, если они есть
+                    const localHistory = JSON.parse(localStorage.getItem('streakHistory') || '[]');
+                    activeDays = new Set(localHistory);
+                    // frozenDays можно тоже хранить в localStorage для тестов, но пока оставим пустым
+                    frozenDays = new Set();
 
-
-                        // 5. Обновляем интерфейс как обычно.
-                        const today = new Date().toISOString().split('T')[0];
-                        const currentStreak = data.streak || 0;
-                        const isActiveToday = data.lastActivityDate === today;
-
-                        updateStreakDisplay(currentStreak, isActiveToday);
-                        updateFreezeDisplay(data.freezes);
-                        updateMilestones(currentStreak);
-                        generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
-                    })
-                    .catch(err => {
-                        console.error("Ошибка загрузки данных стрика:", err);
-                        // ... (код обработки ошибки)
-                    });
+                    // Отображаем интерфейс с дефолтными/локальными данными
+                    updateStreakDisplay(0, false); // Можете поставить сюда любые цифры для теста
+                    updateFreezeDisplay(3);
+                    updateMilestones(0);
+                    generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+                }
             }
 
             // --- НАВЕШИВАЕМ СОБЫТИЯ ---
