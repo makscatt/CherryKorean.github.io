@@ -39,6 +39,8 @@ yt-dlp.exe https://www.youtube.com/watch?v=ID_видео
 yt-dlp https://www.instagram.com/reel/КОД/
 yt-dlp https://www.youtube.com/shorts/hcr9roJmB-w?si=4Exlic_XSNDRNGtW
 yt-dlp -x --audio-format mp3 "https://www.youtube.com/shorts/hcr9roJmB-w?si=4Exlic_XSNDRNGtW"
+yt-dlp --cookies-from-browser firefox "https://www.youtube.com/watch?v=K0KmuuyyQQo"
+
 
 
 только звук:
