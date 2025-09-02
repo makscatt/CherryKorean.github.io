@@ -227,7 +227,6 @@
   ],
   "b2": [
     {
-      "isNew": true,
       "video": "video/hwarang/왜 그래.webm",
       "videoMp4": "video/hwarang/mp4/왜 그래.mp4",
       "korean": "왜 그래?",
@@ -412,7 +411,6 @@
   ],
   "b3": [
     {
-      "isNew": true,
       "video": "video/hwarang/지금부터 집중하시고.webm",
       "videoMp4": "video/hwarang/mp4/지금부터 집중하시고.mp4",
       "korean": "지금부터 집중하시고",
@@ -622,7 +620,6 @@
       "russian": "Не волнуйся",
       "new": true
     }
-    
   ],
   "b4": [
     {
@@ -702,7 +699,184 @@
       "korean": "그만 먹어야겠다",
       "russian": "Мне надо перестать есть",
       "new": true
+    },
+    {
+      "video": "video/hwarang/좀 더 드시지.webm",
+      "videoMp4": "video/hwarang/mp4/좀 더 드시지.mp4",
+      "korean": "좀 더 드시지",
+      "russian": "Съешьте ещё немного",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/마저 들 먹거라.webm",
+      "videoMp4": "video/hwarang/mp4/마저 들 먹거라.mp4",
+      "korean": "마저 들 먹거라",
+      "russian": "Доедайте всё",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/그만 쳐다보고 밥이나 먹지.webm",
+      "videoMp4": "video/hwarang/mp4/그만 쳐다보고 밥이나 먹지.mp4",
+      "korean": "그만 쳐다보고 밥이나 먹지",
+      "russian": "Хватит пялиться, ешь уже",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/오라비가 뭐가 어떤데 그래.webm",
+      "videoMp4": "video/hwarang/mp4/오라비가 뭐가 어떤데 그래.mp4",
+      "korean": "오라비가 뭐가 어떤데 그래",
+      "russian": "А что такого в том, что он старший брат?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/망했어.webm",
+      "videoMp4": "video/hwarang/mp4/망했어.mp4",
+      "korean": "망했어",
+      "russian": "Всё пропало",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/그 자가 오라비여서는 안 되는데.webm",
+      "videoMp4": "video/hwarang/mp4/그 자가 오라비여서는 안 되는데.mp4",
+      "korean": "그 자가 오라비여서는 안 되는데",
+      "russian": "Этот человек не должен быть моим братом",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/죽었다고.webm",
+      "videoMp4": "video/hwarang/mp4/죽었다고.mp4",
+      "korean": "죽었다고",
+      "russian": "Я сказал, он умер",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/그렇게 죽을 놈이 아니지.webm",
+      "videoMp4": "video/hwarang/mp4/그렇게 죽을 놈이 아니지.mp4",
+      "korean": "그렇게 죽을 놈이 아니지",
+      "russian": "Он не тот, кто так просто умрёт",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/맞다 목걸이.webm",
+      "videoMp4": "video/hwarang/mp4/맞다 목걸이.mp4",
+      "korean": "맞다 목걸이",
+      "russian": "Верно, ожерелье",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/안 그래.webm",
+      "videoMp4": "video/hwarang/mp4/안 그래.mp4",
+      "korean": "안 그래?",
+      "russian": "Не так ли?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/여긴 어떻게 온 거예요.webm",
+      "videoMp4": "video/hwarang/mp4/여긴 어떻게 온 거예요.mp4",
+      "korean": "여긴 어떻게 온 거예요?",
+      "russian": "Зачем вы сюда пришли?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/그렇게까지 미친놈인가.webm",
+      "videoMp4": "video/hwarang/mp4/그렇게까지 미친놈인가.mp4",
+      "korean": "그렇게까지 미친놈인가?",
+      "russian": "Вы настолько сумасшедший?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/정말 왜 온 거예요.webm",
+      "videoMp4": "video/hwarang/mp4/정말 왜 온 거예요.mp4",
+      "korean": "정말 왜 온 거예요?",
+      "russian": "Зачем вы на самом деле пришли?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/진짜 원하는 게 뭐요.webm",
+      "videoMp4": "video/hwarang/mp4/진짜 원하는 게 뭐요.mp4",
+      "korean": "진짜 원하는 게 뭐요?",
+      "russian": "Чего вы на самом деле хотите?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/나 빨리 가서 일해야 된단 말이요.webm",
+      "videoMp4": "video/hwarang/mp4/나 빨리 가서 일해야 된단 말이요.mp4",
+      "korean": "나 빨리 가서 일해야 된단 말이요",
+      "russian": "Говорю, Мне нужно скорее идти и работать",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/머리가 나쁘네.webm",
+      "videoMp4": "video/hwarang/mp4/머리가 나쁘네.mp4",
+      "korean": "머리가 나쁘네",
+      "russian": "Дурная голова",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/그럼 포기하시지요.webm",
+      "videoMp4": "video/hwarang/mp4/그럼 포기하시지요.mp4",
+      "korean": "그럼 포기하시지요",
+      "russian": "Тогда откажитесь от этого",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/제에게 맡겨 주시죠.webm",
+      "videoMp4": "video/hwarang/mp4/제에게 맡겨 주시죠.mp4",
+      "korean": "제에게 맡겨 주시죠",
+      "russian": "Поручите это мне",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/지금 뭐 하시는 겁니까.webm",
+      "videoMp4": "video/hwarang/mp4/지금 뭐 하시는 겁니까.mp4",
+      "korean": "지금 뭐 하시는 겁니까?",
+      "russian": "Что вы сейчас делаете?",
+      "new": true
     }
   ],
-  "b5": []
+  "b5": [
+    {
+      "isNew": true,
+      "video": "video/hwarang/그리고.webm",
+      "videoMp4": "video/hwarang/mp4/그리고.mp4",
+      "korean": "그리고",
+      "russian": "И затем",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/두 사람.webm",
+      "videoMp4": "video/hwarang/mp4/두 사람.mp4",
+      "korean": "두 사람",
+      "russian": "Два человека",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/그렇지요.webm",
+      "videoMp4": "video/hwarang/mp4/그렇지요.mp4",
+      "korean": "그렇지요",
+      "russian": "Именно так",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/걱정돼서.webm",
+      "videoMp4": "video/hwarang/mp4/걱정돼서.mp4",
+      "korean": "걱정돼서",
+      "russian": "Потому что волновался",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/그러니까 왜.webm",
+      "videoMp4": "video/hwarang/mp4/그러니까 왜.mp4",
+      "korean": "그러니까 왜",
+      "russian": "Так почему же?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/뭔데.webm",
+      "videoMp4": "video/hwarang/mp4/뭔데.mp4",
+      "korean": "뭔데?",
+      "russian": "Что такое?",
+      "new": true
+    }
+  ]
 }
