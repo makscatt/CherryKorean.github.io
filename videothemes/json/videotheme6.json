@@ -877,6 +877,62 @@
       "korean": "뭔데?",
       "russian": "Что такое?",
       "new": true
+    },
+    {
+      "video": "video/hwarang/누가 생각이나 하겠어.webm",
+      "videoMp4": "video/hwarang/mp4/누가 생각이나 하겠어.mp4",
+      "korean": "누가 생각이나 하겠어",
+      "russian": "Кто бы мог подумать",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/하지만 이젠 아니야.webm",
+      "videoMp4": "video/hwarang/mp4/하지만 이젠 아니야.mp4",
+      "korean": "하지만 이젠 아니야",
+      "russian": "Но теперь уже нет",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/어디 가는 거냐.webm",
+      "videoMp4": "video/hwarang/mp4/어디 가는 거냐.mp4",
+      "korean": "어디 가는 거냐",
+      "russian": "Куда идёшь?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/꼭 찾아야 될 사람이 있어.webm",
+      "videoMp4": "video/hwarang/mp4/꼭 찾아야 될 사람이 있어.mp4",
+      "korean": "꼭 찾아야 될 사람이 있어",
+      "russian": "Есть человек, которого обязательно нужно найти",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/너무 늦지 않도록 해라.webm",
+      "videoMp4": "video/hwarang/mp4/너무 늦지 않도록 해라.mp4",
+      "korean": "너무 늦지 않도록 해라",
+      "russian": "Смотри, сильно не опаздывай",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/꼭 나와라 오늘.webm",
+      "videoMp4": "video/hwarang/mp4/꼭 나와라 오늘.mp4",
+      "korean": "꼭 나와라 오늘",
+      "russian": "Обязательно выходи сегодня",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/도망가면 국물도 없다.webm",
+      "videoMp4": "video/hwarang/mp4/도망가면 국물도 없다.mp4",
+      "korean": "도망가면 국물도 없다",
+      "russian": "Если сбежишь, тебе не поздоровится",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/무슨 일인데 이렇게 사람이 많아.webm",
+      "videoMp4": "video/hwarang/mp4/무슨 일인데 이렇게 사람이 많아.mp4",
+      "korean": "무슨 일인데 이렇게 사람이 많아?",
+      "russian": "Что случилось, почему так много людей?",
+      "new": true
     }
   ]
 }
