@@ -933,6 +933,104 @@
       "korean": "무슨 일인데 이렇게 사람이 많아?",
       "russian": "Что случилось, почему так много людей?",
       "new": true
+    },
+    {
+      "video": "video/hwarang/안 되나.webm",
+      "videoMp4": "video/hwarang/mp4/안 되나.mp4",
+      "korean": "안 되나?",
+      "russian": "Разве нельзя?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/진심.webm",
+      "videoMp4": "video/hwarang/mp4/진심.mp4",
+      "korean": "진심?",
+      "russian": "Искренность?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/온전한 진심을 원하오.webm",
+      "videoMp4": "video/hwarang/mp4/온전한 진심을 원하오.mp4",
+      "korean": "온전한 진심을 원하오",
+      "russian": "Я хочу полной искренности",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/제발.webm",
+      "videoMp4": "video/hwarang/mp4/제발.mp4",
+      "korean": "제발",
+      "russian": "Умоляю",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/누가 뭘 해.webm",
+      "videoMp4": "video/hwarang/mp4/누가 뭘 해.mp4",
+      "korean": "누가 뭘 해?",
+      "russian": "Кто что сделает?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/어딨어 그 사람들.webm",
+      "videoMp4": "video/hwarang/mp4/어딨어 그 사람들.mp4",
+      "korean": "어딨어 그 사람들?",
+      "russian": "Где были эти люди?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/잘못한 모양인데.webm",
+      "videoMp4": "video/hwarang/mp4/잘못한 모양인데.mp4",
+      "korean": "잘못한 모양인데",
+      "russian": "Похоже, ошибся",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/날 죽이라고 날.webm",
+      "videoMp4": "video/hwarang/mp4/날 죽이라고 날.mp4",
+      "korean": "날 죽이라고 날",
+      "russian": "Убей меня",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/넌 참 자꾸 약하구나.webm",
+      "videoMp4": "video/hwarang/mp4/넌 참 자꾸 약하구나.mp4",
+      "korean": "넌 참 자꾸 약하구나",
+      "russian": "Ты правда постоянно такой слабый",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/대신 저를 벌하시죠.webm",
+      "videoMp4": "video/hwarang/mp4/대신 저를 벌하시죠.mp4",
+      "korean": "대신 저를 벌하시죠",
+      "russian": "Накажите лучше меня",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/소신의 아들입니다.webm",
+      "videoMp4": "video/hwarang/mp4/소신의 아들입니다.mp4",
+      "korean": "소신의 아들입니다",
+      "russian": "Он мой(вашего слуги) сын",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/오늘은 널 찾지도 않았는데.webm",
+      "videoMp4": "video/hwarang/mp4/오늘은 널 찾지도 않았는데.mp4",
+      "korean": "오늘은 널 찾지도 않았는데",
+      "russian": "Сегодня я даже не искал тебя",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/왜 내 앞에 있는 거냐.webm",
+      "videoMp4": "video/hwarang/mp4/왜 내 앞에 있는 거냐.mp4",
+      "korean": "왜 내 앞에 있는 거냐?",
+      "russian": "Почему ты передо мной?",
+      "new": true
+    },
+    {
+      "video": "video/hwarang/이 자리에서 죽으라면 좋겠습니다.webm",
+      "videoMp4": "video/hwarang/mp4/이 자리에서 죽으라면 좋겠습니다.mp4",
+      "korean": "이 자리에서 죽으라면 좋겠습니다",
+      "russian": "Если прикажете убить меня здесь, так тому и быть",
+      "new": true
     }
   ]
 }
