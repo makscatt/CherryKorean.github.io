@@ -255,5 +255,15 @@
       { "name": "Демо", "key": "b0" },
       { "name": "1 Серия", "key": "b1" }
     ]
+  },
+  "theme20": {
+    "coverImage": "videothemes/subthemebc/evilflower.png",
+    "masterJsonPath": "videothemes/json/videotheme20.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Демо", "key": "b0" },
+      { "name": "Цветок зла 1", "key": "b1" },
+      { "name": "Цветок зла 2", "key": "b2" }
+    ]
   }
 }

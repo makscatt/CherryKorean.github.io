@@ -723,7 +723,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 19; i >= 2; i--) {
+          for (let i = 20; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -1288,7 +1288,7 @@
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 1; i <= 19; i++) {
+      for (let i = 1; i <= 20; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1319,10 +1319,10 @@
     document.addEventListener('DOMContentLoaded', () => {
       
       const updateConfig = {
-        version: '2508', 
-        title: 'Обновление от 25.08', 
+        version: '0409', 
+        title: 'Обновление от 04.09', 
         image: 'videothemes/update_banner.png', 
-        text: `Добавил новые фрагменты\n🚀Отряд Хваран"` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+        text: `Добавил новую дораму\n🚀Цветок зла"` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
       };
       // ------------------------------------
 
