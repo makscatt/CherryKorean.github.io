@@ -199,7 +199,9 @@
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "Демо", "key": "b0" },
-      { "name": "Хватай Сон Дже и беги 1", "key": "b1" }
+      { "name": "Сон Дже 1", "key": "b1" },
+      { "name": "Сон Дже 2", "key": "b2" },
+      { "name": "Сон Дже 3", "key": "b3" }
     ]
   },
   "theme14": {

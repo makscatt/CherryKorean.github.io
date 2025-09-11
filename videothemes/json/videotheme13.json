@@ -283,8 +283,404 @@
       "new": true
     }
   ],
-  "b2": [],
-  "b3": [],
+  "b2": [
+    {
+      "isNew": true,
+      "video": "video/hvatai/진짜 죄송합니다.webm",
+      "videoMp4": "video/hvatai/mp4/진짜 죄송합니다.mp4",
+      "korean": "진짜 죄송합니다",
+      "russian": "Мне правда очень жаль",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/아깝네.webm",
+      "videoMp4": "video/hvatai/mp4/아깝네.mp4",
+      "korean": "아깝네",
+      "russian": "Жаль",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/언니 왜 안 와요.webm",
+      "videoMp4": "video/hvatai/mp4/언니 왜 안 와요.mp4",
+      "korean": "언니 왜 안 와요?",
+      "russian": "Сестренка, почему не идешь?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/저기요.webm",
+      "videoMp4": "video/hvatai/mp4/저기요.mp4",
+      "korean": "저기요",
+      "russian": "Извините (обращение)",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/진짜 죄송한데.webm",
+      "videoMp4": "video/hvatai/mp4/진짜 죄송한데.mp4",
+      "korean": "진짜 죄송한데",
+      "russian": "Мне правда очень жаль, но...",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/진짜 안 되는데.webm",
+      "videoMp4": "video/hvatai/mp4/진짜 안 되는데.mp4",
+      "korean": "진짜 안 되는데",
+      "russian": "Правда нельзя",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/춥다.webm",
+      "videoMp4": "video/hvatai/mp4/춥다.mp4",
+      "korean": "춥다",
+      "russian": "Холодно",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/잠시만요.webm",
+      "videoMp4": "video/hvatai/mp4/잠시만요.mp4",
+      "korean": "잠시만요",
+      "russian": "Минутку",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/왜 없지.webm",
+      "videoMp4": "video/hvatai/mp4/왜 없지.mp4",
+      "korean": "왜 없지?",
+      "russian": "Почему нет?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/이번 곡은.webm",
+      "videoMp4": "video/hvatai/mp4/이번 곡은.mp4",
+      "korean": "이번 곡은",
+      "russian": "Эта песня...",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/밖에서 들어도 이렇게 감동적인데.webm",
+      "videoMp4": "video/hvatai/mp4/밖에서 들어도 이렇게 감동적인데.mp4",
+      "korean": "밖에서 들어도 이렇게 감동적인데",
+      "russian": "Даже снаружи слушаешь — так трогательно",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/이제 가자.webm",
+      "videoMp4": "video/hvatai/mp4/이제 가자.mp4",
+      "korean": "이제 가자",
+      "russian": "Теперь пошли",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/오늘 하루 왜 이러니.webm",
+      "videoMp4": "video/hvatai/mp4/오늘 하루 왜 이러니.mp4",
+      "korean": "오늘 하루 왜 이러니?",
+      "russian": "Почему сегодня весь день так?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/나중에 얘기해.webm",
+      "videoMp4": "video/hvatai/mp4/나중에 얘기해.mp4",
+      "korean": "나중에 얘기해",
+      "russian": "Поговорим позже",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/지금은 좀 혼자 있고 싶은데.webm",
+      "videoMp4": "video/hvatai/mp4/지금은 좀 혼자 있고 싶은데.mp4",
+      "korean": "지금은 좀 혼자 있고 싶은데",
+      "russian": "Сейчас я хочу побыть один",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/그래 니 멋대로 해.webm",
+      "videoMp4": "video/hvatai/mp4/그래 니 멋대로 해.mp4",
+      "korean": "그래 니 멋대로 해",
+      "russian": "Ну ладно, делай по-своему",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/이러기야.webm",
+      "videoMp4": "video/hvatai/mp4/이러기야.mp4",
+      "korean": "이러기야?",
+      "russian": "Вот так?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/엘리베이터가 없어서.webm",
+      "videoMp4": "video/hvatai/mp4/엘리베이터가 없어서.mp4",
+      "korean": "엘리베이터가 없어서",
+      "russian": "Потому что лифта нет",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/왜 이러고 있어요.webm",
+      "videoMp4": "video/hvatai/mp4/왜 이러고 있어요.mp4",
+      "korean": "왜 이러고 있어요?",
+      "russian": "Почему вы так себя ведёте?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/추워 보여서요.webm",
+      "videoMp4": "video/hvatai/mp4/추워 보여서요.mp4",
+      "korean": "추워 보여서요",
+      "russian": "Потому что выглядишь замёрзшей",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/근데 왜 울지.webm",
+      "videoMp4": "video/hvatai/mp4/근데 왜 울지.mp4",
+      "korean": "근데 왜 울지?",
+      "russian": "Но почему ты плачешь?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/재밌네.webm",
+      "videoMp4": "video/hvatai/mp4/재밌네.mp4",
+      "korean": "재밌네",
+      "russian": "Забавно",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/다시 살고 싶게 해 줘서.webm",
+      "videoMp4": "video/hvatai/mp4/다시 살고 싶게 해 줘서.mp4",
+      "korean": "다시 살고 싶게 해 줘서",
+      "russian": "Ты заставил меня захотеть снова жить",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/친구가 데리러 와 버렸네요.webm",
+      "videoMp4": "video/hvatai/mp4/친구가 데리러 와 버렸네요.mp4",
+      "korean": "친구가 데리러 와 버렸네요",
+      "russian": "Подруга всё же приехала забрать меня",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/이거 쓰고 가요.webm",
+      "videoMp4": "video/hvatai/mp4/이거 쓰고 가요.mp4",
+      "korean": "이거 쓰고 가요",
+      "russian": "Возьмите это и идите",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/저기 사인이라도 받아 놓을 걸.webm",
+      "videoMp4": "video/hvatai/mp4/저기 사인이라도 받아 놓을 걸.mp4",
+      "korean": "저기 사인이라도 받아 놓을 걸",
+      "russian": "Надо было хоть автограф взять",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/꿈속에서 나온 것 같네.webm",
+      "videoMp4": "video/hvatai/mp4/꿈속에서 나온 것 같네.mp4",
+      "korean": "꿈속에서 나온 것 같네",
+      "russian": "Будто вышел из сна",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/잘못 봤나.webm",
+      "videoMp4": "video/hvatai/mp4/잘못 봤나.mp4",
+      "korean": "잘못 봤나?",
+      "russian": "Ошиблась что ли?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/어머 미쳤다.webm",
+      "videoMp4": "video/hvatai/mp4/어머 미쳤다.mp4",
+      "korean": "어머 미쳤다",
+      "russian": "Боже, с ума сойти",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/오늘은 살아 봐요.webm",
+      "videoMp4": "video/hvatai/mp4/오늘은 살아 봐요.mp4",
+      "korean": "오늘은 살아 봐요",
+      "russian": "Давай поживём хотя бы сегодня",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/꿈인가.webm",
+      "videoMp4": "video/hvatai/mp4/꿈인가.mp4",
+      "korean": "꿈인가?",
+      "russian": "Это сон?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/오늘 날씨가 참 좋죠.webm",
+      "videoMp4": "video/hvatai/mp4/오늘 날씨가 참 좋죠.mp4",
+      "korean": "오늘 날씨가 참 좋죠",
+      "russian": "Сегодня погода такая хорошая",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/찬란한 여름이 시작되려나 봐요.webm",
+      "videoMp4": "video/hvatai/mp4/찬란한 여름이 시작되려나 봐요.mp4",
+      "korean": "찬란한 여름이 시작되려나 봐요",
+      "russian": "Кажется, начинается яркое лето",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/지금 당장 달려가 보세요.webm",
+      "videoMp4": "video/hvatai/mp4/지금 당장 달려가 보세요.mp4",
+      "korean": "지금 당장 달려가 보세요",
+      "russian": "Бегите прямо сейчас",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/뭐야 너.webm",
+      "videoMp4": "video/hvatai/mp4/뭐야 너.mp4",
+      "korean": "뭐야 너?",
+      "russian": "Что с тобой?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/사랑해 선재야.webm",
+      "videoMp4": "video/hvatai/mp4/사랑해 선재야.mp4",
+      "korean": "사랑해 선재야",
+      "russian": "Я люблю тебя, Сонджэ",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/아니요 아파요.webm",
+      "videoMp4": "video/hvatai/mp4/아니요 아파요.mp4",
+      "korean": "아니요 아파요",
+      "russian": "Нет, мне больно",
+      "new": true
+    }
+  ],
+  "b3": [
+    {
+      "isNew": true,
+      "video": "video/hvatai/찾았어.webm",
+      "videoMp4": "video/hvatai/mp4/찾았어.mp4",
+      "korean": "찾았어",
+      "russian": "Нашла",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/설마.webm",
+      "videoMp4": "video/hvatai/mp4/설마.mp4",
+      "korean": "설마",
+      "russian": "Не может быть",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/귀신.webm",
+      "videoMp4": "video/hvatai/mp4/귀신.mp4",
+      "korean": "귀신",
+      "russian": "Призрак",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/우리 같이 돌아가자.webm",
+      "videoMp4": "video/hvatai/mp4/우리 같이 돌아가자.mp4",
+      "korean": "우리 같이 돌아가자",
+      "russian": "Давай вернёмся вместе",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/이 다리 절대 건너지 마.webm",
+      "videoMp4": "video/hvatai/mp4/이 다리 절대 건너지 마.mp4",
+      "korean": "이 다리 절대 건너지 마",
+      "russian": "Никогда не переходи этот мост",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/여보세요.webm",
+      "videoMp4": "video/hvatai/mp4/여보세요.mp4",
+      "korean": "여보세요",
+      "russian": "Алло",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/너 어디야.webm",
+      "videoMp4": "video/hvatai/mp4/너 어디야.mp4",
+      "korean": "너 어디야?",
+      "russian": "Ты где?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/진짜 엄마 목소리네.webm",
+      "videoMp4": "video/hvatai/mp4/진짜 엄마 목소리네.mp4",
+      "korean": "진짜 엄마 목소리네?",
+      "russian": "Это реально мамин голос?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/이따 봐요.webm",
+      "videoMp4": "video/hvatai/mp4/이따 봐요.mp4",
+      "korean": "이따 봐요",
+      "russian": "Увидимся позже",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/근데 이걸 나한테 왜 줘.webm",
+      "videoMp4": "video/hvatai/mp4/근데 이걸 나한테 왜 줘.mp4",
+      "korean": "근데 이걸 나한테 왜 줘?",
+      "russian": "Но зачем ты это мне даёшь?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/말도 안 돼.webm",
+      "videoMp4": "video/hvatai/mp4/말도 안 돼.mp4",
+      "korean": "말도 안 돼",
+      "russian": "Не может быть",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/할머니.webm",
+      "videoMp4": "video/hvatai/mp4/할머니.mp4",
+      "korean": "할머니",
+      "russian": "Бабушка",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/사고 당하기 전이네.webm",
+      "videoMp4": "video/hvatai/mp4/사고 당하기 전이네.mp4",
+      "korean": "사고 당하기 전이네",
+      "russian": "Это было до аварии",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/왜 울어.webm",
+      "videoMp4": "video/hvatai/mp4/왜 울어.mp4",
+      "korean": "왜 울어?",
+      "russian": "Почему плачете?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/기억이 안 나.webm",
+      "videoMp4": "video/hvatai/mp4/기억이 안 나.mp4",
+      "korean": "기억이 안 나",
+      "russian": "Я не помню",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/내일도 여기서 눈 뜰 수 있을까.webm",
+      "videoMp4": "video/hvatai/mp4/내일도 여기서 눈 뜰 수 있을까.mp4",
+      "korean": "내일도 여기서 눈 뜰 수 있을까?",
+      "russian": "Смогу ли я завтра снова открыть глаза здесь?",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/이천이십삼년 일월 일일 영시.webm",
+      "videoMp4": "video/hvatai/mp4/이천이십삼년 일월 일일 영시.mp4",
+      "korean": "이천이십삼년 일월 일일 영시",
+      "russian": "2023 год, 1 января, 0 часов",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/고맙습니다.webm",
+      "videoMp4": "video/hvatai/mp4/고맙습니다.mp4",
+      "korean": "고맙습니다",
+      "russian": "Спасибо",
+      "new": true
+    },
+    {
+      "video": "video/hvatai/사망하셨습니다.webm",
+      "videoMp4": "video/hvatai/mp4/사망하셨습니다.mp4",
+      "korean": "사망하셨습니다",
+      "russian": "Он скончался",
+      "new": true
+    }
+  ],
   "b4": [],
   "b5": []
 }
