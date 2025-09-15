@@ -33,7 +33,6 @@
   ],
   "b1": [
     {
-      "isNew": true,
       "video": "video/evilflower/알려 줄까.webm",
       "videoMp4": "video/evilflower/mp4/알려 줄까.mp4",
       "korean": "알려 줄까?",
@@ -288,7 +287,6 @@
   ],
   "b2": [
     {
-      "isNew": true,
       "video": "video/evilflower/신발.webm",
       "videoMp4": "video/evilflower/mp4/신발.mp4",
       "korean": "신발?",

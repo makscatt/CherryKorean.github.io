@@ -156,7 +156,7 @@
     ]
   },
   "theme9": {
-    "coverImage": "videothemes/subthemebc/weakherobackground.png",
+    "coverImage": "videothemes/subthemebc/ije.png",
     "masterJsonPath": "videothemes/json/videotheme9.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -181,7 +181,9 @@
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "Демо", "key": "b0" },
-      { "name": "Слава 1", "key": "b1" }
+      { "name": "Слава 1", "key": "b1" },
+      { "name": "Слава 2", "key": "b2" },
+      { "name": "Слава 3", "key": "b3" }
     ]
   },
   "theme12": {
