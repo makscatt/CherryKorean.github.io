@@ -450,6 +450,7 @@
     }
 
     .user-button {
+      background-color: #1c1c1e;
       border: 1px solid rgba(255, 215, 0, 0.5);
       border-radius: 10px;
       position: relative;
@@ -649,6 +650,9 @@
         <div class="user-button" id="videothemebank" style="background-image: url('videothemes/bank.png');"
           onclick="openBankPage()">
           <div class="theme-count-container"><span class="theme-count"></span></div>
+        </div>
+        <div class="user-button" id="reviewsButton" style="background-image: url('videothemes/random.png');"
+          onclick="randomPage()">
         </div>
         <div class="user-button" id="streakButton">
           <!-- Сюда будем выводить текст стрика -->
@@ -1037,6 +1041,14 @@
 
       setTimeout(() => {
         window.location.href = 'videoreviews.html';
+      }, 400);
+    }
+     function randomPage() {
+      const fadeOverlay = document.getElementById('fadeOverlay');
+      fadeOverlay.style.opacity = '1';
+
+      setTimeout(() => {
+        window.location.href = 'theme_menu_random.html';
       }, 400);
     }
     function gamePage() {
