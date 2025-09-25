@@ -742,24 +742,40 @@
 
           const toggles = document.querySelectorAll('.theme-name-toggle');
 
+          // Шаг 2: ВОССТАНОВЛЕНИЕ СОСТОЯНИЯ ПРИ ЗАГРУЗКЕ
+          // Пытаемся получить сохраненный индекс. Если его нет, по умолчанию будет 0 (первая вкладка).
+          const lastOpenedIndex = parseInt(localStorage.getItem('lastOpenedToggleIndex')) || 2;
+
           toggles.forEach((toggle, index) => {
             const content = toggle.nextElementSibling;
 
-            // Сворачиваем все, кроме первого
-            if (index > 0) {
+            // Вместо старой логики, теперь мы проверяем, совпадает ли индекс вкладки с сохраненным.
+            // Если НЕ совпадает, мы ее сворачиваем.
+            if (index !== lastOpenedIndex) {
               toggle.classList.add('collapsed');
               content.classList.add('collapsed');
             }
+            // Если совпадает - ничего не делаем, она остается открытой.
 
             toggle.addEventListener('click', () => {
+              // Эта часть остается без изменений - она закрывает другие вкладки
               toggles.forEach(otherToggle => {
                 if (otherToggle !== toggle) {
                   otherToggle.classList.add('collapsed');
                   otherToggle.nextElementSibling.classList.add('collapsed');
                 }
               });
+
+              // Эта часть тоже остается - она открывает/закрывает текущую
               toggle.classList.toggle('collapsed');
               content.classList.toggle('collapsed');
+
+              // Шаг 1: СОХРАНЕНИЕ СОСТОЯНИЯ ПРИ КЛИКЕ
+              // Проверяем, стала ли вкладка ОТКРЫТОЙ после клика
+              if (!toggle.classList.contains('collapsed')) {
+                // Если да, сохраняем ее индекс в localStorage
+                localStorage.setItem('lastOpenedToggleIndex', index);
+              }
             });
           });
         });
@@ -868,7 +884,7 @@
             if (isLocked) {
               let lockOverlay = document.createElement('div');
               lockOverlay.className = 'lock-overlay';
-              lockOverlay.innerHTML = '<img src="redlock.png" alt="Lock" style="width:100%; height:100%;">';
+              lockOverlay.innerHTML = '<img src="lock.png" alt="Lock" style="width:100%; height:100%;">';
               lockOverlay.onclick = (e) => e.stopPropagation();
               btn.appendChild(lockOverlay);
             }
@@ -1043,7 +1059,7 @@
         window.location.href = 'videoreviews.html';
       }, 400);
     }
-     function randomPage() {
+    function randomPage() {
       const fadeOverlay = document.getElementById('fadeOverlay');
       fadeOverlay.style.opacity = '1';
 
@@ -1329,12 +1345,12 @@
     });
 
     document.addEventListener('DOMContentLoaded', () => {
-      
+
       const updateConfig = {
-        version: '1509', 
-        title: 'Обновление от 15.09', 
-        image: 'videothemes/update_banner.png', 
-        text: `Добавил новые видео\n🚀Слава!!!!"` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+        version: '2509',
+        title: 'Обновление от 25.09',
+        image: 'videothemes/update_banner.png',
+        text: `Добавил 70 новых фрагментов\n🚀Цветок Зла"` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
       };
       // ------------------------------------
 
