@@ -1,47 +1,191 @@
 {
     "lesson_7_1": [
         {
-            "video": "video/parasites/관심 안 가세요.webm",
-            "videoMp4": "video/parasites/mp4/관심 안 가세요.mp4",
-            "korean": "관심 안 가세요?",
-            "russian": "Вам не интересно?"
+            "video": "video/deathgame/내가 면접 끝나고 전화할게.webm",
+            "videoMp4": "video/deathgame/mp4/내가 면접 끝나고 전화할게.mp4",
+            "korean": "내가 면접 끝나고 전화할게",
+            "russian": "Я позвоню после собеседования"
         },
         {
-            "video": "video/parasites/관심 있으셨구나.webm",
-            "videoMp4": "video/parasites/mp4/관심 있으셨구나.mp4",
-            "korean": "관심 있으셨구나",
-            "russian": "Все таки был интерес"
+            "video": "video/theglory/전화 할게.webm",
+            "videoMp4": "video/theglory/mp4/전화 할게.mp4",
+            "korean": "전화 할게",
+            "russian": "Я позвоню"
         },
         {
-            "video": "video/parasites/내려가 계세요.webm",
-            "videoMp4": "video/parasites/mp4/내려가 계세요.mp4",
-            "korean": "내려가 계세요",
-            "russian": "Будьте внизу"
+            "video": "video/theglory/내가 다시 걸게.webm",
+            "videoMp4": "video/theglory/mp4/내가 다시 걸게.mp4",
+            "korean": "내가 다시 걸게",
+            "russian": "Я перезвоню"
         },
         {
-            "video": "video/parasites/너무 좋아요.webm",
-            "videoMp4": "video/parasites/mp4/너무 좋아요.mp4",
-            "korean": "너무 좋아요",
-            "russian": "Очень хорошо"
+            "video": "video/ad/다시 연락할게.webm",
+            "videoMp4": "video/ad/mp4/다시 연락할게.mp4",
+            "korean": "다시 연락할게",
+            "russian": "Я перезвоню"
         },
         {
-            "video": "video/runbts/뭐 무슨 냄새.webm",
-            "videoMp4": "video/runbts/mp4/뭐 무슨 냄새.mp4",
-            "korean": "뭐 무슨 냄새?",
-            "russian": "Что за запах?"
+            "video": "video/hvatai/나중에 얘기해.webm",
+            "videoMp4": "video/hvatai/mp4/나중에 얘기해.mp4",
+            "korean": "나중에 얘기해",
+            "russian": "Поговорим позже"
         },
         {
-            "video": "video/runbts/태형 형 몇 장이에요.webm",
-            "videoMp4": "video/runbts/mp4/태형 형 몇 장이에요.mp4",
-            "korean": "태형 형 몇 장이에요?",
-            "russian": "Тэхён Брат, у тебя сколько карт?"
+            "video": "video/weakhero/이따 봅시다.webm",
+            "videoMp4": "video/weakhero/mp4/이따 봅시다.mp4",
+            "korean": "이따 봅시다",
+            "russian": "Позже увидимся"
         },
         {
-            "video": "video/runbts/시간 정말 빨리 지나갔고.webm",
-            "videoMp4": "video/runbts/mp4/시간 정말 빨리 지나갔고.mp4",
-            "korean": "시간 정말 빨리 지나갔고",
-            "russian": "Время реально быстро пролетело"
+            "video": "video/hvatai/이따 봐요.webm",
+            "videoMp4": "video/hvatai/mp4/이따 봐요.mp4",
+            "korean": "이따 봐요",
+            "russian": "Увидимся позже"
         },
+        {
+            "video": "video/deathgame/나 갈게.webm",
+            "videoMp4": "video/deathgame/mp4/나 갈게.mp4",
+            "korean": "나 갈게",
+            "russian": "Я пойду"
+        },
+        {
+            "video": "video/hwarang/내일 다시 알아보자.webm",
+            "videoMp4": "video/hwarang/mp4/내일 다시 알아보자.mp4",
+            "korean": "내일 다시 알아보자",
+            "russian": "Завтра попробуем узнать снова"
+        },
+        {
+            "video": "video/vincenco/곧 치르게 될 거야.webm",
+            "videoMp4": "video/vincenco/mp4/곧 치르게 될 거야.mp4",
+            "korean": "곧 치르게 될 거야",
+            "russian": "Скоро поплатишься"
+        }
+    ],
+    "lesson_7_2": [
+        {
+            "video": "video/allkdrama/내일 아침에 뭐 해.webm",
+            "videoMp4": "video/allkdrama/mp4/내일 아침에 뭐 해.mp4",
+            "korean": "내일 아침에 뭐 해?",
+            "russian": "Завтра утром что делаешь?"
+        },
+        {
+            "video": "video/runbts/뭐 먹을 거예요.webm",
+            "videoMp4": "video/runbts/mp4/뭐 먹을 거예요.mp4",
+            "korean": "뭐 먹을 거예요?",
+            "russian": "Что будешь есть?"
+        },
+        {
+            "video": "video/allkdrama/오늘 저녁에 시간 되죠.webm",
+            "videoMp4": "video/allkdrama/mp4/오늘 저녁에 시간 되죠.mp4",
+            "korean": "오늘 저녁에 시간 되죠",
+            "russian": "Сегодня вечером есть время?"
+        },
+        {
+            "video": "video/runbts/오늘 뭐 하나요.webm",
+            "videoMp4": "video/runbts/mp4/오늘 뭐 하나요.mp4",
+            "korean": "오늘 뭐 하나요?",
+            "russian": "Что мы сегодня делаем?"
+        },
+        {
+            "video": "video/lookism/시간 괜찮니.webm",
+            "videoMp4": "video/lookism/mp4/시간 괜찮니.mp4",
+            "korean": "시간 괜찮니?",
+            "russian": "У тебя есть время?"
+        },
+        {
+            "video": "video/allkdrama/같이 놀래.webm",
+            "videoMp4": "video/allkdrama/mp4/같이 놀래.mp4",
+            "korean": "같이 놀래?",
+            "russian": "Поиграем вместе?"
+        },
+        {
+            "video": "video/hvatai/우리 산책 나갈까.webm",
+            "videoMp4": "video/hvatai/mp4/우리 산책 나갈까.mp4",
+            "korean": "우리 산책 나갈까?",
+            "russian": "Может прогуляемся?"
+        },
+        {
+            "video": "video/moon lovers/같이 가요.webm",
+            "videoMp4": "video/moon lovers/mp4/같이 가요.mp4",
+            "korean": "같이 가요",
+            "russian": "Пошли вместе"
+        },
+        {
+            "video": "video/hwarang/나랑 하자.webm",
+            "videoMp4": "video/hwarang/mp4/나랑 하자.mp4",
+            "korean": "나랑 하자",
+            "russian": "Давай со мной"
+        },
+        {
+            "video": "video/deathgame/결혼 안 할 거야.webm",
+            "videoMp4": "video/deathgame/mp4/결혼 안 할 거야.mp4",
+            "korean": "결혼 안 할 거야?",
+            "russian": "Жениться не собираешься?"
+        }
+    ],
+    "lesson_7_3": [
+        {
+            "video": "video/allkdrama/약속해 드리겠습니다.webm",
+            "videoMp4": "video/allkdrama/mp4/약속해 드리겠습니다.mp4",
+            "korean": "약속해 드리겠습니다",
+            "russian": "Обещаю вам"
+        },
+        {
+            "video": "video/evilflower/진짜 잘해 줄게.webm",
+            "videoMp4": "video/evilflower/mp4/진짜 잘해 줄게.mp4",
+            "korean": "진짜 잘해 줄게",
+            "russian": "Я правда буду стараться"
+        },
+        {
+            "video": "video/evilflower/내가 앞으로 많이 좋아해 줄게.webm",
+            "videoMp4": "video/evilflower/mp4/내가 앞으로 많이 좋아해 줄게.mp4",
+            "korean": "내가 앞으로 많이 좋아해 줄게",
+            "russian": "Впредь, я буду сильно любить тебя"
+        },
+        {
+            "video": "video/weakhero2/너도 지켜.webm",
+            "videoMp4": "video/weakhero2/mp4/너도 지켜.mp4",
+            "korean": "너도 지켜",
+            "russian": "Ты тоже сдержи"
+        },
+        {
+            "video": "video/weakhero2/네가1말 지켜.webm",
+            "videoMp4": "video/weakhero2/mp4/네가1말 지켜.mp4",
+            "korean": "네가 한 말 지켜",
+            "russian": "Ты сдержи то что сказал"
+        },
+        {
+            "video": "video/healer/반드시 잡아와.webm",
+            "videoMp4": "video/healer/mp4/반드시 잡아와.mp4",
+            "korean": "반드시 잡아와!",
+            "russian": "Обязательно поймай его!"
+        },
+        {
+            "video": "video/kumiho/그래도 할 수 있으면 꼭 다시 만나자.webm",
+            "videoMp4": "video/kumiho/mp4/그래도 할 수 있으면 꼭 다시 만나자.mp4",
+            "korean": "그래도 할 수 있으면 꼭 다시 만나자",
+            "russian": "Но если сможем — давай обязательно встретимся снова"
+        },
+        {
+            "video": "video/evilflower/우리 꼭 또 보자.webm",
+            "videoMp4": "video/evilflower/mp4/우리 꼭 또 보자.mp4",
+            "korean": "우리 꼭 또 보자",
+            "russian": "Давай обязательно встретимся снова"
+        },
+        {
+            "video": "video/hwarang/꼭 나와라 오늘.webm",
+            "videoMp4": "video/hwarang/mp4/꼭 나와라 오늘.mp4",
+            "korean": "꼭 나와라 오늘",
+            "russian": "Обязательно выходи сегодня"
+        },
+        {
+            "video": "video/kalmar3/살고 싶으면 내 말 들어.webm",
+            "videoMp4": "video/kalmar3/mp4/살고 싶으면 내 말 들어.mp4",
+            "korean": "살고 싶으면 내 말 들어",
+            "russian": "Хочешь выжить — слушай меня"
+        }
+    ],
+    "lesson_7_4": [
         {
             "video": "video/runbts/뭐 내년에도 만약.webm",
             "videoMp4": "video/runbts/mp4/뭐 내년에도 만약.mp4",
@@ -55,110 +199,10 @@
             "russian": "Если будет шанс"
         },
         {
-            "video": "video/runbts/건강하게 보내시고.webm",
-            "videoMp4": "video/runbts/mp4/건강하게 보내시고.mp4",
-            "korean": "건강하게 보내시고",
-            "russian": "Будьте здоровы!"
-        }
-    ],
-    "lesson_7_2": [
-        {
-            "video": "video/runbts/복 많이 받으시고.webm",
-            "videoMp4": "video/runbts/mp4/복 많이 받으시고.mp4",
-            "korean": "복 많이 받으시고",
-            "russian": "Большого счастья вам!"
-        },
-        {
-            "video": "video/runbts/(10)열 시간.webm",
-            "videoMp4": "video/runbts/mp4/(10)열 시간.mp4",
-            "korean": "(10)열 시간",
-            "russian": "10 часов"
-        },
-        {
-            "video": "video/runbts/항상 부족하잖아요.webm",
-            "videoMp4": "video/runbts/mp4/항상 부족하잖아요.mp4",
-            "korean": "항상 부족하잖아요",
-            "russian": "Всегда не хватает(времени)"
-        },
-        {
-            "video": "video/runbts/아세요 제 노래.webm",
-            "videoMp4": "video/runbts/mp4/아세요 제 노래.mp4",
-            "korean": "아세요 제 노래",
-            "russian": "Знаешь мою песню?"
-        },
-        {
-            "video": "video/runbts/그 노래 되게 좋아요.webm",
-            "videoMp4": "video/runbts/mp4/그 노래 되게 좋아요.mp4",
-            "korean": "그 노래 되게 좋아요",
-            "russian": "Это очень классная песня"
-        },
-        {
-            "video": "video/runbts/이거 얼마였어요.webm",
-            "videoMp4": "video/runbts/mp4/이거 얼마였어요.mp4",
-            "korean": "이거 얼마였어요?",
-            "russian": "Это сколько стоило?"
-        },
-        {
-            "video": "video/runbts/(2800 Вон)이천팔백원으로.webm",
-            "videoMp4": "video/runbts/mp4/(2800 Вон)이천팔백원으로.mp4",
-            "korean": "이천팔백원으로",
-            "russian": "2800 Вон"
-        },
-        {
-            "video": "video/runbts/기억안나요, 소.webm",
-            "videoMp4": "video/runbts/mp4/기억안나요, 소.mp4",
-            "korean": "기억안나요, 소?",
-            "russian": "Корову не помнишь?"
-        },
-        {
-            "video": "video/runbts/마지막 게스트.webm",
-            "videoMp4": "video/runbts/mp4/마지막 게스트.mp4",
-            "korean": "마지막 게스트",
-            "russian": "Последний гость"
-        },
-        {
-            "video": "video/runbts/빠밤빰.webm",
-            "videoMp4": "video/runbts/mp4/빠밤빰.mp4",
-            "korean": "빠밤빰",
-            "russian": "ПаБамПам"
-        }
-    ],
-    "lesson_7_3": [
-        {
-            "video": "video/runbts/카메라 보고.webm",
-            "videoMp4": "video/runbts/mp4/카메라 보고.mp4",
-            "korean": "카메라 보고",
-            "russian": "Посмотрите в камеру"
-        },
-        {
-            "video": "video/runbts/뭐 하면 됄까요.webm",
-            "videoMp4": "video/runbts/mp4/뭐 하면 됄까요.mp4",
-            "korean": "뭐 하면 됄까요?",
-            "russian": "Что надо делать?"
-        },
-        {
-            "video": "video/runbts/감자튀김이 진짜 맛있네.webm",
-            "videoMp4": "video/runbts/mp4/감자튀김이 진짜 맛있네.mp4",
-            "korean": "감자튀김이 진짜 맛있네!",
-            "russian": "Картошка фри реально вкусная!"
-        },
-        {
-            "video": "video/runbts/조심해야 된대.webm",
-            "videoMp4": "video/runbts/mp4/조심해야 된대.mp4",
-            "korean": "조심해야 된대",
-            "russian": "Осторожно надо"
-        },
-        {
-            "video": "video/theglory/그래서 그런지.webm",
-            "videoMp4": "video/theglory/mp4/그래서 그런지.mp4",
-            "korean": "그래서 그런지",
-            "russian": "Видимо, поэтому"
-        },
-        {
-            "video": "video/theglory/그 꽃은.webm",
-            "videoMp4": "video/theglory/mp4/그 꽃은.mp4",
-            "korean": "그 꽃은",
-            "russian": "Эти цветы"
+            "video": "video/kalmar3/혹시.webm",
+            "videoMp4": "video/kalmar3/mp4/혹시.mp4",
+            "korean": "혹시",
+            "russian": "Случайно / вдруг"
         },
         {
             "video": "video/theglory/혹시 기억하니.webm",
@@ -167,135 +211,43 @@
             "russian": "Ты случаем не помнишь?"
         },
         {
-            "video": "video/theglory/혼자 힘들면.webm",
-            "videoMp4": "video/theglory/mp4/혼자 힘들면.mp4",
-            "korean": "혼자 힘들면",
-            "russian": "Если одной трудно"
+            "video": "video/hwarang/니가 이기면.webm",
+            "videoMp4": "video/hwarang/mp4/니가 이기면.mp4",
+            "korean": "니가 이기면",
+            "russian": "Если ты выиграешь"
         },
         {
-            "video": "video/theglory/우리 엄마 아세요.webm",
-            "videoMp4": "video/theglory/mp4/우리 엄마 아세요.mp4",
-            "korean": "우리 엄마 아세요?",
-            "russian": "Вы знаете мою маму?"
+            "video": "video/hwarang/내가 이기면.webm",
+            "videoMp4": "video/hwarang/mp4/내가 이기면.mp4",
+            "korean": "내가 이기면",
+            "russian": "Если я выиграю"
         },
         {
-            "video": "video/killershop/불구덩이에서도 살아 돌아올 수 있어.webm",
-            "videoMp4": "video/killershop/mp4/불구덩이에서도 살아 돌아올 수 있어.mp4",
-            "korean": "불구덩이에서도 살아 돌아올 수 있어",
-            "russian": "Даже из огненной ямы можно выбраться"
-        }
-    ],
-    "lesson_7_4": [
-        {
-            "video": "video/killershop/혼자 이걸 못 해요.webm",
-            "videoMp4": "video/killershop/mp4/혼자 이걸 못 해요.mp4",
-            "korean": "혼자 이걸 못 해요",
-            "russian": "Ты не можешь делать это одна"
+            "video": "video/theglory/연락 오겠지.webm",
+            "videoMp4": "video/theglory/mp4/연락 오겠지.mp4",
+            "korean": "연락 오겠지",
+            "russian": "Позвонит, наверное"
         },
         {
-            "video": "video/hvatai/우리 산책 나갈까.webm",
-            "videoMp4": "video/hvatai/mp4/우리 산책 나갈까.mp4",
-            "korean": "우리 산책 나갈까?",
-            "russian": "Может прогуляемся?"
+            "video": "video/theglory/그럼 다 편해질 거야.webm",
+            "videoMp4": "video/theglory/mp4/그럼 다 편해질 거야.mp4",
+            "korean": "그럼 다 편해질 거야",
+            "russian": "Тогда всем станет легче"
         },
         {
-            "video": "video/hvatai/조금이라도 움직여 보자.webm",
-            "videoMp4": "video/hvatai/mp4/조금이라도 움직여 보자.mp4",
-            "korean": "조금이라도 움직여 보자",
-            "russian": "Хотя бы немного подвигаемся"
+            "video": "video/weakhero2/그럼 아무도 안 다칠 거야.webm",
+            "videoMp4": "video/weakhero2/mp4/그럼 아무도 안 다칠 거야.mp4",
+            "korean": "그럼 아무도 안 다칠 거야",
+            "russian": "Тогда никто не пострадает"
         },
         {
-            "video": "video/biglig/멀티를 잘한다.webm",
-            "videoMp4": "video/biglig/mp4/멀티를 잘한다.mp4",
-            "korean": "멀티를 잘한다",
-            "russian": "Хорош в многозадачности"
-        },
-        {
-            "video": "video/biglig/말해 되다 밖에서.webm",
-            "videoMp4": "video/biglig/mp4/말해 되다 밖에서.mp4",
-            "korean": "말해 되다 밖에서",
-            "russian": "Можно говорить, я вышла"
-        },
-        {
-            "video": "video/biglig/두 명만 웃겨볼게요.webm",
-            "videoMp4": "video/biglig/mp4/두 명만 웃겨볼게요.mp4",
-            "korean": " 두 명만 웃겨볼게요",
-            "russian": "Хотя бы парочку попробуем рассмешить"
-        },
-        {
-            "video": "video/biglig/다섯 명만 웃겨볼게요.webm",
-            "videoMp4": "video/biglig/mp4/다섯 명만 웃겨볼게요.mp4",
-            "korean": "다섯 명만 웃겨볼게요",
-            "russian": "Пятерых хотя бы попробуем рассмешить"
-        },
-        {
-            "video": "video/weakhero/단어 하나라도 더 외워.webm",
-            "videoMp4": "video/weakhero/mp4/단어 하나라도 더 외워.mp4",
-            "korean": "단어 하나라도 더 외워",
-            "russian": "Лучше выучи еще одно слово"
-        },
-        {
-            "video": "video/weakhero/무슨 일 있으면 전화하고.webm",
-            "videoMp4": "video/weakhero/mp4/무슨 일 있으면 전화하고.mp4",
-            "korean": "무슨 일 있으면 전화하고",
-            "russian": "Звони если что"
-        },
-        {
-            "video": "video/weakhero/친구야 나 물 한 잔만.webm",
-            "videoMp4": "video/weakhero/mp4/친구야 나 물 한 잔만.mp4",
-            "korean": "친구야 나 물 한 잔만",
-            "russian": "Друг, налей воды"
+            "video": "video/parasites/내년 수능 때까지.webm",
+            "videoMp4": "video/parasites/mp4/내년 수능 때까지.mp4",
+            "korean": "내년 수능 때까지",
+            "russian": "До экзаменов в след. году"
         }
     ],
     "lesson_7_5": [
-        {
-            "video": "video/weakhero2/빨리 빨리 말해.webm",
-            "videoMp4": "video/weakhero2/mp4/빨리 빨리 말해.mp4",
-            "korean": "빨리 빨리 말해",
-            "russian": "Быстрее говори"
-        },
-        {
-            "video": "video/weakhero2/내가 생각해 봤는데.webm",
-            "videoMp4": "video/weakhero2/mp4/내가 생각해 봤는데.mp4",
-            "korean": "내가 생각해 봤는데",
-            "russian": "Я тут подумал"
-        },
-        {
-            "video": "video/deathgame/내가 면접 끝나고 전화할게.webm",
-            "videoMp4": "video/deathgame/mp4/내가 면접 끝나고 전화할게.mp4",
-            "korean": "내가 면접 끝나고 전화할게",
-            "russian": "Я позвоню после собеседования"
-        },
-        {
-            "video": "video/vincenco/통장 확인해 봐.webm",
-            "videoMp4": "video/vincenco/mp4/통장 확인해 봐.mp4",
-            "korean": "통장 확인해 봐",
-            "russian": "Проверь банковский счет"
-        },
-        {
-            "video": "video/bloodhounds/어떤 일을 하시는 거죠.webm",
-            "videoMp4": "video/bloodhounds/mp4/어떤 일을 하시는 거죠.mp4",
-            "korean": "어떤 일을 하시는 거죠?",
-            "russian": "А чем вы занимаетесь?"
-        },
-        {
-            "video": "video/bloodhounds/알바 또 뭐 했냐.webm",
-            "videoMp4": "video/bloodhounds/mp4/알바 또 뭐 했냐.mp4",
-            "korean": "알바 또 뭐 했냐?",
-            "russian": "Чем еще занимался на подработке?"
-        },
-        {
-            "video": "video/bloodhounds/택배를 제일 많이 했어.webm",
-            "videoMp4": "video/bloodhounds/mp4/택배를 제일 많이 했어.mp4",
-            "korean": "택배를 제일 많이 했어",
-            "russian": "Доставкой в основном занимался"
-        },
-        {
-            "video": "video/bloodhounds/죄송합니다 형 저 스물다섯이에요.webm",
-            "videoMp4": "video/bloodhounds/mp4/죄송합니다 형 저 스물다섯이에요.mp4",
-            "korean": "죄송합니다 형 저 스물다섯이에요(25)",
-            "russian": "Прошу прощения, старшой, мне 25"
-        },
         {
             "video": "video/healer/딱 기다려 보셔.webm",
             "videoMp4": "video/healer/mp4/딱 기다려 보셔.mp4",
@@ -303,72 +255,120 @@
             "russian": "Просто подождите"
         },
         {
-            "video": "video/healer/반드시 잡아와.webm",
-            "videoMp4": "video/healer/mp4/반드시 잡아와.mp4",
-            "korean": "반드시 잡아와!",
-            "russian": "Обязательно поймай его!"
+            "video": "video/moon lovers/다미원에서 꼼짝 말고 기다려.webm",
+            "videoMp4": "video/moon lovers/mp4/다미원에서 꼼짝 말고 기다려.mp4",
+            "korean": "꼼짝 말고 기다려",
+            "russian": "Жди и не двигайся"
+        },
+        {
+            "video": "video/bloodhounds/가만히 좀 있어봐.webm",
+            "videoMp4": "video/bloodhounds/mp4/가만히 좀 있어봐.mp4",
+            "korean": "가만히 좀 있어봐",
+            "russian": "Просто посиди спокойно"
+        },
+        {
+            "video": "video/kumiho/가만 있어.webm",
+            "videoMp4": "video/kumiho/mp4/가만 있어.mp4",
+            "korean": "가만 있어",
+            "russian": "Стой смирно"
+        },
+        {
+            "video": "video/weakhero/다음부턴 조심해.webm",
+            "videoMp4": "video/weakhero/mp4/다음부턴 조심해.mp4",
+            "korean": "다음부턴 조심해",
+            "russian": "В следующий раз осторожнее"
+        },
+        {
+            "video": "video/deathgame/이제 그만하자.webm",
+            "videoMp4": "video/deathgame/mp4/이제 그만하자.mp4",
+            "korean": "이제 그만하자",
+            "russian": "Давай на этом закончим"
+        },
+        {
+            "video": "video/moon lovers/그만.webm",
+            "videoMp4": "video/moon lovers/mp4/그만.mp4",
+            "korean": "그만",
+            "russian": "Заканчивай"
+        },
+        {
+            "video": "video/weakhero/그만해.webm",
+            "videoMp4": "video/weakhero/mp4/그만해.mp4",
+            "korean": "그만해",
+            "russian": "Завязывай"
+        },
+        {
+            "video": "video/moon lovers/답해라.webm",
+            "videoMp4": "video/moon lovers/mp4/답해라.mp4",
+            "korean": "답해라!",
+            "russian": "Отвечай!"
+        },
+        {
+            "video": "video/weakhero/단어 하나라도 더 외워.webm",
+            "videoMp4": "video/weakhero/mp4/단어 하나라도 더 외워.mp4",
+            "korean": "단어 하나라도 더 외워",
+            "russian": "Лучше выучи еще одно слово"
         }
     ],
     "lesson_7_6": [
         {
-            "video": "video/allkdrama/축하드립니다.webm",
-            "videoMp4": "video/allkdrama/mp4/축하드립니다.mp4",
-            "korean": "축하드립니다",
-            "russian": "Поздравляю"
+            "video": "video/moon lovers/살고 싶어.webm",
+            "videoMp4": "video/moon lovers/mp4/살고 싶어.mp4",
+            "korean": "살고 싶어",
+            "russian": "Хочу жить"
         },
         {
-            "video": "video/allkdrama/안녕하세요.webm",
-            "videoMp4": "video/allkdrama/mp4/안녕하세요.mp4",
-            "korean": "안녕하세요",
-            "russian": "Здравствуйте"
+            "video": "video/allkdrama/생일 선물 받고 싶어요.webm",
+            "videoMp4": "video/allkdrama/mp4/생일 선물 받고 싶어요.mp4",
+            "korean": "생일 선물 받고 싶어요",
+            "russian": "Хочу подарок на ДР"
         },
         {
-            "video": "video/allkdrama/처음 뵙겠습니다.webm",
-            "videoMp4": "video/allkdrama/mp4/처음 뵙겠습니다.mp4",
-            "korean": "처음 뵙겠습니다",
-            "russian": "Рад знакомству"
+            "video": "video/runbts/내가 다 하고 싶어 진짜.webm",
+            "videoMp4": "video/runbts/mp4/내가 다 하고 싶어 진짜.mp4",
+            "korean": "내가 다 하고 싶어 진짜",
+            "russian": "Я серьезно все хочу сделать"
         },
         {
-            "video": "video/allkdrama/가격 또라이네.webm",
-            "videoMp4": "video/allkdrama/mp4/가격 또라이네.mp4",
-            "korean": "가격 또라이네",
-            "russian": "Цена безумная просто"
+            "video": "video/hvatai/다시 살고 싶게 해 줘서.webm",
+            "videoMp4": "video/hvatai/mp4/다시 살고 싶게 해 줘서.mp4",
+            "korean": "다시 살고 싶게 해 줘서",
+            "russian": "Ты заставил меня захотеть снова жить"
         },
         {
-            "video": "video/allkdrama/높게 들어야 돼 높게.webm",
-            "videoMp4": "video/allkdrama/mp4/높게 들어야 돼 높게.mp4",
-            "korean": "높게 들어야 돼 높게",
-            "russian": "Выше подними, выше"
+            "video": "video/theglory/오늘부터 내 꿈은 너야.webm",
+            "videoMp4": "video/theglory/mp4/오늘부터 내 꿈은 너야.mp4",
+            "korean": "오늘부터 내 꿈은 너야",
+            "russian": "С сегодняшнего дня моя мечта — ты"
         },
         {
-            "video": "video/allkdrama/준비됐어요.webm",
-            "videoMp4": "video/allkdrama/mp4/준비됐어요.mp4",
-            "korean": "준비됐어요?",
-            "russian": "Готова?"
+            "video": "video/theglory/나도 꿈이 있어.webm",
+            "videoMp4": "video/theglory/mp4/나도 꿈이 있어.mp4",
+            "korean": "나도 꿈이 있어",
+            "russian": "У меня тоже есть мечта"
         },
         {
-            "video": "video/allkdrama/잘 잤어요.webm",
-            "videoMp4": "video/allkdrama/mp4/잘 잤어요.mp4",
-            "korean": "잘 잤어요?",
-            "russian": "Выспалась?"
+            "video": "video/healer/나에겐 꿈이 있다.webm",
+            "videoMp4": "video/healer/mp4/나에겐 꿈이 있다.mp4",
+            "korean": "나에겐 꿈이 있다",
+            "russian": "У меня есть мечта"
         },
         {
-            "video": "video/allkdrama/같이 놀래.webm",
-            "videoMp4": "video/allkdrama/mp4/같이 놀래.mp4",
-            "korean": "같이 놀래?",
-            "russian": "Поиграем вместе?"
+            "video": "video/vincenco/나의 목표는 이 건물을 무너뜨리는 것이다.webm",
+            "videoMp4": "video/vincenco/mp4/나의 목표는 이 건물을 무너뜨리는 것이다.mp4",
+            "korean": "나의 목표는",
+            "russian": "Моя цель"
         },
         {
-            "video": "video/allkdrama/이름이 뭐예요.webm",
-            "videoMp4": "video/allkdrama/mp4/이름이 뭐예요.mp4",
-            "korean": "이름이 뭐예요?",
-            "russian": "Как тебя зовут?"
+            "video": "video/hvatai/또 살아 봐요.webm",
+            "videoMp4": "video/hvatai/mp4/또 살아 봐요.mp4",
+            "korean": "또 살아 봐요",
+            "russian": "Живите дальше"
         },
         {
-            "video": "video/allkdrama/그게 무슨 말이야.webm",
-            "videoMp4": "video/allkdrama/mp4/그게 무슨 말이야.mp4",
-            "korean": "그게 무슨 말이야?",
-            "russian": "О чем ты?"
+            "video": "video/runbts/행복하셨으면 좋겠습니다.webm",
+            "videoMp4": "video/runbts/mp4/행복하셨으면 좋겠습니다.mp4",
+            "korean": "행복하셨으면 좋겠습니다",
+            "russian": "Желаем вам счастья!"
         }
     ]
 }

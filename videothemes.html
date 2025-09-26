@@ -495,6 +495,7 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.6),
         0 2px 3px rgba(0, 0, 0, 0.2);
       transition: all 0.1s ease;
+      display: none;
     }
 
     #instruction-button:active {
@@ -666,29 +667,22 @@
       <div id="instruction-container">
         <button id="instruction-button">Инструкция</button>
       </div>
+      <div id="theme-tabs-container">
+        <button class="theme-tab active" data-target="pathwayGrid" data-title="Путь Новичка">🌱</button>
+        <button class="theme-tab" data-target="themeGrid" data-title="Дорамы и Шоу">🍿</button>
+        <button class="theme-tab" data-target="newThemesGrid" data-title="Новинки">✨</button>
+      </div>
+      <h2 id="active-theme-title"></h2>
+
       <div id="themes-container">
         <div class="carousel-row">
-          <div class="theme-name-toggle">
-            <span class="toggle-arrow">▼</span>
-            <p class="theme-name-text">🐟Путь Новичка</p>
-          </div>
           <div class="theme-grid" id="pathwayGrid">
             <!-- Кнопки для глав "Тропинки" будут созданы здесь -->
           </div>
         </div>
 
         <div class="carousel-row">
-          <div class="theme-name-toggle">
-            <span class="toggle-arrow">▼</span>
-            <p class="theme-name-text">🎬Дорамы и Шоу</p>
-
-          </div>
           <div class="theme-grid" id="themeGrid">
-
-            <!--<div class="theme-button" id="theme0" style="background-image: url('videothemes/theme0.png');"
-              onclick="selectTheme(0)">
-              <div class="theme-count-container"><span class="theme-count"></span></div>
-            </div>-->
             <div class="theme-button" id="theme1" style="background-image: url('videothemes/theme1.png');"
               onclick="selectTheme(1)">
               <div class="theme-count-container"><span class="theme-count"></span></div>
@@ -696,15 +690,12 @@
           </div>
         </div>
         <div class="carousel-row">
-          <div class="theme-name-toggle">
-            <span class="toggle-arrow">▼</span>
-            <p class="theme-name-text">🔥 Новинки</p>
-          </div>
           <div class="theme-grid" id="newThemesGrid">
             <!-- Этот блок пока пустой, скрипт заполнит его сам -->
           </div>
         </div>
       </div>
+
       <div id="navigation-bar-container">
 
         <button id="premium-banner" onclick="premium()">
@@ -740,44 +731,41 @@
             themeGrid.appendChild(btn);
           }
 
-          const toggles = document.querySelectorAll('.theme-name-toggle');
+          const tabs = document.querySelectorAll('.theme-tab');
+          const contentRows = document.querySelectorAll('.carousel-row');
+          const titleElement = document.getElementById('active-theme-title'); // <<< НОВАЯ СТРОКА
 
-          // Шаг 2: ВОССТАНОВЛЕНИЕ СОСТОЯНИЯ ПРИ ЗАГРУЗКЕ
-          // Пытаемся получить сохраненный индекс. Если его нет, по умолчанию будет 0 (первая вкладка).
-          const lastOpenedIndex = parseInt(localStorage.getItem('lastOpenedToggleIndex')) || 2;
+          function switchTab(tabIndex) {
+            // 1. Обновляем вид кнопок
+            tabs.forEach((tab, index) => {
+              tab.classList.toggle('active', index === tabIndex);
+            });
 
-          toggles.forEach((toggle, index) => {
-            const content = toggle.nextElementSibling;
+            // 2. Показываем или скрываем нужный контент
+            const activeTargetId = tabs[tabIndex].dataset.target;
+            contentRows.forEach(row => {
+              const grid = row.querySelector('.theme-grid');
+              const isTargetRow = grid && grid.id === activeTargetId;
+              row.classList.toggle('hidden', !isTargetRow);
+            });
 
-            // Вместо старой логики, теперь мы проверяем, совпадает ли индекс вкладки с сохраненным.
-            // Если НЕ совпадает, мы ее сворачиваем.
-            if (index !== lastOpenedIndex) {
-              toggle.classList.add('collapsed');
-              content.classList.add('collapsed');
-            }
-            // Если совпадает - ничего не делаем, она остается открытой.
+            // 3. Обновляем заголовок <<< НОВАЯ ЛОГИКА
+            titleElement.textContent = tabs[tabIndex].dataset.title;
 
-            toggle.addEventListener('click', () => {
-              // Эта часть остается без изменений - она закрывает другие вкладки
-              toggles.forEach(otherToggle => {
-                if (otherToggle !== toggle) {
-                  otherToggle.classList.add('collapsed');
-                  otherToggle.nextElementSibling.classList.add('collapsed');
-                }
-              });
+            // 4. Сохраняем выбор в localStorage
+            localStorage.setItem('lastOpenedTabIndex', tabIndex);
+          }
 
-              // Эта часть тоже остается - она открывает/закрывает текущую
-              toggle.classList.toggle('collapsed');
-              content.classList.toggle('collapsed');
-
-              // Шаг 1: СОХРАНЕНИЕ СОСТОЯНИЯ ПРИ КЛИКЕ
-              // Проверяем, стала ли вкладка ОТКРЫТОЙ после клика
-              if (!toggle.classList.contains('collapsed')) {
-                // Если да, сохраняем ее индекс в localStorage
-                localStorage.setItem('lastOpenedToggleIndex', index);
-              }
+          // Добавляем обработчики кликов на каждую вкладку
+          tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+              switchTab(index);
             });
           });
+
+          // При загрузке страницы восстанавливаем последнюю открытую вкладку
+          const lastTabIndex = parseInt(localStorage.getItem('lastOpenedTabIndex')) || 0;
+          switchTab(lastTabIndex);
         });
 
         function updateButtonsOrder() {
@@ -855,7 +843,7 @@
 
           pathwayGrid.innerHTML = '';
 
-          const completedChapters = JSON.parse(localStorage.getItem('completedChapters')) || [];
+          const completedChapters = JSON.parse(localStorage.getItem('completedChapters_v2')) || [];
 
           Object.keys(pathwayConfig).forEach((chapterKey, index) => {
             const chapterData = pathwayConfig[chapterKey];

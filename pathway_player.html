@@ -1043,10 +1043,10 @@
 
                 if (!chapterId || !completedLessonKey) return;
 
-                let completedLessons = JSON.parse(localStorage.getItem(`completedLessons_${chapterId}`)) || [];
+                let completedLessons = JSON.parse(localStorage.getItem(`completedLessons_v2_${chapterId}`)) || [];
                 if (!completedLessons.includes(completedLessonKey)) {
                     completedLessons.push(completedLessonKey);
-                    localStorage.setItem(`completedLessons_${chapterId}`, JSON.stringify(completedLessons));
+                    localStorage.setItem(`completedLessons_v2_${chapterId}`, JSON.stringify(completedLessons));
                 }
 
                 const masterJsonPath = localStorage.getItem('masterJsonPath');
@@ -1055,10 +1055,10 @@
                     const lastLessonKey = lessonKeys[lessonKeys.length - 1];
 
                     if (completedLessonKey === lastLessonKey) {
-                        let completedChapters = JSON.parse(localStorage.getItem('completedChapters')) || [];
+                        let completedChapters = JSON.parse(localStorage.getItem('completedChapters_v2')) || [];
                         if (!completedChapters.includes(chapterId)) {
                             completedChapters.push(chapterId);
-                            localStorage.setItem('completedChapters', JSON.stringify(completedChapters));
+                            localStorage.setItem('completedChapters_v2', JSON.stringify(completedChapters));
                         }
                     }
                 });

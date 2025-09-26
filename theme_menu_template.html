@@ -194,7 +194,7 @@
       cursor: pointer;
       transition: all 0.2s ease;
       /* Плавный переход для всех свойств */
-      height: clamp(100px, 5vw, 120px);
+      height: clamp(70px, 5vw, 90px);
     }
 
     #buttons-container .submenubutton:hover {
@@ -279,7 +279,7 @@
 
     .theme-badge {
       position: absolute;
-      top: 6px;
+      top: -7px;
       right: 10px;
       background-color: red;
       color: white;
@@ -430,7 +430,7 @@
 
       // Получаем прогресс по урокам этой главы
       const chapterId = localStorage.getItem('selectedThemeId'); // e.g., 'chapter_1'
-      const completedLessons = JSON.parse(localStorage.getItem(`completedLessons_${chapterId}`)) || [];
+      const completedLessons = JSON.parse(localStorage.getItem(`completedLessons_v2_${chapterId}`)) || [];
 
       lessonKeys.forEach((lessonKey, index) => {
         const lessonName = `Урок ${lessonKey.split('_')[1]}.${lessonKey.split('_')[2]}`;
