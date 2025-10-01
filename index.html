@@ -196,13 +196,13 @@
             fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
                 .then(res => res.json())
                 .then(data => {
-                   // const isMember = data.promember === true || data.tgmembership === true;
-                   // if (isMember) {
-                   //     localStorage.setItem("member", "true");
-                   // } else {
-                   //     localStorage.setItem("member", "false");
-                   // }
-                   localStorage.setItem("member", "true"); 
+                    const isMember = data.promember === true || data.tgmembership === true;
+                    if (isMember) {
+                        localStorage.setItem("member", "true");
+                    } else {
+                        localStorage.setItem("member", "false");
+                   }
+                    //localStorage.setItem("member", "true"); 
 
                     // Трекинг пользователя
                     fetch('https://telegram-server-hfk7.onrender.com/track_user', {

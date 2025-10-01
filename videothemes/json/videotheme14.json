@@ -223,8 +223,11 @@
       "videoMp4": "video/biglig/mp4/왜케 잘생겼어 와.mp4",
       "korean": "왜케 잘생겼어?! 와",
       "russian": "А че это он такой красавчик?!"
-    },
+    }
+  ],
+  "b2": [
     {
+      "isNew": true,
       "video": "video/biglig/여자분들 다 이랬을 거예요.webm",
       "videoMp4": "video/biglig/mp4/여자분들 다 이랬을 거예요.mp4",
       "korean": "여자분들 다 이랬을 거예요",
@@ -259,9 +262,86 @@
       "videoMp4": "video/biglig/mp4/다섯 명만 웃겨볼게요.mp4",
       "korean": "다섯 명만 웃겨볼게요",
       "russian": "Пятерых хотя бы попробуем рассмешить"
+    },
+    {
+      "video": "video/biglig/모르겠어요.webm",
+      "videoMp4": "video/biglig/mp4/모르겠어요.mp4",
+      "korean": "모르겠어요",
+      "russian": "Я не знаю"
+    },
+    {
+      "video": "video/biglig/사진이나 좀 찍어 볼까.webm",
+      "videoMp4": "video/biglig/mp4/사진이나 좀 찍어 볼까.mp4",
+      "korean": "사진이나 좀 찍어 볼까?",
+      "russian": "Может, фото сделать?"
+    },
+    {
+      "video": "video/biglig/좋은 아침.webm",
+      "videoMp4": "video/biglig/mp4/좋은 아침.mp4",
+      "korean": "좋은 아침",
+      "russian": "Доброе утро"
+    },
+    {
+      "video": "video/biglig/세 명만 웃겨볼게요.webm",
+      "videoMp4": "video/biglig/mp4/세 명만 웃겨볼게요.mp4",
+      "korean": "세 명만 웃겨볼게요",
+      "russian": "Попробую рассмешить хотя бы троих"
+    },
+    {
+      "video": "video/biglig/머리 좀 묶어 볼까.webm",
+      "videoMp4": "video/biglig/mp4/머리 좀 묶어 볼까.mp4",
+      "korean": "머리 좀 묶어 볼까?",
+      "russian": "Может, волосы собрать?"
+    },
+    {
+      "video": "video/biglig/아니 어제 밤엔 잘 묶였는데.webm",
+      "videoMp4": "video/biglig/mp4/아니 어제 밤엔 잘 묶였는데.mp4",
+      "korean": "아니 어제 밤엔 잘 묶었는데",
+      "russian": "Нет, вчера вечером я хорошо завязала"
+    },
+    {
+      "video": "video/biglig/이거 한 번도 안 신은 거 새 건데.webm",
+      "videoMp4": "video/biglig/mp4/이거 한 번도 안 신은 거 새 건데.mp4",
+      "korean": "이거 한 번도 안 신은 거 새 건데",
+      "russian": "Эти новые, я их ни разу не надевала"
+    },
+    {
+      "video": "video/biglig/신을 게 없어.webm",
+      "videoMp4": "video/biglig/mp4/신을 게 없어.mp4",
+      "korean": "신을 게 없어",
+      "russian": "Нечего надеть (из обуви)"
+    },
+    {
+      "video": "video/biglig/미쳤냐.webm",
+      "videoMp4": "video/biglig/mp4/미쳤냐.mp4",
+      "korean": "미쳤냐?",
+      "russian": "Ты с ума сошёл?"
+    },
+    {
+      "video": "video/biglig/어떡해 뭔데요 갑자기.webm",
+      "videoMp4": "video/biglig/mp4/어떡해 뭔데요 갑자기.mp4",
+      "korean": "어떡해 뭔데요 갑자기?",
+      "russian": "Что случилось так внезапно?"
+    },
+    {
+      "video": "video/biglig/몇 시야.webm",
+      "videoMp4": "video/biglig/mp4/몇 시야.mp4",
+      "korean": "몇 시야?",
+      "russian": "Который час?"
+    },
+    {
+      "video": "video/biglig/아홉 시야.webm",
+      "videoMp4": "video/biglig/mp4/아홉 시야.mp4",
+      "korean": "아홉 시야",
+      "russian": "Девять часов"
+    },
+    {
+      "video": "video/biglig/어떻게 미쳤나 봐 시간이 왜 이렇게 빨리가 집에 있으니까.webm",
+      "videoMp4": "video/biglig/mp4/어떻게 미쳤나 봐 시간이 왜 이렇게 빨리가 집에 있으니까.mp4",
+      "korean": "어떻게 미쳤나 봐 시간이 왜 이렇게 빨리가 집에 있으니까",
+      "russian": "Похоже, я с ума сошла, время дома летит так быстро"
     }
   ],
-  "b2": [],
   "b3": [],
   "b4": [],
   "b5": []

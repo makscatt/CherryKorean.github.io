@@ -718,7 +718,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 20; i >= 2; i--) {
+          for (let i = 21; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -1304,7 +1304,7 @@
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 1; i <= 20; i++) {
+      for (let i = 1; i <= 21; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1335,10 +1335,10 @@
     document.addEventListener('DOMContentLoaded', () => {
 
       const updateConfig = {
-        version: '2409',
-        title: 'Обновление от 25.09',
+        version: '0110',
+        title: 'Обновление от 01.10',
         image: 'videothemes/update_banner.png',
-        text: `Добавил 70 новых фрагментов\n🚀Цветок Зла\n❗️Акция: До 30 Сентября бесплатный доступ для всех❗️` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+        text: `Обновил 3 папки\n🚀И главное - Добавил "Шеф Повар Тирана"` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
       };
       // ------------------------------------
 

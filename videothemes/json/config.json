@@ -162,7 +162,8 @@
     "blocks": [
       { "name": "Демо", "key": "b0" },
       { "name": "Игра смерти 1", "key": "b1" },
-      { "name": "Игра смерти 2", "key": "b2" }
+      { "name": "Игра смерти 2", "key": "b2" },
+      { "name": "Игра смерти 3", "key": "b3" }
     ]
   },
   "theme10": {
@@ -212,7 +213,8 @@
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "Демо", "key": "b0" },
-      { "name": "Большая лига 1", "key": "b1" }
+      { "name": "Большая лига 1", "key": "b1" },
+      { "name": "Большая лига 2", "key": "b2" }
     ]
   },
   "theme15": {
@@ -270,6 +272,15 @@
       { "name": "Цветок зла 2", "key": "b2" },
       { "name": "Цветок зла 3", "key": "b3" },
       { "name": "Цветок зла 4", "key": "b4" }
+    ]
+  },
+  "theme21": {
+    "coverImage": "videothemes/subthemebc/shef.png",
+    "masterJsonPath": "videothemes/json/videotheme21.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "Демо", "key": "b0" },
+      { "name": "Шеф Повар Тирана", "key": "b1" }
     ]
   }
 }

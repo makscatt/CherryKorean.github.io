@@ -447,7 +447,142 @@
       "new": true
     }
   ],
-  "b3": [],
+  "b3": [
+    {
+      "isNew": true,
+      "video": "video/deathgame/잘 읽었어.webm",
+      "videoMp4": "video/deathgame/mp4/잘 읽었어.mp4",
+      "korean": "잘 읽었어",
+      "russian": "Хорошо прочитала(понравилось)",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/어떻게 내 이름을.webm",
+      "videoMp4": "video/deathgame/mp4/어떻게 내 이름을.mp4",
+      "korean": "어떻게 내 이름을?",
+      "russian": "Как ты узнала моё имя?",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/네가 쓴 거잖아.webm",
+      "videoMp4": "video/deathgame/mp4/네가 쓴 거잖아.mp4",
+      "korean": "네가 쓴 거잖아",
+      "russian": "Ведь это ты написал",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/넌 죽었어.webm",
+      "videoMp4": "video/deathgame/mp4/넌 죽었어.mp4",
+      "korean": "넌 죽었어",
+      "russian": "Ты мёртв",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/날 만난 게 그친 거지.webm",
+      "videoMp4": "video/deathgame/mp4/날 만난 게 그친 거지.mp4",
+      "korean": "날 만난 게 그친 거지",
+      "russian": "То, что встретил меня — это конец",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/죽지 않는 유일한 존재.webm",
+      "videoMp4": "video/deathgame/mp4/죽지 않는 유일한 존재.mp4",
+      "korean": "죽지 않는 유일한 존재?",
+      "russian": "Единственное существо, которое не умирает?",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/당신 뭐야.webm",
+      "videoMp4": "video/deathgame/mp4/당신 뭐야.mp4",
+      "korean": "당신 뭐야?",
+      "russian": "Кто ты вообще?",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/그래서.webm",
+      "videoMp4": "video/deathgame/mp4/그래서.mp4",
+      "korean": "그래서",
+      "russian": "Поэтому / так что",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/인간은 긴 시간 동안 단 한 번만 죽는 것.webm",
+      "videoMp4": "video/deathgame/mp4/인간은 긴 시간 동안 단 한 번만 죽는 것.mp4",
+      "korean": "인간은 긴 시간 동안 단 한 번만 죽는 것",
+      "russian": "Человек за долгую жизнь умирает лишь один раз",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/넌 앞으로 열두 번 죽게 된다.webm",
+      "videoMp4": "video/deathgame/mp4/넌 앞으로 열두 번 죽게 된다.mp4",
+      "korean": "넌 앞으로 열두 번 죽게 된다",
+      "russian": "Ты отныне умрёшь двенадцать раз",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/난 살기 싫어.webm",
+      "videoMp4": "video/deathgame/mp4/난 살기 싫어.mp4",
+      "korean": "난 살기 싫어",
+      "russian": "Я не хочу жить",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/아직도 죽으면 끝이라고 생각해.webm",
+      "videoMp4": "video/deathgame/mp4/아직도 죽으면 끝이라고 생각해.mp4",
+      "korean": "아직도 죽으면 끝이라고 생각해?",
+      "russian": "Ты всё ещё думаешь, что смерть — это конец?",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/이제부터 시작이야.webm",
+      "videoMp4": "video/deathgame/mp4/이제부터 시작이야.mp4",
+      "korean": "이제부터 시작이야",
+      "russian": "С этого момента всё только начинается",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/어디 한번 해 봐.webm",
+      "videoMp4": "video/deathgame/mp4/어디 한번 해 봐.mp4",
+      "korean": "어디 한번 해 봐",
+      "russian": "Ну давай, попробуй",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/이러시지 않으셔도 됩니다.webm",
+      "videoMp4": "video/deathgame/mp4/이러시지 않으셔도 됩니다.mp4",
+      "korean": "이러시지 않으셔도 됩니다",
+      "russian": "Вам не обязательно так поступать",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/자석 벨트 표시등이 꺼졌습니다.webm",
+      "videoMp4": "video/deathgame/mp4/자석 벨트 표시등이 꺼졌습니다.mp4",
+      "korean": "자석 벨트 표시등이 꺼졌습니다",
+      "russian": "Индикатор ремней безопасности выключился",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/내 이름은 박진태.webm",
+      "videoMp4": "video/deathgame/mp4/내 이름은 박진태.mp4",
+      "korean": "내 이름은 박진태",
+      "russian": "Меня зовут Пак Чжинтхэ",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/서른 세 살이다.webm",
+      "videoMp4": "video/deathgame/mp4/서른 세 살이다.mp4",
+      "korean": "서른 세 살이다",
+      "russian": "Мне тридцать три года",
+      "new": true
+    },
+    {
+      "video": "video/deathgame/그게 신이 주는 기회라고.webm",
+      "videoMp4": "video/deathgame/mp4/그게 신이 주는 기회라고.mp4",
+      "korean": "그게 신이 주는 기회라고?",
+      "russian": "Говоришь, это шанс, данный Богом?",
+      "new": true
+    }
+  ],
   "b4": [],
   "b5": []
 }
