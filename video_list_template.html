@@ -599,6 +599,12 @@
         <div id="menu-button-container">
 
             <button id="stars" disabled>⭐ 0</button>
+            <div id="timer-container"
+                style="position: absolute; left: 110px; top: 50%; transform: translateY(-50%); display: none; cursor: pointer;">
+                <img src="videothemes/icons/timer.png" alt="Timer" style="width: 60px; height: 60px;">
+                <span id="timer-display"
+                    style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.8); color: white; padding: 3px 8px; border-radius: 5px; font-size: 14px; white-space: nowrap; display: none;">5:00</span>
+            </div>
             <button id="save-to-bank-button" onclick="saveToBank()">
                 <img id="bank-icon" src="videothemes/icons/outbank.png" alt="В копилку">
             </button>
@@ -624,6 +630,11 @@
         const recentLimit = 10;
         let isPathwayMode = false;
         let wordsInLesson = [];
+        // --- Логика таймера для не-премиум пользователей ---
+        const DAILY_LIMIT_SECONDS = 300; // 5 минут
+        let timerInterval = null;
+        let timeUsedToday = 0;
+        let isTimerRunning = false;
 
         function showHintPopup() {
             document.getElementById('hint-popup').style.display = 'flex';
@@ -636,6 +647,88 @@
         function goBack() {
             window.history.back();
         }
+
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        function updateTimerDisplay() {
+            const timeLeft = DAILY_LIMIT_SECONDS - timeUsedToday;
+            document.getElementById('timer-display').textContent = formatTime(timeLeft);
+        }
+
+        function startTimer() {
+            if (isTimerRunning) return;
+            isTimerRunning = true;
+            timerInterval = setInterval(() => {
+                timeUsedToday++;
+                localStorage.setItem('timeUsedToday', timeUsedToday);
+                updateTimerDisplay();
+
+                if (timeUsedToday >= DAILY_LIMIT_SECONDS) {
+                    stopTimer();
+                    document.getElementById('gameContainer').style.pointerEvents = 'none'; // Блокируем интерфейс
+                    document.getElementById('times-up-popup').style.display = 'flex';
+                }
+            }, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+            isTimerRunning = false;
+        }
+
+        function handleVisibilityChange() {
+            if (document.hidden) {
+                stopTimer();
+            } else {
+                // Возобновляем таймер только если он должен работать
+                const isMember = localStorage.getItem("member") === "true";
+                if (!isMember && timeUsedToday < DAILY_LIMIT_SECONDS) {
+                    startTimer();
+                }
+            }
+        }
+
+        function initializeTimer() {
+            const isMember = localStorage.getItem("member") === "true";
+            if (isMember) {
+                loadStars();
+                loadWordsAndSetOptions();
+                return;
+            }
+
+            document.getElementById('timer-container').style.display = 'block';
+            const today = new Date().toISOString().split('T')[0];
+            const lastUsageDate = localStorage.getItem('lastUsageDate');
+
+            if (lastUsageDate !== today) {
+                localStorage.setItem('lastUsageDate', today);
+                localStorage.setItem('timeUsedToday', '0');
+                timeUsedToday = 0;
+
+                // Показываем стартовый попап ТОЛЬКО В НОВЫЙ ДЕНЬ
+                const timeLeft = DAILY_LIMIT_SECONDS - timeUsedToday;
+                document.getElementById('time-left-info').textContent = `${Math.ceil(timeLeft / 60)} минут`;
+                document.getElementById('start-timer-popup').style.display = 'flex';
+
+            } else {
+                timeUsedToday = parseInt(localStorage.getItem('timeUsedToday') || '0', 10);
+                if (timeUsedToday >= DAILY_LIMIT_SECONDS) {
+                    document.getElementById('gameContainer').style.pointerEvents = 'none';
+                    document.getElementById('times-up-popup').style.display = 'flex';
+                } else {
+                    // Если это не новый день, а просто перезагрузка страницы, запускаем сразу
+                    loadStars();
+                    loadWordsAndSetOptions();
+                    startTimer();
+                }
+            }
+            updateTimerDisplay();
+        }
+
         function hideHintForMembers() {
             const isMember = localStorage.getItem("member") === "true";
             if (isMember) {
@@ -1044,11 +1137,43 @@
             document.getElementById("showKoreanButton").style.display = "none";
         }
         document.addEventListener("DOMContentLoaded", () => {
-
             hideHintForMembers();
-            loadStars();
-            loadWordsAndSetOptions();
             updateStreakDisplay();
+            initializeTimer(); // <-- Главное изменение здесь
+
+            // --- Добавляем обработчики для новых элементов ---
+            document.addEventListener('visibilitychange', handleVisibilityChange);
+
+            function launchApp() {
+                loadStars();
+                loadWordsAndSetOptions();
+
+                const isMember = localStorage.getItem("member") === "true";
+                // Запускаем таймер в фоне, только если не премиум и время не вышло
+                if (!isMember && timeUsedToday < DAILY_LIMIT_SECONDS) {
+                    startTimer();
+                }
+            }
+
+            document.getElementById('start-lesson-btn').addEventListener('click', () => {
+                document.getElementById('start-timer-popup').style.display = 'none';
+                launchApp(); // <-- Используем общую функцию запуска
+            });
+
+            document.getElementById('get-premium-btn').addEventListener('click', () => {
+                window.location.href = "videopremium.html";
+            });
+
+            document.getElementById('return-home-btn').addEventListener('click', () => {
+                window.location.href = "videothemes.html";
+            });
+
+            // Показываем/скрываем время по клику на иконку
+            const timerContainer = document.getElementById('timer-container');
+            const timerDisplay = document.getElementById('timer-display');
+            timerContainer.addEventListener('click', () => {
+                timerDisplay.style.display = timerDisplay.style.display === 'none' ? 'block' : 'none';
+            });
         });
 
         function saveToBank() {
@@ -1262,6 +1387,40 @@
                 <li>Доступ к копилке через главный экран</li>
             </ul>
             <button class="close-btn" onclick="closeHintPopup()">Закрыть</button>
+        </div>
+    </div>
+    <!-- Start Timer Popup -->
+    <div id="start-timer-popup"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 100003; justify-content: center; align-items: center; padding: 10px; box-sizing: border-box;">
+        <div id="start-timer-popup-content"
+            style="background: white; padding: 20px 25px; border-radius: 10px; width: 100%; max-width: 500px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+            <h2 style="margin-top: 0; font-size: 25px; font-weight: bold; color: #333;">На сегодня</h2>
+            <p style="font-size: 18px; margin-bottom: 25px; color: #555; line-height: 1.5;">У вас осталось <strong
+                    id="time-left-info">5 минут</strong> для тренировки сегодня.</p>
+            <button id="start-lesson-btn"
+                style="width: auto; min-width: 150px; font-size: 18px; padding: 12px 24px;">Начать</button>
+        </div>
+    </div>
+
+    <!-- Time's Up Popup -->
+    <div id="times-up-popup"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); z-index: 100004; justify-content: center; align-items: center; padding: 10px; box-sizing: border-box;">
+        <div id="times-up-popup-content"
+            style="background: white; padding: 20px 25px; border-radius: 10px; width: 100%; max-width: 500px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+            <h2 style="margin-top: 0; font-size: 25px; font-weight: bold; color: #333;">Время вышло!</h2>
+            <p style="font-size: 18px; margin-bottom: 25px; color: #555; line-height: 1.5;">На сегодня лимит времени для
+                тренировок исчерпан. Возвращайтесь завтра!</p>
+            <p style="font-size: 16px; margin-bottom: 25px; color: #333;">Хотите заниматься без ограничений? Подключите
+                <strong style="color: #DAA520;">"Премиум"</strong>!
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <button id="get-premium-btn"
+                    style="background-color: #FFD700; color: #333; width: 100%; font-size: 18px; padding: 12px 24px;">Снять
+                    ограничение</button>
+                <button id="return-home-btn"
+                    style="background-color: #f0f0f0; width: 100%; font-size: 18px; padding: 12px 24px;">Вернуться на
+                    главную</button>
+            </div>
         </div>
     </div>
 </body>

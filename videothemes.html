@@ -623,6 +623,34 @@
       box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
       transform: translateY(1px);
     }
+
+    .random-level-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 100px;
+      background-color: #1c1c1e;
+      border: 1px solid #444;
+      border-radius: 12px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .random-level-button:active {
+      transform: scale(0.95);
+      background-color: #333;
+    }
+
+    .random-level-icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
   </style>
 </head>
 
@@ -652,9 +680,6 @@
           onclick="openBankPage()">
           <div class="theme-count-container"><span class="theme-count"></span></div>
         </div>
-        <div class="user-button" id="reviewsButton" style="background-image: url('videothemes/random.png');"
-          onclick="randomPage()">
-        </div>
         <div class="user-button" id="streakButton">
           <!-- Сюда будем выводить текст стрика -->
         </div>
@@ -671,6 +696,7 @@
         <button class="theme-tab active" data-target="pathwayGrid" data-title="Путь Новичка">🌱</button>
         <button class="theme-tab" data-target="themeGrid" data-title="Дорамы и Шоу">🍿</button>
         <button class="theme-tab" data-target="newThemesGrid" data-title="Новинки">✨</button>
+        <button class="theme-tab" data-target="randomGrid" data-title="Случайный подбор (30шт.)">🎲</button>
       </div>
       <h2 id="active-theme-title"></h2>
 
@@ -694,212 +720,241 @@
             <!-- Этот блок пока пустой, скрипт заполнит его сам -->
           </div>
         </div>
-      </div>
-
-      <div id="navigation-bar-container">
-
-        <button id="premium-banner" onclick="premium()">
-          <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="">
-          <div class="banner-text-wrapper">
-            <span class="banner-text-main">Премиум режим</span>
-            <span class="banner-text-sub">«Золотое Кимчи»</span>
+        <div class="carousel-row">
+          <div class="theme-grid" id="randomGrid">
           </div>
-          <span class="banner-arrow">›</span> <!-- ВОТ ЭТА СТРЕЛКА -->
-        </button>
-
+        </div>
       </div>
-      <script>
+    
+
+    <div id="navigation-bar-container">
+
+      <button id="premium-banner" onclick="premium()">
+        <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="">
+        <div class="banner-text-wrapper">
+          <span class="banner-text-main">Премиум режим</span>
+        </div>
+        <span class="banner-arrow">›</span> <!-- ВОТ ЭТА СТРЕЛКА -->
+      </button>
+
+    </div>
+    <script>
 
 
 
-        document.addEventListener('DOMContentLoaded', () => {
-          loadConfigAndRender();
+      document.addEventListener('DOMContentLoaded', () => {
+        loadConfigAndRender();
 
+        const randomGridContainer = document.getElementById('randomGrid');
+        if (randomGridContainer) {
+          const randomLevels = [
+            { file: 'begginer.json', image: 'videothemes/random/beg.png' },
+            { file: 'intermediate.json', image: 'videothemes/random/mid.png' },
+            { file: 'advanced.json', image: 'videothemes/random/pro.png' }
+          ];
 
-          // --- Существующий код для создания кнопок тем ---
-          const themeGrid = document.getElementById('themeGrid');
-          for (let i = 21; i >= 2; i--) {
+          randomLevels.forEach(level => {
             const btn = document.createElement('div');
-            btn.className = 'theme-button';
-            btn.id = 'theme' + i;
-            btn.style.backgroundImage = `url('videothemes/theme${i}.png')`;
-            btn.onclick = function () { selectTheme(i); };
-            const countContainer = document.createElement('div');
-            countContainer.className = 'theme-count-container';
-            countContainer.innerHTML = '<span class="theme-count"></span>';
-            btn.appendChild(countContainer);
-            themeGrid.appendChild(btn);
-          }
+            btn.className = 'theme-button'; // Используем тот же класс, что и у других тем
+            btn.style.backgroundImage = `url('${level.image}')`;
 
-          const tabs = document.querySelectorAll('.theme-tab');
-          const contentRows = document.querySelectorAll('.carousel-row');
-          const titleElement = document.getElementById('active-theme-title'); // <<< НОВАЯ СТРОКА
-
-          function switchTab(tabIndex) {
-            // 1. Обновляем вид кнопок
-            tabs.forEach((tab, index) => {
-              tab.classList.toggle('active', index === tabIndex);
-            });
-
-            // 2. Показываем или скрываем нужный контент
-            const activeTargetId = tabs[tabIndex].dataset.target;
-            contentRows.forEach(row => {
-              const grid = row.querySelector('.theme-grid');
-              const isTargetRow = grid && grid.id === activeTargetId;
-              row.classList.toggle('hidden', !isTargetRow);
-            });
-
-            // 3. Обновляем заголовок <<< НОВАЯ ЛОГИКА
-            titleElement.textContent = tabs[tabIndex].dataset.title;
-
-            // 4. Сохраняем выбор в localStorage
-            localStorage.setItem('lastOpenedTabIndex', tabIndex);
-          }
-
-          // Добавляем обработчики кликов на каждую вкладку
-          tabs.forEach((tab, index) => {
-            tab.addEventListener('click', () => {
-              switchTab(index);
-            });
-          });
-
-          // При загрузке страницы восстанавливаем последнюю открытую вкладку
-          const lastTabIndex = parseInt(localStorage.getItem('lastOpenedTabIndex')) || 0;
-          switchTab(lastTabIndex);
-        });
-
-        function updateButtonsOrder() {
-          const themeGrid = document.getElementById('themeGrid');
-          const buttons = Array.from(themeGrid.children);
-          buttons.sort((a, b) => {
-            const timeA = parseInt(localStorage.getItem('theme_last_' + a.id.replace('theme', ''))) || 0;
-            const timeB = parseInt(localStorage.getItem('theme_last_' + b.id.replace('theme', ''))) || 0;
-            return timeB - timeA;
-          });
-          buttons.forEach(btn => themeGrid.appendChild(btn));
-        }
-
-        function selectTheme(themeId) {
-          //const isMember = localStorage.getItem("member") === "true";
-          //if (themeId >= 2 && !isMember) {
-          // showPremiumPopup();
-          // return;
-          //}
-
-          // 1. Сохраняем ID темы для новой страницы
-          localStorage.setItem('selectedThemeId', 'theme' + themeId);
-
-          // Это сохраняем для старой логики сортировки
-          localStorage.setItem('theme_last_' + themeId, Date.now());
-
-          const fadeOverlay = document.getElementById('fadeOverlay');
-          fadeOverlay.style.opacity = '1';
-
-          // 2. Переходим на единую страницу-шаблон
-          setTimeout(() => {
-            window.location.href = 'theme_menu_template.html';
-          }, 400);
-        }
-
-
-        function sortNewThemes() {
-          const newGrid = document.getElementById('newThemesGrid');
-          if (!newGrid) return; // Если контейнера для новинок нет, ничего не делаем
-
-          // 1. Сначала, как и раньше, находим все обертки с новинками и ПЕРЕМЕЩАЕМ их в newGrid
-          const allThemeWrappers = document.querySelectorAll('.theme-wrapper');
-          allThemeWrappers.forEach(wrapper => {
-            const isNew = wrapper.querySelector('.theme-badge');
-            if (isNew) {
-              newGrid.appendChild(wrapper);
-            }
-          });
-
-          // 2. Теперь, когда все новинки собраны в newGrid, мы их СОРТИРУЕМ
-          const newThemesToSort = Array.from(newGrid.children); // Получаем их как массив
-
-          newThemesToSort.sort((a, b) => {
-            // Находим кнопку внутри каждой обертки, чтобы получить её ID
-            const buttonA = a.querySelector('.theme-button');
-            const buttonB = b.querySelector('.theme-button');
-
-            if (!buttonA || !buttonB) return 0; // На всякий случай
-
-            // Извлекаем число из ID (например, из 'theme16' получаем 16)
-            const numA = parseInt(buttonA.id.replace('theme', ''));
-            const numB = parseInt(buttonB.id.replace('theme', ''));
-
-            // Сортируем по убыванию (чтобы 16 было раньше 15)
-            return numB - numA;
-          });
-
-          // 3. Вставляем отсортированные элементы обратно в newGrid. Они заменят старые.
-          newThemesToSort.forEach(theme => newGrid.appendChild(theme));
-        }
-        // Функция для создания кнопок глав "Тропинки"
-        function createPathwayButtons(pathwayConfig) {
-          const pathwayGrid = document.getElementById('pathwayGrid');
-          if (!pathwayGrid) return;
-
-          pathwayGrid.innerHTML = '';
-
-          const completedChapters = JSON.parse(localStorage.getItem('completedChapters_v2')) || [];
-
-          Object.keys(pathwayConfig).forEach((chapterKey, index) => {
-            const chapterData = pathwayConfig[chapterKey];
-
-            const btn = document.createElement('div');
-            btn.className = 'theme-button';
-            btn.id = chapterKey;
-            btn.style.backgroundImage = `url('${chapterData.cover}')`;
-
-            btn.dataset.masterJsonPath = chapterData.masterJsonPath;
-
-            btn.onclick = function () {
-              // Сохраняем ID главы и путь к ее JSON
-              localStorage.setItem('selectedThemeId', this.id); // Используем тот же ключ, что и для обычных тем
-              localStorage.setItem('masterJsonPath', this.dataset.masterJsonPath);
-
+            btn.onclick = () => {
+              localStorage.setItem('selectedLevelJson', level.file);
               const fadeOverlay = document.getElementById('fadeOverlay');
               fadeOverlay.style.opacity = '1';
               setTimeout(() => {
-                // Переход всегда на страницу-меню
-                window.location.href = 'theme_menu_template.html';
+                window.location.href = 'video_random.html';
               }, 400);
             };
-
-            const isLocked = index > 0 && !completedChapters.includes(`chapter_${index}`);
-            if (isLocked) {
-              let lockOverlay = document.createElement('div');
-              lockOverlay.className = 'lock-overlay';
-              lockOverlay.innerHTML = '<img src="lock.png" alt="Lock" style="width:100%; height:100%;">';
-              lockOverlay.onclick = (e) => e.stopPropagation();
-              btn.appendChild(lockOverlay);
-            }
-
-            pathwayGrid.appendChild(btn);
-            btn.classList.add('loaded');
-            btn.classList.add('active');
+            randomGridContainer.appendChild(btn);
           });
         }
 
-        // Новая функция для загрузки всего конфига
-        async function loadConfigAndRender() {
-          try {
-            const response = await fetch(`videothemes/json/config.json?v=${new Date().getTime()}`);
-            if (!response.ok) throw new Error('Не удалось загрузить config.json');
-            const config = await response.json();
 
-            if (config.pathway) {
-              createPathwayButtons(config.pathway);
-            }
-
-          } catch (error) {
-            console.error("Ошибка при загрузке и рендеринге по конфигу:", error);
-          }
+        // --- Существующий код для создания кнопок тем ---
+        const themeGrid = document.getElementById('themeGrid');
+        for (let i = 21; i >= 2; i--) {
+          const btn = document.createElement('div');
+          btn.className = 'theme-button';
+          btn.id = 'theme' + i;
+          btn.style.backgroundImage = `url('videothemes/theme${i}.png')`;
+          btn.onclick = function () { selectTheme(i); };
+          const countContainer = document.createElement('div');
+          countContainer.className = 'theme-count-container';
+          countContainer.innerHTML = '<span class="theme-count"></span>';
+          btn.appendChild(countContainer);
+          themeGrid.appendChild(btn);
         }
-      </script>
-    </div>
+
+        const tabs = document.querySelectorAll('.theme-tab');
+        const contentRows = document.querySelectorAll('.carousel-row');
+        const titleElement = document.getElementById('active-theme-title'); // <<< НОВАЯ СТРОКА
+
+        function switchTab(tabIndex) {
+          // 1. Обновляем вид кнопок
+          tabs.forEach((tab, index) => {
+            tab.classList.toggle('active', index === tabIndex);
+          });
+
+          // 2. Показываем или скрываем нужный контент
+          const activeTargetId = tabs[tabIndex].dataset.target;
+          contentRows.forEach(row => {
+            const grid = row.querySelector('.theme-grid');
+            const isTargetRow = grid && grid.id === activeTargetId;
+            row.classList.toggle('hidden', !isTargetRow);
+          });
+
+          // 3. Обновляем заголовок <<< НОВАЯ ЛОГИКА
+          titleElement.textContent = tabs[tabIndex].dataset.title;
+
+          // 4. Сохраняем выбор в localStorage
+          localStorage.setItem('lastOpenedTabIndex', tabIndex);
+        }
+
+        // Добавляем обработчики кликов на каждую вкладку
+        tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => {
+            switchTab(index);
+          });
+        });
+
+        // При загрузке страницы восстанавливаем последнюю открытую вкладку
+        const lastTabIndex = parseInt(localStorage.getItem('lastOpenedTabIndex')) || 0;
+        switchTab(lastTabIndex);
+      });
+
+      function updateButtonsOrder() {
+        const themeGrid = document.getElementById('themeGrid');
+        const buttons = Array.from(themeGrid.children);
+        buttons.sort((a, b) => {
+          const timeA = parseInt(localStorage.getItem('theme_last_' + a.id.replace('theme', ''))) || 0;
+          const timeB = parseInt(localStorage.getItem('theme_last_' + b.id.replace('theme', ''))) || 0;
+          return timeB - timeA;
+        });
+        buttons.forEach(btn => themeGrid.appendChild(btn));
+      }
+
+      function selectTheme(themeId) {
+        //const isMember = localStorage.getItem("member") === "true";
+        //if (themeId >= 2 && !isMember) {
+        // showPremiumPopup();
+        // return;
+        //}
+
+        // 1. Сохраняем ID темы для новой страницы
+        localStorage.setItem('selectedThemeId', 'theme' + themeId);
+
+        // Это сохраняем для старой логики сортировки
+        localStorage.setItem('theme_last_' + themeId, Date.now());
+
+        const fadeOverlay = document.getElementById('fadeOverlay');
+        fadeOverlay.style.opacity = '1';
+
+        // 2. Переходим на единую страницу-шаблон
+        setTimeout(() => {
+          window.location.href = 'theme_menu_template.html';
+        }, 400);
+      }
+
+
+      function sortNewThemes() {
+        const newGrid = document.getElementById('newThemesGrid');
+        if (!newGrid) return; // Если контейнера для новинок нет, ничего не делаем
+
+        // 1. Сначала, как и раньше, находим все обертки с новинками и ПЕРЕМЕЩАЕМ их в newGrid
+        const allThemeWrappers = document.querySelectorAll('.theme-wrapper');
+        allThemeWrappers.forEach(wrapper => {
+          const isNew = wrapper.querySelector('.theme-badge');
+          if (isNew) {
+            newGrid.appendChild(wrapper);
+          }
+        });
+
+        // 2. Теперь, когда все новинки собраны в newGrid, мы их СОРТИРУЕМ
+        const newThemesToSort = Array.from(newGrid.children); // Получаем их как массив
+
+        newThemesToSort.sort((a, b) => {
+          // Находим кнопку внутри каждой обертки, чтобы получить её ID
+          const buttonA = a.querySelector('.theme-button');
+          const buttonB = b.querySelector('.theme-button');
+
+          if (!buttonA || !buttonB) return 0; // На всякий случай
+
+          // Извлекаем число из ID (например, из 'theme16' получаем 16)
+          const numA = parseInt(buttonA.id.replace('theme', ''));
+          const numB = parseInt(buttonB.id.replace('theme', ''));
+
+          // Сортируем по убыванию (чтобы 16 было раньше 15)
+          return numB - numA;
+        });
+
+        // 3. Вставляем отсортированные элементы обратно в newGrid. Они заменят старые.
+        newThemesToSort.forEach(theme => newGrid.appendChild(theme));
+      }
+      // Функция для создания кнопок глав "Тропинки"
+      function createPathwayButtons(pathwayConfig) {
+        const pathwayGrid = document.getElementById('pathwayGrid');
+        if (!pathwayGrid) return;
+
+        pathwayGrid.innerHTML = '';
+
+        const completedChapters = JSON.parse(localStorage.getItem('completedChapters_v2')) || [];
+
+        Object.keys(pathwayConfig).forEach((chapterKey, index) => {
+          const chapterData = pathwayConfig[chapterKey];
+
+          const btn = document.createElement('div');
+          btn.className = 'theme-button';
+          btn.id = chapterKey;
+          btn.style.backgroundImage = `url('${chapterData.cover}')`;
+
+          btn.dataset.masterJsonPath = chapterData.masterJsonPath;
+
+          btn.onclick = function () {
+            // Сохраняем ID главы и путь к ее JSON
+            localStorage.setItem('selectedThemeId', this.id); // Используем тот же ключ, что и для обычных тем
+            localStorage.setItem('masterJsonPath', this.dataset.masterJsonPath);
+
+            const fadeOverlay = document.getElementById('fadeOverlay');
+            fadeOverlay.style.opacity = '1';
+            setTimeout(() => {
+              // Переход всегда на страницу-меню
+              window.location.href = 'theme_menu_template.html';
+            }, 400);
+          };
+
+          const isLocked = index > 0 && !completedChapters.includes(`chapter_${index}`);
+          if (isLocked) {
+            let lockOverlay = document.createElement('div');
+            lockOverlay.className = 'lock-overlay';
+            lockOverlay.innerHTML = '<img src="lock.png" alt="Lock" style="width:100%; height:100%;">';
+            lockOverlay.onclick = (e) => e.stopPropagation();
+            btn.appendChild(lockOverlay);
+          }
+
+          pathwayGrid.appendChild(btn);
+          btn.classList.add('loaded');
+          btn.classList.add('active');
+        });
+      }
+
+      // Новая функция для загрузки всего конфига
+      async function loadConfigAndRender() {
+        try {
+          const response = await fetch(`videothemes/json/config.json?v=${new Date().getTime()}`);
+          if (!response.ok) throw new Error('Не удалось загрузить config.json');
+          const config = await response.json();
+
+          if (config.pathway) {
+            createPathwayButtons(config.pathway);
+          }
+
+        } catch (error) {
+          console.error("Ошибка при загрузке и рендеринге по конфигу:", error);
+        }
+      }
+    </script>
+  </div>
   </div>
 
 
