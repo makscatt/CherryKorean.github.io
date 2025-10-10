@@ -250,7 +250,8 @@
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "Демо", "key": "b0" },
-      { "name": "1 Серия", "key": "b1" }
+      { "name": "1", "key": "b1" },
+      { "name": "2", "key": "b2" }
     ]
   },
   "theme19": {

@@ -217,9 +217,101 @@
       "videoMp4": "video/kumiho/mp4/여자 하나 때문에 산신의 지위를 버리고.mp4",
       "korean": "여자 하나 때문에 산신의 지위를 버리고",
       "russian": "Из-за одной женщины ты отказался от статуса бога гор"
+    },
+    {
+      "video": "video/kumiho/누구세요.webm",
+      "videoMp4": "video/kumiho/mp4/누구세요.mp4",
+      "korean": "누구세요?",
+      "russian": "Кто вы?"
+    },
+    {
+      "video": "video/kumiho/지금은 제가 돈이 없고.webm",
+      "videoMp4": "video/kumiho/mp4/지금은 제가 돈이 없고.mp4",
+      "korean": "지금은 제가 돈이 없고",
+      "russian": "Сейчас у меня нет денег"
+    },
+    {
+      "video": "video/kumiho/그쪽한테 받을 술값 있는 분이요.webm",
+      "videoMp4": "video/kumiho/mp4/그쪽한테 받을 술값 있는 분이요.mp4",
+      "korean": "그쪽한테 받을 술값 있는 분이요",
+      "russian": "Тот, кому вы должны за выпивку"
+    },
+    {
+      "video": "video/kumiho/갚아 드릴게요.webm",
+      "videoMp4": "video/kumiho/mp4/갚아 드릴게요.mp4",
+      "korean": "갚아 드릴게요",
+      "russian": "Я вам верну долг"
     }
   ],
-  "b2": [],
+  "b2": [
+    {
+      "isNew": true,
+      "video": "video/kumiho/다친 사람 술값이나 뜯어 볼까 하고.webm",
+      "videoMp4": "video/kumiho/mp4/다친 사람 술값이나 뜯어 볼까 하고.mp4",
+      "korean": "다친 사람 술값이나 뜯어 볼까 하고",
+      "russian": "Думал содрать деньги за выпивку с раненого"
+    },
+    {
+      "video": "video/kumiho/기자 하면서 사기꾼 많이 봤는데.webm",
+      "videoMp4": "video/kumiho/mp4/기자 하면서 사기꾼 많이 봤는데.mp4",
+      "korean": "기자 하면서 사기꾼 많이 봤는데",
+      "russian": "Работая журналистом, я повидала много мошенников"
+    },
+    {
+      "video": "video/kumiho/선생님 그쪽 아니에요.webm",
+      "videoMp4": "video/kumiho/mp4/선생님 그쪽 아니에요.mp4",
+      "korean": "선생님 그쪽 아니에요",
+      "russian": "Это не вы(уважаемый)"
+    },
+    {
+      "video": "video/kumiho/위험한 사람.webm",
+      "videoMp4": "video/kumiho/mp4/위험한 사람.mp4",
+      "korean": "위험한 사람",
+      "russian": "Опасный человек"
+    },
+    {
+      "video": "video/kumiho/계약은 성립됐습니다.webm",
+      "videoMp4": "video/kumiho/mp4/계약은 성립됐습니다.mp4",
+      "korean": "계약은 성립됐습니다",
+      "russian": "Контракт заключён"
+    },
+    {
+      "video": "video/kumiho/그럴 리가요.webm",
+      "videoMp4": "video/kumiho/mp4/그럴 리가요.mp4",
+      "korean": "그럴 리가요",
+      "russian": "Не может быть такого"
+    },
+    {
+      "video": "video/kumiho/죽고 싶다는 거 거짓말이지.webm",
+      "videoMp4": "video/kumiho/mp4/죽고 싶다는 거 거짓말이지.mp4",
+      "korean": "죽고 싶다는 거 거짓말이지?",
+      "russian": "Ты же солгал, что хочешь умереть, да?"
+    },
+    {
+      "video": "video/kumiho/그래도.webm",
+      "videoMp4": "video/kumiho/mp4/그래도.mp4",
+      "korean": "그래도",
+      "russian": "Даже если так"
+    },
+    {
+      "video": "video/kumiho/넌 나를 못 빼.webm",
+      "videoMp4": "video/kumiho/mp4/넌 나를 못 빼.mp4",
+      "korean": "넌 나를 못 빼",
+      "russian": "Ты не сможешь избавиться от меня"
+    },
+    {
+      "video": "video/kumiho/네 동생이.webm",
+      "videoMp4": "video/kumiho/mp4/네 동생이.mp4",
+      "korean": "네 동생이",
+      "russian": "Твой младший брат"
+    },
+    {
+      "video": "video/kumiho/네 동생이 인질로 잡혀있거든.webm",
+      "videoMp4": "video/kumiho/mp4/네 동생이 인질로 잡혀있거든.mp4",
+      "korean": "네 동생이 인질로 잡혀있거든",
+      "russian": "Твой брат в заложниках"
+    }
+  ],
   "b3": [],
   "b4": [],
   "b5": []
