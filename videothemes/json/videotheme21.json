@@ -200,9 +200,200 @@
       "videoMp4": "video/shef/mp4/저 책 한 권 챙겨 와야겠다.mp4",
       "korean": "저 책 한 권 챙겨 와야겠다",
       "russian": "Надо захватить ту книгу"
+    },
+    {
+      "video": "video/shef/하늘이 많이 어두워졌사옵니다.webm",
+      "videoMp4": "video/shef/mp4/하늘이 많이 어두워졌사옵니다.mp4",
+      "korean": "하늘이 많이 어두워졌사옵니다",
+      "russian": "Небо сильно потемнело",
+      "new": true
+    },
+    {
+      "video": "video/shef/그렇사옵니다.webm",
+      "videoMp4": "video/shef/mp4/그렇사옵니다.mp4",
+      "korean": "그렇사옵니다",
+      "russian": "Да, всё так",
+      "new": true
+    },
+    {
+      "video": "video/shef/과인은 그따위 괴력난신을 믿지 않는다.webm",
+      "videoMp4": "video/shef/mp4/과인은 그따위 괴력난신을 믿지 않는다.mp4",
+      "korean": "과인은 그따위 괴력난신을 믿지 않는다",
+      "russian": "Я, государь, не верю в такие суеверия и чудеса",
+      "new": true
+    },
+    {
+      "video": "video/shef/이 국물은 뭐야.webm",
+      "videoMp4": "video/shef/mp4/이 국물은 뭐야.mp4",
+      "korean": "이 그물은 뭐야?",
+      "russian": "Что это за сети",
+      "new": true
+    },
+    {
+      "video": "video/shef/아무도 없어요.webm",
+      "videoMp4": "video/shef/mp4/아무도 없어요.mp4",
+      "korean": "아무도 없어요?",
+      "russian": "Здесь никого нет?",
+      "new": true
+    },
+    {
+      "video": "video/shef/여우다.webm",
+      "videoMp4": "video/shef/mp4/여우다.mp4",
+      "korean": "여우다",
+      "russian": "Это лиса",
+      "new": true
+    },
+    {
+      "video": "video/shef/어 어느 나라 숲인 거야.webm",
+      "videoMp4": "video/shef/mp4/어 어느 나라 숲인 거야.mp4",
+      "korean": "어 어느 나라 숲인 거야?",
+      "russian": "Что это за лес и в какой он стране?",
+      "new": true
     }
   ],
-  "b2": [],
+  "b2": [
+    {
+      "isNew": true,
+      "video": "video/shef/화살.webm",
+      "videoMp4": "video/shef/mp4/화살.mp4",
+      "korean": "화살?",
+      "russian": "Стрела?",
+      "new": true
+    },
+    {
+      "video": "video/shef/한국 사람.webm",
+      "videoMp4": "video/shef/mp4/한국 사람.mp4",
+      "korean": "한국 사람?",
+      "russian": "Кореец?",
+      "new": true
+    },
+    {
+      "video": "video/shef/쏘지 마요 쏘지 마.webm",
+      "videoMp4": "video/shef/mp4/쏘지 마요 쏘지 마.mp4",
+      "korean": "쏘지 마요, 쏘지 마",
+      "russian": "Не стрляйте, не надо",
+      "new": true
+    },
+    {
+      "video": "video/shef/근데 왜 계속 쏴요 에 미쳤어요.webm",
+      "videoMp4": "video/shef/mp4/근데 왜 계속 쏴요 에 미쳤어요.mp4",
+      "korean": "근데 왜 계속 쏴요, 에 미쳤어요?",
+      "russian": "Но почему вы всё время стреляете, вы что, с ума сошли?",
+      "new": true
+    },
+    {
+      "video": "video/shef/와라 귀녀.webm",
+      "videoMp4": "video/shef/mp4/와라 귀녀.mp4",
+      "korean": "와라 귀녀",
+      "russian": "Иди сюда, девушка-призрак",
+      "new": true
+    },
+    {
+      "video": "video/shef/가까이 오지 마 가까이 오지 마.webm",
+      "videoMp4": "video/shef/mp4/가까이 오지 마 가까이 오지 마.mp4",
+      "korean": "가까이 오지 마, 가까이 오지 마",
+      "russian": "Не подходи! Не приближайся!",
+      "new": true
+    },
+    {
+      "video": "video/shef/피.webm",
+      "videoMp4": "video/shef/mp4/피.mp4",
+      "korean": "피",
+      "russian": "Кровь",
+      "new": true
+    },
+    {
+      "video": "video/shef/이 옷은 왜 주머니가 없어.webm",
+      "videoMp4": "video/shef/mp4/이 옷은 왜 주머니가 없어.mp4",
+      "korean": "이 옷은 왜 주머니가 없어?",
+      "russian": "Почему у этой одежды нет карманов?",
+      "new": true
+    },
+    {
+      "video": "video/shef/나 갈 거니까 따라오지 마.webm",
+      "videoMp4": "video/shef/mp4/나 갈 거니까 따라오지 마.mp4",
+      "korean": "나 갈 거니까 따라오지 마",
+      "russian": "Я ухожу, не следуй за мной",
+      "new": true
+    },
+    {
+      "video": "video/shef/나도 칼 잡으면 무서울 게 없거든.webm",
+      "videoMp4": "video/shef/mp4/나도 칼 잡으면 무서울 게 없거든.mp4",
+      "korean": "나도 칼 잡으면 무서울 게 없거든",
+      "russian": "Когда я беру нож, мне уже ничего не страшно",
+      "new": true
+    },
+    {
+      "video": "video/shef/요리사 요리사라고.webm",
+      "videoMp4": "video/shef/mp4/요리사 요리사라고.mp4",
+      "korean": "요리사, 요리사라고!",
+      "russian": "Я повар, сказал же, повар!",
+      "new": true
+    },
+    {
+      "video": "video/shef/잘 따라오기나 해요.webm",
+      "videoMp4": "video/shef/mp4/잘 따라오기나 해요.mp4",
+      "korean": "잘 따라오기나 해요",
+      "russian": "Просто следуй за мной как следует",
+      "new": true
+    },
+    {
+      "video": "video/shef/저를 한번 품어 보시렴니까.webm",
+      "videoMp4": "video/shef/mp4/저를 한번 품어 보시렴니까.mp4",
+      "korean": "저를 한번 품어 보시렵니까?",
+      "russian": "Не хотите ли обнять меня хотя бы раз?",
+      "new": true
+    },
+    {
+      "video": "video/shef/가슴이 아니라 머리를 다친 거예요.webm",
+      "videoMp4": "video/shef/mp4/가슴이 아니라 머리를 다친 거예요.mp4",
+      "korean": "가슴이 아니라 머리를 다친 거예요",
+      "russian": "Пострадала не грудь, а голова",
+      "new": true
+    },
+    {
+      "video": "video/shef/자세히 보거라.webm",
+      "videoMp4": "video/shef/mp4/자세히 보거라.mp4",
+      "korean": "자세히 보거라",
+      "russian": "Смотри внимательно",
+      "new": true
+    },
+    {
+      "video": "video/shef/시끄럽다.webm",
+      "videoMp4": "video/shef/mp4/시끄럽다.mp4",
+      "korean": "시끄럽다",
+      "russian": "Замолчи",
+      "new": true
+    },
+    {
+      "video": "video/shef/진짜 배우야.webm",
+      "videoMp4": "video/shef/mp4/진짜 배우야.mp4",
+      "korean": "진짜 배우야?",
+      "russian": "Настоящий актер?",
+      "new": true
+    },
+    {
+      "video": "video/shef/예 전하 저는 오늘만 삽니다요.webm",
+      "videoMp4": "video/shef/mp4/예 전하 저는 오늘만 삽니다요.mp4",
+      "korean": "예 전하, 저는 오늘만 삽니다요",
+      "russian": "Да, Ваше Величество, я живу только сегодня",
+      "new": true
+    },
+    {
+      "video": "video/shef/편의점이 어디예요.webm",
+      "videoMp4": "video/shef/mp4/편의점이 어디예요.mp4",
+      "korean": "편의점이 어디예요?",
+      "russian": "Где здесь круглосуточный?",
+      "new": true
+    },
+    {
+      "video": "video/shef/절벽이라더라.webm",
+      "videoMp4": "video/shef/mp4/절벽이라더라.mp4",
+      "korean": "절벽이라더라?",
+      "russian": "Обрыв, говорят?",
+      "new": true
+    }
+  ],
   "b3": [],
   "b4": [],
   "b5": []
