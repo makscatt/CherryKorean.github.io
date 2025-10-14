@@ -1382,15 +1382,16 @@
         }
 
         function analyzeKoreanText() {
-            // Добавляем проверку: запускаем анализ только если скрытый текст - корейский
-            const answerLanguage = localStorage.getItem('answerLanguage') || 'ru';
-            if (answerLanguage !== 'ru') {
-                console.log("Анализ отключен для русского текста.");
+            // Проверяем, что слово существует
+            if (currentWordIndex === null || !easywords[currentWordIndex]) {
+                console.log("Анализ невозможен: слово еще не загружено.");
                 return;
             }
 
-            const textElem = document.getElementById("koreanText");
-            const text = textElem.innerText.trim();
+            // ИЗМЕНЕНИЕ: Берем корейский текст напрямую из данных, а не с экрана
+            const correctWord = easywords[currentWordIndex];
+            const text = correctWord.korean;
+
             if (!text) return;
 
             fetch("https://koreanhelper-api.onrender.com/analyze", {
