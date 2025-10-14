@@ -74,6 +74,7 @@
             border-radius: 10px;
             margin-top: 40px;
             width: 100%;
+            position: relative;
         }
 
         @media (hover: hover) and (pointer: fine) {
@@ -549,12 +550,72 @@
             font-size: 16px;
             padding: 10px 20px;
         }
+
+        #language-toggle-container {
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            z-index: 10;
+            /* Чтобы кнопки были поверх видео */
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            /* Расстояние между кнопками */
+        }
+
+        .lang-toggle-btn {
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Нейтральный фон для обеих кнопок */
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Задаем индивидуальные цвета ТЕКСТА */
+        #lang-toggle-ru {
+            color: #D32F2F;
+            /* Красный */
+        }
+
+        #lang-toggle-ko {
+            color: #1976D2;
+            /* Синий */
+        }
+
+        /* По умолчанию кнопка НЕактивна (черно-белая) */
+        .lang-toggle-btn {
+            filter: grayscale(100%);
+            opacity: 0.7;
+        }
+
+        /* Активное состояние просто убирает фильтр и добавляет свечение */
+        .lang-toggle-btn.active {
+            filter: grayscale(0%);
+            opacity: 1;
+            background-color: white;
+            /* Фон активной кнопки - белый */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
     </style>
 </head>
 
 <body>
     <div id="gameContainer">
         <div id="video-container">
+            <div id="language-toggle-container">
+                <button id="lang-toggle-ru" class="lang-toggle-btn active">Ру</button>
+                <button id="lang-toggle-ko" class="lang-toggle-btn">한</button>
+            </div>
             <div id="custom-video-container">
                 <video id="wordVideo" playsinline webkit-playsinline></video>
             </div>
@@ -940,34 +1001,22 @@
         async function loadWordsAndSetOptions() {
             try {
                 if (easywords.length === 0) {
-
-                    // 1. Получаем имя JSON-файла из localStorage
                     const levelJson = localStorage.getItem('selectedLevelJson');
-
-                    // 2. Проверяем, что оно там есть
                     if (!levelJson) {
                         console.error("Имя файла JSON ('selectedLevelJson') не найдено в localStorage!");
                         document.body.innerHTML = '<h1>Ошибка: Уровень сложности не выбран. Вернитесь назад и попробуйте снова.</h1>';
                         return;
                     }
-
-                    // 3. Загружаем нужный JSON-файл (путь к папке 'videothemes/json/' добавляем здесь)
                     const response = await fetch(`videothemes/json/${levelJson}?nocache=${Date.now()}`);
                     if (!response.ok) throw new Error(`Не удалось загрузить ${levelJson}`);
                     let allWordsForLevel = await response.json();
-
-                    // 4. Перемешиваем массив и берем первые 30 элементов
                     shuffleArray(allWordsForLevel);
                     easywords = allWordsForLevel.slice(0, 30);
-
-                    // 5. Проверяем, что в итоге у нас есть слова для игры
                     if (!easywords || !Array.isArray(easywords) || easywords.length === 0) {
                         console.error(`Нет доступных слов в файле ${levelJson}`);
                         document.body.innerHTML = `<h1>Ошибка: Видео для этого уровня не найдены.</h1>`;
                         return;
                     }
-
-                    // Эта логика для "новых" слов может остаться, она не помешает
                     const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
                     easywords.forEach(word => {
                         if (storedWords[word.video]) {
@@ -975,8 +1024,6 @@
                         }
                     });
                 }
-
-                // --- Дальше вся остальная логика функции остается БЕЗ ИЗМЕНЕНИЙ ---
 
                 let correctWord;
                 if (preloadedWord) {
@@ -987,59 +1034,110 @@
                     let pool = newWords.length > 0 ? newWords : easywords;
                     pool = pool.filter(w => !recentWords.includes(w.video));
                     if (pool.length === 0) pool = easywords;
-
                     if (pool.length === 0) {
                         document.getElementById('interaction-block').innerHTML = '<h1>В этом разделе пока нет видео.</h1>';
                         document.getElementById('video-container').style.display = 'none';
                         return;
                     }
-
                     correctWord = pool[Math.floor(Math.random() * pool.length)];
                 }
 
                 currentWordIndex = easywords.indexOf(correctWord);
 
-                let wrongWord;
+                const answerLanguage = localStorage.getItem('answerLanguage') || 'ru';
+                const correctOption = (answerLanguage === 'ko') ? correctWord.korean : correctWord.russian;
+                correctAnswer = correctOption;
+
+                let wrongOption;
                 do {
-                    wrongWord = easywords[Math.floor(Math.random() * easywords.length)].russian;
-                } while (wrongWord === correctWord.russian && easywords.length > 1);
+                    const randomWrongWord = easywords[Math.floor(Math.random() * easywords.length)];
+                    wrongOption = (answerLanguage === 'ko') ? randomWrongWord.korean : randomWrongWord.russian;
+                } while (wrongOption === correctOption && easywords.length > 1);
 
-                const options = [correctWord.russian, wrongWord];
+                const options = [correctOption, wrongOption];
                 const shuffledIndex = Math.random() < 0.5 ? 0 : 1;
-
                 document.getElementById("option1").innerText = options[shuffledIndex];
                 document.getElementById("option2").innerText = options[1 - shuffledIndex];
-
                 document.getElementById('option1').disabled = false;
                 document.getElementById('option2').disabled = false;
 
                 const video = document.getElementById("wordVideo");
-                if (correctWord.videoMp4 && /iPhone|iPad|iPod/.test(navigator.userAgent)) {
-                    video.src = correctWord.videoMp4;
-                } else {
-                    video.src = correctWord.video;
-                }
+                video.src = correctWord.videoMp4 && /iPhone|iPad|iPod/.test(navigator.userAgent) ? correctWord.videoMp4 : correctWord.video;
                 video.load();
                 video.play().catch(e => console.log("Autoplay был заблокирован."));
 
-                document.getElementById("koreanTextContent").innerText = correctWord.korean;
+                // --- ИЗМЕНЕНИЯ ЗДЕСЬ ---
+                // Адаптируем кнопку и скрытый текст под выбранный язык
+                const showButton = document.getElementById("showKoreanButton");
+                const hiddenTextContent = document.getElementById("koreanTextContent");
+
+                if (answerLanguage === 'ko') {
+                    showButton.innerText = "Показать русский текст";
+                    hiddenTextContent.innerText = correctWord.russian;
+                } else {
+                    showButton.innerText = "Показать корейский текст";
+                    hiddenTextContent.innerText = correctWord.korean;
+                }
+
                 document.getElementById("koreanText").style.display = "none";
-                document.getElementById("showKoreanButton").style.display = "inline-block";
+                showButton.style.display = "inline-block";
+                // --- КОНЕЦ ИЗМЕНЕНИЙ ---
 
                 updateSaveButtonState();
-                correctAnswer = correctWord.russian;
-
                 recentWords.push(correctWord.video);
                 if (recentWords.length > recentLimit) recentWords.shift();
-
                 preloadNextVideo();
-
             } catch (e) {
                 console.error("Ошибка загрузки слов:", e);
                 document.body.innerHTML = `<h1>Произошла ошибка при загрузке видео. Попробуйте обновить страницу.</h1><p>${e.message}</p>`;
             }
         }
+        function regenerateOptionsForCurrentWord() {
+            // Если слово еще не загружено, выполняем полную загрузку
+            if (currentWordIndex === null || !easywords[currentWordIndex]) {
+                loadWordsAndSetOptions();
+                return;
+            }
 
+            const correctWord = easywords[currentWordIndex];
+            const answerLanguage = localStorage.getItem('answerLanguage') || 'ru';
+
+            // --- Эта логика скопирована из loadWordsAndSetOptions ---
+            const correctOption = (answerLanguage === 'ko') ? correctWord.korean : correctWord.russian;
+            correctAnswer = correctOption;
+
+            let wrongOption;
+            do {
+                const randomWrongWord = easywords[Math.floor(Math.random() * easywords.length)];
+                wrongOption = (answerLanguage === 'ko') ? randomWrongWord.korean : randomWrongWord.russian;
+            } while (wrongOption === correctOption && easywords.length > 1);
+
+            const options = [correctOption, wrongOption];
+            const shuffledIndex = Math.random() < 0.5 ? 0 : 1;
+            document.getElementById("option1").innerText = options[shuffledIndex];
+            document.getElementById("option2").innerText = options[1 - shuffledIndex];
+            // --- Конец скопированной логики ---
+
+            // Обновляем кнопку "Показать текст"
+            const showButton = document.getElementById("showKoreanButton");
+            const hiddenTextContent = document.getElementById("koreanTextContent");
+
+            if (answerLanguage === 'ko') {
+                showButton.innerText = "Показать русский текст";
+                hiddenTextContent.innerText = correctWord.russian;
+            } else {
+                showButton.innerText = "Показать корейский текст";
+                hiddenTextContent.innerText = correctWord.korean;
+            }
+
+            document.getElementById("koreanText").style.display = "none";
+            showButton.style.display = "inline-block";
+
+            // Перезапускаем текущее видео
+            const video = document.getElementById("wordVideo");
+            video.currentTime = 0; // Перемотка в начало
+            video.play().catch(e => console.log("Autoplay был заблокирован при смене языка."));
+        }
 
         function checkWord(button) {
             document.getElementById('option1').disabled = true;
@@ -1138,6 +1236,48 @@
             document.getElementById("showKoreanButton").style.display = "none";
         }
         document.addEventListener("DOMContentLoaded", () => {
+            const btnRu = document.getElementById('lang-toggle-ru');
+            const btnKo = document.getElementById('lang-toggle-ko');
+
+            // Функция для установки языка
+            function setAnswerLanguage(lang) {
+                // Если язык уже выбран, ничего не делаем
+                const currentLang = localStorage.getItem('answerLanguage') || 'ru';
+                if (currentLang === lang) {
+                    return;
+                }
+
+                localStorage.setItem('answerLanguage', lang);
+
+                const btnRu = document.getElementById('lang-toggle-ru');
+                const btnKo = document.getElementById('lang-toggle-ko');
+
+                // Обновляем вид кнопок
+                if (lang === 'ko') {
+                    btnKo.classList.add('active');
+                    btnRu.classList.remove('active');
+                } else {
+                    btnRu.classList.add('active');
+                    btnKo.classList.remove('active');
+                }
+
+                // Вызываем новую функцию для обновления только ответов
+                regenerateOptionsForCurrentWord();
+            }
+
+            // Привязываем функции к кнопкам
+            btnRu.addEventListener('click', () => setAnswerLanguage('ru'));
+            btnKo.addEventListener('click', () => setAnswerLanguage('ko'));
+
+            // Инициализация при загрузке страницы
+            const currentLang = localStorage.getItem('answerLanguage') || 'ru';
+            if (currentLang === 'ko') {
+                btnKo.classList.add('active');
+                btnRu.classList.remove('active');
+            } else {
+                btnRu.classList.add('active');
+                btnKo.classList.remove('active');
+            }
             hideHintForMembers();
             updateStreakDisplay();
             initializeTimer(); // <-- Главный вызов таймера
@@ -1242,6 +1382,13 @@
         }
 
         function analyzeKoreanText() {
+            // Добавляем проверку: запускаем анализ только если скрытый текст - корейский
+            const answerLanguage = localStorage.getItem('answerLanguage') || 'ru';
+            if (answerLanguage !== 'ru') {
+                console.log("Анализ отключен для русского текста.");
+                return;
+            }
+
             const textElem = document.getElementById("koreanText");
             const text = textElem.innerText.trim();
             if (!text) return;
@@ -1255,22 +1402,22 @@
                 .then(data => {
                     const original =
                         `<div style="text-align:center; font-size:18px; margin-bottom:10px;">
-           <strong>${text}</strong>
-         </div>`;
+       <strong>${text}</strong>
+     </div>`;
 
                     const breakdown = data.tokens
                         .map(t => `<span style="color:${t.color}">${t.word}</span>`)
                         .join('_');
                     const breakdownBlock =
                         `<div style="text-align:center; font-size:18px; margin:8px 0;">
-           ${breakdown}
-         </div>`;
+       ${breakdown}
+     </div>`;
 
                     let tokenBlock = '';
                     if (window.Telegram && Telegram.WebApp.initDataUnsafe?.user?.id === 910912532) {
                         tokenBlock =
                             `<div style="margin-bottom:10px;">
-             <strong>Разбор с POS:</strong><br>` +
+         <strong>Разбор с POS:</strong><br>` +
                             data.tokens
                                 .map(t => `${t.word} / ${t.pos}`)
                                 .join(' ') +
@@ -1283,14 +1430,14 @@
 
                         const pattern = `<strong>${g.pattern}</strong>:`;
                         const meaning = showMeaning
-                            ? `<div style="margin-left:10px; color:#003366;">${g.meaning}</div>` // тёмно-синий
+                            ? `<div style="margin-left:10px; color:#003366;">${g.meaning}</div>`
                             : '';
                         const example = showExample
-                            ? `<div style="margin-left:10px; color:#004d00;"><em>${g.example}</em></div>` // тёмно-зелёный
+                            ? `<div style="margin-left:10px; color:#004d00;"><em>${g.example}</em></div>`
                             : '';
 
                         return `${pattern}<br>${meaning}${example}
-                <hr style="margin:6px 0;">`;
+            <hr style="margin:6px 0;">`;
                     }).join('');
 
                     const grammarBlock = grammarBlocks || '<div>Грамматики: Еще не все добавил...</div>';
