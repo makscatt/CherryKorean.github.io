@@ -33,6 +33,7 @@
   ],
   "b1": [
     {
+      "isNew": true,
       "video": "video/kalmar3/제발 살려주세요.webm",
       "videoMp4": "video/kalmar3/mp4/제발 살려주세요.mp4",
       "korean": "제발 살려주세요",
@@ -139,6 +140,118 @@
       "videoMp4": "video/kalmar3/mp4/저 인간 소름 돋네.mp4",
       "korean": "저 인간 소름 돋네",
       "russian": "У меня мурашки от этого типа"
+    },
+    {
+      "video": "video/kalmar3/너 내 목걸이 못 봤냐.webm",
+      "videoMp4": "video/kalmar3/mp4/너 내 목걸이 못 봤냐.mp4",
+      "korean": "너 내 목걸이 못 봤냐?",
+      "russian": "Ты не видел моё ожерелье?",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/십자가 안에.webm",
+      "videoMp4": "video/kalmar3/mp4/십자가 안에.mp4",
+      "korean": "십자가 안에",
+      "russian": "Внутри креста",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/살고 싶으면 시키는 대로만 해.webm",
+      "videoMp4": "video/kalmar3/mp4/살고 싶으면 시키는 대로만 해.mp4",
+      "korean": "살고 싶으면 시키는 대로만 해",
+      "russian": "Если хочешь жить, делай, как сказано",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/네 번째 게임의 결과를 알려 드리겠습니다.webm",
+      "videoMp4": "video/kalmar3/mp4/네 번째 게임의 결과를 알려 드리겠습니다.mp4",
+      "korean": "네 번째 게임의 결과를 알려 드리겠습니다",
+      "russian": "Я сообщу результаты четвёртой игры",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/말해.webm",
+      "videoMp4": "video/kalmar3/mp4/말해.mp4",
+      "korean": "말해",
+      "russian": "Говори",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/근데 구린 냄새가 나잖아.webm",
+      "videoMp4": "video/kalmar3/mp4/근데 구린 냄새가 나잖아.mp4",
+      "korean": "근데 구린 냄새가 나잖아",
+      "russian": "Но ведь пахнет подозрительно",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/39 번 투표해 주세요.webm",
+      "videoMp4": "video/kalmar3/mp4/39 번 투표해 주세요.mp4",
+      "korean": "39 번 투표해 주세요",
+      "russian": "Номер 39, проголосуйте",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/선생님들.webm",
+      "videoMp4": "video/kalmar3/mp4/선생님들.mp4",
+      "korean": "선생님들",
+      "russian": "Уважаемые",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/선생님들 제발 부탁드립니다.webm",
+      "videoMp4": "video/kalmar3/mp4/선생님들 제발 부탁드립니다.mp4",
+      "korean": "선생님들 제발 부탁드립니다",
+      "russian": "Уважаемые, прошу вас, пожалуйста",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/먹어.webm",
+      "videoMp4": "video/kalmar3/mp4/먹어.mp4",
+      "korean": "먹어",
+      "russian": "Ешь",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/물 마셔.webm",
+      "videoMp4": "video/kalmar3/mp4/물 마셔.mp4",
+      "korean": "물 마셔",
+      "russian": "Пей воду",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/브이아이피들이 왔다고 들었습니다.webm",
+      "videoMp4": "video/kalmar3/mp4/브이아이피들이 왔다고 들었습니다.mp4",
+      "korean": "브이아이피들이 왔다고 들었습니다",
+      "russian": "Я слышала, что прибыли VIP-гости",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/내가 총에 맞았던 곳이 여기예요.webm",
+      "videoMp4": "video/kalmar3/mp4/내가 총에 맞았던 곳이 여기예요.mp4",
+      "korean": "내가 총에 맞았던 곳이 여기예요",
+      "russian": "Вот место, где меня подстрелили",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/그런 사람이 아닙니다.webm",
+      "videoMp4": "video/kalmar3/mp4/그런 사람이 아닙니다.mp4",
+      "korean": "그런 사람이 아닙니다",
+      "russian": "Я не такой человек",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/애기를 살려주세요.webm",
+      "videoMp4": "video/kalmar3/mp4/애기를 살려주세요.mp4",
+      "korean": "애기를 살려주세요",
+      "russian": "Пожалуйста, спасите ребёнка",
+      "new": true
+    },
+    {
+      "video": "video/kalmar3/저기 저 집 같은데.webm",
+      "videoMp4": "video/kalmar3/mp4/저기 저 집 같은데.mp4",
+      "korean": "저기 저 집 같은데",
+      "russian": "Кажется, это тот дом",
+      "new": true
     }
   ],
   "b2": [],
