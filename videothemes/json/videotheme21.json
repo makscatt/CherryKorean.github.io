@@ -430,10 +430,10 @@
       "new": true
     },
     {
-      "video": "video/shef/여기를 보시게.webm",
-      "videoMp4": "video/shef/mp4/여기를 보시게.mp4",
-      "korean": "여기를 보시게",
-      "russian": "Посмотрите сюда",
+      "video": "video/shef/여기들 보시게.webm",
+      "videoMp4": "video/shef/mp4/여기들 보시게.mp4",
+      "korean": "여기들 보시게",
+      "russian": "Эй, все, смотрите сюда",
       "new": true
     }
   ],
