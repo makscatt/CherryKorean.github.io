@@ -656,6 +656,21 @@
       color: #eac800;
       /* или любой другой цвет */
     }
+
+    .carousel-title {
+      font-size: 20px;
+      font-weight: 600;
+      /* Эта строка важна для жирности */
+      color: #e0e0e0;
+      text-align: left;
+
+      padding-left: 5px;
+    }
+
+    .carousel-row:has(#newThemesGrid) .carousel-title {
+      color: #eac800;
+      /* Золотой цвет, как у активной вкладки */
+    }
   </style>
 </head>
 
@@ -698,21 +713,23 @@
         <button id="instruction-button">Инструкция</button>
       </div>
       <div id="theme-tabs-container">
-        <button class="theme-tab" data-target="newThemesGrid" data-title="Новинки">Новое</button>
-        <button class="theme-tab active" data-target="pathwayGrid" data-title="Путь Новичка">Курс с 0</button>
-        <button class="theme-tab" data-target="themeGrid" data-title="Дорамы и Шоу">Дорамы</button>
+        <button class="theme-tab active" data-target="pathwayGrid" data-title="Путь Новичка">Слух с 0</button>
+        <button class="theme-tab" data-target="newThemesGrid,themeGrid" data-title="Дорамы и Шоу">Дорамы</button>
         <button class="theme-tab" data-target="randomGrid" data-title="Случайный подбор (30шт.)">Рандом</button>
       </div>
       <h2 id="active-theme-title"></h2>
 
       <div id="themes-container">
+        <!-- Блок для "Новинок" -->
         <div class="carousel-row">
-          <div class="theme-grid" id="pathwayGrid">
-            <!-- Кнопки для глав "Тропинки" будут созданы здесь -->
+          <div class="carousel-title">Новое</div>
+          <div class="theme-grid" id="newThemesGrid">
+            <!-- Этот блок пока пустой, скрипт заполнит его сам -->
           </div>
         </div>
-
+        <!-- Блок для "Дорам и Шоу" -->
         <div class="carousel-row">
+          <div class="carousel-title">Дорамы и Шоу</div>
           <div class="theme-grid" id="themeGrid">
             <div class="theme-button" id="theme1" style="background-image: url('videothemes/theme1.png');"
               onclick="selectTheme(1)">
@@ -720,11 +737,13 @@
             </div>
           </div>
         </div>
+        <!-- Блок для "Курс с 0" -->
         <div class="carousel-row">
-          <div class="theme-grid" id="newThemesGrid">
-            <!-- Этот блок пока пустой, скрипт заполнит его сам -->
+          <div class="theme-grid" id="pathwayGrid">
+            <!-- Кнопки для глав "Тропинки" будут созданы здесь -->
           </div>
         </div>
+        <!-- Блок для "Рандом" -->
         <div class="carousel-row">
           <div class="theme-grid" id="randomGrid">
           </div>
@@ -778,7 +797,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 21; i >= 2; i--) {
+          for (let i = 22; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -802,15 +821,22 @@
             });
 
             // 2. Показываем или скрываем нужный контент
-            const activeTargetId = tabs[tabIndex].dataset.target;
+            const targetIds = tabs[tabIndex].dataset.target.split(',');
             contentRows.forEach(row => {
               const grid = row.querySelector('.theme-grid');
-              const isTargetRow = grid && grid.id === activeTargetId;
+              const isTargetRow = grid && targetIds.includes(grid.id);
               row.classList.toggle('hidden', !isTargetRow);
             });
 
-            // 3. Обновляем заголовок <<< НОВАЯ ЛОГИКА
-            titleElement.textContent = tabs[tabIndex].dataset.title;
+            // 3. Обновляем заголовок (НОВАЯ ЛОГИКА)
+            if (targetIds.length > 1) {
+              // Если у вкладки несколько целей (как у "Дорамы"), скрываем главный заголовок h2
+              titleElement.style.display = 'none';
+            } else {
+              // Для остальных вкладок показываем главный заголовок h2
+              titleElement.style.display = 'block';
+              titleElement.textContent = tabs[tabIndex].dataset.title;
+            }
 
             // 4. Сохраняем выбор в localStorage
             localStorage.setItem('lastOpenedTabIndex', tabIndex);
@@ -1364,7 +1390,7 @@
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 1; i <= 21; i++) {
+      for (let i = 1; i <= 22; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1395,10 +1421,10 @@
     document.addEventListener('DOMContentLoaded', () => {
 
       const updateConfig = {
-        version: '1710',
-        title: 'Обновление от 17.10',
+        version: '2210',
+        title: 'Обновление от 22.10',
         image: 'videothemes/update_banner.png',
-        text: `Добваил новые фрагменты\n🚀Шеф повар Тирана\n🚀Игра в кальмара 3` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+        text: `Добваил новую дораму\n🚀Все твои желания исполнятся` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
       };
       // ------------------------------------
 

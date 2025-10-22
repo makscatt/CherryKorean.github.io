@@ -40,7 +40,7 @@ yt-dlp.exe https://www.youtube.com/watch?v=ID_видео
 yt-dlp.exe -f "bestvideo[height<=720]+bestaudio/best[height<=720]" https://www.youtube.com/watch?v=
 
 
-yt-dlp https://www.instagram.com/reel/КОД/
+yt-dlp https://www.instagram.com/reel/
 yt-dlp -f mp4 -o "%(title)s.%(ext)s" "https://www.youtube.com/shorts/
 yt-dlp -x --audio-format mp3 "https://www.youtube.com/shorts/hcr9roJmB-w?si=4Exlic_XSNDRNGtW"
 yt-dlp --cookies-from-browser firefox "https://www.youtube.com/watch?v=
