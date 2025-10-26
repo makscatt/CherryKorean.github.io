@@ -598,13 +598,38 @@
             opacity: 0.7;
         }
 
-        /* Активное состояние просто убирает фильтр и добавляет свечение */
+
         .lang-toggle-btn.active {
             filter: grayscale(0%);
             opacity: 1;
             background-color: white;
             /* Фон активной кнопки - белый */
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .session-duration-btn.premium-only {
+
+            cursor: not-allowed;
+            background: #f0f0f0;
+            position: relative;
+            /* Убедимся, что позиционирование есть */
+            z-index: 0;
+            /* Базовый слой */
+        }
+
+        .session-duration-btn.premium-only::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+            /* Полупрозрачный белый слой */
+            border-radius: 5px;
+            /* Скругляем углы как у кнопки */
+            z-index: 1;
+            /* Этот слой будет над фоном кнопки */
         }
     </style>
 </head>
@@ -739,40 +764,138 @@
                 }
             }
         }
+        function startSessionTimer() {
+            const isMember = localStorage.getItem("member") === "true";
+            let timeLeft = sessionDuration;
+
+            // --- НАЧАЛО ИЗМЕНЕНИЙ ---
+            if (!isMember) {
+                // Для фримиум-пользователя, ограничиваем время сессии остатком дневного лимита
+                const remainingDailyTime = DAILY_LIMIT_SECONDS - timeUsedToday;
+                if (timeLeft > remainingDailyTime) {
+                    timeLeft = remainingDailyTime;
+                }
+            }
+            // --- КОНЕЦ ИЗМЕНЕНИЙ ---
+
+            function updateSessionTimerDisplay() {
+                const timerDisplay = document.getElementById('timer-display');
+                timerDisplay.textContent = formatTime(timeLeft);
+            }
+
+            updateSessionTimerDisplay(); // Показать начальное время
+
+            sessionTimerInterval = setInterval(() => {
+                timeLeft--;
+
+                // --- ДОПОЛНИТЕЛЬНОЕ ИЗМЕНЕНИЕ ---
+                // Также увеличиваем счетчик общего использованного времени для фримиума
+                if (!isMember) {
+                    timeUsedToday++;
+                    localStorage.setItem('timeUsedToday', timeUsedToday);
+                }
+                // --- КОНЕЦ ИЗМЕНЕНИЯ ---
+
+                updateSessionTimerDisplay();
+
+                if (timeLeft <= 0) {
+                    clearInterval(sessionTimerInterval);
+                    endSession();
+                }
+            }, 1000);
+        }
+        function endSession() {
+            // Останавливаем таймер и блокируем интерфейс
+            clearInterval(sessionTimerInterval);
+            document.getElementById('gameContainer').style.pointerEvents = 'none';
+
+            const resultsPopup = document.getElementById('session-results-popup');
+            const summary = document.getElementById('results-summary');
+            const awardImg = document.getElementById('results-award');
+            const showErrorsBtn = document.getElementById('show-errors-btn');
+            const errorListDiv = document.getElementById('error-list');
+
+            // Расчет статистики
+            const errorsCount = sessionStats.errors.length;
+            const correctCount = sessionStats.correct;
+            const totalCount = sessionStats.total;
+            const accuracy = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+
+            // Формирование текста
+            summary.innerHTML = `Всего ответов: <strong>${totalCount}</strong><br>
+                                 Правильно: <strong>${correctCount}</strong><br>
+                                 Точность: <strong>${accuracy}%</strong>`;
+
+            // Выбор награды
+            if (accuracy >= 95) {
+                awardImg.src = 'videothemes/icons/cup_gold.png'; // Путь к иконке золотого кубка
+            } else if (accuracy >= 80) {
+                awardImg.src = 'videothemes/icons/cup_silver.png'; // Путь к иконке серебряного кубка
+            } else {
+                awardImg.src = 'videothemes/icons/cup_bronze.png'; // Путь к иконке бронзового кубка
+            }
+
+            // Логика кнопки "Посмотреть ошибки"
+            if (errorsCount > 0) {
+                showErrorsBtn.style.display = 'block';
+                let errorHTML = '<h4>Ваши ошибки:</h4>';
+                sessionStats.errors.forEach(err => {
+                    errorHTML += `<div style="margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid #eee;">
+                                    <strong>Вопрос:</strong> ${err.question}<br>
+                                    <span style="color: red;">Ваш ответ: ${err.yourAnswer}</span><br>
+                                    <span style="color: green;">Правильно: ${err.correctAnswer}</span>
+                                  </div>`;
+                });
+                errorListDiv.innerHTML = errorHTML;
+            }
+
+            // Показываем попап
+            resultsPopup.style.display = 'flex';
+        }
+
+        let sessionDuration = 0; // Длительность сессии в секундах
+        let sessionTimerInterval = null; // ID интервала для таймера сессии
+        let sessionStats = { total: 0, correct: 0, errors: [] }; // Статистика сессии
 
         function initializeTimer() {
             const isMember = localStorage.getItem("member") === "true";
-            if (isMember) {
-                loadStars();
-                loadWordsAndSetOptions();
-                return;
-            }
-
-            document.getElementById('timer-container').style.display = 'block';
             const today = new Date().toISOString().split('T')[0];
             const lastUsageDate = localStorage.getItem('lastUsageDate');
 
-            if (lastUsageDate !== today) {
-                localStorage.setItem('lastUsageDate', today);
-                localStorage.setItem('timeUsedToday', '0');
-                timeUsedToday = 0;
+            if (isMember) {
+                // Премиум: убираем класс 'premium-only', что активирует кнопки и убирает спец. стили
+                document.querySelectorAll('.session-duration-btn.premium-only').forEach(btn => {
+                    btn.classList.remove('premium-only'); // <--- ГЛАВНОЕ ИЗМЕНЕНИЕ
 
-                const timeLeft = DAILY_LIMIT_SECONDS - timeUsedToday;
-                document.getElementById('time-left-info').textContent = `${Math.ceil(timeLeft / 60)} минут`;
-                document.getElementById('start-timer-popup').style.display = 'flex';
-
+                    const crownIcon = btn.querySelector('img');
+                    if (crownIcon) {
+                        crownIcon.style.display = 'none';
+                    }
+                });
+                document.getElementById('session-timer-popup').style.display = 'flex';
             } else {
-                timeUsedToday = parseInt(localStorage.getItem('timeUsedToday') || '0', 10);
-                if (timeUsedToday >= DAILY_LIMIT_SECONDS) {
-                    document.getElementById('gameContainer').style.pointerEvents = 'none';
-                    document.getElementById('times-up-popup').style.display = 'flex';
+                // Фримиум
+                document.getElementById('freemium-limit-notice').style.display = 'inline';
+                if (lastUsageDate !== today) {
+                    // Новый день: сбрасываем таймер и показываем попап
+                    localStorage.setItem('lastUsageDate', today);
+                    localStorage.setItem('timeUsedToday', '0');
+                    timeUsedToday = 0;
+                    document.getElementById('session-timer-popup').style.display = 'flex';
                 } else {
-                    loadStars();
-                    loadWordsAndSetOptions();
-                    startTimer();
+                    // Тот же день: проверяем остаток времени
+                    timeUsedToday = parseInt(localStorage.getItem('timeUsedToday') || '0', 10);
+                    if (timeUsedToday >= DAILY_LIMIT_SECONDS) {
+                        // Время вышло
+                        document.getElementById('gameContainer').style.pointerEvents = 'none';
+                        document.getElementById('times-up-popup').style.display = 'flex';
+                    } else {
+                        // Время еще есть, запускаем тренировку с остатком
+                        // (В нашей новой логике это окно все равно появится, так что этот блок можно упростить)
+                        document.getElementById('session-timer-popup').style.display = 'flex';
+                    }
                 }
             }
-            updateTimerDisplay();
         }
 
         function shuffleArray(array) {
@@ -1140,6 +1263,7 @@
         }
 
         function checkWord(button) {
+            sessionStats.total++;
             document.getElementById('option1').disabled = true;
             document.getElementById('option2').disabled = true;
             const isCorrect = button.innerText === correctAnswer;
@@ -1149,6 +1273,7 @@
             const totalBoxes = boxes.length;
 
             if (isCorrect) {
+                sessionStats.correct++;
                 const goalReached = trackDailyActivity();
                 if (!goalReached) {
                     new Audio('excellent.mp3').play();
@@ -1188,6 +1313,12 @@
                     return;
                 }
             } else {
+                const currentWord = easywords[currentWordIndex];
+                sessionStats.errors.push({
+                    question: (localStorage.getItem('answerLanguage') || 'ru') === 'ru' ? currentWord.korean : currentWord.russian,
+                    yourAnswer: button.innerText,
+                    correctAnswer: correctAnswer
+                });
                 if (progressCount > 0) {
                     const index = Math.min(progressCount - 1, boxes.length - 1);
                     boxes[index].style.backgroundColor = 'lightcoral';
@@ -1236,6 +1367,38 @@
             document.getElementById("showKoreanButton").style.display = "none";
         }
         document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('show-errors-btn').addEventListener('click', () => {
+                document.getElementById('error-list').style.display = 'block';
+                document.getElementById('show-errors-btn').style.display = 'none'; // Скрываем кнопку после нажатия
+                // Скрываем основной контент, чтобы освободить место
+                document.getElementById('results-award').style.display = 'none';
+                document.getElementById('results-summary').style.display = 'none';
+                document.getElementById('results-title').textContent = "Разбор ошибок";
+            });
+
+            document.querySelectorAll('.session-duration-btn').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const targetButton = e.currentTarget; // Используем currentTarget для надежности
+                    if (targetButton.classList.contains('premium-only')) {
+                        // Если кнопка неактивна (фримиум + 10/15 мин)
+                        window.location.href = "videopremium.html"; // Переход на страницу премиума
+                        return;
+                    }
+
+                    sessionDuration = parseInt(targetButton.getAttribute('data-duration'), 10);
+                    document.getElementById('session-timer-popup').style.display = 'none';
+
+                    // Показываем таймер сессии
+                    const timerContainer = document.getElementById('timer-container');
+                    const timerDisplay = document.getElementById('timer-display');
+                    timerContainer.style.display = 'block';
+                    timerDisplay.style.display = 'block';
+
+                    startSessionTimer();
+                    launchApp();
+                });
+            });
+
             const btnRu = document.getElementById('lang-toggle-ru');
             const btnKo = document.getElementById('lang-toggle-ko');
 
@@ -1280,23 +1443,17 @@
             }
             hideHintForMembers();
             updateStreakDisplay();
-            initializeTimer(); // <-- Главный вызов таймера
+            initializeTimer(); //
 
             document.addEventListener('visibilitychange', handleVisibilityChange);
 
             function launchApp() {
                 loadStars();
                 loadWordsAndSetOptions();
-                const isMember = localStorage.getItem("member") === "true";
-                if (!isMember && timeUsedToday < DAILY_LIMIT_SECONDS) {
-                    startTimer();
-                }
+
             }
 
-            document.getElementById('start-lesson-btn').addEventListener('click', () => {
-                document.getElementById('start-timer-popup').style.display = 'none';
-                launchApp();
-            });
+
 
             document.getElementById('get-premium-btn').addEventListener('click', () => {
                 window.location.href = "videopremium.html";
@@ -1519,18 +1676,7 @@
         </div>
     </div>
 
-    <!-- Start Timer Popup -->
-    <div id="start-timer-popup"
-        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 100003; justify-content: center; align-items: center; padding: 10px; box-sizing: border-box;">
-        <div id="start-timer-popup-content"
-            style="background: white; padding: 20px 25px; border-radius: 10px; width: 100%; max-width: 500px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
-            <h2 style="margin-top: 0; font-size: 25px; font-weight: bold; color: #333;">На сегодня</h2>
-            <p style="font-size: 18px; margin-bottom: 25px; color: #555; line-height: 1.5;">У вас осталось <strong
-                    id="time-left-info">5 минут</strong> для тренировки сегодня.</p>
-            <button id="start-lesson-btn"
-                style="width: auto; min-width: 150px; font-size: 18px; padding: 12px 24px;">Начать</button>
-        </div>
-    </div>
+
 
     <!-- Time's Up Popup -->
     <div id="times-up-popup"
@@ -1550,6 +1696,63 @@
                 <button id="return-home-btn"
                     style="background-color: #f0f0f0; width: 100%; font-size: 18px; padding: 12px 24px;">Вернуться на
                     главную</button>
+            </div>
+        </div>
+    </div>
+    <!-- Session Timer Popup (Premium) -->
+    <div id="session-timer-popup"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 100005; justify-content: center; align-items: center; padding: 10px; box-sizing: border-box;">
+        <div
+            style="background: white; padding: 20px 25px; border-radius: 10px; width: 100%; max-width: 500px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center;">
+            <h2 style="margin-top: 0; font-size: 25px; font-weight: bold; color: #333;">Длительность тренировки</h2>
+            <p style="font-size: 18px; margin-bottom: 25px; color: #555; line-height: 1.5;">
+                Выберите, сколько времени хотите заниматься.
+                <br>
+                <span id="freemium-limit-notice" style="display: none; font-size: 14px; color: #888;">
+                    ❗️(без подписки доступно 5 минут в день)❗️
+                </span>
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <button class="session-duration-btn" data-duration="300"
+                    style="width: 100%; font-size: 18px; padding: 12px 24px;">5 минут</button>
+                <button class="session-duration-btn premium-only" data-duration="600"
+                    style="width: 100%; font-size: 18px; padding: 12px 24px; position: relative;">
+                    10 минут
+                    <img src="videothemes/icons/goldkimchi.png" ...
+                        style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); width: 24px; height: auto; z-index: 2;">
+                </button>
+                <button class="session-duration-btn premium-only" data-duration="900"
+                    style="width: 100%; font-size: 18px; padding: 12px 24px; position: relative;">
+                    15 минут
+                    <img src="videothemes/icons/goldkimchi.png" ...
+                        style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); width: 24px; height: auto; z-index: 2;">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Session Results Popup -->
+    <div id="session-results-popup"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); z-index: 100006; justify-content: center; align-items: center; padding: 10px; box-sizing: border-box;">
+        <div
+            style="background: white; padding: 20px 25px; border-radius: 10px; width: 100%; max-width: 500px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); text-align: center; max-height: 90vh; display: flex; flex-direction: column;">
+
+            <div id="results-content" style="overflow-y: auto;">
+                <h2 id="results-title" style="margin-top: 0; font-size: 25px; font-weight: bold; color: #333;">
+                    Тренировка окончена!</h2>
+                <img id="results-award" src="" alt="Award" style="width: 100px; height: 100px; margin-bottom: 15px;">
+                <p id="results-summary" style="font-size: 18px; margin-bottom: 25px; color: #555; line-height: 1.5;">
+                </p>
+                <div id="error-list" style="text-align: left; font-size: 16px; display: none;"></div>
+            </div>
+
+            <div id="results-footer" style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+                <button id="show-errors-btn"
+                    style="width: 100%; font-size: 18px; padding: 12px 24px; display: none;">Посмотреть ошибки</button>
+                <button onclick="window.location.reload();"
+                    style="width: 100%; font-size: 18px; padding: 12px 24px;">Начать заново</button>
+                <button onclick="goHome();"
+                    style="background-color: #f0f0f0; width: 100%; font-size: 18px; padding: 12px 24px;">Вернуться в
+                    меню</button>
             </div>
         </div>
     </div>

@@ -812,6 +812,7 @@
         let timerInterval = null;
         let timeUsedToday = 0;
         let isTimerRunning = false;
+        let sessionErrors = [];
 
         // --- НАЧАЛО БЛОКА ДЛЯ СТРИКА ---
 
@@ -1219,6 +1220,13 @@
                 currentBox.style.backgroundColor = 'lightgreen';
                 correctAnswersCount++;
             } else {
+                const correctWord = wordsInLesson[currentQuestionIndex];
+                const questionLanguage = localStorage.getItem('answerLanguage') || 'ru';
+                sessionErrors.push({
+                    question: questionLanguage === 'ru' ? correctWord.korean : correctWord.russian,
+                    yourAnswer: button.innerText,
+                    correctAnswer: correctAnswer
+                });
                 currentBox.style.backgroundColor = 'lightcoral';
             }
 
@@ -1240,47 +1248,81 @@
             }, 1000);
         }
         async function endLesson() {
-            // 1. Рассчитываем звезды
-            let starsAwarded = 0;
-            if (correctAnswersCount === 10) {
-                starsAwarded = 3;
-            } else if (correctAnswersCount >= 8) {
-                starsAwarded = 2;
-            } else {
-                starsAwarded = 1;
-            }
-
-            // 2. Обновляем общий счет и сохраняем
-            Game.stars += starsAwarded;
-            updateStarsUI();
-            saveStars();
-
-            // 3. Отображаем звезды в попапе
+            // Получаем доступ к элементам попапа
+            const popupTitle = document.querySelector('#completion-popup-content-wrapper h2');
+            const popupText = document.querySelector('#completion-popup-content-wrapper p');
             const completionStarsEl = document.getElementById('completion-stars');
-            completionStarsEl.innerHTML = '⭐'.repeat(starsAwarded);
+            const continueBtn = document.getElementById('completion-continue-btn');
+            const retryBtn = document.getElementById('completion-retry-btn');
 
-            // --- НОВЫЙ БЛОК: Загрузка и установка мотивационной фразы ---
-            try {
-                const response = await fetch('videothemes/motivation/motivation.json');
-                const data = await response.json();
-                const phrasesObject = data[0]; // Получаем объект из массива
-                const phrases = Object.values(phrasesObject); // Извлекаем все фразы в массив
-                const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)]; // Выбираем случайную
+            // --- ОСНОВНАЯ ЛОГИКА: ПРОВЕРКА РЕЗУЛЬТАТА ---
+            if (correctAnswersCount >= 7) {
+                // УСПЕХ: 7 или больше правильных ответов
+                popupTitle.textContent = "🎉 Поздравляем! 🎉";
 
-                // Находим <p> в попапе и меняем его текст
-                document.querySelector('#completion-popup-content-wrapper p').textContent = randomPhrase;
+                let starsAwarded = 0;
+                if (correctAnswersCount === 10) {
+                    starsAwarded = 3;
+                } else if (correctAnswersCount >= 8) {
+                    starsAwarded = 2;
+                } else {
+                    starsAwarded = 1; // За 7 правильных ответов
+                }
 
-            } catch (error) {
-                console.error("Ошибка загрузки мотивационной фразы:", error);
-                // Стандартный текст, если файл не загрузился
-                document.querySelector('#completion-popup-content-wrapper p').textContent = "Вы успешно прошли урок. Так держать!";
+                Game.stars += starsAwarded;
+                updateStarsUI();
+                saveStars();
+                completionStarsEl.innerHTML = '⭐'.repeat(starsAwarded);
+
+                // Загружаем мотивационную фразу
+                try {
+                    const response = await fetch('videothemes/motivation/motivation.json');
+                    const data = await response.json();
+                    const phrases = Object.values(data[0]);
+                    popupText.textContent = phrases[Math.floor(Math.random() * phrases.length)];
+                } catch (error) {
+                    popupText.textContent = "Вы успешно прошли урок. Так держать!";
+                }
+
+                handlePathwayCompletion(); // Сохраняем прогресс
+
+                // Показываем/скрываем нужные кнопки
+                continueBtn.style.display = 'block';
+
+                retryBtn.style.display = 'none';
+
+            } else {
+                // НЕУДАЧА: Меньше 7 правильных ответов
+                popupTitle.textContent = "🎯 Почти получилось! 🎯";
+                popupText.textContent = `Вы ответили правильно ${correctAnswersCount} из 10 раз. Для прохождения урока нужно минимум 7 правильных ответов.`;
+                completionStarsEl.innerHTML = '💪'; // Вместо звезд покажем иконку силы
+
+                // Показываем/скрываем нужные кнопки
+                continueBtn.style.display = 'none';
+                retryBtn.style.display = 'block';
+
             }
-            // --- КОНЕЦ НОВОГО БЛОКА ---
 
-            // 4. Сохраняем прогресс урока
-            handlePathwayCompletion();
+            // Логика показа ошибок (остается без изменений)
+            const showErrorsBtn = document.getElementById('show-errors-btn');
+            const errorListDiv = document.getElementById('error-list');
+            if (sessionErrors.length > 0) {
+                showErrorsBtn.style.display = 'block';
+                showErrorsBtn.style.margin = '0 auto 10px';
+                let errorHTML = '<h4>Ваши ошибки:</h4>';
+                sessionErrors.forEach(err => {
+                    errorHTML += `<div style="margin-bottom: 10px; padding-bottom: 5px; border-bottom: 1px solid #eee;">
+                            <strong>Вопрос:</strong> ${err.question}<br>
+                            <span style="color: red;">Ваш ответ: ${err.yourAnswer}</span><br>
+                            <span style="color: green;">Правильно: ${err.correctAnswer}</span>
+                          </div>`;
+                });
+                errorListDiv.innerHTML = errorHTML;
+            } else {
+                showErrorsBtn.style.display = 'none';
+                errorListDiv.style.display = 'none';
+            }
 
-            // 5. Показываем финальный попап
             showCompletionPopup();
         }
 
@@ -1290,6 +1332,22 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('completion-home-btn').addEventListener('click', goHome);
+            document.getElementById('completion-retry-btn').addEventListener('click', () => {
+                window.location.reload();
+            });
+            document.getElementById('show-errors-btn').addEventListener('click', () => {
+                // Показываем список ошибок
+                document.getElementById('error-list').style.display = 'block';
+
+                // Скрываем кнопку, которую только что нажали
+                document.getElementById('show-errors-btn').style.display = 'none';
+
+                // Скрываем остальной контент: звезды, заголовок и параграф
+                document.getElementById('completion-stars').style.display = 'none';
+                document.querySelector('#completion-popup-content-wrapper h2').style.display = 'none';
+                document.querySelector('#completion-popup-content-wrapper p').style.display = 'none';
+            });
             const btnRu = document.getElementById('lang-toggle-ru');
             const btnKo = document.getElementById('lang-toggle-ko');
 
@@ -1664,8 +1722,20 @@
             <div id="completion-stars" style="font-size: 3em; margin: 15px 0; color: #ffc700;"></div>
             <h2>🎉 Поздравляем! 🎉</h2>
             <p>Вы успешно прошли урок. Так держать!</p>
-            <!-- Блок для отображения звезд -->
-            <button id="completion-continue-btn">Продолжить</button>
+            <!-- Блок для отображения ошибок, изначально скрыт -->
+            <div id="error-list"
+                style="text-align: left; font-size: 16px; display: none; margin: 15px 20px; max-height: 300px; overflow-y: auto; border-top: 1px solid #eee; padding-top: 10px;">
+            </div>
+
+            <!-- Кнопка для показа ошибок, изначально скрыта -->
+            <button id="show-errors-btn" style="display: none; background-color: #f0f0f0; margin-bottom: 10px;">Показать
+                ошибки</button>
+            <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 20px 15px;">
+                <button id="completion-continue-btn">Продолжить</button>
+                <button id="completion-retry-btn" style="display: none; background-color: #ffcdd2;">Начать
+                    заново</button>
+                <button id="completion-home-btn" style="background-color: #f0f0f0;">Выйти в меню</button>
+            </div>
         </div>
     </div>
 
