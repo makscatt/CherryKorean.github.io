@@ -766,35 +766,47 @@
         }
         function startSessionTimer() {
             const isMember = localStorage.getItem("member") === "true";
-            let timeLeft = sessionDuration;
+            let timeLeft;
 
             // --- НАЧАЛО ИЗМЕНЕНИЙ ---
+            const sessionStartTime = sessionStorage.getItem('sessionStartTime');
+            if (sessionStartTime) {
+                // Возобновляем сессию
+                const duration = parseInt(sessionStorage.getItem('sessionDuration'), 10);
+                const elapsed = Math.floor((Date.now() - parseInt(sessionStartTime, 10)) / 1000);
+                timeLeft = duration - elapsed;
+            } else {
+                // Это новая сессия
+                timeLeft = sessionDuration;
+            }
+
+            if (timeLeft <= 0) {
+                endSession();
+                return;
+            }
+            // --- КОНЕЦ ИЗМЕНЕНИЙ ---
+
             if (!isMember) {
-                // Для фримиум-пользователя, ограничиваем время сессии остатком дневного лимита
                 const remainingDailyTime = DAILY_LIMIT_SECONDS - timeUsedToday;
                 if (timeLeft > remainingDailyTime) {
                     timeLeft = remainingDailyTime;
                 }
             }
-            // --- КОНЕЦ ИЗМЕНЕНИЙ ---
 
             function updateSessionTimerDisplay() {
                 const timerDisplay = document.getElementById('timer-display');
                 timerDisplay.textContent = formatTime(timeLeft);
             }
 
-            updateSessionTimerDisplay(); // Показать начальное время
+            updateSessionTimerDisplay();
 
             sessionTimerInterval = setInterval(() => {
                 timeLeft--;
 
-                // --- ДОПОЛНИТЕЛЬНОЕ ИЗМЕНЕНИЕ ---
-                // Также увеличиваем счетчик общего использованного времени для фримиума
                 if (!isMember) {
                     timeUsedToday++;
                     localStorage.setItem('timeUsedToday', timeUsedToday);
                 }
-                // --- КОНЕЦ ИЗМЕНЕНИЯ ---
 
                 updateSessionTimerDisplay();
 
@@ -805,7 +817,7 @@
             }, 1000);
         }
         function endSession() {
-            // Останавливаем таймер и блокируем интерфейс
+
             clearInterval(sessionTimerInterval);
             document.getElementById('gameContainer').style.pointerEvents = 'none';
 
@@ -822,9 +834,13 @@
             const accuracy = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
 
             // Формирование текста
+            const totalDuration = parseInt(sessionStorage.getItem('sessionDuration'), 10);
+            const averageTime = totalCount > 0 ? (totalDuration / totalCount).toFixed(1) : 0;
+
             summary.innerHTML = `Всего ответов: <strong>${totalCount}</strong><br>
-                                 Правильно: <strong>${correctCount}</strong><br>
-                                 Точность: <strong>${accuracy}%</strong>`;
+                     Правильно: <strong>${correctCount}</strong><br>
+                     Точность: <strong>${accuracy}%</strong><br>
+                     Среднее время на ответ: <strong>${averageTime} сек.</strong>`;
 
             // Выбор награды
             if (accuracy >= 95) {
@@ -849,7 +865,10 @@
                 errorListDiv.innerHTML = errorHTML;
             }
 
-            // Показываем попап
+            sessionStorage.removeItem('isSessionActive');
+            sessionStorage.removeItem('sessionStartTime');
+            sessionStorage.removeItem('sessionDuration');
+            sessionStorage.removeItem('sessionStats');
             resultsPopup.style.display = 'flex';
         }
 
@@ -858,15 +877,36 @@
         let sessionStats = { total: 0, correct: 0, errors: [] }; // Статистика сессии
 
         function initializeTimer() {
+            // --- НАЧАЛО ИЗМЕНЕНИЙ ---
+            const isSessionActive = sessionStorage.getItem('isSessionActive') === 'true';
+
+            if (isSessionActive) {
+                // Восстанавливаем сессию
+                sessionStats = JSON.parse(sessionStorage.getItem('sessionStats')) || { total: 0, correct: 0, errors: [] };
+
+                document.getElementById('session-timer-popup').style.display = 'none';
+                const timerContainer = document.getElementById('timer-container');
+                const timerDisplay = document.getElementById('timer-display');
+                timerContainer.style.display = 'block';
+                timerDisplay.style.display = 'block';
+
+                startSessionTimer(); // Запускаем таймер с оставшимся временем
+
+                // Запускаем игру (используя вашу функцию launchApp из DOMContentLoaded)
+                loadStars();
+                loadWordsAndSetOptions();
+
+                return; // Прерываем выполнение, чтобы не показать попап снова
+            }
+            // --- КОНЕЦ ИЗМЕНЕНИЙ ---
+
             const isMember = localStorage.getItem("member") === "true";
             const today = new Date().toISOString().split('T')[0];
             const lastUsageDate = localStorage.getItem('lastUsageDate');
 
             if (isMember) {
-                // Премиум: убираем класс 'premium-only', что активирует кнопки и убирает спец. стили
                 document.querySelectorAll('.session-duration-btn.premium-only').forEach(btn => {
-                    btn.classList.remove('premium-only'); // <--- ГЛАВНОЕ ИЗМЕНЕНИЕ
-
+                    btn.classList.remove('premium-only');
                     const crownIcon = btn.querySelector('img');
                     if (crownIcon) {
                         crownIcon.style.display = 'none';
@@ -874,24 +914,18 @@
                 });
                 document.getElementById('session-timer-popup').style.display = 'flex';
             } else {
-                // Фримиум
                 document.getElementById('freemium-limit-notice').style.display = 'inline';
                 if (lastUsageDate !== today) {
-                    // Новый день: сбрасываем таймер и показываем попап
                     localStorage.setItem('lastUsageDate', today);
                     localStorage.setItem('timeUsedToday', '0');
                     timeUsedToday = 0;
                     document.getElementById('session-timer-popup').style.display = 'flex';
                 } else {
-                    // Тот же день: проверяем остаток времени
                     timeUsedToday = parseInt(localStorage.getItem('timeUsedToday') || '0', 10);
                     if (timeUsedToday >= DAILY_LIMIT_SECONDS) {
-                        // Время вышло
                         document.getElementById('gameContainer').style.pointerEvents = 'none';
                         document.getElementById('times-up-popup').style.display = 'flex';
                     } else {
-                        // Время еще есть, запускаем тренировку с остатком
-                        // (В нашей новой логике это окно все равно появится, так что этот блок можно упростить)
                         document.getElementById('session-timer-popup').style.display = 'flex';
                     }
                 }
@@ -1264,6 +1298,7 @@
 
         function checkWord(button) {
             sessionStats.total++;
+            sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
             document.getElementById('option1').disabled = true;
             document.getElementById('option2').disabled = true;
             const isCorrect = button.innerText === correctAnswer;
@@ -1274,6 +1309,7 @@
 
             if (isCorrect) {
                 sessionStats.correct++;
+                sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
                 const goalReached = trackDailyActivity();
                 if (!goalReached) {
                     new Audio('excellent.mp3').play();
@@ -1319,6 +1355,7 @@
                     yourAnswer: button.innerText,
                     correctAnswer: correctAnswer
                 });
+                sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
                 if (progressCount > 0) {
                     const index = Math.min(progressCount - 1, boxes.length - 1);
                     boxes[index].style.backgroundColor = 'lightcoral';
@@ -1386,6 +1423,15 @@
                     }
 
                     sessionDuration = parseInt(targetButton.getAttribute('data-duration'), 10);
+
+                    const startTime = Date.now();
+                    sessionStats = { total: 0, correct: 0, errors: [] }; // Сброс статистики
+
+                    sessionStorage.setItem('isSessionActive', 'true');
+                    sessionStorage.setItem('sessionStartTime', startTime);
+                    sessionStorage.setItem('sessionDuration', sessionDuration);
+                    sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
+
                     document.getElementById('session-timer-popup').style.display = 'none';
 
                     // Показываем таймер сессии
@@ -1629,6 +1675,10 @@
         }, true);
 
         function goHome() {
+            sessionStorage.removeItem('isSessionActive');
+            sessionStorage.removeItem('sessionStartTime');
+            sessionStorage.removeItem('sessionDuration');
+            sessionStorage.removeItem('sessionStats');
             var pushAudio = new Audio('pushButton.mp3');
             pushAudio.play();
             setTimeout(() => {

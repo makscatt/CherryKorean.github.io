@@ -813,11 +813,54 @@
         let timeUsedToday = 0;
         let isTimerRunning = false;
         let sessionErrors = [];
+        let progressHistory = [];
 
         // --- НАЧАЛО БЛОКА ДЛЯ СТРИКА ---
 
         const STREAK_GOAL = 10; // Наша цель - 10 правильных ответов
 
+        function clearLessonSession() {
+            sessionStorage.removeItem('isLessonActive');
+            sessionStorage.removeItem('wordsInLesson');
+            sessionStorage.removeItem('currentQuestionIndex');
+            sessionStorage.removeItem('correctAnswersCount');
+            sessionStorage.removeItem('sessionErrors');
+            sessionStorage.removeItem('progressHistory');
+            console.log("Сессия урока очищена.");
+        }
+
+        function restoreLessonState() {
+            if (sessionStorage.getItem('isLessonActive') !== 'true') return false;
+
+            try {
+                const storedWords = JSON.parse(sessionStorage.getItem('wordsInLesson'));
+                // Если сохраненных слов нет, значит что-то пошло не так, не восстанавливаем
+                if (!storedWords || storedWords.length === 0) return false;
+
+                // Восстанавливаем все переменные из sessionStorage
+                wordsInLesson = storedWords;
+                currentQuestionIndex = parseInt(sessionStorage.getItem('currentQuestionIndex'), 10);
+                correctAnswersCount = parseInt(sessionStorage.getItem('correctAnswersCount'), 10);
+                sessionErrors = JSON.parse(sessionStorage.getItem('sessionErrors'));
+                progressHistory = JSON.parse(sessionStorage.getItem('progressHistory'));
+
+                // Перерисовываем прогресс-бар в соответствии с сохраненной историей
+                initializePathwayProgressBar();
+                const boxes = document.querySelectorAll('.progress-box');
+                progressHistory.forEach((status, index) => {
+                    if (boxes[index]) {
+                        boxes[index].style.backgroundColor = status === 'correct' ? 'lightgreen' : 'lightcoral';
+                    }
+                });
+
+                console.log(`Урок восстановлен на вопросе ${currentQuestionIndex + 1}`);
+                return true;
+            } catch (e) {
+                console.error("Не удалось восстановить урок:", e);
+                // Если произошла ошибка, лучше начать заново
+                return false;
+            }
+        }
 
         function updateStreakDisplay() {
             const indicator = document.getElementById('streak-indicator');
@@ -915,6 +958,7 @@
         }
 
         function goBack() {
+            clearLessonSession();
             window.history.back();
         }
         function hideHintForMembers() {
@@ -1018,7 +1062,8 @@
 
         async function loadWordsAndSetOptions() {
             try {
-                // --- 1. ЗАГРУЗКА И ПЕРЕМЕШИВАНИЕ (только один раз в начале) ---
+                // ШАГ 1: Убедиться, что базовый набор слов (easywords) загружен.
+                // Это нужно как для новых, так и для восстановленных уроков.
                 if (easywords.length === 0) {
                     const blockKey = localStorage.getItem('selectedBlockKey');
                     const masterJsonPath = localStorage.getItem('masterJsonPath');
@@ -1037,11 +1082,25 @@
                         document.body.innerHTML = `<h1>Ошибка: Данные для блока "${blockKey}" не найдены.</h1>`;
                         return;
                     }
+                }
 
+                // ШАГ 2: Проверить, нужно ли начинать НОВЫЙ урок.
+                // Если wordsInLesson пуст, значит, урок не был восстановлен.
+                if (wordsInLesson.length === 0) {
                     wordsInLesson = [...easywords].sort(() => Math.random() - 0.5);
+
+                    // Сохраняем состояние нового урока в sessionStorage
+                    sessionStorage.setItem('isLessonActive', 'true');
+                    sessionStorage.setItem('wordsInLesson', JSON.stringify(wordsInLesson));
+                    sessionStorage.setItem('currentQuestionIndex', '0');
+                    sessionStorage.setItem('correctAnswersCount', '0');
+                    sessionStorage.setItem('sessionErrors', '[]');
+                    sessionStorage.setItem('progressHistory', '[]');
+
                     initializePathwayProgressBar();
                 }
 
+                // ШАГ 3: Отобразить текущий вопрос (работает и для нового, и для восстановленного урока)
                 if (currentQuestionIndex >= wordsInLesson.length) {
                     console.error("Попытка загрузить слово за пределами урока.");
                     return;
@@ -1050,7 +1109,6 @@
                 const correctWord = wordsInLesson[currentQuestionIndex];
                 currentWordIndex = easywords.findIndex(w => w.video === correctWord.video);
 
-                // --- НОВАЯ ЛОГИКА С УЧЕТОМ ЯЗЫКА ---
                 const answerLanguage = localStorage.getItem('answerLanguage') || 'ru';
                 const correctOption = (answerLanguage === 'ko') ? correctWord.korean : correctWord.russian;
                 correctAnswer = correctOption;
@@ -1072,18 +1130,18 @@
                 document.getElementById("option1").innerText = options[0] || '';
                 document.getElementById("option2").innerText = options[1] || '';
                 document.getElementById("option3").innerText = options[2] || '';
-                // --- КОНЕЦ НОВОЙ ЛОГИКИ ---
+
+                // Сбрасываем состояние кнопок
+                [document.getElementById('option1'), document.getElementById('option2'), document.getElementById('option3')].forEach(btn => {
+                    btn.disabled = false;
+                    btn.style.backgroundColor = ""; // Убираем подсветку
+                });
 
                 const video = document.getElementById("wordVideo");
-                if (correctWord.videoMp4 && /iPhone|iPad|iPod/.test(navigator.userAgent)) {
-                    video.src = correctWord.videoMp4;
-                } else {
-                    video.src = correctWord.video;
-                }
+                video.src = correctWord.videoMp4 && /iPhone|iPad|iPod/.test(navigator.userAgent) ? correctWord.videoMp4 : correctWord.video;
                 video.load();
                 video.play().catch(e => console.log("Autoplay был заблокирован."));
 
-                // Адаптируем кнопку и скрытый текст под выбранный язык
                 const showButton = document.getElementById("showKoreanButton");
                 const hiddenTextContent = document.getElementById("koreanTextContent");
 
@@ -1232,6 +1290,14 @@
 
             currentQuestionIndex++;
 
+            progressHistory.push(isCorrect ? 'correct' : 'incorrect');
+
+            // Сохраняем весь текущий прогресс
+            sessionStorage.setItem('currentQuestionIndex', currentQuestionIndex);
+            sessionStorage.setItem('correctAnswersCount', correctAnswersCount);
+            sessionStorage.setItem('sessionErrors', JSON.stringify(sessionErrors));
+            sessionStorage.setItem('progressHistory', JSON.stringify(progressHistory));
+
             // 3. Решаем, что делать дальше
             setTimeout(() => {
                 // Если урок окончен
@@ -1248,6 +1314,7 @@
             }, 1000);
         }
         async function endLesson() {
+            clearLessonSession();
             // Получаем доступ к элементам попапа
             const popupTitle = document.querySelector('#completion-popup-content-wrapper h2');
             const popupText = document.querySelector('#completion-popup-content-wrapper p');
@@ -1332,8 +1399,10 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
+            restoreLessonState();
             document.getElementById('completion-home-btn').addEventListener('click', goHome);
             document.getElementById('completion-retry-btn').addEventListener('click', () => {
+                clearLessonSession();
                 window.location.reload();
             });
             document.getElementById('show-errors-btn').addEventListener('click', () => {
@@ -1653,6 +1722,7 @@
         }
 
         function goHome() {
+            clearLessonSession();
             var pushAudio = new Audio('pushButton.mp3');
             pushAudio.play();
             setTimeout(() => {

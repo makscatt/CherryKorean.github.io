@@ -797,7 +797,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 22; i >= 2; i--) {
+          for (let i = 23; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -1390,7 +1390,7 @@
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 1; i <= 22; i++) {
+      for (let i = 1; i <= 23; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1421,10 +1421,10 @@
     document.addEventListener('DOMContentLoaded', () => {
 
       const updateConfig = {
-        version: '2210',
-        title: 'Обновление от 22.10',
+        version: '2910',
+        title: 'Обновление от 29.10',
         image: 'videothemes/update_banner.png',
-        text: `Добваил новую дораму\n🚀Все твои желания исполнятся` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+        text: `Дорамы:\n📺Новые фрагменты в "Шеф-Повар Тирана"\n⭐️Новая Дорама "Король земли - Джунхо\n\nУлучшения:\n🚀3 Режима времени тренировки\n🚀Статистика в конце тренирвоки\n🚀Теперь можно смотреть ошибки в конце тренировки\n🚀Теперь чтобы пройти урок в "Слух с 0" нужно набрать минимум 7 правильных ответов.\n\nНапоминаю:\nПо значку 🔍 в тренировке можно смотреть грамматику(Я ее постепенно обновляю и дополняю)"` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
       };
       // ------------------------------------
 

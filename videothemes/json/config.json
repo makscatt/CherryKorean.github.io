@@ -282,12 +282,21 @@
     "blocks": [
       { "name": "Демо", "key": "b0" },
       { "name": "1", "key": "b1" },
-      { "name": "2", "key": "b2" }
+      { "name": "2", "key": "b2" },
+      { "name": "3", "key": "b3" }
     ]
   },
     "theme22": {
     "coverImage": "videothemes/subthemebc/jin.png",
     "masterJsonPath": "videothemes/json/videotheme22.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "1", "key": "b1" }
+    ]
+  },
+    "theme23": {
+    "coverImage": "videothemes/subthemebc/landking.png",
+    "masterJsonPath": "videothemes/json/videotheme23.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "1", "key": "b1" }

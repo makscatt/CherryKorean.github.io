@@ -33,7 +33,6 @@
   ],
   "b1": [
     {
-      "isNew": true,
       "video": "video/shef/지금.webm",
       "videoMp4": "video/shef/mp4/지금.mp4",
       "korean": "지금",
@@ -246,7 +245,6 @@
   ],
   "b2": [
     {
-      "isNew": true,
       "video": "video/shef/화살.webm",
       "videoMp4": "video/shef/mp4/화살.mp4",
       "korean": "화살?",
@@ -437,7 +435,233 @@
       "new": true
     }
   ],
-  "b3": [],
+  "b3": [
+    {
+      "isNew": true,
+      "video": "video/shef/걱정 마.webm",
+      "videoMp4": "video/shef/mp4/걱정 마.mp4",
+      "korean": "걱정 마",
+      "russian": "Не волнуйся",
+      "new": true
+    },
+    {
+      "video": "video/shef/저녁밥이라.webm",
+      "videoMp4": "video/shef/mp4/저녁밥이라.mp4",
+      "korean": "저녁밥이라",
+      "russian": "Потому что это ужин",
+      "new": true
+    },
+    {
+      "video": "video/shef/얘 눈물 없이 못 보겠다.webm",
+      "videoMp4": "video/shef/mp4/얘 눈물 없이 못 보겠다.mp4",
+      "korean": "얘 눈물 없이 못 보겠다",
+      "russian": "Без слёз на него не посмотришь",
+      "new": true
+    },
+    {
+      "video": "video/shef/육질이 이리 부드럽다니.webm",
+      "videoMp4": "video/shef/mp4/육질이 이리 부드럽다니.mp4",
+      "korean": "육질이 이리 부드럽다니",
+      "russian": "Мясо такое мягкое, не верится",
+      "new": true
+    },
+    {
+      "video": "video/shef/그거였군.webm",
+      "videoMp4": "video/shef/mp4/그거였군.mp4",
+      "korean": "그거였군",
+      "russian": "Вот оно что",
+      "new": true
+    },
+    {
+      "video": "video/shef/면접 분위기.webm",
+      "videoMp4": "video/shef/mp4/면접 분위기.mp4",
+      "korean": "면접 분위기",
+      "russian": "Атмосфера собеседования",
+      "new": true
+    },
+    {
+      "video": "video/shef/니 이름이 뭐냐.webm",
+      "videoMp4": "video/shef/mp4/니 이름이 뭐냐.mp4",
+      "korean": "니 이름이 뭐냐",
+      "russian": "Как твоё имя?",
+      "new": true
+    },
+    {
+      "video": "video/shef/스물일곱이요.webm",
+      "videoMp4": "video/shef/mp4/스물일곱이요.mp4",
+      "korean": "스물일곱이요",
+      "russian": "Мне двадцать семь лет",
+      "new": true
+    },
+    {
+      "video": "video/shef/스물일곱.webm",
+      "videoMp4": "video/shef/mp4/스물일곱.mp4",
+      "korean": "스물일곱?",
+      "russian": "Двадцать семь?",
+      "new": true
+    },
+    {
+      "video": "video/shef/피곤하구나.webm",
+      "videoMp4": "video/shef/mp4/피곤하구나.mp4",
+      "korean": "피곤하구나",
+      "russian": "Похоже устал",
+      "new": true
+    },
+    {
+      "video": "video/shef/다시 말하라.webm",
+      "videoMp4": "video/shef/mp4/다시 말하라.mp4",
+      "korean": "다시 말하라",
+      "russian": "Скажи ещё раз",
+      "new": true
+    },
+    {
+      "video": "video/shef/괜찮으시겠어요 정말.webm",
+      "videoMp4": "video/shef/mp4/괜찮으시겠어요 정말.mp4",
+      "korean": "괜찮으시겠어요 정말?",
+      "russian": "Вы правда уверены, что всё будет нормально?",
+      "new": true
+    },
+    {
+      "video": "video/shef/이참에 나랑 같이 갈래.webm",
+      "videoMp4": "video/shef/mp4/이참에 나랑 같이 갈래.mp4",
+      "korean": "이참에 나랑 같이 갈래?",
+      "russian": "Раз уж так вышло, пойдёшь со мной?",
+      "new": true
+    },
+    {
+      "video": "video/shef/엄청난 살기.webm",
+      "videoMp4": "video/shef/mp4/엄청난 살기.mp4",
+      "korean": "엄청난 살기",
+      "russian": "Ужасная злобная аура",
+      "new": true
+    },
+    {
+      "video": "video/shef/500년 뒤 미래에서 왔어요.webm",
+      "videoMp4": "video/shef/mp4/500년 뒤 미래에서 왔어요.mp4",
+      "korean": "500년 뒤 미래에서 왔어요",
+      "russian": "Я пришёл из будущего, через 500 лет",
+      "new": true
+    },
+    {
+      "video": "video/shef/가방.webm",
+      "videoMp4": "video/shef/mp4/가방.mp4",
+      "korean": "가방",
+      "russian": "Сумка",
+      "new": true
+    },
+    {
+      "video": "video/shef/곱게 죽이고 싶지 않아서.webm",
+      "videoMp4": "video/shef/mp4/곱게 죽이고 싶지 않아서.mp4",
+      "korean": "곱게 죽이고 싶지 않아서?",
+      "russian": "Потому что я не хочу убивать тебя по-хорошему?",
+      "new": true
+    },
+    {
+      "video": "video/shef/나이는.webm",
+      "videoMp4": "video/shef/mp4/나이는.mp4",
+      "korean": "나이는?",
+      "russian": "Сколько тебе лет?",
+      "new": true
+    },
+    {
+      "video": "video/shef/너무 심려하지 마십시오.webm",
+      "videoMp4": "video/shef/mp4/너무 심려하지 마십시오.mp4",
+      "korean": "너무 심려하지 마십시오",
+      "russian": "Не слишком беспокойтесь",
+      "new": true
+    },
+    {
+      "video": "video/shef/네 말이 사실이라면.webm",
+      "videoMp4": "video/shef/mp4/네 말이 사실이라면.mp4",
+      "korean": "네 말이 사실이라면",
+      "russian": "Если то, что ты сказал, правда",
+      "new": true
+    },
+    {
+      "video": "video/shef/다들 모여보세요.webm",
+      "videoMp4": "video/shef/mp4/다들 모여보세요.mp4",
+      "korean": "다들 모여보세요",
+      "russian": "Все, соберитесь сюда",
+      "new": true
+    },
+    {
+      "video": "video/shef/대체 무슨 일인 거지.webm",
+      "videoMp4": "video/shef/mp4/대체 무슨 일인 거지.mp4",
+      "korean": "대체 무슨 일인 거지?",
+      "russian": "Что вообще происходит?",
+      "new": true
+    },
+    {
+      "video": "video/shef/맛있어라.webm",
+      "videoMp4": "video/shef/mp4/맛있어라.mp4",
+      "korean": "맛있어라",
+      "russian": "Как же вкусно",
+      "new": true
+    },
+    {
+      "video": "video/shef/모두 그만 나가 보거라.webm",
+      "videoMp4": "video/shef/mp4/모두 그만 나가 보거라.mp4",
+      "korean": "모두 그만 나가 보거라",
+      "russian": "Все, прекратите и выйдите",
+      "new": true
+    },
+    {
+      "video": "video/shef/사실.webm",
+      "videoMp4": "video/shef/mp4/사실.mp4",
+      "korean": "사실",
+      "russian": "На самом деле",
+      "new": true
+    },
+    {
+      "video": "video/shef/생각해 봐 연지영.webm",
+      "videoMp4": "video/shef/mp4/생각해 봐 연지영.mp4",
+      "korean": "생각해 봐 연지영",
+      "russian": "Подумай, Ёнджиён",
+      "new": true
+    },
+    {
+      "video": "video/shef/아가씨.webm",
+      "videoMp4": "video/shef/mp4/아가씨.mp4",
+      "korean": "아가씨",
+      "russian": "Молодая леди",
+      "new": true
+    },
+    {
+      "video": "video/shef/연지영입니다.webm",
+      "videoMp4": "video/shef/mp4/연지영입니다.mp4",
+      "korean": "연지영입니다",
+      "russian": "Я — Ёнджиён",
+      "new": true
+    },
+    {
+      "video": "video/shef/알겠습니다.webm",
+      "videoMp4": "video/shef/mp4/알겠습니다.mp4",
+      "korean": "알겠습니다",
+      "russian": "Поняла / Хорошо",
+      "new": true
+    },
+    {
+      "video": "video/shef/음식은 먹어 봐야 그 맛을 아는 것 아닙니까.webm",
+      "videoMp4": "video/shef/mp4/음식은 먹어 봐야 그 맛을 아는 것 아닙니까.mp4",
+      "korean": "음식은 먹어 봐야 그 맛을 아는 것 아닙니까?",
+      "russian": "Еду ведь нужно попробовать, чтобы узнать её вкус, не так ли?",
+      "new": true
+    },
+    {
+      "video": "video/shef/이렇게 즐긴 고기를 부드럽게 익히려면.webm",
+      "videoMp4": "video/shef/mp4/이렇게 즐긴 고기를 부드럽게 익히려면.mp4",
+      "korean": "이렇게 즐긴 고기를 부드럽게 익히려면",
+      "russian": "Чтобы так насладиться мясом и сделать его мягким",
+      "new": true
+    },
+    {
+      "video": "video/shef/이렇게 하는 수밖에 없어.webm",
+      "videoMp4": "video/shef/mp4/이렇게 하는 수밖에 없어.mp4",
+      "korean": "이렇게 하는 수밖에 없어",
+      "russian": "По-другому никак не получится",
+      "new": true
+    }
+  ],
   "b4": [],
   "b5": []
 }
