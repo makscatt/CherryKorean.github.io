@@ -669,23 +669,27 @@
         }
 
         #language-toggle-container {
-            position: absolute;
-            top: 80px;
-            right: 10px;
-            z-index: 10;
-            /* Чтобы кнопки были поверх видео */
             display: flex;
-            flex-direction: column;
-            gap: 8px;
-            /* Расстояние между кнопками */
+            justify-content: flex-start;
+            /* Изменено */
+            padding-left: 10px;
+            /* Добавлено */
+            gap: 15px;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            z-index: 10;
         }
 
         .lang-toggle-btn {
-            width: 45px;
-            height: 45px;
-            font-size: 20px;
+            width: 60px;
+            /* Немного увеличим для удобства */
+            height: 40px;
+            font-size: 18px;
+            /* Чуть меньше шрифт */
             font-weight: bold;
-            border: 2px solid rgba(255, 255, 255, 0.7);
+            border: 1px solid #ccc;
+            /* Граница для лучшей видимости на белом фоне */
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -693,9 +697,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-            /* Нейтральный фон для обеих кнопок */
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #f0f0f0;
+            /* Нейтральный фон */
+            color: #555;
+            /* Цвет неактивного текста */
         }
 
         /* Задаем индивидуальные цвета ТЕКСТА */
@@ -729,10 +734,7 @@
 <body>
     <div id="gameContainer">
         <div id="video-container">
-            <div id="language-toggle-container">
-                <button id="lang-toggle-ru" class="lang-toggle-btn active">Ру</button>
-                <button id="lang-toggle-ko" class="lang-toggle-btn">한</button>
-            </div>
+
             <div id="custom-video-container">
                 <video id="wordVideo" playsinline webkit-playsinline></video>
             </div>
@@ -753,8 +755,12 @@
                         <option value="2">2x</option>
                     </select>
                 </div>
-                <span id="streak-indicator"></span>
+
             </div>
+        </div>
+        <div id="language-toggle-container">
+            <button id="lang-toggle-ru" class="lang-toggle-btn active">Ру</button>
+            <button id="lang-toggle-ko" class="lang-toggle-btn">한</button>
         </div>
         <div id="interaction-block">
             <div id="answer-buttons">
@@ -814,134 +820,43 @@
         let isTimerRunning = false;
         let sessionErrors = [];
         let progressHistory = [];
+        let autoSaveInterval = null;
 
-        // --- НАЧАЛО БЛОКА ДЛЯ СТРИКА ---
+        function saveSessionProgress() {
+            const isSessionActive = sessionStorage.getItem('isSessionActive') === 'true';
+            if (!isSessionActive) return;
 
-        const STREAK_GOAL = 10; // Наша цель - 10 правильных ответов
+            const startTime = parseInt(sessionStorage.getItem('sessionStartTime'), 10);
+            const lastSavedTime = parseInt(sessionStorage.getItem('lastSavedTime') || startTime, 10);
+            const currentTime = Date.now();
 
-        function clearLessonSession() {
-            sessionStorage.removeItem('isLessonActive');
-            sessionStorage.removeItem('wordsInLesson');
-            sessionStorage.removeItem('currentQuestionIndex');
-            sessionStorage.removeItem('correctAnswersCount');
-            sessionStorage.removeItem('sessionErrors');
-            sessionStorage.removeItem('progressHistory');
-            console.log("Сессия урока очищена.");
-        }
+            const secondsToAdd = Math.round((currentTime - lastSavedTime) / 1000);
 
-        function restoreLessonState() {
-            if (sessionStorage.getItem('isLessonActive') !== 'true') return false;
+            if (secondsToAdd > 0) {
+                const todayKey = new Date().toISOString().split('T')[0];
+                let history = JSON.parse(localStorage.getItem('trainingHistory')) || {};
 
-            try {
-                const storedWords = JSON.parse(sessionStorage.getItem('wordsInLesson'));
-                // Если сохраненных слов нет, значит что-то пошло не так, не восстанавливаем
-                if (!storedWords || storedWords.length === 0) return false;
+                const previousTimeToday = history[todayKey] || 0;
+                history[todayKey] = previousTimeToday + secondsToAdd;
 
-                // Восстанавливаем все переменные из sessionStorage
-                wordsInLesson = storedWords;
-                currentQuestionIndex = parseInt(sessionStorage.getItem('currentQuestionIndex'), 10);
-                correctAnswersCount = parseInt(sessionStorage.getItem('correctAnswersCount'), 10);
-                sessionErrors = JSON.parse(sessionStorage.getItem('sessionErrors'));
-                progressHistory = JSON.parse(sessionStorage.getItem('progressHistory'));
-
-                // Перерисовываем прогресс-бар в соответствии с сохраненной историей
-                initializePathwayProgressBar();
-                const boxes = document.querySelectorAll('.progress-box');
-                progressHistory.forEach((status, index) => {
-                    if (boxes[index]) {
-                        boxes[index].style.backgroundColor = status === 'correct' ? 'lightgreen' : 'lightcoral';
+                const sortedKeys = Object.keys(history).sort().reverse();
+                if (sortedKeys.length > 7) {
+                    for (let i = 7; i < sortedKeys.length; i++) {
+                        delete history[sortedKeys[i]];
                     }
-                });
-
-                console.log(`Урок восстановлен на вопросе ${currentQuestionIndex + 1}`);
-                return true;
-            } catch (e) {
-                console.error("Не удалось восстановить урок:", e);
-                // Если произошла ошибка, лучше начать заново
-                return false;
-            }
-        }
-
-        function updateStreakDisplay() {
-            const indicator = document.getElementById('streak-indicator');
-            const today = new Date().toISOString().split('T')[0];
-            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: today, count: 0 };
-
-            const currentCount = (activityData.date === today) ? activityData.count : 0;
-
-            // Проверяем, достигнута ли цель
-            if (currentCount >= STREAK_GOAL) {
-                indicator.textContent = '🔥'; // Показываем огонь
-            } else {
-                indicator.textContent = `${currentCount}/${STREAK_GOAL}`; // Показываем счетчик
-            }
-            indicator.classList.add('visible'); // Убеждаемся, что элемент виден
-        }
-        // Функция для отправки запроса на сервер
-        function sendStreakUpdate() {
-            try {
-                const user = Telegram.WebApp.initDataUnsafe?.user;
-                const telegramId = user?.id;
-
-                if (!telegramId) {
-                    console.log("Streak: telegramId не найден, запрос не отправлен.");
-                    return;
                 }
+                localStorage.setItem('trainingHistory', JSON.stringify(history));
 
-                // ВАЖНО: '/log_activity' - это новый эндпоинт, который мы создадим на сервере
-                const d = new Date();
-                const year = d.getFullYear();
-                const month = String(d.getMonth() + 1).padStart(2, '0');
-                const day = String(d.getDate()).padStart(2, '0');
-                const localDate = `${year}-${month}-${day}`;// Получаем локальную дату YYYY-MM-DD
-
-                fetch("https://telegram-server-hfk7.onrender.com/log_activity", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ userId: telegramId, localDate: localDate }) // <-- Отправляем дату на сервер
-                })
-                    .then(res => {
-                        if (res.ok) console.log("Streak: Активность успешно засчитана на сервере.");
-                        else console.error("Streak: Ошибка ответа сервера.");
-                    })
-                    .catch(err => console.error("Streak: Ошибка отправки запроса:", err));
-
-            } catch (e) {
-                console.error("Streak: Ошибка в функции sendStreakUpdate:", e);
+                sessionStorage.setItem('lastSavedTime', currentTime.toString());
             }
         }
 
-        // Главная функция для отслеживания прогресса
-        function trackDailyActivity() {
-            const today = new Date().toISOString().split('T')[0]; // Дата в формате 'YYYY-MM-DD'
-            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
-
-            // Если дата не совпадает, значит это новый день. Сбрасываем счетчик.
-            if (activityData.date !== today) {
-                activityData.date = today;
-                activityData.count = 0;
-            }
-
-            // Увеличиваем счетчик и сохраняем
-            activityData.count++;
-            localStorage.setItem('dailyActivityTracker', JSON.stringify(activityData));
-
-            console.log(`Streak progress: ${activityData.count}/${STREAK_GOAL}`);
-
-            // Вызываем функцию обновления отображения
-            updateStreakDisplay();
-
-            // Если достигли цели, отправляем запрос на сервер
-            if (activityData.count === STREAK_GOAL) {
-                console.log("Streak: Цель на день достигнута! Отправка на сервер...");
-                sendStreakUpdate();
-                new Audio('torch.mp3').play();
-                return true;
-            }
-            return false;
+        function cleanupSession() {
+            clearInterval(autoSaveInterval);
+            sessionStorage.removeItem('isSessionActive');
+            sessionStorage.removeItem('sessionStartTime');
+            sessionStorage.removeItem('lastSavedTime');
         }
-
-        // --- КОНЕЦ БЛОКА ДЛЯ СТРИКА ---
 
         function showHintPopup() {
             document.getElementById('hint-popup').style.display = 'flex';
@@ -958,7 +873,8 @@
         }
 
         function goBack() {
-            clearLessonSession();
+            saveSessionProgress(); // Сохраняем перед выходом
+            cleanupSession();      // Очищаем сессионные данные
             window.history.back();
         }
         function hideHintForMembers() {
@@ -1023,31 +939,9 @@
                         } else {
                             Game.stars = parseInt(localStorage.getItem("stars")) || 0;
                         }
-
-                        const today = new Date().toISOString().split('T')[0];
-
-                        if (data && data.lastActivityDate === today) {
-                            // Если сервер говорит, что стрик сегодня выполнен, 
-                            // принудительно обновляем локальные данные
-                            localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: STREAK_GOAL }));
-                        } else {
-                            // Если сегодня новый день, сбрасываем локальный счетчик
-                            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || {};
-                            if (activityData.date !== today) {
-                                localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
-                                console.log("Local streak tracker has been reset for a new day.");
-                            }
-                        }
-
-                        updateStreakDisplay(); // Обновляем отображение (покажет 🔥 или 0/10)
                         updateStarsUI();
                     })
                     .catch(() => {
-                        // Блок catch оставлен таким, каким он был в вашем оригинальном коде
-                        document.getElementById('streak-indicator').classList.remove('visible');
-                        const today = new Date().toISOString().split('T')[0];
-                        localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
-
                         updateStarsUI();
                     });
             } catch (e) {
@@ -1271,10 +1165,7 @@
             // 2. Обновляем прогресс-бар и счетчики
             const currentBox = progressBarBoxes[currentQuestionIndex];
             if (isCorrect) {
-                const goalReached = trackDailyActivity();
-                if (!goalReached) {
-                    new Audio('excellent.mp3').play();
-                }
+                new Audio('excellent.mp3').play();
                 currentBox.style.backgroundColor = 'lightgreen';
                 correctAnswersCount++;
             } else {
@@ -1399,7 +1290,7 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            restoreLessonState();
+
             document.getElementById('completion-home-btn').addEventListener('click', goHome);
             document.getElementById('completion-retry-btn').addEventListener('click', () => {
                 clearLessonSession();
@@ -1459,14 +1350,10 @@
 
             // --- Дальше идет ваш старый код из этого блока ---
             hideHintForMembers();
-            updateStreakDisplay();
+
             initializeTimer();
 
-            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { count: 0 };
-            if (activityData.count >= STREAK_GOAL) {
-                const indicator = document.getElementById('streak-indicator');
-                if (indicator) indicator.classList.add('visible');
-            }
+
 
             document.addEventListener('visibilitychange', handleVisibilityChange);
 
@@ -1500,6 +1387,12 @@
             });
 
             document.getElementById('completion-continue-btn').addEventListener('click', goBack);
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    saveSessionProgress();
+                }
+            });
+            window.addEventListener('pagehide', saveSessionProgress);
         });
 
         function saveToBank() {
@@ -1686,6 +1579,18 @@
 
         function initializeTimer() {
             const isMember = localStorage.getItem("member") === "true";
+
+            // --- ЗАПУСК ОТСЧЕТА ВРЕМЕНИ ---
+            const isSessionActive = sessionStorage.getItem('isSessionActive') === 'true';
+            if (!isSessionActive) { // Начинаем отсчет, только если сессия еще не активна
+                const startTime = Date.now();
+                sessionStorage.setItem('isSessionActive', 'true');
+                sessionStorage.setItem('sessionStartTime', startTime);
+                sessionStorage.setItem('lastSavedTime', startTime.toString());
+                autoSaveInterval = setInterval(saveSessionProgress, 15000); // Сохраняем каждые 15 сек
+            }
+            // --- КОНЕЦ БЛОКА ОТСЧЕТА ---
+
             if (isMember) {
                 loadStars();
                 loadWordsAndSetOptions();
@@ -1720,14 +1625,14 @@
             }
             updateTimerDisplay(); // Переместим вызов сюда для надежности
         }
-
         function goHome() {
-            clearLessonSession();
+            saveSessionProgress(); // Сохраняем перед выходом
+            cleanupSession();      // Очищаем сессионные данные
             var pushAudio = new Audio('pushButton.mp3');
             pushAudio.play();
             setTimeout(() => {
                 window.location.href = "videothemes.html";
-            }, 150); // небольшая задержка, чтобы звук успел сыграть
+            }, 150);
         }
 
         const video = document.getElementById("wordVideo");

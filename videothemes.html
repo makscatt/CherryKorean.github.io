@@ -25,6 +25,12 @@
     }
 
     #app {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      /* Занимает 100% высоты видимой части экрана */
+      overflow: hidden;
+      /* Предотвращает прокрутку всей страницы */
       opacity: 0;
       transition: opacity 0.6s ease;
     }
@@ -211,24 +217,9 @@
 
     }
 
-    #instruction {
-      display: inline-block;
-      margin-right: 5px;
-      padding: 1px 6px;
-      border-radius: 10px;
-      background-color: #f7f7f7;
-      font-size: 15px;
-      text-align: left;
-      padding: 4px;
-    }
 
-    @media (max-width: 100%) {
-      #instruction {
-        font-size: 10px;
-        padding: 4px 4px;
-        margin-right: 5px;
-      }
-    }
+
+
 
 
 
@@ -257,7 +248,6 @@
       position: absolute;
       top: 0;
       left: 0;
-
       padding: 2px 4px;
       display: flex;
       align-items: center;
@@ -283,31 +273,7 @@
       color: white;
     }
 
-    #streakButton {
-      background-color: #1c1c1e;
-      /* Темный фон, как у других кнопок */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      font-size: 14px;
-      line-height: 1.3;
-      padding: 5px;
-      box-sizing: border-box;
-      /* Чтобы padding не ломал размеры */
-    }
 
-    #streakButton .streak-icon {
-      font-size: 36px;
-      /* Размер иконки огня */
-      margin-bottom: 5px;
-    }
-
-    #streakButton .streak-text {
-      font-weight: bold;
-    }
 
     .main-grid {
       display: flex;
@@ -435,14 +401,20 @@
 
     #user-zone {
       margin-top: 5px;
-      margin-bottom: 5px;
-      gap: 10px;
+      margin-bottom: 10px;
+      /* Немного увеличим отступ снизу */
+      gap: 8px;
+      /* Уменьшим расстояние между кнопками */
       display: flex;
-      padding-left: 20px;
+      padding: 0 10px;
+      /* Добавим отступы по бокам контейнера */
       width: 100%;
-      height: 120px;
+      height: auto;
+      /* Высота теперь будет автоматической */
       overflow-x: auto;
       scrollbar-width: none;
+      box-sizing: border-box;
+      /* Важно для корректных расчетов ширины */
     }
 
     #user-zone::-webkit-scrollbar {
@@ -450,20 +422,30 @@
     }
 
     .user-button {
+      height: 35px;
+      /* Задаем фиксированную высоту */
       background-color: #1c1c1e;
       border: 1px solid rgba(255, 215, 0, 0.5);
       border-radius: 10px;
       position: relative;
-      display: block;
-      width: 100px;
-      height: 100px;
-
-      background-size: cover;
-      background-position: center;
+      display: flex;
+      /* Включаем Flexbox */
+      align-items: center;
+      /* Выравниваем иконку и текст по вертикали */
+      justify-content: flex-start;
+      /* Выравниваем по левому краю */
+      padding: 0 5px;
+      /* Внутренние отступы */
+      gap: 10px;
+      /* Расстояние между иконкой и текстом */
       cursor: pointer;
       flex: 0 0 auto;
-      scroll-snap-align: start;
-      box-sizing: border-box;
+      /* Кнопки не будут сжиматься или растягиваться */
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      /* Убираем лишнее, что было для фона */
+      background-image: none !important;
     }
 
     .user-button:active {
@@ -471,157 +453,16 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     }
 
-
-
-    #instruction-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-      /* Отступ как у старого блока */
-    }
-
-    #instruction-button {
-      padding: 10px 25px;
-      font-size: clamp(18px, 2.5vw, 20px);
-      color: #333;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 500;
-      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-      background: linear-gradient(to bottom, #fff9ae, #fff350);
-      border: 1px solid #eac800;
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.6),
-        0 2px 3px rgba(0, 0, 0, 0.2);
-      transition: all 0.1s ease;
-      display: none;
-    }
-
-    #instruction-button:active {
-      background: linear-gradient(to bottom, #f0e44d, #f5ec7a);
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-      transform: translateY(1px);
-    }
-
-    #instruction-popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 30000;
-    }
-
-    #instruction-popup {
-      background-color: #2c2c2e;
-      padding: 20px;
-      border-radius: 16px;
-      width: 90%;
-      max-width: 350px;
-      text-align: center;
-      position: relative;
-      color: white;
-    }
-
-    #instruction-popup h2 {
-      margin-top: 0;
-      margin-bottom: 25px;
-    }
-
-    #instruction-popup-close {
-      position: absolute;
-      top: 8px;
-      right: 8px;
+    /* Новый класс для иконки */
+    .user-button-icon {
       width: 28px;
       height: 28px;
-      background: #3A3A3C;
-      color: #E5E5EA;
-      border-radius: 50%;
-      border: none;
-      font-size: 20px;
-      cursor: pointer;
     }
 
-    .instruction-video-btn {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      color: white;
-      font-size: 16px;
-      text-align: left;
-      cursor: pointer;
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-      background: linear-gradient(to bottom, #4a4a4c, #3A3A3C);
-      border: 1px solid #222;
-      border-top-color: #555;
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        0 2px 3px rgba(0, 0, 0, 0.4);
-      transition: all 0.1s ease;
-    }
-
-    .instruction-video-btn:active {
-      background: linear-gradient(to bottom, #303032, #3A3A3C);
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
-      transform: translateY(1px);
-    }
-
-    .instruction-video-btn:last-child {
-      margin-bottom: 0;
-    }
-
-    #video-player-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: black;
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 40000;
-    }
-
-    #instruction-video {
-      width: 100%;
-      max-width: 90vw;
-      max-height: 80vh;
-      border: 3px solid #ffffff;
-      border-radius: 8px;
-    }
-
-    #video-close-btn {
-      position: static;
-      margin-top: 20px;
-      padding: 12px 30px;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: 500;
-      color: white;
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-      background: linear-gradient(to bottom, #777, #666);
-      border: 1px solid #555;
-      border-top-color: #888;
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.15),
-        0 2px 3px rgba(0, 0, 0, 0.3);
-      transition: all 0.1s ease;
-    }
-
-    #video-close-btn:active {
-      background: linear-gradient(to bottom, #5c5c5c, #666);
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
-      transform: translateY(1px);
+    /* Новый класс для текста */
+    .user-button-text {
+      white-space: nowrap;
+      /* Чтобы текст не переносился */
     }
 
     .random-level-button {
@@ -671,6 +512,145 @@
       color: #eac800;
       /* Золотой цвет, как у активной вкладки */
     }
+
+    #stats-container {
+      display: flex;
+      align-items: center;
+      width: 95%;
+      gap: 15px;
+      background-color: #1c1c1e;
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      border-radius: 12px;
+      padding: 6px 8px;
+      /* Уменьшили вертикальный отступ */
+      margin: 0 5px 10px 5px;
+      /* Уменьшили нижний отступ */
+      box-sizing: border-box;
+    }
+
+    /* Левый блок: Статистика за сегодня (теперь в одну строку) */
+    #today-stats {
+      display: flex;
+      flex-direction: column;
+      /* Возвращаем расположение в колонку */
+      justify-content: center;
+      /* Центрируем содержимое по вертикали */
+      align-items: center;
+      /* Центрируем содержимое по горизонтали */
+      flex-basis: 40%;
+      /* Можно вернуть 40% */
+      text-align: center;
+    }
+
+    #today-stats-label {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 8px;
+      /* Возвращаем нижний отступ для разделения строк */
+    }
+
+    #today-stats-time {
+      font-size: 24px;
+      /* Уменьшили с 28px */
+      font-weight: 600;
+      color: #FFD700;
+    }
+
+    /* Правый блок: Контейнер для графика */
+    #weekly-chart-container {
+      flex-basis: 55%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Сам график */
+    #weekly-chart {
+      height: 60px;
+      /* Уменьшили высоту с 80px */
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+
+    /* Обертка для каждого столбика и его подписи (дня недели) */
+    .chart-bar-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      width: 12%;
+    }
+
+    /* Сам столбик графика */
+    .chart-bar {
+      width: 100%;
+      background-color: #FFD700;
+      border-radius: 3px 3px 0 0;
+      /* Уменьшили скругление */
+      height: 0;
+      transition: height 0.5s ease-out;
+      cursor: default;
+    }
+
+    /* Подпись дня недели под столбиком (Пн, Вт, ...) */
+    .bar-day {
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    /* Всплывающая подсказка с точным временем */
+    .bar-tooltip {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #000;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    /* Показываем подсказку при наведении на обертку столбика */
+    .chart-bar-wrapper:hover .bar-tooltip {
+      opacity: 1;
+    }
+
+    /* Общая подпись под графиком */
+    #weekly-chart-label {
+      font-size: 11px;
+      /* Уменьшили шрифт */
+      color: #aaa;
+      text-align: center;
+      margin-top: 6px;
+      /* Уменьшили отступ */
+    }
+
+    #main-content-area {
+
+      flex: 1;
+
+      min-height: 0;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      width: 95%;
+      background-color: #1c1c1e;
+      border-radius: 12px;
+      padding: 5px;
+      margin: 0 5px 15px 5px;
+      display: flex;
+      flex-direction: column;
+      /* Располагаем элементы (табы и контент) друг под другом */
+      overflow: hidden;
+
+    }
   </style>
 </head>
 
@@ -692,60 +672,74 @@
         <!--<p id="instruction">💡Тренируйся и накапливай звезды<br> 💡Разблокировка темы стоит: 10 ⭐️ </p>-->
         <p id="weekly-leader" onclick="openRatingPage()" style="cursor: pointer;">Лидер недели: …</p>
       </div>
-      <div id="user-zone">
-        <div class="user-button" id="reviewsButton" style="background-image: url('videothemes/reviews.png');"
-          onclick="reviewsPage()">
+      <div id="stats-container">
+        <div id="today-stats">
+          <span id="today-stats-label">Сегодня ты занимался:</span>
+          <span id="today-stats-time">0 мин</span>
         </div>
-        <div class="user-button" id="videothemebank" style="background-image: url('videothemes/bank.png');"
-          onclick="openBankPage()">
+        <div id="weekly-chart-container">
+          <div id="weekly-chart">
+            <!-- Сюда JS вставит столбики графика -->
+          </div>
+          <div id="weekly-chart-label">Активность за 7 дней</div>
+        </div>
+      </div>
+      <div id="user-zone">
+        <div class="user-button" id="reviewsButton" onclick="reviewsPage()">
+          <img src="videothemes/reviews.png" class="user-button-icon" alt="">
+          <span class="user-button-text">Отзывы</span>
+        </div>
+        <div class="user-button" id="videothemebank" onclick="openBankPage()">
+          <img src="videothemes/bank.png" class="user-button-icon" alt="">
+          <span class="user-button-text">Копилка</span>
           <div class="theme-count-container"><span class="theme-count"></span></div>
         </div>
-        <div class="user-button" id="streakButton">
-          <!-- Сюда будем выводить текст стрика -->
+        <div class="user-button" id="videorating" onclick="openRatingPage()">
+          <img src="videothemes/rating.png" class="user-button-icon" alt="">
+          <span class="user-button-text">Рейтинг</span>
         </div>
-        <div class="user-button" id="videorating" style="background-image: url('videothemes/rating.png');"
-          onclick="openRatingPage()">
-        </div>
-        <div class="user-button" id="game" style="background-image: url('videothemes/game.png');" onclick="gamePage()">
+        <div class="user-button" id="game" onclick="gamePage()">
+          <img src="videothemes/game.png" class="user-button-icon" alt="">
+          <span class="user-button-text">Игра</span>
         </div>
       </div>
-      <div id="instruction-container">
-        <button id="instruction-button">Инструкция</button>
-      </div>
-      <div id="theme-tabs-container">
-        <button class="theme-tab active" data-target="pathwayGrid" data-title="Путь Новичка">Слух с 0</button>
-        <button class="theme-tab" data-target="newThemesGrid,themeGrid" data-title="Дорамы и Шоу">Дорамы</button>
-        <button class="theme-tab" data-target="randomGrid" data-title="Случайный подбор (30шт.)">Рандом</button>
-      </div>
-      <h2 id="active-theme-title"></h2>
 
-      <div id="themes-container">
-        <!-- Блок для "Новинок" -->
-        <div class="carousel-row">
-          <div class="carousel-title">Новое</div>
-          <div class="theme-grid" id="newThemesGrid">
-            <!-- Этот блок пока пустой, скрипт заполнит его сам -->
-          </div>
+      <div id="main-content-area">
+        <div id="theme-tabs-container">
+          <button class="theme-tab active" data-target="pathwayGrid" data-title="Путь Новичка">Слух с 0</button>
+          <button class="theme-tab" data-target="newThemesGrid,themeGrid" data-title="Дорамы и Шоу">Дорамы</button>
+          <button class="theme-tab" data-target="randomGrid" data-title="Случайный подбор (30шт.)">Рандом</button>
         </div>
-        <!-- Блок для "Дорам и Шоу" -->
-        <div class="carousel-row">
-          <div class="carousel-title">Дорамы и Шоу</div>
-          <div class="theme-grid" id="themeGrid">
-            <div class="theme-button" id="theme1" style="background-image: url('videothemes/theme1.png');"
-              onclick="selectTheme(1)">
-              <div class="theme-count-container"><span class="theme-count"></span></div>
+        <h2 id="active-theme-title"></h2>
+
+        <div id="themes-container">
+          <!-- Блок для "Новинок" -->
+          <div class="carousel-row">
+            <div class="carousel-title">Новое</div>
+            <div class="theme-grid" id="newThemesGrid">
+              <!-- Этот блок пока пустой, скрипт заполнит его сам -->
             </div>
           </div>
-        </div>
-        <!-- Блок для "Курс с 0" -->
-        <div class="carousel-row">
-          <div class="theme-grid" id="pathwayGrid">
-            <!-- Кнопки для глав "Тропинки" будут созданы здесь -->
+          <!-- Блок для "Дорам и Шоу" -->
+          <div class="carousel-row">
+            <div class="carousel-title">Дорамы и Шоу</div>
+            <div class="theme-grid" id="themeGrid">
+              <div class="theme-button" id="theme1" style="background-image: url('videothemes/theme1.png');"
+                onclick="selectTheme(1)">
+                <div class="theme-count-container"><span class="theme-count"></span></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Блок для "Рандом" -->
-        <div class="carousel-row">
-          <div class="theme-grid" id="randomGrid">
+          <!-- Блок для "Курс с 0" -->
+          <div class="carousel-row">
+            <div class="theme-grid" id="pathwayGrid">
+              <!-- Кнопки для глав "Тропинки" будут созданы здесь -->
+            </div>
+          </div>
+          <!-- Блок для "Рандом" -->
+          <div class="carousel-row">
+            <div class="theme-grid" id="randomGrid">
+            </div>
           </div>
         </div>
       </div>
@@ -1171,20 +1165,92 @@
         if (infoBlock) {
           infoBlock.style.display = "none";
         }
-
-        // ДОБАВЬТЕ ЭТОТ БЛОК
-        const instructionContainer = document.getElementById("instruction-container");
-        if (instructionContainer) {
-          instructionContainer.style.display = "flex";
-        }
-
         const reviewsBtn = document.getElementById("reviewsButton");
         if (reviewsBtn) {
           reviewsBtn.style.display = "none";
         }
       }
     }
+    function formatSeconds(totalSeconds) {
+      if (totalSeconds < 60) {
+        return `${totalSeconds} с`;
+      }
 
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
+
+      if (seconds === 0) {
+        return `${minutes} м`;
+      } else {
+        return `${minutes} м ${seconds} с`;
+      }
+    }
+    function displayTrainingStats() {
+      // 1. Получаем данные из localStorage
+      const history = JSON.parse(localStorage.getItem('trainingHistory')) || {};
+
+      // 2. Готовим данные за последние 7 дней
+      const weekData = [];
+      const dayNames = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+      for (let i = 6; i >= 0; i--) {
+        const d = new Date();
+        d.setDate(d.getDate() - i);
+
+        const year = d.getFullYear();
+        const month = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        const dateKey = `${year}-${month}-${day}`;
+
+        weekData.push({
+          dayLabel: dayNames[d.getDay()],
+          seconds: history[dateKey] || 0
+        });
+      }
+
+      // 3. Обновляем блок "Сегодня ты занимался"
+      const todaySeconds = weekData[6].seconds;
+      // --- ИЗМЕНЕНИЕ ЗДЕСЬ ---
+      // Используем новую функцию для отображения секунд или минут
+      document.getElementById('today-stats-time').textContent = formatSeconds(todaySeconds);
+
+      // 4. Рендерим график
+      const chart = document.getElementById('weekly-chart');
+      if (!chart) return;
+
+      chart.innerHTML = '';
+
+      const maxSeconds = Math.max(...weekData.map(d => d.seconds));
+      const scaleMax = maxSeconds > 0 ? maxSeconds : 300;
+
+      weekData.forEach(data => {
+        const barHeightPercent = (data.seconds / scaleMax) * 100;
+
+        const barWrapper = document.createElement('div');
+        barWrapper.className = 'chart-bar-wrapper';
+
+        const tooltip = document.createElement('span');
+        tooltip.className = 'bar-tooltip';
+        // --- ИЗМЕНЕНИЕ ЗДЕСЬ ---
+        // Используем новую функцию и для всплывающих подсказок
+        tooltip.textContent = formatSeconds(data.seconds);
+
+        const bar = document.createElement('div');
+        bar.className = 'chart-bar';
+
+        const dayLabel = document.createElement('span');
+        dayLabel.className = 'bar-day';
+        dayLabel.textContent = data.dayLabel;
+
+        barWrapper.appendChild(tooltip);
+        barWrapper.appendChild(bar);
+        barWrapper.appendChild(dayLabel);
+        chart.appendChild(barWrapper);
+
+        setTimeout(() => {
+          bar.style.height = `${Math.min(barHeightPercent, 100)}%`;
+        }, 100);
+      });
+    }
 
     window.addEventListener('pageshow', function (event) {
       if (event.persisted) {
@@ -1245,43 +1311,14 @@
       // }
     });
 
-    // ===== НОВАЯ ФУНКЦИЯ ДЛЯ ОБНОВЛЕНИЯ КНОПКИ СТРИКА =====
-    function updateStreakButton(data = {}) {
-      const streakButton = document.getElementById('streakButton');
-      if (!streakButton) return; // Если кнопки нет, выходим
 
-      const today = new Date().toISOString().split('T')[0];
-      const currentStreak = data.streak || 0;
-      const isActiveToday = data.lastActivityDate === today;
-
-      // Определяем цвет иконки
-      const iconColor = isActiveToday ? '#FFD700' : '#666';
-
-      streakButton.innerHTML = `
-      <span class="streak-icon" style="color: ${iconColor};">🔥</span>
-      <span class="streak-text">Дней подряд: ${currentStreak}</span>
-  `;
-
-      // Добавляем обработчик клика
-      streakButton.onclick = openStreakPage;
-    }
-
-    function openStreakPage() {
-      const fadeOverlay = document.getElementById('fadeOverlay');
-      fadeOverlay.style.opacity = '1';
-
-      setTimeout(() => {
-        window.location.href = 'streak.html';
-      }, 400); // Задержка для красивой анимации затухания
-    }
 
     // Функция для обновления отображения количества звезд и стрика
     function updateStarsDisplay() {
       const starsElement = document.getElementById("stars");
       if (!starsElement) return;
 
-      loadLocalStars();     // Моментальное отображение локальных звёзд
-      updateStreakButton(); // <<< СРАЗУ ПОКАЗЫВАЕМ КНОПКУ СТРИКА С НУЛЁМ
+      loadLocalStars();
 
       const telegramUser = Telegram.WebApp.initDataUnsafe.user;
       const telegramId = telegramUser && telegramUser.id;
@@ -1293,25 +1330,19 @@
             return response.json();
           })
           .then(data => {
-            // Обновляем звезды
             if (typeof data.stars !== "undefined") {
               starsElement.textContent = `⭐ ${data.stars}`;
               localStorage.setItem("stars", data.stars);
             }
-            // Обновляем стрик данными с сервера
-            updateStreakButton(data); // <<< ОБНОВЛЯЕМ ДАННЫМИ С СЕРВЕРА
           })
           .catch((error) => {
             console.error("Ошибка загрузки данных:", error);
-            loadLocalStars(); // Возвращаем локальные звезды при ошибке
-            updateStreakButton(); // Возвращаем стрик в "0" при ошибке
+            loadLocalStars();
           });
       } else {
         loadLocalStars();
-        updateStreakButton(); // Если нет telegramId, тоже показываем стрик с нулем
       }
 
-      // Вложенная функция для звезд, ее оставляем как есть
       function loadLocalStars() {
         const stars = parseInt(localStorage.getItem("stars"), 10) || 0;
         starsElement.textContent = `⭐ ${stars}`;
@@ -1402,8 +1433,10 @@
         updateButtonsOrder(); // Сортируем по последнему использованию
         sortNewThemes();    // Сортируем новинки
       });
+
     });
     hideElementsIfMember();
+    displayTrainingStats();
   </script>
   </div>
   <script>
@@ -1421,10 +1454,10 @@
     document.addEventListener('DOMContentLoaded', () => {
 
       const updateConfig = {
-        version: '2910',
-        title: 'Обновление от 29.10',
+        version: '0811',
+        title: 'Обновление от 08.11',
         image: 'videothemes/update_banner.png',
-        text: `Дорамы:\n📺Новые фрагменты в "Шеф-Повар Тирана"\n⭐️Новая Дорама "Король земли - Джунхо\n\nУлучшения:\n🚀3 Режима времени тренировки\n🚀Статистика в конце тренирвоки\n🚀Теперь можно смотреть ошибки в конце тренировки\n🚀Теперь чтобы пройти урок в "Слух с 0" нужно набрать минимум 7 правильных ответов.\n\nНапоминаю:\nПо значку 🔍 в тренировке можно смотреть грамматику(Я ее постепенно обновляю и дополняю)"` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+        text: `Новое в приложении:\nРежим Ввода\n\n⭐️Теперь вы сможете тренировать слух вписывая ответ вручную\n\nПриложение будет подсвечивать слоги с ошибкой.\nВсегда можно открыть корейский текст для самопроверки.` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
       };
       // ------------------------------------
 
@@ -1456,63 +1489,7 @@
       });
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      // Элементы для поп-апа с инструкциями
-      const instructionBtn = document.getElementById('instruction-button');
-      const popupOverlay = document.getElementById('instruction-popup-overlay');
-      const popupCloseBtn = document.getElementById('instruction-popup-close');
-      const videoBtns = document.querySelectorAll('.instruction-video-btn');
 
-      // Элементы для видеоплеера
-      const videoPlayerOverlay = document.getElementById('video-player-overlay');
-      const videoPlayer = document.getElementById('instruction-video');
-      const videoCloseBtn = document.getElementById('video-close-btn');
-
-      // --- Функции для видео ---
-      function showVideo(videoFile) {
-        videoPlayer.src = videoFile; // Устанавливаем источник видео
-        videoPlayerOverlay.style.display = 'flex'; // Показываем оверлей с плеером
-        videoPlayer.play(); // Запускаем воспроизведение
-      }
-
-      function hideVideo() {
-        videoPlayer.pause();
-        videoPlayer.src = "";
-        videoPlayerOverlay.style.display = 'none';
-
-        // Возвращаем поп-ап с инструкциями
-        const popupOverlay = document.getElementById('instruction-popup-overlay');
-        popupOverlay.style.display = 'flex';
-      }
-
-      // --- События для поп-апа ---
-      if (instructionBtn) {
-        instructionBtn.addEventListener('click', () => {
-          popupOverlay.style.display = 'flex';
-        });
-      }
-
-      popupCloseBtn.addEventListener('click', () => {
-        popupOverlay.style.display = 'none';
-      });
-
-      popupOverlay.addEventListener('click', (e) => {
-        if (e.target === popupOverlay) {
-          popupOverlay.style.display = 'none';
-        }
-      });
-
-      // --- События для кнопок ВИДЕО и закрытия плеера ---
-      videoBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const videoFile = btn.dataset.video;
-          popupOverlay.style.display = 'none'; // Сначала скроем поп-ап
-          showVideo(videoFile); // Затем покажем видео
-        });
-      });
-
-      videoCloseBtn.addEventListener('click', hideVideo);
-    });
   </script>
   <div id="fadeOverlay"></div>
   <div id="update-popup">
@@ -1522,19 +1499,6 @@
       <p id="update-text-content">Здесь будет текст вашего обновления.</p>
       <div id="dismiss-update">Продолжить</div>
     </div>
-  </div>
-  <div id="instruction-popup-overlay">
-    <div id="instruction-popup">
-      <button id="instruction-popup-close">×</button>
-      <h2>Инструкция</h2>
-      <button class="instruction-video-btn" data-video="pathway.mp4">🐟 Путь Новичка</button>
-      <button class="instruction-video-btn" data-video="show.mp4">🎬 Дорамы и Шоу</button>
-      <button class="instruction-video-btn" data-video="game.mp4">🧠 Игра на память</button>
-    </div>
-  </div>
-  <div id="video-player-overlay">
-    <video id="instruction-video" controls controlslist="nodownload noplaybackrate"></video>
-    <button id="video-close-btn">Закрыть</button>
   </div>
 </body>
 

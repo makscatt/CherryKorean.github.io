@@ -552,23 +552,27 @@
         }
 
         #language-toggle-container {
-            position: absolute;
-            top: 80px;
-            right: 10px;
-            z-index: 10;
-            /* Чтобы кнопки были поверх видео */
             display: flex;
-            flex-direction: column;
-            gap: 8px;
-            /* Расстояние между кнопками */
+            justify-content: flex-start;
+            /* Изменено */
+
+            /* Добавлено */
+            gap: 15px;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            z-index: 10;
         }
 
         .lang-toggle-btn {
-            width: 45px;
-            height: 45px;
-            font-size: 20px;
+            width: 60px;
+            /* Немного увеличим для удобства */
+            height: 40px;
+            font-size: 18px;
+            /* Чуть меньше шрифт */
             font-weight: bold;
-            border: 2px solid rgba(255, 255, 255, 0.7);
+            border: 1px solid #ccc;
+            /* Граница для лучшей видимости на белом фоне */
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -576,9 +580,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
-            /* Нейтральный фон для обеих кнопок */
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #f0f0f0;
+            /* Нейтральный фон */
+            color: #555;
+            /* Цвет неактивного текста */
         }
 
         /* Задаем индивидуальные цвета ТЕКСТА */
@@ -631,16 +636,110 @@
             z-index: 1;
             /* Этот слой будет над фоном кнопки */
         }
+
+        #lang-toggle-input {
+            color: #4CAF50;
+            /* Зеленый цвет */
+        }
+
+        .lang-toggle-btn img {
+            width: 28px;
+            height: 28px;
+        }
+
+        /* Стили для поля ввода */
+        #text-input-answer {
+            transition: all 0.2s ease-in-out;
+        }
+
+        #text-input-answer:focus {
+            border-color: #88aaff;
+            box-shadow: 0 0 5px rgba(100, 150, 255, 0.5);
+            outline: none;
+        }
+
+        #input-mirror {
+            line-height: 1.2;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px;
+            font-size: clamp(18px, 3vw, 24px);
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: center;
+            min-height: 58px;
+            /* Подбираем высоту, чтобы совпадала с input */
+            background-color: #fff;
+            line-height: 1.2;
+            word-wrap: break-word;
+            /* Для переноса длинных слов */
+            display: flex;
+            /* Для центрирования плейсхолдера */
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Стиль для плейсхолдера внутри DIV */
+        #input-mirror[data-placeholder]:empty::before {
+            content: attr(data-placeholder);
+            color: #999;
+        }
+
+        /* Настоящее поле ввода делаем невидимым, но кликабельным */
+        #text-input-answer {
+            /* Позиционирование поверх div'а */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            /* Делаем текст невидимым, а курсор видимым */
+            color: transparent;
+            caret-color: black;
+            background: transparent;
+            border: none;
+            outline: none;
+            z-index: 1;
+
+            /* --- КЛЮЧЕВЫЕ ИЗМЕНЕНИЯ --- */
+            /* 1. Задаем тот же box-sizing, что и у div-зеркала */
+            box-sizing: border-box;
+
+            /* 2. Убеждаемся, что все текстовые свойства и отступы идентичны */
+            padding: 15px;
+            font-size: clamp(18px, 3vw, 24px);
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        #text-input-answer:focus {
+            outline: none;
+            /* Убираем обводку при фокусе */
+        }
+
+        /* Когда настоящее поле в фокусе, подсвечиваем наш видимый DIV */
+        #text-input-answer:focus+#input-mirror {
+            border-color: #88aaff;
+            box-shadow: 0 0 5px rgba(100, 150, 255, 0.5);
+        }
+
+
+        /* Стиль для подсветки неправильного символа */
+        .incorrect-char-highlight {
+            background-color: rgba(255, 0, 0, 0.3);
+            /* Полупрозрачный красный */
+            border-radius: 3px;
+            display: inline-block;
+            /* Нужно для применения фона */
+        }
     </style>
 </head>
 
 <body>
     <div id="gameContainer">
         <div id="video-container">
-            <div id="language-toggle-container">
-                <button id="lang-toggle-ru" class="lang-toggle-btn active">Ру</button>
-                <button id="lang-toggle-ko" class="lang-toggle-btn">한</button>
-            </div>
+
             <div id="custom-video-container">
                 <video id="wordVideo" playsinline webkit-playsinline></video>
             </div>
@@ -661,14 +760,40 @@
                         <option value="2">2x</option>
                     </select>
                 </div>
-                <span id="streak-indicator"></span>
             </div>
+        </div>
+        <div id="language-toggle-container">
+            <button id="lang-toggle-ru" class="lang-toggle-btn active">Ру</button>
+            <button id="lang-toggle-ko" class="lang-toggle-btn">한</button>
+            <button id="lang-toggle-input" class="lang-toggle-btn">
+                <img src="videothemes/icons/writing.png" alt="Ввод">
+            </button>
         </div>
         <div id="interaction-block">
             <div id="answer-buttons">
 
-                <button id="option1" onclick="checkWord(this)" style="flex: 1;"></button>
-                <button id="option2" onclick="checkWord(this)" style="flex: 1;"></button>
+                <div id="choice-buttons-container" style="display: flex; flex-direction: column; gap: 10px; flex: 1;">
+                    <button id="option1" onclick="checkWord(this)"></button> <!-- Убрал style="flex: 1" отсюда -->
+                    <button id="option2" onclick="checkWord(this)"></button> <!-- И отсюда -->
+                </div>
+
+                <div id="input-answer-container"
+                    style="display: none; flex-direction: column; gap: 10px; flex: 1; justify-content: center;">
+
+                    <!-- НОВЫЙ КОНТЕЙНЕР ДЛЯ "ФЕЙКОВОГО" ПОЛЯ ВВОДА -->
+                    <div id="input-wrapper" style="position: relative; width: 100%;">
+
+                        <!-- Этот div будет ВИДИМЫМ, в нем мы будем подсвечивать буквы -->
+                        <div id="input-mirror" class="input-like-div"></div>
+
+                        <!-- Настоящее поле ввода, которое мы СДЕЛАЕМ НЕВИДИМЫМ -->
+                        <input type="text" id="text-input-answer" autocomplete="off" autocorrect="off"
+                            autocapitalize="off" spellcheck="false">
+
+                    </div>
+
+                    <button id="check-input-btn" onclick="checkTypedAnswer()">Проверить</button>
+                </div>
 
                 <div id="KoreanButton">
                     <button id="showKoreanButton" onclick="showKoreanText()">Показать корейский текст</button>
@@ -720,6 +845,7 @@
         let timerInterval = null;
         let timeUsedToday = 0;
         let isTimerRunning = false;
+        let autoSaveInterval = null;
 
 
         function formatTime(seconds) {
@@ -817,9 +943,12 @@
             }, 1000);
         }
         function endSession() {
-
             clearInterval(sessionTimerInterval);
             document.getElementById('gameContainer').style.pointerEvents = 'none';
+
+            saveSessionProgress(); // Сохраняем последние секунды
+            cleanupSession();
+
 
             const resultsPopup = document.getElementById('session-results-popup');
             const summary = document.getElementById('results-summary');
@@ -827,6 +956,7 @@
             const showErrorsBtn = document.getElementById('show-errors-btn');
             const errorListDiv = document.getElementById('error-list');
 
+            // ... (остальной код функции остается без изменений) ...
             // Расчет статистики
             const errorsCount = sessionStats.errors.length;
             const correctCount = sessionStats.correct;
@@ -844,11 +974,11 @@
 
             // Выбор награды
             if (accuracy >= 95) {
-                awardImg.src = 'videothemes/icons/cup_gold.png'; // Путь к иконке золотого кубка
+                awardImg.src = 'videothemes/icons/cup_gold.png';
             } else if (accuracy >= 80) {
-                awardImg.src = 'videothemes/icons/cup_silver.png'; // Путь к иконке серебряного кубка
+                awardImg.src = 'videothemes/icons/cup_silver.png';
             } else {
-                awardImg.src = 'videothemes/icons/cup_bronze.png'; // Путь к иконке бронзового кубка
+                awardImg.src = 'videothemes/icons/cup_bronze.png';
             }
 
             // Логика кнопки "Посмотреть ошибки"
@@ -872,16 +1002,65 @@
             resultsPopup.style.display = 'flex';
         }
 
+        function saveSessionProgress() {
+            const isSessionActive = sessionStorage.getItem('isSessionActive') === 'true';
+            if (!isSessionActive) return;
+
+            const startTime = parseInt(sessionStorage.getItem('sessionStartTime'), 10);
+            const lastSavedTime = parseInt(sessionStorage.getItem('lastSavedTime') || startTime, 10);
+            const currentTime = Date.now();
+
+            // Считаем, сколько секунд прошло с ПОСЛЕДНЕГО сохранения
+            const secondsToAdd = Math.round((currentTime - lastSavedTime) / 1000);
+
+            if (secondsToAdd > 0) {
+                const todayKey = new Date().toISOString().split('T')[0];
+                let history = JSON.parse(localStorage.getItem('trainingHistory')) || {};
+
+                const previousTimeToday = history[todayKey] || 0;
+                history[todayKey] = previousTimeToday + secondsToAdd;
+
+                // Очистка старых данных (оставляем последние 7 дней)
+                const sortedKeys = Object.keys(history).sort().reverse();
+                if (sortedKeys.length > 7) {
+                    for (let i = 7; i < sortedKeys.length; i++) {
+                        delete history[sortedKeys[i]];
+                    }
+                }
+                localStorage.setItem('trainingHistory', JSON.stringify(history));
+
+                // ВАЖНО: Обновляем время последнего сохранения
+                sessionStorage.setItem('lastSavedTime', currentTime.toString());
+            }
+        }
+
+        /**
+         * Функция, которая ОЧИЩАЕТ данные сессии и останавливает автосохранение.
+         */
+        function cleanupSession() {
+            clearInterval(autoSaveInterval); // Останавливаем автосохранение
+            sessionStorage.removeItem('isSessionActive');
+            sessionStorage.removeItem('sessionStartTime');
+            sessionStorage.removeItem('sessionDuration');
+            sessionStorage.removeItem('sessionStats');
+            sessionStorage.removeItem('lastSavedTime');
+        }
+
+        function launchApp() {
+            loadStars();
+            loadWordsAndSetOptions();
+        }
+
         let sessionDuration = 0; // Длительность сессии в секундах
         let sessionTimerInterval = null; // ID интервала для таймера сессии
         let sessionStats = { total: 0, correct: 0, errors: [] }; // Статистика сессии
 
+
+
         function initializeTimer() {
-            // --- НАЧАЛО ИЗМЕНЕНИЙ ---
             const isSessionActive = sessionStorage.getItem('isSessionActive') === 'true';
 
             if (isSessionActive) {
-                // Восстанавливаем сессию
                 sessionStats = JSON.parse(sessionStorage.getItem('sessionStats')) || { total: 0, correct: 0, errors: [] };
 
                 document.getElementById('session-timer-popup').style.display = 'none';
@@ -890,15 +1069,12 @@
                 timerContainer.style.display = 'block';
                 timerDisplay.style.display = 'block';
 
-                startSessionTimer(); // Запускаем таймер с оставшимся временем
+                startSessionTimer();
 
-                // Запускаем игру (используя вашу функцию launchApp из DOMContentLoaded)
-                loadStars();
-                loadWordsAndSetOptions();
+                launchApp();
 
-                return; // Прерываем выполнение, чтобы не показать попап снова
+                return;
             }
-            // --- КОНЕЦ ИЗМЕНЕНИЙ ---
 
             const isMember = localStorage.getItem("member") === "true";
             const today = new Date().toISOString().split('T')[0];
@@ -947,6 +1123,8 @@
         }
 
         function goBack() {
+            saveSessionProgress(); // Сохраняем последние секунды
+            cleanupSession();
             window.history.back();
         }
         function hideHintForMembers() {
@@ -959,98 +1137,7 @@
             }
         }
 
-        // --- НАЧАЛО БЛОКА ДЛЯ СТРИКА ---
 
-        const STREAK_GOAL = 10; // Наша цель - 10 правильных ответов
-
-        // Функция для отправки запроса на сервер
-        function sendStreakUpdate() {
-            try {
-                const user = Telegram.WebApp.initDataUnsafe?.user;
-                const telegramId = user?.id;
-
-                if (!telegramId) {
-                    console.log("Streak: telegramId не найден, запрос не отправлен.");
-                    return;
-                }
-
-                // ВАЖНО: '/log_activity' - это новый эндпоинт, который мы создадим на сервере
-                const d = new Date();
-                const year = d.getFullYear();
-                const month = String(d.getMonth() + 1).padStart(2, '0');
-                const day = String(d.getDate()).padStart(2, '0');
-                const localDate = `${year}-${month}-${day}`; // Получаем локальную дату YYYY-MM-DD
-
-                fetch("https://telegram-server-hfk7.onrender.com/log_activity", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ userId: telegramId, localDate: localDate }) // <-- Отправляем дату на сервер
-                })
-                    .then(res => {
-                        if (res.ok) console.log("Streak: Активность успешно засчитана на сервере.");
-                        else console.error("Streak: Ошибка ответа сервера.");
-                    })
-                    .catch(err => console.error("Streak: Ошибка отправки запроса:", err));
-
-            } catch (e) {
-                console.error("Streak: Ошибка в функции sendStreakUpdate:", e);
-            }
-        }
-
-        function updateStreakDisplay() {
-            const indicator = document.getElementById('streak-indicator');
-            const today = new Date().toISOString().split('T')[0];
-            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: today, count: 0 };
-
-            const currentCount = (activityData.date === today) ? activityData.count : 0;
-
-            // Проверяем, достигнута ли цель
-            if (currentCount >= STREAK_GOAL) {
-                indicator.textContent = '🔥'; // Показываем огонь
-            } else {
-                indicator.textContent = `${currentCount}/${STREAK_GOAL}`; // Показываем счетчик
-            }
-            indicator.classList.add('visible'); // Убеждаемся, что элемент виден
-        }
-
-        // Главная функция для отслеживания прогресса
-        function trackDailyActivity() {
-
-            const today = new Date().toISOString().split('T')[0]; // Дата в формате 'YYYY-MM-DD'
-            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || { date: '', count: 0 };
-
-            // Если дата не совпадает, значит это новый день. Сбрасываем счетчик.
-            if (activityData.date !== today) {
-                activityData.date = today;
-                activityData.count = 0;
-                document.getElementById('streak-indicator').classList.remove('visible');
-            }
-
-
-
-            // Увеличиваем счетчик и сохраняем
-            activityData.count++;
-            localStorage.setItem('dailyActivityTracker', JSON.stringify(activityData));
-
-            console.log(`Streak progress: ${activityData.count}/${STREAK_GOAL}`);
-
-            // Если достигли цели, отправляем запрос на сервер
-            updateStreakDisplay();
-            if (activityData.count === STREAK_GOAL) {
-                console.log("Streak: Цель на день достигнута! Отправка на сервер...");
-                sendStreakUpdate();
-                const indicator = document.getElementById('streak-indicator');
-                if (indicator) {
-                    indicator.classList.add('visible');
-                    new Audio('torch.mp3').play();
-                }
-                return true;
-            }
-            return false;
-        }
-
-
-        // --- КОНЕЦ БЛОКА ДЛЯ СТРИКА ---
 
         function saveStars() {
             try {
@@ -1076,7 +1163,7 @@
         function updateProgressBoxes() {
             const bar = document.getElementById("progress-bar");
             const currentBoxes = bar.children.length;
-            const totalBoxes = Math.min(3 + Math.floor(Game.stars / 20), 16);
+            const totalBoxes = Math.min(3 + Math.floor(Game.stars / 20), 10);
 
             if (currentBoxes === totalBoxes) return; // ничего не менять
 
@@ -1109,36 +1196,11 @@
                         } else {
                             Game.stars = parseInt(localStorage.getItem("stars")) || 0;
                         }
-
-                        const today = new Date().toISOString().split('T')[0];
-
-                        // --- НАЧАЛО ИЗМЕНЕНИЙ ---
-                        if (data && data.lastActivityDate === today) {
-                            // Если сервер говорит, что стрик сегодня выполнен, 
-                            // принудительно обновляем локальные данные и отображение
-                            localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: STREAK_GOAL }));
-                        } else {
-                            // Если сегодня новый день, сбрасываем локальный счетчик
-                            const activityData = JSON.parse(localStorage.getItem('dailyActivityTracker')) || {};
-                            if (activityData.date !== today) {
-                                localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
-                                console.log("Local streak tracker has been reset for a new day.");
-                            }
-                        }
-
-                        updateStreakDisplay(); // Обновляем отображение (покажет 🔥 или 0/10)
-                        // --- КОНЕЦ ИЗМЕНЕНИЙ ---
-
                         updateStarsUI();
                         updateProgressBoxes();
                         loadProgressBoxes();
                     })
                     .catch(() => {
-                        // При ошибке тоже скрываем индикатор и сбрасываем локальный счетчик на всякий случай
-                        document.getElementById('streak-indicator').classList.remove('visible');
-                        const today = new Date().toISOString().split('T')[0];
-                        localStorage.setItem('dailyActivityTracker', JSON.stringify({ date: today, count: 0 }));
-
                         updateStarsUI();
                         updateProgressBoxes();
                         loadProgressBoxes();
@@ -1224,16 +1286,21 @@
                 video.play().catch(e => console.log("Autoplay был заблокирован."));
 
                 // --- ИЗМЕНЕНИЯ ЗДЕСЬ ---
-                // Адаптируем кнопку и скрытый текст под выбранный язык
+                const currentMode = localStorage.getItem('answerMode') || 'ru';
                 const showButton = document.getElementById("showKoreanButton");
                 const hiddenTextContent = document.getElementById("koreanTextContent");
 
-                if (answerLanguage === 'ko') {
-                    showButton.innerText = "Показать русский текст";
-                    hiddenTextContent.innerText = correctWord.russian;
-                } else {
+                if (currentMode === 'input') {
                     showButton.innerText = "Показать корейский текст";
                     hiddenTextContent.innerText = correctWord.korean;
+                } else {
+                    if (answerLanguage === 'ko') {
+                        showButton.innerText = "Показать русский текст";
+                        hiddenTextContent.innerText = correctWord.russian;
+                    } else {
+                        showButton.innerText = "Показать корейский текст";
+                        hiddenTextContent.innerText = correctWord.korean;
+                    }
                 }
 
                 document.getElementById("koreanText").style.display = "none";
@@ -1244,15 +1311,23 @@
                 recentWords.push(correctWord.video);
                 if (recentWords.length > recentLimit) recentWords.shift();
                 preloadNextVideo();
+                const inputField = document.getElementById('text-input-answer');
+                const checkButton = document.getElementById('check-input-btn');
+                const mirrorDiv = document.getElementById('input-mirror');
+
+                inputField.value = '';
+                inputField.disabled = false;
+                checkButton.disabled = false;
+
+                mirrorDiv.innerHTML = ''; // Очищаем HTML от старой подсветки
+                mirrorDiv.style.backgroundColor = '';
             } catch (e) {
                 console.error("Ошибка загрузки слов:", e);
                 document.body.innerHTML = `<h1>Произошла ошибка при загрузке видео. Попробуйте обновить страницу.</h1><p>${e.message}</p>`;
             }
         }
         function regenerateOptionsForCurrentWord() {
-            // Если слово еще не загружено, выполняем полную загрузку
             if (currentWordIndex === null || !easywords[currentWordIndex]) {
-                loadWordsAndSetOptions();
                 return;
             }
 
@@ -1275,16 +1350,21 @@
             document.getElementById("option2").innerText = options[1 - shuffledIndex];
             // --- Конец скопированной логики ---
 
-            // Обновляем кнопку "Показать текст"
+            const currentMode = localStorage.getItem('answerMode') || 'ru';
             const showButton = document.getElementById("showKoreanButton");
             const hiddenTextContent = document.getElementById("koreanTextContent");
 
-            if (answerLanguage === 'ko') {
-                showButton.innerText = "Показать русский текст";
-                hiddenTextContent.innerText = correctWord.russian;
-            } else {
+            if (currentMode === 'input') {
                 showButton.innerText = "Показать корейский текст";
                 hiddenTextContent.innerText = correctWord.korean;
+            } else {
+                if (answerLanguage === 'ko') {
+                    showButton.innerText = "Показать русский текст";
+                    hiddenTextContent.innerText = correctWord.russian;
+                } else {
+                    showButton.innerText = "Показать корейский текст";
+                    hiddenTextContent.innerText = correctWord.korean;
+                }
             }
 
             document.getElementById("koreanText").style.display = "none";
@@ -1310,10 +1390,7 @@
             if (isCorrect) {
                 sessionStats.correct++;
                 sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
-                const goalReached = trackDailyActivity();
-                if (!goalReached) {
-                    new Audio('excellent.mp3').play();
-                }
+                new Audio('excellent.mp3').play();
                 const word = easywords[currentWordIndex];
                 if (word.new) {
                     word.new = false;
@@ -1373,7 +1450,139 @@
             }, 500);
         }
 
+        function checkTypedAnswer() {
+            const inputField = document.getElementById('text-input-answer');
+            const mirrorDiv = document.getElementById('input-mirror');
+            const checkButton = document.getElementById('check-input-btn');
+            const userAnswer = inputField.value; // Берем "сырое" значение
 
+            // Проверяем, не пустой ли ввод после очистки пробелов по краям
+            if (userAnswer.trim() === "") return;
+
+            const currentWord = easywords[currentWordIndex];
+            const typedCorrectAnswer = currentWord.korean;
+
+            // НОВОЕ: Создаем "чистые" версии строк для сравнения, удаляя пробелы и знаки
+            const clean = (str) => str.replace(/[ .,?!]/g, '');
+            const cleanedUserAnswer = clean(userAnswer);
+            const cleanedCorrectAnswer = clean(typedCorrectAnswer);
+
+            // Сравниваем очищенные строки
+            const isCorrect = cleanedUserAnswer === cleanedCorrectAnswer;
+
+            if (isCorrect) {
+                // --- ЛОГИКА ПРАВИЛЬНОГО ОТВЕТА ---
+                sessionStats.total++;
+                sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
+
+                inputField.disabled = true;
+                checkButton.disabled = true;
+                mirrorDiv.style.backgroundColor = "lightgreen";
+
+                // ... (остальной код для правильного ответа остается таким же, как в предыдущей версии) ...
+                sessionStats.correct++;
+                sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
+                new Audio('excellent.mp3').play();
+                if (currentWord.new) { /*...*/ }
+                const boxes = document.querySelectorAll('.progress-box');
+                const totalBoxes = boxes.length;
+                if (progressCount < totalBoxes) { /*...*/ }
+                if (progressCount === totalBoxes) { /*...*/ return; }
+                setTimeout(() => { loadWordsAndSetOptions(); }, 500);
+
+            } else {
+                // Эта часть для статистики и прогресс-бара остается такой же
+                if (mirrorDiv.style.backgroundColor !== 'lightcoral') {
+                    sessionStats.total++;
+                    sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
+                    sessionStats.errors.push({ question: currentWord.russian, yourAnswer: userAnswer, correctAnswer: typedCorrectAnswer });
+                    sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
+                    const boxes = document.querySelectorAll('.progress-box');
+                    if (progressCount > 0) {
+                        const index = Math.min(progressCount - 1, boxes.length - 1);
+                        boxes[index].style.backgroundColor = 'lightcoral';
+                        setTimeout(() => {
+                            boxes[index].style.backgroundColor = 'white';
+                            progressCount = index;
+                            saveProgressBoxes();
+                        }, 300);
+                    }
+                }
+
+                mirrorDiv.style.backgroundColor = 'lightcoral';
+
+                // --- НОВАЯ УЛУЧШЕННАЯ ЛОГИКА ПОДСВЕТКИ ---
+                let feedbackHTML = '';
+                for (let i = 0; i < userAnswer.length; i++) {
+                    // Сравниваем символ пользователя с символом в правильном ответе НА ТОЙ ЖЕ ПОЗИЦИИ
+                    if (userAnswer[i] === typedCorrectAnswer[i]) {
+                        feedbackHTML += userAnswer[i]; // Символ верный, просто добавляем его
+                    } else {
+                        // Символ неверный (или его нет в правильном ответе на этой позиции), подсвечиваем
+                        feedbackHTML += `<span class="incorrect-char-highlight">${userAnswer[i]}</span>`;
+                    }
+                }
+                mirrorDiv.innerHTML = feedbackHTML;
+                // --- КОНЕЦ НОВОЙ ЛОГИКИ ---
+
+                setTimeout(() => {
+                    mirrorDiv.style.backgroundColor = '';
+                    inputField.focus();
+                }, 800);
+            }
+        }
+
+        function setAnswerMode(mode) {
+            localStorage.setItem('answerMode', mode);
+
+            const choiceContainer = document.getElementById('choice-buttons-container');
+            const inputContainer = document.getElementById('input-answer-container');
+
+            const btnRu = document.getElementById('lang-toggle-ru');
+            const btnKo = document.getElementById('lang-toggle-ko');
+            const btnInput = document.getElementById('lang-toggle-input');
+
+            // Сначала убираем active со всех
+            [btnRu, btnKo, btnInput].forEach(btn => btn.classList.remove('active'));
+
+            if (mode === 'input') {
+                choiceContainer.style.display = 'none';
+                inputContainer.style.display = 'flex';
+                btnInput.classList.add('active');
+
+                // --- НОВЫЙ КОД ---
+                // Принудительно ставим подсказку на корейский
+                const correctWord = easywords[currentWordIndex];
+                if (correctWord) {
+                    const showButton = document.getElementById("showKoreanButton");
+                    const hiddenTextContainer = document.getElementById("koreanText");
+                    const hiddenTextContent = document.getElementById("koreanTextContent");
+
+                    showButton.innerText = "Показать корейский текст";
+                    hiddenTextContent.innerText = correctWord.korean;
+
+                    // Сбрасываем состояние видимости кнопки
+                    hiddenTextContainer.style.display = "none";
+                    showButton.style.display = "inline-block";
+                }
+                // --- КОНЕЦ НОВОГО КОДА ---
+
+            } else { // 'ru' или 'ko'
+                choiceContainer.style.display = 'flex';
+                inputContainer.style.display = 'none';
+
+                // Устанавливаем язык для режима выбора
+                localStorage.setItem('answerLanguage', mode);
+
+                if (mode === 'ko') {
+                    btnKo.classList.add('active');
+                } else {
+                    btnRu.classList.add('active');
+                }
+
+                regenerateOptionsForCurrentWord();
+            }
+        }
 
         function saveProgressBoxes() {
             localStorage.setItem(window.location.pathname + "_progressCount", progressCount);
@@ -1403,6 +1612,8 @@
             document.getElementById("koreanText").style.display = "flex";
             document.getElementById("showKoreanButton").style.display = "none";
         }
+
+        //ДОМ
         document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('show-errors-btn').addEventListener('click', () => {
                 document.getElementById('error-list').style.display = 'block';
@@ -1431,7 +1642,8 @@
                     sessionStorage.setItem('sessionStartTime', startTime);
                     sessionStorage.setItem('sessionDuration', sessionDuration);
                     sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
-
+                    sessionStorage.setItem('lastSavedTime', startTime.toString());
+                    autoSaveInterval = setInterval(saveSessionProgress, 15000);
                     document.getElementById('session-timer-popup').style.display = 'none';
 
                     // Показываем таймер сессии
@@ -1445,59 +1657,43 @@
                 });
             });
 
+            const textInput = document.getElementById('text-input-answer');
+            const mirrorDiv = document.getElementById('input-mirror');
+
+            textInput.addEventListener('input', () => {
+                // Просто копируем текст из невидимого поля в видимое
+                mirrorDiv.textContent = textInput.value;
+
+                // Если пользователь начинает исправлять ошибку, убираем подсветку
+                mirrorDiv.style.backgroundColor = '';
+                // И старый HTML с подсветкой заменяем на обычный текст
+                if (mirrorDiv.innerHTML.includes('span')) {
+                    mirrorDiv.innerHTML = textInput.value;
+                }
+            });
+
+            // Устанавливаем placeholder для нашего div
+            mirrorDiv.setAttribute('data-placeholder', 'Введите ваш ответ...');
+
             const btnRu = document.getElementById('lang-toggle-ru');
             const btnKo = document.getElementById('lang-toggle-ko');
+            const btnInput = document.getElementById('lang-toggle-input');
 
-            // Функция для установки языка
-            function setAnswerLanguage(lang) {
-                // Если язык уже выбран, ничего не делаем
-                const currentLang = localStorage.getItem('answerLanguage') || 'ru';
-                if (currentLang === lang) {
-                    return;
-                }
+            // Привязываем новую функцию к кнопкам
+            btnRu.addEventListener('click', () => setAnswerMode('ru'));
+            btnKo.addEventListener('click', () => setAnswerMode('ko'));
+            btnInput.addEventListener('click', () => setAnswerMode('input'));
 
-                localStorage.setItem('answerLanguage', lang);
-
-                const btnRu = document.getElementById('lang-toggle-ru');
-                const btnKo = document.getElementById('lang-toggle-ko');
-
-                // Обновляем вид кнопок
-                if (lang === 'ko') {
-                    btnKo.classList.add('active');
-                    btnRu.classList.remove('active');
-                } else {
-                    btnRu.classList.add('active');
-                    btnKo.classList.remove('active');
-                }
-
-                // Вызываем новую функцию для обновления только ответов
-                regenerateOptionsForCurrentWord();
-            }
-
-            // Привязываем функции к кнопкам
-            btnRu.addEventListener('click', () => setAnswerLanguage('ru'));
-            btnKo.addEventListener('click', () => setAnswerLanguage('ko'));
-
-            // Инициализация при загрузке страницы
-            const currentLang = localStorage.getItem('answerLanguage') || 'ru';
-            if (currentLang === 'ko') {
-                btnKo.classList.add('active');
-                btnRu.classList.remove('active');
-            } else {
-                btnRu.classList.add('active');
-                btnKo.classList.remove('active');
-            }
+            // Инициализация режима при загрузке страницы
+            const currentMode = localStorage.getItem('answerMode') || 'ru'; // Загружаем последний режим
+            setAnswerMode(currentMode);
             hideHintForMembers();
-            updateStreakDisplay();
+
             initializeTimer(); //
 
             document.addEventListener('visibilitychange', handleVisibilityChange);
 
-            function launchApp() {
-                loadStars();
-                loadWordsAndSetOptions();
 
-            }
 
 
 
@@ -1514,6 +1710,13 @@
             timerContainer.addEventListener('click', () => {
                 timerDisplay.style.display = timerDisplay.style.display === 'none' ? 'block' : 'none';
             });
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    saveSessionProgress();
+                }
+            });
+            // Финальная попытка сохранить при закрытии (менее надежно, но не помешает)
+            window.addEventListener('pagehide', saveSessionProgress);
         });
 
         function saveToBank() {
@@ -1675,15 +1878,13 @@
         }, true);
 
         function goHome() {
-            sessionStorage.removeItem('isSessionActive');
-            sessionStorage.removeItem('sessionStartTime');
-            sessionStorage.removeItem('sessionDuration');
-            sessionStorage.removeItem('sessionStats');
+            saveSessionProgress(); // Сохраняем последние секунды
+            cleanupSession();
             var pushAudio = new Audio('pushButton.mp3');
             pushAudio.play();
             setTimeout(() => {
                 window.location.href = "videothemes.html";
-            }, 150); // небольшая задержка, чтобы звук успел сыграть
+            }, 150);
         }
 
         const video = document.getElementById("wordVideo");
