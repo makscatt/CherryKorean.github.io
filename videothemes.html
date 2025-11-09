@@ -563,15 +563,18 @@
       flex-direction: column;
     }
 
-    /* Сам график */
     #weekly-chart {
       height: 60px;
-      /* Уменьшили высоту с 80px */
       display: flex;
       justify-content: space-around;
       align-items: flex-end;
-      border-bottom: 1px solid #444;
-      padding-bottom: 5px;
+    }
+
+    #weekly-chart-days {
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid #444;
+      padding-top: 4px;
     }
 
     /* Обертка для каждого столбика и его подписи (дня недели) */
@@ -582,6 +585,8 @@
       align-items: center;
       gap: 4px;
       width: 12%;
+      height: 100%;
+      justify-content: flex-end;
     }
 
     /* Сам столбик графика */
@@ -623,14 +628,8 @@
       opacity: 1;
     }
 
-    /* Общая подпись под графиком */
     #weekly-chart-label {
-      font-size: 11px;
-      /* Уменьшили шрифт */
-      color: #aaa;
-      text-align: center;
-      margin-top: 6px;
-      /* Уменьшили отступ */
+      display: none;
     }
 
     #main-content-area {
@@ -650,6 +649,10 @@
       /* Располагаем элементы (табы и контент) друг под другом */
       overflow: hidden;
 
+    }
+
+    .chart-bar.previous-day {
+      background-color: #3498db;
     }
   </style>
 </head>
@@ -680,6 +683,9 @@
         <div id="weekly-chart-container">
           <div id="weekly-chart">
             <!-- Сюда JS вставит столбики графика -->
+          </div>
+          <div id="weekly-chart-days">
+            <!-- Сюда JS вставит дни недели -->
           </div>
           <div id="weekly-chart-label">Активность за 7 дней</div>
         </div>
@@ -1215,14 +1221,16 @@
 
       // 4. Рендерим график
       const chart = document.getElementById('weekly-chart');
-      if (!chart) return;
+      const daysContainer = document.getElementById('weekly-chart-days'); // <<< НОВАЯ СТРОКА
+      if (!chart || !daysContainer) return;
 
       chart.innerHTML = '';
+      daysContainer.innerHTML = ''; // <<< НОВАЯ СТРОКА
 
       const maxSeconds = Math.max(...weekData.map(d => d.seconds));
       const scaleMax = maxSeconds > 0 ? maxSeconds : 300;
 
-      weekData.forEach(data => {
+      weekData.forEach((data, index) => {
         const barHeightPercent = (data.seconds / scaleMax) * 100;
 
         const barWrapper = document.createElement('div');
@@ -1230,12 +1238,14 @@
 
         const tooltip = document.createElement('span');
         tooltip.className = 'bar-tooltip';
-        // --- ИЗМЕНЕНИЕ ЗДЕСЬ ---
-        // Используем новую функцию и для всплывающих подсказок
         tooltip.textContent = formatSeconds(data.seconds);
 
         const bar = document.createElement('div');
         bar.className = 'chart-bar';
+
+        if (index < 6) { // <<< НОВЫЙ БЛОК
+          bar.classList.add('previous-day');
+        }
 
         const dayLabel = document.createElement('span');
         dayLabel.className = 'bar-day';
@@ -1243,8 +1253,9 @@
 
         barWrapper.appendChild(tooltip);
         barWrapper.appendChild(bar);
-        barWrapper.appendChild(dayLabel);
+        // barWrapper.appendChild(dayLabel); // <<< ЭТА СТРОКА УДАЛЕНА
         chart.appendChild(barWrapper);
+        daysContainer.appendChild(dayLabel); // <<< НОВАЯ СТРОКА
 
         setTimeout(() => {
           bar.style.height = `${Math.min(barHeightPercent, 100)}%`;
