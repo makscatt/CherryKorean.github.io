@@ -301,5 +301,13 @@
     "blocks": [
       { "name": "1", "key": "b1" }
     ]
+  },
+    "theme24": {
+    "coverImage": "videothemes/subthemebc/lis.png",
+    "masterJsonPath": "videothemes/json/videotheme24.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "1", "key": "b1" }
+    ]
   }
 }

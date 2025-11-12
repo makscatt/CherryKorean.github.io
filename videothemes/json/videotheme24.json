@@ -1,0 +1,261 @@
+{
+  "b1": [
+    {
+      "isNew": true,
+      "video": "video/lis/선물은 마음에 들어.webm",
+      "videoMp4": "video/lis/mp4/선물은 마음에 들어.mp4",
+      "korean": "선물은 마음에 들어?",
+      "russian": "Подарок понравился?",
+      "new": true
+    },
+    {
+      "video": "video/lis/나 배고파.webm",
+      "videoMp4": "video/lis/mp4/나 배고파.mp4",
+      "korean": "나 배고파",
+      "russian": "Я голодна",
+      "new": true
+    },
+    {
+      "video": "video/lis/과일 먹을래.webm",
+      "videoMp4": "video/lis/mp4/과일 먹을래.mp4",
+      "korean": "과일 먹을래",
+      "russian": "Хочешь фрукты?",
+      "new": true
+    },
+    {
+      "video": "video/lis/나 사랑하는 사람이 생겼어.webm",
+      "videoMp4": "video/lis/mp4/나 사랑하는 사람이 생겼어.mp4",
+      "korean": "나 사랑하는 사람이 생겼어",
+      "russian": "У меня появился человек, которого я люблю",
+      "new": true
+    },
+    {
+      "video": "video/lis/신부 도망갔대요.webm",
+      "videoMp4": "video/lis/mp4/신부 도망갔대요.mp4",
+      "korean": "신부 도망갔대요",
+      "russian": "Говорят, невеста сбежала",
+      "new": true
+    },
+    {
+      "video": "video/lis/목격자들 진술 다 똑같아요.webm",
+      "videoMp4": "video/lis/mp4/목격자들 진술 다 똑같아요.mp4",
+      "korean": "목격자들 진술 다 똑같아요",
+      "russian": "Показания всех свидетелей одинаковые",
+      "new": true
+    },
+    {
+      "video": "video/lis/저항하는 적 있어.webm",
+      "videoMp4": "video/lis/mp4/저항하는 적 있어.mp4",
+      "korean": "저항하는 적 있어",
+      "russian": "Есть следы сопротивления",
+      "new": true
+    },
+    {
+      "video": "video/lis/그럼 이건 어디서 나왔을까요.webm",
+      "videoMp4": "video/lis/mp4/그럼 이건 어디서 나왔을까요.mp4",
+      "korean": "그럼 이건 어디서 나왔을까요?",
+      "russian": "Тогда откуда это появилось?",
+      "new": true
+    },
+    {
+      "video": "video/lis/아저씨 외계인이에요.webm",
+      "videoMp4": "video/lis/mp4/아저씨 외계인이에요.mp4",
+      "korean": "아저씨 외계인이에요?",
+      "russian": "Дядя, вы инопланетянин?",
+      "new": true
+    },
+    {
+      "video": "video/lis/별 수 있냐.webm",
+      "videoMp4": "video/lis/mp4/별 수 있냐.mp4",
+      "korean": "별 수 있냐?",
+      "russian": "А что поделаешь?",
+      "new": true
+    },
+    {
+      "video": "video/lis/그 신부가 식장을 나간 기록이 없어요.webm",
+      "videoMp4": "video/lis/mp4/그 신부가 식장을 나간 기록이 없어요.mp4",
+      "korean": "그 신부가 식장을 나간 기록이 없어요",
+      "russian": "Нет записей о том, что невеста покинула зал",
+      "new": true
+    },
+    {
+      "video": "video/lis/제보 주신 분 맞죠.webm",
+      "videoMp4": "video/lis/mp4/제보 주신 분 맞죠.mp4",
+      "korean": "제보 주신 분 맞죠?",
+      "russian": "Вы ведь тот, кто сообщил информацию, верно?",
+      "new": true
+    },
+    {
+      "video": "video/lis/궁금하면 나오라니까.webm",
+      "videoMp4": "video/lis/mp4/궁금하면 나오라니까.mp4",
+      "korean": "궁금하면 나오라니까",
+      "russian": "Если интересно, выходи",
+      "new": true
+    },
+    {
+      "video": "video/lis/그놈이다.webm",
+      "videoMp4": "video/lis/mp4/그놈이다.mp4",
+      "korean": "그놈이다",
+      "russian": "Это тот мужчина",
+      "new": true
+    },
+    {
+      "video": "video/lis/신사는 벌써 갚았으니까.webm",
+      "videoMp4": "video/lis/mp4/신사는 벌써 갚았으니까.mp4",
+      "korean": "신사는 벌써 갚았으니까",
+      "russian": "Потому что тот господин уже расплатился",
+      "new": true
+    },
+    {
+      "video": "video/lis/똑똑히 봤어 내가.webm",
+      "videoMp4": "video/lis/mp4/똑똑히 봤어 내가.mp4",
+      "korean": "똑똑히 봤어 내가",
+      "russian": "Я видела это своими глазами",
+      "new": true
+    },
+    {
+      "video": "video/lis/당신이 죽였어요.webm",
+      "videoMp4": "video/lis/mp4/당신이 죽였어요.mp4",
+      "korean": "당신이 죽였어요?",
+      "russian": "Вы убивали?",
+      "new": true
+    },
+    {
+      "video": "video/lis/커피 손도 안 대셨네.webm",
+      "videoMp4": "video/lis/mp4/커피 손도 안 대셨네.mp4",
+      "korean": "커피 손도 안 대셨네",
+      "russian": "Вы даже не притронулись к кофе",
+      "new": true
+    },
+    {
+      "video": "video/lis/마음에 안 들어.webm",
+      "videoMp4": "video/lis/mp4/마음에 안 들어.mp4",
+      "korean": "마음에 안 들어",
+      "russian": "Не нравится",
+      "new": true
+    },
+    {
+      "video": "video/lis/내 건데 맞을지 모르겠다.webm",
+      "videoMp4": "video/lis/mp4/내 건데 맞을지 모르겠다.mp4",
+      "korean": "내 건데 맞을지 모르겠다",
+      "russian": "Не знаю, подойдёт ли",
+      "new": true
+    },
+    {
+      "video": "video/lis/그 사람이 다가와요.webm",
+      "videoMp4": "video/lis/mp4/그 사람이 다가와요.mp4",
+      "korean": "그 사람이 다가와요",
+      "russian": "Этот человек приближается",
+      "new": true
+    },
+    {
+      "video": "video/lis/우산을 맨 남자.webm",
+      "videoMp4": "video/lis/mp4/우산을 맨 남자.mp4",
+      "korean": "우산을 맨 남자",
+      "russian": "Мужчина с зонтом",
+      "new": true
+    },
+    {
+      "video": "video/lis/나를 미끼로 삼은 것뿐이야.webm",
+      "videoMp4": "video/lis/mp4/나를 미끼로 삼은 것뿐이야.mp4",
+      "korean": "나를 미끼로 삼은 것뿐이야",
+      "russian": "Он просто использовал меня как приманку",
+      "new": true
+    },
+    {
+      "video": "video/lis/우린 나중에 또 봐요.webm",
+      "videoMp4": "video/lis/mp4/우린 나중에 또 봐요.mp4",
+      "korean": "우린 나중에 또 봐요",
+      "russian": "Увидимся позже",
+      "new": true
+    },
+    {
+      "video": "video/lis/기억이 남아 있어.webm",
+      "videoMp4": "video/lis/mp4/기억이 남아 있어.mp4",
+      "korean": "기억이 남아 있어?",
+      "russian": "Воспоминания остались?",
+      "new": true
+    },
+    {
+      "video": "video/lis/너를 기다렸어.webm",
+      "videoMp4": "video/lis/mp4/너를 기다렸어.mp4",
+      "korean": "너를 기다렸어",
+      "russian": "Я ждала тебя",
+      "new": true
+    },
+    {
+      "video": "video/lis/가진 재능이라고는 얼굴이 답니다.webm",
+      "videoMp4": "video/lis/mp4/가진 재능이라고는 얼굴이 답니다.mp4",
+      "korean": "가진 재능이라고는 얼굴이 답니다",
+      "russian": "Единственный мой талант — это лицо",
+      "new": true
+    },
+    {
+      "video": "video/lis/결혼식 날 비 오면 잘 산대잖아요.webm",
+      "videoMp4": "video/lis/mp4/결혼식 날 비 오면 잘 산대잖아요.mp4",
+      "korean": "결혼식 날 비 오면 잘 산대잖아요",
+      "russian": "Говорят, если в день свадьбы идёт дождь, брак будет счастливым",
+      "new": true
+    },
+    {
+      "video": "video/lis/나 보고 싶었어.webm",
+      "videoMp4": "video/lis/mp4/나 보고 싶었어.mp4",
+      "korean": "나 보고 싶었어?",
+      "russian": "Ты скучал по мне?",
+      "new": true
+    },
+    {
+      "video": "video/lis/신발을 잘못 골랐어.webm",
+      "videoMp4": "video/lis/mp4/신발을 잘못 골랐어.mp4",
+      "korean": "신발을 잘못 골랐어",
+      "russian": "Я выбрал не те туфли",
+      "new": true
+    },
+    {
+      "video": "video/lis/아이스크림은 제발 아침 먹고 드세요.webm",
+      "videoMp4": "video/lis/mp4/아이스크림은 제발 아침 먹고 드세요.mp4",
+      "korean": "아이스크림은 제발 아침 먹고 드세요",
+      "russian": "Умоляю, ешь мороженое только после завтрака",
+      "new": true
+    },
+    {
+      "video": "video/lis/우리 공주 일어났네.webm",
+      "videoMp4": "video/lis/mp4/우리 공주 일어났네.mp4",
+      "korean": "우리 공주 일어났네",
+      "russian": "Наша принцесса проснулась",
+      "new": true
+    },
+    {
+      "video": "video/lis/지옥 갈 거야.webm",
+      "videoMp4": "video/lis/mp4/지옥 갈 거야.mp4",
+      "korean": "지옥 갈 거야",
+      "russian": "Ты попадёшь в ад",
+      "new": true
+    },
+    {
+      "video": "video/lis/집에 가서 주려고 했는데.webm",
+      "videoMp4": "video/lis/mp4/집에 가서 주려고 했는데.mp4",
+      "korean": "집에 가서 주려고 했는데",
+      "russian": "Я хотела отдать это, когда вернусь домой",
+      "new": true
+    },
+    {
+      "video": "video/lis/필요하면 언제든지 연락해.webm",
+      "videoMp4": "video/lis/mp4/필요하면 언제든지 연락해.mp4",
+      "korean": "필요하면 언제든지 연락해",
+      "russian": "Если понадобится — звони в любое время",
+      "new": true
+    },
+    {
+      "video": "video/lis/학생.webm",
+      "videoMp4": "video/lis/mp4/학생.mp4",
+      "korean": "학생",
+      "russian": "Ученик / студент",
+      "new": true
+    }
+  ],
+  "b2": [],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}
