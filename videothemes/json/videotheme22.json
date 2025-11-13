@@ -1,232 +1,404 @@
 {
   "b1": [
     {
-      "isNew": true,
       "video": "video/jin/하지만 난 관심 없었다.webm",
       "videoMp4": "video/jin/mp4/하지만 난 관심 없었다.mp4",
       "korean": "하지만 난 관심 없었다",
-      "russian": "Но меня это не интересовало",
-      "new": true
+      "russian": "Но меня это не интересовало"
     },
     {
       "video": "video/jin/그분보다 더 큰 존재가 되면.webm",
       "videoMp4": "video/jin/mp4/그분보다 더 큰 존재가 되면.mp4",
       "korean": "그분보다 더 큰 존재가 되면",
-      "russian": "Если станешь существом больше, чем он",
-      "new": true
+      "russian": "Если станешь существом больше, чем он"
     },
     {
       "video": "video/jin/얼마나 귀찮겠는가.webm",
       "videoMp4": "video/jin/mp4/얼마나 귀찮겠는가.mp4",
       "korean": "얼마나 귀찮겠는가",
-      "russian": "Как же это раздражает",
-      "new": true
+      "russian": "Как же это раздражает"
     },
     {
       "video": "video/jin/신보다 더 큰 존재가 되려고 했다.webm",
       "videoMp4": "video/jin/mp4/신보다 더 큰 존재가 되려고 했다.mp4",
       "korean": "신보다 더 큰 존재가 되려고 했다",
-      "russian": "Они пытались стать существами выше, чем Бог",
-      "new": true
+      "russian": "Они пытались стать существами выше, чем Бог"
     },
     {
       "video": "video/jin/모두 죽어버렸다.webm",
       "videoMp4": "video/jin/mp4/모두 죽어버렸다.mp4",
       "korean": "모두 죽어버렸다",
-      "russian": "Все погибли",
-      "new": true
+      "russian": "Все погибли"
     },
     {
       "video": "video/jin/모든 천사와.webm",
       "videoMp4": "video/jin/mp4/모든 천사와.mp4",
       "korean": "모든 천사와",
-      "russian": "И со всеми ангелами",
-      "new": true
+      "russian": "И со всеми ангелами"
     },
     {
       "video": "video/jin/살아남은 지니들은 머리를 숙였지만.webm",
       "videoMp4": "video/jin/mp4/살아남은 지니들은 머리를 숙였지만.mp4",
       "korean": "살아남은 지니들은 머리를 숙였지만",
-      "russian": "Выжившие джинны склонили головы, но…",
-      "new": true
+      "russian": "Выжившие джинны склонили головы, но…"
     },
     {
       "video": "video/jin/나는 너의 눈빛을 기억하고.webm",
       "videoMp4": "video/jin/mp4/나는 너의 눈빛을 기억하고.mp4",
       "korean": "나는 너의 눈빛을 기억하고",
-      "russian": "Я помню твой взгляд",
-      "new": true
+      "russian": "Я помню твой взгляд"
     },
     {
       "video": "video/jin/고궁정식 하나요.webm",
       "videoMp4": "video/jin/mp4/고궁정식 하나요.mp4",
       "korean": "고궁정식 하나요",
-      "russian": "Один дворцовый сет",
-      "new": true
+      "russian": "Один дворцовый сет"
     },
     {
       "video": "video/jin/조금 기다리십시오.webm",
       "videoMp4": "video/jin/mp4/조금 기다리십시오.mp4",
       "korean": "조금 기다리십시오",
-      "russian": "Пожалуйста, немного подождите",
-      "new": true
+      "russian": "Пожалуйста, немного подождите"
     },
     {
       "video": "video/jin/십 년을 매년 같은 날 같은 자리.webm",
       "videoMp4": "video/jin/mp4/십 년을 매년 같은 날 같은 자리.mp4",
       "korean": "십 년을 매년 같은 날 같은 자리",
-      "russian": "Десять лет, каждый год, в тот же день и на том же месте",
-      "new": true
+      "russian": "Десять лет, каждый год, в тот же день и на том же месте"
     },
     {
       "video": "video/jin/그쵸.webm",
       "videoMp4": "video/jin/mp4/그쵸.mp4",
       "korean": "그쵸?",
-      "russian": "Верно?",
-      "new": true
+      "russian": "Верно?"
     },
     {
       "video": "video/jin/넓어졌다고요.webm",
       "videoMp4": "video/jin/mp4/넓어졌다고요.mp4",
       "korean": "넓어졌다고요",
-      "russian": "Шире стало, говоришь",
-      "new": true
+      "russian": "Шире стало, говоришь"
     },
     {
       "video": "video/jin/여기 사는 건 어떻게 알았니.webm",
       "videoMp4": "video/jin/mp4/여기 사는 건 어떻게 알았니.mp4",
       "korean": "여기 사는 건 어떻게 알았니?",
-      "russian": "Как ты узнала, что я живу здесь?",
-      "new": true
+      "russian": "Как ты узнала, что я живу здесь?"
     },
     {
       "video": "video/jin/네가 여긴 왜.webm",
       "videoMp4": "video/jin/mp4/네가 여긴 왜.mp4",
       "korean": "네가 여긴 왜?",
-      "russian": "Почему ты здесь?",
-      "new": true
+      "russian": "Почему ты здесь?"
     },
     {
       "video": "video/jin/내가 벌어 산 거라고.webm",
       "videoMp4": "video/jin/mp4/내가 벌어 산 거라고.mp4",
       "korean": "내가 벌어 산 거라고",
-      "russian": "Я сама заработала и купила это",
-      "new": true
+      "russian": "Я сама заработала и купила это"
     },
     {
       "video": "video/jin/돈도 보낼 만큼 보냈고.webm",
       "videoMp4": "video/jin/mp4/돈도 보낼 만큼 보냈고.mp4",
       "korean": "돈도 보낼 만큼 보냈고",
-      "russian": "И денег отправила достаточно",
-      "new": true
+      "russian": "И денег отправила достаточно"
     },
     {
       "video": "video/jin/정말 완벽했어요.webm",
       "videoMp4": "video/jin/mp4/정말 완벽했어요.mp4",
       "korean": "정말 완벽했어요",
-      "russian": "Это было действительно идеально",
-      "new": true
+      "russian": "Это было действительно идеально"
     },
     {
       "video": "video/jin/내 말 끊지 말라니까.webm",
       "videoMp4": "video/jin/mp4/내 말 끊지 말라니까.mp4",
       "korean": "내 말 끊지 말라니까",
-      "russian": "Я же сказала, не перебивай меня",
-      "new": true
+      "russian": "Я же сказала, не перебивай меня"
     },
     {
       "video": "video/jin/잘 들어라 소녀야.webm",
       "videoMp4": "video/jin/mp4/잘 들어라 소녀야.mp4",
       "korean": "잘 들어라 소녀야",
-      "russian": "Слушай внимательно, девочка",
-      "new": true
+      "russian": "Слушай внимательно, девочка"
     },
     {
       "video": "video/jin/네가 너무 흔들었어.webm",
       "videoMp4": "video/jin/mp4/네가 너무 흔들었어.mp4",
       "korean": "네가 너무 흔들었어",
-      "russian": "Ты слишком сильно трясла",
-      "new": true
+      "russian": "Ты слишком сильно трясла"
     },
     {
       "video": "video/jin/여긴 어떻게 들어왔어.webm",
       "videoMp4": "video/jin/mp4/여긴 어떻게 들어왔어.mp4",
       "korean": "여긴 어떻게 들어왔어?",
-      "russian": "Как ты сюда попал?",
-      "new": true
+      "russian": "Как ты сюда попал?"
     },
     {
       "video": "video/jin/내가 아까 아주 큰 소리로 말했을 텐데.webm",
       "videoMp4": "video/jin/mp4/내가 아까 아주 큰 소리로 말했을 텐데.mp4",
       "korean": "내가 아까 아주 큰 소리로 말했을 텐데",
-      "russian": "Я ведь недавно говорил довольно громко",
-      "new": true
+      "russian": "Я ведь недавно говорил довольно громко"
     },
     {
       "video": "video/jin/난 램프의 정령 진이라고.webm",
       "videoMp4": "video/jin/mp4/난 램프의 정령 진이라고.mp4",
       "korean": "난 램프의 정령 진이라고",
-      "russian": "Я — дух лампы, что зовется Джином",
-      "new": true
+      "russian": "Я — дух лампы, что зовется Джином"
     },
     {
       "video": "video/jin/꺼져.webm",
       "videoMp4": "video/jin/mp4/꺼져.mp4",
       "korean": "꺼져",
-      "russian": "Исчезни / Отвали",
-      "new": true
+      "russian": "Исчезни / Отвали"
     },
     {
       "video": "video/jin/말이 앞뒤가 안 맞잖아.webm",
       "videoMp4": "video/jin/mp4/말이 앞뒤가 안 맞잖아.mp4",
       "korean": "말이 앞뒤가 안 맞잖아",
-      "russian": "В твоих словах нет логики",
-      "new": true
+      "russian": "В твоих словах нет логики"
     },
     {
       "video": "video/jin/너 정말로 기억 안 나.webm",
       "videoMp4": "video/jin/mp4/너 정말로 기억 안 나.mp4",
       "korean": "너 정말로 기억 안 나?",
-      "russian": "Ты правда не помнишь?",
-      "new": true
+      "russian": "Ты правда не помнишь?"
     },
     {
       "video": "video/jin/983년 전.webm",
       "videoMp4": "video/jin/mp4/983년 전.mp4",
       "korean": "구백팔십삼년 전",
-      "russian": "983 года назад",
-      "new": true
+      "russian": "983 года назад"
     },
     {
       "video": "video/jin/진짜 네가 너무 보고 싶더라.webm",
       "videoMp4": "video/jin/mp4/진짜 네가 너무 보고 싶더라.mp4",
       "korean": "진짜 네가 너무 보고 싶더라",
-      "russian": "Я правда очень скучал по тебе",
-      "new": true
+      "russian": "Я правда очень скучал по тебе"
     },
     {
       "video": "video/jin/망칠 수 있는 기회가 아주 많길.webm",
       "videoMp4": "video/jin/mp4/망칠 수 있는 기회가 아주 많길.mp4",
       "korean": "망칠 수 있는 기회가 아주 많길",
-      "russian": "У меня будет много шансов всё испортить",
-      "new": true
+      "russian": "У меня будет много шансов всё испортить"
     },
     {
       "video": "video/jin/내가 원하는 건.webm",
       "videoMp4": "video/jin/mp4/내가 원하는 건.mp4",
       "korean": "내가 원하는 건",
-      "russian": "То, чего я хочу...",
-      "new": true
+      "russian": "То, чего я хочу..."
     },
     {
       "video": "video/jin/저도 농담이었어요.webm",
       "videoMp4": "video/jin/mp4/저도 농담이었어요.mp4",
       "korean": "저도 농담이었어요",
-      "russian": "Я тоже пошутила",
+      "russian": "Я тоже пошутила"
+    }
+  ],
+  "b2": [
+    {
+      "isNew": true,
+      "video": "video/jin/너무 재밌어.webm",
+      "videoMp4": "video/jin/mp4/너무 재밌어.mp4",
+      "korean": "너무 재밌어",
+      "russian": "Так весело",
+      "new": true
+    },
+    {
+      "video": "video/jin/인간의 타락이 여기까지 왔단 말인가.webm",
+      "videoMp4": "video/jin/mp4/인간의 타락이 여기까지 왔단 말인가.mp4",
+      "korean": "인간의 타락이 여기까지 왔단 말인가?",
+      "russian": "Неужели падение человечества дошло до этого?",
+      "new": true
+    },
+    {
+      "video": "video/jin/근데 어디 다치셨어요.webm",
+      "videoMp4": "video/jin/mp4/근데 어디 다치셨어요.mp4",
+      "korean": "근데 어디 다치셨어요?",
+      "russian": "Но где вы поранились?",
+      "new": true
+    },
+    {
+      "video": "video/jin/소원 많게 생겼어요 1.webm",
+      "videoMp4": "video/jin/mp4/소원 많게 생겼어요 1.mp4",
+      "korean": "소원 많게 생겼어요?",
+      "russian": "Ты похоже можешь исполнить много желаний?",
+      "new": true
+    },
+    {
+      "video": "video/jin/거기 내 자리거든.webm",
+      "videoMp4": "video/jin/mp4/거기 내 자리거든.mp4",
+      "korean": "거기 내 자리거든",
+      "russian": "Это вообще-то моё место",
+      "new": true
+    },
+    {
+      "video": "video/jin/그거 안 하면 난 뭘 하니.webm",
+      "videoMp4": "video/jin/mp4/그거 안 하면 난 뭘 하니.mp4",
+      "korean": "그거 안 하면 난 뭘 하니?",
+      "russian": "Если я это не делаю, что мне тогда делать?",
+      "new": true
+    },
+    {
+      "video": "video/jin/진짜 기쁨.webm",
+      "videoMp4": "video/jin/mp4/진짜 기쁨.mp4",
+      "korean": "진짜 기쁨",
+      "russian": "Настоящая радость",
+      "new": true
+    },
+    {
+      "video": "video/jin/그게 바로 불편합니다.webm",
+      "videoMp4": "video/jin/mp4/그게 바로 불편합니다.mp4",
+      "korean": "그게 바로 불편합니다",
+      "russian": "Именно это и вызывает дискомфорт",
+      "new": true
+    },
+    {
+      "video": "video/jin/너무 귀찮아.webm",
+      "videoMp4": "video/jin/mp4/너무 귀찮아.mp4",
+      "korean": "너무 귀찮아",
+      "russian": "Так лень / Так муторно",
+      "new": true
+    },
+    {
+      "video": "video/jin/저작권이라는 게 그렇게 무서운 거야.webm",
+      "videoMp4": "video/jin/mp4/저작권이라는 게 그렇게 무서운 거야.mp4",
+      "korean": "저작권이라는 게 그렇게 무서운 거야?",
+      "russian": "Разве авторские права такие страшные?",
+      "new": true
+    },
+    {
+      "video": "video/jin/좋은 말로 할 때 앉아.webm",
+      "videoMp4": "video/jin/mp4/좋은 말로 할 때 앉아.mp4",
+      "korean": "좋은 말로 할 때 앉아",
+      "russian": "Сядь, пока я прошу нормально",
+      "new": true
+    },
+    {
+      "video": "video/jin/무슨 그런 말씀을.webm",
+      "videoMp4": "video/jin/mp4/무슨 그런 말씀을.mp4",
+      "korean": "무슨 그런 말씀을?",
+      "russian": "Да что вы такое говорите?",
+      "new": true
+    },
+    {
+      "video": "video/jin/뭐 받으려요.webm",
+      "videoMp4": "video/jin/mp4/뭐 받으려요.mp4",
+      "korean": "뭐 받으려요?",
+      "russian": "Что вы хотите получить?",
+      "new": true
+    },
+    {
+      "video": "video/jin/반가워요.webm",
+      "videoMp4": "video/jin/mp4/반가워요.mp4",
+      "korean": "반가워요",
+      "russian": "Рад встрече",
+      "new": true
+    },
+    {
+      "video": "video/jin/그렇게 그럼.webm",
+      "videoMp4": "video/jin/mp4/그렇게 그럼.mp4",
+      "korean": "그렇게 그럼",
+      "russian": "Ну ладно, пусть будет так",
+      "new": true
+    },
+    {
+      "video": "video/jin/대답 좀요.webm",
+      "videoMp4": "video/jin/mp4/대답 좀요.mp4",
+      "korean": "대답 좀요",
+      "russian": "Ответьте, пожалуйста",
+      "new": true
+    },
+    {
+      "video": "video/jin/저 아세요.webm",
+      "videoMp4": "video/jin/mp4/저 아세요.mp4",
+      "korean": "저 아세요?",
+      "russian": "Вы меня знаете?",
+      "new": true
+    },
+    {
+      "video": "video/jin/위험해요.webm",
+      "videoMp4": "video/jin/mp4/위험해요.mp4",
+      "korean": "위험해요",
+      "russian": "Опасно",
+      "new": true
+    },
+    {
+      "video": "video/jin/알아요.webm",
+      "videoMp4": "video/jin/mp4/알아요.mp4",
+      "korean": "알아요",
+      "russian": "Знаю",
+      "new": true
+    },
+    {
+      "video": "video/jin/왜 돈이 있어.webm",
+      "videoMp4": "video/jin/mp4/왜 돈이 있어.mp4",
+      "korean": "왜 돈이 있어?",
+      "russian": "Почему у тебя есть деньги?",
+      "new": true
+    },
+    {
+      "video": "video/jin/입어 입어.webm",
+      "videoMp4": "video/jin/mp4/입어 입어.mp4",
+      "korean": "입어 입어",
+      "russian": "Надень, надень",
+      "new": true
+    },
+    {
+      "video": "video/jin/지금 이 불길이 어디까지 갈까.webm",
+      "videoMp4": "video/jin/mp4/지금 이 불길이 어디까지 갈까.mp4",
+      "korean": "지금 이 불길이 어디까지 갈까",
+      "russian": "До куда дойдёт это пламя?",
+      "new": true
+    },
+    {
+      "video": "video/jin/더 맞아도 싸요.webm",
+      "videoMp4": "video/jin/mp4/더 맞아도 싸요.mp4",
+      "korean": "더 맞아도 싸요",
+      "russian": "Тебе бы ещё вдарить — будет по делу",
+      "new": true
+    },
+    {
+      "video": "video/jin/머리를 집중적으로 맞으신 거예요.webm",
+      "videoMp4": "video/jin/mp4/머리를 집중적으로 맞으신 거예요.mp4",
+      "korean": "머리를 집중적으로 맞으신 거예요?",
+      "russian": "Вам сильно досталось по голове?",
+      "new": true
+    },
+    {
+      "video": "video/jin/공방 얘기 아직 안 했잖아.webm",
+      "videoMp4": "video/jin/mp4/공방 얘기 아직 안 했잖아.mp4",
+      "korean": "공방 얘기 아직 안 했잖아",
+      "russian": "Мы же ещё не обсудили мастерскую",
+      "new": true
+    },
+    {
+      "video": "video/jin/그게 사랑이 아닐 리 없어.webm",
+      "videoMp4": "video/jin/mp4/그게 사랑이 아닐 리 없어.mp4",
+      "korean": "그게 사랑이 아닐 리 없어",
+      "russian": "Это не может не быть любовью",
+      "new": true
+    },
+    {
+      "video": "video/jin/네가 틀린 거야.webm",
+      "videoMp4": "video/jin/mp4/네가 틀린 거야.mp4",
+      "korean": "네가 틀린 거야",
+      "russian": "Это ты ошибаешься",
+      "new": true
+    },
+    {
+      "video": "video/jin/그럼 증명해 봐.webm",
+      "videoMp4": "video/jin/mp4/그럼 증명해 봐.mp4",
+      "korean": "그럼 증명해 봐",
+      "russian": "Тогда докажи",
+      "new": true
+    },
+    {
+      "video": "video/jin/네가 방금 뭘 걸었는지는 알아.webm",
+      "videoMp4": "video/jin/mp4/네가 방금 뭘 걸었는지는 알아.mp4",
+      "korean": "네가 방금 뭘 걸었는지는 알아?",
+      "russian": "Да ты знаешь, что я только что поставил на кон?",
       "new": true
     }
   ],
-  "b2": [],
   "b3": [],
   "b4": [],
   "b5": []

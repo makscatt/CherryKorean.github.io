@@ -291,7 +291,8 @@
     "masterJsonPath": "videothemes/json/videotheme22.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "1", "key": "b1" }
+      { "name": "1", "key": "b1" },
+      { "name": "2", "key": "b2" }
     ]
   },
     "theme23": {
