@@ -1205,7 +1205,7 @@
             }, 1000);
         }
         async function endLesson() {
-            clearLessonSession();
+            
             // Получаем доступ к элементам попапа
             const popupTitle = document.querySelector('#completion-popup-content-wrapper h2');
             const popupText = document.querySelector('#completion-popup-content-wrapper p');
@@ -1293,7 +1293,7 @@
 
             document.getElementById('completion-home-btn').addEventListener('click', goHome);
             document.getElementById('completion-retry-btn').addEventListener('click', () => {
-                clearLessonSession();
+                
                 window.location.reload();
             });
             document.getElementById('show-errors-btn').addEventListener('click', () => {
