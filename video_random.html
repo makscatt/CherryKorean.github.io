@@ -2003,7 +2003,7 @@
                 // --- ИЗМЕНЕНИЕ: Отправляем абсолютный URL ---
                 formData.append('original_video_url', absoluteVideoUrl);
 
-                const flaskServerUrl = 'https://koreanhelper-api.onrender.com/compare-audio';
+                const flaskServerUrl = 'https://korean-audio-api.onrender.com/compare-audio';
                 const response = await fetch(flaskServerUrl, {
                     method: 'POST',
                     body: formData
