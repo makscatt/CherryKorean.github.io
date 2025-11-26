@@ -768,6 +768,9 @@
             <button id="lang-toggle-input" class="lang-toggle-btn">
                 <img src="videothemes/icons/writing.png" alt="Ввод">
             </button>
+            <button id="lang-toggle-audio" class="lang-toggle-btn">
+                <img src="videothemes/icons/mic.png" alt="Аудио">
+            </button>
         </div>
         <div id="interaction-block">
             <div id="answer-buttons">
@@ -793,6 +796,16 @@
                     </div>
 
                     <button id="check-input-btn" onclick="checkTypedAnswer()">Проверить</button>
+                </div>
+                <div id="audio-answer-container"
+                    style="display: none; flex-direction: column; gap: 10px; flex: 1; justify-content: center; align-items: center;">
+                    <button id="record-audio-btn"
+                        style="width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; background-color: #f2f2f2;">
+                        <img src="videothemes/icons/mic_large.png" alt="Record" style="width: 50px; height: 50px;">
+                    </button>
+                    <div id="recording-status" style="display: none; margin-top: 10px; font-size: 16px;">Идет запись...
+                    </div>
+                    <div id="audio-result" style="margin-top: 10px; font-size: 20px; font-weight: bold;"></div>
                 </div>
 
                 <div id="KoreanButton">
@@ -1537,41 +1550,30 @@
 
             const choiceContainer = document.getElementById('choice-buttons-container');
             const inputContainer = document.getElementById('input-answer-container');
+            const audioContainer = document.getElementById('audio-answer-container'); // НОВОЕ
 
             const btnRu = document.getElementById('lang-toggle-ru');
             const btnKo = document.getElementById('lang-toggle-ko');
             const btnInput = document.getElementById('lang-toggle-input');
+            const btnAudio = document.getElementById('lang-toggle-audio'); // НОВОЕ
 
-            // Сначала убираем active со всех
-            [btnRu, btnKo, btnInput].forEach(btn => btn.classList.remove('active'));
+            // Сначала убираем active со всех и все скрываем
+            [btnRu, btnKo, btnInput, btnAudio].forEach(btn => btn.classList.remove('active'));
+            choiceContainer.style.display = 'none';
+            inputContainer.style.display = 'none';
+            audioContainer.style.display = 'none'; // НОВОЕ
 
             if (mode === 'input') {
-                choiceContainer.style.display = 'none';
                 inputContainer.style.display = 'flex';
                 btnInput.classList.add('active');
+                // ... остальная логика для 'input' ...
 
-                // --- НОВЫЙ КОД ---
-                // Принудительно ставим подсказку на корейский
-                const correctWord = easywords[currentWordIndex];
-                if (correctWord) {
-                    const showButton = document.getElementById("showKoreanButton");
-                    const hiddenTextContainer = document.getElementById("koreanText");
-                    const hiddenTextContent = document.getElementById("koreanTextContent");
-
-                    showButton.innerText = "Показать корейский текст";
-                    hiddenTextContent.innerText = correctWord.korean;
-
-                    // Сбрасываем состояние видимости кнопки
-                    hiddenTextContainer.style.display = "none";
-                    showButton.style.display = "inline-block";
-                }
-                // --- КОНЕЦ НОВОГО КОДА ---
+            } else if (mode === 'audio') { // НОВЫЙ БЛОК
+                audioContainer.style.display = 'flex';
+                btnAudio.classList.add('active');
 
             } else { // 'ru' или 'ko'
                 choiceContainer.style.display = 'flex';
-                inputContainer.style.display = 'none';
-
-                // Устанавливаем язык для режима выбора
                 localStorage.setItem('answerLanguage', mode);
 
                 if (mode === 'ko') {
@@ -1579,7 +1581,6 @@
                 } else {
                     btnRu.classList.add('active');
                 }
-
                 regenerateOptionsForCurrentWord();
             }
         }
@@ -1678,11 +1679,13 @@
             const btnRu = document.getElementById('lang-toggle-ru');
             const btnKo = document.getElementById('lang-toggle-ko');
             const btnInput = document.getElementById('lang-toggle-input');
+            const btnAudio = document.getElementById('lang-toggle-audio');
 
             // Привязываем новую функцию к кнопкам
             btnRu.addEventListener('click', () => setAnswerMode('ru'));
             btnKo.addEventListener('click', () => setAnswerMode('ko'));
             btnInput.addEventListener('click', () => setAnswerMode('input'));
+            btnAudio.addEventListener('click', () => setAnswerMode('audio'));
 
             // Инициализация режима при загрузке страницы
             const currentMode = localStorage.getItem('answerMode') || 'ru'; // Загружаем последний режим
@@ -1914,6 +1917,114 @@
         document.getElementById("speed-select").onchange = (e) => {
             video.playbackRate = parseFloat(e.target.value);
         };
+
+        // --- НОВЫЙ КОД ДЛЯ ЗАПИСИ АУДИО ---
+
+        let mediaRecorder;
+        let audioChunks = [];
+        let isRecording = false;
+
+        const recordButton = document.getElementById('record-audio-btn');
+        const recordingStatus = document.getElementById('recording-status');
+        const audioResult = document.getElementById('audio-result');
+
+        recordButton.addEventListener('click', async () => {
+            if (isRecording) {
+                // --- Останавливаем запись ---
+                mediaRecorder.stop();
+                isRecording = false;
+                recordButton.style.backgroundColor = '#f2f2f2'; // Возвращаем обычный цвет
+                recordingStatus.style.display = 'none';
+            } else {
+                // --- Начинаем запись ---
+                try {
+                    // Запрашиваем доступ к микрофону
+                    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+
+                    mediaRecorder = new MediaRecorder(stream);
+
+                    // Начинаем собирать данные
+                    mediaRecorder.ondataavailable = event => {
+                        audioChunks.push(event.data);
+                    };
+
+                    // Что делать, когда запись остановлена
+                    mediaRecorder.onstop = () => {
+                        // Собираем все кусочки в один аудиофайл (blob)
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+                        audioChunks = []; // Очищаем массив для следующей записи
+
+                        // TODO: Отправляем audioBlob на сервер
+                        console.log("Запись готова. Размер:", audioBlob.size);
+                        audioResult.innerText = "Анализ..."; // Показываем пользователю, что идет обработка
+
+                        sendAudioToServer(audioBlob);
+
+                        // Останавливаем дорожку микрофона, чтобы индикатор записи в браузере погас
+                        stream.getTracks().forEach(track => track.stop());
+                    };
+
+                    // Запускаем запись
+                    mediaRecorder.start();
+                    isRecording = true;
+                    recordButton.style.backgroundColor = '#ff7675'; // Меняем цвет на красный
+                    recordingStatus.style.display = 'block';
+                    audioResult.innerText = ""; // Очищаем предыдущий результат
+
+                } catch (error) {
+                    console.error("Ошибка доступа к микрофону:", error);
+                    alert("Не удалось получить доступ к микрофону. Пожалуйста, разрешите его использование в настройках браузера.");
+                }
+            }
+        });
+
+        async function sendAudioToServer(audioBlob) {
+            console.log('Готовим аудио и URL к отправке...');
+            const audioResult = document.getElementById('audio-result');
+            audioResult.innerText = "Анализ...";
+
+            const currentWord = easywords[currentWordIndex];
+            const relativeVideoUrl = currentWord.videoMp4 && /iPhone|iPad|iPod/.test(navigator.userAgent) ? currentWord.videoMp4 : currentWord.video;
+
+            if (!relativeVideoUrl) {
+                audioResult.innerText = "Ошибка: не найден URL эталонного видео.";
+                return;
+            }
+
+            try {
+                // --- НОВОЕ: Преобразуем относительный URL в абсолютный ---
+                // Это создаст полный URL, например "https://your-app-domain.com/video/squid%20game/file.webm"
+                const absoluteVideoUrl = new URL(relativeVideoUrl, document.location.href).href;
+                console.log("Отправляем абсолютный URL:", absoluteVideoUrl); // Для отладки
+
+                const formData = new FormData();
+                formData.append('user_audio', audioBlob, 'user_recording.webm');
+
+                // --- ИЗМЕНЕНИЕ: Отправляем абсолютный URL ---
+                formData.append('original_video_url', absoluteVideoUrl);
+
+                const flaskServerUrl = 'https://koreanhelper-api.onrender.com/compare-audio';
+                const response = await fetch(flaskServerUrl, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.status === 'success') {
+                    audioResult.innerText = `Схожесть: ${result.similarity}%`;
+                } else {
+                    console.error("Ошибка от сервера:", result);
+                    audioResult.innerText = `Ошибка: ${result.message || 'Неизвестная ошибка сервера'}`;
+                }
+
+            } catch (error) {
+                console.error("Сетевая ошибка:", error);
+                audioResult.innerText = "Ошибка сети. Не удалось отправить данные.";
+            }
+        }
+
+        // --- КОНЕЦ НОВОГО КОДА ---
     </script>
     <div id="popup" style="display: none;">
         <div id="popup-overlay"></div>
