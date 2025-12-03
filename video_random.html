@@ -1979,31 +1979,30 @@
         });
 
         async function sendAudioToServer(audioBlob) {
-            console.log('Готовим аудио и URL к отправке...');
+            console.log('Готовим аудио к отправке...');
             const audioResult = document.getElementById('audio-result');
-            audioResult.innerText = "Анализ...";
+            audioResult.innerText = "Анализ (Whisper)...";
 
             const currentWord = easywords[currentWordIndex];
-            const relativeVideoUrl = currentWord.videoMp4 && /iPhone|iPad|iPod/.test(navigator.userAgent) ? currentWord.videoMp4 : currentWord.video;
+            
+            // БЕРЕМ ТЕКСТ, А НЕ ВИДЕО
+            const referenceText = currentWord.korean; 
 
-            if (!relativeVideoUrl) {
-                audioResult.innerText = "Ошибка: не найден URL эталонного видео.";
+            if (!referenceText) {
+                audioResult.innerText = "Ошибка: нет текста для сравнения.";
                 return;
             }
 
             try {
-                // --- НОВОЕ: Преобразуем относительный URL в абсолютный ---
-                // Это создаст полный URL, например "https://your-app-domain.com/video/squid%20game/file.webm"
-                const absoluteVideoUrl = new URL(relativeVideoUrl, document.location.href).href;
-                console.log("Отправляем абсолютный URL:", absoluteVideoUrl); // Для отладки
-
                 const formData = new FormData();
                 formData.append('user_audio', audioBlob, 'user_recording.webm');
+                
+                // ОТПРАВЛЯЕМ ТЕКСТ
+                formData.append('reference_text', referenceText);
 
-                // --- ИЗМЕНЕНИЕ: Отправляем абсолютный URL ---
-                formData.append('original_video_url', absoluteVideoUrl);
-
-                const flaskServerUrl = 'https://korean-audio-api.onrender.com/compare-audio';
+                // Твой новый сервер
+                const flaskServerUrl = 'https://koreanhelper-api.onrender.com/compare-audio';
+                
                 const response = await fetch(flaskServerUrl, {
                     method: 'POST',
                     body: formData
@@ -2012,10 +2011,11 @@
                 const result = await response.json();
 
                 if (response.ok && result.status === 'success') {
-                    audioResult.innerText = `Схожесть: ${result.similarity}%`;
+                    // Сервер вернет similarity и распознанный текст (result.user_text)
+                    audioResult.innerHTML = `Схожесть: ${result.similarity}%<br><span style="font-size:14px; color:#555;">Вы сказали: ${result.user_text}</span>`;
                 } else {
                     console.error("Ошибка от сервера:", result);
-                    audioResult.innerText = `Ошибка: ${result.message || 'Неизвестная ошибка сервера'}`;
+                    audioResult.innerText = `Ошибка: ${result.message || 'Неизвестная ошибка'}`;
                 }
 
             } catch (error) {
