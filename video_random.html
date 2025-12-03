@@ -1992,7 +1992,7 @@
         startBtn.addEventListener('click', async () => {
             try {
                 // 1. Получаем доступ ТОЛЬКО ЕСЛИ его еще нет или он неактивен
-                if (!globalStream || !globalStream.active) {
+                if (!globalStream || !globalStream.getAudioTracks().length || globalStream.getAudioTracks()[0].readyState !== 'live') {
                     globalStream = await navigator.mediaDevices.getUserMedia({ audio: true });
                 }
 
