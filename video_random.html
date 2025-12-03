@@ -1974,8 +1974,7 @@
             video.playbackRate = parseFloat(e.target.value);
         };
 
-        // --- НОВЫЙ КОД ДЛЯ ЗАПИСИ АУДИО ---
-
+        // Глобальные переменные для аудио
         let mediaRecorder;
         let audioChunks = [];
         let audioContext;
@@ -1983,6 +1982,7 @@
         let microphone;
         let silenceTimer;
         let animationId;
+        let globalStream = null; // Храним доступ к микрофону здесь
 
         const startBtn = document.getElementById('start-record-btn');
         const stopBtn = document.getElementById('stop-record-btn');
@@ -1991,69 +1991,80 @@
 
         startBtn.addEventListener('click', async () => {
             try {
-                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-
-                // --- 1. Настройка записи ---
-                if (!mediaRecorder || mediaRecorder.state === 'inactive') {
-                    mediaRecorder = new MediaRecorder(stream);
-                    mediaRecorder.ondataavailable = event => audioChunks.push(event.data);
-                    mediaRecorder.onstop = () => {
-                        const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
-                        audioChunks = [];
-                        console.log("Запись готова. Размер:", audioBlob.size);
-                        audioResult.innerHTML = '<span style="color: grey; font-size: 16px;">Анализ...</span>';
-                        sendAudioToServer(audioBlob);
-
-                        // Останавливаем потоки
-                        stream.getTracks().forEach(track => track.stop());
-                        if (audioContext) audioContext.close();
-                        cancelAnimationFrame(animationId);
-                        clearTimeout(silenceTimer);
-                    };
+                // 1. Получаем доступ ТОЛЬКО ЕСЛИ его еще нет или он неактивен
+                if (!globalStream || !globalStream.active) {
+                    globalStream = await navigator.mediaDevices.getUserMedia({ audio: true });
                 }
+
+                // 2. Настройка MediaRecorder (используем сохраненный поток)
+                mediaRecorder = new MediaRecorder(globalStream);
+
+                mediaRecorder.ondataavailable = event => {
+                    if (event.data.size > 0) {
+                        audioChunks.push(event.data);
+                    }
+                };
+
+                mediaRecorder.onstop = () => {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+                    audioChunks = []; // Очищаем буфер
+
+                    console.log("Запись завершена. Размер:", audioBlob.size);
+                    audioResult.innerHTML = '<span style="color: grey; font-size: 16px;">Анализ...</span>';
+                    sendAudioToServer(audioBlob);
+
+                    // ВАЖНО: Мы НЕ останавливаем globalStream здесь!
+                    // Мы останавливаем только визуализацию/анализ
+                    cancelAnimationFrame(animationId);
+                    clearTimeout(silenceTimer);
+                };
 
                 mediaRecorder.start();
 
-                // --- 2. Настройка детектора тишины ---
-                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                // 3. Настройка детектора тишины
+                if (!audioContext) {
+                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (audioContext.state === 'suspended') {
+                    await audioContext.resume();
+                }
+
                 analyser = audioContext.createAnalyser();
-                microphone = audioContext.createMediaStreamSource(stream);
+                microphone = audioContext.createMediaStreamSource(globalStream);
                 microphone.connect(analyser);
 
                 analyser.fftSize = 256;
                 const bufferLength = analyser.frequencyBinCount;
                 const dataArray = new Uint8Array(bufferLength);
 
-                // Функция для остановки
+                // Логика остановки
                 const triggerStop = () => {
                     if (mediaRecorder && mediaRecorder.state === 'recording') {
                         stopBtn.click();
                     }
                 };
 
-                // Защитный таймер (максимум 10 секунд)
+                // Защитный таймер (10 сек)
                 const maxDurationTimer = setTimeout(triggerStop, 10000);
 
-                // Таймер тишины (первый запуск)
+                // Детектор тишины
                 let silenceStart = Date.now();
 
                 function detectSilence() {
                     analyser.getByteFrequencyData(dataArray);
 
-                    // Вычисляем среднюю громкость
                     let sum = 0;
                     for (let i = 0; i < bufferLength; i++) {
                         sum += dataArray[i];
                     }
                     let average = sum / bufferLength;
 
-                    // Порог чувствительности (можно менять: 10 - чувствительно, 20 - грубее)
+                    // Порог громкости (10)
                     if (average > 10) {
-                        // Есть звук - сбрасываем таймер тишины
                         silenceStart = Date.now();
                     } else {
-                        // Тишина - проверяем сколько времени прошло
-                        if (Date.now() - silenceStart > 1500) { // 1.5 секунды тишины
+                        // Если тишина длится 1.5 сек
+                        if (Date.now() - silenceStart > 1500) {
                             clearTimeout(maxDurationTimer);
                             triggerStop();
                             return;
@@ -2063,9 +2074,9 @@
                     animationId = requestAnimationFrame(detectSilence);
                 }
 
-                detectSilence(); // Запуск проверки
+                detectSilence();
 
-                // --- 3. UI ---
+                // UI
                 startBtn.style.display = 'none';
                 stopBtn.style.display = 'flex';
                 recordingStatus.style.display = 'block';
@@ -2073,7 +2084,7 @@
 
             } catch (error) {
                 console.error("Ошибка:", error);
-                alert("Ошибка доступа к микрофону.");
+                alert("Ошибка доступа к микрофону. Проверьте настройки браузера.");
             }
         });
 
@@ -2114,7 +2125,7 @@
                     const score = result.similarity;
                     let color = '#ff4d4d'; // Красный по умолчанию
                     let message = 'Попробуйте еще раз';
-                    
+
                     const boxes = document.querySelectorAll('.progress-box');
                     const totalBoxes = boxes.length;
 
@@ -2124,9 +2135,9 @@
                         // === ОТЛИЧНО (Зеленая зона) ===
                         color = '#2ecc71';
                         message = 'Великолепно!';
-                        
+
                         sessionStats.correct++;
-                        
+
                         // Помечаем слово как выученное
                         if (currentWord.new) {
                             currentWord.new = false;
@@ -2135,7 +2146,7 @@
                             localStorage.setItem('easywords', JSON.stringify(storedWords));
                         }
 
-                        new Audio('excellent.mp3').play().catch(() => {});
+                        new Audio('excellent.mp3').play().catch(() => { });
 
                         // Добавляем прогресс
                         if (progressCount < totalBoxes) {
@@ -2153,7 +2164,7 @@
                             setTimeout(() => starsElement.classList.remove("pulsing"), 300);
                             new Audio('starsuccess.mp3').play();
                             saveStars();
-                            
+
                             setTimeout(() => {
                                 progressCount = 0;
                                 boxes.forEach(box => box.style.backgroundColor = 'white');
@@ -2164,7 +2175,7 @@
 
                         } else {
                             // Переход к следующему слову
-                             setTimeout(() => {
+                            setTimeout(() => {
                                 audioResult.innerHTML = '';
                                 loadWordsAndSetOptions();
                             }, 1500);
@@ -2172,7 +2183,7 @@
 
                     } else {
                         // === НЕ ИДЕАЛЬНО ===
-                        
+
                         if (score >= 70) {
                             // Синяя зона (Хорошо, без штрафа)
                             color = '#3498db';
@@ -2205,7 +2216,7 @@
                             correctAnswer: referenceText
                         });
                     }
-                    
+
                     sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
 
                     // Отображаем результат
