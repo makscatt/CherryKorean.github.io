@@ -2100,8 +2100,8 @@
         async function sendAudioToServer(audioBlob) {
             const audioResult = document.getElementById('audio-result');
             
-            // Сбрасываем содержимое и показываем статус
-            audioResult.style.flexDirection = 'column'; // Возвращаем в колонку для сообщения "Анализ"
+            // Сброс в исходное состояние
+            audioResult.style.flexDirection = 'column'; 
             audioResult.innerHTML = '<span style="color: grey; font-size: 16px;">Анализ...</span>';
 
             const currentWord = easywords[currentWordIndex];
@@ -2129,7 +2129,7 @@
                     const recognizedText = result.user_text || "";
 
                     let color = '#ff4d4d'; 
-                    let message = 'Еще раз'; // Сократил текст, чтобы влезал
+                    let message = 'Еще раз'; 
 
                     const boxes = document.querySelectorAll('.progress-box');
                     const totalBoxes = boxes.length;
@@ -2207,36 +2207,35 @@
 
                     sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
 
-                    // --- ВАЖНОЕ ИЗМЕНЕНИЕ СТИЛЕЙ И HTML ---
-                    
-                    // 1. Переключаем контейнер в горизонтальный режим
+                    // --- СТИЛИ ДЛЯ АДАПТИВНОСТИ ---
                     audioResult.style.flexDirection = 'row';
                     audioResult.style.justifyContent = 'space-between';
                     audioResult.style.width = '100%';
 
-                    // 2. Вставляем HTML: Слева текст, справа оценка
                     audioResult.innerHTML = `
-                        <!-- ОБЛАСТЬ ТЕКСТА (Растягивается) -->
-                        <div style="flex: 1; display: flex; align-items: center; overflow: hidden; height: 100%; padding-right: 10px;">
+                        <!-- ЛЕВАЯ ЧАСТЬ (ТЕКСТ): min-width: 0 обязателен для flex -->
+                        <div style="flex: 1; min-width: 0; display: flex; align-items: center; padding-right: 10px; box-sizing: border-box;">
                             <div style="
-                                font-size: 24px; 
+                                font-size: clamp(14px, 3.5vw, 22px); /* Шрифт меняется от 14 до 22px в зависимости от экрана */
                                 font-weight: 600; 
                                 color: #333; 
                                 background: #fff; 
-                                padding: 8px 12px; 
+                                padding: 8px 10px; 
                                 border-radius: 10px; 
                                 border: 1px solid #ccc; 
                                 width: 100%; 
-                                white-space: nowrap; 
-                                overflow: hidden; 
-                                text-overflow: ellipsis;
+                                max-height: 100px; /* Ограничение по высоте */
+                                overflow-y: auto;  /* Скролл, если текста слишком много */
+                                white-space: normal; /* Разрешаем перенос строк */
+                                word-wrap: break-word; /* Переносим длинные слова */
                                 box-sizing: border-box;
+                                line-height: 1.2;
                             ">
                                 ${recognizedText}
                             </div>
                         </div>
 
-                        <!-- ОБЛАСТЬ ОЦЕНКИ (Фиксирована) -->
+                        <!-- ПРАВАЯ ЧАСТЬ (ОЦЕНКА): Фиксирована -->
                         <div style="flex-shrink: 0; width: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                             <div style="font-size: 32px; font-weight: bold; color: ${color}; line-height: 1;">
                                 ${score}%
