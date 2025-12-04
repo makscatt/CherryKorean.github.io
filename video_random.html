@@ -1846,77 +1846,96 @@
             document.body.appendChild(preload);
         }
 
-        function analyzeKoreanText() {
+        function analyzeKoreanText(forceUpdate = false) {
             // Проверяем, что слово существует
             if (currentWordIndex === null || !easywords[currentWordIndex]) {
-                console.log("Анализ невозможен: слово еще не загружено.");
                 return;
             }
 
-            // ИЗМЕНЕНИЕ: Берем корейский текст напрямую из данных, а не с экрана
             const correctWord = easywords[currentWordIndex];
             const text = correctWord.korean;
 
             if (!text) return;
 
+            // 1. ПОКАЗЫВАЕМ ЗАГРУЗКУ
+            const popup = document.getElementById("popup");
+            const popupContent = document.getElementById("popupContent");
+
+            const loadingText = forceUpdate ? "Анализирую заново" : "Анализирую...";
+
+            popupContent.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 150px;">
+            <div class="loader"></div>
+            <div class="analyzing-text">${loadingText}</div>
+        </div>
+    `;
+            popup.style.display = "block";
+
+            // 2. ОТПРАВЛЯЕМ ЗАПРОС
             fetch("https://koreanhelper-api.onrender.com/analyze", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ text })
+                body: JSON.stringify({
+                    text: text,
+                    force: forceUpdate,
+                    secret: "my_super_secret_password_123"
+                })
             })
                 .then(res => res.json())
                 .then(data => {
-                    const original =
-                        `<div style="text-align:center; font-size:18px; margin-bottom:10px;">
-       <strong>${text}</strong>
-     </div>`;
+                    const original = `<div style="text-align:center; font-size:18px; margin-bottom:10px;"><strong>${text}</strong></div>`;
 
-                    const breakdown = data.tokens
-                        .map(t => `<span style="color:${t.color}">${t.word}</span>`)
-                        .join('_');
-                    const breakdownBlock =
-                        `<div style="text-align:center; font-size:18px; margin:8px 0;">
-       ${breakdown}
-     </div>`;
+                    const breakdown = data.tokens.map(t => `<span style="color:${t.color}">${t.word}</span>`).join('_');
+                    const breakdownBlock = `<div style="text-align:center; font-size:18px; margin:8px 0;">${breakdown}</div>`;
 
-                    let tokenBlock = '';
-                    if (window.Telegram && Telegram.WebApp.initDataUnsafe?.user?.id === 910912532) {
-                        tokenBlock =
-                            `<div style="margin-bottom:10px;">
-         <strong>Разбор с POS:</strong><br>` +
-                            data.tokens
-                                .map(t => `${t.word} / ${t.pos}`)
-                                .join(' ') +
-                            `</div>`;
-                    }
+                    // --- ИЗМЕНЕНИЕ ЗДЕСЬ: Новая строка для каждого слова ---
+                    const tokenBlock = `<div style="margin-bottom:15px; font-size: 14px; color: #555; text-align: left;">
+             <strong>Пословный разбор:</strong><div style="margin-top: 5px;">` +
+                        data.tokens.map(t =>
+                            `<div>• <span style="color:${t.color}; font-weight:bold;">${t.word}</span> — ${t.pos}</div>`
+                        ).join('') +
+                        `</div></div>`;
+                    // -----------------------------------------------------
 
                     const grammarBlocks = data.grammar_matches.map(g => {
                         const showMeaning = typeof g.meaning === 'string' && g.meaning !== '';
                         const showExample = typeof g.example === 'string' && g.example !== '';
-
                         const pattern = `<strong>${g.pattern}</strong>:`;
-                        const meaning = showMeaning
-                            ? `<div style="margin-left:10px; color:#003366;">${g.meaning}</div>`
-                            : '';
-                        const example = showExample
-                            ? `<div style="margin-left:10px; color:#004d00;"><em>${g.example}</em></div>`
-                            : '';
-
-                        return `${pattern}<br>${meaning}${example}
-            <hr style="margin:6px 0;">`;
+                        const meaning = showMeaning ? `<div style="margin-left:10px; color:#003366;">${g.meaning}</div>` : '';
+                        const example = showExample ? `<div style="margin-left:10px; color:#004d00;"><em>${g.example}</em></div>` : '';
+                        return `${pattern}<br>${meaning}${example}<hr style="margin:6px 0;">`;
                     }).join('');
 
-                    const grammarBlock = grammarBlocks || '<div>Грамматики: Еще не все добавил...</div>';
-
+                    const grammarBlock = grammarBlocks || '<div>Грамматики не найдены.</div>';
                     const headerFixed = `<div id="popupHeader">${original}${breakdownBlock}</div>`;
-                    const content = headerFixed + tokenBlock + grammarBlock;
-                    const popup = document.getElementById("popup");
-                    document.getElementById("popupContent").innerHTML = content;
-                    popup.style.display = "block";
+
+                    popupContent.innerHTML = headerFixed + tokenBlock + grammarBlock;
+
+                    // --- ЛОГИКА АДМИНА ---
+                    const myTelegramId = 910912532;
+                    const userTelegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
+
+                    if (userTelegramId === myTelegramId) {
+                        const footer = document.getElementById("popupFooter");
+                        if (!document.getElementById("adminRefreshBtn")) {
+                            const refreshBtn = document.createElement("button");
+                            refreshBtn.id = "adminRefreshBtn";
+                            refreshBtn.innerText = "↻";
+                            refreshBtn.style.backgroundColor = "#ffeb3b";
+                            refreshBtn.style.border = "1px solid #fbc02d";
+                            refreshBtn.style.marginLeft = "10px";
+                            refreshBtn.style.fontWeight = "bold";
+
+                            refreshBtn.onclick = function () {
+                                analyzeKoreanText(true);
+                            };
+                            footer.insertBefore(refreshBtn, footer.lastElementChild);
+                        }
+                    }
                 })
-                .catch(() => {
-                    document.getElementById("popupContent").innerText = "Ошибка при анализе.";
-                    document.getElementById("popup").style.display = "block";
+                .catch((err) => {
+                    console.error(err);
+                    popupContent.innerHTML = `<div style="text-align: center; color: red;"><h3>Ошибка</h3><p>${err.message}</p></div>`;
                 });
         }
 
@@ -2099,9 +2118,9 @@
 
         async function sendAudioToServer(audioBlob) {
             const audioResult = document.getElementById('audio-result');
-            
+
             // Сброс в исходное состояние
-            audioResult.style.flexDirection = 'column'; 
+            audioResult.style.flexDirection = 'column';
             audioResult.innerHTML = '<span style="color: grey; font-size: 16px;">Анализ...</span>';
 
             const currentWord = easywords[currentWordIndex];
@@ -2128,8 +2147,8 @@
                     const score = result.similarity;
                     const recognizedText = result.user_text || "";
 
-                    let color = '#ff4d4d'; 
-                    let message = 'Еще раз'; 
+                    let color = '#ff4d4d';
+                    let message = 'Еще раз';
 
                     const boxes = document.querySelectorAll('.progress-box');
                     const totalBoxes = boxes.length;
@@ -2140,7 +2159,7 @@
                         color = '#2ecc71';
                         message = 'Отлично!';
                         sessionStats.correct++;
-                        
+
                         if (currentWord.new) {
                             currentWord.new = false;
                             const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
@@ -2265,6 +2284,7 @@
         <div id="popup-content-wrapper">
             <div id="popupContent"></div>
             <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <div id="popupFooter" style="display: flex; justify-content: space-between; margin-top: 10px;"></div>
                 <button onclick="closePopup()">Закрыть</button>
                 <button style="opacity: 0.7;" onclick="window.open('https://t.me/KoreanMakscatt', '_blank')">Сообщить об
                     ошибке</button>

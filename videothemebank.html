@@ -836,69 +836,104 @@
             document.body.appendChild(preload);
         }
 
-        function analyzeKoreanText() {
-            const textElem = document.getElementById("koreanText");
-            const text = textElem.innerText.trim();
+        function analyzeKoreanText(forceUpdate = false) {
+            // Проверяем, что слово существует
+            if (currentWordIndex === null || !easywords[currentWordIndex]) {
+                return;
+            }
+
+            const correctWord = easywords[currentWordIndex];
+            const text = correctWord.korean;
+
             if (!text) return;
 
+            // 1. ПОКАЗЫВАЕМ ЗАГРУЗКУ
+            const popup = document.getElementById("popup");
+            const popupContent = document.getElementById("popupContent");
+
+            // Если это принудительное обновление, пишем другой текст
+            const loadingText = forceUpdate ? "Анализирую заново" : "Анализирую...";
+
+            popupContent.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 150px;">
+            <div class="loader"></div>
+            <div class="analyzing-text">${loadingText}</div>
+        </div>
+    `;
+            popup.style.display = "block";
+
+            // 2. ОТПРАВЛЯЕМ ЗАПРОС
             fetch("https://koreanhelper-api.onrender.com/analyze", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ text })
+                body: JSON.stringify({
+                    text: text,
+                    force: forceUpdate, // Флаг принудительного обновления
+                    secret: "my_super_secret_password_123" // Твой пароль админа с сервера
+                })
             })
                 .then(res => res.json())
                 .then(data => {
-                    const original =
-                        `<div style="text-align:center; font-size:18px; margin-bottom:10px;">
-           <strong>${text}</strong>
-         </div>`;
+                    // --- ГЕНЕРАЦИЯ HTML (как раньше) ---
+                    const original = `<div style="text-align:center; font-size:18px; margin-bottom:10px;"><strong>${text}</strong></div>`;
 
-                    const breakdown = data.tokens
-                        .map(t => `<span style="color:${t.color}">${t.word}</span>`)
-                        .join(' + ');
-                    const breakdownBlock =
-                        `<div style="text-align:center; font-size:16px; margin:8px 0;">
-           <strong>Разбор:</strong><span style="font-weight:normal; opacity:0.6;">(Работаю над идеальностью разбора)</span><br>${breakdown}
-         </div>`;
+                    const breakdown = data.tokens.map(t => `<span style="color:${t.color}">${t.word}</span>`).join('_');
+                    const breakdownBlock = `<div style="text-align:center; font-size:18px; margin:8px 0;">${breakdown}</div>`;
 
+                    // Блок токенов (виден только тебе)
                     let tokenBlock = '';
-                    if (window.Telegram && Telegram.WebApp.initDataUnsafe?.user?.id === 910912532) {
-                        tokenBlock =
-                            `<div style="margin-bottom:10px;">
-             <strong>Разбор с POS:</strong><br>` +
-                            data.tokens
-                                .map(t => `${t.word} / ${t.pos}`)
-                                .join(' ') +
+                    const myTelegramId = 910912532; // Твой ID
+                    const userTelegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
+
+                    if (userTelegramId === myTelegramId) {
+                        tokenBlock = `<div style="margin-bottom:10px; font-size: 12px; color: grey;">
+                 <strong>DEBUG POS:</strong><br>` +
+                            data.tokens.map(t => `${t.word}/${t.pos}`).join(' ') +
                             `</div>`;
                     }
 
                     const grammarBlocks = data.grammar_matches.map(g => {
                         const showMeaning = typeof g.meaning === 'string' && g.meaning !== '';
                         const showExample = typeof g.example === 'string' && g.example !== '';
-
                         const pattern = `<strong>${g.pattern}</strong>:`;
-                        const meaning = showMeaning
-                            ? `<div style="margin-left:10px; color:#003366;">${g.meaning}</div>` // тёмно-синий
-                            : '';
-                        const example = showExample
-                            ? `<div style="margin-left:10px; color:#004d00;"><em>${g.example}</em></div>` // тёмно-зелёный
-                            : '';
-
-                        return `${pattern}<br>${meaning}${example}
-                <hr style="margin:6px 0;">`;
+                        const meaning = showMeaning ? `<div style="margin-left:10px; color:#003366;">${g.meaning}</div>` : '';
+                        const example = showExample ? `<div style="margin-left:10px; color:#004d00;"><em>${g.example}</em></div>` : '';
+                        return `${pattern}<br>${meaning}${example}<hr style="margin:6px 0;">`;
                     }).join('');
 
-                    const grammarBlock = grammarBlocks || '<div>Грамматики: Еще не все добавил...</div>';
-
+                    const grammarBlock = grammarBlocks || '<div>Грамматики не найдены.</div>';
                     const headerFixed = `<div id="popupHeader">${original}${breakdownBlock}</div>`;
-                    const content = headerFixed + tokenBlock + grammarBlock;
-                    const popup = document.getElementById("popup");
-                    document.getElementById("popupContent").innerHTML = content;
-                    popup.style.display = "block";
+
+                    popupContent.innerHTML = headerFixed + tokenBlock + grammarBlock;
+
+                    // --- ДОБАВЛЕНИЕ КНОПКИ ОБНОВИТЬ (ТОЛЬКО ДЛЯ АДМИНА) ---
+                    if (userTelegramId === myTelegramId) {
+                        // Ищем футер
+                        const footer = document.getElementById("popupFooter");
+
+                        // Проверяем, нет ли уже кнопки (чтобы не дублировать при повторном открытии)
+                        if (!document.getElementById("adminRefreshBtn")) {
+                            const refreshBtn = document.createElement("button");
+                            refreshBtn.id = "adminRefreshBtn";
+                            refreshBtn.innerText = "↻";
+                            refreshBtn.style.backgroundColor = "#ffeb3b"; // Желтый цвет
+                            refreshBtn.style.border = "1px solid #fbc02d";
+                            refreshBtn.style.marginLeft = "10px";
+                            refreshBtn.style.fontWeight = "bold";
+
+                            // При клике вызываем эту же функцию с force=true
+                            refreshBtn.onclick = function () {
+                                analyzeKoreanText(true);
+                            };
+
+                            // Вставляем кнопку посередине или в конец
+                            footer.insertBefore(refreshBtn, footer.lastElementChild);
+                        }
+                    }
                 })
-                .catch(() => {
-                    document.getElementById("popupContent").innerText = "Ошибка при анализе.";
-                    document.getElementById("popup").style.display = "block";
+                .catch((err) => {
+                    console.error(err);
+                    popupContent.innerHTML = `<div style="text-align: center; color: red;"><h3>Ошибка</h3><p>${err.message}</p></div>`;
                 });
         }
 
@@ -966,6 +1001,7 @@
         <div id="popup-content-wrapper">
             <div id="popupContent"></div>
             <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <div id="popupFooter" style="display: flex; justify-content: space-between; margin-top: 10px;"></div>
                 <button onclick="closePopup()">Закрыть</button>
                 <button style="opacity: 0.7;" onclick="window.open('https://t.me/KoreanMakscatt', '_blank')">Сообщить об
                     ошибке</button>
