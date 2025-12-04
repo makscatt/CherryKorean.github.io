@@ -2099,6 +2099,9 @@
 
         async function sendAudioToServer(audioBlob) {
             const audioResult = document.getElementById('audio-result');
+            
+            // Сбрасываем содержимое и показываем статус
+            audioResult.style.flexDirection = 'column'; // Возвращаем в колонку для сообщения "Анализ"
             audioResult.innerHTML = '<span style="color: grey; font-size: 16px;">Анализ...</span>';
 
             const currentWord = easywords[currentWordIndex];
@@ -2123,22 +2126,21 @@
 
                 if (response.ok && result.status === 'success') {
                     const score = result.similarity;
-                    let color = '#ff4d4d'; // Красный по умолчанию
-                    let message = 'Попробуйте еще раз';
+                    const recognizedText = result.user_text || "";
+
+                    let color = '#ff4d4d'; 
+                    let message = 'Еще раз'; // Сократил текст, чтобы влезал
 
                     const boxes = document.querySelectorAll('.progress-box');
                     const totalBoxes = boxes.length;
 
-                    sessionStats.total++; // Увеличиваем счетчик попыток
+                    sessionStats.total++;
 
                     if (score >= 90) {
-                        // === ОТЛИЧНО (Зеленая зона) ===
                         color = '#2ecc71';
-                        message = 'Великолепно!';
-
+                        message = 'Отлично!';
                         sessionStats.correct++;
-
-                        // Помечаем слово как выученное
+                        
                         if (currentWord.new) {
                             currentWord.new = false;
                             const storedWords = JSON.parse(localStorage.getItem('easywords')) || {};
@@ -2148,14 +2150,12 @@
 
                         new Audio('excellent.mp3').play().catch(() => { });
 
-                        // Добавляем прогресс
                         if (progressCount < totalBoxes) {
                             boxes[progressCount].style.backgroundColor = 'lightgreen';
                             progressCount++;
                             saveProgressBoxes();
                         }
 
-                        // Если уровень пройден
                         if (progressCount === totalBoxes) {
                             Game.stars++;
                             updateStarsUI();
@@ -2164,40 +2164,30 @@
                             setTimeout(() => starsElement.classList.remove("pulsing"), 300);
                             new Audio('starsuccess.mp3').play();
                             saveStars();
-
                             setTimeout(() => {
                                 progressCount = 0;
                                 boxes.forEach(box => box.style.backgroundColor = 'white');
                                 localStorage.setItem(window.location.pathname + "_progressCount", 0);
                                 audioResult.innerHTML = '';
                                 loadWordsAndSetOptions();
-                            }, 1500);
-
+                            }, 2500);
                         } else {
-                            // Переход к следующему слову
                             setTimeout(() => {
                                 audioResult.innerHTML = '';
                                 loadWordsAndSetOptions();
-                            }, 1500);
+                            }, 2500);
                         }
 
                     } else {
-                        // === НЕ ИДЕАЛЬНО ===
-
                         if (score >= 70) {
-                            // Синяя зона (Хорошо, без штрафа)
                             color = '#3498db';
-                            message = 'Хорошо, но нужно точнее';
+                            message = 'Хорошо';
                         } else if (score >= 50) {
-                            // Желтая зона (Нормально, без штрафа)
                             color = '#f39c12';
                             message = 'Неплохо';
                         } else {
-                            // === КРАСНАЯ ЗОНА (Плохо, штраф) ===
                             color = '#ff4d4d';
-                            message = 'Попробуйте еще раз';
-
-                            // Штраф ТОЛЬКО ЗДЕСЬ
+                            message = 'Еще раз';
                             if (progressCount > 0) {
                                 const index = Math.min(progressCount - 1, boxes.length - 1);
                                 boxes[index].style.backgroundColor = 'lightcoral';
@@ -2208,34 +2198,64 @@
                                 }, 300);
                             }
                         }
-
-                        // Записываем ошибку в статистику (для любой оценки ниже 90)
                         sessionStats.errors.push({
                             question: referenceText,
-                            yourAnswer: `Аудио (${score}%)`,
+                            yourAnswer: `Аудио (${score}%): ${recognizedText}`,
                             correctAnswer: referenceText
                         });
                     }
 
                     sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
 
-                    // Отображаем результат
+                    // --- ВАЖНОЕ ИЗМЕНЕНИЕ СТИЛЕЙ И HTML ---
+                    
+                    // 1. Переключаем контейнер в горизонтальный режим
+                    audioResult.style.flexDirection = 'row';
+                    audioResult.style.justifyContent = 'space-between';
+                    audioResult.style.width = '100%';
+
+                    // 2. Вставляем HTML: Слева текст, справа оценка
                     audioResult.innerHTML = `
-                        <div style="font-size: 40px; font-weight: bold; color: ${color}; margin-bottom: 5px; line-height: 1;">
-                            ${score}%
+                        <!-- ОБЛАСТЬ ТЕКСТА (Растягивается) -->
+                        <div style="flex: 1; display: flex; align-items: center; overflow: hidden; height: 100%; padding-right: 10px;">
+                            <div style="
+                                font-size: 24px; 
+                                font-weight: 600; 
+                                color: #333; 
+                                background: #fff; 
+                                padding: 8px 12px; 
+                                border-radius: 10px; 
+                                border: 1px solid #ccc; 
+                                width: 100%; 
+                                white-space: nowrap; 
+                                overflow: hidden; 
+                                text-overflow: ellipsis;
+                                box-sizing: border-box;
+                            ">
+                                ${recognizedText}
+                            </div>
                         </div>
-                        <div style="font-size: 16px; color: #555;">
-                            ${message}
+
+                        <!-- ОБЛАСТЬ ОЦЕНКИ (Фиксирована) -->
+                        <div style="flex-shrink: 0; width: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <div style="font-size: 32px; font-weight: bold; color: ${color}; line-height: 1;">
+                                ${score}%
+                            </div>
+                            <div style="font-size: 12px; color: #555; margin-top: 4px; white-space: nowrap;">
+                                ${message}
+                            </div>
                         </div>
                     `;
 
                 } else {
-                    audioResult.innerText = "Не удалось распознать.";
+                    audioResult.style.flexDirection = 'column';
+                    audioResult.innerText = "Не распознано";
                 }
 
             } catch (error) {
                 console.error(error);
-                audioResult.innerText = "Ошибка сети.";
+                audioResult.style.flexDirection = 'column';
+                audioResult.innerText = "Ошибка сети";
             }
         }
 
