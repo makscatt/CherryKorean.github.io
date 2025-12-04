@@ -851,7 +851,6 @@
             const popup = document.getElementById("popup");
             const popupContent = document.getElementById("popupContent");
 
-            // Если это принудительное обновление, пишем другой текст
             const loadingText = forceUpdate ? "Анализирую заново" : "Анализирую...";
 
             popupContent.innerHTML = `
@@ -868,29 +867,25 @@
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     text: text,
-                    force: forceUpdate, // Флаг принудительного обновления
-                    secret: "my_super_secret_password_123" // Твой пароль админа с сервера
+                    force: forceUpdate,
+                    secret: "my_super_secret_password_123"
                 })
             })
                 .then(res => res.json())
                 .then(data => {
-                    // --- ГЕНЕРАЦИЯ HTML (как раньше) ---
                     const original = `<div style="text-align:center; font-size:18px; margin-bottom:10px;"><strong>${text}</strong></div>`;
 
                     const breakdown = data.tokens.map(t => `<span style="color:${t.color}">${t.word}</span>`).join('_');
                     const breakdownBlock = `<div style="text-align:center; font-size:18px; margin:8px 0;">${breakdown}</div>`;
 
-                    // Блок токенов (виден только тебе)
-                    let tokenBlock = '';
-                    const myTelegramId = 910912532; // Твой ID
-                    const userTelegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
-
-                    if (userTelegramId === myTelegramId) {
-                        tokenBlock = `<div style="margin-bottom:10px; font-size: 12px; color: grey;">
-                 <strong>DEBUG POS:</strong><br>` +
-                            data.tokens.map(t => `${t.word}/${t.pos}`).join(' ') +
-                            `</div>`;
-                    }
+                    // --- ИЗМЕНЕНИЕ ЗДЕСЬ: Новая строка для каждого слова ---
+                    const tokenBlock = `<div style="margin-bottom:15px; font-size: 14px; color: #555; text-align: left;">
+             <strong>Дословный разбор:</strong><div style="margin-top: 5px;">` +
+                        data.tokens.map(t =>
+                            `<div>• <span style="color:${t.color}; font-weight:bold;">${t.word}</span> — ${t.pos}</div>`
+                        ).join('') +
+                        `</div></div>`;
+                    // -----------------------------------------------------
 
                     const grammarBlocks = data.grammar_matches.map(g => {
                         const showMeaning = typeof g.meaning === 'string' && g.meaning !== '';
@@ -906,27 +901,24 @@
 
                     popupContent.innerHTML = headerFixed + tokenBlock + grammarBlock;
 
-                    // --- ДОБАВЛЕНИЕ КНОПКИ ОБНОВИТЬ (ТОЛЬКО ДЛЯ АДМИНА) ---
-                    if (userTelegramId === myTelegramId) {
-                        // Ищем футер
-                        const footer = document.getElementById("popupFooter");
+                    // --- ЛОГИКА АДМИНА ---
+                    const myTelegramId = 910912532;
+                    const userTelegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
 
-                        // Проверяем, нет ли уже кнопки (чтобы не дублировать при повторном открытии)
+                    if (userTelegramId === myTelegramId) {
+                        const footer = document.getElementById("popupFooter");
                         if (!document.getElementById("adminRefreshBtn")) {
                             const refreshBtn = document.createElement("button");
                             refreshBtn.id = "adminRefreshBtn";
                             refreshBtn.innerText = "↻";
-                            refreshBtn.style.backgroundColor = "#ffeb3b"; // Желтый цвет
+                            refreshBtn.style.backgroundColor = "#ffeb3b";
                             refreshBtn.style.border = "1px solid #fbc02d";
                             refreshBtn.style.marginLeft = "10px";
                             refreshBtn.style.fontWeight = "bold";
 
-                            // При клике вызываем эту же функцию с force=true
                             refreshBtn.onclick = function () {
                                 analyzeKoreanText(true);
                             };
-
-                            // Вставляем кнопку посередине или в конец
                             footer.insertBefore(refreshBtn, footer.lastElementChild);
                         }
                     }
