@@ -577,7 +577,7 @@
 
       // Получаем прогресс по урокам этой главы
       const chapterId = localStorage.getItem('selectedThemeId'); // e.g., 'chapter_1'
-      const completedLessons = JSON.parse(localStorage.getItem(`completedLessons_v2_${chapterId}`)) || [];
+      const completedLessons = JSON.parse(localStorage.getItem(`completedLessons_v3_${chapterId}`)) || [];
 
       lessonKeys.forEach((lessonKey, index) => {
         const lessonName = `Урок ${lessonKey.split('_')[1]}.${lessonKey.split('_')[2]}`;

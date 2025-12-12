@@ -220,18 +220,12 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-
-            /* Глянцевый эффект */
             background: linear-gradient(to bottom, #e0f5fe, #b8e7fc);
-            /* Синий градиент */
             border: 1px solid #90c5e0;
-            /* Синяя рамка */
             box-shadow:
                 inset 0 1px 0 rgba(255, 255, 255, 0.8),
                 0 2px 3px rgba(0, 0, 0, 0.15);
             text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
-
-            /* Остальные свойства из вашего старого кода */
             position: relative;
             overflow: visible;
             font-size: clamp(20px, 3vw, 30px);
@@ -2054,7 +2048,7 @@
                     }
                 };
 
-                const maxDurationTimer = setTimeout(triggerStop, 10000); // 10 сек макс
+                const maxDurationTimer = setTimeout(triggerStop, 5000); 
 
                 let silenceStart = Date.now();
 
@@ -2172,12 +2166,12 @@
                                 localStorage.setItem(window.location.pathname + "_progressCount", 0);
                                 audioResult.innerHTML = '';
                                 loadWordsAndSetOptions();
-                            }, 2500);
+                            }, 700);
                         } else {
                             setTimeout(() => {
                                 audioResult.innerHTML = '';
                                 loadWordsAndSetOptions();
-                            }, 2500);
+                            }, 700);
                         }
 
                     } else {

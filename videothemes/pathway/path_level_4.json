@@ -4,60 +4,70 @@
             "video": "video/healer/지금.webm",
             "videoMp4": "video/healer/mp4/지금.mp4",
             "korean": "지금",
+            "transcription": "Чигым",
             "russian": "Сейчас"
         },
         {
             "video": "video/runbts/저녁에.webm",
             "videoMp4": "video/runbts/mp4/저녁에.mp4",
             "korean": "저녁에",
+            "transcription": "Чонёге",
             "russian": "Вечером"
         },
         {
             "video": "video/weakhero/벌써 점심이야.webm",
             "videoMp4": "video/weakhero/mp4/벌써 점심이야.mp4",
             "korean": "벌써 점심이야?",
+            "transcription": "Польссо чомщимия",
             "russian": "Уже обед?"
         },
         {
             "video": "video/weakhero/이따 봅시다.webm",
             "videoMp4": "video/weakhero/mp4/이따 봅시다.mp4",
             "korean": "이따 봅시다",
+            "transcription": "Итта попщида",
             "russian": "Позже увидимся"
         },
         {
             "video": "video/vincenco/5년 전에 왔을 때는.webm",
             "videoMp4": "video/vincenco/mp4/5년 전에 왔을 때는.mp4",
             "korean": "5년 전에 왔을 때는",
+            "transcription": "О нён чоне вассыль ттэнын",
             "russian": "Когда он приезжал 5 лет назад"
         },
         {
             "video": "video/evilflower/예 내일 뵙겠습니다.webm",
             "videoMp4": "video/evilflower/mp4/예 내일 뵙겠습니다.mp4",
             "korean": "예 내일 뵙겠습니다",
+            "transcription": "Е нэиль пепкессымнида",
             "russian": "Да, увидимся завтра"
         },
         {
             "video": "video/kalmar3/야 어제 술 얼마나 마셨어.webm",
             "videoMp4": "video/kalmar3/mp4/야 어제 술 얼마나 마셨어.mp4",
             "korean": "야 어제 술 얼마나 마셨어?",
+            "transcription": "Я очже суль ольмана мащёссо",
             "russian": "Эй, сколько ты вчера выпил?"
         },
         {
             "video": "video/deathgame/오늘 같은 날이 무슨 날인데.webm",
             "videoMp4": "video/deathgame/mp4/오늘 같은 날이 무슨 날인데.mp4",
             "korean": "오늘 같은 날이 무슨 날인데?",
+            "transcription": "Оныль катын нари мусын наринде",
             "russian": "Что значит, 'в такой день'?"
         },
         {
             "video": "video/lookism/항상 알바 가기 전에.webm",
             "videoMp4": "video/lookism/mp4/항상 알바 가기 전에.mp4",
             "korean": "항상 알바 가기 전에",
+            "transcription": "Хаңсаң альба каги чоне",
             "russian": "Всегда перед подработкой"
         },
         {
             "video": "video/weakhero2/며칠전엔.webm",
             "videoMp4": "video/weakhero2/mp4/며칠전엔.mp4",
             "korean": "며칠전엔",
+            "transcription": "Мёчильчонен",
             "russian": "Пару дней назад"
         }
     ],
@@ -66,60 +76,70 @@
             "video": "video/healer/언제.webm",
             "videoMp4": "video/healer/mp4/언제.mp4",
             "korean": "언제?",
+            "transcription": "Ончже",
             "russian": "Когда?"
         },
         {
             "video": "video/runbts/지금 몇 시죠.webm",
             "videoMp4": "video/runbts/mp4/지금 몇 시죠.mp4",
             "korean": "지금 몇 시죠?",
+            "transcription": "Чигым мёщичжё",
             "russian": "Сейчас сколько времени?"
         },
         {
             "video": "video/kalmar3/그 몇시였어요.webm",
             "videoMp4": "video/kalmar3/mp4/그 몇시였어요.mp4",
             "korean": "그 몇시였어요?",
+            "transcription": "Кы мёщиёссоё",
             "russian": "Во сколько это было?"
         },
         {
             "video": "video/squid game/알았어 7시.webm",
             "videoMp4": "video/squid game/mp4/알았어 7시.mp4",
             "korean": "알았어 7시",
+            "transcription": "Арассо ильгопщи",
             "russian": "Понял, в 7 часов"
         },
         {
             "video": "video/runbts/(10)열 시간.webm",
             "videoMp4": "video/runbts/mp4/(10)열 시간.mp4",
             "korean": "(10)열 시간",
+            "transcription": "Ёль щиган",
             "russian": "10 часов"
         },
         {
             "video": "video/squidgame 2/아침 열시부터 밤 열시까지.webm",
             "videoMp4": "video/squidgame 2/mp4/아침 열시부터 밤 열시까지.mp4",
             "korean": "아침 열시부터 밤 열시까지",
+            "transcription": "Ачим ёльщибуто пам ёльщиккачжи",
             "russian": "С 10 утра до 10 вечера"
         },
         {
             "video": "video/deathgame/제가 (5)다섯 살 때.webm",
             "videoMp4": "video/deathgame/mp4/제가 (5)다섯 살 때.mp4",
             "korean": "제가 (5)다섯 살 때",
+            "transcription": "Чега тасот саль ттэ",
             "russian": "Когда мне было пять лет"
         },
         {
             "video": "video/evilflower/십팔년 전에.webm",
             "videoMp4": "video/evilflower/mp4/십팔년 전에.mp4",
             "korean": "십팔년 전에",
+            "transcription": "Щиппальнён чоне",
             "russian": "Восемнадцать лет назад"
         },
         {
             "video": "video/runbts/네 십분.webm",
             "videoMp4": "video/runbts/mp4/네 십분.mp4",
             "korean": "네 십분",
+            "transcription": "Не щиппун",
             "russian": "Четыре(часа), десять минут"
         },
         {
             "video": "video/vincenco/한 달 안에 모든 걸 끝내야 해.webm",
             "videoMp4": "video/vincenco/mp4/한 달 안에 모든 걸 끝내야 해.mp4",
             "korean": "한 달 안에 모든 걸 끝내야 해",
+            "transcription": "Хан таль ане модын коль ккыннея хэ",
             "russian": "Нужно успеть все за месяц"
         }
     ],
@@ -128,60 +148,70 @@
             "video": "video/allkdrama/가자.webm",
             "videoMp4": "video/allkdrama/mp4/가자.mp4",
             "korean": "가자",
+            "transcription": "Качжа",
             "russian": "Пошли"
         },
         {
             "video": "video/deathgame/들어가.webm",
             "videoMp4": "video/deathgame/mp4/들어가.mp4",
             "korean": "들어가",
+            "transcription": "Тырога",
             "russian": "Пока"
         },
         {
             "video": "video/allkdrama/다녀올게요.webm",
             "videoMp4": "video/allkdrama/mp4/다녀올게요.mp4",
             "korean": "다녀올게요",
+            "transcription": "Танёолькеё",
             "russian": "Я вернусь"
         },
         {
             "video": "video/weakhero/왔어.webm",
             "videoMp4": "video/weakhero/mp4/왔어.mp4",
             "korean": "왔어",
+            "transcription": "Вассо",
             "russian": "Пришел"
         },
         {
             "video": "video/theglory/들어와.webm",
             "videoMp4": "video/theglory/mp4/들어와.mp4",
             "korean": "들어와",
+            "transcription": "Тырова",
             "russian": "Заходи"
         },
         {
             "video": "video/hwarang/일어나.webm",
             "videoMp4": "video/hwarang/mp4/일어나.mp4",
             "korean": "일어나",
+            "transcription": "Ирона",
             "russian": "Вставай"
         },
         {
             "video": "video/bloodhounds/일주일은 쉬어라.webm",
             "videoMp4": "video/bloodhounds/mp4/일주일은 쉬어라.mp4",
             "korean": "일주일은 쉬어라",
+            "transcription": "Ильчжуирын щвиора",
             "russian": "Отдохни хотя бы неделю"
         },
         {
             "video": "video/lookism/한숨 푹 자고 가거든요.webm",
             "videoMp4": "video/lookism/mp4/한숨 푹 자고 가거든요.mp4",
             "korean": "한숨 푹 자고 가거든요",
+            "transcription": "Хансум пук чаго кагодынё",
             "russian": "Хорошо спит и идёт"
         },
         {
             "video": "video/ad/업무 중 아니야.webm",
             "videoMp4": "video/ad/mp4/업무 중 아니야.mp4",
             "korean": "업무 중 아니야?",
+            "transcription": "Омму чжуң ания",
             "russian": "Ты разве не на работе?"
         },
         {
             "video": "video/weakhero/면햄형 공부해.webm",
             "videoMp4": "video/weakhero/mp4/면햄형 공부해.mp4",
             "korean": "면햄형(미안햄) 공부해",
+            "transcription": "Мёнхэмхёң коңбухэ",
             "russian": "Прости старшого, занимайся"
         }
     ],
@@ -190,60 +220,70 @@
             "video": "video/allkdrama/뭐 하냐.webm",
             "videoMp4": "video/allkdrama/mp4/뭐 하냐.mp4",
             "korean": "뭐 하냐?",
+            "transcription": "Мво ханя",
             "russian": "Ты что творишь?"
         },
         {
             "video": "video/allkdrama/뭐 하는 거야.webm",
             "videoMp4": "video/allkdrama/mp4/뭐 하는 거야.mp4",
             "korean": "뭐 하는 거야?",
+            "transcription": "Мво ханын коя",
             "russian": "Ты что делаешь?"
         },
         {
             "video": "video/lookism/알바를 해.webm",
             "videoMp4": "video/lookism/mp4/알바를 해.mp4",
             "korean": "알바를 해?",
+            "transcription": "Альбарыль хэ",
             "russian": "Подрабатывает?"
         },
         {
             "video": "video/lookism/편의점 야간 알바요.webm",
             "videoMp4": "video/lookism/mp4/편의점 야간 알바요.mp4",
             "korean": "편의점 야간 알바요",
+            "transcription": "Пёничжом яган альбаё",
             "russian": "Ночная подработка в магазине"
         },
         {
             "video": "video/bloodhounds/저 운동하려고요.webm",
             "videoMp4": "video/bloodhounds/mp4/저 운동하려고요.mp4",
             "korean": "저 운동하려고요",
+            "transcription": "Чо ундоңхарёгоё",
             "russian": "Я собираюсь тренироваться"
         },
         {
             "video": "video/runbts/오늘 뭐 하나요.webm",
             "videoMp4": "video/runbts/mp4/오늘 뭐 하나요.mp4",
             "korean": "오늘 뭐 하나요?",
+            "transcription": "Оныль мво ханаё",
             "russian": "Что мы сегодня делаем?"
         },
         {
             "video": "video/evilflower/뭐 하시는 겁니까.webm",
             "videoMp4": "video/evilflower/mp4/뭐 하시는 겁니까.mp4",
             "korean": "뭐 하시는 겁니까?",
+            "transcription": "Мво хащинын комникка",
             "russian": "Что вы делаете?"
         },
         {
             "video": "video/ad/지금 전화해도 돼.webm",
             "videoMp4": "video/ad/mp4/지금 전화해도 돼.mp4",
             "korean": "지금 전화해도 돼?",
+            "transcription": "Чигым чонхвахэдо твэ",
             "russian": "Ниче, что я звоню сейчас?"
         },
         {
             "video": "video/bloodhounds/어떤 일을 하시는 거죠.webm",
             "videoMp4": "video/bloodhounds/mp4/어떤 일을 하시는 거죠.mp4",
             "korean": "어떤 일을 하시는 거죠?",
+            "transcription": "Оттон ирыль хащинын кочжё",
             "russian": "А чем вы занимаетесь?"
         },
         {
             "video": "video/deathgame/집에 있지.webm",
             "videoMp4": "video/deathgame/mp4/집에 있지.mp4",
             "korean": "집에 있지?",
+            "transcription": "Чибе иччи",
             "russian": "Ты дома?"
         }
     ],
@@ -252,60 +292,70 @@
             "video": "video/biglig/피곤하다 일찍 도착했네.webm",
             "videoMp4": "video/biglig/mp4/피곤하다 일찍 도착했네.mp4",
             "korean": "피곤하다 일찍 도착했네",
+            "transcription": "Пигонхада ильччик точакхэнне",
             "russian": "Устала, еще так рано приехала"
         },
         {
             "video": "video/allkdrama/잘생긴 거 아는데 바빠서.webm",
             "videoMp4": "video/allkdrama/mp4/잘생긴 거 아는데 바빠서.mp4",
             "korean": "잘생긴 거 아는데 바빠서",
+            "transcription": "Чальсэңгин ко анынде паппасо",
             "russian": "Знаю что красивый, но я занят"
         },
         {
             "video": "video/lookism/알바하느라 바빠서 깜빡했나 봐요.webm",
             "videoMp4": "video/lookism/mp4/알바하느라 바빠서 깜빡했나 봐요.mp4",
             "korean": "알바하느라 바빠서 깜빡했나 봐요",
+            "transcription": "Альбаханыра паппасо ккамппакхэнна пваё",
             "russian": "Был занят подработкой и, похоже, забыл"
         },
         {
             "video": "video/allkdrama/설거지 끝.webm",
             "videoMp4": "video/allkdrama/mp4/설거지 끝.mp4",
             "korean": "설거지 끝",
+            "transcription": "Сольгочжи ккыт",
             "russian": "Помыл посуду"
         },
         {
             "video": "video/vincenco/저 2년 전에 끝났어요.webm",
             "videoMp4": "video/vincenco/mp4/저 2년 전에 끝났어요.mp4",
             "korean": "저 2년 전에 끝났어요",
+            "transcription": "Чо и нён чоне ккыннассоё",
             "russian": "Я бросила 2 года назад"
         },
         {
             "video": "video/parasites/벌써 끝내셨나 봐요.webm",
             "videoMp4": "video/parasites/mp4/벌써 끝내셨나 봐요.mp4",
             "korean": "벌써 끝내셨나 봐요",
+            "transcription": "Польссо ккыннэщённа пваё",
             "russian": "Похоже вы уже закончили"
         },
         {
             "video": "video/allkdrama/괜찮아.webm",
             "videoMp4": "video/allkdrama/mp4/괜찮아.mp4",
             "korean": "괜찮아?",
+            "transcription": "Квенчана",
             "russian": "Ты в порядке?"
         },
         {
             "video": "video/healer/괜찮습니다.webm",
             "videoMp4": "video/healer/mp4/괜찮습니다.mp4",
             "korean": "괜찮습니다",
+            "transcription": "Квенчанссымнида",
             "russian": "Все в порядке"
         },
         {
             "video": "video/demon/숨을 못 쉬겠어.webm",
             "videoMp4": "video/demon/mp4/숨을 못 쉬겠어.mp4",
             "korean": "숨을 못 쉬겠어",
+            "transcription": "Сумыль мон щвигессо",
             "russian": "Не могу дышать"
         },
         {
             "video": "video/evilflower/너무 힘들어요.webm",
             "videoMp4": "video/evilflower/mp4/너무 힘들어요.mp4",
             "korean": "너무 힘들어요",
+            "transcription": "Ному химдыроё",
             "russian": "Мне очень тяжело"
         }
     ],
@@ -314,60 +364,70 @@
             "video": "video/deathgame/내가 면접 끝나고 전화할게.webm",
             "videoMp4": "video/deathgame/mp4/내가 면접 끝나고 전화할게.mp4",
             "korean": "내가 면접 끝나고 전화할게",
+            "transcription": "Нэга мёнчжоп ккыннаго чонхвахальке",
             "russian": "Я позвоню после собеседования"
         },
         {
             "video": "video/allkdrama/가서 계산하고 와.webm",
             "videoMp4": "video/allkdrama/mp4/가서 계산하고 와.mp4",
             "korean": "밖가서 계산하고 와",
+            "transcription": "Паккасо кесанхаго ва",
             "russian": "Сходи оплати"
         },
         {
             "video": "video/weakhero/무슨 일 있으면 전화하고.webm",
             "videoMp4": "video/weakhero/mp4/무슨 일 있으면 전화하고.mp4",
             "korean": "무슨 일 있으면 전화하고",
+            "transcription": "Мусын иль иссымён чонхвахаго",
             "russian": "Звони если что"
         },
         {
             "video": "video/ad/저 그러면 좀 이따 보러 갈게요.webm",
             "videoMp4": "video/ad/mp4/저 그러면 좀 이따 보러 갈게요.mp4",
             "korean": "저 그러면 좀 이따 보러 갈게요",
+            "transcription": "Чо кыромён чом итта поро калькеё",
             "russian": "Тогда я немного позже зайду посмотреть"
         },
         {
             "video": "video/bloodhounds/나중에 제가 따로 연락 드리겠습니다.webm",
             "videoMp4": "video/bloodhounds/mp4/나중에 제가 따로 연락 드리겠습니다.mp4",
             "korean": "나중에 제가 따로 연락 드리겠습니다",
+            "transcription": "Начжуңе чега ттаро ёлляк тыригессымнида",
             "russian": "Я вам позже перезвоню"
         },
         {
             "video": "video/allkdrama/같이 놀래.webm",
             "videoMp4": "video/allkdrama/mp4/같이 놀래.mp4",
             "korean": "같이 놀래?",
+            "transcription": "Качи ноллэ",
             "russian": "Поиграем вместе?"
         },
         {
             "video": "video/moon lovers/같이 가요.webm",
             "videoMp4": "video/moon lovers/mp4/같이 가요.mp4",
             "korean": "같이 가요",
+            "transcription": "Качи каё",
             "russian": "Пошли вместе"
         },
         {
             "video": "video/weakhero/이따 봅시다.webm",
             "videoMp4": "video/weakhero/mp4/이따 봅시다.mp4",
             "korean": "이따 봅시다",
+            "transcription": "Итта попщида",
             "russian": "Позже увидимся"
         },
         {
             "video": "video/hvatai/나중에 얘기해.webm",
             "videoMp4": "video/hvatai/mp4/나중에 얘기해.mp4",
             "korean": "나중에 얘기해",
+            "transcription": "Начжуңе егихэ",
             "russian": "Поговорим позже"
         },
         {
             "video": "video/squid game/기다렸다가 버스 타고 가요.webm",
             "videoMp4": "video/squid game/mp4/기다렸다가 버스 타고 가요.mp4",
             "korean": "기다렸다가 버스 타고 가요",
+            "transcription": "Кидарёттага посы таго каё",
             "russian": "Дождись автобус и езжай"
         }
     ]

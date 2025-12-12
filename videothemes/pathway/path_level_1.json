@@ -4,60 +4,70 @@
             "video": "video/allkdrama/안녕하세요.webm",
             "videoMp4": "video/allkdrama/mp4/안녕하세요.mp4",
             "korean": "안녕하세요",
+            "transcription": "Аннёңасеё",
             "russian": "Здравствуйте"
         },
         {
             "video": "video/squid game/안녕하십니까.webm",
             "videoMp4": "video/squid game/mp4/안녕하십니까.mp4",
             "korean": "안녕하십니까",
+            "transcription": "Аннёңащимникка",
             "russian": "Здравствуйте"
         },
         {
             "video": "video/lookism/어서 오세요.webm",
             "videoMp4": "video/lookism/mp4/어서 오세요.mp4",
             "korean": "어서 오세요",
+            "transcription": "Осо осеё",
             "russian": "Добро пожаловать"
         },
         {
             "video": "video/allkdrama/처음 뵙겠습니다.webm",
             "videoMp4": "video/allkdrama/mp4/처음 뵙겠습니다.mp4",
             "korean": "처음 뵙겠습니다",
+            "transcription": "Чоым пепкессымнида",
             "russian": "Рад знакомству"
         },
         {
             "video": "video/lookism/안녕하세요 처음 뵙겠습니다.webm",
             "videoMp4": "video/lookism/mp4/안녕하세요 처음 뵙겠습니다.mp4",
             "korean": "안녕하세요 처음 뵙겠습니다",
+            "transcription": "Аннёңасеё чоым пепкессымнида",
             "russian": "Здравствуйте, приятно познакомиться"
         },
         {
             "video": "video/allkdrama/여보세요.webm",
             "videoMp4": "video/allkdrama/mp4/여보세요.mp4",
             "korean": "여보세요",
+            "transcription": "Ёбосеё",
             "russian": "Алло"
         },
         {
             "video": "video/ad/저기요.webm",
             "videoMp4": "video/ad/mp4/저기요.mp4",
             "korean": "저기요",
+            "transcription": "Чогиё",
             "russian": "Эй, извините"
         },
         {
             "video": "video/allkdrama/좋은 아침이에요.webm",
             "videoMp4": "video/allkdrama/mp4/좋은 아침이에요.mp4",
             "korean": "좋은 아침이에요",
+            "transcription": "Чоын ачимиеё",
             "russian": "Доброе утро"
         },
         {
             "video": "video/moon lovers/오랜만이구나.webm",
             "videoMp4": "video/moon lovers/mp4/오랜만이구나.mp4",
             "korean": "오랜만이구나",
+            "transcription": "Оренманигуна",
             "russian": "Давно не виделись"
         },
         {
             "video": "video/evilflower/편히 오셨어요.webm",
             "videoMp4": "video/evilflower/mp4/편히 오셨어요.mp4",
             "korean": "편히 오셨어요?",
+            "transcription": "Пёни ощёссоё",
             "russian": "Хорошо добрались?"
         }
     ],
@@ -66,60 +76,70 @@
             "video": "video/deathgame/들어가.webm",
             "videoMp4": "video/deathgame/mp4/들어가.mp4",
             "korean": "들어가",
+            "transcription": "Тырога",
             "russian": "Пока"
         },
         {
             "video": "video/deathgame/나 갈게.webm",
             "videoMp4": "video/deathgame/mp4/나 갈게.mp4",
             "korean": "나 갈게",
+            "transcription": "На кальке",
             "russian": "Я пойду"
         },
         {
             "video": "video/allkdrama/다녀올게요.webm",
             "videoMp4": "video/allkdrama/mp4/다녀올게요.mp4",
             "korean": "다녀올게요",
+            "transcription": "Танёолькеё",
             "russian": "Я вернусь"
         },
         {
             "video": "video/weakhero/아빠 간다.webm",
             "videoMp4": "video/weakhero/mp4/아빠 간다.mp4",
             "korean": "아빠 간다",
+            "transcription": "Аппа канда",
             "russian": "(я)Папа пошел"
         },
         {
             "video": "video/hvatai/이따 봐요.webm",
             "videoMp4": "video/hvatai/mp4/이따 봐요.mp4",
             "korean": "이따 봐요",
+            "transcription": "Итта пваё",
             "russian": "Увидимся позже"
         },
         {
             "video": "video/ad/또 봐요.webm",
             "videoMp4": "video/ad/mp4/또 봐요.mp4",
             "korean": "또 봐요",
+            "transcription": "Тто пваё",
             "russian": "Ещё увидимся"
         },
         {
             "video": "video/evilflower/그만 가 볼게요.webm",
             "videoMp4": "video/evilflower/mp4/그만 가 볼게요.mp4",
             "korean": "그만 가 볼게요",
+            "transcription": "Кыман ка полькеё",
             "russian": "Я тогда пойду"
         },
         {
             "video": "video/weakhero/이따 봅시다.webm",
             "videoMp4": "video/weakhero/mp4/이따 봅시다.mp4",
             "korean": "이따 봅시다",
+            "transcription": "Итта попщида",
             "russian": "Позже увидимся"
         },
         {
             "video": "video/ad/다시 연락할게.webm",
             "videoMp4": "video/ad/mp4/다시 연락할게.mp4",
             "korean": "다시 연락할게",
+            "transcription": "Тащи ёллякальке",
             "russian": "Я перезвоню"
         },
         {
             "video": "video/hvatai/끊을게요.webm",
             "videoMp4": "video/hvatai/mp4/끊을게요.mp4",
             "korean": "끊을게요",
+            "transcription": "Ккынылькеё",
             "russian": "Кладу трубку"
         }
     ],
@@ -128,60 +148,70 @@
             "video": "video/weakhero2/네.webm",
             "videoMp4": "video/weakhero2/mp4/네.mp4",
             "korean": "네",
+            "transcription": "Не",
             "russian": "Да"
         },
         {
             "video": "video/allkdrama/그래.webm",
             "videoMp4": "video/allkdrama/mp4/그래.mp4",
             "korean": "그래",
+            "transcription": "Кырэ",
             "russian": "Да"
         },
         {
             "video": "video/deathgame/맞습니다.webm",
             "videoMp4": "video/deathgame/mp4/맞습니다.mp4",
             "korean": "맞습니다",
+            "transcription": "Массымнида",
             "russian": "Верно"
         },
         {
             "video": "video/moon lovers/맞네.webm",
             "videoMp4": "video/moon lovers/mp4/맞네.mp4",
             "korean": "맞네!",
+            "transcription": "Манне",
             "russian": "Все так!"
         },
         {
             "video": "video/runbts/맞아 맞아요.webm",
             "videoMp4": "video/runbts/mp4/맞아 맞아요.mp4",
             "korean": "맞아 맞아요",
+            "transcription": "Мачжа мачжаё",
             "russian": "Правильно"
         },
         {
             "video": "video/bloodhounds/안돼요.webm",
             "videoMp4": "video/bloodhounds/mp4/안돼요.mp4",
             "korean": "안돼요",
+            "transcription": "Андвеё",
             "russian": "Нельзя"
         },
         {
             "video": "video/squid game/안돼요.webm",
             "videoMp4": "video/squid game/mp4/안돼요.mp4",
             "korean": "안돼요",
+            "transcription": "Андвеё",
             "russian": "Так не пойдет"
         },
         {
             "video": "video/deathgame/없습니다.webm",
             "videoMp4": "video/deathgame/mp4/없습니다.mp4",
             "korean": "없습니다",
+            "transcription": "Опссымнида",
             "russian": "Нет"
         },
         {
             "video": "video/tngerines/절대.webm",
             "videoMp4": "video/tngerines/mp4/절대.mp4",
             "korean": "절대",
+            "transcription": "Чольтэ",
             "russian": "Никогда"
         },
         {
             "video": "video/allkdrama/안 괜찮아.webm",
             "videoMp4": "video/allkdrama/mp4/안 괜찮아.mp4",
             "korean": "안 괜찮아",
+            "transcription": "Ан квенчана",
             "russian": "Не в порядке"
         }
     ],
@@ -190,60 +220,70 @@
             "video": "video/deathgame/감사합니다.webm",
             "videoMp4": "video/deathgame/mp4/감사합니다.mp4",
             "korean": "감사합니다",
+            "transcription": "Камсахамнида",
             "russian": "Спасибо"
         },
         {
             "video": "video/hvatai/고맙습니다.webm",
             "videoMp4": "video/hvatai/mp4/고맙습니다.mp4",
             "korean": "고맙습니다",
+            "transcription": "Комапссымнида",
             "russian": "Спасибо"
         },
         {
             "video": "video/allkdrama/고마워.webm",
             "videoMp4": "video/allkdrama/mp4/고마워.mp4",
             "korean": "고마워",
+            "transcription": "Комаво",
             "russian": "Спасибо"
         },
         {
             "video": "video/hwarang/고맙네.webm",
             "videoMp4": "video/hwarang/mp4/고맙네.mp4",
             "korean": "고맙네",
+            "transcription": "Комамне",
             "russian": "Спасибо!"
         },
         {
             "video": "video/hvatai/정말 죄송합니다.webm",
             "videoMp4": "video/hvatai/mp4/정말 죄송합니다.mp4",
             "korean": "정말 죄송합니다",
+            "transcription": "Чоңмаль чвесоңхамнида",
             "russian": "Нам очень жаль"
         },
         {
             "video": "video/weakhero/미안해.webm",
             "videoMp4": "video/weakhero/mp4/미안해.mp4",
             "korean": "미안해",
+            "transcription": "Мианэ",
             "russian": "Сорян"
         },
         {
             "video": "video/moon lovers/미안해.webm",
             "videoMp4": "video/moon lovers/mp4/미안해.mp4",
             "korean": "미안해",
+            "transcription": "Мианэ",
             "russian": "Прости"
         },
         {
             "video": "video/allkdrama/괜찮아.webm",
             "videoMp4": "video/allkdrama/mp4/괜찮아.mp4",
             "korean": "괜찮아?",
+            "transcription": "Квенчана",
             "russian": "Ты в порядке?"
         },
         {
             "video": "video/healer/괜찮습니다.webm",
             "videoMp4": "video/healer/mp4/괜찮습니다.mp4",
             "korean": "괜찮습니다",
+            "transcription": "Квенчанссымнида",
             "russian": "Все в порядке"
         },
         {
             "video": "video/deathgame/걱정마.webm",
             "videoMp4": "video/deathgame/mp4/걱정마.mp4",
             "korean": "걱정마",
+            "transcription": "Кокчоңма",
             "russian": "Не волнуйся"
         }
     ],
@@ -252,60 +292,70 @@
             "video": "video/allkdrama/이름이 뭐예요.webm",
             "videoMp4": "video/allkdrama/mp4/이름이 뭐예요.mp4",
             "korean": "이름이 뭐예요?",
+            "transcription": "Ирыми мвоекё",
             "russian": "Как тебя зовут?"
         },
         {
             "video": "video/weakhero/너 이름이 뭐지.webm",
             "videoMp4": "video/weakhero/mp4/너 이름이 뭐지.mp4",
             "korean": "너 이름이 뭐지?",
+            "transcription": "Но ирыми мвочжи",
             "russian": "Тебя как зовут?"
         },
         {
             "video": "video/demon/이름 뭐야.webm",
             "videoMp4": "video/demon/mp4/이름 뭐야.mp4",
             "korean": "이름 뭐야?",
+            "transcription": "Ирым мвоя",
             "russian": "Звать как?"
         },
         {
             "video": "video/allkdrama/누구야.webm",
             "videoMp4": "video/allkdrama/mp4/누구야.mp4",
             "korean": "누구야?",
+            "transcription": "Нугуя",
             "russian": "Ты кто?"
         },
         {
             "video": "video/lookism/누구세요.webm",
             "videoMp4": "video/lookism/mp4/누구세요.mp4",
             "korean": "누구세요?",
+            "transcription": "Нугусеё",
             "russian": "Кто вы?"
         },
         {
             "video": "video/weakhero/누구세요.webm",
             "videoMp4": "video/weakhero/mp4/누구세요.mp4",
             "korean": "누구세요?",
+            "transcription": "Нугусеё",
             "russian": "Кто там?"
         },
         {
             "video": "video/squid game/뭐야.webm",
             "videoMp4": "video/squid game/mp4/뭐야.mp4",
             "korean": "뭐야?",
+            "transcription": "Мвоя",
             "russian": "Что?"
         },
         {
             "video": "video/healer/뭔데.webm",
             "videoMp4": "video/healer/mp4/뭔데.mp4",
             "korean": "뭔데?",
+            "transcription": "Мвонде",
             "russian": "Что?"
         },
         {
             "video": "video/hvatai/저 아세요.webm",
             "videoMp4": "video/hvatai/mp4/저 아세요.mp4",
             "korean": "저 아세요?",
+            "transcription": "Чо асеё",
             "russian": "Знаете меня?"
         },
         {
             "video": "video/ad/근데 무슨 일 있어.webm",
             "videoMp4": "video/ad/mp4/근데 무슨 일 있어.mp4",
             "korean": "근데 무슨 일 있어?",
+            "transcription": "Кынде мусын ириссо",
             "russian": "Кстати, что-то случилось?"
         }
     ],
@@ -314,60 +364,70 @@
             "video": "video/lookism/저는 친구예요.webm",
             "videoMp4": "video/lookism/mp4/저는 친구예요.mp4",
             "korean": "저는 친구예요",
+            "transcription": "Чонын чингуеё",
             "russian": "Я его друг"
         },
         {
             "video": "video/vincenco/아버지.webm",
             "videoMp4": "video/vincenco/mp4/아버지.mp4",
             "korean": "아버지",
+            "transcription": "Абочжи",
             "russian": "Отец"
         },
         {
             "video": "video/parasites/사장님.webm",
             "videoMp4": "video/parasites/mp4/사장님.mp4",
             "korean": "사장님",
+            "transcription": "Сачжаңним",
             "russian": "Господин директор"
         },
         {
             "video": "video/weakhero2/선생님.webm",
             "videoMp4": "video/weakhero2/mp4/선생님.mp4",
             "korean": "선생님",
+            "transcription": "Сонсэңним",
             "russian": "Учитель"
         },
         {
             "video": "video/bloodhounds/나 해병이야.webm",
             "videoMp4": "video/bloodhounds/mp4/나 해병이야.mp4",
             "korean": "나 해병이야",
+            "transcription": "На хебёңия",
             "russian": "Я пехотинец"
         },
         {
             "video": "video/ad/저 아저씨.webm",
             "videoMp4": "video/ad/mp4/저 아저씨.mp4",
             "korean": "저 아저씨",
+            "transcription": "Чо ачжощи",
             "russian": "Эй, Дяденька"
         },
         {
             "video": "video/squidgame 2/우리는 경찰이야.webm",
             "videoMp4": "video/squidgame 2/mp4/우리는 경찰이야.mp4",
             "korean": "우리는 경찰이야",
+            "transcription": "Уринын кёңчария",
             "russian": "Мы полицейские"
         },
         {
             "video": "video/allkdrama/나 니 엄마야.webm",
             "videoMp4": "video/allkdrama/mp4/나 니 엄마야.mp4",
             "korean": "나 니 엄마야",
+            "transcription": "На ни омма я",
             "russian": "Я мамка твоя"
         },
         {
             "video": "video/evilflower/변호사예요.webm",
             "videoMp4": "video/evilflower/mp4/변호사예요.mp4",
             "korean": "변호사예요",
+            "transcription": "Пёносаеё",
             "russian": "Я адвокат"
         },
         {
             "video": "video/healer/힐러라고 합니다.webm",
             "videoMp4": "video/healer/mp4/힐러라고 합니다.mp4",
             "korean": "힐러라고 합니다",
+            "transcription": "Хиллораго хамнида",
             "russian": "Его зовут Хилер"
         }
     ]

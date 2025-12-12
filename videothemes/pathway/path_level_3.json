@@ -4,60 +4,70 @@
             "video": "video/runbts/밥 줘.webm",
             "videoMp4": "video/runbts/mp4/밥 줘.mp4",
             "korean": "밥 줘",
+            "transcription": "Пап чво",
             "russian": "Дай еды"
         },
         {
             "video": "video/healer/물건 주세요.webm",
             "videoMp4": "video/healer/mp4/물건 주세요.mp4",
             "korean": "물건 주세요",
+            "transcription": "Мульгон чусеё",
             "russian": "Дайте мне предмет"
         },
         {
             "video": "video/theglory/그거 주세요.webm",
             "videoMp4": "video/theglory/mp4/그거 주세요.mp4",
             "korean": "그거 주세요",
+            "transcription": "Кыго чусеё",
             "russian": "Дайте это, пожалуйста"
         },
         {
             "video": "video/bloodhounds/이거 먹어 봐.webm",
             "videoMp4": "video/bloodhounds/mp4/이거 먹어 봐.mp4",
             "korean": "이거 먹어 봐",
+            "transcription": "Иго мого пва",
             "russian": "Попробуй"
         },
         {
             "video": "video/lookism/맛있네.webm",
             "videoMp4": "video/lookism/mp4/맛있네.mp4",
             "korean": "맛있네",
+            "transcription": "Мащинне",
             "russian": "Вкусно!"
         },
         {
             "video": "video/runbts/야, 맛있다, 맛있다.webm",
             "videoMp4": "video/runbts/mp4/야, 맛있다, 맛있다.mp4",
             "korean": "야, 맛있다, 맛있다",
+            "transcription": "Я мащитта мащитта",
             "russian": "Вкусно, вкусно"
         },
         {
             "video": "video/runbts/진짜 너무 맛있겠다.webm",
             "videoMp4": "video/runbts/mp4/진짜 너무 맛있겠다.mp4",
             "korean": "진짜 너무 맛있겠다",
+            "transcription": "Чинчча ному мащиккетта",
             "russian": "Реально, очень вкусно"
         },
         {
             "video": "video/squid game/배고파.webm",
             "videoMp4": "video/squid game/mp4/배고파.mp4",
             "korean": "배고파?",
+            "transcription": "Пэгопа",
             "russian": "Голодный?"
         },
         {
             "video": "video/runbts/배고파요.webm",
             "videoMp4": "video/runbts/mp4/배고파요.mp4",
             "korean": "배고파요",
+            "transcription": "Пэгопаё",
             "russian": "Я голоден"
         },
         {
             "video": "video/runbts/맛있게 드세요.webm",
             "videoMp4": "video/runbts/mp4/맛있게 드세요.mp4",
             "korean": "맛있게 드세요",
+            "transcription": "Мащикке тысеё",
             "russian": "Приятного аппетита"
         }
     ],
@@ -66,60 +76,70 @@
             "video": "video/lookism/어떤 거 드실래요.webm",
             "videoMp4": "video/lookism/mp4/어떤 거 드실래요.mp4",
             "korean": "어떤 거 드실래요?",
+            "transcription": "Оттон ко тыщиллэё",
             "russian": "Что будете заказывать?"
         },
         {
             "video": "video/runbts/뭐 먹을 거예요.webm",
             "videoMp4": "video/runbts/mp4/뭐 먹을 거예요.mp4",
             "korean": "뭐 먹을 거예요?",
+            "transcription": "Мво могыль коеё",
             "russian": "Что будешь есть?"
         },
         {
             "video": "video/runbts/뭘 먹어야지.webm",
             "videoMp4": "video/runbts/mp4/뭘 먹어야지.mp4",
             "korean": "뭘 먹어야지?",
+            "transcription": "Мволь могоячжи",
             "russian": "Что-то надо бы поесть?"
         },
         {
             "video": "video/allkdrama/나 밥먹었지, 니는.webm",
             "videoMp4": "video/allkdrama/mp4/나 밥먹었지, 니는.mp4",
             "korean": "나 밥먹었지, 니는?",
+            "transcription": "На паммогоччи нинын",
             "russian": "Я уже поел, а ты?"
         },
         {
             "video": "video/bloodhounds/엄마 밥 먹었어.webm",
             "videoMp4": "video/bloodhounds/mp4/엄마 밥 먹었어.mp4",
             "korean": "엄마 밥 먹었어?",
+            "transcription": "Омма пап могоссо",
             "russian": "Мама, ты поела?"
         },
         {
             "video": "video/evilflower/식사는 좀 하셨어요.webm",
             "videoMp4": "video/evilflower/mp4/식사는 좀 하셨어요.mp4",
             "korean": "식사는 좀 하셨어요?",
+            "transcription": "Щиксанын чом хащёссоё",
             "russian": "Вы поели?"
         },
         {
             "video": "video/theglory/아이스 아메리카노에 샷 추가해 드려요.webm",
             "videoMp4": "video/theglory/mp4/아이스 아메리카노에 샷 추가해 드려요.mp4",
             "korean": "아이스 아메리카노에 샷 추가해 드려요?",
+            "transcription": "Аисы американое щят чугахэ тырёё",
             "russian": "Добавить шот в айс-американо?"
         },
         {
             "video": "video/allkdrama/뭐 더 필요한거 있으세요.webm",
             "videoMp4": "video/allkdrama/mp4/뭐 더 필요한거 있으세요.mp4",
             "korean": "뭐 더 필요한거 있으세요?",
+            "transcription": "Мво то пирёханго иссысеё",
             "russian": "Вам нужно что-то еще?"
         },
         {
             "video": "video/runbts/드시면 돼요.webm",
             "videoMp4": "video/runbts/mp4/드시면 돼요.mp4",
             "korean": "드시면 돼요",
+            "transcription": "Тыщимён твеё",
             "russian": "Можете поесть"
         },
         {
             "video": "video/hvatai/선재 씨가 한번 도전해 볼까요.webm",
             "videoMp4": "video/hvatai/mp4/선재 씨가 한번 도전해 볼까요.mp4",
             "korean": "선재 씨가 한번 도전해 볼까요?",
+            "transcription": "Сончжэ щига ханбон точжонхэ польккаё",
             "russian": "Сон Джэ, может вы разок попробуете?"
         }
     ],
@@ -128,60 +148,70 @@
             "video": "video/allkdrama/라면 먹고 갈래.webm",
             "videoMp4": "video/allkdrama/mp4/라면 먹고 갈래.mp4",
             "korean": "라면 먹고 갈래?",
+            "transcription": "Рамён мокко каллэ",
             "russian": "Как насчет рамена?"
         },
         {
             "video": "video/squid game/근데 난 떡볶이가 훨씬 더 맛있어.webm",
             "videoMp4": "video/squid game/mp4/근데 난 떡볶이가 훨씬 더 맛있어.mp4",
             "korean": "근데 난 떡볶이가 훨씬 더 맛있어",
+            "transcription": "Кынде нан ттокпоккига хвольщин то мащиссо",
             "russian": "Но мне ттокпокки гораздо вкуснее"
         },
         {
             "video": "video/runbts/사장님 거기 가서 그 김치 좀 더 갖고 와요.webm",
             "videoMp4": "video/runbts/mp4/사장님 거기 가서 그 김치 좀 더 갖고 와요.mp4",
             "korean": "사장님 거기 가서 그 김치 좀 더 갖고 와요",
+            "transcription": "Сачжаңним коги касо кы кимчи чом то какко ваё",
             "russian": "Хозяин, принесите еще пожалуйста кимчи"
         },
         {
             "video": "video/runbts/감자튀김이 진짜 맛있네.webm",
             "videoMp4": "video/runbts/mp4/감자튀김이 진짜 맛있네.mp4",
             "korean": "감자튀김이 진짜 맛있네!",
+            "transcription": "Камчжа твигими чинчча мащинне",
             "russian": "Картошка фри реально вкусная!"
         },
         {
             "video": "video/runbts/깻잎 먹지 말래 그냥.webm",
             "videoMp4": "video/runbts/mp4/깻잎 먹지 말래 그냥.mp4",
             "korean": "깻잎 먹지 말래 그냥",
+            "transcription": "Ккэннип мокчи маллэ кыняң",
             "russian": "Да ты просто не ешь листья кунжута"
         },
         {
             "video": "video/biglig/케이크도 먹고.webm",
             "videoMp4": "video/biglig/mp4/케이크도 먹고.mp4",
             "korean": "케이크도 먹고",
+            "transcription": "Кеикыдо мокко",
             "russian": "И тортик скушала"
         },
         {
             "video": "video/runbts/소스가 있어요, 소스.webm",
             "videoMp4": "video/runbts/mp4/소스가 있어요, 소스.mp4",
             "korean": "소스가 있어요? 소스?",
+            "transcription": "Сосыга иссоё сосы",
             "russian": "А есть соус?"
         },
         {
             "video": "video/runbts/파프리카.webm",
             "videoMp4": "video/runbts/mp4/파프리카.mp4",
             "korean": "파프리카",
+            "transcription": "Папырика",
             "russian": "Паприка"
         },
         {
             "video": "video/tngerines/여기서 먹는다고 했어.webm",
             "videoMp4": "video/tngerines/mp4/여기서 먹는다고 했어.mp4",
             "korean": "여기서 먹는다고 했어",
+            "transcription": "Ёгисо моңнындаго хэссо",
             "russian": "Сказали здесь поесть"
         },
         {
             "video": "video/runbts/저는 뭐 요리를 엄청 잘하지는 않는데.webm",
             "videoMp4": "video/runbts/mp4/저는 뭐 요리를 엄청 잘하지는 않는데.mp4",
             "korean": "저는 뭐 요리를 엄청 잘하지는 않는데",
+            "transcription": "Чонын мво ёрирыль омчоң чарачжинын аннынде",
             "russian": "Ну, я не то чтобы супер готовлю"
         }
     ],
@@ -190,60 +220,70 @@
             "video": "video/weakhero/친구야 나 물 한 잔만.webm",
             "videoMp4": "video/weakhero/mp4/친구야 나 물 한 잔만.mp4",
             "korean": "친구야 나 물 한 잔만",
+            "transcription": "Чингуя на муль хан чанман",
             "russian": "Друг, налей воды"
         },
         {
             "video": "video/lookism/나는 그냥 물 마실게.webm",
             "videoMp4": "video/lookism/mp4/나는 그냥 물 마실게.mp4",
             "korean": "나는 그냥 물 마실게",
+            "transcription": "Нанын кыняң муль мащильке",
             "russian": "Я просто воду попью"
         },
         {
             "video": "video/lookism/이게 아메카노라는 거니.webm",
             "videoMp4": "video/lookism/mp4/이게 아메카노라는 거니.mp4",
             "korean": "이게 아메카노라는 거니",
+            "transcription": "Иге амеканоранын кони",
             "russian": "Это что, называется американо?"
         },
         {
             "video": "video/theglory/차가운 거 주시고.webm",
             "videoMp4": "video/theglory/mp4/차가운 거 주시고.mp4",
             "korean": "차가운 거 주시고",
+            "transcription": "Чагаун ко чущиго",
             "russian": "Дайте что-нибудь холодное"
         },
         {
             "video": "video/theglory/제일 진한 거 주세요.webm",
             "videoMp4": "video/theglory/mp4/제일 진한 거 주세요.mp4",
             "korean": "제일 진한 거 주세요",
+            "transcription": "Чеиль чинан ко чусеё",
             "russian": "Дайте самое крепкое"
         },
         {
             "video": "video/allkdrama/그거 술인가.webm",
             "videoMp4": "video/allkdrama/mp4/그거 술인가.mp4",
             "korean": "그거 술인가?",
+            "transcription": "Кыго суриңга",
             "russian": "Это алкоголь?"
         },
         {
             "video": "video/squidgame 2/술들 마시지 말고.webm",
             "videoMp4": "video/squidgame 2/mp4/술들 마시지 말고.mp4",
             "korean": "술들 마시지 말고!",
+            "transcription": "Сульдыль мащичжи мальго",
             "russian": "Не пить!"
         },
         {
             "video": "video/kalmar3/야 어제 술 얼마나 마셨어.webm",
             "videoMp4": "video/kalmar3/mp4/야 어제 술 얼마나 마셨어.mp4",
             "korean": "야 어제 술 얼마나 마셨어?",
+            "transcription": "Я очже суль ольмана мащёссо",
             "russian": "Эй, сколько ты вчера выпил?"
         },
         {
             "video": "video/demon/역시 무알콜 모잇또가 인기가 많네.webm",
             "videoMp4": "video/demon/mp4/역시 무알콜 모잇또가 인기가 많네.mp4",
             "korean": "역시 무알콜 모잇또가 인기가 많네",
+            "transcription": "Ёкщи муальколь моиттога ингига манне",
             "russian": "Как и ожидалось, безалкогольный мохито популярен"
         },
         {
             "video": "video/hwarang/잘 마실게.webm",
             "videoMp4": "video/hwarang/mp4/잘 마실게.mp4",
             "korean": "잘 마실게",
+            "transcription": "Чаль мащильке",
             "russian": "Хорошенько попью"
         }
     ],
@@ -252,60 +292,70 @@
             "video": "video/biglig/카페에 혼자 가면.webm",
             "videoMp4": "video/biglig/mp4/카페에 혼자 가면.mp4",
             "korean": "카페에 혼자 가면",
+            "transcription": "Капеэ хончжа камён",
             "russian": "Когда в кафе один идешь"
         },
         {
             "video": "video/bloodhounds/이모님.webm",
             "videoMp4": "video/bloodhounds/mp4/이모님.mp4",
             "korean": "이모님",
+            "transcription": "Имоним",
             "russian": "Тётушка"
         },
         {
             "video": "video/weakhero/시킨 적 없는데요.webm",
             "videoMp4": "video/weakhero/mp4/시킨 적 없는데요.mp4",
             "korean": "시킨 적 없는데요",
+            "transcription": "Щикин чок омнындеё",
             "russian": "Я ничего не заказывал"
         },
         {
             "video": "video/demon/죄송하지만 오늘은 예약이 꽉 찼습니다.webm",
             "videoMp4": "video/demon/mp4/죄송하지만 오늘은 예약이 꽉 찼습니다.mp4",
             "korean": "죄송하지만 오늘은 예약이 꽉 찼습니다",
+            "transcription": "Чвесоңхачжиман онырын еяги кквак чассымнида",
             "russian": "Извините, но на сегодня все забронированно"
         },
         {
             "video": "video/demon/손님 한 분께서 통째로 빌리셔서.webm",
             "videoMp4": "video/demon/mp4/손님 한 분께서 통째로 빌리셔서.mp4",
             "korean": "손님 한 분께서 통째로 빌리셔서",
+            "transcription": "Сонним хан пунккесо тоңччэро пиллищёсо",
             "russian": "Один клиент полностью всё арендовал"
         },
         {
             "video": "video/allkdrama/가서 계산하고 와.webm",
             "videoMp4": "video/allkdrama/mp4/가서 계산하고 와.mp4",
             "korean": "밖가서 계산하고 와",
+            "transcription": "Паккасо кесанхаго ва",
             "russian": "Сходи оплати"
         },
         {
             "video": "video/healer/수고하세요.webm",
             "videoMp4": "video/healer/mp4/수고하세요.mp4",
             "korean": "수고하세요",
+            "transcription": "Сугохасеё",
             "russian": "Хорошей вам работы"
         },
         {
             "video": "video/parasites/죄송합니다 식사 중이에요.webm",
             "videoMp4": "video/parasites/mp4/죄송합니다 식사 중이에요.mp4",
             "korean": "죄송합니다 식사 중이에요",
+            "transcription": "Чвесоңхамнида щикса чжуңиеё",
             "russian": "Извините, я во время еды"
         },
         {
             "video": "video/bloodhounds/다 익었다 먹자.webm",
             "videoMp4": "video/bloodhounds/mp4/다 익었다 먹자.mp4",
             "korean": "다 익었다 먹자",
+            "transcription": "Та иготта мокчжа",
             "russian": "Всё приготовилось, давай есть"
         },
         {
             "video": "video/runbts/잘 먹었다고 하는 거지.webm",
             "videoMp4": "video/runbts/mp4/잘 먹었다고 하는 거지.mp4",
             "korean": "잘 먹었다고 하는 거지?",
+            "transcription": "Чаль моготтаго ханын кочжи",
             "russian": "Что говорите, вкусное вы тут ели?"
         }
     ],
@@ -314,60 +364,70 @@
             "video": "video/ad/얼마예요.webm",
             "videoMp4": "video/ad/mp4/얼마예요.mp4",
             "korean": "얼마예요?",
+            "transcription": "Ольмаеё",
             "russian": "Сколько стоит?"
         },
         {
             "video": "video/bloodhounds/왜 이렇게 비싸.webm",
             "videoMp4": "video/bloodhounds/mp4/왜 이렇게 비싸.mp4",
             "korean": "왜 이렇게 비싸?",
+            "transcription": "Вэ ироке писса",
             "russian": "Почему так дорого?"
         },
         {
             "video": "video/allkdrama/가격 또라이네.webm",
             "videoMp4": "video/allkdrama/mp4/가격 또라이네.mp4",
             "korean": "가격 또라이네",
+            "transcription": "Кагёк ттораине",
             "russian": "Цена безумная просто"
         },
         {
             "video": "video/runbts/한 번도 안 먹어 봤어요.webm",
             "videoMp4": "video/runbts/mp4/한 번도 안 먹어 봤어요.mp4",
             "korean": "한 번도 안 먹어 봤어요",
+            "transcription": "Хан пондо ан мого пвассоё",
             "russian": "Я ни разу не пробовал"
         },
         {
             "video": "video/lookism/믹스커피랑 캔커피만 마셔 봤어.webm",
             "videoMp4": "video/lookism/mp4/믹스커피랑 캔커피만 마셔 봤어.mp4",
             "korean": "믹스커피랑 캔커피만 마셔 봤어",
+            "transcription": "Миксыкопираң кэнкопиман мащё пвассо",
             "russian": "Я пила только микс-кофе и кофе в банке"
         },
         {
             "video": "video/squid game/어제 엄마랑 새아빠랑 스테이크하우스 갔었어.webm",
             "videoMp4": "video/squid game/mp4/어제 엄마랑 새아빠랑 스테이크하우스 갔었어.mp4",
             "korean": "어제 엄마랑 새아빠랑 스테이크하우스 갔었어",
+            "transcription": "Очже оммараң сэаппараң сытэикыхаусы кассоссо",
             "russian": "Вчера я ходила с мамой и отчимом в стейкхаус"
         },
         {
             "video": "video/runbts/이거는 제가 좋아하는 거예요.webm",
             "videoMp4": "video/runbts/mp4/이거는 제가 좋아하는 거예요.mp4",
             "korean": "이거는 제가 좋아하는 거예요",
+            "transcription": "Игонын чега чоаханын коеё",
             "russian": "Это то, что я люблю"
         },
         {
             "video": "video/demon/비싼 밥 먹으면서 소개팅 한 걸 왜 싫어해.webm",
             "videoMp4": "video/demon/mp4/비싼 밥 먹으면서 소개팅 한 걸 왜 싫어해.mp4",
             "korean": "비싼 밥 먹으면서 소개팅 한 걸 왜 싫어해?",
+            "transcription": "Писсан пап могюмёнсо согэтиң хан коль вэ щирохэ",
             "russian": "Почему тебе не нравится свидание вслепую с дорогим ужином?"
         },
         {
             "video": "video/deathgame/나는 뭐 오늘 같은 날 술도 못 마셔.webm",
             "videoMp4": "video/deathgame/mp4/나는 뭐 오늘 같은 날 술도 못 마셔.mp4",
             "korean": "나는 뭐, 오늘 같은 날 술도 못 마셔?",
+            "transcription": "Нанын мво оныль катын наль сульдо мон мащё",
             "russian": "Я что, даже в такой день не могу выпить?"
         },
         {
             "video": "video/runbts/저 과자 좋아요.webm",
             "videoMp4": "video/runbts/mp4/저 과자 좋아요.mp4",
             "korean": "저 과자 좋아요",
+            "transcription": "Чо квачжа чоаё",
             "russian": "Мне нравятся печеньки"
         }
     ]
