@@ -411,7 +411,6 @@
   ],
   "b3": [
     {
-      "isNew": true,
       "video": "video/kumiho/차 뽑으셨네요.webm",
       "videoMp4": "video/kumiho/mp4/차 뽑으셨네요.mp4",
       "korean": "차 뽑으셨네요",
@@ -454,7 +453,7 @@
       "new": true
     },
     {
-      "video": "video/kumiho/어떻게 총상이 이틀 만에 사라져.webm", 
+      "video": "video/kumiho/어떻게 총상이 이틀 만에 사라져.webm",
       "videoMp4": "video/kumiho/mp4/어떻게 총상이 이틀 만에 사라져.mp4",
       "korean": "어떻게 총상이 이틀 만에 사라져",
       "russian": "Как рана от пули может исчезнуть всего за два дня?",

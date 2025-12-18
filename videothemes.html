@@ -797,7 +797,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 24; i >= 2; i--) {
+          for (let i = 25; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -1432,7 +1432,7 @@
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 1; i <= 24; i++) {
+      for (let i = 1; i <= 25; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1465,10 +1465,10 @@
     document.addEventListener('DOMContentLoaded', () => {
 
       const updateConfig = {
-        version: '1212',
-        title: 'Обновление от 12.12',
+        version: '1812',
+        title: 'Обновление от 18.12',
         image: 'videothemes/update_banner.png',
-        text: `Обновил раздел "Слух с 0"\n⭐️теперь в нем 2 этапа:\n1. Обучение\nВидео+корейский+транскрипция+перевод\n\n2.Голосовой тест\nОтрабатываем голосом материал` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
+        text: `Новая дорама и новые фрагменты"\n\n⭐️Женись на мне(новая)\n⭐️Незнакомцы из ада(дополнение)` // <<<< МЕНЯЙ ЗДЕСЬ ОСНОВНОЙ ТЕКСТ
       };
       // ------------------------------------
 

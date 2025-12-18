@@ -243,7 +243,177 @@
       "russian": "Но умер он не в этой комнате"
     }
   ],
-  "b2": [],
+  "b2": [
+    {
+      "isNew": true,
+      "video": "video/ad/맛이 죽여요.webm",
+      "videoMp4": "video/ad/mp4/맛이 죽여요.mp4",
+      "korean": "맛이 죽여요",
+      "russian": "Убойный вкус"
+    },
+    {
+      "video": "video/ad/그러면 고기 본연의 맛이 사라지잖아요.webm",
+      "videoMp4": "video/ad/mp4/그러면 고기 본연의 맛이 사라지잖아요.mp4",
+      "korean": "그러면 고기 본연의 맛이 사라지잖아요",
+      "russian": "Тогда же пропадает натуральный вкус мяса"
+    },
+    {
+      "video": "video/ad/사진이랑도 그대로고.webm",
+      "videoMp4": "video/ad/mp4/사진이랑도 그대로고.mp4",
+      "korean": "사진이랑도 그대로고",
+      "russian": "Даже на фото всё так же"
+    },
+    {
+      "video": "video/ad/그건 음식물 쓰레기 국물이에요.webm",
+      "videoMp4": "video/ad/mp4/그건 음식물 쓰레기 국물이에요.mp4",
+      "korean": "그건 음식물 쓰레기 국물이에요",
+      "russian": "Это бульон из пищевых отходов"
+    },
+    {
+      "video": "video/ad/매일 조금씩이라도 글을 좀 써 보자.webm",
+      "videoMp4": "video/ad/mp4/매일 조금씩이라도 글을 좀 써 보자.mp4",
+      "korean": "매일 조금씩이라도 글을 좀 써 보자",
+      "russian": "Давай писать хотя бы понемногу каждый день"
+    },
+    {
+      "video": "video/ad/꼭 찾아 주세요.webm",
+      "videoMp4": "video/ad/mp4/꼭 찾아 주세요.mp4",
+      "korean": "꼭 찾아 주세요",
+      "russian": "Обязательно найдите, пожалуйста"
+    },
+    {
+      "video": "video/ad/혹시 이번 주말에 시간 되세요.webm",
+      "videoMp4": "video/ad/mp4/혹시 이번 주말에 시간 되세요.mp4",
+      "korean": "혹시 이번 주말에 시간 되세요?",
+      "russian": "У вас случайно есть время в эти выходные?"
+    },
+    {
+      "video": "video/ad/찾고 있어요.webm",
+      "videoMp4": "video/ad/mp4/찾고 있어요.mp4",
+      "korean": "찾고 있어요",
+      "russian": "Я ищу"
+    },
+    {
+      "video": "video/ad/형사요.webm",
+      "videoMp4": "video/ad/mp4/형사요.mp4",
+      "korean": "형사요?",
+      "russian": "Детектив?"
+    },
+    {
+      "video": "video/ad/연락 주세요.webm",
+      "videoMp4": "video/ad/mp4/연락 주세요.mp4",
+      "korean": "연락 주세요",
+      "russian": "Пожалуйста, свяжитесь со мной"
+    },
+    {
+      "video": "video/ad/이 근처 사세요.webm",
+      "videoMp4": "video/ad/mp4/이 근처 사세요.mp4",
+      "korean": "이 근처 사세요?",
+      "russian": "Вы живёте где-то рядом?"
+    },
+    {
+      "video": "video/ad/부럽다.webm",
+      "videoMp4": "video/ad/mp4/부럽다.mp4",
+      "korean": "부럽다",
+      "russian": "Завидую"
+    },
+    {
+      "video": "video/ad/그늘로 가.webm",
+      "videoMp4": "video/ad/mp4/그늘로 가.mp4",
+      "korean": "그늘로 가",
+      "russian": "Иди в тень"
+    },
+    {
+      "video": "video/ad/귀엽네.webm",
+      "videoMp4": "video/ad/mp4/귀엽네.mp4",
+      "korean": "귀엽네",
+      "russian": "Мило"
+    },
+    {
+      "video": "video/ad/조심히 들어가.webm",
+      "videoMp4": "video/ad/mp4/조심히 들어가.mp4",
+      "korean": "조심히 들어가",
+      "russian": "Езжай аккуратно"
+    },
+    {
+      "video": "video/ad/불쾌해요.webm",
+      "videoMp4": "video/ad/mp4/불쾌해요.mp4",
+      "korean": "불쾌해요",
+      "russian": "Мне неприятно"
+    },
+    {
+      "video": "video/ad/들어봐.webm",
+      "videoMp4": "video/ad/mp4/들어봐.mp4",
+      "korean": "들어봐",
+      "russian": "Послушай"
+    },
+    {
+      "video": "video/ad/고시원 살아 보지도 않았잖아요.webm",
+      "videoMp4": "video/ad/mp4/고시원 살아 보지도 않았잖아요.mp4",
+      "korean": "고시원 살아 보지도 않았잖아요",
+      "russian": "Вы же даже не жили в кошивоне"
+    },
+    {
+      "video": "video/ad/이제 기억나나 보네.webm",
+      "videoMp4": "video/ad/mp4/이제 기억나나 보네.mp4",
+      "korean": "이제 기억나나 보네",
+      "russian": "Похоже, теперь вспомнила"
+    },
+    {
+      "video": "video/ad/니 목소리에서 다 티가 나.webm",
+      "videoMp4": "video/ad/mp4/니 목소리에서 다 티가 나.mp4",
+      "korean": "네 목소리에서 다 티가 나",
+      "russian": "По твоему голосу всё понятно"
+    },
+    {
+      "video": "video/ad/지구대에서 무슨 일로요.webm",
+      "videoMp4": "video/ad/mp4/지구대에서 무슨 일로요.mp4",
+      "korean": "지구대에서 무슨 일로요?",
+      "russian": "По какому делу в полицейский участок?"
+    },
+    {
+      "video": "video/ad/연락되면요 제가 전달해 드릴게요.webm",
+      "videoMp4": "video/ad/mp4/연락되면요 제가 전달해 드릴게요.mp4",
+      "korean": "연락되면요 제가 전달해 드릴게요",
+      "russian": "Если свяжутся, я передам"
+    },
+    {
+      "video": "video/ad/부탁드리겠습니다.webm",
+      "videoMp4": "video/ad/mp4/부탁드리겠습니다.mp4",
+      "korean": "부탁드리겠습니다",
+      "russian": "Прошу вас"
+    },
+    {
+      "video": "video/ad/말 좀 이쁘게 해요.webm",
+      "videoMp4": "video/ad/mp4/말 좀 이쁘게 해요.mp4",
+      "korean": "말 좀 이쁘게 해요",
+      "russian": "Говорите, пожалуйста, повежливее"
+    },
+    {
+      "video": "video/ad/정신 어디 갔어.webm",
+      "videoMp4": "video/ad/mp4/정신 어디 갔어.mp4",
+      "korean": "정신 어디 갔어",
+      "russian": "Ты вообще в своём уме?"
+    },
+    {
+      "video": "video/ad/다음에 아프면 꼭 바로 오세요.webm",
+      "videoMp4": "video/ad/mp4/다음에 아프면 꼭 바로 오세요.mp4",
+      "korean": "다음에 아프면 꼭 바로 오세요",
+      "russian": "В следующий раз, если заболеете, обязательно сразу приходите"
+    },
+    {
+      "video": "video/ad/알았어 이따 집에 갈 때 톡 할게.webm",
+      "videoMp4": "video/ad/mp4/알았어 이따 집에 갈 때 톡 할게.mp4",
+      "korean": "알았어 이따 집에 갈 때 톡 할게",
+      "russian": "Хорошо, напишу, когда буду идти домой"
+    },
+    {
+      "video": "video/ad/그렇게 생각하세요.webm",
+      "videoMp4": "video/ad/mp4/그렇게 생각하세요.mp4",
+      "korean": "그렇게 생각하세요?",
+      "russian": "Вы так думаете?"
+    }
+  ],
   "b3": [],
   "b4": [],
   "b5": []

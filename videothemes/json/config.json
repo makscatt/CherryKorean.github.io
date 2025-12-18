@@ -261,7 +261,8 @@
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "Демо", "key": "b0" },
-      { "name": "1 Серия", "key": "b1" }
+      { "name": "1 ", "key": "b1" },
+      { "name": "2 ", "key": "b2" }
     ]
   },
   "theme20": {
@@ -308,6 +309,14 @@
     "theme24": {
     "coverImage": "videothemes/subthemebc/lis.png",
     "masterJsonPath": "videothemes/json/videotheme24.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "1", "key": "b1" }
+    ]
+  },
+    "theme25": {
+    "coverImage": "videothemes/subthemebc/marry.png",
+    "masterJsonPath": "videothemes/json/videotheme25.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
       { "name": "1", "key": "b1" }
