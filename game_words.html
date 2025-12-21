@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Voice Run: True Y-Axis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #87CEEB 0%, #B0E0E6 100%);
+            /* Небо */
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            user-select: none;
+        }
+
+        #ui-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hud-panel {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #score-display {
+            font-size: 28px;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        /* --- 3D СЦЕНА --- */
+        #scene {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            perspective: 800px;
+            /* Камера */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #world {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+
+            /* Изменили translateY с 300px на 100px (подняли сцену выше) */
+            transform: translateY(50px) rotateX(-90deg) rotateZ(-10deg);
+        }
+
+        /* Дорога лежит на плоскости XY */
+        #floor {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            /* Дорога идет от нас (0) в даль (+Y) */
+            transform: translateX(-50%);
+            width: 600px;
+            height: 10000px;
+            /* Длинная дорога по оси +Y */
+
+            background: linear-gradient(to top, #fff 0%, #e1f5fe 100%);
+            border-left: 15px solid #b3e5fc;
+            border-right: 15px solid #b3e5fc;
+
+            /* Сетка для визуализации движения по Y */
+            background-image:
+                linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+            background-size: 100px 200px;
+        }
+
+        .word-gate {
+            position: absolute;
+            left: 50%;
+            /* Увеличили размер для трех строк */
+            width: 340px;
+            height: 260px;
+
+            background: #ffffff;
+            border: none;
+            border-radius: 35px;
+            /* Сильное скругление */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            /* Мягкая объемная тень */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+            margin-left: -170px;
+            /* Половина ширины */
+            transform-origin: center bottom;
+            will-change: transform;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .gate-text-ko {
+            font-size: 80px;
+            font-weight: 900;
+            color: #000;
+            line-height: 1;
+            margin-bottom: 5px;
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+        }
+
+        .gate-text-trans {
+            font-size: 24px;
+            color: #9e9e9e;
+            /* Светло-серый */
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .gate-text-ru {
+            font-size: 45px;
+            color: #808080;
+            /* Темно-серый */
+            font-weight: 900;
+            background: none;
+            padding: 0;
+            line-height: 1;
+        }
+
+        /* Зеленая подсветка при успехе */
+        .word-gate.success {
+            box-shadow: 0 0 0 6px #00c853, 0 10px 40px rgba(0, 200, 83, 0.4);
+        }
+
+        #mic-status {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fff;
+            padding: 10px 30px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            color: #333;
+        }
+
+        .mic-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #ccc;
+        }
+
+        .mic-dot.active {
+            background: #ff1744;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.3);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #start-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 50px;
+            font-size: 26px;
+            border-radius: 50px;
+            border: none;
+            background: #ff9100;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 0 #e65100;
+            transition: transform 0.1s;
+        }
+
+        button:active {
+            transform: translateY(5px);
+            box-shadow: none;
+        }
+
+        #game-objects {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Это самое важное: сохраняет 3D объем для дочерних элементов */
+            transform-style: preserve-3d;
+            pointer-events: none;
+            z-index: 10;
+            /* Поднимаем слой с карточками над дорогой */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="ui-layer">
+        <div class="hud-panel">
+            <div id="score-display">0 / 0</div>
+        </div>
+        <div id="mic-status">
+            <div class="mic-dot" id="mic-indicator"></div>
+            <span id="status-text">Ожидание...</span>
+        </div>
+    </div>
+
+    <div id="scene">
+        <div id="world">
+            <div id="floor"></div>
+            <div id="game-objects"></div>
+        </div>
+    </div>
+
+    <div id="start-screen">
+        <h1 style="font-size: 40px;">ГОЛОСОВОЙ ЗАБЕГ</h1>
+        <p style="font-size: 18px; color: #ddd;">Слова двигаются от +Y к тебе (-Y)</p>
+        <button onclick="initGame()">ПОЕХАЛИ</button>
+    </div>
+
+    <script>
+        // --- КОНФИГУРАЦИЯ ИГРЫ ---
+        // Ось +Y - это даль. Мы стартуем далеко.
+        const START_Y_POS = 3500;
+        const WORD_GAP = 1200;      // Расстояние между словами
+        const SPEED = 6;            // Скорость движения (вычитаем Y каждый кадр)
+        const PLAYER_Y_POS = 100;   // Точка, где стоит "игрок"
+        const FAIL_OFFSET = -300;   // Если слово ушло за спину игрока
+
+        // Угол компенсации наклона карточек (чтобы стояли вертикально)
+        // Должен быть противоположен rotateX мира (-85deg)
+        const CARD_ROTATION = 85;
+
+        let wordsData = [];
+        let gameObjects = [];
+        let currentWordIndex = 0;
+        let score = 0;
+        let distanceTraveled = 0; // Насколько мы "проехали" по оси Y
+        let isRunning = false;
+        let isProcessing = false;
+        let animationFrame;
+
+
+        // Аудио
+        let mediaRecorder;
+        let audioChunks = [];
+        let audioContext;
+        let analyser;
+        let dataArray;
+        let source;
+
+        // Настройки VAD (Детектора голоса)
+        const VOICE_THRESHOLD = 20;  // Порог громкости (0-255), если тихо - увеличь, если шумно - уменьши
+        const SILENCE_DELAY = 800;   // Сколько мс тишины ждать перед отправкой
+
+        let isSpeaking = false;      // Говорит ли сейчас игрок
+        let silenceStart = null;     // Время начала тишины
+
+        function setupRecorder(stream) {
+            // 1. Настройка записи
+            mediaRecorder = new MediaRecorder(stream);
+            mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+            mediaRecorder.onstop = () => {
+                const blob = new Blob(audioChunks, { type: 'audio/webm' });
+                audioChunks = [];
+                if (isRunning) checkVoice(blob);
+            };
+
+            // 2. Настройка анализатора (слушает громкость)
+            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            analyser = audioContext.createAnalyser();
+            analyser.fftSize = 256;
+            source = audioContext.createMediaStreamSource(stream);
+            source.connect(analyser);
+            dataArray = new Uint8Array(analyser.frequencyBinCount);
+        }
+
+        async function initGame() {
+            try {
+                // Пытаемся загрузить JSON
+                try {
+                    const res = await fetch('videothemes/json/game_words.json');
+                    if (!res.ok) throw new Error();
+                    wordsData = await res.json();
+                } catch {
+                    // Заглушка
+                    wordsData = [
+                        { korean: "오류", transcription: "Ошибка JSON" },
+                        { korean: "테스트", transcription: "Тест" }
+                    ];
+                }
+
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                setupRecorder(stream);
+
+                // Сброс
+                document.getElementById('start-screen').style.display = 'none';
+                buildLevel();
+
+                isRunning = true;
+                currentWordIndex = 0;
+                score = 0;
+                distanceTraveled = 0;
+                updateScore();
+
+                // Запуск циклов
+                gameLoop();
+                detectVoiceActivity();
+
+            } catch (e) {
+                alert("Ошибка: " + e.message);
+            }
+        }
+
+        function buildLevel() {
+            const container = document.getElementById('game-objects');
+            container.innerHTML = '';
+            gameObjects = [];
+
+            wordsData.forEach((word, index) => {
+                const el = document.createElement('div');
+                el.className = 'word-gate';
+
+                // Проверяем наличие полей, чтобы не было undefined
+                const trans = word.transcription ? `[${word.transcription}]` : '';
+                const translation = word.russian || word.meaning || "";
+
+                el.innerHTML = `
+                    <div class="gate-text-ko">${word.korean}</div>
+                    <div class="gate-text-trans">${trans}</div>
+                    <div class="gate-text-ru">${translation}</div>
+                `;
+
+                const absoluteY = START_Y_POS + (index * WORD_GAP);
+                container.appendChild(el);
+
+                gameObjects.push({
+                    el: el,
+                    initialY: absoluteY,
+                    korean: word.korean,
+                    passed: false,
+                    isFlying: false,
+                    flyHeight: 0
+                });
+
+                updateTransform(el, absoluteY, 0);
+            });
+        }
+
+        function updateTransform(element, posY, heightZ) {
+            // translate3d(x, y, z)
+            // Мы двигаем по Y (глубина) и Z (высота)
+            // rotateX выпрямляет карточку
+            element.style.transform = `translate3d(0, ${posY}px, ${heightZ}px) rotateX(${CARD_ROTATION}deg)`;
+        }
+
+        function gameLoop() {
+            if (!isRunning) return;
+
+            // Двигаем мир только если:
+            // 1. Сервер не думает (!isProcessing)
+            // 2. Игрок молчит (!isSpeaking)
+            if (!isProcessing && !isSpeaking) {
+                distanceTraveled += SPEED;
+            }
+
+            gameObjects.forEach((obj, index) => {
+                if (obj.isFlying) {
+                    obj.flyHeight += 20;
+                    const currentY = (obj.initialY - distanceTraveled) + 20;
+                    updateTransform(obj.el, currentY, obj.flyHeight);
+                    obj.el.style.opacity = Math.max(0, 1 - obj.flyHeight / 800);
+                    return;
+                }
+
+                const currentY = obj.initialY - distanceTraveled;
+                updateTransform(obj.el, currentY, 0);
+
+                if (index === currentWordIndex && !obj.passed) {
+                    if (currentY < FAIL_OFFSET) {
+                        gameOver(false);
+                    }
+                }
+            });
+
+            animationFrame = requestAnimationFrame(gameLoop);
+        }
+
+
+
+        function detectVoiceActivity() {
+            if (!isRunning) return;
+
+            // Считываем громкость
+            analyser.getByteFrequencyData(dataArray);
+            let sum = 0;
+            for (let i = 0; i < dataArray.length; i++) {
+                sum += dataArray[i];
+            }
+            const average = sum / dataArray.length;
+
+            if (!isSpeaking) {
+                // Режим ожидания: если голос громче порога — начинаем запись
+                if (average > VOICE_THRESHOLD) {
+                    isSpeaking = true;
+                    silenceStart = Date.now(); // Инициализация таймера
+                    if (mediaRecorder.state === 'inactive') {
+                        mediaRecorder.start();
+                        document.getElementById('mic-indicator').classList.add('active');
+                        document.getElementById('status-text').innerText = "Слушаю...";
+                    }
+                }
+            } else {
+                // Режим записи
+                if (average > VOICE_THRESHOLD) {
+                    // Если слышим голос — обновляем таймер "последнего звука"
+                    silenceStart = Date.now();
+                } else {
+                    // Если тишина длится дольше заданного времени — стоп
+                    if (Date.now() - silenceStart > SILENCE_DELAY) {
+
+                        // Сразу ставим флаг обработки, чтобы игра не дернулась
+                        isProcessing = true;
+
+                        isSpeaking = false;
+                        if (mediaRecorder.state === 'recording') {
+                            mediaRecorder.stop();
+                            document.getElementById('mic-indicator').classList.remove('active');
+                        }
+                    }
+                }
+            }
+
+            requestAnimationFrame(detectVoiceActivity);
+        }
+
+        async function checkVoice(blob) {
+            if (currentWordIndex >= gameObjects.length) return;
+
+            isProcessing = true; // СТОП ИГРА: Ждем ответа
+            const target = gameObjects[currentWordIndex].korean;
+
+            // Визуально показываем, что думаем
+            document.getElementById('status-text').innerText = "Думаю...";
+            document.getElementById('mic-indicator').classList.remove('active');
+
+            const formData = new FormData();
+            formData.append('user_audio', blob);
+            formData.append('reference_text', target);
+
+            try {
+                const res = await fetch('https://koreanhelper-api.onrender.com/compare-audio', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await res.json();
+
+                isProcessing = false; // ПРОДОЛЖАЕМ ИГРУ
+
+                if (data.status === 'success' && data.similarity >= 60) {
+                    handleSuccess();
+                } else {
+                    document.getElementById('status-text').innerText = "Мимо! Еще раз";
+                    console.log(`Мимо: ${data.similarity}%`);
+                }
+            } catch (e) {
+                console.error(e);
+                isProcessing = false; // Если ошибка сети - тоже отпускаем игру
+                document.getElementById('status-text').innerText = "Ошибка сети";
+            }
+        }
+
+        function handleSuccess() {
+            const obj = gameObjects[currentWordIndex];
+            obj.passed = true;
+            obj.el.classList.add('success');
+            obj.isFlying = true; // Запускаем анимацию полета
+
+            score++;
+            updateScore();
+            currentWordIndex++;
+
+            // Если это было последнее слово
+            if (currentWordIndex >= gameObjects.length) {
+                // Даем время на анимацию улетания
+                setTimeout(() => gameOver(true), 1500);
+            }
+        }
+
+        function gameOver(win) {
+            isRunning = false;
+            cancelAnimationFrame(animationFrame);
+
+            const screen = document.getElementById('start-screen');
+            const h1 = screen.querySelector('h1');
+            const p = screen.querySelector('p');
+            const btn = screen.querySelector('button');
+
+            screen.style.display = 'flex';
+
+            if (win) {
+                h1.innerText = "ПОБЕДА! 🏆";
+                p.innerText = "Все слова пройдены!";
+                btn.innerText = "ЕЩЕ РАЗ";
+                btn.style.background = "#00c853";
+            } else {
+                h1.innerText = "УПУСТИЛ! 💥";
+                const lostWord = gameObjects[currentWordIndex].korean;
+                p.innerText = `Слово "${lostWord}" пролетело мимо.`;
+                btn.innerText = "ЗАНОВО";
+                btn.style.background = "#ff3d00";
+            }
+
+            btn.onclick = () => location.reload();
+        }
+
+        function updateScore() {
+            document.getElementById('score-display').innerText = `${score} / ${wordsData.length}`;
+        }
+
+    </script>
+</body>
+
+</html>
