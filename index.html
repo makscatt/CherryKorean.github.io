@@ -139,10 +139,29 @@
             /* Поверх всех элементов */
 
         }
+
+        .loader {
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            border-top: 6px solid #E50914;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
-<body style="visibility: hidden">
+<body>
 
 
 
@@ -157,13 +176,8 @@
     <!-- Контейнер для кнопок -->
     <div id="buttonsContainer">
 
-        <img src="app_name.png" alt="App Name" style="width: 80%; ">
-        <div class="buttonsRow">
-            <!-- Вторая строка кнопок -->
-            <!-- <img src="button3.png" alt="По картинкам" class="startButton" onclick="startGame('pictures')">-->
-            <!-- <img src="button2.png" alt="На слух" class="startButton" onclick="startGame('audiomenu')">-->
-            <button class="startButton" onclick="startGame('video')">Начать</button>
-        </div>
+        <img src="app_name.png" alt="App Name" style="width: 80%; margin-bottom: 20px;">
+        <div class="loader"></div>
     </div>
 
 
@@ -201,7 +215,7 @@
                         localStorage.setItem("member", "true");
                     } else {
                         localStorage.setItem("member", "false");
-                   }
+                    }
                     //localStorage.setItem("member", "true"); 
 
                     // Трекинг пользователя
@@ -215,7 +229,9 @@
                     localStorage.setItem("member", "false");
                 })
                 .finally(() => {
-                    document.body.style.visibility = "visible"; // ← показываем страницу
+                    setTimeout(() => {
+                        startGame('video');
+                    }, 1500);
                 });
 
         }
