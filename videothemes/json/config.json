@@ -321,5 +321,13 @@
     "blocks": [
       { "name": "1", "key": "b1" }
     ]
+  },
+    "theme26": {
+    "coverImage": "videothemes/subthemebc/tafun.png",
+    "masterJsonPath": "videothemes/json/videotheme26.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      { "name": "1", "key": "b1" }
+    ]
   }
 }
