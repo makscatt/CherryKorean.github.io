@@ -4,197 +4,195 @@
 <head>
   <meta charset="UTF-8">
   <title>Кнопки</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="analytics.js"></script>
   <link rel="stylesheet" href="font.css" />
-
-  <link rel="stylesheet" href="minimenu.css">
   <link rel="stylesheet" href="videosubmenustyles.css">
+
   <style>
     html,
     body {
       margin: 0;
       padding: 0;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 100vw;
       height: 100vh;
       background-color: #000000;
       font-family: 'NetflixSans-Regular', Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    #gameContainer {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #000000 20%, #ffffff 20%);
+      overflow: hidden;
+    }
+
+    /* --- СТРУКТУРА СКРОЛЛА --- */
+
+    #scroll-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    #scroll-wrapper::-webkit-scrollbar {
+      display: none;
     }
 
     #bg-image {
       width: 100%;
       height: auto;
       display: block;
-
-    }
-
-    #gameContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      margin: auto;
-      width: 100vw;
-      /* Используем относительную единицу измерения */
-      height: 100vh;
-      padding-top: 0px;
-      background: linear-gradient(to bottom, #000000 20%, #ffffff 20%);
-
-    }
-
-
-    @media (hover: hover) and (pointer: fine) {
-      #gameContainer {
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-    }
-
-    #menu-button-container {
-      position: relative;
-      max-width: 100%;
-      gap: 5px;
-      margin-top: auto;
-      height: 10%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      border-radius: 10px 10px 0 0;
-
-      /* --- ГЛЯНЦЕВЫЙ ЭФФЕКТ ДЛЯ ТЕМНОЙ ПАНЕЛИ --- */
-
-      /* 1. Темный градиент для имитации объема */
-      background: linear-gradient(to bottom, #2f2f31, #1C1C1E);
-
-      /* 2. Только верхняя граница для отделения от контента */
-      border: none;
-      /* Сначала сбрасываем старую рамку */
-      border-top: 1px solid rgba(255, 215, 0, 0.4);
-
-      /* 3. Тень: внутренний блик + тень ВВЕРХ для отделения от контента */
-      box-shadow:
-        inset 0 1px 1px rgba(255, 255, 255, 0.1),
-        /* Внутренний блик сверху */
-        0 -1px 5px rgba(0, 0, 0, 0.5);
-      /* Внешняя тень, отбрасываемая вверх на контент */
-    }
-
-    #stars {
-      display: flex;
-      font-size: 20px;
-      color: white;
-    }
-
-    #starsInstruction {
-      width: 100%;
-      height: 100%;
-      font-size: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    button {
-      margin: 5px;
-      padding: 5px 10px;
-      font-size: 18px;
-      cursor: pointer;
-      background-color: #ffffff;
-      color: rgb(51, 51, 51);
-      border-radius: 5px;
-      transition: all 0.1s ease-in-out;
-      border: none;
-      outline: 1px solid rgba(0, 0, 0, 0.1);
-      outline-offset: -1px;
-      box-shadow: 0 4px 0 #bbb;
-    }
-
-    button:active {
-      box-shadow: 0 1px 8px #b7b7b7;
-      transform: translateY(4px);
-    }
-
-
-    #main-menu-button {
-      font-size: 28px;
-      margin-left: auto;
-      margin-right: 15px;
-    }
-
-    #back-button {
-      font-size: 28px;
-      margin-right: auto;
+      object-fit: cover;
     }
 
     #buttons-container {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      overflow-y: auto;
-      padding: 10px;
-
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 15px;
+      padding-bottom: 150px;
+      /* Увеличили отступ снизу, чтобы контент не перекрывался таймером и кнопкой */
       width: 100%;
       box-sizing: border-box;
+      align-content: start;
     }
 
-    #buttons-container::-webkit-scrollbar {
+    /* --- UI ЭЛЕМЕНТЫ (ПЛАВАЮЩИЕ) --- */
+
+    /* Звезды (справа сверху) */
+    #stars {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fbc02d;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      z-index: 1000;
+    }
+
+    /* ТАЙМЕР - ПО ЦЕНТРУ НАД КНОПКОЙ */
+    #timer-container {
+      position: fixed;
+      bottom: 105px;
+      /* 40px (bottom кнопки) + ~55px (высота кнопки) + 10px (зазор) */
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      z-index: 1000;
       display: none;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      cursor: default;
+      white-space: nowrap;
     }
 
+    /* Контейнер для кнопки домой (внизу справа) */
+    .floating-controls {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      z-index: 2000;
+    }
+
+    .float-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.1s;
+      padding: 0;
+      outline: none;
+      background-color: #ffffff;
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .float-btn:active {
+      transform: scale(0.95);
+    }
+
+    
+
+    /* Кнопка Премиума (плавающая внизу по центру) */
+    #get-premium-timer-btn {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      align-items: center;
+      width: auto;
+      min-width: 200px;
+      max-width: 60%;
+
+      background-color: #000000;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 10px 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      z-index: 2000;
+    }
+
+    #get-premium-timer-btn:active {
+      transform: translateX(-50%) scale(0.98);
+    }
+
+    /* --- Стили кнопок меню --- */
     #buttons-container .submenubutton {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
       position: relative;
       width: 100%;
-
-      /* --- ГЛЯНЦЕВЫЙ ЭФФЕКТ НАЧИНАЕТСЯ ЗДЕСЬ --- */
-
-      /* 1. Основной фон - градиент от светлого к темному */
+      aspect-ratio: 1 / 0.85;
       background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
-
-      /* 2. Рамка с эффектом объема */
       border: 1px solid #b8b8b8;
       border-top-color: #d1d1d1;
       border-bottom-color: #a3a3a3;
-
-      /* 3. Тень: внешняя для объема и внутренняя для блика */
-      box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.6),
-        /* Внутренний блик сверху */
-        0 2px 3px rgba(0, 0, 0, 0.1);
-      /* Внешняя тень снизу */
-
-      /* 4. Тень для текста, чтобы он лучше читался */
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 3px rgba(0, 0, 0, 0.1);
       text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-
-      /* --- КОНЕЦ ГЛЯНЦЕВОГО ЭФФЕКТА --- */
-
       color: #333333;
-      /* Сделаем текст чуть темнее для контраста */
-      padding: 12px 16px;
-      margin-bottom: 8px;
-      font-size: clamp(18px, 4vw, 36px);
-      text-align: left;
-      font-weight: 500;
-      /* Немного жирнее */
-      border-radius: 8px;
-      box-sizing: border-box;
+      border-radius: 16px;
+      padding: 10px;
       cursor: pointer;
-      transition: all 0.2s ease;
-      /* Плавный переход для всех свойств */
-      height: clamp(70px, 5vw, 90px);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    #buttons-container .submenubutton:active {
+      transform: scale(0.96);
+      background-color: #eeeeee;
     }
 
     #buttons-container .submenubutton:hover {
@@ -212,7 +210,7 @@
       left: 60%;
       width: clamp(40%, 5vw, 100%);
       height: 100px;
-      background: url('lockhorizont.png') no-repeat center center;
+      background: url('redlockhorizont.png') no-repeat center center;
       background-size: contain;
       transform: translate(-50%, -50%);
       pointer-events: none;
@@ -224,9 +222,7 @@
       top: 50%;
       left: 60%;
       width: clamp(40%, 5vw, 100%);
-      /* Можно настроить размер замка */
       height: 100%;
-      /* Можно настроить размер замка */
       background: url('redlockhorizont.png') no-repeat center center;
       background-size: contain;
       transform: translate(-50%, -50%);
@@ -234,98 +230,53 @@
     }
 
     .theme-count-container {
-      margin-left: 0;
+      background: #e0e0e0;
+      border-radius: 12px;
+      padding: 4px 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #555;
       display: flex;
       align-items: center;
-      border-radius: 8px;
-      position: relative;
-      gap: 1px;
-
+      justify-content: center;
+      margin: 0;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     }
 
     .theme-tape-icon {
-      width: clamp(50px, 5vw, 100px);
-      height: clamp(50px, 5vw, 100px);
+      width: 45px;
+      height: 45px;
       object-fit: contain;
-      margin-right: -6px;
-      display: block;
-
+      margin-bottom: 8px;
     }
 
-    .theme-count {
-      font-size: clamp(20px, 5vw, 40px);
-      font-weight: bold;
-      color: #000000;
-
-      min-width: 18px;
+    .submenubutton span.title-text {
+      font-size: 15px;
+      font-weight: 700;
       text-align: center;
-      letter-spacing: 0.5px;
-    }
-
-    .lock-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
+      margin-bottom: 8px;
+      line-height: 1.2;
       width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 28px;
-      color: black;
-      background-color: rgba(255, 255, 255, 0.6);
-      pointer-events: none;
+      white-space: normal;
     }
 
     .theme-badge {
       position: absolute;
-      top: -7px;
-      right: 10px;
-      background-color: red;
+      top: 8px;
+      right: 8px;
+      background-color: #ff5252;
       color: white;
-      font-size: 14px;
-      padding: 2px 6px;
-      border-radius: 4px;
+      font-size: 10px;
+      padding: 3px 6px;
+      border-radius: 8px;
       z-index: 2;
-    }
-
-    #timer-container {
-      position: relative;
-      /* Для позиционирования всплывающей подсказки */
-      display: none;
-      /* Изначально скрыт, управляется JS */
-      cursor: pointer;
-    }
-
-    #get-premium-timer-btn {
-      display: none;
-      align-items: center;
-      width: 35%;
-
-      background-color: #000000;
-      color: #FFD700;
-      border: 2px solid #FFD700;
-      border-radius: 12px;
-      padding: 8px 12px;
-      /* Уменьшаем внутренние отступы */
-      cursor: pointer;
-      transition: transform 0.2s;
-      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
-      position: relative;
-      overflow: hidden;
-      margin: 0;
-      /* Уменьшаем отступы сверху и добавляем снизу */
-    }
-
-    #get-premium-timer-btn:active {
-      transform: scale(0.98);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .banner-icon {
-      width: 36px;
-      /* Уменьшаем иконку */
-      height: 36px;
-      margin-right: 12px;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
     }
 
     .banner-text-wrapper {
@@ -335,21 +286,19 @@
     }
 
     .banner-text-main {
-      /* Делаем шрифт более компактным и адаптивным */
-      font-size: clamp(16px, 3.5vw, 20px);
+      font-size: 16px;
       font-weight: 600;
+      white-space: nowrap;
     }
 
     .banner-arrow {
       margin-left: auto;
-      font-size: 28px;
-      /* Уменьшаем стрелку */
+      font-size: 24px;
       font-weight: 300;
       color: #FFD700;
       padding-left: 10px;
     }
 
-    /* Анимация блика (остается без изменений) */
     #get-premium-timer-btn::after {
       content: '';
       position: absolute;
@@ -357,10 +306,7 @@
       left: -60%;
       width: 50%;
       height: 200%;
-      background: linear-gradient(to right,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(255, 255, 255, 0.15) 50%,
-          rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 100%);
       transform: skewX(-25deg);
       animation: banner-shine 4s infinite;
       animation-delay: 1.5s;
@@ -391,52 +337,58 @@
     transition: opacity 0.4s ease;">
   </div>
 
-
   <div id="gameContainer">
 
-    <img id="bg-image" src="videothemes/subthemebc/demo.png" alt="фон" />
-    <div id="buttons-container"></div>
-
-    <div id="menu-button-container">
-      <div id="stars">⭐ 0</div>
-      <div id="timer-container">
-        <img src="videothemes/icons/timer.png" alt="Timer" style="width: 60px; height: 60px;">
-        <span id="timer-display"
-          style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.8); color: white; padding: 3px 8px; border-radius: 5px; font-size: 14px; white-space: nowrap; display: none;">5:00</span>
-      </div>
-      <button id="get-premium-timer-btn">
-        <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="">
-        <div class="banner-text-wrapper">
-          <span class="banner-text-main">Убрать лимит</span>
-
-        </div>
-        <span class="banner-arrow">›</span>
-      </button>
-      <!--<div id="starsInstruction">За правильные ответы получай ⭐<br>Октрыть блок BTS - 10⭐</div>-->
-      <button id="main-menu-button" class="nav-button" onclick="goHome()">
-        <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
-      </button>
+    <!-- Скроллящийся контейнер для контента -->
+    <div id="scroll-wrapper">
+      <img id="bg-image" src="videothemes/subthemebc/demo.png" alt="фон" />
+      <div id="buttons-container"></div>
     </div>
+
+    <!-- UI ЭЛЕМЕНТЫ -->
+
+    <!-- 1. Звезды (справа сверху) -->
+    <div id="stars">⚡️ 0</div>
+
+    <!-- 2. Таймер (по центру над кнопкой) -->
+    <div id="timer-container">
+      <span id="timer-display">⏳ 5:00</span>
+    </div>
+
+    <!-- 3. Кнопка Премиум (снизу по центру) -->
+    <button id="get-premium-timer-btn">
+      <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="">
+      <div class="banner-text-wrapper">
+        <span class="banner-text-main">Убрать лимит</span>
+      </div>
+      <span class="banner-arrow">›</span>
+    </button>
+
+    <!-- 4. Кнопка Домой (справа снизу) -->
+    <div class="floating-controls">
+      <button id="" class="float-btn" onclick="goHome()">
+      <img src="videothemes/icons/home.png" alt="Home" style="width: 50px; height: 50px;">
+    </button>
+    </div>
+    
   </div>
 
   <script>
-
     // --- КОНФИГУРАЦИЯ ---
-    const CONFIG_PATH = 'videothemes/json/config.json'; // Убедитесь, что путь верный
+    const CONFIG_PATH = 'videothemes/json/config.json';
     const starsKey = "stars";
     const DAILY_LIMIT_SECONDS = 300;
 
-    // --- Начало блока функций ---
-
-    // Глобальные переменные для доступа к элементам
+    // Глобальные переменные
     let premiumPopupOverlay, subscriptionModal, loader, offerPopupOverlay;
 
     function formatTime(seconds) {
       const mins = Math.floor(seconds / 60);
       const secs = seconds % 60;
-      return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+      return `⏳ ${mins}:${secs < 10 ? '0' : ''}${secs}`;
     }
-    // Показ/скрытие основного попапа (с плавной анимацией)
+
+    // --- Функции UI (Попапы) ---
     function showPremiumPopup() {
       if (premiumPopupOverlay) {
         premiumPopupOverlay.style.opacity = '1';
@@ -449,205 +401,158 @@
         premiumPopupOverlay.style.pointerEvents = 'none';
       }
     }
-
-    // Показ/скрытие модального окна об отписке
-    function openModal() {
-      if (subscriptionModal) subscriptionModal.style.display = 'block';
-    }
-    function closeModal() {
-      if (subscriptionModal) subscriptionModal.style.display = 'none';
-    }
-
-    // НОВЫЕ ФУНКЦИИ ДЛЯ ПОПАПА ОФЕРТЫ
+    function openModal() { if (subscriptionModal) subscriptionModal.style.display = 'block'; }
+    function closeModal() { if (subscriptionModal) subscriptionModal.style.display = 'none'; }
     function showOfferPopup() {
       if (offerPopupOverlay) {
         const iframe = offerPopupOverlay.querySelector('iframe');
-        const offerUrl = "videooffer.html"; // URL без параметров
-
-        if (iframe && iframe.getAttribute('src') !== offerUrl) {
-          iframe.setAttribute('src', offerUrl);
-        }
+        const offerUrl = "videooffer.html";
+        if (iframe && iframe.getAttribute('src') !== offerUrl) iframe.setAttribute('src', offerUrl);
         offerPopupOverlay.style.display = 'flex';
       }
     }
-    function hideOfferPopup() {
-      if (offerPopupOverlay) offerPopupOverlay.style.display = 'none';
-    }
+    function hideOfferPopup() { if (offerPopupOverlay) offerPopupOverlay.style.display = 'none'; }
 
-    // Перенаправление на оплату
     async function redirectToPayment() {
+      trackEvent('checkout_start', { source: 'theme_menu_popup', price: 99, currency: 'RUB' });
       if (loader) loader.style.display = "flex";
-
       const telegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");
-      if (!telegramId) {
-        if (loader) loader.style.display = "none";
-        return;
-      };
+      if (!telegramId) { if (loader) loader.style.display = "none"; return; };
 
       try {
         const res = await fetch(`https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}`);
         const data = await res.json();
-        if (data.url) {
-          window.location.href = data.url;
-        } else {
-          if (loader) loader.style.display = "none";
-          console.error("Ошибка получения ссылки на оплату.");
-        }
-      } catch (err) {
-        console.error("Ошибка при получении ссылки:", err);
-        if (loader) loader.style.display = "none";
-      }
+        if (data.url) window.location.href = data.url;
+        else { if (loader) loader.style.display = "none"; console.error("Ошибка"); }
+      } catch (err) { console.error("Ошибка:", err); if (loader) loader.style.display = "none"; }
     }
 
-    // --- Конец блока функций ---
-
-    // --- УТИЛИТЫ ---
-    function getStars() {
-      return parseInt(localStorage.getItem(starsKey)) || 0;
+    // --- Утилиты ---
+    function getStars() { return parseInt(localStorage.getItem(starsKey)) || 0; }
+    function setStars(value) {
+      localStorage.setItem(starsKey, value);
+      const starsEl = document.getElementById('stars');
+      if (starsEl) starsEl.textContent = `⚡️ ${value}`;
     }
 
     function displayStaticTimer() {
       const isMember = localStorage.getItem("member") === "true";
       if (isMember) {
-        // Убедимся, что таймер и кнопка скрыты для подписчиков
         const timerContainer = document.getElementById('timer-container');
         if (timerContainer) timerContainer.style.display = 'none';
-
         const premiumBtn = document.getElementById('get-premium-timer-btn');
         if (premiumBtn) premiumBtn.style.display = 'none';
-
         return;
       }
 
-      // Показываем таймер
       const timerContainer = document.getElementById('timer-container');
       const timerDisplay = document.getElementById('timer-display');
       timerContainer.style.display = 'block';
 
-      // Показываем новый баннер
       const premiumBtn = document.getElementById('get-premium-timer-btn');
       if (premiumBtn) {
-        premiumBtn.style.display = 'flex'; // Используем flex для правильного отображения
+        premiumBtn.style.display = 'flex';
         premiumBtn.addEventListener('click', showPremiumPopup);
       }
 
-      // Логика отображения времени (остается без изменений)
       const today = new Date().toISOString().split('T')[0];
       const lastUsageDate = localStorage.getItem('lastUsageDate');
       let timeUsedToday = 0;
-
       if (lastUsageDate === today) {
         timeUsedToday = parseInt(localStorage.getItem('timeUsedToday') || '0', 10);
       }
-
       const timeLeft = DAILY_LIMIT_SECONDS - timeUsedToday;
       timerDisplay.textContent = formatTime(Math.max(0, timeLeft));
-
-      timerContainer.addEventListener('click', () => {
-        timerDisplay.style.display = timerDisplay.style.display === 'none' ? 'block' : 'none';
-      });
-    }
-    function setStars(value) {
-      localStorage.setItem(starsKey, value);
-      const starsEl = document.getElementById('stars');
-      if (starsEl) starsEl.textContent = `⭐ ${value}`;
     }
 
-    // --- ОСНОВНАЯ ЛОГИКА ---
-
-    // 1. Переход на страницу с видео (для УРОКОВ и старых тем)
     function goToContentPage(blockKey, masterJsonPath) {
+      trackEvent('lesson_start', { lesson_id: blockKey, theme_type: 'drama' });
       localStorage.setItem('selectedBlockKey', blockKey);
       localStorage.setItem('masterJsonPath', masterJsonPath);
-      // Всегда ведет на один и тот же шаблон видео
       window.location.href = 'video_list_template.html';
     }
 
-    // 2. Рендер кнопок для обычной ТЕМЫ (дорамы)
+    function goHome() {
+      window.location.href = 'menu.html';
+    }
 
-    // 3. Рендер кнопок для ГЛАВЫ "Тропинки"
+    // --- Рендер кнопок ---
     async function renderPathwayMenu(chapterConfig) {
       const container = document.getElementById("buttons-container");
       container.innerHTML = "";
 
-      // Загружаем JSON этой главы, чтобы узнать, какие в ней есть уроки
       const response = await fetch(`${chapterConfig.masterJsonPath}?v=${new Date().getTime()}`);
       const lessonsData = await response.json();
       const lessonKeys = Object.keys(lessonsData);
-
-      // Получаем прогресс по урокам этой главы
-      const chapterId = localStorage.getItem('selectedThemeId'); // e.g., 'chapter_1'
+      const chapterId = localStorage.getItem('selectedThemeId');
       const completedLessons = JSON.parse(localStorage.getItem(`completedLessons_v3_${chapterId}`)) || [];
 
       lessonKeys.forEach((lessonKey, index) => {
         const lessonName = `Урок ${lessonKey.split('_')[1]}.${lessonKey.split('_')[2]}`;
+        const lessonPhrasesCount = lessonsData[lessonKey].length;
 
         const btn = document.createElement("button");
         btn.className = "submenubutton";
         btn.dataset.blockKey = lessonKey;
 
+        const icon = document.createElement("img");
+        icon.src = "videothemes/icons/tape.png";
+        icon.className = "theme-tape-icon";
+
         const textSpan = document.createElement("span");
+        textSpan.className = "title-text";
         textSpan.textContent = lessonName;
 
         const countContainer = document.createElement("div");
         countContainer.className = "theme-count-container";
-        const lessonPhrasesCount = lessonsData[lessonKey].length;
-        countContainer.innerHTML = `<img src="videothemes/icons/tape.png" class="theme-tape-icon" alt="Tape"> x <span class="theme-count">${lessonPhrasesCount}</span>`;
+        countContainer.innerHTML = `<span class="theme-count">${lessonPhrasesCount} шт.</span>`;
 
+        btn.appendChild(icon);
         btn.appendChild(textSpan);
         btn.appendChild(countContainer);
 
-        // Логика блокировки уроков
         const isLocked = index > 0 && !completedLessons.includes(lessonKeys[index - 1]);
         if (isLocked) {
           btn.classList.add('pathway-locked');
+          icon.style.opacity = "0.5";
         } else {
           btn.addEventListener("click", () => {
+            trackEvent('lesson_start', { lesson_id: lessonKey, theme_name: 'Pathway' });
             localStorage.setItem('selectedBlockKey', lessonKey);
             localStorage.setItem('masterJsonPath', chapterConfig.masterJsonPath);
-            window.location.href = 'pathway_player.html'; // <--- ВОТ ПРАВИЛЬНОЕ ИЗМЕНЕНИЕ
+            window.location.href = 'pathway_player.html';
           });
         }
-
         container.appendChild(btn);
       });
     }
 
     async function renderSortedThemeMenu(themeConfig) {
       const container = document.getElementById("buttons-container");
-      container.innerHTML = ""; // Очищаем
+      container.innerHTML = "";
 
-      // 1. Загружаем JSON с фразами, чтобы узнать, какие блоки новые
       const response = await fetch(`${themeConfig.masterJsonPath}?v=${new Date().getTime()}`);
       const masterJsonData = await response.json();
 
-      // 2. "Обогащаем" информацию о блоках: добавляем флаг isNew и кол-во видео
       const enrichedBlocks = themeConfig.blocks.map(block => {
         const blockData = masterJsonData[block.key] || [];
         return {
           key: block.key,
           name: block.name,
-          isNew: blockData.some(item => item.isNew === true), // Проверяем новизну
+          isNew: blockData.some(item => item.isNew === true),
           videoCount: blockData.length
         };
       });
 
-      // 3. Сортируем
       enrichedBlocks.sort((a, b) => {
-        if (a.isNew !== b.isNew) {
-          return a.isNew ? -1 : 1; // Новинки выше
-        }
+        if (a.isNew !== b.isNew) return a.isNew ? -1 : 1;
         const numA = parseInt(a.key.replace('b', ''));
         const numB = parseInt(b.key.replace('b', ''));
         return a.isNew ? numB - numA : numA - numB;
       });
 
-      // 4. Рендерим кнопки, убрав всю логику блокировки
       enrichedBlocks.forEach(block => {
-        // Пропускаем создание демо-кнопки
-        if (block.key === 'b0') {
-          return;
-        }
+        if (block.key === 'b0') return;
 
         const btn = document.createElement("button");
         btn.className = "submenubutton";
@@ -656,61 +561,51 @@
         if (block.isNew) {
           const badge = document.createElement("span");
           badge.className = "theme-badge";
-          badge.textContent = "Новинка";
+          badge.textContent = "НОВОЕ";
           btn.appendChild(badge);
         }
 
+        const icon = document.createElement("img");
+        icon.src = "videothemes/icons/tape.png";
+        icon.className = "theme-tape-icon";
+
         const textSpan = document.createElement("span");
+        textSpan.className = "title-text";
         textSpan.textContent = block.name;
 
         const countContainer = document.createElement("div");
         countContainer.className = "theme-count-container";
-        countContainer.innerHTML = `<img src="videothemes/icons/tape.png" class="theme-tape-icon" alt="Tape"> x <span class="theme-count">${block.videoCount}</span>`;
+        countContainer.innerHTML = `<span class="theme-count">${block.videoCount} шт.</span>`;
 
+        btn.appendChild(icon);
         btn.appendChild(textSpan);
         btn.appendChild(countContainer);
-
-        // ВСЕГДА добавляем обработчик клика, без проверки подписки
         btn.addEventListener("click", () => goToContentPage(block.key, themeConfig.masterJsonPath));
-
         container.appendChild(btn);
       });
     }
+
     async function initializePage() {
       const themeId = localStorage.getItem('selectedThemeId');
-      if (!themeId) {
-        document.body.innerHTML = '<h1>Ошибка: Тема не выбрана.</h1>';
-        return;
-      }
+      if (!themeId) { document.body.innerHTML = '<h1>Ошибка: Тема не выбрана.</h1>'; return; }
 
       try {
         const response = await fetch(`${CONFIG_PATH}?v=${new Date().getTime()}`);
         const configData = await response.json();
-
-        // Определяем, это "Тропинка" или обычная тема
         const isPathway = themeId.startsWith('chapter_');
         const configSection = isPathway ? configData.pathway : configData;
         const themeConfig = configSection[themeId];
 
-        if (!themeConfig) {
-          document.body.innerHTML = `<h1>Ошибка: Конфигурация для "${themeId}" не найдена.</h1>`;
-          return;
-        }
+        if (!themeConfig) { document.body.innerHTML = `<h1>Ошибка: Конфигурация для "${themeId}" не найдена.</h1>`; return; }
 
-        // Устанавливаем фон
         const bgImage = document.getElementById('bg-image');
         if (bgImage) bgImage.src = themeConfig.coverImage;
 
-        // Вызываем нужный рендер
-        if (isPathway) {
-          await renderPathwayMenu(themeConfig);
-          // Для "Тропинки" счетчики уже встроены в рендер, доп. вызов не нужен
-        } else {
-          await renderSortedThemeMenu(themeConfig);
-        }
+        if (isPathway) await renderPathwayMenu(themeConfig);
+        else await renderSortedThemeMenu(themeConfig);
 
       } catch (error) {
-        console.error("Ошибка при инициализации страницы меню:", error);
+        console.error("Ошибка при инициализации:", error);
         document.body.innerHTML = '<h1>Ошибка загрузки страницы.</h1>';
       } finally {
         const overlay = document.getElementById("fadeOverlay");
@@ -721,16 +616,10 @@
       }
     }
 
-    // --- ЗАПУСК ---
-    document.getElementById('main-menu-button').addEventListener('click', () => {
-      window.location.href = 'videothemes.html';
-    });
-
     window.addEventListener("pageshow", () => {
       setStars(getStars());
 
-      // --- Динамическое создание всех элементов попапа ---
-      if (!document.getElementById('premiumPopupOverlay')) { // Проверяем, чтобы не создавать дубликаты
+      if (!document.getElementById('premiumPopupOverlay')) {
         const overlay = document.createElement('div');
         overlay.id = 'premiumPopupOverlay';
         const content = document.createElement('div');

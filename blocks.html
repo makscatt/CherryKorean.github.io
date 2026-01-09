@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Проекта и API</title>
+    <style>
+        /* --- Рабочая область (Оригинальный стиль) --- */
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            overflow: hidden; background-color: #f7f9fc;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .viewport {
+            width: 100%; height: 100%; cursor: grab;
+            display: flex; justify-content: center; align-items: center;
+            background-image: 
+                linear-gradient(#e1e1e1 1px, transparent 1px),
+                linear-gradient(90deg, #e1e1e1 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        .viewport:active { cursor: grabbing; }
+        .workspace { transform-origin: 0 0; position: absolute; left: 0; top: 0; transition: transform 0.1s linear; }
+
+        /* --- Структура Дерева --- */
+        .tree { white-space: nowrap; text-align: center; padding: 50px; }
+        .tree ul { padding-top: 40px; position: relative; display: flex; justify-content: center; margin: 0; padding-left: 0; }
+        .tree li { float: left; text-align: center; list-style-type: none; position: relative; padding: 20px 15px 0 15px; }
+
+        /* Линии */
+        .tree li::before, .tree li::after {
+            content: ''; position: absolute; top: 0; right: 50%;
+            border-top: 2px solid #ccc; width: 50%; height: 20px;
+        }
+        .tree li::after { right: auto; left: 50%; border-left: 2px solid #ccc; }
+        .tree li:only-child::after, .tree li:only-child::before { display: none; }
+        .tree li:only-child { padding-top: 0; }
+        .tree li:first-child::before, .tree li:last-child::after { border: 0 none; }
+        .tree li:last-child::before { border-right: 2px solid #ccc; border-radius: 0 10px 0 0; }
+        .tree li:first-child::after { border-radius: 10px 0 0 0; }
+        .tree ul ul::before {
+            content: ''; position: absolute; top: 0; left: 50%;
+            border-left: 2px solid #ccc; width: 0; height: 40px;
+        }
+
+        /* --- БЛОК СТРАНИЦЫ --- */
+        .node-wrapper { display: inline-block; vertical-align: top; }
+        .page-card {
+            background: #fff; border: 1px solid #ccc; border-radius: 8px;
+            padding: 15px; min-width: 160px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            position: relative; z-index: 5;
+        }
+        .page-title { font-weight: 700; font-size: 14px; display: block; margin-bottom: 5px; color: #222; }
+        .page-file { font-family: monospace; font-size: 11px; color: #777; background: #f0f0f0; padding: 2px 5px; border-radius: 4px; }
+
+        .type-core { border-top: 4px solid #333; }
+        .type-learn { border-top: 4px solid #2196F3; }
+        .type-game { border-top: 4px solid #4CAF50; }
+        .type-tool { border-top: 4px solid #9C27B0; }
+        .type-money { border-top: 4px solid #FFC107; }
+
+        /* --- БЛОКИ API (Оригинальный серый стиль) --- */
+        .api-connector { width: 2px; height: 15px; background: #bbb; margin: 0 auto; }
+        .api-box {
+            background-color: #e9e9eb; border: 1px solid #c5c5c5; border-radius: 6px;
+            padding: 8px 10px; margin-top: 0; text-align: left;
+            font-size: 11px; color: #444; box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+            position: relative; margin-bottom: 4px;
+        }
+        .method { font-weight: 800; color: #555; text-transform: uppercase; font-size: 9px; display: inline-block; width: 35px;}
+        .service-label { display: inline-block; padding: 1px 4px; border-radius: 3px; color: #fff; font-weight: bold; font-size: 9px; float: right; margin-left: 5px; }
+        .srv-tg { background-color: #5C6BC0; }
+        .srv-ai { background-color: #FF7043; }
+
+        .controls { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 8px; z-index: 100; }
+        .btn-ctrl {
+            width: 40px; height: 40px; background: #fff; border: 1px solid #ccc;
+            border-radius: 8px; cursor: pointer; font-size: 20px; color: #333;
+            display: flex; align-items: center; justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <div class="btn-ctrl" onclick="resetView()">⟲</div>
+        <div class="btn-ctrl" onclick="zoom(-0.1)">-</div>
+        <div class="btn-ctrl" onclick="zoom(0.1)">+</div>
+    </div>
+
+    <div class="viewport" id="viewport">
+        <div class="workspace" id="workspace">
+            <div class="tree">
+                <ul>
+                    <li>
+                        <!-- 1. START -->
+                        <div class="node-wrapper">
+                            <div class="page-card type-core">
+                                <span class="page-title">Стартовый Экран</span>
+                                <span class="page-file">index.html</span>
+                            </div>
+                            <div class="api-connector"></div>
+                            <div class="api-box">
+                                <span class="method">GET</span> /load/{id} <span class="service-label srv-tg">Render</span>
+                            </div>
+                        </div>
+                        
+                        <ul>
+                            <li>
+                                <!-- 2. MAIN HUB -->
+                                <div class="node-wrapper">
+                                    <div class="page-card type-core">
+                                        <span class="page-title">Главное Меню</span>
+                                        <span class="page-file">menu.html</span>
+                                    </div>
+                                    <div class="api-connector"></div>
+                                    <div class="api-box">
+                                        <span class="method">GET</span> /getWeeklyLeader <span class="service-label srv-tg">Render</span>
+                                    </div>
+                                </div>
+
+                                <ul>
+                                    <!-- ВЕТКА ОБУЧЕНИЯ -->
+                                    <li>
+                                        <div class="node-wrapper">
+                                            <div class="page-card type-learn">
+                                                <span class="page-title">Выбор Блока / Главы</span>
+                                                <span class="page-file">theme_menu_template.html</span>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="node-wrapper">
+                                                    <div class="page-card type-learn">
+                                                        <span class="page-title">Плеер "Тропинки"</span>
+                                                        <span class="page-file">pathway_player.html</span>
+                                                    </div>
+                                                    <div class="api-connector"></div>
+                                                    <div class="api-box"><span class="method">POST</span> /compare-audio <span class="service-label srv-ai">AI</span></div>
+                                                    <div class="api-box"><span class="method">POST</span> /analyze <span class="service-label srv-ai">AI</span></div>
+                                                    <div class="api-box"><span class="method">POST</span> /save <span class="service-label srv-tg">Render</span></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="node-wrapper">
+                                                    <div class="page-card type-learn">
+                                                        <span class="page-title">Плеер Дорам</span>
+                                                        <span class="page-file">video_list_template.html</span>
+                                                    </div>
+                                                    <div class="api-connector"></div>
+                                                    <div class="api-box"><span class="method">POST</span> /compare-audio <span class="service-label srv-ai">AI</span></div>
+                                                    <div class="api-box"><span class="method">POST</span> /analyze <span class="service-label srv-ai">AI</span></div>
+                                                    <div class="api-box"><span class="method">POST</span> /save <span class="service-label srv-tg">Render</span></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- РАНДОМ -->
+                                    <li>
+                                        <div class="node-wrapper">
+                                            <div class="page-card type-learn">
+                                                <span class="page-title">Случайный режим</span>
+                                                <span class="page-file">video_random.html</span>
+                                            </div>
+                                            <div class="api-connector"></div>
+                                            <div class="api-box"><span class="method">POST</span> /compare-audio <span class="service-label srv-ai">AI</span></div>
+                                        </div>
+                                    </li>
+
+                                    <!-- ИГРЫ -->
+                                    <li>
+                                        <div class="node-wrapper">
+                                            <div class="page-card type-game">
+                                                <span class="page-title">Выбор Карт</span>
+                                                <span class="page-file">twocardsmenu.html</span>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="node-wrapper">
+                                                    <div class="page-card type-game">
+                                                        <span class="page-title">Игра "Память"</span>
+                                                        <span class="page-file">twocards.html</span>
+                                                    </div>
+                                                    <div class="api-connector"></div>
+                                                    <div class="api-box"><span class="method">POST</span> /save <span class="service-label srv-tg">Render</span></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="node-wrapper">
+                                            <div class="page-card type-game">
+                                                <span class="page-title">Голосовой Забег</span>
+                                                <span class="page-file">game_words.html</span>
+                                            </div>
+                                            <div class="api-connector"></div>
+                                            <div class="api-box"><span class="method">POST</span> /compare-audio <span class="service-label srv-ai">AI</span></div>
+                                        </div>
+                                    </li>
+
+                                    <!-- ИНСТРУМЕНТЫ -->
+                                    <li>
+                                        <div class="node-wrapper">
+                                            <div class="page-card type-tool">
+                                                <span class="page-title">Рейтинг</span>
+                                                <span class="page-file">videorating.html</span>
+                                            </div>
+                                            <div class="api-connector"></div>
+                                            <div class="api-box"><span class="method">GET</span> /getWeeklyStars <span class="service-label srv-tg">Render</span></div>
+                                            <div class="api-box"><span class="method">GET</span> /getPastLeaders <span class="service-label srv-tg">Render</span></div>
+                                        </div>
+                                    </li>
+
+                                    <!-- ПРЕМИУМ -->
+                                    <li>
+                                        <div class="node-wrapper">
+                                            <div class="page-card type-money">
+                                                <span class="page-title">Премиум</span>
+                                                <span class="page-file">videopremium.html</span>
+                                            </div>
+                                            <div class="api-connector"></div>
+                                            <div class="api-box"><span class="method">GET</span> /getPaymentLink <span class="service-label srv-tg">Render</span></div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="node-wrapper">
+                                                    <div class="page-card type-money">
+                                                        <span class="page-title">Успешная оплата</span>
+                                                        <span class="page-file">success.html</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <div class="node-wrapper">
+                                            <div class="page-card type-tool">
+                                                <span class="page-title">Копилка</span>
+                                                <span class="page-file">videothemebank.html</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const viewport = document.getElementById('viewport');
+        const workspace = document.getElementById('workspace');
+        let scale = 0.6, pointX = 0, pointY = 0, isPanning = false, startX = 0, startY = 0;
+
+        function centerContent() {
+            workspace.style.transform = `scale(1)`;
+            pointX = (viewport.offsetWidth - workspace.offsetWidth * scale) / 2;
+            pointY = 100;
+            updateTransform();
+        }
+
+        function updateTransform() {
+            workspace.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+        }
+
+        viewport.addEventListener('mousedown', (e) => {
+            isPanning = true;
+            startX = e.clientX - pointX;
+            startY = e.clientY - pointY;
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            if (!isPanning) return;
+            pointX = e.clientX - startX;
+            pointY = e.clientY - startY;
+            updateTransform();
+        });
+
+        window.addEventListener('mouseup', () => { isPanning = false; });
+
+        viewport.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const factor = 0.05;
+            if (e.deltaY < 0) scale += factor; else scale -= factor;
+            scale = Math.min(Math.max(0.1, scale), 2);
+            updateTransform();
+        }, { passive: false });
+
+        function zoom(change) { scale += change; updateTransform(); }
+        function resetView() { scale = 0.6; centerContent(); }
+
+        window.onload = centerContent;
+    </script>
+</body>
+</html>

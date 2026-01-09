@@ -1,0 +1,1142 @@
+[
+  {
+    "id": 1,
+    "title": "Уровень 1: Еда",
+    "description": "Самые вкусные слова (Медленно)",
+    "isLocked": false,
+    "config": { "speed": 5, "wordGap": 1200 },
+    "words": [
+      { "korean": "김치", "transcription": "кимчи", "russian": "Кимчи" },
+      { "korean": "밥", "transcription": "пап", "russian": "Рис/Еда" },
+      { "korean": "물", "transcription": "муль", "russian": "Вода" },
+      { "korean": "고기", "transcription": "коги", "russian": "Мясо" },
+      { "korean": "빵", "transcription": "ппаң", "russian": "Хлеб" },
+      { "korean": "사과", "transcription": "сагуа", "russian": "Яблоко" },
+      { "korean": "계란", "transcription": "керан", "russian": "Яйцо" },
+      { "korean": "생선", "transcription": "сэңсон", "russian": "Рыба" },
+      { "korean": "치즈", "transcription": "чичжы", "russian": "Сыр" },
+      { "korean": "국수", "transcription": "куксу", "russian": "Лапша" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Уровень 2: Напитки",
+    "description": "Что будем пить?",
+    "isLocked": true,
+    "config": { "speed": 5, "wordGap": 1200 },
+    "words": [
+      { "korean": "차", "transcription": "ча", "russian": "Чай" },
+      { "korean": "커피", "transcription": "копи", "russian": "Кофе" },
+      { "korean": "우유", "transcription": "ую", "russian": "Молоко" },
+      { "korean": "맥주", "transcription": "мэкчу", "russian": "Пиво" },
+      { "korean": "소주", "transcription": "сочу", "russian": "Соджу" },
+      { "korean": "주스", "transcription": "чусы", "russian": "Сок" },
+      { "korean": "콜라", "transcription": "колла", "russian": "Кола" },
+      { "korean": "술", "transcription": "суль", "russian": "Алкоголь" },
+      { "korean": "와인", "transcription": "уаин", "russian": "Вино" },
+      { "korean": "음료수", "transcription": "ымнёсу", "russian": "Напиток" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Уровень 3: База",
+    "description": "Основы выживания",
+    "isLocked": true,
+    "config": { "speed": 6, "wordGap": 1100 },
+    "words": [
+      { "korean": "네", "transcription": "нэ", "russian": "Да" },
+      { "korean": "아니요", "transcription": "аниё", "russian": "Нет" },
+      { "korean": "사람", "transcription": "сарам", "russian": "Человек" },
+      { "korean": "집", "transcription": "чип", "russian": "Дом" },
+      { "korean": "돈", "transcription": "тон", "russian": "Деньги" },
+      { "korean": "이름", "transcription": "ирым", "russian": "Имя" },
+      { "korean": "나라", "transcription": "нара", "russian": "Страна" },
+      { "korean": "말", "transcription": "маль", "russian": "Речь/Язык" },
+      { "korean": "이것", "transcription": "игот", "russian": "Это" },
+      { "korean": "저것", "transcription": "чогот", "russian": "То" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Уровень 4: Глаголы",
+    "description": "Действия (Ускоряемся)",
+    "isLocked": true,
+    "config": { "speed": 6, "wordGap": 1100 },
+    "words": [
+      { "korean": "가다", "transcription": "када", "russian": "Идти" },
+      { "korean": "오다", "transcription": "ода", "russian": "Приходить" },
+      { "korean": "먹다", "transcription": "мокта", "russian": "Есть" },
+      { "korean": "자다", "transcription": "чада", "russian": "Спать" },
+      { "korean": "하다", "transcription": "хада", "russian": "Делать" },
+      { "korean": "보다", "transcription": "пода", "russian": "Смотреть" },
+      { "korean": "사다", "transcription": "сада", "russian": "Покупать" },
+      { "korean": "만나다", "transcription": "маннада", "russian": "Встречать" },
+      { "korean": "주다", "transcription": "чуда", "russian": "Давать" },
+      { "korean": "배우다", "transcription": "пэуда", "russian": "Учить" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Уровень 5: Семья",
+    "description": "Родные люди",
+    "isLocked": true,
+    "config": { "speed": 7, "wordGap": 1000 },
+    "words": [
+      { "korean": "엄마", "transcription": "омма", "russian": "Мама" },
+      { "korean": "아빠", "transcription": "аппа", "russian": "Папа" },
+      { "korean": "형", "transcription": "хёң", "russian": "Брат (для м)" },
+      { "korean": "누나", "transcription": "нуна", "russian": "Сестра (для м)" },
+      { "korean": "동생", "transcription": "тоңсэң", "russian": "Младший" },
+      { "korean": "언니", "transcription": "онни", "russian": "Сестра (для ж)" },
+      { "korean": "오빠", "transcription": "оппа", "russian": "Брат (для ж)" },
+      { "korean": "할머니", "transcription": "хальмони", "russian": "Бабушка" },
+      { "korean": "할아버지", "transcription": "харабочи", "russian": "Дедушка" },
+      { "korean": "가족", "transcription": "качок", "russian": "Семья" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Уровень 6: Описание",
+    "description": "Прилагательные",
+    "isLocked": true,
+    "config": { "speed": 7, "wordGap": 1000 },
+    "words": [
+      { "korean": "좋다", "transcription": "чота", "russian": "Хороший" },
+      { "korean": "예쁘다", "transcription": "еппыда", "russian": "Красивый" },
+      { "korean": "비싸다", "transcription": "писсада", "russian": "Дорогой" },
+      { "korean": "맵다", "transcription": "мэпта", "russian": "Острый" },
+      { "korean": "작다", "transcription": "чакта", "russian": "Маленький" },
+      { "korean": "나쁘다", "transcription": "наппыда", "russian": "Плохой" },
+      { "korean": "싸다", "transcription": "ссада", "russian": "Дешевый" },
+      { "korean": "맛있다", "transcription": "мащитта", "russian": "Вкусный" },
+      { "korean": "바쁘다", "transcription": "паппыда", "russian": "Занятой" },
+      { "korean": "재미있다", "transcription": "чэмиитта", "russian": "Интересный" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Уровень 7: Места",
+    "description": "Куда пойдем?",
+    "isLocked": true,
+    "config": { "speed": 8, "wordGap": 950 },
+    "words": [
+      { "korean": "학교", "transcription": "хаккё", "russian": "Школа" },
+      { "korean": "회사", "transcription": "хвеса", "russian": "Фирма" },
+      { "korean": "병원", "transcription": "пёңвон", "russian": "Больница" },
+      { "korean": "공원", "transcription": "коңвон", "russian": "Парк" },
+      { "korean": "가게", "transcription": "каге", "russian": "Магазин" },
+      { "korean": "은행", "transcription": "ынхэң", "russian": "Банк" },
+      { "korean": "식당", "transcription": "щик-таң", "russian": "Ресторан" },
+      { "korean": "카페", "transcription": "капэ", "russian": "Кафе" },
+      { "korean": "약국", "transcription": "яккук", "russian": "Аптека" },
+      { "korean": "화장실", "transcription": "хвачаңщиль", "russian": "Туалет" }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Уровень 8: Время",
+    "description": "Когда?",
+    "isLocked": true,
+    "config": { "speed": 8, "wordGap": 950 },
+    "words": [
+      { "korean": "오늘", "transcription": "оныль", "russian": "Сегодня" },
+      { "korean": "내일", "transcription": "нэиль", "russian": "Завтра" },
+      { "korean": "지금", "transcription": "чигым", "russian": "Сейчас" },
+      { "korean": "아침", "transcription": "ачим", "russian": "Утро" },
+      { "korean": "밤", "transcription": "пам", "russian": "Ночь" },
+      { "korean": "어제", "transcription": "оче", "russian": "Вчера" },
+      { "korean": "오후", "transcription": "оху", "russian": "Днем" },
+      { "korean": "저녁", "transcription": "чонёк", "russian": "Вечер" },
+      { "korean": "주말", "transcription": "чумаль", "russian": "Выходные" },
+      { "korean": "매일", "transcription": "мэиль", "russian": "Каждый день" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Уровень 9: Чувства",
+    "description": "Эмоции (Сложно)",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 900 },
+    "words": [
+      { "korean": "사랑", "transcription": "сараң", "russian": "Любовь" },
+      { "korean": "행복", "transcription": "хэңбок", "russian": "Счастье" },
+      { "korean": "화", "transcription": "хва", "russian": "Гнев" },
+      { "korean": "겁", "transcription": "коп", "russian": "Страх" },
+      { "korean": "재미", "transcription": "чэми", "russian": "Интерес" },
+      { "korean": "슬픔", "transcription": "сыльпым", "russian": "Грусть" },
+      { "korean": "아픔", "transcription": "апым", "russian": "Боль" },
+      { "korean": "걱정", "transcription": "кокчоң", "russian": "Волнение" },
+      { "korean": "기분", "transcription": "кибун", "russian": "Настроение" },
+      { "korean": "마음", "transcription": "маым", "russian": "Душа/Сердце" }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Уровень 10: Сленг",
+    "description": "Быстро и модно",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 850 },
+    "words": [
+      { "korean": "대박", "transcription": "тэбак", "russian": "Круто!" },
+      { "korean": "헐", "transcription": "холь", "russian": "Офигеть" },
+      { "korean": "꿀잼", "transcription": "ккульчэм", "russian": "Угар" },
+      { "korean": "심쿵", "transcription": "щимкуң", "russian": "Сердце екнуло" },
+      { "korean": "멘붕", "transcription": "менбуң", "russian": "Взрыв мозга" },
+      { "korean": "파이팅", "transcription": "пайтиң", "russian": "Удачи!" },
+      { "korean": "남친", "transcription": "намчин", "russian": "Парень" },
+      { "korean": "여친", "transcription": "ёчин", "russian": "Девушка" },
+      { "korean": "치맥", "transcription": "чимэк", "russian": "Курица+Пиво" },
+      { "korean": "셀카", "transcription": "селька", "russian": "Селфи" }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Уровень 11: Транспорт",
+    "description": "Поехали!",
+    "isLocked": true,
+    "config": { "speed": 7, "wordGap": 1100 },
+    "words": [
+      { "korean": "택시", "transcription": "тэкщи", "russian": "Такси" },
+      { "korean": "버스", "transcription": "посы", "russian": "Автобус" },
+      { "korean": "기차", "transcription": "кича", "russian": "Поезд" },
+      { "korean": "비행기", "transcription": "пихэңги", "russian": "Самолет" },
+      { "korean": "표", "transcription": "пё", "russian": "Билет" },
+      { "korean": "지하철", "transcription": "чихачоль", "russian": "Метро" },
+      { "korean": "자전거", "transcription": "чачонго", "russian": "Велосипед" },
+      { "korean": "차", "transcription": "ча", "russian": "Машина" },
+      { "korean": "공항", "transcription": "коңхаң", "russian": "Аэропорт" },
+      { "korean": "배", "transcription": "пэ", "russian": "Лодка" }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Уровень 12: Отель",
+    "description": "Где жить?",
+    "isLocked": true,
+    "config": { "speed": 7, "wordGap": 1100 },
+    "words": [
+      { "korean": "방", "transcription": "паң", "russian": "Комната" },
+      { "korean": "침대", "transcription": "чимдэ", "russian": "Кровать" },
+      { "korean": "열쇠", "transcription": "ёльсвэ", "russian": "Ключ" },
+      { "korean": "예약", "transcription": "еяк", "russian": "Бронь" },
+      { "korean": "호텔", "transcription": "хотэль", "russian": "Отель" },
+      { "korean": "층", "transcription": "чың", "russian": "Этаж" },
+      { "korean": "수건", "transcription": "сугон", "russian": "Полотенце" },
+      { "korean": "비누", "transcription": "пину", "russian": "Мыло" },
+      { "korean": "로비", "transcription": "роби", "russian": "Лобби" },
+      { "korean": "짐", "transcription": "чим", "russian": "Багаж" }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Уровень 13: Погода",
+    "description": "Жарко или холодно?",
+    "isLocked": true,
+    "config": { "speed": 8, "wordGap": 1050 },
+    "words": [
+      { "korean": "비", "transcription": "пи", "russian": "Дождь" },
+      { "korean": "눈", "transcription": "нун", "russian": "Снег" },
+      { "korean": "해", "transcription": "хэ", "russian": "Солнце" },
+      { "korean": "바람", "transcription": "парам", "russian": "Ветер" },
+      { "korean": "날씨", "transcription": "нальщи", "russian": "Погода" },
+      { "korean": "구름", "transcription": "курым", "russian": "Облако" },
+      { "korean": "여름", "transcription": "ёрым", "russian": "Лето" },
+      { "korean": "겨울", "transcription": "кёуль", "russian": "Зима" },
+      { "korean": "봄", "transcription": "пом", "russian": "Весна" },
+      { "korean": "가을", "transcription": "каыль", "russian": "Осень" }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Уровень 14: Одежда",
+    "description": "Что надеть?",
+    "isLocked": true,
+    "config": { "speed": 8, "wordGap": 1050 },
+    "words": [
+      { "korean": "옷", "transcription": "от", "russian": "Одежда" },
+      { "korean": "바지", "transcription": "пачи", "russian": "Брюки" },
+      { "korean": "치마", "transcription": "чима", "russian": "Юбка" },
+      { "korean": "신발", "transcription": "щинбаль", "russian": "Обувь" },
+      { "korean": "모자", "transcription": "моча", "russian": "Шапка" },
+      { "korean": "티셔츠", "transcription": "тищёчы", "russian": "Футболка" },
+      { "korean": "양말", "transcription": "яңмаль", "russian": "Носки" },
+      { "korean": "코트", "transcription": "коты", "russian": "Пальто" },
+      { "korean": "가방", "transcription": "кабаң", "russian": "Сумка" },
+      { "korean": "안경", "transcription": "ангёң", "russian": "Очки" }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Уровень 15: Цвета",
+    "description": "Яркий мир",
+    "isLocked": true,
+    "config": { "speed": 8, "wordGap": 1000 },
+    "words": [
+      { "korean": "색", "transcription": "сэк", "russian": "Цвет" },
+      { "korean": "빨강", "transcription": "ппалькаң", "russian": "Красный" },
+      { "korean": "파랑", "transcription": "параң", "russian": "Синий" },
+      { "korean": "검정", "transcription": "комчөң", "russian": "Черный" },
+      { "korean": "하양", "transcription": "хаяң", "russian": "Белый" },
+      { "korean": "노랑", "transcription": "нораң", "russian": "Желтый" },
+      { "korean": "초록", "transcription": "чорок", "russian": "Зеленый" },
+      { "korean": "보라", "transcription": "пора", "russian": "Фиолетовый" },
+      { "korean": "분홍", "transcription": "пунхоң", "russian": "Розовый" },
+      { "korean": "회색", "transcription": "хвесэк", "russian": "Серый" }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Уровень 16: Тело",
+    "description": "Части тела",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 950 },
+    "words": [
+      { "korean": "머리", "transcription": "мори", "russian": "Голова" },
+      { "korean": "눈", "transcription": "нун", "russian": "Глаз" },
+      { "korean": "코", "transcription": "ко", "russian": "Нос" },
+      { "korean": "입", "transcription": "ип", "russian": "Рот" },
+      { "korean": "손", "transcription": "сон", "russian": "Рука" },
+      { "korean": "귀", "transcription": "кви", "russian": "Ухо" },
+      { "korean": "다리", "transcription": "тари", "russian": "Нога" },
+      { "korean": "발", "transcription": "паль", "russian": "Стопа" },
+      { "korean": "얼굴", "transcription": "ольгуль", "russian": "Лицо" },
+      { "korean": "배", "transcription": "пэ", "russian": "Живот" }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Уровень 17: Цифры (Кит)",
+    "description": "Считаем деньги",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 950 },
+    "words": [
+      { "korean": "일", "transcription": "иль", "russian": "Один" },
+      { "korean": "이", "transcription": "и", "russian": "Два" },
+      { "korean": "삼", "transcription": "сам", "russian": "Три" },
+      { "korean": "사", "transcription": "са", "russian": "Четыре" },
+      { "korean": "오", "transcription": "о", "russian": "Пять" },
+      { "korean": "육", "transcription": "юк", "russian": "Шесть" },
+      { "korean": "칠", "transcription": "чиль", "russian": "Семь" },
+      { "korean": "팔", "transcription": "паль", "russian": "Восемь" },
+      { "korean": "구", "transcription": "ку", "russian": "Девять" },
+      { "korean": "십", "transcription": "щип", "russian": "Десять" }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Уровень 18: Цифры (Кор)",
+    "description": "Считаем предметы",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 950 },
+    "words": [
+      { "korean": "하나", "transcription": "хана", "russian": "Один" },
+      { "korean": "둘", "transcription": "туль", "russian": "Два" },
+      { "korean": "셋", "transcription": "сет", "russian": "Три" },
+      { "korean": "넷", "transcription": "нет", "russian": "Четыре" },
+      { "korean": "다섯", "transcription": "тасот", "russian": "Пять" },
+      { "korean": "여섯", "transcription": "ёсот", "russian": "Шесть" },
+      { "korean": "일곱", "transcription": "ильгоп", "russian": "Семь" },
+      { "korean": "여덟", "transcription": "ёдоль", "russian": "Восемь" },
+      { "korean": "아홉", "transcription": "ахоп", "russian": "Девять" },
+      { "korean": "열", "transcription": "ёль", "russian": "Десять" }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Уровень 19: Школа",
+    "description": "Учеба",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 900 },
+    "words": [
+      { "korean": "학생", "transcription": "хаксэң", "russian": "Ученик" },
+      { "korean": "선생님", "transcription": "сонсэңним", "russian": "Учитель" },
+      { "korean": "공부", "transcription": "коңбу", "russian": "Учеба" },
+      { "korean": "책", "transcription": "чэк", "russian": "Книга" },
+      { "korean": "펜", "transcription": "пэн", "russian": "Ручка" },
+      { "korean": "숙제", "transcription": "сукче", "russian": "Домашка" },
+      { "korean": "교실", "transcription": "кёщиль", "russian": "Класс" },
+      { "korean": "시험", "transcription": "щихом", "russian": "Экзамен" },
+      { "korean": "질문", "transcription": "чильмун", "russian": "Вопрос" },
+      { "korean": "답", "transcription": "тап", "russian": "Ответ" }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Уровень 20: Природа",
+    "description": "Вокруг нас",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 850 },
+    "words": [
+      { "korean": "산", "transcription": "сан", "russian": "Гора" },
+      { "korean": "강", "transcription": "каң", "russian": "Река" },
+      { "korean": "바다", "transcription": "пада", "russian": "Море" },
+      { "korean": "나무", "transcription": "наму", "russian": "Дерево" },
+      { "korean": "꽃", "transcription": "ккот", "russian": "Цветок" },
+      { "korean": "하늘", "transcription": "ханыль", "russian": "Небо" },
+      { "korean": "땅", "transcription": "ттаң", "russian": "Земля" },
+      { "korean": "돌", "transcription": "толь", "russian": "Камень" },
+      { "korean": "숲", "transcription": "суп", "russian": "Лес" },
+      { "korean": "섬", "transcription": "сом", "russian": "Остров" }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Уровень 21: Животные",
+    "description": "Пушистые друзья",
+    "isLocked": true,
+    "config": { "speed": 7, "wordGap": 1100 },
+    "words": [
+      { "korean": "개", "transcription": "кэ", "russian": "Собака" },
+      { "korean": "고양이", "transcription": "кояңи", "russian": "Кошка" },
+      { "korean": "새", "transcription": "сэ", "russian": "Птица" },
+      { "korean": "곰", "transcription": "ком", "russian": "Медведь" },
+      { "korean": "돼지", "transcription": "твэчи", "russian": "Свинья" },
+      { "korean": "소", "transcription": "со", "russian": "Корова" },
+      { "korean": "말", "transcription": "маль", "russian": "Лошадь" },
+      { "korean": "닭", "transcription": "так", "russian": "Курица" },
+      { "korean": "토끼", "transcription": "токки", "russian": "Кролик" },
+      { "korean": "호랑이", "transcription": "хораңи", "russian": "Тигр" }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Уровень 22: Календарь",
+    "description": "Дни и недели",
+    "isLocked": true,
+    "config": { "speed": 8, "wordGap": 1050 },
+    "words": [
+      { "korean": "년", "transcription": "нён", "russian": "Год" },
+      { "korean": "월", "transcription": "воль", "russian": "Месяц" },
+      { "korean": "일", "transcription": "иль", "russian": "День" },
+      { "korean": "주", "transcription": "чу", "russian": "Неделя" },
+      { "korean": "시간", "transcription": "щиган", "russian": "Время" },
+      { "korean": "분", "transcription": "пун", "russian": "Минута" },
+      { "korean": "월요일", "transcription": "ворёиль", "russian": "Понедельник" },
+      { "korean": "금요일", "transcription": "кымёиль", "russian": "Пятница" },
+      { "korean": "생일", "transcription": "сэңиль", "russian": "День рождения" },
+      { "korean": "휴일", "transcription": "хюиль", "russian": "Выходной" }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Уровень 23: Дом",
+    "description": "Уют и мебель",
+    "isLocked": true,
+    "config": { "speed": 8, "wordGap": 1050 },
+    "words": [
+      { "korean": "문", "transcription": "мун", "russian": "Дверь" },
+      { "korean": "창문", "transcription": "чаңмун", "russian": "Окно" },
+      { "korean": "방", "transcription": "паң", "russian": "Комната" },
+      { "korean": "의자", "transcription": "ыйча", "russian": "Стул" },
+      { "korean": "책상", "transcription": "чэксаң", "russian": "Стол" },
+      { "korean": "침대", "transcription": "чимдэ", "russian": "Кровать" },
+      { "korean": "냉장고", "transcription": "нэңчаңго", "russian": "Холодильник" },
+      { "korean": "부엌", "transcription": "пуок", "russian": "Кухня" },
+      { "korean": "거실", "transcription": "кощиль", "russian": "Гостиная" },
+      { "korean": "벽", "transcription": "пёк", "russian": "Стена" }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Уровень 24: Здоровье",
+    "description": "Не болей!",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 1000 },
+    "words": [
+      { "korean": "몸", "transcription": "мом", "russian": "Тело" },
+      { "korean": "약", "transcription": "як", "russian": "Лекарство" },
+      { "korean": "병", "transcription": "пёң", "russian": "Болезнь" },
+      { "korean": "피", "transcription": "пи", "russian": "Кровь" },
+      { "korean": "살", "transcription": "саль", "russian": "Кожа/Плоть" },
+      { "korean": "감기", "transcription": "камги", "russian": "Простуда" },
+      { "korean": "열", "transcription": "ёль", "russian": "Температура" },
+      { "korean": "기침", "transcription": "кичим", "russian": "Кашель" },
+      { "korean": "건강", "transcription": "конгаң", "russian": "Здоровье" },
+      { "korean": "목", "transcription": "мок", "russian": "Горло/Шея" }
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Уровень 25: Отношения",
+    "description": "Люди вокруг",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 1000 },
+    "words": [
+      { "korean": "친구", "transcription": "чингу", "russian": "Друг" },
+      { "korean": "애인", "transcription": "эин", "russian": "Любимый(ая)" },
+      { "korean": "남편", "transcription": "нампён", "russian": "Муж" },
+      { "korean": "아내", "transcription": "анэ", "russian": "Жена" },
+      { "korean": "아들", "transcription": "адыль", "russian": "Сын" },
+      { "korean": "딸", "transcription": "тталь", "russian": "Дочь" },
+      { "korean": "결혼", "transcription": "кёрхон", "russian": "Свадьба" },
+      { "korean": "손님", "transcription": "сонним", "russian": "Гость" },
+      { "korean": "이웃", "transcription": "иут", "russian": "Сосед" },
+      { "korean": "아이", "transcription": "аи", "russian": "Ребенок" }
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Уровень 26: Покупки",
+    "description": "Шопинг",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 950 },
+    "words": [
+      { "korean": "시장", "transcription": "щичаң", "russian": "Рынок" },
+      { "korean": "가격", "transcription": "кагёк", "russian": "Цена" },
+      { "korean": "선물", "transcription": "сонмуль", "russian": "Подарок" },
+      { "korean": "카드", "transcription": "кады", "russian": "Карта" },
+      { "korean": "현금", "transcription": "хёнгым", "russian": "Наличные" },
+      { "korean": "영수증", "transcription": "ёңсучың", "russian": "Чек" },
+      { "korean": "쇼핑", "transcription": "щёпиң", "russian": "Шопинг" },
+      { "korean": "할인", "transcription": "харин", "russian": "Скидка" },
+      { "korean": "지갑", "transcription": "чигап", "russian": "Кошелек" },
+      { "korean": "마트", "transcription": "маты", "russian": "Март (Супермаркет)" }
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Уровень 27: Хобби",
+    "description": "Развлечения",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "노래", "transcription": "норэ", "russian": "Песня" },
+      { "korean": "춤", "transcription": "чум", "russian": "Танец" },
+      { "korean": "영화", "transcription": "ёңхва", "russian": "Фильм" },
+      { "korean": "게임", "transcription": "кеим", "russian": "Игра" },
+      { "korean": "운동", "transcription": "ундоң", "russian": "Спорт" },
+      { "korean": "사진", "transcription": "сачин", "russian": "Фото" },
+      { "korean": "그림", "transcription": "кырим", "russian": "Рисунок" },
+      { "korean": "여행", "transcription": "ёхэң", "russian": "Путешествие" },
+      { "korean": "음악", "transcription": "ымак", "russian": "Музыка" },
+      { "korean": "요리", "transcription": "ёри", "russian": "Готовка" }
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Уровень 28: Свойства",
+    "description": "Какой предмет?",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "크다", "transcription": "кыда", "russian": "Большой" },
+      { "korean": "많다", "transcription": "манта", "russian": "Много" },
+      { "korean": "길다", "transcription": "кильда", "russian": "Длинный" },
+      { "korean": "춥다", "transcription": "чупта", "russian": "Холодный" },
+      { "korean": "덥다", "transcription": "топта", "russian": "Жаркий" },
+      { "korean": "무겁다", "transcription": "мугопта", "russian": "Тяжелый" },
+      { "korean": "가볍다", "transcription": "кабёпта", "russian": "Легкий" },
+      { "korean": "어렵다", "transcription": "орёпта", "russian": "Трудный" },
+      { "korean": "쉽다", "transcription": "щвипта", "russian": "Легкий (простой)" },
+      { "korean": "새롭다", "transcription": "сэропта", "russian": "Новый" }
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Уровень 29: Город",
+    "description": "Улицы Сеула",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "길", "transcription": "киль", "russian": "Дорога" },
+      { "korean": "역", "transcription": "ёк", "russian": "Станция" },
+      { "korean": "다리", "transcription": "тари", "russian": "Мост" },
+      { "korean": "서울", "transcription": "соуль", "russian": "Сеул" },
+      { "korean": "지도", "transcription": "чидо", "russian": "Карта" },
+      { "korean": "건물", "transcription": "конмуль", "russian": "Здание" },
+      { "korean": "주소", "transcription": "чусо", "russian": "Адрес" },
+      { "korean": "동네", "transcription": "тоңне", "russian": "Район" },
+      { "korean": "도시", "transcription": "тощи", "russian": "Город" },
+      { "korean": "경찰", "transcription": "кёңчаль", "russian": "Полиция" }
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Уровень 30: ФИНАЛ",
+    "description": "Последний рывок",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "꿈", "transcription": "ккум", "russian": "Мечта" },
+      { "korean": "힘", "transcription": "хим", "russian": "Сила" },
+      { "korean": "끝", "transcription": "ккыт", "russian": "Конец" },
+      { "korean": "안녕", "transcription": "аннёң", "russian": "Пока/Привет" },
+      { "korean": "한국", "transcription": "хангук", "russian": "Корея" },
+      { "korean": "세계", "transcription": "сеге", "russian": "Мир" },
+      { "korean": "평화", "transcription": "пёңхва", "russian": "Мир (покой)" },
+      { "korean": "인생", "transcription": "инсэң", "russian": "Жизнь" },
+      { "korean": "성공", "transcription": "соңгоң", "russian": "Успех" },
+      { "korean": "감사", "transcription": "камса", "russian": "Спасибо" }
+    ]
+  },
+   {
+    "id": 31,
+    "title": "Уровень 31: Профессии",
+    "description": "Кем работаешь?",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "의사", "transcription": "ыйса", "russian": "Врач" },
+      { "korean": "경찰", "transcription": "кёңчаль", "russian": "Полицейский" },
+      { "korean": "요리사", "transcription": "ёриса", "russian": "Повар" },
+      { "korean": "가수", "transcription": "касу", "russian": "Певец" },
+      { "korean": "배우", "transcription": "пэу", "russian": "Актер" },
+      { "korean": "군인", "transcription": "кунин", "russian": "Военный" },
+      { "korean": "농부", "transcription": "ноңбу", "russian": "Фермер" },
+      { "korean": "기자", "transcription": "кича", "russian": "Журналист" },
+      { "korean": "작가", "transcription": "чакка", "russian": "Писатель" },
+      { "korean": "화가", "transcription": "хвага", "russian": "Художник" }
+    ]
+  },
+  {
+    "id": 32,
+    "title": "Уровень 32: Овощи и Фрукты",
+    "description": "Витамины",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "오이", "transcription": "ои", "russian": "Огурец" },
+      { "korean": "당근", "transcription": "таңгын", "russian": "Морковь" },
+      { "korean": "양파", "transcription": "яңпа", "russian": "Лук" },
+      { "korean": "감자", "transcription": "камча", "russian": "Картофель" },
+      { "korean": "딸기", "transcription": "ттальги", "russian": "Клубника" },
+      { "korean": "포도", "transcription": "подо", "russian": "Виноград" },
+      { "korean": "수박", "transcription": "субак", "russian": "Арбуз" },
+      { "korean": "귤", "transcription": "кюль", "russian": "Мандарин" },
+      { "korean": "버섯", "transcription": "посот", "russian": "Гриб" },
+      { "korean": "마늘", "transcription": "маныль", "russian": "Чеснок" }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Уровень 33: Кухня",
+    "description": "Инструменты",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 950 },
+    "words": [
+      { "korean": "칼", "transcription": "каль", "russian": "Нож" },
+      { "korean": "냄비", "transcription": "нэмби", "russian": "Кастрюля" },
+      { "korean": "그릇", "transcription": "кырыт", "russian": "Миска" },
+      { "korean": "숟가락", "transcription": "суткарак", "russian": "Ложка" },
+      { "korean": "젓가락", "transcription": "чоткарак", "russian": "Палочки" },
+      { "korean": "컵", "transcription": "коп", "russian": "Кружка" },
+      { "korean": "접시", "transcription": "чопщи", "russian": "Тарелка" },
+      { "korean": "가위", "transcription": "кави", "russian": "Ножницы" },
+      { "korean": "쟁반", "transcription": "чэңбан", "russian": "Поднос" },
+      { "korean": "국자", "transcription": "кукча", "russian": "Половник" }
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Уровень 34: Ванная",
+    "description": "Чистота",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 950 },
+    "words": [
+      { "korean": "치약", "transcription": "чияк", "russian": "Зубная паста" },
+      { "korean": "칫솔", "transcription": "чиссоль", "russian": "Зубная щетка" },
+      { "korean": "샴푸", "transcription": "щямпу", "russian": "Шампунь" },
+      { "korean": "거울", "transcription": "коуль", "russian": "Зеркало" },
+      { "korean": "휴지", "transcription": "хючи", "russian": "Туалетная бумага" },
+      { "korean": "욕조", "transcription": "ёкчо", "russian": "Ванна" },
+      { "korean": "세수", "transcription": "сесу", "russian": "Умывание" },
+      { "korean": "면도기", "transcription": "мёндоги", "russian": "Бритва" },
+      { "korean": "빗", "transcription": "пит", "russian": "Расческа" },
+      { "korean": "드라이기", "transcription": "тыраиги", "russian": "Фен" }
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Уровень 35: Направления",
+    "description": "Где это?",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "위", "transcription": "ви", "russian": "Верх/Над" },
+      { "korean": "아래", "transcription": "арэ", "russian": "Низ/Под" },
+      { "korean": "앞", "transcription": "ап", "russian": "Перед" },
+      { "korean": "뒤", "transcription": "тви", "russian": "Сзади" },
+      { "korean": "옆", "transcription": "ёп", "russian": "Рядом/Сбоку" },
+      { "korean": "안", "transcription": "ан", "russian": "Внутри" },
+      { "korean": "밖", "transcription": "пак", "russian": "Снаружи" },
+      { "korean": "오른쪽", "transcription": "орынчок", "russian": "Право" },
+      { "korean": "왼쪽", "transcription": "венчок", "russian": "Лево" },
+      { "korean": "사이", "transcription": "саи", "russian": "Между" }
+    ]
+  },
+  {
+    "id": 36,
+    "title": "Уровень 36: Техника",
+    "description": "Гаджеты",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "컴퓨터", "transcription": "компюто", "russian": "Компьютер" },
+      { "korean": "화면", "transcription": "хвамён", "russian": "Экран" },
+      { "korean": "마우스", "transcription": "маусы", "russian": "Мышь" },
+      { "korean": "키보드", "transcription": "кибоды", "russian": "Клавиатура" },
+      { "korean": "핸드폰", "transcription": "хэндыпон", "russian": "Мобильник" },
+      { "korean": "충전기", "transcription": "чуңчонги", "russian": "Зарядка" },
+      { "korean": "카메라", "transcription": "камера", "russian": "Камера" },
+      { "korean": "시계", "transcription": "щиге", "russian": "Часы" },
+      { "korean": "전등", "transcription": "чондың", "russian": "Лампа" },
+      { "korean": "라디오", "transcription": "радио", "russian": "Радио" }
+    ]
+  },
+  {
+    "id": 37,
+    "title": "Уровень 37: Канцелярия",
+    "description": "Для работы",
+    "isLocked": true,
+    "config": { "speed": 9, "wordGap": 950 },
+    "words": [
+      { "korean": "종이", "transcription": "чоңи", "russian": "Бумага" },
+      { "korean": "연필", "transcription": "ёнпиль", "russian": "Карандаш" },
+      { "korean": "지우개", "transcription": "чиуге", "russian": "Ластик" },
+      { "korean": "필통", "transcription": "пильтоң", "russian": "Пенал" },
+      { "korean": "공책", "transcription": "коңчэк", "russian": "Тетрадь" },
+      { "korean": "자", "transcription": "ча", "russian": "Линейка" },
+      { "korean": "풀", "transcription": "пуль", "russian": "Клей" },
+      { "korean": "칠판", "transcription": "чильпан", "russian": "Доска" },
+      { "korean": "분필", "transcription": "пунпиль", "russian": "Мел" },
+      { "korean": "교복", "transcription": "кёбок", "russian": "Форма" }
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Уровень 38: Описание 2",
+    "description": "Антонимы",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "넓다", "transcription": "нольта", "russian": "Широкий" },
+      { "korean": "좁다", "transcription": "чопта", "russian": "Узкий" },
+      { "korean": "멀다", "transcription": "мольда", "russian": "Далекий" },
+      { "korean": "가깝다", "transcription": "каккапта", "russian": "Близкий" },
+      { "korean": "밝다", "transcription": "пальта", "russian": "Светлый" },
+      { "korean": "어둡다", "transcription": "одупта", "russian": "Темный" },
+      { "korean": "깨끗하다", "transcription": "ккэккытада", "russian": "Чистый" },
+      { "korean": "더럽다", "transcription": "торопта", "russian": "Грязный" },
+      { "korean": "조용하다", "transcription": "чоёңхада", "russian": "Тихий" },
+      { "korean": "시끄럽다", "transcription": "щиккыропта", "russian": "Шумный" }
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Уровень 39: Глаголы 2",
+    "description": "Активные действия",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "읽다", "transcription": "икта", "russian": "Читать" },
+      { "korean": "쓰다", "transcription": "ссыда", "russian": "Писать/Использовать" },
+      { "korean": "듣다", "transcription": "тытта", "russian": "Слушать" },
+      { "korean": "말하다", "transcription": "мархада", "russian": "Говорить" },
+      { "korean": "걷다", "transcription": "котта", "russian": "Ходить пешком" },
+      { "korean": "뛰다", "transcription": "ттвида", "russian": "Бежать" },
+      { "korean": "앉다", "transcription": "анта", "russian": "Сидеть" },
+      { "korean": "서다", "transcription": "сода", "russian": "Стоять" },
+      { "korean": "열다", "transcription": "ёльда", "russian": "Открывать" },
+      { "korean": "닫다", "transcription": "татта", "russian": "Закрывать" }
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Уровень 40: Вкус",
+    "description": "Ощущения",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "짜다", "transcription": "ччада", "russian": "Соленый" },
+      { "korean": "달다", "transcription": "тальда", "russian": "Сладкий" },
+      { "korean": "쓰다", "transcription": "ссыда", "russian": "Горький" },
+      { "korean": "시다", "transcription": "щида", "russian": "Кислый" },
+      { "korean": "싱겁다", "transcription": "щиңгопта", "russian": "Пресный" },
+      { "korean": "뜨겁다", "transcription": "ттыгопта", "russian": "Горячий" },
+      { "korean": "차갑다", "transcription": "чагапта", "russian": "Ледяной" },
+      { "korean": "부드럽다", "transcription": "пудыропта", "russian": "Мягкий" },
+      { "korean": "딱딱하다", "transcription": "ттакттакада", "russian": "Твердый" },
+      { "korean": "쫄깃하다", "transcription": "ччольгитада", "russian": "Тягучий/Жевательный" }
+    ]
+  },
+    {
+    "id": 41,
+    "title": "Уровень 41: Рутина",
+    "description": "Обычный день",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "일하다", "transcription": "ирада", "russian": "Работать" },
+      { "korean": "청소하다", "transcription": "чоңсохада", "russian": "Убираться" },
+      { "korean": "요리하다", "transcription": "ёрихада", "russian": "Готовить" },
+      { "korean": "세수하다", "transcription": "сесухада", "russian": "Умываться" },
+      { "korean": "샤워하다", "transcription": "щявохада", "russian": "Принимать душ" },
+      { "korean": "화장하다", "transcription": "хвачаңхада", "russian": "Краситься" },
+      { "korean": "운전하다", "transcription": "унчонхада", "russian": "Водить" },
+      { "korean": "쇼핑하다", "transcription": "щёпиңхада", "russian": "Делать покупки" },
+      { "korean": "산책하다", "transcription": "санчэкада", "russian": "Гулять" },
+      { "korean": "운동하다", "transcription": "ундоңхада", "russian": "Тренироваться" }
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Уровень 42: Зоопарк",
+    "description": "Дикие звери",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "사자", "transcription": "сача", "russian": "Лев" },
+      { "korean": "원숭이", "transcription": "вонсуңи", "russian": "Обезьяна" },
+      { "korean": "기린", "transcription": "кирин", "russian": "Жираф" },
+      { "korean": "코끼리", "transcription": "коккири", "russian": "Слон" },
+      { "korean": "쥐", "transcription": "чви", "russian": "Мышь" },
+      { "korean": "뱀", "transcription": "пэм", "russian": "Змея" },
+      { "korean": "늑대", "transcription": "ныктэ", "russian": "Волк" },
+      { "korean": "여우", "transcription": "ёу", "russian": "Лиса" },
+      { "korean": "상어", "transcription": "саңо", "russian": "Акула" },
+      { "korean": "고래", "transcription": "корэ", "russian": "Кит" }
+    ]
+  },
+  {
+    "id": 43,
+    "title": "Уровень 43: Космос",
+    "description": "Далекие звезды",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "우주", "transcription": "учу", "russian": "Космос" },
+      { "korean": "별", "transcription": "пёль", "russian": "Звезда" },
+      { "korean": "달", "transcription": "таль", "russian": "Луна" },
+      { "korean": "지구", "transcription": "чигу", "russian": "Земля (планета)" },
+      { "korean": "태양", "transcription": "тэяң", "russian": "Солнце" },
+      { "korean": "행성", "transcription": "хэңсоң", "russian": "Планета" },
+      { "korean": "외계인", "transcription": "вегеин", "russian": "Инопланетянин" },
+      { "korean": "로켓", "transcription": "рокет", "russian": "Ракета" },
+      { "korean": "세계", "transcription": "сеге", "russian": "Мир" },
+      { "korean": "천국", "transcription": "чонгук", "russian": "Рай" }
+    ]
+  },
+  {
+    "id": 44,
+    "title": "Уровень 44: Материалы",
+    "description": "Из чего сделано?",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "나무", "transcription": "наму", "russian": "Дерево" },
+      { "korean": "금", "transcription": "кым", "russian": "Золото" },
+      { "korean": "은", "transcription": "ын", "russian": "Серебро" },
+      { "korean": "철", "transcription": "чоль", "russian": "Железо" },
+      { "korean": "유리", "transcription": "юри", "russian": "Стекло" },
+      { "korean": "플라스틱", "transcription": "пылласытик", "russian": "Пластик" },
+      { "korean": "가죽", "transcription": "качук", "russian": "Кожа" },
+      { "korean": "면", "transcription": "мён", "russian": "Хлопок" },
+      { "korean": "흙", "transcription": "хык", "russian": "Земля/Грунт" },
+      { "korean": "모래", "transcription": "морэ", "russian": "Песок" }
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Уровень 45: Чувства 2",
+    "description": "Восприятие",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "생각", "transcription": "сэңгак", "russian": "Мысль" },
+      { "korean": "기억", "transcription": "киок", "russian": "Память" },
+      { "korean": "느낌", "transcription": "ныкким", "russian": "Чувство/Ощущение" },
+      { "korean": "냄새", "transcription": "нэмсэ", "russian": "Запах" },
+      { "korean": "소리", "transcription": "сори", "russian": "Звук" },
+      { "korean": "맛", "transcription": "мат", "russian": "Вкус" },
+      { "korean": "모습", "transcription": "мосып", "russian": "Облик" },
+      { "korean": "정신", "transcription": "чоңщин", "russian": "Дух/Рассудок" },
+      { "korean": "스트레스", "transcription": "сытыресы", "russian": "Стресс" },
+      { "korean": "거짓말", "transcription": "кочинмаль", "russian": "Ложь" }
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Уровень 46: ЧП",
+    "description": "Экстренные слова",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "도와주세요", "transcription": "товачусеё", "russian": "Помогите!" },
+      { "korean": "불", "transcription": "пуль", "russian": "Огонь" },
+      { "korean": "사고", "transcription": "саго", "russian": "Авария" },
+      { "korean": "위험", "transcription": "вихом", "russian": "Опасность" },
+      { "korean": "구급차", "transcription": "кугыпча", "russian": "Скорая" },
+      { "korean": "도둑", "transcription": "тодук", "russian": "Вор" },
+      { "korean": "지진", "transcription": "чичин", "russian": "Землетрясение" },
+      { "korean": "홍수", "transcription": "хоңсу", "russian": "Наводнение" },
+      { "korean": "비상", "transcription": "писаң", "russian": "ЧП" },
+      { "korean": "조심", "transcription": "чощим", "russian": "Осторожно" }
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Уровень 47: Наречия",
+    "description": "Как часто?",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "항상", "transcription": "хаңсаң", "russian": "Всегда" },
+      { "korean": "자주", "transcription": "чачу", "russian": "Часто" },
+      { "korean": "가끔", "transcription": "каккым", "russian": "Иногда" },
+      { "korean": "보통", "transcription": "потоң", "russian": "Обычно" },
+      { "korean": "빨리", "transcription": "ппалли", "russian": "Быстро" },
+      { "korean": "천천히", "transcription": "чончонхи", "russian": "Медленно" },
+      { "korean": "이미", "transcription": "ими", "russian": "Уже" },
+      { "korean": "아직", "transcription": "ачик", "russian": "Еще" },
+      { "korean": "정말", "transcription": "чоңмаль", "russian": "Правда/Очень" },
+      { "korean": "다시", "transcription": "тащи", "russian": "Снова" }
+    ]
+  },
+  {
+    "id": 48,
+    "title": "Уровень 48: Поездка",
+    "description": "Туризм",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "여권", "transcription": "ёгвон", "russian": "Паспорт" },
+      { "korean": "비자", "transcription": "пича", "russian": "Виза" },
+      { "korean": "가이드", "transcription": "каиды", "russian": "Гид" },
+      { "korean": "환전", "transcription": "хванчон", "russian": "Обмен валюты" },
+      { "korean": "출발", "transcription": "чульбаль", "russian": "Отправление" },
+      { "korean": "도착", "transcription": "точак", "russian": "Прибытие" },
+      { "korean": "관광", "transcription": "квангаваң", "russian": "Туризм" },
+      { "korean": "기념품", "transcription": "кинёмпум", "russian": "Сувенир" },
+      { "korean": "입구", "transcription": "ипку", "russian": "Вход" },
+      { "korean": "출구", "transcription": "чульгу", "russian": "Выход" }
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Уровень 49: Глаголы 4",
+    "description": "Жизнь и мысли",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "알다", "transcription": "альда", "russian": "Знать" },
+      { "korean": "모르다", "transcription": "морыда", "russian": "Не знать" },
+      { "korean": "믿다", "transcription": "митта", "russian": "Верить" },
+      { "korean": "웃다", "transcription": "утта", "russian": "Смеяться" },
+      { "korean": "울다", "transcription": "ульда", "russian": "Плакать" },
+      { "korean": "살다", "transcription": "сальда", "russian": "Жить" },
+      { "korean": "죽다", "transcription": "чукта", "russian": "Умирать" },
+      { "korean": "이기다", "transcription": "игида", "russian": "Побеждать" },
+      { "korean": "지다", "transcription": "чида", "russian": "Проигрывать" },
+      { "korean": "찾다", "transcription": "чатта", "russian": "Искать" }
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Уровень 50: Интернет",
+    "description": "В сети",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "인터넷", "transcription": "интонет", "russian": "Интернет" },
+      { "korean": "비밀번호", "transcription": "пимильбонхо", "russian": "Пароль" },
+      { "korean": "검색", "transcription": "комсэк", "russian": "Поиск" },
+      { "korean": "문자", "transcription": "мунча", "russian": "СМС" },
+      { "korean": "전화", "transcription": "чонхва", "russian": "Телефон" },
+      { "korean": "앱", "transcription": "эп", "russian": "Приложение" },
+      { "korean": "댓글", "transcription": "тэккыль", "russian": "Комментарий" },
+      { "korean": "좋아요", "transcription": "чоаё", "russian": "Лайк" },
+      { "korean": "와이파이", "transcription": "ваипаи", "russian": "Wi-Fi" },
+      { "korean": "노트북", "transcription": "нотыбук", "russian": "Ноутбук" }
+    ]
+  },
+    {
+    "id": 51,
+    "title": "Уровень 51: Время 2",
+    "description": "Прошлое и будущее",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "초", "transcription": "чо", "russian": "Секунда" },
+      { "korean": "순간", "transcription": "сунган", "russian": "Момент" },
+      { "korean": "과거", "transcription": "кваго", "russian": "Прошлое" },
+      { "korean": "미래", "transcription": "мирэ", "russian": "Будущее" },
+      { "korean": "영원", "transcription": "ёңвон", "russian": "Вечность" },
+      { "korean": "역사", "transcription": "ёкса", "russian": "История" },
+      { "korean": "문화", "transcription": "мунхва", "russian": "Культура" },
+      { "korean": "전통", "transcription": "чонтоң", "russian": "Традиция" },
+      { "korean": "현대", "transcription": "хёндэ", "russian": "Современность" },
+      { "korean": "사회", "transcription": "сахве", "russian": "Общество" }
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Уровень 52: Формы",
+    "description": "Геометрия",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "원", "transcription": "вон", "russian": "Круг" },
+      { "korean": "삼각형", "transcription": "самгакхёң", "russian": "Треугольник" },
+      { "korean": "사각형", "transcription": "сагакхёң", "russian": "Квадрат" },
+      { "korean": "선", "transcription": "сон", "russian": "Линия" },
+      { "korean": "점", "transcription": "чом", "russian": "Точка" },
+      { "korean": "숫자", "transcription": "сутча", "russian": "Цифра" },
+      { "korean": "반", "transcription": "пан", "russian": "Половина" },
+      { "korean": "중심", "transcription": "чуңщим", "russian": "Центр" },
+      { "korean": "더하기", "transcription": "тохаги", "russian": "Плюс" },
+      { "korean": "빼기", "transcription": "ппэги", "russian": "Минус" }
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Уровень 53: Аксессуары",
+    "description": "Стиль",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "반지", "transcription": "панчи", "russian": "Кольцо" },
+      { "korean": "목걸이", "transcription": "моккори", "russian": "Ожерелье" },
+      { "korean": "귀걸이", "transcription": "квигори", "russian": "Серьги" },
+      { "korean": "벨트", "transcription": "пельты", "russian": "Ремень" },
+      { "korean": "손목시계", "transcription": "сонмокщиге", "russian": "Наручные часы" },
+      { "korean": "넥타이", "transcription": "нектаи", "russian": "Галстук" },
+      { "korean": "목도리", "transcription": "моктори", "russian": "Шарф" },
+      { "korean": "장갑", "transcription": "чаңгап", "russian": "Перчатки" },
+      { "korean": "우산", "transcription": "усан", "russian": "Зонт" },
+      { "korean": "선글라스", "transcription": "сонгылласы", "russian": "Очки (солн)" }
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Уровень 54: Общество",
+    "description": "Серьезные вещи",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "대통령", "transcription": "тэтоңнёң", "russian": "Президент" },
+      { "korean": "법", "transcription": "поп", "russian": "Закон" },
+      { "korean": "뉴스", "transcription": "нюсы", "russian": "Новости" },
+      { "korean": "신문", "transcription": "щинмун", "russian": "Газета" },
+      { "korean": "경제", "transcription": "кёңче", "russian": "Экономика" },
+      { "korean": "세금", "transcription": "сегым", "russian": "Налог" },
+      { "korean": "기업", "transcription": "киоп", "russian": "Предприятие" },
+      { "korean": "회의", "transcription": "хвеи", "russian": "Собрание" },
+      { "korean": "계약", "transcription": "кеяк", "russian": "Контракт" },
+      { "korean": "목표", "transcription": "мокпё", "russian": "Цель" }
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Уровень 55: Характер",
+    "description": "Какой ты?",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "친절하다", "transcription": "чинчорада", "russian": "Доброжелательный" },
+      { "korean": "똑똑하다", "transcription": "ттокттокада", "russian": "Умный" },
+      { "korean": "멍청하다", "transcription": "моңчоңхада", "russian": "Глупый" },
+      { "korean": "귀엽다", "transcription": "квиёпта", "russian": "Милый" },
+      { "korean": "멋있다", "transcription": "мощитта", "russian": "Крутой" },
+      { "korean": "이상하다", "transcription": "исаңхада", "russian": "Странный" },
+      { "korean": "유명하다", "transcription": "юмёңхада", "russian": "Знаменитый" },
+      { "korean": "솔직하다", "transcription": "сольчикада", "russian": "Честный" },
+      { "korean": "부끄럽다", "transcription": "пуккыропта", "russian": "Стеснительный" },
+      { "korean": "심심하다", "transcription": "щимщимада", "russian": "Скучающий" }
+    ]
+  },
+  {
+    "id": 56,
+    "title": "Уровень 56: Спорт",
+    "description": "Движение",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "축구", "transcription": "чукку", "russian": "Футбол" },
+      { "korean": "야구", "transcription": "ягу", "russian": "Бейсбол" },
+      { "korean": "농구", "transcription": "ноңгу", "russian": "Баскетбол" },
+      { "korean": "수영", "transcription": "суёң", "russian": "Плавание" },
+      { "korean": "달리기", "transcription": "таллиги", "russian": "Бег" },
+      { "korean": "공", "transcription": "коң", "russian": "Мяч" },
+      { "korean": "팀", "transcription": "тим", "russian": "Команда" },
+      { "korean": "경기장", "transcription": "кёңгичаң", "russian": "Стадион" },
+      { "korean": "금메달", "transcription": "кыммедаль", "russian": "Золотая медаль" },
+      { "korean": "승리", "transcription": "сыңни", "russian": "Победа" }
+    ]
+  },
+  {
+    "id": 57,
+    "title": "Уровень 57: Мир",
+    "description": "География",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "동쪽", "transcription": "тоңчок", "russian": "Восток" },
+      { "korean": "서쪽", "transcription": "сочок", "russian": "Запад" },
+      { "korean": "남쪽", "transcription": "намчок", "russian": "Юг" },
+      { "korean": "북쪽", "transcription": "пукчок", "russian": "Север" },
+      { "korean": "수도", "transcription": "судо", "russian": "Столица" },
+      { "korean": "마을", "transcription": "маыль", "russian": "Деревня" },
+      { "korean": "호수", "transcription": "хосу", "russian": "Озеро" },
+      { "korean": "해변", "transcription": "хэбён", "russian": "Пляж" },
+      { "korean": "사막", "transcription": "самак", "russian": "Пустыня" },
+      { "korean": "계곡", "transcription": "кегок", "russian": "Долина" }
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Уровень 58: Глаголы 5",
+    "description": "Сложные действия",
+    "isLocked": true,
+    "config": { "speed": 11, "wordGap": 850 },
+    "words": [
+      { "korean": "필요하다", "transcription": "пирёхада", "russian": "Нуждаться" },
+      { "korean": "시작하다", "transcription": "щичакада", "russian": "Начинать" },
+      { "korean": "끝내다", "transcription": "ккыннэда", "russian": "Заканчивать" },
+      { "korean": "바꾸다", "transcription": "паккуда", "russian": "Менять" },
+      { "korean": "기다리다", "transcription": "кидарида", "russian": "Ждать" },
+      { "korean": "물어보다", "transcription": "муробода", "russian": "Спрашивать" },
+      { "korean": "대답하다", "transcription": "тэдапада", "russian": "Отвечать" },
+      { "korean": "돕다", "transcription": "топта", "russian": "Помогать" },
+      { "korean": "이해하다", "transcription": "ихэхада", "russian": "Понимать" },
+      { "korean": "기억하다", "transcription": "киокада", "russian": "Помнить" }
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Уровень 59: Связки",
+    "description": "Строим фразы",
+    "isLocked": true,
+    "config": { "speed": 10, "wordGap": 900 },
+    "words": [
+      { "korean": "그리고", "transcription": "кыриго", "russian": "И" },
+      { "korean": "하지만", "transcription": "хачиман", "russian": "Но" },
+      { "korean": "그래서", "transcription": "кырэсо", "russian": "Поэтому" },
+      { "korean": "왜냐하면", "transcription": "веняхамён", "russian": "Потому что" },
+      { "korean": "만약", "transcription": "маняк", "russian": "Если" },
+      { "korean": "또는", "transcription": "ттонын", "russian": "Или" },
+      { "korean": "함께", "transcription": "хамкке", "russian": "Вместе" },
+      { "korean": "아주", "transcription": "ачу", "russian": "Очень" },
+      { "korean": "너무", "transcription": "ному", "russian": "Слишком" },
+      { "korean": "그냥", "transcription": "кыняң", "russian": "Просто" }
+    ]
+  },
+  {
+    "id": 60,
+    "title": "Уровень 60: Истина",
+    "description": "Финал пути",
+    "isLocked": true,
+    "config": { "speed": 12, "wordGap": 800 },
+    "words": [
+      { "korean": "전부", "transcription": "чонбу", "russian": "Все (целиком)" },
+      { "korean": "기회", "transcription": "кихве", "russian": "Шанс" },
+      { "korean": "도전", "transcription": "точон", "russian": "Вызов/Челлендж" },
+      { "korean": "약속", "transcription": "яксок", "russian": "Обещание" },
+      { "korean": "비밀", "transcription": "пимиль", "russian": "Секрет" },
+      { "korean": "진실", "transcription": "чинщиль", "russian": "Правда" },
+      { "korean": "자유", "transcription": "чаю", "russian": "Свобода" },
+      { "korean": "희망", "transcription": "химаң", "russian": "Надежда" },
+      { "korean": "용기", "transcription": "ёңги", "russian": "Смелость" },
+      { "korean": "작별", "transcription": "чакпёль", "russian": "Прощание" }
+    ]
+  }
+]

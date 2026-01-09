@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Voice Run: True Y-Axis</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="analytics.js"></script>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #87CEEB 0%, #B0E0E6 100%);
-            /* Небо */
-            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #89f7fe 0%, #66a6ff 100%);
+            font-family: 'Verdana', sans-serif;
             overflow: hidden;
             height: 100vh;
             user-select: none;
+            color: #546e7a;
         }
 
         #ui-layer {
@@ -30,22 +32,49 @@
             justify-content: space-between;
         }
 
+        #fail-line {
+            position: absolute;
+            left: 50%;
+            width: 320px;
+            height: 0;
+            margin-left: -160px;
+            border-bottom: 4px dashed #ff8a80;
+            transform: translate3d(0, -300px, -40px);
+            opacity: 0.8;
+            z-index: 5;
+            box-shadow: 0 0 10px #ff8a80;
+        }
+
         .hud-panel {
-            padding: 20px;
-            text-align: center;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
         }
 
         #score-display {
-            font-size: 28px;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            background: rgba(0, 0, 0, 0.2);
-            padding: 5px 15px;
-            border-radius: 20px;
+            font-size: 22px;
+            font-weight: 800;
+            color: #5d4037;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 12px 25px;
+            border: 1px solid #ffe082;
+            border-radius: 25px;
+            box-shadow: 0 8px 20px rgba(100, 181, 246, 0.3);
         }
 
-        /* --- 3D СЦЕНА --- */
+        #lives-display {
+            font-size: 32px;
+            color: #ff7043;
+            text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.4);
+            padding: 5px 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(4px);
+        }
+
         #scene {
             position: absolute;
             top: 0;
@@ -53,12 +82,10 @@
             width: 100%;
             height: 100%;
             perspective: 800px;
-            /* Камера */
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-
         }
 
         #world {
@@ -66,168 +93,145 @@
             width: 100%;
             height: 100%;
             transform-style: preserve-3d;
-
-            /* Изменили translateY с 300px на 100px (подняли сцену выше) */
             transform: translateY(50px) rotateX(-90deg) rotateZ(-10deg);
         }
 
-        /* Дорога лежит на плоскости XY */
         #floor {
             position: absolute;
             left: 50%;
             bottom: 0;
-            /* Дорога идет от нас (0) в даль (+Y) */
             transform: translateX(-50%);
             width: 600px;
             height: 10000px;
-            /* Длинная дорога по оси +Y */
-
-            background: linear-gradient(to top, #fff 0%, #e1f5fe 100%);
-            border-left: 15px solid #b3e5fc;
-            border-right: 15px solid #b3e5fc;
-
-            /* Сетка для визуализации движения по Y */
+            background: #a5d6a7;
+            border-left: 25px solid #81c784;
+            border-right: 25px solid #81c784;
             background-image:
-                linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-            background-size: 100px 200px;
+                radial-gradient(#c8e6c9 20%, transparent 20%),
+                radial-gradient(#c8e6c9 20%, transparent 20%);
+            background-position: 0 0, 50px 50px;
+            background-size: 100px 100px;
+            box-shadow: inset 0 0 150px rgba(46, 125, 50, 0.2);
         }
 
         .word-gate {
             position: absolute;
             left: 50%;
-            /* Увеличили размер для трех строк */
-            width: 340px;
-            height: 260px;
-
-            background: #ffffff;
-            border: none;
-            border-radius: 35px;
-            /* Сильное скругление */
-
+            width: 320px;
+            height: 240px;
+            background: #fff8e1;
+            border: 8px solid #d7ccc8;
+            border-radius: 24px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-
-            /* Мягкая объемная тень */
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-
-            margin-left: -170px;
-            /* Половина ширины */
+            box-shadow: 0 15px 35px rgba(141, 110, 99, 0.2);
+            margin-left: -160px;
             transform-origin: center bottom;
-            will-change: transform;
-            padding: 10px;
+            will-change: transform, opacity;
+            padding: 20px;
             box-sizing: border-box;
         }
 
+        .word-gate::before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 360px;
+            height: 20px;
+            background: #a1887f;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .word-gate.fail {
+            background: #ffebee;
+            border-color: #ffcdd2;
+            opacity: 0.7;
+        }
+
+        .word-gate.success {
+            background: #f1f8e9;
+            border-color: #c5e1a5;
+        }
+
         .gate-text-ko {
-            font-size: 80px;
+            font-size: 64px;
             font-weight: 900;
-            color: #000;
-            line-height: 1;
+            color: #5d4037;
+            line-height: 1.1;
             margin-bottom: 5px;
-            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
         }
 
         .gate-text-trans {
-            font-size: 24px;
-            color: #9e9e9e;
-            /* Светло-серый */
+            font-size: 22px;
+            color: #8d6e63;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .gate-text-ru {
-            font-size: 45px;
-            color: #808080;
-            /* Темно-серый */
-            font-weight: 900;
-            background: none;
-            padding: 0;
-            line-height: 1;
-        }
-
-        /* Зеленая подсветка при успехе */
-        .word-gate.success {
-            box-shadow: 0 0 0 6px #00c853, 0 10px 40px rgba(0, 200, 83, 0.4);
+            font-size: 34px;
+            color: #ff7043;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         #mic-status {
             position: absolute;
-            bottom: 40px;
+            bottom: 60px;
             left: 50%;
             transform: translateX(-50%);
-            background: #fff;
-            padding: 10px 30px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 40px;
+            border: 3px solid #b3e5fc;
             border-radius: 50px;
             display: flex;
             align-items: center;
             gap: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(33, 150, 243, 0.15);
             font-weight: bold;
-            color: #333;
+            color: #0277bd;
+            font-size: 18px;
         }
 
         .mic-dot {
-            width: 14px;
-            height: 14px;
+            width: 18px;
+            height: 18px;
+            background: #cfd8dc;
             border-radius: 50%;
-            background: #ccc;
+            border: 3px solid #eceff1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .mic-dot.active {
-            background: #ff1744;
-            animation: pulse 1s infinite;
+            background: #ff5252;
+            border-color: #ffcdd2;
+            box-shadow: 0 0 20px rgba(255, 82, 82, 0.6);
+            animation: pulse 1.5s infinite ease-in-out;
         }
 
         @keyframes pulse {
             0% {
                 transform: scale(1);
+                opacity: 1;
             }
 
             50% {
-                transform: scale(1.3);
+                transform: scale(1.2);
+                opacity: 0.8;
             }
 
             100% {
                 transform: scale(1);
+                opacity: 1;
             }
-        }
-
-        #start-screen {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 200;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-
-        button {
-            margin-top: 30px;
-            padding: 15px 50px;
-            font-size: 26px;
-            border-radius: 50px;
-            border: none;
-            background: #ff9100;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
-            box-shadow: 0 5px 0 #e65100;
-            transition: transform 0.1s;
-        }
-
-        button:active {
-            transform: translateY(5px);
-            box-shadow: none;
         }
 
         #game-objects {
@@ -236,11 +240,374 @@
             left: 0;
             width: 100%;
             height: 100%;
-            /* Это самое важное: сохраняет 3D объем для дочерних элементов */
             transform-style: preserve-3d;
             pointer-events: none;
             z-index: 10;
-            /* Поднимаем слой с карточками над дорогой */
+        }
+
+        #level-menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            z-index: 300;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            overflow: hidden;
+            /* Убрали overflow-y: auto отсюда */
+        }
+
+        #levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 700px;
+            overflow-y: auto;
+            /* Добавили прокрутку сюда */
+            flex: 1;
+            /* Растягиваем на оставшуюся высоту */
+            padding-bottom: 150px;
+            /* Отступ снизу для кнопок */
+            align-content: start;
+            padding-top: 10px;
+        }
+
+        #level-menu h1 {
+            white-space: nowrap;
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 10px rgba(66, 165, 245, 0.4);
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 10px 30px;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            margin-top: 60px;
+        }
+
+
+        .level-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            box-shadow: 0 10px 20px rgba(161, 196, 253, 0.4);
+            color: #455a64;
+        }
+
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(161, 196, 253, 0.6);
+        }
+
+        .level-card h3 {
+            margin: 0 0 10px 0;
+            color: #039be5;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .level-card p {
+            color: #78909c;
+            font-size: 14px;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .level-card.locked {
+            background: rgba(236, 239, 241, 0.8);
+            box-shadow: none;
+            cursor: not-allowed;
+            opacity: 0.7;
+            filter: grayscale(0.8);
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 16px 45px;
+            font-size: 20px;
+            border-radius: 35px;
+            border: none;
+            background: #fff;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 800;
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(76, 175, 80, 0.5);
+        }
+
+        button:active {
+            transform: scale(0.97);
+            box-shadow: 0 5px 10px rgba(76, 175, 80, 0.3);
+        }
+
+        #result-screen {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(225, 245, 254, 0.9);
+            z-index: 500;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            backdrop-filter: blur(8px);
+        }
+
+        .result-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(129, 212, 250, 0.5);
+            width: 85%;
+            max-width: 380px;
+            border: 4px solid #e1f5fe;
+        }
+
+        #result-title {
+            font-size: 36px;
+            margin: 0;
+            color: #0288d1;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        #result-stars {
+            font-size: 48px;
+            margin: 20px 0;
+            filter: drop-shadow(0 4px 6px rgba(255, 213, 79, 0.5));
+        }
+
+        .result-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .result-buttons button {
+            margin-top: 0;
+            width: 100%;
+            padding: 14px;
+            font-size: 17px;
+            border-radius: 25px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background: #b0bec5;
+            color: #fff;
+        }
+
+        .btn-retry {
+            background: #ffca28;
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background: #42a5f5;
+        }
+
+        #global-stars-display {
+            position: fixed;
+            /* Изменено с absolute на fixed */
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fbc02d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            z-index: 1000;
+            /* Увеличили z-index */
+        }
+
+        #hud-stars {
+
+            /* Изменено с absolute на fixed */
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fbc02d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            z-index: 1000;
+            /* Увеличили z-index */
+        }
+
+        #timer-hud {
+
+            position: static;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            display: none;
+            /* Скрыт по умолчанию (для премиума) */
+            z-index: 400;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        #premium-block-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .premium-card {
+            background: #fff;
+            color: #333;
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 300px;
+            width: 90%;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            border: 4px solid #FFD700;
+        }
+
+        .premium-btn {
+            background: linear-gradient(45deg, #FFD700, #FFA000);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 15px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(255, 160, 0, 0.4);
+        }
+
+        .flying-star {
+            position: fixed;
+            z-index: 10000;
+            font-size: 40px;
+            transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+            pointer-events: none;
+            text-shadow: 0 0 10px gold;
+            will-change: transform, left, top;
+        }
+
+        .floating-controls {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+
+            z-index: 2000;
+        }
+
+        /* Общий стиль для круглых кнопок */
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.1s;
+            padding: 0;
+            outline: none;
+
+            /* ВАЖНО: Сбрасываем зеленый градиент и ставим белый фон */
+            background: #ffffff;
+            color: #333;
+        }
+
+        .float-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* 1. Кнопка Транскрипции */
+        .btn-trans {
+            /* display: none задается в JS или по умолчанию */
+            display: none;
+            font-weight: 900;
+            font-size: 16px;
+            font-family: sans-serif;
+            color: #000;
+        }
+
+        /* Зачеркивание, если выключено */
+        body.no-transcription .btn-trans {
+            text-decoration: line-through;
+            color: #777;
+        }
+
+        /* 2. Кнопка Назад (в игре) */
+        .btn-back {
+            background-image: url('videothemes/icons/backarrow.png');
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: none;
+            /* Скрыта в меню */
+        }
+
+        /* 3. Кнопка Домой (выход из приложения) */
+        .btn-home {
+            background-image: url('videothemes/icons/home.png');
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        /* Скрываем саму транскрипцию на карточках */
+        body.no-transcription .gate-text-trans {
+            display: none;
         }
     </style>
 </head>
@@ -248,8 +615,12 @@
 <body>
 
     <div id="ui-layer">
+
         <div class="hud-panel">
             <div id="score-display">0 / 0</div>
+            <div id="timer-hud">⏳ 5:00</div>
+            <div id="lives-display">❤❤❤</div>
+            <div id="hud-stars">⚡️ 0</div>
         </div>
         <div id="mic-status">
             <div class="mic-dot" id="mic-indicator"></div>
@@ -260,20 +631,59 @@
     <div id="scene">
         <div id="world">
             <div id="floor"></div>
+            <div id="fail-line"></div>
             <div id="game-objects"></div>
         </div>
     </div>
 
-    <div id="start-screen">
-        <h1 style="font-size: 40px;">ГОЛОСОВОЙ ЗАБЕГ</h1>
-        <p style="font-size: 18px; color: #ddd;">Слова двигаются от +Y к тебе (-Y)</p>
-        <button onclick="initGame()">ПОЕХАЛИ</button>
+    <div id="level-menu">
+        <div id="global-stars-display">
+            ⚡️ <span id="stars-count">0</span>
+        </div>
+        <h1>ВЫБОР УРОВНЯ</h1>
+        <button id="btn-endless"
+            style="background: linear-gradient(45deg, #FF512F, #DD2476); width: 90%; max-width: 400px; margin-bottom: 30px; font-size: 22px; box-shadow: 0 10px 20px rgba(221, 36, 118, 0.3); display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0.5; filter: grayscale(1); cursor: not-allowed;">
+            <span>🔒 БЕСКОНЕЧНЫЙ РЕЖИМ</span>
+            <div id="endless-best-display" style="font-size: 14px; margin-top: 5px; opacity: 0.9; font-weight: normal;">
+                Пройди все уровни
+            </div>
+        </button>
+        <div id="levels-grid">
+            <!-- Сюда JS добавит карточки -->
+        </div>
     </div>
 
+    <div id="game-ui" style="display: none;">
+        <!-- Сюда перенесем кнопку "Назад в меню" позже -->
+    </div>
+    <div id="result-screen">
+        <div class="result-card">
+            <h1 id="result-title">ПОБЕДА!</h1>
+            <div id="result-stars">⭐⭐⭐</div>
+            <p id="result-message">Все слова пройдены</p>
+
+            <div class="result-buttons">
+                <button class="btn-secondary" onclick="goToMenu()">МЕНЮ</button>
+                <button class="btn-retry" onclick="restartLevel()">ЗАНОВО</button>
+                <button id="btn-next" class="btn-primary" onclick="nextLevel()">ДАЛЬШЕ ▶</button>
+            </div>
+        </div>
+    </div>
     <script>
+        const tg = window.Telegram.WebApp;
+        const starSound = new Audio('starsuccess.mp3');
+        // Сообщаем, что приложение готово
+        tg.ready();
+
+        // Разворачиваем на весь экран (убираем шторку)
+        tg.expand();
+
+        // Красим хедер в цвет приложения (чтобы сливалось с небом)
+        tg.setHeaderColor('#87CEEB');
+        tg.setBackgroundColor('#87CEEB');
         // --- КОНФИГУРАЦИЯ ИГРЫ ---
         // Ось +Y - это даль. Мы стартуем далеко.
-        const START_Y_POS = 3500;
+        const START_Y_POS = 1500;
         const WORD_GAP = 1200;      // Расстояние между словами
         const SPEED = 6;            // Скорость движения (вычитаем Y каждый кадр)
         const PLAYER_Y_POS = 100;   // Точка, где стоит "игрок"
@@ -282,7 +692,8 @@
         // Угол компенсации наклона карточек (чтобы стояли вертикально)
         // Должен быть противоположен rotateX мира (-85deg)
         const CARD_ROTATION = 85;
-
+        let isEndless = false;
+        let fullWordPool = [];
         let wordsData = [];
         let gameObjects = [];
         let currentWordIndex = 0;
@@ -292,9 +703,18 @@
         let isProcessing = false;
         let animationFrame;
 
+        // Звезды
+        let totalServerStars = parseInt(localStorage.getItem('stars')) || 0;
+
+        // --- ТАЙМЕР И ПРЕМИУМ ---
+        const DAILY_LIMIT = 300; // 5 минут (300 сек)
+        let timeUsedToday = 0;
+        let timerInterval = null;
+        let isPremium = false;
 
         // Аудио
         let mediaRecorder;
+        let globalStream = null;
         let audioChunks = [];
         let audioContext;
         let analyser;
@@ -302,51 +722,294 @@
         let source;
 
         // Настройки VAD (Детектора голоса)
-        const VOICE_THRESHOLD = 20;  // Порог громкости (0-255), если тихо - увеличь, если шумно - уменьши
-        const SILENCE_DELAY = 800;   // Сколько мс тишины ждать перед отправкой
+        const VOICE_THRESHOLD = 30;  // Порог громкости (0-255), если тихо - увеличь, если шумно - уменьши
+        const SILENCE_DELAY = 1000;   // Сколько мс тишины ждать перед отправкой
 
         let isSpeaking = false;      // Говорит ли сейчас игрок
         let silenceStart = null;     // Время начала тишины
 
+        let currentLevelSpeed = 6;
+        let currentWordGap = 1200;
+        let lives = 3;
+        let currentLevelData = null;
+
+        // Запуск при загрузке страницы
+        window.onload = function () {
+            loadLevels();
+            initTimer();
+        };
+
         function setupRecorder(stream) {
-            // 1. Настройка записи
-            mediaRecorder = new MediaRecorder(stream);
-            mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+            globalStream = stream; // Сохраняем доступ к микрофону
+
+            const options = { mimeType: 'audio/webm;codecs=opus', audioBitsPerSecond: 128000 };
+            const mimeType = MediaRecorder.isTypeSupported(options.mimeType) ? options.mimeType : '';
+            mediaRecorder = new MediaRecorder(stream, mimeType ? options : undefined);
+
+            mediaRecorder.ondataavailable = e => {
+                if (e.data.size > 0) audioChunks.push(e.data);
+            };
+
             mediaRecorder.onstop = () => {
                 const blob = new Blob(audioChunks, { type: 'audio/webm' });
                 audioChunks = [];
-                if (isRunning) checkVoice(blob);
+
+                // ВАЖНОЕ ИЗМЕНЕНИЕ:
+                // Если мы нажали "Назад" (isRunning == false), мы НЕ отправляем аудио на проверку
+                if (isRunning && blob.size > 0) {
+                    checkVoice(blob);
+                }
             };
 
-            // 2. Настройка анализатора (слушает громкость)
+            // Настройка анализатора (оставляем как было)
             audioContext = new (window.AudioContext || window.webkitAudioContext)();
             analyser = audioContext.createAnalyser();
-            analyser.fftSize = 256;
+            analyser.fftSize = 512;
+            analyser.smoothingTimeConstant = 0.3;
             source = audioContext.createMediaStreamSource(stream);
             source.connect(analyser);
             dataArray = new Uint8Array(analyser.frequencyBinCount);
         }
 
-        async function initGame() {
+        async function loadLevels() {
+            loadGlobalStars();
             try {
-                // Пытаемся загрузить JSON
-                try {
-                    const res = await fetch('videothemes/json/game_words.json');
-                    if (!res.ok) throw new Error();
-                    wordsData = await res.json();
-                } catch {
-                    // Заглушка
-                    wordsData = [
-                        { korean: "오류", transcription: "Ошибка JSON" },
-                        { korean: "테스트", transcription: "Тест" }
-                    ];
+                const res = await fetch('videothemes/json/levels.json');
+                const levels = await res.json();
+
+                fullWordPool = [];
+                levels.forEach(lvl => {
+                    fullWordPool = fullWordPool.concat(lvl.words);
+                });
+                fullWordPool.sort(() => Math.random() - 0.5);
+
+                const progress = JSON.parse(localStorage.getItem('voiceRunProgress')) || {};
+
+                const endlessBtn = document.getElementById('btn-endless');
+                const endlessText = endlessBtn.querySelector('span');
+                const endlessSub = document.getElementById('endless-best-display');
+
+                const lastLevelId = levels[levels.length - 1].id;
+                const isGameFinished = progress[lastLevelId] && progress[lastLevelId] > 0;
+
+                if (isGameFinished) {
+                    endlessBtn.style.opacity = "1";
+                    endlessBtn.style.filter = "none";
+                    endlessBtn.style.cursor = "pointer";
+                    endlessBtn.onclick = startEndlessMode;
+
+                    endlessText.innerText = "🔥 БЕСКОНЕЧНЫЙ РЕЖИМ 🔥";
+                    const bestScore = localStorage.getItem('voiceRunEndlessHighScore') || 0;
+                    endlessSub.innerText = `🏆 Рекорд: ${bestScore}`;
+                } else {
+                    endlessBtn.onclick = null;
                 }
 
+                const grid = document.getElementById('levels-grid');
+                grid.innerHTML = '';
+
+                let lastUnlockedCard = null;
+
+                levels.forEach((level, index) => {
+                    let isLocked = level.isLocked;
+
+                    if (index > 0) {
+                        const prevId = levels[index - 1].id;
+                        if (progress[prevId] && progress[prevId] > 0) {
+                            isLocked = false;
+                        }
+                    }
+                    if (index === 0) isLocked = false;
+
+                    const myStars = progress[level.id] || 0;
+                    const starString = "⭐".repeat(myStars);
+
+                    const card = document.createElement('div');
+                    card.className = `level-card ${isLocked ? 'locked' : ''}`;
+
+                    card.innerHTML = `
+                        <h3>${level.title}</h3>
+                        <p>${starString}</p>
+                        <p style="font-size:12px; margin-top:5px;">${level.description}</p>
+                    `;
+
+                    if (!isLocked) {
+                        card.onclick = () => startGameWithLevel(level);
+                        lastUnlockedCard = card;
+                    }
+
+                    grid.appendChild(card);
+                });
+
+                if (lastUnlockedCard) {
+                    setTimeout(() => {
+                        lastUnlockedCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 100);
+                }
+
+            } catch (e) {
+                alert("Ошибка: " + e.message);
+            }
+        }
+
+        function startEndlessMode() {
+            stopGameSystem();
+            document.getElementById('btn-trans-toggle').style.display = 'flex';
+            document.getElementById('btn-back-game').style.display = 'flex';
+            isEndless = true;
+            currentLevelData = null;
+
+            // Настройки сложности для старта
+            currentLevelSpeed = 7;
+            currentWordGap = 1100;
+            lives = 3;
+            document.getElementById('lives-display').innerText = "❤❤❤";
+            document.getElementById('level-menu').style.display = 'none';
+
+            tg.BackButton.show();
+            tg.BackButton.onClick(goToMenu);
+
+            // Берем первые 5 слов для старта
+            wordsData = [];
+            for (let i = 0; i < 5; i++) {
+                addRandomWordToData();
+            }
+
+            setupRecorderAndStart();
+        }
+
+        // Вспомогательная функция добавления случайного слова
+        function addRandomWordToData() {
+            const randomWord = fullWordPool[Math.floor(Math.random() * fullWordPool.length)];
+            wordsData.push(randomWord);
+        }
+
+        // Отдельная функция старта (вынесли из startGameWithLevel, чтобы не дублировать)
+        async function setupRecorderAndStart() {
+            // --- ПРОВЕРКА ЛИМИТА ПЕРЕД СТАРТОМ ---
+            if (!isPremium && timeUsedToday >= DAILY_LIMIT) {
+                blockGame();
+                return;
+            }
+            startGlobalTimer(); // Запуск таймера
+            // -------------------------------------
+
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                setupRecorder(stream);
+                buildLevel();
+                isRunning = true;
+                currentWordIndex = 0;
+                score = 0;
+                distanceTraveled = 0;
+                updateScore();
+                gameLoop();
+                detectVoiceActivity();
+            } catch (e) {
+                trackEvent('mic_error', {
+                    source: 'game_words',
+                    error_message: e.message
+                });
+                alert("Microphone error: " + e.message);
+                stopGlobalTimer(); // Остановить, если ошибка
+                goToMenu();
+            }
+        }
+
+        function appendNextObject() {
+            // 1. Добавляем слово в данные
+            addRandomWordToData();
+            const newIndex = wordsData.length - 1;
+            const word = wordsData[newIndex];
+
+            // 2. Вычисляем позицию (последний объект + gap)
+            const lastObj = gameObjects[gameObjects.length - 1];
+            const newY = lastObj.initialY + currentWordGap;
+
+            // 3. Создаем DOM элемент
+            const container = document.getElementById('game-objects');
+            const el = document.createElement('div');
+            el.className = 'word-gate';
+            const trans = word.transcription ? `[${word.transcription}]` : '';
+            const translation = word.russian || "";
+
+            el.innerHTML = `
+        <div class="gate-text-ko">${word.korean}</div>
+        <div class="gate-text-trans">${trans}</div>
+        <div class="gate-text-ru">${translation}</div>
+    `;
+            container.appendChild(el);
+
+            // 4. Добавляем в массив игровых объектов
+            const newObj = {
+                el: el,
+                initialY: newY,
+                korean: word.korean,
+                passed: false,
+                isFlying: false,
+                flyHeight: 0
+            };
+            gameObjects.push(newObj);
+
+            // Сразу ставим на место
+            updateTransform(el, newY - distanceTraveled, 0);
+        }
+
+        function stopGameSystem() {
+            // 1. Ставим флаг, что игра остановлена
+            isRunning = false;
+            isProcessing = false;
+            isSpeaking = false;
+
+            // 2. Останавливаем игровой цикл
+            cancelAnimationFrame(animationFrame);
+
+            // 3. Останавливаем запись (программно)
+            if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+                mediaRecorder.stop();
+            }
+
+            // 4. ФИЗИЧЕСКИ выключаем микрофон (убираем красную точку в браузере)
+            if (globalStream) {
+                globalStream.getTracks().forEach(track => track.stop());
+                globalStream = null;
+            }
+
+            // 5. Сбрасываем визуальные эффекты микрофона
+            const micInd = document.getElementById('mic-indicator');
+            if (micInd) micInd.classList.remove('active');
+
+            const statusText = document.getElementById('status-text');
+            if (statusText) statusText.innerText = "Ожидание...";
+        }
+
+        async function startGameWithLevel(levelData) {
+            stopGameSystem();
+            document.getElementById('btn-trans-toggle').style.display = 'flex';
+            document.getElementById('btn-back-game').style.display = 'flex';
+            if (!isPremium && timeUsedToday >= DAILY_LIMIT) {
+                blockGame();
+                return;
+            }
+            startGlobalTimer();
+            // --------------------------------------------
+
+            tg.BackButton.show();
+            tg.BackButton.onClick(goToMenu);
+            currentLevelData = levelData;
+
+            document.getElementById('level-menu').style.display = 'none';
+
+            wordsData = levelData.words;
+            currentLevelSpeed = levelData.config.speed;
+            currentWordGap = levelData.config.wordGap;
+            lives = 3;
+            document.getElementById('lives-display').innerText = "❤❤❤";
+
+            try {
                 const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
                 setupRecorder(stream);
 
-                // Сброс
-                document.getElementById('start-screen').style.display = 'none';
                 buildLevel();
 
                 isRunning = true;
@@ -355,12 +1018,61 @@
                 distanceTraveled = 0;
                 updateScore();
 
-                // Запуск циклов
                 gameLoop();
                 detectVoiceActivity();
 
             } catch (e) {
-                alert("Ошибка: " + e.message);
+                stopGlobalTimer(); // Остановить, если отмена микрофона
+                alert("Нет доступа к микрофону: " + e.message);
+                document.getElementById('level-menu').style.display = 'flex';
+            }
+        }
+
+        function saveProgress(levelId, stars) {
+            // Читаем старые сохранения
+            let progress = JSON.parse(localStorage.getItem('voiceRunProgress')) || {};
+
+            // Если результат лучше старого - обновляем
+            if (!progress[levelId] || stars > progress[levelId]) {
+                progress[levelId] = stars;
+            }
+
+            localStorage.setItem('voiceRunProgress', JSON.stringify(progress));
+        }
+        function handleMiss() {
+            const obj = gameObjects[currentWordIndex];
+            obj.passed = true;
+            obj.el.classList.add('fail');
+            obj.isDropping = true;
+
+            lives--;
+
+            let hearts = "";
+            for (let i = 0; i < 3; i++) {
+                hearts += i < lives ? "❤" : "🖤";
+            }
+            document.getElementById('lives-display').innerText = hearts;
+
+            if (lives <= 0) {
+                gameOver(false);
+            } else {
+                if (isEndless) {
+                    appendNextObject();
+                }
+                currentWordIndex++;
+
+                if (currentWordIndex >= gameObjects.length) {
+                    setTimeout(() => gameOver(true), 1000);
+                } else {
+                    const nextIndex = currentWordIndex;
+                    const nextObj = gameObjects[nextIndex];
+                    const currentNextPos = nextObj.initialY - distanceTraveled;
+                    const offset = currentNextPos - START_Y_POS;
+
+                    for (let i = nextIndex; i < gameObjects.length; i++) {
+                        gameObjects[i].initialY -= offset;
+                    }
+                }
             }
         }
 
@@ -383,7 +1095,7 @@
                     <div class="gate-text-ru">${translation}</div>
                 `;
 
-                const absoluteY = START_Y_POS + (index * WORD_GAP);
+                const absoluteY = START_Y_POS + (index * currentWordGap);
                 container.appendChild(el);
 
                 gameObjects.push({
@@ -409,28 +1121,41 @@
         function gameLoop() {
             if (!isRunning) return;
 
-            // Двигаем мир только если:
-            // 1. Сервер не думает (!isProcessing)
-            // 2. Игрок молчит (!isSpeaking)
-            if (!isProcessing && !isSpeaking) {
-                distanceTraveled += SPEED;
+            if (!isProcessing) {
+                if (isSpeaking) {
+                    distanceTraveled += 1;
+                } else {
+                    distanceTraveled += currentLevelSpeed;
+                }
             }
 
             gameObjects.forEach((obj, index) => {
                 if (obj.isFlying) {
-                    obj.flyHeight += 20;
-                    const currentY = (obj.initialY - distanceTraveled) + 20;
+                    obj.flyHeight -= 20;
+                    const currentY = (obj.initialY - distanceTraveled);
                     updateTransform(obj.el, currentY, obj.flyHeight);
-                    obj.el.style.opacity = Math.max(0, 1 - obj.flyHeight / 800);
+
+                    obj.el.style.opacity = Math.max(0, 1 - Math.abs(obj.flyHeight) / 400);
+                    return;
+                }
+
+                if (obj.isDropping) {
+                    obj.flyHeight += 20;
+                    const currentY = (obj.initialY - distanceTraveled);
+                    updateTransform(obj.el, currentY, obj.flyHeight);
+
+                    obj.el.style.opacity = Math.max(0, 1 - obj.flyHeight / 400);
                     return;
                 }
 
                 const currentY = obj.initialY - distanceTraveled;
                 updateTransform(obj.el, currentY, 0);
 
+                obj.el.style.opacity = 1;
+
                 if (index === currentWordIndex && !obj.passed) {
                     if (currentY < FAIL_OFFSET) {
-                        gameOver(false);
+                        handleMiss();
                     }
                 }
             });
@@ -487,12 +1212,13 @@
         }
 
         async function checkVoice(blob) {
+            if (!isRunning) return;
             if (currentWordIndex >= gameObjects.length) return;
 
-            isProcessing = true; // СТОП ИГРА: Ждем ответа
+            isProcessing = true;
             const target = gameObjects[currentWordIndex].korean;
 
-            // Визуально показываем, что думаем
+            // Визуал
             document.getElementById('status-text').innerText = "Думаю...";
             document.getElementById('mic-indicator').classList.remove('active');
 
@@ -505,72 +1231,476 @@
                     method: 'POST',
                     body: formData
                 });
+
+                if (!isRunning) return;
+
                 const data = await res.json();
 
-                isProcessing = false; // ПРОДОЛЖАЕМ ИГРУ
+                // СРАЗУ разблокируем движение
+                isProcessing = false;
 
-                if (data.status === 'success' && data.similarity >= 60) {
+                // --- ЛОГИКА СЛОЖНОСТИ ---
+                let currentLvlNum = 1;
+                if (isEndless) {
+                    currentLvlNum = Math.floor(score / 10) + 1;
+                } else if (currentLevelData) {
+                    currentLvlNum = currentLevelData.id;
+                }
+
+                let requiredScore = 60;
+                if (target.length === 1) {
+                    requiredScore = 85;
+                } else if (target.length === 2) {
+                    requiredScore = currentLvlNum <= 10 ? 75 : 82;
+                } else {
+                    requiredScore = currentLvlNum <= 10 ? 60 : 75;
+                }
+
+                if (data.status === 'success' && data.similarity >= requiredScore) {
                     handleSuccess();
                 } else {
-                    document.getElementById('status-text').innerText = "Мимо! Еще раз";
-                    console.log(`Мимо: ${data.similarity}%`);
+                    const userHeard = data.user_text || "...";
+                    const scoreVal = Math.round(data.similarity);
+                    document.getElementById('status-text').innerText = `Мимо! (${scoreVal}%)`;
+                    console.log(`Цель: ${target} | Услышал: ${userHeard} | Score: ${scoreVal}%`);
                 }
+
             } catch (e) {
+                if (!isRunning) return;
                 console.error(e);
-                isProcessing = false; // Если ошибка сети - тоже отпускаем игру
+                isProcessing = false; // Разблокируем при ошибке
                 document.getElementById('status-text').innerText = "Ошибка сети";
             }
         }
 
         function handleSuccess() {
+            // МГНОВЕННЫЙ СБРОС UI
+            document.getElementById('status-text').innerText = "Ожидание...";
+            document.getElementById('mic-indicator').classList.remove('active');
+
+            // --- ЛОГИКА ПРЕМИУМА (+1 XP за слово) ---
+            if (isPremium) {
+                // Премиум: Визуальная звезда летит + начисляем опыт
+                spawnFlyingStar();
+                totalServerStars++;
+                updateGlobalStarsUI();
+                saveGlobalStars();
+            } else {
+                // Бесплатно: Только звук успеха, опыт НЕ начисляем
+                // (чтобы не путать игрока летящей звездой, которая не зачислится)
+                starSound.currentTime = 0;
+                starSound.play();
+            }
+            // ----------------------------------------
+
             const obj = gameObjects[currentWordIndex];
             obj.passed = true;
             obj.el.classList.add('success');
-            obj.isFlying = true; // Запускаем анимацию полета
+            obj.isFlying = true;
 
             score++;
             updateScore();
+
+            if (isEndless) {
+                appendNextObject();
+                if (score % 10 === 0) currentLevelSpeed += 0.5;
+            }
+
+            // Логика смещения очереди
+            const nextIndex = currentWordIndex + 1;
+            if (nextIndex < gameObjects.length) {
+                const nextObj = gameObjects[nextIndex];
+                const currentNextPos = nextObj.initialY - distanceTraveled;
+                const offset = currentNextPos - START_Y_POS;
+
+                for (let i = nextIndex; i < gameObjects.length; i++) {
+                    gameObjects[i].initialY -= offset;
+                }
+            }
+
             currentWordIndex++;
 
-            // Если это было последнее слово
             if (currentWordIndex >= gameObjects.length) {
-                // Даем время на анимацию улетания
                 setTimeout(() => gameOver(true), 1500);
             }
         }
-
         function gameOver(win) {
+            stopGlobalTimer();
             isRunning = false;
             cancelAnimationFrame(animationFrame);
 
-            const screen = document.getElementById('start-screen');
-            const h1 = screen.querySelector('h1');
-            const p = screen.querySelector('p');
-            const btn = screen.querySelector('button');
+            const ui = document.getElementById('result-screen');
+            const title = document.getElementById('result-title');
+            const msg = document.getElementById('result-message');
+            const starDiv = document.getElementById('result-stars');
+            const nextBtn = document.getElementById('btn-next');
 
-            screen.style.display = 'flex';
+            ui.style.display = 'flex';
 
-            if (win) {
-                h1.innerText = "ПОБЕДА! 🏆";
-                p.innerText = "Все слова пройдены!";
-                btn.innerText = "ЕЩЕ РАЗ";
-                btn.style.background = "#00c853";
+            if (isEndless) {
+                const oldBest = parseInt(localStorage.getItem('voiceRunEndlessHighScore') || '0');
+                title.innerText = "РЕЗУЛЬТАТ";
+                title.style.color = "#FF9800";
+                starDiv.innerText = "🔥";
+                nextBtn.style.display = "none";
+
+                if (score > oldBest) {
+                    localStorage.setItem('voiceRunEndlessHighScore', score);
+                    msg.innerHTML = `НОВЫЙ РЕКОРД: <b>${score}</b>!<br><span style="font-size:16px; color:#666">Прошлый: ${oldBest}</span>`;
+                } else {
+                    msg.innerHTML = `Пройдено слов: <b>${score}</b><br><span style="font-size:16px; color:#666">Рекорд: ${oldBest}</span>`;
+                }
             } else {
-                h1.innerText = "УПУСТИЛ! 💥";
-                const lostWord = gameObjects[currentWordIndex].korean;
-                p.innerText = `Слово "${lostWord}" пролетело мимо.`;
-                btn.innerText = "ЗАНОВО";
-                btn.style.background = "#ff3d00";
-            }
+                if (win) {
+                    title.innerText = "ПОБЕДА! 🎉";
+                    title.style.color = "#00c853";
 
-            btn.onclick = () => location.reload();
+                    const starsGrade = lives;
+
+                    // 1. Расчет базового бонуса
+                    let levelBonus = 50;
+
+                    if (starsGrade === 3) levelBonus = 20;
+
+                    // 2. Проверка истории для штрафа
+                    const progress = JSON.parse(localStorage.getItem('voiceRunProgress')) || {};
+                    const oldStars = progress[currentLevelData.id] || 0;
+
+                    let penaltyText = "";
+
+                    // Если уровень уже был пройден (oldStars > 0) И результат не улучшен (starsGrade <= oldStars)
+                    if (oldStars > 0 && starsGrade <= oldStars) {
+                        levelBonus = Math.floor(levelBonus / 2);
+                        penaltyText = " (Повтор)";
+                    }
+
+                    // Начисление и сохранение
+                    totalServerStars += levelBonus;
+                    saveGlobalStars();
+                    updateGlobalStarsUI();
+
+                    let starStr = "";
+                    for (let i = 0; i < 3; i++) {
+                        starStr += i < starsGrade ? "⭐" : "☆";
+                    }
+                    starDiv.innerText = starStr;
+
+                    msg.innerHTML = `Уровень пройден!<br><span style="color:#fbc02d; font-size:18px;">+${levelBonus} XP бонус${penaltyText}</span>`;
+                    nextBtn.style.display = "block";
+
+                    // Сохраняем лучший результат в прогресс
+                    if (starsGrade > oldStars) {
+                        saveProgress(currentLevelData.id, starsGrade);
+                    }
+
+                } else {
+                    title.innerText = "НЕУДАЧА 💀";
+                    title.style.color = "#d50000";
+                    starDiv.innerText = "💔💔💔";
+                    msg.innerText = "Попробуй еще раз";
+                    nextBtn.style.display = "none";
+                }
+            }
+        }
+
+        function goToMenu() {
+            stopGameSystem();
+            stopGlobalTimer();
+            tg.BackButton.hide();
+            tg.BackButton.offClick(goToMenu);
+
+            // Скрываем кнопку транскрипции
+            document.getElementById('btn-trans-toggle').style.display = 'none';
+            document.getElementById('btn-back-game').style.display = 'none';
+
+            document.getElementById('result-screen').style.display = 'none';
+            document.getElementById('level-menu').style.display = 'flex';
+            document.getElementById('game-objects').innerHTML = '';
+            loadLevels();
+        }
+
+        function restartLevel() {
+            document.getElementById('result-screen').style.display = 'none';
+            if (currentLevelData) {
+                startGameWithLevel(currentLevelData);
+            }
+        }
+
+        function nextLevel() {
+            // Простая логика: ищем следующий ID
+            // В идеале лучше искать в JSON массиве, но пока сделаем так:
+            const nextId = currentLevelData.id + 1;
+
+            // Загружаем levels.json заново, чтобы найти данные следующего уровня
+            // Это не очень оптимально, но надежно
+            fetch('videothemes/json/levels.json')
+                .then(res => res.json())
+                .then(levels => {
+                    const nextLevelData = levels.find(l => l.id === nextId);
+                    if (nextLevelData) {
+                        document.getElementById('result-screen').style.display = 'none';
+                        startGameWithLevel(nextLevelData);
+                    } else {
+                        alert("Это был последний уровень! Ты прошел игру!");
+                        goToMenu();
+                    }
+                });
         }
 
         function updateScore() {
             document.getElementById('score-display').innerText = `${score} / ${wordsData.length}`;
         }
 
+        function saveGlobalStars() {
+            try {
+                // 1. Сначала сохраняем локально в правильный ключ 'stars'
+                localStorage.setItem("stars", totalServerStars);
+                if (typeof checkAndSaveRankUp === 'function') {
+                    checkAndSaveRankUp(totalServerStars);
+                }
+                updateGlobalStarsUI();
+
+                const user = window.Telegram.WebApp.initDataUnsafe?.user;
+                const telegramId = user?.id;
+                const username = user?.username;
+
+                if (telegramId) {
+                    // 2. Отправляем на сервер
+                    fetch("https://telegram-server-hfk7.onrender.com/save", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ telegramId, username, stars: totalServerStars })
+                    }).catch(err => console.error(err));
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function loadGlobalStars() {
+            try {
+                // 1. Сначала берем локальные данные из ключа 'stars' (как в menu.html)
+                const local = parseInt(localStorage.getItem("stars")) || 0;
+                totalServerStars = local;
+                updateGlobalStarsUI();
+
+                const user = window.Telegram.WebApp.initDataUnsafe?.user;
+                const telegramId = user?.id;
+
+                if (!telegramId) return;
+
+                // 2. Запрашиваем актуальные данные с сервера
+                fetch(`https://telegram-server-hfk7.onrender.com/load/${telegramId}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data && typeof data.stars !== "undefined") {
+                            totalServerStars = parseInt(data.stars);
+                            // 3. Обновляем localStorage ключом 'stars'
+                            localStorage.setItem("stars", totalServerStars);
+                        }
+                        updateGlobalStarsUI();
+                    })
+                    .catch(e => console.error(e));
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function updateGlobalStarsUI() {
+            // Обновляем в меню
+            const elMenu = document.getElementById('stars-count');
+            if (elMenu) elMenu.innerText = totalServerStars;
+
+            // Обновляем внутри игры (HUD)
+            const elHud = document.getElementById('hud-stars');
+            if (elHud) elHud.innerText = '⚡️ ' + totalServerStars;
+        }
+
+        function updateTrainingHistory() {
+            const todayKey = new Date().toISOString().split('T')[0];
+            let history = JSON.parse(localStorage.getItem('trainingHistory')) || {};
+
+            // Добавляем 1 секунду к сегодняшнему дню
+            history[todayKey] = (history[todayKey] || 0) + 1;
+
+            localStorage.setItem('trainingHistory', JSON.stringify(history));
+        }
+
+        function initTimer() {
+            isPremium = localStorage.getItem('member') === 'true';
+
+            // Для премиума просто скрываем визуальный таймер, но НЕ делаем return
+            if (isPremium) {
+                document.getElementById('timer-hud').style.display = 'none';
+            } else {
+                document.getElementById('timer-hud').style.display = 'block';
+            }
+
+            const today = new Date().toISOString().split('T')[0];
+            const lastDate = localStorage.getItem('lastUsageDate');
+
+            if (lastDate !== today) {
+                localStorage.setItem('lastUsageDate', today);
+                timeUsedToday = 0;
+                localStorage.setItem('timeUsedToday', '0');
+            } else {
+                timeUsedToday = parseInt(localStorage.getItem('timeUsedToday') || '0');
+            }
+
+            if (!isPremium) {
+                updateTimerDisplay();
+            }
+
+            // Запускаем таймер явно здесь или полагаемся на startRecorderAndStart
+            // Но лучше убедиться, что он запустится при старте игры
+        }
+
+        function startGlobalTimer() {
+            // УБРАЛИ проверку if (isPremium) return; чтобы таймер тикал для статистики
+
+            if (timerInterval) clearInterval(timerInterval);
+
+            timerInterval = setInterval(() => {
+                // 1. Обновляем статистику для графиков (ДЛЯ ВСЕХ)
+                updateTrainingHistory();
+
+                // 2. Логика лимита (ТОЛЬКО ДЛЯ FREE)
+                if (!isPremium) {
+                    timeUsedToday++;
+                    localStorage.setItem('timeUsedToday', timeUsedToday);
+                    updateTimerDisplay();
+
+                    if (timeUsedToday >= DAILY_LIMIT) {
+                        blockGame();
+                    }
+                }
+            }, 1000);
+        }
+
+        function stopGlobalTimer() {
+            if (timerInterval) clearInterval(timerInterval);
+        }
+
+        function updateTimerDisplay() {
+            const left = Math.max(0, DAILY_LIMIT - timeUsedToday);
+            const m = Math.floor(left / 60);
+            const s = left % 60;
+            document.getElementById('timer-hud').innerText = `⏳ ${m}:${s < 10 ? '0' : ''}${s}`;
+        }
+
+        function blockGame() {
+            stopGlobalTimer();
+            trackEvent('premium_wall_shown', {
+                source: 'game_words',
+                reason: 'daily_limit'
+            });
+            isRunning = false; // Останавливаем игру
+            if (mediaRecorder && mediaRecorder.state === 'recording') {
+                mediaRecorder.stop();
+            }
+            document.getElementById('premium-block-modal').style.display = 'flex';
+        }
+
+        // Остановка таймера если свернули вкладку
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopGlobalTimer();
+            } else {
+                // Запускаем только если не премиум, есть время И ИГРА ЗАПУЩЕНА
+                if (!isPremium && timeUsedToday < DAILY_LIMIT && isRunning) {
+                    startGlobalTimer();
+                }
+            }
+        });
+        function spawnFlyingStar() {
+            starSound.currentTime = 0;
+            starSound.play();
+
+            const star = document.createElement('div');
+            star.className = 'flying-star';
+            star.innerText = '⚡️'; // Или '⭐', если хотите звезду
+
+            // 1. Старт: Центр экрана
+            const startX = window.innerWidth / 2;
+            const startY = window.innerHeight / 2;
+
+            star.style.left = startX + 'px';
+            star.style.top = startY + 'px';
+            star.style.transform = 'translate(-50%, -50%) scale(0)';
+
+            document.body.appendChild(star);
+
+            // 2. Цель: Новый счетчик опыта в HUD
+            // Ищем сначала внутриигровой счетчик, если нет - то глобальный (на всякий случай)
+            let targetEl = document.getElementById('hud-stars');
+            if (!targetEl || targetEl.offsetParent === null) {
+                targetEl = document.getElementById('global-stars-display');
+            }
+
+            if (targetEl) {
+                const rect = targetEl.getBoundingClientRect();
+                // Вычисляем центр целевого элемента
+                const targetX = rect.left + rect.width / 2;
+                const targetY = rect.top + rect.height / 2;
+
+                // 3. Анимация
+                requestAnimationFrame(() => {
+                    // Этап А: Появление (Scale UP)
+                    star.style.transform = 'translate(-50%, -50%) scale(1.5)';
+
+                    // Этап Б: Полет к цели через 100мс
+                    setTimeout(() => {
+                        star.style.left = targetX + 'px';
+                        star.style.top = targetY + 'px';
+                        star.style.transform = 'translate(-50%, -50%) scale(0.5)';
+                        star.style.opacity = '0'; // Исчезает при попадании
+                    }, 100);
+                });
+
+                // 4. Удаление из DOM
+                setTimeout(() => {
+                    star.remove();
+                }, 900); // Должно быть чуть больше времени анимации в CSS (там 0.8s)
+            } else {
+                star.remove();
+            }
+        }
+        function goHome() {
+            stopGlobalTimer();
+            isRunning = false;
+            // Скрываем кнопку транскрипции при выходе в меню
+            document.getElementById('btn-trans-toggle').style.display = 'none';
+            document.getElementById('btn-back-game').style.display = 'none';
+            window.location.href = 'menu.html';
+        }
+
+        function toggleTranscription() {
+            document.body.classList.toggle('no-transcription');
+        }
     </script>
+    <div id="premium-block-modal">
+        <div class="premium-card">
+            <h2 style="margin-top:0; color:#E65100;">Время вышло!</h2>
+            <p>Дневной лимит (5 мин) исчерпан.</p>
+            <p style="font-size:14px; color:#666;">Ждем вас завтра или подключите безлимит.</p>
+            <button class="premium-btn" onclick="location.href='videopremium.html'">КУПИТЬ ПРЕМИУМ</button>
+            <br><br>
+            <button style="background:none; border:none; color:#999; text-decoration:underline; cursor:pointer;"
+                onclick="location.href='menu.html'">В меню видео</button>
+        </div>
+    </div>
+    <div class="floating-controls">
+        <!-- 1. Транскрипция (видна только в игре) -->
+        <button class="float-btn btn-trans" id="btn-trans-toggle" onclick="toggleTranscription()">
+            [abc]
+        </button>
+
+        <!-- 2. Назад в меню уровней (видна только в игре) -->
+        <button class="float-btn btn-back" id="btn-back-game" onclick="goToMenu()"></button>
+
+        <!-- 3. Домой (видна всегда) -->
+        <button class="float-btn btn-home" onclick="goHome()"></button>
+    </div>
 </body>
 
 </html>

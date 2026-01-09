@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отзывы</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <!-- <link rel="stylesheet" href="videoplayer.css"> -->
+    <script src="analytics.js"></script>
 
-    <!-- ВАШИ СТИЛИ. СКОПИРОВАНЫ 1 В 1. БЕЗ ИЗМЕНЕНИЙ. -->
+    <!-- СТИЛИ СТРАНИЦЫ -->
     <style>
         html,
         body {
@@ -17,7 +17,6 @@
         }
 
         body {
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,157 +24,75 @@
             height: 100vh;
             background-color: #000000;
             font-family: 'NetflixSans-Regular', Arial, sans-serif;
-
+            overflow: hidden; /* Важно, чтобы скролл был только внутри чата */
         }
-
-
 
         #gameContainer {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Изменено с center на flex-start */
             align-items: center;
             text-align: center;
             position: relative;
             margin: auto;
             width: 100vw;
-            /* Используем относительную единицу измерения */
             height: 100vh;
             padding-top: 0px;
             background-image: url('videothemes/reviewsbackground.png');
             background-size: cover;
-            /* Растягивает изображение, чтобы покрыть всю область */
             background-position: center;
-            /* Центрирует изображение */
             background-repeat: no-repeat;
-
         }
 
-
-
-
         @media (hover: hover) and (pointer: fine) {
-
             #gameContainer {
                 max-width: 600px;
                 margin: 0 auto;
+                border-left: 1px solid #333;
+                border-right: 1px solid #333;
             }
-
-
         }
 
-
-
-
-
-
-
-
-
-        button {
-            margin: 5px;
-            padding: 10px 10px;
-            font-size: clamp(20px, 3vw, 30px);
-            cursor: pointer;
-            background-color: #ffffff;
-            color: rgb(51, 51, 51);
-            border-radius: 5px;
-            transition: all 0.1s ease-in-out;
-            border: none;
-            box-shadow: 0 4px 0 #bbb;
-        }
-
-        button:active {
-            box-shadow: 0 1px 4px #b7b7b7;
-            transform: translateY(4px);
-        }
-
-        #menu-button-container {
-            position: relative;
-            max-width: 100%;
-            gap: 5px;
-            margin-top: auto;
-            height: 10%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            border-radius: 10px 10px 0 0;
-
-            /* --- ГЛЯНЦЕВЫЙ ЭФФЕКТ ДЛЯ ТЕМНОЙ ПАНЕЛИ --- */
-
-            /* 1. Темный градиент для имитации объема */
-            background: linear-gradient(to bottom, #2f2f31, #1C1C1E);
-
-            /* 2. Только верхняя граница для отделения от контента */
-            border: none;
-            /* Сначала сбрасываем старую рамку */
-            border-top: 1px solid rgba(255, 215, 0, 0.4);
-
-            /* 3. Тень: внутренний блик + тень ВВЕРХ для отделения от контента */
-            box-shadow:
-                inset 0 1px 1px rgba(255, 255, 255, 0.1),
-                /* Внутренний блик сверху */
-                0 -2px 5px rgba(0, 0, 0, 0.5);
-            /* Внешняя тень, отбрасываемая вверх на контент */
-        }
-
-        #main-menu-button {
-            margin: 5px;
-            padding: 5px 10px;
-            font-size: 18px;
-            cursor: pointer;
-            background-color: #ffffff;
-            color: rgb(51, 51, 51);
-            border-radius: 5px;
-            transition: all 0.1s ease-in-out;
-            border: none;
-            outline: 1px solid rgba(0, 0, 0, 0.1);
-            outline-offset: -1px;
-            box-shadow: 0 4px 0 #bbb;
-            margin-left: auto;
-        }
-
-
-
-        #main-menu-button:active {
-            box-shadow: 0 1px 8px #b7b7b7;
-            transform: translateY(4px);
-        }
-
-
+        /* --- ШАПКА --- */
         #chat-header {
             width: 100%;
-            height: 10%;
-            /* Стандартная высота шапки */
-            background-color: #ffffff;
-            /* Темный фон, как у меню */
+            height: 60px; /* Фиксированная высота шапки */
+            flex-shrink: 0; /* Шапка не сжимается */
+            background-color: rgba(255, 255, 255, 0.95);
             color: rgb(0, 0, 0);
             display: flex;
-
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 10;
         }
 
         #chat-header-text {
             font-size: 18px;
             font-weight: 600;
             text-align: left;
-            padding-top: 2%;
             padding-left: 20px;
+            margin: 0;
         }
-    </style>
 
-    <!-- НОВЫЕ СТИЛИ ТОЛЬКО ДЛЯ ЧАТА -->
-    <style>
+        /* --- ОБЛАСТЬ ЧАТА --- */
         #reviews-chat-area {
             width: 100%;
-            flex-grow: 1;
-            /* Занимает все свободное пространство */
-            overflow-y: auto;
+            flex-grow: 1; /* Занимает всё оставшееся место */
+            overflow-y: auto; /* Скролл только здесь */
             padding: 15px;
+            padding-bottom: 120px; /* Отступ снизу, чтобы кнопки не перекрывали контент */
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
+        }
 
+        /* Скроллбар для красоты */
+        #reviews-chat-area::-webkit-scrollbar {
+            width: 5px;
+        }
+        #reviews-chat-area::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
         }
 
         .chat-message {
@@ -187,18 +104,17 @@
 
         .chat-content {
             background-color: #ffffff;
-            /* Нейтральный фон для сообщений */
             color: #000;
             border-radius: 18px;
             padding: 10px 15px;
             text-align: left;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.1);
         }
 
         .chat-nikname {
             font-size: 14px;
             font-weight: bold;
             color: #0078FF;
-            /* Яркий синий для имени */
             margin: 0 0 4px 0;
         }
 
@@ -212,22 +128,62 @@
             align-self: flex-end;
         }
 
-        /* Новый цвет фона для правых сообщений */
         .chat-message.align-right .chat-content {
             background-color: #dcf8c6;
-            /* Светло-зеленый, как в мессенджерах */
         }
 
         #reviews-chat-area>.chat-message:first-child {
             margin-top: auto;
         }
 
-        #reviews-img {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
+        /* --- НОВЫЕ СТИЛИ КНОПОК (Floating Controls) как в game_words.html --- */
+        .floating-controls {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Отступ между кнопками, если их будет несколько */
+            z-index: 2000;
         }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.1s;
+            padding: 0;
+            outline: none;
+            background: #ffffff;
+            color: #333;
+        }
+
+        .float-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Кнопка Домой */
+        .btn-home {
+            background-image: url('videothemes/icons/home.png');
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        /* Кнопка Назад (на случай, если захотите добавить) */
+        .btn-back {
+            background-image: url('videothemes/icons/backarrow.png');
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
     </style>
 </head>
 
@@ -236,21 +192,17 @@
         <div id="chat-header">
             <p id="chat-header-text">Кимчи Хангуго Отзывы</p>
         </div>
-        <!-- НОВЫЙ БЛОК ДЛЯ ОТОБРАЖЕНИЯ ОТЗЫВОВ -->
+        
+        <!-- БЛОК ДЛЯ ОТОБРАЖЕНИЯ ОТЗЫВОВ -->
         <div id="reviews-chat-area">
             <!-- Сюда будут загружаться отзывы -->
         </div>
 
-        <!-- ВАША ОРИГИНАЛЬНАЯ HTML-СТРУКТУРА МЕНЮ -->
-        <div id="menu-button-container">
-            <div id="reviews-img">
-                <img src="videothemes/icons/reviews.png" alt="reviews" style="width: 80px; height: 80px;">
-            </div>
-            <!-- Кнопка "в копилку" удалена, т.к. она относится к игровой логике, а не навигации -->
-            <button id="main-menu-button" class="nav-button" onclick="goHome()">
-                <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
-            </button>
-
+        <!-- НОВОЕ ПЛАВАЮЩЕЕ МЕНЮ (как в game_words) -->
+        <div class="floating-controls">
+             <!-- Если нужна кнопка назад, раскомментируйте строку ниже -->
+             <!-- <button class="float-btn btn-back" onclick="goBack()"></button> -->
+            <button class="float-btn btn-home" onclick="goHome()"></button>
         </div>
     </div>
 
@@ -263,12 +215,10 @@
         }
 
         function goHome() {
-            window.location.href = "videothemes.html";
+            window.location.href = "menu.html";
         }
 
-
-
-        // НОВАЯ ЛОГИКА ДЛЯ ЗАГРУЗКИ ОТЗЫВОВ
+        // ЛОГИКА ДЛЯ ЗАГРУЗКИ ОТЗЫВОВ
         async function loadReviews() {
             const container = document.getElementById('reviews-chat-area');
             try {
@@ -283,15 +233,13 @@
 
                     let reviewText = '';
 
-                    // Создаем HTML, чтобы потом найти внутренний элемент
                     messageElement.innerHTML = `
-                <div class="chat-content">
-                    <p class="chat-nikname"></p>
-                    <p class="chat-rev"></p>
-                </div>
-            `;
+                        <div class="chat-content">
+                            <p class="chat-nikname"></p>
+                            <p class="chat-rev"></p>
+                        </div>
+                    `;
 
-                    // Находим внутренние элементы для заполнения
                     const contentDiv = messageElement.querySelector('.chat-content');
                     const niknameP = messageElement.querySelector('.chat-nikname');
                     const revP = messageElement.querySelector('.chat-rev');
@@ -299,16 +247,13 @@
                     if (review.rev1) {
                         messageElement.classList.add('align-right');
                         reviewText = review.rev1;
-                        // Применяем стиль к правому нижнему углу
                         contentDiv.style.borderBottomRightRadius = '0px';
                     }
                     else if (review.rev2) {
                         reviewText = review.rev2;
-                        // Применяем стиль к левому нижнему углу
                         contentDiv.style.borderBottomLeftRadius = '0px';
                     }
 
-                    // Заполняем текстом и добавляем на страницу
                     if (reviewText) {
                         niknameP.innerText = review.nikname;
                         revP.innerHTML = reviewText;
@@ -316,11 +261,16 @@
                     }
                 });
 
-                // Добавляем класс для прижатия сообщений к низу
+                // Прижатие к низу
                 const firstMessage = container.querySelector('.chat-message:first-child');
                 if (firstMessage) {
                     firstMessage.style.marginTop = 'auto';
                 }
+                
+                // Автоскролл вниз после загрузки
+                setTimeout(() => {
+                    container.scrollTop = container.scrollHeight;
+                }, 100);
 
             } catch (error) {
                 console.error('Не удалось загрузить отзывы:', error);
@@ -328,10 +278,13 @@
             }
         }
 
-        // ВЫЗОВ ФУНКЦИЙ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ
         document.addEventListener("DOMContentLoaded", () => {
-
             loadReviews();
+            // Настройка Telegram WebApp
+            if (window.Telegram && window.Telegram.WebApp) {
+                window.Telegram.WebApp.expand();
+                window.Telegram.WebApp.enableClosingConfirmation();
+            }
         });
     </script>
 </body>

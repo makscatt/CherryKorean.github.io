@@ -6,10 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Рейтинг</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="analytics.js"></script>
+  <!-- Подключаем скрипт рангов -->
+  <script src="ranks.js"></script>
+
   <link rel="stylesheet" href="font.css" />
   <link rel="stylesheet" href="minimenu.css">
 
   <style>
+    .bottom-gradient-overlay {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 170px;
+      /* Высота затемнения */
+      background: linear-gradient(to top, #000000 30%, rgba(0, 0, 0, 0) 100%);
+      z-index: 1500;
+      /* Выше контента, но ниже кнопок */
+      pointer-events: none;
+      /* Пропускает клики сквозь себя */
+    }
+
     @font-face {
       font-family: 'NetflixSans-Regular';
       src: url('./NetflixSans-Regular.otf') format('opentype');
@@ -28,14 +46,14 @@
     #gameContainer {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       text-align: center;
       position: relative;
       margin: auto;
       width: 100vw;
       height: 100vh;
-      padding-top: 0px;
+      padding-top: 10px;
       background-color: #000000;
     }
 
@@ -46,77 +64,77 @@
       }
     }
 
-    #rating-title {
-      margin-top: 50px;
-    }
-
-    .rating-info {
-      margin-top: 8px;
-      font-size: 16px;
-      color: #ccc;
-      text-align: center;
-    }
-
-    #menu-button-container {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      max-width: 100%;
-      height: 10%;
+    /* --- СТИЛИ ДЛЯ ТАБОВ (ПЕРЕКЛЮЧАТЕЛЕЙ) --- */
+    .tabs-container {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      background: linear-gradient(to bottom, #2f2f31, #1C1C1E);
-      border-top: 1px solid rgba(255, 215, 0, 0.4);
-      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 -2px 5px rgba(0, 0, 0, 0.5);
-      z-index: 100;
+      width: 90%;
+      background-color: #1c1c1e;
+      border-radius: 12px;
+      padding: 4px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    #main-menu-button {
-      margin: 5px;
-      padding: 5px 10px;
-      font-size: 18px;
-      cursor: pointer;
-      background-color: #ffffff;
-      color: rgb(51, 51, 51);
-      border-radius: 5px;
-      transition: all 0.1s ease-in-out;
+    .tab-button {
+      flex: 1;
+      padding: 10px;
+      background: transparent;
       border: none;
-      outline: 1px solid rgba(0, 0, 0, 0.1);
-      outline-offset: -1px;
-      box-shadow: 0 4px 0 #bbb;
-      margin-left: auto;
+      color: #8E8E93;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.3s ease;
     }
 
-    #main-menu-button:active {
-      box-shadow: 0 1px 8px #b7b7b7;
-      transform: translateY(4px);
+    .tab-button.active {
+      background-color: #3A3A3C;
+      color: #FFD700;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-    #rating-container {
-      display: none;
-      width: 100%;
-      height: 100%;
+    /* --- Стили списков --- */
+    #ratings-wrapper,
+    #ranks-info-wrapper {
+      width: 95%;
+      flex-grow: 1;
+      /* Увеличен отступ снизу, чтобы плавающие кнопки не закрывали контент */
+      padding-bottom: 120px;
       overflow-y: auto;
       scrollbar-width: none;
     }
 
-    #rating-container::-webkit-scrollbar {
+    /* Скрываем второй экран по умолчанию */
+    #ranks-info-wrapper {
       display: none;
     }
 
+    #ratings-wrapper::-webkit-scrollbar,
+    #ranks-info-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* --- Стили для таблицы рейтинга --- */
     h1 {
       text-align: center;
-      margin-bottom: 20px;
-      font-size: 28px;
+      margin-bottom: 5px;
+      font-size: 24px;
+      color: #FFD700;
+    }
+
+    .rating-info {
+      margin-top: 4px;
+      margin-bottom: 15px;
+      font-size: 13px;
+      color: #ccc;
+      text-align: center;
     }
 
     .user-entry {
       display: flex;
       justify-content: space-between;
-      align-items: center; /* Центрирование по вертикали */
+      align-items: center;
       background-color: #1f1f1f;
       padding: 10px 15px;
       margin-bottom: 10px;
@@ -127,17 +145,9 @@
     .rank {
       font-weight: bold;
       color: #ffcc00;
-      min-width: 40px; /* Чуть шире для надписи "нед." */
+      min-width: 30px;
       text-align: center;
-      line-height: 1.2;
-      font-size: 16px;
-    }
-    
-    .rank small {
-        display: block;
-        font-size: 10px;
-        color: #888;
-        font-weight: normal;
+      font-size: 18px;
     }
 
     .username {
@@ -156,11 +166,184 @@
     }
 
     .current-user {
-      background-color: #004d4d; /* Темно-бирюзовый фон */
-      border: 2px solid #00ffff; /* Яркая рамка */
+      background-color: #004d4d;
+      border: 2px solid #00ffff;
       box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
     }
 
+    /* --- Стили для Списка Рангов --- */
+    .rank-info-card {
+      display: flex;
+      align-items: center;
+      background-color: #1f1f1f;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      opacity: 0.6;
+      transition: all 0.3s ease;
+    }
+
+    .rank-info-card.achieved {
+      opacity: 1;
+      background-color: #2c2c2e;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .rank-info-card.current-status {
+      background: linear-gradient(90deg, #2c2c2e, #3a3a3c);
+      border: 2px solid #FFD700;
+      transform: scale(1.02);
+      opacity: 1;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+    }
+
+    .rank-icon-large {
+      font-size: 32px;
+      margin-right: 15px;
+      width: 40px;
+      text-align: center;
+    }
+
+    .rank-details {
+      flex: 1;
+      text-align: left;
+    }
+
+    .rank-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .rank-req {
+      font-size: 14px;
+      color: #8E8E93;
+      margin-top: 4px;
+    }
+
+    .rank-status-icon {
+      font-size: 20px;
+    }
+
+    /* --- НОВЫЕ СТИЛИ КНОПОК (из theme_menu_template) --- */
+
+    /* Кнопка "Домой" справа снизу */
+    .floating-controls {
+      position: fixed;
+      bottom: 40px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      z-index: 2000;
+    }
+
+    .float-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.1s;
+      padding: 0;
+      outline: none;
+      background-color: #ffffff;
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .float-btn:active {
+      transform: scale(0.95);
+    }
+
+    #main-menu-button {
+      background-image: url('videothemes/icons/home.png');
+    }
+
+    /* Кнопка "Вступить в Лигу" (по центру снизу) */
+    #join-league-button {
+      display: none;
+      /* Скрыта по умолчанию, показывается JS */
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      align-items: center;
+      width: auto;
+      min-width: 200px;
+      max-width: 60%;
+
+      background-color: #000000;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 10px 15px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      z-index: 2000;
+    }
+
+    #join-league-button:active {
+      transform: translateX(-50%) scale(0.98);
+    }
+
+    .banner-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .banner-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .banner-text-main {
+      font-size: 16px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .banner-arrow {
+      margin-left: auto;
+      font-size: 24px;
+      font-weight: 300;
+      color: #FFD700;
+      padding-left: 10px;
+    }
+
+    #join-league-button::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 50%;
+      height: 200%;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 100%);
+      transform: skewX(-25deg);
+      animation: banner-shine 4s infinite;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes banner-shine {
+      from {
+        left: -75%;
+      }
+
+      to {
+        left: 125%;
+      }
+    }
+
+    /* Спиннер загрузки */
     #loading-spinner {
       display: flex;
       justify-content: center;
@@ -192,139 +375,6 @@
         transform: rotate(360deg);
       }
     }
-
-    .tab-switcher {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
-      width: 95%;
-      padding: 5px;
-    }
-
-    .tab-button {
-      flex: 1;
-      display: flex;
-      flex-direction: column; /* Текст под иконкой или в две строки */
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      padding: 8px;
-      font-size: 13px;
-      cursor: pointer;
-      background-color: #333;
-      color: #ccc;
-      border: 1px solid #555;
-      border-radius: 12px;
-      transition: all 0.2s ease-in-out;
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-      line-height: 1.2;
-    }
-
-    .tab-button:active {
-      transform: translateY(1px);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-    }
-
-    .tab-button.active {
-      background-color: #ffcc00;
-      color: #1c1c1e;
-      font-weight: bold;
-      border-color: #ffde59;
-    }
-
-    .tab-icon {
-      height: 25px; /* Чуть меньше */
-      width: 25px;
-      margin-bottom: 2px;
-    }
-
-    #ratings-wrapper {
-      width: 100%;
-      flex-grow: 1;
-      padding-bottom: 11vh;
-      overflow-y: auto;
-      scrollbar-width: none;
-    }
-
-    #ratings-wrapper::-webkit-scrollbar {
-      display: none;
-    }
-
-    .rating-list {
-      display: none;
-    }
-
-    .rating-list.active {
-      display: block;
-    }
-
-    #join-league-button {
-      display: none;
-      align-items: center;
-      flex-grow: 1;
-      margin: 0 10px;
-      background-color: #000000;
-      color: #FFD700;
-      border: 2px solid #FFD700;
-      border-radius: 12px;
-      padding: 5px 10px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
-      position: relative;
-      overflow: hidden;
-    }
-
-    #join-league-button:active {
-      transform: scale(0.98);
-    }
-
-    .banner-icon {
-      width: 40px;
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .banner-text-wrapper {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-    }
-
-    .banner-text-main {
-      font-size: 16px;
-      font-weight: 700;
-    }
-
-    .banner-arrow {
-      margin-left: auto;
-      font-size: 30px;
-      font-weight: 300;
-      color: #FFD700;
-    }
-
-    #join-league-button::after {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -60%;
-      width: 50%;
-      height: 200%;
-      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 100%);
-      transform: skewX(-25deg);
-      animation: banner-shine 4s infinite;
-      animation-delay: 1.5s;
-    }
-
-    @keyframes banner-shine {
-      from {
-        left: -75%;
-      }
-
-      to {
-        left: 125%;
-      }
-    }
   </style>
 </head>
 
@@ -335,77 +385,143 @@
   </div>
 
   <div id="gameContainer">
+    <!-- Заголовок -->
     <div id="rating-title">
-      <h1>🏆 Рейтинг</h1>
-      <p class="rating-info">Обновляется в реальном времени</p>
-    </div>
-    
-    <!-- Переключатель вкладок -->
-    <div class="tab-switcher">
-      <button id="tab-kimchi" class="tab-button active">
-        <!-- Сюда JS вставит номер текущей недели -->
-        <span id="tab-kimchi-text">Лига Золотого Кимчи</span>
-      </button>
-      <button id="tab-past" class="tab-button">
-        <span>Лидеры<br>прошлых недель</span>
-      </button>
+      <h1>🏆 Лига Золотого Кимчи</h1>
+      <p class="rating-info">Топ пользователей и ранги</p>
     </div>
 
-    <!-- Общий контейнер для списков -->
+    <!-- ТАБЫ ПЕРЕКЛЮЧЕНИЯ -->
+    <div class="tabs-container">
+      <button class="tab-button active" onclick="switchTab('top')">Рейтинг</button>
+      <button class="tab-button" onclick="switchTab('path')">Путь на Вершину</button>
+    </div>
+
+    <!-- Вкладка 1: Общий рейтинг (Список пользователей) -->
     <div id="ratings-wrapper">
-      <div id="league-golden-kimchi" class="rating-list active">
-        <!-- Сюда попадут текущие подписчики -->
-      </div>
-      <div id="league-past-leaders" class="rating-list">
-        <!-- Сюда попадут лидеры прошлых недель -->
+      <div id="league-golden-kimchi">
+        <!-- Сюда попадут пользователи -->
       </div>
     </div>
 
-    <div id="menu-button-container">
-      <button id="join-league-button" style="display: none;">
-        <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="kimchi">
-        <div class="banner-text-wrapper">
-          <span class="banner-text-main">Вступить в Лигу</span>
-        </div>
-        <span class="banner-arrow">›</span>
-      </button>
-      <button id="main-menu-button" class="nav-button" onclick="goHome()">
-        <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
-      </button>
+    <!-- Вкладка 2: Путь развития (Список рангов) -->
+    <div id="ranks-info-wrapper">
+      <div id="ranks-list-container">
+        <!-- Сюда JS добавит список рангов -->
+      </div>
     </div>
+
+    <!-- КНОПКИ УПРАВЛЕНИЯ -->
+
+    <div class="bottom-gradient-overlay"></div>
+    <button id="join-league-button">
+      <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="kimchi">
+      <div class="banner-text-wrapper">
+        <span class="banner-text-main">Вступить в Лигу</span>
+      </div>
+      <span class="banner-arrow">›</span>
+    </button>
+
+    <!-- Кнопка "Домой" (справа снизу) -->
+    <div class="floating-controls">
+      <button id="main-menu-button" class="float-btn" onclick="goHome()"></button>
+    </div>
+
   </div>
 
   <script>
-    // --- ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ДАТЫ ---
-    
-    // Получить номер текущей ISO недели
-    function getCurrentIsoWeekNumber() {
-      const date = new Date();
-      date.setHours(0, 0, 0, 0);
-      // Четверг текущей недели определяет год недели
-      date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
-      const week1 = new Date(date.getFullYear(), 0, 4);
-      return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
-    }
-
-    // Извлечь номер недели из строки "2025-W05"
-    function parseWeekNumber(weekString) {
-      if (!weekString) return "";
-      const parts = weekString.split('-W');
-      if (parts.length === 2) {
-        return parseInt(parts[1], 10); // "05" -> 5
-      }
-      return "";
-    }
-
     // Навигация
-    document.getElementById('main-menu-button').addEventListener('click', () => {
-      window.location.href = 'videothemes.html';
-    });
+    function goHome() {
+      window.location.href = 'menu.html';
+    }
 
+    // --- ЛОГИКА ТАБОВ ---
+    function switchTab(tabName) {
+      const topWrapper = document.getElementById('ratings-wrapper');
+      const pathWrapper = document.getElementById('ranks-info-wrapper');
+      const tabs = document.querySelectorAll('.tab-button');
+
+      // Убираем active у всех кнопок
+      tabs.forEach(t => t.classList.remove('active'));
+
+      if (tabName === 'top') {
+        topWrapper.style.display = 'block';
+        pathWrapper.style.display = 'none';
+        tabs[0].classList.add('active');
+      } else {
+        topWrapper.style.display = 'none';
+        pathWrapper.style.display = 'block';
+        tabs[1].classList.add('active');
+
+        // При переключении рендерим список рангов (чтобы обновить актуальный опыт)
+        renderRanksList();
+      }
+    }
+
+    // --- ЛОГИКА ОТОБРАЖЕНИЯ РАНГОВ ---
+    function renderRanksList() {
+      const container = document.getElementById('ranks-list-container');
+      container.innerHTML = '';
+
+      const myXP = parseInt(localStorage.getItem('stars')) || 0;
+
+      let currentRankInfo = null;
+      if (typeof getRankInfo === 'function') {
+        currentRankInfo = getRankInfo(myXP);
+      }
+
+      const rankData = (typeof RANKS !== 'undefined') ? RANKS : [];
+      const reversedRanks = [...rankData].reverse();
+
+      reversedRanks.forEach((rank, index) => {
+        const card = document.createElement('div');
+        card.className = 'rank-info-card';
+
+        const isAchieved = myXP >= rank.minXP;
+        const isCurrent = currentRankInfo && (rank.id === currentRankInfo.current.id);
+
+        if (isAchieved) card.classList.add('achieved');
+        if (isCurrent) card.classList.add('current-status');
+
+        const formattedXP = rank.minXP.toLocaleString('ru-RU');
+
+        let statusIcon = isAchieved ? '✅' : '🔒';
+        if (isCurrent) statusIcon = '📍 Вы тут';
+
+        card.innerHTML = `
+                <div class="rank-icon-large">${rank.icon}</div>
+                <div class="rank-details">
+                    <div class="rank-name">${rank.name}</div>
+                    <div class="rank-req">Нужно: <span style="color:#FFD700">${formattedXP} XP</span></div>
+                </div>
+                <div class="rank-status-icon" style="font-size: ${isCurrent ? '12px' : '20px'}; color: ${isCurrent ? '#FFD700' : 'white'}">
+                    ${statusIcon}
+                </div>
+            `;
+
+        container.appendChild(card);
+
+        if (index < reversedRanks.length - 1) {
+          const arrow = document.createElement('div');
+          arrow.style.textAlign = 'center';
+          arrow.style.color = '#333';
+          arrow.style.margin = '-5px 0 5px 0';
+
+          container.appendChild(arrow);
+        }
+
+        if (isCurrent) {
+          setTimeout(() => {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 100);
+        }
+      });
+    }
+
+    // --- ФУНКЦИИ UI (ПОПАПЫ И ПРЕМИУМ) ---
+    // Взято полностью из theme_menu_template для идентичности
     let premiumPopupOverlay, subscriptionModal, loader, offerPopupOverlay;
 
-    // --- Функции UI (попапы) ---
     function showPremiumPopup() {
       if (premiumPopupOverlay) {
         premiumPopupOverlay.style.opacity = '1';
@@ -418,29 +534,27 @@
         premiumPopupOverlay.style.pointerEvents = 'none';
       }
     }
-    function openModal() {
-      if (subscriptionModal) subscriptionModal.style.display = 'block';
-    }
-    function closeModal() {
-      if (subscriptionModal) subscriptionModal.style.display = 'none';
-    }
+    function openModal() { if (subscriptionModal) subscriptionModal.style.display = 'block'; }
+    function closeModal() { if (subscriptionModal) subscriptionModal.style.display = 'none'; }
     function showOfferPopup() {
       if (offerPopupOverlay) {
         const iframe = offerPopupOverlay.querySelector('iframe');
         const offerUrl = "videooffer.html";
-        if (iframe && iframe.getAttribute('src') !== offerUrl) {
-          iframe.setAttribute('src', offerUrl);
-        }
+        if (iframe && iframe.getAttribute('src') !== offerUrl) iframe.setAttribute('src', offerUrl);
         offerPopupOverlay.style.display = 'flex';
       }
     }
-    function hideOfferPopup() {
-      if (offerPopupOverlay) offerPopupOverlay.style.display = 'none';
-    }
+    function hideOfferPopup() { if (offerPopupOverlay) offerPopupOverlay.style.display = 'none'; }
 
     async function redirectToPayment() {
+      trackEvent('checkout_start', {
+        item_name: 'Premium Subscription',
+        price: 99,
+        currency: 'RUB',
+        source: 'videorating'
+      });
       if (loader) loader.style.display = "flex";
-      const telegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
+      const telegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");
       if (!telegramId) {
         if (loader) loader.style.display = "none";
         alert("Не удалось определить ID пользователя.");
@@ -462,36 +576,21 @@
       }
     }
 
-    function setupPremiumPopup() {
-      if (document.getElementById('premium-popup-overlay')) return;
+    // Построение DOM попапа (точная копия из theme_menu_template)
+    function setupPremiumPopupDOM() {
+      if (document.getElementById('premiumPopupOverlay')) return;
       const overlay = document.createElement('div');
-      if (!document.getElementById('custom-bullet-styles')) {
-        const styleSheet = document.createElement("style");
-        styleSheet.id = 'custom-bullet-styles';
-        styleSheet.innerText = `#premium-popup-overlay ul li::before { content: '⭐'; position: absolute; left: 0; top: 2px; }`;
-        document.head.appendChild(styleSheet);
-      }
-      overlay.id = 'premium-popup-overlay';
+      overlay.id = 'premiumPopupOverlay';
       const content = document.createElement('div');
       const closeBtn = document.createElement('span');
       const kimchiImage = document.createElement('img');
-      const heading = document.createElement('h2');
-      const benefitsList = document.createElement('ul');
-      const benefit1 = document.createElement('li');
-      const benefit2 = document.createElement('li');
-      const benefit3 = document.createElement('li');
-      const benefit4 = document.createElement('li');
+      const mainText = document.createElement('p');
       const priceDiv = document.createElement('div');
-      priceDiv.className = 'price';
-      const priceTitle = document.createElement('span');
       const priceText1 = document.createElement('span');
-      priceText1.className = 'main-price';
       const priceText2 = document.createElement('span');
-      priceText2.className = 'sub-price';
+      const howToCancelBtn = document.createElement('button');
       const premiumBtn = document.createElement('button');
       const offerBtn = document.createElement('button');
-      const howToCancelBtn = document.createElement('button');
-
       const subModal = document.createElement('div');
       const subModalContent = document.createElement('div');
       const subModalCloseBtn = document.createElement('button');
@@ -504,98 +603,78 @@
       const offerCloseBtn = document.createElement('button');
 
       kimchiImage.src = 'videothemes/icons/goldkimchi.png';
-      heading.innerHTML = 'Премиум';
-      benefit1.innerHTML = '<strong>Убирается таймер</strong>';
-      benefit2.innerHTML = '';
-      benefit3.innerHTML = '<strong>Доступ к сообществу</strong><br>"Кимчи Клаб"';
-      benefit4.innerHTML = '<strong>Участие в Лиге Золотого Кимчи</strong><br>Лидер отображается на главной странице';
-      priceTitle.textContent = 'Стоимость:';
-      priceText1.textContent = 'Первый месяц 99 руб';
-      priceText2.textContent = 'Затем 300 руб/мес';
-      premiumBtn.textContent = 'Подключить за 99 руб';
-      premiumBtn.className = 'pay-button';
-      offerBtn.textContent = 'Оферта';
+      // Текст оставляем как в шаблоне (по запросу "ровно такой же попап")
+      mainText.textContent = 'Подключи «Премиум»,\nчтобы убрать лимит по времени';
+      priceText1.innerHTML = 'Первый месяц <span style="color: #FFD700; font-size: 26px;">99 руб</span>';
+      priceText2.innerHTML = '<span style="color: gray;">Затем 300 руб/мес</span>';
+      priceText2.style.display = 'block';
       howToCancelBtn.textContent = 'Как отключить подписку?';
+      premiumBtn.textContent = 'Подключить за 99 руб';
+      offerBtn.textContent = 'Оферта';
       closeBtn.innerHTML = '×';
 
-      Object.assign(overlay.style, { position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.8)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '20000', opacity: '0', pointerEvents: 'none', transition: 'opacity 0.3s ease-in-out' });
-      Object.assign(content.style, { backgroundColor: '#2c2c2e', padding: '25px', borderRadius: '18px', textAlign: 'center', width: '90%', maxWidth: '380px', boxShadow: '0 5px 25px rgba(0,0,0,0.5)', position: 'relative', color: '#FFFFFF', border: '1px solid #444' });
-      Object.assign(closeBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '28px', height: '28px', background: '#48484a', color: '#E5E5EA', borderRadius: '50%', border: 'none', fontSize: '18px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' });
-      Object.assign(kimchiImage.style, { width: '45px', height: 'auto', margin: '0 0 10px 0' });
-      Object.assign(heading.style, { fontSize: '22px', fontWeight: 'bold', margin: '0 0 20px 0' });
-      Object.assign(benefitsList.style, { textAlign: 'left', margin: '0 0 25px 0', paddingLeft: '0', listStyleType: 'none' });
-      [benefit1, benefit2, benefit3, benefit4].forEach(li => {
-        Object.assign(li.style, { fontSize: '19px', margin: '0 0 15px 0', lineHeight: '1.4', position: 'relative', paddingLeft: '30px' });
-      });
-      Object.assign(priceDiv.style, { margin: '20px 0' });
-      Object.assign(priceTitle.style, { display: 'block', fontSize: '16px', color: '#8e8e93', marginBottom: '5px' });
-      Object.assign(priceText1.style, { fontSize: '23px', fontWeight: 'bold', color: '#FFD700' });
-      Object.assign(priceText2.style, { display: 'block', fontSize: '16px', color: '#8e8e93' });
-      Object.assign(premiumBtn.style, { width: '100%', padding: '10px', backgroundColor: '#FFD700', color: '#000000', border: 'none', borderRadius: '12px', fontSize: '25px', cursor: 'pointer', fontWeight: 'bold', margin: '0 0 15px 0' });
-      Object.assign(offerBtn.style, { background: 'none', border: 'none', color: '#8E8E93', textDecoration: 'underline', cursor: 'pointer', fontSize: '15px' });
-      Object.assign(howToCancelBtn.style, { display: 'block', margin: '10px auto 0 auto', background: 'none', border: 'none', color: '#8E8E93', textDecoration: 'underline', cursor: 'pointer', fontSize: '15px' });
+      Object.assign(overlay.style, { position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.6)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '20000', opacity: '0', pointerEvents: 'none', transition: 'opacity 0.3s ease-in-out' });
+      Object.assign(offerContainer.style, { position: 'relative', width: '90%', maxWidth: '700px', height: '85%' });
+      Object.assign(content.style, { backgroundColor: '#1C1C1E', padding: '20px', borderRadius: '16px', textAlign: 'center', width: '90%', maxWidth: '380px', boxShadow: '0 5px 15px rgba(0,0,0,0.3)', position: 'relative', color: '#FFFFFF', border: '1px solid rgba(255, 215, 0, 0.9)' });
+      Object.assign(closeBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '28px', height: '28px', background: '#3A3A3C', color: '#E5E5EA', borderRadius: '50%', border: 'none', fontSize: '18px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' });
+      Object.assign(kimchiImage.style, { width: '60px', height: 'auto', margin: '10px 0' });
+      Object.assign(mainText.style, { fontSize: '18px', color: '#FFFFFF', margin: '10px 0 15px 0', padding: '0 10px', fontWeight: '500', whiteSpace: 'pre-line' });
+      Object.assign(priceDiv.style, { margin: '15px 0', lineHeight: '1.4' });
+      Object.assign(howToCancelBtn.style, { background: 'none', border: 'none', color: '#8E8E93', textDecoration: 'underline', cursor: 'pointer', marginTop: '10px', boxShadow: 'none' });
+      Object.assign(premiumBtn.style, { width: '100%', padding: '13px', backgroundColor: '#FFD700', color: '#000000', border: 'none', borderRadius: '8px', fontSize: '18px', cursor: 'pointer', transition: 'transform 0.2s', fontWeight: '700' });
+      Object.assign(offerBtn.style, { marginTop: '15px', color: '#666', textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer', boxShadow: 'none' });
 
-      benefitsList.append(benefit1, benefit2, benefit3, benefit4);
-      priceDiv.append(priceTitle, priceText1, priceText2);
-      content.append(closeBtn, kimchiImage, heading, benefitsList, priceDiv, premiumBtn, offerBtn, howToCancelBtn);
-      overlay.append(content);
-
-      subModalText.innerHTML = 'Отключить подписку можно будет в боте – "Кимчи Хангуго", с которого вы запускаете приложение.<br />ㅡㅡㅡ<br /> После оплаты вам придет приглашение в закрытый чат.<br />ㅡㅡㅡ<br /> А также придет инструкция по управлению подпиской.';
+      subModalText.innerHTML = 'Отключить подписку можно будет в боте – "Кимчи Хангуго" по команде /sub.<br />ㅡㅡㅡ<br />"Кимчи Хангуго" это бот с которого вы запускаете приложение.<br />ㅡㅡㅡ<br />После оплаты, в боте, вам также придет приглашение в закрытый чат - "Кимчи Клаб".';
       Object.assign(subModal.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', background: 'rgba(0,0,0,0.5)', zIndex: '99999', backdropFilter: 'blur(5px)' });
-      Object.assign(subModalContent.style, { background: '#fff', color: '#000', width: '300px', padding: '20px', borderRadius: '8px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' });
-      Object.assign(subModalCloseBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '30px', height: '30px', borderRadius: '50%', border: 'none', background: '#f0f0f0', color: 'black', fontSize: '20px', cursor: 'pointer' });
+      Object.assign(subModalContent.style, { background: 'white', width: '300px', padding: '20px', borderRadius: '8px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'black' });
+      Object.assign(subModalCloseBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '30px', height: '30px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
       subModalCloseBtn.innerHTML = '×';
+
       Object.assign(loaderDiv.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100vw', height: '100vh', backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: '99999', alignItems: 'center', justifyContent: 'center' });
       Object.assign(spinner.style, { width: '60px', height: '60px', border: '6px solid rgba(255, 255, 255, 0.2)', borderTop: '6px solid white', borderRadius: '50%', animation: 'spin 1s linear infinite' });
+      if (!document.querySelector('style[data-spin-animation]')) { const styleSheet = document.createElement("style"); styleSheet.setAttribute('data-spin-animation', 'true'); styleSheet.innerHTML = `@keyframes spin { to { transform: rotate(360deg); } }`; document.head.appendChild(styleSheet); }
+
       Object.assign(offerOverlay.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.7)', zIndex: '30000', justifyContent: 'center', alignItems: 'center' });
-      Object.assign(offerContainer.style, { position: 'relative', width: '90%', maxWidth: '700px', height: '85%' });
-      Object.assign(offerIframe.style, { width: '100%', height: '100%', border: 'none', borderRadius: '12px', backgroundColor: 'white' });
-      Object.assign(offerCloseBtn.style, { position: 'absolute', top: '0%', right: '0%', width: '40px', height: '40px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
+      Object.assign(offerIframe.style, { width: '100%', maxWidth: '700px', height: '100%', border: 'none', borderRadius: '12px', backgroundColor: 'white' });
+      Object.assign(offerCloseBtn.style, { position: 'absolute', top: '8%', right: '0%', width: '40px', height: '40px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
       offerCloseBtn.innerHTML = '×';
 
-      subModalContent.append(subModalCloseBtn, subModalText);
-      subModal.append(subModalContent);
-      loaderDiv.append(spinner);
-      offerContainer.append(offerIframe, offerCloseBtn);
-      offerOverlay.append(offerContainer);
-      document.body.append(overlay, subModal, loaderDiv, offerOverlay);
+      offerIframe.setAttribute('src', '');
+      priceDiv.appendChild(priceText1); priceDiv.appendChild(priceText2); priceDiv.appendChild(howToCancelBtn);
+      content.appendChild(closeBtn); content.appendChild(mainText); content.appendChild(kimchiImage); content.appendChild(priceDiv); content.appendChild(premiumBtn); content.appendChild(offerBtn);
+      overlay.appendChild(content);
+      subModalContent.appendChild(subModalCloseBtn); subModalContent.appendChild(subModalText);
+      subModal.appendChild(subModalContent);
+      loaderDiv.appendChild(spinner);
+      offerContainer.appendChild(offerIframe); offerContainer.appendChild(offerCloseBtn);
+      offerOverlay.appendChild(offerContainer);
+      document.body.appendChild(overlay); document.body.appendChild(subModal); document.body.appendChild(loaderDiv); document.body.appendChild(offerOverlay);
 
-      premiumPopupOverlay = overlay;
-      subscriptionModal = subModal;
-      loader = loaderDiv;
-      offerPopupOverlay = offerOverlay;
-
-      closeBtn.onclick = hidePremiumPopup;
-      premiumBtn.onclick = redirectToPayment;
-      howToCancelBtn.onclick = openModal;
-      offerBtn.onclick = showOfferPopup;
-      subModalCloseBtn.onclick = closeModal;
-      offerCloseBtn.onclick = hideOfferPopup;
-      overlay.onclick = (e) => { if (e.target === overlay) hidePremiumPopup(); };
-      subModal.onclick = (e) => { if (e.target === subModal) closeModal(); };
+      premiumPopupOverlay = overlay; subscriptionModal = subModal; loader = loaderDiv; offerPopupOverlay = offerOverlay;
+      closeBtn.addEventListener('click', hidePremiumPopup); premiumBtn.addEventListener('click', redirectToPayment); howToCancelBtn.addEventListener('click', openModal); offerBtn.addEventListener('click', showOfferPopup); subModalCloseBtn.addEventListener('click', closeModal); offerCloseBtn.addEventListener('click', hideOfferPopup); overlay.addEventListener('click', (e) => { if (e.target === overlay) hidePremiumPopup(); }); subModal.addEventListener('click', (e) => { if (e.target === subModal) closeModal(); });
     }
 
+    // Инициализация
     document.addEventListener("DOMContentLoaded", async () => {
-      // 1. Устанавливаем номер текущей недели в заголовок вкладки
-      const currentWeekNum = getCurrentIsoWeekNumber();
-      const tabKimchiText = document.getElementById("tab-kimchi-text");
-      if(tabKimchiText) {
-        tabKimchiText.innerHTML = `Лига Золотого Кимчи<br><span style="font-size:11px;font-weight:normal;">Неделя ${currentWeekNum}</span>`;
+      // Создаем структуру попапа сразу при загрузке
+      setupPremiumPopupDOM();
+      if (localStorage.getItem('autoOpenPath') === 'true') {
+        // Переключаем таб
+        switchTab('path');
+        // Удаляем метку, чтобы при следующем обычном заходе открывался рейтинг
+        localStorage.removeItem('autoOpenPath');
       }
 
       const isMemberLocally = localStorage.getItem('member') === 'true';
       const leagueKimchiContainer = document.getElementById("league-golden-kimchi");
-      const leaguePastContainer = document.getElementById("league-past-leaders");
-      const ratingsWrapper = document.getElementById("ratings-wrapper");
-      const tabKimchi = document.getElementById("tab-kimchi");
-      const tabPast = document.getElementById("tab-past");
       const loadingSpinner = document.getElementById("loading-spinner");
+      const joinButton = document.getElementById('join-league-button');
 
       const currentUser = Telegram.WebApp.initDataUnsafe.user;
       const currentId = String(currentUser?.id || "");
 
-      // Функция рендеринга
-      function renderUsers(container, users, isPastLeaders = false) {
+      // Функция рендеринга ТОПА
+      function renderUsers(container, users) {
         container.innerHTML = '';
         if (!users || users.length === 0) {
           container.innerHTML = `<p style="text-align:center;color:#ccc;margin-top:20px;">Пока нет данных</p>`;
@@ -611,27 +690,19 @@
           entry.className = "user-entry";
           if (isCurrent) entry.classList.add("current-user");
 
-          let icon = '';
-          if (isPastLeaders) {
-            icon = '🏆 ';
-          } else if (user.isSubscriber) {
-            icon = '👑 ';
+          const userXP = user.stars || 0;
+          let rankIcon = '🎒';
+          if (typeof getRankInfo === 'function') {
+            const rankData = getRankInfo(userXP);
+            rankIcon = rankData.current.icon;
           }
 
-          // Для прошлых лидеров: показываем номер недели
-          // Для текущих: показываем ранг (1, 2, 3...)
-          let rankHTML = '';
-          if (isPastLeaders) {
-            const weekNum = parseWeekNumber(user.week);
-            rankHTML = `<small>нед.</small>${weekNum}`;
-          } else {
-            rankHTML = rank;
-          }
+          let statusIcon = user.isSubscriber ? '👑 ' : '';
 
           entry.innerHTML = `
-                <div class="rank">${rankHTML}</div>
-                <div class="username">${icon}${user.username}</div>
-                <div class="stars">⭐ ${user.stars || 0}</div>
+                <div class="rank">${rank}</div>
+                <div class="username">${rankIcon} ${statusIcon}${user.username}</div>
+                <div class="stars">⚡️ ${userXP}</div>
               `;
 
           container.appendChild(entry);
@@ -639,66 +710,31 @@
         });
       }
 
-      // 2. Загрузка данных
-      let currentUsers = [];
-      
-      // Загрузка Текущей Лиги
+      // Загрузка Общего Рейтинга
       try {
         const currentResp = await fetch("https://telegram-server-hfk7.onrender.com/getWeeklyStars");
-        if(currentResp.ok) {
-           currentUsers = await currentResp.json();
-           const kimchiLeagueUsers = currentUsers.filter(user => user.isSubscriber);
-           renderUsers(leagueKimchiContainer, kimchiLeagueUsers, false);
+        if (currentResp.ok) {
+          const currentUsers = await currentResp.json();
+          renderUsers(leagueKimchiContainer, currentUsers);
+
+          // Показываем кнопку "Вступить", если не подписчик
+          if (!isMemberLocally) {
+            joinButton.style.display = 'flex';
+            joinButton.onclick = showPremiumPopup;
+          }
+
         } else {
-           leagueKimchiContainer.innerHTML = `<p style="text-align:center;">Ошибка сервера</p>`;
+          leagueKimchiContainer.innerHTML = `<p style="text-align:center;">Ошибка сервера</p>`;
         }
       } catch (e) {
-        console.error("Ошибка загрузки текущей лиги:", e);
+        console.error("Ошибка загрузки рейтинга:", e);
         leagueKimchiContainer.innerHTML = `<p style="text-align:center;">Сбой связи</p>`;
       }
 
-      // Открываем интерфейс
+      // Убираем спиннер
       loadingSpinner.style.display = "none";
-      ratingsWrapper.style.display = "block";
-
-      // Загрузка Прошлых Лидеров
-      try {
-        const pastResp = await fetch("https://telegram-server-hfk7.onrender.com/getPastLeaders");
-        if (pastResp.ok) {
-          const pastUsers = await pastResp.json();
-          renderUsers(leaguePastContainer, pastUsers, true);
-        } else {
-          leaguePastContainer.innerHTML = `<p style="text-align:center;color:#666;">Список пуст</p>`;
-        }
-      } catch (e) {
-        console.error("Ошибка загрузки прошлых лидеров:", e);
-        leaguePastContainer.innerHTML = `<p style="text-align:center;color:#666;">Нет истории</p>`;
-      }
-
-      // Кнопка "Вступить"
-      const joinButton = document.getElementById('join-league-button');
-      const currentUserData = currentUsers.find(u => String(u.telegramId) === currentId);
-      if (!isMemberLocally && (!currentUserData || !currentUserData.isSubscriber)) {
-        joinButton.style.display = 'flex';
-        setupPremiumPopup();
-        joinButton.onclick = showPremiumPopup;
-      }
-
-      // Переключение вкладок
-      tabKimchi.addEventListener('click', () => {
-        tabKimchi.classList.add('active');
-        tabPast.classList.remove('active');
-        leagueKimchiContainer.classList.add('active');
-        leaguePastContainer.classList.remove('active');
-      });
-
-      tabPast.addEventListener('click', () => {
-        tabPast.classList.add('active');
-        tabKimchi.classList.remove('active');
-        leaguePastContainer.classList.add('active');
-        leagueKimchiContainer.classList.remove('active');
-      });
     });
   </script>
 </body>
+
 </html>

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Премиум</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="analytics.js"></script>
   <style>
     html,
     body {
@@ -69,7 +70,7 @@
     }
 
     .modal ul {
-      list-style-type: '⭐';
+      list-style-type: '⚡️';
       /* Звезда вместо кружка */
       text-align: left;
       padding-left: 25px;
@@ -275,7 +276,11 @@
     }
 
     async function redirectToPayment() {
-      // Показать загрузку
+      trackEvent('checkout_start', {
+        item_name: 'Premium Subscription',
+        price: 99,
+        currency: 'RUB'
+      });
       document.getElementById("loader").style.display = "flex";
 
       const telegramId = Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");

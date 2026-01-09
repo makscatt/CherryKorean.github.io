@@ -4,20 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Оплата прошла</title>
+  <!-- 1. Сначала подключаем аналитику, чтобы функция trackEvent стала доступна -->
+  <script src="analytics.js"></script>
+  
   <script>
-    // Сохраняем статус подписки
+    // 2. Логика отправки события
+    window.onload = function() {
+        // Пытаемся получить ID заказа из ссылки (если сервер передает ?order_id=...), иначе генерируем дату
+        const urlParams = new URLSearchParams(window.location.search);
+        const orderId = urlParams.get('order_id') || `txn_${Date.now()}`;
 
+        // === ГЛАВНАЯ ЧАСТЬ ДЛЯ МОНЕТИЗАЦИИ ===
+        if (window.trackEvent) {
+            window.trackEvent('purchase', {
+                transaction_id: orderId, // Уникальный ID чека
+                value: 99.00,            // Сумма (поменяй, если цена другая)
+                currency: 'RUB',         // Валюта
+                items: [{                // Что купили
+                    item_id: 'premium_sub',
+                    item_name: 'Premium Subscription',
+                    price: 99.00
+                }]
+            });
+            console.log("Purchase event sent");
+        }
 
-    // Перенаправление на главную через 2 секунды
-    setTimeout(() => {
-      Telegram.WebApp.openTelegramLink("https://t.me/Kimchi_HanguGo_bot");
-    }, 2000);
+        // 3. Редирект (твой старый код)
+        setTimeout(() => {
+          // Проверяем, есть ли объект Telegram WebApp
+          if (window.Telegram && window.Telegram.WebApp) {
+              window.Telegram.WebApp.openTelegramLink("https://t.me/Kimchi_HanguGo_bot");
+          } else {
+              // Фоллбек для обычного браузера
+              window.location.href = "https://t.me/Kimchi_HanguGo_bot";
+          }
+        }, 2000);
+    };
   </script>
 </head>
 
 <body
-  style="background-color:black; color:white; display:flex; justify-content:center; align-items:center; height:100vh;">
-  <h1>✅ Оплата прошла. Возвращаемся в приложение...</h1>
+  style="background-color:black; color:white; display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; font-family: sans-serif;">
+  <h1>✅ Оплата прошла успешно!</h1>
+  <p style="color: #ccc;">Возвращаемся в приложение...</p>
 </body>
 
 </html>

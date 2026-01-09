@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Видео Тренировка</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="analytics.js"></script>
     <link rel="stylesheet" href="videoplayer.css">
 
     <style>
@@ -16,7 +17,6 @@
         }
 
         body {
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,14 +24,9 @@
             height: 100vh;
             background-color: #000000;
             font-family: 'NetflixSans-Regular', Arial, sans-serif;
-
+            overflow: hidden;
+            /* Важно для фиксированных элементов */
         }
-
-
-
-
-
-
 
         .goldkimchi-label {
             position: absolute;
@@ -56,17 +51,16 @@
         #gameContainer {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            /* Контент сверху */
             align-items: center;
             text-align: center;
             position: relative;
             margin: auto;
             width: 100vw;
-            /* Используем относительную единицу измерения */
             height: 100vh;
             padding-top: 0px;
             background: linear-gradient(to bottom, #000000 30%, #ffffff 30%);
-
         }
 
         #video-container {
@@ -74,6 +68,7 @@
             border-radius: 10px;
             margin-top: 40px;
             width: 100%;
+            position: relative;
         }
 
         @media (hover: hover) and (pointer: fine) {
@@ -86,53 +81,38 @@
 
             #video-container {
                 max-width: 400px;
-
             }
         }
-
 
         #custom-video-container {
             margin: 0;
             padding: 0;
             background-color: #000000;
-            /* --- НОВЫЕ СВОЙСТВА --- */
             aspect-ratio: 16 / 9;
-            /* Задает стабильные пропорции */
             display: flex;
-            /* Включает flex для центрирования */
             justify-content: center;
-            /* Центрирует видео по горизонтали */
             align-items: center;
-            /* Центрирует видео по вертикали */
             overflow: hidden;
-            /* Скрывает все, что выходит за рамки */
             border-radius: 10px 10px 0 0;
-            /* Переносим скругление сюда */
         }
 
         #custom-video-container video {
-            /* --- НОВЫЕ СВОЙСТВА --- */
             max-width: 100%;
-            /* Ограничивает ширину контейнером */
             max-height: 100%;
-            /* Ограничивает высоту контейнером */
             width: auto;
-            /* Позволяет видео сохранять пропорции */
             height: auto;
-            /* Позволяет видео сохранять пропорции */
             border-radius: 0;
-            /* Убираем радиус, т.к. он на контейнере */
         }
 
         #interaction-block {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+
             width: 100%;
             margin-top: 1%;
             margin-bottom: 1%;
-            height: 50%;
-
+            flex: 1;
+            overflow-y: auto;
 
         }
 
@@ -143,30 +123,19 @@
             cursor: pointer;
             border-radius: 5px;
             transition: all 0.1s ease-in-out;
-
-            /* --- ГЛЯНЦЕВЫЙ ЭФФЕКТ --- */
             background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
             border: 1px solid #b8b8b8;
-            /* Рамка для объема */
             color: #333;
-            /* Чуть темнее текст для контраста */
             text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-            /* Тень для текста */
-            box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.6),
-                /* Внутренний блик */
-                0 2px 3px rgba(0, 0, 0, 0.1);
-            /* Внешняя тень */
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 2px 3px rgba(0, 0, 0, 0.1);
         }
 
         button:active {
-            /* Эффект вдавленной кнопки */
             background: linear-gradient(to bottom, #e9e9e9, #f1f1f1);
             box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
             transform: translateY(1px);
         }
 
-        /* --- Стили для контейнеров (остаются без изменений) --- */
         #answer-buttons {
             display: flex;
             flex-direction: column;
@@ -174,7 +143,7 @@
             margin: 10px;
             justify-content: space-between;
             gap: 10px;
-            height: 170px;
+            height: auto;
         }
 
         #KoreanButton {
@@ -185,29 +154,14 @@
             align-items: center;
         }
 
-        /* --- НОВЫЕ СТИЛИ ДЛЯ ГЛЯНЦЕВЫХ ЭЛЕМЕНТОВ --- */
-
-
-
-
-        /* 3. Стиль для синего текстового блока */
         #koreanText {
-
             justify-content: center;
             align-items: center;
             text-align: center;
-
-            /* Глянцевый эффект */
             background: linear-gradient(to bottom, #e0f5fe, #b8e7fc);
-            /* Синий градиент */
             border: 1px solid #90c5e0;
-            /* Синяя рамка */
-            box-shadow:
-                inset 0 1px 0 rgba(255, 255, 255, 0.8),
-                0 2px 3px rgba(0, 0, 0, 0.15);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 2px 3px rgba(0, 0, 0, 0.15);
             text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
-
-            /* Остальные свойства из вашего старого кода */
             position: relative;
             overflow: visible;
             font-size: clamp(28px, 3vw, 40px);
@@ -222,17 +176,14 @@
             white-space: normal;
             word-break: keep-all;
             box-sizing: border-box;
+            width: 100%;
+            /* Добавлено */
         }
 
         #koreanText:active {
-            /* Общий эффект "вдавливания" */
             box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
             transform: translateY(1px);
             transition: transform 0.05s ease, box-shadow 0.05s ease;
-        }
-
-
-        #koreanText:active {
             background: linear-gradient(to bottom, #a4d9f1, #b8e7fc);
         }
 
@@ -242,7 +193,7 @@
             height: 40px;
             bottom: -10px;
             top: 25px;
-            right: 0px;
+            right: 10px;
             z-index: 10;
             pointer-events: auto;
         }
@@ -285,7 +236,6 @@
 
         #popup-content-wrapper>div:last-child {
             flex-shrink: 0;
-            /* футер не сжимается и не скроллится */
         }
 
         #popupHeader {
@@ -304,81 +254,141 @@
         }
 
         #progress-bar {
-            width: 90%;
+            width: 80%;
             display: grid;
             grid-template-columns: repeat(10, 1fr);
-            /* всегда 10 колонок */
-            gap: 5px;
+            gap: 2px;
             justify-items: center;
             margin: 2px auto;
             box-sizing: border-box;
             grid-auto-rows: auto;
-
             background-color: #afafaf;
             border-radius: 10px;
-            padding: 7px;
-
+            padding: 4px;
         }
 
         .progress-box {
             width: 100%;
-            /* заполнит 1fr */
-            max-width: 36px;
-            /* ограничим рост */
+            max-width: 30px;
             aspect-ratio: 1 / 1;
-            /* квадрат */
             border-radius: 6px;
             background-color: white;
             box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
         }
 
+        /* --- НОВЫЕ СТИЛИ ДЛЯ ПЛАВАЮЩЕГО МЕНЮ И ТАЙМЕРА --- */
+
+        /* Скрываем старый контейнер кнопок */
         #menu-button-container {
-            position: relative;
-            max-width: 100%;
-            gap: 5px;
-            margin-top: auto;
-            height: 10%;
+            display: none !important;
+        }
+
+        /* Контейнер кнопок справа */
+        .floating-controls {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 2000;
+        }
+
+        /* Общий стиль круглых кнопок */
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            border-radius: 10px 10px 0 0;
+            transition: transform 0.1s;
+            padding: 0;
+            outline: none;
+            background: #ffffff;
+            color: #333;
+            margin: 0;
+        }
 
-            /* --- ГЛЯНЦЕВЫЙ ЭФФЕКТ ДЛЯ ТЕМНОЙ ПАНЕЛИ --- */
+        .float-btn:active {
+            transform: scale(0.95);
+        }
 
-            /* 1. Темный градиент для имитации объема */
-            background: linear-gradient(to bottom, #2f2f31, #1C1C1E);
+        .float-btn img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
 
-            /* 2. Только верхняя граница для отделения от контента */
-            border: none;
-            /* Сначала сбрасываем старую рамку */
-            border-top: 1px solid rgba(255, 215, 0, 0.4);
+        /* ПРИНУДИТЕЛЬНЫЙ СБРОС СТАРЫХ СТИЛЕЙ */
+        #save-to-bank-button,
+        #back-button,
+        #main-menu-button {
+            position: static !important;
+            transform: none !important;
+            left: auto;
+            right: auto;
+            top: auto;
+        }
 
-            /* 3. Тень: внутренний блик + тень ВВЕРХ для отделения от контента */
-            box-shadow:
-                inset 0 1px 1px rgba(255, 255, 255, 0.1),
-                /* Внутренний блик сверху */
-                0 -2px 5px rgba(0, 0, 0, 0.5);
-            /* Внешняя тень, отбрасываемая вверх на контент */
+        #save-to-bank-button.active {
+            background: #ffffff;
+        }
+
+        /* --- СТИЛИ ДЛЯ ТАЙМЕРА (по центру внизу) --- */
+        .timer-floating {
+            position: fixed;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            z-index: 2000;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        #timer-display {
+            color: white;
+            position: static !important;
+            transform: none !important;
+            background: transparent !important;
+            padding: 0 !important;
+            font-size: inherit !important;
+            display: inline !important;
         }
 
         #stars {
-            position: absolute;
-            left: 0px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 25px;
-            color: white;
-            background: none;
-            border: none;
-            box-shadow: none;
-            cursor: default;
-            padding: 0;
-            line-height: 1;
-            height: 28px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            left: auto;
+            transform: none;
+            background: rgba(255, 255, 255);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fbc02d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 5px;
+            z-index: 1000;
+            border: none;
+            height: auto;
+            line-height: normal;
+            cursor: default;
         }
 
         #stars.pulsing {
@@ -387,74 +397,16 @@
 
         @keyframes pulse {
             0% {
-                transform: translateY(-50%) scale(1);
+                transform: scale(1);
             }
 
             50% {
-                transform: translateY(-50%) scale(1.5);
+                transform: scale(1.5);
             }
 
             100% {
-                transform: translateY(-50%) scale(1);
+                transform: scale(1);
             }
-        }
-
-        #main-menu-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: 80px;
-            top: 50%;
-            transform: translateY(-58%);
-            padding: 1px 6px;
-
-        }
-
-        #back-button {
-            padding: 1px 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: 5px;
-            top: 50%;
-            transform: translateY(-58%);
-        }
-
-        #back-button:active,
-        #main-menu-button:active {
-            transform: translateY(-54%);
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        #save-to-bank-button {
-            all: unset;
-            cursor: pointer;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            position: absolute;
-            left: 0;
-            right: 0;
-        }
-
-        #save-to-bank-button:active {
-            transform: scale(0.95);
-            box-shadow: none;
-        }
-
-        #save-to-bank-button.active {
-            background: none;
-        }
-
-        #bank-icon {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
         }
 
         #hint-button {
@@ -476,9 +428,7 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
             z-index: 100001;
-            /* Выше чем основной popup */
             display: none;
-            /* Управляется через JS */
             justify-content: center;
             align-items: center;
             padding: 10px;
@@ -535,7 +485,6 @@
             background-color: rgba(0, 0, 0, 0.7);
             z-index: 100002;
             display: none;
-            /* Управляется через JS */
             justify-content: center;
             align-items: center;
             padding: 10px;
@@ -553,8 +502,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
-
-
 
         #completion-popup-content-wrapper h2 {
             margin-top: 0;
@@ -588,63 +535,7 @@
             min-height: 80px;
         }
 
-        #completion-stars span {
-            display: inline-block;
-            /* Убираем общую анимацию отсюда */
-        }
-
-        /* Дуга для 3-х звезд */
-        .stars-3 span:nth-child(1) {
-            animation: pulse-star-left 0.5s ease-in-out;
-            animation-delay: 0s;
-        }
-
-        .stars-3 span:nth-child(2) {
-            animation: pulse-star-center 0.5s ease-in-out;
-            animation-delay: 0.1s;
-        }
-
-        .stars-3 span:nth-child(3) {
-            animation: pulse-star-right 0.5s ease-in-out;
-            animation-delay: 0.2s;
-        }
-
-        /* "V" форма для 2-х звезд (им тоже нужны свои анимации) */
-        .stars-2 span:nth-child(1) {
-            /* Можно использовать ту же анимацию, что и для левой звезды */
-            animation: pulse-star-left 0.5s ease-in-out;
-            animation-delay: 0s;
-        }
-
-        .stars-2 span:nth-child(2) {
-            /* И для правой */
-            animation: pulse-star-right 0.5s ease-in-out;
-            animation-delay: 0.1s;
-        }
-
-        @keyframes pulse-stars-container {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.1);
-            }
-        }
-
-        #completion-stars {
-            animation: pulse-stars-container 0.6s ease-in-out;
-        }
-
-
-
         /* --- Стили для режима обучения --- */
-
-
-
-        /* Контейнер обучения */
         #study-container {
             display: flex;
             flex-direction: column;
@@ -655,7 +546,6 @@
             gap: 10px;
         }
 
-        /* Транскрипция (темно-серый цвет) */
         #transcription-display {
             color: #555555 !important;
             font-size: clamp(19px, 4vw, 20px);
@@ -663,7 +553,6 @@
             font-weight: normal;
         }
 
-        /* Перевод (черный цвет) */
         #translation-display {
             color: #000000 !important;
             font-size: clamp(20px, 5vw, 26px);
@@ -672,24 +561,50 @@
             height: 40px;
         }
 
-        /* Кнопка "Далее" */
-        #next-btn {
-            width: 30%;
+        #next-btn,
+        #prev-btn,
+        #test-btn {
             padding: 12px;
             background: linear-gradient(to bottom, #fff9ae, #fff350);
             border: 1px solid #eac800;
             border-radius: 8px;
-            font-size: 22px;
+            font-size: 18px;
             font-weight: bold;
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             color: #333;
-            transition: transform 0.1s;
+            transition: transform 0.1s, opacity 0.2s;
+            width: 30%;
         }
 
-        #next-btn:active {
+        #next-btn:active,
+        #prev-btn:active {
             transform: scale(0.98);
             background: linear-gradient(to bottom, #f0e44d, #f5ec7a);
+        }
+
+        #prev-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+
+        #test-btn {
+            background: linear-gradient(to bottom, #81c784, #4caf50);
+            border-color: #388e3c;
+            color: white;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        #test-btn:active {
+            background: linear-gradient(to bottom, #66bb6a, #81c784);
+        }
+
+        #test-btn:disabled {
+            background: #a5d6a7;
+            border-color: #81c784;
+            opacity: 0.6;
+            cursor: not-allowed;
         }
 
         @keyframes blink {
@@ -722,77 +637,22 @@
                 box-shadow: 0 0 0 0 rgba(255, 77, 77, 0);
             }
         }
-
-        #next-btn,
-        #prev-btn {
-
-            padding: 12px;
-            background: linear-gradient(to bottom, #fff9ae, #fff350);
-            border: 1px solid #eac800;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: #333;
-            transition: transform 0.1s, opacity 0.2s;
-        }
-
-        #next-btn:active,
-        #prev-btn:active {
-            transform: scale(0.98);
-            background: linear-gradient(to bottom, #f0e44d, #f5ec7a);
-        }
-
-        #prev-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-            transform: scale(1);
-        }
-
-        #next-btn,
-        #prev-btn,
-        #test-btn {
-            width: 30%;
-            /* Уменьшаем ширину, чтобы поместились три кнопки */
-        }
-
-        #test-btn {
-            background: linear-gradient(to bottom, #81c784, #4caf50);
-            /* Зеленый цвет */
-            border-color: #388e3c;
-            color: white;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-        }
-
-        #test-btn:active {
-            background: linear-gradient(to bottom, #66bb6a, #81c784);
-        }
-
-        #test-btn:disabled {
-            background: #a5d6a7;
-            border-color: #81c784;
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
     </style>
 </head>
 
 <body>
     <div id="gameContainer">
-        <div id="video-container">
+        <div id="stars">⚡️ 0</div>
 
+        <!-- Видео блок -->
+        <div id="video-container">
             <div id="custom-video-container">
                 <video id="wordVideo" playsinline webkit-playsinline></video>
             </div>
             <div id="custom-controls-wrapper">
                 <div id="custom-controls">
-                    <button id="play-btn">
-                        <img src="customcontrolbuttons/play.png" alt="Play">
-                    </button>
-                    <button id="repeat-btn">
-                        <img src="customcontrolbuttons/repeat.png" alt="Repeat">
-                    </button>
+                    <button id="play-btn"><img src="customcontrolbuttons/play.png" alt="Play"></button>
+                    <button id="repeat-btn"><img src="customcontrolbuttons/repeat.png" alt="Repeat"></button>
                     <select id="speed-select">
                         <option value="0.5">0.5x</option>
                         <option value="0.75">0.75x</option>
@@ -802,17 +662,18 @@
                         <option value="2">2x</option>
                     </select>
                 </div>
-
             </div>
         </div>
 
+        <!-- Основной контент (обучение, аудио) -->
         <div id="interaction-block">
+            <div id="progress-bar"></div>
             <div id="answer-buttons" style="height: auto; justify-content: flex-start;">
 
                 <!-- Блок обучения -->
                 <div id="study-container"
                     style="display: flex; flex-direction: column; align-items: center; width: 100%; margin-bottom: 10px;">
-                    <!-- Корейский текст (кликабельный для анализа, сохраняем функционал лупы) -->
+                    <!-- Корейский текст (кликабельный) -->
                     <div id="koreanText" onclick="analyzeKoreanText()" style="display: flex; margin-bottom: 5px;">
                         <span id="koreanTextContent"></span>
                         <img src="videothemes/icons/search.png" class="search-icon" alt="лупа">
@@ -825,15 +686,19 @@
                     <div id="translation-display"
                         style="color: #ffffff; font-size: 22px; font-weight: bold; margin-bottom: 15px;"></div>
 
-                    <!-- Кнопка Далее -->
+                    <!-- Кнопки Навигации (Назад, Далее, Тест) -->
                     <div id="navigation-buttons"
-                        style="display: flex; justify-content: center; gap: 10px; width: 100%; margin-top: 15px;">
+                        style="display: flex; justify-content: center; gap: 10px; width: 100%;">
                         <button id="prev-btn" onclick="prevWord()">Назад</button>
                         <button id="next-btn" onclick="nextWord()">Далее</button>
                         <button id="test-btn" onclick="startAudioTest()">Тест</button>
                     </div>
                 </div>
-                <div id="progress-bar"></div>
+
+                <!-- Прогресс бар (квадратики) -->
+
+
+                <!-- Аудио запись (скрыто по умолчанию) -->
                 <div id="audio-answer-container"
                     style="display: none; flex-direction: row; align-items: center; justify-content: space-between; width: 96%; height: 120px; padding: 10px 15px; box-sizing: border-box; background-color: #f2f3f5; border-radius: 20px; margin: 0 auto; box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);">
                     <div
@@ -861,40 +726,39 @@
                     </div>
                 </div>
 
-
-                <!-- Прогресс бар -->
-
-
                 <!-- Кнопка подсказки -->
                 <button id="hint-button" onclick="showHintPopup()">Подсказка</button>
             </div>
         </div>
 
-        <div id="menu-button-container">
+        <!-- --- НОВЫЙ БЛОК: Таймер (по центру снизу) --- -->
+        <div id="timer-container" class="timer-floating">
+            <span id="timer-display">5:00</span>
+        </div>
 
-            <button id="stars" disabled>⭐ 0</button>
-            <div id="timer-container"
-                style="position: absolute; left: 110px; top: 50%; transform: translateY(-50%); display: none; cursor: pointer;">
-                <img src="videothemes/icons/timer.png" alt="Timer" style="width: 60px; height: 60px;">
-                <span id="timer-display"
-                    style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.8); color: white; padding: 3px 8px; border-radius: 5px; font-size: 14px; white-space: nowrap; display: none;">5:00</span>
-            </div>
-            <button id="save-to-bank-button" onclick="saveToBank()">
+        <!-- --- НОВЫЙ БЛОК: Плавающие кнопки (Копилка, Назад, Домой) --- -->
+        <div class="floating-controls">
+            <!-- 1. Копилка (сверху) -->
+            <button id="save-to-bank-button" class="float-btn" onclick="saveToBank()">
                 <img id="bank-icon" src="videothemes/icons/outbank.png" alt="В копилку">
             </button>
-            <button id="main-menu-button" class="nav-button" onclick="goHome()">
-                <img src="videothemes/icons/home.png" alt="Home" style="width: 45px; height: 45px;">
+
+            <!-- 2. Назад (посередине) -->
+            <button id="back-button" class="float-btn" onclick="goBack()">
+                <img src="videothemes/icons/backarrow.png" alt="Back" style="width: 40px; height: 40px;">
             </button>
-            <button id="back-button" class="nav-button" onclick="goBack()">
-                <img src="videothemes/icons/back.png" alt="Back" style="width: 45px; height: 45px;">
+
+            <!-- 3. Домой (снизу) -->
+            <button id="main-menu-button" class="float-btn" onclick="goHome()">
+                <img src="videothemes/icons/home.png" alt="Home">
             </button>
         </div>
-    </div>
     </div>
     <script>
         // --- Глобальные переменные ---
         let correctAnswer = "";
         const Game = { stars: 0 };
+        const baseXP = 20;
         let easywords = []; // Оригинальный массив слов из JSON
         let currentWordIndex = null; // Индекс текущего слова в easywords для 'saveToBank'
 
@@ -924,12 +788,17 @@
             const continueBtn = document.getElementById('completion-continue-btn');
             const retryBtn = document.getElementById('completion-retry-btn');
             const showErrorsBtn = document.getElementById('show-errors-btn');
+            trackEvent('lesson_complete', {
+                lesson_id: localStorage.getItem('selectedBlockKey'),
+                total_stars: Game.stars,
+                mode: 'pathway'
+            });
 
             popupTitle.textContent = "🎉 Тренировка завершена! 🎉";
-            Game.stars += 2;
+            Game.stars += baseXP;
             updateStarsUI();
             saveStars();
-            completionStarsEl.innerHTML = '⭐';
+            completionStarsEl.innerHTML = '+⚡️' + baseXP;
 
             try {
                 const response = await fetch('videothemes/motivation/motivation.json');
@@ -947,8 +816,15 @@
             retryBtn.innerText = "Повторить";
             showErrorsBtn.style.display = 'none';
 
+            trackEvent('lesson_complete', {
+                lesson_id: localStorage.getItem('selectedBlockKey'),
+                total_stars: Game.stars,
+                errors_count: sessionErrors?.errors?.length || 0
+            });
+
             showCompletionPopup();
         }
+
 
         function startAudioTest() {
             isAudioMode = true;
@@ -1094,6 +970,9 @@
                 }
 
                 localStorage.setItem("stars", Game.stars);
+                if (typeof checkAndSaveRankUp === 'function') {
+                    checkAndSaveRankUp(Game.stars);
+                }
             } catch (e) {
                 console.error("Ошибка при сохранении звёзд:", e);
                 localStorage.setItem("stars", Game.stars);
@@ -1131,7 +1010,7 @@
         }
 
         function updateStarsUI() {
-            document.getElementById("stars").innerText = `⭐ ${Game.stars}`;
+            document.getElementById("stars").innerText = `⚡️ ${Game.stars}`;
         }
 
         async function loadWordsAndSetOptions() {
@@ -1299,7 +1178,9 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-
+            const tg = window.Telegram.WebApp;
+            tg.BackButton.show();
+            tg.BackButton.onClick(goBack);
 
 
             // Обработчики кнопок в попапе завершения
@@ -1348,7 +1229,7 @@
             });
 
             document.getElementById('return-home-btn').addEventListener('click', () => {
-                window.location.href = "videothemes.html";
+                window.location.href = "menu.html";
             });
 
             // Управление отображением таймера
@@ -1547,6 +1428,10 @@
 
                 if (timeUsedToday >= DAILY_LIMIT_SECONDS) {
                     stopTimer();
+                    trackEvent('premium_wall_shown', {
+                        source: 'pathway_player',
+                        reason: 'daily_limit'
+                    });
                     document.getElementById('gameContainer').style.pointerEvents = 'none'; // Блокируем интерфейс
                     document.getElementById('times-up-popup').style.display = 'flex';
                 }
@@ -1624,7 +1509,7 @@
             var pushAudio = new Audio('pushButton.mp3');
             pushAudio.play();
             setTimeout(() => {
-                window.location.href = "videothemes.html";
+                window.location.href = "menu.html";
             }, 150);
         }
 
@@ -1746,6 +1631,10 @@
 
             } catch (error) {
                 console.error("Ошибка:", error);
+                trackEvent('mic_error', {
+                    source: 'pathway',
+                    error_message: error.message
+                });
                 alert("Ошибка доступа к микрофону.");
             }
         });
@@ -1784,6 +1673,12 @@
                     let message = 'Еще раз';
 
                     if (score >= 70) {
+
+                        trackEvent('voice_recognition', {
+                            status: 'success',
+                            score: score,
+                            source: 'player'
+                        });
                         color = '#2ecc71';
                         message = score >= 90 ? 'Отлично!' : 'Хорошо';
 
@@ -1799,6 +1694,11 @@
                         }, 700);
 
                     } else {
+                        trackEvent('voice_recognition', {
+                            status: 'low_score',
+                            score: score,
+                            source: 'player'
+                        });
                         const boxes = document.querySelectorAll('.progress-box');
                         if (boxes[currentQuestionIndex]) {
                             boxes[currentQuestionIndex].style.backgroundColor = 'lightcoral';
@@ -1825,10 +1725,18 @@
             `;
 
                 } else {
+                    trackEvent('voice_api_error', {
+                        reason: 'not_recognized',
+                        source: 'player'
+                    });
                     audioResult.innerText = "Не распознано";
                 }
 
             } catch (error) {
+                trackEvent('voice_api_error', {
+                    error_message: error.message,
+                    source: 'player'
+                });
                 console.error(error);
                 audioResult.innerText = "Ошибка сети";
             }
