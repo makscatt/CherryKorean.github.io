@@ -818,6 +818,71 @@
         let isTimerRunning = false;
         let autoSaveInterval = null;
 
+        // --- ЗВУКОВОЙ ДВИЖОК (Web Audio API) ---
+        const SoundFX = {
+            ctx: null,
+
+            init: function () {
+                if (!this.ctx) {
+                    this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (this.ctx.state === 'suspended') {
+                    this.ctx.resume();
+                }
+            },
+
+            playTone: function (freq, type, duration, delay = 0, vol = 0.1) {
+                this.init();
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, this.ctx.currentTime + delay);
+
+                gain.gain.setValueAtTime(vol, this.ctx.currentTime + delay);
+                gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + delay + duration);
+
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+
+                osc.start(this.ctx.currentTime + delay);
+                osc.stop(this.ctx.currentTime + delay + duration);
+            },
+
+            playCorrect: function () {
+                this.playTone(600, 'sine', 0.1, 0, 0.1);
+                this.playTone(1200, 'triangle', 0.2, 0.05, 0.05);
+            },
+
+            playWrong: function () {
+                this.playTone(150, 'sawtooth', 0.3, 0, 0.15);
+                this.playTone(100, 'square', 0.3, 0.05, 0.1);
+            },
+
+            playSuccess: function () {
+                this.playTone(523.25, 'sine', 0.1, 0);
+                this.playTone(659.25, 'sine', 0.1, 0.1);
+                this.playTone(783.99, 'sine', 0.2, 0.2);
+                this.playTone(1046.50, 'triangle', 0.4, 0.3);
+            },
+
+            playFinish: function () {
+                this.playTone(261.63, 'triangle', 1.0, 0);
+                this.playTone(329.63, 'triangle', 1.0, 0.1);
+                this.playTone(392.00, 'triangle', 1.0, 0.2);
+                this.playTone(523.25, 'sine', 1.5, 0.4);
+            },
+
+            playClick: function () {
+                this.playTone(800, 'sine', 0.05, 0, 0.05);
+            },
+
+            playNeutral: function () {
+                this.playTone(440, 'sine', 0.2, 0, 0.1);
+                this.playTone(554, 'sine', 0.2, 0.1, 0.1);
+            }
+        };
+
 
         function formatTime(seconds) {
             const mins = Math.floor(seconds / 60);
@@ -921,9 +986,8 @@
             clearInterval(sessionTimerInterval);
             document.getElementById('gameContainer').style.pointerEvents = 'none';
 
-            saveSessionProgress(); // Сохраняем последние секунды
+            saveSessionProgress();
             cleanupSession();
-
 
             const resultsPopup = document.getElementById('session-results-popup');
             const summary = document.getElementById('results-summary');
@@ -931,14 +995,11 @@
             const showErrorsBtn = document.getElementById('show-errors-btn');
             const errorListDiv = document.getElementById('error-list');
 
-            // ... (остальной код функции остается без изменений) ...
-            // Расчет статистики
             const errorsCount = sessionStats.errors.length;
             const correctCount = sessionStats.correct;
             const totalCount = sessionStats.total;
             const accuracy = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
 
-            // Формирование текста
             const totalDuration = parseInt(sessionStorage.getItem('sessionDuration'), 10);
             const averageTime = totalCount > 0 ? (totalDuration / totalCount).toFixed(1) : 0;
 
@@ -947,7 +1008,6 @@
                      Точность: <strong>${accuracy}%</strong><br>
                      Среднее время на ответ: <strong>${averageTime} сек.</strong>`;
 
-            // Выбор награды
             if (accuracy >= 95) {
                 awardImg.src = 'videothemes/icons/cup_gold.png';
             } else if (accuracy >= 80) {
@@ -956,7 +1016,6 @@
                 awardImg.src = 'videothemes/icons/cup_bronze.png';
             }
 
-            // Логика кнопки "Посмотреть ошибки"
             if (errorsCount > 0) {
                 showErrorsBtn.style.display = 'block';
                 let errorHTML = '<h4>Ваши ошибки:</h4>';
@@ -968,12 +1027,19 @@
                                   </div>`;
                 });
                 errorListDiv.innerHTML = errorHTML;
+            } else {
+                showErrorsBtn.style.display = 'none';
+                errorListDiv.innerHTML = '';
             }
 
             sessionStorage.removeItem('isSessionActive');
             sessionStorage.removeItem('sessionStartTime');
             sessionStorage.removeItem('sessionDuration');
             sessionStorage.removeItem('sessionStats');
+
+            // Звук завершения
+            SoundFX.playFinish();
+
             resultsPopup.style.display = 'flex';
         }
 
@@ -1403,7 +1469,9 @@
                 playLightningAnimation(button);
                 sessionStats.correct++;
                 sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
-                new Audio('excellent.mp3').play();
+
+                // Звук успеха
+                SoundFX.playSuccess();
 
                 // Убираем флаг "новое слово"
                 const word = easywords[currentWordIndex];
@@ -1426,9 +1494,6 @@
                     starsElement.classList.remove("pulsing");
                 }, 300);
 
-                // Звук успеха звезды
-                new Audio('starsuccess.mp3').play();
-
                 // Переход дальше
                 setTimeout(() => {
                     button.style.backgroundColor = "";
@@ -1437,6 +1502,7 @@
 
             } else {
                 // Логика ошибки
+                SoundFX.playWrong(); // Звук ошибки
                 const currentWord = easywords[currentWordIndex];
                 sessionStats.errors.push({
                     question: (localStorage.getItem('answerLanguage') || 'ru') === 'ru' ? currentWord.korean : currentWord.russian,
@@ -1473,10 +1539,7 @@
             const isCorrect = cleanedUserAnswer === cleanedCorrectAnswer;
 
             if (isCorrect) {
-                // --- ИСПРАВЛЕНО ЗДЕСЬ ---
-                // Было playLightningAnimation(button) -> стало playLightningAnimation(mirrorDiv)
                 playLightningAnimation(mirrorDiv);
-                // ------------------------
 
                 sessionStats.total++;
                 sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
@@ -1488,7 +1551,7 @@
                 sessionStats.correct++;
                 sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
 
-                new Audio('excellent.mp3').play(); // Звук перенес сюда, чтобы звучал сразу
+                SoundFX.playSuccess(); // Заменили звук
 
                 if (currentWord.new) {
                     currentWord.new = false;
@@ -1508,13 +1571,12 @@
                     starsElement.classList.remove("pulsing");
                 }, 300);
 
-                new Audio('starsuccess.mp3').play();
-
                 setTimeout(() => {
                     loadWordsAndSetOptions();
                 }, 1000);
 
             } else {
+                SoundFX.playWrong(); // Добавили звук ошибки
                 if (mirrorDiv.style.backgroundColor !== 'lightcoral') {
                     sessionStats.total++;
                     sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
@@ -1525,7 +1587,6 @@
                 mirrorDiv.style.backgroundColor = 'lightcoral';
 
                 let feedbackHTML = '';
-                // Здесь используем нормализацию для корректной подсветки символов
                 const normalizedUser = userAnswer.normalize('NFC');
                 const normalizedCorrect = typedCorrectAnswer.normalize('NFC');
 
@@ -1544,6 +1605,7 @@
                 }, 800);
             }
         }
+
         function setAnswerMode(mode) {
             localStorage.setItem('answerMode', mode);
 
@@ -1567,9 +1629,22 @@
                 btnInput.classList.add('active');
                 // ... остальная логика для 'input' ...
 
-            } else if (mode === 'audio') { // НОВЫЙ БЛОК
+            } else if (mode === 'audio') {
                 audioContainer.style.display = 'flex';
                 btnAudio.classList.add('active');
+
+                const correctWord = easywords[currentWordIndex];
+                if (correctWord) {
+                    const showButton = document.getElementById("showKoreanButton");
+                    const hiddenTextContainer = document.getElementById("koreanText");
+                    const hiddenTextContent = document.getElementById("koreanTextContent");
+
+                    showButton.innerText = "Показать корейский текст";
+                    hiddenTextContent.innerText = correctWord.korean;
+
+                    hiddenTextContainer.style.display = "none";
+                    showButton.style.display = "inline-block";
+                }
 
             } else { // 'ru' или 'ko'
                 choiceContainer.style.display = 'flex';
@@ -1902,10 +1977,9 @@
         }, true);
 
         function goHome() {
-            saveSessionProgress(); // Сохраняем последние секунды
+            saveSessionProgress();
             cleanupSession();
-            var pushAudio = new Audio('pushButton.mp3');
-            pushAudio.play();
+            SoundFX.playClick();
             setTimeout(() => {
                 window.location.href = "menu.html";
             }, 150);
@@ -2069,7 +2143,6 @@
         async function sendAudioToServer(audioBlob) {
             const audioResult = document.getElementById('audio-result');
 
-            // Сброс в исходное состояние
             audioResult.style.flexDirection = 'column';
             audioResult.innerHTML = '<span style="color: grey; font-size: 16px;">Анализ...</span>';
 
@@ -2121,7 +2194,8 @@
                             localStorage.setItem('easywords', JSON.stringify(storedWords));
                         }
 
-                        new Audio('excellent.mp3').play().catch(() => { });
+                        // Звук успеха
+                        SoundFX.playSuccess();
 
                         // --- НАЧИСЛЕНИЕ ЗВЕЗДЫ ---
                         Game.stars += baseXP;
@@ -2131,8 +2205,6 @@
                         const starsElement = document.getElementById("stars");
                         starsElement.classList.add("pulsing");
                         setTimeout(() => starsElement.classList.remove("pulsing"), 300);
-
-                        new Audio('starsuccess.mp3').play();
 
                         setTimeout(() => {
                             audioResult.innerHTML = '';
@@ -2149,12 +2221,15 @@
                             Game.stars += 5;
                             color = '#3498db';
                             message = 'Хорошо';
+                            SoundFX.playNeutral();
                         } else if (score >= 50) {
                             color = '#f39c12';
                             message = 'Неплохо';
+                            SoundFX.playNeutral();
                         } else {
                             color = '#ff4d4d';
                             message = 'Еще раз';
+                            SoundFX.playWrong();
                         }
 
                         sessionStats.errors.push({
@@ -2162,15 +2237,10 @@
                             yourAnswer: `Аудио (${score}%): ${recognizedText}`,
                             correctAnswer: referenceText
                         });
-
-                        // При плохом результате можно либо ждать повтора, либо переключать
-                        // Здесь оставляем пользователя на том же слове, если оценка низкая, 
-                        // или переключаем через время, если хотите (но обычно аудио пересдают).
                     }
 
                     sessionStorage.setItem('sessionStats', JSON.stringify(sessionStats));
 
-                    // Отображение результата
                     audioResult.style.flexDirection = 'row';
                     audioResult.style.justifyContent = 'space-between';
                     audioResult.style.width = '100%';
@@ -2306,6 +2376,19 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('click', function (e) {
+            // Ищем клик по кнопкам, ссылкам или элементам с твоими классами
+            const target = e.target.closest('button, a, .theme-button, .user-button, .float-btn, .anchor-btn, .random-level-button, [onclick]');
+
+            if (target) {
+                // Проверяем, загружен ли звуковой движок
+                if (typeof SoundFX !== 'undefined' && SoundFX.playClick) {
+                    SoundFX.playClick();
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

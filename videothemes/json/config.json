@@ -1,4 +1,3 @@
-
 {
   "pathway": {
     "chapter_1": {
@@ -44,17 +43,31 @@
       "masterJsonPath": "videothemes/pathway/path_level_7.json"
     }
   },
-  
   "theme0": {
     "coverImage": "videothemes/subthemebc/demo.png",
     "masterJsonPath": "videothemes/json/videotheme0.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "BTS", "key": "b1" },
-      { "name": "Хиллер", "key": "b2" },
-      { "name": "Большая Лига😂", "key": "b3" },
-      { "name": "Хватай Сон Дже И Беги", "key": "b4" },
-      { "name": "Слабый Герой 2", "key": "b5" }
+      {
+        "name": "BTS",
+        "key": "b1"
+      },
+      {
+        "name": "Хиллер",
+        "key": "b2"
+      },
+      {
+        "name": "Большая Лига😂",
+        "key": "b3"
+      },
+      {
+        "name": "Хватай Сон Дже И Беги",
+        "key": "b4"
+      },
+      {
+        "name": "Слабый Герой 2",
+        "key": "b5"
+      }
     ]
   },
   "theme1": {
@@ -62,14 +75,38 @@
     "masterJsonPath": "videothemes/json/videotheme1.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо BTS", "key": "b0" },
-      { "name": "Разное 1", "key": "b1" },
-      { "name": "Разное 2", "key": "b2" },
-      { "name": "Разное 3", "key": "b3" },
-      { "name": "Разное 4", "key": "b4" },
-      { "name": "J-hope", "key": "b5" },
-      { "name": "Аэро-Йога-1", "key": "b6" },
-      { "name": "Аэро-Йога-2", "key": "b7" }
+      {
+        "name": "Демо BTS",
+        "key": "b0"
+      },
+      {
+        "name": "Разное 1",
+        "key": "b1"
+      },
+      {
+        "name": "Разное 2",
+        "key": "b2"
+      },
+      {
+        "name": "Разное 3",
+        "key": "b3"
+      },
+      {
+        "name": "Разное 4",
+        "key": "b4"
+      },
+      {
+        "name": "J-hope",
+        "key": "b5"
+      },
+      {
+        "name": "Аэро-Йога-1",
+        "key": "b6"
+      },
+      {
+        "name": "Аэро-Йога-2",
+        "key": "b7"
+      }
     ]
   },
   "theme2": {
@@ -77,9 +114,18 @@
     "masterJsonPath": "videothemes/json/videotheme2.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Сезон 1", "key": "b1" },
-      { "name": "Сезон 2", "key": "b2" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Сезон 1",
+        "key": "b1"
+      },
+      {
+        "name": "Сезон 2",
+        "key": "b2"
+      }
     ]
   },
   "theme3": {
@@ -87,9 +133,18 @@
     "masterJsonPath": "videothemes/json/videotheme3.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Хиллер 1", "key": "b1" },
-      { "name": "Хиллер 2", "key": "b2" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Хиллер 1",
+        "key": "b1"
+      },
+      {
+        "name": "Хиллер 2",
+        "key": "b2"
+      }
     ]
   },
   "theme4": {
@@ -97,14 +152,38 @@
     "masterJsonPath": "videothemes/json/videotheme4.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Сборник 1", "key": "b1" },
-      { "name": "Сборник 2", "key": "b2" },
-      { "name": "Сборник 3", "key": "b3" },
-      { "name": "Сборник 4", "key": "b4" },
-      { "name": "Паразиты 1", "key": "b5" },
-      { "name": "Паразиты 2", "key": "b6" } ,
-      { "name": "Жизнь дает мандарины", "key": "b7" }   
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Сборник 1",
+        "key": "b1"
+      },
+      {
+        "name": "Сборник 2",
+        "key": "b2"
+      },
+      {
+        "name": "Сборник 3",
+        "key": "b3"
+      },
+      {
+        "name": "Сборник 4",
+        "key": "b4"
+      },
+      {
+        "name": "Паразиты 1",
+        "key": "b5"
+      },
+      {
+        "name": "Паразиты 2",
+        "key": "b6"
+      },
+      {
+        "name": "Жизнь дает мандарины",
+        "key": "b7"
+      }
     ]
   },
   "theme5": {
@@ -112,12 +191,30 @@
     "masterJsonPath": "videothemes/json/videotheme5.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Сердца Корё 1", "key": "b1" },
-      { "name": "Сердца Корё 2", "key": "b2" },
-      { "name": "Сердца Корё 3", "key": "b3" },
-      { "name": "Сердца Корё 4", "key": "b4" },
-      { "name": "Сердца Корё 5", "key": "b5" }  
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Сердца Корё 1",
+        "key": "b1"
+      },
+      {
+        "name": "Сердца Корё 2",
+        "key": "b2"
+      },
+      {
+        "name": "Сердца Корё 3",
+        "key": "b3"
+      },
+      {
+        "name": "Сердца Корё 4",
+        "key": "b4"
+      },
+      {
+        "name": "Сердца Корё 5",
+        "key": "b5"
+      }
     ]
   },
   "theme6": {
@@ -125,12 +222,30 @@
     "masterJsonPath": "videothemes/json/videotheme6.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Хваран 1", "key": "b1" },
-      { "name": "Хваран 2", "key": "b2" },
-      { "name": "Хваран 3", "key": "b3" },
-      { "name": "Хваран 4", "key": "b4" },
-      { "name": "Хваран 5", "key": "b5" } 
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Хваран 1",
+        "key": "b1"
+      },
+      {
+        "name": "Хваран 2",
+        "key": "b2"
+      },
+      {
+        "name": "Хваран 3",
+        "key": "b3"
+      },
+      {
+        "name": "Хваран 4",
+        "key": "b4"
+      },
+      {
+        "name": "Хваран 5",
+        "key": "b5"
+      }
     ]
   },
   "theme7": {
@@ -138,9 +253,18 @@
     "masterJsonPath": "videothemes/json/videotheme7.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Винченцо 1", "key": "b1" },
-      { "name": "Винченцо 2", "key": "b2" } 
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Винченцо 1",
+        "key": "b1"
+      },
+      {
+        "name": "Винченцо 2",
+        "key": "b2"
+      }
     ]
   },
   "theme8": {
@@ -148,11 +272,26 @@
     "masterJsonPath": "videothemes/json/videotheme8.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Сезон 1-1", "key": "b1" },
-      { "name": "Сезон 1-1", "key": "b2" },
-      { "name": "Сезон 2-1", "key": "b3" },
-      { "name": "Сезон 2-4", "key": "b4" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Сезон 1-1",
+        "key": "b1"
+      },
+      {
+        "name": "Сезон 1-1",
+        "key": "b2"
+      },
+      {
+        "name": "Сезон 2-1",
+        "key": "b3"
+      },
+      {
+        "name": "Сезон 2-4",
+        "key": "b4"
+      }
     ]
   },
   "theme9": {
@@ -160,10 +299,22 @@
     "masterJsonPath": "videothemes/json/videotheme9.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Игра смерти 1", "key": "b1" },
-      { "name": "Игра смерти 2", "key": "b2" },
-      { "name": "Игра смерти 3", "key": "b3" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Игра смерти 1",
+        "key": "b1"
+      },
+      {
+        "name": "Игра смерти 2",
+        "key": "b2"
+      },
+      {
+        "name": "Игра смерти 3",
+        "key": "b3"
+      }
     ]
   },
   "theme10": {
@@ -171,9 +322,18 @@
     "masterJsonPath": "videothemes/json/videotheme10.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Словно гончие 1", "key": "b1" },
-      { "name": "Словно гончие 2", "key": "b2" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Словно гончие 1",
+        "key": "b1"
+      },
+      {
+        "name": "Словно гончие 2",
+        "key": "b2"
+      }
     ]
   },
   "theme11": {
@@ -181,10 +341,22 @@
     "masterJsonPath": "videothemes/json/videotheme11.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Слава 1", "key": "b1" },
-      { "name": "Слава 2", "key": "b2" },
-      { "name": "Слава 3", "key": "b3" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Слава 1",
+        "key": "b1"
+      },
+      {
+        "name": "Слава 2",
+        "key": "b2"
+      },
+      {
+        "name": "Слава 3",
+        "key": "b3"
+      }
     ]
   },
   "theme12": {
@@ -192,8 +364,14 @@
     "masterJsonPath": "videothemes/json/videotheme12.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Магазин для убииц 1", "key": "b1" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Магазин для убииц 1",
+        "key": "b1"
+      }
     ]
   },
   "theme13": {
@@ -201,10 +379,22 @@
     "masterJsonPath": "videothemes/json/videotheme13.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Сон Дже 1", "key": "b1" },
-      { "name": "Сон Дже 2", "key": "b2" },
-      { "name": "Сон Дже 3", "key": "b3" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Сон Дже 1",
+        "key": "b1"
+      },
+      {
+        "name": "Сон Дже 2",
+        "key": "b2"
+      },
+      {
+        "name": "Сон Дже 3",
+        "key": "b3"
+      }
     ]
   },
   "theme14": {
@@ -212,9 +402,18 @@
     "masterJsonPath": "videothemes/json/videotheme14.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Большая лига 1", "key": "b1" },
-      { "name": "Большая лига 2", "key": "b2" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Большая лига 1",
+        "key": "b1"
+      },
+      {
+        "name": "Большая лига 2",
+        "key": "b2"
+      }
     ]
   },
   "theme15": {
@@ -222,8 +421,14 @@
     "masterJsonPath": "videothemes/json/videotheme15.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Лукизм 1", "key": "b1" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Лукизм 1",
+        "key": "b1"
+      }
     ]
   },
   "theme16": {
@@ -231,8 +436,14 @@
     "masterJsonPath": "videothemes/json/videotheme16.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "1 Серия", "key": "b1" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "1 Серия",
+        "key": "b1"
+      }
     ]
   },
   "theme17": {
@@ -240,8 +451,14 @@
     "masterJsonPath": "videothemes/json/videotheme17.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "1 Серия", "key": "b1" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "1 Серия",
+        "key": "b1"
+      }
     ]
   },
   "theme18": {
@@ -249,10 +466,22 @@
     "masterJsonPath": "videothemes/json/videotheme18.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "1", "key": "b1" },
-      { "name": "2", "key": "b2" },
-      { "name": "3", "key": "b3" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "1",
+        "key": "b1"
+      },
+      {
+        "name": "2",
+        "key": "b2"
+      },
+      {
+        "name": "3",
+        "key": "b3"
+      }
     ]
   },
   "theme19": {
@@ -260,9 +489,18 @@
     "masterJsonPath": "videothemes/json/videotheme19.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "1 ", "key": "b1" },
-      { "name": "2 ", "key": "b2" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "1 ",
+        "key": "b1"
+      },
+      {
+        "name": "2 ",
+        "key": "b2"
+      }
     ]
   },
   "theme20": {
@@ -270,11 +508,26 @@
     "masterJsonPath": "videothemes/json/videotheme20.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "Цветок зла 1", "key": "b1" },
-      { "name": "Цветок зла 2", "key": "b2" },
-      { "name": "Цветок зла 3", "key": "b3" },
-      { "name": "Цветок зла 4", "key": "b4" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "Цветок зла 1",
+        "key": "b1"
+      },
+      {
+        "name": "Цветок зла 2",
+        "key": "b2"
+      },
+      {
+        "name": "Цветок зла 3",
+        "key": "b3"
+      },
+      {
+        "name": "Цветок зла 4",
+        "key": "b4"
+      }
     ]
   },
   "theme21": {
@@ -282,52 +535,100 @@
     "masterJsonPath": "videothemes/json/videotheme21.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "Демо", "key": "b0" },
-      { "name": "1", "key": "b1" },
-      { "name": "2", "key": "b2" },
-      { "name": "3", "key": "b3" }
+      {
+        "name": "Демо",
+        "key": "b0"
+      },
+      {
+        "name": "1",
+        "key": "b1"
+      },
+      {
+        "name": "2",
+        "key": "b2"
+      },
+      {
+        "name": "3",
+        "key": "b3"
+      }
     ]
   },
-    "theme22": {
+  "theme22": {
     "coverImage": "videothemes/subthemebc/jin.png",
     "masterJsonPath": "videothemes/json/videotheme22.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "1", "key": "b1" },
-      { "name": "2", "key": "b2" }
+      {
+        "name": "1",
+        "key": "b1"
+      },
+      {
+        "name": "2",
+        "key": "b2"
+      }
     ]
   },
-    "theme23": {
+  "theme23": {
     "coverImage": "videothemes/subthemebc/landking.png",
     "masterJsonPath": "videothemes/json/videotheme23.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "1", "key": "b1" },
-      { "name": "2", "key": "b2" }
+      {
+        "name": "1",
+        "key": "b1"
+      },
+      {
+        "name": "2",
+        "key": "b2"
+      }
     ]
   },
-    "theme24": {
+  "theme24": {
     "coverImage": "videothemes/subthemebc/lis.png",
     "masterJsonPath": "videothemes/json/videotheme24.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "1", "key": "b1" }
+      {
+        "name": "1",
+        "key": "b1"
+      }
     ]
   },
-    "theme25": {
+  "theme25": {
     "coverImage": "videothemes/subthemebc/marry.png",
     "masterJsonPath": "videothemes/json/videotheme25.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "1", "key": "b1" }
+      {
+        "name": "1",
+        "key": "b1"
+      }
     ]
   },
-    "theme26": {
+  "theme26": {
     "coverImage": "videothemes/subthemebc/tafun.png",
     "masterJsonPath": "videothemes/json/videotheme26.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
-      { "name": "1", "key": "b1" }
+      {
+        "name": "1",
+        "key": "b1"
+      }
+    ]
+  },
+  "theme27": {
+    "coverImage": "videothemes/subthemebc/rusure.png",
+    "masterJsonPath": "videothemes/json/videotheme27.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1"
+      },
+      {
+        "name": "2",
+        "key": "b2"
+      }
     ]
   }
 }

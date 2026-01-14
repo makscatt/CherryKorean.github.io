@@ -671,7 +671,66 @@
     </div>
     <script>
         const tg = window.Telegram.WebApp;
-        const starSound = new Audio('starsuccess.mp3');
+
+        const SoundFX = {
+            ctx: null,
+
+            init: function () {
+                if (!this.ctx) {
+                    this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (this.ctx.state === 'suspended') {
+                    this.ctx.resume();
+                }
+            },
+
+            playTone: function (freq, type, duration, delay = 0, vol = 0.1) {
+                this.init();
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, this.ctx.currentTime + delay);
+
+                gain.gain.setValueAtTime(vol, this.ctx.currentTime + delay);
+                gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + delay + duration);
+
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+
+                osc.start(this.ctx.currentTime + delay);
+                osc.stop(this.ctx.currentTime + delay + duration);
+            },
+
+            playSuccess: function () {
+                this.playTone(523.25, 'sine', 0.1, 0);
+                this.playTone(659.25, 'sine', 0.1, 0.1);
+                this.playTone(783.99, 'sine', 0.2, 0.2);
+                this.playTone(1046.50, 'triangle', 0.4, 0.3);
+            },
+
+            playCorrect: function () { // Можно использовать как альтернативу
+                this.playTone(600, 'sine', 0.1, 0, 0.1);
+                this.playTone(1200, 'triangle', 0.2, 0.05, 0.05);
+            },
+
+            playWinLevel: function () { // Звук победы уровня
+                this.playTone(392.00, 'triangle', 0.2, 0);     // G4
+                this.playTone(523.25, 'triangle', 0.2, 0.2);   // C5
+                this.playTone(659.25, 'triangle', 0.2, 0.4);   // E5
+                this.playTone(783.99, 'triangle', 0.4, 0.6);   // G5
+                this.playTone(1046.50, 'sine', 0.6, 0.8);      // C6
+            },
+
+            playFail: function () { // Звук поражения
+                this.playTone(150, 'sawtooth', 0.3, 0, 0.2);
+                this.playTone(100, 'sawtooth', 0.5, 0.2, 0.2);
+            },
+            playClick: function () {
+                this.playTone(800, 'sine', 0.05, 0, 0.05);
+            },
+        };
+
         // Сообщаем, что приложение готово
         tg.ready();
 
@@ -1040,6 +1099,9 @@
             localStorage.setItem('voiceRunProgress', JSON.stringify(progress));
         }
         function handleMiss() {
+            // Звук ошибки при пропуске слова
+            SoundFX.playFail();
+
             const obj = gameObjects[currentWordIndex];
             obj.passed = true;
             obj.el.classList.add('fail');
@@ -1259,6 +1321,9 @@
                 if (data.status === 'success' && data.similarity >= requiredScore) {
                     handleSuccess();
                 } else {
+                    // Звук ошибки при плохом произношении
+                    SoundFX.playFail();
+
                     const userHeard = data.user_text || "...";
                     const scoreVal = Math.round(data.similarity);
                     document.getElementById('status-text').innerText = `Мимо! (${scoreVal}%)`;
@@ -1281,15 +1346,14 @@
             // --- ЛОГИКА ПРЕМИУМА (+1 XP за слово) ---
             if (isPremium) {
                 // Премиум: Визуальная звезда летит + начисляем опыт
+                // Звук играет внутри spawnFlyingStar()
                 spawnFlyingStar();
                 totalServerStars++;
                 updateGlobalStarsUI();
                 saveGlobalStars();
             } else {
                 // Бесплатно: Только звук успеха, опыт НЕ начисляем
-                // (чтобы не путать игрока летящей звездой, которая не зачислится)
-                starSound.currentTime = 0;
-                starSound.play();
+                SoundFX.playSuccess();
             }
             // ----------------------------------------
 
@@ -1324,6 +1388,7 @@
                 setTimeout(() => gameOver(true), 1500);
             }
         }
+
         function gameOver(win) {
             stopGlobalTimer();
             isRunning = false;
@@ -1338,6 +1403,9 @@
             ui.style.display = 'flex';
 
             if (isEndless) {
+                // В бесконечном режиме проигрыш = конец игры
+                SoundFX.playFail();
+
                 const oldBest = parseInt(localStorage.getItem('voiceRunEndlessHighScore') || '0');
                 title.innerText = "РЕЗУЛЬТАТ";
                 title.style.color = "#FF9800";
@@ -1352,29 +1420,26 @@
                 }
             } else {
                 if (win) {
+                    SoundFX.playWinLevel(); // Звук победы
+
                     title.innerText = "ПОБЕДА! 🎉";
                     title.style.color = "#00c853";
 
                     const starsGrade = lives;
-
-                    // 1. Расчет базового бонуса
                     let levelBonus = 50;
 
                     if (starsGrade === 3) levelBonus = 20;
 
-                    // 2. Проверка истории для штрафа
                     const progress = JSON.parse(localStorage.getItem('voiceRunProgress')) || {};
                     const oldStars = progress[currentLevelData.id] || 0;
 
                     let penaltyText = "";
 
-                    // Если уровень уже был пройден (oldStars > 0) И результат не улучшен (starsGrade <= oldStars)
                     if (oldStars > 0 && starsGrade <= oldStars) {
                         levelBonus = Math.floor(levelBonus / 2);
                         penaltyText = " (Повтор)";
                     }
 
-                    // Начисление и сохранение
                     totalServerStars += levelBonus;
                     saveGlobalStars();
                     updateGlobalStarsUI();
@@ -1388,12 +1453,13 @@
                     msg.innerHTML = `Уровень пройден!<br><span style="color:#fbc02d; font-size:18px;">+${levelBonus} XP бонус${penaltyText}</span>`;
                     nextBtn.style.display = "block";
 
-                    // Сохраняем лучший результат в прогресс
                     if (starsGrade > oldStars) {
                         saveProgress(currentLevelData.id, starsGrade);
                     }
 
                 } else {
+                    SoundFX.playFail(); // Звук поражения
+
                     title.innerText = "НЕУДАЧА 💀";
                     title.style.color = "#d50000";
                     starDiv.innerText = "💔💔💔";
@@ -1613,12 +1679,11 @@
             }
         });
         function spawnFlyingStar() {
-            starSound.currentTime = 0;
-            starSound.play();
+            SoundFX.playSuccess();
 
             const star = document.createElement('div');
             star.className = 'flying-star';
-            star.innerText = '⚡️'; // Или '⭐', если хотите звезду
+            star.innerText = '⚡️';
 
             // 1. Старт: Центр экрана
             const startX = window.innerWidth / 2;
@@ -1631,7 +1696,6 @@
             document.body.appendChild(star);
 
             // 2. Цель: Новый счетчик опыта в HUD
-            // Ищем сначала внутриигровой счетчик, если нет - то глобальный (на всякий случай)
             let targetEl = document.getElementById('hud-stars');
             if (!targetEl || targetEl.offsetParent === null) {
                 targetEl = document.getElementById('global-stars-display');
@@ -1639,32 +1703,31 @@
 
             if (targetEl) {
                 const rect = targetEl.getBoundingClientRect();
-                // Вычисляем центр целевого элемента
                 const targetX = rect.left + rect.width / 2;
                 const targetY = rect.top + rect.height / 2;
 
                 // 3. Анимация
                 requestAnimationFrame(() => {
-                    // Этап А: Появление (Scale UP)
                     star.style.transform = 'translate(-50%, -50%) scale(1.5)';
 
-                    // Этап Б: Полет к цели через 100мс
                     setTimeout(() => {
                         star.style.left = targetX + 'px';
                         star.style.top = targetY + 'px';
                         star.style.transform = 'translate(-50%, -50%) scale(0.5)';
-                        star.style.opacity = '0'; // Исчезает при попадании
+                        star.style.opacity = '0';
                     }, 100);
                 });
 
                 // 4. Удаление из DOM
                 setTimeout(() => {
                     star.remove();
-                }, 900); // Должно быть чуть больше времени анимации в CSS (там 0.8s)
+                }, 900);
             } else {
                 star.remove();
             }
         }
+
+
         function goHome() {
             stopGlobalTimer();
             isRunning = false;
@@ -1701,6 +1764,24 @@
         <!-- 3. Домой (видна всегда) -->
         <button class="float-btn btn-home" onclick="goHome()"></button>
     </div>
+    <script>
+        document.addEventListener('click', function (e) {
+            // Ищем клик по кнопкам, ссылкам, карточкам уровней и другим интерактивным элементам
+            const target = e.target.closest('button, a, .level-card, .theme-button, .user-button, .float-btn, .anchor-btn, .random-level-button, [onclick]');
+
+            // Игнорируем заблокированные уровни
+            if (target && target.classList.contains('locked')) {
+                return;
+            }
+
+            if (target) {
+                // Проверяем, загружен ли звуковой движок
+                if (typeof SoundFX !== 'undefined' && SoundFX.playClick) {
+                    SoundFX.playClick();
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
