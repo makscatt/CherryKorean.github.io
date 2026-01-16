@@ -1326,7 +1326,7 @@
                 const showButton = document.getElementById("showKoreanButton");
                 const hiddenTextContent = document.getElementById("koreanTextContent");
 
-                if (currentMode === 'input') {
+                if (currentMode === 'input' || currentMode === 'audio') {
                     showButton.innerText = "Показать корейский текст";
                     hiddenTextContent.innerText = correctWord.korean;
                 } else {
@@ -1390,18 +1390,18 @@
             const showButton = document.getElementById("showKoreanButton");
             const hiddenTextContent = document.getElementById("koreanTextContent");
 
-            if (currentMode === 'input') {
-                showButton.innerText = "Показать корейский текст";
-                hiddenTextContent.innerText = correctWord.korean;
-            } else {
-                if (answerLanguage === 'ko') {
-                    showButton.innerText = "Показать русский текст";
-                    hiddenTextContent.innerText = correctWord.russian;
-                } else {
+            if (currentMode === 'input' || currentMode === 'audio') {
                     showButton.innerText = "Показать корейский текст";
                     hiddenTextContent.innerText = correctWord.korean;
+                } else {
+                    if (answerLanguage === 'ko') {
+                        showButton.innerText = "Показать русский текст";
+                        hiddenTextContent.innerText = correctWord.russian;
+                    } else {
+                        showButton.innerText = "Показать корейский текст";
+                        hiddenTextContent.innerText = correctWord.korean;
+                    }
                 }
-            }
 
             document.getElementById("koreanText").style.display = "none";
             showButton.style.display = "inline-block";
@@ -1986,10 +1986,45 @@
         }
 
         const video = document.getElementById("wordVideo");
+        const playBtn = document.getElementById("play-btn");
+        const repeatBtn = document.getElementById("repeat-btn");
         let repeatActive = false;
 
-        document.getElementById("play-btn").onclick = () => {
-            video.loop = false;
+        // 1. Когда видео начинает играть
+        video.addEventListener('play', () => {
+            // Если включен режим повтора, кнопку Play НЕ зажигаем
+            if (!repeatActive) {
+                playBtn.classList.add('active');
+            } else {
+                playBtn.classList.remove('active');
+            }
+        });
+
+        // 2. Когда видео ставится на паузу
+        video.addEventListener('pause', () => {
+            playBtn.classList.remove('active');
+        });
+
+        // 3. Когда видео заканчивается (если не loop)
+        video.addEventListener('ended', () => {
+            playBtn.classList.remove('active');
+        });
+
+        // 4. Логика кнопки Play
+        playBtn.onclick = () => {
+            // Если сейчас активен повтор -> отключаем повтор, переходим в обычный режим
+            if (repeatActive) {
+                repeatActive = false;
+                video.loop = false;
+                repeatBtn.classList.remove('active');
+                
+                // Переключаемся в режим Play
+                playBtn.classList.add('active');
+                if (video.paused) video.play();
+                return;
+            }
+
+            // Обычное переключение Play/Pause
             if (video.paused) {
                 video.play();
             } else {
@@ -1997,15 +2032,25 @@
             }
         };
 
-        document.getElementById("repeat-btn").onclick = () => {
+        // 5. Логика кнопки Repeat
+        repeatBtn.onclick = () => {
             if (!repeatActive) {
-                video.loop = true;
-                video.play();
+                // ВКЛЮЧАЕМ ПОВТОР
                 repeatActive = true;
+                video.loop = true;
+                
+                // Визуально: Повтор горит, Плэй тухнет
+                repeatBtn.classList.add('active');
+                playBtn.classList.remove('active');
+                
+                video.play();
             } else {
-                video.loop = false;
-                video.pause();
+                // ВЫКЛЮЧАЕМ ПОВТОР
                 repeatActive = false;
+                video.loop = false;
+                
+                repeatBtn.classList.remove('active');
+                video.pause();
             }
         };
 
