@@ -24,13 +24,15 @@
             height: 100vh;
             background-color: #000000;
             font-family: 'NetflixSans-Regular', Arial, sans-serif;
-            overflow: hidden; /* Важно, чтобы скролл был только внутри чата */
+            overflow: hidden;
+            /* Важно, чтобы скролл был только внутри чата */
         }
 
         #gameContainer {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Изменено с center на flex-start */
+            justify-content: flex-start;
+            /* Изменено с center на flex-start */
             align-items: center;
             text-align: center;
             position: relative;
@@ -56,13 +58,15 @@
         /* --- ШАПКА --- */
         #chat-header {
             width: 100%;
-            height: 60px; /* Фиксированная высота шапки */
-            flex-shrink: 0; /* Шапка не сжимается */
+            height: 60px;
+            /* Фиксированная высота шапки */
+            flex-shrink: 0;
+            /* Шапка не сжимается */
             background-color: rgba(255, 255, 255, 0.95);
             color: rgb(0, 0, 0);
             display: flex;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             z-index: 10;
         }
 
@@ -77,10 +81,13 @@
         /* --- ОБЛАСТЬ ЧАТА --- */
         #reviews-chat-area {
             width: 100%;
-            flex-grow: 1; /* Занимает всё оставшееся место */
-            overflow-y: auto; /* Скролл только здесь */
+            flex-grow: 1;
+            /* Занимает всё оставшееся место */
+            overflow-y: auto;
+            /* Скролл только здесь */
             padding: 15px;
-            padding-bottom: 120px; /* Отступ снизу, чтобы кнопки не перекрывали контент */
+            padding-bottom: 120px;
+            /* Отступ снизу, чтобы кнопки не перекрывали контент */
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -90,6 +97,7 @@
         #reviews-chat-area::-webkit-scrollbar {
             width: 5px;
         }
+
         #reviews-chat-area::-webkit-scrollbar-thumb {
             background-color: rgba(255, 255, 255, 0.3);
             border-radius: 5px;
@@ -108,7 +116,7 @@
             border-radius: 18px;
             padding: 10px 15px;
             text-align: left;
-            box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
         }
 
         .chat-nikname {
@@ -143,7 +151,8 @@
             right: 20px;
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Отступ между кнопками, если их будет несколько */
+            gap: 15px;
+            /* Отступ между кнопками, если их будет несколько */
             z-index: 2000;
         }
 
@@ -175,7 +184,7 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-        
+
         /* Кнопка Назад (на случай, если захотите добавить) */
         .btn-back {
             background-image: url('videothemes/icons/backarrow.png');
@@ -183,7 +192,6 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-
     </style>
 </head>
 
@@ -192,7 +200,7 @@
         <div id="chat-header">
             <p id="chat-header-text">Кимчи Хангуго Отзывы</p>
         </div>
-        
+
         <!-- БЛОК ДЛЯ ОТОБРАЖЕНИЯ ОТЗЫВОВ -->
         <div id="reviews-chat-area">
             <!-- Сюда будут загружаться отзывы -->
@@ -200,13 +208,49 @@
 
         <!-- НОВОЕ ПЛАВАЮЩЕЕ МЕНЮ (как в game_words) -->
         <div class="floating-controls">
-             <!-- Если нужна кнопка назад, раскомментируйте строку ниже -->
-             <!-- <button class="float-btn btn-back" onclick="goBack()"></button> -->
+            <!-- Если нужна кнопка назад, раскомментируйте строку ниже -->
+            <!-- <button class="float-btn btn-back" onclick="goBack()"></button> -->
             <button class="float-btn btn-home" onclick="goHome()"></button>
         </div>
     </div>
 
     <script>
+
+        const SoundFX = {
+            ctx: null,
+            init: function () {
+                if (!this.ctx) {
+                    this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (this.ctx.state === 'suspended') {
+                    this.ctx.resume();
+                }
+            },
+            playTone: function (freq, type, duration, delay = 0, vol = 0.1) {
+                this.init();
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, this.ctx.currentTime + delay);
+                gain.gain.setValueAtTime(vol, this.ctx.currentTime + delay);
+                gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + delay + duration);
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+                osc.start(this.ctx.currentTime + delay);
+                osc.stop(this.ctx.currentTime + delay + duration);
+            },
+            playClick: function () {
+                this.playTone(800, 'sine', 0.05, 0, 0.05);
+            }
+        };
+
+        // Глобальный слушатель кликов
+        document.addEventListener('click', function (e) {
+            const target = e.target.closest('button, .float-btn');
+            if (target) {
+                SoundFX.playClick();
+            }
+        });
         // ЛОГИКА ДЛЯ МЕНЮ
         const Game = { stars: 0 };
 
@@ -266,7 +310,7 @@
                 if (firstMessage) {
                     firstMessage.style.marginTop = 'auto';
                 }
-                
+
                 // Автоскролл вниз после загрузки
                 setTimeout(() => {
                     container.scrollTop = container.scrollHeight;

@@ -6,39 +6,70 @@
   <title>Оплата прошла</title>
   <!-- 1. Сначала подключаем аналитику, чтобы функция trackEvent стала доступна -->
   <script src="analytics.js"></script>
-  
+
   <script>
-    // 2. Логика отправки события
-    window.onload = function() {
-        // Пытаемся получить ID заказа из ссылки (если сервер передает ?order_id=...), иначе генерируем дату
-        const urlParams = new URLSearchParams(window.location.search);
-        const orderId = urlParams.get('order_id') || `txn_${Date.now()}`;
 
-        // === ГЛАВНАЯ ЧАСТЬ ДЛЯ МОНЕТИЗАЦИИ ===
-        if (window.trackEvent) {
-            window.trackEvent('purchase', {
-                transaction_id: orderId, // Уникальный ID чека
-                value: 99.00,            // Сумма (поменяй, если цена другая)
-                currency: 'RUB',         // Валюта
-                items: [{                // Что купили
-                    item_id: 'premium_sub',
-                    item_name: 'Premium Subscription',
-                    price: 99.00
-                }]
-            });
-            console.log("Purchase event sent");
+    const SoundFX = {
+      ctx: null,
+      init: function () {
+        if (!this.ctx) {
+          this.ctx = new (window.AudioContext || window.webkitAudioContext)();
         }
+        if (this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+      },
+      playTone: function (freq, type, duration, delay = 0, vol = 0.1) {
+        this.init();
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, this.ctx.currentTime + delay);
+        gain.gain.setValueAtTime(vol, this.ctx.currentTime + delay);
+        gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + delay + duration);
+        osc.connect(gain);
+        gain.connect(this.ctx.destination);
+        osc.start(this.ctx.currentTime + delay);
+        osc.stop(this.ctx.currentTime + delay + duration);
+      },
+      playSuccess: function () {
+        // Звук успешной транзакции (как касса)
+        this.playTone(523.25, 'sine', 0.1, 0);
+        this.playTone(1046.50, 'triangle', 0.4, 0.1);
+      }
+    };
+    // 2. Логика отправки события
+    window.onload = function () {
+      SoundFX.playSuccess();
+      // Пытаемся получить ID заказа из ссылки (если сервер передает ?order_id=...), иначе генерируем дату
+      const urlParams = new URLSearchParams(window.location.search);
+      const orderId = urlParams.get('order_id') || `txn_${Date.now()}`;
 
-        // 3. Редирект (твой старый код)
-        setTimeout(() => {
-          // Проверяем, есть ли объект Telegram WebApp
-          if (window.Telegram && window.Telegram.WebApp) {
-              window.Telegram.WebApp.openTelegramLink("https://t.me/Kimchi_HanguGo_bot");
-          } else {
-              // Фоллбек для обычного браузера
-              window.location.href = "https://t.me/Kimchi_HanguGo_bot";
-          }
-        }, 2000);
+      // === ГЛАВНАЯ ЧАСТЬ ДЛЯ МОНЕТИЗАЦИИ ===
+      if (window.trackEvent) {
+        window.trackEvent('purchase', {
+          transaction_id: orderId, // Уникальный ID чека
+          value: 99.00,            // Сумма (поменяй, если цена другая)
+          currency: 'RUB',         // Валюта
+          items: [{                // Что купили
+            item_id: 'premium_sub',
+            item_name: 'Premium Subscription',
+            price: 99.00
+          }]
+        });
+        console.log("Purchase event sent");
+      }
+
+      // 3. Редирект (твой старый код)
+      setTimeout(() => {
+        // Проверяем, есть ли объект Telegram WebApp
+        if (window.Telegram && window.Telegram.WebApp) {
+          window.Telegram.WebApp.openTelegramLink("https://t.me/Kimchi_HanguGo_bot");
+        } else {
+          // Фоллбек для обычного браузера
+          window.location.href = "https://t.me/Kimchi_HanguGo_bot";
+        }
+      }, 2000);
     };
   </script>
 </head>

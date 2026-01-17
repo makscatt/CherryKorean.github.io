@@ -327,10 +327,12 @@
 
         .level-card.locked {
             background: rgba(236, 239, 241, 0.8);
+            /* УДАЛИ ИЛИ ЗАКОММЕНТИРУЙ ЭТУ СТРОКУ */
             box-shadow: none;
             cursor: not-allowed;
             opacity: 0.7;
-            filter: grayscale(0.8);
+            filter: grayscale(1);
+            /* Увеличим до 1 (полностью серый) для надежности */
         }
 
         button {
@@ -868,6 +870,7 @@
                 grid.innerHTML = '';
 
                 let lastUnlockedCard = null;
+                const totalLevels = levels.length; // Общее количество уровней
 
                 levels.forEach((level, index) => {
                     let isLocked = level.isLocked;
@@ -885,6 +888,22 @@
 
                     const card = document.createElement('div');
                     card.className = `level-card ${isLocked ? 'locked' : ''}`;
+
+                    // --- ЛОГИКА ГРАДИЕНТА ---
+                    // 120 (зеленый) -> 0 (красный).
+                    // Чем больше индекс, тем ближе к 0.
+                    // Используем Math.max(1, ...), чтобы избежать деления на 0, если уровень всего 1.
+                    const step = index / Math.max(1, totalLevels - 1);
+                    const startHue = 130; // Начальный цвет (Зеленый)
+                    const endHue = 0;     // Конечный цвет (Красный)
+
+                    // Вычисляем текущий оттенок
+                    const hue = startHue - (step * (startHue - endHue));
+
+                    // Применяем пастельный градиент (высокая яркость 85-95%, чтобы текст читался)
+                    // Для заблокированных сработает CSS фильтр grayscale, поэтому цвет не помешает
+                    card.style.background = `linear-gradient(135deg, hsl(${hue}, 85%, 92%) 0%, hsl(${hue}, 90%, 82%) 100%)`;
+                    card.style.borderColor = `hsl(${hue}, 80%, 70%)`; // Рамка чуть темнее фона
 
                     card.innerHTML = `
                         <h3>${level.title}</h3>
@@ -910,7 +929,6 @@
                 alert("Ошибка: " + e.message);
             }
         }
-
         function startEndlessMode() {
             stopGameSystem();
             document.getElementById('btn-trans-toggle').style.display = 'flex';
