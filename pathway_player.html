@@ -1569,41 +1569,44 @@
         const repeatBtn = document.getElementById("repeat-btn");
         let repeatActive = false;
 
-        // 1. Когда видео начинает играть
+        // // 1. Управление подсветкой кнопок через события видео
         video.addEventListener('play', () => {
-            // Если включен режим повтора, кнопку Play НЕ зажигаем
-            if (!repeatActive) {
-                playBtn.classList.add('active');
-            } else {
+            if (repeatActive) {
+                // Если активен режим повтора — горит только Repeat
+                repeatBtn.classList.add('active');
                 playBtn.classList.remove('active');
+            } else {
+                // Если обычный режим — горит только Play
+                playBtn.classList.add('active');
+                repeatBtn.classList.remove('active');
             }
         });
 
-        // 2. Когда видео ставится на паузу
         video.addEventListener('pause', () => {
+            // При паузе гасим всё
             playBtn.classList.remove('active');
+            repeatBtn.classList.remove('active');
         });
 
-        // 3. Когда видео заканчивается (если не loop)
         video.addEventListener('ended', () => {
+            // При окончании гасим всё
             playBtn.classList.remove('active');
+            repeatBtn.classList.remove('active');
         });
 
-        // 4. Логика кнопки Play
+        // 2. Кнопка Play (Запуск 1 раз)
         playBtn.onclick = () => {
-            // Если сейчас активен повтор -> отключаем повтор, переходим в обычный режим
+            // Если был включен повтор, выключаем его
             if (repeatActive) {
                 repeatActive = false;
                 video.loop = false;
-                repeatBtn.classList.remove('active');
-
-                // Переключаемся в режим Play
-                playBtn.classList.add('active');
-                if (video.paused) video.play();
-                return;
+                // Обновляем интерфейс вручную, если видео уже играет
+                if (!video.paused) {
+                    playBtn.classList.add('active');
+                    repeatBtn.classList.remove('active');
+                }
             }
 
-            // Обычное переключение Play/Pause
             if (video.paused) {
                 video.play();
             } else {
@@ -1611,25 +1614,24 @@
             }
         };
 
-        // 5. Логика кнопки Repeat
+        // 3. Кнопка Repeat (Запуск с повтором)
         repeatBtn.onclick = () => {
             if (!repeatActive) {
-                // ВКЛЮЧАЕМ ПОВТОР
+                // ВКЛЮЧАЕМ режим повтора и запускаем
                 repeatActive = true;
                 video.loop = true;
-
-                // Визуально: Повтор горит, Плэй тухнет
-                repeatBtn.classList.add('active');
-                playBtn.classList.remove('active');
-
                 video.play();
+                
+                // Обновляем интерфейс вручную, если видео уже играло в обычном режиме
+                if (!video.paused) {
+                    repeatBtn.classList.add('active');
+                    playBtn.classList.remove('active');
+                }
             } else {
-                // ВЫКЛЮЧАЕМ ПОВТОР
+                // Если повтор уже работал — ставим на паузу (как выключатель)
+                video.pause();
                 repeatActive = false;
                 video.loop = false;
-
-                repeatBtn.classList.remove('active');
-                video.pause();
             }
         };
 

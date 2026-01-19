@@ -338,22 +338,43 @@
     }
 
     #update-popup {
+      position: fixed;
+      /* Было absolute, меняем на fixed чтобы не уезжал при скролле */
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 110%;
+      height: 100%;
+      /* Было 110%, ставим 100% */
       display: none;
-      position: absolute;
       z-index: 99999;
       background: rgba(0, 0, 0, 0.85);
       justify-content: center;
       align-items: center;
+      padding: 20px;
+      /* Добавляем отступы */
+      box-sizing: border-box;
       overflow: hidden;
     }
 
-    @media (hover: hover) and (pointer: fine) {
-      #update-popup {
-        max-width: 700px;
-        transform: scale(0.9);
-        transform-origin: center;
+    @media (min-width: 600px) {
+      .update-content {
+        max-width: 400px;
+        /* Ограничиваем ширину (как телефон) */
+        width: 100%;
+        margin: 0 auto;
+        max-height: 90vh;
+        /* Не больше 90% высоты экрана */
+        overflow-y: auto;
+        /* Добавляем скролл внутри окна, если контент длинный */
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Чтобы картинка не была слишком огромной на пк */
+      #update-popup img,
+      #rank-popup img {
+        max-height: 300px;
+        object-fit: contain;
       }
     }
 
@@ -1022,7 +1043,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 27; i >= 2; i--) {
+          for (let i = 28; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -1704,7 +1725,7 @@
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 1; i <= 27; i++) {
+      for (let i = 1; i <= 28; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1737,10 +1758,10 @@
     document.addEventListener('DOMContentLoaded', () => {
 
       const updateConfig = {
-        version: '1301',
-        title: 'Обновление от 14.11',
+        version: '1801',
+        title: 'Обновление от 19.01',
         image: 'videothemes/update_banner.png',
-        text: `Новое шоу\n\n⚡️Ты уверен?\nШоу с участием Чонгука и Чимина из BTS`
+        text: `Новое шоу\n\n⚡️Всеведущий чиатель\nВ главных ролях:\nЛи Мин Хо, Чэ Су Бин, Ан Хё Соп`
       };
 
       const updatePopup = document.getElementById('update-popup');
@@ -1825,18 +1846,18 @@
     </div>
   </div>
   <script>
-    document.addEventListener('click', function(e) {
-        // Ищем клик по кнопкам, ссылкам или элементам с твоими классами
-        const target = e.target.closest('button, a, .theme-button, .user-button, .float-btn, .anchor-btn, .random-level-button, [onclick]');
-        
-        if (target) {
-            // Проверяем, загружен ли звуковой движок
-            if (typeof SoundFX !== 'undefined' && SoundFX.playClick) {
-                SoundFX.playClick();
-            }
+    document.addEventListener('click', function (e) {
+      // Ищем клик по кнопкам, ссылкам или элементам с твоими классами
+      const target = e.target.closest('button, a, .theme-button, .user-button, .float-btn, .anchor-btn, .random-level-button, [onclick]');
+
+      if (target) {
+        // Проверяем, загружен ли звуковой движок
+        if (typeof SoundFX !== 'undefined' && SoundFX.playClick) {
+          SoundFX.playClick();
         }
+      }
     });
-</script>
+  </script>
 </body>
 
 </html>

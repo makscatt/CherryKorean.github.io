@@ -630,5 +630,16 @@
         "key": "b2"
       }
     ]
+  },
+  "theme28": {
+    "coverImage": "videothemes/subthemebc/reader.png",
+    "masterJsonPath": "videothemes/json/videotheme28.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1"
+      }
+    ]
   }
 }
