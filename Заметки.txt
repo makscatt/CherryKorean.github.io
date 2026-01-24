@@ -6,6 +6,7 @@ localStorage.setItem('stars', '100');
 localStorage.setItem('bankinstruction', 'false');
 window.Telegram={WebApp:{initDataUnsafe:{user:{id:910912532}}}};
 const telegramId = initData?.user?.id || "test_user_123";
+findWord("")
 
 console.log('текст');
 

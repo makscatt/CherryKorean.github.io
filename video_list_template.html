@@ -1401,7 +1401,7 @@
             document.getElementById("stars").innerText = `⚡️ ${Game.stars}`;
         }
 
-        async function loadWordsAndSetOptions() {
+        async function loadWordsAndSetOptions(forceIndex = null) {
             try {
                 if (easywords.length === 0) {
 
@@ -1441,7 +1441,10 @@
                 }
 
                 let correctWord;
-                if (preloadedWord) {
+                if (forceIndex !== null && easywords[forceIndex]) {
+                    correctWord = easywords[forceIndex];
+                    preloadedWord = null;
+                } else if (preloadedWord) {
                     correctWord = preloadedWord;
                     preloadedWord = null;
                 } else {
@@ -1522,6 +1525,26 @@
             }
         }
 
+        function findWord(searchTerm) {
+            if (!easywords || easywords.length === 0) {
+                console.log("Словарь 'easywords' еще не загружен. Попробуйте позже.");
+                return;
+            }
+
+            const searchTermLower = searchTerm.toLowerCase();
+            const foundIndex = easywords.findIndex(word =>
+                word.korean.toLowerCase().includes(searchTermLower) ||
+                word.russian.toLowerCase().includes(searchTermLower)
+            );
+
+            if (foundIndex !== -1) {
+                console.log(`Найдено слово: "${easywords[foundIndex].korean} / ${easywords[foundIndex].russian}" с индексом ${foundIndex}. Загружаю...`);
+                loadWordsAndSetOptions(foundIndex);
+            } else {
+                console.log(`Слово, содержащее "${searchTerm}", не найдено.`);
+            }
+        }
+
         function regenerateOptionsForCurrentWord() {
             // Если слово еще не загружено, выполняем полную загрузку
             if (currentWordIndex === null || !easywords[currentWordIndex]) {
@@ -1553,17 +1576,17 @@
             const hiddenTextContent = document.getElementById("koreanTextContent");
 
             if (currentMode === 'input' || currentMode === 'audio') {
+                showButton.innerText = "Показать корейский текст";
+                hiddenTextContent.innerText = correctWord.korean;
+            } else {
+                if (answerLanguage === 'ko') {
+                    showButton.innerText = "Показать русский текст";
+                    hiddenTextContent.innerText = correctWord.russian;
+                } else {
                     showButton.innerText = "Показать корейский текст";
                     hiddenTextContent.innerText = correctWord.korean;
-                } else {
-                    if (answerLanguage === 'ko') {
-                        showButton.innerText = "Показать русский текст";
-                        hiddenTextContent.innerText = correctWord.russian;
-                    } else {
-                        showButton.innerText = "Показать корейский текст";
-                        hiddenTextContent.innerText = correctWord.korean;
-                    }
                 }
+            }
 
             document.getElementById("koreanText").style.display = "none";
             showButton.style.display = "inline-block";
@@ -1892,7 +1915,7 @@
             document.body.appendChild(preload);
         }
 
-        function analyzeKoreanText(forceUpdate = false) {
+        function analyzeKoreanText(forceUpdate = false, customPrompt = null) {
             // Проверяем, что слово существует
             if (currentWordIndex === null || !easywords[currentWordIndex]) {
                 return;
@@ -1917,15 +1940,23 @@
     `;
             popup.style.display = "block";
 
-            // 2. ОТПРАВЛЯЕМ ЗАПРОС
+            // 2. ФОРМИРУЕМ ТЕЛО ЗАПРОСА
+            const requestBody = {
+                text: text,
+                force: forceUpdate,
+                secret: "my_super_secret_password_123"
+            };
+
+            if (customPrompt) {
+                requestBody.prompt = customPrompt;
+            }
+
+
+            // 3. ОТПРАВЛЯЕМ ЗАПРОС
             fetch("https://koreanhelper-api.onrender.com/analyze", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    text: text,
-                    force: forceUpdate,
-                    secret: "my_super_secret_password_123"
-                })
+                body: JSON.stringify(requestBody)
             })
                 .then(res => res.json())
                 .then(data => {
@@ -1934,14 +1965,12 @@
                     const breakdown = data.tokens.map(t => `<span style="color:${t.color}">${t.word}</span>`).join('_');
                     const breakdownBlock = `<div style="text-align:center; font-size:18px; margin:8px 0;">${breakdown}</div>`;
 
-                    // --- ИЗМЕНЕНИЕ ЗДЕСЬ: Новая строка для каждого слова ---
                     const tokenBlock = `<div style="margin-bottom:15px; font-size: 14px; color: #555; text-align: left;">
              <strong>Дословный разбор:</strong><div style="margin-top: 5px;">` +
                         data.tokens.map(t =>
                             `<div>• <span style="color:${t.color}; font-weight:bold;">${t.word}</span> — ${t.pos}</div>`
                         ).join('') +
                         `</div></div>`;
-                    // -----------------------------------------------------
 
                     const grammarBlocks = data.grammar_matches.map(g => {
                         const showMeaning = typeof g.meaning === 'string' && g.meaning !== '';
@@ -1957,7 +1986,6 @@
 
                     popupContent.innerHTML = headerFixed + tokenBlock + grammarBlock;
 
-                    // --- ЛОГИКА АДМИНА ---
                     const myTelegramId = 910912532;
                     const userTelegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
 
@@ -1973,7 +2001,10 @@
                             refreshBtn.style.fontWeight = "bold";
 
                             refreshBtn.onclick = function () {
-                                analyzeKoreanText(true);
+                                const userPrompt = prompt("Введите дополнительный контекст или исправление для анализа:", "");
+                                if (userPrompt !== null) { // Если пользователь не нажал "Отмена"
+                                    analyzeKoreanText(true, userPrompt);
+                                }
                             };
                             footer.insertBefore(refreshBtn, footer.lastElementChild);
                         }
@@ -2067,7 +2098,7 @@
                 repeatActive = true;
                 video.loop = true;
                 video.play();
-                
+
                 // Обновляем интерфейс вручную, если видео уже играло в обычном режиме
                 if (!video.paused) {
                     repeatBtn.classList.add('active');
@@ -2329,6 +2360,70 @@
                 audioResult.innerText = "Ошибка сети";
             }
         }
+
+        function sendTextReport() {
+            const btn = document.getElementById('report-btn');
+            const originalText = btn.innerText;
+            
+            // Берем основные данные о слове
+            const word = easywords && easywords[currentWordIndex] ? easywords[currentWordIndex] : { korean: "Ошибка", video: "Нет" };
+            
+            // Данные пользователя
+            const user = window.Telegram?.WebApp?.initDataUnsafe?.user;
+            const userInfo = user ? `@${user.username} (ID: ${user.id})` : "Web/Unknown";
+            
+            // --- ГЛАВНОЕ ИЗМЕНЕНИЕ ---
+            // Мы берем весь текст прямо из попапа. 
+            // innerText берет только видимый текст, игнорируя HTML теги, но сохраняя переносы строк.
+            const popupContent = document.getElementById('popupContent');
+            let aiText = "Окно анализа было пустым";
+            if (popupContent) {
+                aiText = popupContent.innerText; 
+                // Убираем лишние пустые строки для красоты, если их много
+                aiText = aiText.replace(/\n\s*\n/g, '\n'); 
+            }
+            // --------------------------
+
+            const reportData = {
+                user_info: userInfo,
+                block: localStorage.getItem('selectedBlockKey') || "Неизвестный блок",
+                korean: word.korean,
+                video_id: word.video,
+                ai_context: aiText // Отправляем то, что видит юзер
+            };
+
+            btn.innerText = "Отправка...";
+            btn.disabled = true;
+
+            fetch('https://koreanhelper-api.onrender.com/report-issue', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(reportData)
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    btn.innerText = "✅ Отправлено";
+                    btn.style.backgroundColor = "#4CAF50";
+                } else {
+                    btn.innerText = "❌ Ошибка";
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                btn.innerText = "❌ Ошибка сети";
+            })
+            .finally(() => {
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = "#ff9800";
+                    btn.disabled = false;
+                    closePopup();
+                }, 1500);
+            });
+        }
     </script>
     <div id="popup" style="display: none;">
         <div id="popup-overlay"></div>
@@ -2337,8 +2432,8 @@
             <div style="display: flex; justify-content: space-between; margin-top: 10px;">
                 <div id="popupFooter" style="display: flex; justify-content: space-between; margin-top: 10px;"></div>
                 <button onclick="closePopup()">Закрыть</button>
-                <button style="opacity: 0.7;" onclick="window.open('https://t.me/KoreanMakscatt', '_blank')">Сообщить об
-                    ошибке</button>
+                <button id="report-btn" style="opacity: 0.7; background-color: #ff9800; color: rgb(0, 0, 0); border: none;"
+                    onclick="sendTextReport()">🚩 Сообщить об ошибке</button>
             </div>
         </div>
     </div>
