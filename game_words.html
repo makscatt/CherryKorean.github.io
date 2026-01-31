@@ -783,8 +783,8 @@
         let source;
 
         // Настройки VAD (Детектора голоса)
-        const VOICE_THRESHOLD = 10;  // Порог громкости (0-255), если тихо - увеличь, если шумно - уменьши
-        const SILENCE_DELAY = 1500;   // Сколько мс тишины ждать перед отправкой
+        const VOICE_THRESHOLD = 20;  // Порог громкости (0-255), если тихо - увеличь, если шумно - уменьши
+        const SILENCE_DELAY = 1000;   // Сколько мс тишины ждать перед отправкой
 
         let isSpeaking = false;      // Говорит ли сейчас игрок
         let silenceStart = null;     // Время начала тишины
@@ -801,10 +801,11 @@
         };
 
         function setupRecorder(stream) {
-            globalStream = stream;
+            globalStream = stream; // Сохраняем доступ к микрофону
 
-            // Убрали жесткие кодеки, оставили дефолт браузера (как в video_list)
-            mediaRecorder = new MediaRecorder(stream); 
+            const options = { mimeType: 'audio/webm;codecs=opus', audioBitsPerSecond: 128000 };
+            const mimeType = MediaRecorder.isTypeSupported(options.mimeType) ? options.mimeType : '';
+            mediaRecorder = new MediaRecorder(stream, mimeType ? options : undefined);
 
             mediaRecorder.ondataavailable = e => {
                 if (e.data.size > 0) audioChunks.push(e.data);
@@ -814,17 +815,18 @@
                 const blob = new Blob(audioChunks, { type: 'audio/webm' });
                 audioChunks = [];
 
-                // Отправляем, только если файл не пустой и игра идет
+                // ВАЖНОЕ ИЗМЕНЕНИЕ:
+                // Если мы нажали "Назад" (isRunning == false), мы НЕ отправляем аудио на проверку
                 if (isRunning && blob.size > 0) {
                     checkVoice(blob);
                 }
             };
 
-            // Настройка анализатора (остается стандартной)
+            // Настройка анализатора (оставляем как было)
             audioContext = new (window.AudioContext || window.webkitAudioContext)();
             analyser = audioContext.createAnalyser();
-            analyser.fftSize = 512; 
-            analyser.smoothingTimeConstant = 0.3; // Плавность анализа
+            analyser.fftSize = 512;
+            analyser.smoothingTimeConstant = 0.3;
             source = audioContext.createMediaStreamSource(stream);
             source.connect(analyser);
             dataArray = new Uint8Array(analyser.frequencyBinCount);
@@ -1245,7 +1247,6 @@
 
         function detectVoiceActivity() {
             if (!isRunning) return;
-            if (isProcessing) return; 
 
             // Считываем громкость
             analyser.getByteFrequencyData(dataArray);
@@ -1302,8 +1303,7 @@
             document.getElementById('mic-indicator').classList.remove('active');
 
             const formData = new FormData();
-            // ВАЖНО: Добавляем имя файла 'voice.webm', чтобы сервер точно понял формат
-            formData.append('user_audio', blob, 'voice.webm'); 
+            formData.append('user_audio', blob);
             formData.append('reference_text', target);
 
             try {
@@ -1327,21 +1327,19 @@
                     currentLvlNum = currentLevelData.id;
                 }
 
-                // Смягчаем требования к точности, как в видео-плеере
                 let requiredScore = 60;
                 if (target.length === 1) {
-                    requiredScore = 80; // Было 85
+                    requiredScore = 85;
                 } else if (target.length === 2) {
-                    requiredScore = currentLvlNum <= 10 ? 70 : 75; // Было 75/82
+                    requiredScore = currentLvlNum <= 10 ? 75 : 82;
                 } else {
-                    requiredScore = currentLvlNum <= 10 ? 55 : 70; // Было 60/75
+                    requiredScore = currentLvlNum <= 10 ? 60 : 75;
                 }
 
-                // Если сервер вернул хороший результат
                 if (data.status === 'success' && data.similarity >= requiredScore) {
                     handleSuccess();
                 } else {
-                    // Если результат слабый
+                    // Звук ошибки при плохом произношении
                     SoundFX.playFail();
 
                     const userHeard = data.user_text || "...";
