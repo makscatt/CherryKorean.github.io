@@ -8,6 +8,7 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="analytics.js"></script>
     <style>
+        /* ОСНОВНЫЕ НАСТРОЙКИ СТРАНИЦЫ */
         body {
             margin: 0;
             padding: 0;
@@ -17,8 +18,12 @@
             height: 100vh;
             user-select: none;
             color: #546e7a;
+            /* Учет безопасных зон для всего тела документа */
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
         }
 
+        /* UI СЛОЙ (ХУД) */
         #ui-layer {
             position: absolute;
             top: 0;
@@ -32,6 +37,83 @@
             justify-content: space-between;
         }
 
+        /* ПАНЕЛЬ ВЕРХНЕГО ИНТЕРФЕЙСА (HUD) */
+        .hud-panel {
+            /* Опускаем панель ниже выреза/острова */
+            padding-top: calc(env(safe-area-inset-top) + 10px);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between; /* Распределяем элементы по ширине */
+            align-items: center;
+            gap: 6px; /* Небольшое расстояние между элементами */
+            flex-wrap: nowrap; /* Запрещаем перенос на новую строку */
+        }
+
+        /* СЧЕТ */
+        #score-display {
+            font-size: 16px;
+            font-weight: 800;
+            color: #5d4037;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6px 12px;
+            border: 1px solid #ffe082;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(100, 181, 246, 0.3);
+            white-space: nowrap;
+        }
+
+        /* ТАЙМЕР В ИГРЕ */
+        #timer-hud {
+            /* Убрали position:static, теперь это flex-элемент */
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            display: none; /* Скрыт по умолчанию */
+            z-index: 400;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            white-space: nowrap;
+        }
+
+        /* ЖИЗНИ */
+        #lives-display {
+            font-size: 20px;
+            color: #ff7043;
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.4);
+            padding: 4px 10px;
+            border-radius: 15px;
+            backdrop-filter: blur(4px);
+            white-space: nowrap;
+            letter-spacing: -2px; /* Чуть сближаем сердечки */
+        }
+
+        /* ЗВЕЗДЫ В ИГРЕ */
+        #hud-stars {
+            /* Сделали частью flex-потока, убрали fixed */
+            position: static;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fbc02d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            z-index: 400;
+            white-space: nowrap;
+        }
+
+        /* ЛИНИЯ ПОРАЖЕНИЯ (ЗА СПИНОЙ) */
         #fail-line {
             position: absolute;
             left: 50%;
@@ -45,36 +127,7 @@
             box-shadow: 0 0 10px #ff8a80;
         }
 
-        .hud-panel {
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-
-        #score-display {
-            font-size: 22px;
-            font-weight: 800;
-            color: #5d4037;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 12px 25px;
-            border: 1px solid #ffe082;
-            border-radius: 25px;
-            box-shadow: 0 8px 20px rgba(100, 181, 246, 0.3);
-        }
-
-        #lives-display {
-            font-size: 32px;
-            color: #ff7043;
-            text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.8);
-            background: rgba(255, 255, 255, 0.4);
-            padding: 5px 20px;
-            border-radius: 20px;
-            backdrop-filter: blur(4px);
-        }
-
+        /* 3D СЦЕНА */
         #scene {
             position: absolute;
             top: 0;
@@ -114,6 +167,7 @@
             box-shadow: inset 0 0 150px rgba(46, 125, 50, 0.2);
         }
 
+        /* ИГРОВЫЕ ВОРОТА (СЛОВА) */
         .word-gate {
             position: absolute;
             left: 50%;
@@ -183,27 +237,29 @@
             letter-spacing: 1px;
         }
 
+        /* СТАТУС МИКРОФОНА (ВНИЗУ) */
         #mic-status {
             position: absolute;
-            bottom: 60px;
+            bottom: calc(60px + env(safe-area-inset-bottom)); /* Учет отступа снизу */
             left: 50%;
             transform: translateX(-50%);
             background: rgba(255, 255, 255, 0.95);
-            padding: 15px 40px;
+            padding: 12px 30px; /* Чуть уменьшили */
             border: 3px solid #b3e5fc;
             border-radius: 50px;
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             box-shadow: 0 10px 25px rgba(33, 150, 243, 0.15);
             font-weight: bold;
             color: #0277bd;
-            font-size: 18px;
+            font-size: 16px;
+            white-space: nowrap;
         }
 
         .mic-dot {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             background: #cfd8dc;
             border-radius: 50%;
             border: 3px solid #eceff1;
@@ -218,20 +274,9 @@
         }
 
         @keyframes pulse {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-
-            50% {
-                transform: scale(1.2);
-                opacity: 0.8;
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
         }
 
         #game-objects {
@@ -245,6 +290,7 @@
             z-index: 10;
         }
 
+        /* МЕНЮ УРОВНЕЙ */
         #level-menu {
             position: absolute;
             top: 0;
@@ -256,9 +302,28 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 40px;
+            /* Важно: отступ сверху от челки */
+            padding-top: calc(env(safe-area-inset-top) + 20px);
             overflow: hidden;
-            /* Убрали overflow-y: auto отсюда */
+        }
+
+        /* ЗВЕЗДЫ В МЕНЮ (СПРАВА СВЕРХУ) */
+        #global-stars-display {
+            position: fixed;
+            /* Опускаем ниже челки */
+            top: calc(env(safe-area-inset-top) + 15px);
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fbc02d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            z-index: 1000;
         }
 
         #levels-grid {
@@ -268,11 +333,8 @@
             width: 90%;
             max-width: 700px;
             overflow-y: auto;
-            /* Добавили прокрутку сюда */
             flex: 1;
-            /* Растягиваем на оставшуюся высоту */
-            padding-bottom: 150px;
-            /* Отступ снизу для кнопок */
+            padding-bottom: calc(150px + env(safe-area-inset-bottom));
             align-content: start;
             padding-top: 10px;
         }
@@ -280,23 +342,23 @@
         #level-menu h1 {
             white-space: nowrap;
             color: #fff;
-            font-size: 36px;
+            font-size: 28px; /* Уменьшили для безопасности */
             margin-bottom: 10px;
             text-shadow: 0 4px 10px rgba(66, 165, 245, 0.4);
             text-transform: uppercase;
             background: rgba(255, 255, 255, 0.3);
-            padding: 10px 30px;
+            padding: 8px 25px;
             border-radius: 50px;
             border: 2px solid rgba(255, 255, 255, 0.6);
-            margin-top: 60px;
+            margin-top: 60px; /* Отступ от верха, чтобы не наезжать на звезды */
         }
 
-
+        /* КАРТОЧКА УРОВНЯ */
         .level-card {
             background: rgba(255, 255, 255, 0.9);
             border: 2px solid #fff;
             border-radius: 20px;
-            padding: 25px;
+            padding: 20px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -313,26 +375,23 @@
         .level-card h3 {
             margin: 0 0 10px 0;
             color: #039be5;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 800;
             letter-spacing: 0.5px;
         }
 
         .level-card p {
             color: #78909c;
-            font-size: 14px;
+            font-size: 13px;
             margin: 0;
             font-weight: 600;
         }
 
         .level-card.locked {
-            background: rgba(236, 239, 241, 0.8);
-            /* УДАЛИ ИЛИ ЗАКОММЕНТИРУЙ ЭТУ СТРОКУ */
             box-shadow: none;
             cursor: not-allowed;
             opacity: 0.7;
             filter: grayscale(1);
-            /* Увеличим до 1 (полностью серый) для надежности */
         }
 
         button {
@@ -361,6 +420,7 @@
             box-shadow: 0 5px 10px rgba(76, 175, 80, 0.3);
         }
 
+        /* ЭКРАН РЕЗУЛЬТАТА */
         #result-screen {
             display: none;
             position: absolute;
@@ -378,17 +438,17 @@
 
         .result-card {
             background: #fff;
-            padding: 40px;
+            padding: 30px;
             border-radius: 30px;
             text-align: center;
             box-shadow: 0 25px 50px rgba(129, 212, 250, 0.5);
             width: 85%;
-            max-width: 380px;
+            max-width: 350px;
             border: 4px solid #e1f5fe;
         }
 
         #result-title {
-            font-size: 36px;
+            font-size: 30px;
             margin: 0;
             color: #0288d1;
             text-transform: uppercase;
@@ -396,97 +456,32 @@
         }
 
         #result-stars {
-            font-size: 48px;
-            margin: 20px 0;
+            font-size: 40px;
+            margin: 15px 0;
             filter: drop-shadow(0 4px 6px rgba(255, 213, 79, 0.5));
         }
 
         .result-buttons {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin-top: 25px;
+            gap: 12px;
+            margin-top: 20px;
         }
 
         .result-buttons button {
             margin-top: 0;
             width: 100%;
-            padding: 14px;
-            font-size: 17px;
+            padding: 12px;
+            font-size: 16px;
             border-radius: 25px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .btn-secondary {
-            background: #b0bec5;
-            color: #fff;
-        }
+        .btn-secondary { background: #b0bec5; color: #fff; }
+        .btn-retry { background: #ffca28; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+        .btn-primary { background: #42a5f5; }
 
-        .btn-retry {
-            background: #ffca28;
-            color: #fff;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-primary {
-            background: #42a5f5;
-        }
-
-        #global-stars-display {
-            position: fixed;
-            /* Изменено с absolute на fixed */
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #fbc02d;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            z-index: 1000;
-            /* Увеличили z-index */
-        }
-
-        #hud-stars {
-
-            /* Изменено с absolute на fixed */
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #fbc02d;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            z-index: 1000;
-            /* Увеличили z-index */
-        }
-
-        #timer-hud {
-
-            position: static;
-            top: 20px;
-            left: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 18px;
-            font-weight: bold;
-            display: none;
-            /* Скрыт по умолчанию (для премиума) */
-            z-index: 400;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
+        /* ПРЕМИУМ МОДАЛКА */
         #premium-block-modal {
             display: none;
             position: fixed;
@@ -501,6 +496,7 @@
             align-items: center;
             text-align: center;
             color: white;
+            padding-bottom: env(safe-area-inset-bottom);
         }
 
         .premium-card {
@@ -528,6 +524,7 @@
             box-shadow: 0 4px 15px rgba(255, 160, 0, 0.4);
         }
 
+        /* ЛЕТЯЩАЯ ЗВЕЗДА */
         .flying-star {
             position: fixed;
             z-index: 10000;
@@ -538,20 +535,20 @@
             will-change: transform, left, top;
         }
 
+        /* КНОПКИ УПРАВЛЕНИЯ СПРАВА */
         .floating-controls {
             position: fixed;
-            bottom: 50px;
+            bottom: calc(50px + env(safe-area-inset-bottom));
             right: 20px;
             display: flex;
             flex-direction: column;
-
+            gap: 15px; /* Добавил отступ между кнопками */
             z-index: 2000;
         }
 
-        /* Общий стиль для круглых кнопок */
         .float-btn {
-            width: 60px;
-            height: 60px;
+            width: 50px; /* Чуть меньше */
+            height: 50px;
             border-radius: 50%;
             border: none;
             cursor: pointer;
@@ -562,8 +559,6 @@
             transition: transform 0.1s;
             padding: 0;
             outline: none;
-
-            /* ВАЖНО: Сбрасываем зеленый градиент и ставим белый фон */
             background: #ffffff;
             color: #333;
         }
@@ -572,42 +567,34 @@
             transform: scale(0.95);
         }
 
-        /* 1. Кнопка Транскрипции */
         .btn-trans {
-            /* display: none задается в JS или по умолчанию */
             display: none;
             font-weight: 900;
-            font-size: 16px;
+            font-size: 14px;
             font-family: sans-serif;
             color: #000;
         }
 
-        /* Зачеркивание, если выключено */
         body.no-transcription .btn-trans {
             text-decoration: line-through;
             color: #777;
         }
 
-        /* 2. Кнопка Назад (в игре) */
         .btn-back {
             background-image: url('videothemes/icons/backarrow.png');
-            background-size: 70%;
+            background-size: 60%;
             background-repeat: no-repeat;
             background-position: center;
             display: none;
-            /* Скрыта в меню */
         }
 
-        /* 3. Кнопка Домой (выход из приложения) */
         .btn-home {
             background-image: url('videothemes/icons/home.png');
-            background-size: 70%;
+            background-size: 60%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
-
-        /* Скрываем саму транскрипцию на карточках */
         body.no-transcription .gate-text-trans {
             display: none;
         }
