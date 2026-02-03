@@ -778,6 +778,7 @@
           <!-- 2. Вкладка Дорамы -->
           <button class="theme-tab active" data-target="pathwayGrid,newThemesGrid,themeGrid,randomGrid"
             data-title="Дорамы">Дорамы</button>
+          <button class="theme-tab" data-target="communicationGrid" data-title="Общение">Общение</button>
         </div>
 
         <h2 id="active-theme-title">Дорамы</h2>
@@ -843,6 +844,17 @@
             <div class="carousel-title">Случайный подбор</div>
             <div class="theme-grid" id="randomGrid">
               <!-- Кнопки создаются скриптом -->
+            </div>
+          </div>
+
+          <div class="carousel-row">
+            <div class="carousel-title"></div>
+            <div class="theme-grid" id="communicationGrid">
+              <div class="theme-button" onclick="openChat()"
+                style="background-image: url('videothemes/communication.png');">
+                <span class="user-button-text"
+                  style="position: absolute; bottom: 5px; width: 100%; text-align: center; text-shadow: 0 1px 3px black;"></span>
+              </div>
             </div>
           </div>
 
@@ -1379,7 +1391,7 @@
       }
     }
     function premium() {
-      window.location.href = 'videopremium.html';
+      window.location.href = 'offer2.html';
     }
 
     function openBankPage() {
@@ -1428,6 +1440,15 @@
 
       setTimeout(() => {
         window.location.href = 'game_words.html';
+      }, 400);
+    }
+
+    function openChat() {
+      const fadeOverlay = document.getElementById('fadeOverlay');
+      fadeOverlay.style.opacity = '1';
+
+      setTimeout(() => {
+        window.location.href = 'ai_tutor.html';
       }, 400);
     }
 

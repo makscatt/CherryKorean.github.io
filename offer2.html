@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Премиум Подписка</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="analytics.js"></script>
+    <style>
+        :root {
+            --gold: #FFD700;
+            --gold-gradient: linear-gradient(180deg, #FFEB3B 0%, #FFC107 100%);
+            --gray-text: #8E8E93;
+            --bg-color: #000000;
+            --card-bg: #1C1C1E;
+            --border-color: #38383A;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* --- ШАПКА --- */
+        .header {
+            padding-top: calc(7% + env(safe-area-inset-top));
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            color: var(--gray-text);
+            font-size: 14px;
+            margin: 8px 0 0;
+            line-height: 1.4;
+        }
+
+        /* --- ТАБЛИЦА СРАВНЕНИЯ --- */
+        .scroll-area {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px 15px 100px; /* Большой отступ снизу, чтобы контент не перекрывался кнопкой и футером */
+            -webkit-overflow-scrolling: touch;
+            display: flex;
+            align-items: flex-start; 
+        }
+
+        .comparison-table {
+            display: grid;
+            grid-template-columns: 1.3fr 0.8fr 1fr;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0;
+        }
+
+        .col-header {
+            padding: 10px 5px;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            color: var(--gray-text);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-color);
+            z-index: 10;
+        }
+
+        .col-header.premium {
+            color: var(--gold);
+        }
+
+        .row {
+            display: contents;
+        }
+
+        .cell {
+            padding: 18px 5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.3;
+        }
+
+        .cell.desc {
+            justify-content: flex-start;
+            text-align: left;
+            padding-left: 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .feature-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .feature-sub {
+            font-size: 11px;
+            color: var(--gray-text);
+        }
+
+        .cell.free {
+            color: var(--gray-text);
+            font-weight: 500;
+        }
+
+        .cell.premium {
+            color: var(--gold);
+            font-weight: 700;
+            background: rgba(255, 215, 0, 0.03);
+        }
+
+        .check-icon {
+            font-size: 18px;
+        }
+
+        .cross-icon {
+            font-size: 18px;
+            opacity: 0.3;
+        }
+
+        /* --- ФУТЕР --- */
+        .footer {
+            background-color: #121212;
+            padding: 20px;
+            padding-bottom: calc(7% + env(safe-area-inset-bottom));
+            border-top: 1px solid var(--border-color);
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 20;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+        }
+
+        .price-block {
+            text-align: center;
+        }
+
+        .main-price {
+            font-size: 28px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .main-price span {
+            color: var(--gold);
+        }
+
+        .sub-price {
+            display: block;
+            font-size: 13px;
+            color: var(--gray-text);
+            margin-top: 4px;
+        }
+
+        .cta-btn {
+            background: var(--gold-gradient);
+            color: black;
+            border: none;
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 800;
+            width: 100%;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            transition: transform 0.1s;
+            text-transform: uppercase;
+        }
+
+        .cta-btn:active {
+            transform: scale(0.98);
+            opacity: 0.9;
+        }
+
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .legal-link {
+            background: none;
+            border: none;
+            color: var(--gray-text);
+            font-size: 12px;
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+       /* --- КНОПКА ДОМОЙ (Справа Внизу) --- */
+       .float-btn-home {
+            position: fixed; /* Фиксируем относительно экрана */
+            bottom: calc(190px + env(safe-area-inset-bottom)); /* Поднимаем над футером */
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 100; /* Поверх всего */
+            background-image: url('videothemes/icons/home.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
+            backdrop-filter: blur(5px); /* Эффект стекла */
+            transition: transform 0.1s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .float-btn-home:active {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(0.95);
+        }
+
+        /* Лоадер */
+        #loader {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            justify-content: center; align-items: center;
+            flex-direction: column;
+        }
+        .spinner {
+            width: 50px; height: 50px;
+            border: 4px solid rgba(255,255,255,0.1);
+            border-top: 4px solid var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+        .loader-text {
+            color: var(--gray-text);
+            font-size: 14px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Модальное окно отписки */
+        #cancelModal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            justify-content: center; align-items: center;
+            backdrop-filter: blur(5px);
+        }
+        .modal-box {
+            background: #2C2C2E;
+            padding: 25px;
+            border-radius: 16px;
+            width: 80%;
+            max-width: 320px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+        .modal-box p {
+            margin: 0 0 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .modal-btn {
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Полупрозрачная кнопка "Домой" (Справа внизу) -->
+    <div class="float-btn-home" onclick="goHome()"></div>
+
+    <!-- Заголовок -->
+    <div class="header">
+        <h1>Premium Доступ</h1>
+        <p>Сравните возможности и выберите эффективность</p>
+    </div>
+
+    <!-- Таблица -->
+    <div class="scroll-area">
+        <div class="comparison-table">
+            
+            <!-- Заголовки -->
+            <div class="col-header">Возможность</div>
+            <div class="col-header">Free</div>
+            <div class="col-header premium">Premium</div>
+
+            <!-- Строка 1: Время -->
+            <div class="row">
+                <div class="cell desc">
+                    <div class="feature-title">Лимит времени</div>
+                    <div class="feature-sub">Длительность уроков</div>
+                </div>
+                <div class="cell free">5 мин/день</div>
+                <div class="cell premium">Безлимит ♾️</div>
+            </div>
+
+            <!-- Строка 2: Озвучка -->
+            <div class="row">
+                <div class="cell desc">
+                    <div class="feature-title">Озвучка чата</div>
+                    <div class="feature-sub">Качество речи учителя</div>
+                </div>
+                <div class="cell free">Робот 🤖</div>
+                <div class="cell premium">Живая речь 🗣️</div>
+            </div>
+
+            <!-- Строка 3: Лига -->
+            <div class="row">
+                <div class="cell desc">
+                    <div class="feature-title">Рейтинг</div>
+                    <div class="feature-sub">Участие в Лиге Кимчи</div>
+                </div>
+                <div class="cell free"><span class="cross-icon">✕</span></div>
+                <div class="cell premium"><span class="check-icon">✓</span></div>
+            </div>
+
+            <!-- Строка 4: Опыт -->
+            <div class="row">
+                <div class="cell desc">
+                    <div class="feature-title">Прогресс (XP)</div>
+                    <div class="feature-sub">Рост ранга и уровня</div>
+                </div>
+                <div class="cell free">Ограничен</div>
+                <div class="cell premium"><span class="check-icon">⚡️ Полный</span></div>
+            </div>
+
+            <!-- Строка 5: Сообщество -->
+            <div class="row">
+                <div class="cell desc">
+                    <div class="feature-title">Кимчи Клаб</div>
+                    <div class="feature-sub">Закрытое комьюнити</div>
+                </div>
+                <div class="cell free"><span class="cross-icon">✕</span></div>
+                <div class="cell premium"><span class="check-icon">✓ Доступ</span></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <div class="footer">
+        <div class="price-block">
+            <div class="main-price">99 ₽ <span>/ 1-й мес</span></div>
+            <span class="sub-price">далее всего 300 ₽ в месяц</span>
+        </div>
+        
+        <button class="cta-btn" onclick="redirectToPayment()">
+            Попробовать Премиум
+        </button>
+
+        <div class="legal-links">
+            <button class="legal-link" onclick="location.href='videooffer.html'">Оферта</button>
+            <button class="legal-link" onclick="openCancelModal()">Как отключить?</button>
+        </div>
+    </div>
+
+    <!-- Лоадер -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <div class="loader-text">Создаем платеж...</div>
+    </div>
+
+    <!-- Модалка отмены -->
+    <div id="cancelModal">
+        <div class="modal-box">
+            <p>Управление подпиской доступно в боте <b>"Кимчи Хангуго"</b> по команде <code>/sub</code>.</p>
+            <button class="modal-btn" onclick="closeCancelModal()">Понятно</button>
+        </div>
+    </div>
+
+    <script>
+        // --- ЗВУК И АНАЛИТИКА ---
+        const SoundFX = {
+            playClick: function() {
+                try {
+                    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.frequency.setValueAtTime(600, ctx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.1);
+                } catch(e) {}
+            }
+        };
+
+        // --- НАВИГАЦИЯ ---
+        function goHome() {
+            SoundFX.playClick();
+            window.location.href = "menu.html";
+        }
+
+        // --- МОДАЛКИ ---
+        function openCancelModal() {
+            SoundFX.playClick();
+            document.getElementById('cancelModal').style.display = 'flex';
+        }
+
+        function closeCancelModal() {
+            SoundFX.playClick();
+            document.getElementById('cancelModal').style.display = 'none';
+        }
+
+        // --- ОПЛАТА ---
+        async function redirectToPayment() {
+            SoundFX.playClick();
+            
+            // Аналитика
+            if(window.trackEvent) {
+                trackEvent('checkout_start', {
+                    item_name: 'Premium Subscription',
+                    price: 99,
+                    currency: 'RUB',
+                    source: 'comparison_page'
+                });
+            }
+
+            const loader = document.getElementById("loader");
+            loader.style.display = "flex";
+
+            // Получаем ID
+            const telegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");
+            
+            if (!telegramId) {
+                loader.style.display = "none";
+                alert("Ошибка: Не удалось определить ваш ID. Попробуйте перезайти через Телеграм.");
+                return;
+            }
+
+            try {
+                // Запрос ссылки
+                const res = await fetch(`https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}`);
+                const data = await res.json();
+                
+                if (data.url) {
+                    window.location.href = data.url;
+                } else {
+                    loader.style.display = "none";
+                    alert("Сервер не вернул ссылку. Попробуйте позже.");
+                }
+            } catch (err) {
+                console.error("Payment error:", err);
+                loader.style.display = "none";
+                alert("Ошибка соединения. Проверьте интернет.");
+            }
+        }
+
+        // Инициализация Telegram
+        if (window.Telegram?.WebApp) {
+            window.Telegram.WebApp.ready();
+            window.Telegram.WebApp.expand();
+            // Красим хедер в черный
+            window.Telegram.WebApp.setHeaderColor('#000000');
+            window.Telegram.WebApp.setBackgroundColor('#000000');
+        }
+    </script>
+</body>
+</html>

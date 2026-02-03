@@ -20,12 +20,9 @@
       left: 0;
       width: 100%;
       height: 170px;
-      /* Высота затемнения */
       background: linear-gradient(to top, #000000 30%, rgba(0, 0, 0, 0) 100%);
       z-index: 1500;
-      /* Выше контента, но ниже кнопок */
       pointer-events: none;
-      /* Пропускает клики сквозь себя */
     }
 
     @font-face {
@@ -64,7 +61,7 @@
       }
     }
 
-    /* --- СТИЛИ ДЛЯ ТАБОВ (ПЕРЕКЛЮЧАТЕЛЕЙ) --- */
+    /* --- СТИЛИ ДЛЯ ТАБОВ --- */
     .tabs-container {
       display: flex;
       width: 90%;
@@ -99,13 +96,11 @@
     #ranks-info-wrapper {
       width: 95%;
       flex-grow: 1;
-      /* Увеличен отступ снизу, чтобы плавающие кнопки не закрывали контент */
       padding-bottom: 120px;
       overflow-y: auto;
       scrollbar-width: none;
     }
 
-    /* Скрываем второй экран по умолчанию */
     #ranks-info-wrapper {
       display: none;
     }
@@ -226,9 +221,7 @@
       font-size: 20px;
     }
 
-    /* --- НОВЫЕ СТИЛИ КНОПОК (из theme_menu_template) --- */
-
-    /* Кнопка "Домой" справа снизу */
+    /* --- КНОПКИ --- */
     .floating-controls {
       position: fixed;
       bottom: 40px;
@@ -265,20 +258,17 @@
       background-image: url('videothemes/icons/home.png');
     }
 
-    /* Кнопка "Вступить в Лигу" (по центру снизу) */
+    /* Кнопка "Вступить в Лигу" */
     #join-league-button {
-      display: none;
-      /* Скрыта по умолчанию, показывается JS */
+      display: none; /* Скрыта по умолчанию, показывается JS если не премиум */
       position: fixed;
       bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
-
       align-items: center;
       width: auto;
       min-width: 200px;
       max-width: 60%;
-
       background-color: #000000;
       color: #FFD700;
       border: 2px solid #FFD700;
@@ -334,13 +324,8 @@
     }
 
     @keyframes banner-shine {
-      from {
-        left: -75%;
-      }
-
-      to {
-        left: 125%;
-      }
+      from { left: -75%; }
+      to { left: 125%; }
     }
 
     /* Спиннер загрузки */
@@ -367,13 +352,8 @@
     }
 
     @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
@@ -412,8 +392,9 @@
     </div>
 
     <!-- КНОПКИ УПРАВЛЕНИЯ -->
-
     <div class="bottom-gradient-overlay"></div>
+    
+    <!-- Кнопка "Вступить в Лигу" - ведет на премиум страницу -->
     <button id="join-league-button">
       <img src="videothemes/icons/goldkimchi.png" class="banner-icon" alt="kimchi">
       <div class="banner-text-wrapper">
@@ -430,7 +411,6 @@
   </div>
 
   <script>
-
     // --- ЗВУКОВОЙ ДВИЖОК ---
     const SoundFX = {
       ctx: null,
@@ -462,12 +442,12 @@
 
     // Глобальный слушатель кликов
     document.addEventListener('click', function (e) {
-      // Слушаем кнопки, табы и кнопку вступления в лигу
       const target = e.target.closest('button, .tab-button, .float-btn, #join-league-button');
       if (target) {
         SoundFX.playClick();
       }
     });
+
     // Навигация
     function goHome() {
       window.location.href = 'menu.html';
@@ -479,7 +459,6 @@
       const pathWrapper = document.getElementById('ranks-info-wrapper');
       const tabs = document.querySelectorAll('.tab-button');
 
-      // Убираем active у всех кнопок
       tabs.forEach(t => t.classList.remove('active'));
 
       if (tabName === 'top') {
@@ -490,8 +469,6 @@
         topWrapper.style.display = 'none';
         pathWrapper.style.display = 'block';
         tabs[1].classList.add('active');
-
-        // При переключении рендерим список рангов (чтобы обновить актуальный опыт)
         renderRanksList();
       }
     }
@@ -544,7 +521,6 @@
           arrow.style.textAlign = 'center';
           arrow.style.color = '#333';
           arrow.style.margin = '-5px 0 5px 0';
-
           container.appendChild(arrow);
         }
 
@@ -556,150 +532,10 @@
       });
     }
 
-    // --- ФУНКЦИИ UI (ПОПАПЫ И ПРЕМИУМ) ---
-    // Взято полностью из theme_menu_template для идентичности
-    let premiumPopupOverlay, subscriptionModal, loader, offerPopupOverlay;
-
-    function showPremiumPopup() {
-      if (premiumPopupOverlay) {
-        premiumPopupOverlay.style.opacity = '1';
-        premiumPopupOverlay.style.pointerEvents = 'auto';
-      }
-    }
-    function hidePremiumPopup() {
-      if (premiumPopupOverlay) {
-        premiumPopupOverlay.style.opacity = '0';
-        premiumPopupOverlay.style.pointerEvents = 'none';
-      }
-    }
-    function openModal() { if (subscriptionModal) subscriptionModal.style.display = 'block'; }
-    function closeModal() { if (subscriptionModal) subscriptionModal.style.display = 'none'; }
-    function showOfferPopup() {
-      if (offerPopupOverlay) {
-        const iframe = offerPopupOverlay.querySelector('iframe');
-        const offerUrl = "videooffer.html";
-        if (iframe && iframe.getAttribute('src') !== offerUrl) iframe.setAttribute('src', offerUrl);
-        offerPopupOverlay.style.display = 'flex';
-      }
-    }
-    function hideOfferPopup() { if (offerPopupOverlay) offerPopupOverlay.style.display = 'none'; }
-
-    async function redirectToPayment() {
-      trackEvent('checkout_start', {
-        item_name: 'Premium Subscription',
-        price: 99,
-        currency: 'RUB',
-        source: 'videorating'
-      });
-      if (loader) loader.style.display = "flex";
-      const telegramId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id || localStorage.getItem("telegramId");
-      if (!telegramId) {
-        if (loader) loader.style.display = "none";
-        alert("Не удалось определить ID пользователя.");
-        return;
-      };
-      try {
-        const res = await fetch(`https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}`);
-        const data = await res.json();
-        if (data.url) {
-          window.location.href = data.url;
-        } else {
-          if (loader) loader.style.display = "none";
-          alert("Ошибка получения ссылки.");
-        }
-      } catch (err) {
-        console.error("Ошибка:", err);
-        if (loader) loader.style.display = "none";
-        alert("Не удалось загрузить ссылку.");
-      }
-    }
-
-    // Построение DOM попапа (точная копия из theme_menu_template)
-    function setupPremiumPopupDOM() {
-      if (document.getElementById('premiumPopupOverlay')) return;
-      const overlay = document.createElement('div');
-      overlay.id = 'premiumPopupOverlay';
-      const content = document.createElement('div');
-      const closeBtn = document.createElement('span');
-      const kimchiImage = document.createElement('img');
-      const mainText = document.createElement('p');
-      const priceDiv = document.createElement('div');
-      const priceText1 = document.createElement('span');
-      const priceText2 = document.createElement('span');
-      const howToCancelBtn = document.createElement('button');
-      const premiumBtn = document.createElement('button');
-      const offerBtn = document.createElement('button');
-      const subModal = document.createElement('div');
-      const subModalContent = document.createElement('div');
-      const subModalCloseBtn = document.createElement('button');
-      const subModalText = document.createElement('p');
-      const loaderDiv = document.createElement('div');
-      const spinner = document.createElement('div');
-      const offerOverlay = document.createElement('div');
-      const offerContainer = document.createElement('div');
-      const offerIframe = document.createElement('iframe');
-      const offerCloseBtn = document.createElement('button');
-
-      kimchiImage.src = 'videothemes/icons/goldkimchi.png';
-      // Текст оставляем как в шаблоне (по запросу "ровно такой же попап")
-      mainText.textContent = 'Подключи «Премиум»,\nчтобы убрать лимит по времени';
-      priceText1.innerHTML = 'Первый месяц <span style="color: #FFD700; font-size: 26px;">99 руб</span>';
-      priceText2.innerHTML = '<span style="color: gray;">Затем 300 руб/мес</span>';
-      priceText2.style.display = 'block';
-      howToCancelBtn.textContent = 'Как отключить подписку?';
-      premiumBtn.textContent = 'Подключить за 99 руб';
-      offerBtn.textContent = 'Оферта';
-      closeBtn.innerHTML = '×';
-
-      Object.assign(overlay.style, { position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.6)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: '20000', opacity: '0', pointerEvents: 'none', transition: 'opacity 0.3s ease-in-out' });
-      Object.assign(offerContainer.style, { position: 'relative', width: '90%', maxWidth: '700px', height: '85%' });
-      Object.assign(content.style, { backgroundColor: '#1C1C1E', padding: '20px', borderRadius: '16px', textAlign: 'center', width: '90%', maxWidth: '380px', boxShadow: '0 5px 15px rgba(0,0,0,0.3)', position: 'relative', color: '#FFFFFF', border: '1px solid rgba(255, 215, 0, 0.9)' });
-      Object.assign(closeBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '28px', height: '28px', background: '#3A3A3C', color: '#E5E5EA', borderRadius: '50%', border: 'none', fontSize: '18px', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' });
-      Object.assign(kimchiImage.style, { width: '60px', height: 'auto', margin: '10px 0' });
-      Object.assign(mainText.style, { fontSize: '18px', color: '#FFFFFF', margin: '10px 0 15px 0', padding: '0 10px', fontWeight: '500', whiteSpace: 'pre-line' });
-      Object.assign(priceDiv.style, { margin: '15px 0', lineHeight: '1.4' });
-      Object.assign(howToCancelBtn.style, { background: 'none', border: 'none', color: '#8E8E93', textDecoration: 'underline', cursor: 'pointer', marginTop: '10px', boxShadow: 'none' });
-      Object.assign(premiumBtn.style, { width: '100%', padding: '13px', backgroundColor: '#FFD700', color: '#000000', border: 'none', borderRadius: '8px', fontSize: '18px', cursor: 'pointer', transition: 'transform 0.2s', fontWeight: '700' });
-      Object.assign(offerBtn.style, { marginTop: '15px', color: '#666', textDecoration: 'underline', background: 'none', border: 'none', cursor: 'pointer', boxShadow: 'none' });
-
-      subModalText.innerHTML = 'Отключить подписку можно будет в боте – "Кимчи Хангуго" по команде /sub.<br />ㅡㅡㅡ<br />"Кимчи Хангуго" это бот с которого вы запускаете приложение.<br />ㅡㅡㅡ<br />После оплаты, в боте, вам также придет приглашение в закрытый чат - "Кимчи Клаб".';
-      Object.assign(subModal.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', background: 'rgba(0,0,0,0.5)', zIndex: '99999', backdropFilter: 'blur(5px)' });
-      Object.assign(subModalContent.style, { background: 'white', width: '300px', padding: '20px', borderRadius: '8px', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'black' });
-      Object.assign(subModalCloseBtn.style, { position: 'absolute', top: '10px', right: '10px', width: '30px', height: '30px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
-      subModalCloseBtn.innerHTML = '×';
-
-      Object.assign(loaderDiv.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100vw', height: '100vh', backgroundColor: 'rgba(0, 0, 0, 0.6)', zIndex: '99999', alignItems: 'center', justifyContent: 'center' });
-      Object.assign(spinner.style, { width: '60px', height: '60px', border: '6px solid rgba(255, 255, 255, 0.2)', borderTop: '6px solid white', borderRadius: '50%', animation: 'spin 1s linear infinite' });
-      if (!document.querySelector('style[data-spin-animation]')) { const styleSheet = document.createElement("style"); styleSheet.setAttribute('data-spin-animation', 'true'); styleSheet.innerHTML = `@keyframes spin { to { transform: rotate(360deg); } }`; document.head.appendChild(styleSheet); }
-
-      Object.assign(offerOverlay.style, { display: 'none', position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.7)', zIndex: '30000', justifyContent: 'center', alignItems: 'center' });
-      Object.assign(offerIframe.style, { width: '100%', maxWidth: '700px', height: '100%', border: 'none', borderRadius: '12px', backgroundColor: 'white' });
-      Object.assign(offerCloseBtn.style, { position: 'absolute', top: '8%', right: '0%', width: '40px', height: '40px', borderRadius: '50%', border: 'none', background: 'white', color: 'black', fontSize: '20px', cursor: 'pointer', zIndex: '30001', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 4px rgba(0,0,0,0.9)' });
-      offerCloseBtn.innerHTML = '×';
-
-      offerIframe.setAttribute('src', '');
-      priceDiv.appendChild(priceText1); priceDiv.appendChild(priceText2); priceDiv.appendChild(howToCancelBtn);
-      content.appendChild(closeBtn); content.appendChild(mainText); content.appendChild(kimchiImage); content.appendChild(priceDiv); content.appendChild(premiumBtn); content.appendChild(offerBtn);
-      overlay.appendChild(content);
-      subModalContent.appendChild(subModalCloseBtn); subModalContent.appendChild(subModalText);
-      subModal.appendChild(subModalContent);
-      loaderDiv.appendChild(spinner);
-      offerContainer.appendChild(offerIframe); offerContainer.appendChild(offerCloseBtn);
-      offerOverlay.appendChild(offerContainer);
-      document.body.appendChild(overlay); document.body.appendChild(subModal); document.body.appendChild(loaderDiv); document.body.appendChild(offerOverlay);
-
-      premiumPopupOverlay = overlay; subscriptionModal = subModal; loader = loaderDiv; offerPopupOverlay = offerOverlay;
-      closeBtn.addEventListener('click', hidePremiumPopup); premiumBtn.addEventListener('click', redirectToPayment); howToCancelBtn.addEventListener('click', openModal); offerBtn.addEventListener('click', showOfferPopup); subModalCloseBtn.addEventListener('click', closeModal); offerCloseBtn.addEventListener('click', hideOfferPopup); overlay.addEventListener('click', (e) => { if (e.target === overlay) hidePremiumPopup(); }); subModal.addEventListener('click', (e) => { if (e.target === subModal) closeModal(); });
-    }
-
     // Инициализация
     document.addEventListener("DOMContentLoaded", async () => {
-      // Создаем структуру попапа сразу при загрузке
-      setupPremiumPopupDOM();
       if (localStorage.getItem('autoOpenPath') === 'true') {
-        // Переключаем таб
         switchTab('path');
-        // Удаляем метку, чтобы при следующем обычном заходе открывался рейтинг
         localStorage.removeItem('autoOpenPath');
       }
 
@@ -756,9 +592,13 @@
           renderUsers(leagueKimchiContainer, currentUsers);
 
           // Показываем кнопку "Вступить", если не подписчик
+          // И ВЕШАЕМ РЕДИРЕКТ ВМЕСТО ПОПАПА
           if (!isMemberLocally) {
             joinButton.style.display = 'flex';
-            joinButton.onclick = showPremiumPopup;
+            joinButton.onclick = function() {
+                if(typeof SoundFX !== 'undefined') SoundFX.playClick();
+                window.location.href = 'offer2.html';
+            };
           }
 
         } else {
