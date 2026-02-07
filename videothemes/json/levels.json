@@ -357,7 +357,7 @@
       { "korean": "교실", "transcription": "кёщиль", "russian": "Класс" },
       { "korean": "시험", "transcription": "щихом", "russian": "Экзамен" },
       { "korean": "질문", "transcription": "чильмун", "russian": "Вопрос" },
-      { "korean": "답", "transcription": "тап", "russian": "Ответ" }
+      { "korean": "점수", "transcription": "чомсу", "russian": "Оценка" }
     ]
   },
   {

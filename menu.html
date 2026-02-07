@@ -448,7 +448,10 @@
       overflow-x: auto;
       scrollbar-width: none;
       box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
     }
+
 
     #user-zone::-webkit-scrollbar {
       display: none;
@@ -458,7 +461,7 @@
       height: 35px;
       background-color: #1c1c1e;
       border: 1px solid rgba(255, 215, 0, 0.5);
-      border-radius: 10px;
+
       position: relative;
       display: flex;
       align-items: center;
@@ -538,7 +541,6 @@
       gap: 15px;
       background-color: #1c1c1e;
       border: 1px solid rgba(255, 215, 0, 0.4);
-      border-radius: 12px;
       padding: 6px 8px;
       margin: 0 5px 10px 5px;
       box-sizing: border-box;
@@ -664,12 +666,12 @@
 
     .anchor-btn {
       flex: 1;
-      background-color: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.8);
+      background-color: rgba(81, 81, 81, 0.8);
+      border: 1px solid rgba(197, 197, 197, 0.8);
       color: white;
       padding: 10px 0;
       border-radius: 12px;
-      font-size: clamp(11px, 3.5vw, 14px);
+      font-size: 16px;
       font-weight: 500;
       cursor: pointer;
       text-align: center;
@@ -762,11 +764,10 @@
       </div>
       <div id="user-zone">
         <div class="user-button" id="reviewsButton" onclick="reviewsPage()">
-          <img src="videothemes/reviews.png" class="user-button-icon" alt="">
           <span class="user-button-text">Отзывы</span>
         </div>
-        <div class="user-button" id="reviewsButton" onclick="openBankPage()">
-          <img src="videothemes/bank.png" class="user-button-icon" alt="">
+
+        <div class="user-button" id="bankButton" onclick="openBankPage()">
           <span class="user-button-text">Копилка</span>
         </div>
       </div>
@@ -785,8 +786,8 @@
 
         <!-- !!! НОВЫЙ БЛОК ЯКОРЕЙ !!! -->
         <div id="dramas-anchors">
-          <button class="anchor-btn" onclick="scrollToSection('section-pathway')">Слух с 0</button>
           <button class="anchor-btn" onclick="scrollToSection('section-new')">Новинки</button>
+          <button class="anchor-btn" onclick="scrollToSection('section-pathway')">Слух с 0</button>
           <button class="anchor-btn" onclick="scrollToSection('section-main')">Дорамы</button>
           <button class="anchor-btn" onclick="scrollToSection('section-random')">Рандом</button>
         </div>
@@ -807,8 +808,16 @@
               </div>
             </div>
           </div>
+          <!-- Раздел 1: Новинки -->
+          <!-- !!! ДОБАВЛЕН ID section-new !!! -->
+          <div class="carousel-row" id="section-new">
+            <div class="carousel-title">Новое</div>
+            <div class="theme-grid" id="newThemesGrid">
+              <!-- Скрипт заполнит это -->
+            </div>
+          </div>
 
-          <!-- Раздел 1: Слух с 0 -->
+          <!-- Раздел 2: Слух с 0 -->
           <!-- !!! ДОБАВЛЕН ID section-pathway !!! -->
           <div class="carousel-row" id="section-pathway">
             <div class="carousel-title">Слух с 0</div>
@@ -817,14 +826,7 @@
             </div>
           </div>
 
-          <!-- Раздел 2: Новинки -->
-          <!-- !!! ДОБАВЛЕН ID section-new !!! -->
-          <div class="carousel-row" id="section-new">
-            <div class="carousel-title">Новое</div>
-            <div class="theme-grid" id="newThemesGrid">
-              <!-- Скрипт заполнит это -->
-            </div>
-          </div>
+
 
           <!-- Раздел 3: Дорамы и Шоу -->
           <!-- !!! ДОБАВЛЕН ID section-main !!! -->
@@ -1055,7 +1057,7 @@
 
           // --- Существующий код для создания кнопок тем ---
           const themeGrid = document.getElementById('themeGrid');
-          for (let i = 28; i >= 2; i--) {
+          for (let i = 29; i >= 2; i--) {
             const btn = document.createElement('div');
             btn.className = 'theme-button';
             btn.id = 'theme' + i;
@@ -1746,7 +1748,7 @@
       const promises = [];
 
       // Запускаем обновление для всех тем и для банка
-      for (let i = 1; i <= 28; i++) {
+      for (let i = 1; i <= 29; i++) {
         promises.push(updateThemeCountDisplay(i));
       }
       promises.push(updateBankCountDisplay());
@@ -1779,10 +1781,10 @@
     document.addEventListener('DOMContentLoaded', () => {
 
       const updateConfig = {
-        version: '1801',
-        title: 'Обновление от 19.01',
+        version: '0702',
+        title: 'Обновление от 07.02',
         image: 'videothemes/update_banner.png',
-        text: `Новое шоу\n\n⚡️Всеведущий чиатель\nВ главных ролях:\nЛи Мин Хо, Чэ Су Бин, Ан Хё Соп`
+        text: `Новое шоу\n\n⚡️Шучита\nК Шуге из BTS приходят разные гости, пьют и общаются.\n\n1ый Выпуск с Чимином\n\nПостепенно добавлю всех BTS`
       };
 
       const updatePopup = document.getElementById('update-popup');

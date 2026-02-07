@@ -642,4 +642,16 @@
       }
     ]
   }
+  ,
+  "theme29": {
+    "coverImage": "videothemes/subthemebc/suga.png",
+    "masterJsonPath": "videothemes/json/videotheme29.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "С Чимином",
+        "key": "b1"
+      }
+    ]
+  }
 }
