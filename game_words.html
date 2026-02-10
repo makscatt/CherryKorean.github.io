@@ -42,14 +42,17 @@
             padding-left: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
-            
+
             width: 100%;
             box-sizing: border-box;
             display: flex;
-            justify-content: space-between; /* Распределяем элементы по ширине */
+            justify-content: space-between;
+            /* Распределяем элементы по ширине */
             align-items: center;
-            gap: 6px; /* Небольшое расстояние между элементами */
-            flex-wrap: nowrap; /* Запрещаем перенос на новую строку */
+            gap: 6px;
+            /* Небольшое расстояние между элементами */
+            flex-wrap: nowrap;
+            /* Запрещаем перенос на новую строку */
         }
 
         /* СЧЕТ */
@@ -74,7 +77,8 @@
             border-radius: 15px;
             font-size: 14px;
             font-weight: bold;
-            display: none; /* Скрыт по умолчанию */
+            display: none;
+            /* Скрыт по умолчанию */
             z-index: 400;
             border: 1px solid rgba(255, 255, 255, 0.3);
             white-space: nowrap;
@@ -90,7 +94,8 @@
             border-radius: 15px;
             backdrop-filter: blur(4px);
             white-space: nowrap;
-            letter-spacing: -2px; /* Чуть сближаем сердечки */
+            letter-spacing: -2px;
+            /* Чуть сближаем сердечки */
         }
 
         /* ЗВЕЗДЫ В ИГРЕ */
@@ -238,11 +243,13 @@
         /* СТАТУС МИКРОФОНА (ВНИЗУ) */
         #mic-status {
             position: absolute;
-            bottom: calc(60px + env(safe-area-inset-bottom)); /* Учет отступа снизу */
+            bottom: calc(60px + env(safe-area-inset-bottom));
+            /* Учет отступа снизу */
             left: 50%;
             transform: translateX(-50%);
             background: rgba(255, 255, 255, 0.95);
-            padding: 12px 30px; /* Чуть уменьшили */
+            padding: 12px 30px;
+            /* Чуть уменьшили */
             border: 3px solid #b3e5fc;
             border-radius: 50px;
             display: flex;
@@ -272,9 +279,20 @@
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.2); opacity: 0.8; }
-            100% { transform: scale(1); opacity: 1; }
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         #game-objects {
@@ -340,11 +358,13 @@
         #level-menu h1 {
             white-space: nowrap;
             color: #000000;
-            font-size: 28px; /* Уменьшили для безопасности */
+            font-size: 28px;
+            /* Уменьшили для безопасности */
             margin-bottom: 10px;
             text-transform: uppercase;
             padding: 8px 25px;
-            margin-top: 90px; /* Отступ от верха, чтобы не наезжать на звезды */
+            margin-top: 90px;
+            /* Отступ от верха, чтобы не наезжать на звезды */
         }
 
         /* КАРТОЧКА УРОВНЯ */
@@ -471,9 +491,20 @@
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
 
-        .btn-secondary { background: #b0bec5; color: #fff; }
-        .btn-retry { background: #ffca28; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
-        .btn-primary { background: #42a5f5; }
+        .btn-secondary {
+            background: #b0bec5;
+            color: #fff;
+        }
+
+        .btn-retry {
+            background: #ffca28;
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background: #42a5f5;
+        }
 
         /* ПРЕМИУМ МОДАЛКА */
         #premium-block-modal {
@@ -536,12 +567,14 @@
             right: 20px;
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Добавил отступ между кнопками */
+            gap: 15px;
+            /* Добавил отступ между кнопками */
             z-index: 2000;
         }
 
         .float-btn {
-            width: 50px; /* Чуть меньше */
+            width: 50px;
+            /* Чуть меньше */
             height: 50px;
             border-radius: 50%;
             border: none;
@@ -731,6 +764,9 @@
         const PLAYER_Y_POS = 100;   // Точка, где стоит "игрок"
         const FAIL_OFFSET = -300;   // Если слово ушло за спину игрока
 
+        const POOL_SIZE = 15;        // Размер пула объектов
+        let totalWordsSpawned = 0;
+
         // Угол компенсации наклона карточек (чтобы стояли вертикально)
         // Должен быть противоположен rotateX мира (-85deg)
         const CARD_ROTATION = 85;
@@ -774,6 +810,8 @@
         let currentWordGap = 1200;
         let lives = 3;
         let currentLevelData = null;
+
+
 
         // Запуск при загрузке страницы
         window.onload = function () {
@@ -929,9 +967,7 @@
 
             // Берем первые 5 слов для старта
             wordsData = [];
-            for (let i = 0; i < 5; i++) {
-                addRandomWordToData();
-            }
+
 
             setupRecorderAndStart();
         }
@@ -974,44 +1010,7 @@
             }
         }
 
-        function appendNextObject() {
-            // 1. Добавляем слово в данные
-            addRandomWordToData();
-            const newIndex = wordsData.length - 1;
-            const word = wordsData[newIndex];
 
-            // 2. Вычисляем позицию (последний объект + gap)
-            const lastObj = gameObjects[gameObjects.length - 1];
-            const newY = lastObj.initialY + currentWordGap;
-
-            // 3. Создаем DOM элемент
-            const container = document.getElementById('game-objects');
-            const el = document.createElement('div');
-            el.className = 'word-gate';
-            const trans = word.transcription ? `[${word.transcription}]` : '';
-            const translation = word.russian || "";
-
-            el.innerHTML = `
-        <div class="gate-text-ko">${word.korean}</div>
-        <div class="gate-text-trans">${trans}</div>
-        <div class="gate-text-ru">${translation}</div>
-    `;
-            container.appendChild(el);
-
-            // 4. Добавляем в массив игровых объектов
-            const newObj = {
-                el: el,
-                initialY: newY,
-                korean: word.korean,
-                passed: false,
-                isFlying: false,
-                flyHeight: 0
-            };
-            gameObjects.push(newObj);
-
-            // Сразу ставим на место
-            updateTransform(el, newY - distanceTraveled, 0);
-        }
 
         function stopGameSystem() {
             // 1. Ставим флаг, что игра остановлена
@@ -1098,41 +1097,40 @@
             localStorage.setItem('voiceRunProgress', JSON.stringify(progress));
         }
         function handleMiss() {
-            // Звук ошибки при пропуске слова
             SoundFX.playFail();
 
-            const obj = gameObjects[currentWordIndex];
+            // ВАЖНО: Доступ через modulo (%)
+            const obj = gameObjects[currentWordIndex % gameObjects.length];
+
             obj.passed = true;
             obj.el.classList.add('fail');
             obj.isDropping = true;
 
             lives--;
-
+            // ... обновление сердечек ...
             let hearts = "";
-            for (let i = 0; i < 3; i++) {
-                hearts += i < lives ? "❤" : "🖤";
-            }
+            for (let i = 0; i < 3; i++) hearts += i < lives ? "❤" : "🖤";
             document.getElementById('lives-display').innerText = hearts;
 
             if (lives <= 0) {
                 gameOver(false);
             } else {
-                if (isEndless) {
-                    appendNextObject();
-                }
+                // УДАЛЕНО: if (isEndless) appendNextObject();
+
                 currentWordIndex++;
 
-                if (currentWordIndex >= gameObjects.length) {
+                // Проверка конца уровня
+                if (!isEndless && currentWordIndex >= wordsData.length) {
                     setTimeout(() => gameOver(true), 1000);
                 } else {
-                    const nextIndex = currentWordIndex;
-                    const nextObj = gameObjects[nextIndex];
-                    const currentNextPos = nextObj.initialY - distanceTraveled;
-                    const offset = currentNextPos - START_Y_POS;
+                    // Логика подтягивания (аналогично handleSuccess - лучше упростить)
+                    // Если хотите оставить "рывок" вперед при пропуске:
+                    const nextObj = gameObjects[currentWordIndex % gameObjects.length];
+                    // Нужно убедиться, что nextObj это действительно следующий визуально
+                    // В пуле это работает сложнее. 
+                    // Проще всего просто увеличить distanceTraveled, чтобы "прыгнуть" к следующему слову
 
-                    for (let i = nextIndex; i < gameObjects.length; i++) {
-                        gameObjects[i].initialY -= offset;
-                    }
+                    // distanceTraveled = nextObj.initialY - START_Y_POS; // Примерно так
                 }
             }
         }
@@ -1141,22 +1139,41 @@
             const container = document.getElementById('game-objects');
             container.innerHTML = '';
             gameObjects = [];
+            totalWordsSpawned = 0;
 
-            wordsData.forEach((word, index) => {
+            // Определяем, сколько объектов создать.
+            // Если это уровень и слов мало (<15), создаем ровно столько, сколько слов.
+            // Если бесконечный режим или длинный уровень — создаем POOL_SIZE (15).
+            let countToCreate = POOL_SIZE;
+            if (!isEndless && wordsData.length < POOL_SIZE) {
+                countToCreate = wordsData.length;
+            }
+
+            for (let i = 0; i < countToCreate; i++) {
+                let word;
+
+                if (isEndless) {
+                    // В бесконечном режиме берем случайное слово из общего пула
+                    word = fullWordPool[Math.floor(Math.random() * fullWordPool.length)];
+                    // Добавляем в wordsData, чтобы корректно работал счетчик "Score"
+                    wordsData.push(word);
+                } else {
+                    word = wordsData[i];
+                }
+
                 const el = document.createElement('div');
                 el.className = 'word-gate';
 
-                // Проверяем наличие полей, чтобы не было undefined
                 const trans = word.transcription ? `[${word.transcription}]` : '';
                 const translation = word.russian || word.meaning || "";
 
                 el.innerHTML = `
-                    <div class="gate-text-ko">${word.korean}</div>
-                    <div class="gate-text-trans">${trans}</div>
-                    <div class="gate-text-ru">${translation}</div>
-                `;
+            <div class="gate-text-ko">${word.korean}</div>
+            <div class="gate-text-trans">${trans}</div>
+            <div class="gate-text-ru">${translation}</div>
+        `;
 
-                const absoluteY = START_Y_POS + (index * currentWordGap);
+                const absoluteY = START_Y_POS + (i * currentWordGap);
                 container.appendChild(el);
 
                 gameObjects.push({
@@ -1165,11 +1182,13 @@
                     korean: word.korean,
                     passed: false,
                     isFlying: false,
-                    flyHeight: 0
+                    flyHeight: 0,
+                    isDropping: false
                 });
 
                 updateTransform(el, absoluteY, 0);
-            });
+                totalWordsSpawned++;
+            }
         }
 
         function updateTransform(element, posY, heightZ) {
@@ -1191,37 +1210,93 @@
             }
 
             gameObjects.forEach((obj, index) => {
+                // --- Анимация полета (как было) ---
                 if (obj.isFlying) {
                     obj.flyHeight -= 20;
                     const currentY = (obj.initialY - distanceTraveled);
                     updateTransform(obj.el, currentY, obj.flyHeight);
-
                     obj.el.style.opacity = Math.max(0, 1 - Math.abs(obj.flyHeight) / 400);
                     return;
                 }
 
+                // --- Анимация падения (как было) ---
                 if (obj.isDropping) {
                     obj.flyHeight += 20;
                     const currentY = (obj.initialY - distanceTraveled);
                     updateTransform(obj.el, currentY, obj.flyHeight);
-
                     obj.el.style.opacity = Math.max(0, 1 - obj.flyHeight / 400);
                     return;
                 }
 
+                // Обычное движение
                 const currentY = obj.initialY - distanceTraveled;
                 updateTransform(obj.el, currentY, 0);
-
                 obj.el.style.opacity = 1;
 
-                if (index === currentWordIndex && !obj.passed) {
+                // --- Логика столкновения (ОБНОВЛЕНО) ---
+                // Используем % POOL_SIZE, чтобы индекс всегда попадал в диапазон массива
+                if (index === (currentWordIndex % gameObjects.length) && !obj.passed) {
                     if (currentY < FAIL_OFFSET) {
                         handleMiss();
                     }
                 }
+
+                // --- ЛОГИКА РЕСАЙКЛИНГА (НОВОЕ) ---
+                // Если объект улетел далеко назад (-2000px), переносим его вперед
+                if (currentY < -2000) {
+                    recycleObject(obj);
+                }
             });
 
             animationFrame = requestAnimationFrame(gameLoop);
+        }
+
+        function recycleObject(obj) {
+            let nextWord = null;
+
+            // Выбираем следующее слово
+            if (isEndless) {
+                nextWord = fullWordPool[Math.floor(Math.random() * fullWordPool.length)];
+                wordsData.push(nextWord); // Сохраняем для статистики
+            } else {
+                // Для уровней: проверяем, есть ли еще слова
+                if (totalWordsSpawned < wordsData.length) {
+                    nextWord = wordsData[totalWordsSpawned];
+                }
+            }
+
+            // Если слово нашлось — обновляем ворота
+            if (nextWord) {
+                // 1. Ищем координату Y самого дальнего объекта
+                let maxY = -Infinity;
+                gameObjects.forEach(g => {
+                    if (g.initialY > maxY) maxY = g.initialY;
+                });
+
+                // 2. Ставим текущий объект дальше всех
+                obj.initialY = maxY + currentWordGap;
+
+                // 3. Обновляем текст и данные
+                obj.korean = nextWord.korean;
+                const trans = nextWord.transcription ? `[${nextWord.transcription}]` : '';
+                const translation = nextWord.russian || nextWord.meaning || "";
+
+                obj.el.innerHTML = `
+            <div class="gate-text-ko">${nextWord.korean}</div>
+            <div class="gate-text-trans">${trans}</div>
+            <div class="gate-text-ru">${translation}</div>
+        `;
+
+                // 4. Сбрасываем флаги
+                obj.passed = false;
+                obj.isFlying = false;
+                obj.isDropping = false;
+                obj.flyHeight = 0;
+                obj.el.className = 'word-gate'; // Убираем классы success/fail
+                obj.el.style.opacity = '1';
+
+                totalWordsSpawned++;
+            }
         }
 
 
@@ -1274,10 +1349,11 @@
 
         async function checkVoice(blob) {
             if (!isRunning) return;
-            if (currentWordIndex >= gameObjects.length) return;
+            if (!isEndless && currentWordIndex >= wordsData.length) return;
 
             isProcessing = true;
-            const target = gameObjects[currentWordIndex].korean;
+            const targetObj = gameObjects[currentWordIndex % gameObjects.length];
+            const target = targetObj.korean;
 
             // Визуал
             document.getElementById('status-text').innerText = "Думаю...";
@@ -1338,55 +1414,52 @@
         }
 
         function handleSuccess() {
-            // МГНОВЕННЫЙ СБРОС UI
+            // 1. Сброс UI (без изменений)
             document.getElementById('status-text').innerText = "Ожидание...";
             document.getElementById('mic-indicator').classList.remove('active');
 
-            // --- ЛОГИКА ПРЕМИУМА (+1 XP за слово) ---
+            // 2. Логика премиума и звуков (без изменений)
             if (isPremium) {
-                // Премиум: Визуальная звезда летит + начисляем опыт
-                // Звук играет внутри spawnFlyingStar()
                 spawnFlyingStar();
                 totalServerStars++;
                 updateGlobalStarsUI();
                 saveGlobalStars();
             } else {
-                // Бесплатно: Только звук успеха, опыт НЕ начисляем
                 SoundFX.playSuccess();
             }
-            // ----------------------------------------
 
-            const obj = gameObjects[currentWordIndex];
-            obj.passed = true;
-            obj.el.classList.add('success');
-            obj.isFlying = true;
+            // 3. ВАЖНО: Получаем текущий объект, используя остаток от деления.
+            // Это позволяет индексу расти бесконечно, но обращаться к пулу из 15 объектов.
+            const obj = gameObjects[currentWordIndex % gameObjects.length];
 
+            // 4. Анимация успеха
+            if (obj) {
+                obj.passed = true;
+                obj.el.classList.add('success');
+                obj.isFlying = true;
+            }
+
+            // 5. Обновление счета
             score++;
             updateScore();
 
+            // 6. Логика бесконечного режима
             if (isEndless) {
-                appendNextObject();
+                // Мы НЕ вызываем appendNextObject(), так как работает ресайклинг в gameLoop
+                // Просто повышаем сложность
                 if (score % 10 === 0) currentLevelSpeed += 0.5;
             }
 
-            // Логика смещения очереди
-            const nextIndex = currentWordIndex + 1;
-            if (nextIndex < gameObjects.length) {
-                const nextObj = gameObjects[nextIndex];
-                const currentNextPos = nextObj.initialY - distanceTraveled;
-                const offset = currentNextPos - START_Y_POS;
-
-                for (let i = nextIndex; i < gameObjects.length; i++) {
-                    gameObjects[i].initialY -= offset;
-                }
-            }
-
+            // 7. Переход к следующему слову
             currentWordIndex++;
 
-            if (currentWordIndex >= gameObjects.length) {
+            // 8. Проверка окончания игры (Только если НЕ бесконечный режим)
+            // Проверяем, прошли ли мы все запланированные слова уровня
+            if (!isEndless && currentWordIndex >= wordsData.length) {
                 setTimeout(() => gameOver(true), 1500);
             }
         }
+
 
         function gameOver(win) {
             stopGlobalTimer();
