@@ -188,7 +188,188 @@
       "russian": "Хочу продолжать, пока не станет трудно двигаться"
     }
   ],
-  "b2": [],
+  "b2": [
+    {
+      "video": "video/suga/가요 프로였나.webm",
+      "videoMp4": "video/suga/mp4/가요 프로였나.mp4",
+      "korean": "가요 프로였나",
+      "russian": "Это была музыкальная программа, да"
+    },
+    {
+      "video": "video/suga/귀엽잖아요.webm",
+      "videoMp4": "video/suga/mp4/귀엽잖아요.mp4",
+      "korean": "귀엽잖아요",
+      "russian": "Милый же"
+    },
+    {
+      "video": "video/suga/그랬던 기억이 납니다.webm",
+      "videoMp4": "video/suga/mp4/그랬던 기억이 납니다.mp4",
+      "korean": "그랬던 기억이 납니다",
+      "russian": "Помню, что так и было"
+    },
+    {
+      "video": "video/suga/내 20대.webm",
+      "videoMp4": "video/suga/mp4/내 20대.mp4",
+      "korean": "내 20대",
+      "russian": "Мои двадцатые"
+    },
+    {
+      "video": "video/suga/데뷔 축하합니다.webm",
+      "videoMp4": "video/suga/mp4/데뷔 축하합니다.mp4",
+      "korean": "데뷔 축하합니다",
+      "russian": "Поздравляю с дебютом"
+    },
+    {
+      "video": "video/suga/마지막 트랙이 있어요.webm",
+      "videoMp4": "video/suga/mp4/마지막 트랙이 있어요.mp4",
+      "korean": "마지막 트랙이 있어요",
+      "russian": "Есть последний трек"
+    },
+    {
+      "video": "video/suga/맞습니다.webm",
+      "videoMp4": "video/suga/mp4/맞습니다.mp4",
+      "korean": "맞습니다",
+      "russian": "Верно"
+    },
+    {
+      "video": "video/suga/멀다 멀어.webm",
+      "videoMp4": "video/suga/mp4/멀다 멀어.mp4",
+      "korean": "멀다 멀어",
+      "russian": "Далеко, очень далеко"
+    },
+    {
+      "video": "video/suga/미쳤다.webm",
+      "videoMp4": "video/suga/mp4/미쳤다.mp4",
+      "korean": "미쳤다",
+      "russian": "С ума сойти"
+    },
+    {
+      "video": "video/suga/불 볶을 때.webm",
+      "videoMp4": "video/suga/mp4/불 볶을 때.mp4",
+      "korean": "불 볶을 때",
+      "russian": "Когда обжариваешь на сильном огне"
+    },
+    {
+      "video": "video/suga/사랑해요 밀키스.webm",
+      "videoMp4": "video/suga/mp4/사랑해요 밀키스.mp4",
+      "korean": "사랑해요 밀키스",
+      "russian": "Люблю тебя, Milkis"
+    },
+    {
+      "video": "video/suga/사십도네요.webm",
+      "videoMp4": "video/suga/mp4/사십도네요.mp4",
+      "korean": "사십도네요",
+      "russian": "Сорок градусов, да"
+    },
+    {
+      "video": "video/suga/세상에 ‘절대’란 없다.webm",
+      "videoMp4": "video/suga/mp4/세상에 ‘절대’란 없다.mp4",
+      "korean": "세상에 ‘절대’란 없다",
+      "russian": "В этом мире не существует «никогда»"
+    },
+    {
+      "video": "video/suga/신경은 쓰되.webm",
+      "videoMp4": "video/suga/mp4/신경은 쓰되.mp4",
+      "korean": "신경은 쓰되",
+      "russian": "Нужно обращать внимание, но…"
+    },
+    {
+      "video": "video/suga/신인다운 파이팅.webm",
+      "videoMp4": "video/suga/mp4/신인다운 파이팅.mp4",
+      "korean": "신인다운 파이팅",
+      "russian": "Файтинг, как и положено новичку"
+    },
+    {
+      "video": "video/suga/실제로 모든 선택이 다 최선이었을 거예요.webm",
+      "videoMp4": "video/suga/mp4/실제로 모든 선택이 다 최선이었을 거예요.mp4",
+      "korean": "실제로 모든 선택이 다 최선이었을 거예요",
+      "russian": "На самом деле все ваши выборы наверняка были наилучшими"
+    },
+    {
+      "video": "video/suga/역시 부드럽다.webm",
+      "videoMp4": "video/suga/mp4/역시 부드럽다.mp4",
+      "korean": "역시 부드럽다",
+      "russian": "Как и ожидалось, мягко"
+    },
+    {
+      "video": "video/suga/오고 있는 것 같아요.webm",
+      "videoMp4": "video/suga/mp4/오고 있는 것 같아요.mp4",
+      "korean": "오고 있는 것 같아요",
+      "russian": "Кажется, он/оно приближается"
+    },
+    {
+      "video": "video/suga/위스키랑 똑같습니다!.webm",
+      "videoMp4": "video/suga/mp4/위스키랑 똑같습니다!.mp4",
+      "korean": "위스키랑 똑같습니다!",
+      "russian": "Точно такой же, как виски!"
+    },
+    {
+      "video": "video/suga/이렇게 스윗합니다.webm",
+      "videoMp4": "video/suga/mp4/이렇게 스윗합니다.mp4",
+      "korean": "이렇게 스윗합니다",
+      "russian": "Вот настолько это сладко"
+    },
+    {
+      "video": "video/suga/이십일 이십오 삼십.webm",
+      "videoMp4": "video/suga/mp4/이십일 이십오 삼십.mp4",
+      "korean": "이십일 이십오 삼십",
+      "russian": "Двадцать один, двадцать пять, тридцать"
+    },
+    {
+      "video": "video/suga/이천십구년 초반부터 이천이십이년까지의.webm",
+      "videoMp4": "video/suga/mp4/이천십구년 초반부터 이천이십이년까지의.mp4",
+      "korean": "이천십구년 초반부터 이천이십이년까지의",
+      "russian": "С начала две тысячи девятнадцатого года до две тысячи двадцать второго года"
+    },
+    {
+      "video": "video/suga/이천육년에.webm",
+      "videoMp4": "video/suga/mp4/이천육년에.mp4",
+      "korean": "이천육년에",
+      "russian": "В две тысячи шестом году"
+    },
+    {
+      "video": "video/suga/인디고로 해서 색깔로 같이 엮어 가면 재밌겠다.webm",
+      "videoMp4": "video/suga/mp4/인디고로 해서 색깔로 같이 엮어 가면 재밌겠다.mp4",
+      "korean": "인디고로 해서 색깔로 같이 엮어 가면 재밌겠다",
+      "russian": "Индиго сделать и связать всё ещё и по цветам — было бы прикольно"
+    },
+    {
+      "video": "video/suga/일단 사실.webm",
+      "videoMp4": "video/suga/mp4/일단 사실.mp4",
+      "korean": "일단 사실",
+      "russian": "Вообще-то, по правде говоря"
+    },
+    {
+      "video": "video/suga/저는 그렇게 해서 못  완성된 곡들이 꽤 있어요.webm",
+      "videoMp4": "video/suga/mp4/저는 그렇게 해서 못  완성된 곡들이 꽤 있어요.mp4",
+      "korean": "저는 그렇게 해서 못  완성된 곡들이 꽤 있어요",
+      "russian": "У меня из‑за этого есть довольно много так и не завершённых треков"
+    },
+    {
+      "video": "video/suga/저는 동의하지 않습니다.webm",
+      "videoMp4": "video/suga/mp4/저는 동의하지 않습니다.mp4",
+      "korean": "저는 동의하지 않습니다",
+      "russian": "Я не согласен"
+    },
+    {
+      "video": "video/suga/저도 동감합니다.webm",
+      "videoMp4": "video/suga/mp4/저도 동감합니다.mp4",
+      "korean": "저도 동감합니다",
+      "russian": "Я тоже согласен"
+    },
+    {
+      "video": "video/suga/제가 입고 있는 청바지 색 같은 거를 생각했는데.webm",
+      "videoMp4": "video/suga/mp4/제가 입고 있는 청바지 색 같은 거를 생각했는데.mp4",
+      "korean": "제가 입고 있는 청바지 색 같은 거를 생각했는데",
+      "russian": "Я подумал о цвете джинсов, которые на мне"
+    },
+    {
+      "video": "video/suga/카발땡이라고.webm",
+      "videoMp4": "video/suga/mp4/카발땡이라고.mp4",
+      "korean": "카발땡이라고",
+      "russian": "Называется «Кабаль…» (игра такая)"
+    }
+  ],
   "b3": [],
   "b4": [],
   "b5": []
