@@ -1,7 +1,6 @@
 {
   "b1": [
     {
-      "isNew": true,
       "video": "video/suga/맨 처음에는 그렇게 큰  기대를 안 하고 봤었는데.webm",
       "videoMp4": "video/suga/mp4/맨 처음에는 그렇게 큰  기대를 안 하고 봤었는데.mp4",
       "korean": "맨 처음에는 그렇게 큰 기대를 안 하고 봤었는데",
@@ -190,6 +189,7 @@
   ],
   "b2": [
     {
+      "isNew": true,
       "video": "video/suga/가요 프로였나.webm",
       "videoMp4": "video/suga/mp4/가요 프로였나.mp4",
       "korean": "가요 프로였나",
