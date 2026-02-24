@@ -12,13 +12,29 @@
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #89f7fe 0%, #66a6ff 100%);
+
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
             font-family: 'Verdana', sans-serif;
             overflow: hidden;
             height: 100vh;
             user-select: none;
             color: #546e7a;
 
+        }
+
+        #bg-scene {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('videothemes/icons/bc_scene.png');
+            background-size: cover;
+            background-position: center top;
+            filter: saturate(0.7);
+            z-index: 0;
         }
 
         /* UI СЛОЙ (ХУД) */
@@ -123,11 +139,12 @@
             width: 320px;
             height: 0;
             margin-left: -160px;
-            border-bottom: 4px dashed #ff8a80;
+            border-bottom: 5px solid #00a2ff;
+            box-shadow: 0 0 8px #ff8c8e, 0 0 16px rgba(255, 0, 0, 0.5);
             transform: translate3d(0, -300px, -40px);
-            opacity: 0.8;
+            opacity: 0.9;
             z-index: 5;
-            box-shadow: 0 0 10px #ff8a80;
+
         }
 
         /* 3D СЦЕНА */
@@ -149,7 +166,7 @@
             width: 100%;
             height: 100%;
             transform-style: preserve-3d;
-            transform: translateY(50px) rotateX(-90deg) rotateZ(-10deg);
+            transform: translateY(50px) rotateX(-90deg) rotateZ(-5deg);
         }
 
         #floor {
@@ -159,85 +176,119 @@
             transform: translateX(-50%);
             width: 600px;
             height: 10000px;
-            background: #a5d6a7;
-            border-left: 25px solid #81c784;
-            border-right: 25px solid #81c784;
-            background-image:
-                radial-gradient(#c8e6c9 20%, transparent 20%),
-                radial-gradient(#c8e6c9 20%, transparent 20%);
-            background-position: 0 0, 50px 50px;
-            background-size: 100px 100px;
-            box-shadow: inset 0 0 150px rgba(46, 125, 50, 0.2);
+
+
+            background-size: 700px 700px;
+            background-repeat: repeat;
+            background-color: transparent;
+            opacity: 0.75;
+
+            border: none;
+            box-shadow: none;
         }
 
-        /* ИГРОВЫЕ ВОРОТА (СЛОВА) */
+        #floor::before {
+            display: none;
+        }
+
+        #floor::after {
+            display: none;
+        }
+
+        /* ИГРОВЫЕ ВОРОТА (СЛОВА) — 16-bit свиток */
+        /* === СВИТОК — используем готовую картинку valik.png === */
         .word-gate {
             position: absolute;
             left: 50%;
-            width: 320px;
-            height: 240px;
-            background: #fff8e1;
-            border: 8px solid #d7ccc8;
-            border-radius: 24px;
+            width: 400px;
+            height: 320px;
+            margin-left: -200px;
+            transform-origin: center bottom;
+            will-change: transform, opacity;
+            
+                /* Картинка занимает весь блок */
+                background-image: none;
+            background-color: transparent;
+            filter: none;
+
+            /* Контент (текст) смещаем вниз от валика */
+            padding: 52px 28px 28px 28px;
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            box-shadow: 0 15px 35px rgba(141, 110, 99, 0.2);
-            margin-left: -160px;
-            transform-origin: center bottom;
-            will-change: transform, opacity;
-            padding: 20px;
-            box-sizing: border-box;
+            overflow: visible;
+
+            /* Убираем все старые рамки и тени */
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
         }
 
+        /* Убираем CSS-валик и эллипс — картинка через ::before */
         .word-gate::before {
             content: '';
             position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 360px;
-            height: 20px;
-            background: #a1887f;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            inset: 0;
+            background-image: url('videothemes/icons/valik.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            filter: saturate(0.7);
+            z-index: 0;
+            pointer-events: none;
+            filter: drop-shadow(0 12px 24px rgba(0,0,0,0.8)) drop-shadow(0 4px 8px rgba(0,0,0,0.9));
         }
 
+        .word-gate::after {
+            display: none;
+        }
+
+        /* === СОСТОЯНИЯ — цветовой оверлей поверх картинки === */
         .word-gate.fail {
-            background: #ffebee;
-            border-color: #ffcdd2;
-            opacity: 0.7;
+            filter: hue-rotate(320deg) saturate(1.4) brightness(1.05);
+            opacity: 0.9;
         }
 
         .word-gate.success {
-            background: #f1f8e9;
-            border-color: #c5e1a5;
+            filter: hue-rotate(80deg) saturate(1.2) brightness(1.05);
         }
 
         .gate-text-ko {
-            font-size: 64px;
+            font-size: clamp(32px, 16vw, 80px);
             font-weight: 900;
-            color: #5d4037;
+            color: #3a2a10;
             line-height: 1.1;
             margin-bottom: 5px;
-            text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+            text-shadow: none;
+            letter-spacing: -1px;
+            position: relative;
+            z-index: 1;
+            max-width: 100%;
+            word-break: break-all;
         }
 
         .gate-text-trans {
-            font-size: 22px;
-            color: #8d6e63;
+            font-size: clamp(18px, 8vw, 34px);
+            color: #6b5030;
+            position: relative;
+            z-index: 1;
             font-weight: 700;
             margin-bottom: 12px;
         }
 
         .gate-text-ru {
-            font-size: 34px;
-            color: #ff7043;
+            font-size: clamp(18px, 8vw, 34px);
+            color: #c03020;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 1px;
+            text-shadow: none;
+            position: relative;
+            z-index: 1;
+            max-width: 100%;
+            word-break: break-word;
         }
 
         /* СТАТУС МИКРОФОНА (ВНИЗУ) */
@@ -629,7 +680,7 @@
 </head>
 
 <body>
-
+    <div id="bg-scene"></div>
     <div id="ui-layer">
 
         <div class="hud-panel">

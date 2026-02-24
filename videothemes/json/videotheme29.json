@@ -189,7 +189,6 @@
   ],
   "b2": [
     {
-      "isNew": true,
       "video": "video/suga/가요 프로였나.webm",
       "videoMp4": "video/suga/mp4/가요 프로였나.mp4",
       "korean": "가요 프로였나",
@@ -370,7 +369,171 @@
       "russian": "Называется «Кабаль…» (игра такая)"
     }
   ],
-  "b3": [],
+  "b3": [
+    {
+      "isNew": true,
+      "video": "video/suga/2050년.webm",
+      "videoMp4": "video/suga/mp4/2050년.mp4",
+      "korean": "이천오십년",
+      "russian": "2050 год"
+    },
+    {
+      "video": "video/suga/게임도 하고 외갓분들 친갓분들도 만나고.webm",
+      "videoMp4": "video/suga/mp4/게임도 하고 외갓분들 친갓분들도 만나고.mp4",
+      "korean": "게임도 하고 외갓분들 친갓분들도 만나고",
+      "russian": "И в игры поиграть, и с родственниками по маминой и папиной линии встретиться"
+    },
+    {
+      "video": "video/suga/고민을 진짜 많이 했어요.webm",
+      "videoMp4": "video/suga/mp4/고민을 진짜 많이 했어요.mp4",
+      "korean": "고민을 진짜 많이 했어요",
+      "russian": "Я правда очень много переживал"
+    },
+    {
+      "video": "video/suga/궁금해 진짜.webm",
+      "videoMp4": "video/suga/mp4/궁금해 진짜.mp4",
+      "korean": "궁금해 진짜",
+      "russian": "Мне правда интересно"
+    },
+    {
+      "video": "video/suga/나는 그 당시에 데뷔하면 안 되는 사람이없어.webm",
+      "videoMp4": "video/suga/mp4/나는 그 당시에 데뷔하면 안 되는 사람이없어.mp4",
+      "korean": "나는 그 당시에 데뷔하면 안 되는 사람이없어",
+      "russian": "В то время не было ни одного человека, кому нельзя было дебютировать"
+    },
+    {
+      "video": "video/suga/나는 많이 먹었어.webm",
+      "videoMp4": "video/suga/mp4/나는 많이 먹었어.mp4",
+      "korean": "나는 많이 먹었어",
+      "russian": "Я много поел"
+    },
+    {
+      "video": "video/suga/나는 망했지 사실.webm",
+      "videoMp4": "video/suga/mp4/나는 망했지 사실.mp4",
+      "korean": "나는 망했지 사실",
+      "russian": "Я же, по сути, провалился"
+    },
+    {
+      "video": "video/suga/날 닮은 거야.webm",
+      "videoMp4": "video/suga/mp4/날 닮은 거야.mp4",
+      "korean": "날 닮은 거야",
+      "russian": "в меня пошел"
+    },
+    {
+      "video": "video/suga/내가 그 친구들보단 숨 참는 게 두 배 이상이 긴 거야.webm",
+      "videoMp4": "video/suga/mp4/내가 그 친구들보단 숨 참는 게 두 배 이상이 긴 거야.mp4",
+      "korean": "내가 그 친구들보단 숨 참는 게 두 배 이상이 긴 거야",
+      "russian": "У меня задержка дыхания вдвое дольше, чем у тех ребят"
+    },
+    {
+      "video": "video/suga/내가 침대 사 줄게 지금 입금해 줄게.webm",
+      "videoMp4": "video/suga/mp4/내가 침대 사 줄게 지금 입금해 줄게.mp4",
+      "korean": "내가 침대 사 줄게 지금 입금해 줄게",
+      "russian": "Я куплю тебе кровать, сейчас переведу деньги"
+    },
+    {
+      "video": "video/suga/너를 선택할 거야.webm",
+      "videoMp4": "video/suga/mp4/너를 선택할 거야.mp4",
+      "korean": "너를 선택할 거야",
+      "russian": "Я тебя выберу"
+    },
+    {
+      "video": "video/suga/네 자랑하는 프로야.webm",
+      "videoMp4": "video/suga/mp4/네 자랑하는 프로야.mp4",
+      "korean": "네 자랑하는 프로야",
+      "russian": "Ты тот самый профи, которым ты так гордишься"
+    },
+    {
+      "video": "video/suga/다 봤지.webm",
+      "videoMp4": "video/suga/mp4/다 봤지.mp4",
+      "korean": "다 봤지",
+      "russian": "Всё видел же"
+    },
+    {
+      "video": "video/suga/물회가 있네요.webm",
+      "videoMp4": "video/suga/mp4/물회가 있네요.mp4",
+      "korean": "물회가 있네요",
+      "russian": "Тут есть мульхве"
+    },
+    {
+      "video": "video/suga/솔직하게 이야기하고 싶었어.webm",
+      "videoMp4": "video/suga/mp4/솔직하게 이야기하고 싶었어.mp4",
+      "korean": "솔직하게 이야기하고 싶었어",
+      "russian": "Я хотел честно поговорить"
+    },
+    {
+      "video": "video/suga/술 쪽으로 업계로 가져가면 중방문이라고 해요.webm",
+      "videoMp4": "video/suga/mp4/술 쪽으로 업계로 가져가면 중방문이라고 해요.mp4",
+      "korean": "술 쪽으로 업계로 가져가면 중방문이라고 해요",
+      "russian": "Если перенести это в алкогольную индустрию, это называется «ЧунБанМун»"
+    },
+    {
+      "video": "video/suga/쓸모없는 백과사전.webm",
+      "videoMp4": "video/suga/mp4/쓸모없는 백과사전.mp4",
+      "korean": "쓸모없는 백과사전",
+      "russian": "Бесполезная энциклопедия"
+    },
+    {
+      "video": "video/suga/앞으로도 저희 BTS 잊지 말고 사랑해주시면 좋겠습니다.webm",
+      "videoMp4": "video/suga/mp4/앞으로도 저희 BTS 잊지 말고 사랑해주시면 좋겠습니다.mp4",
+      "korean": "앞으로도 저희 BTS 잊지 말고 사랑해주시면 좋겠습니다",
+      "russian": "Надеюсь, и дальше вы не будете забывать о нас, BTS, и будете нас любить"
+    },
+    {
+      "video": "video/suga/야 어묵 맛있다.webm",
+      "videoMp4": "video/suga/mp4/야 어묵 맛있다.mp4",
+      "korean": "야 어묵 맛있다",
+      "russian": "Эй, омук вкусный"
+    },
+    {
+      "video": "video/suga/오래 됐다.webm",
+      "videoMp4": "video/suga/mp4/오래 됐다.mp4",
+      "korean": "오래 됐다",
+      "russian": "Много времени прошло"
+    },
+    {
+      "video": "video/suga/육십일.webm",
+      "videoMp4": "video/suga/mp4/육십일.mp4",
+      "korean": "육십일",
+      "russian": "Шестьдесят один"
+    },
+    {
+      "video": "video/suga/이거 쉽지 않거든.webm",
+      "videoMp4": "video/suga/mp4/이거 쉽지 않거든.mp4",
+      "korean": "이거 쉽지 않거든",
+      "russian": "Это вообще-то непросто"
+    },
+    {
+      "video": "video/suga/잠수 대결을 일반인 친구들하고 같이 해 봤어.webm",
+      "videoMp4": "video/suga/mp4/잠수 대결을 일반인 친구들하고 같이 해 봤어.mp4",
+      "korean": "잠수 대결을 일반인 친구들하고 같이 해 봤어",
+      "russian": "Я попробовал устроить соревнование по нырянию с друзьями"
+    },
+    {
+      "video": "video/suga/저도 이게 있어요!.webm",
+      "videoMp4": "video/suga/mp4/저도 이게 있어요!.mp4",
+      "korean": "저도 이게 있어요!",
+      "russian": "У меня тоже вот это есть!"
+    },
+    {
+      "video": "video/suga/진짜 잘한다.webm",
+      "videoMp4": "video/suga/mp4/진짜 잘한다.mp4",
+      "korean": "진짜 잘한다",
+      "russian": "Правда круто"
+    },
+    {
+      "video": "video/suga/프롬프터도 없겠다.webm",
+      "videoMp4": "video/suga/mp4/프롬프터도 없겠다.mp4",
+      "korean": "프롬프터도 없겠다",
+      "russian": "И суфлёра-то нет"
+    },
+    {
+      "video": "video/suga/행복만 하면 된다.webm",
+      "videoMp4": "video/suga/mp4/행복만 하면 된다.mp4",
+      "korean": "행복만 하면 된다",
+      "russian": "Главное — просто быть счастливым"
+    }
+  ],
   "b4": [],
   "b5": []
 }
