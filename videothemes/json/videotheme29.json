@@ -371,7 +371,6 @@
   ],
   "b3": [
     {
-      "isNew": true,
       "video": "video/suga/2050년.webm",
       "videoMp4": "video/suga/mp4/2050년.mp4",
       "korean": "이천오십년",
@@ -534,6 +533,200 @@
       "russian": "Главное — просто быть счастливым"
     }
   ],
-  "b4": [],
+  "b4": [
+    {
+      "isNew": true,
+      "video": "video/suga/99퍼센트는 된다고 봐요.webm",
+      "videoMp4": "video/suga/mp4/99퍼센트는 된다고 봐요.mp4",
+      "korean": "99퍼센트는 된다고 봐요",
+      "russian": "Я думаю, на 99% всё получится"
+    },
+    {
+      "video": "video/suga/가수는 콘서트다.webm",
+      "videoMp4": "video/suga/mp4/가수는 콘서트다.mp4",
+      "korean": "가수는 콘서트다",
+      "russian": "Певец — это концерт"
+    },
+    {
+      "video": "video/suga/건강 걱정을 좀 많이 하더라고요.webm",
+      "videoMp4": "video/suga/mp4/건강 걱정을 좀 많이 하더라고요.mp4",
+      "korean": "건강 걱정을 좀 많이 하더라고요",
+      "russian": "Он очень переживает за здоровье"
+    },
+    {
+      "video": "video/suga/그리고 또 다른 시작이잖아요.webm",
+      "videoMp4": "video/suga/mp4/그리고 또 다른 시작이잖아요.mp4",
+      "korean": "그리고 또 다른 시작이잖아요",
+      "russian": "И это ведь ещё один новый старт"
+    },
+    {
+      "video": "video/suga/그리고 제가 노래도 많이 해요 이번에.webm",
+      "videoMp4": "video/suga/mp4/그리고 제가 노래도 많이 해요 이번에.mp4",
+      "korean": "그리고 제가 노래도 많이 해요 이번에",
+      "russian": "И в этот раз я ещё много пою"
+    },
+    {
+      "video": "video/suga/그사이에 많은 것들이 바뀌었다고요.webm",
+      "videoMp4": "video/suga/mp4/그사이에 많은 것들이 바뀌었다고요.mp4",
+      "korean": "그사이에 많은 것들이 바뀌었다고요",
+      "russian": "За это время многое изменилось"
+    },
+    {
+      "video": "video/suga/기분이 좀 다르다.webm",
+      "videoMp4": "video/suga/mp4/기분이 좀 다르다.mp4",
+      "korean": "기분이 좀 다르다",
+      "russian": "Чувство немного другое"
+    },
+    {
+      "video": "video/suga/나중에 시간 지났을 때.webm",
+      "videoMp4": "video/suga/mp4/나중에 시간 지났을 때.mp4",
+      "korean": "나중에 시간 지났을 때",
+      "russian": "Когда потом пройдёт время"
+    },
+    {
+      "video": "video/suga/다 필요했어요.webm",
+      "videoMp4": "video/suga/mp4/다 필요했어요.mp4",
+      "korean": "다 필요했어요",
+      "russian": "Мне всё это было нужно"
+    },
+    {
+      "video": "video/suga/당이 없습니다.webm",
+      "videoMp4": "video/suga/mp4/당이 없습니다.mp4",
+      "korean": "당이 없습니다",
+      "russian": "Сахара нет"
+    },
+    {
+      "video": "video/suga/두 번째 믹스테이프 ‘D-2’ 나왔어요.webm",
+      "videoMp4": "video/suga/mp4/두 번째 믹스테이프 ‘D-2’ 나왔어요.mp4",
+      "korean": "두 번째 믹스테이프 ‘D-2’ 나왔어요",
+      "russian": "Второй микстейп ‘D-2’ вышел"
+    },
+    {
+      "video": "video/suga/드릴을 꼭 하고 싶었어요!.webm",
+      "videoMp4": "video/suga/mp4/드릴을 꼭 하고 싶었어요!.mp4",
+      "korean": "드릴을 꼭 하고 싶었어요!",
+      "russian": "Очень хотел заняться дриллом!"
+    },
+    {
+      "video": "video/suga/멋있더라 진짜.webm",
+      "videoMp4": "video/suga/mp4/멋있더라 진짜.mp4",
+      "korean": "멋있더라 진짜",
+      "russian": "Правда круто было"
+    },
+    {
+      "video": "video/suga/미래의 나에게 이야기합니다 그냥 해.webm",
+      "videoMp4": "video/suga/mp4/미래의 나에게 이야기합니다 그냥 해.mp4",
+      "korean": "미래의 나에게 이야기합니다 그냥 해",
+      "russian": "Обращаюсь к себе в будущем: просто делай"
+    },
+    {
+      "video": "video/suga/밀릴 수가 없다.webm",
+      "videoMp4": "video/suga/mp4/밀릴 수가 없다.mp4",
+      "korean": "밀릴 수가 없다",
+      "russian": "Я не могу отступить"
+    },
+    {
+      "video": "video/suga/방탄 음악으로 제가 세상을 살아왔습니다.webm",
+      "videoMp4": "video/suga/mp4/방탄 음악으로 제가 세상을 살아왔습니다.mp4",
+      "korean": "방탄 음악으로 제가 세상을 살아왔습니다",
+      "russian": "Я жил в этом мире благодаря музыке BTS"
+    },
+    {
+      "video": "video/suga/비건이라던데.webm",
+      "videoMp4": "video/suga/mp4/비건이라던데.mp4",
+      "korean": "비건이라던데",
+      "russian": "Говорят, он веган"
+    },
+    {
+      "video": "video/suga/서울에서 작업을 못 하겠는 거예요.webm",
+      "videoMp4": "video/suga/mp4/서울에서 작업을 못 하겠는 거예요.mp4",
+      "korean": "서울에서 작업을 못 하겠는 거예요",
+      "russian": "Я просто не мог работать в Сеуле"
+    },
+    {
+      "video": "video/suga/수가는 사라졌다.webm",
+      "videoMp4": "video/suga/mp4/수가는 사라졌다.mp4",
+      "korean": "수가는 사라졌다",
+      "russian": "Шуга исчез"
+    },
+    {
+      "video": "video/suga/예전에는.webm",
+      "videoMp4": "video/suga/mp4/예전에는.mp4",
+      "korean": "예전에는",
+      "russian": "Раньше"
+    },
+    {
+      "video": "video/suga/온도를 좀 다시 느껴보고 싶어.webm",
+      "videoMp4": "video/suga/mp4/온도를 좀 다시 느껴보고 싶어.mp4",
+      "korean": "온도를 좀 다시 느껴보고 싶어",
+      "russian": "Хочу снова немного почувствовать эту температуру"
+    },
+    {
+      "video": "video/suga/우리가 옛날에 타던 그 박차랑 다른 거야.webm",
+      "videoMp4": "video/suga/mp4/우리가 옛날에 타던 그 박차랑 다른 거야.mp4",
+      "korean": "우리가 옛날에 타던 그 박차랑 다른 거야",
+      "russian": "Это не те шпоры, на которых мы раньше ездили"
+    },
+    {
+      "video": "video/suga/원래는 항상 바빴으니까.webm",
+      "videoMp4": "video/suga/mp4/원래는 항상 바빴으니까.mp4",
+      "korean": "원래는 항상 바빴으니까",
+      "russian": "Раньше я всегда был занят"
+    },
+    {
+      "video": "video/suga/이렇게 뭔가 없어도 되는구나.webm",
+      "videoMp4": "video/suga/mp4/이렇게 뭔가 없어도 되는구나.mp4",
+      "korean": "이렇게 뭔가 없어도 되는구나",
+      "russian": "Оказывается, можно и без всего этого"
+    },
+    {
+      "video": "video/suga/이렇게 해도 되는구나.webm",
+      "videoMp4": "video/suga/mp4/이렇게 해도 되는구나.mp4",
+      "korean": "이렇게 해도 되는구나",
+      "russian": "Оказывается, так тоже можно"
+    },
+    {
+      "video": "video/suga/이번에 트윌로지 마지막입니다.webm",
+      "videoMp4": "video/suga/mp4/이번에 트윌로지 마지막입니다.mp4",
+      "korean": "이번에 트윌로지 마지막입니다",
+      "russian": "В этот раз это последняя часть трилогии"
+    },
+    {
+      "video": "video/suga/작업실에 딱 도착하자마자.webm",
+      "videoMp4": "video/suga/mp4/작업실에 딱 도착하자마자.mp4",
+      "korean": "작업실에 딱 도착하자마자",
+      "russian": "Как только я прямо приехал в студию"
+    },
+    {
+      "video": "video/suga/지금 이야기하고 있어요.webm",
+      "videoMp4": "video/suga/mp4/지금 이야기하고 있어요.mp4",
+      "korean": "지금 이야기하고 있어요",
+      "russian": "Сейчас разговариваю"
+    },
+    {
+      "video": "video/suga/촉촉하다.webm",
+      "videoMp4": "video/suga/mp4/촉촉하다.mp4",
+      "korean": "촉촉하다",
+      "russian": "Влажно"
+    },
+    {
+      "video": "video/suga/패키지가 고급스럽습니다.webm",
+      "videoMp4": "video/suga/mp4/패키지가 고급스럽습니다.mp4",
+      "korean": "패키지가 고급스럽습니다",
+      "russian": "Упаковка выглядит роскошно"
+    },
+    {
+      "video": "video/suga/필터링 없이.webm",
+      "videoMp4": "video/suga/mp4/필터링 없이.mp4",
+      "korean": "필터링 없이",
+      "russian": "Без фильтрации"
+    },
+    {
+      "video": "video/suga/항상 현재에 집중했어요.webm",
+      "videoMp4": "video/suga/mp4/항상 현재에 집중했어요.mp4",
+      "korean": "항상 현재에 집중했어요",
+      "russian": "Я всегда концентрировался на настоящем"
+    }
+  ],
   "b5": []
 }
