@@ -8,9 +8,13 @@ on:
 jobs:
   upload:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true
 
       # --- Пересчитываем totalCount / hasNew в config.json ---
       - name: Rebuild config.json
