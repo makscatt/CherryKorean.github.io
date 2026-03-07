@@ -68,7 +68,9 @@
         "name": "Слабый Герой 2",
         "key": "b5"
       }
-    ]
+    ],
+    "totalCount": 35,
+    "hasNew": false
   },
   "theme1": {
     "coverImage": "videothemes/subthemebc/runbtsbackground.png",
@@ -107,7 +109,9 @@
         "name": "Аэро-Йога-2",
         "key": "b7"
       }
-    ]
+    ],
+    "totalCount": 217,
+    "hasNew": false
   },
   "theme2": {
     "coverImage": "videothemes/subthemebc/squidgamebackground.png",
@@ -126,7 +130,9 @@
         "name": "Сезон 2",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 92,
+    "hasNew": false
   },
   "theme3": {
     "coverImage": "videothemes/subthemebc/healerbackground.png",
@@ -145,7 +151,9 @@
         "name": "Хиллер 2",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 74,
+    "hasNew": false
   },
   "theme4": {
     "coverImage": "videothemes/subthemebc/allkdrama.png",
@@ -184,7 +192,9 @@
         "name": "Жизнь дает мандарины",
         "key": "b7"
       }
-    ]
+    ],
+    "totalCount": 225,
+    "hasNew": false
   },
   "theme5": {
     "coverImage": "videothemes/subthemebc/moonlovers.png",
@@ -215,7 +225,9 @@
         "name": "Сердца Корё 5",
         "key": "b5"
       }
-    ]
+    ],
+    "totalCount": 161,
+    "hasNew": false
   },
   "theme6": {
     "coverImage": "videothemes/subthemebc/hwaran.png",
@@ -246,7 +258,9 @@
         "name": "Хваран 5",
         "key": "b5"
       }
-    ]
+    ],
+    "totalCount": 155,
+    "hasNew": false
   },
   "theme7": {
     "coverImage": "videothemes/subthemebc/vin.png",
@@ -265,7 +279,9 @@
         "name": "Винченцо 2",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 75,
+    "hasNew": false
   },
   "theme8": {
     "coverImage": "videothemes/subthemebc/weakherobackground.png",
@@ -292,7 +308,9 @@
         "name": "Сезон 2-4",
         "key": "b4"
       }
-    ]
+    ],
+    "totalCount": 128,
+    "hasNew": false
   },
   "theme9": {
     "coverImage": "videothemes/subthemebc/ije.png",
@@ -315,7 +333,9 @@
         "name": "Игра смерти 3",
         "key": "b3"
       }
-    ]
+    ],
+    "totalCount": 86,
+    "hasNew": false
   },
   "theme10": {
     "coverImage": "videothemes/subthemebc/bloodhounds.png",
@@ -334,7 +354,9 @@
         "name": "Словно гончие 2",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 77,
+    "hasNew": false
   },
   "theme11": {
     "coverImage": "videothemes/subthemebc/glory.png",
@@ -357,7 +379,9 @@
         "name": "Слава 3",
         "key": "b3"
       }
-    ]
+    ],
+    "totalCount": 103,
+    "hasNew": false
   },
   "theme12": {
     "coverImage": "videothemes/subthemebc/killershop.png",
@@ -372,7 +396,9 @@
         "name": "Магазин для убииц 1",
         "key": "b1"
       }
-    ]
+    ],
+    "totalCount": 34,
+    "hasNew": false
   },
   "theme13": {
     "coverImage": "videothemes/subthemebc/hvatai.png",
@@ -395,7 +421,9 @@
         "name": "Сон Дже 3",
         "key": "b3"
       }
-    ]
+    ],
+    "totalCount": 100,
+    "hasNew": false
   },
   "theme14": {
     "coverImage": "videothemes/subthemebc/biglig.png",
@@ -414,7 +442,9 @@
         "name": "Большая лига 2",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 56,
+    "hasNew": false
   },
   "theme15": {
     "coverImage": "videothemes/subthemebc/lookism.png",
@@ -429,7 +459,9 @@
         "name": "Лукизм 1",
         "key": "b1"
       }
-    ]
+    ],
+    "totalCount": 41,
+    "hasNew": false
   },
   "theme16": {
     "coverImage": "videothemes/subthemebc/kalmar3.png",
@@ -444,7 +476,9 @@
         "name": "1 Серия",
         "key": "b1"
       }
-    ]
+    ],
+    "totalCount": 39,
+    "hasNew": false
   },
   "theme17": {
     "coverImage": "videothemes/subthemebc/demon.png",
@@ -459,7 +493,9 @@
         "name": "1 Серия",
         "key": "b1"
       }
-    ]
+    ],
+    "totalCount": 41,
+    "hasNew": false
   },
   "theme18": {
     "coverImage": "videothemes/subthemebc/kumiho.png",
@@ -482,7 +518,9 @@
         "name": "3",
         "key": "b3"
       }
-    ]
+    ],
+    "totalCount": 93,
+    "hasNew": false
   },
   "theme19": {
     "coverImage": "videothemes/subthemebc/ad.png",
@@ -501,7 +539,9 @@
         "name": "2 ",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 68,
+    "hasNew": false
   },
   "theme20": {
     "coverImage": "videothemes/subthemebc/evilflower.png",
@@ -528,7 +568,9 @@
         "name": "Цветок зла 4",
         "key": "b4"
       }
-    ]
+    ],
+    "totalCount": 147,
+    "hasNew": false
   },
   "theme21": {
     "coverImage": "videothemes/subthemebc/shef.png",
@@ -551,7 +593,9 @@
         "name": "3",
         "key": "b3"
       }
-    ]
+    ],
+    "totalCount": 102,
+    "hasNew": false
   },
   "theme22": {
     "coverImage": "videothemes/subthemebc/jin.png",
@@ -566,7 +610,9 @@
         "name": "2",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 61,
+    "hasNew": false
   },
   "theme23": {
     "coverImage": "videothemes/subthemebc/landking.png",
@@ -581,7 +627,9 @@
         "name": "2",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 62,
+    "hasNew": false
   },
   "theme24": {
     "coverImage": "videothemes/subthemebc/lis.png",
@@ -592,7 +640,9 @@
         "name": "1",
         "key": "b1"
       }
-    ]
+    ],
+    "totalCount": 36,
+    "hasNew": false
   },
   "theme25": {
     "coverImage": "videothemes/subthemebc/marry.png",
@@ -603,7 +653,9 @@
         "name": "1",
         "key": "b1"
       }
-    ]
+    ],
+    "totalCount": 40,
+    "hasNew": false
   },
   "theme26": {
     "coverImage": "videothemes/subthemebc/tafun.png",
@@ -614,7 +666,9 @@
         "name": "1",
         "key": "b1"
       }
-    ]
+    ],
+    "totalCount": 35,
+    "hasNew": false
   },
   "theme27": {
     "coverImage": "videothemes/subthemebc/rusure.png",
@@ -629,7 +683,9 @@
         "name": "2",
         "key": "b2"
       }
-    ]
+    ],
+    "totalCount": 45,
+    "hasNew": true
   },
   "theme28": {
     "coverImage": "videothemes/subthemebc/reader.png",
@@ -640,9 +696,10 @@
         "name": "1",
         "key": "b1"
       }
-    ]
-  }
-  ,
+    ],
+    "totalCount": 30,
+    "hasNew": true
+  },
   "theme29": {
     "coverImage": "videothemes/subthemebc/suga.png",
     "masterJsonPath": "videothemes/json/videotheme29.json",
@@ -664,6 +721,8 @@
         "name": "С Шугой(Ведет РМ)",
         "key": "b4"
       }
-    ]
+    ],
+    "totalCount": 120,
+    "hasNew": true
   }
 }
