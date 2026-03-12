@@ -535,10 +535,9 @@
   ],
   "b4": [
     {
-      "isNew": true,
       "video": "video/suga/99퍼센트는 된다고 봐요.webm",
       "videoMp4": "video/suga/mp4/99퍼센트는 된다고 봐요.mp4",
-      "korean": "99퍼센트는 된다고 봐요",
+      "korean": "구십구퍼센트는 된다고 봐요",
       "russian": "Я думаю, на 99% всё получится"
     },
     {
@@ -728,5 +727,193 @@
       "russian": "Я всегда концентрировался на настоящем"
     }
   ],
-  "b5": []
+  "b5": [
+    {
+      "isNew": true,
+      "video": "video/suga/가슴을 활짝 펴고크게 웃어요.webm",
+      "videoMp4": "video/suga/mp4/가슴을 활짝 펴고크게 웃어요.mp4",
+      "korean": "가슴을 활짝 펴고크게 웃어요",
+      "russian": "Грудь расправь и широко улыбнись"
+    },
+    {
+      "video": "video/suga/개관종이지.webm",
+      "videoMp4": "video/suga/mp4/개관종이지.mp4",
+      "korean": "개관종이지",
+      "russian": "Ты же attention whore"
+    },
+    {
+      "video": "video/suga/고마운 거죠.webm",
+      "videoMp4": "video/suga/mp4/고마운 거죠.mp4",
+      "korean": "고마운 거죠",
+      "russian": "Надо быть благодарным"
+    },
+    {
+      "video": "video/suga/과감하게 선택을 했고.webm",
+      "videoMp4": "video/suga/mp4/과감하게 선택을 했고.mp4",
+      "korean": "과감하게 선택을 했고",
+      "russian": "Я смело сделал выбор"
+    },
+    {
+      "video": "video/suga/그 노래 하고.webm",
+      "videoMp4": "video/suga/mp4/그 노래 하고.mp4",
+      "korean": "그 노래 하고",
+      "russian": "С той песней"
+    },
+    {
+      "video": "video/suga/그때만 할 수 있었고.webm",
+      "videoMp4": "video/suga/mp4/그때만 할 수 있었고.mp4",
+      "korean": "그때만 할 수 있었고",
+      "russian": "Только тогда я мог это сделать"
+    },
+    {
+      "video": "video/suga/그쵸 진짜 아무도 몰랐죠 아무도.webm",
+      "videoMp4": "video/suga/mp4/그쵸 진짜 아무도 몰랐죠 아무도.mp4",
+      "korean": "그쵸 진짜 아무도 몰랐죠 아무도",
+      "russian": "Да, правда, вообще никто не знал, никто"
+    },
+    {
+      "video": "video/suga/나 혼자 해 봤을 때는 이건 아니다.webm",
+      "videoMp4": "video/suga/mp4/나 혼자 해 봤을 때는 이건 아니다.mp4",
+      "korean": "나 혼자 해 봤을 때는 이건 아니다",
+      "russian": "Когда я попробовал один, понял: это не то"
+    },
+    {
+      "video": "video/suga/나는 머리 자른 거를 최근에 봤으니까.webm",
+      "videoMp4": "video/suga/mp4/나는 머리 자른 거를 최근에 봤으니까.mp4",
+      "korean": "나는 머리 자른 거를 최근에 봤으니까",
+      "russian": "Я ведь недавно видел, как ты подстригся"
+    },
+    {
+      "video": "video/suga/나의 길인 거 같다 이게.webm",
+      "videoMp4": "video/suga/mp4/나의 길인 거 같다 이게.mp4",
+      "korean": "나의 길인 거 같다 이게",
+      "russian": "Кажется, это мой путь"
+    },
+    {
+      "video": "video/suga/내가 솔로 투어를 해 봤는데.webm",
+      "videoMp4": "video/suga/mp4/내가 솔로 투어를 해 봤는데.mp4",
+      "korean": "내가 솔로 투어를 해 봤는데",
+      "russian": "Я как-то попробовал сольный тур"
+    },
+    {
+      "video": "video/suga/너무 기대하지 마세요.webm",
+      "videoMp4": "video/suga/mp4/너무 기대하지 마세요.mp4",
+      "korean": "너무 기대하지 마세요",
+      "russian": "Слишком не ждите"
+    },
+    {
+      "video": "video/suga/무슨 소리예요.webm",
+      "videoMp4": "video/suga/mp4/무슨 소리예요.mp4",
+      "korean": "무슨 소리예요",
+      "russian": "О чём вы говорите"
+    },
+    {
+      "video": "video/suga/미쳤지.webm",
+      "videoMp4": "video/suga/mp4/미쳤지.mp4",
+      "korean": "미쳤지",
+      "russian": "С ума сошёл же"
+    },
+    {
+      "video": "video/suga/미친놈들 진짜.webm",
+      "videoMp4": "video/suga/mp4/미친놈들 진짜.mp4",
+      "korean": "미친놈들 진짜",
+      "russian": "Сумасшедшие, правда"
+    },
+    {
+      "video": "video/suga/버텨서 된 거지.webm",
+      "videoMp4": "video/suga/mp4/버텨서 된 거지.mp4",
+      "korean": "버텨서 된 거지",
+      "russian": "Это потому, что я выдержал"
+    },
+    {
+      "video": "video/suga/분위기가 심각하지 않아.webm",
+      "videoMp4": "video/suga/mp4/분위기가 심각하지 않아.mp4",
+      "korean": "분위기가 심각하지 않아",
+      "russian": "Атмосфера не такая уж серьёзная"
+    },
+    {
+      "video": "video/suga/사람이 진짜 난리가 나더라고.webm",
+      "videoMp4": "video/suga/mp4/사람이 진짜 난리가 나더라고.mp4",
+      "korean": "사람이 진짜 난리가 나더라고",
+      "russian": "Люди, правда, просто с ума сходят"
+    },
+    {
+      "video": "video/suga/생각보다 엄청 커요.webm",
+      "videoMp4": "video/suga/mp4/생각보다 엄청 커요.mp4",
+      "korean": "생각보다 엄청 커요",
+      "russian": "Оно гораздо больше, чем я думал"
+    },
+    {
+      "video": "video/suga/솔직 다 덜어.webm",
+      "videoMp4": "video/suga/mp4/솔직 다 덜어.mp4",
+      "korean": "솔직 다 덜어",
+      "russian": "Честно, вываливай всё"
+    },
+    {
+      "video": "video/suga/시작이 되는 거 같아요.webm",
+      "videoMp4": "video/suga/mp4/시작이 되는 거 같아요.mp4",
+      "korean": "시작이 되는 거 같아요",
+      "russian": "Кажется, всё только начинается"
+    },
+    {
+      "video": "video/suga/야 여기를 와보네요 형.webm",
+      "videoMp4": "video/suga/mp4/야 여기를 와보네요 형.mp4",
+      "korean": "야 여기를 와보네요 형",
+      "russian": "Эй, иди-ка сюда, брат"
+    },
+    {
+      "video": "video/suga/유기농 주스.webm",
+      "videoMp4": "video/suga/mp4/유기농 주스.mp4",
+      "korean": "유기농 주스",
+      "russian": "Органический сок"
+    },
+    {
+      "video": "video/suga/육세대는 형 정말 다를걸.webm",
+      "videoMp4": "video/suga/mp4/육세대는 형 정말 다를걸.mp4",
+      "korean": "육세대는 형 정말 다를걸",
+      "russian": "Шестое поколение, брат, оно правда будет другим"
+    },
+    {
+      "video": "video/suga/이게 하다 보니까.webm",
+      "videoMp4": "video/suga/mp4/이게 하다 보니까.mp4",
+      "korean": "이게 하다 보니까",
+      "russian": "Когда вот так делаешь"
+    },
+    {
+      "video": "video/suga/이십사 년도에 나올 거 같고.webm",
+      "videoMp4": "video/suga/mp4/이십사 년도에 나올 거 같고.mp4",
+      "korean": "이십사 년도에 나올 거 같고",
+      "russian": "Кажется, выйдет в двадцать четвертом году"
+    },
+    {
+      "video": "video/suga/인간 지옥.webm",
+      "videoMp4": "video/suga/mp4/인간 지옥.mp4",
+      "korean": "인간 지옥",
+      "russian": "Человеческий ад"
+    },
+    {
+      "video": "video/suga/일년을 담았죠.webm",
+      "videoMp4": "video/suga/mp4/일년을 담았죠.mp4",
+      "korean": "일년을 담았죠",
+      "russian": "Я вложил в это целый год"
+    },
+    {
+      "video": "video/suga/파란색 아디다스.webm",
+      "videoMp4": "video/suga/mp4/파란색 아디다스.mp4",
+      "korean": "파란색 아디다스",
+      "russian": "Синие адидасы"
+    },
+    {
+      "video": "video/suga/항상 육십킬로 대였는데.webm",
+      "videoMp4": "video/suga/mp4/항상 육십킬로 대였는데.mp4",
+      "korean": "항상 육십킬로 대였는데",
+      "russian": "Я всегда весил в районе шестидесяти килограмм"
+    },
+    {
+      "video": "video/suga/행복하게 음악합시다.webm",
+      "videoMp4": "video/suga/mp4/행복하게 음악합시다.mp4",
+      "korean": "행복하게 음악합시다",
+      "russian": "Давайте счастливо заниматься музыкой"
+    }
+  ]
 }

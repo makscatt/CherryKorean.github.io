@@ -50,7 +50,7 @@ yt-dlp --cookies-from-browser firefox "https://www.youtube.com/watch?v="
 
 
 только звук:
-yt-dlp.exe -x --audio-format mp3 https://www.youtube.com/watch?v=
+yt-dlp.exe -x --audio-format mp3 https://youtu.be/kzFbd79hXn0?list=RDkzFbd79hXn0
 
 в лучшем качестве:
 yt-dlp.exe -f b https://www.youtube.com/watch?v=ID
