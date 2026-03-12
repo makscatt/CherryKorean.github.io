@@ -3,7 +3,6 @@ setlocal EnableDelayedExpansion
 
 :: ============================================
 :: deploy.bat - Deploy Telegram-Korean-mini-App
-:: GitHub Actions auto-deploys after push
 :: ============================================
 
 echo.
@@ -22,9 +21,9 @@ if errorlevel 1 (
 for /f "tokens=*" %%a in ('git branch --show-current') do set BRANCH=%%a
 if "!BRANCH!"=="" set BRANCH=main
 
-:: Pull remote changes first
+:: Pull remote changes first (--no-edit skips Vim editor)
 echo [1/5] Pulling remote changes...
-git pull origin !BRANCH!
+git pull --no-edit origin !BRANCH!
 echo.
 
 :: Show status
