@@ -14,16 +14,6 @@ echo.
 git rev-parse --is-inside-work-tree >nul 2>&1
 if errorlevel 1 (
     echo [ERROR] Not a git repository!
-    echo Run: git init
-    echo Run: git remote add origin https://github.com/YOUR_USERNAME/Telegram-Korean-mini-App.git
-    pause
-    exit /b 1
-)
-
-:: Check remote
-git remote get-url origin >nul 2>&1
-if errorlevel 1 (
-    echo [ERROR] Remote "origin" not set!
     pause
     exit /b 1
 )
@@ -32,8 +22,13 @@ if errorlevel 1 (
 for /f "tokens=*" %%a in ('git branch --show-current') do set BRANCH=%%a
 if "!BRANCH!"=="" set BRANCH=main
 
+:: Pull remote changes first
+echo [1/5] Pulling remote changes...
+git pull origin !BRANCH!
+echo.
+
 :: Show status
-echo [1/4] Changes:
+echo [2/5] Changes:
 git status --short
 echo.
 
@@ -43,15 +38,15 @@ if "!COMMIT_MSG!"=="" set COMMIT_MSG=update
 
 :: Add
 echo.
-echo [2/4] Adding files...
+echo [3/5] Adding files...
 git add -A
 
 :: Commit
-echo [3/4] Committing...
+echo [4/5] Committing...
 git commit -m "!COMMIT_MSG!"
 
 :: Push
-echo [4/4] Pushing to GitHub (branch: !BRANCH!)...
+echo [5/5] Pushing to GitHub (branch: !BRANCH!)...
 git push -u origin !BRANCH!
 if errorlevel 1 (
     echo.
