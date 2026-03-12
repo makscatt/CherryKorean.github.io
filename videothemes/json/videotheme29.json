@@ -1110,5 +1110,200 @@
       "korean": "형 기억나요",
       "russian": "Брат, помнишь?"
     }
+  ],
+  "b7": [
+    {
+      "isNew": true,
+      "video": "video/suga/곡이 너무 좋아요.webm",
+      "videoMp4": "video/suga/mp4/곡이 너무 좋아요.mp4",
+      "korean": "곡이 너무 좋아요",
+      "russian": "Песня мне очень нравится"
+    },
+    {
+      "video": "video/suga/그건 중요하지 않아요.webm",
+      "videoMp4": "video/suga/mp4/그건 중요하지 않아요.mp4",
+      "korean": "그건 중요하지 않아요",
+      "russian": "Это не важно"
+    },
+    {
+      "video": "video/suga/그러니까 되게 삶이 되게 쾌적해지더라고요.webm",
+      "videoMp4": "video/suga/mp4/그러니까 되게 삶이 되게 쾌적해지더라고요.mp4",
+      "korean": "그러니까 되게 삶이 되게 쾌적해지더라고요",
+      "russian": "И поэтому жизнь стала намного комфортнее"
+    },
+    {
+      "video": "video/suga/그러다가 마지막에.webm",
+      "videoMp4": "video/suga/mp4/그러다가 마지막에.mp4",
+      "korean": "그러다가 마지막에",
+      "russian": "А потом в конце"
+    },
+    {
+      "video": "video/suga/나쁜 사람이 될 수 있다면 되겠죠.webm",
+      "videoMp4": "video/suga/mp4/나쁜 사람이 될 수 있다면 되겠죠.mp4",
+      "korean": "나쁜 사람이 될 수 있다면 되겠죠",
+      "russian": "Если я смогу стать плохим человеком, то, наверное, стану"
+    },
+    {
+      "video": "video/suga/나이 먹고.webm",
+      "videoMp4": "video/suga/mp4/나이 먹고.mp4",
+      "korean": "나이 먹고",
+      "russian": "С возрастом"
+    },
+    {
+      "video": "video/suga/나이 먹고 영상 팬 사인회 하면 되게 웃기겠다..webm",
+      "videoMp4": "video/suga/mp4/나이 먹고 영상 팬 사인회 하면 되게 웃기겠다..mp4",
+      "korean": "나이 먹고 영상 팬 사인회 하면 되게 웃기겠다.",
+      "russian": "С возрастом, если устроить видео-фан-сайн, будет очень смешно"
+    },
+    {
+      "video": "video/suga/너무 부담이었어요.webm",
+      "videoMp4": "video/suga/mp4/너무 부담이었어요.mp4",
+      "korean": "너무 부담이었어요",
+      "russian": "Это было слишком тяжело для меня"
+    },
+    {
+      "video": "video/suga/노래 부를까 내가.webm",
+      "videoMp4": "video/suga/mp4/노래 부를까 내가.mp4",
+      "korean": "노래 부를까 내가",
+      "russian": "Может, мне спеть?"
+    },
+    {
+      "video": "video/suga/눈 눈 침침해 가지고 이러고 있을 거 아니야.webm",
+      "videoMp4": "video/suga/mp4/눈 눈 침침해 가지고 이러고 있을 거 아니야.mp4",
+      "korean": "눈 눈 침침해 가지고 이러고 있을 거 아니야",
+      "russian": "Глаза- глаза уже мутные, и я вот так сижу же"
+    },
+    {
+      "video": "video/suga/다 내포되어 있어요.webm",
+      "videoMp4": "video/suga/mp4/다 내포되어 있어요.mp4",
+      "korean": "다 내포되어 있어요",
+      "russian": "Все в себе заключено"
+    },
+    {
+      "video": "video/suga/또 여기서 마시게 될 줄은 몰랐네.webm",
+      "videoMp4": "video/suga/mp4/또 여기서 마시게 될 줄은 몰랐네.mp4",
+      "korean": "또 여기서 마시게 될 줄은 몰랐네",
+      "russian": "Не думал, что снова буду пить здесь"
+    },
+    {
+      "video": "video/suga/맛있겠다.webm",
+      "videoMp4": "video/suga/mp4/맛있겠다.mp4",
+      "korean": "맛있겠다",
+      "russian": "Вкуснота"
+    },
+    {
+      "video": "video/suga/못했어요.webm",
+      "videoMp4": "video/suga/mp4/못했어요.mp4",
+      "korean": "못했어요",
+      "russian": "Не смог(ла)"
+    },
+    {
+      "video": "video/suga/보여줘요.webm",
+      "videoMp4": "video/suga/mp4/보여줘요.mp4",
+      "korean": "보여줘요",
+      "russian": "Покажите"
+    },
+    {
+      "video": "video/suga/아무도 난 솔직히 못 받았어요.webm",
+      "videoMp4": "video/suga/mp4/아무도 난 솔직히 못 받았어요.mp4",
+      "korean": "아무도 난 솔직히 못 받았어요",
+      "russian": "Честно, я вообще ничего не получил(а)"
+    },
+    {
+      "video": "video/suga/아픈 거에도 팁이 있어요.webm",
+      "videoMp4": "video/suga/mp4/아픈 거에도 팁이 있어요.mp4",
+      "korean": "아픈 거에도 팁이 있어요",
+      "russian": "Даже в том, как терпеть боль, есть свои хитрости"
+    },
+    {
+      "video": "video/suga/어울리는 것도 재능이에요.webm",
+      "videoMp4": "video/suga/mp4/어울리는 것도 재능이에요.mp4",
+      "korean": "어울리는 것도 재능이에요",
+      "russian": "Подходить к чему-то — тоже талант"
+    },
+    {
+      "video": "video/suga/억울함도 많았고.webm",
+      "videoMp4": "video/suga/mp4/억울함도 많았고.mp4",
+      "korean": "억울함도 많았고",
+      "russian": "Много было и обид"
+    },
+    {
+      "video": "video/suga/왜 이제 불러줘요.webm",
+      "videoMp4": "video/suga/mp4/왜 이제 불러줘요.mp4",
+      "korean": "왜 이제 불러줘요",
+      "russian": "Почему только сейчас зовёте?"
+    },
+    {
+      "video": "video/suga/요즘 그러려고 해요.webm",
+      "videoMp4": "video/suga/mp4/요즘 그러려고 해요.mp4",
+      "korean": "요즘 그러려고 해요",
+      "russian": "В последнее время я так и собираюсь делать"
+    },
+    {
+      "video": "video/suga/이건 해야 된다.webm",
+      "videoMp4": "video/suga/mp4/이건 해야 된다.mp4",
+      "korean": "이건 해야 된다",
+      "russian": "Это нужно сделать"
+    },
+    {
+      "video": "video/suga/이제 듣잖아.webm",
+      "videoMp4": "video/suga/mp4/이제 듣잖아.mp4",
+      "korean": "이제 듣잖아",
+      "russian": "Теперь ведь слушаешь"
+    },
+    {
+      "video": "video/suga/잘할 수 있어요.webm",
+      "videoMp4": "video/suga/mp4/잘할 수 있어요.mp4",
+      "korean": "잘할 수 있어요",
+      "russian": "Вы сможете хорошо справиться"
+    },
+    {
+      "video": "video/suga/재미있을 거 같애.webm",
+      "videoMp4": "video/suga/mp4/재미있을 거 같애.mp4",
+      "korean": "재미있을 거 같애",
+      "russian": "Кажется, будет интересно"
+    },
+    {
+      "video": "video/suga/정말 멋있는 친구구나.webm",
+      "videoMp4": "video/suga/mp4/정말 멋있는 친구구나.mp4",
+      "korean": "정말 멋있는 친구구나",
+      "russian": "Правда, классный парень"
+    },
+    {
+      "video": "video/suga/진짜 진짜 멋있다.webm",
+      "videoMp4": "video/suga/mp4/진짜 진짜 멋있다.mp4",
+      "korean": "진짜 진짜 멋있다",
+      "russian": "Правда-правда круто"
+    },
+    {
+      "video": "video/suga/카메라가 생각보다 많다.webm",
+      "videoMp4": "video/suga/mp4/카메라가 생각보다 많다.mp4",
+      "korean": "카메라가 생각보다 많다",
+      "russian": "Камер больше, чем я думал"
+    },
+    {
+      "video": "video/suga/틀어 주실 수가 있나요.webm",
+      "videoMp4": "video/suga/mp4/틀어 주실 수가 있나요.mp4",
+      "korean": "틀어 주실 수가 있나요",
+      "russian": "Можете включить?"
+    },
+    {
+      "video": "video/suga/하이퍼볼.webm",
+      "videoMp4": "video/suga/mp4/하이퍼볼.mp4",
+      "korean": "하이퍼볼",
+      "russian": "Хай퍼болл"
+    },
+    {
+      "video": "video/suga/황금.webm",
+      "videoMp4": "video/suga/mp4/황금.mp4",
+      "korean": "황금",
+      "russian": "Золото"
+    },
+    {
+      "video": "video/suga/힘들다.webm",
+      "videoMp4": "video/suga/mp4/힘들다.mp4",
+      "korean": "힘들다",
+      "russian": "Тяжело"
+    }
   ]
 }
