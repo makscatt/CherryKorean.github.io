@@ -49,7 +49,6 @@
       "russian": "Сегодня сразу на самолёт садишься"
     },
     {
-      "isNew": true,
       "video": "video/rusure/여기서 길이 바뀝니다.webm",
       "videoMp4": "video/rusure/mp4/여기서 길이 바뀝니다.mp4",
       "korean": "여기서 길이 바뀝니다",
@@ -136,7 +135,6 @@
   ],
   "b2": [
     {
-      "isNew": true,
       "video": "video/rusure/형 우리 팝핑 배울래 다시.webm",
       "videoMp4": "video/rusure/mp4/형 우리 팝핑 배울래 다시.mp4",
       "korean": "형 우리 팝핑 배울래 다시",
