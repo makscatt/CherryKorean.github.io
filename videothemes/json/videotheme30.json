@@ -180,30 +180,6 @@
       "videoMp4": "video/apl/mp4/지금 날 보고 있나.mp4",
       "korean": "지금 날 보고 있나",
       "russian": "Он сейчас на меня смотрит?"
-    },
-    {
-      "video": "video/apl/진작에 없애버렸을 수도.webm",
-      "videoMp4": "video/apl/mp4/진작에 없애버렸을 수도.mp4",
-      "korean": "진작에 없애버렸을 수도",
-      "russian": "Могли давно уже избавиться"
-    },
-    {
-      "video": "video/apl/진짜 외로웠는데.webm",
-      "videoMp4": "video/apl/mp4/진짜 외로웠는데.mp4",
-      "korean": "진짜 외로웠는데",
-      "russian": "Я правда очень одиноко себя чувствовал"
-    },
-    {
-      "video": "video/apl/청이 한 가지 있습니다.webm",
-      "videoMp4": "video/apl/mp4/청이 한 가지 있습니다.mp4",
-      "korean": "청이 한 가지 있습니다",
-      "russian": "У меня есть одна просьба"
-    },
-    {
-      "video": "video/apl/충분히 다들 들었겠죠.webm",
-      "videoMp4": "video/apl/mp4/충분히 다들 들었겠죠.mp4",
-      "korean": "충분히 다들 들었겠죠",
-      "russian": "Думаю, все уже достаточно услышали"
     }
   ],
   "b2": [
@@ -387,6 +363,32 @@
       "videoMp4": "video/apl/mp4/오늘 우리 다니의 살림집 이사 나가는 날입니다.mp4",
       "korean": "오늘 우리 다니의 살림집 이사 나가는 날입니다",
       "russian": "Сегодня день, когда наша Дани переезжает из своего дома"
+    }
+  ],
+  "b3": [
+    {
+      "video": "video/apl/진작에 없애버렸을 수도.webm",
+      "videoMp4": "video/apl/mp4/진작에 없애버렸을 수도.mp4",
+      "korean": "진작에 없애버렸을 수도",
+      "russian": "Могли давно уже избавиться"
+    },
+    {
+      "video": "video/apl/진짜 외로웠는데.webm",
+      "videoMp4": "video/apl/mp4/진짜 외로웠는데.mp4",
+      "korean": "진짜 외로웠는데",
+      "russian": "Я правда очень одиноко себя чувствовал"
+    },
+    {
+      "video": "video/apl/청이 한 가지 있습니다.webm",
+      "videoMp4": "video/apl/mp4/청이 한 가지 있습니다.mp4",
+      "korean": "청이 한 가지 있습니다",
+      "russian": "У меня есть одна просьба"
+    },
+    {
+      "video": "video/apl/충분히 다들 들었겠죠.webm",
+      "videoMp4": "video/apl/mp4/충분히 다들 들었겠죠.mp4",
+      "korean": "충분히 다들 들었겠죠",
+      "russian": "Думаю, все уже достаточно услышали"
     },
     {
       "video": "video/apl/와 봐야 할 것 같아서요.webm",
@@ -479,7 +481,6 @@
       "russian": "Доставили один цветочный горшок"
     }
   ],
-  "b3": [],
   "b4": [],
   "b5": []
 }
