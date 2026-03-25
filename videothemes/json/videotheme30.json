@@ -206,7 +206,279 @@
       "russian": "Думаю, все уже достаточно услышали"
     }
   ],
-  "b2": [],
+  "b2": [
+    {
+      "isNew": true,
+      "video": "video/apl/감자튀김.webm",
+      "videoMp4": "video/apl/mp4/감자튀김.mp4",
+      "korean": "감자튀김",
+      "russian": "Картошка фри"
+    },
+    {
+      "video": "video/apl/갑자기 말입니까.webm",
+      "videoMp4": "video/apl/mp4/갑자기 말입니까.mp4",
+      "korean": "갑자기 말입니까",
+      "russian": "Вдруг, говорите?"
+    },
+    {
+      "video": "video/apl/걱정 마시오.webm",
+      "videoMp4": "video/apl/mp4/걱정 마시오.mp4",
+      "korean": "걱정 마시오",
+      "russian": "Не беспокойтесь"
+    },
+    {
+      "video": "video/apl/그냥  가면 안 돼.webm",
+      "videoMp4": "video/apl/mp4/그냥  가면 안 돼.mp4",
+      "korean": "그냥  가면 안 돼",
+      "russian": "Просто так уйти нельзя"
+    },
+    {
+      "video": "video/apl/그냥 그런데.webm",
+      "videoMp4": "video/apl/mp4/그냥 그런데.mp4",
+      "korean": "그냥 그런데",
+      "russian": "Просто так"
+    },
+    {
+      "video": "video/apl/근데 말이야.webm",
+      "videoMp4": "video/apl/mp4/근데 말이야.mp4",
+      "korean": "근데 말이야",
+      "russian": "Но знаешь"
+    },
+    {
+      "video": "video/apl/기다리기라도 해요.webm",
+      "videoMp4": "video/apl/mp4/기다리기라도 해요.mp4",
+      "korean": "기다리기라도 해요",
+      "russian": "Хотя бы подождите"
+    },
+    {
+      "video": "video/apl/기록에나 말입니다.webm",
+      "videoMp4": "video/apl/mp4/기록에나 말입니다.mp4",
+      "korean": "기록에나 말입니다",
+      "russian": "Хотя бы для протокола, так сказать"
+    },
+    {
+      "video": "video/apl/나도 쇼핑 좋아하는데.webm",
+      "videoMp4": "video/apl/mp4/나도 쇼핑 좋아하는데.mp4",
+      "korean": "나도 쇼핑 좋아하는데",
+      "russian": "Я тоже люблю шопинг"
+    },
+    {
+      "video": "video/apl/나도 왜인지 그 이유는 모릅니다.webm",
+      "videoMp4": "video/apl/mp4/나도 왜인지 그 이유는 모릅니다.mp4",
+      "korean": "나도 왜인지 그 이유는 모릅니다",
+      "russian": "Я тоже почему-то не знаю этой причины"
+    },
+    {
+      "video": "video/apl/나와는 다릅니다.webm",
+      "videoMp4": "video/apl/mp4/나와는 다릅니다.mp4",
+      "korean": "나와는 다릅니다",
+      "russian": "Он не такой, как я"
+    },
+    {
+      "video": "video/apl/노력했다.webm",
+      "videoMp4": "video/apl/mp4/노력했다.mp4",
+      "korean": "노력했다",
+      "russian": "Я старался"
+    },
+    {
+      "video": "video/apl/돈을 댄 자들이 있을 겁니다.webm",
+      "videoMp4": "video/apl/mp4/돈을 댄 자들이 있을 겁니다.mp4",
+      "korean": "돈을 댄 자들이 있을 겁니다",
+      "russian": "Наверняка есть те, кто вложил деньги"
+    },
+    {
+      "video": "video/apl/또 실패야.webm",
+      "videoMp4": "video/apl/mp4/또 실패야.mp4",
+      "korean": "또 실패야",
+      "russian": "Снова провал"
+    },
+    {
+      "video": "video/apl/말 좀 해 주세요.webm",
+      "videoMp4": "video/apl/mp4/말 좀 해 주세요.mp4",
+      "korean": "말 좀 해 주세요",
+      "russian": "Пожалуйста, скажите хоть что-нибудь"
+    },
+    {
+      "video": "video/apl/먹는 것 같아.webm",
+      "videoMp4": "video/apl/mp4/먹는 것 같아.mp4",
+      "korean": "먹는 것 같아",
+      "russian": "Как будто ест"
+    },
+    {
+      "video": "video/apl/멋있는 남성을 구해줄 수도 있어.webm",
+      "videoMp4": "video/apl/mp4/멋있는 남성을 구해줄 수도 있어.mp4",
+      "korean": "멋있는 남성을 구해줄 수도 있어",
+      "russian": "Могу даже помочь тебе заполучить классного мужчину"
+    },
+    {
+      "video": "video/apl/무궁화 꽃이 피었습니다.webm",
+      "videoMp4": "video/apl/mp4/무궁화 꽃이 피었습니다.mp4",
+      "korean": "무궁화 꽃이 피었습니다",
+      "russian": "Мугунхва расцвёл"
+    },
+    {
+      "video": "video/apl/무조건 넘겨 달라고 했다.webm",
+      "videoMp4": "video/apl/mp4/무조건 넘겨 달라고 했다.mp4",
+      "korean": "무조건 넘겨 달라고 했다",
+      "russian": "Сказали во что бы то ни стало передать"
+    },
+    {
+      "video": "video/apl/뭘 시켜 이 새끼야.webm",
+      "videoMp4": "video/apl/mp4/뭘 시켜 이 새끼야.mp4",
+      "korean": "뭘 시켜 이 새끼야",
+      "russian": "Что ты заказываешь, сука"
+    },
+    {
+      "video": "video/apl/받았습니다.webm",
+      "videoMp4": "video/apl/mp4/받았습니다.mp4",
+      "korean": "받았습니다",
+      "russian": "Получил(а)"
+    },
+    {
+      "video": "video/apl/보고 싶습니다.webm",
+      "videoMp4": "video/apl/mp4/보고 싶습니다.mp4",
+      "korean": "보고 싶습니다",
+      "russian": "Скучаю по вам"
+    },
+    {
+      "video": "video/apl/볼 날이 있을 겁니다.webm",
+      "videoMp4": "video/apl/mp4/볼 날이 있을 겁니다.mp4",
+      "korean": "볼 날이 있을 겁니다",
+      "russian": "Настанет день, когда мы увидимся"
+    },
+    {
+      "video": "video/apl/부탁드리겠습니다.webm",
+      "videoMp4": "video/apl/mp4/부탁드리겠습니다.mp4",
+      "korean": "부탁드리겠습니다",
+      "russian": "Очень прошу вас"
+    },
+    {
+      "video": "video/apl/삶아야지.webm",
+      "videoMp4": "video/apl/mp4/삶아야지.mp4",
+      "korean": "삶아야지",
+      "russian": "Надо отварить"
+    },
+    {
+      "video": "video/apl/알고 있어.webm",
+      "videoMp4": "video/apl/mp4/알고 있어.mp4",
+      "korean": "알고 있어",
+      "russian": "Я знаю"
+    },
+    {
+      "video": "video/apl/알리고 싶지도 않아요.webm",
+      "videoMp4": "video/apl/mp4/알리고 싶지도 않아요.mp4",
+      "korean": "알리고 싶지도 않아요",
+      "russian": "И рассказывать не хочу"
+    },
+    {
+      "video": "video/apl/연습하러 갑니다.webm",
+      "videoMp4": "video/apl/mp4/연습하러 갑니다.mp4",
+      "korean": "연습하러 갑니다",
+      "russian": "Иду тренироваться"
+    },
+    {
+      "video": "video/apl/예뻐요.webm",
+      "videoMp4": "video/apl/mp4/예뻐요.mp4",
+      "korean": "예뻐요",
+      "russian": "Красивая / Красиво"
+    },
+    {
+      "video": "video/apl/오늘 우리 다니의 살림집 이사 나가는 날입니다.webm",
+      "videoMp4": "video/apl/mp4/오늘 우리 다니의 살림집 이사 나가는 날입니다.mp4",
+      "korean": "오늘 우리 다니의 살림집 이사 나가는 날입니다",
+      "russian": "Сегодня день, когда наша Дани переезжает из своего дома"
+    },
+    {
+      "video": "video/apl/와 봐야 할 것 같아서요.webm",
+      "videoMp4": "video/apl/mp4/와 봐야 할 것 같아서요.mp4",
+      "korean": "와 봐야 할 것 같아서요",
+      "russian": "Кажется, прийти всё-таки нужно"
+    },
+    {
+      "video": "video/apl/왜 아니오라고 합니까.webm",
+      "videoMp4": "video/apl/mp4/왜 아니오라고 합니까.mp4",
+      "korean": "왜 아니오라고 합니까",
+      "russian": "Почему вы говорите «нет»?"
+    },
+    {
+      "video": "video/apl/왜 필요합니까.webm",
+      "videoMp4": "video/apl/mp4/왜 필요합니까.mp4",
+      "korean": "왜 필요합니까",
+      "russian": "Зачем это нужно?"
+    },
+    {
+      "video": "video/apl/우리 아들.webm",
+      "videoMp4": "video/apl/mp4/우리 아들.mp4",
+      "korean": "우리 아들",
+      "russian": "Наш сын"
+    },
+    {
+      "video": "video/apl/유감도 없습니다.webm",
+      "videoMp4": "video/apl/mp4/유감도 없습니다.mp4",
+      "korean": "유감도 없습니다",
+      "russian": "Я даже не сожалею"
+    },
+    {
+      "video": "video/apl/음력.webm",
+      "videoMp4": "video/apl/mp4/음력.mp4",
+      "korean": "음력",
+      "russian": "Лунный календарь"
+    },
+    {
+      "video": "video/apl/이젠 일 없을 겁니다.webm",
+      "videoMp4": "video/apl/mp4/이젠 일 없을 겁니다.mp4",
+      "korean": "이젠 일 없을 겁니다",
+      "russian": "Теперь проблем не будет"
+    },
+    {
+      "video": "video/apl/잘 됐어요.webm",
+      "videoMp4": "video/apl/mp4/잘 됐어요.mp4",
+      "korean": "잘 됐어요",
+      "russian": "Отлично получилось"
+    },
+    {
+      "video": "video/apl/정말 미안하고.webm",
+      "videoMp4": "video/apl/mp4/정말 미안하고.mp4",
+      "korean": "정말 미안하고",
+      "russian": "Мне правда очень жаль, и"
+    },
+    {
+      "video": "video/apl/좀 멀쩡한 모습으로.webm",
+      "videoMp4": "video/apl/mp4/좀 멀쩡한 모습으로.mp4",
+      "korean": "좀 멀쩡한 모습으로",
+      "russian": "В более-менее приличном виде"
+    },
+    {
+      "video": "video/apl/지가 알아서 죽어 버렸어.webm",
+      "videoMp4": "video/apl/mp4/지가 알아서 죽어 버렸어.mp4",
+      "korean": "지가 알아서 죽어 버렸어",
+      "russian": "Он сам по себе взял да сдох"
+    },
+    {
+      "video": "video/apl/지금 합시다.webm",
+      "videoMp4": "video/apl/mp4/지금 합시다.mp4",
+      "korean": "지금 합시다",
+      "russian": "Давайте сделаем сейчас"
+    },
+    {
+      "video": "video/apl/찾았습니다.webm",
+      "videoMp4": "video/apl/mp4/찾았습니다.mp4",
+      "korean": "찾았습니다",
+      "russian": "Нашёл"
+    },
+    {
+      "video": "video/apl/할 수 있겠어.webm",
+      "videoMp4": "video/apl/mp4/할 수 있겠어.mp4",
+      "korean": "할 수 있겠어",
+      "russian": "Справишься?"
+    },
+    {
+      "video": "video/apl/화분이 하나 배달됐고요.webm",
+      "videoMp4": "video/apl/mp4/화분이 하나 배달됐고요.mp4",
+      "korean": "화분이 하나 배달됐고요",
+      "russian": "Доставили один цветочный горшок"
+    }
+  ],
   "b3": [],
   "b4": [],
   "b5": []
