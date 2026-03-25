@@ -21,13 +21,8 @@ if errorlevel 1 (
 for /f "tokens=*" %%a in ('git branch --show-current') do set BRANCH=%%a
 if "!BRANCH!"=="" set BRANCH=main
 
-:: Pull remote changes first (--no-edit skips Vim editor)
-echo [1/5] Pulling remote changes...
-git pull --no-edit origin !BRANCH!
-echo.
-
 :: Show status
-echo [2/5] Changes:
+echo [1/5] Changes:
 git status --short
 echo.
 
@@ -37,12 +32,23 @@ if "!COMMIT_MSG!"=="" set COMMIT_MSG=update
 
 :: Add
 echo.
-echo [3/5] Adding files...
+echo [2/5] Adding files...
 git add -A
 
 :: Commit
-echo [4/5] Committing...
+echo [3/5] Committing...
 git commit -m "!COMMIT_MSG!"
+
+:: Pull remote changes (after commit, so rebase works cleanly)
+echo.
+echo [4/5] Pulling remote changes...
+git pull --no-edit --rebase origin !BRANCH!
+if errorlevel 1 (
+    echo.
+    echo [ERROR] Pull failed! Fix conflicts manually, then run again.
+    pause
+    exit /b 1
+)
 
 :: Push
 echo [5/5] Pushing to GitHub (branch: !BRANCH!)...
