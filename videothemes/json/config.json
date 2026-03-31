@@ -757,5 +757,18 @@
     ],
     "totalCount": 79,
     "hasNew": true
+  },
+  "theme31": {
+    "coverImage": "videothemes/subthemebc/2521.png",
+    "masterJsonPath": "videothemes/json/videotheme31.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1"
+      }
+    ],
+    "totalCount": 79,
+    "hasNew": true
   }
 }
