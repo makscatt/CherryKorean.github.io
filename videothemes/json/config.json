@@ -771,7 +771,7 @@
     "totalCount": 33,
     "hasNew": true
   },
-  "theme33": {
+  "theme32": {
     "coverImage": "videothemes/subthemebc/itewon.png",
     "masterJsonPath": "videothemes/json/videotheme32.json",
     "targetPageUrl": "video_list_template.html",
