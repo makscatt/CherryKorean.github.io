@@ -74,6 +74,7 @@
   },
   "theme1": {
     "coverImage": "videothemes/subthemebc/runbtsbackground.png",
+    "title": "BTS",
     "masterJsonPath": "videothemes/json/videotheme1.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -115,6 +116,7 @@
   },
   "theme2": {
     "coverImage": "videothemes/subthemebc/squidgamebackground.png",
+    "title": "Игра в кальмара 1,2",
     "masterJsonPath": "videothemes/json/videotheme2.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -136,6 +138,7 @@
   },
   "theme3": {
     "coverImage": "videothemes/subthemebc/healerbackground.png",
+    "title": "Хилер",
     "masterJsonPath": "videothemes/json/videotheme3.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -157,6 +160,7 @@
   },
   "theme4": {
     "coverImage": "videothemes/subthemebc/allkdrama.png",
+    "title": "Отрывки из разных Дорам и Шоу",
     "masterJsonPath": "videothemes/json/videotheme4.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -198,6 +202,7 @@
   },
   "theme5": {
     "coverImage": "videothemes/subthemebc/moonlovers.png",
+    "title": "Алые сердца Корё",
     "masterJsonPath": "videothemes/json/videotheme5.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -231,6 +236,7 @@
   },
   "theme6": {
     "coverImage": "videothemes/subthemebc/hwaran.png",
+    "title": "Отряд Хваран",
     "masterJsonPath": "videothemes/json/videotheme6.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -264,6 +270,7 @@
   },
   "theme7": {
     "coverImage": "videothemes/subthemebc/vin.png",
+    "title": "Винченцо",
     "masterJsonPath": "videothemes/json/videotheme7.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -285,6 +292,7 @@
   },
   "theme8": {
     "coverImage": "videothemes/subthemebc/weakherobackground.png",
+    "title": "Слабый герой 1,2 сезоны",
     "masterJsonPath": "videothemes/json/videotheme8.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -314,6 +322,7 @@
   },
   "theme9": {
     "coverImage": "videothemes/subthemebc/ije.png",
+    "title": "Идже скоро умрет",
     "masterJsonPath": "videothemes/json/videotheme9.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -339,6 +348,7 @@
   },
   "theme10": {
     "coverImage": "videothemes/subthemebc/bloodhounds.png",
+    "title": "Словно гончие",
     "masterJsonPath": "videothemes/json/videotheme10.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -360,6 +370,7 @@
   },
   "theme11": {
     "coverImage": "videothemes/subthemebc/glory.png",
+    "title": "Слава",
     "masterJsonPath": "videothemes/json/videotheme11.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -385,6 +396,7 @@
   },
   "theme12": {
     "coverImage": "videothemes/subthemebc/killershop.png",
+    "title": "Магазин для убийц",
     "masterJsonPath": "videothemes/json/videotheme12.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -402,6 +414,7 @@
   },
   "theme13": {
     "coverImage": "videothemes/subthemebc/hvatai.png",
+    "title": "Хватай Сон Дже и Беги",
     "masterJsonPath": "videothemes/json/videotheme13.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -427,6 +440,7 @@
   },
   "theme14": {
     "coverImage": "videothemes/subthemebc/biglig.png",
+    "title": "Комеди Биг Лига",
     "masterJsonPath": "videothemes/json/videotheme14.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -448,6 +462,7 @@
   },
   "theme15": {
     "coverImage": "videothemes/subthemebc/lookism.png",
+    "title": "Лукизм",
     "masterJsonPath": "videothemes/json/videotheme15.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -465,6 +480,7 @@
   },
   "theme16": {
     "coverImage": "videothemes/subthemebc/kalmar3.png",
+    "title": "Игра в кальмара 3",
     "masterJsonPath": "videothemes/json/videotheme16.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -482,6 +498,7 @@
   },
   "theme17": {
     "coverImage": "videothemes/subthemebc/demon.png",
+    "title": "Мой Демон",
     "masterJsonPath": "videothemes/json/videotheme17.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -499,6 +516,7 @@
   },
   "theme18": {
     "coverImage": "videothemes/subthemebc/kumiho.png",
+    "title": "История 9-хвостого лиса 1938",
     "masterJsonPath": "videothemes/json/videotheme18.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -524,6 +542,7 @@
   },
   "theme19": {
     "coverImage": "videothemes/subthemebc/ad.png",
+    "title": "Незнакомцы из АДА",
     "masterJsonPath": "videothemes/json/videotheme19.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -545,6 +564,7 @@
   },
   "theme20": {
     "coverImage": "videothemes/subthemebc/evilflower.png",
+    "title": "Цветок Зла",
     "masterJsonPath": "videothemes/json/videotheme20.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -574,6 +594,7 @@
   },
   "theme21": {
     "coverImage": "videothemes/subthemebc/shef.png",
+    "title": "Шеф-Повар Тирана",
     "masterJsonPath": "videothemes/json/videotheme21.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -599,6 +620,7 @@
   },
   "theme22": {
     "coverImage": "videothemes/subthemebc/jin.png",
+    "title": "Все твои желания исполнятся",
     "masterJsonPath": "videothemes/json/videotheme22.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -616,6 +638,7 @@
   },
   "theme23": {
     "coverImage": "videothemes/subthemebc/landking.png",
+    "title": "Король земли",
     "masterJsonPath": "videothemes/json/videotheme23.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -633,6 +656,7 @@
   },
   "theme24": {
     "coverImage": "videothemes/subthemebc/lis.png",
+    "title": "История 9-хвостого Лиса",
     "masterJsonPath": "videothemes/json/videotheme24.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -646,6 +670,7 @@
   },
   "theme25": {
     "coverImage": "videothemes/subthemebc/marry.png",
+    "title": "Женись на мне",
     "masterJsonPath": "videothemes/json/videotheme25.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -659,6 +684,7 @@
   },
   "theme26": {
     "coverImage": "videothemes/subthemebc/tafun.png",
+    "title": "Босс компании Тайфун",
     "masterJsonPath": "videothemes/json/videotheme26.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -672,6 +698,7 @@
   },
   "theme27": {
     "coverImage": "videothemes/subthemebc/rusure.png",
+    "title": "Ты уверен?",
     "masterJsonPath": "videothemes/json/videotheme27.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -689,6 +716,7 @@
   },
   "theme28": {
     "coverImage": "videothemes/subthemebc/reader.png",
+    "title": "Всеведущий читатель",
     "masterJsonPath": "videothemes/json/videotheme28.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -702,6 +730,7 @@
   },
   "theme29": {
     "coverImage": "videothemes/subthemebc/suga.png",
+    "title": "ШуЧиТа Шоу Шуги",
     "masterJsonPath": "videothemes/json/videotheme29.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -739,6 +768,7 @@
   },
   "theme30": {
     "coverImage": "videothemes/subthemebc/apl.png",
+    "title": "Аварийная посадка Любви",
     "masterJsonPath": "videothemes/json/videotheme30.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -760,6 +790,7 @@
   },
   "theme31": {
     "coverImage": "videothemes/subthemebc/2521.png",
+    "title": "25/21",
     "masterJsonPath": "videothemes/json/videotheme31.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -773,6 +804,7 @@
   },
   "theme32": {
     "coverImage": "videothemes/subthemebc/itewon.png",
+    "title": "Итевон класс",
     "masterJsonPath": "videothemes/json/videotheme32.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
