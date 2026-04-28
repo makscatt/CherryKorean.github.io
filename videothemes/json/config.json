@@ -815,5 +815,19 @@
     ],
     "totalCount": 32,
     "hasNew": true
+  },
+  "theme33": {
+    "coverImage": "videothemes/subthemebc/tomorrow.png",
+    "title": "Завтра обязательно",
+    "masterJsonPath": "videothemes/json/videotheme33.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1"
+      }
+    ],
+    "totalCount": 32,
+    "hasNew": true
   }
 }

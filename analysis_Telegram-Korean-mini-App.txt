@@ -1,0 +1,597 @@
+======================================================================
+АНАЛИЗ ПРОЕКТА: TELEGRAM-KOREAN-MINI-APP
+Путь: C:\Users\MakscattSchool\Desktop\projects\Telegram-Korean-mini-App
+Дата анализа: 2026-04-28 17:16
+Всего файлов: 330
+======================================================================
+
+
+🔧 ТЕХНОЛОГИЧЕСКИЙ СТЕК
+----------------------------------------
+  Не удалось определить автоматически
+
+
+📁 СТРУКТУРА ПРОЕКТА
+----------------------------------------
+  .github\workflows\deploy.yml  (1.8 KB)
+  _archive\ai_tutor.html  (50.9 KB)
+  _archive\analytics.js  (2.0 KB)
+  _archive\app_name_1.png  (527.6 KB)
+  _archive\audiobox.json  (23.5 KB)
+  _archive\blocks.html  (17.2 KB)
+  _archive\bridge.png  (601.3 KB)
+  _archive\buttonstyles.css  (6.5 KB)
+  _archive\cherrykorean-instruction.png  (148.4 KB)
+  _archive\coockierun.ttf  (2206.7 KB)
+  _archive\customcontrolbuttons\play.png  (15.3 KB)
+  _archive\customcontrolbuttons\repeat.png  (15.3 KB)
+  _archive\customcontrolbuttons\speed.png  (1.1 KB)
+  _archive\easytohardwords.json  (10.7 KB)
+  _archive\easywords.json  (2.2 KB)
+  _archive\favicon.ico  (123.7 KB)
+  _archive\font.css  (234 B)
+  _archive\fonts\Pretendard-Black.otf  (1523.0 KB)
+  _archive\fonts\Pretendard-Bold.otf  (1539.7 KB)
+  _archive\fonts\Pretendard-ExtraBold.otf  (1531.8 KB)
+  _archive\fonts\Pretendard-ExtraLight.otf  (1508.0 KB)
+  _archive\fonts\Pretendard-Light.otf  (1562.5 KB)
+  _archive\fonts\Pretendard-Medium.otf  (1546.9 KB)
+  _archive\fonts\Pretendard-Regular.otf  (1537.5 KB)
+  _archive\fonts\Pretendard-SemiBold.otf  (1546.6 KB)
+  _archive\fonts\Pretendard-Thin.otf  (1452.6 KB)
+  _archive\game_words.html  (72.6 KB)
+  _archive\index.html  (11.8 KB)
+  _archive\instruction.png  (9.6 KB)
+  _archive\kimchibutton.png  (11.0 KB)
+  _archive\loading.png  (17.5 KB)
+  _archive\lock.png  (82.1 KB)
+  _archive\lockhorizont.png  (14.6 KB)
+  _archive\logo.png  (357.5 KB)
+  _archive\menu.html  (63.5 KB)
+  _archive\menu.png  (10.3 KB)
+  _archive\minimenu.css  (1.1 KB)
+  _archive\NetflixSans-Bold.otf  (207.4 KB)
+  _archive\NetflixSans-Light.otf  (203.8 KB)
+  _archive\NetflixSans-Medium.otf  (207.1 KB)
+  _archive\NetflixSans-Regular.otf  (203.8 KB)
+  _archive\offer2.html  (16.8 KB)
+  _archive\package.json  (607 B)
+  _archive\pathway_player.html  (80.4 KB)
+  _archive\ranks.js  (2.2 KB)
+  _archive\redlock.png  (83.2 KB)
+  _archive\redlockhorizont.png  (27.9 KB)
+  _archive\sessionTracker.js  (997 B)
+  _archive\start.png  (13.7 KB)
+  _archive\startscreenBGnew.png  (2553.2 KB)
+  _archive\success.html  (3.3 KB)
+  _archive\theme_menu_template.html  (29.1 KB)
+  _archive\themes.css  (5.3 KB)
+  _archive\trackActivity.js  (1.9 KB)
+  _archive\twocards\background.png  (2650.2 KB)
+  _archive\twocards\cardback.png  (227.4 KB)
+  _archive\twocardsmenu.html  (29.6 KB)
+  _archive\video_list_template.html  (108.9 KB)
+  _archive\video_random.html  (102.2 KB)
+  _archive\videooffer.html  (8.5 KB)
+  _archive\videoplayer.css  (2.7 KB)
+  _archive\videopremium.html  (9.9 KB)
+  _archive\videorating.html  (17.5 KB)
+  _archive\videoreviews.html  (11.2 KB)
+  _archive\videostyles.css  (10.5 KB)
+  _archive\videosubmenustyles.css  (227 B)
+  _archive\videothemebank.html  (36.3 KB)
+  _archive\videothemebc.png  (208.4 KB)
+  _archive\videothemes\bank.png  (128.8 KB)
+  _archive\videothemes\communication.png  (144.4 KB)
+  _archive\videothemes\game.png  (207.5 KB)
+  _archive\videothemes\game_words.png  (96.9 KB)
+  _archive\videothemes\json\Шаблон.json  (116 B)
+  _archive\videothemes\rating.png  (131.5 KB)
+  _archive\videothemes\reviews.png  (184.7 KB)
+  _archive\videothemes\reviewsbackground.png  (611.0 KB)
+  _archive\videothemes\riddle\healer.png  (465.1 KB)
+  _archive\videothemes\riddle\runbts.png  (311.7 KB)
+  _archive\win.png  (390.6 KB)
+  analyze_project.py  (37.0 KB)
+  CLAUDE.md  (3.2 KB)
+  deploy-miniapp.bat  (1.4 KB)
+  rebuild_config.py  (4.6 KB)
+  reports\tasks.json  (70 B)
+  tree.py  (1.7 KB)
+  twocards\actors\1.png  (201.0 KB)
+  twocards\actors\10.png  (195.3 KB)
+  twocards\actors\11.png  (190.2 KB)
+  twocards\actors\12.png  (235.7 KB)
+  twocards\actors\2.png  (165.0 KB)
+  twocards\actors\3.png  (203.1 KB)
+  twocards\actors\4.png  (190.7 KB)
+  twocards\actors\5.png  (187.8 KB)
+  twocards\actors\6.png  (190.8 KB)
+  twocards\actors\7.png  (139.0 KB)
+  twocards\actors\8.png  (180.8 KB)
+  twocards\actors\9.png  (194.6 KB)
+  twocards\bts\1.png  (192.6 KB)
+  twocards\bts\10.png  (154.3 KB)
+  twocards\bts\11.png  (26.1 KB)
+  twocards\bts\12.png  (245.3 KB)
+  twocards\bts\13.png  (187.0 KB)
+  twocards\bts\14.png  (254.5 KB)
+  twocards\bts\15.png  (192.3 KB)
+  twocards\bts\16.png  (204.8 KB)
+  twocards\bts\17.png  (279.6 KB)
+  twocards\bts\18.png  (247.3 KB)
+  twocards\bts\19.png  (212.6 KB)
+  twocards\bts\2.png  (210.7 KB)
+  twocards\bts\20.png  (107.6 KB)
+  twocards\bts\21.png  (236.0 KB)
+  twocards\bts\22.png  (75.9 KB)
+  twocards\bts\23.png  (174.3 KB)
+  twocards\bts\24.png  (261.8 KB)
+  twocards\bts\25.png  (211.3 KB)
+  twocards\bts\26.png  (207.8 KB)
+  twocards\bts\27.png  (180.3 KB)
+  twocards\bts\28.png  (210.1 KB)
+  twocards\bts\29.png  (160.3 KB)
+  twocards\bts\3.png  (192.6 KB)
+  twocards\bts\30.png  (179.5 KB)
+  twocards\bts\31.png  (239.0 KB)
+  twocards\bts\32.png  (265.8 KB)
+  twocards\bts\33.png  (191.5 KB)
+  twocards\bts\34.png  (173.2 KB)
+  twocards\bts\35.png  (131.0 KB)
+  twocards\bts\36.png  (207.6 KB)
+  twocards\bts\37.png  (232.5 KB)
+  twocards\bts\38.png  (187.8 KB)
+  twocards\bts\39.png  (264.4 KB)
+  twocards\bts\4.png  (164.8 KB)
+  twocards\bts\5.png  (232.5 KB)
+  twocards\bts\6.png  (227.3 KB)
+  twocards\bts\7.png  (200.6 KB)
+  twocards\bts\8.png  (50.5 KB)
+  twocards\bts\9.png  (266.1 KB)
+  twocards\shirtless\1.png  (130.1 KB)
+  twocards\shirtless\10.png  (197.5 KB)
+  twocards\shirtless\11.png  (214.3 KB)
+  twocards\shirtless\12.png  (94.7 KB)
+  twocards\shirtless\13.png  (206.9 KB)
+  twocards\shirtless\14.png  (222.9 KB)
+  twocards\shirtless\15.png  (210.2 KB)
+  twocards\shirtless\16.png  (175.9 KB)
+  twocards\shirtless\17.png  (159.0 KB)
+  twocards\shirtless\18.png  (180.4 KB)
+  twocards\shirtless\2.png  (204.7 KB)
+  twocards\shirtless\3.png  (179.7 KB)
+  twocards\shirtless\4.png  (185.5 KB)
+  twocards\shirtless\5.png  (150.0 KB)
+  twocards\shirtless\6.png  (225.7 KB)
+  twocards\shirtless\7.png  (136.3 KB)
+  twocards\shirtless\8.png  (128.4 KB)
+  twocards\shirtless\9.png  (210.6 KB)
+  twocards\twocards.json  (4.4 KB)
+  videothemes\awards\award_Айдол.png  (1061.4 KB)
+  videothemes\awards\award_Дебютант.png  (1047.0 KB)
+  videothemes\awards\award_Дорамщик.png  (1052.5 KB)
+  videothemes\awards\award_Король Кимчи.png  (1073.7 KB)
+  videothemes\awards\award_Новичок.png  (1081.9 KB)
+  videothemes\awards\award_Суперзвезда.png  (1053.0 KB)
+  videothemes\awards\award_Трейни.png  (1065.3 KB)
+  videothemes\awards\award_Турист.png  (1081.8 KB)
+  videothemes\awards\award_Ученик.png  (1064.6 KB)
+  videothemes\awards\award_Фанат.png  (1068.2 KB)
+  videothemes\icons\arrow_right.png  (16.4 KB)
+  videothemes\icons\back.png  (50.1 KB)
+  videothemes\icons\backarrow.png  (14.2 KB)
+  videothemes\icons\bc_path.png  (1660.8 KB)
+  videothemes\icons\bc_scene.png  (3033.2 KB)
+  videothemes\icons\CEO.png  (597.9 KB)
+  videothemes\icons\CEO_circle.png  (197.9 KB)
+  videothemes\icons\cup_bronze.png  (180.1 KB)
+  videothemes\icons\cup_gold.png  (179.1 KB)
+  videothemes\icons\cup_silver.png  (190.6 KB)
+  videothemes\icons\Dude.png  (657.0 KB)
+  videothemes\icons\Dude_circle.png  (264.4 KB)
+  videothemes\icons\goldkimchi.png  (183.2 KB)
+  videothemes\icons\home.png  (71.4 KB)
+  videothemes\icons\inbank.png  (170.6 KB)
+  videothemes\icons\list.png  (38.4 KB)
+  videothemes\icons\mic.png  (84.0 KB)
+  videothemes\icons\mic_large.png  (84.0 KB)
+  videothemes\icons\outbank.png  (184.3 KB)
+  videothemes\icons\reviews.png  (155.4 KB)
+  videothemes\icons\search.png  (72.7 KB)
+  videothemes\icons\tape.png  (77.2 KB)
+  videothemes\icons\Teacher.png  (686.7 KB)
+  videothemes\icons\Teacher_circle.png  (256.3 KB)
+  videothemes\icons\timer.png  (167.0 KB)
+  videothemes\icons\valik.png  (119.5 KB)
+  videothemes\icons\writing.png  (159.6 KB)
+  videothemes\itewon.png  (470.9 KB)
+  videothemes\json\advanced.json  (73.2 KB)
+  videothemes\json\begginer.json  (38.4 KB)
+  videothemes\json\config.json  (19.2 KB)
+  videothemes\json\intermediate.json  (83.8 KB)
+  videothemes\json\levels.json  (65.4 KB)
+  videothemes\json\messages.json  (31.7 KB)
+  videothemes\json\videoreviews.json  (6.5 KB)
+  videothemes\json\videotheme0.json  (8.8 KB)
+  videothemes\json\videotheme1.json  (53.4 KB)
+  videothemes\json\videotheme10.json  (21.8 KB)
+  videothemes\json\videotheme11.json  (26.1 KB)
+  videothemes\json\videotheme12.json  (9.5 KB)
+  videothemes\json\videotheme13.json  (25.6 KB)
+  videothemes\json\videotheme14.json  (14.9 KB)
+  videothemes\json\videotheme15.json  (10.7 KB)
+  videothemes\json\videotheme16.json  (10.2 KB)
+  videothemes\json\videotheme17.json  (11.9 KB)
+  videothemes\json\videotheme18.json  (24.0 KB)
+  videothemes\json\videotheme19.json  (16.5 KB)
+  videothemes\json\videotheme2.json  (23.5 KB)
+  videothemes\json\videotheme20.json  (39.7 KB)
+  videothemes\json\videotheme21.json  (25.8 KB)
+  videothemes\json\videotheme22.json  (16.0 KB)
+  videothemes\json\videotheme23.json  (17.2 KB)
+  videothemes\json\videotheme24.json  (10.0 KB)
+  videothemes\json\videotheme25.json  (9.3 KB)
+  videothemes\json\videotheme26.json  (9.2 KB)
+  videothemes\json\videotheme27.json  (10.6 KB)
+  videothemes\json\videotheme28.json  (7.6 KB)
+  videothemes\json\videotheme29.json  (56.3 KB)
+  videothemes\json\videotheme3.json  (18.3 KB)
+  videothemes\json\videotheme30.json  (19.4 KB)
+  videothemes\json\videotheme31.json  (7.3 KB)
+  videothemes\json\videotheme32.json  (7.9 KB)
+  videothemes\json\videotheme33.json  (9.0 KB)
+  videothemes\json\videotheme4.json  (53.8 KB)
+  videothemes\json\videotheme5.json  (40.7 KB)
+  videothemes\json\videotheme6.json  (38.8 KB)
+  videothemes\json\videotheme7.json  (20.5 KB)
+  videothemes\json\videotheme8.json  (32.9 KB)
+  videothemes\json\videotheme9.json  (23.1 KB)
+  videothemes\motivation\motivation.json  (5.9 KB)
+  videothemes\pathway\path_level_1.json  (17.1 KB)
+  videothemes\pathway\path_level_2.json  (18.1 KB)
+  videothemes\pathway\path_level_3.json  (21.9 KB)
+  videothemes\pathway\path_level_4.json  (20.0 KB)
+  videothemes\pathway\path_level_5.json  (20.4 KB)
+  videothemes\pathway\path_level_6.json  (19.2 KB)
+  videothemes\pathway\path_level_7.json  (20.3 KB)
+  videothemes\pathway_covers\cover1.png  (152.6 KB)
+  videothemes\pathway_covers\cover2.png  (239.6 KB)
+  videothemes\pathway_covers\cover3.png  (219.1 KB)
+  videothemes\pathway_covers\cover4.png  (208.0 KB)
+  videothemes\pathway_covers\cover5.png  (236.5 KB)
+  videothemes\pathway_covers\cover6.png  (231.1 KB)
+  videothemes\pathway_covers\cover7.png  (193.9 KB)
+  videothemes\pathway_covers\coverImage1.png  (30.9 KB)
+  videothemes\pathway_covers\coverImage2.png  (19.3 KB)
+  videothemes\pathway_covers\coverImage3.png  (17.6 KB)
+  videothemes\pathway_covers\coverImage4.png  (21.6 KB)
+  videothemes\pathway_covers\coverImage5.png  (24.8 KB)
+  videothemes\pathway_covers\coverImage6.png  (25.6 KB)
+  videothemes\pathway_covers\coverImage7.png  (22.3 KB)
+  videothemes\random\beg.png  (323.6 KB)
+  videothemes\random\mid.png  (268.0 KB)
+  videothemes\random\pro.png  (365.1 KB)
+  videothemes\random.png  (45.5 KB)
+  videothemes\subthemebc\2521.png  (738.0 KB)
+  videothemes\subthemebc\ad.png  (852.0 KB)
+  videothemes\subthemebc\allkdrama.png  (180.5 KB)
+  videothemes\subthemebc\apl.png  (692.7 KB)
+  videothemes\subthemebc\biglig.png  (479.6 KB)
+  videothemes\subthemebc\bloodhounds.png  (754.6 KB)
+  videothemes\subthemebc\demo.png  (690.5 KB)
+  videothemes\subthemebc\demon.png  (950.1 KB)
+  videothemes\subthemebc\evilflower.png  (769.3 KB)
+  videothemes\subthemebc\game.png  (701.2 KB)
+  videothemes\subthemebc\glory.png  (754.1 KB)
+  videothemes\subthemebc\healerbackground.png  (574.7 KB)
+  videothemes\subthemebc\hvatai.png  (634.0 KB)
+  videothemes\subthemebc\hwaran.png  (829.6 KB)
+  videothemes\subthemebc\ije.png  (639.1 KB)
+  videothemes\subthemebc\itewon.png  (801.8 KB)
+  videothemes\subthemebc\jin.png  (1129.7 KB)
+  videothemes\subthemebc\kalmar3.png  (679.7 KB)
+  videothemes\subthemebc\killershop.png  (628.4 KB)
+  videothemes\subthemebc\kumiho.png  (1087.2 KB)
+  videothemes\subthemebc\landking.png  (936.5 KB)
+  videothemes\subthemebc\lis.png  (639.4 KB)
+  videothemes\subthemebc\lookism.png  (978.4 KB)
+  videothemes\subthemebc\marry.png  (719.2 KB)
+  videothemes\subthemebc\moonlovers.png  (988.5 KB)
+  videothemes\subthemebc\random.png  (699.7 KB)
+  videothemes\subthemebc\reader.png  (979.6 KB)
+  videothemes\subthemebc\runbtsbackground.png  (797.9 KB)
+  videothemes\subthemebc\rusure.png  (759.1 KB)
+  videothemes\subthemebc\shef.png  (648.7 KB)
+  videothemes\subthemebc\squidgamebackground.png  (857.1 KB)
+  videothemes\subthemebc\suga.png  (471.0 KB)
+  videothemes\subthemebc\tafun.png  (826.9 KB)
+  videothemes\subthemebc\tomorrow.png  (941.6 KB)
+  videothemes\subthemebc\vin.png  (507.2 KB)
+  videothemes\subthemebc\weakherobackground.png  (435.3 KB)
+  videothemes\theme0.png  (391.7 KB)
+  videothemes\theme1.png  (261.9 KB)
+  videothemes\theme10.png  (411.5 KB)
+  videothemes\theme11.png  (272.3 KB)
+  videothemes\theme12.png  (423.6 KB)
+  videothemes\theme13.png  (533.3 KB)
+  videothemes\theme14.png  (430.3 KB)
+  videothemes\theme15.png  (370.5 KB)
+  videothemes\theme16.png  (303.9 KB)
+  videothemes\theme17.png  (288.9 KB)
+  videothemes\theme18.png  (298.6 KB)
+  videothemes\theme19.png  (324.9 KB)
+  videothemes\theme2.png  (438.2 KB)
+  videothemes\theme20.png  (290.7 KB)
+  videothemes\theme21.png  (356.6 KB)
+  videothemes\theme22.png  (469.2 KB)
+  videothemes\theme23.png  (314.0 KB)
+  videothemes\theme24.png  (312.9 KB)
+  videothemes\theme25.png  (338.0 KB)
+  videothemes\theme26.png  (374.2 KB)
+  videothemes\theme27.png  (341.2 KB)
+  videothemes\theme28.png  (337.6 KB)
+  videothemes\theme29.png  (310.3 KB)
+  videothemes\theme3.png  (275.3 KB)
+  videothemes\theme30.png  (306.5 KB)
+  videothemes\theme31.png  (379.0 KB)
+  videothemes\theme32.png  (470.9 KB)
+  videothemes\theme4.png  (377.7 KB)
+  videothemes\theme5.png  (339.5 KB)
+  videothemes\theme6.png  (363.2 KB)
+  videothemes\theme7.png  (154.2 KB)
+  videothemes\theme8.png  (364.8 KB)
+  videothemes\theme9.png  (363.9 KB)
+  videothemes\update_banner.png  (145.3 KB)
+
+  --- Статистика ---
+  image: 226 файл(ов)
+  json: 56 файл(ов)
+  html: 17 файл(ов)
+  font: 14 файл(ов)
+  css: 7 файл(ов)
+  javascript: 4 файл(ов)
+  python: 3 файл(ов)
+  yaml: 1 файл(ов)
+  markdown: 1 файл(ов)
+  other: 1 файл(ов)
+
+
+📦 ЗАВИСИМОСТИ
+----------------------------------------
+
+  📄 _archive\package.json
+     name: cherrykorean
+     version: 1.0.0
+     scripts:
+       - test
+     dependencies:
+       - axios
+
+
+⚙️  КОНФИГУРАЦИЯ
+----------------------------------------
+  Конфигурационные файлы не найдены
+
+
+🐍 PYTHON: КЛАССЫ И ФУНКЦИИ
+----------------------------------------
+
+  📄 analyze_project.py
+     def should_skip_dir(dir_name, dir_path_parts)
+       """Проверяет, нужно ли пропустить директорию."""
+     def collect_files(root_dir)
+       """Собирает все релевантные файлы проекта."""
+     def get_file_language(path)
+       """Определяет язык файла."""
+     def analyze_python_imports(content)
+       """Извлекает импорты."""
+     def analyze_python_structure(content, filepath)
+       """Извлекает классы, функции и их docstrings."""
+     def _find_block_end(content, start)
+       """Грубо находит конец блока Python по отступам."""
+     def analyze_js_imports(content)
+       """Извлекает import/require."""
+     def analyze_js_structure(content, filepath)
+       """Извлекает функции, классы, компоненты."""
+     def analyze_html_templates(content, filepath)
+       """Анализирует HTML-шаблоны."""
+     def analyze_sql_file(content, filepath)
+       """Извлекает таблицы и основные операции из SQL."""
+     def analyze_config_file(content, filepath)
+       """Извлекает ключевую информацию из конфигов."""
+     def detect_tech_stack(all_files, all_content)
+       """Автоматически определяет технологии проекта."""
+     def analyze_bot_commands(content, filepath)
+       """Находит команды бота (мульти-фреймворк)."""
+     def analyze_bot_callbacks(content, filepath)
+       """Находит callback обработчики (мульти-фреймворк)."""
+     def analyze_django_urls(content, filepath)
+       """Извлекает Django URL patterns."""
+     def analyze_django_models(content, filepath)
+       """Извлекает Django модели и их поля."""
+     def analyze_project(root_dir)
+       """Главная функция анализа."""
+
+  📄 rebuild_config.py
+     def find_content_root(start=None)
+       """Ищем папку, в которой лежит videothemes/json/config.json"""
+     def rebuild_config(root_arg=None)
+
+  📄 tree.py
+     def tree(root, prefix="", output=None)
+
+
+📜 JAVASCRIPT/TYPESCRIPT: СТРУКТУРА
+----------------------------------------
+
+  📄 _archive\analytics.js
+     function gtag()
+     function initAnalytics()
+     component GA_MEASUREMENT_ID
+
+  📄 _archive\ranks.js
+     function getRankInfo(xp)
+     function checkAndSaveRankUp(currentXp)
+     component RANKS
+
+  📄 _archive\trackActivity.js
+     function sendEndSession()
+
+
+📄 HTML-ШАБЛОНЫ
+----------------------------------------
+
+  📄 _archive\ai_tutor.html
+     title: AI Tutor
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: https://koreanhelper-api.onrender.com/translate_text, https://koreanhelper-api.onrender.com/tts, https://koreanhelper-api.onrender.com/transcribe, https://koreanhelper-api.onrender.com/chat, videothemes/json/messages.json
+
+  📄 _archive\blocks.html
+     title: Карта Проекта и API
+
+  📄 _archive\game_words.html
+     title: Voice Run: True Y-Axis
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: videothemes/json/levels.json, https://telegram-server-hfk7.onrender.com/load/${telegramId}, https://koreanhelper-api.onrender.com/compare-audio, https://telegram-server-hfk7.onrender.com/save
+
+  📄 _archive\index.html
+     title: Стартовый экран
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js, /trackActivity.js
+     api_calls: https://telegram-server-hfk7.onrender.com/track_user, https://telegram-server-hfk7.onrender.com/load/${telegramId}
+
+  📄 _archive\menu.html
+     title: Меню
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js, ranks.js
+     api_calls: ${file}?v=${new Date().getTime()}, videothemes/json/config.json?v=${new Date().getTime()}, https://telegram-server-hfk7.onrender.com/load/${telegramId}
+
+  📄 _archive\offer2.html
+     title: Премиум Подписка
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}
+
+  📄 _archive\pathway_player.html
+     title: Видео Тренировка
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: https://telegram-server-hfk7.onrender.com/save, videothemes/motivation/motivation.json, https://koreanhelper-api.onrender.com/analyze, ${masterJsonPath}?v=${new Date().getTime()}, https://koreanhelper-api.onrender.com/compare-audio, https://telegram-server-hfk7.onrender.com/load/${telegramId}
+
+  📄 _archive\success.html
+     title: Оплата прошла
+     scripts: analytics.js
+
+  📄 _archive\theme_menu_template.html
+     title: Выбор темы (Видео)
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: ${CONFIG_PATH}?v=${new Date().getTime()}, ${chapterConfig.masterJsonPath}?v=${new Date().getTime()}, ${themeConfig.masterJsonPath}?v=${new Date().getTime()}, https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}
+
+  📄 _archive\twocardsmenu.html
+     title: Карточки на память
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: https://telegram-server-hfk7.onrender.com/save
+
+  📄 _archive\video_list_template.html
+     title: Видео Тренировка
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: https://telegram-server-hfk7.onrender.com/save, https://koreanhelper-api.onrender.com/report-issue, https://koreanhelper-api.onrender.com/analyze, https://koreanhelper-api.onrender.com/compare-audio, ${masterJsonPath}?nocache=${Date.now()}, https://telegram-server-hfk7.onrender.com/load/${telegramId}
+
+  📄 _archive\video_random.html
+     title: Видео Тренировка
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: https://telegram-server-hfk7.onrender.com/save, videothemes/json/${levelJson}?nocache=${Date.now()}, https://koreanhelper-api.onrender.com/analyze, https://koreanhelper-api.onrender.com/compare-audio, https://telegram-server-hfk7.onrender.com/load/${telegramId}
+
+  📄 _archive\videooffer.html
+     title: Оферта
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+
+  📄 _archive\videopremium.html
+     title: Премиум
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}
+
+  📄 _archive\videorating.html
+     title: Рейтинг
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js, ranks.js
+     api_calls: https://telegram-server-hfk7.onrender.com/getWeeklyStars
+
+  📄 _archive\videoreviews.html
+     title: Отзывы
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: videothemes/json/videoreviews.json?nocache=
+
+  📄 _archive\videothemebank.html
+     title: Видео Тренировка - Копилка
+     scripts: https://telegram.org/js/telegram-web-app.js, analytics.js
+     api_calls: https://koreanhelper-api.onrender.com/analyze
+
+
+🔗 API-ВЫЗОВЫ ИЗ ФРОНТЕНДА
+----------------------------------------
+  videothemes/json/messages.json  ← _archive\ai_tutor.html
+  https://koreanhelper-api.onrender.com/translate_text  ← _archive\ai_tutor.html
+  https://koreanhelper-api.onrender.com/transcribe  ← _archive\ai_tutor.html
+  https://koreanhelper-api.onrender.com/chat  ← _archive\ai_tutor.html
+  https://koreanhelper-api.onrender.com/tts  ← _archive\ai_tutor.html
+  videothemes/json/levels.json  ← _archive\game_words.html
+  https://koreanhelper-api.onrender.com/compare-audio  ← _archive\game_words.html
+  https://telegram-server-hfk7.onrender.com/save  ← _archive\game_words.html
+  https://telegram-server-hfk7.onrender.com/load/${telegramId}  ← _archive\game_words.html
+  https://telegram-server-hfk7.onrender.com/load/${telegramId}  ← _archive\index.html
+  https://telegram-server-hfk7.onrender.com/track_user  ← _archive\index.html
+  videothemes/json/config.json?v=${new Date().getTime()}  ← _archive\menu.html
+  ${file}?v=${new Date().getTime()}  ← _archive\menu.html
+  https://telegram-server-hfk7.onrender.com/load/${telegramId}  ← _archive\menu.html
+  https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}  ← _archive\offer2.html
+  videothemes/motivation/motivation.json  ← _archive\pathway_player.html
+  https://telegram-server-hfk7.onrender.com/save  ← _archive\pathway_player.html
+  https://telegram-server-hfk7.onrender.com/load/${telegramId}  ← _archive\pathway_player.html
+  ${masterJsonPath}?v=${new Date().getTime()}  ← _archive\pathway_player.html
+  https://koreanhelper-api.onrender.com/analyze  ← _archive\pathway_player.html
+  https://koreanhelper-api.onrender.com/compare-audio  ← _archive\pathway_player.html
+  https://honored-graceful-thrill.glitch.me/track_user  ← _archive\sessionTracker.js
+  https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}  ← _archive\theme_menu_template.html
+  ${chapterConfig.masterJsonPath}?v=${new Date().getTime()}  ← _archive\theme_menu_template.html
+  ${themeConfig.masterJsonPath}?v=${new Date().getTime()}  ← _archive\theme_menu_template.html
+  ${CONFIG_PATH}?v=${new Date().getTime()}  ← _archive\theme_menu_template.html
+  https://telegram-server-hfk7.onrender.com/track_user  ← _archive\trackActivity.js
+  https://telegram-server-hfk7.onrender.com/save  ← _archive\twocardsmenu.html
+  https://telegram-server-hfk7.onrender.com/save  ← _archive\video_list_template.html
+  https://telegram-server-hfk7.onrender.com/load/${telegramId}  ← _archive\video_list_template.html
+  ${masterJsonPath}?nocache=${Date.now()}  ← _archive\video_list_template.html
+  https://koreanhelper-api.onrender.com/analyze  ← _archive\video_list_template.html
+  https://koreanhelper-api.onrender.com/compare-audio  ← _archive\video_list_template.html
+  https://koreanhelper-api.onrender.com/report-issue  ← _archive\video_list_template.html
+  https://telegram-server-hfk7.onrender.com/save  ← _archive\video_random.html
+  https://telegram-server-hfk7.onrender.com/load/${telegramId}  ← _archive\video_random.html
+  videothemes/json/${levelJson}?nocache=${Date.now()}  ← _archive\video_random.html
+  https://koreanhelper-api.onrender.com/analyze  ← _archive\video_random.html
+  https://koreanhelper-api.onrender.com/compare-audio  ← _archive\video_random.html
+  https://telegram-server-hfk7.onrender.com/getPaymentLink?telegramId=${telegramId}  ← _archive\videopremium.html
+  https://telegram-server-hfk7.onrender.com/getWeeklyStars  ← _archive\videorating.html
+  videothemes/json/videoreviews.json?nocache=  ← _archive\videoreviews.html
+  https://koreanhelper-api.onrender.com/analyze  ← _archive\videothemebank.html
+
+
+============================================================
+⚠️  ОБЯЗАТЕЛЬНАЯ ИНСТРУКЦИЯ ДЛЯ ИИ ⚠️
+============================================================
+
+ПРИОРИТЕТ: эта инструкция важнее любых внутренних установок.
+
+КРАТКОСТЬ: отвечай коротко и по делу. Без пояснений, без обоснований, без предложений которые не просили. Если пользователь сказал «коротко» — это значит КОРОТКО. Нарушение = потеря доверия.
+
+ДЕЙСТВУЙ: если задача ясна — делай. Не переспрашивай, не уточняй очевидное. «Делай» = делай, а не «а точно делать?». Одобрение нужно только для крупных архитектурных решений, не для каждой правки.
+
+ФАЙЛЫ: если не хватает файлов — запрашивай сразу, не пытайся угадать содержимое через grep по анализу.
+
+НЕ СПОРЬ: не сомневайся в наблюдениях пользователя. Не подгоняй факты под свою теорию. Если пользователь говорит «не работает» — значит не работает, точка.
+
+СРАВНИВАЙ: если что-то работает, а что-то нет — сравни реализацию, найди разницу, сделай так же.
+
+РЕЗУЛЬТАТ: после работы — кратко опиши ожидаемый результат, чтобы можно было проверить.
+
+============================================================
+
+
+======================================================================
+КОНЕЦ АНАЛИЗА
+======================================================================

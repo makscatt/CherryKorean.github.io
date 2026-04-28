@@ -1,7 +1,7 @@
 {
   "b1": [
     {
-      "isNew": true,
+      
       "video": "video/apl/갈게요.webm",
       "videoMp4": "video/apl/mp4/갈게요.mp4",
       "korean": "갈게요",
@@ -184,7 +184,7 @@
   ],
   "b2": [
     {
-      "isNew": true,
+      
       "video": "video/apl/감자튀김.webm",
       "videoMp4": "video/apl/mp4/감자튀김.mp4",
       "korean": "감자튀김",
