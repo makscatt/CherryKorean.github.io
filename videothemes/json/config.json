@@ -786,7 +786,7 @@
       }
     ],
     "totalCount": 79,
-    "hasNew": true
+    "hasNew": false
   },
   "theme31": {
     "coverImage": "videothemes/subthemebc/2521.png",
@@ -827,7 +827,7 @@
         "key": "b1"
       }
     ],
-    "totalCount": 32,
+    "totalCount": 30,
     "hasNew": true
   }
 }
