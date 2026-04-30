@@ -800,7 +800,7 @@
       }
     ],
     "totalCount": 33,
-    "hasNew": true
+    "hasNew": false
   },
   "theme32": {
     "coverImage": "videothemes/subthemebc/itewon.png",
@@ -849,7 +849,7 @@
         "key": "b3"
       }
     ],
-    "totalCount": 32,
+    "totalCount": 89,
     "hasNew": true
   }
 }
