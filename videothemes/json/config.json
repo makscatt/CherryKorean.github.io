@@ -832,7 +832,7 @@
   },
   "theme34": {
     "coverImage": "videothemes/subthemebc/rev.png",
-    "title": "Завтра обязательно",
+    "title": "Револьвер",
     "masterJsonPath": "videothemes/json/videotheme34.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
