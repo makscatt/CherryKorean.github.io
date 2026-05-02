@@ -11,7 +11,7 @@
     {
       "video": "video/rev/8월에 이사를 왔으니까.webm",
       "videoMp4": "video/rev/mp4/8월에 이사를 왔으니까.mp4",
-      "korean": "8월에 이사를 왔으니까.",
+      "korean": "팔월에 이사를 왔으니까.",
       "russian": "Раз уж я переехал в августе.",
       "new": true
     },
@@ -53,7 +53,7 @@
     {
       "video": "video/rev/그러다 3개월 전에.webm",
       "videoMp4": "video/rev/mp4/그러다 3개월 전에.mp4",
-      "korean": "그러다 3개월 전에.",
+      "korean": "그러다 삼개월 전에.",
       "russian": "А потом, три месяца назад...",
       "new": true
     },
@@ -114,9 +114,9 @@
       "new": true
     },
     {
-      "video": "video/rev/너무 아파서 빨리 죽었으면 좋겠는데.webm",
-      "videoMp4": "video/rev/mp4/너무 아파서 빨리 죽었으면 좋겠는데.mp4",
-      "korean": "너무 아파서 빨리 죽었으면 좋겠는데.",
+      "video": "video/rev/너무 아파서 빨리 죽었으면 좋겠다.webm",
+      "videoMp4": "video/rev/mp4/너무 아파서 빨리 죽었으면 좋겠다.mp4",
+      "korean": "너무 아파서 빨리 죽었으면 좋겠다.",
       "russian": "Так больно, что я бы хотел поскорее умереть.",
       "new": true
     },
@@ -294,7 +294,7 @@
     {
       "video": "video/rev/서울 마포구 신수로 125 성내빌라 201호.webm",
       "videoMp4": "video/rev/mp4/서울 마포구 신수로 125 성내빌라 201호.mp4",
-      "korean": "서울 마포구 신수로 125 성내빌라 201호",
+      "korean": "서울 마포구 신수로 백이십오 성내빌라 이백일호",
       "russian": "Сеул, район Мапо‑гу, Синсу‑ро 125, Соннэ-вилла, квартира 201.",
       "new": true
     },
@@ -341,13 +341,6 @@
       "new": true
     },
     {
-      "video": "video/rev/아무것도 안 나오겠죠.webm",
-      "videoMp4": "video/rev/mp4/아무것도 안 나오겠죠.mp4",
-      "korean": "아무것도 안 나오겠죠.",
-      "russian": "Наверное, ничего не всплывёт.",
-      "new": true
-    },
-    {
       "video": "video/rev/아유 씨발 하수영씨.webm",
       "videoMp4": "video/rev/mp4/아유 씨발 하수영씨.mp4",
       "korean": "아유, 씨발, 하수영 씨.",
@@ -387,13 +380,6 @@
       "videoMp4": "video/rev/mp4/약속한 돈을 주세요.mp4",
       "korean": "약속한 돈을 주세요.",
       "russian": "Отдайте деньги, как и договаривались.",
-      "new": true
-    },
-    {
-      "video": "video/rev/약속한 돈을 주세요_1.webm",
-      "videoMp4": "video/rev/mp4/약속한 돈을 주세요_1.mp4",
-      "korean": "약속한 돈을 주세요_1.",
-      "russian": "Отдайте деньги, как и договаривались._1",
       "new": true
     },
     {
@@ -458,7 +444,7 @@
     {
       "video": "video/rev/여기서 2년은 어떻게 살지.webm",
       "videoMp4": "video/rev/mp4/여기서 2년은 어떻게 살지.mp4",
-      "korean": "여기서 2년은 어떻게 살지?",
+      "korean": "여기서 이년은 어떻게 살지?",
       "russian": "Как я тут два года-то проживу?",
       "new": true
     },
@@ -515,7 +501,7 @@
       "video": "video/rev/육심오일 남았어.webm",
       "videoMp4": "video/rev/mp4/육심오일 남았어.mp4",
       "korean": "육심오일 남았어.",
-      "russian": "Осталось шесть–пятнадцать (6:15).",
+      "russian": "Осталось 65 дней.",
       "new": true
     },
     {
@@ -607,13 +593,6 @@
       "videoMp4": "video/rev/mp4/크게 된 정리를 이용해 먹으려고 그러네.mp4",
       "korean": "크게 된 정리를 이용해 먹으려고 그러네.",
       "russian": "Похоже, он хочет нажиться, прикрываясь крупной теоремой.",
-      "new": true
-    },
-    {
-      "video": "video/rev/하수영한테는 절대 거짓말 안 받을 거야.webm",
-      "videoMp4": "video/rev/mp4/하수영한테는 절대 거짓말 안 받을 거야.mp4",
-      "korean": "하수영한테는 절대 거짓말 안 할 거야.",
-      "russian": "Я Ха Суёнгу никогда не совру.",
       "new": true
     },
     {
