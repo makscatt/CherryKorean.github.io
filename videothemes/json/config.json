@@ -851,5 +851,28 @@
     ],
     "totalCount": 86,
     "hasNew": true
+  },
+  "theme35": {
+    "coverImage": "videothemes/subthemebc/crown.png",
+    "title": "Жена принца 21 века",
+    "masterJsonPath": "videothemes/json/videotheme35.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1"
+      },
+      {
+        "name": "2",
+        "key": "b2"
+      },
+      {
+        "name": "3",
+        "key": "b3"
+      }
+    ],
+    "totalCount": 89,
+    "hasNew": true
   }
+
 }
