@@ -79,10 +79,10 @@
       "new": true
     },
     {
-      "video": "video/crown/그거 붓으로 만들지 말거라.webm",
-      "videoMp4": "video/crown/mp4/그거 붓으로 만들지 말거라.mp4",
-      "korean": "그거 붓으로 만들지 말거라.",
-      "russian": "Не делай из этого кисть.",
+      "video": "video/crown/그거 무슨 일로 만들지 말거라.webm",
+      "videoMp4": "video/crown/mp4/그거 무슨 일로 만들지 말거라.mp4",
+      "korean": "그거 무슨 일로 만들지 말거라.",
+      "russian": "Не делай из этого проблему.",
       "new": true
     },
     {
@@ -93,17 +93,17 @@
       "new": true
     },
     {
-      "video": "video/crown/그래도 항공하시는 게 낫지 않아요.webm",
-      "videoMp4": "video/crown/mp4/그래도 항공하시는 게 낫지 않아요.mp4",
-      "korean": "그래도 항공하시는 게 낫지 않아요?",
-      "russian": "Всё‑таки авиацией заниматься получше будет, не думаете?",
+      "video": "video/crown/그래도 한궁하시는 게 낫지 않아요.webm",
+      "videoMp4": "video/crown/mp4/그래도 한궁하시는 게 낫지 않아요.mp4",
+      "korean": "그래도 한궁하시는 게 낫지 않아요?",
+      "russian": "Может, всё-таки лучше корейским дартсом заняться?",
       "new": true
     },
     {
       "video": "video/crown/그리고 무슨 승마장애.webm",
       "videoMp4": "video/crown/mp4/그리고 무슨 승마장애.mp4",
       "korean": "그리고 무슨 승마장애?",
-      "russian": "И вообще, что за «конный спорт для инвалидов» ты имеешь в виду?",
+      "russian": "И что ещё за прыжки на лошадях?",
       "new": true
     },
     {
@@ -354,10 +354,10 @@
       "new": true
     },
     {
-      "video": "video/crown/식구님은 같이 안 가십니까.webm",
-      "videoMp4": "video/crown/mp4/식구님은 같이 안 가십니까.mp4",
-      "korean": "식구님은 같이 안 가십니까?",
-      "russian": "А вы с нами не поедете?",
+      "video": "video/crown/숙부님은 같이 안 가십니까.webm",
+      "videoMp4": "video/crown/mp4/숙부님은 같이 안 가십니까.mp4",
+      "korean": "숙부님은 같이 안 가십니까?",
+      "russian": "А вы, дядя, с нами не поедете?",
       "new": true
     },
     {
@@ -378,7 +378,7 @@
       "video": "video/crown/씌워주시면 안 될까요.webm",
       "videoMp4": "video/crown/mp4/씌워주시면 안 될까요.mp4",
       "korean": "씌워주시면 안 될까요?",
-      "russian": "Не могли бы вы это на меня оформить?",
+      "russian": "Не могли бы вы на меня надеть?",
       "new": true
     },
     {
@@ -489,10 +489,10 @@
       "new": true
     },
     {
-      "video": "video/crown/이번에 선배 때문에 치면 가만히 안 있다.webm",
-      "videoMp4": "video/crown/mp4/이번에 선배 때문에 치면 가만히 안 있다.mp4",
-      "korean": "이번에 선배 때문에 치면 가만히 안 있다.",
-      "russian": "Если в этот раз заденут из‑за старшего, я этого так не оставлю.",
+      "video": "video/crown/이번에 선배 때문에 지면 가만히 안 있는다.webm",
+      "videoMp4": "video/crown/mp4/이번에 선배 때문에 지면 가만히 안 있는다.mp4",
+      "korean": "이번에 선배 때문에 지면 가만히 안 있는다.",
+      "russian": "Если проиграем из-за тебя, я этого так не оставлю.",
       "new": true
     },
     {
