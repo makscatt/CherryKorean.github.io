@@ -40,7 +40,7 @@
       "video": "video/crown/고작 이름뿐인 신분을 얻겠다고.webm",
       "videoMp4": "video/crown/mp4/고작 이름뿐인 신분을 얻겠다고.mp4",
       "korean": "고작 이름뿐인 신분을 얻겠다고?",
-      "russian": "Ради какого‑то пустого титула, только по названию?",
+      "russian": "И всё ради пустого титула?",
       "new": true
     },
     {
@@ -114,10 +114,10 @@
       "new": true
     },
     {
-      "video": "video/crown/나 왜 떨어질 뻔했어.webm",
-      "videoMp4": "video/crown/mp4/나 왜 떨어질 뻔했어.mp4",
-      "korean": "나 왜 떨어질 뻔했어?",
-      "russian": "Почему я чуть было не вылетел?",
+      "video": "video/crown/나 떨어질 뻔했어.webm",
+      "videoMp4": "video/crown/mp4/나 떨어질 뻔했어.mp4",
+      "korean": "나 떨어질 뻔했어.",
+      "russian": "Я чуть было не вылетела.",
       "new": true
     },
     {
@@ -329,7 +329,7 @@
       "video": "video/crown/세비를 하라.webm",
       "videoMp4": "video/crown/mp4/세비를 하라.mp4",
       "korean": "세비를 하라.",
-      "russian": "Займись подсчётом жалованья.",
+      "russian": "Назначь жалованье.",
       "new": true
     },
     {
@@ -343,7 +343,7 @@
       "video": "video/crown/숯불화하는 것이다.webm",
       "videoMp4": "video/crown/mp4/숯불화하는 것이다.mp4",
       "korean": "숯불화하는 것이다.",
-      "russian": "Это обжиг на древесном угле.",
+      "russian": "Так на углях делают.",
       "new": true
     },
     {
@@ -524,10 +524,10 @@
       "new": true
     },
     {
-      "video": "video/crown/작았게 받고 싶은 건.webm",
-      "videoMp4": "video/crown/mp4/작았게 받고 싶은 건.mp4",
-      "korean": "작았게 받고 싶은 건.",
-      "russian": "То, что я хочу получить по‑простому…",
+      "video": "video/crown/나 갖게 받고 싶은 건.webm",
+      "videoMp4": "video/crown/mp4/나 갖게 받고 싶은 건.mp4",
+      "korean": "나 갖게 받고 싶은 건…",
+      "russian": "Себе я хочу получить вот что…",
       "new": true
     },
     {
