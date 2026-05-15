@@ -4,48 +4,55 @@
       "video": "video/weakhero/개새끼야.webm",
       "videoMp4": "video/weakhero/mp4/개새끼야.mp4",
       "korean": "개새끼야!",
-      "russian": "Сукин Сын!"
+      "russian": "Сукин Сын!",
+      "english": "You bastard!"
     },
     {
       "video": "video/weakhero2/니들 다 죽일 거야.webm",
       "videoMp4": "video/weakhero2/mp4/니들 다 죽일 거야.mp4",
       "korean": "니들 다 죽일 거야",
       "russian": "Я вас всех убью",
-      "new": true
+      "new": true,
+      "english": "I'm gonna kill you all."
     },
     {
       "video": "video/weakhero2/눈깔 다 뽑기 전에.webm",
       "videoMp4": "video/weakhero2/mp4/눈깔 다 뽑기 전에.mp4",
       "korean": "눈깔 다 뽑기 전에",
       "russian": "Пока я тебе глазища не вырвал",
-      "new": true
+      "new": true,
+      "english": "Before I rip your eyes out."
     },
     {
       "video": "video/weakhero2/처맞기 싫으면 말 걸지 마라.webm",
       "videoMp4": "video/weakhero2/mp4/처맞기 싫으면 말 걸지 마라.mp4",
       "korean": "처맞기 싫으면 말 걸지 마라",
       "russian": "Молчи, если не хочешь по морде получить",
-      "new": true
+      "new": true,
+      "english": "Don't talk to me if you don't want to get hit."
     },
     {
       "video": "video/weakhero/사람들이 너 존나 재수 없어 하는 거.webm",
       "videoMp4": "video/weakhero/mp4/사람들이 너 존나 재수 없어 하는 거.mp4",
       "korean": "사람들이 너 존나 재수 없어 하는 거",
-      "russian": "Тебя тут пи*дец как все ненавидят"
+      "russian": "Тебя тут пи*дец как все ненавидят",
+      "english": "People really can't stand you."
     },
     {
       "video": "video/weakhero2/꺼져.webm",
       "videoMp4": "video/weakhero2/mp4/꺼져.mp4",
       "korean": "꺼져",
       "russian": "Проваливай",
-      "new": true
+      "new": true,
+      "english": "Get lost."
     },
     {
       "video": "video/weakhero/선은 넘지 마시고.webm",
       "videoMp4": "video/weakhero/mp4/선은 넘지 마시고.mp4",
       "korean": "선은 넘지 마시고",
       "russian": "Не переходи черту",
-      "new": true
+      "new": true,
+      "english": "Don't cross the line."
     }
   ],
   "b1": [
@@ -53,211 +60,246 @@
       "video": "video/weakhero/잘했어 시윤.webm",
       "videoMp4": "video/weakhero/mp4/잘했어 시윤.mp4",
       "korean": "잘했어 시윤",
-      "russian": "Молодец Щи Юнь"
+      "russian": "Молодец Щи Юнь",
+      "english": "Good job, Si-yoon."
     },
     {
       "video": "video/weakhero/앞의 내용과 같습니다.webm",
       "videoMp4": "video/weakhero/mp4/앞의 내용과 같습니다.mp4",
       "korean": "앞의 내용과 같습니다",
-      "russian": "Тебе того же"
+      "russian": "Тебе того же",
+      "english": "Same as before."
     },
     {
       "video": "video/weakhero/이런 거라도 해서 벌어먹고 살아야지.webm",
       "videoMp4": "video/weakhero/mp4/이런 거라도 해서 벌어먹고 살아야지.mp4",
       "korean": "이런 거라도 해서 벌어먹고 살아야지",
-      "russian": "Хоть так, лишь бы на жизнь хватало"
+      "russian": "Хоть так, лишь бы на жизнь хватало",
+      "english": "I have to make a living somehow."
     },
     {
       "video": "video/weakhero/면햄형 공부해.webm",
       "videoMp4": "video/weakhero/mp4/면햄형 공부해.mp4",
       "korean": "면햄형(미안햄) 공부해",
-      "russian": "Прости старшого, занимайся"
+      "russian": "Прости старшого, занимайся",
+      "english": "Sorry, study hard."
     },
     {
       "video": "video/weakhero/미안해.webm",
       "videoMp4": "video/weakhero/mp4/미안해.mp4",
       "korean": "미안해",
-      "russian": "Сорян"
+      "russian": "Сорян",
+      "english": "I'm sorry."
     },
     {
       "video": "video/weakhero/다음부턴 조심해.webm",
       "videoMp4": "video/weakhero/mp4/다음부턴 조심해.mp4",
       "korean": "다음부턴 조심해",
-      "russian": "В следующий раз осторожнее"
+      "russian": "В следующий раз осторожнее",
+      "english": "Be careful next time."
     },
     {
       "video": "video/weakhero/실수라고.webm",
       "videoMp4": "video/weakhero/mp4/실수라고.mp4",
       "korean": "실수라고",
-      "russian": "Я ж сказал, что ошибся"
+      "russian": "Я ж сказал, что ошибся",
+      "english": "I said it was a mistake."
     },
     {
       "video": "video/weakhero/실수라는데 뭘 조심하라는 거.webm",
       "videoMp4": "video/weakhero/mp4/실수라는데 뭘 조심하라는 거.mp4",
       "korean": "실수라는데 뭘 조심하라는 거",
-      "russian": "Всмысле будь осторожнее, я ж сказал, что ошибся"
+      "russian": "Всмысле будь осторожнее, я ж сказал, что ошибся",
+      "english": "What do you mean be careful? I said it was a mistake."
     },
     {
       "video": "video/weakhero/사람 존나만 좋네.webm",
       "videoMp4": "video/weakhero/mp4/사람 존나만 좋네.mp4",
       "korean": "사람 존나만 좋네",
-      "russian": "Ты че вые*ываешься"
+      "russian": "Ты че вые*ываешься",
+      "english": "You're really something."
     },
     {
       "video": "video/weakhero/하지 않게 조심하라고.webm",
       "videoMp4": "video/weakhero/mp4/하지 않게 조심하라고.mp4",
       "korean": "하지 않게 조심하라고",
-      "russian": "Сказал 'осторожно', чтоб больше так не делал"
+      "russian": "Сказал 'осторожно', чтоб больше так не делал",
+      "english": "I said to be careful so it doesn't happen again."
     },
     {
       "video": "video/weakhero/너 그거 아냐.webm",
       "videoMp4": "video/weakhero/mp4/너 그거 아냐.mp4",
       "korean": "너 그거 아냐?",
-      "russian": "Ты вообще в курсе?"
+      "russian": "Ты вообще в курсе?",
+      "english": "Don't you know that?"
     },
     {
       "video": "video/weakhero/사람들이 너 존나 재수 없어 하는 거.webm",
       "videoMp4": "video/weakhero/mp4/사람들이 너 존나 재수 없어 하는 거.mp4",
       "korean": "사람들이 너 존나 재수 없어 하는 거",
-      "russian": "Тебя тут пи*дец как все ненавидят"
+      "russian": "Тебя тут пи*дец как все ненавидят",
+      "english": "People really can't stand you."
     },
     {
       "video": "video/weakhero/네 생각은 어때.webm",
       "videoMp4": "video/weakhero/mp4/네 생각은 어때.mp4",
       "korean": "네 생각은 어때?",
-      "russian": "Че думаешь?"
+      "russian": "Че думаешь?",
+      "english": "What do you think?"
     },
     {
       "video": "video/weakhero/심심한가.webm",
       "videoMp4": "video/weakhero/mp4/심심한가.mp4",
       "korean": "심심한가",
-      "russian": "Скучно"
+      "russian": "Скучно",
+      "english": "Are you bored?"
     },
     {
       "video": "video/weakhero/단어 하나라도 더 외워.webm",
       "videoMp4": "video/weakhero/mp4/단어 하나라도 더 외워.mp4",
       "korean": "단어 하나라도 더 외워",
-      "russian": "Лучше выучи еще одно слово"
+      "russian": "Лучше выучи еще одно слово",
+      "english": "Memorize at least one more word."
     },
     {
       "video": "video/weakhero/벌써 점심이야.webm",
       "videoMp4": "video/weakhero/mp4/벌써 점심이야.mp4",
       "korean": "벌써 점심이야?",
-      "russian": "Уже обед?"
+      "russian": "Уже обед?",
+      "english": "Is it already lunchtime?"
     },
     {
       "video": "video/weakhero/개새끼야.webm",
       "videoMp4": "video/weakhero/mp4/개새끼야.mp4",
       "korean": "개새끼야!",
-      "russian": "Сукин Сын!"
+      "russian": "Сукин Сын!",
+      "english": "You bastard!"
     },
     {
       "video": "video/weakhero/관심 없어 내 스타일도 아니고.webm",
       "videoMp4": "video/weakhero/mp4/관심 없어 내 스타일도 아니고.mp4",
       "korean": "관심 없어 내 스타일도 아니고",
-      "russian": "Она не в моем вкусе"
+      "russian": "Она не в моем вкусе",
+      "english": "I'm not interested, it's not my style."
     },
     {
       "video": "video/weakhero/오지 마.webm",
       "videoMp4": "video/weakhero/mp4/오지 마.mp4",
       "korean": "오지 마",
-      "russian": "Не подходи"
+      "russian": "Не подходи",
+      "english": "Don't come over."
     },
     {
       "video": "video/weakhero/이따 봅시다.webm",
       "videoMp4": "video/weakhero/mp4/이따 봅시다.mp4",
       "korean": "이따 봅시다",
-      "russian": "Позже увидимся"
+      "russian": "Позже увидимся",
+      "english": "See you later."
     },
     {
       "video": "video/weakhero/왔어.webm",
       "videoMp4": "video/weakhero/mp4/왔어.mp4",
       "korean": "왔어",
-      "russian": "Пришел"
+      "russian": "Пришел",
+      "english": "I'm here."
     },
     {
       "video": "video/weakhero/무슨 일 있으면 전화하고.webm",
       "videoMp4": "video/weakhero/mp4/무슨 일 있으면 전화하고.mp4",
       "korean": "무슨 일 있으면 전화하고",
-      "russian": "Звони если что"
+      "russian": "Звони если что",
+      "english": "Call me if something happens."
     },
     {
       "video": "video/weakhero/뭔 소리야.webm",
       "videoMp4": "video/weakhero/mp4/뭔 소리야.mp4",
       "korean": "뭔 소리야?",
-      "russian": "Ты о чем это?"
+      "russian": "Ты о чем это?",
+      "english": "What are you talking about?"
     },
     {
       "video": "video/weakhero/아빠 간다.webm",
       "videoMp4": "video/weakhero/mp4/아빠 간다.mp4",
       "korean": "아빠 간다",
-      "russian": "(я)Папа пошел"
+      "russian": "(я)Папа пошел",
+      "english": "Dad's leaving."
     },
     {
       "video": "video/weakhero/가져 와.webm",
       "videoMp4": "video/weakhero/mp4/가져 와.mp4",
       "korean": "가져 와",
-      "russian": "Принеси"
+      "russian": "Принеси",
+      "english": "Bring it here."
     },
     {
       "video": "video/weakhero/너 이름이 뭐지.webm",
       "videoMp4": "video/weakhero/mp4/너 이름이 뭐지.mp4",
       "korean": "너 이름이 뭐지?",
-      "russian": "Тебя как зовут?"
+      "russian": "Тебя как зовут?",
+      "english": "What's your name?"
     },
     {
       "video": "video/weakhero/그만해.webm",
       "videoMp4": "video/weakhero/mp4/그만해.mp4",
       "korean": "그만해",
-      "russian": "Завязывай"
+      "russian": "Завязывай",
+      "english": "Stop it."
     },
     {
       "video": "video/weakhero/나 얘기 다.webm",
       "videoMp4": "video/weakhero/mp4/나 얘기 다.mp4",
       "korean": "나 얘기 다",
-      "russian": "Я все сказал"
+      "russian": "Я все сказал",
+      "english": "I've said everything."
     },
     {
       "video": "video/weakhero/뭔 쌉소린지 모르겠네.webm",
       "videoMp4": "video/weakhero/mp4/뭔 쌉소린지 모르겠네.mp4",
       "korean": "뭔 쌉소린지 모르겠네",
-      "russian": "Не понимаю, что за чушь ты несешь"
+      "russian": "Не понимаю, что за чушь ты несешь",
+      "english": "I don't get what you're saying."
     },
     {
       "video": "video/weakhero/한번만 또 그래 봐.webm",
       "videoMp4": "video/weakhero/mp4/한번만 또 그래 봐.mp4",
       "korean": "한번만 또 그래 봐",
-      "russian": "Еще хоть раз так сделаете"
+      "russian": "Еще хоть раз так сделаете",
+      "english": "Try that one more time."
     },
     {
       "video": "video/weakhero/누구세요.webm",
       "videoMp4": "video/weakhero/mp4/누구세요.mp4",
       "korean": "누구세요?",
-      "russian": "Кто там?"
+      "russian": "Кто там?",
+      "english": "Who is it?"
     },
     {
       "video": "video/weakhero/배달이에요.webm",
       "videoMp4": "video/weakhero/mp4/배달이에요.mp4",
       "korean": "배달이에요",
-      "russian": "Доставка"
+      "russian": "Доставка",
+      "english": "It's a delivery."
     },
     {
       "video": "video/weakhero/시킨 적 없는데요.webm",
       "videoMp4": "video/weakhero/mp4/시킨 적 없는데요.mp4",
       "korean": "시킨 적 없는데요",
-      "russian": "Я ничего не заказывал"
+      "russian": "Я ничего не заказывал",
+      "english": "I didn't order anything."
     },
     {
       "video": "video/weakhero/여기 맞는데요.webm",
       "videoMp4": "video/weakhero/mp4/여기 맞는데요.mp4",
       "korean": "여기 맞는데요",
-      "russian": "Но место правильное"
+      "russian": "Но место правильное",
+      "english": "This is the right place."
     },
     {
       "video": "video/weakhero/친구야 나 물 한 잔만.webm",
       "videoMp4": "video/weakhero/mp4/친구야 나 물 한 잔만.mp4",
       "korean": "친구야 나 물 한 잔만",
-      "russian": "Друг, налей воды"
+      "russian": "Друг, налей воды",
+      "english": "Hey, can you get me a glass of water?"
     }
   ],
   "b2": [
@@ -265,139 +307,159 @@
       "video": "video/weakhero/새로 전학생이 왔다.webm",
       "videoMp4": "video/weakhero/mp4/새로 전학생이 왔다.mp4",
       "korean": "새로 전학생이 왔다",
-      "russian": "Пришел новый ученик"
+      "russian": "Пришел новый ученик",
+      "english": "A new transfer student has arrived."
     },
     {
       "video": "video/weakhero/다들 범석이랑 잘 지내고.webm",
       "videoMp4": "video/weakhero/mp4/다들 범석이랑 잘 지내고.mp4",
       "korean": "다들 범석이랑 잘 지내고",
-      "russian": "Ребята, дружите с БомСоком"
+      "russian": "Ребята, дружите с БомСоком",
+      "english": "Everyone, get along with Beomseok."
     },
     {
       "video": "video/weakhero/범석이 인사해 볼까.webm",
       "videoMp4": "video/weakhero/mp4/범석이 인사해 볼까.mp4",
       "korean": "범석이 인사해 볼까?",
       "russian": "Поздороваешься, БомСок?",
-      "new": true
+      "new": true,
+      "english": "Should Beomseok say hi?"
     },
     {
       "video": "video/weakhero/나는 잘 몰라.webm",
       "videoMp4": "video/weakhero/mp4/나는 잘 몰라.mp4",
       "korean": "나는 잘 몰라",
       "russian": "Я не в курсе",
-      "new": true
+      "new": true,
+      "english": "I don't really know."
     },
     {
       "video": "video/weakhero/비켜.webm",
       "videoMp4": "video/weakhero/mp4/비켜.mp4",
       "korean": "비켜",
       "russian": "Отойди",
-      "new": true
+      "new": true,
+      "english": "Move aside."
     },
     {
       "video": "video/weakhero/비켜라고.webm",
       "videoMp4": "video/weakhero/mp4/비켜라고.mp4",
       "korean": "비켜라고",
       "russian": "Отойди, сказал",
-      "new": true
+      "new": true,
+      "english": "I said move."
     },
     {
       "video": "video/weakhero/가라.webm",
       "videoMp4": "video/weakhero/mp4/가라.mp4",
       "korean": "가라",
       "russian": "Вали",
-      "new": true
+      "new": true,
+      "english": "Just go."
     },
     {
       "video": "video/weakhero/앉아.webm",
       "videoMp4": "video/weakhero/mp4/앉아.mp4",
       "korean": "앉아",
       "russian": "Садись",
-      "new": true
+      "new": true,
+      "english": "Sit down."
     },
     {
       "video": "video/weakhero/고맙지.webm",
       "videoMp4": "video/weakhero/mp4/고맙지.mp4",
       "korean": "고맙지",
       "russian": "Спасибо",
-      "new": true
+      "new": true,
+      "english": "Thanks a lot."
     },
     {
       "video": "video/weakhero/내가 비밀도 지켜 주고.webm",
       "videoMp4": "video/weakhero/mp4/내가 비밀도 지켜 주고.mp4",
       "korean": "내가 비밀도 지켜 주고",
       "russian": "Я сохраню секрет",
-      "new": true
+      "new": true,
+      "english": "I'll keep your secret."
     },
     {
       "video": "video/weakhero/친구도 해 주니까.webm",
       "videoMp4": "video/weakhero/mp4/친구도 해 주니까.mp4",
       "korean": "친구도 해 주니까",
       "russian": "Потому что мы друзья",
-      "new": true
+      "new": true,
+      "english": "Because we're friends."
     },
     {
       "video": "video/weakhero/고마우면.webm",
       "videoMp4": "video/weakhero/mp4/고마우면.mp4",
       "korean": "고마우면",
       "russian": "Если ты благодарен",
-      "new": true
+      "new": true,
+      "english": "If you're grateful,"
     },
     {
       "video": "video/weakhero/내 부탁 좀 들어 줘라.webm",
       "videoMp4": "video/weakhero/mp4/내 부탁 좀 들어 줘라.mp4",
       "korean": "내 부탁 좀 들어 줘라",
       "russian": "Выполни мою просьбу",
-      "new": true
+      "new": true,
+      "english": "Please do me a favor."
     },
     {
       "video": "video/weakhero/얘기 뭐야.webm",
       "videoMp4": "video/weakhero/mp4/얘기 뭐야.mp4",
       "korean": "얘기 뭐야?",
       "russian": "О чем ты?",
-      "new": true
+      "new": true,
+      "english": "What's going on?"
     },
     {
       "video": "video/weakhero/야 너 뭐 해.webm",
       "videoMp4": "video/weakhero/mp4/야 너 뭐 해.mp4",
       "korean": "야 너 뭐 해?",
       "russian": "Ты шо делаешь?",
-      "new": true
+      "new": true,
+      "english": "Hey, what are you doing?"
     },
     {
       "video": "video/weakhero/내가 부탁했잖아.webm",
       "videoMp4": "video/weakhero/mp4/내가 부탁했잖아.mp4",
       "korean": "내가 부탁했잖아",
       "russian": "Я же просил тебя",
-      "new": true
+      "new": true,
+      "english": "I asked you, remember?"
     },
     {
       "video": "video/weakhero/그만하라고.webm",
       "videoMp4": "video/weakhero/mp4/그만하라고.mp4",
       "korean": "그만하라고",
       "russian": "Говорил тебе остановиться",
-      "new": true
+      "new": true,
+      "english": "I told you to stop."
     },
     {
       "video": "video/weakhero/선은 넘지 마시고.webm",
       "videoMp4": "video/weakhero/mp4/선은 넘지 마시고.mp4",
       "korean": "선은 넘지 마시고",
       "russian": "Не переходи черту",
-      "new": true
+      "new": true,
+      "english": "Don't cross the line."
     },
     {
       "video": "video/weakhero/적당히 하셔야지.webm",
       "videoMp4": "video/weakhero/mp4/적당히 하셔야지.mp4",
       "korean": "적당히 하셔야지",
       "russian": "Надо знать меру",
-      "new": true
+      "new": true,
+      "english": "You need to know your limits."
     },
     {
       "video": "video/weakhero/개새끼가 영혼이 안 다친다고.webm",
       "videoMp4": "video/weakhero/mp4/개새끼가 영혼이 안 다친다고.mp4",
       "korean": "개새끼가 영혼이 안 다친다고?",
       "russian": "Сука, думаешь мне не больно?",
-      "new": true
+      "new": true,
+      "english": "You think I’m not hurt?"
     }
   ],
   "b3": [
@@ -406,245 +468,280 @@
       "videoMp4": "video/weakhero2/mp4/선생님.mp4",
       "korean": "선생님",
       "russian": "Учитель",
-      "new": true
+      "new": true,
+      "english": "Teacher."
     },
     {
       "video": "video/weakhero2/상담 시간 다 된 거 같은데요.webm",
       "videoMp4": "video/weakhero2/mp4/상담 시간 다 된 거 같은데요.mp4",
       "korean": "상담 시간 다 된 거 같은데요",
       "russian": "Похоже, время консультации вышло",
-      "new": true
+      "new": true,
+      "english": "I think it's time for the consultation."
     },
     {
       "video": "video/weakhero2/쓰는 폰 기종이 뭔지 나한테 말해줄 수 있나 싶어서.webm",
       "videoMp4": "video/weakhero2/mp4/쓰는 폰 기종이 뭔지 나한테 말해줄 수 있나 싶어서.mp4",
       "korean": "쓰는 폰 기종이 뭔지 나한테 말해줄 수 있나 싶어서",
       "russian": "Думал, ты скажешь мне, что у тебя за телефон",
-      "new": true
+      "new": true,
+      "english": "I was wondering what kind of phone you have."
     },
     {
       "video": "video/weakhero2/씨발 이게 다야.webm",
       "videoMp4": "video/weakhero2/mp4/씨발 이게 다야.mp4",
       "korean": "씨발 이게 다야",
       "russian": "Это всё, бл*дь?",
-      "new": true
+      "new": true,
+      "english": "Is this all there is?"
     },
     {
       "video": "video/weakhero2/아닌 거 같은데.webm",
       "videoMp4": "video/weakhero2/mp4/아닌 거 같은데.mp4",
       "korean": "아닌 거 같은데",
       "russian": "Кажется, это не так",
-      "new": true
+      "new": true,
+      "english": "I don't think so."
     },
     {
       "video": "video/weakhero2/아무튼 나는 진짜 모르겠어.webm",
       "videoMp4": "video/weakhero2/mp4/아무튼 나는 진짜 모르겠어.mp4",
       "korean": "아무튼 나는 진짜 모르겠어",
       "russian": "В любом случае, я правда не знаю",
-      "new": true
+      "new": true,
+      "english": "Anyway, I really don’t know."
     },
     {
       "video": "video/weakhero2/아직까지.webm",
       "videoMp4": "video/weakhero2/mp4/아직까지.mp4",
       "korean": "아직까지",
       "russian": "До сих пор",
-      "new": true
+      "new": true,
+      "english": "Still."
     },
     {
       "video": "video/weakhero2/알았어.webm",
       "videoMp4": "video/weakhero2/mp4/알았어.mp4",
       "korean": "알았어",
       "russian": "Я понял",
-      "new": true
+      "new": true,
+      "english": "Got it."
     },
     {
       "video": "video/weakhero2/어떤 꿈인지는 말해 주기가 싫은 거고.webm",
       "videoMp4": "video/weakhero2/mp4/어떤 꿈인지는 말해 주기가 싫은 거고.mp4",
       "korean": "어떤 꿈인지는 말해 주기가 싫은 거고",
       "russian": "Не хочешь говорить, какой был сон",
-      "new": true
+      "new": true,
+      "english": "I just don't want to say what kind of dream it was."
     },
     {
       "video": "video/weakhero2/어떤 사업입니다 사업.webm",
       "videoMp4": "video/weakhero2/mp4/어떤 사업입니다 사업.mp4",
       "korean": "어떤 사업입니다 사업",
       "russian": "Это бизнес, бизнес",
-      "new": true
+      "new": true,
+      "english": "It's a business, you know."
     },
     {
       "video": "video/weakhero2/여러분들.webm",
       "videoMp4": "video/weakhero2/mp4/여러분들.mp4",
       "korean": "여러분들",
       "russian": "Друзья",
-      "new": true
+      "new": true,
+      "english": "You guys."
     },
     {
       "video": "video/weakhero2/왜 잠을 제대로 못 잔다고 생각해요.webm",
       "videoMp4": "video/weakhero2/mp4/왜 잠을 제대로 못 잔다고 생각해요.mp4",
       "korean": "왜 잠을 제대로 못 잔다고 생각해요?",
       "russian": "Как думаешь, почему не можешь спать?",
-      "new": true
+      "new": true,
+      "english": "Why do you think you can't sleep well?"
     },
     {
       "video": "video/weakhero2/왜냐하면은.webm",
       "videoMp4": "video/weakhero2/mp4/왜냐하면은.mp4",
       "korean": "왜냐하면은",
       "russian": "Потому что...",
-      "new": true
+      "new": true,
+      "english": "Because..."
     },
     {
       "video": "video/weakhero2/왜요.webm",
       "videoMp4": "video/weakhero2/mp4/왜요.mp4",
       "korean": "왜요?",
       "russian": "Почему?",
-      "new": true
+      "new": true,
+      "english": "Why?"
     },
     {
       "video": "video/weakhero2/이따 수거 폰들 가져와.webm",
       "videoMp4": "video/weakhero2/mp4/이따 수거 폰들 가져와.mp4",
       "korean": "이따 수거 폰들 가져와",
       "russian": "Собери потом телефоны",
-      "new": true
+      "new": true,
+      "english": "Bring the phones to collect later."
     },
     {
       "video": "video/weakhero2/진짜 비겁한 거야.webm",
       "videoMp4": "video/weakhero2/mp4/진짜 비겁한 거야.mp4",
       "korean": "진짜 비겁한 거야",
       "russian": "Это правда трусливо",
-      "new": true
+      "new": true,
+      "english": "That's really cowardly."
     },
     {
       "video": "video/weakhero2/폰은 기종 어떤 거 써.webm",
       "videoMp4": "video/weakhero2/mp4/폰은 기종 어떤 거 써.mp4",
       "korean": "폰은 기종 어떤 거 써?",
       "russian": "Какой у тебя телефон?",
-      "new": true
+      "new": true,
+      "english": "What kind of phone do you use?"
     },
     {
       "video": "video/weakhero2/같은 꿈을 계속 꾼다고 했죠.webm",
       "videoMp4": "video/weakhero2/mp4/같은 꿈을 계속 꾼다고 했죠.mp4",
       "korean": "같은 꿈을 계속 꾼다고 했죠",
       "russian": "Ты говорил, что тебе снится один и тот же сон",
-      "new": true
+      "new": true,
+      "english": "You said you keep having the same dream."
     },
     {
       "video": "video/weakhero2/건들지 말 것.webm",
       "videoMp4": "video/weakhero2/mp4/건들지 말 것.mp4",
       "korean": "건들지 말 것?",
       "russian": "Не трогать?",
-      "new": true
+      "new": true,
+      "english": "Don't touch it?"
     },
     {
       "video": "video/weakhero2/그 사람 전학 왔을 때.webm",
       "videoMp4": "video/weakhero2/mp4/그 사람 전학 왔을 때.mp4",
       "korean": "그 사람 전학 왔을 때",
       "russian": "Когда он перевёлся к нам",
-      "new": true
+      "new": true,
+      "english": "When he transferred here."
     },
     {
       "video": "video/weakhero2/그 폰 찾았어.webm",
       "videoMp4": "video/weakhero2/mp4/그 폰 찾았어.mp4",
       "korean": "그 폰 찾았어",
       "russian": "Ты нашёл телефон?",
-      "new": true
+      "new": true,
+      "english": "Did you find the phone?"
     },
     {
       "video": "video/weakhero2/꺼져.webm",
       "videoMp4": "video/weakhero2/mp4/꺼져.mp4",
       "korean": "꺼져",
       "russian": "Проваливай",
-      "new": true
+      "new": true,
+      "english": "Get lost."
     },
     {
       "video": "video/weakhero2/나는 이렇게 잠이 안 드는데.webm",
       "videoMp4": "video/weakhero2/mp4/나는 이렇게 잠이 안 드는데.mp4",
       "korean": "나는 이렇게 잠이 안 드는데",
       "russian": "Я не могу уснуть вот так",
-      "new": true
+      "new": true,
+      "english": "I can't sleep like this."
     },
     {
       "video": "video/weakhero2/내가 생각해 봤는데.webm",
       "videoMp4": "video/weakhero2/mp4/내가 생각해 봤는데.mp4",
       "korean": "내가 생각해 봤는데",
       "russian": "Я тут подумал",
-      "new": true
+      "new": true,
+      "english": "I've been thinking."
     },
     {
       "video": "video/weakhero2/너 내가 아무것도 모르는 거 같아.webm",
       "videoMp4": "video/weakhero2/mp4/너 내가 아무것도 모르는 거 같아.mp4",
       "korean": "너 내가 아무것도 모르는 거 같아",
       "russian": "Думаешь, я ничего не понимаю?",
-      "new": true
+      "new": true,
+      "english": "Do you think I don't know anything?"
     },
     {
       "video": "video/weakhero2/너는 언제 깨어날 수 있을까.webm",
       "videoMp4": "video/weakhero2/mp4/너는 언제 깨어날 수 있을까.mp4",
       "korean": "너는 언제 깨어날 수 있을까",
       "russian": "Когда ты наконец проснёшься?",
-      "new": true
+      "new": true,
+      "english": "When can you wake up?"
     },
     {
       "video": "video/weakhero2/네.webm",
       "videoMp4": "video/weakhero2/mp4/네.mp4",
       "korean": "네",
       "russian": "Да",
-      "new": true
+      "new": true,
+      "english": "Yeah."
     },
     {
       "video": "video/weakhero2/며칠전엔.webm",
       "videoMp4": "video/weakhero2/mp4/며칠전엔.mp4",
       "korean": "며칠전엔",
       "russian": "Пару дней назад",
-      "new": true
+      "new": true,
+      "english": "A few days ago."
     },
     {
       "video": "video/weakhero2/무슨 말인지 모르겠는데.webm",
       "videoMp4": "video/weakhero2/mp4/무슨 말인지 모르겠는데.mp4",
       "korean": "무슨 말인지 모르겠는데",
       "russian": "Я не понимаю, о чём ты",
-      "new": true
+      "new": true,
+      "english": "I don't understand what you mean."
     },
     {
       "video": "video/weakhero2/무슨 말인지 알지.webm",
       "videoMp4": "video/weakhero2/mp4/무슨 말인지 알지.mp4",
       "korean": "무슨 말인지 알지?",
       "russian": "Понимаешь о чем я?",
-      "new": true
+      "new": true,
+      "english": "You know what I mean, right?"
     },
     {
       "video": "video/weakhero2/미안해.webm",
       "videoMp4": "video/weakhero2/mp4/미안해.mp4",
       "korean": "미안해",
       "russian": "Прости",
-      "new": true
+      "new": true,
+      "english": "I'm sorry."
     },
     {
       "video": "video/weakhero2/바꿔 달라고 말했잖아.webm",
       "videoMp4": "video/weakhero2/mp4/바꿔 달라고 말했잖아.mp4",
       "korean": "바꿔 달라고 말했잖아",
       "russian": "Я же просил заменить",
-      "new": true
+      "new": true,
+      "english": "I told you to change it."
     },
     {
       "video": "video/weakhero2/비겁하다는 말을 했어.webm",
       "videoMp4": "video/weakhero2/mp4/비겁하다는 말을 했어.mp4",
       "korean": "비겁하다는 말을 했어",
       "russian": "Назвал его трусом",
-      "new": true
+      "new": true,
+      "english": "I called him a coward."
     },
     {
       "video": "video/weakhero2/비즈니스.webm",
       "videoMp4": "video/weakhero2/mp4/비즈니스.mp4",
       "korean": "비즈니스",
       "russian": "Бизнес",
-      "new": true
+      "new": true,
+      "english": "Business."
     },
     {
       "video": "video/weakhero2/빨리 빨리 말해.webm",
       "videoMp4": "video/weakhero2/mp4/빨리 빨리 말해.mp4",
       "korean": "빨리 빨리 말해",
       "russian": "Быстрее говори",
-      "new": true
+      "new": true,
+      "english": "Speak quickly."
     }
   ],
   "b4": [
@@ -653,217 +750,248 @@
       "videoMp4": "video/weakhero2/mp4/감사합니다.mp4",
       "korean": "감사합니다",
       "russian": "Спасибо",
-      "new": true
+      "new": true,
+      "english": "Thank you."
     },
     {
       "video": "video/weakhero2/그럼 아무도 안 다칠 거야.webm",
       "videoMp4": "video/weakhero2/mp4/그럼 아무도 안 다칠 거야.mp4",
       "korean": "그럼 아무도 안 다칠 거야",
       "russian": "Тогда никто не пострадает",
-      "new": true
+      "new": true,
+      "english": "Then no one will get hurt."
     },
     {
       "video": "video/weakhero2/그만하시라고요 좀.webm",
       "videoMp4": "video/weakhero2/mp4/그만하시라고요 좀.mp4",
       "korean": "그만하시라고요 좀",
       "russian": "Прекрати прошу тебя",
-      "new": true
+      "new": true,
+      "english": "Please stop it."
     },
     {
       "video": "video/weakhero2/근데.webm",
       "videoMp4": "video/weakhero2/mp4/근데.mp4",
       "korean": "근데",
       "russian": "Однако",
-      "new": true
+      "new": true,
+      "english": "But,"
     },
     {
       "video": "video/weakhero2/나오는 돈 해 봤지 얼마나 된다고.webm",
       "videoMp4": "video/weakhero2/mp4/나오는 돈 해 봤지 얼마나 된다고.mp4",
       "korean": "나오는 돈 해 봤지 얼마나 된다고",
       "russian": "Ты же сам в курсе что там немного денег",
-      "new": true
+      "new": true,
+      "english": "You know how little money comes out of it."
     },
     {
       "video": "video/weakhero2/내가 다 죽여 버릴 거라.webm",
       "videoMp4": "video/weakhero2/mp4/내가 다 죽여 버릴 거라.mp4",
       "korean": "내가 다 죽여 버릴 거라",
       "russian": "Я, сказал, всех убью",
-      "new": true
+      "new": true,
+      "english": "I said I'll kill them all."
     },
     {
       "video": "video/weakhero2/너도 지켜.webm",
       "videoMp4": "video/weakhero2/mp4/너도 지켜.mp4",
       "korean": "너도 지켜",
       "russian": "Ты тоже сдержи",
-      "new": true
+      "new": true,
+      "english": "You keep your promise too."
     },
     {
       "video": "video/weakhero2/넌 그거 보는게 재밌냐.webm",
       "videoMp4": "video/weakhero2/mp4/넌 그거 보는게 재밌냐.mp4",
       "korean": "넌 그거 보는게 재밌냐?",
       "russian": "Ну че как тебе шоу?",
-      "new": true
+      "new": true,
+      "english": "Do you find that entertaining?"
     },
     {
       "video": "video/weakhero2/네가1말 지켜.webm",
       "videoMp4": "video/weakhero2/mp4/네가1말 지켜.mp4",
       "korean": "네가 한 말 지켜",
       "russian": "Ты сдержи то что сказал",
-      "new": true
+      "new": true,
+      "english": "Stick to what you said."
     },
     {
       "video": "video/weakhero2/눈 착하게 뜨고 다녀.webm",
       "videoMp4": "video/weakhero2/mp4/눈 착하게 뜨고 다녀.mp4",
       "korean": "눈 착하게 뜨고 다녀",
       "russian": "Ходи с нормальным взглядом",
-      "new": true
+      "new": true,
+      "english": "Walk around with a nice look."
     },
     {
       "video": "video/weakhero2/눈깔 다 뽑기 전에.webm",
       "videoMp4": "video/weakhero2/mp4/눈깔 다 뽑기 전에.mp4",
       "korean": "눈깔 다 뽑기 전에",
       "russian": "Пока я тебе глазища не вырвал",
-      "new": true
+      "new": true,
+      "english": "Before I pluck your eyes out."
     },
     {
       "video": "video/weakhero2/니네 아버지 또 사고쳤다.webm",
       "videoMp4": "video/weakhero2/mp4/니네 아버지 또 사고쳤다.mp4",
       "korean": "니네 아버지 또 사고쳤다",
       "russian": "У твоего отца снова неприятности",
-      "new": true
+      "new": true,
+      "english": "Your dad got into trouble again."
     },
     {
       "video": "video/weakhero2/니들 다 죽일 거야.webm",
       "videoMp4": "video/weakhero2/mp4/니들 다 죽일 거야.mp4",
       "korean": "니들 다 죽일 거야",
       "russian": "Я вас всех убью",
-      "new": true
+      "new": true,
+      "english": "I'm going to kill you all."
     },
     {
       "video": "video/weakhero2/니들도 무슨 짓 하건 관심 없고.webm",
       "videoMp4": "video/weakhero2/mp4/니들도 무슨 짓 하건 관심 없고.mp4",
       "korean": "니들도 무슨 짓 하건 관심 없고",
       "russian": "Мне плевать какой херней вы занимаетесь",
-      "new": true
+      "new": true,
+      "english": "I don't care what you guys are up to."
     },
     {
       "video": "video/weakhero2/병원 근처에도 나타나면.webm",
       "videoMp4": "video/weakhero2/mp4/병원 근처에도 나타나면.mp4",
       "korean": "병원 근처에도 나타나면",
       "russian": "Если вновь появитесь около больницы",
-      "new": true
+      "new": true,
+      "english": "If you show up near the hospital again,"
     },
     {
       "video": "video/weakhero2/보고 싶다고.webm",
       "videoMp4": "video/weakhero2/mp4/보고 싶다고.mp4",
       "korean": "보고 싶다고",
       "russian": "Скучает говорит",
-      "new": true
+      "new": true,
+      "english": "I miss you."
     },
     {
       "video": "video/weakhero2/분명히 말할 게 있어서 오는 거야.webm",
       "videoMp4": "video/weakhero2/mp4/분명히 말할 게 있어서 오는 거야.mp4",
       "korean": "분명히 말할 게 있어서 오는 거야",
       "russian": "Мне точно есть что сказать",
-      "new": true
+      "new": true,
+      "english": "I'm definitely here to say something."
     },
     {
       "video": "video/weakhero2/설명해야 돼.webm",
       "videoMp4": "video/weakhero2/mp4/설명해야 돼.mp4",
       "korean": "설명해야 돼",
       "russian": "Ты должен объяснить",
-      "new": true
+      "new": true,
+      "english": "You need to explain."
     },
     {
       "video": "video/weakhero2/알겠으니까.webm",
       "videoMp4": "video/weakhero2/mp4/알겠으니까.mp4",
       "korean": "알겠으니까",
       "russian": "Ясно понятно",
-      "new": true
+      "new": true,
+      "english": "I get it."
     },
     {
       "video": "video/weakhero2/알았으니까.webm",
       "videoMp4": "video/weakhero2/mp4/알았으니까.mp4",
       "korean": "알았으니까",
       "russian": "Раз разобрались",
-      "new": true
+      "new": true,
+      "english": "Got it."
     },
     {
       "video": "video/weakhero2/어딨냐.webm",
       "videoMp4": "video/weakhero2/mp4/어딨냐.mp4",
       "korean": "어딨냐?",
       "russian": "Де ты?",
-      "new": true
+      "new": true,
+      "english": "Where are you?"
     },
     {
       "video": "video/weakhero2/여기까지 올 필요도 없었거든.webm",
       "videoMp4": "video/weakhero2/mp4/여기까지 올 필요도 없었거든.mp4",
       "korean": "여기까지 올 필요도 없었거든?",
       "russian": "У меня так-то нет нужды сюда приходить",
-      "new": true
+      "new": true,
+      "english": "You didn't even need to come all the way here."
     },
     {
       "video": "video/weakhero2/예 아버지.webm",
       "videoMp4": "video/weakhero2/mp4/예 아버지.mp4",
       "korean": "예 아버지",
       "russian": "Да, бать",
-      "new": true
+      "new": true,
+      "english": "Yes, Father."
     },
     {
       "video": "video/weakhero2/왜 이렇게 집착을 하는 거야.webm",
       "videoMp4": "video/weakhero2/mp4/왜 이렇게 집착을 하는 거야.mp4",
       "korean": "왜 이렇게 집착을 하는 거야?",
       "russian": "Почему ты так одержим этим?",
-      "new": true
+      "new": true,
+      "english": "Why are you so obsessed?"
     },
     {
       "video": "video/weakhero2/웬일이냐.webm",
       "videoMp4": "video/weakhero2/mp4/웬일이냐.mp4",
       "korean": "웬일이냐?",
       "russian": "Какими судьбами?",
-      "new": true
+      "new": true,
+      "english": "What’s going on?"
     },
     {
       "video": "video/weakhero2/이래는 순서가 있다니까.webm",
       "videoMp4": "video/weakhero2/mp4/이래는 순서가 있다니까.mp4",
       "korean": "이래는 순서가 있다니까",
       "russian": "В таких делах есть свой порядок действий",
-      "new": true
+      "new": true,
+      "english": "There’s a proper order to this."
     },
     {
       "video": "video/weakhero2/일단 같이 가서.webm",
       "videoMp4": "video/weakhero2/mp4/일단 같이 가서.mp4",
       "korean": "일단 같이 가서",
       "russian": "Сначала, пойдите вместе...",
-      "new": true
+      "new": true,
+      "english": "Let’s go together first."
     },
     {
       "video": "video/weakhero2/잘 들어.webm",
       "videoMp4": "video/weakhero2/mp4/잘 들어.mp4",
       "korean": "잘 들어",
       "russian": "Слушай внимательно",
-      "new": true
+      "new": true,
+      "english": "Listen carefully."
     },
     {
       "video": "video/weakhero2/주민 신고 들어온다 이 씨발새끼들아.webm",
       "videoMp4": "video/weakhero2/mp4/주민 신고 들어온다 이 씨발새끼들아.mp4",
       "korean": "주민 신고 들어온다 이 씨발새끼들아",
       "russian": "На вас жалобы поступают от жильцов, ублюдки",
-      "new": true
+      "new": true,
+      "english": "We got complaints from the residents, you idiots."
     },
     {
       "video": "video/weakhero2/처맞기 싫으면 말 걸지 마라.webm",
       "videoMp4": "video/weakhero2/mp4/처맞기 싫으면 말 걸지 마라.mp4",
       "korean": "처맞기 싫으면 말 걸지 마라",
       "russian": "Молчи, если не хочешь по морде получить",
-      "new": true
+      "new": true,
+      "english": "Don’t talk to me if you don’t want to get hit."
     },
     {
       "video": "video/weakhero2/한 번만 말할게.webm",
       "videoMp4": "video/weakhero2/mp4/한 번만 말할게.mp4",
       "korean": "한 번만 말할게",
       "russian": "Скажу только раз",
-      "new": true
+      "new": true,
+      "english": "I’ll say it just once."
     }
   ],
   "b5": []

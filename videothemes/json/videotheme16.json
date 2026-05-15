@@ -4,31 +4,36 @@
       "video": "video/kalmar3/야 어제 술 얼마나 마셨어.webm",
       "videoMp4": "video/kalmar3/mp4/야 어제 술 얼마나 마셨어.mp4",
       "korean": "야 어제 술 얼마나 마셨어?",
-      "russian": "Эй, сколько ты вчера выпил?"
+      "russian": "Эй, сколько ты вчера выпил?",
+      "english": "Hey, how much did you drink yesterday?"
     },
     {
       "video": "video/kalmar3/사백오십육 번.webm",
       "videoMp4": "video/kalmar3/mp4/사백오십육 번.mp4",
       "korean": "사백오십육 번",
-      "russian": "Номер 456"
+      "russian": "Номер 456",
+      "english": "Number 456"
     },
     {
       "video": "video/kalmar3/죽은 거야.webm",
       "videoMp4": "video/kalmar3/mp4/죽은 거야.mp4",
       "korean": "죽은 거야",
-      "russian": "Он умер"
+      "russian": "Он умер",
+      "english": "He's dead."
     },
     {
       "video": "video/kalmar3/이게 다 당신 작전이었어.webm",
       "videoMp4": "video/kalmar3/mp4/이게 다 당신 작전이었어.mp4",
       "korean": "이게 다 당신 작전이었어?",
-      "russian": "Это всё было твоей уловкой?"
+      "russian": "Это всё было твоей уловкой?",
+      "english": "Was this all your plan?"
     },
     {
       "video": "video/kalmar3/잘 생각했어.webm",
       "videoMp4": "video/kalmar3/mp4/잘 생각했어.mp4",
       "korean": "잘 생각했어",
-      "russian": "Хорошо подумал"
+      "russian": "Хорошо подумал",
+      "english": "Good thinking."
     }
   ],
   "b1": [
@@ -36,221 +41,255 @@
       "video": "video/kalmar3/제발 살려주세요.webm",
       "videoMp4": "video/kalmar3/mp4/제발 살려주세요.mp4",
       "korean": "제발 살려주세요",
-      "russian": "Пожалуйста, пощадите меня"
+      "russian": "Пожалуйста, пощадите меня",
+      "english": "Please spare me."
     },
     {
       "video": "video/kalmar3/제 딸이 많이 아픕니다.webm",
       "videoMp4": "video/kalmar3/mp4/제 딸이 많이 아픕니다.mp4",
       "korean": "제 딸이 많이 아픕니다",
-      "russian": "Моя дочь тяжело больна"
+      "russian": "Моя дочь тяжело больна",
+      "english": "My daughter is very sick."
     },
     {
       "video": "video/kalmar3/살고 싶으면 내 말 들어.webm",
       "videoMp4": "video/kalmar3/mp4/살고 싶으면 내 말 들어.mp4",
       "korean": "살고 싶으면 내 말 들어",
-      "russian": "Хочешь выжить — слушай меня"
+      "russian": "Хочешь выжить — слушай меня",
+      "english": "If you want to live, listen to me."
     },
     {
       "video": "video/kalmar3/왜 갑자기 이런 이쁜 짓을 하는 거야.webm",
       "videoMp4": "video/kalmar3/mp4/왜 갑자기 이런 이쁜 짓을 하는 거야.mp4",
       "korean": "왜 갑자기 이런 이쁜 짓을 하는 거야?",
-      "russian": "С чего вдруг такая милая выходка?"
+      "russian": "С чего вдруг такая милая выходка?",
+      "english": "Why are you being so sweet all of a sudden?"
     },
     {
       "video": "video/kalmar3/다시 생각해 보니까.webm",
       "videoMp4": "video/kalmar3/mp4/다시 생각해 보니까.mp4",
       "korean": "다시 생각해 보니까",
-      "russian": "Подумав ещё раз"
+      "russian": "Подумав ещё раз",
+      "english": "Thinking it over again..."
     },
     {
       "video": "video/kalmar3/잘 생각했어.webm",
       "videoMp4": "video/kalmar3/mp4/잘 생각했어.mp4",
       "korean": "잘 생각했어",
-      "russian": "Хорошо подумал"
+      "russian": "Хорошо подумал",
+      "english": "Good thinking."
     },
     {
       "video": "video/kalmar3/죽은 거야.webm",
       "videoMp4": "video/kalmar3/mp4/죽은 거야.mp4",
       "korean": "죽은 거야",
-      "russian": "Он умер"
+      "russian": "Он умер",
+      "english": "He's dead."
     },
     {
       "video": "video/kalmar3/살아 있어요.webm",
       "videoMp4": "video/kalmar3/mp4/살아 있어요.mp4",
       "korean": "살아 있어요",
-      "russian": "Он жив"
+      "russian": "Он жив",
+      "english": "He's alive."
     },
     {
       "video": "video/kalmar3/야 어제 술 얼마나 마셨어.webm",
       "videoMp4": "video/kalmar3/mp4/야 어제 술 얼마나 마셨어.mp4",
       "korean": "야 어제 술 얼마나 마셨어?",
-      "russian": "Эй, сколько ты вчера выпил?"
+      "russian": "Эй, сколько ты вчера выпил?",
+      "english": "Hey, how much did you drink yesterday?"
     },
     {
       "video": "video/kalmar3/그 몇시였어요.webm",
       "videoMp4": "video/kalmar3/mp4/그 몇시였어요.mp4",
       "korean": "그 몇시였어요?",
-      "russian": "Во сколько это было?"
+      "russian": "Во сколько это было?",
+      "english": "What time was that?"
     },
     {
       "video": "video/kalmar3/새벽에 밖에서 사람 소리도 나고.webm",
       "videoMp4": "video/kalmar3/mp4/새벽에 밖에서 사람 소리도 나고.mp4",
       "korean": "새벽에 밖에서 사람 소리도 나고",
-      "russian": "На рассвете снаружи были слышны голоса"
+      "russian": "На рассвете снаружи были слышны голоса",
+      "english": "I heard voices outside at dawn."
     },
     {
       "video": "video/kalmar3/사백오십육 번 투표해 주세요.webm",
       "videoMp4": "video/kalmar3/mp4/사백오십육 번 투표해 주세요.mp4",
       "korean": "사백오십육 번 투표해 주세요",
-      "russian": "Номер 456, проголосуйте"
+      "russian": "Номер 456, проголосуйте",
+      "english": "Vote for number 456, please."
     },
     {
       "video": "video/kalmar3/다음.webm",
       "videoMp4": "video/kalmar3/mp4/다음.mp4",
       "korean": "다음",
-      "russian": "Следующий"
+      "russian": "Следующий",
+      "english": "Next."
     },
     {
       "video": "video/kalmar3/사백사십팔번 투표해 주세요.webm",
       "videoMp4": "video/kalmar3/mp4/사백사십팔번 투표해 주세요.mp4",
       "korean": "사백사십팔번 투표해 주세요",
-      "russian": "Номер 448, проголосуйте"
+      "russian": "Номер 448, проголосуйте",
+      "english": "Vote for number 448, please."
     },
     {
       "video": "video/kalmar3/사백오십육 번.webm",
       "videoMp4": "video/kalmar3/mp4/사백오십육 번.mp4",
       "korean": "사백오십육 번",
-      "russian": "Номер 456"
+      "russian": "Номер 456",
+      "english": "Number 456."
     },
     {
       "video": "video/kalmar3/혹시.webm",
       "videoMp4": "video/kalmar3/mp4/혹시.mp4",
       "korean": "혹시",
-      "russian": "Случайно / вдруг"
+      "russian": "Случайно / вдруг",
+      "english": "By any chance?"
     },
     {
       "video": "video/kalmar3/이게 다 당신 작전이었어.webm",
       "videoMp4": "video/kalmar3/mp4/이게 다 당신 작전이었어.mp4",
       "korean": "이게 다 당신 작전이었어?",
-      "russian": "Это всё было твоей уловкой?"
+      "russian": "Это всё было твоей уловкой?",
+      "english": "Was this all your plan?"
     },
     {
       "video": "video/kalmar3/저 인간 소름 돋네.webm",
       "videoMp4": "video/kalmar3/mp4/저 인간 소름 돋네.mp4",
       "korean": "저 인간 소름 돋네",
-      "russian": "У меня мурашки от этого типа"
+      "russian": "У меня мурашки от этого типа",
+      "english": "That guy gives me chills."
     },
     {
       "video": "video/kalmar3/너 내 목걸이 못 봤냐.webm",
       "videoMp4": "video/kalmar3/mp4/너 내 목걸이 못 봤냐.mp4",
       "korean": "너 내 목걸이 못 봤냐?",
       "russian": "Ты не видел моё ожерелье?",
-      "new": true
+      "new": true,
+      "english": "Haven't you seen my necklace?"
     },
     {
       "video": "video/kalmar3/십자가 안에.webm",
       "videoMp4": "video/kalmar3/mp4/십자가 안에.mp4",
       "korean": "십자가 안에",
       "russian": "Внутри креста",
-      "new": true
+      "new": true,
+      "english": "Inside the cross."
     },
     {
       "video": "video/kalmar3/살고 싶으면 시키는 대로만 해.webm",
       "videoMp4": "video/kalmar3/mp4/살고 싶으면 시키는 대로만 해.mp4",
       "korean": "살고 싶으면 시키는 대로만 해",
       "russian": "Если хочешь жить, делай, как сказано",
-      "new": true
+      "new": true,
+      "english": "If you want to live, just do as you're told."
     },
     {
       "video": "video/kalmar3/네 번째 게임의 결과를 알려 드리겠습니다.webm",
       "videoMp4": "video/kalmar3/mp4/네 번째 게임의 결과를 알려 드리겠습니다.mp4",
       "korean": "네 번째 게임의 결과를 알려 드리겠습니다",
       "russian": "Я сообщу результаты четвёртой игры",
-      "new": true
+      "new": true,
+      "english": "I'll let you know the results of the fourth game."
     },
     {
       "video": "video/kalmar3/말해.webm",
       "videoMp4": "video/kalmar3/mp4/말해.mp4",
       "korean": "말해",
       "russian": "Говори",
-      "new": true
+      "new": true,
+      "english": "Just say it."
     },
     {
       "video": "video/kalmar3/근데 구린 냄새가 나잖아.webm",
       "videoMp4": "video/kalmar3/mp4/근데 구린 냄새가 나잖아.mp4",
       "korean": "근데 구린 냄새가 나잖아",
       "russian": "Но ведь пахнет подозрительно",
-      "new": true
+      "new": true,
+      "english": "But it smells fishy."
     },
     {
       "video": "video/kalmar3/39 번 투표해 주세요.webm",
       "videoMp4": "video/kalmar3/mp4/39 번 투표해 주세요.mp4",
       "korean": "39 번 투표해 주세요",
       "russian": "Номер 39, проголосуйте",
-      "new": true
+      "new": true,
+      "english": "Please vote for number 39."
     },
     {
       "video": "video/kalmar3/선생님들.webm",
       "videoMp4": "video/kalmar3/mp4/선생님들.mp4",
       "korean": "선생님들",
       "russian": "Уважаемые",
-      "new": true
+      "new": true,
+      "english": "Teachers"
     },
     {
       "video": "video/kalmar3/선생님들 제발 부탁드립니다.webm",
       "videoMp4": "video/kalmar3/mp4/선생님들 제발 부탁드립니다.mp4",
       "korean": "선생님들 제발 부탁드립니다",
       "russian": "Уважаемые, прошу вас, пожалуйста",
-      "new": true
+      "new": true,
+      "english": "Teachers, please, I'm begging you."
     },
     {
       "video": "video/kalmar3/먹어.webm",
       "videoMp4": "video/kalmar3/mp4/먹어.mp4",
       "korean": "먹어",
       "russian": "Ешь",
-      "new": true
+      "new": true,
+      "english": "Eat."
     },
     {
       "video": "video/kalmar3/물 마셔.webm",
       "videoMp4": "video/kalmar3/mp4/물 마셔.mp4",
       "korean": "물 마셔",
       "russian": "Пей воду",
-      "new": true
+      "new": true,
+      "english": "Drink some water."
     },
     {
       "video": "video/kalmar3/브이아이피들이 왔다고 들었습니다.webm",
       "videoMp4": "video/kalmar3/mp4/브이아이피들이 왔다고 들었습니다.mp4",
       "korean": "브이아이피들이 왔다고 들었습니다",
       "russian": "Я слышала, что прибыли VIP-гости",
-      "new": true
+      "new": true,
+      "english": "I heard the VIPs have arrived."
     },
     {
       "video": "video/kalmar3/내가 총에 맞았던 곳이 여기예요.webm",
       "videoMp4": "video/kalmar3/mp4/내가 총에 맞았던 곳이 여기예요.mp4",
       "korean": "내가 총에 맞았던 곳이 여기예요",
       "russian": "Вот место, где меня подстрелили",
-      "new": true
+      "new": true,
+      "english": "This is where I got shot."
     },
     {
       "video": "video/kalmar3/그런 사람이 아닙니다.webm",
       "videoMp4": "video/kalmar3/mp4/그런 사람이 아닙니다.mp4",
       "korean": "그런 사람이 아닙니다",
       "russian": "Я не такой человек",
-      "new": true
+      "new": true,
+      "english": "I'm not that kind of person."
     },
     {
       "video": "video/kalmar3/애기를 살려주세요.webm",
       "videoMp4": "video/kalmar3/mp4/애기를 살려주세요.mp4",
       "korean": "애기를 살려주세요",
       "russian": "Пожалуйста, спасите ребёнка",
-      "new": true
+      "new": true,
+      "english": "Please save the baby."
     },
     {
       "video": "video/kalmar3/저기 저 집 같은데.webm",
       "videoMp4": "video/kalmar3/mp4/저기 저 집 같은데.mp4",
       "korean": "저기 저 집 같은데",
       "russian": "Кажется, это тот дом",
-      "new": true
+      "new": true,
+      "english": "I think that's the house over there."
     }
   ],
   "b2": [],

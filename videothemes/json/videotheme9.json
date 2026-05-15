@@ -5,47 +5,54 @@
       "videoMp4": "video/deathgame/mp4/나 죽은 건가.mp4",
       "korean": "나 죽은 건가?",
       "russian": "Я что, умер?",
-      "new": true
+      "new": true,
+      "english": "Am I dead?"
     },
     {
       "video": "video/deathgame/넌 죽었어.webm",
       "videoMp4": "video/deathgame/mp4/넌 죽었어.mp4",
       "korean": "넌 죽었어",
       "russian": "Ты умер",
-      "new": true
+      "new": true,
+      "english": "You're dead."
     },
     {
       "video": "video/deathgame/너 언제까지 이렇게 살 거야.webm",
       "videoMp4": "video/deathgame/mp4/너 언제까지 이렇게 살 거야.mp4",
       "korean": "너 언제까지 이렇게 살 거야?",
-      "russian": "Сколько ты еще так будешь жить?"
+      "russian": "Сколько ты еще так будешь жить?",
+      "english": "How long are you going to live like this?"
     },
     {
       "video": "video/deathgame/이제 그만하자.webm",
       "videoMp4": "video/deathgame/mp4/이제 그만하자.mp4",
       "korean": "이제 그만하자",
       "russian": "Давай на этом закончим",
-      "new": true
+      "new": true,
+      "english": "Let's stop now."
     },
     {
       "video": "video/deathgame/그 새끼 때문에.webm",
       "videoMp4": "video/deathgame/mp4/그 새끼 때문에.mp4",
       "korean": "그 새끼 때문에",
       "russian": "Из-за этого ублюдка",
-      "new": true
+      "new": true,
+      "english": "Because of that jerk."
     },
     {
       "video": "video/deathgame/저승은 비행기를 타고 가는 건가.webm",
       "videoMp4": "video/deathgame/mp4/저승은 비행기를 타고 가는 건가.mp4",
       "korean": "저승은 비행기를 타고 가는 건가?",
       "russian": "А в загробный мир на самолёте летают?",
-      "new": true
+      "new": true,
+      "english": "Do you take a plane to the afterlife?"
     },
     {
       "video": "video/deathgame/그런 법이 어딨어요.webm",
       "videoMp4": "video/deathgame/mp4/그런 법이 어딨어요.mp4",
       "korean": "그런 법이 어딨어요?",
-      "russian": "Разве есть такой закон?"
+      "russian": "Разве есть такой закон?",
+      "english": "Is there even such a law?"
     }
   ],
   "b1": [
@@ -53,186 +60,216 @@
       "video": "video/deathgame/감사합니다.webm",
       "videoMp4": "video/deathgame/mp4/감사합니다.mp4",
       "korean": "감사합니다",
-      "russian": "Спасибо"
+      "russian": "Спасибо",
+      "english": "Thank you."
     },
     {
       "video": "video/deathgame/걱정마.webm",
       "videoMp4": "video/deathgame/mp4/걱정마.mp4",
       "korean": "걱정마",
-      "russian": "Не волнуйся"
+      "russian": "Не волнуйся",
+      "english": "Don't worry."
     },
     {
       "video": "video/deathgame/고마워 지수야.webm",
       "videoMp4": "video/deathgame/mp4/고마워 지수야.mp4",
       "korean": "고마워 지수야",
-      "russian": "Спасибо, Чису"
+      "russian": "Спасибо, Чису",
+      "english": "Thanks, Jisoo."
     },
     {
       "video": "video/deathgame/그냥.webm",
       "videoMp4": "video/deathgame/mp4/그냥.mp4",
       "korean": "그냥",
-      "russian": "Просто"
+      "russian": "Просто",
+      "english": "Just."
     },
     {
       "video": "video/deathgame/내가 면접 끝나고 전화할게.webm",
       "videoMp4": "video/deathgame/mp4/내가 면접 끝나고 전화할게.mp4",
       "korean": "내가 면접 끝나고 전화할게",
-      "russian": "Я позвоню после собеседования"
+      "russian": "Я позвоню после собеседования",
+      "english": "I'll call you after the interview."
     },
     {
       "video": "video/deathgame/다시 한번 질문해 주실 수 있을까요.webm",
       "videoMp4": "video/deathgame/mp4/다시 한번 질문해 주실 수 있을까요.mp4",
       "korean": "다시 한번 질문해 주실 수 있을까요?",
-      "russian": "Можете повторить вопрос ещё раз?"
+      "russian": "Можете повторить вопрос ещё раз?",
+      "english": "Could you ask that question again?"
     },
     {
       "video": "video/deathgame/다음.webm",
       "videoMp4": "video/deathgame/mp4/다음.mp4",
       "korean": "다음",
-      "russian": "Следующий"
+      "russian": "Следующий",
+      "english": "Next."
     },
     {
       "video": "video/deathgame/맞습니다.webm",
       "videoMp4": "video/deathgame/mp4/맞습니다.mp4",
       "korean": "맞습니다",
-      "russian": "Верно"
+      "russian": "Верно",
+      "english": "That's right."
     },
     {
       "video": "video/deathgame/멋있어요.webm",
       "videoMp4": "video/deathgame/mp4/멋있어요.mp4",
       "korean": "멋있어요!",
-      "russian": "Крутой!"
+      "russian": "Крутой!",
+      "english": "That's cool!"
     },
     {
       "video": "video/deathgame/사실은 가장 어렵다는 것이었다.webm",
       "videoMp4": "video/deathgame/mp4/사실은 가장 어렵다는 것이었다.mp4",
       "korean": "사실은 가장 어렵다는 것이었다",
-      "russian": "На самом деле это оказалось самым сложным"
+      "russian": "На самом деле это оказалось самым сложным",
+      "english": "Actually, that was the hardest part."
     },
     {
       "video": "video/deathgame/아버지가 일찍 돌아가셨나요.webm",
       "videoMp4": "video/deathgame/mp4/아버지가 일찍 돌아가셨나요.mp4",
       "korean": "아버지가 일찍 돌아가셨나요?",
-      "russian": "Отец рано умер?"
+      "russian": "Отец рано умер?",
+      "english": "Did your father pass away early?"
     },
     {
       "video": "video/deathgame/알았어.webm",
       "videoMp4": "video/deathgame/mp4/알았어.mp4",
       "korean": "알았어",
-      "russian": "Поняла"
+      "russian": "Поняла",
+      "english": "Got it."
     },
     {
       "video": "video/deathgame/없습니다.webm",
       "videoMp4": "video/deathgame/mp4/없습니다.mp4",
       "korean": "없습니다",
-      "russian": "Нет"
+      "russian": "Нет",
+      "english": "There's none."
     },
     {
       "video": "video/deathgame/제가 (5)다섯 살 때.webm",
       "videoMp4": "video/deathgame/mp4/제가 (5)다섯 살 때.mp4",
       "korean": "제가 (5)다섯 살 때",
-      "russian": "Когда мне было пять лет"
+      "russian": "Когда мне было пять лет",
+      "english": "When I was five years old."
     },
     {
       "video": "video/deathgame/죄송하지만 질문을 못들었어요.webm",
       "videoMp4": "video/deathgame/mp4/죄송하지만 질문을 못들었어요.mp4",
       "korean": "죄송하지만 질문을 못들었어요",
-      "russian": "Извините, я не расслышал вопрос"
+      "russian": "Извините, я не расслышал вопрос",
+      "english": "I'm sorry, I didn't catch the question."
     },
     {
       "video": "video/deathgame/집에 있지.webm",
       "videoMp4": "video/deathgame/mp4/집에 있지.mp4",
       "korean": "집에 있지?",
-      "russian": "Ты дома?"
+      "russian": "Ты дома?",
+      "english": "Are you home?"
     },
     {
       "video": "video/deathgame/할 수 있다.webm",
       "videoMp4": "video/deathgame/mp4/할 수 있다.mp4",
       "korean": "할 수 있다",
-      "russian": "Я справлюсь!"
+      "russian": "Я справлюсь!",
+      "english": "I can do it!"
     },
     {
       "video": "video/deathgame/아무리 그래도.webm",
       "videoMp4": "video/deathgame/mp4/아무리 그래도.mp4",
       "korean": "아무리 그래도",
-      "russian": "Как ни крути"
+      "russian": "Как ни крути",
+      "english": "No matter what."
     },
     {
       "video": "video/deathgame/대한민국 법이 그래요.webm",
       "videoMp4": "video/deathgame/mp4/대한민국 법이 그래요.mp4",
       "korean": "대한민국 법이 그래요",
-      "russian": "Таков закон Кореи"
+      "russian": "Таков закон Кореи",
+      "english": "That's the law in Korea."
     },
     {
       "video": "video/deathgame/그런 법이 어딨어요.webm",
       "videoMp4": "video/deathgame/mp4/그런 법이 어딨어요.mp4",
       "korean": "그런 법이 어딨어요?",
-      "russian": "Разве есть такой закон?"
+      "russian": "Разве есть такой закон?",
+      "english": "Is there even such a law?"
     },
     {
       "video": "video/deathgame/너 언제까지 이렇게 살 거야.webm",
       "videoMp4": "video/deathgame/mp4/너 언제까지 이렇게 살 거야.mp4",
       "korean": "너 언제까지 이렇게 살 거야?",
-      "russian": "Сколько ты еще так будешь жить?"
+      "russian": "Сколько ты еще так будешь жить?",
+      "english": "How long are you going to live like this?"
     },
     {
       "video": "video/deathgame/결혼 안 할 거야.webm",
       "videoMp4": "video/deathgame/mp4/결혼 안 할 거야.mp4",
       "korean": "결혼 안 할 거야?",
-      "russian": "Жениться не собираешься?"
+      "russian": "Жениться не собираешься?",
+      "english": "Aren't you going to get married?"
     },
     {
       "video": "video/deathgame/웬일이야 집까지.webm",
       "videoMp4": "video/deathgame/mp4/웬일이야 집까지.mp4",
       "korean": "웬일이야 집까지?",
-      "russian": "Что ты здесь делаешь?(у самого дома)"
+      "russian": "Что ты здесь делаешь?(у самого дома)",
+      "english": "What are you doing here at home?"
     },
     {
       "video": "video/deathgame/근처에 일이 있어 가지고.webm",
       "videoMp4": "video/deathgame/mp4/근처에 일이 있어 가지고.mp4",
       "korean": "근처에 일이 있어 가지고",
-      "russian": "Были дела поблизости"
+      "russian": "Были дела поблизости",
+      "english": "I had some things to do nearby."
     },
     {
       "video": "video/deathgame/너 술 마셨어.webm",
       "videoMp4": "video/deathgame/mp4/너 술 마셨어.mp4",
       "korean": "너 술 마셨어?",
-      "russian": "Ты выпил?"
+      "russian": "Ты выпил?",
+      "english": "Did you drink?"
     },
     {
       "video": "video/deathgame/그 새끼 때문에.webm",
       "videoMp4": "video/deathgame/mp4/그 새끼 때문에.mp4",
       "korean": "그 새끼 때문에",
       "russian": "Из-за этого ублюдка",
-      "new": true
+      "new": true,
+      "english": "Because of that jerk."
     },
     {
       "video": "video/deathgame/그만 헤어져 줄까.webm",
       "videoMp4": "video/deathgame/mp4/그만 헤어져 줄까.mp4",
       "korean": "그만 헤어져 줄까?",
       "russian": "Может, хватит уже встречаться?",
-      "new": true
+      "new": true,
+      "english": "Should we just break up?"
     },
     {
       "video": "video/deathgame/나 죽은 건가.webm",
       "videoMp4": "video/deathgame/mp4/나 죽은 건가.mp4",
       "korean": "나 죽은 건가?",
       "russian": "Я что, умер?",
-      "new": true
+      "new": true,
+      "english": "Am I dead?"
     },
     {
       "video": "video/deathgame/난 우리 학교 취업률에 도움이 안 됐겠네.webm",
       "videoMp4": "video/deathgame/mp4/난 우리 학교 취업률에 도움이 안 됐겠네.mp4",
       "korean": "난 우리 학교 취업률에 도움이 안 됐겠네",
       "russian": "Похоже, я не улучшил статистику трудоустройства нашего вуза",
-      "new": true
+      "new": true,
+      "english": "I guess I didn't help our school's job placement rate."
     },
     {
       "video": "video/deathgame/날 만난 게 그 증거지.webm",
       "videoMp4": "video/deathgame/mp4/날 만난 게 그 증거지.mp4",
       "korean": "날 만난 게 그 증거지",
       "russian": "Раз мы встретились — вот тебе и доказательство",
-      "new": true
+      "new": true,
+      "english": "Meeting me is proof of that."
     }
   ],
   "b2": [
@@ -241,210 +278,240 @@
       "videoMp4": "video/deathgame/mp4/너 남자 생겼나.mp4",
       "korean": "너 남자 생겼냐?",
       "russian": "У тебя появился парень?",
-      "new": true
+      "new": true,
+      "english": "Do you have a boyfriend?"
     },
     {
       "video": "video/deathgame/네가 쓴 거잖아.webm",
       "videoMp4": "video/deathgame/mp4/네가 쓴 거잖아.mp4",
       "korean": "네가 쓴 거잖아?",
       "russian": "Это же ты написал?",
-      "new": true
+      "new": true,
+      "english": "You wrote this, right?"
     },
     {
       "video": "video/deathgame/되는 게 있었나.webm",
       "videoMp4": "video/deathgame/mp4/되는 게 있었나.mp4",
       "korean": "되는 게 있었나?",
       "russian": "Хоть что-то получалось вообще?",
-      "new": true
+      "new": true,
+      "english": "Did anything actually work out?"
     },
     {
       "video": "video/deathgame/들어가.webm",
       "videoMp4": "video/deathgame/mp4/들어가.mp4",
       "korean": "들어가",
       "russian": "Пока",
-      "new": true
+      "new": true,
+      "english": "Go in."
     },
     {
       "video": "video/deathgame/뭐.webm",
       "videoMp4": "video/deathgame/mp4/뭐.mp4",
       "korean": "뭐?",
       "russian": "Что?",
-      "new": true
+      "new": true,
+      "english": "What?"
     },
     {
       "video": "video/deathgame/부담도 되고.webm",
       "videoMp4": "video/deathgame/mp4/부담도 되고.mp4",
       "korean": "부담도 되고",
       "russian": "Это и напрягает тоже",
-      "new": true
+      "new": true,
+      "english": "It's a bit stressful."
     },
     {
       "video": "video/deathgame/아, 잠깐만.webm",
       "videoMp4": "video/deathgame/mp4/아, 잠깐만.mp4",
       "korean": "아, 잠깐만",
       "russian": "Ой, подожди",
-      "new": true
+      "new": true,
+      "english": "Oh, wait a second."
     },
     {
       "video": "video/deathgame/언제까지 이렇게 살 건데.webm",
       "videoMp4": "video/deathgame/mp4/언제까지 이렇게 살 건데.mp4",
       "korean": "언제까지 이렇게 살 건데?",
       "russian": "До каких пор ты собираешься так жить?",
-      "new": true
+      "new": true,
+      "english": "How long are you going to live like this?"
     },
     {
       "video": "video/deathgame/열심히.webm",
       "videoMp4": "video/deathgame/mp4/열심히.mp4",
       "korean": "열심히?",
       "russian": "Усерднее?",
-      "new": true
+      "new": true,
+      "english": "Work harder?"
     },
     {
       "video": "video/deathgame/왜 이렇게 어두워.webm",
       "videoMp4": "video/deathgame/mp4/왜 이렇게 어두워.mp4",
       "korean": "왜 이렇게 어두워?",
       "russian": "Почему так темно?",
-      "new": true
+      "new": true,
+      "english": "Why is it so dark?"
     },
     {
       "video": "video/deathgame/이제 그만하자.webm",
       "videoMp4": "video/deathgame/mp4/이제 그만하자.mp4",
       "korean": "이제 그만하자",
       "russian": "Давай на этом закончим",
-      "new": true
+      "new": true,
+      "english": "Let's stop now."
     },
     {
       "video": "video/deathgame/저승은 비행기를 타고 가는 건가.webm",
       "videoMp4": "video/deathgame/mp4/저승은 비행기를 타고 가는 건가.mp4",
       "korean": "저승은 비행기를 타고 가는 건가?",
       "russian": "А в загробный мир на самолёте летают?",
-      "new": true
+      "new": true,
+      "english": "Do you take a plane to the afterlife?"
     },
     {
       "video": "video/deathgame/항상 이랬지.webm",
       "videoMp4": "video/deathgame/mp4/항상 이랬지.mp4",
       "korean": "항상 이랬지",
       "russian": "Всегда так было",
-      "new": true
+      "new": true,
+      "english": "It's always been like this."
     },
     {
       "video": "video/deathgame/그런 거 아니라니까.webm",
       "videoMp4": "video/deathgame/mp4/그런 거 아니라니까.mp4",
       "korean": "그런 거 아니라니까?",
       "russian": "Да не в этом дело!",
-      "new": true
+      "new": true,
+      "english": "It's not like that, okay?"
     },
     {
       "video": "video/deathgame/나 갈게.webm",
       "videoMp4": "video/deathgame/mp4/나 갈게.mp4",
       "korean": "나 갈게",
       "russian": "Я пойду",
-      "new": true
+      "new": true,
+      "english": "I'm leaving."
     },
     {
       "video": "video/deathgame/나는 뭐 오늘 같은 날 술도 못 마셔.webm",
       "videoMp4": "video/deathgame/mp4/나는 뭐 오늘 같은 날 술도 못 마셔.mp4",
       "korean": "나는 뭐, 오늘 같은 날 술도 못 마셔?",
       "russian": "Я что, даже в такой день не могу выпить?",
-      "new": true
+      "new": true,
+      "english": "What, I can't even drink on a day like today?"
     },
     {
       "video": "video/deathgame/난 항상 너한테 짐만 되잖아.webm",
       "videoMp4": "video/deathgame/mp4/난 항상 너한테 짐만 되잖아.mp4",
       "korean": "난 항상 너한테 집만 되잖아",
       "russian": "Я всегда только обуза для тебя",
-      "new": true
+      "new": true,
+      "english": "I'm always just a burden to you."
     },
     {
       "video": "video/deathgame/내 인생이 이렇게 된 거다.webm",
       "videoMp4": "video/deathgame/mp4/내 인생이 이렇게 된 거다.mp4",
       "korean": "내 인생이 이렇게 된 거다",
       "russian": "Вот такой стала моя жизнь",
-      "new": true
+      "new": true,
+      "english": "This is how my life turned out."
     },
     {
       "video": "video/deathgame/넌 죽었어.webm",
       "videoMp4": "video/deathgame/mp4/넌 죽었어.mp4",
       "korean": "넌 죽었어",
       "russian": "Ты умер",
-      "new": true
+      "new": true,
+      "english": "You're dead."
     },
     {
       "video": "video/deathgame/더 열심히 살아야겠다는 생각은 안 들어.webm",
       "videoMp4": "video/deathgame/mp4/더 열심히 살아야겠다는 생각은 안 들어.mp4",
       "korean": "더 열심히 살아야겠다는 생각은 안 들어?",
       "russian": "Мыслей типа «надо жить лучше» не возникает?",
-      "new": true
+      "new": true,
+      "english": "Don't you ever think you should live better?"
     },
     {
       "video": "video/deathgame/되는 게 하나도 없는 날.webm",
       "videoMp4": "video/deathgame/mp4/되는 게 하나도 없는 날.mp4",
       "korean": "되는 게 하나도 없는 날",
       "russian": "День, когда ничего не получается",
-      "new": true
+      "new": true,
+      "english": "A day when nothing goes right."
     },
     {
       "video": "video/deathgame/뭐, 오늘 남자 소개라도 받았어.webm",
       "videoMp4": "video/deathgame/mp4/뭐, 오늘 남자 소개라도 받았어.mp4",
       "korean": "뭐, 오늘 남자 소개라도 받았어?",
       "russian": "Что, тебе сегодня парня подогнали?",
-      "new": true
+      "new": true,
+      "english": "So, did you get set up with a guy today?"
     },
     {
       "video": "video/deathgame/뭐지.webm",
       "videoMp4": "video/deathgame/mp4/뭐지.mp4",
       "korean": "뭐지?",
       "russian": "Это что ещё такое?",
-      "new": true
+      "new": true,
+      "english": "What is this?"
     },
     {
       "video": "video/deathgame/비행기.webm",
       "videoMp4": "video/deathgame/mp4/비행기.mp4",
       "korean": "비행기?",
       "russian": "Самолёт?",
-      "new": true
+      "new": true,
+      "english": "A plane?"
     },
     {
       "video": "video/deathgame/알바 못 했다며.webm",
       "videoMp4": "video/deathgame/mp4/알바 못 했다며.mp4",
       "korean": "알바 못 했다며",
       "russian": "Ты говорил, что не смог подработать",
-      "new": true
+      "new": true,
+      "english": "You said you couldn't work part-time."
     },
     {
       "video": "video/deathgame/열심히 안 산 거 같아.webm",
       "videoMp4": "video/deathgame/mp4/열심히 안 산 거 같아.mp4",
       "korean": "열심히 안 산 거 같아?",
       "russian": "Похоже, что я не стараюсь?",
-      "new": true
+      "new": true,
+      "english": "Do you think I haven't been trying?"
     },
     {
       "video": "video/deathgame/오늘 같은 날이 무슨 날인데.webm",
       "videoMp4": "video/deathgame/mp4/오늘 같은 날이 무슨 날인데.mp4",
       "korean": "오늘 같은 날이 무슨 날인데?",
       "russian": "Что значит, 'в такой день'?",
-      "new": true
+      "new": true,
+      "english": "What kind of day is it today?"
     },
     {
       "video": "video/deathgame/이번 달 면접 잡힌 거 많아서.webm",
       "videoMp4": "video/deathgame/mp4/이번 달 면접 잡힌 거 많아서.mp4",
       "korean": "이번 달 면접 잡힌 거 많아서",
       "russian": "Так как у тебя было много собеседований в этом месяце",
-      "new": true
+      "new": true,
+      "english": "I have a lot of interviews this month."
     },
     {
       "video": "video/deathgame/잘 읽었어.webm",
       "videoMp4": "video/deathgame/mp4/잘 읽었어.mp4",
       "korean": "잘 읽었어",
       "russian": "Мне понравилось чтиво",
-      "new": true
+      "new": true,
+      "english": "I read it well."
     },
     {
       "video": "video/deathgame/지금 내가 여기에 서 있는 건.webm",
       "videoMp4": "video/deathgame/mp4/지금 내가 여기에 서 있는 건.mp4",
       "korean": "지금 내가 여기에 서 있는 건",
       "russian": "То, что я стою здесь сейчас",
-      "new": true
+      "new": true,
+      "english": "The fact that I'm standing here now."
     }
   ],
   "b3": [
@@ -453,133 +520,152 @@
       "videoMp4": "video/deathgame/mp4/잘 읽었어.mp4",
       "korean": "잘 읽었어",
       "russian": "Хорошо прочитала(понравилось)",
-      "new": true
+      "new": true,
+      "english": "I read it well."
     },
     {
       "video": "video/deathgame/어떻게 내 이름을.webm",
       "videoMp4": "video/deathgame/mp4/어떻게 내 이름을.mp4",
       "korean": "어떻게 내 이름을?",
       "russian": "Как ты узнала моё имя?",
-      "new": true
+      "new": true,
+      "english": "How did you know my name?"
     },
     {
       "video": "video/deathgame/네가 쓴 거잖아.webm",
       "videoMp4": "video/deathgame/mp4/네가 쓴 거잖아.mp4",
       "korean": "네가 쓴 거잖아",
       "russian": "Ведь это ты написал",
-      "new": true
+      "new": true,
+      "english": "You wrote it, right?"
     },
     {
       "video": "video/deathgame/넌 죽었어.webm",
       "videoMp4": "video/deathgame/mp4/넌 죽었어.mp4",
       "korean": "넌 죽었어",
       "russian": "Ты мёртв",
-      "new": true
+      "new": true,
+      "english": "You're dead."
     },
     {
       "video": "video/deathgame/날 만난 게 그친 거지.webm",
       "videoMp4": "video/deathgame/mp4/날 만난 게 그친 거지.mp4",
       "korean": "날 만난 게 그친 거지",
       "russian": "То, что встретил меня — это конец",
-      "new": true
+      "new": true,
+      "english": "Meeting me is the end."
     },
     {
       "video": "video/deathgame/죽지 않는 유일한 존재.webm",
       "videoMp4": "video/deathgame/mp4/죽지 않는 유일한 존재.mp4",
       "korean": "죽지 않는 유일한 존재?",
       "russian": "Единственное существо, которое не умирает?",
-      "new": true
+      "new": true,
+      "english": "The only being that doesn't die?"
     },
     {
       "video": "video/deathgame/당신 뭐야.webm",
       "videoMp4": "video/deathgame/mp4/당신 뭐야.mp4",
       "korean": "당신 뭐야?",
       "russian": "Кто ты вообще?",
-      "new": true
+      "new": true,
+      "english": "Who are you?"
     },
     {
       "video": "video/deathgame/그래서.webm",
       "videoMp4": "video/deathgame/mp4/그래서.mp4",
       "korean": "그래서",
       "russian": "Поэтому / так что",
-      "new": true
+      "new": true,
+      "english": "So?"
     },
     {
       "video": "video/deathgame/인간은 긴 시간 동안 단 한 번만 죽는 것.webm",
       "videoMp4": "video/deathgame/mp4/인간은 긴 시간 동안 단 한 번만 죽는 것.mp4",
       "korean": "인간은 긴 시간 동안 단 한 번만 죽는 것",
       "russian": "Человек за долгую жизнь умирает лишь один раз",
-      "new": true
+      "new": true,
+      "english": "Humans only die once in a long lifetime."
     },
     {
       "video": "video/deathgame/넌 앞으로 열두 번 죽게 된다.webm",
       "videoMp4": "video/deathgame/mp4/넌 앞으로 열두 번 죽게 된다.mp4",
       "korean": "넌 앞으로 열두 번 죽게 된다",
       "russian": "Ты отныне умрёшь двенадцать раз",
-      "new": true
+      "new": true,
+      "english": "You'll die twelve times from now on."
     },
     {
       "video": "video/deathgame/난 살기 싫어.webm",
       "videoMp4": "video/deathgame/mp4/난 살기 싫어.mp4",
       "korean": "난 살기 싫어",
       "russian": "Я не хочу жить",
-      "new": true
+      "new": true,
+      "english": "I don't want to live."
     },
     {
       "video": "video/deathgame/아직도 죽으면 끝이라고 생각해.webm",
       "videoMp4": "video/deathgame/mp4/아직도 죽으면 끝이라고 생각해.mp4",
       "korean": "아직도 죽으면 끝이라고 생각해?",
       "russian": "Ты всё ещё думаешь, что смерть — это конец?",
-      "new": true
+      "new": true,
+      "english": "Do you still think death is the end?"
     },
     {
       "video": "video/deathgame/이제부터 시작이야.webm",
       "videoMp4": "video/deathgame/mp4/이제부터 시작이야.mp4",
       "korean": "이제부터 시작이야",
       "russian": "С этого момента всё только начинается",
-      "new": true
+      "new": true,
+      "english": "This is just the beginning."
     },
     {
       "video": "video/deathgame/어디 한번 해 봐.webm",
       "videoMp4": "video/deathgame/mp4/어디 한번 해 봐.mp4",
       "korean": "어디 한번 해 봐",
       "russian": "Ну давай, попробуй",
-      "new": true
+      "new": true,
+      "english": "Go ahead, give it a try."
     },
     {
       "video": "video/deathgame/이러시지 않으셔도 됩니다.webm",
       "videoMp4": "video/deathgame/mp4/이러시지 않으셔도 됩니다.mp4",
       "korean": "이러시지 않으셔도 됩니다",
       "russian": "Вам не обязательно так поступать",
-      "new": true
+      "new": true,
+      "english": "You don't have to do that."
     },
     {
       "video": "video/deathgame/자석 벨트 표시등이 꺼졌습니다.webm",
       "videoMp4": "video/deathgame/mp4/자석 벨트 표시등이 꺼졌습니다.mp4",
       "korean": "자석 벨트 표시등이 꺼졌습니다",
       "russian": "Индикатор ремней безопасности выключился",
-      "new": true
+      "new": true,
+      "english": "The seatbelt indicator is off."
     },
     {
       "video": "video/deathgame/내 이름은 박진태.webm",
       "videoMp4": "video/deathgame/mp4/내 이름은 박진태.mp4",
       "korean": "내 이름은 박진태",
       "russian": "Меня зовут Пак Чжинтхэ",
-      "new": true
+      "new": true,
+      "english": "My name is Park Jin-tae."
     },
     {
       "video": "video/deathgame/서른 세 살이다.webm",
       "videoMp4": "video/deathgame/mp4/서른 세 살이다.mp4",
       "korean": "서른 세 살이다",
       "russian": "Мне тридцать три года",
-      "new": true
+      "new": true,
+      "english": "I'm thirty-three years old."
     },
     {
       "video": "video/deathgame/그게 신이 주는 기회라고.webm",
       "videoMp4": "video/deathgame/mp4/그게 신이 주는 기회라고.mp4",
       "korean": "그게 신이 주는 기회라고?",
       "russian": "Говоришь, это шанс, данный Богом?",
-      "new": true
+      "new": true,
+      "english": "Is that the chance given by God?"
     }
   ],
   "b4": [],

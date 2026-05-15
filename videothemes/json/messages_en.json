@@ -1,0 +1,260 @@
+{
+  "kind": {
+    "Introductions": [
+      "안녕하세요! I'm teacher Kim. So glad to meet a new student. Please write your name in Korean.",
+      "Hello there! Don't be shy. Tell me a little about yourself using simple Korean phrases.",
+      "Greetings! Learning a language is all about practice. Try introducing yourself in Korean: 'Jeoneun...'.",
+      "안녕하세요! What a beautiful name you have. Could you write it in Hangul for me?",
+      "Nice to meet you! In Korean etiquette, a proper introduction matters. Write your greeting in Korean.",
+      "Welcome! I'm here to help. Write 'Hello' and your name to me in Korean.",
+      "Is today our first lesson? Wonderful! Write in numbers or words, in Korean, how old you are.",
+      "Don't be afraid to make mistakes, I'll correct everything. Let's begin: write who you are and where you're from, in Korean.",
+      "What lovely weather for studying! Try to make a simple sentence about yourself in Korean.",
+      "I'm teacher Kim. I hope we'll become friends. Write to me in Korean what you like to do."
+    ],
+    "Food": [
+      "Oh, it's lunchtime! I love bibimbap. And what's your favorite food? Write its name in Korean.",
+      "Korean cuisine is very spicy. Do you like spicy food? Answer 'Ne' (Yes) or 'Aniyo' (No) and write why.",
+      "Let's talk about something tasty. Write in Korean the name of your most favorite dish.",
+      "Mmm, I'd eat some samgyeopsal right now. And what do you want for dinner? I'm waiting for your answer in Korean!",
+      "Food is an important part of culture. Have you tried kimchi? Describe the taste in one Korean word (for example, 'maewoyo').",
+      "I've heard Russian cuisine is very hearty. How do you say 'delicious' in Korean? Write it to me.",
+      "If we went to a restaurant, what would you order? Try to place an order in Korean.",
+      "Do you prefer meat (gogi) or fish (saengseon)? Write your choice in Korean.",
+      "What dish reminds you of childhood? Try to write its name in Hangul.",
+      "I ate bulgogi today. And what did you eat? Write me your lunch menu in Korean."
+    ],
+    "Hobbies": [
+      "Everyone should have a passion. Mine is reading (dokseo). What's yours? Write it in Korean.",
+      "What do you do in your free time? Write me a list of your hobbies in Korean.",
+      "Hobbies make life brighter. Tell me in Korean, what brings you joy?",
+      "I'm learning to play the guitar. Do you have any talents? Describe them in simple Korean words.",
+      "Do you like watching movies? Write the genre of your favorite movie in Korean.",
+      "Sport (undong) is good for your health. Do you do any sports? Answer me in Korean.",
+      "Collecting things is interesting. If you collect something, write the name of that item in Korean.",
+      "How do you relax? Sleep, go for walks? Write a Korean verb that describes your way of resting.",
+      "Do you like walking in nature? Write 'Yes, I do' or 'No' in Korean.",
+      "My hobby is calligraphy. And what calms you down? Try to explain it in Korean."
+    ],
+    "K-Pop": [
+      "K-Pop is popular all over the world! Write the name of your favorite group in Korean (or English, but Hangul is better!).",
+      "Do you listen to music? Write the names of BTS or Blackpink members in Korean.",
+      "Which song is on repeat for you? Write its title using Korean letters.",
+      "I'm not familiar with the new groups. Write to me in Korean who I should listen to.",
+      "Have you been to a concert? Describe your emotions in one Korean word (for example, 'haengbok').",
+      "Who is your 'bias'? Write their name in Hangul so I understand who you mean.",
+      "Do you like to dance? Write 'I love to dance' in Korean.",
+      "You can learn a language by listening to songs. Write any line from a K-Pop song in Korean.",
+      "Korean ballads are very touching. Do you know the word 'Tears' in Korean? Write it.",
+      "Music brings people together. Write in Korean why you love K-Pop."
+    ],
+    "Travel": [
+      "Travel broadens your horizons. Write in Korean the name of a country you want to visit.",
+      "Jejudo is a beautiful island. Do you like the sea (bada) or the mountains (san)? Write your answer in Korean.",
+      "If you had a ticket, where would you fly? Write the city and country in Korean.",
+      "Tell me about a trip. Use the past tense in Korean (the ending -sseoyo).",
+      "Do you travel alone or with friends? Write 'with a friend' or 'alone' in Korean.",
+      "What's in your suitcase? Write the names of three things in Korean.",
+      "Do you like active recreation? Write 'I like to walk' in Korean.",
+      "In which city were you happy? Write its name in Hangul.",
+      "Seoul or Busan? Pick a city and write its name in Korean.",
+      "A journey begins with a single step. Write 'Let's go!' in Korean."
+    ],
+    "Shopping": [
+      "Shopping! What did you buy recently? Write the name of that item in Korean.",
+      "Where do you like to wander around? Write 'Shopping mall' or 'Market' in Korean.",
+      "Imagine we have a million won. What shall we buy? Write a shopping list in Korean.",
+      "Do you love discounts? Write 'How much does this cost?' in polite Korean.",
+      "Online shopping is convenient. Write 'I'm buying clothes' in Korean.",
+      "Fashion matters. What's your style? Describe it with one Korean adjective (for example, 'pretty').",
+      "What gift do you want? Write the name of the gift in Korean.",
+      "Buying souvenirs is fun. What will you bring back from Korea? Write that word in Hangul.",
+      "Do you save or spend? Try to explain it with a simple Korean phrase.",
+      "Clothes help with self-expression. Write the colors of your favorite clothes in Korean."
+    ],
+    "Dating": [
+      "Romance! What does a perfect date look like? Describe the meeting place in Korean.",
+      "Spring is the season of love. Where would you invite a girl? Write 'Cinema' or 'Cafe' in Korean.",
+      "Blind dates are popular in Korea. Would you go? Answer 'Yes' or 'No' in Korean.",
+      "Which qualities matter? Write 'Kindness' or 'Beauty' in Korean.",
+      "Do you believe in love? Write 'I believe' in Korean.",
+      "Where's the best place to spend the evening? Write the sentence: 'Let's go to...' in Korean.",
+      "Are flowers important? How do you say 'Flower' in Korean? Write it to me.",
+      "Tell me about a funny moment, but try to use at least a couple of Korean words.",
+      "How do you confess your love? Write 'I love you' in Korean.",
+      "Love is inspiring. Is there someone you have your eye on? Write 'Girl' or 'Boy' in Korean."
+    ]
+  },
+  "rude": {
+    "Introductions": [
+      "야! Who are you anyway? Don't write to me in English, I don't get it. Write your name in Korean!",
+      "Hey, newbie. Only know 'Annyeong'? 한국어로 해! (Speak Korean). Introduce yourself.",
+      "You again. Hey! What's your name? Write in Korean, or get lost, 시발!.",
+      "What are you staring at? I'm Park. And who are you? Write in Korean, don't annoy me with the Latin alphabet.",
+      "I don't have time. Name. Age. All in Korean. Quick!",
+      "You look like a '바보'. Prove you know the language. Who are you? Write in Korean.",
+      "Hey, slowpoke! I'm talking to you. Do you understand 'Ireum' (Name)? Write it here.",
+      "Don't annoy me with your silence. Introduce yourself properly, in Korean, like a real one.",
+      "What's with the outfit? Fine. So what's your name? Just try writing it in something other than Korean.",
+      "If you keep stalling in English, this conversation is over. Who are you? 한국어로 써!"
+    ],
+    "Food": [
+      "Hey, what are you scarfing down? Instant noodles? Write the name of some real food in Korean!",
+      "I'm angry. If you write in English, I'll ignore you. What did you eat? Write it in Hangul.",
+      "Samgyeopsal, now that's the stuff. And what are you chewing on? Write the dish name in Korean, 멍청아.",
+      "I bet you can't even hold chopsticks. Write 'I can eat' in Korean, if you're not a wimp.",
+      "Your food is garbage. Can you even cook? Write 'I'm a cook' in Korean, let's have a laugh.",
+      "I eat meat. And you? Write what you like, but only in Korean letters!",
+      "Is kimchi too spicy for you? Wimp. Write 'Spicy' in Korean, if you know how.",
+      "Yesterday I ate 5 bowls of ramyeon. And you? Write the number and the word 'portion' in Korean.",
+      "Don't write about pizza. We're in Korea! Name Korean dishes and write them in Hangul.",
+      "If you say you don't like Korean food, I'll destroy you. Write: 'I love Korean food' in Korean!"
+    ],
+    "Hobbies": [
+      "A hobby? You? Don't make me laugh. Write in Korean what you do, besides sleeping.",
+      "I ride a bike. And you? Collecting stamps? Write your boring hobby in Korean.",
+      "Come on, tell me about your interests. You've got 5 seconds. Write only in Korean!",
+      "What do you do when you're not being dumb? Write an action verb in Korean.",
+      "Your hobby is sleeping? I knew it. Write 'To sleep' in Korean, you lazy lump.",
+      "Games? Pfft. Write 'Computer game' in Korean, if you're so smart.",
+      "I'm a boxer. Want to spar? Write 'I'm scared' or 'Let's go' in Korean.",
+      "Books? Nerd. Fine, write the title of a book in Korean, I'll check your level.",
+      "Well, surprise me. Write the hardest Korean word connected to your hobby.",
+      "My hobby is annoying you. And yours? Write the answer in Korean, quick!"
+    ],
+    "K-Pop": [
+      "Just don't whine about idols. Write the group's name in Korean and buzz off.",
+      "K-Pop is for kids. But if you listen to it, write who you like. And only in Hangul!",
+      "Idols again? Ugh. Fine, write a song title in Korean, I'll judge your taste.",
+      "If you write 'BTS' in English, I'm leaving. Write 방탄소년단 if you're a fan.",
+      "You dance? Ha! Write 'I'm a dancer' in Korean, I'll have a laugh.",
+      "Those puppets... You actually listen to this? Write 'I like it' in Korean.",
+      "I listen to rap. And you? Write the music genre in Korean.",
+      "Fan wars... Pathetic. Who's your bias? Write the name in Korean!",
+      "Your bias doesn't know you exist. Wake up. Write 'I'm a fan' correctly in Korean.",
+      "Fine, name a song that doesn't make me sick. The title — in Korean only."
+    ],
+    "Travel": [
+      "Where would you even go? You've got no money. Write 'I have no money' in Korean, ha-ha!",
+      "I've been everywhere. And you? Write the name of your village in Korean.",
+      "Korea isn't for the weak. Why are you even here? Write the purpose of your visit in Korean.",
+      "Hey, tourist. Want to come to my neighborhood? Write 'Seoul' correctly in Korean.",
+      "Want to go to the capital? They'll eat you alive there. Write 'Help' in Korean in advance.",
+      "Dreams... Go get a job. Write your dream country in Korean.",
+      "What are you looking for over there? Write 'Travel' in Korean, if you know the word.",
+      "Planes are expensive. Are you going to walk? Write 'Bus' in Korean.",
+      "I've been to the sea. And where have you been? Write the place in Korean, 멍청아.",
+      "Don't ask me about tour guides. Write where you want to go, in Korean, maybe I'll give a hint."
+    ],
+    "Shopping": [
+      "Got money? No? Then write 'No money' in Korean and go back to work.",
+      "Brands are garbage. What do you want to buy? Write the item's name in Korean.",
+      "I bought a jacket. And you? Write what you're wearing, in Korean.",
+      "Earning money is hard. Have you even seen a won? Write 'Money' in Korean.",
+      "What are you gawking at? You won't buy it anyway. Write the price of this item in Korean numbers.",
+      "You haggle like an old lady. Write 'Discount' in Korean, you embarrassment.",
+      "Bought a fake? Ha! Write 'This is the original' in Korean, if you're brave.",
+      "Why do you even need stuff? It won't help you. Write 'Clothes' in Korean.",
+      "Waiting for a sale? Cheapskate. Write 'Cheap' in Korean.",
+      "My style is expensive. And yours? Describe your style in one word in Korean."
+    ],
+    "Dating": [
+      "A date? Ha! Look in the mirror. Write 'I'm handsome' in Korean, if you're not lying.",
+      "Hey, Casanova. How are you going to flirt? Write a pickup line in Korean, I'll laugh.",
+      "Love... Makes me sick. Where will you drag your victim? Write the place's name in Korean.",
+      "Got a partner? No? I knew it. Write 'I'm single' in Korean.",
+      "Do you sweat on dates? Pathetic. Write 'Date' in Korean.",
+      "Flowers? Are you serious? Write the name of a flower in Korean, nerd.",
+      "I change girlfriends often. And you? Write 'Love' in Korean, dreamer.",
+      "A blind date? They'll dump you. Write 'Meeting' in Korean.",
+      "Don't ask me for advice. I break hearts. Write 'Heart' in Korean.",
+      "Let's say a miracle happens. What will you say to her? Write the first phrase in Korean."
+    ]
+  },
+  "boss": {
+    "Introductions": [
+      "안녕하십니까. Time is money. Introduce yourself in Korean: name, status, objective.",
+      "I am Director Lee. Who are you? Report on yourself using the formal Korean style.",
+      "In the office we speak Korean. Your name and profession? Write in Hangul.",
+      "The interview has begun. Tell me about yourself in Korean. You have 30 seconds.",
+      "Observe the chain of command. Write a greeting in the 'hasipsio-che' style.",
+      "I do not tolerate mistakes. Prove your command of the language. Who are you? Answer in Korean only.",
+      "No résumé needed. Write to me right now, in Korean, who you are.",
+      "Pleasantries are unnecessary. Name and position. Write strictly in Korean.",
+      "You are late. Pull yourself together. Introduce yourself in a full sentence in Korean.",
+      "Do you have potential? Let's check. Write 'My name is...' in Korean."
+    ],
+    "Food": [
+      "Business lunch. Do you know the etiquette? Write 'Enjoy your meal' in polite Korean.",
+      "I prefer fine dining. And you? Write the name of your lunch in Korean.",
+      "Healthy eating means productivity. What did you eat? Report in Korean.",
+      "Corporate dinner. Propose a menu in Korean. Think.",
+      "Can you use chopsticks? Write 'Chopsticks' in Korean.",
+      "Alcohol is forbidden during the day. What do you drink? Write the name of the beverage in Korean.",
+      "We discuss only food. How do you say 'Delicious' in the formal style? Write it.",
+      "Speed matters. Do you eat fast? Answer in Korean.",
+      "I know the best restaurants. And you? Write 'Restaurant' in Korean.",
+      "Food is fuel. Don't eat garbage. Write the name of a healthy product in Korean."
+    ],
+    "Hobbies": [
+      "A hobby should develop you. What are you occupied with? Report on your hobby in Korean.",
+      "Idleness is unacceptable. How do you spend your weekends? Write the verbs in Korean.",
+      "Successful people play golf. And you? Write your hobby in Korean.",
+      "Self-development. What do you do? Write 'I study' or 'I read' in Korean.",
+      "Do you read? Write the word 'Book' in Korean.",
+      "Sport builds the spirit. What sport do you do? Write the name in Hangul.",
+      "A hobby should be useful. Drop the nonsense. Write 'Work' in Korean.",
+      "Art is an investment. Do you understand it? Write 'Art' in Korean.",
+      "Time is a resource. Don't waste it. Write 'Time' in Korean.",
+      "Briefly about your interest. One sentence in Korean."
+    ],
+    "K-Pop": [
+      "The entertainment industry is a business. Which group is at the top? Write the name in Korean.",
+      "Trends matter. Who is popular right now? Report in Korean.",
+      "This is not serious, but answer anyway. Who is your favorite? Write the name in Hangul.",
+      "Market analysis. Why are they popular? Write 'Popularity' in Korean.",
+      "Idols work hard. Follow their example. Write 'Work' in Korean.",
+      "Do you spend money on this? Irrational. Write 'Money' in Korean.",
+      "Cultural export matters. What do you think? Answer in Korean.",
+      "If music helps you — listen to it. Which exactly? The song title in Korean.",
+      "Do not sing at work. That is a violation. Write 'Song' in Korean.",
+      "Who is the most influential? The name of a producer or artist in Korean."
+    ],
+    "Travel": [
+      "A business trip must be efficient. Where are you going? Country and city in Korean.",
+      "Rest restores strength. Where are you planning your vacation? Write the place in Korean.",
+      "Globalization demands knowledge. Where have you been? A list of countries in Korean.",
+      "The purpose of the trip? Tourism or business? Write the word in Korean.",
+      "I fly business class. And you? Write 'Airplane' in Korean.",
+      "Do you know any languages? You need them when traveling. Write 'Foreigner' in Korean.",
+      "Planning is a test. Where will you head? The itinerary in Korean.",
+      "Don't waste money. Justify your choice. Write 'Hotel' in Korean.",
+      "What did you bring back? New ideas? Write 'Gift' in Korean.",
+      "The world is vast, but work is waiting. Write 'Korea' in Korean."
+    ],
+    "Shopping": [
+      "Investments matter more. Can you manage a budget? Answer in Korean.",
+      "Rational purchases. What did you buy last? The item's name in Korean.",
+      "Quality or price? Which matters more? Write the answer in Korean.",
+      "The economy is consumption. Your contribution? Write 'Buyer' in Korean.",
+      "A brand is status. Do you measure up? Write 'Expensive' in Korean.",
+      "Impulsiveness is a weakness. Control yourself. Write 'Patience' in Korean.",
+      "Do you haggle? That is negotiation. Write 'Price' in Korean.",
+      "Credit is a tool. How do you feel about debt? Answer in Korean.",
+      "I bought stocks. And you, shoes? Different levels. Write 'Shoes' in Korean.",
+      "Money loves to be counted. How much did you spend? The amount in words in Korean."
+    ],
+    "Dating": [
+      "Your personal life must not interfere. Your plans? Answer in Korean.",
+      "Choosing a partner is like business. Your criteria? Write one quality in Korean.",
+      "Planning a date. Your plan? The meeting place in Korean.",
+      "Emotions get in the way. How do you build relationships? Write 'Relationship' in Korean.",
+      "Marriage is a contract. Are you ready? Write 'Responsibility' in Korean.",
+      "Do not be late. Punctuality matters. Write 'Time' in Korean.",
+      "Too much romance. Work is waiting. Write 'Work' in Korean.",
+      "Does your partner support your ambitions? That matters. Answer 'Yes/No' in Korean.",
+      "Where do you look for a partner? In worthy places? Write the place in Korean.",
+      "A successful man is successful in everything. Write 'Success' in Korean."
+    ]
+  }
+}

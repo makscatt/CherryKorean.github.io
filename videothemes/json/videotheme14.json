@@ -4,43 +4,50 @@
       "video": "video/biglig/벗을 때 조금 다른데 보여 드려요.webm",
       "videoMp4": "video/biglig/mp4/벗을 때 조금 다른데 보여 드려요.mp4",
       "korean": "벗을 때 조금 다른데 보여 드려요",
-      "russian": "Когда раздеваюсь, немного иначе, я покажу"
+      "russian": "Когда раздеваюсь, немного иначе, я покажу",
+      "english": "I'll show you, it's a bit different when I take it off."
     },
     {
       "video": "video/biglig/남자친구 눈칠 왜케 보세요.webm",
       "videoMp4": "video/biglig/mp4/남자친구 눈칠 왜케 보세요.mp4",
       "korean": "남자친구 눈칠 왜케 보세요?",
-      "russian": "А чего это вы на реакцию своих парней смотрите?"
+      "russian": "А чего это вы на реакцию своих парней смотрите?",
+      "english": "Why are you paying so much attention to your boyfriend's reaction?"
     },
     {
       "video": "video/biglig/왜케 잘생겼어 와.webm",
       "videoMp4": "video/biglig/mp4/왜케 잘생겼어 와.mp4",
       "korean": "왜케 잘생겼어?! 와",
-      "russian": "А че это он такой красавчик?!"
+      "russian": "А че это он такой красавчик?!",
+      "english": "Why is he so good-looking?! Wow!"
     },
     {
       "video": "video/biglig/해봤을 수도 있잖아요.webm",
       "videoMp4": "video/biglig/mp4/해봤을 수도 있잖아요.mp4",
       "korean": "해봤을 수도 있잖아요",
-      "russian": "Да по-любому вы так делали"
+      "russian": "Да по-любому вы так делали",
+      "english": "You might have done it before."
     },
     {
       "video": "video/biglig/여자분들 다 이랬을 거예요.webm",
       "videoMp4": "video/biglig/mp4/여자분들 다 이랬을 거예요.mp4",
       "korean": "여자분들 다 이랬을 거예요",
-      "russian": "Наверняка, все девушки так делали"
+      "russian": "Наверняка, все девушки так делали",
+      "english": "All the girls probably did this."
     },
     {
       "video": "video/biglig/벗을 때는 어떻게 벗어.webm",
       "videoMp4": "video/biglig/mp4/벗을 때는 어떻게 벗어.mp4",
       "korean": "벗을 때는 어떻게 벗어?",
-      "russian": "А как раздеваешься?"
+      "russian": "А как раздеваешься?",
+      "english": "How do you take it off?"
     },
     {
       "video": "video/biglig/그래서 다 지워졌구나.webm",
       "videoMp4": "video/biglig/mp4/그래서 다 지워졌구나.mp4",
       "korean": "그래서 다 지워졌구나",
-      "russian": "Так вот почему у всех так стерся(макияж)"
+      "russian": "Так вот почему у всех так стерся(макияж)",
+      "english": "So that's why everyone's makeup got wiped off."
     }
   ],
   "b1": [
@@ -48,181 +55,211 @@
       "video": "video/biglig/화장을 하고 옷을 입는 편이다.webm",
       "videoMp4": "video/biglig/mp4/화장을 하고 옷을 입는 편이다.mp4",
       "korean": "화장을 하고 옷을 입는 편이다",
-      "russian": "Наношу косметику и одеваюсь"
+      "russian": "Наношу косметику и одеваюсь",
+      "english": "I usually put on makeup and get dressed."
     },
     {
       "video": "video/biglig/화장도 고치고.webm",
       "videoMp4": "video/biglig/mp4/화장도 고치고.mp4",
       "korean": "화장도 고치고",
-      "russian": "Косметику тоже подправила"
+      "russian": "Косметику тоже подправила",
+      "english": "I also fixed my makeup."
     },
     {
       "video": "video/biglig/해봤을 수도 있잖아요.webm",
       "videoMp4": "video/biglig/mp4/해봤을 수도 있잖아요.mp4",
       "korean": "해봤을 수도 있잖아요",
-      "russian": "Да по-любому вы так делали"
+      "russian": "Да по-любому вы так делали",
+      "english": "You might have done it before."
     },
     {
       "video": "video/biglig/피곤하다 일찍 도착했네.webm",
       "videoMp4": "video/biglig/mp4/피곤하다 일찍 도착했네.mp4",
       "korean": "피곤하다 일찍 도착했네",
-      "russian": "Устала, еще так рано приехала"
+      "russian": "Устала, еще так рано приехала",
+      "english": "I'm tired; I arrived so early."
     },
     {
       "video": "video/biglig/케이크도 먹고.webm",
       "videoMp4": "video/biglig/mp4/케이크도 먹고.mp4",
       "korean": "케이크도 먹고",
-      "russian": "И тортик скушала"
+      "russian": "И тортик скушала",
+      "english": "I had some cake too."
     },
     {
       "video": "video/biglig/카페에서 케익 먹으려고.webm",
       "videoMp4": "video/biglig/mp4/카페에서 케익 먹으려고.mp4",
       "korean": "카페에서 케익 먹으려고",
-      "russian": "В кафе торт собираюсь есть"
+      "russian": "В кафе торт собираюсь есть",
+      "english": "I’m planning to eat cake at the cafe."
     },
     {
       "video": "video/biglig/카페에 혼자 가면.webm",
       "videoMp4": "video/biglig/mp4/카페에 혼자 가면.mp4",
       "korean": "카페에 혼자 가면",
-      "russian": "Когда в кафе один идешь"
+      "russian": "Когда в кафе один идешь",
+      "english": "When you go to the cafe alone,"
     },
     {
       "video": "video/biglig/진짜요.webm",
       "videoMp4": "video/biglig/mp4/진짜요.mp4",
       "korean": "진짜요?",
-      "russian": "Серьезно?"
+      "russian": "Серьезно?",
+      "english": "Really?"
     },
     {
       "video": "video/biglig/진짜 그런다고.webm",
       "videoMp4": "video/biglig/mp4/진짜 그런다고.mp4",
       "korean": "진짜 그런다고?",
-      "russian": "Это серьезно так?"
+      "russian": "Это серьезно так?",
+      "english": "Are you serious?"
     },
     {
       "video": "video/biglig/전화 통화도 하고.webm",
       "videoMp4": "video/biglig/mp4/전화 통화도 하고.mp4",
       "korean": "전화 통화도 하고",
-      "russian": "И по телефону поговорила..."
+      "russian": "И по телефону поговорила...",
+      "english": "I also talked on the phone..."
     },
     {
       "video": "video/biglig/자 메이크업 다 됐고.webm",
       "videoMp4": "video/biglig/mp4/자 메이크업 다 됐고.mp4",
       "korean": "자 메이크업 다 됐고",
-      "russian": "Так, все, накрасилась"
+      "russian": "Так, все, накрасилась",
+      "english": "Okay, I'm all done with my makeup."
     },
     {
       "video": "video/biglig/이 중에서.webm",
       "videoMp4": "video/biglig/mp4/이 중에서.mp4",
       "korean": "이 중에서",
-      "russian": "Среди вас"
+      "russian": "Среди вас",
+      "english": "Among these,"
     },
     {
       "video": "video/biglig/욕심이 없어요.webm",
       "videoMp4": "video/biglig/mp4/욕심이 없어요.mp4",
       "korean": "욕심이 없어요",
-      "russian": "Я не жадная"
+      "russian": "Я не жадная",
+      "english": "I'm not greedy."
     },
     {
       "video": "video/biglig/오케이 옷 좀 입어볼까.webm",
       "videoMp4": "video/biglig/mp4/오케이 옷 좀 입어볼까.mp4",
       "korean": "오케이 옷 좀 입어볼까",
-      "russian": "Окей, попробуем одеться"
+      "russian": "Окей, попробуем одеться",
+      "english": "Okay, should I try on some clothes?"
     },
     {
       "video": "video/biglig/오늘 오신 여자 관객분들 중에서.webm",
       "videoMp4": "video/biglig/mp4/오늘 오신 여자 관객분들 중에서.mp4",
       "korean": "오늘 오신 여자 관객분들 중에서",
-      "russian": "Среди зрительниц, которые сегодня пришли"
+      "russian": "Среди зрительниц, которые сегодня пришли",
+      "english": "Among the female audience members who came today,"
     },
     {
       "video": "video/biglig/알았어 끝나고 전화해.webm",
       "videoMp4": "video/biglig/mp4/알았어 끝나고 전화해.mp4",
       "korean": "알았어 끝나고 전화해",
-      "russian": "Хорошо, закончу перезвоню"
+      "russian": "Хорошо, закончу перезвоню",
+      "english": "Got it, I'll call you after it ends."
     },
     {
       "video": "video/biglig/순서가.webm",
       "videoMp4": "video/biglig/mp4/순서가.mp4",
       "korean": "순서가",
-      "russian": "Последовательность"
+      "russian": "Последовательность",
+      "english": "The order is..."
     },
     {
       "video": "video/biglig/소개팅을 해봤다.webm",
       "videoMp4": "video/biglig/mp4/소개팅을 해봤다.mp4",
       "korean": "소개팅을 해봤다?",
-      "russian": "Были на свидании вслепую?"
+      "russian": "Были на свидании вслепую?",
+      "english": "Have you ever been on a blind date?"
     },
     {
       "video": "video/biglig/벗을 때는 어떻게 벗어.webm",
       "videoMp4": "video/biglig/mp4/벗을 때는 어떻게 벗어.mp4",
       "korean": "벗을 때는 어떻게 벗어?",
-      "russian": "А как раздеваешься?"
+      "russian": "А как раздеваешься?",
+      "english": "How do you take it off?"
     },
     {
       "video": "video/biglig/벗을 때 조금 다른데 보여 드려요.webm",
       "videoMp4": "video/biglig/mp4/벗을 때 조금 다른데 보여 드려요.mp4",
       "korean": "벗을 때 조금 다른데 보여 드려요",
-      "russian": "Когда раздеваюсь, немного иначе, я покажу"
+      "russian": "Когда раздеваюсь, немного иначе, я покажу",
+      "english": "When I take it off, it's a bit different, I'll show you."
     },
     {
       "video": "video/biglig/멀티플레이가 좀 가능하다 하시는.webm",
       "videoMp4": "video/biglig/mp4/멀티플레이가 좀 가능하다 하시는.mp4",
       "korean": "멀티플레이가 좀 가능하다 하시는",
-      "russian": "Те кто может выполнять много дел сразу"
+      "russian": "Те кто может выполнять много дел сразу",
+      "english": "They say they can multitask a bit."
     },
     {
       "video": "video/biglig/멀티를 잘한다.webm",
       "videoMp4": "video/biglig/mp4/멀티를 잘한다.mp4",
       "korean": "멀티를 잘한다",
-      "russian": "Хорош в многозадачности"
+      "russian": "Хорош в многозадачности",
+      "english": "You're good at multitasking."
     },
     {
       "video": "video/biglig/말해 되다 밖에서.webm",
       "videoMp4": "video/biglig/mp4/말해 되다 밖에서.mp4",
       "korean": "말해 되다 밖에서",
-      "russian": "Можно говорить, я вышла"
+      "russian": "Можно говорить, я вышла",
+      "english": "You can talk, I went outside."
     },
     {
       "video": "video/biglig/남자친구 눈칠 왜케 보세요.webm",
       "videoMp4": "video/biglig/mp4/남자친구 눈칠 왜케 보세요.mp4",
       "korean": "남자친구 눈칠 왜케 보세요?",
-      "russian": "А чего это вы на реакцию своих парней смотрите?"
+      "russian": "А чего это вы на реакцию своих парней смотрите?",
+      "english": "Why are you paying so much attention to your boyfriend's reactions?"
     },
     {
       "video": "video/biglig/나는 외출 준비를 할 때.webm",
       "videoMp4": "video/biglig/mp4/나는 외출 준비를 할 때.mp4",
       "korean": "나는 외출 준비를 할 때",
-      "russian": "Я когда готовлюсь выйти из дома"
+      "russian": "Я когда готовлюсь выйти из дома",
+      "english": "When I'm getting ready to go out,"
     },
     {
       "video": "video/biglig/그래서 다 지워졌구나.webm",
       "videoMp4": "video/biglig/mp4/그래서 다 지워졌구나.mp4",
       "korean": "그래서 다 지워졌구나",
-      "russian": "Так вот почему у всех так стерся(макияж)"
+      "russian": "Так вот почему у всех так стерся(макияж)",
+      "english": "So that's why it all got wiped off."
     },
     {
       "video": "video/biglig/두 명만 웃겨볼게요.webm",
       "videoMp4": "video/biglig/mp4/두 명만 웃겨볼게요.mp4",
       "korean": " 두 명만 웃겨볼게요",
-      "russian": "Хотя бы парочку попробуем рассмешить"
+      "russian": "Хотя бы парочку попробуем рассмешить",
+      "english": "I'll try to make at least two people laugh."
     },
     {
       "video": "video/biglig/화장실만 금방 갔다 될까요.webm",
       "videoMp4": "video/biglig/mp4/화장실만 금방 갔다 될까요.mp4",
       "korean": "화장실만 금방 갔다 될까요?",
-      "russian": "Я только в туалет быстро схожу?"
+      "russian": "Я только в туалет быстро схожу?",
+      "english": "Can I just quickly go to the bathroom?"
     },
     {
       "video": "video/biglig/저도 말씀 많이 들었거든요.webm",
       "videoMp4": "video/biglig/mp4/저도 말씀 많이 들었거든요.mp4",
       "korean": "저도 말씀 많이 들었거든요",
-      "russian": "Я тоже о вас много слышала"
+      "russian": "Я тоже о вас много слышала",
+      "english": "I've heard a lot about you too."
     },
     {
       "video": "video/biglig/왜케 잘생겼어 와.webm",
       "videoMp4": "video/biglig/mp4/왜케 잘생겼어 와.mp4",
       "korean": "왜케 잘생겼어?! 와",
-      "russian": "А че это он такой красавчик?!"
+      "russian": "А че это он такой красавчик?!",
+      "english": "Why are you so handsome?! Wow!"
     }
   ],
   "b2": [
@@ -230,115 +267,134 @@
       "video": "video/biglig/여자분들 다 이랬을 거예요.webm",
       "videoMp4": "video/biglig/mp4/여자분들 다 이랬을 거예요.mp4",
       "korean": "여자분들 다 이랬을 거예요",
-      "russian": "Наверняка, все девушки так делали"
+      "russian": "Наверняка, все девушки так делали",
+      "english": "I'm sure all the girls did this."
     },
     {
       "video": "video/biglig/어머 안녕하세요.webm",
       "videoMp4": "video/biglig/mp4/어머 안녕하세요.mp4",
       "korean": "어머 안녕하세요",
-      "russian": "Ой, здравствуйте!"
+      "russian": "Ой, здравствуйте!",
+      "english": "Oh, hello!"
     },
     {
       "video": "video/biglig/소개팅을 해 본 적이 있다.webm",
       "videoMp4": "video/biglig/mp4/소개팅을 해 본 적이 있다.mp4",
       "korean": "소개팅을 해 본 적이 있다",
-      "russian": "Было у меня свидание в слепую"
+      "russian": "Было у меня свидание в слепую",
+      "english": "I've been on a blind date before."
     },
     {
       "video": "video/biglig/말씀 많이 들었습니다.webm",
       "videoMp4": "video/biglig/mp4/말씀 많이 들었습니다.mp4",
       "korean": "말씀 많이 들었습니다",
-      "russian": "Много о вас слышал"
+      "russian": "Много о вас слышал",
+      "english": "I've heard a lot about you."
     },
     {
       "video": "video/biglig/댁이 어디라고 하셨죠.webm",
       "videoMp4": "video/biglig/mp4/댁이 어디라고 하셨죠.mp4",
       "korean": "댁이 어디라고 하셨죠?",
-      "russian": "А где, вы говорите, живете?"
+      "russian": "А где, вы говорите, живете?",
+      "english": "Where did you say you live?"
     },
     {
       "video": "video/biglig/다섯 명만 웃겨볼게요.webm",
       "videoMp4": "video/biglig/mp4/다섯 명만 웃겨볼게요.mp4",
       "korean": "다섯 명만 웃겨볼게요",
-      "russian": "Пятерых хотя бы попробуем рассмешить"
+      "russian": "Пятерых хотя бы попробуем рассмешить",
+      "english": "I'll try to make at least five people laugh."
     },
     {
       "video": "video/biglig/모르겠어요.webm",
       "videoMp4": "video/biglig/mp4/모르겠어요.mp4",
       "korean": "모르겠어요",
-      "russian": "Я не знаю"
+      "russian": "Я не знаю",
+      "english": "I don't know."
     },
     {
       "video": "video/biglig/사진이나 좀 찍어 볼까.webm",
       "videoMp4": "video/biglig/mp4/사진이나 좀 찍어 볼까.mp4",
       "korean": "사진이나 좀 찍어 볼까?",
-      "russian": "Может, фото сделать?"
+      "russian": "Может, фото сделать?",
+      "english": "Should we take some pictures?"
     },
     {
       "video": "video/biglig/좋은 아침.webm",
       "videoMp4": "video/biglig/mp4/좋은 아침.mp4",
       "korean": "좋은 아침",
-      "russian": "Доброе утро"
+      "russian": "Доброе утро",
+      "english": "Good morning!"
     },
     {
       "video": "video/biglig/세 명만 웃겨볼게요.webm",
       "videoMp4": "video/biglig/mp4/세 명만 웃겨볼게요.mp4",
       "korean": "세 명만 웃겨볼게요",
-      "russian": "Попробую рассмешить хотя бы троих"
+      "russian": "Попробую рассмешить хотя бы троих",
+      "english": "I'll try to make at least three people laugh."
     },
     {
       "video": "video/biglig/머리 좀 묶어 볼까.webm",
       "videoMp4": "video/biglig/mp4/머리 좀 묶어 볼까.mp4",
       "korean": "머리 좀 묶어 볼까?",
-      "russian": "Может, волосы собрать?"
+      "russian": "Может, волосы собрать?",
+      "english": "Should I tie my hair up?"
     },
     {
       "video": "video/biglig/아니 어제 밤엔 잘 묶였는데.webm",
       "videoMp4": "video/biglig/mp4/아니 어제 밤엔 잘 묶였는데.mp4",
       "korean": "아니 어제 밤엔 잘 묶었는데",
-      "russian": "Нет, вчера вечером я хорошо завязала"
+      "russian": "Нет, вчера вечером я хорошо завязала",
+      "english": "No, I tied it well last night."
     },
     {
       "video": "video/biglig/이거 한 번도 안 신은 거 새 건데.webm",
       "videoMp4": "video/biglig/mp4/이거 한 번도 안 신은 거 새 건데.mp4",
       "korean": "이거 한 번도 안 신은 거 새 건데",
-      "russian": "Эти новые, я их ни разу не надевала"
+      "russian": "Эти новые, я их ни разу не надевала",
+      "english": "These are new; I've never worn them."
     },
     {
       "video": "video/biglig/신을 게 없어.webm",
       "videoMp4": "video/biglig/mp4/신을 게 없어.mp4",
       "korean": "신을 게 없어",
-      "russian": "Нечего надеть (из обуви)"
+      "russian": "Нечего надеть (из обуви)",
+      "english": "I have nothing to wear."
     },
     {
       "video": "video/biglig/미쳤냐.webm",
       "videoMp4": "video/biglig/mp4/미쳤냐.mp4",
       "korean": "미쳤냐?",
-      "russian": "Ты с ума сошёл?"
+      "russian": "Ты с ума сошёл?",
+      "english": "Are you crazy?"
     },
     {
       "video": "video/biglig/어떡해 뭔데요 갑자기.webm",
       "videoMp4": "video/biglig/mp4/어떡해 뭔데요 갑자기.mp4",
       "korean": "어떡해 뭔데요 갑자기?",
-      "russian": "Что случилось так внезапно?"
+      "russian": "Что случилось так внезапно?",
+      "english": "What’s going on all of a sudden?"
     },
     {
       "video": "video/biglig/몇 시야.webm",
       "videoMp4": "video/biglig/mp4/몇 시야.mp4",
       "korean": "몇 시야?",
-      "russian": "Который час?"
+      "russian": "Который час?",
+      "english": "What time is it?"
     },
     {
       "video": "video/biglig/아홉 시야.webm",
       "videoMp4": "video/biglig/mp4/아홉 시야.mp4",
       "korean": "아홉 시야",
-      "russian": "Девять часов"
+      "russian": "Девять часов",
+      "english": "It's nine o'clock."
     },
     {
       "video": "video/biglig/어떻게 미쳤나 봐 시간이 왜 이렇게 빨리가 집에 있으니까.webm",
       "videoMp4": "video/biglig/mp4/어떻게 미쳤나 봐 시간이 왜 이렇게 빨리가 집에 있으니까.mp4",
       "korean": "어떻게 미쳤나 봐 시간이 왜 이렇게 빨리가 집에 있으니까",
-      "russian": "Похоже, я с ума сошла, время дома летит так быстро"
+      "russian": "Похоже, я с ума сошла, время дома летит так быстро",
+      "english": "I think I'm going crazy, time flies so fast when I'm at home."
     }
   ],
   "b3": [],

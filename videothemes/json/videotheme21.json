@@ -4,31 +4,36 @@
       "video": "video/shef/오늘 폭군의 셰프가 되었다.webm",
       "videoMp4": "video/shef/mp4/오늘 폭군의 셰프가 되었다.mp4",
       "korean": "오늘 폭군의 셰프가 되었다",
-      "russian": "Сегодня я стал шефом тирана"
+      "russian": "Сегодня я стал шефом тирана",
+      "english": "I became the tyrant's chef today."
     },
     {
       "video": "video/shef/나 아직도 심장 떨려 미치겠네.webm",
       "videoMp4": "video/shef/mp4/나 아직도 심장 떨려 미치겠네.mp4",
       "korean": "나 아직도 심장 떨려 미치겠네",
-      "russian": "У меня до сих пор сердце так бьётся, что я с ума сойду"
+      "russian": "У меня до сих пор сердце так бьётся, что я с ума сойду",
+      "english": "My heart is still racing, it's driving me crazy."
     },
     {
       "video": "video/shef/레시피네.webm",
       "videoMp4": "video/shef/mp4/레시피네.mp4",
       "korean": "레시피네",
-      "russian": "Это рецепт"
+      "russian": "Это рецепт",
+      "english": "It's a recipe."
     },
     {
       "video": "video/shef/군관들에게 일러.webm",
       "videoMp4": "video/shef/mp4/군관들에게 일러.mp4",
       "korean": "군관들에게 일러",
-      "russian": "Сообщи офицерам"
+      "russian": "Сообщи офицерам",
+      "english": "Tell the officers."
     },
     {
       "video": "video/shef/저 책 한 권 챙겨 와야겠다.webm",
       "videoMp4": "video/shef/mp4/저 책 한 권 챙겨 와야겠다.mp4",
       "korean": "저 책 한 권 챙겨 와야겠다",
-      "russian": "Надо захватить ту книгу"
+      "russian": "Надо захватить ту книгу",
+      "english": "I should grab that book."
     }
   ],
   "b1": [
@@ -36,211 +41,246 @@
       "video": "video/shef/지금.webm",
       "videoMp4": "video/shef/mp4/지금.mp4",
       "korean": "지금",
-      "russian": "Сейчас"
+      "russian": "Сейчас",
+      "english": "Right now."
     },
     {
       "video": "video/shef/오늘부터 그대는.webm",
       "videoMp4": "video/shef/mp4/오늘부터 그대는.mp4",
       "korean": "오늘부터 그대는",
-      "russian": "С сегодняшнего дня ты"
+      "russian": "С сегодняшнего дня ты",
+      "english": "From today, you are..."
     },
     {
       "video": "video/shef/돌아버리겠다.webm",
       "videoMp4": "video/shef/mp4/돌아버리겠다.mp4",
       "korean": "돌아버리겠다",
-      "russian": "С ума сойду"
+      "russian": "С ума сойду",
+      "english": "I'm going to lose my mind."
     },
     {
       "video": "video/shef/난 지금까지 미슐랭 쓰리스타 셰프로 꿈꿨는데.webm",
       "videoMp4": "video/shef/mp4/난 지금까지 미슐랭 쓰리스타 셰프로 꿈꿨는데.mp4",
       "korean": "난 지금까지 미슐랭 쓰리스타 셰프로 꿈꿨는데",
-      "russian": "Я до сих пор мечтала стать шефом Мишлен 3 звезды"
+      "russian": "Я до сих пор мечтала стать шефом Мишлен 3 звезды",
+      "english": "I've dreamed of being a Michelin three-star chef until now."
     },
     {
       "video": "video/shef/오늘 폭군의 셰프가 되었다.webm",
       "videoMp4": "video/shef/mp4/오늘 폭군의 셰프가 되었다.mp4",
       "korean": "오늘 폭군의 셰프가 되었다",
-      "russian": "Сегодня я стала шефом тирана"
+      "russian": "Сегодня я стала шефом тирана",
+      "english": "I became the tyrant's chef today."
     },
     {
       "video": "video/shef/결국 나를 죽이려는 거겠지.webm",
       "videoMp4": "video/shef/mp4/결국 나를 죽이려는 거겠지.mp4",
       "korean": "결국 나를 죽이려는 거겠지",
-      "russian": "В конце концов, ты собираешься убить меня?"
+      "russian": "В конце концов, ты собираешься убить меня?",
+      "english": "So, you really plan to kill me?"
     },
     {
       "video": "video/shef/어떻게든 살아 돌아갈 거다.webm",
       "videoMp4": "video/shef/mp4/어떻게든 살아 돌아갈 거다.mp4",
       "korean": "어떻게든 살아 돌아갈 거다",
-      "russian": "Я во что бы то ни стало вернусь живой"
+      "russian": "Я во что бы то ни стало вернусь живой",
+      "english": "I'll find a way to come back alive."
     },
     {
       "video": "video/shef/반드시.webm",
       "videoMp4": "video/shef/mp4/반드시.mp4",
       "korean": "반드시",
-      "russian": "Обязательно / непременно"
+      "russian": "Обязательно / непременно",
+      "english": "For sure."
     },
     {
       "video": "video/shef/내 이름은 연지영.webm",
       "videoMp4": "video/shef/mp4/내 이름은 연지영.mp4",
       "korean": "내 이름은 연지영",
-      "russian": "Моё имя — Ён Чиён"
+      "russian": "Моё имя — Ён Чиён",
+      "english": "My name is Yeon Ji-young."
     },
     {
       "video": "video/shef/여기 어떻게 오게 됐냐고.webm",
       "videoMp4": "video/shef/mp4/여기 어떻게 오게 됐냐고.mp4",
       "korean": "여기 어떻게 오게 됐냐고",
-      "russian": "Как я сюда попала?"
+      "russian": "Как я сюда попала?",
+      "english": "How did I end up here?"
     },
     {
       "video": "video/shef/이제 씨어링이다.webm",
       "videoMp4": "video/shef/mp4/이제 씨어링이다.mp4",
       "korean": "이제 씨어링이다",
-      "russian": "Теперь обжарка"
+      "russian": "Теперь обжарка",
+      "english": "Now it's searing."
     },
     {
       "video": "video/shef/아빠 기사 봤어.webm",
       "videoMp4": "video/shef/mp4/아빠 기사 봤어.mp4",
       "korean": "아빠 기사 봤어",
-      "russian": "Папа, ты новости видел?"
+      "russian": "Папа, ты новости видел?",
+      "english": "Dad, did you see the news?"
     },
     {
       "video": "video/shef/잘하다.webm",
       "videoMp4": "video/shef/mp4/잘하다.mp4",
       "korean": "잘하다",
-      "russian": "Молодец"
+      "russian": "Молодец",
+      "english": "Good job."
     },
     {
       "video": "video/shef/정말 잘했어.webm",
       "videoMp4": "video/shef/mp4/정말 잘했어.mp4",
       "korean": "정말 잘했어",
-      "russian": "Ты правда молодец!"
+      "russian": "Ты правда молодец!",
+      "english": "You did really well!"
     },
     {
       "video": "video/shef/지금 짐 싸서 바로 공항 가.webm",
       "videoMp4": "video/shef/mp4/지금 짐 싸서 바로 공항 가.mp4",
       "korean": "지금 짐 싸서 바로 공항 가",
-      "russian": "Собирай вещи и сразу езжай в аэропорт"
+      "russian": "Собирай вещи и сразу езжай в аэропорт",
+      "english": "Pack your things and head to the airport right now."
     },
     {
       "video": "video/shef/나 아직도 심장 떨려 미치겠네.webm",
       "videoMp4": "video/shef/mp4/나 아직도 심장 떨려 미치겠네.mp4",
       "korean": "나 아직도 심장 떨려 미치겠네",
-      "russian": "У меня до сих пор сердце так бьётся, что я с ума сойду"
+      "russian": "У меня до сих пор сердце так бьётся, что я с ума сойду",
+      "english": "My heart is still racing, it's driving me crazy."
     },
     {
       "video": "video/shef/알겠어요.webm",
       "videoMp4": "video/shef/mp4/알겠어요.mp4",
       "korean": "알겠어요",
-      "russian": "Поняла"
+      "russian": "Поняла",
+      "english": "Got it."
     },
     {
       "video": "video/shef/도착해서 다시 전화할게.webm",
       "videoMp4": "video/shef/mp4/도착해서 다시 전화할게.mp4",
       "korean": "도착해서 다시 전화할게",
-      "russian": "Когда приеду, снова позвоню"
+      "russian": "Когда приеду, снова позвоню",
+      "english": "I'll call you again when I arrive."
     },
     {
       "video": "video/shef/빵은 나중에 먹자.webm",
       "videoMp4": "video/shef/mp4/빵은 나중에 먹자.mp4",
       "korean": "빵은 나중에 먹자",
-      "russian": "Хлеб съедим потом"
+      "russian": "Хлеб съедим потом",
+      "english": "Let's eat the bread later."
     },
     {
       "video": "video/shef/챙겨 두길 잘했네.webm",
       "videoMp4": "video/shef/mp4/챙겨 두길 잘했네.mp4",
       "korean": "챙겨 두길 잘했네",
-      "russian": "Хорошо, что приготовила заранее"
+      "russian": "Хорошо, что приготовила заранее",
+      "english": "Good thing you prepared it in advance."
     },
     {
       "video": "video/shef/한국인은 역시.webm",
       "videoMp4": "video/shef/mp4/한국인은 역시.mp4",
       "korean": "한국인은 역시",
-      "russian": "Корейцы как и ожидалось..."
+      "russian": "Корейцы как и ожидалось...",
+      "english": "Koreans really are..."
     },
     {
       "video": "video/shef/맛있겠다.webm",
       "videoMp4": "video/shef/mp4/맛있겠다.mp4",
       "korean": "맛있겠다",
-      "russian": "Вкуснота"
+      "russian": "Вкуснота",
+      "english": "That looks delicious."
     },
     {
       "video": "video/shef/어떡해 어머 어떡해.webm",
       "videoMp4": "video/shef/mp4/어떡해 어머 어떡해.mp4",
       "korean": "어떡해 어머 어떡해",
-      "russian": "Что же делать, ой, что же делать"
+      "russian": "Что же делать, ой, что же делать",
+      "english": "What should I do? Oh my gosh!"
     },
     {
       "video": "video/shef/레시피네.webm",
       "videoMp4": "video/shef/mp4/레시피네.mp4",
       "korean": "레시피네?",
-      "russian": "Рецепты?"
+      "russian": "Рецепты?",
+      "english": "Is that a recipe?"
     },
     {
       "video": "video/shef/요리책인가.webm",
       "videoMp4": "video/shef/mp4/요리책인가.mp4",
       "korean": "요리책인가?",
-      "russian": "Это что, кулинарная книга?"
+      "russian": "Это что, кулинарная книга?",
+      "english": "Is that a cookbook?"
     },
     {
       "video": "video/shef/군관들에게 일러.webm",
       "videoMp4": "video/shef/mp4/군관들에게 일러.mp4",
       "korean": "군관들에게 일러",
-      "russian": "Сообщи офицерам"
+      "russian": "Сообщи офицерам",
+      "english": "Tell the officers."
     },
     {
       "video": "video/shef/믿어지지 않겠지만 난 이천이십오년에서 왔다.webm",
       "videoMp4": "video/shef/mp4/믿어지지 않겠지만 난 이천이십오년에서 왔다.mp4",
       "korean": "믿어지지 않겠지만 난 이천이십오년에서 왔다",
-      "russian": "Трудно поверить, но я из 2025 года"
+      "russian": "Трудно поверить, но я из 2025 года",
+      "english": "I know it sounds unbelievable, but I came from 2025."
     },
     {
       "video": "video/shef/저 책 한 권 챙겨 와야겠다.webm",
       "videoMp4": "video/shef/mp4/저 책 한 권 챙겨 와야겠다.mp4",
       "korean": "저 책 한 권 챙겨 와야겠다",
-      "russian": "Надо захватить ту книгу"
+      "russian": "Надо захватить ту книгу",
+      "english": "I should grab that book."
     },
     {
       "video": "video/shef/하늘이 많이 어두워졌사옵니다.webm",
       "videoMp4": "video/shef/mp4/하늘이 많이 어두워졌사옵니다.mp4",
       "korean": "하늘이 많이 어두워졌사옵니다",
-      "russian": "Небо сильно потемнело"
+      "russian": "Небо сильно потемнело",
+      "english": "The sky has gotten really dark."
     },
     {
       "video": "video/shef/그렇사옵니다.webm",
       "videoMp4": "video/shef/mp4/그렇사옵니다.mp4",
       "korean": "그렇사옵니다",
-      "russian": "Да, всё так"
+      "russian": "Да, всё так",
+      "english": "That's right."
     },
     {
       "video": "video/shef/과인은 그따위 괴력난신을 믿지 않는다.webm",
       "videoMp4": "video/shef/mp4/과인은 그따위 괴력난신을 믿지 않는다.mp4",
       "korean": "과인은 그따위 괴력난신을 믿지 않는다",
-      "russian": "Я, государь, не верю в такие суеверия и чудеса"
+      "russian": "Я, государь, не верю в такие суеверия и чудеса",
+      "english": "I don't believe in such superstitions."
     },
     {
       "video": "video/shef/이 국물은 뭐야.webm",
       "videoMp4": "video/shef/mp4/이 국물은 뭐야.mp4",
       "korean": "이 그물은 뭐야?",
-      "russian": "Что это за сети"
+      "russian": "Что это за сети",
+      "english": "What is this net?"
     },
     {
       "video": "video/shef/아무도 없어요.webm",
       "videoMp4": "video/shef/mp4/아무도 없어요.mp4",
       "korean": "아무도 없어요?",
-      "russian": "Здесь никого нет?"
+      "russian": "Здесь никого нет?",
+      "english": "Is no one here?"
     },
     {
       "video": "video/shef/여우다.webm",
       "videoMp4": "video/shef/mp4/여우다.mp4",
       "korean": "여우다",
-      "russian": "Это лиса"
+      "russian": "Это лиса",
+      "english": "It's a fox."
     },
     {
       "video": "video/shef/어 어느 나라 숲인 거야.webm",
       "videoMp4": "video/shef/mp4/어 어느 나라 숲인 거야.mp4",
       "korean": "어 어느 나라 숲인 거야?",
-      "russian": "Что это за лес и в какой он стране?"
+      "russian": "Что это за лес и в какой он стране?",
+      "english": "What country is this forest in?"
     }
   ],
   "b2": [
@@ -248,191 +288,221 @@
       "video": "video/shef/화살.webm",
       "videoMp4": "video/shef/mp4/화살.mp4",
       "korean": "화살?",
-      "russian": "Стрела?"
+      "russian": "Стрела?",
+      "english": "An arrow?"
     },
     {
       "video": "video/shef/한국 사람.webm",
       "videoMp4": "video/shef/mp4/한국 사람.mp4",
       "korean": "한국 사람?",
-      "russian": "Кореец?"
+      "russian": "Кореец?",
+      "english": "Are you Korean?"
     },
     {
       "video": "video/shef/쏘지 마요 쏘지 마.webm",
       "videoMp4": "video/shef/mp4/쏘지 마요 쏘지 마.mp4",
       "korean": "쏘지 마요, 쏘지 마",
-      "russian": "Не стрляйте, не надо"
+      "russian": "Не стрляйте, не надо",
+      "english": "Don't shoot, don't shoot."
     },
     {
       "video": "video/shef/근데 왜 계속 쏴요 에 미쳤어요.webm",
       "videoMp4": "video/shef/mp4/근데 왜 계속 쏴요 에 미쳤어요.mp4",
       "korean": "근데 왜 계속 쏴요, 에 미쳤어요?",
-      "russian": "Но почему вы всё время стреляете, вы что, с ума сошли?"
+      "russian": "Но почему вы всё время стреляете, вы что, с ума сошли?",
+      "english": "But why do you keep shooting? Are you crazy?"
     },
     {
       "video": "video/shef/와라 귀녀.webm",
       "videoMp4": "video/shef/mp4/와라 귀녀.mp4",
       "korean": "와라 귀녀",
-      "russian": "Иди сюда, девушка-призрак"
+      "russian": "Иди сюда, девушка-призрак",
+      "english": "Come here, you ghost girl."
     },
     {
       "video": "video/shef/가까이 오지 마 가까이 오지 마.webm",
       "videoMp4": "video/shef/mp4/가까이 오지 마 가까이 오지 마.mp4",
       "korean": "가까이 오지 마, 가까이 오지 마",
-      "russian": "Не подходи! Не приближайся!"
+      "russian": "Не подходи! Не приближайся!",
+      "english": "Don't come any closer, don't come any closer!"
     },
     {
       "video": "video/shef/피.webm",
       "videoMp4": "video/shef/mp4/피.mp4",
       "korean": "피",
-      "russian": "Кровь"
+      "russian": "Кровь",
+      "english": "Blood."
     },
     {
       "video": "video/shef/이 옷은 왜 주머니가 없어.webm",
       "videoMp4": "video/shef/mp4/이 옷은 왜 주머니가 없어.mp4",
       "korean": "이 옷은 왜 주머니가 없어?",
-      "russian": "Почему у этой одежды нет карманов?"
+      "russian": "Почему у этой одежды нет карманов?",
+      "english": "Why doesn't this outfit have pockets?"
     },
     {
       "video": "video/shef/나 갈 거니까 따라오지 마.webm",
       "videoMp4": "video/shef/mp4/나 갈 거니까 따라오지 마.mp4",
       "korean": "나 갈 거니까 따라오지 마",
-      "russian": "Я ухожу, не следуй за мной"
+      "russian": "Я ухожу, не следуй за мной",
+      "english": "I'm leaving, so don't follow me."
     },
     {
       "video": "video/shef/나도 칼 잡으면 무서울 게 없거든.webm",
       "videoMp4": "video/shef/mp4/나도 칼 잡으면 무서울 게 없거든.mp4",
       "korean": "나도 칼 잡으면 무서울 게 없거든",
-      "russian": "Когда я беру нож, мне уже ничего не страшно"
+      "russian": "Когда я беру нож, мне уже ничего не страшно",
+      "english": "When I have a knife, I'm not scared of anything."
     },
     {
       "video": "video/shef/요리사 요리사라고.webm",
       "videoMp4": "video/shef/mp4/요리사 요리사라고.mp4",
       "korean": "요리사, 요리사라고!",
-      "russian": "Я повар, сказала же, повар!"
+      "russian": "Я повар, сказала же, повар!",
+      "english": "I'm a chef, I said I'm a chef!"
     },
     {
       "video": "video/shef/잘 따라오기나 해요.webm",
       "videoMp4": "video/shef/mp4/잘 따라오기나 해요.mp4",
       "korean": "잘 따라오기나 해요",
-      "russian": "Просто следуй за мной как следует"
+      "russian": "Просто следуй за мной как следует",
+      "english": "Just keep up with me, okay?"
     },
     {
       "video": "video/shef/저를 한번 품어 보시렴니까.webm",
       "videoMp4": "video/shef/mp4/저를 한번 품어 보시렴니까.mp4",
       "korean": "저를 한번 품어 보시렵니까?",
-      "russian": "Не хотите ли обнять меня хотя бы раз?"
+      "russian": "Не хотите ли обнять меня хотя бы раз?",
+      "english": "Would you like to hug me just once?"
     },
     {
       "video": "video/shef/가슴이 아니라 머리를 다친 거예요.webm",
       "videoMp4": "video/shef/mp4/가슴이 아니라 머리를 다친 거예요.mp4",
       "korean": "가슴이 아니라 머리를 다친 거예요",
-      "russian": "Пострадала не грудь, а голова"
+      "russian": "Пострадала не грудь, а голова",
+      "english": "It's my head that got hurt, not my chest."
     },
     {
       "video": "video/shef/자세히 보거라.webm",
       "videoMp4": "video/shef/mp4/자세히 보거라.mp4",
       "korean": "자세히 보거라",
-      "russian": "Смотри внимательно"
+      "russian": "Смотри внимательно",
+      "english": "Look closely."
     },
     {
       "video": "video/shef/시끄럽다.webm",
       "videoMp4": "video/shef/mp4/시끄럽다.mp4",
       "korean": "시끄럽다",
-      "russian": "Замолчи"
+      "russian": "Замолчи",
+      "english": "It's noisy."
     },
     {
       "video": "video/shef/진짜 배우야.webm",
       "videoMp4": "video/shef/mp4/진짜 배우야.mp4",
       "korean": "진짜 배우야?",
-      "russian": "Настоящий актер?"
+      "russian": "Настоящий актер?",
+      "english": "Are you a real actor?"
     },
     {
       "video": "video/shef/예 전하 저는 오늘만 삽니다요.webm",
       "videoMp4": "video/shef/mp4/예 전하 저는 오늘만 삽니다요.mp4",
       "korean": "예 전하, 저는 오늘만 삽니다요",
-      "russian": "Да, Ваше Величество, я живу только сегодня"
+      "russian": "Да, Ваше Величество, я живу только сегодня",
+      "english": "Yes, Your Majesty, I only live for today."
     },
     {
       "video": "video/shef/편의점이 어디예요.webm",
       "videoMp4": "video/shef/mp4/편의점이 어디예요.mp4",
       "korean": "편의점이 어디예요?",
-      "russian": "Где здесь круглосуточный?"
+      "russian": "Где здесь круглосуточный?",
+      "english": "Where's the convenience store?"
     },
     {
       "video": "video/shef/절벽이라더라.webm",
       "videoMp4": "video/shef/mp4/절벽이라더라.mp4",
       "korean": "절벽이라더라?",
-      "russian": "Обрыв, говорят?"
+      "russian": "Обрыв, говорят?",
+      "english": "They say it's a cliff?"
     },
     {
       "video": "video/shef/그럼 이대로 그냥 가만히 있으라는 거야.webm",
       "videoMp4": "video/shef/mp4/그럼 이대로 그냥 가만히 있으라는 거야.mp4",
       "korean": "그럼 이대로 그냥 가만히 있으라는 거야?",
       "russian": "То есть ты хочешь, чтобы я просто сидела сложа руки?",
-      "new": true
+      "new": true,
+      "english": "So you want me to just sit here and do nothing?"
     },
     {
       "video": "video/shef/그렇지만.webm",
       "videoMp4": "video/shef/mp4/그렇지만.mp4",
       "korean": "그렇지만",
       "russian": "Но",
-      "new": true
+      "new": true,
+      "english": "But..."
     },
     {
       "video": "video/shef/이거 범죄라고.webm",
       "videoMp4": "video/shef/mp4/이거 범죄라고.mp4",
       "korean": "이거 범죄라고",
       "russian": "Это ведь преступление",
-      "new": true
+      "new": true,
+      "english": "This is a crime."
     },
     {
       "video": "video/shef/자 다음.webm",
       "videoMp4": "video/shef/mp4/자 다음.mp4",
       "korean": "자 다음",
       "russian": "Так, следующий",
-      "new": true
+      "new": true,
+      "english": "Okay, next."
     },
     {
       "video": "video/shef/빨리만 한다고 해서 될 일이 아니야.webm",
       "videoMp4": "video/shef/mp4/빨리만 한다고 해서 될 일이 아니야.mp4",
       "korean": "빨리만 한다고 해서 될 일이 아니야",
       "russian": "Одной скорости тут недостаточно",
-      "new": true
+      "new": true,
+      "english": "It's not just about being fast."
     },
     {
       "video": "video/shef/아이고.webm",
       "videoMp4": "video/shef/mp4/아이고.mp4",
       "korean": "아이고",
       "russian": "Ой!",
-      "new": true
+      "new": true,
+      "english": "Oh no!"
     },
     {
       "video": "video/shef/저기 아저씨.webm",
       "videoMp4": "video/shef/mp4/저기 아저씨.mp4",
       "korean": "저기 아저씨",
       "russian": "Эй, дяденька",
-      "new": true
+      "new": true,
+      "english": "Hey, mister."
     },
     {
       "video": "video/shef/목숨요.webm",
       "videoMp4": "video/shef/mp4/목숨요.mp4",
       "korean": "목숨요?",
       "russian": "Жизнь?",
-      "new": true
+      "new": true,
+      "english": "Life?"
     },
     {
       "video": "video/shef/좋다.webm",
       "videoMp4": "video/shef/mp4/좋다.mp4",
       "korean": "좋다",
       "russian": "Хорошо",
-      "new": true
+      "new": true,
+      "english": "Sounds good."
     },
     {
       "video": "video/shef/여기들 보시게.webm",
       "videoMp4": "video/shef/mp4/여기들 보시게.mp4",
       "korean": "여기들 보시게",
       "russian": "Эй, все, смотрите сюда",
-      "new": true
+      "new": true,
+      "english": "Hey everyone, look here."
     }
   ],
   "b3": [
@@ -441,224 +511,256 @@
       "videoMp4": "video/shef/mp4/걱정 마.mp4",
       "korean": "걱정 마",
       "russian": "Не волнуйся",
-      "new": true
+      "new": true,
+      "english": "Don't worry."
     },
     {
       "video": "video/shef/저녁밥이라.webm",
       "videoMp4": "video/shef/mp4/저녁밥이라.mp4",
       "korean": "저녁밥이라",
       "russian": "Потому что это ужин",
-      "new": true
+      "new": true,
+      "english": "Because it's dinner."
     },
     {
       "video": "video/shef/얘 눈물 없이 못 보겠다.webm",
       "videoMp4": "video/shef/mp4/얘 눈물 없이 못 보겠다.mp4",
       "korean": "얘 눈물 없이 못 보겠다",
       "russian": "Без слёз на него не посмотришь",
-      "new": true
+      "new": true,
+      "english": "I can't look at him without tears."
     },
     {
       "video": "video/shef/육질이 이리 부드럽다니.webm",
       "videoMp4": "video/shef/mp4/육질이 이리 부드럽다니.mp4",
       "korean": "육질이 이리 부드럽다니",
       "russian": "Мясо такое мягкое, не верится",
-      "new": true
+      "new": true,
+      "english": "I can't believe the meat is this tender."
     },
     {
       "video": "video/shef/그거였군.webm",
       "videoMp4": "video/shef/mp4/그거였군.mp4",
       "korean": "그거였군",
       "russian": "Вот оно что",
-      "new": true
+      "new": true,
+      "english": "So that's what it was."
     },
     {
       "video": "video/shef/면접 분위기.webm",
       "videoMp4": "video/shef/mp4/면접 분위기.mp4",
       "korean": "면접 분위기",
       "russian": "Атмосфера собеседования",
-      "new": true
+      "new": true,
+      "english": "The atmosphere of the interview."
     },
     {
       "video": "video/shef/니 이름이 뭐냐.webm",
       "videoMp4": "video/shef/mp4/니 이름이 뭐냐.mp4",
       "korean": "니 이름이 뭐냐",
       "russian": "Как твоё имя?",
-      "new": true
+      "new": true,
+      "english": "What's your name?"
     },
     {
       "video": "video/shef/스물일곱이요.webm",
       "videoMp4": "video/shef/mp4/스물일곱이요.mp4",
       "korean": "스물일곱이요",
       "russian": "Мне двадцать семь лет",
-      "new": true
+      "new": true,
+      "english": "I'm twenty-seven."
     },
     {
       "video": "video/shef/스물일곱.webm",
       "videoMp4": "video/shef/mp4/스물일곱.mp4",
       "korean": "스물일곱?",
       "russian": "Двадцать семь?",
-      "new": true
+      "new": true,
+      "english": "Twenty-seven?"
     },
     {
       "video": "video/shef/피곤하구나.webm",
       "videoMp4": "video/shef/mp4/피곤하구나.mp4",
       "korean": "피곤하구나",
       "russian": "Похоже устал",
-      "new": true
+      "new": true,
+      "english": "You look tired."
     },
     {
       "video": "video/shef/다시 말하라.webm",
       "videoMp4": "video/shef/mp4/다시 말하라.mp4",
       "korean": "다시 말하라",
       "russian": "Скажи ещё раз",
-      "new": true
+      "new": true,
+      "english": "Say that again."
     },
     {
       "video": "video/shef/괜찮으시겠어요 정말.webm",
       "videoMp4": "video/shef/mp4/괜찮으시겠어요 정말.mp4",
       "korean": "괜찮으시겠어요 정말?",
       "russian": "Вы правда уверены, что всё будет нормально?",
-      "new": true
+      "new": true,
+      "english": "Are you really okay with this?"
     },
     {
       "video": "video/shef/이참에 나랑 같이 갈래.webm",
       "videoMp4": "video/shef/mp4/이참에 나랑 같이 갈래.mp4",
       "korean": "이참에 나랑 같이 갈래?",
       "russian": "Раз уж так вышло, пойдёшь со мной?",
-      "new": true
+      "new": true,
+      "english": "Since we're at it, wanna go with me?"
     },
     {
       "video": "video/shef/엄청난 살기.webm",
       "videoMp4": "video/shef/mp4/엄청난 살기.mp4",
       "korean": "엄청난 살기",
       "russian": "Ужасная злобная аура",
-      "new": true
+      "new": true,
+      "english": "Such a terrifying vibe."
     },
     {
       "video": "video/shef/500년 뒤 미래에서 왔어요.webm",
       "videoMp4": "video/shef/mp4/500년 뒤 미래에서 왔어요.mp4",
       "korean": "500년 뒤 미래에서 왔어요",
       "russian": "Я пришёл из будущего, через 500 лет",
-      "new": true
+      "new": true,
+      "english": "I came from the future, 500 years ahead."
     },
     {
       "video": "video/shef/가방.webm",
       "videoMp4": "video/shef/mp4/가방.mp4",
       "korean": "가방",
       "russian": "Сумка",
-      "new": true
+      "new": true,
+      "english": "Bag."
     },
     {
       "video": "video/shef/곱게 죽이고 싶지 않아서.webm",
       "videoMp4": "video/shef/mp4/곱게 죽이고 싶지 않아서.mp4",
       "korean": "곱게 죽이고 싶지 않아서?",
       "russian": "Потому что я не хочу убивать тебя по-хорошему?",
-      "new": true
+      "new": true,
+      "english": "Is it because I don't want to kill you nicely?"
     },
     {
       "video": "video/shef/나이는.webm",
       "videoMp4": "video/shef/mp4/나이는.mp4",
       "korean": "나이는?",
       "russian": "Сколько тебе лет?",
-      "new": true
+      "new": true,
+      "english": "How old are you?"
     },
     {
       "video": "video/shef/너무 심려하지 마십시오.webm",
       "videoMp4": "video/shef/mp4/너무 심려하지 마십시오.mp4",
       "korean": "너무 심려하지 마십시오",
       "russian": "Не слишком беспокойтесь",
-      "new": true
+      "new": true,
+      "english": "Don't worry too much."
     },
     {
       "video": "video/shef/네 말이 사실이라면.webm",
       "videoMp4": "video/shef/mp4/네 말이 사실이라면.mp4",
       "korean": "네 말이 사실이라면",
       "russian": "Если то, что ты сказал, правда",
-      "new": true
+      "new": true,
+      "english": "If what you said is true."
     },
     {
       "video": "video/shef/다들 모여보세요.webm",
       "videoMp4": "video/shef/mp4/다들 모여보세요.mp4",
       "korean": "다들 모여보세요",
       "russian": "Все, соберитесь сюда",
-      "new": true
+      "new": true,
+      "english": "Everyone, gather around."
     },
     {
       "video": "video/shef/대체 무슨 일인 거지.webm",
       "videoMp4": "video/shef/mp4/대체 무슨 일인 거지.mp4",
       "korean": "대체 무슨 일인 거지?",
       "russian": "Что вообще происходит?",
-      "new": true
+      "new": true,
+      "english": "What on earth is going on?"
     },
     {
       "video": "video/shef/맛있어라.webm",
       "videoMp4": "video/shef/mp4/맛있어라.mp4",
       "korean": "맛있어라",
       "russian": "Как же вкусно",
-      "new": true
+      "new": true,
+      "english": "This is so delicious."
     },
     {
       "video": "video/shef/모두 그만 나가 보거라.webm",
       "videoMp4": "video/shef/mp4/모두 그만 나가 보거라.mp4",
       "korean": "모두 그만 나가 보거라",
       "russian": "Все, прекратите и выйдите",
-      "new": true
+      "new": true,
+      "english": "Everyone, just go outside."
     },
     {
       "video": "video/shef/사실.webm",
       "videoMp4": "video/shef/mp4/사실.mp4",
       "korean": "사실",
       "russian": "На самом деле",
-      "new": true
+      "new": true,
+      "english": "Actually,"
     },
     {
       "video": "video/shef/생각해 봐 연지영.webm",
       "videoMp4": "video/shef/mp4/생각해 봐 연지영.mp4",
       "korean": "생각해 봐 연지영",
       "russian": "Подумай, Ёнджиён",
-      "new": true
+      "new": true,
+      "english": "Think about it, Yeon Ji-young."
     },
     {
       "video": "video/shef/아가씨.webm",
       "videoMp4": "video/shef/mp4/아가씨.mp4",
       "korean": "아가씨",
       "russian": "Молодая леди",
-      "new": true
+      "new": true,
+      "english": "Miss."
     },
     {
       "video": "video/shef/연지영입니다.webm",
       "videoMp4": "video/shef/mp4/연지영입니다.mp4",
       "korean": "연지영입니다",
       "russian": "Я — Ёнджиён",
-      "new": true
+      "new": true,
+      "english": "I'm Yeon Ji-young."
     },
     {
       "video": "video/shef/알겠습니다.webm",
       "videoMp4": "video/shef/mp4/알겠습니다.mp4",
       "korean": "알겠습니다",
       "russian": "Поняла / Хорошо",
-      "new": true
+      "new": true,
+      "english": "Got it."
     },
     {
       "video": "video/shef/음식은 먹어 봐야 그 맛을 아는 것 아닙니까.webm",
       "videoMp4": "video/shef/mp4/음식은 먹어 봐야 그 맛을 아는 것 아닙니까.mp4",
       "korean": "음식은 먹어 봐야 그 맛을 아는 것 아닙니까?",
       "russian": "Еду ведь нужно попробовать, чтобы узнать её вкус, не так ли?",
-      "new": true
+      "new": true,
+      "english": "You have to try the food to know its taste, right?"
     },
     {
       "video": "video/shef/이렇게 즐긴 고기를 부드럽게 익히려면.webm",
       "videoMp4": "video/shef/mp4/이렇게 즐긴 고기를 부드럽게 익히려면.mp4",
       "korean": "이렇게 즐긴 고기를 부드럽게 익히려면",
       "russian": "Чтобы так насладиться мясом и сделать его мягким",
-      "new": true
+      "new": true,
+      "english": "To enjoy the meat like this and make it tender,"
     },
     {
       "video": "video/shef/이렇게 하는 수밖에 없어.webm",
       "videoMp4": "video/shef/mp4/이렇게 하는 수밖에 없어.mp4",
       "korean": "이렇게 하는 수밖에 없어",
       "russian": "По-другому никак не получится",
-      "new": true
+      "new": true,
+      "english": "There's no other way to do it."
     }
   ],
   "b4": [],

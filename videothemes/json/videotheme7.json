@@ -4,46 +4,53 @@
       "video": "video/vincenco/이 미개한 새끼야.webm",
       "videoMp4": "video/vincenco/mp4/이 미개한 새끼야.mp4",
       "korean": "이 미개한 새끼야",
-      "russian": "Ты, дикое отродье"
+      "russian": "Ты, дикое отродье",
+      "english": "You uncivilized jerk!"
     },
     {
       "video": "video/vincenco/나의 목표는 이 건물을 무너뜨리는 것이다.webm",
       "videoMp4": "video/vincenco/mp4/나의 목표는 이 건물을 무너뜨리는 것이다.mp4",
       "korean": "나의 목표는 이 건물을 무너뜨리는 것이다",
       "russian": "Моя цель - снести это здание",
-      "new": true
+      "new": true,
+      "english": "My goal is to bring this building down."
     },
     {
       "video": "video/vincenco/곧 치르게 될 거야.webm",
       "videoMp4": "video/vincenco/mp4/곧 치르게 될 거야.mp4",
       "korean": "곧 치르게 될 거야",
-      "russian": "Скоро поплатишься"
+      "russian": "Скоро поплатишься",
+      "english": "You'll pay for it soon."
     },
     {
       "video": "video/vincenco/아버지는 저 못 이겨요.webm",
       "videoMp4": "video/vincenco/mp4/아버지는 저 못 이겨요.mp4",
       "korean": "아버지는 저 못 이겨요",
-      "russian": "Отец, тебе меня не выиграть"
+      "russian": "Отец, тебе меня не выиграть",
+      "english": "You can't beat me, Dad."
     },
     {
       "video": "video/vincenco/니들 뭐야.webm",
       "videoMp4": "video/vincenco/mp4/니들 뭐야.mp4",
       "korean": "니들 뭐야?",
       "russian": "Вы кто такие?",
-      "new": true
+      "new": true,
+      "english": "Who are you guys?"
     },
     {
       "video": "video/vincenco/담배 하나 주고 가.webm",
       "videoMp4": "video/vincenco/mp4/담배 하나 주고 가.mp4",
       "korean": "담배 하나 주고 가",
-      "russian": "Дай сигарету и иди"
+      "russian": "Дай сигарету и иди",
+      "english": "Give me a cigarette before you go."
     },
     {
       "video": "video/vincenco/이런 놈들이 한국 망신 다 시키는데.webm",
       "videoMp4": "video/vincenco/mp4/이런 놈들이 한국 망신 다 시키는데.mp4",
       "korean": "이런 놈들이 한국 망신 다 시키는데",
       "russian": "Такие ублюдки позорят всю Корею",
-      "new": true
+      "new": true,
+      "english": "People like this are embarrassing Korea."
     }
   ],
   "b1": [
@@ -51,217 +58,252 @@
       "video": "video/vincenco/나의 목표는.webm",
       "videoMp4": "video/vincenco/mp4/나의 목표는.mp4",
       "korean": "나의 목표는",
-      "russian": "Моя цель"
+      "russian": "Моя цель",
+      "english": "My goal is..."
     },
     {
       "video": "video/vincenco/이 건물을 무너뜨리는 것이다.webm",
       "videoMp4": "video/vincenco/mp4/이 건물을 무너뜨리는 것이다.mp4",
       "korean": "이 건물을 무너뜨리는 것이다",
-      "russian": "Разрушить это здание"
+      "russian": "Разрушить это здание",
+      "english": "to demolish this building."
     },
     {
       "video": "video/vincenco/동양인을 모욕 한 대가.webm",
       "videoMp4": "video/vincenco/mp4/동양인을 모욕 한 대가.mp4",
       "korean": "동양인을 모욕한 대가",
-      "russian": "За оскорбление азиата"
+      "russian": "За оскорбление азиата",
+      "english": "The price for insulting an Asian."
     },
     {
       "video": "video/vincenco/곧 치르게 될 거야.webm",
       "videoMp4": "video/vincenco/mp4/곧 치르게 될 거야.mp4",
       "korean": "곧 치르게 될 거야",
-      "russian": "Скоро поплатишься"
+      "russian": "Скоро поплатишься",
+      "english": "You'll pay for it soon."
     },
     {
       "video": "video/vincenco/이 미개한 새끼야.webm",
       "videoMp4": "video/vincenco/mp4/이 미개한 새끼야.mp4",
       "korean": "이 미개한 새끼야",
-      "russian": "Ты, дикое отродье"
+      "russian": "Ты, дикое отродье",
+      "english": "You uncivilized jerk."
     },
     {
       "video": "video/vincenco/이게 얼마야 이게.webm",
       "videoMp4": "video/vincenco/mp4/이게 얼마야 이게.mp4",
       "korean": "이게 얼마야 이게?",
-      "russian": "Сколько тут?"
+      "russian": "Сколько тут?",
+      "english": "How much is this?"
     },
     {
       "video": "video/vincenco/말 또 잛다.webm",
       "videoMp4": "video/vincenco/mp4/말 또 잛다.mp4",
       "korean": "말 또 잛다",
-      "russian": "Снова коротко говоришь"
+      "russian": "Снова коротко говоришь",
+      "english": "You're being short again."
     },
     {
       "video": "video/vincenco/시간이 촉박하면 택시를 탔어야지.webm",
       "videoMp4": "video/vincenco/mp4/시간이 촉박하면 택시를 탔어야지.mp4",
       "korean": "시간이 촉박하면 택시를 탔어야지",
-      "russian": "Если времени мало, надо было взять такси"
+      "russian": "Если времени мало, надо было взять такси",
+      "english": "If you're short on time, you should've taken a taxi."
     },
     {
       "video": "video/vincenco/아버지.webm",
       "videoMp4": "video/vincenco/mp4/아버지.mp4",
       "korean": "아버지",
-      "russian": "Отец"
+      "russian": "Отец",
+      "english": "Dad."
     },
     {
       "video": "video/vincenco/그냥 가 그럼.webm",
       "videoMp4": "video/vincenco/mp4/그냥 가 그럼.mp4",
       "korean": "그냥 가 그럼",
-      "russian": "Просто иди тогда"
+      "russian": "Просто иди тогда",
+      "english": "Just go then."
     },
     {
       "video": "video/vincenco/저 2년 전에 끝났어요.webm",
       "videoMp4": "video/vincenco/mp4/저 2년 전에 끝났어요.mp4",
       "korean": "저 2년 전에 끝났어요",
-      "russian": "Я бросила 2 года назад"
+      "russian": "Я бросила 2 года назад",
+      "english": "I ended it two years ago."
     },
     {
       "video": "video/vincenco/담배 하나 주고 가.webm",
       "videoMp4": "video/vincenco/mp4/담배 하나 주고 가.mp4",
       "korean": "담배 하나 주고 가",
-      "russian": "Дай сигарету и иди"
+      "russian": "Дай сигарету и иди",
+      "english": "Give me a cigarette and go."
     },
     {
       "video": "video/vincenco/그냥 가.webm",
       "videoMp4": "video/vincenco/mp4/그냥 가.mp4",
       "korean": "그냥 가",
-      "russian": "Просто уходи"
+      "russian": "Просто уходи",
+      "english": "Just leave."
     },
     {
       "video": "video/vincenco/저 아버지 걱정 진짜 많이 해요.webm",
       "videoMp4": "video/vincenco/mp4/저 아버지 걱정 진짜 많이 해요.mp4",
       "korean": "저 아버지 걱정 진짜 많이 해요",
-      "russian": "Я сильно переживаю за тебя, отец"
+      "russian": "Я сильно переживаю за тебя, отец",
+      "english": "I'm really worried about my dad."
     },
     {
       "video": "video/vincenco/변호사 때려치우고.webm",
       "videoMp4": "video/vincenco/mp4/변호사 때려치우고.mp4",
       "korean": "변호사 때려치우고",
-      "russian": "Бросай адвокатуру"
+      "russian": "Бросай адвокатуру",
+      "english": "Quit being a lawyer."
     },
     {
       "video": "video/vincenco/배우 해 보는 게 어떻겠니.webm",
       "videoMp4": "video/vincenco/mp4/배우 해 보는 게 어떻겠니.mp4",
       "korean": "배우 해 보는 게 어떻겠니?",
-      "russian": "Как насчет актерского?"
+      "russian": "Как насчет актерского?",
+      "english": "How about trying acting?"
     },
     {
       "video": "video/vincenco/아버지는 저 못 이겨요.webm",
       "videoMp4": "video/vincenco/mp4/아버지는 저 못 이겨요.mp4",
       "korean": "아버지는 저 못 이겨요",
-      "russian": "Отец, тебе меня не выиграть"
+      "russian": "Отец, тебе меня не выиграть",
+      "english": "You can't beat me, Dad."
     },
     {
       "video": "video/vincenco/잘했어.webm",
       "videoMp4": "video/vincenco/mp4/잘했어.mp4",
       "korean": "잘했어!",
-      "russian": "Молодцом!"
+      "russian": "Молодцом!",
+      "english": "Good job!"
     },
     {
       "video": "video/vincenco/저, 실례합니다.webm",
       "videoMp4": "video/vincenco/mp4/저, 실례합니다.mp4",
       "korean": "저, 실례합니다",
-      "russian": "Прошу прощения"
+      "russian": "Прошу прощения",
+      "english": "Excuse me."
     },
     {
       "video": "video/vincenco/잠시 검문 있겠습니다.webm",
       "videoMp4": "video/vincenco/mp4/잠시 검문 있겠습니다.mp4",
       "korean": "잠시 검문 있겠습니다",
-      "russian": "Небольшая проверка"
+      "russian": "Небольшая проверка",
+      "english": "We'll have a quick check."
     },
     {
       "video": "video/vincenco/신분증 좀 보여 주시겠습니까.webm",
       "videoMp4": "video/vincenco/mp4/신분증 좀 보여 주시겠습니까.mp4",
       "korean": "신분증 좀 보여 주시겠습니까?",
-      "russian": "Предъявите удостоверение"
+      "russian": "Предъявите удостоверение",
+      "english": "Could you show me your ID?"
     },
     {
       "video": "video/vincenco/이름이 멋지네요.webm",
       "videoMp4": "video/vincenco/mp4/이름이 멋지네요.mp4",
       "korean": "이름이 멋지네요",
-      "russian": "Крутое имя!"
+      "russian": "Крутое имя!",
+      "english": "That's a cool name!"
     },
     {
       "video": "video/vincenco/여권 돌려 주시죠.webm",
       "videoMp4": "video/vincenco/mp4/여권 돌려 주시죠.mp4",
       "korean": "여권 돌려 주시죠",
-      "russian": "Верните паспорт"
+      "russian": "Верните паспорт",
+      "english": "Please return my passport."
     },
     {
       "video": "video/vincenco/택시 잡으러 가세요.webm",
       "videoMp4": "video/vincenco/mp4/택시 잡으러 가세요.mp4",
       "korean": "택시 잡으러 가세요?",
-      "russian": "Вы идете за Такси?"
+      "russian": "Вы идете за Такси?",
+      "english": "Are you going to catch a taxi?"
     },
     {
       "video": "video/vincenco/어디까지 가세요.webm",
       "videoMp4": "video/vincenco/mp4/어디까지 가세요.mp4",
       "korean": "어디까지 가세요?",
-      "russian": "Вам куда нужно?"
+      "russian": "Вам куда нужно?",
+      "english": "Where are you headed?"
     },
     {
       "video": "video/vincenco/어느 나라 다녀오셨어요.webm",
       "videoMp4": "video/vincenco/mp4/어느 나라 다녀오셨어요.mp4",
       "korean": "어느 나라 다녀오셨어요?",
-      "russian": "Из какой страны приехали?"
+      "russian": "Из какой страны приехали?",
+      "english": "Which country did you visit?"
     },
     {
       "video": "video/vincenco/조용히 가고 싶은데요.webm",
       "videoMp4": "video/vincenco/mp4/조용히 가고 싶은데요.mp4",
       "korean": "조용히 가고 싶은데요",
-      "russian": "Хочу в тишине ехать"
+      "russian": "Хочу в тишине ехать",
+      "english": "I want to go quietly."
     },
     {
       "video": "video/vincenco/그냥 뉴스 틀어 주세요.webm",
       "videoMp4": "video/vincenco/mp4/그냥 뉴스 틀어 주세요.mp4",
       "korean": "그냥 뉴스 틀어 주세요",
-      "russian": "Просто включите новости"
+      "russian": "Просто включите новости",
+      "english": "Just turn on the news."
     },
     {
       "video": "video/vincenco/한 달 안에 모든 걸 끝내야 해.webm",
       "videoMp4": "video/vincenco/mp4/한 달 안에 모든 걸 끝내야 해.mp4",
       "korean": "한 달 안에 모든 걸 끝내야 해",
-      "russian": "Нужно успеть все за месяц"
+      "russian": "Нужно успеть все за месяц",
+      "english": "I have to finish everything in a month."
     },
     {
       "video": "video/vincenco/이런 놈들이 한국 망신 다 시키는데.webm",
       "videoMp4": "video/vincenco/mp4/이런 놈들이 한국 망신 다 시키는데.mp4",
       "korean": "이런 놈들이 한국 망신 다 시키는데",
       "russian": "Такие ублюдки позорят всю Корею",
-      "new": true
+      "new": true,
+      "english": "People like this are embarrassing Korea."
     },
     {
       "video": "video/vincenco/지금 어딨어.webm",
       "videoMp4": "video/vincenco/mp4/지금 어딨어.mp4",
       "korean": "지금 어딨어?",
       "russian": "Где он сейчас?",
-      "new": true
+      "new": true,
+      "english": "Where are you right now?"
     },
     {
       "video": "video/vincenco/그 다시 붙일 수 있다.webm",
       "videoMp4": "video/vincenco/mp4/그 다시 붙일 수 있다.mp4",
       "korean": "그 다시 붙일 수 있다?",
       "russian": "Их обратно приделать можно?",
-      "new": true
+      "new": true,
+      "english": "Can we put that back on?"
     },
     {
       "video": "video/vincenco/5년 전에 왔을 때는.webm",
       "videoMp4": "video/vincenco/mp4/5년 전에 왔을 때는.mp4",
       "korean": "5년 전에 왔을 때는",
       "russian": "Когда он приезжал 5 лет назад",
-      "new": true
+      "new": true,
+      "english": "When he came 5 years ago."
     },
     {
       "video": "video/vincenco/변호사 신분이었습니다.webm",
       "videoMp4": "video/vincenco/mp4/변호사 신분이었습니다.mp4",
       "korean": "변호사 신분이었습니다",
       "russian": "Был адвокатом",
-      "new": true
+      "new": true,
+      "english": "I was a lawyer."
     },
     {
       "video": "video/vincenco/그런데 이젠.webm",
       "videoMp4": "video/vincenco/mp4/그런데 이젠.mp4",
       "korean": "그런데 이젠",
       "russian": "Но сейчас",
-      "new": true
+      "new": true,
+      "english": "But now,"
     }
   ],
   "b2": [
@@ -270,231 +312,264 @@
       "videoMp4": "video/vincenco/mp4/잔잔바리가 아닌 마피야 핵심.mp4",
       "korean": "잔잔바리가 아닌 마피야 핵심",
       "russian": "Не мелкая сошка, а ключевая фигура мафии",
-      "new": true
+      "new": true,
+      "english": "I'm not a small fry anymore, I'm a key player in the mafia."
     },
     {
       "video": "video/vincenco/콘실리에리가 되어 한국에 온 겁니다.webm",
       "videoMp4": "video/vincenco/mp4/콘실리에리가 되어 한국에 온 겁니다.mp4",
       "korean": "콘실리에리가 되어 한국에 온 겁니다",
       "russian": "Стал консильере и приехал в Корею",
-      "new": true
+      "new": true,
+      "english": "I became a consigliere and came to Korea."
     },
     {
       "video": "video/vincenco/우리 이제 글로벌 타겟입니다.webm",
       "videoMp4": "video/vincenco/mp4/우리 이제 글로벌 타겟입니다.mp4",
       "korean": "우리 이제 글로벌 타겟입니다",
       "russian": "У нас сейчас цель глобального уровня",
-      "new": true
+      "new": true,
+      "english": "We're now a global target."
     },
     {
       "video": "video/vincenco/걔네들이 뭐를 먹을 게 있다고.webm",
       "videoMp4": "video/vincenco/mp4/걔네들이 뭐를 먹을 게 있다고.mp4",
       "korean": "걔네들이 뭐를 먹을 게 있다고?",
       "russian": "И чем они, по-твоему, тут живиться будут?",
-      "new": true
+      "new": true,
+      "english": "What do you think they have to eat?"
     },
     {
       "video": "video/vincenco/대한민국에 먹을 거 많습니다.webm",
       "videoMp4": "video/vincenco/mp4/대한민국에 먹을 거 많습니다.mp4",
       "korean": "대한민국에 먹을 거 많습니다",
       "russian": "В Корее много чем есть поживиться",
-      "new": true
+      "new": true,
+      "english": "There's plenty to eat in Korea."
     },
     {
       "video": "video/vincenco/뭘 먹으러 왔나 보지.webm",
       "videoMp4": "video/vincenco/mp4/뭘 먹으러 왔나 보지.mp4",
       "korean": "뭘 먹으러 왔나 보지?",
       "russian": "Так и чем же они приехали живиться?",
-      "new": true
+      "new": true,
+      "english": "So what did they come here to eat?"
     },
     {
       "video": "video/vincenco/어서 와요 한국.webm",
       "videoMp4": "video/vincenco/mp4/어서 와요 한국.mp4",
       "korean": "어서 와요 한국",
       "russian": "Добро пожаловать в Корею",
-      "new": true
+      "new": true,
+      "english": "Welcome to Korea!"
     },
     {
       "video": "video/vincenco/쓸데없이 작전 같은 거 들어가기만 해봐.webm",
       "videoMp4": "video/vincenco/mp4/쓸데없이 작전 같은 거 들어가기만 해봐.mp4",
       "korean": "쓸데없이 작전 같은 거 들어가기만 해봐",
       "russian": "Только попробуй влезть в какую-нибудь бесполезную операцию",
-      "new": true
+      "new": true,
+      "english": "Just try to get involved in some useless operation."
     },
     {
       "video": "video/vincenco/나는 너무 멋있어.webm",
       "videoMp4": "video/vincenco/mp4/나는 너무 멋있어.mp4",
       "korean": "나는 너무 멋있어",
       "russian": "Я очень крутая",
-      "new": true
+      "new": true,
+      "english": "I'm so cool."
     },
     {
       "video": "video/vincenco/여기 블라인드를 하나 해야겠어.webm",
       "videoMp4": "video/vincenco/mp4/여기 블라인드를 하나 해야겠어.mp4",
       "korean": "여기 블라인드를 하나 해야겠어",
       "russian": "Надо сюда жалюзи повесить",
-      "new": true
+      "new": true,
+      "english": "I need to put up a blind here."
     },
     {
       "video": "video/vincenco/아버지가 아니라 고소인 측 변호인입니다.webm",
       "videoMp4": "video/vincenco/mp4/아버지가 아니라 고소인 측 변호인입니다.mp4",
       "korean": "아버지가 아니라 고소인 측 변호인입니다",
       "russian": "Не отец, а адвокат со стороны истца",
-      "new": true
+      "new": true,
+      "english": "I'm not the father, I'm the plaintiff's lawyer."
     },
     {
       "video": "video/vincenco/다음 재판 전에 완전히 끝내겠습니다.webm",
       "videoMp4": "video/vincenco/mp4/다음 재판 전에 완전히 끝내겠습니다.mp4",
       "korean": "다음 재판 전에 완전히 끝내겠습니다",
       "russian": "До следующего заседания все завершим",
-      "new": true
+      "new": true,
+      "english": "I'll wrap it up before the next trial."
     },
     {
       "video": "video/vincenco/그렇지.webm",
       "videoMp4": "video/vincenco/mp4/그렇지.mp4",
       "korean": "그렇지",
       "russian": "Вот так",
-      "new": true
+      "new": true,
+      "english": "That's right."
     },
     {
       "video": "video/vincenco/끝까지 가기 전에 딱 끝내는 거야.webm",
       "videoMp4": "video/vincenco/mp4/끝까지 가기 전에 딱 끝내는 거야.mp4",
       "korean": "끝까지 가기 전에 딱 끝내는 거야",
       "russian": "Завершим все еще до того, как наступит конец",
-      "new": true
+      "new": true,
+      "english": "We need to finish it before we get to the end."
     },
     {
       "video": "video/vincenco/괜찮습니다.webm",
       "videoMp4": "video/vincenco/mp4/괜찮습니다.mp4",
       "korean": "괜찮습니다",
       "russian": "Все нормально",
-      "new": true
+      "new": true,
+      "english": "It's okay."
     },
     {
       "video": "video/vincenco/통장 확인해 봐.webm",
       "videoMp4": "video/vincenco/mp4/통장 확인해 봐.mp4",
       "korean": "통장 확인해 봐",
       "russian": "Проверь банковский счет",
-      "new": true
+      "new": true,
+      "english": "Check your bank account."
     },
     {
       "video": "video/vincenco/통장 확인해 봐.webm",
       "videoMp4": "video/vincenco/mp4/통장 확인해 봐.mp4",
       "korean": "통장 확인해 봐",
       "russian": "Проверь банковский счет",
-      "new": true
+      "new": true,
+      "english": "Check your bank account."
     },
     {
       "video": "video/vincenco/성과급 안 주셔도 됩니다.webm",
       "videoMp4": "video/vincenco/mp4/성과급 안 주셔도 됩니다.mp4",
       "korean": "성과급 안 주셔도 됩니다",
       "russian": "Можете не давать мне премию",
-      "new": true
+      "new": true,
+      "english": "You don't have to give me a bonus."
     },
     {
       "video": "video/vincenco/성과급.webm",
       "videoMp4": "video/vincenco/mp4/성과급.mp4",
       "korean": "성과급",
       "russian": "Премия",
-      "new": true
+      "new": true,
+      "english": "Performance bonus"
     },
     {
       "video": "video/vincenco/저 대표님께 충분히 대우 받고 있습니다.webm",
       "videoMp4": "video/vincenco/mp4/저 대표님께 충분히 대우 받고 있습니다.mp4",
       "korean": "저 대표님께 충분히 대우 받고 있습니다",
       "russian": "Мне достаточно вашего хорошего отношения ко мне",
-      "new": true
+      "new": true,
+      "english": "I'm being treated well by the CEO."
     },
     {
       "video": "video/vincenco/괜찮아 괜찮으니까.webm",
       "videoMp4": "video/vincenco/mp4/괜찮아 괜찮으니까.mp4",
       "korean": "괜찮아 괜찮으니까",
       "russian": "Все в порядке",
-      "new": true
+      "new": true,
+      "english": "It's okay, really."
     },
     {
       "video": "video/vincenco/그거 오늘 그냥 갖고 다 써버려.webm",
       "videoMp4": "video/vincenco/mp4/그거 오늘 그냥 갖고 다 써버려.mp4",
       "korean": "그거 오늘 그냥 갖고 다 써버려",
       "russian": "Просто возьми их сегодня и все потрять",
-      "new": true
+      "new": true,
+      "english": "Just take it and use it all today."
     },
     {
       "video": "video/vincenco/알았지.webm",
       "videoMp4": "video/vincenco/mp4/알았지.mp4",
       "korean": "알았지?",
       "russian": "Поняла?",
-      "new": true
+      "new": true,
+      "english": "Got it?"
     },
     {
       "video": "video/vincenco/알았지.webm",
       "videoMp4": "video/vincenco/mp4/알았지.mp4",
       "korean": "알았지?",
       "russian": "Поняла?",
-      "new": true
+      "new": true,
+      "english": "Got it?"
     },
     {
       "video": "video/vincenco/4000달러 넘겠는데.webm",
       "videoMp4": "video/vincenco/mp4/4000달러 넘겠는데.mp4",
       "korean": "4000달러 넘겠는데",
       "russian": "Да тут больше 4 тыщ $ будет",
-      "new": true
+      "new": true,
+      "english": "It's going to be over $4000."
     },
     {
       "video": "video/vincenco/이거 짭 아니겠지.webm",
       "videoMp4": "video/vincenco/mp4/이거 짭 아니겠지.mp4",
       "korean": "이거 짭 아니겠지?",
       "russian": "Это же не подделка?",
-      "new": true
+      "new": true,
+      "english": "This isn't a fake, right?"
     },
     {
       "video": "video/vincenco/지금 냄새도 좋아.webm",
       "videoMp4": "video/vincenco/mp4/지금 냄새도 좋아.mp4",
       "korean": "지금 냄새도 좋아",
       "russian": "Он и пахнет приятно",
-      "new": true
+      "new": true,
+      "english": "It smells nice right now."
     },
     {
       "video": "video/vincenco/향수도 찾아봐.webm",
       "videoMp4": "video/vincenco/mp4/향수도 찾아봐.mp4",
       "korean": "향수도 찾아봐",
       "russian": "Духи тоже поищу",
-      "new": true
+      "new": true,
+      "english": "I'll look for some perfume too."
     },
     {
       "video": "video/vincenco/깼네.webm",
       "videoMp4": "video/vincenco/mp4/깼네.mp4",
       "korean": "깼네",
       "russian": "Очнулся",
-      "new": true
+      "new": true,
+      "english": "I woke up."
     },
     {
       "video": "video/vincenco/니들 뭐야.webm",
       "videoMp4": "video/vincenco/mp4/니들 뭐야.mp4",
       "korean": "니들 뭐야?",
       "russian": "Вы кто такие?",
-      "new": true
+      "new": true,
+      "english": "Who are you guys?"
     },
     {
       "video": "video/vincenco/우리들.webm",
       "videoMp4": "video/vincenco/mp4/우리들.mp4",
       "korean": "우리들",
       "russian": "Мы",
-      "new": true
+      "new": true,
+      "english": "Us."
     },
     {
       "video": "video/vincenco/네가 예상하는 그들.webm",
       "videoMp4": "video/vincenco/mp4/네가 예상하는 그들.mp4",
       "korean": "네가 예상하는 그들",
       "russian": "Ты знаешь кто мы",
-      "new": true
+      "new": true,
+      "english": "The ones you think."
     },
     {
       "video": "video/vincenco/나의 목표는 이 건물을 무너뜨리는 것이다.webm",
       "videoMp4": "video/vincenco/mp4/나의 목표는 이 건물을 무너뜨리는 것이다.mp4",
       "korean": "나의 목표는 이 건물을 무너뜨리는 것이다",
       "russian": "Моя цель - снести это здание",
-      "new": true
+      "new": true,
+      "english": "My goal is to bring this building down."
     }
   ],
   "b3": [],

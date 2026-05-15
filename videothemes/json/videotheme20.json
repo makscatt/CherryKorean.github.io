@@ -4,31 +4,36 @@
       "video": "video/evilflower/솔직해 볼래.webm",
       "videoMp4": "video/evilflower/mp4/솔직해 볼래.mp4",
       "korean": "솔직해 볼래?",
-      "russian": "Хочешь быть честным?"
+      "russian": "Хочешь быть честным?",
+      "english": "Do you want to be honest?"
     },
     {
       "video": "video/evilflower/친구 놈이랑.webm",
       "videoMp4": "video/evilflower/mp4/친구 놈이랑.mp4",
       "korean": "친구 놈이랑",
-      "russian": "С этим дружком"
+      "russian": "С этим дружком",
+      "english": "With that friend of yours."
     },
     {
       "video": "video/evilflower/마음에 들어 고마워.webm",
       "videoMp4": "video/evilflower/mp4/마음에 들어 고마워.mp4",
       "korean": "마음에 들어 고마워",
-      "russian": "Мне нравится, спасибо"
+      "russian": "Мне нравится, спасибо",
+      "english": "I like it, thanks."
     },
     {
       "video": "video/evilflower/내려 봐.webm",
       "videoMp4": "video/evilflower/mp4/내려 봐.mp4",
       "korean": "내려 봐",
-      "russian": "Посмотри вниз"
+      "russian": "Посмотри вниз",
+      "english": "Look down."
     },
     {
       "video": "video/evilflower/비만 아이 싫다.webm",
       "videoMp4": "video/evilflower/mp4/비만 아이 싫다.mp4",
       "korean": "비만 아이 싫다",
-      "russian": "Не люблю полных детей"
+      "russian": "Не люблю полных детей",
+      "english": "I don't like chubby kids."
     }
   ],
   "b1": [
@@ -37,252 +42,288 @@
       "videoMp4": "video/evilflower/mp4/알려 줄까.mp4",
       "korean": "알려 줄까?",
       "russian": "Рассказать?",
-      "new": true
+      "new": true,
+      "english": "Want me to tell you?"
     },
     {
       "video": "video/evilflower/내가 어떤 사람인지.webm",
       "videoMp4": "video/evilflower/mp4/내가 어떤 사람인지.mp4",
       "korean": "내가 어떤 사람인지?",
       "russian": "Какой я человек?",
-      "new": true
+      "new": true,
+      "english": "What kind of person am I?"
     },
     {
       "video": "video/evilflower/내가 앞으로 많이 좋아해 줄게.webm",
       "videoMp4": "video/evilflower/mp4/내가 앞으로 많이 좋아해 줄게.mp4",
       "korean": "내가 앞으로 많이 좋아해 줄게",
       "russian": "Впредь, я буду сильно любить тебя",
-      "new": true
+      "new": true,
+      "english": "I'll really like you from now on."
     },
     {
       "video": "video/evilflower/진짜 잘해 줄게.webm",
       "videoMp4": "video/evilflower/mp4/진짜 잘해 줄게.mp4",
       "korean": "진짜 잘해 줄게",
       "russian": "Я правда буду стараться",
-      "new": true
+      "new": true,
+      "english": "I'll really take good care of you."
     },
     {
       "video": "video/evilflower/자기가 불편할까 봐 걱정이지.webm",
       "videoMp4": "video/evilflower/mp4/자기가 불편할까 봐 걱정이지.mp4",
       "korean": "자기가 불편할까 봐 걱정이지",
       "russian": "Я волнуюсь, вдруг тебе будет неудобно",
-      "new": true
+      "new": true,
+      "english": "I'm worried you might feel uncomfortable."
     },
     {
       "video": "video/evilflower/나 할머니 무서워.webm",
       "videoMp4": "video/evilflower/mp4/나 할머니 무서워.mp4",
       "korean": "나 할머니 무서워",
       "russian": "Мне страшно из-за бабушки",
-      "new": true
+      "new": true,
+      "english": "I'm scared of grandma."
     },
     {
       "video": "video/evilflower/할머니가 왜 무서워.webm",
       "videoMp4": "video/evilflower/mp4/할머니가 왜 무서워.mp4",
       "korean": "할머니가 왜 무서워?",
       "russian": "Почему ты боишься бабушку?",
-      "new": true
+      "new": true,
+      "english": "Why are you scared of grandma?"
     },
     {
       "video": "video/evilflower/엄마도 무서워하잖아.webm",
       "videoMp4": "video/evilflower/mp4/엄마도 무서워하잖아.mp4",
       "korean": "엄마도 무서워하잖아",
       "russian": "Мама тоже ведь боится",
-      "new": true
+      "new": true,
+      "english": "Mom is scared too."
     },
     {
       "video": "video/evilflower/너네 애한테 인사도 안 가르치니.webm",
       "videoMp4": "video/evilflower/mp4/너네 애한테 인사도 안 가르치니.mp4",
       "korean": "너네 애한테 인사도 안 가르치니",
       "russian": "Вы что, даже здороваться ребёнка не учите?",
-      "new": true
+      "new": true,
+      "english": "Aren't you teaching your kid to say hello?"
     },
     {
       "video": "video/evilflower/편히 오셨어요.webm",
       "videoMp4": "video/evilflower/mp4/편히 오셨어요.mp4",
       "korean": "편히 오셨어요?",
       "russian": "Хорошо добрались?",
-      "new": true
+      "new": true,
+      "english": "Did you arrive safely?"
     },
     {
       "video": "video/evilflower/우리 아까 연습한 거 그거 해 볼까.webm",
       "videoMp4": "video/evilflower/mp4/우리 아까 연습한 거 그거 해 볼까.mp4",
       "korean": "우리 아까 연습한 거 그거 해 볼까?",
       "russian": "Покажем, как мы с тобой репетировали?",
-      "new": true
+      "new": true,
+      "english": "Shall we try what we practiced earlier?"
     },
     {
       "video": "video/evilflower/할머니 할아버지 사랑해요.webm",
       "videoMp4": "video/evilflower/mp4/할머니 할아버지 사랑해요.mp4",
       "korean": "할머니 할아버지 사랑해요",
       "russian": "Бабушка, дедушка, я вас люблю",
-      "new": true
+      "new": true,
+      "english": "I love you, grandma and grandpa."
     },
     {
       "video": "video/evilflower/들어가자 다리 아프다.webm",
       "videoMp4": "video/evilflower/mp4/들어가자 다리 아프다.mp4",
       "korean": "들어가자 다리 아프다",
       "russian": "Пойдём внутрь, ноги болят",
-      "new": true
+      "new": true,
+      "english": "Let's go inside, my legs hurt."
     },
     {
       "video": "video/evilflower/생일 축하합니다.webm",
       "videoMp4": "video/evilflower/mp4/생일 축하합니다.mp4",
       "korean": "생일 축하합니다",
       "russian": "С днём рождения!",
-      "new": true
+      "new": true,
+      "english": "Happy birthday!"
     },
     {
       "video": "video/evilflower/선물은 나야 배근아.webm",
       "videoMp4": "video/evilflower/mp4/선물은 나야 배근아.mp4",
       "korean": "선물은 나야 백은하",
       "russian": "Подарок — это я ПэГынХа",
-      "new": true
+      "new": true,
+      "english": "The gift is me, Baek Eun-ha."
     },
     {
       "video": "video/evilflower/정말 너무 예쁜 선물이네.webm",
       "videoMp4": "video/evilflower/mp4/정말 너무 예쁜 선물이네.mp4",
       "korean": "정말 너무 예쁜 선물이네",
       "russian": "Правда, очень красивый подарок",
-      "new": true
+      "new": true,
+      "english": "This is such a beautiful gift!"
     },
     {
       "video": "video/evilflower/뭐 이런 걸 준비했어.webm",
       "videoMp4": "video/evilflower/mp4/뭐 이런 걸 준비했어.mp4",
       "korean": "뭐 이런 걸 준비했어?",
       "russian": "Зачем ты такое приготовила?(не стоило)",
-      "new": true
+      "new": true,
+      "english": "What did you prepare this for?"
     },
     {
       "video": "video/evilflower/마음에 들어 고마워.webm",
       "videoMp4": "video/evilflower/mp4/마음에 들어 고마워.mp4",
       "korean": "마음에 들어 고마워",
       "russian": "Мне нравится, спасибо",
-      "new": true
+      "new": true,
+      "english": "I love it, thank you!"
     },
     {
       "video": "video/evilflower/이니셜로 가긴 됐어.webm",
       "videoMp4": "video/evilflower/mp4/이니셜로 가긴 됐어.mp4",
       "korean": "이니셜로 가긴 됐어",
       "russian": "Там и инициалы есть",
-      "new": true
+      "new": true,
+      "english": "It even has initials on it."
     },
     {
       "video": "video/evilflower/우리 염장 지르려고 불렀니.webm",
       "videoMp4": "video/evilflower/mp4/우리 염장 지르려고 불렀니.mp4",
       "korean": "우리 염장 지르려고 불렀니?",
       "russian": "Ты нас позвал, чтобы позлить?",
-      "new": true
+      "new": true,
+      "english": "Did you call us to show off?"
     },
     {
       "video": "video/evilflower/핑계야 만들면 되는 건데.webm",
       "videoMp4": "video/evilflower/mp4/핑계야 만들면 되는 건데.mp4",
       "korean": "핑계야 만들면 되는 건데",
       "russian": "Можно ведь просто придумать оправдание",
-      "new": true
+      "new": true,
+      "english": "You could just make up an excuse."
     },
     {
       "video": "video/evilflower/내가 내 아들의 생일 축하도 못 하니.webm",
       "videoMp4": "video/evilflower/mp4/내가 내 아들의 생일 축하도 못 하니.mp4",
       "korean": "내가 내 아들의 생일 축하도 못 하니?",
       "russian": "Разве я даже не могу поздравить сына с днём рождения?",
-      "new": true
+      "new": true,
+      "english": "Can't I even celebrate my son's birthday?"
     },
     {
       "video": "video/evilflower/너 지금 나 비꼬니.webm",
       "videoMp4": "video/evilflower/mp4/너 지금 나 비꼬니.mp4",
       "korean": "너 지금 나 비꼬니?",
       "russian": "Ты сейчас издеваешься надо мной?",
-      "new": true
+      "new": true,
+      "english": "Are you mocking me right now?"
     },
     {
       "video": "video/evilflower/너 작년에 내가 문전박대했다고.webm",
       "videoMp4": "video/evilflower/mp4/너 작년에 내가 문전박대했다고.mp4",
       "korean": "너 작년에 내가 문전박대했다고?",
       "russian": "Говоришь, я прогнала тебя в прошлом году?",
-      "new": true
+      "new": true,
+      "english": "Are you saying I shut you out last year?"
     },
     {
       "video": "video/evilflower/복수하는 거지.webm",
       "videoMp4": "video/evilflower/mp4/복수하는 거지.mp4",
       "korean": "복수하는 거지?",
       "russian": "Ты мстишь, да?",
-      "new": true
+      "new": true,
+      "english": "You're getting revenge, right?"
     },
     {
       "video": "video/evilflower/생각보다 멍청한가 봐.webm",
       "videoMp4": "video/evilflower/mp4/생각보다 멍청한가 봐.mp4",
       "korean": "생각보다 멍청한가 봐",
       "russian": "Похоже, ты глупее, чем я думала",
-      "new": true
+      "new": true,
+      "english": "I guess you're dumber than I thought."
     },
     {
       "video": "video/evilflower/네 처 말이야.webm",
       "videoMp4": "video/evilflower/mp4/네 처 말이야.mp4",
       "korean": "네 처 말이야",
       "russian": "Я про твою жену",
-      "new": true
+      "new": true,
+      "english": "I'm talking about your wife."
     },
     {
       "video": "video/evilflower/너 같이 과거가 구린 애가.webm",
       "videoMp4": "video/evilflower/mp4/너 같이 과거가 구린 애가.mp4",
       "korean": "너 같이 과거가 구린 애가",
       "russian": "Ты, человек с таким грязным прошлым…",
-      "new": true
+      "new": true,
+      "english": "You, with a past like that..."
     },
     {
       "video": "video/evilflower/솔직해 볼래.webm",
       "videoMp4": "video/evilflower/mp4/솔직해 볼래.mp4",
       "korean": "솔직해 볼래?",
       "russian": "Хочешь быть честным?",
-      "new": true
+      "new": true,
+      "english": "Do you want to be honest?"
     },
     {
       "video": "video/evilflower/우리한텐 아주 중요한 문제야.webm",
       "videoMp4": "video/evilflower/mp4/우리한텐 아주 중요한 문제야.mp4",
       "korean": "우리한텐 아주 중요한 문제야",
       "russian": "Для нас это очень важный вопрос",
-      "new": true
+      "new": true,
+      "english": "This is a really important issue for us."
     },
     {
       "video": "video/evilflower/나 죽이려고 했어.webm",
       "videoMp4": "video/evilflower/mp4/나 죽이려고 했어.mp4",
       "korean": "나 죽이려고 했어",
       "russian": "Пытался меня убить",
-      "new": true
+      "new": true,
+      "english": "You tried to kill me."
     },
     {
       "video": "video/evilflower/내려 봐.webm",
       "videoMp4": "video/evilflower/mp4/내려 봐.mp4",
       "korean": "내려 봐",
       "russian": "Спускайся",
-      "new": true
+      "new": true,
+      "english": "Come down."
     },
     {
       "video": "video/evilflower/너무 힘들어요.webm",
       "videoMp4": "video/evilflower/mp4/너무 힘들어요.mp4",
       "korean": "너무 힘들어요",
       "russian": "Мне очень тяжело",
-      "new": true
+      "new": true,
+      "english": "It's really hard for me."
     },
     {
       "video": "video/evilflower/뭐 하시는 겁니까.webm",
       "videoMp4": "video/evilflower/mp4/뭐 하시는 겁니까.mp4",
       "korean": "뭐 하시는 겁니까?",
       "russian": "Что вы делаете?",
-      "new": true
+      "new": true,
+      "english": "What are you doing?"
     },
     {
       "video": "video/evilflower/친구 놈이랑.webm",
       "videoMp4": "video/evilflower/mp4/친구 놈이랑.mp4",
       "korean": "친구 놈이랑",
       "russian": "С этим дружком",
-      "new": true
+      "new": true,
+      "english": "With that friend of mine."
     },
     {
       "video": "video/evilflower/이 사건 어떻게 보여.webm",
       "videoMp4": "video/evilflower/mp4/이 사건 어떻게 보여.mp4",
       "korean": "이 사건 어떻게 보여?",
       "russian": "Как ты видишь это дело?",
-      "new": true
+      "new": true,
+      "english": "How do you see this case?"
     }
   ],
   "b2": [
@@ -291,252 +332,288 @@
       "videoMp4": "video/evilflower/mp4/신발.mp4",
       "korean": "신발?",
       "russian": "Ботинки?",
-      "new": true
+      "new": true,
+      "english": "Shoes?"
     },
     {
       "video": "video/evilflower/그게 문제야.webm",
       "videoMp4": "video/evilflower/mp4/그게 문제야.mp4",
       "korean": "그게 문제야",
       "russian": "В этом проблема",
-      "new": true
+      "new": true,
+      "english": "That's the problem."
     },
     {
       "video": "video/evilflower/뭐가요.webm",
       "videoMp4": "video/evilflower/mp4/뭐가요.mp4",
       "korean": "뭐가요?",
       "russian": "Что именно?",
-      "new": true
+      "new": true,
+      "english": "What is it?"
     },
     {
       "video": "video/evilflower/들어봐.webm",
       "videoMp4": "video/evilflower/mp4/들어봐.mp4",
       "korean": "들어봐",
       "russian": "Послушай",
-      "new": true
+      "new": true,
+      "english": "Listen up."
     },
     {
       "video": "video/evilflower/촉이 빡 왔어.webm",
       "videoMp4": "video/evilflower/mp4/촉이 빡 왔어.mp4",
       "korean": "촉이 빡 왔어",
       "russian": "Чуйка резко сработала",
-      "new": true
+      "new": true,
+      "english": "I have a bad feeling."
     },
     {
       "video": "video/evilflower/이놈은 나쁜 놈이다.webm",
       "videoMp4": "video/evilflower/mp4/이놈은 나쁜 놈이다.mp4",
       "korean": "이놈은 나쁜 놈이다",
       "russian": "Этот парень — плохой человек",
-      "new": true
+      "new": true,
+      "english": "This guy is bad news."
     },
     {
       "video": "video/evilflower/닭살 봐봐.webm",
       "videoMp4": "video/evilflower/mp4/닭살 봐봐.mp4",
       "korean": "닭살 봐봐",
       "russian": "Смотри, мурашки",
-      "new": true
+      "new": true,
+      "english": "Look, I'm getting goosebumps."
     },
     {
       "video": "video/evilflower/알죠 알죠.webm",
       "videoMp4": "video/evilflower/mp4/알죠 알죠.mp4",
       "korean": "알죠 알죠",
       "russian": "Знаю, знаю",
-      "new": true
+      "new": true,
+      "english": "I know, I know."
     },
     {
       "video": "video/evilflower/생각은 뭐야.webm",
       "videoMp4": "video/evilflower/mp4/생각은 뭐야.mp4",
       "korean": "생각은 뭐야?",
       "russian": "Какие мысли?",
-      "new": true
+      "new": true,
+      "english": "What are your thoughts?"
     },
     {
       "video": "video/evilflower/저요.webm",
       "videoMp4": "video/evilflower/mp4/저요.mp4",
       "korean": "저요?",
       "russian": "Я?",
-      "new": true
+      "new": true,
+      "english": "Me?"
     },
     {
       "video": "video/evilflower/나한텐 내가 롤 모델이라며.webm",
       "videoMp4": "video/evilflower/mp4/나한텐 내가 롤 모델이라며.mp4",
       "korean": "나한텐 내가 롤 모델이라며",
       "russian": "Ты говорил, что я твой кумир",
-      "new": true
+      "new": true,
+      "english": "You said I'm your role model."
     },
     {
       "video": "video/evilflower/2분 다 제 롤 모델이세요.webm",
       "videoMp4": "video/evilflower/mp4/2분 다 제 롤 모델이세요.mp4",
       "korean": "2분 다 제 롤 모델이세요",
       "russian": "Вы оба мои кумиры",
-      "new": true
+      "new": true,
+      "english": "You both are my role models."
     },
     {
       "video": "video/evilflower/혹시 모르실까 봐 그러는데.webm",
       "videoMp4": "video/evilflower/mp4/혹시 모르실까 봐 그러는데.mp4",
       "korean": "혹시 모르실까 봐 그러는데",
       "russian": "Говорю, вдруг вы не знаете",
-      "new": true
+      "new": true,
+      "english": "Just in case you don't know."
     },
     {
       "video": "video/evilflower/네 알겠습니다.webm",
       "videoMp4": "video/evilflower/mp4/네 알겠습니다.mp4",
       "korean": "네 알겠습니다",
       "russian": "Да, поняла",
-      "new": true
+      "new": true,
+      "english": "Okay, got it."
     },
     {
       "video": "video/evilflower/다시 한번 말씀해 주시겠어요.webm",
       "videoMp4": "video/evilflower/mp4/다시 한번 말씀해 주시겠어요.mp4",
       "korean": "다시 한번 말씀해 주시겠어요?",
       "russian": "Не могли бы вы повторить ещё раз?",
-      "new": true
+      "new": true,
+      "english": "Could you say that again?"
     },
     {
       "video": "video/evilflower/계획이 변경되는 걸 싫어하니까.webm",
       "videoMp4": "video/evilflower/mp4/계획이 변경되는 걸 싫어하니까.mp4",
       "korean": "계획이 변경되는 걸 싫어하니까",
       "russian": "Потому что не люблю, когда планы меняются",
-      "new": true
+      "new": true,
+      "english": "Because I don't like when plans change."
     },
     {
       "video": "video/evilflower/공감 능력이 부족하다고 느끼신 적은요.webm",
       "videoMp4": "video/evilflower/mp4/공감 능력이 부족하다고 느끼신 적은요.mp4",
       "korean": "공감 능력이 부족하다고 느끼신 적은요?",
       "russian": "А у вас бывало чувство, что вам не хватает эмпатии?",
-      "new": true
+      "new": true,
+      "english": "Have you ever felt like you lack empathy?"
     },
     {
       "video": "video/evilflower/비만 아이 싫다.webm",
       "videoMp4": "video/evilflower/mp4/비만 아이 싫다.mp4",
       "korean": "비만 아이 싫다",
       "russian": "Не люблю полных детей",
-      "new": true
+      "new": true,
+      "english": "I don't like chubby kids."
     },
     {
       "video": "video/evilflower/너무 신나 보이는 거 알아요.webm",
       "videoMp4": "video/evilflower/mp4/너무 신나 보이는 거 알아요.mp4",
       "korean": "너무 신나 보이는 거 알아요?",
       "russian": "В курсе, вы слишком радстно выглядите",
-      "new": true
+      "new": true,
+      "english": "Do you know you look too excited?"
     },
     {
       "video": "video/evilflower/솔직히.webm",
       "videoMp4": "video/evilflower/mp4/솔직히.mp4",
       "korean": "솔직히",
       "russian": "Честно говоря",
-      "new": true
+      "new": true,
+      "english": "Honestly"
     },
     {
       "video": "video/evilflower/완전 내 취향 저격 사건이잖아.webm",
       "videoMp4": "video/evilflower/mp4/완전 내 취향 저격 사건이잖아.mp4",
       "korean": "완전 내 취향 저격 사건이잖아",
       "russian": "Это дело, прямо, в моём вкусе",
-      "new": true
+      "new": true,
+      "english": "This is totally my style!"
     },
     {
       "video": "video/evilflower/뭐가 제일 재밌었어.webm",
       "videoMp4": "video/evilflower/mp4/뭐가 제일 재밌었어.mp4",
       "korean": "뭐가 제일 재밌었어?",
       "russian": "Что было самым интересным?",
-      "new": true
+      "new": true,
+      "english": "What was the most fun part?"
     },
     {
       "video": "video/evilflower/변호사예요.webm",
       "videoMp4": "video/evilflower/mp4/변호사예요.mp4",
       "korean": "변호사예요",
       "russian": "Я адвокат",
-      "new": true
+      "new": true,
+      "english": "I'm a lawyer."
     },
     {
       "video": "video/evilflower/아주 좋다.webm",
       "videoMp4": "video/evilflower/mp4/아주 좋다.mp4",
       "korean": "아주 좋다",
       "russian": "Очень хорошо",
-      "new": true
+      "new": true,
+      "english": "That's really good."
     },
     {
       "video": "video/evilflower/딱 좋다 딱 좋다.webm",
       "videoMp4": "video/evilflower/mp4/딱 좋다 딱 좋다.mp4",
       "korean": "딱 좋다 딱 좋다",
       "russian": "Прямо идеально",
-      "new": true
+      "new": true,
+      "english": "It's just perfect."
     },
     {
       "video": "video/evilflower/펜 안 나오는 곳 빼고 다 좋다 지금.webm",
       "videoMp4": "video/evilflower/mp4/펜 안 나오는 곳 빼고 다 좋다 지금.mp4",
       "korean": "펜 안 나오는 것 빼고 다 좋다 지금",
       "russian": "Кроме того, что ручка не пишет, всё остальное отлично",
-      "new": true
+      "new": true,
+      "english": "Everything's great except the pen doesn't work."
     },
     {
       "video": "video/evilflower/예쁘다.webm",
       "videoMp4": "video/evilflower/mp4/예쁘다.mp4",
       "korean": "예쁘다",
       "russian": "Красивая",
-      "new": true
+      "new": true,
+      "english": "You're beautiful."
     },
     {
       "video": "video/evilflower/그럼 남편분은요.webm",
       "videoMp4": "video/evilflower/mp4/그럼 남편분은요.mp4",
       "korean": "그럼 남편분은요?",
       "russian": "А как же ваш муж?",
-      "new": true
+      "new": true,
+      "english": "What about your husband?"
     },
     {
       "video": "video/evilflower/우리 가족 아무 문제 없어요.webm",
       "videoMp4": "video/evilflower/mp4/우리 가족 아무 문제 없어요.mp4",
       "korean": "우리 가족 아무 문제 없어요",
       "russian": "У нашей семьи никаких проблем нет",
-      "new": true
+      "new": true,
+      "english": "Our family has no problems."
     },
     {
       "video": "video/evilflower/모르겠어요.webm",
       "videoMp4": "video/evilflower/mp4/모르겠어요.mp4",
       "korean": "모르겠어요",
       "russian": "Не знаю",
-      "new": true
+      "new": true,
+      "english": "I don't know."
     },
     {
       "video": "video/evilflower/잘 부탁드립니다.webm",
       "videoMp4": "video/evilflower/mp4/잘 부탁드립니다.mp4",
       "korean": "잘 부탁드립니다",
       "russian": "Прошу любить и поддерживать",
-      "new": true
+      "new": true,
+      "english": "I look forward to your support."
     },
     {
       "video": "video/evilflower/너무 마음 쓰지 마.webm",
       "videoMp4": "video/evilflower/mp4/너무 마음 쓰지 마.mp4",
       "korean": "너무 마음 쓰지 마",
       "russian": "Не принимай слишком близко к сердцу",
-      "new": true
+      "new": true,
+      "english": "Don't worry too much."
     },
     {
       "video": "video/evilflower/또 또 기승전 자기자랑.webm",
       "videoMp4": "video/evilflower/mp4/또 또 기승전 자기자랑.mp4",
       "korean": "또 또 기승전 자기자랑",
       "russian": "Опять и снова всё свела к самохвальству",
-      "new": true
+      "new": true,
+      "english": "Here we go again, back to bragging."
     },
     {
       "video": "video/evilflower/그런 말이 어딨어.webm",
       "videoMp4": "video/evilflower/mp4/그런 말이 어딨어.mp4",
       "korean": "그런 말이 어딨어",
       "russian": "Разве так говорят?",
-      "new": true
+      "new": true,
+      "english": "Who says that?"
     },
     {
       "video": "video/evilflower/됐어.webm",
       "videoMp4": "video/evilflower/mp4/됐어.mp4",
       "korean": "됐어",
       "russian": "Хватит",
-      "new": true
+      "new": true,
+      "english": "That's enough."
     },
     {
       "video": "video/evilflower/분명 뭔가 있는데.webm",
       "videoMp4": "video/evilflower/mp4/분명 뭔가 있는데.mp4",
       "korean": "분명 뭔가 있는데",
       "russian": "Определённо что-то есть",
-      "new": true
+      "new": true,
+      "english": "There's definitely something."
     }
   ],
   "b3": [
@@ -545,252 +622,288 @@
       "videoMp4": "video/evilflower/mp4/저 빨리 가란 얘기죠.mp4",
       "korean": "저 빨리 가란 얘기죠?",
       "russian": "Вы хотите сказать, чтобы я быстро ушёл?",
-      "new": true
+      "new": true,
+      "english": "Are you saying I should leave quickly?"
     },
     {
       "video": "video/evilflower/그만 가 볼게요.webm",
       "videoMp4": "video/evilflower/mp4/그만 가 볼게요.mp4",
       "korean": "그만 가 볼게요",
       "russian": "Я тогда пойду",
-      "new": true
+      "new": true,
+      "english": "I'll take my leave now."
     },
     {
       "video": "video/evilflower/기자님.webm",
       "videoMp4": "video/evilflower/mp4/기자님.mp4",
       "korean": "기자님",
       "russian": "Журналист",
-      "new": true
+      "new": true,
+      "english": "Reporter."
     },
     {
       "video": "video/evilflower/예 내일 뵙겠습니다.webm",
       "videoMp4": "video/evilflower/mp4/예 내일 뵙겠습니다.mp4",
       "korean": "예 내일 뵙겠습니다",
       "russian": "Да, увидимся завтра",
-      "new": true
+      "new": true,
+      "english": "Yes, I'll see you tomorrow."
     },
     {
       "video": "video/evilflower/전화하세요.webm",
       "videoMp4": "video/evilflower/mp4/전화하세요.mp4",
       "korean": "전화하세요",
       "russian": "Позвоните",
-      "new": true
+      "new": true,
+      "english": "Give me a call."
     },
     {
       "video": "video/evilflower/너 지금 나 가르치니.webm",
       "videoMp4": "video/evilflower/mp4/너 지금 나 가르치니.mp4",
       "korean": "너 지금 나 가르치니?",
       "russian": "Ты сейчас меня поучаешь?",
-      "new": true
+      "new": true,
+      "english": "Are you teaching me right now?"
     },
     {
       "video": "video/evilflower/방향을 제시하는 겁니다.webm",
       "videoMp4": "video/evilflower/mp4/방향을 제시하는 겁니다.mp4",
       "korean": "방향을 제시하는 겁니다",
       "russian": "Я указываю направление",
-      "new": true
+      "new": true,
+      "english": "I'm showing the way."
     },
     {
       "video": "video/evilflower/그 편이 안전합니다.webm",
       "videoMp4": "video/evilflower/mp4/그 편이 안전합니다.mp4",
       "korean": "그 편이 안전합니다",
       "russian": "Так будет безопаснее",
-      "new": true
+      "new": true,
+      "english": "That's the safer option."
     },
     {
       "video": "video/evilflower/나한테도 권리가 있다고.webm",
       "videoMp4": "video/evilflower/mp4/나한테도 권리가 있다고.mp4",
       "korean": "나한테도 권리가 있다고",
       "russian": "У меня тоже есть права",
-      "new": true
+      "new": true,
+      "english": "I have rights too."
     },
     {
       "video": "video/evilflower/전화하실 거죠.webm",
       "videoMp4": "video/evilflower/mp4/전화하실 거죠.mp4",
       "korean": "전화하실 거죠?",
       "russian": "Вы ведь позвоните?",
-      "new": true
+      "new": true,
+      "english": "You'll call, right?"
     },
     {
       "video": "video/evilflower/일어나 일어나 이것 좀 봐 봐요.webm",
       "videoMp4": "video/evilflower/mp4/일어나 일어나 이것 좀 봐 봐요.mp4",
       "korean": "일어나 일어나 이것 좀 봐 봐요",
       "russian": "Вставай, вставай, посмотри на это",
-      "new": true
+      "new": true,
+      "english": "Get up, get up, look at this."
     },
     {
       "video": "video/evilflower/분명 친구놈이라고 했는데.webm",
       "videoMp4": "video/evilflower/mp4/분명 친구놈이라고 했는데.mp4",
       "korean": "분명 친구놈이라고 했는데",
       "russian": "Я же точно сказал, что он друг",
-      "new": true
+      "new": true,
+      "english": "I definitely said he was a friend."
     },
     {
       "video": "video/evilflower/네 뭐 평범했어요.webm",
       "videoMp4": "video/evilflower/mp4/네 뭐 평범했어요.mp4",
       "korean": "네 뭐 평범했어요",
       "russian": "Да, всё было обычно",
-      "new": true
+      "new": true,
+      "english": "Yeah, it was pretty normal."
     },
     {
       "video": "video/evilflower/안 갔다기보다는 못 간 거죠.webm",
       "videoMp4": "video/evilflower/mp4/안 갔다기보다는 못 간 거죠.mp4",
       "korean": "안 갔다기보다는 못 간 거죠",
       "russian": "Не то чтобы не пошёл, просто не смог",
-      "new": true
+      "new": true,
+      "english": "It's not that I didn't go, I just couldn't."
     },
     {
       "video": "video/evilflower/뭐 하시는 거예요.webm",
       "videoMp4": "video/evilflower/mp4/뭐 하시는 거예요.mp4",
       "korean": "뭐 하시는 거예요?",
       "russian": "Что вы делаете?",
-      "new": true
+      "new": true,
+      "english": "What are you doing?"
     },
     {
       "video": "video/evilflower/환자들 기다립니다.webm",
       "videoMp4": "video/evilflower/mp4/환자들 기다립니다.mp4",
       "korean": "환자들 기다립니다",
       "russian": "Ждём пациентов",
-      "new": true
+      "new": true,
+      "english": "We're waiting for patients."
     },
     {
       "video": "video/evilflower/그거 그쪽으로.webm",
       "videoMp4": "video/evilflower/mp4/그거 그쪽으로.mp4",
       "korean": "그거 그쪽으로",
       "russian": "Это — туда",
-      "new": true
+      "new": true,
+      "english": "That goes over there."
     },
     {
       "video": "video/evilflower/내 이럴 줄 알았어.webm",
       "videoMp4": "video/evilflower/mp4/내 이럴 줄 알았어.mp4",
       "korean": "내 이럴 줄 알았어",
       "russian": "Я так и знал",
-      "new": true
+      "new": true,
+      "english": "I knew this would happen."
     },
     {
       "video": "video/evilflower/바퀴벌레요.webm",
       "videoMp4": "video/evilflower/mp4/바퀴벌레요.mp4",
       "korean": "바퀴벌레요?",
       "russian": "Таракан?",
-      "new": true
+      "new": true,
+      "english": "A cockroach?"
     },
     {
       "video": "video/evilflower/이것 좀 봐 주세요.webm",
       "videoMp4": "video/evilflower/mp4/이것 좀 봐 주세요.mp4",
       "korean": "이것 좀 봐 주세요",
       "russian": "Посмотрите на это, пожалуйста",
-      "new": true
+      "new": true,
+      "english": "Please take a look at this."
     },
     {
       "video": "video/evilflower/십이 층 사는 애예요.webm",
       "videoMp4": "video/evilflower/mp4/십이 층 사는 애예요.mp4",
       "korean": "십이 층 사는 애예요",
       "russian": "Парень живущий на 12 этаже",
-      "new": true
+      "new": true,
+      "english": "He's the guy who lives on the 12th floor."
     },
     {
       "video": "video/evilflower/이름이.webm",
       "videoMp4": "video/evilflower/mp4/이름이.mp4",
       "korean": "이름이?",
       "russian": "Имя?",
-      "new": true
+      "new": true,
+      "english": "What's your name?"
     },
     {
       "video": "video/evilflower/뭐였더라.webm",
       "videoMp4": "video/evilflower/mp4/뭐였더라.mp4",
       "korean": "뭐였더라?",
       "russian": "Что же это было?",
-      "new": true
+      "new": true,
+      "english": "What was it again?"
     },
     {
       "video": "video/evilflower/식사는 잘 챙겨 주시는 거죠.webm",
       "videoMp4": "video/evilflower/mp4/식사는 잘 챙겨 주시는 거죠.mp4",
       "korean": "식사는 잘 챙겨 주시는 거죠?",
       "russian": "Вы ведь хорошо кормите его, да?",
-      "new": true
+      "new": true,
+      "english": "You’re making sure he eats well, right?"
     },
     {
       "video": "video/evilflower/식사는 좀 하셨어요.webm",
       "videoMp4": "video/evilflower/mp4/식사는 좀 하셨어요.mp4",
       "korean": "식사는 좀 하셨어요?",
       "russian": "Вы поели?",
-      "new": true
+      "new": true,
+      "english": "Have you eaten something?"
     },
     {
       "video": "video/evilflower/무슨 일 있으세요.webm",
       "videoMp4": "video/evilflower/mp4/무슨 일 있으세요.mp4",
       "korean": "무슨 일 있으세요?",
       "russian": "Что-то случилось?",
-      "new": true
+      "new": true,
+      "english": "Is something wrong?"
     },
     {
       "video": "video/evilflower/아니에요 아무것도.webm",
       "videoMp4": "video/evilflower/mp4/아니에요 아무것도.mp4",
       "korean": "아니에요 아무것도",
       "russian": "Нет, ничего",
-      "new": true
+      "new": true,
+      "english": "No, nothing's wrong."
     },
     {
       "video": "video/evilflower/제발 아무도 안 다치게 해 주세요.webm",
       "videoMp4": "video/evilflower/mp4/제발 아무도 안 다치게 해 주세요.mp4",
       "korean": "제발 아무도 안 다치게 해 주세요",
       "russian": "Пожалуйста, сделайте так, чтобы никто не пострадал",
-      "new": true
+      "new": true,
+      "english": "Please, don’t let anyone get hurt."
     },
     {
       "video": "video/evilflower/부탁드릴게요.webm",
       "videoMp4": "video/evilflower/mp4/부탁드릴게요.mp4",
       "korean": "부탁드릴게요",
       "russian": "Очень вас прошу",
-      "new": true
+      "new": true,
+      "english": "I’m counting on you."
     },
     {
       "video": "video/evilflower/둘이 아는 사이야.webm",
       "videoMp4": "video/evilflower/mp4/둘이 아는 사이야.mp4",
       "korean": "둘이 아는 사이야?",
       "russian": "Мы знакомы?",
-      "new": true
+      "new": true,
+      "english": "Do you two know each other?"
     },
     {
       "video": "video/evilflower/차 한잔 할래.webm",
       "videoMp4": "video/evilflower/mp4/차 한잔 할래.mp4",
       "korean": "차 한잔 할래?",
       "russian": "Хочешь чаю?",
-      "new": true
+      "new": true,
+      "english": "Want to have some tea?"
     },
     {
       "video": "video/evilflower/마침 좋은 차가 있어서.webm",
       "videoMp4": "video/evilflower/mp4/마침 좋은 차가 있어서.mp4",
       "korean": "마침 좋은 차가 있어서",
       "russian": "Как раз есть хороший чай",
-      "new": true
+      "new": true,
+      "english": "I happen to have some good tea."
     },
     {
       "video": "video/evilflower/냉정하게 생각해 봐.webm",
       "videoMp4": "video/evilflower/mp4/냉정하게 생각해 봐.mp4",
       "korean": "냉정하게 생각해 봐",
       "russian": "Подумай трезво",
-      "new": true
+      "new": true,
+      "english": "Think about it calmly."
     },
     {
       "video": "video/evilflower/알아봤잖아.webm",
       "videoMp4": "video/evilflower/mp4/알아봤잖아.mp4",
       "korean": "알아봤잖아",
       "russian": "Я же узнал",
-      "new": true
+      "new": true,
+      "english": "I found out, didn't I?"
     },
     {
       "video": "video/evilflower/난 괜찮은데.webm",
       "videoMp4": "video/evilflower/mp4/난 괜찮은데.mp4",
       "korean": "난 괜찮은데",
       "russian": "Я-то в порядке",
-      "new": true
+      "new": true,
+      "english": "I'm fine, though."
     },
     {
       "video": "video/evilflower/나만 덥나.webm",
       "videoMp4": "video/evilflower/mp4/나만 덥나.mp4",
       "korean": "나만 덥나?",
       "russian": "Это только мне жарко?",
-      "new": true
+      "new": true,
+      "english": "Am I the only one feeling hot?"
     }
   ],
   "b4": [
@@ -799,238 +912,272 @@
       "videoMp4": "video/evilflower/mp4/궁금할 텐데.mp4",
       "korean": "궁금할 텐데",
       "russian": "Тебе, наверное, любопытно",
-      "new": true
+      "new": true,
+      "english": "You must be curious."
     },
     {
       "video": "video/evilflower/너 기자라며.webm",
       "videoMp4": "video/evilflower/mp4/너 기자라며.mp4",
       "korean": "너 기자라며?",
       "russian": "Ты же журналист, да?",
-      "new": true
+      "new": true,
+      "english": "Aren't you a reporter?"
     },
     {
       "video": "video/evilflower/물어봐.webm",
       "videoMp4": "video/evilflower/mp4/물어봐.mp4",
       "korean": "물어봐",
       "russian": "Спроси",
-      "new": true
+      "new": true,
+      "english": "Just ask."
     },
     {
       "video": "video/evilflower/십팔년 전에.webm",
       "videoMp4": "video/evilflower/mp4/십팔년 전에.mp4",
       "korean": "십팔년 전에",
       "russian": "Восемнадцать лет назад",
-      "new": true
+      "new": true,
+      "english": "Eighteen years ago,"
     },
     {
       "video": "video/evilflower/살인 사건이 하나 있었어.webm",
       "videoMp4": "video/evilflower/mp4/살인 사건이 하나 있었어.mp4",
       "korean": "살인 사건이 하나 있었어",
       "russian": "Было одно убийство",
-      "new": true
+      "new": true,
+      "english": "there was a murder case."
     },
     {
       "video": "video/evilflower/그래서.webm",
       "videoMp4": "video/evilflower/mp4/그래서.mp4",
       "korean": "그래서",
       "russian": "Поэтому",
-      "new": true
+      "new": true,
+      "english": "So,"
     },
     {
       "video": "video/evilflower/혹시 관련 있어.webm",
       "videoMp4": "video/evilflower/mp4/혹시 관련 있어.mp4",
       "korean": "혹시 관련 있어?",
       "russian": "Ты случайно не причастен?",
-      "new": true
+      "new": true,
+      "english": "Are you involved in any way?"
     },
     {
       "video": "video/evilflower/어제 제가 똘이를 놓쳤어요.webm",
       "videoMp4": "video/evilflower/mp4/어제 제가 똘이를 놓쳤어요.mp4",
       "korean": "어제 제가 똘이를 놓쳤어요",
       "russian": "Вчера я упустил Ттоли",
-      "new": true
+      "new": true,
+      "english": "I lost Ttoli yesterday."
     },
     {
       "video": "video/evilflower/하지 마라.webm",
       "videoMp4": "video/evilflower/mp4/하지 마라.mp4",
       "korean": "하지 마라",
       "russian": "Не делай этого",
-      "new": true
+      "new": true,
+      "english": "Don't do that."
     },
     {
       "video": "video/evilflower/왜 그래.webm",
       "videoMp4": "video/evilflower/mp4/왜 그래.mp4",
       "korean": "왜 그래?",
       "russian": "Что с тобой?",
-      "new": true
+      "new": true,
+      "english": "What's wrong?"
     },
     {
       "video": "video/evilflower/내가 아직 수배 중인 건 어떻게 한 거야.webm",
       "videoMp4": "video/evilflower/mp4/내가 아직 수배 중인 건 어떻게 한 거야.mp4",
       "korean": "내가 아직 수배 중인 건 어떻게 한 거야?",
       "russian": "Как ты узнал, что я всё ещё в розыске?",
-      "new": true
+      "new": true,
+      "english": "How did you find out I'm still wanted?"
     },
     {
       "video": "video/evilflower/알아본 거야.webm",
       "videoMp4": "video/evilflower/mp4/알아본 거야.mp4",
       "korean": "알아본 거야?",
       "russian": "Ты разузнал?",
-      "new": true
+      "new": true,
+      "english": "Did you find out?"
     },
     {
       "video": "video/evilflower/다음에 또 보자.webm",
       "videoMp4": "video/evilflower/mp4/다음에 또 보자.mp4",
       "korean": "다음에 또 보자",
       "russian": "Увидимся в следующий раз",
-      "new": true
+      "new": true,
+      "english": "Let's meet again next time."
     },
     {
       "video": "video/evilflower/출퇴근은 자유롭겠네.webm",
       "videoMp4": "video/evilflower/mp4/출퇴근은 자유롭겠네.mp4",
       "korean": "출퇴근은 자유롭겠네?",
       "russian": "На работу ходишь свободно, да?",
-      "new": true
+      "new": true,
+      "english": "So you can come and go freely?"
     },
     {
       "video": "video/evilflower/어떤 게 부작용이 없어요.webm",
       "videoMp4": "video/evilflower/mp4/어떤 게 부작용이 없어요.mp4",
       "korean": "어떤 게 부작용이 없어요?",
       "russian": "У какого нет побочных эффектов?",
-      "new": true
+      "new": true,
+      "english": "Which one has no side effects?"
     },
     {
       "video": "video/evilflower/비타민도 부작용이 있는데.webm",
       "videoMp4": "video/evilflower/mp4/비타민도 부작용이 있는데.mp4",
       "korean": "비타민도 부작용이 있는데",
       "russian": "Даже у витаминов есть побочки",
-      "new": true
+      "new": true,
+      "english": "Even vitamins have side effects."
     },
     {
       "video": "video/evilflower/알았어.webm",
       "videoMp4": "video/evilflower/mp4/알았어.mp4",
       "korean": "알았어",
       "russian": "Поняла",
-      "new": true
+      "new": true,
+      "english": "Got it."
     },
     {
       "video": "video/evilflower/좋은 사람이에요.webm",
       "videoMp4": "video/evilflower/mp4/좋은 사람이에요.mp4",
       "korean": "좋은 사람이에요",
       "russian": "Хороший человек",
-      "new": true
+      "new": true,
+      "english": "He's a good person."
     },
     {
       "video": "video/evilflower/이게 뭐야.webm",
       "videoMp4": "video/evilflower/mp4/이게 뭐야.mp4",
       "korean": "이게 뭐야?",
       "russian": "Что это?",
-      "new": true
+      "new": true,
+      "english": "What is this?"
     },
     {
       "video": "video/evilflower/립스틱 자국 같은데.webm",
       "videoMp4": "video/evilflower/mp4/립스틱 자국 같은데.mp4",
       "korean": "립스틱 자국 같은데",
       "russian": "Похоже на след от помады",
-      "new": true
+      "new": true,
+      "english": "Looks like a lipstick mark."
     },
     {
       "video": "video/evilflower/죄송해요.webm",
       "videoMp4": "video/evilflower/mp4/죄송해요.mp4",
       "korean": "죄송해요",
       "russian": "Извините",
-      "new": true
+      "new": true,
+      "english": "I'm sorry."
     },
     {
       "video": "video/evilflower/무슨 선물이야.webm",
       "videoMp4": "video/evilflower/mp4/무슨 선물이야.mp4",
       "korean": "무슨 선물이야?",
       "russian": "Что за подарок?",
-      "new": true
+      "new": true,
+      "english": "What kind of gift is this?"
     },
     {
       "video": "video/evilflower/뭔 소리야.webm",
       "videoMp4": "video/evilflower/mp4/뭔 소리야.mp4",
       "korean": "뭔 소리야?",
       "russian": "Что за бред?",
-      "new": true
+      "new": true,
+      "english": "What are you talking about?"
     },
     {
       "video": "video/evilflower/미쳤나 봐 진짜.webm",
       "videoMp4": "video/evilflower/mp4/미쳤나 봐 진짜.mp4",
       "korean": "미쳤나 봐 진짜",
       "russian": "Похоже, ты и правда сошёл с ума",
-      "new": true
+      "new": true,
+      "english": "You must be crazy."
     },
     {
       "video": "video/evilflower/말해 봐.webm",
       "videoMp4": "video/evilflower/mp4/말해 봐.mp4",
       "korean": "말해 봐",
       "russian": "Говори",
-      "new": true
+      "new": true,
+      "english": "Go ahead, tell me."
     },
     {
       "video": "video/evilflower/나 너 싫다.webm",
       "videoMp4": "video/evilflower/mp4/나 너 싫다.mp4",
       "korean": "나 너 싫다",
       "russian": "Ты мне не нравишься",
-      "new": true
+      "new": true,
+      "english": "I don't like you."
     },
     {
       "video": "video/evilflower/제가 더 잘할게요 어머니.webm",
       "videoMp4": "video/evilflower/mp4/제가 더 잘할게요 어머니.mp4",
       "korean": "제가 더 잘할게요 어머니",
       "russian": "Я буду лучше, мама",
-      "new": true
+      "new": true,
+      "english": "I'll do better, Mom."
     },
     {
       "video": "video/evilflower/잘 들어.webm",
       "videoMp4": "video/evilflower/mp4/잘 들어.mp4",
       "korean": "잘 들어",
       "russian": "Слушай внимательно",
-      "new": true
+      "new": true,
+      "english": "Listen carefully."
     },
     {
       "video": "video/evilflower/속았지.webm",
       "videoMp4": "video/evilflower/mp4/속았지.mp4",
       "korean": "속았지",
       "russian": "Попалась",
-      "new": true
+      "new": true,
+      "english": "You got tricked."
     },
     {
       "video": "video/evilflower/엄마 많이 피곤해.webm",
       "videoMp4": "video/evilflower/mp4/엄마 많이 피곤해.mp4",
       "korean": "엄마 많이 피곤해",
       "russian": "Мама очень устала",
-      "new": true
+      "new": true,
+      "english": "Mom is really tired."
     },
     {
       "video": "video/evilflower/엄마 살려줘.webm",
       "videoMp4": "video/evilflower/mp4/엄마 살려줘.mp4",
       "korean": "엄마 살려줘",
       "russian": "Спаси мамочку",
-      "new": true
+      "new": true,
+      "english": "Help me, Mom!"
     },
     {
       "video": "video/evilflower/천이백일호.webm",
       "videoMp4": "video/evilflower/mp4/천이백일호.mp4",
       "korean": "천이백일 호",
       "russian": "Номер 1201",
-      "new": true
+      "new": true,
+      "english": "Room 1201."
     },
     {
       "video": "video/evilflower/어제 술을 너무 많이 마셔서요.webm",
       "videoMp4": "video/evilflower/mp4/어제 술을 너무 많이 마셔서요.mp4",
       "korean": "어제 술을 너무 많이 마셔서요",
       "russian": "Вчера я слишком много выпила",
-      "new": true
+      "new": true,
+      "english": "I drank too much yesterday."
     },
     {
       "video": "video/evilflower/왜 말 못 했어요.webm",
       "videoMp4": "video/evilflower/mp4/왜 말 못 했어요.mp4",
       "korean": "왜 말 못 했어요?",
       "russian": "Почему вы не сказали?",
-      "new": true
+      "new": true,
+      "english": "Why didn’t you say anything?"
     }
   ],
   "b5": []

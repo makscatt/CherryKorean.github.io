@@ -5,35 +5,40 @@
       "videoMp4": "video/demon/mp4/뭐 하는 게 아프잖아.mp4",
       "korean": "뭐 하는 게 아프잖아?",
       "russian": "Ты что творишь, больно ведь?",
-      "new": true
+      "new": true,
+      "english": "What are you doing? That hurts!"
     },
     {
       "video": "video/demon/숨을 못 쉬겠어.webm",
       "videoMp4": "video/demon/mp4/숨을 못 쉬겠어.mp4",
       "korean": "숨을 못 쉬겠어",
       "russian": "Не могу дышать",
-      "new": true
+      "new": true,
+      "english": "I can't breathe."
     },
     {
       "video": "video/demon/그래서 없던 일로 하자.webm",
       "videoMp4": "video/demon/mp4/그래서 없던 일로 하자.mp4",
       "korean": "그래서 없던 일로 하자?",
       "russian": "В таком случае, сделаем вид, что ничего не было?",
-      "new": true
+      "new": true,
+      "english": "So, shall we just pretend it never happened?"
     },
     {
       "video": "video/demon/글쎄요.webm",
       "videoMp4": "video/demon/mp4/글쎄요.mp4",
       "korean": "글쎄요",
       "russian": "Ну не знаю",
-      "new": true
+      "new": true,
+      "english": "I don't know."
     },
     {
       "video": "video/demon/내 비서 번호예요.webm",
       "videoMp4": "video/demon/mp4/내 비서 번호예요.mp4",
       "korean": "내 비서 번호예요",
       "russian": "Это номер моего помощника",
-      "new": true
+      "new": true,
+      "english": "This is my assistant's number."
     }
   ],
   "b1": [
@@ -42,252 +47,288 @@
       "videoMp4": "video/demon/mp4/배고프지 않는 것인가.mp4",
       "korean": "배고프지 않는 것인가?",
       "russian": "Ты разве не голоден?",
-      "new": true
+      "new": true,
+      "english": "Aren't you hungry?"
     },
     {
       "video": "video/demon/누구신지는 모르겠지만.webm",
       "videoMp4": "video/demon/mp4/누구신지는 모르겠지만.mp4",
       "korean": "누구신지는 모르겠지만",
       "russian": "Но я не знаю, кто вы такой",
-      "new": true
+      "new": true,
+      "english": "I don't know who you are, though."
     },
     {
       "video": "video/demon/자 그럼 바로 계약을 진행할까.webm",
       "videoMp4": "video/demon/mp4/자 그럼 바로 계약을 진행할까.mp4",
       "korean": "자 그럼 바로 계약을 진행할까?",
       "russian": "Ну что ж, тогда сразу заключим контракт?",
-      "new": true
+      "new": true,
+      "english": "So, shall we go ahead and sign the contract?"
     },
     {
       "video": "video/demon/이름 뭐야.webm",
       "videoMp4": "video/demon/mp4/이름 뭐야.mp4",
       "korean": "이름 뭐야?",
       "russian": "Звать как?",
-      "new": true
+      "new": true,
+      "english": "What's your name?"
     },
     {
       "video": "video/demon/역시 무알콜 모잇또가 인기가 많네.webm",
       "videoMp4": "video/demon/mp4/역시 무알콜 모잇또가 인기가 많네.mp4",
       "korean": "역시 무알콜 모잇또가 인기가 많네",
       "russian": "Как и ожидалось, безалкогольный мохито популярен",
-      "new": true
+      "new": true,
+      "english": "As expected, the non-alcoholic mojito is popular."
     },
     {
       "video": "video/demon/알죠 아주 잘 알죠.webm",
       "videoMp4": "video/demon/mp4/알죠 아주 잘 알죠.mp4",
       "korean": "알죠 아주 잘 알죠",
       "russian": "Конечно знаю, очень хорошо знаю",
-      "new": true
+      "new": true,
+      "english": "Of course, I know very well."
     },
     {
       "video": "video/demon/그래서 없던 일로 하자.webm",
       "videoMp4": "video/demon/mp4/그래서 없던 일로 하자.mp4",
       "korean": "그래서 없던 일로 하자?",
       "russian": "В таком случае, сделаем вид, что ничего не было?",
-      "new": true
+      "new": true,
+      "english": "So, should we just pretend it never happened?"
     },
     {
       "video": "video/demon/비싼 밥 먹으면서 소개팅 한 걸 왜 싫어해.webm",
       "videoMp4": "video/demon/mp4/비싼 밥 먹으면서 소개팅 한 걸 왜 싫어해.mp4",
       "korean": "비싼 밥 먹으면서 소개팅 한 걸 왜 싫어해?",
       "russian": "Почему тебе не нравится свидание вслепую с дорогим ужином?",
-      "new": true
+      "new": true,
+      "english": "Why don't you like blind dates with expensive dinners?"
     },
     {
       "video": "video/demon/막혔어.webm",
       "videoMp4": "video/demon/mp4/막혔어.mp4",
       "korean": "막혔어?",
       "russian": "Засорилось?",
-      "new": true
+      "new": true,
+      "english": "Is it clogged?"
     },
     {
       "video": "video/demon/아름답게 가자.webm",
       "videoMp4": "video/demon/mp4/아름답게 가자.mp4",
       "korean": "아름답게 가자",
       "russian": "Давай решим по-хорошему",
-      "new": true
+      "new": true,
+      "english": "Let's part on good terms."
     },
     {
       "video": "video/demon/죄송하지만 오늘은 예약이 꽉 찼습니다.webm",
       "videoMp4": "video/demon/mp4/죄송하지만 오늘은 예약이 꽉 찼습니다.mp4",
       "korean": "죄송하지만 오늘은 예약이 꽉 찼습니다",
       "russian": "Извините, но на сегодня все забронированно",
-      "new": true
+      "new": true,
+      "english": "I'm sorry, but we're fully booked today."
     },
     {
       "video": "video/demon/내가 그 손님의 손님이에요.webm",
       "videoMp4": "video/demon/mp4/내가 그 손님의 손님이에요.mp4",
       "korean": "내가 그 손님의 손님이에요",
       "russian": "Я — гость того самого гостя",
-      "new": true
+      "new": true,
+      "english": "I'm the guest of that guest."
     },
     {
       "video": "video/demon/그럴 리가.webm",
       "videoMp4": "video/demon/mp4/그럴 리가.mp4",
       "korean": "그럴 리가",
       "russian": "Невозможно",
-      "new": true
+      "new": true,
+      "english": "No way."
     },
     {
       "video": "video/demon/도깨비구나.webm",
       "videoMp4": "video/demon/mp4/도깨비구나.mp4",
       "korean": "도깨비구나",
       "russian": "Так ты демон",
-      "new": true
+      "new": true,
+      "english": "So you're a goblin."
     },
     {
       "video": "video/demon/뭐 하는 게 아프잖아.webm",
       "videoMp4": "video/demon/mp4/뭐 하는 게 아프잖아.mp4",
       "korean": "뭐 하는 게 아프잖아?",
       "russian": "Ты что творишь, больно ведь?",
-      "new": true
+      "new": true,
+      "english": "What are you doing? That hurts!"
     },
     {
       "video": "video/demon/부처님 감사합니다.webm",
       "videoMp4": "video/demon/mp4/부처님 감사합니다.mp4",
       "korean": "부처님 감사합니다",
       "russian": "Спасибо, Будда",
-      "new": true
+      "new": true,
+      "english": "Thank you, Buddha."
     },
     {
       "video": "video/demon/내 비서 번호예요.webm",
       "videoMp4": "video/demon/mp4/내 비서 번호예요.mp4",
       "korean": "내 비서 번호예요",
       "russian": "Это номер моего помощника",
-      "new": true
+      "new": true,
+      "english": "This is my assistant's number."
     },
     {
       "video": "video/demon/가고 있지.webm",
       "videoMp4": "video/demon/mp4/가고 있지.mp4",
       "korean": "가고 있지?",
       "russian": "Ты идешь?",
-      "new": true
+      "new": true,
+      "english": "Are you on your way?"
     },
     {
       "video": "video/demon/이해해.webm",
       "videoMp4": "video/demon/mp4/이해해.mp4",
       "korean": "이해해",
       "russian": "Я понимаю",
-      "new": true
+      "new": true,
+      "english": "I get it."
     },
     {
       "video": "video/demon/글쎄요.webm",
       "videoMp4": "video/demon/mp4/글쎄요.mp4",
       "korean": "글쎄요",
       "russian": "Ну не знаю",
-      "new": true
+      "new": true,
+      "english": "Well, I don't know."
     },
     {
       "video": "video/demon/이렇게 손 하나 까딱해서.webm",
       "videoMp4": "video/demon/mp4/이렇게 손 하나 까딱해서.mp4",
       "korean": "이렇게 손 하나 까딱해서",
       "russian": "Вот так, едва шевельнув пальцем",
-      "new": true
+      "new": true,
+      "english": "Just like this, with a little effort."
     },
     {
       "video": "video/demon/숨을 못 쉬겠어.webm",
       "videoMp4": "video/demon/mp4/숨을 못 쉬겠어.mp4",
       "korean": "숨을 못 쉬겠어",
       "russian": "Не могу дышать",
-      "new": true
+      "new": true,
+      "english": "I can't breathe."
     },
     {
       "video": "video/demon/손님 한 분께서 통째로 빌리셔서.webm",
       "videoMp4": "video/demon/mp4/손님 한 분께서 통째로 빌리셔서.mp4",
       "korean": "손님 한 분께서 통째로 빌리셔서",
       "russian": "Один клиент полностью всё арендовал",
-      "new": true
+      "new": true,
+      "english": "One customer rented it all."
     },
     {
       "video": "video/demon/미리 말해두는데.webm",
       "videoMp4": "video/demon/mp4/미리 말해두는데.mp4",
       "korean": "미리 말해두는데",
       "russian": "Предупреждаю заранее",
-      "new": true
+      "new": true,
+      "english": "Just a heads up."
     },
     {
       "video": "video/demon/우리 혹시 초중고 동창.webm",
       "videoMp4": "video/demon/mp4/우리 혹시 초중고 동창.mp4",
       "korean": "우리 혹시 초중고 동창?",
       "russian": "Мы случайно не учились вместе в школе?",
-      "new": true
+      "new": true,
+      "english": "Are we maybe schoolmates?"
     },
     {
       "video": "video/demon/나랑 계약을 하나 해야 돼.webm",
       "videoMp4": "video/demon/mp4/나랑 계약을 하나 해야 돼.mp4",
       "korean": "나랑 계약을 하나 해야 돼",
       "russian": "Ты должен заключить со мной контракт",
-      "new": true
+      "new": true,
+      "english": "We need to make a deal."
     },
     {
       "video": "video/demon/계약은 자신이 필요할 것.webm",
       "videoMp4": "video/demon/mp4/계약은 자신이 필요할 것.mp4",
       "korean": "계약은 자신이 필요할 것",
       "russian": "Контракт требует тебя самого",
-      "new": true
+      "new": true,
+      "english": "The contract requires your own involvement."
     },
     {
       "video": "video/demon/그쪽이 아니라니까 그러네.webm",
       "videoMp4": "video/demon/mp4/그쪽이 아니라니까 그러네.mp4",
       "korean": "그쪽이 아니라니까 그러네",
       "russian": "Я же говорю, это не он",
-      "new": true
+      "new": true,
+      "english": "I told you, it's not that person."
     },
     {
       "video": "video/demon/내가 지금 맞선이나 보고 있을 때예요.webm",
       "videoMp4": "video/demon/mp4/내가 지금 맞선이나 보고 있을 때예요.mp4",
       "korean": "내가 지금 맞선이나 보고 있을 때예요?",
       "russian": "Ты правда думаешь, что я сейчас свидание вслепую ищу?",
-      "new": true
+      "new": true,
+      "english": "Do you really think I'm looking for a blind date right now?"
     },
     {
       "video": "video/demon/내가 오늘 회사에 급한 일이 생겨서.webm",
       "videoMp4": "video/demon/mp4/내가 오늘 회사에 급한 일이 생겨서.mp4",
       "korean": "내가 오늘 회사에 급한 일이 생겨서",
       "russian": "У меня сегодня срочное дело на работе",
-      "new": true
+      "new": true,
+      "english": "I have something urgent at work today."
     },
     {
       "video": "video/demon/나 맞선 좋아해.webm",
       "videoMp4": "video/demon/mp4/나 맞선 좋아해.mp4",
       "korean": "나 맞선 좋아해",
       "russian": "Мне нравятся свидания вслепую",
-      "new": true
+      "new": true,
+      "english": "I like blind dates."
     },
     {
       "video": "video/demon/못 해도 30분은 앉아 있어야 하지 않을까요.webm",
       "videoMp4": "video/demon/mp4/못 해도 30분은 앉아 있어야 하지 않을까요.mp4",
       "korean": "못 해도 30분은 앉아 있어야 하지 않을까요?",
       "russian": "Разве ты не должна хотя бы 30 минут посидеть, даже если не можешь?",
-      "new": true
+      "new": true,
+      "english": "Shouldn't you at least sit for 30 minutes?"
     },
     {
       "video": "video/demon/새로 계약한 거 어때.webm",
       "videoMp4": "video/demon/mp4/새로 계약한 거 어때.mp4",
       "korean": "새로 계약한 거 어때?",
       "russian": "Как тебе новый контракт?",
-      "new": true
+      "new": true,
+      "english": "How's the new contract?"
     },
     {
       "video": "video/demon/지옥은 어떤 곳이야.webm",
       "videoMp4": "video/demon/mp4/지옥은 어떤 곳이야.mp4",
       "korean": "지옥은 어떤 곳이야?",
       "russian": "Что за место такое Ад?",
-      "new": true
+      "new": true,
+      "english": "What’s hell like?"
     },
     {
       "video": "video/demon/지금 남자 손님 한 명 와 있죠.webm",
       "videoMp4": "video/demon/mp4/지금 남자 손님 한 명 와 있죠.mp4",
       "korean": "지금 남자 손님 한 명 와 있죠?",
       "russian": "Сейчас ведь тут один мужчина-клиент, да?",
-      "new": true
+      "new": true,
+      "english": "There's a male guest here right now, right?"
     },
     {
       "video": "video/demon/나는 일이랑 결혼했어요.webm",
       "videoMp4": "video/demon/mp4/나는 일이랑 결혼했어요.mp4",
       "korean": "나는 일이랑 결혼했어요",
       "russian": "Я замужем за работой",
-      "new": true
+      "new": true,
+      "english": "I'm married to my work."
     }
   ],
   "b2": [],

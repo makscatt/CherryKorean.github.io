@@ -4,31 +4,36 @@
       "video": "video/kumiho/경성을 누비고 있나.webm",
       "videoMp4": "video/kumiho/mp4/경성을 누비고 있나.mp4",
       "korean": "경성을 누비고 있나",
-      "russian": "Разгуливает тут по Кёнсону"
+      "russian": "Разгуливает тут по Кёнсону",
+      "english": "Are you wandering around Gyeongseong?"
     },
     {
       "video": "video/kumiho/가만 있어.webm",
       "videoMp4": "video/kumiho/mp4/가만 있어.mp4",
       "korean": "가만 있어",
-      "russian": "Стой смирно"
+      "russian": "Стой смирно",
+      "english": "Just stay still."
     },
     {
       "video": "video/kumiho/자꾸 아까부터 뭐라고 씨부리는 거야.webm",
       "videoMp4": "video/kumiho/mp4/자꾸 아까부터 뭐라고 씨부리는 거야.mp4",
       "korean": "자꾸 아까부터 뭐라고 씨부리는 거야?",
-      "russian": "Что ты там все болтаешь с самого начала?"
+      "russian": "Что ты там все болтаешь с самого начала?",
+      "english": "What are you rambling on about since earlier?"
     },
     {
       "video": "video/kumiho/나는 한 번 죽었었다.webm",
       "videoMp4": "video/kumiho/mp4/나는 한 번 죽었었다.mp4",
       "korean": "나는 한 번 죽었었다",
-      "russian": "Я уже умер однажды"
+      "russian": "Я уже умер однажды",
+      "english": "I've died once."
     },
     {
       "video": "video/kumiho/조선말로 해라.webm",
       "videoMp4": "video/kumiho/mp4/조선말로 해라.mp4",
       "korean": "조선말로 해라",
-      "russian": "По-корейски говори(Речь Чосона)"
+      "russian": "По-корейски говори(Речь Чосона)",
+      "english": "Speak in Korean."
     }
   ],
   "b1": [
@@ -36,181 +41,211 @@
       "video": "video/kumiho/나 가방 끈 짧아서 수능도 안 봤거든.webm",
       "videoMp4": "video/kumiho/mp4/나 가방 끈 짧아서 수능도 안 봤거든.mp4",
       "korean": "나 가방 끈 짧아서 수능도 안 봤거든",
-      "russian": "Я ж необразованный, даже Сунын не сдавал"
+      "russian": "Я ж необразованный, даже Сунын не сдавал",
+      "english": "I didn't even take the college entrance exam because I'm not well-educated."
     },
     {
       "video": "video/kumiho/자꾸 아까부터 뭐라고 씨부리는 거야.webm",
       "videoMp4": "video/kumiho/mp4/자꾸 아까부터 뭐라고 씨부리는 거야.mp4",
       "korean": "자꾸 아까부터 뭐라고 씨부리는 거야?",
-      "russian": "Что ты там все болтаешь с самого начала?"
+      "russian": "Что ты там все болтаешь с самого начала?",
+      "english": "What are you rambling on about since earlier?"
     },
     {
       "video": "video/kumiho/그나저나 니네 내 물건 못 봤냐.webm",
       "videoMp4": "video/kumiho/mp4/그나저나 니네 내 물건 못 봤냐.mp4",
       "korean": "그나저나 니네 내 물건 못 봤냐?",
-      "russian": "Кстати, вы мои вещи не видели?"
+      "russian": "Кстати, вы мои вещи не видели?",
+      "english": "By the way, have you seen my stuff?"
     },
     {
       "video": "video/kumiho/조그만 돌덩이 같은 건데.webm",
       "videoMp4": "video/kumiho/mp4/조그만 돌덩이 같은 건데.mp4",
       "korean": "조그만 돌덩이 같은 건데",
-      "russian": "Это такая маленькая штука, как камешек"
+      "russian": "Это такая маленькая штука, как камешек",
+      "english": "It's a small thing, like a little rock."
     },
     {
       "video": "video/kumiho/나한테 아주 중요한 거거든.webm",
       "videoMp4": "video/kumiho/mp4/나한테 아주 중요한 거거든.mp4",
       "korean": "나한테 아주 중요한 거거든",
-      "russian": "Для меня это очень важно"
+      "russian": "Для меня это очень важно",
+      "english": "It's really important to me."
     },
     {
       "video": "video/kumiho/구멍 났어.webm",
       "videoMp4": "video/kumiho/mp4/구멍 났어.mp4",
       "korean": "구멍 났어",
-      "russian": "Дыра появилась"
+      "russian": "Дыра появилась",
+      "english": "There's a hole."
     },
     {
       "video": "video/kumiho/조선말로 해라.webm",
       "videoMp4": "video/kumiho/mp4/조선말로 해라.mp4",
       "korean": "조선말로 해라",
-      "russian": "По-корейски говори(Речь Чосона)"
+      "russian": "По-корейски говори(Речь Чосона)",
+      "english": "Speak in Korean."
     },
     {
       "video": "video/kumiho/나 줘 보라고.webm",
       "videoMp4": "video/kumiho/mp4/나 줘 보라고.mp4",
       "korean": "나 줘 보라고",
-      "russian": "Дай сюда, говорю"
+      "russian": "Дай сюда, говорю",
+      "english": "Give it to me."
     },
     {
       "video": "video/kumiho/숨도 쉬지 마.webm",
       "videoMp4": "video/kumiho/mp4/숨도 쉬지 마.mp4",
       "korean": "숨도 쉬지 마",
-      "russian": "Даже не дыши"
+      "russian": "Даже не дыши",
+      "english": "Don't even breathe."
     },
     {
       "video": "video/kumiho/가만 있어.webm",
       "videoMp4": "video/kumiho/mp4/가만 있어.mp4",
       "korean": "가만 있어",
-      "russian": "Стой смирно"
+      "russian": "Стой смирно",
+      "english": "Stay still."
     },
     {
       "video": "video/kumiho/담배 끊어 이 어린 놈의 새끼야.webm",
       "videoMp4": "video/kumiho/mp4/담배 끊어 이 어린 놈의 새끼야.mp4",
       "korean": "담배 끊어 이 어린 놈의 새끼야",
-      "russian": "Брось курить, сопляк чертов"
+      "russian": "Брось курить, сопляк чертов",
+      "english": "Quit smoking, you little brat."
     },
     {
       "video": "video/kumiho/담배 보면 안 좋잖아.webm",
       "videoMp4": "video/kumiho/mp4/담배 보면 안 좋잖아.mp4",
       "korean": "담배 보면 안 좋잖아",
-      "russian": "Не круто ведь, когда курят"
+      "russian": "Не круто ведь, когда курят",
+      "english": "It's not good to smoke."
     },
     {
       "video": "video/kumiho/맞지.webm",
       "videoMp4": "video/kumiho/mp4/맞지.mp4",
       "korean": "맞지?",
-      "russian": "Правда ведь?"
+      "russian": "Правда ведь?",
+      "english": "Right?"
     },
     {
       "video": "video/kumiho/네가 신고했냐.webm",
       "videoMp4": "video/kumiho/mp4/네가 신고했냐.mp4",
       "korean": "네가 신고했냐?",
-      "russian": "Это ты настучал?"
+      "russian": "Это ты настучал?",
+      "english": "Did you report it?"
     },
     {
       "video": "video/kumiho/지금 내 심정이 딱 그 심정이니까.webm",
       "videoMp4": "video/kumiho/mp4/지금 내 심정이 딱 그 심정이니까.mp4",
       "korean": "지금 내 심정이 딱 그 심정이니까",
-      "russian": "Потому что мои чувства сейчас — это точно такие же чувства"
+      "russian": "Потому что мои чувства сейчас — это точно такие же чувства",
+      "english": "That's exactly how I feel right now."
     },
     {
       "video": "video/kumiho/당황스럽다고 이해한다.webm",
       "videoMp4": "video/kumiho/mp4/당황스럽다고 이해한다.mp4",
       "korean": "당황스럽다고 이해한다",
-      "russian": "Понимаю, что ты в замешательстве"
+      "russian": "Понимаю, что ты в замешательстве",
+      "english": "I understand that you're confused."
     },
     {
       "video": "video/kumiho/내가 왜 일제 강점기 조선에서.webm",
       "videoMp4": "video/kumiho/mp4/내가 왜 일제 강점기 조선에서.mp4",
       "korean": "내가 왜 일제 강점기 조선에서",
-      "russian": "Почему я оказался в Чосоне времён японской оккупации"
+      "russian": "Почему я оказался в Чосоне времён японской оккупации",
+      "english": "Why am I in Korea during the Japanese occupation?"
     },
     {
       "video": "video/kumiho/게다가 죽은 내 동생은.webm",
       "videoMp4": "video/kumiho/mp4/게다가 죽은 내 동생은.mp4",
       "korean": "게다가 죽은 내 동생은",
-      "russian": "К тому же, мой погибший брат..."
+      "russian": "К тому же, мой погибший брат...",
+      "english": "And my brother who died..."
     },
     {
       "video": "video/kumiho/왜 해비스모커가 됐어.webm",
       "videoMp4": "video/kumiho/mp4/왜 해비스모커가 됐어.mp4",
       "korean": "왜 해비스모커가 됐어?",
-      "russian": "Почему он стал заядлым курильщиком?"
+      "russian": "Почему он стал заядлым курильщиком?",
+      "english": "Why did he become a heavy smoker?"
     },
     {
       "video": "video/kumiho/경성을 누비고 있나.webm",
       "videoMp4": "video/kumiho/mp4/경성을 누비고 있나.mp4",
       "korean": "경성을 누비고 있나",
-      "russian": "Разгуливает тут по Кёнсону"
+      "russian": "Разгуливает тут по Кёнсону",
+      "english": "Is he wandering around Gyeongseong?"
     },
     {
       "video": "video/kumiho/원래 형제사이란.webm",
       "videoMp4": "video/kumiho/mp4/원래 형제사이란.mp4",
       "korean": "원래 형제사이란",
-      "russian": "Братья по природе такие..."
+      "russian": "Братья по природе такие...",
+      "english": "Brothers are naturally like this..."
     },
     {
       "video": "video/kumiho/나는 인간을 사랑한 구미호가.webm",
       "videoMp4": "video/kumiho/mp4/나는 인간을 사랑한 구미호가.mp4",
       "korean": "나는 인간을 사랑한 구미호가",
-      "russian": "Я — кумихо, который полюбил человека"
+      "russian": "Я — кумихо, который полюбил человека",
+      "english": "I'm a kumiho who fell in love with a human."
     },
     {
       "video": "video/kumiho/산을 등지고 그리고.webm",
       "videoMp4": "video/kumiho/mp4/산을 등지고 그리고.mp4",
       "korean": "산을 등지고 그리고",
-      "russian": "Повернулся к горам спиной, а потом..."
+      "russian": "Повернулся к горам спиной, а потом...",
+      "english": "Turning my back to the mountains, and then..."
     },
     {
       "video": "video/kumiho/너를 버렸다.webm",
       "videoMp4": "video/kumiho/mp4/너를 버렸다.mp4",
       "korean": "너를 버렸다",
-      "russian": "Я бросил тебя"
+      "russian": "Я бросил тебя",
+      "english": "I abandoned you."
     },
     {
       "video": "video/kumiho/나 보고 싶었어.webm",
       "videoMp4": "video/kumiho/mp4/나 보고 싶었어.mp4",
       "korean": "나 보고 싶었어?",
-      "russian": "Скучал по мне?"
+      "russian": "Скучал по мне?",
+      "english": "Did you miss me?"
     },
     {
       "video": "video/kumiho/한 번도 너를 버린 적이 없어.webm",
       "videoMp4": "video/kumiho/mp4/한 번도 너를 버린 적이 없어.mp4",
       "korean": "한 번도 너를 버린 적이 없어",
-      "russian": "Я ни разу не бросал тебя"
+      "russian": "Я ни разу не бросал тебя",
+      "english": "I've never abandoned you."
     },
     {
       "video": "video/kumiho/이천이십년에.webm",
       "videoMp4": "video/kumiho/mp4/이천이십년에.mp4",
       "korean": "이천이십년에",
-      "russian": "В 2020 году"
+      "russian": "В 2020 году",
+      "english": "In 2020,"
     },
     {
       "video": "video/kumiho/나는 한 번 죽었었다.webm",
       "videoMp4": "video/kumiho/mp4/나는 한 번 죽었었다.mp4",
       "korean": "나는 한 번 죽었었다",
-      "russian": "Я уже умер однажды"
+      "russian": "Я уже умер однажды",
+      "english": "I died once."
     },
     {
       "video": "video/kumiho/사과는 안 할래.webm",
       "videoMp4": "video/kumiho/mp4/사과는 안 할래.mp4",
       "korean": "사과는 안 할래",
-      "russian": "Извиняться не буду"
+      "russian": "Извиняться не буду",
+      "english": "I won't apologize."
     },
     {
       "video": "video/kumiho/그래도 할 수 있으면 꼭 다시 만나자.webm",
       "videoMp4": "video/kumiho/mp4/그래도 할 수 있으면 꼭 다시 만나자.mp4",
       "korean": "그래도 할 수 있으면 꼭 다시 만나자",
-      "russian": "Но если сможем — давай обязательно встретимся снова"
+      "russian": "Но если сможем — давай обязательно встретимся снова",
+      "english": "But if we can, let's definitely meet again."
     }
   ],
   "b2": [
@@ -218,195 +253,225 @@
       "video": "video/kumiho/여자 하나 때문에 산신의 지위를 버리고.webm",
       "videoMp4": "video/kumiho/mp4/여자 하나 때문에 산신의 지위를 버리고.mp4",
       "korean": "여자 하나 때문에 산신의 지위를 버리고",
-      "russian": "Из-за одной женщины ты отказался от статуса бога гор"
+      "russian": "Из-за одной женщины ты отказался от статуса бога гор",
+      "english": "You gave up your status as a mountain god for one woman."
     },
     {
       "video": "video/kumiho/누구세요.webm",
       "videoMp4": "video/kumiho/mp4/누구세요.mp4",
       "korean": "누구세요?",
-      "russian": "Кто вы?"
+      "russian": "Кто вы?",
+      "english": "Who are you?"
     },
     {
       "video": "video/kumiho/지금은 제가 돈이 없고.webm",
       "videoMp4": "video/kumiho/mp4/지금은 제가 돈이 없고.mp4",
       "korean": "지금은 제가 돈이 없고",
-      "russian": "Сейчас у меня нет денег"
+      "russian": "Сейчас у меня нет денег",
+      "english": "Right now, I don't have any money."
     },
     {
       "video": "video/kumiho/그쪽한테 받을 술값 있는 분이요.webm",
       "videoMp4": "video/kumiho/mp4/그쪽한테 받을 술값 있는 분이요.mp4",
       "korean": "그쪽한테 받을 술값 있는 분이요",
-      "russian": "Тот, кому вы должны за выпивку"
+      "russian": "Тот, кому вы должны за выпивку",
+      "english": "I'm the one who owes you for the drinks."
     },
     {
       "video": "video/kumiho/갚아 드릴게요.webm",
       "videoMp4": "video/kumiho/mp4/갚아 드릴게요.mp4",
       "korean": "갚아 드릴게요",
-      "russian": "Я вам верну долг"
+      "russian": "Я вам верну долг",
+      "english": "I'll pay you back."
     },
     {
       "video": "video/kumiho/다친 사람 술값이나 뜯어 볼까 하고.webm",
       "videoMp4": "video/kumiho/mp4/다친 사람 술값이나 뜯어 볼까 하고.mp4",
       "korean": "다친 사람 술값이나 뜯어 볼까 하고",
-      "russian": "Думал содрать деньги за выпивку с раненого"
+      "russian": "Думал содрать деньги за выпивку с раненого",
+      "english": "I was thinking of getting the injured person to pay for drinks."
     },
     {
       "video": "video/kumiho/기자 하면서 사기꾼 많이 봤는데.webm",
       "videoMp4": "video/kumiho/mp4/기자 하면서 사기꾼 많이 봤는데.mp4",
       "korean": "기자 하면서 사기꾼 많이 봤는데",
-      "russian": "Работая журналистом, я повидала много мошенников"
+      "russian": "Работая журналистом, я повидала много мошенников",
+      "english": "As a journalist, I've seen a lot of con artists."
     },
     {
       "video": "video/kumiho/선생님 그쪽 아니에요.webm",
       "videoMp4": "video/kumiho/mp4/선생님 그쪽 아니에요.mp4",
       "korean": "선생님 그쪽 아니에요",
-      "russian": "Это не вы(уважаемый)"
+      "russian": "Это не вы(уважаемый)",
+      "english": "You're not that kind of person, sir."
     },
     {
       "video": "video/kumiho/위험한 사람.webm",
       "videoMp4": "video/kumiho/mp4/위험한 사람.mp4",
       "korean": "위험한 사람",
-      "russian": "Опасный человек"
+      "russian": "Опасный человек",
+      "english": "A dangerous person."
     },
     {
       "video": "video/kumiho/계약은 성립됐습니다.webm",
       "videoMp4": "video/kumiho/mp4/계약은 성립됐습니다.mp4",
       "korean": "계약은 성립됐습니다",
-      "russian": "Контракт заключён"
+      "russian": "Контракт заключён",
+      "english": "The contract is valid."
     },
     {
       "video": "video/kumiho/그럴 리가요.webm",
       "videoMp4": "video/kumiho/mp4/그럴 리가요.mp4",
       "korean": "그럴 리가요",
-      "russian": "Не может быть такого"
+      "russian": "Не может быть такого",
+      "english": "That can't be true."
     },
     {
       "video": "video/kumiho/죽고 싶다는 거 거짓말이지.webm",
       "videoMp4": "video/kumiho/mp4/죽고 싶다는 거 거짓말이지.mp4",
       "korean": "죽고 싶다는 거 거짓말이지?",
-      "russian": "Ты же солгал, что хочешь умереть, да?"
+      "russian": "Ты же солгал, что хочешь умереть, да?",
+      "english": "You're just kidding about wanting to die, right?"
     },
     {
       "video": "video/kumiho/그래도.webm",
       "videoMp4": "video/kumiho/mp4/그래도.mp4",
       "korean": "그래도",
-      "russian": "Даже если так"
+      "russian": "Даже если так",
+      "english": "Still,"
     },
     {
       "video": "video/kumiho/넌 나를 못 빼.webm",
       "videoMp4": "video/kumiho/mp4/넌 나를 못 빼.mp4",
       "korean": "넌 나를 못 빼",
-      "russian": "Ты не сможешь избавиться от меня"
+      "russian": "Ты не сможешь избавиться от меня",
+      "english": "You can't get rid of me."
     },
     {
       "video": "video/kumiho/네 동생이.webm",
       "videoMp4": "video/kumiho/mp4/네 동생이.mp4",
       "korean": "네 동생이",
-      "russian": "Твой младший брат"
+      "russian": "Твой младший брат",
+      "english": "Your younger brother."
     },
     {
       "video": "video/kumiho/네 동생이 인질로 잡혀있거든.webm",
       "videoMp4": "video/kumiho/mp4/네 동생이 인질로 잡혀있거든.mp4",
       "korean": "네 동생이 인질로 잡혀있거든",
-      "russian": "Твой брат в заложниках"
+      "russian": "Твой брат в заложниках",
+      "english": "Your brother is being held hostage."
     },
     {
       "video": "video/kumiho/담배 안 꺼.webm",
       "videoMp4": "video/kumiho/mp4/담배 안 꺼.mp4",
       "korean": "담배 안 꺼?",
       "russian": "Сигарету не потушишь?",
-      "new": true
+      "new": true,
+      "english": "Aren't you going to put out your cigarette?"
     },
     {
       "video": "video/kumiho/빨리 꺼 빨리 꺼.webm",
       "videoMp4": "video/kumiho/mp4/빨리 꺼 빨리 꺼.mp4",
       "korean": "빨리 꺼 빨리 꺼",
       "russian": "Быстрее туши, быстрее туши",
-      "new": true
+      "new": true,
+      "english": "Put it out quickly, quickly!"
     },
     {
       "video": "video/kumiho/어디로 가는 열차예요.webm",
       "videoMp4": "video/kumiho/mp4/어디로 가는 열차예요.mp4",
       "korean": "어디로 가는 열차예요?",
       "russian": "Поезд куда направляется?",
-      "new": true
+      "new": true,
+      "english": "Which train is this going to?"
     },
     {
       "video": "video/kumiho/기다려 봐.webm",
       "videoMp4": "video/kumiho/mp4/기다려 봐.mp4",
       "korean": "기다려 봐",
       "russian": "Подожди",
-      "new": true
+      "new": true,
+      "english": "Wait a second."
     },
     {
       "video": "video/kumiho/자랑스러운 듯 말하지 마.webm",
       "videoMp4": "video/kumiho/mp4/자랑스러운 듯 말하지 마.mp4",
       "korean": "자랑스러운 듯 말하지 마",
       "russian": "Не говори так, будто ты гордишься",
-      "new": true
+      "new": true,
+      "english": "Don't act like you're proud."
     },
     {
       "video": "video/kumiho/나 쳤어.webm",
       "videoMp4": "video/kumiho/mp4/나 쳤어.mp4",
       "korean": "나 쳤어?",
       "russian": "Ударил меня?",
-      "new": true
+      "new": true,
+      "english": "Did you hit me?"
     },
     {
       "video": "video/kumiho/내 거야.webm",
       "videoMp4": "video/kumiho/mp4/내 거야.mp4",
       "korean": "내 거야",
       "russian": "Это моё",
-      "new": true
+      "new": true,
+      "english": "It's mine."
     },
     {
       "video": "video/kumiho/왜 나만 안 주는 거야.webm",
       "videoMp4": "video/kumiho/mp4/왜 나만 안 주는 거야.mp4",
       "korean": "왜 나만 안 주는 거야?",
       "russian": "Почему всем даёшь, а мне нет?",
-      "new": true
+      "new": true,
+      "english": "Why are you giving it to everyone but me?"
     },
     {
       "video": "video/kumiho/죽인 뭘 줘.webm",
       "videoMp4": "video/kumiho/mp4/죽인 뭘 줘.mp4",
       "korean": "죽인 뭘 줘?",
       "russian": "Дать что-нибудь убойное?",
-      "new": true
+      "new": true,
+      "english": "What should I give that's impressive?"
     },
     {
       "video": "video/kumiho/나 임자 있는 몸이야.webm",
       "videoMp4": "video/kumiho/mp4/나 임자 있는 몸이야.mp4",
       "korean": "나 임자 있는 몸이야",
       "russian": "У меня уже есть девушка",
-      "new": true
+      "new": true,
+      "english": "I'm already taken."
     },
     {
       "video": "video/kumiho/지금이 기회입니다.webm",
       "videoMp4": "video/kumiho/mp4/지금이 기회입니다.mp4",
       "korean": "지금이 기회입니다",
       "russian": "Сейчас шанс",
-      "new": true
+      "new": true,
+      "english": "Now's your chance."
     },
     {
       "video": "video/kumiho/여전히 귀엽네.webm",
       "videoMp4": "video/kumiho/mp4/여전히 귀엽네.mp4",
       "korean": "여전히 귀엽네",
       "russian": "Ты всё ещё милый",
-      "new": true
+      "new": true,
+      "english": "You're still cute."
     },
     {
       "video": "video/kumiho/저 여자 뭐야.webm",
       "videoMp4": "video/kumiho/mp4/저 여자 뭐야.mp4",
       "korean": "저 여자 뭐야",
       "russian": "Что за девушка?",
-      "new": true
+      "new": true,
+      "english": "Who is that girl?"
     },
     {
       "video": "video/kumiho/제가 괜한 얘기를 해서.webm",
       "videoMp4": "video/kumiho/mp4/제가 괜한 얘기를 해서.mp4",
       "korean": "제가 괜한 얘기를 해서",
       "russian": "Это я зря сказал",
-      "new": true
+      "new": true,
+      "english": "I shouldn't have said that."
     }
   ],
   "b3": [
@@ -415,196 +480,224 @@
       "videoMp4": "video/kumiho/mp4/차 뽑으셨네요.mp4",
       "korean": "차 뽑으셨네요",
       "russian": "Вы новую машину взяли",
-      "new": true
+      "new": true,
+      "english": "You got a new car."
     },
     {
       "video": "video/kumiho/하나도 안 변했네.webm",
       "videoMp4": "video/kumiho/mp4/하나도 안 변했네.mp4",
       "korean": "하나도 안 변했네",
       "russian": "Вообще нисколько не изменился",
-      "new": true
+      "new": true,
+      "english": "You haven't changed at all."
     },
     {
       "video": "video/kumiho/어떻게 알았어.webm",
       "videoMp4": "video/kumiho/mp4/어떻게 알았어.mp4",
       "korean": "어떻게 알았어?",
       "russian": "Как ты узнал?",
-      "new": true
+      "new": true,
+      "english": "How did you know?"
     },
     {
       "video": "video/kumiho/고생했다 고생했어.webm",
       "videoMp4": "video/kumiho/mp4/고생했다 고생했어.mp4",
       "korean": "고생했다 고생했어",
       "russian": "Ты хорошо постарался, натрудился",
-      "new": true
+      "new": true,
+      "english": "You worked hard."
     },
     {
       "video": "video/kumiho/오랜만이야 2.webm",
       "videoMp4": "video/kumiho/mp4/오랜만이야 2.mp4",
       "korean": "오랜만이야",
       "russian": "Давно не виделись",
-      "new": true
+      "new": true,
+      "english": "Long time no see."
     },
     {
       "video": "video/kumiho/오랜만이야.webm",
       "videoMp4": "video/kumiho/mp4/오랜만이야.mp4",
       "korean": "오랜만이야",
       "russian": "Давно не виделись",
-      "new": true
+      "new": true,
+      "english": "Long time no see."
     },
     {
       "video": "video/kumiho/어떻게 총상이 이틀 만에 사라져.webm",
       "videoMp4": "video/kumiho/mp4/어떻게 총상이 이틀 만에 사라져.mp4",
       "korean": "어떻게 총상이 이틀 만에 사라져",
       "russian": "Как рана от пули может исчезнуть всего за два дня?",
-      "new": true
+      "new": true,
+      "english": "How can a gunshot wound disappear in just two days?"
     },
     {
       "video": "video/kumiho/난 원래 달걀 안 좋아해.webm",
       "videoMp4": "video/kumiho/mp4/난 원래 달걀 안 좋아해.mp4",
       "korean": "난 원래 달걀 안 좋아해",
       "russian": "Я вообще не люблю яйца",
-      "new": true
+      "new": true,
+      "english": "I don't really like eggs."
     },
     {
       "video": "video/kumiho/다시 묻는다.webm",
       "videoMp4": "video/kumiho/mp4/다시 묻는다.mp4",
       "korean": "다시 묻는다",
       "russian": "Я спрашиваю ещё раз",
-      "new": true
+      "new": true,
+      "english": "I'm asking again."
     },
     {
       "video": "video/kumiho/이 핸드폰.webm",
       "videoMp4": "video/kumiho/mp4/이 핸드폰.mp4",
       "korean": "이 핸드폰",
       "russian": "Этот телефон",
-      "new": true
+      "new": true,
+      "english": "This phone."
     },
     {
       "video": "video/kumiho/내 몸에 손대지 마.webm",
       "videoMp4": "video/kumiho/mp4/내 몸에 손대지 마.mp4",
       "korean": "내 몸에 손대지 마",
       "russian": "Не трогай моё тело",
-      "new": true
+      "new": true,
+      "english": "Don't touch my body."
     },
     {
       "video": "video/kumiho/네가 해.webm",
       "videoMp4": "video/kumiho/mp4/네가 해.mp4",
       "korean": "네가 해",
       "russian": "Ты сделай",
-      "new": true
+      "new": true,
+      "english": "You do it."
     },
     {
       "video": "video/kumiho/배달원 뽑으세요.webm",
       "videoMp4": "video/kumiho/mp4/배달원 뽑으세요.mp4",
       "korean": "배달원 뽑으세요",
       "russian": "Возьмите курьера",
-      "new": true
+      "new": true,
+      "english": "Please hire a delivery person."
     },
     {
       "video": "video/kumiho/여기 묵을게.webm",
       "videoMp4": "video/kumiho/mp4/여기 묵을게.mp4",
       "korean": "여기 묵을게",
       "russian": "Я останусь",
-      "new": true
+      "new": true,
+      "english": "I'll stay here."
     },
     {
       "video": "video/kumiho/잘해 주지 마.webm",
       "videoMp4": "video/kumiho/mp4/잘해 주지 마.mp4",
       "korean": "잘해 주지 마",
       "russian": "Не будь так добра ко мне",
-      "new": true
+      "new": true,
+      "english": "Don't be so nice to me."
     },
     {
       "video": "video/kumiho/꼭 돌아갈게.webm",
       "videoMp4": "video/kumiho/mp4/꼭 돌아갈게.mp4",
       "korean": "꼭 돌아갈게",
       "russian": "Я обязательно вернусь",
-      "new": true
+      "new": true,
+      "english": "I'll definitely be back."
     },
     {
       "video": "video/kumiho/쉽게 용서하지 마.webm",
       "videoMp4": "video/kumiho/mp4/쉽게 용서하지 마.mp4",
       "korean": "쉽게 용서하지 마",
       "russian": "Не прощай так легко",
-      "new": true
+      "new": true,
+      "english": "Don't forgive so easily."
     },
     {
       "video": "video/kumiho/주접들을 떨고 앉았네.webm",
       "videoMp4": "video/kumiho/mp4/주접들을 떨고 앉았네.mp4",
       "korean": "주접들을 떨고 앉았네",
       "russian": "Сидят, глупости несут",
-      "new": true
+      "new": true,
+      "english": "They're just being ridiculous."
     },
     {
       "video": "video/kumiho/자 찍겠습니다.webm",
       "videoMp4": "video/kumiho/mp4/자 찍겠습니다.mp4",
       "korean": "자 찍겠습니다",
       "russian": "Ну, я сфотографирую",
-      "new": true
+      "new": true,
+      "english": "Okay, I'll take a picture."
     },
     {
       "video": "video/kumiho/소문을 들었어요.webm",
       "videoMp4": "video/kumiho/mp4/소문을 들었어요.mp4",
       "korean": "소문을 들었어요",
       "russian": "Я слышал слухи",
-      "new": true
+      "new": true,
+      "english": "I've heard the rumors."
     },
     {
       "video": "video/kumiho/아 싫다고.webm",
       "videoMp4": "video/kumiho/mp4/아 싫다고.mp4",
       "korean": "아 싫다고",
       "russian": "Я сказал, что не хочу",
-      "new": true
+      "new": true,
+      "english": "I said I don't want to."
     },
     {
       "video": "video/kumiho/합격입니다.webm",
       "videoMp4": "video/kumiho/mp4/합격입니다.mp4",
       "korean": "합격입니다",
       "russian": "Вы приняты",
-      "new": true
+      "new": true,
+      "english": "You passed."
     },
     {
       "video": "video/kumiho/냄새나게.webm",
       "videoMp4": "video/kumiho/mp4/냄새나게.mp4",
       "korean": "냄새나게",
       "russian": "Воняешь",
-      "new": true
+      "new": true,
+      "english": "You smell."
     },
     {
       "video": "video/kumiho/반응이 없어.webm",
       "videoMp4": "video/kumiho/mp4/반응이 없어.mp4",
       "korean": "반응이 없어",
       "russian": "Нет реакции",
-      "new": true
+      "new": true,
+      "english": "There's no reaction."
     },
     {
       "video": "video/kumiho/이거 드세요.webm",
       "videoMp4": "video/kumiho/mp4/이거 드세요.mp4",
       "korean": "이거 드세요",
       "russian": "Испейте это",
-      "new": true
+      "new": true,
+      "english": "Here, have this."
     },
     {
       "video": "video/kumiho/거울은.webm",
       "videoMp4": "video/kumiho/mp4/거울은.mp4",
       "korean": "거울은",
       "russian": "Зеркало",
-      "new": true
+      "new": true,
+      "english": "The mirror is..."
     },
     {
       "video": "video/kumiho/탈을 쓴 사나였어.webm",
       "videoMp4": "video/kumiho/mp4/탈을 쓴 사나였어.mp4",
       "korean": "탈을 쓴 사나였어",
       "russian": "Это был парень в маске",
-      "new": true
+      "new": true,
+      "english": "It was a guy in a mask."
     },
     {
       "video": "video/kumiho/죽게 만들어 놨어.webm",
       "videoMp4": "video/kumiho/mp4/죽게 만들어 놨어.mp4",
       "korean": "죽게 만들어 놨어",
       "russian": "Заставили умереть",
-      "new": true
+      "new": true,
+      "english": "They made it so I would die."
     }
   ],
   "b4": [],

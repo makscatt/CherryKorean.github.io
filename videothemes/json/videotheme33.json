@@ -6,210 +6,240 @@
       "videoMp4": "video/tomorrow/mp4/곧 들어가요.mp4",
       "korean": "곧 들어가요",
       "russian": "Скоро зайду",
-      "new": true
+      "new": true,
+      "english": "I'll be right in."
     },
     {
       "video": "video/tomorrow/그 마인드가 이기적이라는 거야.webm",
       "videoMp4": "video/tomorrow/mp4/그 마인드가 이기적이라는 거야.mp4",
       "korean": "그 마인드가 이기적이라는 거야",
       "russian": "Я говорю, что такой образ мыслей эгоистичный",
-      "new": true
+      "new": true,
+      "english": "That mindset is selfish."
     },
     {
       "video": "video/tomorrow/그런 것 같기도 하고.webm",
       "videoMp4": "video/tomorrow/mp4/그런 것 같기도 하고.mp4",
       "korean": "그런 것 같기도 하고",
       "russian": "Вроде бы так и есть",
-      "new": true
+      "new": true,
+      "english": "I guess that's true."
     },
     {
       "video": "video/tomorrow/근데 이거 있잖아.webm",
       "videoMp4": "video/tomorrow/mp4/근데 이거 있잖아.mp4",
       "korean": "근데 이거 있잖아",
       "russian": "Слушай, насчёт вот этого…",
-      "new": true
+      "new": true,
+      "english": "But you know this..."
     },
     {
       "video": "video/tomorrow/나 떠난다니까.webm",
       "videoMp4": "video/tomorrow/mp4/나 떠난다니까.mp4",
       "korean": "나 떠난다니까",
       "russian": "Я же ухожу, говорю",
-      "new": true
+      "new": true,
+      "english": "I'm leaving, you know."
     },
     {
       "video": "video/tomorrow/나 왜 잡으러 왔어.webm",
       "videoMp4": "video/tomorrow/mp4/나 왜 잡으러 왔어.mp4",
       "korean": "나 왜 잡으러 왔어?",
       "russian": "Зачем ты вообще пришёл меня ловить?",
-      "new": true
+      "new": true,
+      "english": "Why did you come to catch me?"
     },
     {
       "video": "video/tomorrow/나 지금 회사 다시 들어가 봐야 돼가지고.webm",
       "videoMp4": "video/tomorrow/mp4/나 지금 회사 다시 들어가 봐야 돼가지고.mp4",
       "korean": "나 지금 회사 다시 들어가 봐야 돼가지고",
       "russian": "Мне сейчас нужно вернуться в офис",
-      "new": true
+      "new": true,
+      "english": "I need to go back to the office now."
     },
     {
       "video": "video/tomorrow/나중에 만나서 다시 얘기해.webm",
       "videoMp4": "video/tomorrow/mp4/나중에 만나서 다시 얘기해.mp4",
       "korean": "나중에 만나서 다시 얘기해",
       "russian": "Давай потом встретимся и ещё раз всё обсудим",
-      "new": true
+      "new": true,
+      "english": "Let's meet later and talk again."
     },
     {
       "video": "video/tomorrow/난 없는데.webm",
       "videoMp4": "video/tomorrow/mp4/난 없는데.mp4",
       "korean": "난 없는데",
       "russian": "А у меня нет",
-      "new": true
+      "new": true,
+      "english": "I don't have any."
     },
     {
       "video": "video/tomorrow/내가 나서면 다 꽝 아닌가.webm",
       "videoMp4": "video/tomorrow/mp4/내가 나서면 다 꽝 아닌가.mp4",
       "korean": "내가 나서면 다 꽝 아닌가?",
       "russian": "Если я вмешаюсь, разве всё не пойдёт коту под хвост?",
-      "new": true
+      "new": true,
+      "english": "If I step in, won't everything go wrong?"
     },
     {
       "video": "video/tomorrow/너 때문에 놓치면 비행기 티켓 어쩔건데.webm",
       "videoMp4": "video/tomorrow/mp4/너 때문에 놓치면 비행기 티켓 어쩔건데.mp4",
       "korean": "너 때문에 놓치면 비행기 티켓 어쩔 건데?",
       "russian": "Если из‑за тебя опоздаю, что потом с билетом делать буду?",
-      "new": true
+      "new": true,
+      "english": "What am I supposed to do about the plane ticket if I miss it because of you?"
     },
     {
       "video": "video/tomorrow/넌 어디 갈 거야.webm",
       "videoMp4": "video/tomorrow/mp4/넌 어디 갈 거야.mp4",
       "korean": "넌 어디 갈 거야?",
       "russian": "А ты куда собираешься?",
-      "new": true
+      "new": true,
+      "english": "Where are you going?"
     },
     {
       "video": "video/tomorrow/넌 회사 가봐야지.webm",
       "videoMp4": "video/tomorrow/mp4/넌 회사 가봐야지.mp4",
       "korean": "넌 회사 가봐야지",
       "russian": "Тебе же надо на работу сходить",
-      "new": true
+      "new": true,
+      "english": "You should get to work."
     },
     {
       "video": "video/tomorrow/네 알겠습니다.webm",
       "videoMp4": "video/tomorrow/mp4/네 알겠습니다.mp4",
       "korean": "네, 알겠습니다",
       "russian": "Да, понял(а)",
-      "new": true
+      "new": true,
+      "english": "Yes, I understand."
     },
     {
       "video": "video/tomorrow/두 분이 아는 사이 확실한 겁니까.webm",
       "videoMp4": "video/tomorrow/mp4/두 분이 아는 사이 확실한 겁니까.mp4",
       "korean": "두 분이 아는 사이 확실한 겁니까?",
       "russian": "Вы двое точно знакомы?",
-      "new": true
+      "new": true,
+      "english": "Are you two definitely acquainted?"
     },
     {
       "video": "video/tomorrow/몰라 자기 집에 가 있으라잖애.webm",
       "videoMp4": "video/tomorrow/mp4/몰라 자기 집에 가 있으라잖애.mp4",
       "korean": "몰라, 자기 집에 가 있으라잖아",
       "russian": "Не знаю, сказали сидеть у себя дома",
-      "new": true
+      "new": true,
+      "english": "I don't know, they told me to stay home."
     },
     {
       "video": "video/tomorrow/미쳤나봐.webm",
       "videoMp4": "video/tomorrow/mp4/미쳤나봐.mp4",
       "korean": "미쳤나 봐",
       "russian": "По-моему, он(она) с ума сошёл(сошла)",
-      "new": true
+      "new": true,
+      "english": "I think they're crazy."
     },
     {
       "video": "video/tomorrow/미친놈 진짜야. 비밀번호 달라며.webm",
       "videoMp4": "video/tomorrow/mp4/미친놈 진짜야. 비밀번호 달라며.mp4",
       "korean": "미친놈 진짜야. 비밀번호 달라며",
       "russian": "Он реально псих. Требует, говорит, пароль дай",
-      "new": true
+      "new": true,
+      "english": "That guy is really nuts. He’s asking for the password."
     },
     {
       "video": "video/tomorrow/아직도 잘생겼네.webm",
       "videoMp4": "video/tomorrow/mp4/아직도 잘생겼네.mp4",
       "korean": "아직도 잘생겼네",
       "russian": "До сих пор такой красивый",
-      "new": true
+      "new": true,
+      "english": "You're still so handsome."
     },
     {
       "video": "video/tomorrow/어_ 그 운영하는 거 얼마나 힘들어.webm",
       "videoMp4": "video/tomorrow/mp4/어_ 그 운영하는 거 얼마나 힘들어.mp4",
       "korean": "어… 그 운영하는 거 얼마나 힘들어?",
       "russian": "Эм… а насколько тяжело этим управлять?",
-      "new": true
+      "new": true,
+      "english": "Um... how hard is it to manage that?"
     },
     {
       "video": "video/tomorrow/영국 가서 섹스 배우라고.webm",
       "videoMp4": "video/tomorrow/mp4/영국 가서 섹스 배우라고.mp4",
       "korean": "영국 가서 섹스 배우라고",
       "russian": "Поезжай в Англию и научись там сексу",
-      "new": true
+      "new": true,
+      "english": "Go to England and learn about sex."
     },
     {
       "video": "video/tomorrow/우리 집 비밀번호야.webm",
       "videoMp4": "video/tomorrow/mp4/우리 집 비밀번호야.mp4",
       "korean": "우리 집 비밀번호야",
       "russian": "Это пароль от нашей квартиры",
-      "new": true
+      "new": true,
+      "english": "That's the password to our place."
     },
     {
       "video": "video/tomorrow/이 분 아는 분 맞으세요.webm",
       "videoMp4": "video/tomorrow/mp4/이 분 아는 분 맞으세요.mp4",
       "korean": "이 분 아는 분 맞으세요?",
       "russian": "Вы точно этого человека знаете?",
-      "new": true
+      "new": true,
+      "english": "Do you know this person?"
     },
     {
       "video": "video/tomorrow/이거 냄새는.webm",
       "videoMp4": "video/tomorrow/mp4/이거 냄새는.mp4",
       "korean": "이거, 냄새는…",
       "russian": "А запах у этого…",
-      "new": true
+      "new": true,
+      "english": "This one, the smell is..."
     },
     {
       "video": "video/tomorrow/잘 먹고.webm",
       "videoMp4": "video/tomorrow/mp4/잘 먹고.mp4",
       "korean": "잘 먹고",
       "russian": "Хорошо поешь",
-      "new": true
+      "new": true,
+      "english": "Enjoy your meal."
     },
     {
       "video": "video/tomorrow/제가 지금 회의에 들어가야 돼서요.webm",
       "videoMp4": "video/tomorrow/mp4/제가 지금 회의에 들어가야 돼서요.mp4",
       "korean": "제가 지금 회의에 들어가야 돼서요",
       "russian": "Просто мне сейчас нужно идти на совещание",
-      "new": true
+      "new": true,
+      "english": "I have to go into a meeting now."
     },
     {
       "video": "video/tomorrow/중요한 할 말이 있었거든요.webm",
       "videoMp4": "video/tomorrow/mp4/중요한 할 말이 있었거든요.mp4",
       "korean": "중요한 할 말이 있었거든요",
       "russian": "Я хотел(а) сказать кое‑что важное",
-      "new": true
+      "new": true,
+      "english": "I had something important to say."
     },
     {
       "video": "video/tomorrow/집에 가서.webm",
       "videoMp4": "video/tomorrow/mp4/집에 가서.mp4",
       "korean": "집에 가서…",
       "russian": "Когда придёшь домой…",
-      "new": true
+      "new": true,
+      "english": "When you get home..."
     },
     {
       "video": "video/tomorrow/할 말이 뭐야.webm",
       "videoMp4": "video/tomorrow/mp4/할 말이 뭐야.mp4",
       "korean": "할 말이 뭐야?",
       "russian": "Что ты хотел(а) сказать?",
-      "new": true
+      "new": true,
+      "english": "What did you want to say?"
     },
     {
       "video": "video/tomorrow/할 말이 있는데.webm",
       "videoMp4": "video/tomorrow/mp4/할 말이 있는데.mp4",
       "korean": "할 말이 있는데…",
       "russian": "Я хотел(а) кое‑что сказать…",
-      "new": true
+      "new": true,
+      "english": "I have something to say..."
     }
   ],
   "b2": [],

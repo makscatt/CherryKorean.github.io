@@ -4,43 +4,50 @@
       "video": "video/moon lovers/죽을래.webm",
       "videoMp4": "video/moon lovers/mp4/죽을래.mp4",
       "korean": "죽을래?",
-      "russian": "Умереть хочешь?"
+      "russian": "Умереть хочешь?",
+      "english": "Do you want to die?"
     },
     {
       "video": "video/moon lovers/닥쳐.webm",
       "videoMp4": "video/moon lovers/mp4/닥쳐.mp4",
       "korean": "닥쳐",
-      "russian": "Замолчите"
+      "russian": "Замолчите",
+      "english": "Shut up."
     },
     {
       "video": "video/moon lovers/사과해 얼른.webm",
       "videoMp4": "video/moon lovers/mp4/사과해 얼른.mp4",
       "korean": "사과해 얼른!",
-      "russian": "Извиняйся Быстро!"
+      "russian": "Извиняйся Быстро!",
+      "english": "Apologize quickly!"
     },
     {
       "video": "video/moon lovers/답해라.webm",
       "videoMp4": "video/moon lovers/mp4/답해라.mp4",
       "korean": "답해라!",
-      "russian": "Отвечай!"
+      "russian": "Отвечай!",
+      "english": "Answer me!"
     },
     {
       "video": "video/moon lovers/저리가.webm",
       "videoMp4": "video/moon lovers/mp4/저리가.mp4",
       "korean": "저리가!",
-      "russian": "С дороги!"
+      "russian": "С дороги!",
+      "english": "Get out of the way!"
     },
     {
       "video": "video/moon lovers/살고 싶어.webm",
       "videoMp4": "video/moon lovers/mp4/살고 싶어.mp4",
       "korean": "살고 싶어",
-      "russian": "Хочу жить"
+      "russian": "Хочу жить",
+      "english": "I want to live."
     },
     {
       "video": "video/moon lovers/알겠느냐.webm",
       "videoMp4": "video/moon lovers/mp4/알겠느냐.mp4",
       "korean": "알겠느냐?",
-      "russian": "Вам все ясно?"
+      "russian": "Вам все ясно?",
+      "english": "Do you understand?"
     }
   ],
   "b1": [
@@ -48,217 +55,253 @@
       "video": "video/moon lovers/넷째 형님이 분위기 망치는 데는 일가견이 있지.webm",
       "videoMp4": "video/moon lovers/mp4/넷째 형님이 분위기 망치는 데는 일가견이 있지.mp4",
       "korean": "넷째 형님이 분위기 망치는 데는 일가견이 있지",
-      "russian": "У четвёртого брата особый талант всё портить"
+      "russian": "У четвёртого брата особый талант всё портить",
+      "english": "The fourth brother really has a knack for ruining the mood."
     },
     {
       "video": "video/moon lovers/형님 오셨습니까.webm",
       "videoMp4": "video/moon lovers/mp4/형님 오셨습니까.mp4",
       "korean": "형님 오셨습니까?",
-      "russian": "Старший брат, вы пришли?"
+      "russian": "Старший брат, вы пришли?",
+      "english": "Have you arrived, brother?"
     },
     {
       "video": "video/moon lovers/늦었구나.webm",
       "videoMp4": "video/moon lovers/mp4/늦었구나.mp4",
       "korean": "늦었구나",
-      "russian": "Опоздал, значит"
+      "russian": "Опоздал, значит",
+      "english": "You're late."
     },
     {
       "video": "video/moon lovers/그러던지.webm",
       "videoMp4": "video/moon lovers/mp4/그러던지.mp4",
       "korean": "그러던지",
-      "russian": "Вот как, значит"
+      "russian": "Вот как, значит",
+      "english": "Whatever."
     },
     {
       "video": "video/moon lovers/이렇게 봤으니 됐잖아.webm",
       "videoMp4": "video/moon lovers/mp4/이렇게 봤으니 됐잖아.mp4",
       "korean": "이렇게 봤으니 됐잖아",
-      "russian": "Я же посмотрел, этого достаточно"
+      "russian": "Я же посмотрел, этого достаточно",
+      "english": "I've seen it like this, so it's enough."
     },
     {
       "video": "video/moon lovers/같이 가요.webm",
       "videoMp4": "video/moon lovers/mp4/같이 가요.mp4",
       "korean": "같이 가요",
-      "russian": "Пошли вместе"
+      "russian": "Пошли вместе",
+      "english": "Let's go together."
     },
     {
       "video": "video/moon lovers/닥쳐.webm",
       "videoMp4": "video/moon lovers/mp4/닥쳐.mp4",
       "korean": "닥쳐",
-      "russian": "Замолчите"
+      "russian": "Замолчите",
+      "english": "Shut up."
     },
     {
       "video": "video/moon lovers/사람이 아니냐.webm",
       "videoMp4": "video/moon lovers/mp4/사람이 아니냐.mp4",
       "korean": "사람이 아니냐?",
-      "russian": "Разве не человек?"
+      "russian": "Разве не человек?",
+      "english": "Aren't you a person?"
     },
     {
       "video": "video/moon lovers/알겠느냐.webm",
       "videoMp4": "video/moon lovers/mp4/알겠느냐.mp4",
       "korean": "알겠느냐?",
-      "russian": "Вам все ясно?"
+      "russian": "Вам все ясно?",
+      "english": "Do you understand?"
     },
     {
       "video": "video/moon lovers/그만.webm",
       "videoMp4": "video/moon lovers/mp4/그만.mp4",
       "korean": "그만",
-      "russian": "Заканчивай"
+      "russian": "Заканчивай",
+      "english": "Stop it."
     },
     {
       "video": "video/moon lovers/됐다.webm",
       "videoMp4": "video/moon lovers/mp4/됐다.mp4",
       "korean": "됐다",
-      "russian": "Хватит"
+      "russian": "Хватит",
+      "english": "That's enough."
     },
     {
       "video": "video/moon lovers/빨리 오시랄까요.webm",
       "videoMp4": "video/moon lovers/mp4/빨리 오시랄까요.mp4",
       "korean": "빨리 오시랄까요?",
-      "russian": "Приходите скорее"
+      "russian": "Приходите скорее",
+      "english": "Should I ask you to come quickly?"
     },
     {
       "video": "video/moon lovers/돌아가지 않아.webm",
       "videoMp4": "video/moon lovers/mp4/돌아가지 않아.mp4",
       "korean": "돌아가지 않아",
-      "russian": "Я не вернусь"
+      "russian": "Я не вернусь",
+      "english": "I'm not going back."
     },
     {
       "video": "video/moon lovers/나 알아요.webm",
       "videoMp4": "video/moon lovers/mp4/나 알아요.mp4",
       "korean": "나 알아요?",
-      "russian": "Ты знаешь меня?"
+      "russian": "Ты знаешь меня?",
+      "english": "Do you know me?"
     },
     {
       "video": "video/moon lovers/아직 통증이 심한 게냐.webm",
       "videoMp4": "video/moon lovers/mp4/아직 통증이 심한 게냐.mp4",
       "korean": "아직 통증이 심한 게냐?",
-      "russian": "Боль еще сильная?"
+      "russian": "Боль еще сильная?",
+      "english": "Is the pain still bad?"
     },
     {
       "video": "video/moon lovers/많이 다친 건가요.webm",
       "videoMp4": "video/moon lovers/mp4/많이 다친 건가요.mp4",
       "korean": "많이 다친 건가요?",
-      "russian": "Похоже сильно ударилась"
+      "russian": "Похоже сильно ударилась",
+      "english": "Did you get hurt badly?"
     },
     {
       "video": "video/moon lovers/기억이 나질 않니.webm",
       "videoMp4": "video/moon lovers/mp4/기억이 나질 않니.mp4",
       "korean": "기억이 나질 않니",
-      "russian": "Память не возвращается?"
+      "russian": "Память не возвращается?",
+      "english": "You don't remember?"
     },
     {
       "video": "video/moon lovers/내가 아무도 드리지 말랬다 해라.webm",
       "videoMp4": "video/moon lovers/mp4/내가 아무도 드리지 말랬다 해라.mp4",
       "korean": "내가 아무도 드리지 말랬다 해라",
-      "russian": "Я сказала не давать ничего"
+      "russian": "Я сказала не давать ничего",
+      "english": "I told you not to give anything to anyone."
     },
     {
       "video": "video/moon lovers/내 심의 몸이 안 좋아.webm",
       "videoMp4": "video/moon lovers/mp4/내 심의 몸이 안 좋아.mp4",
       "korean": "내 심의 몸이 안 좋아",
-      "russian": "Мои тело и дух болят"
+      "russian": "Мои тело и дух болят",
+      "english": "My body and mind are not well."
     },
     {
       "video": "video/moon lovers/걱정입니다.webm",
       "videoMp4": "video/moon lovers/mp4/걱정입니다.mp4",
       "korean": "걱정입니다",
-      "russian": "Переживаю"
+      "russian": "Переживаю",
+      "english": "I'm worried."
     },
     {
       "video": "video/moon lovers/겁내지 마라.webm",
       "videoMp4": "video/moon lovers/mp4/겁내지 마라.mp4",
       "korean": "겁내지 마라",
-      "russian": "Не бойся"
+      "russian": "Не бойся",
+      "english": "Don't be scared."
     },
     {
       "video": "video/moon lovers/끝까지.webm",
       "videoMp4": "video/moon lovers/mp4/끝까지.mp4",
       "korean": "끝까지",
-      "russian": "До конца"
+      "russian": "До конца",
+      "english": "Until the end."
     },
     {
       "video": "video/moon lovers/도와줄 것이다.webm",
       "videoMp4": "video/moon lovers/mp4/도와줄 것이다.mp4",
       "korean": "도와줄 것이다",
-      "russian": "Буду помогать"
+      "russian": "Буду помогать",
+      "english": "I will help you."
     },
     {
       "video": "video/moon lovers/힘내야지.webm",
       "videoMp4": "video/moon lovers/mp4/힘내야지.mp4",
       "korean": "힘내야지",
-      "russian": "Надо быть сильной"
+      "russian": "Надо быть сильной",
+      "english": "You have to stay strong."
     },
     {
       "video": "video/moon lovers/돌아갈 수 없고.webm",
       "videoMp4": "video/moon lovers/mp4/돌아갈 수 없고.mp4",
       "korean": "돌아갈 수 없고",
-      "russian": "Мне не вернуться"
+      "russian": "Мне не вернуться",
+      "english": "I can't go back."
     },
     {
       "video": "video/moon lovers/살고 싶어.webm",
       "videoMp4": "video/moon lovers/mp4/살고 싶어.mp4",
       "korean": "살고 싶어",
-      "russian": "Хочу жить"
+      "russian": "Хочу жить",
+      "english": "I want to live."
     },
     {
       "video": "video/moon lovers/멈출 수 없어.webm",
       "videoMp4": "video/moon lovers/mp4/멈출 수 없어.mp4",
       "korean": "멈출 수 없어",
-      "russian": "Тебе не остановить"
+      "russian": "Тебе не остановить",
+      "english": "I can't stop."
     },
     {
       "video": "video/moon lovers/왜 이러세요.webm",
       "videoMp4": "video/moon lovers/mp4/왜 이러세요.mp4",
       "korean": "왜 이러세요?",
-      "russian": "Что с вами?"
+      "russian": "Что с вами?",
+      "english": "What's wrong with you?"
     },
     {
       "video": "video/moon lovers/걱정 마라.webm",
       "videoMp4": "video/moon lovers/mp4/걱정 마라.mp4",
       "korean": "걱정 마라",
-      "russian": "Не парься"
+      "russian": "Не парься",
+      "english": "Don't worry."
     },
     {
       "video": "video/moon lovers/그치 그치.webm",
       "videoMp4": "video/moon lovers/mp4/그치 그치.mp4",
       "korean": "그치 그치",
-      "russian": "Точно Точно"
+      "russian": "Точно Точно",
+      "english": "Right, right."
     },
     {
       "video": "video/moon lovers/그 정도는 아니지만.webm",
       "videoMp4": "video/moon lovers/mp4/그 정도는 아니지만.mp4",
       "korean": "그 정도는 아니지만",
-      "russian": "Не совсем так, но"
+      "russian": "Не совсем так, но",
+      "english": "It's not quite like that, but..."
     },
     {
       "video": "video/moon lovers/미안해.webm",
       "videoMp4": "video/moon lovers/mp4/미안해.mp4",
       "korean": "미안해",
-      "russian": "Прости"
+      "russian": "Прости",
+      "english": "I'm sorry."
     },
     {
       "video": "video/moon lovers/오랜만이구나.webm",
       "videoMp4": "video/moon lovers/mp4/오랜만이구나.mp4",
       "korean": "오랜만이구나",
-      "russian": "Давно не виделись"
+      "russian": "Давно не виделись",
+      "english": "It's been a while."
     },
     {
       "video": "video/moon lovers/글쎄요.webm",
       "videoMp4": "video/moon lovers/mp4/글쎄요.mp4",
       "korean": "글쎄요",
-      "russian": "Что тут скажешь"
+      "russian": "Что тут скажешь",
+      "english": "Well, I don't know."
     },
     {
       "video": "video/moon lovers/머리가 좋아요.webm",
       "videoMp4": "video/moon lovers/mp4/머리가 좋아요.mp4",
       "korean": "머리가 좋아요",
-      "russian": "Вы умный"
+      "russian": "Вы умный",
+      "english": "You're smart."
     },
     {
       "video": "video/moon lovers/그만 둬요.webm",
       "videoMp4": "video/moon lovers/mp4/그만 둬요.mp4",
       "korean": "그만 둬요",
-      "russian": "Прекратите"
+      "russian": "Прекратите",
+      "english": "Stop it."
     }
   ],
   "b2": [
@@ -266,211 +309,246 @@
       "video": "video/moon lovers/잘 부탁 드립니다.webm",
       "videoMp4": "video/moon lovers/mp4/잘 부탁 드립니다.mp4",
       "korean": "잘 부탁 드립니다",
-      "russian": "Будьте ко мне добры"
+      "russian": "Будьте ко мне добры",
+      "english": "I look forward to working with you."
     },
     {
       "video": "video/moon lovers/앞으로.webm",
       "videoMp4": "video/moon lovers/mp4/앞으로.mp4",
       "korean": "앞으로",
-      "russian": "Впредь"
+      "russian": "Впредь",
+      "english": "From now on."
     },
     {
       "video": "video/moon lovers/네가 뭘 원하든.webm",
       "videoMp4": "video/moon lovers/mp4/네가 뭘 원하든.mp4",
       "korean": "네가 뭘 원하든",
-      "russian": "Что бы ты ни захотел"
+      "russian": "Что бы ты ни захотел",
+      "english": "Whatever you want."
     },
     {
       "video": "video/moon lovers/그럼 돼요.webm",
       "videoMp4": "video/moon lovers/mp4/그럼 돼요.mp4",
       "korean": "그럼 돼요?",
-      "russian": "Так можно?"
+      "russian": "Так можно?",
+      "english": "Is that okay?"
     },
     {
       "video": "video/moon lovers/무서워서 머리까지 아픕니다.webm",
       "videoMp4": "video/moon lovers/mp4/무서워서 머리까지 아픕니다.mp4",
       "korean": "무서워서 머리까지 아픕니다",
-      "russian": "Страшно до боли в голове"
+      "russian": "Страшно до боли в голове",
+      "english": "I'm so scared, it hurts my head."
     },
     {
       "video": "video/moon lovers/죽을래.webm",
       "videoMp4": "video/moon lovers/mp4/죽을래.mp4",
       "korean": "죽을래?",
-      "russian": "Умереть хочешь?"
+      "russian": "Умереть хочешь?",
+      "english": "Do you want to die?"
     },
     {
       "video": "video/moon lovers/뭐 어쩐지.webm",
       "videoMp4": "video/moon lovers/mp4/뭐 어쩐지.mp4",
       "korean": "뭐 어쩐지",
-      "russian": "Что ж, каким-то образом"
+      "russian": "Что ж, каким-то образом",
+      "english": "Well, what can you do?"
     },
     {
       "video": "video/moon lovers/말이 잘 들리더라고요.webm",
       "videoMp4": "video/moon lovers/mp4/말이 잘 들리더라고요.mp4",
       "korean": "말이 잘 들리더라고요",
-      "russian": "Мне было хорошо слышно его слова"
+      "russian": "Мне было хорошо слышно его слова",
+      "english": "I could hear you well."
     },
     {
       "video": "video/moon lovers/맞네.webm",
       "videoMp4": "video/moon lovers/mp4/맞네.mp4",
       "korean": "맞네!",
-      "russian": "Все так!"
+      "russian": "Все так!",
+      "english": "That's right!"
     },
     {
       "video": "video/moon lovers/답해라.webm",
       "videoMp4": "video/moon lovers/mp4/답해라.mp4",
       "korean": "답해라!",
-      "russian": "Отвечай!"
+      "russian": "Отвечай!",
+      "english": "Answer me!"
     },
     {
       "video": "video/moon lovers/사과해 얼른.webm",
       "videoMp4": "video/moon lovers/mp4/사과해 얼른.mp4",
       "korean": "사과해 얼른!",
-      "russian": "Извиняйся Быстро!"
+      "russian": "Извиняйся Быстро!",
+      "english": "Apologize quickly!"
     },
     {
       "video": "video/moon lovers/날 보는게 확실하냐.webm",
       "videoMp4": "video/moon lovers/mp4/날 보는게 확실하냐.mp4",
       "korean": "날 보는게 확실하냐?",
-      "russian": "Уверена, что видела меня?"
+      "russian": "Уверена, что видела меня?",
+      "english": "Are you sure you saw me?"
     },
     {
       "video": "video/moon lovers/잘 보지 못했어.webm",
       "videoMp4": "video/moon lovers/mp4/잘 보지 못했어.mp4",
       "korean": "잘 보지 못했어",
-      "russian": "Я не разглядела"
+      "russian": "Я не разглядела",
+      "english": "I couldn't see well."
     },
     {
       "video": "video/moon lovers/난 제대로 봤거든요.webm",
       "videoMp4": "video/moon lovers/mp4/난 제대로 봤거든요.mp4",
       "korean": "난 제대로 봤거든요!",
-      "russian": "Я то хорошо видела!"
+      "russian": "Я то хорошо видела!",
+      "english": "I saw it clearly!"
     },
     {
       "video": "video/moon lovers/저리가.webm",
       "videoMp4": "video/moon lovers/mp4/저리가.mp4",
       "korean": "저리가!",
-      "russian": "С дороги!"
+      "russian": "С дороги!",
+      "english": "Get out of the way!"
     },
     {
       "video": "video/moon lovers/그런 말은 치우고.webm",
       "videoMp4": "video/moon lovers/mp4/그런 말은 치우고.mp4",
       "korean": "그런 말은 치우고",
-      "russian": "Не говори так"
+      "russian": "Не говори так",
+      "english": "Don't say that."
     },
     {
       "video": "video/moon lovers/내가 돌아올 때까지.webm",
       "videoMp4": "video/moon lovers/mp4/내가 돌아올 때까지.mp4",
       "korean": "내가 돌아올 때까지",
-      "russian": "Пока я не вернусь"
+      "russian": "Пока я не вернусь",
+      "english": "Until I come back."
     },
     {
       "video": "video/moon lovers/다미원에서 꼼짝 말고 기다려.webm",
       "videoMp4": "video/moon lovers/mp4/다미원에서 꼼짝 말고 기다려.mp4",
       "korean": "다미원에서 꼼짝 말고 기다려",
-      "russian": "Жди в Дамивоне и не суетись"
+      "russian": "Жди в Дамивоне и не суетись",
+      "english": "Just wait there at Damiyon and don't move."
     },
     {
       "video": "video/moon lovers/한국에서 살게 됐다고 좋아하시던 거.webm",
       "videoMp4": "video/moon lovers/mp4/한국에서 살게 됐다고 좋아하시던 거.mp4",
       "korean": "한국에서 살게 됐다고 좋아하시던 거",
-      "russian": "Я радовалась, что буду жить в Корее"
+      "russian": "Я радовалась, что буду жить в Корее",
+      "english": "You were so happy that I was going to live in Korea."
     },
     {
       "video": "video/moon lovers/우정과 애정을 구별하세요.webm",
       "videoMp4": "video/moon lovers/mp4/우정과 애정을 구별하세요.mp4",
       "korean": "우정과 애정을 구별하세요",
-      "russian": "Разграничивайте дружбу и любовь"
+      "russian": "Разграничивайте дружбу и любовь",
+      "english": "Distinguish between friendship and love."
     },
     {
       "video": "video/moon lovers/한 사람에게만 정을 쏟으면 힘들어집니다.webm",
       "videoMp4": "video/moon lovers/mp4/한 사람에게만 정을 쏟으면 힘들어집니다.mp4",
       "korean": "한 사람에게만 정을 쏟으면 힘들어집니다",
-      "russian": "Если отдавать всю привязанность одному человеку, станет тяжело"
+      "russian": "Если отдавать всю привязанность одному человеку, станет тяжело",
+      "english": "It gets tough if you pour all your affection into one person."
     },
     {
       "video": "video/moon lovers/나와 엮이면 불행해질지도 몰라.webm",
       "videoMp4": "video/moon lovers/mp4/나와 엮이면 불행해질지도 몰라.mp4",
       "korean": "나와 엮이면 불행해질지도 몰라",
-      "russian": "Связавшись со мной, можешь стать несчастной"
+      "russian": "Связавшись со мной, можешь стать несчастной",
+      "english": "You might end up unhappy if you get involved with me."
     },
     {
       "video": "video/moon lovers/그래도 놓아 주진 않을 거야.webm",
       "videoMp4": "video/moon lovers/mp4/그래도 놓아 주진 않을 거야.mp4",
       "korean": "그래도 놓아 주진 않을 거야",
-      "russian": "Но всё равно я тебя не отпущу"
+      "russian": "Но всё равно я тебя не отпущу",
+      "english": "But I still won't let you go."
     },
     {
       "video": "video/moon lovers/거짓말이야.webm",
       "videoMp4": "video/moon lovers/mp4/거짓말이야.mp4",
       "korean": "거짓말이야",
-      "russian": "Я соврал"
+      "russian": "Я соврал",
+      "english": "It's a lie."
     },
     {
       "video": "video/moon lovers/늘 같은 데서 틀리잖냐.webm",
       "videoMp4": "video/moon lovers/mp4/늘 같은 데서 틀리잖냐.mp4",
       "korean": "늘 같은 데서 틀리잖냐",
-      "russian": "Ты ведь всегда ошибаешься в одном и том же"
+      "russian": "Ты ведь всегда ошибаешься в одном и том же",
+      "english": "You always make the same mistake."
     },
     {
       "video": "video/moon lovers/다시 한번 하자.webm",
       "videoMp4": "video/moon lovers/mp4/다시 한번 하자.mp4",
       "korean": "다시 한번 하자",
-      "russian": "Давай попробуем ещё раз"
+      "russian": "Давай попробуем ещё раз",
+      "english": "Let's try it one more time."
     },
     {
       "video": "video/moon lovers/그 사람을 부려먹는 것도 정도가 있는 거야.webm",
       "videoMp4": "video/moon lovers/mp4/그 사람을 부려먹는 것도 정도가 있는 거야.mp4",
       "korean": "그 사람을 부려먹는 것도 정도가 있는 거야",
-      "russian": "Эксплуатировать человека — тоже должна быть мера"
+      "russian": "Эксплуатировать человека — тоже должна быть мера",
+      "english": "There's a limit to how much you can exploit someone."
     },
     {
       "video": "video/moon lovers/이건 안돼.webm",
       "videoMp4": "video/moon lovers/mp4/이건 안돼.mp4",
       "korean": "이건 안돼",
-      "russian": "Это нельзя"
+      "russian": "Это нельзя",
+      "english": "This can't happen."
     },
     {
       "video": "video/moon lovers/다치셨습니까.webm",
       "videoMp4": "video/moon lovers/mp4/다치셨습니까.mp4",
       "korean": "다치셨습니까?",
-      "russian": "Вы поранились?"
+      "russian": "Вы поранились?",
+      "english": "Did you get hurt?"
     },
     {
       "video": "video/moon lovers/누가 봐도 상극이여야 함을 잊지 마십시오.webm",
       "videoMp4": "video/moon lovers/mp4/누가 봐도 상극이여야 함을 잊지 마십시오.mp4",
       "korean": "누가 봐도 상극이여야 함을 잊지 마십시오",
-      "russian": "Как ни посмотри, а вы разные"
+      "russian": "Как ни посмотри, а вы разные",
+      "english": "Don't forget, you two are just not meant to be."
     },
     {
       "video": "video/moon lovers/그 반지 아주 잘 어울린다 연화야.webm",
       "videoMp4": "video/moon lovers/mp4/그 반지 아주 잘 어울린다 연화야.mp4",
       "korean": "그 반지 아주 잘 어울린다 연화야",
-      "russian": "Это кольцо тебе очень идёт, Ёнхва"
+      "russian": "Это кольцо тебе очень идёт, Ёнхва",
+      "english": "That ring looks great on you, Yeonhwa."
     },
     {
       "video": "video/moon lovers/경찰.webm",
       "videoMp4": "video/moon lovers/mp4/경찰.mp4",
       "korean": "경찰",
-      "russian": "Полиция"
+      "russian": "Полиция",
+      "english": "Police."
     },
     {
       "video": "video/moon lovers/사 왕자.webm",
       "videoMp4": "video/moon lovers/mp4/사 왕자.mp4",
       "korean": "사 왕자?",
-      "russian": "Принц Са?"
+      "russian": "Принц Са?",
+      "english": "Prince Sa?"
     },
     {
       "video": "video/moon lovers/아이구 아가씨.webm",
       "videoMp4": "video/moon lovers/mp4/아이구 아가씨.mp4",
       "korean": "아이구 아가씨",
-      "russian": "Айгу, барышня"
+      "russian": "Айгу, барышня",
+      "english": "Oh dear, miss."
     },
     {
       "video": "video/moon lovers/포졸 포졸 없어요.webm",
       "videoMp4": "video/moon lovers/mp4/포졸 포졸 없어요.mp4",
       "korean": "포졸 포졸 없어요?",
-      "russian": "Стражников совсем нет?"
+      "russian": "Стражников совсем нет?",
+      "english": "Aren't there any guards?"
     }
   ],
   "b3": [
@@ -478,223 +556,258 @@
       "video": "video/moon lovers/싫은데.webm",
       "videoMp4": "video/moon lovers/mp4/싫은데.mp4",
       "korean": "싫은데",
-      "russian": "Не хочу"
+      "russian": "Не хочу",
+      "english": "I don't want to."
     },
     {
       "video": "video/moon lovers/난 널 몰라.webm",
       "videoMp4": "video/moon lovers/mp4/난 널 몰라.mp4",
       "korean": "난 널 몰라",
-      "russian": "Я тебя не знаю"
+      "russian": "Я тебя не знаю",
+      "english": "I don't know you."
     },
     {
       "video": "video/moon lovers/저쪽에 사람들이.webm",
       "videoMp4": "video/moon lovers/mp4/저쪽에 사람들이.mp4",
       "korean": "저쪽에 사람들이",
-      "russian": "Вон там люди"
+      "russian": "Вон там люди",
+      "english": "There are people over there."
     },
     {
       "video": "video/moon lovers/죽었어요.webm",
       "videoMp4": "video/moon lovers/mp4/죽었어요.mp4",
       "korean": "죽었어요",
-      "russian": "Умерли"
+      "russian": "Умерли",
+      "english": "They died."
     },
     {
       "video": "video/moon lovers/그런 말은 마라.webm",
       "videoMp4": "video/moon lovers/mp4/그런 말은 마라.mp4",
       "korean": "그런 말은 마라",
-      "russian": "Не говори так"
+      "russian": "Не говори так",
+      "english": "Don't say that."
     },
     {
       "video": "video/moon lovers/부상도 입었는데.webm",
       "videoMp4": "video/moon lovers/mp4/부상도 입었는데.mp4",
       "korean": "부상도 입었는데",
-      "russian": "Он ведь даже ранен был"
+      "russian": "Он ведь даже ранен был",
+      "english": "He was even injured."
     },
     {
       "video": "video/moon lovers/대체 뭘 봤다는 거야.webm",
       "videoMp4": "video/moon lovers/mp4/대체 뭘 봤다는 거야.mp4",
       "korean": "대체 뭘 봤다는 거야?",
-      "russian": "Что ты вообще видела?"
+      "russian": "Что ты вообще видела?",
+      "english": "What exactly did you see?"
     },
     {
       "video": "video/moon lovers/죽은 자가 제발로 사라졌다 할래.webm",
       "videoMp4": "video/moon lovers/mp4/죽은 자가 제발로 사라졌다 할래.mp4",
       "korean": "죽은 자가 제발로 사라졌다 할래?",
-      "russian": "Думаешь, мертвецы своим ходом ушли?"
+      "russian": "Думаешь, мертвецы своим ходом ушли?",
+      "english": "Do you think the dead just walked away?"
     },
     {
       "video": "video/moon lovers/틀림 없어요.webm",
       "videoMp4": "video/moon lovers/mp4/틀림 없어요.mp4",
       "korean": "틀림 없어요",
-      "russian": "Без сомнений"
+      "russian": "Без сомнений",
+      "english": "There's no doubt."
     },
     {
       "video": "video/moon lovers/괜찮다니까.webm",
       "videoMp4": "video/moon lovers/mp4/괜찮다니까.mp4",
       "korean": "괜찮다니까",
-      "russian": "Я же сказал, всё в порядке"
+      "russian": "Я же сказал, всё в порядке",
+      "english": "I told you, it's fine."
     },
     {
       "video": "video/moon lovers/그만 울고 수야 집에 가자.webm",
       "videoMp4": "video/moon lovers/mp4/그만 울고 수야 집에 가자.mp4",
       "korean": "그만 울고 수야 집에 가자",
-      "russian": "Хватит плакать, Суя, пойдём домой"
+      "russian": "Хватит плакать, Суя, пойдём домой",
+      "english": "Stop crying, Suya, let's go home."
     },
     {
       "video": "video/moon lovers/정윤은 어디느냐.webm",
       "videoMp4": "video/moon lovers/mp4/정윤은 어디느냐.mp4",
       "korean": "정윤은 어디느냐?",
-      "russian": "Где Чон Юн?"
+      "russian": "Где Чон Юн?",
+      "english": "Where is Jeong-yoon?"
     },
     {
       "video": "video/moon lovers/그놈이 끼어드는 바람에 일을 망쳤어.webm",
       "videoMp4": "video/moon lovers/mp4/그놈이 끼어드는 바람에 일을 망쳤어.mp4",
       "korean": "그놈이 끼어드는 바람에 일을 망쳤어",
-      "russian": "Он вмешался, и всё пошло наперекосяк"
+      "russian": "Он вмешался, и всё пошло наперекосяк",
+      "english": "That guy butted in and messed everything up."
     },
     {
       "video": "video/moon lovers/이제 산자는 아무도 없어.webm",
       "videoMp4": "video/moon lovers/mp4/이제 산자는 아무도 없어.mp4",
       "korean": "이제 산자는 아무도 없어",
-      "russian": "Теперь в живых никого не осталось"
+      "russian": "Теперь в живых никого не осталось",
+      "english": "Now there’s no one left alive."
     },
     {
       "video": "video/moon lovers/그것으로 만족하자.webm",
       "videoMp4": "video/moon lovers/mp4/그것으로 만족하자.mp4",
       "korean": "그것으로 만족하자",
-      "russian": "Давай этим и удовлетворимся"
+      "russian": "Давай этим и удовлетворимся",
+      "english": "Let’s just be satisfied with that."
     },
     {
       "video": "video/moon lovers/소가 무해를 배운 게 틀림없어.webm",
       "videoMp4": "video/moon lovers/mp4/소가 무해를 배운 게 틀림없어.mp4",
       "korean": "소가 무해를 배운 게 틀림없어",
-      "russian": "Не сомневаюсь, что корова научилась быть безвредной"
+      "russian": "Не сомневаюсь, что корова научилась быть безвредной",
+      "english": "The cow must have learned to be harmless."
     },
     {
       "video": "video/moon lovers/더 철저히 지켜봐.webm",
       "videoMp4": "video/moon lovers/mp4/더 철저히 지켜봐.mp4",
       "korean": "더 철저히 지켜봐",
-      "russian": "Следи ещё внимательнее"
+      "russian": "Следи ещё внимательнее",
+      "english": "Keep a closer watch."
     },
     {
       "video": "video/moon lovers/잊지 마라.webm",
       "videoMp4": "video/moon lovers/mp4/잊지 마라.mp4",
       "korean": "잊지 마라",
-      "russian": "Не забывай"
+      "russian": "Не забывай",
+      "english": "Don’t forget."
     },
     {
       "video": "video/moon lovers/네가 할 일이 아니야.webm",
       "videoMp4": "video/moon lovers/mp4/네가 할 일이 아니야.mp4",
       "korean": "네가 할 일이 아니야",
-      "russian": "Это не твоё дело"
+      "russian": "Это не твоё дело",
+      "english": "It’s not your job."
     },
     {
       "video": "video/moon lovers/충분하다 이제.webm",
       "videoMp4": "video/moon lovers/mp4/충분하다 이제.mp4",
       "korean": "충분하다 이제",
-      "russian": "Хватит уже"
+      "russian": "Хватит уже",
+      "english": "That’s enough now."
     },
     {
       "video": "video/moon lovers/가끔.webm",
       "videoMp4": "video/moon lovers/mp4/가끔.mp4",
       "korean": "가끔",
-      "russian": "Иногда"
+      "russian": "Иногда",
+      "english": "Sometimes."
     },
     {
       "video": "video/moon lovers/아 대체.webm",
       "videoMp4": "video/moon lovers/mp4/아 대체.mp4",
       "korean": "아 대체",
-      "russian": "Ах, что вообще..."
+      "russian": "Ах, что вообще...",
+      "english": "Oh, what the heck..."
     },
     {
       "video": "video/moon lovers/그 숲에 왜 들어간 거야.webm",
       "videoMp4": "video/moon lovers/mp4/그 숲에 왜 들어간 거야.mp4",
       "korean": "그 숲에 왜 들어간 거야?",
-      "russian": "Зачем ты пошёл в тот лес?"
+      "russian": "Зачем ты пошёл в тот лес?",
+      "english": "Why did you go into that forest?"
     },
     {
       "video": "video/moon lovers/길을 잃은 거죠.webm",
       "videoMp4": "video/moon lovers/mp4/길을 잃은 거죠.mp4",
       "korean": "길을 잃은 거죠",
       "russian": "Заблудилась",
-      "new": true
+      "new": true,
+      "english": "I got lost."
     },
     {
       "video": "video/moon lovers/그러니까요.webm",
       "videoMp4": "video/moon lovers/mp4/그러니까요.mp4",
       "korean": "그러니까요",
       "russian": "Вот именно",
-      "new": true
+      "new": true,
+      "english": "Exactly."
     },
     {
       "video": "video/moon lovers/수를 구해 주셔서 감사합니다.webm",
       "videoMp4": "video/moon lovers/mp4/수를 구해 주셔서 감사합니다.mp4",
       "korean": "수를 구해 주셔서 감사합니다",
       "russian": "Спасибо, что спасли Су",
-      "new": true
+      "new": true,
+      "english": "Thank you for saving Su."
     },
     {
       "video": "video/moon lovers/즐거워요.webm",
       "videoMp4": "video/moon lovers/mp4/즐거워요.mp4",
       "korean": "즐거워요",
       "russian": "Мне весело",
-      "new": true
+      "new": true,
+      "english": "I'm having fun."
     },
     {
       "video": "video/moon lovers/즐거우시다고요.webm",
       "videoMp4": "video/moon lovers/mp4/즐거우시다고요.mp4",
       "korean": "즐거우시다고요?",
       "russian": "Вы говорите, вам весело?",
-      "new": true
+      "new": true,
+      "english": "You’re saying you’re having fun?"
     },
     {
       "video": "video/moon lovers/거기서.webm",
       "videoMp4": "video/moon lovers/mp4/거기서.mp4",
       "korean": "거기서",
       "russian": "Там",
-      "new": true
+      "new": true,
+      "english": "Over there."
     },
     {
       "video": "video/moon lovers/더 생각했네.webm",
       "videoMp4": "video/moon lovers/mp4/더 생각했네.mp4",
       "korean": "더 생각했네",
       "russian": "Еще раз подумал",
-      "new": true
+      "new": true,
+      "english": "I thought about it more."
     },
     {
       "video": "video/moon lovers/이제 그만하면 됐다.webm",
       "videoMp4": "video/moon lovers/mp4/이제 그만하면 됐다.mp4",
       "korean": "이제 그만하면 됐다",
       "russian": "Теперь достаточно",
-      "new": true
+      "new": true,
+      "english": "That's enough now."
     },
     {
       "video": "video/moon lovers/얼굴을 봤어.webm",
       "videoMp4": "video/moon lovers/mp4/얼굴을 봤어.mp4",
       "korean": "얼굴을 봤어?",
       "russian": "Видела лицо?",
-      "new": true
+      "new": true,
+      "english": "Did you see the face?"
     },
     {
       "video": "video/moon lovers/방금 그 말 또 누가 알고 있어.webm",
       "videoMp4": "video/moon lovers/mp4/방금 그 말 또 누가 알고 있어.mp4",
       "korean": "방금 그 말 또 누가 알고 있어?",
       "russian": "Кто ещё знает то, что ты только что сказала?",
-      "new": true
+      "new": true,
+      "english": "Who else knows what you just said?"
     },
     {
       "video": "video/moon lovers/다신 내 눈에 띄지 마.webm",
       "videoMp4": "video/moon lovers/mp4/다신 내 눈에 띄지 마.mp4",
       "korean": "다신 내 눈에 띄지 마",
       "russian": "Больше не попадайся мне на глаза",
-      "new": true
+      "new": true,
+      "english": "Don't let me see you again."
     },
     {
       "video": "video/moon lovers/내가 뭘 잘못했는데요.webm",
       "videoMp4": "video/moon lovers/mp4/내가 뭘 잘못했는데요.mp4",
       "korean": "내가 뭘 잘못했는데요?",
       "russian": "Что я сделала не так?",
-      "new": true
+      "new": true,
+      "english": "What did I do wrong?"
     }
   ],
   "b4": [
@@ -703,244 +816,279 @@
       "videoMp4": "video/moon lovers/mp4/괜찮으세요.mp4",
       "korean": "괜찮으세요?",
       "russian": "Вы в порядке?",
-      "new": true
+      "new": true,
+      "english": "Are you okay?"
     },
     {
       "video": "video/moon lovers/나 말이냐.webm",
       "videoMp4": "video/moon lovers/mp4/나 말이냐.mp4",
       "korean": "나 말이냐?",
       "russian": "Ты обо мне?",
-      "new": true
+      "new": true,
+      "english": "Are you talking about me?"
     },
     {
       "video": "video/moon lovers/열한 살이었다.webm",
       "videoMp4": "video/moon lovers/mp4/열한 살이었다.mp4",
       "korean": "열한 살이었다",
       "russian": "Мне было одиннадцать лет",
-      "new": true
+      "new": true,
+      "english": "I was eleven."
     },
     {
       "video": "video/moon lovers/하지만.webm",
       "videoMp4": "video/moon lovers/mp4/하지만.mp4",
       "korean": "하지만",
       "russian": "Но",
-      "new": true
+      "new": true,
+      "english": "But..."
     },
     {
       "video": "video/moon lovers/계속 기억하시잖아요.webm",
       "videoMp4": "video/moon lovers/mp4/계속 기억하시잖아요.mp4",
       "korean": "계속 기억하시잖아요",
       "russian": "Вы же продолжаете помнить",
-      "new": true
+      "new": true,
+      "english": "You still remember."
     },
     {
       "video": "video/moon lovers/아 근데.webm",
       "videoMp4": "video/moon lovers/mp4/아 근데.mp4",
       "korean": "아 근데",
       "russian": "Ах да",
-      "new": true
+      "new": true,
+      "english": "Oh, but..."
     },
     {
       "video": "video/moon lovers/왜요.webm",
       "videoMp4": "video/moon lovers/mp4/왜요.mp4",
       "korean": "왜요?",
       "russian": "Почему?",
-      "new": true
+      "new": true,
+      "english": "Why?"
     },
     {
       "video": "video/moon lovers/그래 해라.webm",
       "videoMp4": "video/moon lovers/mp4/그래 해라.mp4",
       "korean": "그래 해라",
       "russian": "Ладно, делай так",
-      "new": true
+      "new": true,
+      "english": "Sure, go ahead."
     },
     {
       "video": "video/moon lovers/다친 곳은 좀 어떠하냐.webm",
       "videoMp4": "video/moon lovers/mp4/다친 곳은 좀 어떠하냐.mp4",
       "korean": "다친 곳은 좀 어떠하냐?",
       "russian": "Как рана? / Как место, где ты поранился?",
-      "new": true
+      "new": true,
+      "english": "How's the injury?"
     },
     {
       "video": "video/moon lovers/상처 크지 않아.webm",
       "videoMp4": "video/moon lovers/mp4/상처 크지 않아.mp4",
       "korean": "상처 크지 않아",
       "russian": "Рана не большая",
-      "new": true
+      "new": true,
+      "english": "It's not a big wound."
     },
     {
       "video": "video/moon lovers/여부가 있겠습니까.webm",
       "videoMp4": "video/moon lovers/mp4/여부가 있겠습니까.mp4",
       "korean": "여부가 있겠습니까?",
       "russian": "Разве есть сомнения?",
-      "new": true
+      "new": true,
+      "english": "Is there any doubt?"
     },
     {
       "video": "video/moon lovers/형님 넷째 형님 말입니다.webm",
       "videoMp4": "video/moon lovers/mp4/형님 넷째 형님 말입니다.mp4",
       "korean": "형님 넷째 형님 말입니다",
       "russian": "Старший, я про нашего четвёртого брата",
-      "new": true
+      "new": true,
+      "english": "I'm talking about our fourth brother."
     },
     {
       "video": "video/moon lovers/재밌겠네.webm",
       "videoMp4": "video/moon lovers/mp4/재밌겠네.mp4",
       "korean": "재밌겠네",
       "russian": "Будет интересно",
-      "new": true
+      "new": true,
+      "english": "That sounds fun."
     },
     {
       "video": "video/moon lovers/그랬지.webm",
       "videoMp4": "video/moon lovers/mp4/그랬지.mp4",
       "korean": "그랬지",
       "russian": "Все так",
-      "new": true
+      "new": true,
+      "english": "That's right."
     },
     {
       "video": "video/moon lovers/원단 맞이 중이냐.webm",
       "videoMp4": "video/moon lovers/mp4/원단 맞이 중이냐.mp4",
       "korean": "원단 맞이 중이냐?",
       "russian": "Вы встречаете Новый год?",
-      "new": true
+      "new": true,
+      "english": "Are you celebrating the New Year?"
     },
     {
       "video": "video/moon lovers/어니 네 얼굴에 상처는 뭐냐.webm",
       "videoMp4": "video/moon lovers/mp4/어니 네 얼굴에 상처는 뭐냐.mp4",
       "korean": "어니 네 얼굴에 상처는 뭐냐?",
       "russian": "Эй, что это за рана у тебя на лице?",
-      "new": true
+      "new": true,
+      "english": "Hey, what's that cut on your face?"
     },
     {
       "video": "video/moon lovers/다툼이 좀 있었습니다.webm",
       "videoMp4": "video/moon lovers/mp4/다툼이 좀 있었습니다.mp4",
       "korean": "다툼이 좀 있었습니다",
       "russian": "Была небольшая ссора",
-      "new": true
+      "new": true,
+      "english": "There was a bit of a fight."
     },
     {
       "video": "video/moon lovers/다툼.webm",
       "videoMp4": "video/moon lovers/mp4/다툼.mp4",
       "korean": "다툼",
       "russian": "Ссора",
-      "new": true
+      "new": true,
+      "english": "A fight."
     },
     {
       "video": "video/moon lovers/누구 짓이냐.webm",
       "videoMp4": "video/moon lovers/mp4/누구 짓이냐.mp4",
       "korean": "누구 짓이냐?",
       "russian": "Чьих это рук дело?",
-      "new": true
+      "new": true,
+      "english": "Whose doing is this?"
     },
     {
       "video": "video/moon lovers/그랬겠지.webm",
       "videoMp4": "video/moon lovers/mp4/그랬겠지.mp4",
       "korean": "그랬겠지?",
       "russian": "Так ведь и было?",
-      "new": true
+      "new": true,
+      "english": "I guess that’s how it was?"
     },
     {
       "video": "video/moon lovers/별일 없을 거야.webm",
       "videoMp4": "video/moon lovers/mp4/별일 없을 거야.mp4",
       "korean": "별일 없을 거야",
       "russian": "Ничего особенного не случится",
-      "new": true
+      "new": true,
+      "english": "Nothing special will happen."
     },
     {
       "video": "video/moon lovers/어이쿠 저런.webm",
       "videoMp4": "video/moon lovers/mp4/어이쿠 저런.mp4",
       "korean": "어이쿠 저런",
       "russian": "Ой, вот это да",
-      "new": true
+      "new": true,
+      "english": "Oh my!"
     },
     {
       "video": "video/moon lovers/날 기다린 게냐.webm",
       "videoMp4": "video/moon lovers/mp4/날 기다린 게냐.mp4",
       "korean": "날 기다린 게냐?",
       "russian": "Меня ждешь?",
-      "new": true
+      "new": true,
+      "english": "Were you waiting for me?"
     },
     {
       "video": "video/moon lovers/아 내가 왜 맞아야 되는데요.webm",
       "videoMp4": "video/moon lovers/mp4/아 내가 왜 맞아야 되는데요.mp4",
       "korean": "아 내가 왜 맞아야 되는데요?",
       "russian": "А почему это я должна получать удар?",
-      "new": true
+      "new": true,
+      "english": "Why should I get hit?"
     },
     {
       "video": "video/moon lovers/먼저 실수한 쪽은 황자님인데.webm",
       "videoMp4": "video/moon lovers/mp4/먼저 실수한 쪽은 황자님인데.mp4",
       "korean": "먼저 실수한 쪽은 황자님인데",
       "russian": "Принц ведь первый допустил ошибку",
-      "new": true
+      "new": true,
+      "english": "The prince was the one who made the first mistake."
     },
     {
       "video": "video/moon lovers/내가 고맙지 그치.webm",
       "videoMp4": "video/moon lovers/mp4/내가 고맙지 그치.mp4",
       "korean": "내가 고맙지 그치?",
       "russian": "Ты ведь должна благодарить меня, разве нет?",
-      "new": true
+      "new": true,
+      "english": "You should be grateful to me, right?"
     },
     {
       "video": "video/moon lovers/예 아주 고마워 죽을 지경입니다.webm",
       "videoMp4": "video/moon lovers/mp4/예 아주 고마워 죽을 지경입니다.mp4",
       "korean": "예 아주 고마워 죽을 지경입니다",
       "russian": "Да, до смерти благодарна",
-      "new": true
+      "new": true,
+      "english": "Yes, I'm so grateful I could die."
     },
     {
       "video": "video/moon lovers/아 짐이라뇨.webm",
       "videoMp4": "video/moon lovers/mp4/아 짐이라뇨.mp4",
       "korean": "아 짐이라뇨?",
       "russian": "Обременяет?",
-      "new": true
+      "new": true,
+      "english": "What do you mean, a burden?"
     },
     {
       "video": "video/moon lovers/또 왜요.webm",
       "videoMp4": "video/moon lovers/mp4/또 왜요.mp4",
       "korean": "또 왜요?",
       "russian": "Что опять?",
-      "new": true
+      "new": true,
+      "english": "What now?"
     },
     {
       "video": "video/moon lovers/너에게 기념할 말이 있다.webm",
       "videoMp4": "video/moon lovers/mp4/너에게 기념할 말이 있다.mp4",
       "korean": "너에게 기념할 말이 있다",
       "russian": "У меня есть слова, которые стоит тебе запомнить",
-      "new": true
+      "new": true,
+      "english": "I have some words for you to remember."
     },
     {
       "video": "video/moon lovers/넌 들어가 봐라 어서.webm",
       "videoMp4": "video/moon lovers/mp4/넌 들어가 봐라 어서.mp4",
       "korean": "넌 들어가 봐라 어서",
       "russian": "Ты иди внутрь, давай",
-      "new": true
+      "new": true,
+      "english": "You go inside, hurry up."
     },
     {
       "video": "video/moon lovers/그럼 왜 그러는데요.webm",
       "videoMp4": "video/moon lovers/mp4/그럼 왜 그러는데요.mp4",
       "korean": "그럼 왜 그러는데요?",
       "russian": "Тогда почему вы так делаете?",
-      "new": true
+      "new": true,
+      "english": "Then why are you doing that?"
     },
     {
       "video": "video/moon lovers/설마 얘.webm",
       "videoMp4": "video/moon lovers/mp4/설마 얘.mp4",
       "korean": "설마 얘",
       "russian": "Неужели это он?",
-      "new": true
+      "new": true,
+      "english": "No way, is it him?"
     },
     {
       "video": "video/moon lovers/나한테 반한 거야.webm",
       "videoMp4": "video/moon lovers/mp4/나한테 반한 거야.mp4",
       "korean": "나한테 반한 거야?",
       "russian": "Ты влюбился в меня?",
-      "new": true
+      "new": true,
+      "english": "Are you in love with me?"
     },
     {
       "video": "video/moon lovers/하 웬일이니.webm",
       "videoMp4": "video/moon lovers/mp4/하 웬일이니.mp4",
       "korean": "하 웬일이니",
-      "russian": "О, что за неожиданность"
+      "russian": "О, что за неожиданность",
+      "english": "Oh, what a surprise."
     }
   ],
   "b5": [
@@ -949,90 +1097,103 @@
       "videoMp4": "video/moon lovers/mp4/예 자주 오세요 그럼.mp4",
       "korean": "예 자주 오세요 그럼",
       "russian": "Да, тогда приходите почаще",
-      "new": true
+      "new": true,
+      "english": "Yes, then come often."
     },
     {
       "video": "video/moon lovers/널 보러 자주 들러 달라는 것이다.webm",
       "videoMp4": "video/moon lovers/mp4/널 보러 자주 들러 달라는 것이다.mp4",
       "korean": "널 보러 자주 들러 달라는 것이다?",
       "russian": "Говоришь, чтоб я чаще заходил повидаться с тобой?",
-      "new": true
+      "new": true,
+      "english": "Are you saying I should drop by to see you more often?"
     },
     {
       "video": "video/moon lovers/오늘은 우리의 첫날로 하는 것이다.webm",
       "videoMp4": "video/moon lovers/mp4/오늘은 우리의 첫날로 하는 것이다.mp4",
       "korean": "오늘은 우리의 첫날로 하는 것이다",
       "russian": "Сегодня мы будем считать нашим первым днём",
-      "new": true
+      "new": true,
+      "english": "Let's make today our first day."
     },
     {
       "video": "video/moon lovers/한 놈 나와.webm",
       "videoMp4": "video/moon lovers/mp4/한 놈 나와.mp4",
       "korean": "한 놈 나와",
       "russian": "Выходи по одному",
-      "new": true
+      "new": true,
+      "english": "Come out, one at a time."
     },
     {
       "video": "video/moon lovers/그 그림 나한테 팔아요.webm",
       "videoMp4": "video/moon lovers/mp4/그 그림 나한테 팔아요.mp4",
       "korean": "그 그림 나한테 팔아요",
       "russian": "Продайте мне ту картину",
-      "new": true
+      "new": true,
+      "english": "Sell me that painting."
     },
     {
       "video": "video/moon lovers/집 한 채 들고 와 봐.webm",
       "videoMp4": "video/moon lovers/mp4/집 한 채 들고 와 봐.mp4",
       "korean": "집 한 채 들고 와 봐",
       "russian": "Принеси целый дом",
-      "new": true
+      "new": true,
+      "english": "Bring a whole house."
     },
     {
       "video": "video/moon lovers/꿈 같은 시절이었죠.webm",
       "videoMp4": "video/moon lovers/mp4/꿈 같은 시절이었죠.mp4",
       "korean": "꿈 같은 시절이었죠",
       "russian": "Это было время, как во сне",
-      "new": true
+      "new": true,
+      "english": "It was a dream-like time."
     },
     {
       "video": "video/moon lovers/전 형님이 참 원망스럽습니다.webm",
       "videoMp4": "video/moon lovers/mp4/전 형님이 참 원망스럽습니다.mp4",
       "korean": "전 형님이 참 원망스럽습니다",
       "russian": "Я очень обижен на старшего брата",
-      "new": true
+      "new": true,
+      "english": "I'm really resentful towards my older brother."
     },
     {
       "video": "video/moon lovers/누이 소린 이제 관두라니까.webm",
       "videoMp4": "video/moon lovers/mp4/누이 소린 이제 관두라니까.mp4",
       "korean": "누이 소린 이제 관두라니까",
       "russian": "Хватит уже о сестре говорить",
-      "new": true
+      "new": true,
+      "english": "Stop talking about your sister already."
     },
     {
       "video": "video/moon lovers/형님이 들으십니다.webm",
       "videoMp4": "video/moon lovers/mp4/형님이 들으십니다.mp4",
       "korean": "형님이 들으십니다",
       "russian": "Слушай старшего брата",
-      "new": true
+      "new": true,
+      "english": "Your older brother is listening."
     },
     {
       "video": "video/moon lovers/더 조심해야죠.webm",
       "videoMp4": "video/moon lovers/mp4/더 조심해야죠.mp4",
       "korean": "더 조심해야죠",
       "russian": "Надо быть осторожнее",
-      "new": true
+      "new": true,
+      "english": "We need to be more careful."
     },
     {
       "video": "video/moon lovers/전 그러기 싫습니다.webm",
       "videoMp4": "video/moon lovers/mp4/전 그러기 싫습니다.mp4",
       "korean": "전 그러기 싫습니다",
       "russian": "Я не хочу так поступать",
-      "new": true
+      "new": true,
+      "english": "I don't want to do that."
     },
     {
       "video": "video/moon lovers/아주 눈치 안 보고 싸워 드릴게.webm",
       "videoMp4": "video/moon lovers/mp4/아주 눈치 안 보고 싸워 드릴게.mp4",
       "korean": "아주 눈치 안 보고 싸워 드릴게",
-      "russian": "Буду драться, не стесняясь"
+      "russian": "Буду драться, не стесняясь",
+      "english": "I'll fight without holding back."
     }
   ]
 }

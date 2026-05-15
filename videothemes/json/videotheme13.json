@@ -4,44 +4,51 @@
       "video": "video/hvatai/방송국 꽉 불질러 버리고 싶으니까.webm",
       "videoMp4": "video/hvatai/mp4/방송국 꽉 불질러 버리고 싶으니까.mp4",
       "korean": "방송국 꽉 불질러 버리고 싶으니까",
-      "russian": "Хочется просто сжечь вашу телестудию"
+      "russian": "Хочется просто сжечь вашу телестудию",
+      "english": "I just want to burn down the broadcasting station."
     },
     {
       "video": "video/hvatai/다신 이딴 전화하지 마세요.webm",
       "videoMp4": "video/hvatai/mp4/다신 이딴 전화하지 마세요.mp4",
       "korean": "다신 이딴 전화하지 마세요",
-      "russian": "Никогда больше не звони с такой хернёй"
+      "russian": "Никогда больше не звони с такой хернёй",
+      "english": "Don't ever call me with that nonsense again."
     },
     {
       "video": "video/hvatai/시끄러워 죽겠다 1.webm",
       "videoMp4": "video/hvatai/mp4/시끄러워 죽겠다 1.mp4",
       "korean": "시끄러워 죽겠다",
-      "russian": "Шумно досмерти"
+      "russian": "Шумно досмерти",
+      "english": "It's so noisy I could die."
     },
     {
       "video": "video/hvatai/또 살아 봐요.webm",
       "videoMp4": "video/hvatai/mp4/또 살아 봐요.mp4",
       "korean": "또 살아 봐요",
       "russian": "Живите дальше",
-      "new": true
+      "new": true,
+      "english": "Try living again."
     },
     {
       "video": "video/hvatai/우리 산책 나갈까.webm",
       "videoMp4": "video/hvatai/mp4/우리 산책 나갈까.mp4",
       "korean": "우리 산책 나갈까?",
-      "russian": "Может прогуляемся?"
+      "russian": "Может прогуляемся?",
+      "english": "Shall we go for a walk?"
     },
     {
       "video": "video/hvatai/필요없다잖아요.webm",
       "videoMp4": "video/hvatai/mp4/필요없다잖아요.mp4",
       "korean": "필요없다잖아요",
-      "russian": "Я же сказала, не нужно!"
+      "russian": "Я же сказала, не нужно!",
+      "english": "I told you, I don't need it!"
     },
     {
       "video": "video/hvatai/저 아세요.webm",
       "videoMp4": "video/hvatai/mp4/저 아세요.mp4",
       "korean": "저 아세요?",
-      "russian": "Знаете меня?"
+      "russian": "Знаете меня?",
+      "english": "Do you know me?"
     }
   ],
   "b1": [
@@ -49,238 +56,275 @@
       "video": "video/hvatai/예쁘게 매니큐어 발라 줘야 되겠다.webm",
       "videoMp4": "video/hvatai/mp4/예쁘게 매니큐어 발라 줘야 되겠다.mp4",
       "korean": "예쁘게 매니큐어 발라 줘야 되겠다",
-      "russian": "Надо будет ногти красиво накрасить"
+      "russian": "Надо будет ногти красиво накрасить",
+      "english": "I should paint my nails nicely."
     },
     {
       "video": "video/hvatai/너 좋아하는 노란색으로.webm",
       "videoMp4": "video/hvatai/mp4/너 좋아하는 노란색으로.mp4",
       "korean": "너 좋아하는 노란색으로",
-      "russian": "В твой любимый желтый цвет"
+      "russian": "В твой любимый желтый цвет",
+      "english": "In your favorite yellow color."
     },
     {
       "video": "video/hvatai/우리 산책 나갈까.webm",
       "videoMp4": "video/hvatai/mp4/우리 산책 나갈까.mp4",
       "korean": "우리 산책 나갈까?",
-      "russian": "Может прогуляемся?"
+      "russian": "Может прогуляемся?",
+      "english": "Shall we go for a walk?"
     },
     {
       "video": "video/hvatai/조금이라도 움직여 보자.webm",
       "videoMp4": "video/hvatai/mp4/조금이라도 움직여 보자.mp4",
       "korean": "조금이라도 움직여 보자",
-      "russian": "Хотя бы немного подвигаемся"
+      "russian": "Хотя бы немного подвигаемся",
+      "english": "Let's try to move a little."
     },
     {
       "video": "video/hvatai/아프겠다.webm",
       "videoMp4": "video/hvatai/mp4/아프겠다.mp4",
       "korean": "아프겠다",
-      "russian": "Больно наверно"
+      "russian": "Больно наверно",
+      "english": "That must hurt."
     },
     {
       "video": "video/hvatai/괜찮아.webm",
       "videoMp4": "video/hvatai/mp4/괜찮아.mp4",
       "korean": "괜찮아?",
-      "russian": "ты в порядке?"
+      "russian": "ты в порядке?",
+      "english": "Are you okay?"
     },
     {
       "video": "video/hvatai/얼른 가서 연고 얻어올게.webm",
       "videoMp4": "video/hvatai/mp4/얼른 가서 연고 얻어올게.mp4",
       "korean": "얼른 가서 연고 얻어올게",
-      "russian": "Сейчас быстро схожу за мазью"
+      "russian": "Сейчас быстро схожу за мазью",
+      "english": "I'll go get some ointment quickly."
     },
     {
       "video": "video/hvatai/미안해 엄마가 너무 바짝 깎았어.webm",
       "videoMp4": "video/hvatai/mp4/미안해 엄마가 너무 바짝 깎았어.mp4",
       "korean": "미안해 엄마가 너무 바짝 깎았어",
-      "russian": "Прости маму, очень уж коротко подстригла"
+      "russian": "Прости маму, очень уж коротко подстригла",
+      "english": "I'm sorry, Mom cut it too short."
     },
     {
       "video": "video/hvatai/선재 씨가 한번 도전해 볼까요.webm",
       "videoMp4": "video/hvatai/mp4/선재 씨가 한번 도전해 볼까요.mp4",
       "korean": "선재 씨가 한번 도전해 볼까요?",
-      "russian": "Сон Джэ, может вы разок попробуете?"
+      "russian": "Сон Джэ, может вы разок попробуете?",
+      "english": "How about you give it a try, Sunjae?"
     },
     {
       "video": "video/hvatai/전화 오잖아.webm",
       "videoMp4": "video/hvatai/mp4/전화 오잖아.mp4",
       "korean": "전화 오잖아",
-      "russian": "У тебя ж телефон звонит"
+      "russian": "У тебя ж телефон звонит",
+      "english": "Your phone is ringing."
     },
     {
       "video": "video/hvatai/전화를 안 받으시네요.webm",
       "videoMp4": "video/hvatai/mp4/전화를 안 받으시네요.mp4",
       "korean": "전화를 안 받으시네요",
-      "russian": "Не берут трубку"
+      "russian": "Не берут трубку",
+      "english": "They're not picking up."
     },
     {
       "video": "video/hvatai/시끄러워 죽겠다 1.webm",
       "videoMp4": "video/hvatai/mp4/시끄러워 죽겠다 1.mp4",
       "korean": "시끄러워 죽겠다",
-      "russian": "Шумно досмерти"
+      "russian": "Шумно досмерти",
+      "english": "It's so noisy."
     },
     {
       "video": "video/hvatai/끊을게요.webm",
       "videoMp4": "video/hvatai/mp4/끊을게요.mp4",
       "korean": "끊을게요",
-      "russian": "Кладу трубку"
+      "russian": "Кладу трубку",
+      "english": "I'm hanging up."
     },
     {
       "video": "video/hvatai/모르는데요.webm",
       "videoMp4": "video/hvatai/mp4/모르는데요.mp4",
       "korean": "모르는데요?",
-      "russian": "Не знаю вас"
+      "russian": "Не знаю вас",
+      "english": "I don't know."
     },
     {
       "video": "video/hvatai/저 아세요.webm",
       "videoMp4": "video/hvatai/mp4/저 아세요.mp4",
       "korean": "저 아세요?",
-      "russian": "Знаете меня?"
+      "russian": "Знаете меня?",
+      "english": "Do you know me?"
     },
     {
       "video": "video/hvatai/모른다고요.webm",
       "videoMp4": "video/hvatai/mp4/모른다고요.mp4",
       "korean": "모른다고요",
-      "russian": "Не знаю, сказала же"
+      "russian": "Не знаю, сказала же",
+      "english": "I said I don't know."
     },
     {
       "video": "video/hvatai/어 잠깐만요.webm",
       "videoMp4": "video/hvatai/mp4/어 잠깐만요.mp4",
       "korean": "어 잠깐만요",
-      "russian": "Постойте"
+      "russian": "Постойте",
+      "english": "Oh, wait a second."
     },
     {
       "video": "video/hvatai/필요없어요.webm",
       "videoMp4": "video/hvatai/mp4/필요없어요.mp4",
       "korean": "필요없어요",
-      "russian": "Не нужно"
+      "russian": "Не нужно",
+      "english": "I don't need it."
     },
     {
       "video": "video/hvatai/선물 받아 가셔야죠.webm",
       "videoMp4": "video/hvatai/mp4/선물 받아 가셔야죠.mp4",
       "korean": "선물 받아 가셔야죠",
-      "russian": "Вам полагается подарок"
+      "russian": "Вам полагается подарок",
+      "english": "You should take a gift."
     },
     {
       "video": "video/hvatai/필요없다잖아요.webm",
       "videoMp4": "video/hvatai/mp4/필요없다잖아요.mp4",
       "korean": "필요없다잖아요",
-      "russian": "Я же сказала, не нужно!"
+      "russian": "Я же сказала, не нужно!",
+      "english": "I told you I don't need it!"
     },
     {
       "video": "video/hvatai/다신 이딴 전화하지 마세요.webm",
       "videoMp4": "video/hvatai/mp4/다신 이딴 전화하지 마세요.mp4",
       "korean": "다신 이딴 전화하지 마세요",
-      "russian": "Никогда больше не звони с такой хернёй"
+      "russian": "Никогда больше не звони с такой хернёй",
+      "english": "Don't ever call like this again."
     },
     {
       "video": "video/hvatai/방송국 꽉 불질러 버리고 싶으니까.webm",
       "videoMp4": "video/hvatai/mp4/방송국 꽉 불질러 버리고 싶으니까.mp4",
       "korean": "방송국 꽉 불질러 버리고 싶으니까",
-      "russian": "Хочется просто сжечь вашу телестудию"
+      "russian": "Хочется просто сжечь вашу телестудию",
+      "english": "I just want to burn down the broadcasting station."
     },
     {
       "video": "video/hvatai/정말 죄송합니다.webm",
       "videoMp4": "video/hvatai/mp4/정말 죄송합니다.mp4",
       "korean": "정말 죄송합니다",
       "russian": "Нам очень жаль",
-      "new": true
+      "new": true,
+      "english": "I'm really sorry."
     },
     {
       "video": "video/hvatai/듣고 있어요.webm",
       "videoMp4": "video/hvatai/mp4/듣고 있어요.mp4",
       "korean": "듣고 있어요?",
       "russian": "Вы слушаете?",
-      "new": true
+      "new": true,
+      "english": "Are you listening?"
     },
     {
       "video": "video/hvatai/이렇게 살아준 것만으로도 다행이라고.webm",
       "videoMp4": "video/hvatai/mp4/이렇게 살아준 것만으로도 다행이라고.mp4",
       "korean": "이렇게 살아준 것만으로도 다행이라고",
       "russian": "Счастье, что вы вообще живете",
-      "new": true
+      "new": true,
+      "english": "I'm just glad you're alive."
     },
     {
       "video": "video/hvatai/고맙다고 할 거예요.webm",
       "videoMp4": "video/hvatai/mp4/고맙다고 할 거예요.mp4",
       "korean": "고맙다고 할 거예요",
       "russian": "Хочу поблагодарить вас",
-      "new": true
+      "new": true,
+      "english": "I’ll thank you."
     },
     {
       "video": "video/hvatai/내일은 비가 온대요.webm",
       "videoMp4": "video/hvatai/mp4/내일은 비가 온대요.mp4",
       "korean": "내일은 비가 온대요",
       "russian": "Завтра будет дождь",
-      "new": true
+      "new": true,
+      "english": "It’s supposed to rain tomorrow."
     },
     {
       "video": "video/hvatai/그 비가 그치길 기다리면서.webm",
       "videoMp4": "video/hvatai/mp4/그 비가 그치길 기다리면서.mp4",
       "korean": "그 비가 그치길 기다리면서",
       "russian": "Подождите пока дождь закончится",
-      "new": true
+      "new": true,
+      "english": "While waiting for the rain to stop."
     },
     {
       "video": "video/hvatai/또 살아 봐요.webm",
       "videoMp4": "video/hvatai/mp4/또 살아 봐요.mp4",
       "korean": "또 살아 봐요",
       "russian": "Живите дальше",
-      "new": true
+      "new": true,
+      "english": "Live on."
     },
     {
       "video": "video/hvatai/내가 말했잖아.webm",
       "videoMp4": "video/hvatai/mp4/내가 말했잖아.mp4",
       "korean": "내가 말했잖아",
       "russian": "Я же говорил уже",
-      "new": true
+      "new": true,
+      "english": "I told you."
     },
     {
       "video": "video/hvatai/밖에 한번 나가 봐.webm",
       "videoMp4": "video/hvatai/mp4/밖에 한번 나가 봐.mp4",
       "korean": "밖에 한번 나가 봐",
       "russian": "Выйди хоть раз на улицу",
-      "new": true
+      "new": true,
+      "english": "Go outside for a bit."
     },
     {
       "video": "video/hvatai/갑자기 이렇게 수정해 달라시면 어떡해요.webm",
       "videoMp4": "video/hvatai/mp4/갑자기 이렇게 수정해 달라시면 어떡해요.mp4",
       "korean": "갑자기 이렇게 수정해 달라시면 어떡해요",
       "russian": "Внезапно просите все переделать, как так то?",
-      "new": true
+      "new": true,
+      "english": "What do you mean suddenly asking for changes?"
     },
     {
       "video": "video/hvatai/지금 바로 올릴게요.webm",
       "videoMp4": "video/hvatai/mp4/지금 바로 올릴게요.mp4",
       "korean": "지금 바로 올릴게요",
       "russian": "Сейчас сразу загружу",
-      "new": true
+      "new": true,
+      "english": "I’ll upload it right now."
     },
     {
       "video": "video/hvatai/거기 쇼핑백이나 봐 봐.webm",
       "videoMp4": "video/hvatai/mp4/거기 쇼핑백이나 봐 봐.mp4",
       "korean": "거기 쇼핑백이나 봐 봐",
       "russian": "Глянь ка тот шопер",
-      "new": true
+      "new": true,
+      "english": "Hey, check out that shopping bag."
     },
     {
       "video": "video/hvatai/어떻게 오셨어요.webm",
       "videoMp4": "video/hvatai/mp4/어떻게 오셨어요.mp4",
       "korean": "어떻게 오셨어요?",
       "russian": "По какому делу вы пришли?",
-      "new": true
+      "new": true,
+      "english": "What brings you here?"
     },
     {
       "video": "video/hvatai/좀 전에 연락받고 인턴 면접 보러 왔는데요.webm",
       "videoMp4": "video/hvatai/mp4/좀 전에 연락받고 인턴 면접 보러 왔는데요.mp4",
       "korean": "좀 전에 연락받고 인턴 면접 보러 왔는데요",
       "russian": "Мне звонили, я на собеседование по стажировке",
-      "new": true
+      "new": true,
+      "english": "I just got a call about the internship interview."
     },
     {
       "video": "video/hvatai/꼭 같이 이제 일하고 싶긴 한데.webm",
       "videoMp4": "video/hvatai/mp4/꼭 같이 이제 일하고 싶긴 한데.mp4",
       "korean": "꼭 같이 이제 일하고 싶긴 한데",
       "russian": "Очень хочу поработать вместе",
-      "new": true
+      "new": true,
+      "english": "I really want to work together."
     }
   ],
   "b2": [
@@ -289,259 +333,296 @@
       "videoMp4": "video/hvatai/mp4/진짜 죄송합니다.mp4",
       "korean": "진짜 죄송합니다",
       "russian": "Мне правда очень жаль",
-      "new": true
+      "new": true,
+      "english": "I'm really sorry."
     },
     {
       "video": "video/hvatai/아깝네.webm",
       "videoMp4": "video/hvatai/mp4/아깝네.mp4",
       "korean": "아깝네",
       "russian": "Жаль",
-      "new": true
+      "new": true,
+      "english": "That's too bad."
     },
     {
       "video": "video/hvatai/언니 왜 안 와요.webm",
       "videoMp4": "video/hvatai/mp4/언니 왜 안 와요.mp4",
       "korean": "언니 왜 안 와요?",
       "russian": "Сестренка, почему не идешь?",
-      "new": true
+      "new": true,
+      "english": "Sister, why aren't you coming?"
     },
     {
       "video": "video/hvatai/저기요.webm",
       "videoMp4": "video/hvatai/mp4/저기요.mp4",
       "korean": "저기요",
       "russian": "Извините (обращение)",
-      "new": true
+      "new": true,
+      "english": "Excuse me."
     },
     {
       "video": "video/hvatai/진짜 죄송한데.webm",
       "videoMp4": "video/hvatai/mp4/진짜 죄송한데.mp4",
       "korean": "진짜 죄송한데",
       "russian": "Мне правда очень жаль, но...",
-      "new": true
+      "new": true,
+      "english": "I'm really sorry, but..."
     },
     {
       "video": "video/hvatai/진짜 안 되는데.webm",
       "videoMp4": "video/hvatai/mp4/진짜 안 되는데.mp4",
       "korean": "진짜 안 되는데",
       "russian": "Правда нельзя",
-      "new": true
+      "new": true,
+      "english": "It really can't be done."
     },
     {
       "video": "video/hvatai/춥다.webm",
       "videoMp4": "video/hvatai/mp4/춥다.mp4",
       "korean": "춥다",
       "russian": "Холодно",
-      "new": true
+      "new": true,
+      "english": "It's cold."
     },
     {
       "video": "video/hvatai/잠시만요.webm",
       "videoMp4": "video/hvatai/mp4/잠시만요.mp4",
       "korean": "잠시만요",
       "russian": "Минутку",
-      "new": true
+      "new": true,
+      "english": "Just a moment."
     },
     {
       "video": "video/hvatai/왜 없지.webm",
       "videoMp4": "video/hvatai/mp4/왜 없지.mp4",
       "korean": "왜 없지?",
       "russian": "Почему нет?",
-      "new": true
+      "new": true,
+      "english": "Why isn't it here?"
     },
     {
       "video": "video/hvatai/이번 곡은.webm",
       "videoMp4": "video/hvatai/mp4/이번 곡은.mp4",
       "korean": "이번 곡은",
       "russian": "Эта песня...",
-      "new": true
+      "new": true,
+      "english": "This song is..."
     },
     {
       "video": "video/hvatai/밖에서 들어도 이렇게 감동적인데.webm",
       "videoMp4": "video/hvatai/mp4/밖에서 들어도 이렇게 감동적인데.mp4",
       "korean": "밖에서 들어도 이렇게 감동적인데",
       "russian": "Даже снаружи слушаешь — так трогательно",
-      "new": true
+      "new": true,
+      "english": "It's so touching even from outside."
     },
     {
       "video": "video/hvatai/이제 가자.webm",
       "videoMp4": "video/hvatai/mp4/이제 가자.mp4",
       "korean": "이제 가자",
       "russian": "Теперь пошли",
-      "new": true
+      "new": true,
+      "english": "Let's go now."
     },
     {
       "video": "video/hvatai/오늘 하루 왜 이러니.webm",
       "videoMp4": "video/hvatai/mp4/오늘 하루 왜 이러니.mp4",
       "korean": "오늘 하루 왜 이러니?",
       "russian": "Почему сегодня весь день так?",
-      "new": true
+      "new": true,
+      "english": "What's going on today?"
     },
     {
       "video": "video/hvatai/나중에 얘기해.webm",
       "videoMp4": "video/hvatai/mp4/나중에 얘기해.mp4",
       "korean": "나중에 얘기해",
       "russian": "Поговорим позже",
-      "new": true
+      "new": true,
+      "english": "Let's talk later."
     },
     {
       "video": "video/hvatai/지금은 좀 혼자 있고 싶은데.webm",
       "videoMp4": "video/hvatai/mp4/지금은 좀 혼자 있고 싶은데.mp4",
       "korean": "지금은 좀 혼자 있고 싶은데",
       "russian": "Сейчас я хочу побыть один",
-      "new": true
+      "new": true,
+      "english": "I want to be alone right now."
     },
     {
       "video": "video/hvatai/그래 니 멋대로 해.webm",
       "videoMp4": "video/hvatai/mp4/그래 니 멋대로 해.mp4",
       "korean": "그래 니 멋대로 해",
       "russian": "Ну ладно, делай по-своему",
-      "new": true
+      "new": true,
+      "english": "Sure, do as you like."
     },
     {
       "video": "video/hvatai/이러기야.webm",
       "videoMp4": "video/hvatai/mp4/이러기야.mp4",
       "korean": "이러기야?",
       "russian": "Вот так?",
-      "new": true
+      "new": true,
+      "english": "Is this really happening?"
     },
     {
       "video": "video/hvatai/엘리베이터가 없어서.webm",
       "videoMp4": "video/hvatai/mp4/엘리베이터가 없어서.mp4",
       "korean": "엘리베이터가 없어서",
       "russian": "Потому что лифта нет",
-      "new": true
+      "new": true,
+      "english": "Because there's no elevator."
     },
     {
       "video": "video/hvatai/왜 이러고 있어요.webm",
       "videoMp4": "video/hvatai/mp4/왜 이러고 있어요.mp4",
       "korean": "왜 이러고 있어요?",
       "russian": "Почему вы так себя ведёте?",
-      "new": true
+      "new": true,
+      "english": "Why are you acting like this?"
     },
     {
       "video": "video/hvatai/추워 보여서요.webm",
       "videoMp4": "video/hvatai/mp4/추워 보여서요.mp4",
       "korean": "추워 보여서요",
       "russian": "Потому что выглядишь замёрзшей",
-      "new": true
+      "new": true,
+      "english": "You look cold."
     },
     {
       "video": "video/hvatai/근데 왜 울지.webm",
       "videoMp4": "video/hvatai/mp4/근데 왜 울지.mp4",
       "korean": "근데 왜 울지?",
       "russian": "Но почему ты плачешь?",
-      "new": true
+      "new": true,
+      "english": "But why are you crying?"
     },
     {
       "video": "video/hvatai/재밌네.webm",
       "videoMp4": "video/hvatai/mp4/재밌네.mp4",
       "korean": "재밌네",
       "russian": "Забавно",
-      "new": true
+      "new": true,
+      "english": "That's funny."
     },
     {
       "video": "video/hvatai/다시 살고 싶게 해 줘서.webm",
       "videoMp4": "video/hvatai/mp4/다시 살고 싶게 해 줘서.mp4",
       "korean": "다시 살고 싶게 해 줘서",
       "russian": "Ты заставил меня захотеть снова жить",
-      "new": true
+      "new": true,
+      "english": "You make me want to live again."
     },
     {
       "video": "video/hvatai/친구가 데리러 와 버렸네요.webm",
       "videoMp4": "video/hvatai/mp4/친구가 데리러 와 버렸네요.mp4",
       "korean": "친구가 데리러 와 버렸네요",
       "russian": "Подруга всё же приехала забрать меня",
-      "new": true
+      "new": true,
+      "english": "My friend came to pick me up."
     },
     {
       "video": "video/hvatai/이거 쓰고 가요.webm",
       "videoMp4": "video/hvatai/mp4/이거 쓰고 가요.mp4",
       "korean": "이거 쓰고 가요",
       "russian": "Возьмите это и идите",
-      "new": true
+      "new": true,
+      "english": "Take this with you."
     },
     {
       "video": "video/hvatai/저기 사인이라도 받아 놓을 걸.webm",
       "videoMp4": "video/hvatai/mp4/저기 사인이라도 받아 놓을 걸.mp4",
       "korean": "저기 사인이라도 받아 놓을 걸",
       "russian": "Надо было хоть автограф взять",
-      "new": true
+      "new": true,
+      "english": "I should've at least gotten an autograph."
     },
     {
       "video": "video/hvatai/꿈속에서 나온 것 같네.webm",
       "videoMp4": "video/hvatai/mp4/꿈속에서 나온 것 같네.mp4",
       "korean": "꿈속에서 나온 것 같네",
       "russian": "Будто вышел из сна",
-      "new": true
+      "new": true,
+      "english": "It feels like I just came out of a dream."
     },
     {
       "video": "video/hvatai/잘못 봤나.webm",
       "videoMp4": "video/hvatai/mp4/잘못 봤나.mp4",
       "korean": "잘못 봤나?",
       "russian": "Ошиблась что ли?",
-      "new": true
+      "new": true,
+      "english": "Did I see that wrong?"
     },
     {
       "video": "video/hvatai/어머 미쳤다.webm",
       "videoMp4": "video/hvatai/mp4/어머 미쳤다.mp4",
       "korean": "어머 미쳤다",
       "russian": "Боже, с ума сойти",
-      "new": true
+      "new": true,
+      "english": "Oh my gosh, this is crazy!"
     },
     {
       "video": "video/hvatai/오늘은 살아 봐요.webm",
       "videoMp4": "video/hvatai/mp4/오늘은 살아 봐요.mp4",
       "korean": "오늘은 살아 봐요",
       "russian": "Давай поживём хотя бы сегодня",
-      "new": true
+      "new": true,
+      "english": "Let's just live for today."
     },
     {
       "video": "video/hvatai/꿈인가.webm",
       "videoMp4": "video/hvatai/mp4/꿈인가.mp4",
       "korean": "꿈인가?",
       "russian": "Это сон?",
-      "new": true
+      "new": true,
+      "english": "Is this a dream?"
     },
     {
       "video": "video/hvatai/오늘 날씨가 참 좋죠.webm",
       "videoMp4": "video/hvatai/mp4/오늘 날씨가 참 좋죠.mp4",
       "korean": "오늘 날씨가 참 좋죠",
       "russian": "Сегодня погода такая хорошая",
-      "new": true
+      "new": true,
+      "english": "The weather is really nice today."
     },
     {
       "video": "video/hvatai/찬란한 여름이 시작되려나 봐요.webm",
       "videoMp4": "video/hvatai/mp4/찬란한 여름이 시작되려나 봐요.mp4",
       "korean": "찬란한 여름이 시작되려나 봐요",
       "russian": "Кажется, начинается яркое лето",
-      "new": true
+      "new": true,
+      "english": "Looks like a bright summer is about to start."
     },
     {
       "video": "video/hvatai/지금 당장 달려가 보세요.webm",
       "videoMp4": "video/hvatai/mp4/지금 당장 달려가 보세요.mp4",
       "korean": "지금 당장 달려가 보세요",
       "russian": "Бегите прямо сейчас",
-      "new": true
+      "new": true,
+      "english": "Go run right now!"
     },
     {
       "video": "video/hvatai/뭐야 너.webm",
       "videoMp4": "video/hvatai/mp4/뭐야 너.mp4",
       "korean": "뭐야 너?",
       "russian": "Что с тобой?",
-      "new": true
+      "new": true,
+      "english": "What’s up with you?"
     },
     {
       "video": "video/hvatai/사랑해 선재야.webm",
       "videoMp4": "video/hvatai/mp4/사랑해 선재야.mp4",
       "korean": "사랑해 선재야",
       "russian": "Я люблю тебя, Сонджэ",
-      "new": true
+      "new": true,
+      "english": "I love you, Seonjae."
     },
     {
       "video": "video/hvatai/아니요 아파요.webm",
       "videoMp4": "video/hvatai/mp4/아니요 아파요.mp4",
       "korean": "아니요 아파요",
       "russian": "Нет, мне больно",
-      "new": true
+      "new": true,
+      "english": "No, it hurts."
     }
   ],
   "b3": [
@@ -550,133 +631,152 @@
       "videoMp4": "video/hvatai/mp4/찾았어.mp4",
       "korean": "찾았어",
       "russian": "Нашла",
-      "new": true
+      "new": true,
+      "english": "I found it."
     },
     {
       "video": "video/hvatai/설마.webm",
       "videoMp4": "video/hvatai/mp4/설마.mp4",
       "korean": "설마",
       "russian": "Не может быть",
-      "new": true
+      "new": true,
+      "english": "No way."
     },
     {
       "video": "video/hvatai/귀신.webm",
       "videoMp4": "video/hvatai/mp4/귀신.mp4",
       "korean": "귀신",
       "russian": "Призрак",
-      "new": true
+      "new": true,
+      "english": "A ghost."
     },
     {
       "video": "video/hvatai/우리 같이 돌아가자.webm",
       "videoMp4": "video/hvatai/mp4/우리 같이 돌아가자.mp4",
       "korean": "우리 같이 돌아가자",
       "russian": "Давай вернёмся вместе",
-      "new": true
+      "new": true,
+      "english": "Let's go back together."
     },
     {
       "video": "video/hvatai/이 다리 절대 건너지 마.webm",
       "videoMp4": "video/hvatai/mp4/이 다리 절대 건너지 마.mp4",
       "korean": "이 다리 절대 건너지 마",
       "russian": "Никогда не переходи этот мост",
-      "new": true
+      "new": true,
+      "english": "Don't ever cross that bridge."
     },
     {
       "video": "video/hvatai/여보세요.webm",
       "videoMp4": "video/hvatai/mp4/여보세요.mp4",
       "korean": "여보세요",
       "russian": "Алло",
-      "new": true
+      "new": true,
+      "english": "Hello?"
     },
     {
       "video": "video/hvatai/너 어디야.webm",
       "videoMp4": "video/hvatai/mp4/너 어디야.mp4",
       "korean": "너 어디야?",
       "russian": "Ты где?",
-      "new": true
+      "new": true,
+      "english": "Where are you?"
     },
     {
       "video": "video/hvatai/진짜 엄마 목소리네.webm",
       "videoMp4": "video/hvatai/mp4/진짜 엄마 목소리네.mp4",
       "korean": "진짜 엄마 목소리네?",
       "russian": "Это реально мамин голос?",
-      "new": true
+      "new": true,
+      "english": "Is that really mom's voice?"
     },
     {
       "video": "video/hvatai/이따 봐요.webm",
       "videoMp4": "video/hvatai/mp4/이따 봐요.mp4",
       "korean": "이따 봐요",
       "russian": "Увидимся позже",
-      "new": true
+      "new": true,
+      "english": "See you later."
     },
     {
       "video": "video/hvatai/근데 이걸 나한테 왜 줘.webm",
       "videoMp4": "video/hvatai/mp4/근데 이걸 나한테 왜 줘.mp4",
       "korean": "근데 이걸 나한테 왜 줘?",
       "russian": "Но зачем ты это мне даёшь?",
-      "new": true
+      "new": true,
+      "english": "But why are you giving this to me?"
     },
     {
       "video": "video/hvatai/말도 안 돼.webm",
       "videoMp4": "video/hvatai/mp4/말도 안 돼.mp4",
       "korean": "말도 안 돼",
       "russian": "Не может быть",
-      "new": true
+      "new": true,
+      "english": "No way."
     },
     {
       "video": "video/hvatai/할머니.webm",
       "videoMp4": "video/hvatai/mp4/할머니.mp4",
       "korean": "할머니",
       "russian": "Бабушка",
-      "new": true
+      "new": true,
+      "english": "Grandma."
     },
     {
       "video": "video/hvatai/사고 당하기 전이네.webm",
       "videoMp4": "video/hvatai/mp4/사고 당하기 전이네.mp4",
       "korean": "사고 당하기 전이네",
       "russian": "Это было до аварии",
-      "new": true
+      "new": true,
+      "english": "This was before the accident."
     },
     {
       "video": "video/hvatai/왜 울어.webm",
       "videoMp4": "video/hvatai/mp4/왜 울어.mp4",
       "korean": "왜 울어?",
       "russian": "Почему плачете?",
-      "new": true
+      "new": true,
+      "english": "Why are you crying?"
     },
     {
       "video": "video/hvatai/기억이 안 나.webm",
       "videoMp4": "video/hvatai/mp4/기억이 안 나.mp4",
       "korean": "기억이 안 나",
       "russian": "Я не помню",
-      "new": true
+      "new": true,
+      "english": "I don't remember."
     },
     {
       "video": "video/hvatai/내일도 여기서 눈 뜰 수 있을까.webm",
       "videoMp4": "video/hvatai/mp4/내일도 여기서 눈 뜰 수 있을까.mp4",
       "korean": "내일도 여기서 눈 뜰 수 있을까?",
       "russian": "Смогу ли я завтра снова открыть глаза здесь?",
-      "new": true
+      "new": true,
+      "english": "Will I be able to wake up here tomorrow?"
     },
     {
       "video": "video/hvatai/이천이십삼년 일월 일일 영시.webm",
       "videoMp4": "video/hvatai/mp4/이천이십삼년 일월 일일 영시.mp4",
       "korean": "이천이십삼년 일월 일일 영시",
       "russian": "2023 год, 1 января, 0 часов",
-      "new": true
+      "new": true,
+      "english": "January 1, 2023, 12 AM."
     },
     {
       "video": "video/hvatai/고맙습니다.webm",
       "videoMp4": "video/hvatai/mp4/고맙습니다.mp4",
       "korean": "고맙습니다",
       "russian": "Спасибо",
-      "new": true
+      "new": true,
+      "english": "Thank you."
     },
     {
       "video": "video/hvatai/사망하셨습니다.webm",
       "videoMp4": "video/hvatai/mp4/사망하셨습니다.mp4",
       "korean": "사망하셨습니다",
       "russian": "Он скончался",
-      "new": true
+      "new": true,
+      "english": "He has passed away."
     }
   ],
   "b4": [],

@@ -3,1320 +3,1540 @@
     "video": "video/ad/저 아저씨.webm",
     "videoMp4": "video/ad/mp4/저 아저씨.mp4",
     "korean": "저 아저씨",
-    "russian": "Эй, Дяденька"
+    "russian": "Эй, Дяденька",
+    "english": "Hey, mister."
   },
   {
     "video": "video/ad/저기요.webm",
     "videoMp4": "video/ad/mp4/저기요.mp4",
     "korean": "저기요",
-    "russian": "Эй, извините"
+    "russian": "Эй, извините",
+    "english": "Excuse me."
   },
   {
     "video": "video/ad/걱정하지 마 걱정하지 마.webm",
     "videoMp4": "video/ad/mp4/걱정하지 마 걱정하지 마.mp4",
     "korean": "걱정하지 마 걱정하지 마",
-    "russian": "Не волнуйся, не волнуйся"
+    "russian": "Не волнуйся, не волнуйся",
+    "english": "Don't worry, don't worry."
   },
   {
     "video": "video/ad/또 봐요.webm",
     "videoMp4": "video/ad/mp4/또 봐요.mp4",
     "korean": "또 봐요",
-    "russian": "Ещё увидимся"
+    "russian": "Ещё увидимся",
+    "english": "See you again."
   },
   {
     "video": "video/ad/얼마예요.webm",
     "videoMp4": "video/ad/mp4/얼마예요.mp4",
     "korean": "얼마예요?",
-    "russian": "Сколько стоит?"
+    "russian": "Сколько стоит?",
+    "english": "How much is it?"
   },
   {
     "video": "video/ad/예 맞아요.webm",
     "videoMp4": "video/ad/mp4/예 맞아요.mp4",
     "korean": "예 맞아요",
-    "russian": "Да, верно"
+    "russian": "Да, верно",
+    "english": "Yes, that's right."
   },
   {
     "video": "video/ad/그래요.webm",
     "videoMp4": "video/ad/mp4/그래요.mp4",
     "korean": "그래요",
-    "russian": "Хорошо"
+    "russian": "Хорошо",
+    "english": "Alright."
   },
   {
     "video": "video/evilflower/마음에 들어 고마워.webm",
     "videoMp4": "video/evilflower/mp4/마음에 들어 고마워.mp4",
     "korean": "마음에 들어 고마워",
-    "russian": "Мне нравится, спасибо"
+    "russian": "Мне нравится, спасибо",
+    "english": "I like it, thank you."
   },
   {
     "video": "video/evilflower/생일 축하합니다.webm",
     "videoMp4": "video/evilflower/mp4/생일 축하합니다.mp4",
     "korean": "생일 축하합니다",
-    "russian": "С днём рождения!"
+    "russian": "С днём рождения!",
+    "english": "Happy birthday!"
   },
   {
     "video": "video/evilflower/뭐가요.webm",
     "videoMp4": "video/evilflower/mp4/뭐가요.mp4",
     "korean": "뭐가요?",
-    "russian": "Что именно?"
+    "russian": "Что именно?",
+    "english": "What is it?"
   },
   {
     "video": "video/evilflower/들어봐.webm",
     "videoMp4": "video/evilflower/mp4/들어봐.mp4",
     "korean": "들어봐",
-    "russian": "Послушай"
+    "russian": "Послушай",
+    "english": "Listen up."
   },
   {
     "video": "video/evilflower/저요.webm",
     "videoMp4": "video/evilflower/mp4/저요.mp4",
     "korean": "저요?",
-    "russian": "Я?"
+    "russian": "Я?",
+    "english": "Me?"
   },
   {
     "video": "video/evilflower/네 알겠습니다.webm",
     "videoMp4": "video/evilflower/mp4/네 알겠습니다.mp4",
     "korean": "네 알겠습니다",
-    "russian": "Да, поняла"
+    "russian": "Да, поняла",
+    "english": "Okay, got it."
   },
   {
     "video": "video/evilflower/예쁘다.webm",
     "videoMp4": "video/evilflower/mp4/예쁘다.mp4",
     "korean": "예쁘다",
-    "russian": "Красивая"
+    "russian": "Красивая",
+    "english": "You're pretty."
   },
   {
     "video": "video/evilflower/모르겠어요.webm",
     "videoMp4": "video/evilflower/mp4/모르겠어요.mp4",
     "korean": "모르겠어요",
-    "russian": "Не знаю"
+    "russian": "Не знаю",
+    "english": "I don't know."
   },
   {
     "video": "video/evilflower/됐어.webm",
     "videoMp4": "video/evilflower/mp4/됐어.mp4",
     "korean": "됐어",
-    "russian": "Хватит"
+    "russian": "Хватит",
+    "english": "That's enough."
   },
   {
     "video": "video/healer/뭔데.webm",
     "videoMp4": "video/healer/mp4/뭔데.mp4",
     "korean": "뭔데?",
-    "russian": "Что?"
+    "russian": "Что?",
+    "english": "What is it?"
   },
   {
     "video": "video/healer/언제.webm",
     "videoMp4": "video/healer/mp4/언제.mp4",
     "korean": "언제?",
-    "russian": "Когда?"
+    "russian": "Когда?",
+    "english": "When?"
   },
   {
     "video": "video/healer/지금.webm",
     "videoMp4": "video/healer/mp4/지금.mp4",
     "korean": "지금",
-    "russian": "Сейчас"
+    "russian": "Сейчас",
+    "english": "Now."
   },
   {
     "video": "video/healer/잠깐만.webm",
     "videoMp4": "video/healer/mp4/잠깐만.mp4",
     "korean": "잠깐만",
-    "russian": "Ми-ну-точ-ку"
+    "russian": "Ми-ну-точ-ку",
+    "english": "Hold on a second."
   },
   {
     "video": "video/healer/뭐야 이거.webm",
     "videoMp4": "video/healer/mp4/뭐야 이거.mp4",
     "korean": "뭐야 이거?",
-    "russian": "Это еще что?"
+    "russian": "Это еще что?",
+    "english": "What is this?"
   },
   {
     "video": "video/healer/수고하세요.webm",
     "videoMp4": "video/healer/mp4/수고하세요.mp4",
     "korean": "수고하세요",
-    "russian": "Хорошей вам работы"
+    "russian": "Хорошей вам работы",
+    "english": "Take care."
   },
   {
     "video": "video/healer/누구세요.webm",
     "videoMp4": "video/healer/mp4/누구세요.mp4",
     "korean": "누구세요?",
-    "russian": "Кто там?"
+    "russian": "Кто там?",
+    "english": "Who is it?"
   },
   {
     "video": "video/healer/택배요.webm",
     "videoMp4": "video/healer/mp4/택배요.mp4",
     "korean": "택배요",
-    "russian": "Доставка"
+    "russian": "Доставка",
+    "english": "It's a delivery."
   },
   {
     "video": "video/healer/괜찮습니다.webm",
     "videoMp4": "video/healer/mp4/괜찮습니다.mp4",
     "korean": "괜찮습니다",
-    "russian": "Все в порядке"
+    "russian": "Все в порядке",
+    "english": "It's okay."
   },
   {
     "video": "video/healer/그래서.webm",
     "videoMp4": "video/healer/mp4/그래서.mp4",
     "korean": "그래서",
-    "russian": "Поэтому"
+    "russian": "Поэтому",
+    "english": "So..."
   },
   {
     "video": "video/squid game/돈 없어요.webm",
     "videoMp4": "video/squid game/mp4/돈 없어요.mp4",
     "korean": "돈 없어요",
-    "russian": "Денег нету"
+    "russian": "Денег нету",
+    "english": "I have no money."
   },
   {
     "video": "video/squid game/한 판 더 해.webm",
     "videoMp4": "video/squid game/mp4/한 판 더 해.mp4",
     "korean": "한 판 더 해",
-    "russian": "Еще раунд"
+    "russian": "Еще раунд",
+    "english": "Let's play another round."
   },
   {
     "video": "video/squid game/뭐야.webm",
     "videoMp4": "video/squid game/mp4/뭐야.mp4",
     "korean": "뭐야?",
-    "russian": "Что?"
+    "russian": "Что?",
+    "english": "What?"
   },
   {
     "video": "video/squid game/선생님.webm",
     "videoMp4": "video/squid game/mp4/선생님.mp4",
     "korean": "선생님",
-    "russian": "Господин"
+    "russian": "Господин",
+    "english": "Teacher."
   },
   {
     "video": "video/squid game/잘했어.webm",
     "videoMp4": "video/squid game/mp4/잘했어.mp4",
     "korean": "잘했어",
-    "russian": "Молодец"
+    "russian": "Молодец",
+    "english": "Good job!"
   },
   {
     "video": "video/squid game/배고파.webm",
     "videoMp4": "video/squid game/mp4/배고파.mp4",
     "korean": "배고파?",
-    "russian": "Голодный?"
+    "russian": "Голодный?",
+    "english": "Are you hungry?"
   },
   {
     "video": "video/squid game/안녕하십니까.webm",
     "videoMp4": "video/squid game/mp4/안녕하십니까.mp4",
     "korean": "안녕하십니까",
-    "russian": "Здравствуйте"
+    "russian": "Здравствуйте",
+    "english": "Hello."
   },
   {
     "video": "video/squid game/너 뭐야.webm",
     "videoMp4": "video/squid game/mp4/너 뭐야.mp4",
     "korean": "너 뭐야?",
-    "russian": "Ты кто?"
+    "russian": "Ты кто?",
+    "english": "Who are you?"
   },
   {
     "video": "video/squid game/안돼요.webm",
     "videoMp4": "video/squid game/mp4/안돼요.mp4",
     "korean": "안돼요",
-    "russian": "Так не пойдет"
+    "russian": "Так не пойдет",
+    "english": "No way."
   },
   {
     "video": "video/squid game/감사합니다 사장님.webm",
     "videoMp4": "video/squid game/mp4/감사합니다 사장님.mp4",
     "korean": "감사합니다 사장님",
-    "russian": "Спасибо вам, Господин"
+    "russian": "Спасибо вам, Господин",
+    "english": "Thank you, boss."
   },
   {
     "video": "video/squidgame 2/아저씨.webm",
     "videoMp4": "video/squidgame 2/mp4/아저씨.mp4",
     "korean": "아저씨",
-    "russian": "Дяденька"
+    "russian": "Дяденька",
+    "english": "Sir."
   },
   {
     "video": "video/squidgame 2/안됩니다.webm",
     "videoMp4": "video/squidgame 2/mp4/안됩니다.mp4",
     "korean": "안됩니다",
-    "russian": "Нельзя"
+    "russian": "Нельзя",
+    "english": "That's not allowed."
   },
   {
     "video": "video/squidgame 2/누구야.webm",
     "videoMp4": "video/squidgame 2/mp4/누구야.mp4",
     "korean": "누구야?",
-    "russian": "Кто там?"
+    "russian": "Кто там?",
+    "english": "Who is it?"
   },
   {
     "video": "video/squidgame 2/괜찮습니다.webm",
     "videoMp4": "video/squidgame 2/mp4/괜찮습니다.mp4",
     "korean": "괜찮습니다",
-    "russian": "Все в порядке"
+    "russian": "Все в порядке",
+    "english": "It's okay."
   },
   {
     "video": "video/squidgame 2/얼마나요.webm",
     "videoMp4": "video/squidgame 2/mp4/얼마나요.mp4",
     "korean": "얼마나요?",
-    "russian": "Сколько?"
+    "russian": "Сколько?",
+    "english": "How much is it?"
   },
   {
     "video": "video/squidgame 2/맞죠.webm",
     "videoMp4": "video/squidgame 2/mp4/맞죠.mp4",
     "korean": "맞죠?",
-    "russian": "Верно?"
+    "russian": "Верно?",
+    "english": "Right?"
   },
   {
     "video": "video/allkdrama/수고하세요.webm",
     "videoMp4": "video/allkdrama/mp4/수고하세요.mp4",
     "korean": "수고하세요",
-    "russian": "Хорошей работы"
+    "russian": "Хорошей работы",
+    "english": "Take care."
   },
   {
     "video": "video/allkdrama/응원할게.webm",
     "videoMp4": "video/allkdrama/mp4/응원할게.mp4",
     "korean": "응원할게",
-    "russian": "Я тебя поддержу"
+    "russian": "Я тебя поддержу",
+    "english": "I'll support you."
   },
   {
     "video": "video/allkdrama/뭐 하는 거야.webm",
     "videoMp4": "video/allkdrama/mp4/뭐 하는 거야.mp4",
     "korean": "뭐 하는 거야?",
-    "russian": "Ты что делаешь?"
+    "russian": "Ты что делаешь?",
+    "english": "What are you doing?"
   },
   {
     "video": "video/allkdrama/가라고.webm",
     "videoMp4": "video/allkdrama/mp4/가라고.mp4",
     "korean": "가라고",
-    "russian": "Иди сказал"
+    "russian": "Иди сказал",
+    "english": "Just go."
   },
   {
     "video": "video/allkdrama/농담이야 농담.webm",
     "videoMp4": "video/allkdrama/mp4/농담이야 농담.mp4",
     "korean": "농담이야 농담",
-    "russian": "Я шучу"
+    "russian": "Я шучу",
+    "english": "Just kidding."
   },
   {
     "video": "video/allkdrama/뭐 왜.webm",
     "videoMp4": "video/allkdrama/mp4/뭐 왜.mp4",
     "korean": "뭐 왜",
-    "russian": "Чего тебе?"
+    "russian": "Чего тебе?",
+    "english": "What’s up?"
   },
   {
     "video": "video/allkdrama/대박.webm",
     "videoMp4": "video/allkdrama/mp4/대박.mp4",
     "korean": "대박",
-    "russian": "Круто"
+    "russian": "Круто",
+    "english": "Awesome!"
   },
   {
     "video": "video/allkdrama/어떡해.webm",
     "videoMp4": "video/allkdrama/mp4/어떡해.mp4",
     "korean": "어떡해",
-    "russian": "Как же так?"
+    "russian": "Как же так?",
+    "english": "What should I do?"
   },
   {
     "video": "video/allkdrama/왜.webm",
     "videoMp4": "video/allkdrama/mp4/왜.mp4",
     "korean": "왜",
-    "russian": "В смысле?"
+    "russian": "В смысле?",
+    "english": "Why?"
   },
   {
     "video": "video/allkdrama/가자.webm",
     "videoMp4": "video/allkdrama/mp4/가자.mp4",
     "korean": "가자",
-    "russian": "Пошли"
+    "russian": "Пошли",
+    "english": "Let's go."
   },
   {
     "video": "video/allkdrama/그래.webm",
     "videoMp4": "video/allkdrama/mp4/그래.mp4",
     "korean": "그래",
-    "russian": "Да"
+    "russian": "Да",
+    "english": "Okay."
   },
   {
     "video": "video/allkdrama/좋은 아침이에요.webm",
     "videoMp4": "video/allkdrama/mp4/좋은 아침이에요.mp4",
     "korean": "좋은 아침이에요",
-    "russian": "Доброе утро"
+    "russian": "Доброе утро",
+    "english": "Good morning."
   },
   {
     "video": "video/allkdrama/좋은 아침입니다.webm",
     "videoMp4": "video/allkdrama/mp4/좋은 아침입니다.mp4",
     "korean": "좋은 아침입니다",
-    "russian": "Доброе утро"
+    "russian": "Доброе утро",
+    "english": "Good morning."
   },
   {
     "video": "video/allkdrama/고마워.webm",
     "videoMp4": "video/allkdrama/mp4/고마워.mp4",
     "korean": "고마워",
-    "russian": "Спасибо"
+    "russian": "Спасибо",
+    "english": "Thanks."
   },
   {
     "video": "video/allkdrama/괜찮아.webm",
     "videoMp4": "video/allkdrama/mp4/괜찮아.mp4",
     "korean": "괜찮아?",
-    "russian": "Ты в порядке?"
+    "russian": "Ты в порядке?",
+    "english": "Are you okay?"
   },
   {
     "video": "video/allkdrama/빨리 나와.webm",
     "videoMp4": "video/allkdrama/mp4/빨리 나와.mp4",
     "korean": "빨리 나와",
-    "russian": "Выходи быстрее"
+    "russian": "Выходи быстрее",
+    "english": "Come out quickly."
   },
   {
     "video": "video/allkdrama/누구야.webm",
     "videoMp4": "video/allkdrama/mp4/누구야.mp4",
     "korean": "누구야?",
-    "russian": "Ты кто?"
+    "russian": "Ты кто?",
+    "english": "Who are you?"
   },
   {
     "video": "video/allkdrama/여보세요.webm",
     "videoMp4": "video/allkdrama/mp4/여보세요.mp4",
     "korean": "여보세요",
-    "russian": "Алло"
+    "russian": "Алло",
+    "english": "Hello?"
   },
   {
     "video": "video/allkdrama/그러지 마.webm",
     "videoMp4": "video/allkdrama/mp4/그러지 마.mp4",
     "korean": "그러지 마",
-    "russian": "Так нельзя"
+    "russian": "Так нельзя",
+    "english": "Don't do that."
   },
   {
     "video": "video/allkdrama/뭐야.webm",
     "videoMp4": "video/allkdrama/mp4/뭐야.mp4",
     "korean": "뭐야?",
-    "russian": "Что?"
+    "russian": "Что?",
+    "english": "What is it?"
   },
   {
     "video": "video/parasites/그러면.webm",
     "videoMp4": "video/parasites/mp4/그러면.mp4",
     "korean": "그러면",
-    "russian": "Тогда..."
+    "russian": "Тогда...",
+    "english": "Then..."
   },
   {
     "video": "video/parasites/사장님.webm",
     "videoMp4": "video/parasites/mp4/사장님.mp4",
     "korean": "사장님",
-    "russian": "Господин директор"
+    "russian": "Господин директор",
+    "english": "Boss."
   },
   {
     "video": "video/parasites/뭐라고.webm",
     "videoMp4": "video/parasites/mp4/뭐라고.mp4",
     "korean": "뭐라고",
-    "russian": "Что ты сказала?"
+    "russian": "Что ты сказала?",
+    "english": "What did you say?"
   },
   {
     "video": "video/parasites/이봐요.webm",
     "videoMp4": "video/parasites/mp4/이봐요.mp4",
     "korean": "이봐요",
-    "russian": "Послушайте"
+    "russian": "Послушайте",
+    "english": "Hey."
   },
   {
     "video": "video/parasites/어, 잠깐만.webm",
     "videoMp4": "video/parasites/mp4/어, 잠깐만.mp4",
     "korean": "어, 잠깐만",
-    "russian": "Погоди-ка"
+    "russian": "Погоди-ка",
+    "english": "Oh, hold on."
   },
   {
     "video": "video/allkdrama/축하드립니다.webm",
     "videoMp4": "video/allkdrama/mp4/축하드립니다.mp4",
     "korean": "축하드립니다",
-    "russian": "Поздравляю"
+    "russian": "Поздравляю",
+    "english": "Congratulations."
   },
   {
     "video": "video/allkdrama/이거.webm",
     "videoMp4": "video/allkdrama/mp4/이거.mp4",
     "korean": "이거?",
-    "russian": "Это?"
+    "russian": "Это?",
+    "english": "This?"
   },
   {
     "video": "video/allkdrama/이름이 뭐예요.webm",
     "videoMp4": "video/allkdrama/mp4/이름이 뭐예요.mp4",
     "korean": "이름이 뭐예요?",
-    "russian": "Как тебя зовут?"
+    "russian": "Как тебя зовут?",
+    "english": "What's your name?"
   },
   {
     "video": "video/allkdrama/몇살이야.webm",
     "videoMp4": "video/allkdrama/mp4/몇살이야.mp4",
     "korean": "몇살이야?",
-    "russian": "Сколько тебе лет?"
+    "russian": "Сколько тебе лет?",
+    "english": "How old are you?"
   },
   {
     "video": "video/allkdrama/화이팅.webm",
     "videoMp4": "video/allkdrama/mp4/화이팅.mp4",
     "korean": "화이팅!",
-    "russian": "Вперед!"
+    "russian": "Вперед!",
+    "english": "You got this!"
   },
   {
     "video": "video/allkdrama/예쁘다.webm",
     "videoMp4": "video/allkdrama/mp4/예쁘다.mp4",
     "korean": "예쁘다",
-    "russian": "Красота"
+    "russian": "Красота",
+    "english": "You're pretty."
   },
   {
     "video": "video/allkdrama/배고파.webm",
     "videoMp4": "video/allkdrama/mp4/배고파.mp4",
     "korean": "배고파",
-    "russian": "Есть хочу"
+    "russian": "Есть хочу",
+    "english": "I'm hungry."
   },
   {
     "video": "video/allkdrama/안녕하세요.webm",
     "videoMp4": "video/allkdrama/mp4/안녕하세요.mp4",
     "korean": "안녕하세요",
-    "russian": "Здравствуйте"
+    "russian": "Здравствуйте",
+    "english": "Hello."
   },
   {
     "video": "video/allkdrama/처음 뵙겠습니다.webm",
     "videoMp4": "video/allkdrama/mp4/처음 뵙겠습니다.mp4",
     "korean": "처음 뵙겠습니다",
-    "russian": "Рад знакомству"
+    "russian": "Рад знакомству",
+    "english": "Nice to meet you."
   },
   {
     "video": "video/allkdrama/확실해.webm",
     "videoMp4": "video/allkdrama/mp4/확실해.mp4",
     "korean": "확실해?",
-    "russian": "Уверен?"
+    "russian": "Уверен?",
+    "english": "Are you sure?"
   },
   {
     "video": "video/allkdrama/그래 알았어.webm",
     "videoMp4": "video/allkdrama/mp4/그래 알았어.mp4",
     "korean": "그래 알았어",
-    "russian": "Да, хорошо"
+    "russian": "Да, хорошо",
+    "english": "Okay, got it."
   },
   {
     "video": "video/parasites/하늘.webm",
     "videoMp4": "video/parasites/mp4/하늘.mp4",
     "korean": "하늘",
-    "russian": "Небо"
+    "russian": "Небо",
+    "english": "The sky."
   },
   {
     "video": "video/parasites/근데.webm",
     "videoMp4": "video/parasites/mp4/근데.mp4",
     "korean": "근데",
-    "russian": "Но..."
+    "russian": "Но...",
+    "english": "But..."
   },
   {
     "video": "video/parasites/맞아요.webm",
     "videoMp4": "video/parasites/mp4/맞아요.mp4",
     "korean": "맞아요?",
-    "russian": "Верно?"
+    "russian": "Верно?",
+    "english": "Is that right?"
   },
   {
     "video": "video/tngerines/그렇지.webm",
     "videoMp4": "video/tngerines/mp4/그렇지.mp4",
     "korean": "그렇지",
-    "russian": "Вот так"
+    "russian": "Вот так",
+    "english": "That's right."
   },
   {
     "video": "video/tngerines/그러지 마.webm",
     "videoMp4": "video/tngerines/mp4/그러지 마.mp4",
     "korean": "그러지 마",
-    "russian": "Так нельзя"
+    "russian": "Так нельзя",
+    "english": "Don't do that."
   },
   {
     "video": "video/tngerines/어떡하지.webm",
     "videoMp4": "video/tngerines/mp4/어떡하지.mp4",
     "korean": "어떡하지?",
-    "russian": "Как же быть?"
+    "russian": "Как же быть?",
+    "english": "What should I do?"
   },
   {
     "video": "video/tngerines/절대.webm",
     "videoMp4": "video/tngerines/mp4/절대.mp4",
     "korean": "절대",
-    "russian": "Никогда"
+    "russian": "Никогда",
+    "english": "Never."
   },
   {
     "video": "video/tngerines/뭐.webm",
     "videoMp4": "video/tngerines/mp4/뭐.mp4",
     "korean": "뭐?",
-    "russian": "ЧО?"
+    "russian": "ЧО?",
+    "english": "What?"
   },
   {
     "video": "video/runbts/밥 줘.webm",
     "videoMp4": "video/runbts/mp4/밥 줘.mp4",
     "korean": "밥 줘",
-    "russian": "Дай еды"
+    "russian": "Дай еды",
+    "english": "Give me food."
   },
   {
     "video": "video/runbts/어때요.webm",
     "videoMp4": "video/runbts/mp4/어때요.mp4",
     "korean": "어때요?",
-    "russian": "Как тебе?"
+    "russian": "Как тебе?",
+    "english": "What do you think?"
   },
   {
     "video": "video/runbts/일단은.webm",
     "videoMp4": "video/runbts/mp4/일단은.mp4",
     "korean": "일단은",
-    "russian": "Для начала"
+    "russian": "Для начала",
+    "english": "For now,"
   },
   {
     "video": "video/runbts/가위 바위 보.webm",
     "videoMp4": "video/runbts/mp4/가위 바위 보.mp4",
     "korean": "가위 바위 보",
-    "russian": "Ножницы, камень, бумага"
+    "russian": "Ножницы, камень, бумага",
+    "english": "Rock, paper, scissors."
   },
   {
     "video": "video/runbts/저녁에.webm",
     "videoMp4": "video/runbts/mp4/저녁에.mp4",
     "korean": "저녁에",
-    "russian": "Вечером"
+    "russian": "Вечером",
+    "english": "In the evening"
   },
   {
     "video": "video/runbts/맛있게 드세요.webm",
     "videoMp4": "video/runbts/mp4/맛있게 드세요.mp4",
     "korean": "맛있게 드세요",
-    "russian": "Приятного аппетита"
+    "russian": "Приятного аппетита",
+    "english": "Enjoy your meal"
   },
   {
     "video": "video/runbts/알죠.webm",
     "videoMp4": "video/runbts/mp4/알죠.mp4",
     "korean": "알죠",
-    "russian": "Знаю конечно"
+    "russian": "Знаю конечно",
+    "english": "I know, right?"
   },
   {
     "video": "video/runbts/빠밤빰.webm",
     "videoMp4": "video/runbts/mp4/빠밤빰.mp4",
     "korean": "빠밤빰",
-    "russian": "ПаБамПам"
+    "russian": "ПаБамПам",
+    "english": "Ba bam bam"
   },
   {
     "video": "video/runbts/파프리카.webm",
     "videoMp4": "video/runbts/mp4/파프리카.mp4",
     "korean": "파프리카",
-    "russian": "Паприка"
+    "russian": "Паприка",
+    "english": "Paprika"
   },
   {
     "video": "video/runbts/아미.webm",
     "videoMp4": "video/runbts/mp4/아미.mp4",
     "korean": "아미",
-    "russian": "Армиииииии"
+    "russian": "Армиииииии",
+    "english": "Army"
   },
   {
     "video": "video/runbts/여러분.webm",
     "videoMp4": "video/runbts/mp4/여러분.mp4",
     "korean": "여러분",
-    "russian": "Друзья"
+    "russian": "Друзья",
+    "english": "Everyone"
   },
   {
     "video": "video/runbts/왜냐하면.webm",
     "videoMp4": "video/runbts/mp4/왜냐하면.mp4",
     "korean": "왜냐하면",
-    "russian": "Потому что"
+    "russian": "Потому что",
+    "english": "Because"
   },
   {
     "video": "video/runbts/맞아요.webm",
     "videoMp4": "video/runbts/mp4/맞아요.mp4",
     "korean": "맞아요",
-    "russian": "Верно"
+    "russian": "Верно",
+    "english": "That's right"
   },
   {
     "video": "video/runbts/배고파요.webm",
     "videoMp4": "video/runbts/mp4/배고파요.mp4",
     "korean": "배고파요",
-    "russian": "Я голоден"
+    "russian": "Я голоден",
+    "english": "I'm hungry"
   },
   {
     "video": "video/runbts/잘생겼다.webm",
     "videoMp4": "video/runbts/mp4/잘생겼다.mp4",
     "korean": "잘생겼다",
-    "russian": "Красавчик"
+    "russian": "Красавчик",
+    "english": "He's handsome."
   },
   {
     "video": "video/runbts/그래요.webm",
     "videoMp4": "video/runbts/mp4/그래요.mp4",
     "korean": "그래요?",
-    "russian": "Серьезно?"
+    "russian": "Серьезно?",
+    "english": "Really?"
   },
   {
     "video": "video/runbts/그러면.webm",
     "videoMp4": "video/runbts/mp4/그러면.mp4",
     "korean": "그러면",
-    "russian": "Тогда"
+    "russian": "Тогда",
+    "english": "Then..."
   },
   {
     "video": "video/runbts/멋있다.webm",
     "videoMp4": "video/runbts/mp4/멋있다.mp4",
     "korean": "멋있다",
-    "russian": "Классно / Круто"
+    "russian": "Классно / Круто",
+    "english": "That's cool."
   },
   {
     "video": "video/runbts/재밌다.webm",
     "videoMp4": "video/runbts/mp4/재밌다.mp4",
     "korean": "재밌다",
-    "russian": "Интересно"
+    "russian": "Интересно",
+    "english": "It's fun."
   },
   {
     "video": "video/runbts/몰라.webm",
     "videoMp4": "video/runbts/mp4/몰라.mp4",
     "korean": "몰라",
-    "russian": "Не знаю"
+    "russian": "Не знаю",
+    "english": "I don't know."
   },
   {
     "video": "video/runbts/쉬워요.webm",
     "videoMp4": "video/runbts/mp4/쉬워요.mp4",
     "korean": "쉬워요",
-    "russian": "Легко"
+    "russian": "Легко",
+    "english": "It's easy."
   },
   {
     "video": "video/runbts/하나둘셋.webm",
     "videoMp4": "video/runbts/mp4/하나둘셋.mp4",
     "korean": "하나둘셋",
-    "russian": "Раз, два, три"
+    "russian": "Раз, два, три",
+    "english": "One, two, three."
   },
   {
     "video": "video/runbts/어떻게.webm",
     "videoMp4": "video/runbts/mp4/어떻게.mp4",
     "korean": "어떻게?",
-    "russian": "Как?"
+    "russian": "Как?",
+    "english": "How?"
   },
   {
     "video": "video/moon lovers/닥쳐.webm",
     "videoMp4": "video/moon lovers/mp4/닥쳐.mp4",
     "korean": "닥쳐",
-    "russian": "Замолчите"
+    "russian": "Замолчите",
+    "english": "Shut up."
   },
   {
     "video": "video/moon lovers/저리가.webm",
     "videoMp4": "video/moon lovers/mp4/저리가.mp4",
     "korean": "저리가!",
-    "russian": "С дороги!"
+    "russian": "С дороги!",
+    "english": "Get out of the way!"
   },
   {
     "video": "video/moon lovers/살고 싶어.webm",
     "videoMp4": "video/moon lovers/mp4/살고 싶어.mp4",
     "korean": "살고 싶어",
-    "russian": "Хочу жить"
+    "russian": "Хочу жить",
+    "english": "I want to live."
   },
   {
     "video": "video/moon lovers/같이 가요.webm",
     "videoMp4": "video/moon lovers/mp4/같이 가요.mp4",
     "korean": "같이 가요",
-    "russian": "Пошли вместе"
+    "russian": "Пошли вместе",
+    "english": "Let's go together."
   },
   {
     "video": "video/moon lovers/그만.webm",
     "videoMp4": "video/moon lovers/mp4/그만.mp4",
     "korean": "그만",
-    "russian": "Заканчивай"
+    "russian": "Заканчивай",
+    "english": "Stop it."
   },
   {
     "video": "video/moon lovers/됐다.webm",
     "videoMp4": "video/moon lovers/mp4/됐다.mp4",
     "korean": "됐다",
-    "russian": "Хватит"
+    "russian": "Хватит",
+    "english": "That's enough."
   },
   {
     "video": "video/moon lovers/미안해.webm",
     "videoMp4": "video/moon lovers/mp4/미안해.mp4",
     "korean": "미안해",
-    "russian": "Прости"
+    "russian": "Прости",
+    "english": "I'm sorry."
   },
   {
     "video": "video/moon lovers/글쎄요.webm",
     "videoMp4": "video/moon lovers/mp4/글쎄요.mp4",
     "korean": "글쎄요",
-    "russian": "Что тут скажешь"
+    "russian": "Что тут скажешь",
+    "english": "Well, I don't know."
   },
   {
     "video": "video/moon lovers/앞으로.webm",
     "videoMp4": "video/moon lovers/mp4/앞으로.mp4",
     "korean": "앞으로",
-    "russian": "Впредь"
+    "russian": "Впредь",
+    "english": "From now on."
   },
   {
     "video": "video/moon lovers/경찰.webm",
     "videoMp4": "video/moon lovers/mp4/경찰.mp4",
     "korean": "경찰",
-    "russian": "Полиция"
+    "russian": "Полиция",
+    "english": "Police."
   },
   {
     "video": "video/moon lovers/싫은데.webm",
     "videoMp4": "video/moon lovers/mp4/싫은데.mp4",
     "korean": "싫은데",
-    "russian": "Не хочу"
+    "russian": "Не хочу",
+    "english": "I don't want to."
   },
   {
     "video": "video/moon lovers/가끔.webm",
     "videoMp4": "video/moon lovers/mp4/가끔.mp4",
     "korean": "가끔",
-    "russian": "Иногда"
+    "russian": "Иногда",
+    "english": "Sometimes"
   },
   {
     "video": "video/moon lovers/하지만.webm",
     "videoMp4": "video/moon lovers/mp4/하지만.mp4",
     "korean": "하지만",
-    "russian": "Но"
+    "russian": "Но",
+    "english": "But"
   },
   {
     "video": "video/moon lovers/왜요.webm",
     "videoMp4": "video/moon lovers/mp4/왜요.mp4",
     "korean": "왜요?",
-    "russian": "Почему?"
+    "russian": "Почему?",
+    "english": "Why?"
   },
   {
     "video": "video/hwarang/싫은데.webm",
     "videoMp4": "video/hwarang/mp4/싫은데.mp4",
     "korean": "싫은데",
-    "russian": "Так не пойдет"
+    "russian": "Так не пойдет",
+    "english": "I don't want to."
   },
   {
     "video": "video/hwarang/그래서.webm",
     "videoMp4": "video/hwarang/mp4/그래서.mp4",
     "korean": "그래서",
-    "russian": "В таком случае"
+    "russian": "В таком случае",
+    "english": "So..."
   },
   {
     "video": "video/hwarang/고맙네.webm",
     "videoMp4": "video/hwarang/mp4/고맙네.mp4",
     "korean": "고맙네",
-    "russian": "Спасибо!"
+    "russian": "Спасибо!",
+    "english": "Thanks!"
   },
   {
     "video": "video/hwarang/일어나.webm",
     "videoMp4": "video/hwarang/mp4/일어나.mp4",
     "korean": "일어나",
-    "russian": "Вставай"
+    "russian": "Вставай",
+    "english": "Get up."
   },
   {
     "video": "video/hwarang/바보.webm",
     "videoMp4": "video/hwarang/mp4/바보.mp4",
     "korean": "바보",
-    "russian": "Дурак"
+    "russian": "Дурак",
+    "english": "Fool."
   },
   {
     "video": "video/hwarang/깜짝이야.webm",
     "videoMp4": "video/hwarang/mp4/깜짝이야.mp4",
     "korean": "깜짝이야",
-    "russian": "Ох, испугался!"
+    "russian": "Ох, испугался!",
+    "english": "Wow, you scared me!"
   },
   {
     "video": "video/hwarang/들어갑니다.webm",
     "videoMp4": "video/hwarang/mp4/들어갑니다.mp4",
     "korean": "들어갑니다",
-    "russian": "Входите"
+    "russian": "Входите",
+    "english": "I'm coming in."
   },
   {
     "video": "video/hwarang/어째서.webm",
     "videoMp4": "video/hwarang/mp4/어째서.mp4",
     "korean": "어째서",
-    "russian": "Почему?"
+    "russian": "Почему?",
+    "english": "Why?"
   },
   {
     "video": "video/hwarang/대답해.webm",
     "videoMp4": "video/hwarang/mp4/대답해.mp4",
     "korean": "대답해",
-    "russian": "Отвечай"
+    "russian": "Отвечай",
+    "english": "Answer me."
   },
   {
     "video": "video/hwarang/딸 .webm",
     "videoMp4": "video/hwarang/mp4/딸 .mp4",
     "korean": "딸",
-    "russian": "Дочь"
+    "russian": "Дочь",
+    "english": "Daughter."
   },
   {
     "video": "video/hwarang/아버지.webm",
     "videoMp4": "video/hwarang/mp4/아버지.mp4",
     "korean": "아버지",
-    "russian": "Отец"
+    "russian": "Отец",
+    "english": "Father."
   },
   {
     "video": "video/hwarang/걱정 마.webm",
     "videoMp4": "video/hwarang/mp4/걱정 마.mp4",
     "korean": "걱정 마",
-    "russian": "Не волнуйся"
+    "russian": "Не волнуйся",
+    "english": "Don't worry."
   },
   {
     "video": "video/hwarang/미쳤어.webm",
     "videoMp4": "video/hwarang/mp4/미쳤어.mp4",
     "korean": "미쳤어?",
-    "russian": "Ты с ума сошёл?"
+    "russian": "Ты с ума сошёл?",
+    "english": "Are you crazy?"
   },
   {
     "video": "video/hwarang/잘생겼어.webm",
     "videoMp4": "video/hwarang/mp4/잘생겼어.mp4",
     "korean": "잘생겼어",
-    "russian": "Красавчик"
+    "russian": "Красавчик",
+    "english": "You're handsome."
   },
   {
     "video": "video/hwarang/맞죠.webm",
     "videoMp4": "video/hwarang/mp4/맞죠.mp4",
     "korean": "맞죠",
-    "russian": "Правда"
+    "russian": "Правда",
+    "english": "Right?"
   },
   {
     "video": "video/hwarang/망했어.webm",
     "videoMp4": "video/hwarang/mp4/망했어.mp4",
     "korean": "망했어",
-    "russian": "Всё пропало"
+    "russian": "Всё пропало",
+    "english": "It's ruined."
   },
   {
     "video": "video/hwarang/그리고.webm",
     "videoMp4": "video/hwarang/mp4/그리고.mp4",
     "korean": "그리고",
-    "russian": "И затем"
+    "russian": "И затем",
+    "english": "And then."
   },
   {
     "video": "video/hwarang/뭔데.webm",
     "videoMp4": "video/hwarang/mp4/뭔데.mp4",
     "korean": "뭔데?",
-    "russian": "Что такое?"
+    "russian": "Что такое?",
+    "english": "What is it?"
   },
   {
     "video": "video/hwarang/제발.webm",
     "videoMp4": "video/hwarang/mp4/제발.mp4",
     "korean": "제발",
-    "russian": "Умоляю"
+    "russian": "Умоляю",
+    "english": "Please."
   },
   {
     "video": "video/vincenco/아버지.webm",
     "videoMp4": "video/vincenco/mp4/아버지.mp4",
     "korean": "아버지",
-    "russian": "Отец"
+    "russian": "Отец",
+    "english": "Father."
   },
   {
     "video": "video/vincenco/잘했어.webm",
     "videoMp4": "video/vincenco/mp4/잘했어.mp4",
     "korean": "잘했어!",
-    "russian": "Молодцом!"
+    "russian": "Молодцом!",
+    "english": "Good job!"
   },
   {
     "video": "video/vincenco/그렇지.webm",
     "videoMp4": "video/vincenco/mp4/그렇지.mp4",
     "korean": "그렇지",
-    "russian": "Вот так"
+    "russian": "Вот так",
+    "english": "That's right."
   },
   {
     "video": "video/vincenco/괜찮습니다.webm",
     "videoMp4": "video/vincenco/mp4/괜찮습니다.mp4",
     "korean": "괜찮습니다",
-    "russian": "Все нормально"
+    "russian": "Все нормально",
+    "english": "It's okay."
   },
   {
     "video": "video/vincenco/성과급.webm",
     "videoMp4": "video/vincenco/mp4/성과급.mp4",
     "korean": "성과급",
-    "russian": "Премия"
+    "russian": "Премия",
+    "english": "Bonus."
   },
   {
     "video": "video/vincenco/알았지.webm",
     "videoMp4": "video/vincenco/mp4/알았지.mp4",
     "korean": "알았지?",
-    "russian": "Поняла?"
+    "russian": "Поняла?",
+    "english": "Got it?"
   },
   {
     "video": "video/vincenco/우리들.webm",
     "videoMp4": "video/vincenco/mp4/우리들.mp4",
     "korean": "우리들",
-    "russian": "Мы"
+    "russian": "Мы",
+    "english": "Us."
   },
   {
     "video": "video/weakhero/미안해.webm",
     "videoMp4": "video/weakhero/mp4/미안해.mp4",
     "korean": "미안해",
-    "russian": "Сорян"
+    "russian": "Сорян",
+    "english": "I'm sorry."
   },
   {
     "video": "video/weakhero/오지 마.webm",
     "videoMp4": "video/weakhero/mp4/오지 마.mp4",
     "korean": "오지 마",
-    "russian": "Не подходи"
+    "russian": "Не подходи",
+    "english": "Don't come here."
   },
   {
     "video": "video/weakhero/왔어.webm",
     "videoMp4": "video/weakhero/mp4/왔어.mp4",
     "korean": "왔어",
-    "russian": "Пришел"
+    "russian": "Пришел",
+    "english": "You’re here."
   },
   {
     "video": "video/weakhero/가져 와.webm",
     "videoMp4": "video/weakhero/mp4/가져 와.mp4",
     "korean": "가져 와",
-    "russian": "Принеси"
+    "russian": "Принеси",
+    "english": "Bring it."
   },
   {
     "video": "video/weakhero/그만해.webm",
     "videoMp4": "video/weakhero/mp4/그만해.mp4",
     "korean": "그만해",
-    "russian": "Завязывай"
+    "russian": "Завязывай",
+    "english": "Stop it."
   },
   {
     "video": "video/weakhero/누구세요.webm",
     "videoMp4": "video/weakhero/mp4/누구세요.mp4",
     "korean": "누구세요?",
-    "russian": "Кто там?"
+    "russian": "Кто там?",
+    "english": "Who is it?"
   },
   {
     "video": "video/weakhero/배달이에요.webm",
     "videoMp4": "video/weakhero/mp4/배달이에요.mp4",
     "korean": "배달이에요",
-    "russian": "Доставка"
+    "russian": "Доставка",
+    "english": "It's a delivery."
   },
   {
     "video": "video/weakhero/비켜.webm",
     "videoMp4": "video/weakhero/mp4/비켜.mp4",
     "korean": "비켜",
-    "russian": "Отойди"
+    "russian": "Отойди",
+    "english": "Move aside."
   },
   {
     "video": "video/weakhero/가라.webm",
     "videoMp4": "video/weakhero/mp4/가라.mp4",
     "korean": "가라",
-    "russian": "Вали"
+    "russian": "Вали",
+    "english": "Go away."
   },
   {
     "video": "video/weakhero/앉아.webm",
     "videoMp4": "video/weakhero/mp4/앉아.mp4",
     "korean": "앉아",
-    "russian": "Садись"
+    "russian": "Садись",
+    "english": "Sit down."
   },
   {
     "video": "video/weakhero/고맙지.webm",
     "videoMp4": "video/weakhero/mp4/고맙지.mp4",
     "korean": "고맙지",
-    "russian": "Спасибо"
+    "russian": "Спасибо",
+    "english": "Thanks."
   },
   {
     "video": "video/weakhero2/선생님.webm",
     "videoMp4": "video/weakhero2/mp4/선생님.mp4",
     "korean": "선생님",
-    "russian": "Учитель"
+    "russian": "Учитель",
+    "english": "Teacher"
   },
   {
     "video": "video/weakhero2/알았어.webm",
     "videoMp4": "video/weakhero2/mp4/알았어.mp4",
     "korean": "알았어",
-    "russian": "Я понял"
+    "russian": "Я понял",
+    "english": "Got it"
   },
   {
     "video": "video/weakhero2/여러분들.webm",
     "videoMp4": "video/weakhero2/mp4/여러분들.mp4",
     "korean": "여러분들",
-    "russian": "Друзья"
+    "russian": "Друзья",
+    "english": "Everyone"
   },
   {
     "video": "video/weakhero2/왜냐하면은.webm",
     "videoMp4": "video/weakhero2/mp4/왜냐하면은.mp4",
     "korean": "왜냐하면은",
-    "russian": "Потому что..."
+    "russian": "Потому что...",
+    "english": "Because..."
   },
   {
     "video": "video/weakhero2/왜요.webm",
     "videoMp4": "video/weakhero2/mp4/왜요.mp4",
     "korean": "왜요?",
-    "russian": "Почему?"
+    "russian": "Почему?",
+    "english": "Why?"
   },
   {
     "video": "video/weakhero2/꺼져.webm",
     "videoMp4": "video/weakhero2/mp4/꺼져.mp4",
     "korean": "꺼져",
-    "russian": "Проваливай"
+    "russian": "Проваливай",
+    "english": "Get lost."
   },
   {
     "video": "video/weakhero2/네.webm",
     "videoMp4": "video/weakhero2/mp4/네.mp4",
     "korean": "네",
-    "russian": "Да"
+    "russian": "Да",
+    "english": "Yes."
   },
   {
     "video": "video/weakhero2/미안해.webm",
     "videoMp4": "video/weakhero2/mp4/미안해.mp4",
     "korean": "미안해",
-    "russian": "Прости"
+    "russian": "Прости",
+    "english": "I'm sorry."
   },
   {
     "video": "video/weakhero2/감사합니다.webm",
     "videoMp4": "video/weakhero2/mp4/감사합니다.mp4",
     "korean": "감사합니다",
-    "russian": "Спасибо"
+    "russian": "Спасибо",
+    "english": "Thank you."
   },
   {
     "video": "video/weakhero2/근데.webm",
     "videoMp4": "video/weakhero2/mp4/근데.mp4",
     "korean": "근데",
-    "russian": "Однако"
+    "russian": "Однако",
+    "english": "But..."
   },
   {
     "video": "video/weakhero2/예 아버지.webm",
     "videoMp4": "video/weakhero2/mp4/예 아버지.mp4",
     "korean": "예 아버지",
-    "russian": "Да, бать"
+    "russian": "Да, бать",
+    "english": "Yes, Father."
   },
   {
     "video": "video/deathgame/감사합니다.webm",
     "videoMp4": "video/deathgame/mp4/감사합니다.mp4",
     "korean": "감사합니다",
-    "russian": "Спасибо"
+    "russian": "Спасибо",
+    "english": "Thank you."
   },
   {
     "video": "video/deathgame/걱정마.webm",
     "videoMp4": "video/deathgame/mp4/걱정마.mp4",
     "korean": "걱정마",
-    "russian": "Не волнуйся"
+    "russian": "Не волнуйся",
+    "english": "Don't worry."
   },
   {
     "video": "video/deathgame/그냥.webm",
     "videoMp4": "video/deathgame/mp4/그냥.mp4",
     "korean": "그냥",
-    "russian": "Просто"
+    "russian": "Просто",
+    "english": "Just."
   },
   {
     "video": "video/deathgame/다음.webm",
     "videoMp4": "video/deathgame/mp4/다음.mp4",
     "korean": "다음",
-    "russian": "Следующий"
+    "russian": "Следующий",
+    "english": "Next."
   },
   {
     "video": "video/deathgame/맞습니다.webm",
     "videoMp4": "video/deathgame/mp4/맞습니다.mp4",
     "korean": "맞습니다",
-    "russian": "Верно"
+    "russian": "Верно",
+    "english": "That's right."
   },
   {
     "video": "video/deathgame/알았어.webm",
     "videoMp4": "video/deathgame/mp4/알았어.mp4",
     "korean": "알았어",
-    "russian": "Поняла"
+    "russian": "Поняла",
+    "english": "Got it."
   },
   {
     "video": "video/deathgame/없습니다.webm",
     "videoMp4": "video/deathgame/mp4/없습니다.mp4",
     "korean": "없습니다",
-    "russian": "Нет"
+    "russian": "Нет",
+    "english": "There isn't."
   },
   {
     "video": "video/deathgame/들어가.webm",
     "videoMp4": "video/deathgame/mp4/들어가.mp4",
     "korean": "들어가",
-    "russian": "Пока"
+    "russian": "Пока",
+    "english": "Go in."
   },
   {
     "video": "video/deathgame/뭐.webm",
     "videoMp4": "video/deathgame/mp4/뭐.mp4",
     "korean": "뭐?",
-    "russian": "Что?"
+    "russian": "Что?",
+    "english": "What?"
   },
   {
     "video": "video/bloodhounds/알았어.webm",
     "videoMp4": "video/bloodhounds/mp4/알았어.mp4",
     "korean": "알았어?",
-    "russian": "Понял?"
+    "russian": "Понял?",
+    "english": "Got it?"
   },
   {
     "video": "video/bloodhounds/뒤집어.webm",
     "videoMp4": "video/bloodhounds/mp4/뒤집어.mp4",
     "korean": "뒤집어",
-    "russian": "Переверни"
+    "russian": "Переверни",
+    "english": "Flip it over."
   },
   {
     "video": "video/bloodhounds/안돼요.webm",
     "videoMp4": "video/bloodhounds/mp4/안돼요.mp4",
     "korean": "안돼요",
-    "russian": "Нельзя"
+    "russian": "Нельзя",
+    "english": "No way."
   },
   {
     "video": "video/bloodhounds/예, 알겠습니다.webm",
     "videoMp4": "video/bloodhounds/mp4/예, 알겠습니다.mp4",
     "korean": "예, 알겠습니다",
-    "russian": "Да, как скажете"
+    "russian": "Да, как скажете",
+    "english": "Yes, I understand."
   },
   {
     "video": "video/bloodhounds/하.webm",
     "videoMp4": "video/bloodhounds/mp4/하.mp4",
     "korean": "하",
-    "russian": "Ха"
+    "russian": "Ха",
+    "english": "Ha."
   },
   {
     "video": "video/bloodhounds/이모님.webm",
     "videoMp4": "video/bloodhounds/mp4/이모님.mp4",
     "korean": "이모님",
-    "russian": "Тётушка"
+    "russian": "Тётушка",
+    "english": "Auntie."
   },
   {
     "video": "video/bloodhounds/알았어_1.webm",
     "videoMp4": "video/bloodhounds/mp4/알았어_1.mp4",
     "korean": "알았어",
-    "russian": "Понял"
+    "russian": "Понял",
+    "english": "Got it."
   },
   {
     "video": "video/bloodhounds/상금.webm",
     "videoMp4": "video/bloodhounds/mp4/상금.mp4",
     "korean": "상금",
-    "russian": "Призовые"
+    "russian": "Призовые",
+    "english": "Prize money."
   },
   {
     "video": "video/theglory/들어와.webm",
     "videoMp4": "video/theglory/mp4/들어와.mp4",
     "korean": "들어와",
-    "russian": "Заходи"
+    "russian": "Заходи",
+    "english": "Come in."
   },
   {
     "video": "video/theglory/약자.webm",
     "videoMp4": "video/theglory/mp4/약자.mp4",
     "korean": "약자",
-    "russian": "Слабачка"
+    "russian": "Слабачка",
+    "english": "Weakling."
   },
   {
     "video": "video/theglory/누구야.webm",
     "videoMp4": "video/theglory/mp4/누구야.mp4",
     "korean": "누구야?",
-    "russian": "Кто?"
+    "russian": "Кто?",
+    "english": "Who is it?"
   },
   {
     "video": "video/theglory/그래서.webm",
     "videoMp4": "video/theglory/mp4/그래서.mp4",
     "korean": "그래서",
-    "russian": "Поэтому"
+    "russian": "Поэтому",
+    "english": "So..."
   },
   {
     "video": "video/theglory/저기요.webm",
     "videoMp4": "video/theglory/mp4/저기요.mp4",
     "korean": "저기요",
-    "russian": "Можно вас?"
+    "russian": "Можно вас?",
+    "english": "Excuse me."
   },
   {
     "video": "video/theglory/무서워.webm",
     "videoMp4": "video/theglory/mp4/무서워.mp4",
     "korean": "무서워",
-    "russian": "Страшно"
+    "russian": "Страшно",
+    "english": "I'm scared."
   },
   {
     "video": "video/killershop/당연하지.webm",
     "videoMp4": "video/killershop/mp4/당연하지.mp4",
     "korean": "당연하지",
-    "russian": "Разумеется"
+    "russian": "Разумеется",
+    "english": "Of course."
   },
   {
     "video": "video/hvatai/괜찮아.webm",
     "videoMp4": "video/hvatai/mp4/괜찮아.mp4",
     "korean": "괜찮아?",
-    "russian": "ты в порядке?"
+    "russian": "ты в порядке?",
+    "english": "Are you okay?"
   },
   {
     "video": "video/hvatai/끊을게요.webm",
     "videoMp4": "video/hvatai/mp4/끊을게요.mp4",
     "korean": "끊을게요",
-    "russian": "Кладу трубку"
+    "russian": "Кладу трубку",
+    "english": "I'm hanging up."
   },
   {
     "video": "video/hvatai/필요없어요.webm",
     "videoMp4": "video/hvatai/mp4/필요없어요.mp4",
     "korean": "필요없어요",
-    "russian": "Не нужно"
+    "russian": "Не нужно",
+    "english": "I don't need it."
   },
   {
     "video": "video/hvatai/저기요.webm",
     "videoMp4": "video/hvatai/mp4/저기요.mp4",
     "korean": "저기요",
-    "russian": "Извините (обращение)"
+    "russian": "Извините (обращение)",
+    "english": "Excuse me."
   },
   {
     "video": "video/hvatai/춥다.webm",
     "videoMp4": "video/hvatai/mp4/춥다.mp4",
     "korean": "춥다",
-    "russian": "Холодно"
+    "russian": "Холодно",
+    "english": "It's cold."
   },
   {
     "video": "video/hvatai/잠시만요.webm",
     "videoMp4": "video/hvatai/mp4/잠시만요.mp4",
     "korean": "잠시만요",
-    "russian": "Минутку"
+    "russian": "Минутку",
+    "english": "Just a moment"
   },
   {
     "video": "video/hvatai/설마.webm",
     "videoMp4": "video/hvatai/mp4/설마.mp4",
     "korean": "설마",
-    "russian": "Не может быть"
+    "russian": "Не может быть",
+    "english": "No way"
   },
   {
     "video": "video/hvatai/귀신.webm",
     "videoMp4": "video/hvatai/mp4/귀신.mp4",
     "korean": "귀신",
-    "russian": "Призрак"
+    "russian": "Призрак",
+    "english": "Ghost"
   },
   {
     "video": "video/hvatai/여보세요.webm",
     "videoMp4": "video/hvatai/mp4/여보세요.mp4",
     "korean": "여보세요",
-    "russian": "Алло"
+    "russian": "Алло",
+    "english": "Hello?"
   },
   {
     "video": "video/hvatai/할머니.webm",
     "videoMp4": "video/hvatai/mp4/할머니.mp4",
     "korean": "할머니",
-    "russian": "Бабушка"
+    "russian": "Бабушка",
+    "english": "Grandma"
   },
   {
     "video": "video/hvatai/고맙습니다.webm",
     "videoMp4": "video/hvatai/mp4/고맙습니다.mp4",
     "korean": "고맙습니다",
-    "russian": "Спасибо"
+    "russian": "Спасибо",
+    "english": "Thank you"
   },
   {
     "video": "video/biglig/진짜요.webm",
     "videoMp4": "video/biglig/mp4/진짜요.mp4",
     "korean": "진짜요?",
-    "russian": "Серьезно?"
+    "russian": "Серьезно?",
+    "english": "Really?"
   },
   {
     "video": "video/biglig/순서가.webm",
     "videoMp4": "video/biglig/mp4/순서가.mp4",
     "korean": "순서가",
-    "russian": "Последовательность"
+    "russian": "Последовательность",
+    "english": "The order is"
   },
   {
     "video": "video/lookism/가끔요.webm",
     "videoMp4": "video/lookism/mp4/가끔요.mp4",
     "korean": "가끔요",
-    "russian": "Иногда"
+    "russian": "Иногда",
+    "english": "Sometimes"
   },
   {
     "video": "video/lookism/그래요.webm",
     "videoMp4": "video/lookism/mp4/그래요.mp4",
     "korean": "그래요?",
-    "russian": "Вот как?"
+    "russian": "Вот как?",
+    "english": "Is that so?"
   },
   {
     "video": "video/lookism/누구세요.webm",
     "videoMp4": "video/lookism/mp4/누구세요.mp4",
     "korean": "누구세요?",
-    "russian": "Кто вы?"
+    "russian": "Кто вы?",
+    "english": "Who are you?"
   },
   {
     "video": "video/lookism/맛있네.webm",
     "videoMp4": "video/lookism/mp4/맛있네.mp4",
     "korean": "맛있네",
-    "russian": "Вкусно!"
+    "russian": "Вкусно!",
+    "english": "This is delicious!"
   },
   {
     "video": "video/lookism/어서 오세요.webm",
     "videoMp4": "video/lookism/mp4/어서 오세요.mp4",
     "korean": "어서 오세요",
-    "russian": "Добро пожаловать"
+    "russian": "Добро пожаловать",
+    "english": "Welcome!"
   },
   {
     "video": "video/lookism/어서 와요.webm",
     "videoMp4": "video/lookism/mp4/어서 와요.mp4",
     "korean": "어서 와요",
-    "russian": "Заходите"
+    "russian": "Заходите",
+    "english": "Come on in!"
   },
   {
     "video": "video/kalmar3/다음.webm",
     "videoMp4": "video/kalmar3/mp4/다음.mp4",
     "korean": "다음",
-    "russian": "Следующий"
+    "russian": "Следующий",
+    "english": "Next."
   },
   {
     "video": "video/kalmar3/혹시.webm",
     "videoMp4": "video/kalmar3/mp4/혹시.mp4",
     "korean": "혹시",
-    "russian": "Случайно / вдруг"
+    "russian": "Случайно / вдруг",
+    "english": "By any chance..."
   },
   {
     "video": "video/kalmar3/사백오십육 번.webm",
     "videoMp4": "video/kalmar3/mp4/사백오십육 번.mp4",
     "korean": "사백오십육 번",
-    "russian": "Номер 456"
+    "russian": "Номер 456",
+    "english": "Number 456."
   },
   {
     "video": "video/demon/글쎄요.webm",
     "videoMp4": "video/demon/mp4/글쎄요.mp4",
     "korean": "글쎄요",
-    "russian": "Ну не знаю"
+    "russian": "Ну не знаю",
+    "english": "Well, I don't know."
   },
   {
     "video": "video/demon/이해해.webm",
     "videoMp4": "video/demon/mp4/이해해.mp4",
     "korean": "이해해",
-    "russian": "Я понимаю"
+    "russian": "Я понимаю",
+    "english": "I understand."
   },
   {
     "video": "video/kumiho/맞지.webm",
     "videoMp4": "video/kumiho/mp4/맞지.mp4",
     "korean": "맞지?",
-    "russian": "Правда ведь?"
+    "russian": "Правда ведь?",
+    "english": "Right?"
   }
 ]

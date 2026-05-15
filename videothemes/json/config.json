@@ -4,43 +4,50 @@
       "name": "Глава 1: Основы",
       "cover": "videothemes/pathway_covers/cover1.png",
       "coverImage": "videothemes/pathway_covers/coverImage1.png",
-      "masterJsonPath": "videothemes/pathway/path_level_1.json"
+      "masterJsonPath": "videothemes/pathway/path_level_1.json",
+      "name_en": "Chapter 1: Basics"
     },
     "chapter_2": {
       "name": "Глава 2: Простые фразы",
       "cover": "videothemes/pathway_covers/cover2.png",
       "coverImage": "videothemes/pathway_covers/coverImage2.png",
-      "masterJsonPath": "videothemes/pathway/path_level_2.json"
+      "masterJsonPath": "videothemes/pathway/path_level_2.json",
+      "name_en": "Chapter 2: Simple Phrases"
     },
     "chapter_3": {
       "name": "Глава 3: Вопросы и ответы",
       "cover": "videothemes/pathway_covers/cover3.png",
       "coverImage": "videothemes/pathway_covers/coverImage3.png",
-      "masterJsonPath": "videothemes/pathway/path_level_3.json"
+      "masterJsonPath": "videothemes/pathway/path_level_3.json",
+      "name_en": "Chapter 3: Questions & Answers"
     },
     "chapter_4": {
       "name": "Глава 4: Повседневность",
       "cover": "videothemes/pathway_covers/cover4.png",
       "coverImage": "videothemes/pathway_covers/coverImage4.png",
-      "masterJsonPath": "videothemes/pathway/path_level_4.json"
+      "masterJsonPath": "videothemes/pathway/path_level_4.json",
+      "name_en": "Chapter 4: Everyday Life"
     },
     "chapter_5": {
       "name": "Глава 5: Эмоции и мнения",
       "cover": "videothemes/pathway_covers/cover5.png",
       "coverImage": "videothemes/pathway_covers/coverImage5.png",
-      "masterJsonPath": "videothemes/pathway/path_level_5.json"
+      "masterJsonPath": "videothemes/pathway/path_level_5.json",
+      "name_en": "Chapter 5: Emotions & Opinions"
     },
     "chapter_6": {
       "name": "Глава 6: Усложняем",
       "cover": "videothemes/pathway_covers/cover6.png",
       "coverImage": "videothemes/pathway_covers/coverImage6.png",
-      "masterJsonPath": "videothemes/pathway/path_level_6.json"
+      "masterJsonPath": "videothemes/pathway/path_level_6.json",
+      "name_en": "Chapter 6: Leveling Up"
     },
     "chapter_7": {
       "name": "Глава 7: Разговорный стиль",
       "cover": "videothemes/pathway_covers/cover7.png",
       "coverImage": "videothemes/pathway_covers/coverImage7.png",
-      "masterJsonPath": "videothemes/pathway/path_level_7.json"
+      "masterJsonPath": "videothemes/pathway/path_level_7.json",
+      "name_en": "Chapter 7: Conversational Style"
     }
   },
   "theme0": {
@@ -50,23 +57,28 @@
     "blocks": [
       {
         "name": "BTS",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "BTS"
       },
       {
         "name": "Хиллер",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Healer"
       },
       {
         "name": "Большая Лига😂",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Comedy Big League 😂"
       },
       {
         "name": "Хватай Сон Дже И Беги",
-        "key": "b4"
+        "key": "b4",
+        "name_en": "Lovely Runner"
       },
       {
         "name": "Слабый Герой 2",
-        "key": "b5"
+        "key": "b5",
+        "name_en": "Weak Hero Class 2"
       }
     ],
     "totalCount": 35,
@@ -80,39 +92,48 @@
     "blocks": [
       {
         "name": "Демо BTS",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo BTS"
       },
       {
         "name": "Разное 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Misc 1"
       },
       {
         "name": "Разное 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Misc 2"
       },
       {
         "name": "Разное 3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Misc 3"
       },
       {
         "name": "Разное 4",
-        "key": "b4"
+        "key": "b4",
+        "name_en": "Misc 4"
       },
       {
         "name": "J-hope",
-        "key": "b5"
+        "key": "b5",
+        "name_en": "J-Hope"
       },
       {
         "name": "Аэро-Йога-1",
-        "key": "b6"
+        "key": "b6",
+        "name_en": "Aero Yoga 1"
       },
       {
         "name": "Аэро-Йога-2",
-        "key": "b7"
+        "key": "b7",
+        "name_en": "Aero Yoga 2"
       }
     ],
     "totalCount": 217,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "BTS"
   },
   "theme2": {
     "coverImage": "videothemes/subthemebc/squidgamebackground.png",
@@ -122,19 +143,23 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Сезон 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Season 1"
       },
       {
         "name": "Сезон 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Season 2"
       }
     ],
     "totalCount": 92,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Squid Game 1, 2"
   },
   "theme3": {
     "coverImage": "videothemes/subthemebc/healerbackground.png",
@@ -144,19 +169,23 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Хиллер 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Healer 1"
       },
       {
         "name": "Хиллер 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Healer 2"
       }
     ],
     "totalCount": 74,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Healer"
   },
   "theme4": {
     "coverImage": "videothemes/subthemebc/allkdrama.png",
@@ -166,39 +195,48 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Сборник 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Collection 1"
       },
       {
         "name": "Сборник 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Collection 2"
       },
       {
         "name": "Сборник 3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Collection 3"
       },
       {
         "name": "Сборник 4",
-        "key": "b4"
+        "key": "b4",
+        "name_en": "Collection 4"
       },
       {
         "name": "Паразиты 1",
-        "key": "b5"
+        "key": "b5",
+        "name_en": "Parasite 1"
       },
       {
         "name": "Паразиты 2",
-        "key": "b6"
+        "key": "b6",
+        "name_en": "Parasite 2"
       },
       {
         "name": "Жизнь дает мандарины",
-        "key": "b7"
+        "key": "b7",
+        "name_en": "When Life Gives You Tangerines"
       }
     ],
     "totalCount": 225,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Clips from Various Dramas & Shows"
   },
   "theme5": {
     "coverImage": "videothemes/subthemebc/moonlovers.png",
@@ -208,31 +246,38 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Сердца Корё 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Scarlet Heart Ryeo 1"
       },
       {
         "name": "Сердца Корё 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Scarlet Heart Ryeo 2"
       },
       {
         "name": "Сердца Корё 3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Scarlet Heart Ryeo 3"
       },
       {
         "name": "Сердца Корё 4",
-        "key": "b4"
+        "key": "b4",
+        "name_en": "Scarlet Heart Ryeo 4"
       },
       {
         "name": "Сердца Корё 5",
-        "key": "b5"
+        "key": "b5",
+        "name_en": "Scarlet Heart Ryeo 5"
       }
     ],
     "totalCount": 161,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Moon Lovers: Scarlet Heart Ryeo"
   },
   "theme6": {
     "coverImage": "videothemes/subthemebc/hwaran.png",
@@ -242,31 +287,38 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Хваран 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Hwarang 1"
       },
       {
         "name": "Хваран 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Hwarang 2"
       },
       {
         "name": "Хваран 3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Hwarang 3"
       },
       {
         "name": "Хваран 4",
-        "key": "b4"
+        "key": "b4",
+        "name_en": "Hwarang 4"
       },
       {
         "name": "Хваран 5",
-        "key": "b5"
+        "key": "b5",
+        "name_en": "Hwarang 5"
       }
     ],
     "totalCount": 155,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Hwarang"
   },
   "theme7": {
     "coverImage": "videothemes/subthemebc/vin.png",
@@ -276,19 +328,23 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Винченцо 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Vincenzo 1"
       },
       {
         "name": "Винченцо 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Vincenzo 2"
       }
     ],
     "totalCount": 75,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Vincenzo"
   },
   "theme8": {
     "coverImage": "videothemes/subthemebc/weakherobackground.png",
@@ -298,27 +354,33 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Сезон 1-1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Season 1-1"
       },
       {
         "name": "Сезон 1-1",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Season 1-1"
       },
       {
         "name": "Сезон 2-1",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Season 2-1"
       },
       {
         "name": "Сезон 2-4",
-        "key": "b4"
+        "key": "b4",
+        "name_en": "Season 2-4"
       }
     ],
     "totalCount": 128,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Weak Hero Class — Seasons 1, 2"
   },
   "theme9": {
     "coverImage": "videothemes/subthemebc/ije.png",
@@ -328,23 +390,28 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Игра смерти 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Death's Game 1"
       },
       {
         "name": "Игра смерти 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Death's Game 2"
       },
       {
         "name": "Игра смерти 3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Death's Game 3"
       }
     ],
     "totalCount": 86,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Death's Game"
   },
   "theme10": {
     "coverImage": "videothemes/subthemebc/bloodhounds.png",
@@ -354,19 +421,23 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Словно гончие 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Bloodhounds 1"
       },
       {
         "name": "Словно гончие 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Bloodhounds 2"
       }
     ],
     "totalCount": 77,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Bloodhounds"
   },
   "theme11": {
     "coverImage": "videothemes/subthemebc/glory.png",
@@ -376,23 +447,28 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Слава 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "The Glory 1"
       },
       {
         "name": "Слава 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "The Glory 2"
       },
       {
         "name": "Слава 3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "The Glory 3"
       }
     ],
     "totalCount": 103,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "The Glory"
   },
   "theme12": {
     "coverImage": "videothemes/subthemebc/killershop.png",
@@ -402,15 +478,18 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Магазин для убииц 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "A Shop for Killers 1"
       }
     ],
     "totalCount": 34,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "A Shop for Killers"
   },
   "theme13": {
     "coverImage": "videothemes/subthemebc/hvatai.png",
@@ -420,23 +499,28 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Сон Дже 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Lovely Runner 1"
       },
       {
         "name": "Сон Дже 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Lovely Runner 2"
       },
       {
         "name": "Сон Дже 3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Lovely Runner 3"
       }
     ],
     "totalCount": 100,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Lovely Runner"
   },
   "theme14": {
     "coverImage": "videothemes/subthemebc/biglig.png",
@@ -446,19 +530,23 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Большая лига 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Comedy Big League 1"
       },
       {
         "name": "Большая лига 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Comedy Big League 2"
       }
     ],
     "totalCount": 56,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Comedy Big League"
   },
   "theme15": {
     "coverImage": "videothemes/subthemebc/lookism.png",
@@ -468,15 +556,18 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Лукизм 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Lookism 1"
       }
     ],
     "totalCount": 41,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Lookism"
   },
   "theme16": {
     "coverImage": "videothemes/subthemebc/kalmar3.png",
@@ -486,15 +577,18 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "1 Серия",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Episode 1"
       }
     ],
     "totalCount": 39,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Squid Game 3"
   },
   "theme17": {
     "coverImage": "videothemes/subthemebc/demon.png",
@@ -504,15 +598,18 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "1 Серия",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Episode 1"
       }
     ],
     "totalCount": 41,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "My Demon"
   },
   "theme18": {
     "coverImage": "videothemes/subthemebc/kumiho.png",
@@ -522,23 +619,28 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       },
       {
         "name": "2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2"
       },
       {
         "name": "3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "3"
       }
     ],
     "totalCount": 93,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Tale of the Nine-Tailed 1938"
   },
   "theme19": {
     "coverImage": "videothemes/subthemebc/ad.png",
@@ -548,19 +650,23 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "1 ",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1 "
       },
       {
         "name": "2 ",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2 "
       }
     ],
     "totalCount": 68,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Strangers from Hell"
   },
   "theme20": {
     "coverImage": "videothemes/subthemebc/evilflower.png",
@@ -570,27 +676,33 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "Цветок зла 1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "Flower of Evil 1"
       },
       {
         "name": "Цветок зла 2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "Flower of Evil 2"
       },
       {
         "name": "Цветок зла 3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "Flower of Evil 3"
       },
       {
         "name": "Цветок зла 4",
-        "key": "b4"
+        "key": "b4",
+        "name_en": "Flower of Evil 4"
       }
     ],
     "totalCount": 147,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Flower of Evil"
   },
   "theme21": {
     "coverImage": "videothemes/subthemebc/shef.png",
@@ -600,23 +712,28 @@
     "blocks": [
       {
         "name": "Демо",
-        "key": "b0"
+        "key": "b0",
+        "name_en": "Demo"
       },
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       },
       {
         "name": "2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2"
       },
       {
         "name": "3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "3"
       }
     ],
     "totalCount": 102,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "The Tyrant's Chef"
   },
   "theme22": {
     "coverImage": "videothemes/subthemebc/jin.png",
@@ -626,15 +743,18 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       },
       {
         "name": "2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2"
       }
     ],
     "totalCount": 61,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "All Your Wishes Will Come True"
   },
   "theme23": {
     "coverImage": "videothemes/subthemebc/landking.png",
@@ -644,15 +764,18 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       },
       {
         "name": "2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2"
       }
     ],
     "totalCount": 62,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "King the Land"
   },
   "theme24": {
     "coverImage": "videothemes/subthemebc/lis.png",
@@ -662,11 +785,13 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       }
     ],
     "totalCount": 36,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Tale of the Nine-Tailed"
   },
   "theme25": {
     "coverImage": "videothemes/subthemebc/marry.png",
@@ -676,11 +801,13 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       }
     ],
     "totalCount": 40,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Marry Me"
   },
   "theme26": {
     "coverImage": "videothemes/subthemebc/tafun.png",
@@ -690,11 +817,13 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       }
     ],
     "totalCount": 35,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Typhoon Company"
   },
   "theme27": {
     "coverImage": "videothemes/subthemebc/rusure.png",
@@ -704,15 +833,18 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       },
       {
         "name": "2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2"
       }
     ],
     "totalCount": 45,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Are You Sure?!"
   },
   "theme28": {
     "coverImage": "videothemes/subthemebc/reader.png",
@@ -722,11 +854,13 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       }
     ],
     "totalCount": 30,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Omniscient Reader"
   },
   "theme29": {
     "coverImage": "videothemes/subthemebc/suga.png",
@@ -736,35 +870,43 @@
     "blocks": [
       {
         "name": "С Чимином",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "With Jimin"
       },
       {
         "name": "С РМ",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "With RM"
       },
       {
         "name": "С Джином",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "With Jin"
       },
       {
         "name": "С Шугой(Ведет РМ)",
-        "key": "b4"
+        "key": "b4",
+        "name_en": "With Suga (hosted by RM)"
       },
       {
         "name": "С Хоби",
-        "key": "b5"
+        "key": "b5",
+        "name_en": "With J-Hope"
       },
       {
         "name": "С Ви",
-        "key": "b6"
+        "key": "b6",
+        "name_en": "With V"
       },
       {
         "name": "С Чонгуком",
-        "key": "b7"
+        "key": "b7",
+        "name_en": "With Jungkook"
       }
     ],
     "totalCount": 215,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "SUCHWITA (Suga's Show)"
   },
   "theme30": {
     "coverImage": "videothemes/subthemebc/apl.png",
@@ -774,19 +916,23 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       },
       {
         "name": "2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2"
       },
       {
         "name": "3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "3"
       }
     ],
     "totalCount": 79,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Crash Landing on You"
   },
   "theme31": {
     "coverImage": "videothemes/subthemebc/2521.png",
@@ -796,11 +942,13 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       }
     ],
     "totalCount": 33,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Twenty-Five Twenty-One"
   },
   "theme32": {
     "coverImage": "videothemes/subthemebc/itewon.png",
@@ -810,11 +958,13 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       }
     ],
     "totalCount": 32,
-    "hasNew": false
+    "hasNew": false,
+    "title_en": "Itaewon Class"
   },
   "theme33": {
     "coverImage": "videothemes/subthemebc/tomorrow.png",
@@ -824,11 +974,13 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       }
     ],
     "totalCount": 30,
-    "hasNew": true
+    "hasNew": true,
+    "title_en": "Tomorrow"
   },
   "theme34": {
     "coverImage": "videothemes/subthemebc/rev.png",
@@ -838,19 +990,23 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       },
       {
         "name": "2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2"
       },
       {
         "name": "3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "3"
       }
     ],
     "totalCount": 86,
-    "hasNew": true
+    "hasNew": true,
+    "title_en": "Revolver"
   },
   "theme35": {
     "coverImage": "videothemes/subthemebc/crown.png",
@@ -860,18 +1016,22 @@
     "blocks": [
       {
         "name": "1",
-        "key": "b1"
+        "key": "b1",
+        "name_en": "1"
       },
       {
         "name": "2",
-        "key": "b2"
+        "key": "b2",
+        "name_en": "2"
       },
       {
         "name": "3",
-        "key": "b3"
+        "key": "b3",
+        "name_en": "3"
       }
     ],
     "totalCount": 90,
-    "hasNew": true
+    "hasNew": true,
+    "title_en": "The Prince's 21st-Century Wife"
   }
 }

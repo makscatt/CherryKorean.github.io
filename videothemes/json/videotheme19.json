@@ -4,31 +4,36 @@
       "video": "video/ad/그래도 예쁘다.webm",
       "videoMp4": "video/ad/mp4/그래도 예쁘다.mp4",
       "korean": "그래도 예쁘다",
-      "russian": "Но всё равно красиво"
+      "russian": "Но всё равно красиво",
+      "english": "Still pretty though."
     },
     {
       "video": "video/ad/지금 전화해도 돼.webm",
       "videoMp4": "video/ad/mp4/지금 전화해도 돼.mp4",
       "korean": "지금 전화해도 돼?",
-      "russian": "Ниче, что я звоню сейчас?"
+      "russian": "Ниче, что я звоню сейчас?",
+      "english": "Can I call you now?"
     },
     {
       "video": "video/ad/걱정하지 마 걱정하지 마.webm",
       "videoMp4": "video/ad/mp4/걱정하지 마 걱정하지 마.mp4",
       "korean": "걱정하지 마 걱정하지 마",
-      "russian": "Не волнуйся, не волнуйся"
+      "russian": "Не волнуйся, не волнуйся",
+      "english": "Don't worry, don't worry."
     },
     {
       "video": "video/ad/또 봐요.webm",
       "videoMp4": "video/ad/mp4/또 봐요.mp4",
       "korean": "또 봐요",
-      "russian": "Ещё увидимся"
+      "russian": "Ещё увидимся",
+      "english": "See you again."
     },
     {
       "video": "video/ad/전화 목소리가 좋더니 아주 그냥 잘생겼네.webm",
       "videoMp4": "video/ad/mp4/전화 목소리가 좋더니 아주 그냥 잘생겼네.mp4",
       "korean": "전화 목소리가 좋더니 아주 그냥 잘생겼네",
-      "russian": "Голос по телефону был приятный, и сам оказался красавцем"
+      "russian": "Голос по телефону был приятный, и сам оказался красавцем",
+      "english": "Your voice on the phone was nice, and you're really handsome."
     }
   ],
   "b1": [
@@ -36,382 +41,444 @@
       "video": "video/ad/저 아저씨.webm",
       "videoMp4": "video/ad/mp4/저 아저씨.mp4",
       "korean": "저 아저씨",
-      "russian": "Эй, Дяденька"
+      "russian": "Эй, Дяденька",
+      "english": "That guy."
     },
     {
       "video": "video/ad/저기요.webm",
       "videoMp4": "video/ad/mp4/저기요.mp4",
       "korean": "저기요",
-      "russian": "Эй, извините"
+      "russian": "Эй, извините",
+      "english": "Excuse me."
     },
     {
       "video": "video/ad/도착했어.webm",
       "videoMp4": "video/ad/mp4/도착했어.mp4",
       "korean": "도착했어?",
-      "russian": "Приехал?"
+      "russian": "Приехал?",
+      "english": "Did you arrive?"
     },
     {
       "video": "video/ad/목소리가 왜 그래.webm",
       "videoMp4": "video/ad/mp4/목소리가 왜 그래.mp4",
       "korean": "목소리가 왜 그래?",
-      "russian": "Что с голосом?"
+      "russian": "Что с голосом?",
+      "english": "What's up with your voice?"
     },
     {
       "video": "video/ad/근데 무슨 일 있어.webm",
       "videoMp4": "video/ad/mp4/근데 무슨 일 있어.mp4",
       "korean": "근데 무슨 일 있어?",
-      "russian": "Кстати, что-то случилось?"
+      "russian": "Кстати, что-то случилось?",
+      "english": "By the way, is something wrong?"
     },
     {
       "video": "video/ad/지금 전화해도 돼.webm",
       "videoMp4": "video/ad/mp4/지금 전화해도 돼.mp4",
       "korean": "지금 전화해도 돼?",
-      "russian": "Ниче, что я звоню сейчас?"
+      "russian": "Ниче, что я звоню сейчас?",
+      "english": "Is it okay if I call you now?"
     },
     {
       "video": "video/ad/업무 중 아니야.webm",
       "videoMp4": "video/ad/mp4/업무 중 아니야.mp4",
       "korean": "업무 중 아니야?",
-      "russian": "Ты разве не на работе?"
+      "russian": "Ты разве не на работе?",
+      "english": "Aren't you at work?"
     },
     {
       "video": "video/ad/오빠 나 이제 끊어야겠다.webm",
       "videoMp4": "video/ad/mp4/오빠 나 이제 끊어야겠다.mp4",
       "korean": "오빠 나 이제 끊어야겠다",
-      "russian": "Оппа, мне пора заканчивать разговор"
+      "russian": "Оппа, мне пора заканчивать разговор",
+      "english": "Oppa, I think I should hang up now."
     },
     {
       "video": "video/ad/다시 연락할게.webm",
       "videoMp4": "video/ad/mp4/다시 연락할게.mp4",
       "korean": "다시 연락할게",
-      "russian": "Я перезвоню"
+      "russian": "Я перезвоню",
+      "english": "I'll get in touch again."
     },
     {
       "video": "video/ad/이십만원입니다.webm",
       "videoMp4": "video/ad/mp4/이십만원입니다.mp4",
       "korean": "이십만원입니다",
-      "russian": "200 000 вон"
+      "russian": "200 000 вон",
+      "english": "It's 200,000 won."
     },
     {
       "video": "video/ad/이십만원요.webm",
       "videoMp4": "video/ad/mp4/이십만원요.mp4",
       "korean": "이십만원요?",
-      "russian": "200 000 вон?"
+      "russian": "200 000 вон?",
+      "english": "200,000 won?"
     },
     {
       "video": "video/ad/그러지 말고.webm",
       "videoMp4": "video/ad/mp4/그러지 말고.mp4",
       "korean": "그러지 말고",
-      "russian": "Не надо так"
+      "russian": "Не надо так",
+      "english": "Don't do that."
     },
     {
       "video": "video/ad/그렇게 비싸다고요.webm",
       "videoMp4": "video/ad/mp4/그렇게 비싸다고요.mp4",
       "korean": "그렇게 비싸다고요?",
-      "russian": "Говорите дорого так, да?"
+      "russian": "Говорите дорого так, да?",
+      "english": "Are you saying it's that expensive?"
     },
     {
       "video": "video/ad/그러면 이거.webm",
       "videoMp4": "video/ad/mp4/그러면 이거.mp4",
       "korean": "그러면 이거",
-      "russian": "Тогда, это..."
+      "russian": "Тогда, это...",
+      "english": "Then, this..."
     },
     {
       "video": "video/ad/대신 좀 확실하게 잘 고쳐 주세요.webm",
       "videoMp4": "video/ad/mp4/대신 좀 확실하게 잘 고쳐 주세요.mp4",
       "korean": "대신 좀 확실하게 잘 고쳐 주세요",
-      "russian": "Тогда почините как следует, пожалуйста"
+      "russian": "Тогда почините как следует, пожалуйста",
+      "english": "Please fix it properly instead."
     },
     {
       "video": "video/ad/걱정하지 마 걱정하지 마.webm",
       "videoMp4": "video/ad/mp4/걱정하지 마 걱정하지 마.mp4",
       "korean": "걱정하지 마 걱정하지 마",
-      "russian": "Не волнуйся, не волнуйся"
+      "russian": "Не волнуйся, не волнуйся",
+      "english": "Don't worry, don't worry."
     },
     {
       "video": "video/ad/그래도 예쁘다.webm",
       "videoMp4": "video/ad/mp4/그래도 예쁘다.mp4",
       "korean": "그래도 예쁘다",
-      "russian": "Но всё равно красиво"
+      "russian": "Но всё равно красиво",
+      "english": "But it's still pretty."
     },
     {
       "video": "video/ad/마음에 들어 오실 거예요.webm",
       "videoMp4": "video/ad/mp4/마음에 들어 오실 거예요.mp4",
       "korean": "마음에 들어 오실 거예요",
-      "russian": "Вам точно понравится"
+      "russian": "Вам точно понравится",
+      "english": "You'll definitely like it."
     },
     {
       "video": "video/ad/얼마예요.webm",
       "videoMp4": "video/ad/mp4/얼마예요.mp4",
       "korean": "얼마예요?",
-      "russian": "Сколько стоит?"
+      "russian": "Сколько стоит?",
+      "english": "How much is it?"
     },
     {
       "video": "video/ad/오십오만원이에요.webm",
       "videoMp4": "video/ad/mp4/오십오만원이에요.mp4",
       "korean": "오십오만원이에요",
-      "russian": "550 000 вон"
+      "russian": "550 000 вон",
+      "english": "It's 550,000 won."
     },
     {
       "video": "video/ad/사십오만원이에요.webm",
       "videoMp4": "video/ad/mp4/사십오만원이에요.mp4",
       "korean": "사십오만원이에요",
-      "russian": "450 000 вон"
+      "russian": "450 000 вон",
+      "english": "It's 450,000 won."
     },
     {
       "video": "video/ad/이십칠만원.webm",
       "videoMp4": "video/ad/mp4/이십칠만원.mp4",
       "korean": "이십칠만원",
-      "russian": "270 000 вон"
+      "russian": "270 000 вон",
+      "english": "270,000 won."
     },
     {
       "video": "video/ad/예 맞아요.webm",
       "videoMp4": "video/ad/mp4/예 맞아요.mp4",
       "korean": "예 맞아요",
-      "russian": "Да, верно"
+      "russian": "Да, верно",
+      "english": "Yes, that's right."
     },
     {
       "video": "video/ad/그래요.webm",
       "videoMp4": "video/ad/mp4/그래요.mp4",
       "korean": "그래요",
-      "russian": "Хорошо"
+      "russian": "Хорошо",
+      "english": "Okay."
     },
     {
       "video": "video/ad/저 그러면 좀 이따 보러 갈게요.webm",
       "videoMp4": "video/ad/mp4/저 그러면 좀 이따 보러 갈게요.mp4",
       "korean": "저 그러면 좀 이따 보러 갈게요",
-      "russian": "Тогда я немного позже зайду посмотреть"
+      "russian": "Тогда я немного позже зайду посмотреть",
+      "english": "Then I'll come by to take a look later."
     },
     {
       "video": "video/ad/또 봐요.webm",
       "videoMp4": "video/ad/mp4/또 봐요.mp4",
       "korean": "또 봐요",
-      "russian": "Ещё увидимся"
+      "russian": "Ещё увидимся",
+      "english": "See you again."
     },
     {
       "video": "video/ad/어떻게 이런 데서 살아.webm",
       "videoMp4": "video/ad/mp4/어떻게 이런 데서 살아.mp4",
       "korean": "어떻게 이런 데서 살아?",
-      "russian": "Как можно жить в таком месте?"
+      "russian": "Как можно жить в таком месте?",
+      "english": "How can you live in a place like this?"
     },
     {
       "video": "video/ad/여긴 진짜 아니다.webm",
       "videoMp4": "video/ad/mp4/여긴 진짜 아니다.mp4",
       "korean": "여긴 진짜 아니다",
-      "russian": "Это место совсем не подходит"
+      "russian": "Это место совсем не подходит",
+      "english": "This place is really not it."
     },
     {
       "video": "video/ad/아까 전화한 학생.webm",
       "videoMp4": "video/ad/mp4/아까 전화한 학생.mp4",
       "korean": "아까 전화한 학생?",
-      "russian": "Ты студент, что звонил?"
+      "russian": "Ты студент, что звонил?",
+      "english": "Are you the student who called earlier?"
     },
     {
       "video": "video/ad/아이고 이거 들어 봐요.webm",
       "videoMp4": "video/ad/mp4/아이고 이거 들어 봐요.mp4",
       "korean": "아이고 이거 들어 봐요",
-      "russian": "Бог ты мой, возьми это"
+      "russian": "Бог ты мой, возьми это",
+      "english": "Oh my, take this."
     },
     {
       "video": "video/ad/전화 목소리가 좋더니 아주 그냥 잘생겼네.webm",
       "videoMp4": "video/ad/mp4/전화 목소리가 좋더니 아주 그냥 잘생겼네.mp4",
       "korean": "전화 목소리가 좋더니 아주 그냥 잘생겼네",
-      "russian": "Голос по телефону был приятный, и сам оказался красавцем"
+      "russian": "Голос по телефону был приятный, и сам оказался красавцем",
+      "english": "Your voice on the phone was nice, and you're quite handsome."
     },
     {
       "video": "video/ad/얼마나 좋은데.webm",
       "videoMp4": "video/ad/mp4/얼마나 좋은데.mp4",
       "korean": "얼마나 좋은데",
-      "russian": "Очень хорошее"
+      "russian": "Очень хорошее",
+      "english": "How nice is that?"
     },
     {
       "video": "video/ad/솔직히 말해서.webm",
       "videoMp4": "video/ad/mp4/솔직히 말해서.mp4",
       "korean": "솔직히 말해서",
-      "russian": "Если честно"
+      "russian": "Если честно",
+      "english": "To be honest,"
     },
     {
       "video": "video/ad/전에 이 방에 살던 사람이 자살했어.webm",
       "videoMp4": "video/ad/mp4/전에 이 방에 살던 사람이 자살했어.mp4",
       "korean": "전에 이 방에 살던 사람이 자살했어",
-      "russian": "Человек, что жил тут раньше, покончил с собой"
+      "russian": "Человек, что жил тут раньше, покончил с собой",
+      "english": "The person who lived in this room before committed suicide."
     },
     {
       "video": "video/ad/그 이 방에서 죽은 건 아니고.webm",
       "videoMp4": "video/ad/mp4/그 이 방에서 죽은 건 아니고.mp4",
       "korean": "그 이 방에서 죽은 건 아니고",
-      "russian": "Но умер он не в этой комнате"
+      "russian": "Но умер он не в этой комнате",
+      "english": "But he didn't die in this room."
     }
   ],
   "b2": [
     {
-
       "video": "video/ad/맛이 죽여요.webm",
       "videoMp4": "video/ad/mp4/맛이 죽여요.mp4",
       "korean": "맛이 죽여요",
-      "russian": "Убойный вкус"
+      "russian": "Убойный вкус",
+      "english": "The taste is amazing."
     },
     {
       "video": "video/ad/그러면 고기 본연의 맛이 사라지잖아요.webm",
       "videoMp4": "video/ad/mp4/그러면 고기 본연의 맛이 사라지잖아요.mp4",
       "korean": "그러면 고기 본연의 맛이 사라지잖아요",
-      "russian": "Тогда же пропадает натуральный вкус мяса"
+      "russian": "Тогда же пропадает натуральный вкус мяса",
+      "english": "Then the natural flavor of the meat disappears."
     },
     {
       "video": "video/ad/사진이랑도 그대로고.webm",
       "videoMp4": "video/ad/mp4/사진이랑도 그대로고.mp4",
       "korean": "사진이랑도 그대로고",
-      "russian": "Даже на фото всё так же"
+      "russian": "Даже на фото всё так же",
+      "english": "It looks just like the photo."
     },
     {
       "video": "video/ad/그건 음식물 쓰레기 국물이에요.webm",
       "videoMp4": "video/ad/mp4/그건 음식물 쓰레기 국물이에요.mp4",
       "korean": "그건 음식물 쓰레기 국물이에요",
-      "russian": "Это бульон из пищевых отходов"
+      "russian": "Это бульон из пищевых отходов",
+      "english": "That's food waste broth."
     },
     {
       "video": "video/ad/매일 조금씩이라도 글을 좀 써 보자.webm",
       "videoMp4": "video/ad/mp4/매일 조금씩이라도 글을 좀 써 보자.mp4",
       "korean": "매일 조금씩이라도 글을 좀 써 보자",
-      "russian": "Давай писать хотя бы понемногу каждый день"
+      "russian": "Давай писать хотя бы понемногу каждый день",
+      "english": "Let's try to write a little every day."
     },
     {
       "video": "video/ad/꼭 찾아 주세요.webm",
       "videoMp4": "video/ad/mp4/꼭 찾아 주세요.mp4",
       "korean": "꼭 찾아 주세요",
-      "russian": "Обязательно найдите, пожалуйста"
+      "russian": "Обязательно найдите, пожалуйста",
+      "english": "Please make sure to find it."
     },
     {
       "video": "video/ad/혹시 이번 주말에 시간 되세요.webm",
       "videoMp4": "video/ad/mp4/혹시 이번 주말에 시간 되세요.mp4",
       "korean": "혹시 이번 주말에 시간 되세요?",
-      "russian": "У вас случайно есть время в эти выходные?"
+      "russian": "У вас случайно есть время в эти выходные?",
+      "english": "Do you have time this weekend?"
     },
     {
       "video": "video/ad/찾고 있어요.webm",
       "videoMp4": "video/ad/mp4/찾고 있어요.mp4",
       "korean": "찾고 있어요",
-      "russian": "Я ищу"
+      "russian": "Я ищу",
+      "english": "I'm looking for it."
     },
     {
       "video": "video/ad/형사요.webm",
       "videoMp4": "video/ad/mp4/형사요.mp4",
       "korean": "형사요?",
-      "russian": "Детектив?"
+      "russian": "Детектив?",
+      "english": "Are you a detective?"
     },
     {
       "video": "video/ad/연락 주세요.webm",
       "videoMp4": "video/ad/mp4/연락 주세요.mp4",
       "korean": "연락 주세요",
-      "russian": "Пожалуйста, свяжитесь со мной"
+      "russian": "Пожалуйста, свяжитесь со мной",
+      "english": "Please contact me."
     },
     {
       "video": "video/ad/이 근처 사세요.webm",
       "videoMp4": "video/ad/mp4/이 근처 사세요.mp4",
       "korean": "이 근처 사세요?",
-      "russian": "Вы живёте где-то рядом?"
+      "russian": "Вы живёте где-то рядом?",
+      "english": "Do you live around here?"
     },
     {
       "video": "video/ad/부럽다.webm",
       "videoMp4": "video/ad/mp4/부럽다.mp4",
       "korean": "부럽다",
-      "russian": "Завидую"
+      "russian": "Завидую",
+      "english": "I'm jealous."
     },
     {
       "video": "video/ad/그늘로 가.webm",
       "videoMp4": "video/ad/mp4/그늘로 가.mp4",
       "korean": "그늘로 가",
-      "russian": "Иди в тень"
+      "russian": "Иди в тень",
+      "english": "Go to the shade."
     },
     {
       "video": "video/ad/귀엽네.webm",
       "videoMp4": "video/ad/mp4/귀엽네.mp4",
       "korean": "귀엽네",
-      "russian": "Мило"
+      "russian": "Мило",
+      "english": "That's cute."
     },
     {
       "video": "video/ad/조심히 들어가.webm",
       "videoMp4": "video/ad/mp4/조심히 들어가.mp4",
       "korean": "조심히 들어가",
-      "russian": "Езжай аккуратно"
+      "russian": "Езжай аккуратно",
+      "english": "Drive safely."
     },
     {
       "video": "video/ad/불쾌해요.webm",
       "videoMp4": "video/ad/mp4/불쾌해요.mp4",
       "korean": "불쾌해요",
-      "russian": "Мне неприятно"
+      "russian": "Мне неприятно",
+      "english": "I feel uncomfortable."
     },
     {
       "video": "video/ad/들어봐.webm",
       "videoMp4": "video/ad/mp4/들어봐.mp4",
       "korean": "들어봐",
-      "russian": "Послушай"
+      "russian": "Послушай",
+      "english": "Listen up."
     },
     {
       "video": "video/ad/고시원 살아 보지도 않았잖아요.webm",
       "videoMp4": "video/ad/mp4/고시원 살아 보지도 않았잖아요.mp4",
       "korean": "고시원 살아 보지도 않았잖아요",
-      "russian": "Вы же даже не жили в кошивоне"
+      "russian": "Вы же даже не жили в кошивоне",
+      "english": "You've never even lived in a goshiwon."
     },
     {
       "video": "video/ad/이제 기억나나 보네.webm",
       "videoMp4": "video/ad/mp4/이제 기억나나 보네.mp4",
       "korean": "이제 기억나나 보네",
-      "russian": "Похоже, теперь вспомнила"
+      "russian": "Похоже, теперь вспомнила",
+      "english": "Looks like you remember now."
     },
     {
       "video": "video/ad/니 목소리에서 다 티가 나.webm",
       "videoMp4": "video/ad/mp4/니 목소리에서 다 티가 나.mp4",
       "korean": "네 목소리에서 다 티가 나",
-      "russian": "По твоему голосу всё понятно"
+      "russian": "По твоему голосу всё понятно",
+      "english": "It's all clear from your voice."
     },
     {
       "video": "video/ad/지구대에서 무슨 일로요.webm",
       "videoMp4": "video/ad/mp4/지구대에서 무슨 일로요.mp4",
       "korean": "지구대에서 무슨 일로요?",
-      "russian": "По какому делу в полицейский участок?"
+      "russian": "По какому делу в полицейский участок?",
+      "english": "What brings you to the precinct?"
     },
     {
       "video": "video/ad/연락되면요 제가 전달해 드릴게요.webm",
       "videoMp4": "video/ad/mp4/연락되면요 제가 전달해 드릴게요.mp4",
       "korean": "연락되면요 제가 전달해 드릴게요",
-      "russian": "Если свяжутся, я передам"
+      "russian": "Если свяжутся, я передам",
+      "english": "I'll let you know if I hear back."
     },
     {
       "video": "video/ad/부탁드리겠습니다.webm",
       "videoMp4": "video/ad/mp4/부탁드리겠습니다.mp4",
       "korean": "부탁드리겠습니다",
-      "russian": "Прошу вас"
+      "russian": "Прошу вас",
+      "english": "I would appreciate it."
     },
     {
       "video": "video/ad/말 좀 이쁘게 해요.webm",
       "videoMp4": "video/ad/mp4/말 좀 이쁘게 해요.mp4",
       "korean": "말 좀 이쁘게 해요",
-      "russian": "Говорите, пожалуйста, повежливее"
+      "russian": "Говорите, пожалуйста, повежливее",
+      "english": "Could you please be a bit nicer with your words?"
     },
     {
       "video": "video/ad/정신 어디 갔어.webm",
       "videoMp4": "video/ad/mp4/정신 어디 갔어.mp4",
       "korean": "정신 어디 갔어",
-      "russian": "Ты вообще в своём уме?"
+      "russian": "Ты вообще в своём уме?",
+      "english": "Where's your head at?"
     },
     {
       "video": "video/ad/다음에 아프면 꼭 바로 오세요.webm",
       "videoMp4": "video/ad/mp4/다음에 아프면 꼭 바로 오세요.mp4",
       "korean": "다음에 아프면 꼭 바로 오세요",
-      "russian": "В следующий раз, если заболеете, обязательно сразу приходите"
+      "russian": "В следующий раз, если заболеете, обязательно сразу приходите",
+      "english": "If you get sick again, make sure to come right away."
     },
     {
       "video": "video/ad/알았어 이따 집에 갈 때 톡 할게.webm",
       "videoMp4": "video/ad/mp4/알았어 이따 집에 갈 때 톡 할게.mp4",
       "korean": "알았어 이따 집에 갈 때 톡 할게",
-      "russian": "Хорошо, напишу, когда буду идти домой"
+      "russian": "Хорошо, напишу, когда буду идти домой",
+      "english": "Got it, I'll text you when I'm heading home."
     },
     {
       "video": "video/ad/그렇게 생각하세요.webm",
       "videoMp4": "video/ad/mp4/그렇게 생각하세요.mp4",
       "korean": "그렇게 생각하세요?",
-      "russian": "Вы так думаете?"
+      "russian": "Вы так думаете?",
+      "english": "Do you really think so?"
     }
   ],
   "b3": [],

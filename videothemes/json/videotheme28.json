@@ -4,181 +4,211 @@
       "video": "video/reader/제가 뭐 실력이 안 돼서 그런 건데요.webm",
       "videoMp4": "video/reader/mp4/제가 뭐 실력이 안 돼서 그런 건데요.mp4",
       "korean": "제가 뭐 실력이 안 돼서 그런 건데요",
-      "russian": "Просто у меня не хватает навыков, поэтому так получилось"
+      "russian": "Просто у меня не хватает навыков, поэтому так получилось",
+      "english": "It's just that I'm not skilled enough."
     },
     {
       "video": "video/reader/우리 여기서 이러지 말고.webm",
       "videoMp4": "video/reader/mp4/우리 여기서 이러지 말고.mp4",
       "korean": "우리 여기서 이러지 말고",
-      "russian": "Давай не будем делать это здесь"
+      "russian": "Давай не будем делать это здесь",
+      "english": "Let's not do this here."
     },
     {
       "video": "video/reader/나가서 식사나 같이 해요.webm",
       "videoMp4": "video/reader/mp4/나가서 식사나 같이 해요.mp4",
       "korean": "나가서 식사나 같이 해요",
-      "russian": "Давайте выйдем и вместе поедим"
+      "russian": "Давайте выйдем и вместе поедим",
+      "english": "Let's go out and eat together."
     },
     {
       "video": "video/reader/저 알바 가야 돼서.webm",
       "videoMp4": "video/reader/mp4/저 알바 가야 돼서.mp4",
       "korean": "저 알바 가야 돼서",
-      "russian": "Мне нужно идти на подработку"
+      "russian": "Мне нужно идти на подработку",
+      "english": "I have to go to my part-time job."
     },
     {
       "video": "video/reader/저 일행이랑 같이 가는 거라.webm",
       "videoMp4": "video/reader/mp4/저 일행이랑 같이 가는 거라.mp4",
       "korean": "저 일행이랑 같이 가는 거라",
-      "russian": "Я иду вместе со своей компанией"
+      "russian": "Я иду вместе со своей компанией",
+      "english": "I'm going with my group."
     },
     {
       "video": "video/reader/진짜 괜찮아요.webm",
       "videoMp4": "video/reader/mp4/진짜 괜찮아요.mp4",
       "korean": "진짜 괜찮아요",
-      "russian": "Правда, всё в порядке"
+      "russian": "Правда, всё в порядке",
+      "english": "It's really okay."
     },
     {
       "video": "video/reader/안녕하세요 부장님.webm",
       "videoMp4": "video/reader/mp4/안녕하세요 부장님.mp4",
       "korean": "안녕하세요 부장님",
-      "russian": "Здравствуйте, начальник отдела"
+      "russian": "Здравствуйте, начальник отдела",
+      "english": "Hello, boss."
     },
     {
       "video": "video/reader/안타깝네.webm",
       "videoMp4": "video/reader/mp4/안타깝네.mp4",
       "korean": "안타깝네",
-      "russian": "Жаль"
+      "russian": "Жаль",
+      "english": "That's too bad."
     },
     {
       "video": "video/reader/식사 맛있게 하세요.webm",
       "videoMp4": "video/reader/mp4/식사 맛있게 하세요.mp4",
       "korean": "식사 맛있게 하세요",
-      "russian": "Приятного аппетита"
+      "russian": "Приятного аппетита",
+      "english": "Enjoy your meal."
     },
     {
       "video": "video/reader/또 봐요.webm",
       "videoMp4": "video/reader/mp4/또 봐요.mp4",
       "korean": "또 봐요",
-      "russian": "Увидимся снова"
+      "russian": "Увидимся снова",
+      "english": "See you again."
     },
     {
       "video": "video/reader/저 미친 새끼 저거 진짜.webm",
       "videoMp4": "video/reader/mp4/저 미친 새끼 저거 진짜.mp4",
       "korean": "저 미친 새끼 저거 진짜",
-      "russian": "Да он реально псих"
+      "russian": "Да он реально псих",
+      "english": "That crazy guy is for real."
     },
     {
       "video": "video/reader/짜증 나.webm",
       "videoMp4": "video/reader/mp4/짜증 나.mp4",
       "korean": "짜증 나",
-      "russian": "Меня бесит"
+      "russian": "Меня бесит",
+      "english": "It's so annoying."
     },
     {
       "video": "video/reader/내 말 무슨 말인지 알죠.webm",
       "videoMp4": "video/reader/mp4/내 말 무슨 말인지 알죠.mp4",
       "korean": "내 말 무슨 말인지 알죠",
-      "russian": "Ты же понимаешь, о чём я говорю"
+      "russian": "Ты же понимаешь, о чём я говорю",
+      "english": "You know what I mean, right?"
     },
     {
       "video": "video/reader/여자 친구.webm",
       "videoMp4": "video/reader/mp4/여자 친구.mp4",
       "korean": "여자 친구?",
-      "russian": "Девушка?"
+      "russian": "Девушка?",
+      "english": "Girlfriend?"
     },
     {
       "video": "video/reader/내가 원하는 결말.webm",
       "videoMp4": "video/reader/mp4/내가 원하는 결말.mp4",
       "korean": "내가 원하는 결말?",
-      "russian": "Концовка, которую я хочу?"
+      "russian": "Концовка, которую я хочу?",
+      "english": "The ending I want?"
     },
     {
       "video": "video/reader/이게 무슨 말이지.webm",
       "videoMp4": "video/reader/mp4/이게 무슨 말이지.mp4",
       "korean": "이게 무슨 말이지",
-      "russian": "Что это вообще значит"
+      "russian": "Что это вообще значит",
+      "english": "What does this even mean?"
     },
     {
       "video": "video/reader/자 지금 이 순간부터.webm",
       "videoMp4": "video/reader/mp4/자 지금 이 순간부터.mp4",
       "korean": "자 지금 이 순간부터",
-      "russian": "Итак, начиная с этого момента"
+      "russian": "Итак, начиная с этого момента",
+      "english": "So, from this moment on,"
     },
     {
       "video": "video/reader/모든 인간 여러분들은.webm",
       "videoMp4": "video/reader/mp4/모든 인간 여러분들은.mp4",
       "korean": "모든 인간 여러분들은",
-      "russian": "Все вы, люди"
+      "russian": "Все вы, люди",
+      "english": "All you humans,"
     },
     {
       "video": "video/reader/시나리오를 부여받게 됩니다.webm",
       "videoMp4": "video/reader/mp4/시나리오를 부여받게 됩니다.mp4",
       "korean": "시나리오를 부여받게 됩니다",
-      "russian": "Вы получите сценарий"
+      "russian": "Вы получите сценарий",
+      "english": "will receive a script."
     },
     {
       "video": "video/reader/혼자 탔어.webm",
       "videoMp4": "video/reader/mp4/혼자 탔어.mp4",
       "korean": "혼자 탔어?",
-      "russian": "Ты сел один?"
+      "russian": "Ты сел один?",
+      "english": "Did you ride alone?"
     },
     {
       "video": "video/reader/아저씨가 저 죽일 거예요.webm",
       "videoMp4": "video/reader/mp4/아저씨가 저 죽일 거예요.mp4",
       "korean": "아저씨가 저 죽일 거예요?",
-      "russian": "Дяденька, вы меня убьете?"
+      "russian": "Дяденька, вы меня убьете?",
+      "english": "Are you going to kill me, mister?"
     },
     {
       "video": "video/reader/내가 그걸 어떻게 알아요.webm",
       "videoMp4": "video/reader/mp4/내가 그걸 어떻게 알아요.mp4",
       "korean": "내가 그걸 어떻게 알아요",
-      "russian": "Откуда мне это знать?"
+      "russian": "Откуда мне это знать?",
+      "english": "How would I know that?"
     },
     {
       "video": "video/reader/아저씨 죽고 싶어요.webm",
       "videoMp4": "video/reader/mp4/아저씨 죽고 싶어요.mp4",
       "korean": "아저씨 죽고 싶어요?",
-      "russian": "Дядя, вы хотите умереть?"
+      "russian": "Дядя, вы хотите умереть?",
+      "english": "Do you want to die, mister?"
     },
     {
       "video": "video/reader/그쪽도 할머니도 살 수 있어요.webm",
       "videoMp4": "video/reader/mp4/그쪽도 할머니도 살 수 있어요.mp4",
       "korean": "그쪽도 할머니도 살 수 있어요",
-      "russian": "Вы тоже, и бабушка тоже можете выжить"
+      "russian": "Вы тоже, и бабушка тоже можете выжить",
+      "english": "You and grandma can survive too."
     },
     {
       "video": "video/reader/나도 벌레 있어.webm",
       "videoMp4": "video/reader/mp4/나도 벌레 있어.mp4",
       "korean": "나도 벌레 있어",
-      "russian": "У меня тоже есть жук"
+      "russian": "У меня тоже есть жук",
+      "english": "I have a bug too."
     },
     {
       "video": "video/reader/넌 이제 뒤졌어.webm",
       "videoMp4": "video/reader/mp4/넌 이제 뒤졌어.mp4",
       "korean": "넌 이제 뒤졌어",
-      "russian": "Тебе конец"
+      "russian": "Тебе конец",
+      "english": "You're done for now."
     },
     {
       "video": "video/reader/괜찮아요 오지 마세요.webm",
       "videoMp4": "video/reader/mp4/괜찮아요 오지 마세요.mp4",
       "korean": "괜찮아요 오지 마세요",
-      "russian": "Всё в порядке, не подходите"
+      "russian": "Всё в порядке, не подходите",
+      "english": "It's okay, don't come near."
     },
     {
       "video": "video/reader/다시 묻는다.webm",
       "videoMp4": "video/reader/mp4/다시 묻는다.mp4",
       "korean": "다시 묻는다",
-      "russian": "Спрошу ещё раз"
+      "russian": "Спрошу ещё раз",
+      "english": "I'll ask again."
     },
     {
       "video": "video/reader/너 뭐야.webm",
       "videoMp4": "video/reader/mp4/너 뭐야.mp4",
       "korean": "너 뭐야?",
-      "russian": "Ты кто такой?"
+      "russian": "Ты кто такой?",
+      "english": "Who are you?"
     },
     {
       "video": "video/reader/대신 저랑 같이 가면.webm",
       "videoMp4": "video/reader/mp4/대신 저랑 같이 가면.mp4",
       "korean": "대신 저랑 같이 가면",
-      "russian": "Зато если пойдёшь со мной"
+      "russian": "Зато если пойдёшь со мной",
+      "english": "But if you go with me,"
     }
   ],
   "b2": [],
