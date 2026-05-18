@@ -52,9 +52,9 @@
   },
   "songs": {
     "song1": {
-      "name":    "나는 반딧불 (Я — светлячок)",
+      "name": "나는 반딧불 (Я — светлячок)",
       "name_en": "나는 반딧불 (I Am a Firefly)",
-      "cover":   "videothemes/songs_covers/song1.png",
+      "cover": "videothemes/songs_covers/song1.png",
       "masterJsonPath": "videothemes/json/videotheme36.json"
     }
   },
