@@ -1,4 +1,6 @@
 {
+  "isSong": true,
+  "isNewSong": true,
   "karaoke": {
     "clip":    "video/song1/나는 반딧불 - 황가람.webm",
     "clipMp4": "video/song1/mp4/나는 반딧불 - 황가람.mp4",

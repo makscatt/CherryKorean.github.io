@@ -1,7 +1,6 @@
 {
   "b1": [
     {
-      "isNew": true,
       "video": "video/rev/2023년 6월 8일.webm",
       "videoMp4": "video/rev/mp4/2023년 6월 8일.mp4",
       "korean": "이첨이십삼년 유월 팔일.",
@@ -244,7 +243,6 @@
   ],
   "b2": [
     {
-      "isNew": true,
       "video": "video/rev/뭐 더 필요한 거 있으세요.webm",
       "videoMp4": "video/rev/mp4/뭐 더 필요한 거 있으세요.mp4",
       "korean": "뭐 더 필요한 거 있으세요?",
@@ -471,7 +469,6 @@
   ],
   "b3": [
     {
-      "isNew": true,
       "video": "video/rev/언니가 돈을 받아내야.webm",
       "videoMp4": "video/rev/mp4/언니가 돈을 받아내야.mp4",
       "korean": "언니가 돈을 받아내야.",
