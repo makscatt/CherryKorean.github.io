@@ -1039,7 +1039,28 @@
       }
     ],
     "totalCount": 90,
-    "hasNew": true,
+    "hasNew": false,
     "title_en": "The Prince's 21st-Century Wife"
+  },
+  "theme37": {
+    "coverImage": "videothemes/subthemebc/wfools.png",
+    "title": "ЧудоДураки",
+    "masterJsonPath": "videothemes/json/videotheme37.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      }
+    ],
+    "totalCount": 66,
+    "hasNew": true,
+    "title_en": "WonderFools"
   }
 }
