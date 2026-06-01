@@ -56,6 +56,12 @@
       "title_en": "나는 반딧불 (I Am a Firefly)",
       "cover": "videothemes/songs_covers/song1.png",
       "masterJsonPath": "videothemes/json/videotheme36.json"
+    },
+    "song2": {
+      "title": "Итевон Класс - Начало(Кахо)",
+      "title_en": "Itaewon Class - Start Over(Gaho)",
+      "cover": "videothemes/songs_covers/song2.png",
+      "masterJsonPath": "videothemes/json/videotheme38.json"
     }
   },
   "theme0": {
