@@ -176,20 +176,6 @@
   },
   "b1": [
     {
-      "video": "video/song1/그래도 괜찮아 난 눈부시니까.webm",
-      "videoMp4": "video/song1/mp4/그래도 괜찮아 난 눈부시니까.mp4",
-      "korean": "그래도 괜찮아 난 눈부시니까",
-      "russian": "Но всё равно — ведь я сияю ослепительно",
-      "english": "But it's okay — because I shine brightly"
-    },
-    {
-      "video": "video/song1/그래도 괜찮아 난 눈부시니까_2.webm",
-      "videoMp4": "video/song1/mp4/그래도 괜찮아 난 눈부시니까_2.mp4",
-      "korean": "그래도 괜찮아 난 눈부시니까",
-      "russian": "Но всё равно — ведь я сияю ослепительно",
-      "english": "But it's okay — because I shine brightly"
-    },
-    {
       "video": "video/song1/나는 내가 빛나는 별인 줄 알았어요.webm",
       "videoMp4": "video/song1/mp4/나는 내가 빛나는 별인 줄 알았어요.mp4",
       "korean": "나는 내가 빛나는 별인 줄 알았어요",
@@ -202,97 +188,6 @@
       "korean": "나는 내가 빛나는 별인 줄 알았어요",
       "russian": "Я думал, что я — сияющая звезда",
       "english": "I thought I was a shining star"
-    },
-    {
-      "video": "video/song1/나는 다시 태어났지 나는 다시 태어났지.webm",
-      "videoMp4": "video/song1/mp4/나는 다시 태어났지 나는 다시 태어났지.mp4",
-      "korean": "나는 다시 태어났지 나는 다시 태어났지",
-      "russian": "Я родился заново, я родился заново",
-      "english": "I was born again, I was born again"
-    },
-    {
-      "video": "video/song1/내가 널 만난 것처럼 마치 약속한 것처럼.webm",
-      "videoMp4": "video/song1/mp4/내가 널 만난 것처럼 마치 약속한 것처럼.mp4",
-      "korean": "내가 널 만난 것처럼 마치 약속한 것처럼",
-      "russian": "Словно мы с тобой встретились, словно так было обещано",
-      "english": "As if I'd met you, as if it had been promised"
-    },
-    {
-      "video": "video/song1/누가 저기 걸어놨어 누가 저기 걸어놨어.webm",
-      "videoMp4": "video/song1/mp4/누가 저기 걸어놨어 누가 저기 걸어놨어.mp4",
-      "korean": "누가 저기 걸어놨어 누가 저기 걸어놨어",
-      "russian": "Кто же его там подвесил? Кто же его там подвесил?",
-      "english": "Who hung it up there? Who hung it up there?"
-    },
-    {
-      "video": "video/song1/누가 저기 걸어놨어 누가 저기 걸어놨어_2.webm",
-      "videoMp4": "video/song1/mp4/누가 저기 걸어놨어 누가 저기 걸어놨어_2.mp4",
-      "korean": "누가 저기 걸어놨어 누가 저기 걸어놨어",
-      "russian": "Кто же его там подвесил? Кто же его там подвесил?",
-      "english": "Who hung it up there? Who hung it up there?"
-    },
-    {
-      "video": "video/song1/몰랐어요 난 내가 벌레라는 것을.webm",
-      "videoMp4": "video/song1/mp4/몰랐어요 난 내가 벌레라는 것을.mp4",
-      "korean": "몰랐어요 난 내가 벌레라는 것을",
-      "russian": "Я не знал, что я — всего лишь червяк",
-      "english": "I didn't know that I was just a worm"
-    },
-    {
-      "video": "video/song1/몰랐어요 난 내가 벌레라는 것을_2.webm",
-      "videoMp4": "video/song1/mp4/몰랐어요 난 내가 벌레라는 것을_2.mp4",
-      "korean": "몰랐어요 난 내가 벌레라는 것을",
-      "russian": "Я не знал, что я — всего лишь червяк",
-      "english": "I didn't know that I was just a worm"
-    },
-    {
-      "video": "video/song1/밤하늘의 별들이 반딧불이 돼 버렸지.webm",
-      "videoMp4": "video/song1/mp4/밤하늘의 별들이 반딧불이 돼 버렸지.mp4",
-      "korean": "밤하늘의 별들이 반딧불이 돼 버렸지",
-      "russian": "Звёзды ночного неба превратились в светлячков",
-      "english": "The stars of the night sky turned into fireflies"
-    },
-    {
-      "video": "video/song1/소원을 들어주는 작은 별.webm",
-      "videoMp4": "video/song1/mp4/소원을 들어주는 작은 별.mp4",
-      "korean": "소원을 들어주는 작은 별",
-      "russian": "Маленькая звезда, что исполняет желания",
-      "english": "A little star that grants wishes"
-    },
-    {
-      "video": "video/song1/우주에서 무주로 날아온.webm",
-      "videoMp4": "video/song1/mp4/우주에서 무주로 날아온.mp4",
-      "korean": "우주에서 무주로 날아온",
-      "russian": "Прилетевшая из Вселенной в Мучжу",
-      "english": "Flying from the cosmos to Muju"
-    },
-    {
-      "video": "video/song1/주워 담을 수도 없게 너무 멀리 갔죠.webm",
-      "videoMp4": "video/song1/mp4/주워 담을 수도 없게 너무 멀리 갔죠.mp4",
-      "korean": "주워 담을 수도 없게 너무 멀리 갔죠",
-      "russian": "Улетел так далеко — уже не подобрать",
-      "english": "Flew so far away — beyond reach to pick it back up"
-    },
-    {
-      "video": "video/song1/하늘로 올라가 초승달 돼 버렸지.webm",
-      "videoMp4": "video/song1/mp4/하늘로 올라가 초승달 돼 버렸지.mp4",
-      "korean": "하늘로 올라가 초승달 돼 버렸지",
-      "russian": "Поднялся в небо и стал молодым месяцем",
-      "english": "Rose into the sky and became a crescent moon"
-    },
-    {
-      "video": "video/song1/하늘로 올라가 초승달 돼 버렸지_2.webm",
-      "videoMp4": "video/song1/mp4/하늘로 올라가 초승달 돼 버렸지_2.mp4",
-      "korean": "하늘로 올라가 초승달 돼 버렸지",
-      "russian": "Поднялся в небо и стал молодым месяцем",
-      "english": "Rose into the sky and became a crescent moon"
-    },
-    {
-      "video": "video/song1/하늘에서 떨어진 별인 줄 알았어요.webm",
-      "videoMp4": "video/song1/mp4/하늘에서 떨어진 별인 줄 알았어요.mp4",
-      "korean": "하늘에서 떨어진 별인 줄 알았어요",
-      "russian": "Думал, я — звезда, что упала с неба",
-      "english": "I thought I was a star fallen from the sky"
     },
     {
       "video": "video/song1/한 번도 의심한 적 없었죠.webm",
@@ -309,6 +204,48 @@
       "english": "I never once doubted it"
     },
     {
+      "video": "video/song1/몰랐어요 난 내가 벌레라는 것을.webm",
+      "videoMp4": "video/song1/mp4/몰랐어요 난 내가 벌레라는 것을.mp4",
+      "korean": "몰랐어요 난 내가 벌레라는 것을",
+      "russian": "Я не знал, что я — всего лишь червяк",
+      "english": "I didn't know that I was just a worm"
+    },
+    {
+      "video": "video/song1/몰랐어요 난 내가 벌레라는 것을_2.webm",
+      "videoMp4": "video/song1/mp4/몰랐어요 난 내가 벌레라는 것을_2.mp4",
+      "korean": "몰랐어요 난 내가 벌레라는 것을",
+      "russian": "Я не знал, что я — всего лишь червяк",
+      "english": "I didn't know that I was just a worm"
+    },
+    {
+      "video": "video/song1/그래도 괜찮아 난 눈부시니까.webm",
+      "videoMp4": "video/song1/mp4/그래도 괜찮아 난 눈부시니까.mp4",
+      "korean": "그래도 괜찮아 난 눈부시니까",
+      "russian": "Но всё равно — ведь я сияю ослепительно",
+      "english": "But it's okay — because I shine brightly"
+    },
+    {
+      "video": "video/song1/그래도 괜찮아 난 눈부시니까_2.webm",
+      "videoMp4": "video/song1/mp4/그래도 괜찮아 난 눈부시니까_2.mp4",
+      "korean": "그래도 괜찮아 난 눈부시니까",
+      "russian": "Но всё равно — ведь я сияю ослепительно",
+      "english": "But it's okay — because I shine brightly"
+    },
+    {
+      "video": "video/song1/하늘에서 떨어진 별인 줄 알았어요.webm",
+      "videoMp4": "video/song1/mp4/하늘에서 떨어진 별인 줄 알았어요.mp4",
+      "korean": "하늘에서 떨어진 별인 줄 알았어요",
+      "russian": "Думал, я — звезда, что упала с неба",
+      "english": "I thought I was a star fallen from the sky"
+    },
+    {
+      "video": "video/song1/소원을 들어주는 작은 별.webm",
+      "videoMp4": "video/song1/mp4/소원을 들어주는 작은 별.mp4",
+      "korean": "소원을 들어주는 작은 별",
+      "russian": "Маленькая звезда, что исполняет желания",
+      "english": "A little star that grants wishes"
+    },
+    {
       "video": "video/song1/한참 동안 찾았던 내 손톱.webm",
       "videoMp4": "video/song1/mp4/한참 동안 찾았던 내 손톱.mp4",
       "korean": "한참 동안 찾았던 내 손톱",
@@ -321,6 +258,69 @@
       "korean": "한참 동안 찾았던 내 손톱",
       "russian": "Мой ноготь, что я искал так долго",
       "english": "My fingernail that I'd been searching for so long"
+    },
+    {
+      "video": "video/song1/하늘로 올라가 초승달 돼 버렸지.webm",
+      "videoMp4": "video/song1/mp4/하늘로 올라가 초승달 돼 버렸지.mp4",
+      "korean": "하늘로 올라가 초승달 돼 버렸지",
+      "russian": "Поднялся в небо и стал молодым месяцем",
+      "english": "Rose into the sky and became a crescent moon"
+    },
+    {
+      "video": "video/song1/하늘로 올라가 초승달 돼 버렸지_2.webm",
+      "videoMp4": "video/song1/mp4/하늘로 올라가 초승달 돼 버렸지_2.mp4",
+      "korean": "하늘로 올라가 초승달 돼 버렸지",
+      "russian": "Поднялся в небо и стал молодым месяцем",
+      "english": "Rose into the sky and became a crescent moon"
+    },
+    {
+      "video": "video/song1/주워 담을 수도 없게 너무 멀리 갔죠.webm",
+      "videoMp4": "video/song1/mp4/주워 담을 수도 없게 너무 멀리 갔죠.mp4",
+      "korean": "주워 담을 수도 없게 너무 멀리 갔죠",
+      "russian": "Улетел так далеко — уже не подобрать",
+      "english": "Flew so far away — beyond reach to pick it back up"
+    },
+    {
+      "video": "video/song1/누가 저기 걸어놨어 누가 저기 걸어놨어.webm",
+      "videoMp4": "video/song1/mp4/누가 저기 걸어놨어 누가 저기 걸어놨어.mp4",
+      "korean": "누가 저기 걸어놨어 누가 저기 걸어놨어",
+      "russian": "Кто же его там подвесил? Кто же его там подвесил?",
+      "english": "Who hung it up there? Who hung it up there?"
+    },
+    {
+      "video": "video/song1/누가 저기 걸어놨어 누가 저기 걸어놨어_2.webm",
+      "videoMp4": "video/song1/mp4/누가 저기 걸어놨어 누가 저기 걸어놨어_2.mp4",
+      "korean": "누가 저기 걸어놨어 누가 저기 걸어놨어",
+      "russian": "Кто же его там подвесил? Кто же его там подвесил?",
+      "english": "Who hung it up there? Who hung it up there?"
+    },
+    {
+      "video": "video/song1/우주에서 무주로 날아온.webm",
+      "videoMp4": "video/song1/mp4/우주에서 무주로 날아온.mp4",
+      "korean": "우주에서 무주로 날아온",
+      "russian": "Прилетевшая из Вселенной в Мучжу",
+      "english": "Flying from the cosmos to Muju"
+    },
+    {
+      "video": "video/song1/밤하늘의 별들이 반딧불이 돼 버렸지.webm",
+      "videoMp4": "video/song1/mp4/밤하늘의 별들이 반딧불이 돼 버렸지.mp4",
+      "korean": "밤하늘의 별들이 반딧불이 돼 버렸지",
+      "russian": "Звёзды ночного неба превратились в светлячков",
+      "english": "The stars of the night sky turned into fireflies"
+    },
+    {
+      "video": "video/song1/내가 널 만난 것처럼 마치 약속한 것처럼.webm",
+      "videoMp4": "video/song1/mp4/내가 널 만난 것처럼 마치 약속한 것처럼.mp4",
+      "korean": "내가 널 만난 것처럼 마치 약속한 것처럼",
+      "russian": "Словно мы с тобой встретились, словно так было обещано",
+      "english": "As if I'd met you, as if it had been promised"
+    },
+    {
+      "video": "video/song1/나는 다시 태어났지 나는 다시 태어났지.webm",
+      "videoMp4": "video/song1/mp4/나는 다시 태어났지 나는 다시 태어났지.mp4",
+      "korean": "나는 다시 태어났지 나는 다시 태어났지",
+      "russian": "Я родился заново, я родился заново",
+      "english": "I was born again, I was born again"
     }
   ]
 }

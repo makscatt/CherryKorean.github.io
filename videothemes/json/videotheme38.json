@@ -285,6 +285,70 @@
   },
   "b1": [
     {
+      "video": "video/kahoshijaak/새로운 시작은 늘 설레게 하지.webm",
+      "videoMp4": "video/kahoshijaak/mp4/새로운 시작은 늘 설레게 하지.mp4",
+      "korean": "새로운 시작은 늘 설레게 하지",
+      "russian": "Новое начало всегда волнует",
+      "new": true,
+      "english": "A new beginning always makes your heart race"
+    },
+    {
+      "video": "video/kahoshijaak/모든 걸 이겨낼 것처럼.webm",
+      "videoMp4": "video/kahoshijaak/mp4/모든 걸 이겨낼 것처럼.mp4",
+      "korean": "모든 걸 이겨낼 것처럼",
+      "russian": "Будто сможешь преодолеть всё",
+      "new": true,
+      "english": "As if you could overcome anything"
+    },
+    {
+      "video": "video/kahoshijaak/시간을 뒤쫓는 시계바늘처럼.webm",
+      "videoMp4": "video/kahoshijaak/mp4/시간을 뒤쫓는 시계바늘처럼.mp4",
+      "korean": "시간을 뒤쫓는 시계바늘처럼",
+      "russian": "Как стрелки часов, гонящиеся за временем",
+      "new": true,
+      "english": "Like clock hands chasing after time"
+    },
+    {
+      "video": "video/kahoshijaak/앞질러 가고 싶어 하지.webm",
+      "videoMp4": "video/kahoshijaak/mp4/앞질러 가고 싶어 하지.mp4",
+      "korean": "앞질러 가고 싶어 하지",
+      "russian": "Хочется вырваться вперёд",
+      "new": true,
+      "english": "You want to race ahead"
+    },
+    {
+      "video": "video/kahoshijaak/그어 놓은 선을 넘어.webm",
+      "videoMp4": "video/kahoshijaak/mp4/그어 놓은 선을 넘어.mp4",
+      "korean": "그어 놓은 선을 넘어",
+      "russian": "Переступая прочерченную черту",
+      "new": true,
+      "english": "Crossing the line that's been drawn"
+    },
+    {
+      "video": "video/kahoshijaak/저마다 삶을 향해.webm",
+      "videoMp4": "video/kahoshijaak/mp4/저마다 삶을 향해.mp4",
+      "korean": "저마다 삶을 향해",
+      "russian": "Каждый — навстречу своей жизни",
+      "new": true,
+      "english": "Each toward their own life"
+    },
+    {
+      "video": "video/kahoshijaak/때론 원망도 하겠지.webm",
+      "videoMp4": "video/kahoshijaak/mp4/때론 원망도 하겠지.mp4",
+      "korean": "때론 원망도 하겠지",
+      "russian": "Порой меня будут и упрекать",
+      "new": true,
+      "english": "At times they'll resent me"
+    },
+    {
+      "video": "video/kahoshijaak/그 선을 먼저 넘지 말라고.webm",
+      "videoMp4": "video/kahoshijaak/mp4/그 선을 먼저 넘지 말라고.mp4",
+      "korean": "그 선을 먼저 넘지 말라고",
+      "russian": "Мол, не переходи эту черту первым",
+      "new": true,
+      "english": "Telling me not to cross that line first"
+    },
+    {
       "video": "video/kahoshijaak/I can fly the sky _wow.webm",
       "videoMp4": "video/kahoshijaak/mp4/I can fly the sky _wow.mp4",
       "korean": "I can fly the sky (wow)",
@@ -301,12 +365,36 @@
       "english": "Never gonna stay (wow)"
     },
     {
-      "video": "video/kahoshijaak/곧 너의 뒤를 따라잡겠지.webm",
-      "videoMp4": "video/kahoshijaak/mp4/곧 너의 뒤를 따라잡겠지.mp4",
-      "korean": "곧 너의 뒤를 따라잡겠지",
-      "russian": "Скоро я нагоню и тебя",
+      "video": "video/kahoshijaak/내가 지쳐 쓰러질 때까진.webm",
+      "videoMp4": "video/kahoshijaak/mp4/내가 지쳐 쓰러질 때까진.mp4",
+      "korean": "내가 지쳐 쓰러질 때까진",
+      "russian": "Пока не упаду без сил",
       "new": true,
-      "english": "Soon I'll be right behind you"
+      "english": "Until I collapse from exhaustion"
+    },
+    {
+      "video": "video/kahoshijaak/어떤 이유도 _wow_ 어떤 변명도 _wow.webm",
+      "videoMp4": "video/kahoshijaak/mp4/어떤 이유도 _wow_ 어떤 변명도 _wow.mp4",
+      "korean": "어떤 이유도 (wow) 어떤 변명도 (wow)",
+      "russian": "Никакие причины (wow), никакие оправдания (wow)",
+      "new": true,
+      "english": "No reason (wow), no excuse (wow)"
+    },
+    {
+      "video": "video/kahoshijaak/지금 내겐 용기가 필요해.webm",
+      "videoMp4": "video/kahoshijaak/mp4/지금 내겐 용기가 필요해.mp4",
+      "korean": "지금 내겐 용기가 필요해",
+      "russian": "Сейчас мне нужна лишь смелость",
+      "new": true,
+      "english": "Right now I need courage"
+    },
+    {
+      "video": "video/kahoshijaak/빛나지 않아도 내 꿈을 응원해.webm",
+      "videoMp4": "video/kahoshijaak/mp4/빛나지 않아도 내 꿈을 응원해.mp4",
+      "korean": "빛나지 않아도 내 꿈을 응원해",
+      "russian": "Пусть она не блистает — я болею за свою мечту",
+      "new": true,
+      "english": "Even if it doesn't shine, I root for my dream"
     },
     {
       "video": "video/kahoshijaak/그 마지막을 가질 테니.webm",
@@ -317,12 +405,68 @@
       "english": "For I will claim its ending"
     },
     {
-      "video": "video/kahoshijaak/그 선을 먼저 넘지 말라고.webm",
-      "videoMp4": "video/kahoshijaak/mp4/그 선을 먼저 넘지 말라고.mp4",
-      "korean": "그 선을 먼저 넘지 말라고",
-      "russian": "Мол, не переходи эту черту первым",
+      "video": "video/kahoshijaak/부러진 것처럼 한 발로 뛰어도.webm",
+      "videoMp4": "video/kahoshijaak/mp4/부러진 것처럼 한 발로 뛰어도.mp4",
+      "korean": "부러진 것처럼 한 발로 뛰어도",
+      "russian": "Пусть даже скача на одной ноге, словно сломанной",
       "new": true,
-      "english": "Telling me not to cross that line first"
+      "english": "Even if I hop on one leg as if it were broken"
+    },
+    {
+      "video": "video/kahoshijaak/난 나의 길을 갈 테니까.webm",
+      "videoMp4": "video/kahoshijaak/mp4/난 나의 길을 갈 테니까.mp4",
+      "korean": "난 나의 길을 갈 테니까",
+      "russian": "Я всё равно пойду своим путём",
+      "new": true,
+      "english": "I will go my own way"
+    },
+    {
+      "video": "video/kahoshijaak/지금 나를 위한 약속.webm",
+      "videoMp4": "video/kahoshijaak/mp4/지금 나를 위한 약속.mp4",
+      "korean": "지금 나를 위한 약속",
+      "russian": "Обещание самому себе — здесь и сейчас",
+      "new": true,
+      "english": "A promise to myself, here and now"
+    },
+    {
+      "video": "video/kahoshijaak/멈추지 않겠다고.webm",
+      "videoMp4": "video/kahoshijaak/mp4/멈추지 않겠다고.mp4",
+      "korean": "멈추지 않겠다고",
+      "russian": "Что я не остановлюсь",
+      "new": true,
+      "english": "That I will not stop"
+    },
+    {
+      "video": "video/kahoshijaak/또 하나를 앞지르면.webm",
+      "videoMp4": "video/kahoshijaak/mp4/또 하나를 앞지르면.mp4",
+      "korean": "또 하나를 앞지르면",
+      "russian": "Обогнав ещё одного",
+      "new": true,
+      "english": "When I overtake one more"
+    },
+    {
+      "video": "video/kahoshijaak/곧 너의 뒤를 따라잡겠지.webm",
+      "videoMp4": "video/kahoshijaak/mp4/곧 너의 뒤를 따라잡겠지.mp4",
+      "korean": "곧 너의 뒤를 따라잡겠지",
+      "russian": "Скоро я нагоню и тебя",
+      "new": true,
+      "english": "Soon I'll be right behind you"
+    },
+    {
+      "video": "video/kahoshijaak/원하는 대로 _wow_ 다 가질 거야 _wow.webm",
+      "videoMp4": "video/kahoshijaak/mp4/원하는 대로 _wow_ 다 가질 거야 _wow.mp4",
+      "korean": "원하는 대로 (wow) 다 가질 거야 (wow)",
+      "russian": "Всё, чего хочу (wow), — я получу всё (wow)",
+      "new": true,
+      "english": "Just as I want (wow), I'll have it all (wow)"
+    },
+    {
+      "video": "video/kahoshijaak/원하는 대로 _wow_ 다 가질 거야 _wow_1.webm",
+      "videoMp4": "video/kahoshijaak/mp4/원하는 대로 _wow_ 다 가질 거야 _wow_1.mp4",
+      "korean": "원하는 대로 (wow) 다 가질 거야 (wow)",
+      "russian": "Всё, чего хочу (wow), — я получу всё (wow)",
+      "new": true,
+      "english": "Just as I want (wow), I'll have it all (wow)"
     },
     {
       "video": "video/kahoshijaak/그게 바로 내 꿈일 테니까.webm",
@@ -341,20 +485,20 @@
       "english": "Because that's exactly my dream"
     },
     {
-      "video": "video/kahoshijaak/그어 놓은 선을 넘어.webm",
-      "videoMp4": "video/kahoshijaak/mp4/그어 놓은 선을 넘어.mp4",
-      "korean": "그어 놓은 선을 넘어",
-      "russian": "Переступая прочерченную черту",
+      "video": "video/kahoshijaak/변한 건 없어 _wow_ 버티고 버텨 _wow.webm",
+      "videoMp4": "video/kahoshijaak/mp4/변한 건 없어 _wow_ 버티고 버텨 _wow.mp4",
+      "korean": "변한 건 없어 (wow) 버티고 버텨 (wow)",
+      "russian": "Ничего не изменилось (wow), держусь и держусь (wow)",
       "new": true,
-      "english": "Crossing the line that's been drawn"
+      "english": "Nothing has changed (wow), I endure and endure (wow)"
     },
     {
-      "video": "video/kahoshijaak/난 나의 길을 갈 테니까.webm",
-      "videoMp4": "video/kahoshijaak/mp4/난 나의 길을 갈 테니까.mp4",
-      "korean": "난 나의 길을 갈 테니까",
-      "russian": "Я всё равно пойду своим путём",
+      "video": "video/kahoshijaak/변한 건 없어 _wow_ 버티고 버텨 _wow_1.webm",
+      "videoMp4": "video/kahoshijaak/mp4/변한 건 없어 _wow_ 버티고 버텨 _wow_1.mp4",
+      "korean": "변한 건 없어 (wow) 버티고 버텨 (wow)",
+      "russian": "Ничего не изменилось (wow), держусь и держусь (wow)",
       "new": true,
-      "english": "I will go my own way"
+      "english": "Nothing has changed (wow), I endure and endure (wow)"
     },
     {
       "video": "video/kahoshijaak/내 꿈은 더 단단해질 테니.webm",
@@ -371,22 +515,6 @@
       "russian": "Моя мечта станет только крепче",
       "new": true,
       "english": "My dream will only grow stronger"
-    },
-    {
-      "video": "video/kahoshijaak/내 전부를 걸었으니까.webm",
-      "videoMp4": "video/kahoshijaak/mp4/내 전부를 걸었으니까.mp4",
-      "korean": "내 전부를 걸었으니까",
-      "russian": "Ведь я поставил на кон всё",
-      "new": true,
-      "english": "Because I've staked my everything"
-    },
-    {
-      "video": "video/kahoshijaak/내가 지쳐 쓰러질 때까진.webm",
-      "videoMp4": "video/kahoshijaak/mp4/내가 지쳐 쓰러질 때까진.mp4",
-      "korean": "내가 지쳐 쓰러질 때까진",
-      "russian": "Пока не упаду без сил",
-      "new": true,
-      "english": "Until I collapse from exhaustion"
     },
     {
       "video": "video/kahoshijaak/다시 시작해.webm",
@@ -413,140 +541,12 @@
       "english": "I never want to lose myself again"
     },
     {
-      "video": "video/kahoshijaak/때론 원망도 하겠지.webm",
-      "videoMp4": "video/kahoshijaak/mp4/때론 원망도 하겠지.mp4",
-      "korean": "때론 원망도 하겠지",
-      "russian": "Порой меня будут и упрекать",
+      "video": "video/kahoshijaak/내 전부를 걸었으니까.webm",
+      "videoMp4": "video/kahoshijaak/mp4/내 전부를 걸었으니까.mp4",
+      "korean": "내 전부를 걸었으니까",
+      "russian": "Ведь я поставил на кон всё",
       "new": true,
-      "english": "At times they'll resent me"
-    },
-    {
-      "video": "video/kahoshijaak/또 하나를 앞지르면.webm",
-      "videoMp4": "video/kahoshijaak/mp4/또 하나를 앞지르면.mp4",
-      "korean": "또 하나를 앞지르면",
-      "russian": "Обогнав ещё одного",
-      "new": true,
-      "english": "When I overtake one more"
-    },
-    {
-      "video": "video/kahoshijaak/멈추지 않겠다고.webm",
-      "videoMp4": "video/kahoshijaak/mp4/멈추지 않겠다고.mp4",
-      "korean": "멈추지 않겠다고",
-      "russian": "Что я не остановлюсь",
-      "new": true,
-      "english": "That I will not stop"
-    },
-    {
-      "video": "video/kahoshijaak/모든 걸 이겨낼 것처럼.webm",
-      "videoMp4": "video/kahoshijaak/mp4/모든 걸 이겨낼 것처럼.mp4",
-      "korean": "모든 걸 이겨낼 것처럼",
-      "russian": "Будто сможешь преодолеть всё",
-      "new": true,
-      "english": "As if you could overcome anything"
-    },
-    {
-      "video": "video/kahoshijaak/변한 건 없어 _wow_ 버티고 버텨 _wow.webm",
-      "videoMp4": "video/kahoshijaak/mp4/변한 건 없어 _wow_ 버티고 버텨 _wow.mp4",
-      "korean": "변한 건 없어 (wow) 버티고 버텨 (wow)",
-      "russian": "Ничего не изменилось (wow), держусь и держусь (wow)",
-      "new": true,
-      "english": "Nothing has changed (wow), I endure and endure (wow)"
-    },
-    {
-      "video": "video/kahoshijaak/변한 건 없어 _wow_ 버티고 버텨 _wow_1.webm",
-      "videoMp4": "video/kahoshijaak/mp4/변한 건 없어 _wow_ 버티고 버텨 _wow_1.mp4",
-      "korean": "변한 건 없어 (wow) 버티고 버텨 (wow)",
-      "russian": "Ничего не изменилось (wow), держусь и держусь (wow)",
-      "new": true,
-      "english": "Nothing has changed (wow), I endure and endure (wow)"
-    },
-    {
-      "video": "video/kahoshijaak/부러진 것처럼 한 발로 뛰어도.webm",
-      "videoMp4": "video/kahoshijaak/mp4/부러진 것처럼 한 발로 뛰어도.mp4",
-      "korean": "부러진 것처럼 한 발로 뛰어도",
-      "russian": "Пусть даже скача на одной ноге, словно сломанной",
-      "new": true,
-      "english": "Even if I hop on one leg as if it were broken"
-    },
-    {
-      "video": "video/kahoshijaak/빛나지 않아도 내 꿈을 응원해.webm",
-      "videoMp4": "video/kahoshijaak/mp4/빛나지 않아도 내 꿈을 응원해.mp4",
-      "korean": "빛나지 않아도 내 꿈을 응원해",
-      "russian": "Пусть она не блистает — я болею за свою мечту",
-      "new": true,
-      "english": "Even if it doesn't shine, I root for my dream"
-    },
-    {
-      "video": "video/kahoshijaak/새로운 시작은 늘 설레게 하지.webm",
-      "videoMp4": "video/kahoshijaak/mp4/새로운 시작은 늘 설레게 하지.mp4",
-      "korean": "새로운 시작은 늘 설레게 하지",
-      "russian": "Новое начало всегда волнует",
-      "new": true,
-      "english": "A new beginning always makes your heart race"
-    },
-    {
-      "video": "video/kahoshijaak/시간을 뒤쫓는 시계바늘처럼.webm",
-      "videoMp4": "video/kahoshijaak/mp4/시간을 뒤쫓는 시계바늘처럼.mp4",
-      "korean": "시간을 뒤쫓는 시계바늘처럼",
-      "russian": "Как стрелки часов, гонящиеся за временем",
-      "new": true,
-      "english": "Like clock hands chasing after time"
-    },
-    {
-      "video": "video/kahoshijaak/앞질러 가고 싶어 하지.webm",
-      "videoMp4": "video/kahoshijaak/mp4/앞질러 가고 싶어 하지.mp4",
-      "korean": "앞질러 가고 싶어 하지",
-      "russian": "Хочется вырваться вперёд",
-      "new": true,
-      "english": "You want to race ahead"
-    },
-    {
-      "video": "video/kahoshijaak/어떤 이유도 _wow_ 어떤 변명도 _wow.webm",
-      "videoMp4": "video/kahoshijaak/mp4/어떤 이유도 _wow_ 어떤 변명도 _wow.mp4",
-      "korean": "어떤 이유도 (wow) 어떤 변명도 (wow)",
-      "russian": "Никакие причины (wow), никакие оправдания (wow)",
-      "new": true,
-      "english": "No reason (wow), no excuse (wow)"
-    },
-    {
-      "video": "video/kahoshijaak/원하는 대로 _wow_ 다 가질 거야 _wow.webm",
-      "videoMp4": "video/kahoshijaak/mp4/원하는 대로 _wow_ 다 가질 거야 _wow.mp4",
-      "korean": "원하는 대로 (wow) 다 가질 거야 (wow)",
-      "russian": "Всё, чего хочу (wow), — я получу всё (wow)",
-      "new": true,
-      "english": "Just as I want (wow), I'll have it all (wow)"
-    },
-    {
-      "video": "video/kahoshijaak/원하는 대로 _wow_ 다 가질 거야 _wow_1.webm",
-      "videoMp4": "video/kahoshijaak/mp4/원하는 대로 _wow_ 다 가질 거야 _wow_1.mp4",
-      "korean": "원하는 대로 (wow) 다 가질 거야 (wow)",
-      "russian": "Всё, чего хочу (wow), — я получу всё (wow)",
-      "new": true,
-      "english": "Just as I want (wow), I'll have it all (wow)"
-    },
-    {
-      "video": "video/kahoshijaak/저마다 삶을 향해.webm",
-      "videoMp4": "video/kahoshijaak/mp4/저마다 삶을 향해.mp4",
-      "korean": "저마다 삶을 향해",
-      "russian": "Каждый — навстречу своей жизни",
-      "new": true,
-      "english": "Each toward their own life"
-    },
-    {
-      "video": "video/kahoshijaak/지금 나를 위한 약속.webm",
-      "videoMp4": "video/kahoshijaak/mp4/지금 나를 위한 약속.mp4",
-      "korean": "지금 나를 위한 약속",
-      "russian": "Обещание самому себе — здесь и сейчас",
-      "new": true,
-      "english": "A promise to myself, here and now"
-    },
-    {
-      "video": "video/kahoshijaak/지금 내겐 용기가 필요해.webm",
-      "videoMp4": "video/kahoshijaak/mp4/지금 내겐 용기가 필요해.mp4",
-      "korean": "지금 내겐 용기가 필요해",
-      "russian": "Сейчас мне нужна лишь смелость",
-      "new": true,
-      "english": "Right now I need courage"
+      "english": "Because I've staked my everything"
     }
   ],
   "b2": [],
