@@ -1,0 +1,434 @@
+{
+  "lesson_13_1": [
+    {
+      "video": "video/apl/나 밥 좀 빨리 줘.webm",
+      "videoMp4": "video/apl/mp4/나 밥 좀 빨리 줘.mp4",
+      "korean": "나 밥 좀 빨리 줘",
+      "transcription": "На пап чом ппальри чво",
+      "russian": "Дай мне поесть побыстрее"
+    },
+    {
+      "video": "video/wfools/안 돼. 나 돈 없어.webm",
+      "videoMp4": "video/wfools/mp4/안 돼. 나 돈 없어.mp4",
+      "korean": "안 돼. 나 돈 없어",
+      "transcription": "Ан твэ. на тон опсо",
+      "russian": "Нет. У меня нет денег."
+    },
+    {
+      "video": "video/crown/말 안 해도 다 알걸.webm",
+      "videoMp4": "video/crown/mp4/말 안 해도 다 알걸.mp4",
+      "korean": "말 안 해도 다 알걸.",
+      "transcription": "Маль ан хэдо та альголь.",
+      "russian": "Я и без слов всё понимаю."
+    },
+    {
+      "video": "video/runbts/숨이 잘 안 죽나 봐.webm",
+      "videoMp4": "video/runbts/mp4/숨이 잘 안 죽나 봐.mp4",
+      "korean": "숨이 잘 안 죽나 봐",
+      "transcription": "Суми чаль ан чуңна пва",
+      "russian": "Кажется, капуста не осела"
+    },
+    {
+      "video": "video/weakhero2/폰은 기종 어떤 거 써.webm",
+      "videoMp4": "video/weakhero2/mp4/폰은 기종 어떤 거 써.mp4",
+      "korean": "폰은 기종 어떤 거 써?",
+      "transcription": "Понын кичжоң оттон ко ссо?",
+      "russian": "Какой у тебя телефон?"
+    },
+    {
+      "video": "video/vincenco/그 다시 붙일 수 있다.webm",
+      "videoMp4": "video/vincenco/mp4/그 다시 붙일 수 있다.mp4",
+      "korean": "그 다시 붙일 수 있다?",
+      "transcription": "Кы тащи путиль су итта?",
+      "russian": "Их обратно приделать можно?"
+    },
+    {
+      "video": "video/weakhero2/그 사람 전학 왔을 때.webm",
+      "videoMp4": "video/weakhero2/mp4/그 사람 전학 왔을 때.mp4",
+      "korean": "그 사람 전학 왔을 때",
+      "transcription": "Кы сарам чонхак вассыль ттэ",
+      "russian": "Когда он перевёлся к нам"
+    },
+    {
+      "video": "video/crown/나 갖게 받고 싶은 건.webm",
+      "videoMp4": "video/crown/mp4/나 갖게 받고 싶은 건.mp4",
+      "korean": "나 갖게 받고 싶은 건…",
+      "transcription": "На каткэ патко щипын кон…",
+      "russian": "Себе я хочу получить вот что…"
+    },
+    {
+      "video": "video/hwarang/난 속이 좀 안 좋아서.webm",
+      "videoMp4": "video/hwarang/mp4/난 속이 좀 안 좋아서.mp4",
+      "korean": "난 속이 좀 안 좋아서",
+      "transcription": "Нан соги чом ан чоасо",
+      "russian": "У меня немного плохо с желудком"
+    },
+    {
+      "video": "video/deathgame/날 만난 게 그 증거지.webm",
+      "videoMp4": "video/deathgame/mp4/날 만난 게 그 증거지.mp4",
+      "korean": "날 만난 게 그 증거지",
+      "transcription": "Наль маннан кэ кы чыңгочжи",
+      "russian": "Раз мы встретились — вот тебе и доказательство"
+    }
+  ],
+  "lesson_13_2": [
+    {
+      "video": "video/deathgame/날 만난 게 그친 거지.webm",
+      "videoMp4": "video/deathgame/mp4/날 만난 게 그친 거지.mp4",
+      "korean": "날 만난 게 그친 거지",
+      "transcription": "Наль маннан кэ кычин кочжи",
+      "russian": "То, что встретил меня — это конец"
+    },
+    {
+      "video": "video/weakhero/내 부탁 좀 들어 줘라.webm",
+      "videoMp4": "video/weakhero/mp4/내 부탁 좀 들어 줘라.mp4",
+      "korean": "내 부탁 좀 들어 줘라",
+      "transcription": "Нэ путак чом тыро чвора",
+      "russian": "Выполни мою просьбу"
+    },
+    {
+      "video": "video/moon lovers/내 심의 몸이 안 좋아.webm",
+      "videoMp4": "video/moon lovers/mp4/내 심의 몸이 안 좋아.mp4",
+      "korean": "내 심의 몸이 안 좋아",
+      "transcription": "Нэ щимый моми ан чоа",
+      "russian": "Мои тело и дух болят"
+    },
+    {
+      "video": "video/kalmar3/너 내 목걸이 못 봤냐.webm",
+      "videoMp4": "video/kalmar3/mp4/너 내 목걸이 못 봤냐.mp4",
+      "korean": "너 내 목걸이 못 봤냐?",
+      "transcription": "Но нэ моккори мот пвання?",
+      "russian": "Ты не видел моё ожерелье?"
+    },
+    {
+      "video": "video/jin/너 정말로 기억 안 나.webm",
+      "videoMp4": "video/jin/mp4/너 정말로 기억 안 나.mp4",
+      "korean": "너 정말로 기억 안 나?",
+      "transcription": "Но чоңмальро киок ан на?",
+      "russian": "Ты правда не помнишь?"
+    },
+    {
+      "video": "video/moon lovers/다신 내 눈에 띄지 마.webm",
+      "videoMp4": "video/moon lovers/mp4/다신 내 눈에 띄지 마.mp4",
+      "korean": "다신 내 눈에 띄지 마",
+      "transcription": "Тащин нэ нунэ ттыйчжи ма",
+      "russian": "Больше не попадайся мне на глаза"
+    },
+    {
+      "video": "video/deathgame/열심히 안 산 거 같아.webm",
+      "videoMp4": "video/deathgame/mp4/열심히 안 산 거 같아.mp4",
+      "korean": "열심히 안 산 거 같아?",
+      "transcription": "Ёльщимхи ан сан ко ката?",
+      "russian": "Похоже, что я не стараюсь?"
+    },
+    {
+      "video": "video/squidgame 2/5 분만 있다 와 줄래.webm",
+      "videoMp4": "video/squidgame 2/mp4/5 분만 있다 와 줄래.mp4",
+      "korean": "오 분만 있다 와 줄래?",
+      "transcription": "О пунман итта ва чульрэ?",
+      "russian": "Ты не мог бы зайти через 5 минут?"
+    },
+    {
+      "video": "video/kumiho/왜 나만 안 주는 거야.webm",
+      "videoMp4": "video/kumiho/mp4/왜 나만 안 주는 거야.mp4",
+      "korean": "왜 나만 안 주는 거야?",
+      "transcription": "Вэ наман ан чунын коя?",
+      "russian": "Почему всем даёшь, а мне нет?"
+    },
+    {
+      "video": "video/rev/왜 나한테 말 안 했어.webm",
+      "videoMp4": "video/rev/mp4/왜 나한테 말 안 했어.mp4",
+      "korean": "왜 나한테 말 안 했어?",
+      "transcription": "Вэ нахантэ маль ан хэссо?",
+      "russian": "Почему ты мне не сказал(а)?"
+    }
+  ],
+  "lesson_13_3": [
+    {
+      "video": "video/hwarang/왜 내 앞에 있는 거냐.webm",
+      "videoMp4": "video/hwarang/mp4/왜 내 앞에 있는 거냐.mp4",
+      "korean": "왜 내 앞에 있는 거냐?",
+      "transcription": "Вэ нэ апэ иннын коня?",
+      "russian": "Почему ты передо мной?"
+    },
+    {
+      "video": "video/runbts/요리 이런 거 잘 해요.webm",
+      "videoMp4": "video/runbts/mp4/요리 이런 거 잘 해요.mp4",
+      "korean": "요리 이런 거 잘 해요?",
+      "transcription": "Ёри ирон ко чаль хэё?",
+      "russian": "Ты хорошо такое готовишь?"
+    },
+    {
+      "video": "video/healer/저기 앉아 있는 저 놈.webm",
+      "videoMp4": "video/healer/mp4/저기 앉아 있는 저 놈.mp4",
+      "korean": "저기 앉아 있는 저 놈",
+      "transcription": "Чоги анча иннын чо ном",
+      "russian": "Тот мужик, что сидит вдалеке"
+    },
+    {
+      "video": "video/jin/좋은 말로 할 때 앉아.webm",
+      "videoMp4": "video/jin/mp4/좋은 말로 할 때 앉아.mp4",
+      "korean": "좋은 말로 할 때 앉아",
+      "transcription": "Чоын мальро халь ттэ анча",
+      "russian": "Сядь, пока я прошу нормально"
+    },
+    {
+      "video": "video/squid game/아빠 또 혼날 거 같은데.webm",
+      "videoMp4": "video/squid game/mp4/아빠 또 혼날 거 같은데.mp4",
+      "korean": "아빠 또 혼날 거 같은데",
+      "transcription": "Аппа тто хонналь ко катындэ",
+      "russian": "У папы снова будут неприятности"
+    },
+    {
+      "video": "video/killershop/여기 총알이 왜 빗발 쳐.webm",
+      "videoMp4": "video/killershop/mp4/여기 총알이 왜 빗발 쳐.mp4",
+      "korean": "여기 총알이 왜 빗발 쳐?",
+      "transcription": "Ёги чоңари вэ питпаль чё?",
+      "russian": "С какой стати должен быть обстрел?"
+    },
+    {
+      "video": "video/allkdrama/일단 생각을 좀 해 보고.webm",
+      "videoMp4": "video/allkdrama/mp4/일단 생각을 좀 해 보고.mp4",
+      "korean": "일단 생각을 좀 해 보고",
+      "transcription": "Ильдан щэңгагыль чом хэ пого",
+      "russian": "Мне надо подумать немного"
+    },
+    {
+      "video": "video/allkdrama/친구 우리 집은 온 거야.webm",
+      "videoMp4": "video/allkdrama/mp4/친구 우리 집은 온 거야.mp4",
+      "korean": "친구 우리 집은 온 거야",
+      "transcription": "Чингу ури чибын он коя",
+      "russian": "Твой друг к нам пришел?"
+    },
+    {
+      "video": "video/moon lovers/그 숲에 왜 들어간 거야.webm",
+      "videoMp4": "video/moon lovers/mp4/그 숲에 왜 들어간 거야.mp4",
+      "korean": "그 숲에 왜 들어간 거야?",
+      "transcription": "Кы супэ вэ тыроган коя?",
+      "russian": "Зачем ты пошёл в тот лес?"
+    },
+    {
+      "video": "video/tafun/그거 내가 다 막아 줄게.webm",
+      "videoMp4": "video/tafun/mp4/그거 내가 다 막아 줄게.mp4",
+      "korean": "그거 내가 다 막아 줄게",
+      "transcription": "Кыго нэга та мага чульгэ",
+      "russian": "Я всё это прикрою"
+    }
+  ],
+  "lesson_13_4": [
+    {
+      "video": "video/hvatai/근데 이걸 나한테 왜 줘.webm",
+      "videoMp4": "video/hvatai/mp4/근데 이걸 나한테 왜 줘.mp4",
+      "korean": "근데 이걸 나한테 왜 줘?",
+      "transcription": "Кындэ иголь нахантэ вэ чво?",
+      "russian": "Но зачем ты это мне даёшь?"
+    },
+    {
+      "video": "video/runbts/나 방금 내 머리 깨졌다.webm",
+      "videoMp4": "video/runbts/mp4/나 방금 내 머리 깨졌다.mp4",
+      "korean": "나 방금 내 머리 깨졌다",
+      "transcription": "На паңгым нэ мори ккэчжётта",
+      "russian": "Мне только что голову снесло"
+    },
+    {
+      "video": "video/biglig/나는 외출 준비를 할 때.webm",
+      "videoMp4": "video/biglig/mp4/나는 외출 준비를 할 때.mp4",
+      "korean": "나는 외출 준비를 할 때",
+      "transcription": "Нанын вэчуль чунбирыль халь ттэ",
+      "russian": "Я когда готовлюсь выйти из дома"
+    },
+    {
+      "video": "video/bloodhounds/나쁜 데 쓰일 수는 있죠.webm",
+      "videoMp4": "video/bloodhounds/mp4/나쁜 데 쓰일 수는 있죠.mp4",
+      "korean": "나쁜 데 쓰일 수는 있죠",
+      "transcription": "Наппын тэ ссыиль сунын итчё",
+      "russian": "Но их можно использовать для плохих дел"
+    },
+    {
+      "video": "video/suga/나의 길인 거 같다 이게.webm",
+      "videoMp4": "video/suga/mp4/나의 길인 거 같다 이게.mp4",
+      "korean": "나의 길인 거 같다 이게",
+      "transcription": "Наый кирин ко катта игэ",
+      "russian": "Кажется, это мой путь"
+    },
+    {
+      "video": "video/kumiho/난 원래 달걀 안 좋아해.webm",
+      "videoMp4": "video/kumiho/mp4/난 원래 달걀 안 좋아해.mp4",
+      "korean": "난 원래 달걀 안 좋아해",
+      "transcription": "Нан вонрэ тальгяль ан чоахэ",
+      "russian": "Я вообще не люблю яйца"
+    },
+    {
+      "video": "video/reader/내 말 무슨 말인지 알죠.webm",
+      "videoMp4": "video/reader/mp4/내 말 무슨 말인지 알죠.mp4",
+      "korean": "내 말 무슨 말인지 알죠",
+      "transcription": "Нэ маль мусын маринчжи альчжё",
+      "russian": "Ты же понимаешь, о чём я говорю"
+    },
+    {
+      "video": "video/weakhero2/내가 다 죽여 버릴 거라.webm",
+      "videoMp4": "video/weakhero2/mp4/내가 다 죽여 버릴 거라.mp4",
+      "korean": "내가 다 죽여 버릴 거라",
+      "transcription": "Нэга та чугё пориль кора",
+      "russian": "Я, сказал, всех убью"
+    },
+    {
+      "video": "video/hwarang/내가 오늘 여기서 딴 거.webm",
+      "videoMp4": "video/hwarang/mp4/내가 오늘 여기서 딴 거.mp4",
+      "korean": "내가 오늘 여기서 딴 거",
+      "transcription": "Нэга оныль ёгисо ттан ко",
+      "russian": "То, что я выиграл здесь сегодня"
+    },
+    {
+      "video": "video/tafun/너 오늘 내 치마 입었어.webm",
+      "videoMp4": "video/tafun/mp4/너 오늘 내 치마 입었어.mp4",
+      "korean": "너 오늘 내 치마 입었어?",
+      "transcription": "Но оныль нэ чима ибоссо?",
+      "russian": "Ты сегодня надела мою юбку?"
+    }
+  ],
+  "lesson_13_5": [
+    {
+      "video": "video/deathgame/되는 게 하나도 없는 날.webm",
+      "videoMp4": "video/deathgame/mp4/되는 게 하나도 없는 날.mp4",
+      "korean": "되는 게 하나도 없는 날",
+      "transcription": "Твэнын кэ ханадо опснын наль",
+      "russian": "День, когда ничего не получается"
+    },
+    {
+      "video": "video/hwarang/마음에 안 들 수 밖이요.webm",
+      "videoMp4": "video/hwarang/mp4/마음에 안 들 수 밖이요.mp4",
+      "korean": "마음에 안 들 수 밖이요",
+      "transcription": "Маымэ ан тыль су паккиё",
+      "russian": "Поневоле не нравится"
+    },
+    {
+      "video": "video/tafun/밤새 잠도 못 잘 거면서.webm",
+      "videoMp4": "video/tafun/mp4/밤새 잠도 못 잘 거면서.mp4",
+      "korean": "밤새 잠도 못 잘 거면서",
+      "transcription": "Памщэ чамдо мот чаль комёнсо",
+      "russian": "Всё равно же всю ночь не спал"
+    },
+    {
+      "video": "video/shef/얘 눈물 없이 못 보겠다.webm",
+      "videoMp4": "video/shef/mp4/얘 눈물 없이 못 보겠다.mp4",
+      "korean": "얘 눈물 없이 못 보겠다",
+      "transcription": "Е нунмуль опси мот погэтта",
+      "russian": "Без слёз на него не посмотришь"
+    },
+    {
+      "video": "video/shef/어 어느 나라 숲인 거야.webm",
+      "videoMp4": "video/shef/mp4/어 어느 나라 숲인 거야.mp4",
+      "korean": "어 어느 나라 숲인 거야?",
+      "transcription": "О оны нара супин коя?",
+      "russian": "Что это за лес и в какой он стране?"
+    },
+    {
+      "video": "video/apl/와 봐야 할 것 같아서요.webm",
+      "videoMp4": "video/apl/mp4/와 봐야 할 것 같아서요.mp4",
+      "korean": "와 봐야 할 것 같아서요",
+      "transcription": "Ва пвая халь кот катасоё",
+      "russian": "Кажется, прийти всё-таки нужно"
+    },
+    {
+      "video": "video/hvatai/이 다리 절대 건너지 마.webm",
+      "videoMp4": "video/hvatai/mp4/이 다리 절대 건너지 마.mp4",
+      "korean": "이 다리 절대 건너지 마",
+      "transcription": "И тари чольдэ конночжи ма",
+      "russian": "Никогда не переходи этот мост"
+    },
+    {
+      "video": "video/tomorrow/이 분 아는 분 맞으세요.webm",
+      "videoMp4": "video/tomorrow/mp4/이 분 아는 분 맞으세요.mp4",
+      "korean": "이 분 아는 분 맞으세요?",
+      "transcription": "И пун анын пун мачжысэё?",
+      "russian": "Вы точно этого человека знаете?"
+    },
+    {
+      "video": "video/tngerines/이제 배 타고 제주 뜨면.webm",
+      "videoMp4": "video/tngerines/mp4/이제 배 타고 제주 뜨면.mp4",
+      "korean": "이제 배 타고 제주 뜨면",
+      "transcription": "Ичжэ пэ таго чэчжу ттымён",
+      "russian": "Теперь, если отправиться на корабле на Чеджу"
+    },
+    {
+      "video": "video/marry/제 남편 좀 되 주실래요.webm",
+      "videoMp4": "video/marry/mp4/제 남편 좀 되 주실래요.mp4",
+      "korean": "제 남편 좀 되 주실래요?",
+      "transcription": "Чэ нампён чом твэ чущильрэё?",
+      "russian": "Не хотите стать моим мужем?"
+    }
+  ],
+  "lesson_13_6": [
+    {
+      "video": "video/suga/좀 잘 하고 싶어요 진짜.webm",
+      "videoMp4": "video/suga/mp4/좀 잘 하고 싶어요 진짜.mp4",
+      "korean": "좀 잘 하고 싶어요 진짜",
+      "transcription": "Чом чаль хаго щипоё чинчча",
+      "russian": "Я правда хочу делать это лучше"
+    },
+    {
+      "video": "video/healer/할 말 있을 땐 그랬어요.webm",
+      "videoMp4": "video/healer/mp4/할 말 있을 땐 그랬어요.mp4",
+      "korean": "할 말 있을 땐 그랬어요",
+      "transcription": "Халь маль иссыль ттэн кырэссоё",
+      "russian": "У него так, когда хочет сказать что-то"
+    },
+    {
+      "video": "video/hwarang/확인 할 게 있어서 왔네.webm",
+      "videoMp4": "video/hwarang/mp4/확인 할 게 있어서 왔네.mp4",
+      "korean": "확인 할 게 있어서 왔네",
+      "transcription": "Хвагин халь кэ иссосо ваннэ",
+      "russian": "Надо кое-что проверить"
+    },
+    {
+      "video": "video/theglory/고데기 열 체크 좀 해줄래.webm",
+      "videoMp4": "video/theglory/mp4/고데기 열 체크 좀 해줄래.mp4",
+      "korean": "고데기 열 체크 좀 해줄래?",
+      "transcription": "Кодэги ёль чэкы чом хэчжульрэ?",
+      "russian": "Проверишь температуру утюжка?"
+    },
+    {
+      "video": "video/healer/내가 오늘 니 엄마 대신에.webm",
+      "videoMp4": "video/healer/mp4/내가 오늘 니 엄마 대신에.mp4",
+      "korean": "내가 오늘 니 엄마 대신에",
+      "transcription": "Нэга оныль ни омма тэщинэ",
+      "russian": "Я тебе сегодня вместо мамки твоей"
+    },
+    {
+      "video": "video/crown/감히 내 앞에 먹는 것이냐.webm",
+      "videoMp4": "video/crown/mp4/감히 내 앞에 먹는 것이냐.mp4",
+      "korean": "감히 내 앞에 먹는 것이냐?",
+      "transcription": "Камхи нэ апэ моңнын косиня?",
+      "russian": "Ты осмелился есть прямо передо мной?"
+    },
+    {
+      "video": "video/jin/공방 얘기 아직 안 했잖아.webm",
+      "videoMp4": "video/jin/mp4/공방 얘기 아직 안 했잖아.mp4",
+      "korean": "공방 얘기 아직 안 했잖아",
+      "transcription": "Коңбаң еги ачжик ан хэтчанха",
+      "russian": "Мы же ещё не обсудили мастерскую"
+    },
+    {
+      "video": "video/jin/그게 사랑이 아닐 리 없어.webm",
+      "videoMp4": "video/jin/mp4/그게 사랑이 아닐 리 없어.mp4",
+      "korean": "그게 사랑이 아닐 리 없어",
+      "transcription": "Кыгэ сараңи аниль ри опсо",
+      "russian": "Это не может не быть любовью"
+    },
+    {
+      "video": "video/moon lovers/그만 울고 수야 집에 가자.webm",
+      "videoMp4": "video/moon lovers/mp4/그만 울고 수야 집에 가자.mp4",
+      "korean": "그만 울고 수야 집에 가자",
+      "transcription": "Кыман ульго суя чибэ качжа",
+      "russian": "Хватит плакать, Суя, пойдём домой"
+    },
+    {
+      "video": "video/suga/긴장 좀 많이 했어요 진짜.webm",
+      "videoMp4": "video/suga/mp4/긴장 좀 많이 했어요 진짜.mp4",
+      "korean": "긴장 좀 많이 했어요 진짜",
+      "transcription": "Кинчжаң чом манхи хэссоё чинчча",
+      "russian": "Я очень сильно нервничал, правда"
+    }
+  ]
+}

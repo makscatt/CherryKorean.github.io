@@ -48,6 +48,41 @@
       "coverImage": "videothemes/pathway_covers/coverImage7.png",
       "masterJsonPath": "videothemes/pathway/path_level_7.json",
       "name_en": "Chapter 7: Conversational Style"
+    },
+    "chapter_8": {
+      "name": "Глава 8: Реплики из дорам",
+      "masterJsonPath": "videothemes/pathway/path_level_8.json",
+      "name_en": "Chapter 8: Drama Lines"
+    },
+    "chapter_9": {
+      "name": "Глава 9: Короткие диалоги",
+      "masterJsonPath": "videothemes/pathway/path_level_9.json",
+      "name_en": "Chapter 9: Short Dialogues"
+    },
+    "chapter_10": {
+      "name": "Глава 10: Говорим увереннее",
+      "masterJsonPath": "videothemes/pathway/path_level_10.json",
+      "name_en": "Chapter 10: Speaking with Confidence"
+    },
+    "chapter_11": {
+      "name": "Глава 11: Длинные фразы",
+      "masterJsonPath": "videothemes/pathway/path_level_11.json",
+      "name_en": "Chapter 11: Longer Phrases"
+    },
+    "chapter_12": {
+      "name": "Глава 12: Сложные обороты",
+      "masterJsonPath": "videothemes/pathway/path_level_12.json",
+      "name_en": "Chapter 12: Complex Expressions"
+    },
+    "chapter_13": {
+      "name": "Глава 13: Темп дорамы",
+      "masterJsonPath": "videothemes/pathway/path_level_13.json",
+      "name_en": "Chapter 13: Drama Pace"
+    },
+    "chapter_14": {
+      "name": "Глава 14: Свободная речь",
+      "masterJsonPath": "videothemes/pathway/path_level_14.json",
+      "name_en": "Chapter 14: Fluent Speech"
     }
   },
   "songs": {
