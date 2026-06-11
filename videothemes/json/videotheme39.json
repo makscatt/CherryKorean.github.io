@@ -1,0 +1,659 @@
+{
+  "b1": [
+    {
+      "isNew": true,
+      "video": "video/world/10분 쉬었다 가실게요.webm",
+      "videoMp4": "video/world/mp4/10분 쉬었다 가실게요.mp4",
+      "korean": "10분 쉬었다 가실게요",
+      "russian": "Сделаем десятиминутный перерыв.",
+      "new": true,
+      "english": "We'll take a 10-minute break."
+    },
+    {
+      "video": "video/world/개떼처럼 몰려들었구나.webm",
+      "videoMp4": "video/world/mp4/개떼처럼 몰려들었구나.mp4",
+      "korean": "개떼처럼 몰려들었구나",
+      "russian": "Налетели, как стая собак.",
+      "new": true,
+      "english": "They swarmed in like a pack of dogs."
+    },
+    {
+      "video": "video/world/걱정도 팔자구나.webm",
+      "videoMp4": "video/world/mp4/걱정도 팔자구나.mp4",
+      "korean": "걱정도 팔자구나",
+      "russian": "Вот уж и забот у тебя хватает.",
+      "new": true,
+      "english": "You sure do have a lot to worry about."
+    },
+    {
+      "video": "video/world/국내 기획사 에이스들 다 모인 거.webm",
+      "videoMp4": "video/world/mp4/국내 기획사 에이스들 다 모인 거.mp4",
+      "korean": "국내 기획사 에이스들 다 모인 거",
+      "russian": "Собрались все лучшие из отечественных агентств.",
+      "new": true,
+      "english": "All the top talents from domestic agencies gathered here."
+    },
+    {
+      "video": "video/world/그 빌어먹을 전통을 지켜드려야 하는지.webm",
+      "videoMp4": "video/world/mp4/그 빌어먹을 전통을 지켜드려야 하는지.mp4",
+      "korean": "그 빌어먹을 전통을 지켜드려야 하는지",
+      "russian": "И что, я должен соблюдать эту чёртову традицию?",
+      "new": true,
+      "english": "Am I supposed to uphold that damn tradition?"
+    },
+    {
+      "video": "video/world/그 오디션 건은 어떻게 하실 생각이세요.webm",
+      "videoMp4": "video/world/mp4/그 오디션 건은 어떻게 하실 생각이세요.mp4",
+      "korean": "그 오디션 건은 어떻게 하실 생각이세요?",
+      "russian": "Что вы собираетесь делать с тем прослушиванием?",
+      "new": true,
+      "english": "What do you plan to do about that audition?"
+    },
+    {
+      "video": "video/world/그걸 지금 말이라고 하고 있냐.webm",
+      "videoMp4": "video/world/mp4/그걸 지금 말이라고 하고 있냐.mp4",
+      "korean": "그걸 지금 말이라고 하고 있냐?",
+      "russian": "Ты это сейчас называешь словами?",
+      "new": true,
+      "english": "Do you really call that an excuse?"
+    },
+    {
+      "video": "video/world/그래서 말투가 그러셨구나.webm",
+      "videoMp4": "video/world/mp4/그래서 말투가 그러셨구나.mp4",
+      "korean": "그래서 말투가 그러셨구나",
+      "russian": "Вот почему у вас был такой тон.",
+      "new": true,
+      "english": "So that's why you sounded like that."
+    },
+    {
+      "video": "video/world/그런 말이 있지.webm",
+      "videoMp4": "video/world/mp4/그런 말이 있지.mp4",
+      "korean": "그런 말이 있지",
+      "russian": "Есть же такое выражение.",
+      "new": true,
+      "english": "There's a saying like that."
+    },
+    {
+      "video": "video/world/급하게 통화 좀 해야 돼서.webm",
+      "videoMp4": "video/world/mp4/급하게 통화 좀 해야 돼서.mp4",
+      "korean": "급하게 통화 좀 해야 돼서",
+      "russian": "Мне срочно нужно сделать звонок.",
+      "new": true,
+      "english": "I need to make a quick call urgently."
+    },
+    {
+      "video": "video/world/기분 좋은 긴장감을 안고 왔습니다.webm",
+      "videoMp4": "video/world/mp4/기분 좋은 긴장감을 안고 왔습니다.mp4",
+      "korean": "기분 좋은 긴장감을 안고 왔습니다",
+      "russian": "Я пришёл с приятным волнением.",
+      "new": true,
+      "english": "I came here with a pleasant sense of anticipation."
+    },
+    {
+      "video": "video/world/꼭 조선인이란 법은 없지.webm",
+      "videoMp4": "video/world/mp4/꼭 조선인이란 법은 없지.mp4",
+      "korean": "꼭 조선인이란 법은 없지",
+      "russian": "Не обязательно же это должен быть именно кореец.",
+      "new": true,
+      "english": "It doesn't have to be a Joseon person."
+    },
+    {
+      "video": "video/world/나 금방 감동받았잖아.webm",
+      "videoMp4": "video/world/mp4/나 금방 감동받았잖아.mp4",
+      "korean": "나 금방 감동받았잖아",
+      "russian": "Я же только что растрогался.",
+      "new": true,
+      "english": "I just got moved."
+    },
+    {
+      "video": "video/world/나 이렇게 하대하는 여자는 네가 처음이야.webm",
+      "videoMp4": "video/world/mp4/나 이렇게 하대하는 여자는 네가 처음이야.mp4",
+      "korean": "나 이렇게 하대하는 여자는 네가 처음이야",
+      "russian": "Ты первая женщина, которая так со мной разговаривает свысока.",
+      "new": true,
+      "english": "You're the first woman who's ever talked down to me like this."
+    },
+    {
+      "video": "video/world/나가보셔야 합니다.webm",
+      "videoMp4": "video/world/mp4/나가보셔야 합니다.mp4",
+      "korean": "나가보셔야 합니다",
+      "russian": "Вам нужно выйти и посмотреть.",
+      "new": true,
+      "english": "You need to go out and take a look."
+    },
+    {
+      "video": "video/world/나도 무슨 귀신 들린 줄 알아 참.webm",
+      "videoMp4": "video/world/mp4/나도 무슨 귀신 들린 줄 알아 참.mp4",
+      "korean": "나도 무슨 귀신 들린 줄 알아 참",
+      "russian": "Я уж подумал, будто в меня бес вселился, честное слово.",
+      "new": true,
+      "english": "I thought I was possessed or something, honestly."
+    },
+    {
+      "video": "video/world/나한테 아직 볼 일이 더 남았나.webm",
+      "videoMp4": "video/world/mp4/나한테 아직 볼 일이 더 남았나.mp4",
+      "korean": "나한테 아직 볼 일이 더 남았나",
+      "russian": "У тебя ко мне ещё есть дело?",
+      "new": true,
+      "english": "Do you still have something else to talk to me about?"
+    },
+    {
+      "video": "video/world/너 너무 긴장감 없이 온 것 같아서 걱정되네.webm",
+      "videoMp4": "video/world/mp4/너 너무 긴장감 없이 온 것 같아서 걱정되네.mp4",
+      "korean": "너 너무 긴장감 없이 온 것 같아서 걱정되네",
+      "russian": "Я волнуюсь, ты как будто пришёл совсем без напряжения.",
+      "new": true,
+      "english": "I'm worried you came here way too relaxed."
+    },
+    {
+      "video": "video/world/너무 멀리까지 가시네.webm",
+      "videoMp4": "video/world/mp4/너무 멀리까지 가시네.mp4",
+      "korean": "너무 멀리까지 가시네",
+      "russian": "Вы заходите слишком далеко.",
+      "new": true,
+      "english": "You're going too far."
+    },
+    {
+      "video": "video/world/네 그 대책 없는 용기 박수 쳐줄게.webm",
+      "videoMp4": "video/world/mp4/네 그 대책 없는 용기 박수 쳐줄게.mp4",
+      "korean": "네 그 대책 없는 용기 박수 쳐줄게",
+      "russian": "Да, я поаплодирую твоей безрассудной смелости.",
+      "new": true,
+      "english": "Yeah, I'll give you a round of applause for that reckless courage."
+    },
+    {
+      "video": "video/world/네_ 여러분 이쪽으로 갈까요.webm",
+      "videoMp4": "video/world/mp4/네_ 여러분 이쪽으로 갈까요.mp4",
+      "korean": "네, 여러분 이쪽으로 갈까요?",
+      "russian": "Да, ребята, пойдём сюда?",
+      "new": true,
+      "english": "Yes, everyone, shall we go this way?"
+    },
+    {
+      "video": "video/world/네가 생각해도 민망하지.webm",
+      "videoMp4": "video/world/mp4/네가 생각해도 민망하지.mp4",
+      "korean": "네가 생각해도 민망하지",
+      "russian": "Даже тебе неловко, если подумать.",
+      "new": true,
+      "english": "Even you would find it embarrassing, wouldn't you?"
+    },
+    {
+      "video": "video/world/네가 여긴 어쩐 일이야.webm",
+      "videoMp4": "video/world/mp4/네가 여긴 어쩐 일이야.mp4",
+      "korean": "네가 여긴 어쩐 일이야?",
+      "russian": "Какими судьбами ты здесь?",
+      "new": true,
+      "english": "What brings you here?"
+    },
+    {
+      "video": "video/world/누구나 그럴 수 있는 계획은 있다.webm",
+      "videoMp4": "video/world/mp4/누구나 그럴 수 있는 계획은 있다.mp4",
+      "korean": "누구나 그럴 수 있는 계획은 있다",
+      "russian": "У каждого есть план, который может сработать.",
+      "new": true,
+      "english": "Everyone has a plan that could work."
+    },
+    {
+      "video": "video/world/다시 태어난 거라 생각하자.webm",
+      "videoMp4": "video/world/mp4/다시 태어난 거라 생각하자.mp4",
+      "korean": "다시 태어난 거라 생각하자",
+      "russian": "Давай считать, что мы переродились.",
+      "new": true,
+      "english": "Let's think of it as being reborn."
+    },
+    {
+      "video": "video/world/대체 내 죄가 뭐란 말이냐.webm",
+      "videoMp4": "video/world/mp4/대체 내 죄가 뭐란 말이냐.mp4",
+      "korean": "대체 내 죄가 뭐란 말이냐?",
+      "russian": "Да в чём вообще моя вина?",
+      "new": true,
+      "english": "What on earth is my crime?"
+    },
+    {
+      "video": "video/world/더 늦었으면 새치기할 생각 말고.webm",
+      "videoMp4": "video/world/mp4/더 늦었으면 새치기할 생각 말고.mp4",
+      "korean": "더 늦었으면 새치기할 생각 말고",
+      "russian": "Если бы пришёл ещё позже, даже не думай лезть без очереди.",
+      "new": true,
+      "english": "If you were any later, don't even think about cutting in line."
+    }
+  ],
+  "b2": [
+    {
+      "video": "video/world/두 번째 기회로 삼는 거다.webm",
+      "videoMp4": "video/world/mp4/두 번째 기회로 삼는 거다.mp4",
+      "korean": "두 번째 기회로 삼는 거다",
+      "russian": "Считай это вторым шансом.",
+      "new": true,
+      "english": "Take it as a second chance."
+    },
+    {
+      "video": "video/world/들어보셨죠.webm",
+      "videoMp4": "video/world/mp4/들어보셨죠.mp4",
+      "korean": "들어보셨죠?",
+      "russian": "Вы слышали, да?",
+      "new": true,
+      "english": "You've heard about it, right?"
+    },
+    {
+      "video": "video/world/따라오세요.webm",
+      "videoMp4": "video/world/mp4/따라오세요.mp4",
+      "korean": "따라오세요",
+      "russian": "Следуйте за мной.",
+      "new": true,
+      "english": "Follow me."
+    },
+    {
+      "video": "video/world/딱 사랑한 구름이 슬퍼서 흘린 눈물이라고요.webm",
+      "videoMp4": "video/world/mp4/딱 사랑한 구름이 슬퍼서 흘린 눈물이라고요.mp4",
+      "korean": "딱 사랑한 구름이 슬퍼서 흘린 눈물이라고요",
+      "russian": "Это просто слёзы, которые пролили облака, потому что любили и грустили.",
+      "new": true,
+      "english": "It's just the tears shed by clouds because they were in love and sad."
+    },
+    {
+      "video": "video/world/말투 되게 이상하다.webm",
+      "videoMp4": "video/world/mp4/말투 되게 이상하다.mp4",
+      "korean": "말투 되게 이상하다",
+      "russian": "У тебя очень странная манера говорить.",
+      "new": true,
+      "english": "Your way of speaking is really weird."
+    },
+    {
+      "video": "video/world/뭐 이런 철벽 같은 놈을 봤나.webm",
+      "videoMp4": "video/world/mp4/뭐 이런 철벽 같은 놈을 봤나.mp4",
+      "korean": "뭐 이런 철벽 같은 놈을 봤나",
+      "russian": "Ну и что за непробиваемый тип такой?",
+      "new": true,
+      "english": "What kind of stonewalling jerk is this?"
+    },
+    {
+      "video": "video/world/뭐라는 거야.webm",
+      "videoMp4": "video/world/mp4/뭐라는 거야.mp4",
+      "korean": "뭐라는 거야?",
+      "russian": "Ты что несёшь?",
+      "new": true,
+      "english": "What are you talking about?"
+    },
+    {
+      "video": "video/world/방패로 써먹어야겠다.webm",
+      "videoMp4": "video/world/mp4/방패로 써먹어야겠다.mp4",
+      "korean": "방패로 써먹어야겠다",
+      "russian": "Придётся использовать это как щит.",
+      "new": true,
+      "english": "I guess I'll have to use it as a shield."
+    },
+    {
+      "video": "video/world/벌써 10억 깎였어요.webm",
+      "videoMp4": "video/world/mp4/벌써 10억 깎였어요.mp4",
+      "korean": "벌써 10억 깎였어요",
+      "russian": "Уже скинули 1 миллиард вон.",
+      "new": true,
+      "english": "It's already been reduced by 1 billion."
+    },
+    {
+      "video": "video/world/법무팀에다가 넘겨버리라고.webm",
+      "videoMp4": "video/world/mp4/법무팀에다가 넘겨버리라고.mp4",
+      "korean": "법무팀에다가 넘겨버리라고",
+      "russian": "Передайте это юротделу.",
+      "new": true,
+      "english": "Hand it over to the legal team."
+    },
+    {
+      "video": "video/world/보내는 것도 아주 안 될 일은 아니다.webm",
+      "videoMp4": "video/world/mp4/보내는 것도 아주 안 될 일은 아니다.mp4",
+      "korean": "보내는 것도 아주 안 될 일은 아니다",
+      "russian": "И отправить его — тоже не такая уж плохая идея.",
+      "new": true,
+      "english": "Sending it isn't entirely out of the question."
+    },
+    {
+      "video": "video/world/본인들의 10년 후의 모습을 상상해 본다면.webm",
+      "videoMp4": "video/world/mp4/본인들의 10년 후의 모습을 상상해 본다면.mp4",
+      "korean": "본인들의 10년 후의 모습을 상상해 본다면",
+      "russian": "Если представить, какими вы будете через десять лет...",
+      "new": true,
+      "english": "If you imagine what you yourselves will look like in ten years..."
+    },
+    {
+      "video": "video/world/불러서 상을 줘야지.webm",
+      "videoMp4": "video/world/mp4/불러서 상을 줘야지.mp4",
+      "korean": "불러서 상을 줘야지",
+      "russian": "Надо позвать его и наградить.",
+      "new": true,
+      "english": "We should call them in and give them an award."
+    },
+    {
+      "video": "video/world/뺨을 때린다.webm",
+      "videoMp4": "video/world/mp4/뺨을 때린다.mp4",
+      "korean": "뺨을 때린다",
+      "russian": "Даёт пощёчину",
+      "new": true,
+      "english": "Slaps the cheek"
+    },
+    {
+      "video": "video/world/선택의 기회를 드리는 겁니다.webm",
+      "videoMp4": "video/world/mp4/선택의 기회를 드리는 겁니다.mp4",
+      "korean": "선택의 기회를 드리는 겁니다",
+      "russian": "Я даю вам возможность выбора",
+      "new": true,
+      "english": "I’m giving you a chance to choose"
+    },
+    {
+      "video": "video/world/설마.webm",
+      "videoMp4": "video/world/mp4/설마.mp4",
+      "korean": "설마?",
+      "russian": "Не может быть?",
+      "new": true,
+      "english": "No way?"
+    },
+    {
+      "video": "video/world/신경 쓰지 말고 하는 거 봐줘요.webm",
+      "videoMp4": "video/world/mp4/신경 쓰지 말고 하는 거 봐줘요.mp4",
+      "korean": "신경 쓰지 말고 하는 거 봐줘요",
+      "russian": "Не обращайте внимания, просто посмотрите, как я это делаю",
+      "new": true,
+      "english": "Don’t worry about it, just watch me do it"
+    },
+    {
+      "video": "video/world/실록에 기록된 사실이니까.webm",
+      "videoMp4": "video/world/mp4/실록에 기록된 사실이니까.mp4",
+      "korean": "실록에 기록된 사실이니까",
+      "russian": "Потому что это факт, зафиксированный в летописи",
+      "new": true,
+      "english": "Because it’s a fact recorded in the annals"
+    },
+    {
+      "video": "video/world/아_ 그래서 말투가 그렇게.webm",
+      "videoMp4": "video/world/mp4/아_ 그래서 말투가 그렇게.mp4",
+      "korean": "아_ 그래서 말투가 그렇게",
+      "russian": "А, вот почему у тебя такой тон",
+      "new": true,
+      "english": "Ah, so that’s why you speak like that"
+    },
+    {
+      "video": "video/world/아까부터 사사건건 시비조구나.webm",
+      "videoMp4": "video/world/mp4/아까부터 사사건건 시비조구나.mp4",
+      "korean": "아까부터 사사건건 시비조구나",
+      "russian": "Ты с самого начала ко всему придираешься",
+      "new": true,
+      "english": "You’ve been picking a fight over everything since earlier"
+    },
+    {
+      "video": "video/world/아무리 화가 나도 그렇지.webm",
+      "videoMp4": "video/world/mp4/아무리 화가 나도 그렇지.mp4",
+      "korean": "아무리 화가 나도 그렇지",
+      "russian": "Как бы ты ни злился, это уже слишком",
+      "new": true,
+      "english": "No matter how angry you are, that’s still too much"
+    },
+    {
+      "video": "video/world/아주 그냥 홀딱 뺏겨 먹었어야 했는데.webm",
+      "videoMp4": "video/world/mp4/아주 그냥 홀딱 뺏겨 먹었어야 했는데.mp4",
+      "korean": "아주 그냥 홀딱 뺏겨 먹었어야 했는데",
+      "russian": "Надо было просто отдать всё подчистую",
+      "new": true,
+      "english": "We should’ve just had everything taken away from us"
+    },
+    {
+      "video": "video/world/안녕하세요.webm",
+      "videoMp4": "video/world/mp4/안녕하세요.mp4",
+      "korean": "안녕하세요",
+      "russian": "Здравствуйте",
+      "new": true,
+      "english": "Hello"
+    },
+    {
+      "video": "video/world/앞뒤 없이 사람을 패대기 치질 않나.webm",
+      "videoMp4": "video/world/mp4/앞뒤 없이 사람을 패대기 치질 않나.mp4",
+      "korean": "앞뒤 없이 사람을 패대기 치질 않나",
+      "russian": "И без раздумий швыряет людей куда попало",
+      "new": true,
+      "english": "And he just tosses people around without thinking"
+    },
+    {
+      "video": "video/world/어느 정도 짐작은 하고 있었다.webm",
+      "videoMp4": "video/world/mp4/어느 정도 짐작은 하고 있었다.mp4",
+      "korean": "어느 정도 짐작은 하고 있었다",
+      "russian": "Я в какой-то степени догадывался",
+      "new": true,
+      "english": "I had some idea"
+    },
+    {
+      "video": "video/world/어떤 모습일까요.webm",
+      "videoMp4": "video/world/mp4/어떤 모습일까요.mp4",
+      "korean": "어떤 모습일까요?",
+      "russian": "Как это будет выглядеть?",
+      "new": true,
+      "english": "What will it look like?"
+    },
+    {
+      "video": "video/world/어떤 선택을 하시겠어요.webm",
+      "videoMp4": "video/world/mp4/어떤 선택을 하시겠어요.mp4",
+      "korean": "어떤 선택을 하시겠어요?",
+      "russian": "Какой выбор вы сделаете?",
+      "new": true,
+      "english": "Which choice will you make?"
+    }
+  ],
+  "b3": [
+    {
+      "video": "video/world/어떻게 오셨어요.webm",
+      "videoMp4": "video/world/mp4/어떻게 오셨어요.mp4",
+      "korean": "어떻게 오셨어요?",
+      "russian": "Как вы сюда попали?",
+      "new": true,
+      "english": "How did you get here?"
+    },
+    {
+      "video": "video/world/여우비의 유래는 다들 아시죠.webm",
+      "videoMp4": "video/world/mp4/여우비의 유래는 다들 아시죠.mp4",
+      "korean": "여우비의 유래는 다들 아시죠",
+      "russian": "Вы же все знаете происхождение «лисий дождь», верно?",
+      "new": true,
+      "english": "You all know the origin of the term “sunshower,” right?"
+    },
+    {
+      "video": "video/world/연예계에서 계속 일은 하겠지만.webm",
+      "videoMp4": "video/world/mp4/연예계에서 계속 일은 하겠지만.mp4",
+      "korean": "연예계에서 계속 일은 하겠지만",
+      "russian": "Я и дальше буду работать в индустрии развлечений, но...",
+      "new": true,
+      "english": "I’ll keep working in the entertainment industry, but..."
+    },
+    {
+      "video": "video/world/오디션은 코너 돌아서 응시자들 따라가시면 됩니다.webm",
+      "videoMp4": "video/world/mp4/오디션은 코너 돌아서 응시자들 따라가시면 됩니다.mp4",
+      "korean": "오디션은 코너 돌아서 응시자들 따라가시면 됩니다",
+      "russian": "На прослушивание нужно пройти за угол и следовать за кандидатами",
+      "new": true,
+      "english": "For the audition, turn the corner and follow the applicants"
+    },
+    {
+      "video": "video/world/완전 미친 여자 아니냐고.webm",
+      "videoMp4": "video/world/mp4/완전 미친 여자 아니냐고.mp4",
+      "korean": "완전 미친 여자 아니냐고",
+      "russian": "Да она же совсем сумасшедшая, нет?",
+      "new": true,
+      "english": "Isn’t she completely crazy?"
+    },
+    {
+      "video": "video/world/왜 벌을 주냐고.webm",
+      "videoMp4": "video/world/mp4/왜 벌을 주냐고.mp4",
+      "korean": "왜 벌을 주냐고",
+      "russian": "За что вы меня наказываете?",
+      "new": true,
+      "english": "Why are you punishing me?"
+    },
+    {
+      "video": "video/world/왜 자꾸 조선시대 사람처럼 말하고 그래.webm",
+      "videoMp4": "video/world/mp4/왜 자꾸 조선시대 사람처럼 말하고 그래.mp4",
+      "korean": "왜 자꾸 조선시대 사람처럼 말하고 그래?",
+      "russian": "Почему ты всё время говоришь как человек из эпохи Чосон?",
+      "new": true,
+      "english": "Why do you keep talking like someone from the Joseon era?"
+    },
+    {
+      "video": "video/world/외계인 침공 정도는 해야.webm",
+      "videoMp4": "video/world/mp4/외계인 침공 정도는 해야.mp4",
+      "korean": "외계인 침공 정도는 해야",
+      "russian": "Нужно хотя бы вторжение инопланетян.",
+      "new": true,
+      "english": "It would take at least an alien invasion."
+    },
+    {
+      "video": "video/world/워낙 인상이 흐릿해요.webm",
+      "videoMp4": "video/world/mp4/워낙 인상이 흐릿해요.mp4",
+      "korean": "워낙 인상이 흐릿해요",
+      "russian": "У него очень расплывчатая внешность.",
+      "new": true,
+      "english": "Their face is so vague and forgettable."
+    },
+    {
+      "video": "video/world/원자재 부작용 루머로 쪽박차실지.webm",
+      "videoMp4": "video/world/mp4/원자재 부작용 루머로 쪽박차실지.mp4",
+      "korean": "원자재 부작용 루머로 쪽박차실지",
+      "russian": "Не прогорите ли вы из-за слухов о побочных эффектах сырья?",
+      "new": true,
+      "english": "Could you end up ruined because of rumors about side effects of the raw materials?"
+    },
+    {
+      "video": "video/world/이렇게 대표님 악명이 또 갱신이네요.webm",
+      "videoMp4": "video/world/mp4/이렇게 대표님 악명이 또 갱신이네요.mp4",
+      "korean": "이렇게 대표님 악명이 또 갱신이네요",
+      "russian": "Вот так у нашего директора снова обновилась дурная слава.",
+      "new": true,
+      "english": "And just like that, your boss's bad reputation has been updated again."
+    },
+    {
+      "video": "video/world/이번 주 중으로 미팅도 잡았어요.webm",
+      "videoMp4": "video/world/mp4/이번 주 중으로 미팅도 잡았어요.mp4",
+      "korean": "이번 주 중으로 미팅도 잡았어요",
+      "russian": "Я ещё назначил встречу на этой неделе.",
+      "new": true,
+      "english": "I also scheduled a meeting for sometime this week."
+    },
+    {
+      "video": "video/world/이해가 되십니까.webm",
+      "videoMp4": "video/world/mp4/이해가 되십니까.mp4",
+      "korean": "이해가 되십니까?",
+      "russian": "Вы понимаете?",
+      "new": true,
+      "english": "Do you understand?"
+    },
+    {
+      "video": "video/world/자신 없죠.webm",
+      "videoMp4": "video/world/mp4/자신 없죠.mp4",
+      "korean": "자신 없죠?",
+      "russian": "Нет уверенности, да?",
+      "new": true,
+      "english": "You’re not confident, are you?"
+    },
+    {
+      "video": "video/world/자존심 좀 상한다 이거니.webm",
+      "videoMp4": "video/world/mp4/자존심 좀 상한다 이거니.mp4",
+      "korean": "자존심 좀 상한다 이거니",
+      "russian": "Это, знаете ли, немного задевает моё самолюбие.",
+      "new": true,
+      "english": "That does bruise my pride a bit."
+    },
+    {
+      "video": "video/world/저 그림이 중전일 것이라고 누구한테 들은 거냐.webm",
+      "videoMp4": "video/world/mp4/저 그림이 중전일 것이라고 누구한테 들은 거냐.mp4",
+      "korean": "저 그림이 중전일 것이라고 누구한테 들은 거냐?",
+      "russian": "От кого ты услышал, что на той картине — королева?",
+      "new": true,
+      "english": "Who told you that the woman in that painting was the queen?"
+    },
+    {
+      "video": "video/world/조선시대 정사기록물에 여자 이름은 없습니다만.webm",
+      "videoMp4": "video/world/mp4/조선시대 정사기록물에 여자 이름은 없습니다만.mp4",
+      "korean": "조선시대 정사기록물에 여자 이름은 없습니다만",
+      "russian": "В официальных хрониках эпохи Чосон женских имён нет.",
+      "new": true,
+      "english": "There are no women's names in the official records of the Joseon era, though."
+    },
+    {
+      "video": "video/world/조선시대도 아니고 그딴 걸 좋다고 보라고 하나.webm",
+      "videoMp4": "video/world/mp4/조선시대도 아니고 그딴 걸 좋다고 보라고 하나.mp4",
+      "korean": "조선시대도 아니고 그딴 걸 좋다고 보라고 하나",
+      "russian": "Это же не эпоха Чосон, чтобы нам велели с удовольствием на такое смотреть.",
+      "new": true,
+      "english": "This isn't the Joseon era, so why are we supposed to watch that crap and like it?"
+    },
+    {
+      "video": "video/world/죽는다는 각오로 왔어.webm",
+      "videoMp4": "video/world/mp4/죽는다는 각오로 왔어.mp4",
+      "korean": "죽는다는 각오로 왔어",
+      "russian": "Я пришёл, готовый умереть.",
+      "new": true,
+      "english": "I came prepared to die."
+    },
+    {
+      "video": "video/world/지금 뭐가 하는 짓이야 이게.webm",
+      "videoMp4": "video/world/mp4/지금 뭐가 하는 짓이야 이게.mp4",
+      "korean": "지금 뭐가 하는 짓이야 이게?",
+      "russian": "Что это ты сейчас творишь?",
+      "new": true,
+      "english": "What the hell do you think you're doing?"
+    },
+    {
+      "video": "video/world/지금도 10초마다 10억씩 떨어집니다.webm",
+      "videoMp4": "video/world/mp4/지금도 10초마다 10억씩 떨어집니다.mp4",
+      "korean": "지금도 10초마다 10억씩 떨어집니다",
+      "russian": "И сейчас каждые 10 секунд падает по 100 миллионов.",
+      "new": true,
+      "english": "Even now, it's dropping by 100 million every 10 seconds."
+    },
+    {
+      "video": "video/world/진짜 의미가 따로 있다고 해요.webm",
+      "videoMp4": "video/world/mp4/진짜 의미가 따로 있다고 해요.mp4",
+      "korean": "진짜 의미가 따로 있다고 해요",
+      "russian": "Говорят, там есть ещё и другой, настоящий смысл.",
+      "new": true,
+      "english": "They say there's a real meaning behind it."
+    },
+    {
+      "video": "video/world/천재십니다.webm",
+      "videoMp4": "video/world/mp4/천재십니다.mp4",
+      "korean": "천재십니다",
+      "russian": "Вы гений.",
+      "new": true,
+      "english": "You're a genius."
+    },
+    {
+      "video": "video/world/평안히 가셔.webm",
+      "videoMp4": "video/world/mp4/평안히 가셔.mp4",
+      "korean": "평안히 가셔",
+      "russian": "Идите с миром.",
+      "new": true,
+      "english": "Go in peace."
+    },
+    {
+      "video": "video/world/행운을 빌게요.webm",
+      "videoMp4": "video/world/mp4/행운을 빌게요.mp4",
+      "korean": "행운을 빌게요",
+      "russian": "Желаю удачи.",
+      "new": true,
+      "english": "I wish you luck."
+    },
+    {
+      "video": "video/world/허리 괜찮아요_ 바로 차려도 되겠어요.webm",
+      "videoMp4": "video/world/mp4/허리 괜찮아요_ 바로 차려도 되겠어요.mp4",
+      "korean": "허리 괜찮아요? 바로 차려도 되겠어요",
+      "russian": "Спина в порядке? Можно сразу вставать?",
+      "new": true,
+      "english": "Is your back okay? Can you sit up right away?"
+    },
+    {
+      "video": "video/world/후궁은 사초나 유물이 따로 남아있질 않아요.webm",
+      "videoMp4": "video/world/mp4/후궁은 사초나 유물이 따로 남아있질 않아요.mp4",
+      "korean": "후궁은 사초나 유물이 따로 남아있질 않아요.",
+      "russian": "О наложницах не осталось отдельных хроник или артефактов.",
+      "new": true,
+      "english": "There are no separate records or relics left about the concubines."
+    }
+  ],
+  "b4": [],
+  "b5": []
+}

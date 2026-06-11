@@ -129,10 +129,38 @@ def rebuild_config(root_arg=None):
         else:
             print(f"  ✓  {key}: {total_count} видео")
 
+    # Песни: копируем isNewSong из мастера песни в config (как hasNew у тем),
+    # чтобы дашборд находил новые песни по конфигу, без запроса каждого мастера.
+    songs = config.get("songs")
+    total_songs = 0
+    if isinstance(songs, dict):
+        for skey in sorted(songs.keys()):
+            sentry = songs[skey]
+            if not isinstance(sentry, dict):
+                continue
+            total_songs += 1
+            smaster = sentry.get("masterJsonPath", "")
+            sfile = os.path.join(repo_root, smaster)
+            if not os.path.exists(sfile):
+                sfile = os.path.join(json_dir, os.path.basename(smaster))
+            if not os.path.exists(sfile):
+                print(f"  ⚠️  {skey}: не найден {smaster}")
+                continue
+            with open(sfile, "r", encoding="utf-8") as f:
+                sdata = json.load(f)
+            is_new_song = bool(isinstance(sdata, dict) and sdata.get("isNewSong"))
+            old_new = sentry.get("isNewSong")
+            sentry["isNewSong"] = is_new_song
+            if old_new != is_new_song:
+                print(f"  ✏️  {skey}: isNewSong {old_new}→{is_new_song}")
+                updated += 1
+            else:
+                print(f"  ✓  {skey}: isNewSong {is_new_song}")
+
     with open(config_path, "w", encoding="utf-8") as f:
         json.dump(config, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ Готово! {total_themes} тем, {updated} обновлено")
+    print(f"\n✅ Готово! {total_themes} тем, {total_songs} песен, {updated} обновлено")
 
 
 if __name__ == "__main__":

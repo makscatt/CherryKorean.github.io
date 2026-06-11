@@ -90,13 +90,15 @@
       "title": "나는 반딧불 (Я — светлячок)",
       "title_en": "나는 반딧불 (I Am a Firefly)",
       "cover": "videothemes/songs_covers/song1.png",
-      "masterJsonPath": "videothemes/json/videotheme36.json"
+      "masterJsonPath": "videothemes/json/videotheme36.json",
+      "isNewSong": false
     },
     "song2": {
       "title": "Итевон Класс - Начало(Кахо)",
       "title_en": "Itaewon Class - Start Over(Gaho)",
       "cover": "videothemes/songs_covers/song2.png",
-      "masterJsonPath": "videothemes/json/videotheme38.json"
+      "masterJsonPath": "videothemes/json/videotheme38.json",
+      "isNewSong": true
     }
   },
   "theme0": {
@@ -1101,7 +1103,33 @@
       }
     ],
     "totalCount": 66,
-    "hasNew": true,
+    "hasNew": false,
     "title_en": "WonderFools"
+  },
+  "theme39": {
+    "coverImage": "videothemes/subthemebc/world.png",
+    "title": "Дивный новый мир",
+    "masterJsonPath": "videothemes/json/videotheme39.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      }
+    ],
+    "title_en": "Brave New World",
+    "totalCount": 81,
+    "hasNew": true
   }
 }
