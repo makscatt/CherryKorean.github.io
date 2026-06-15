@@ -98,6 +98,13 @@
       "title_en": "Itaewon Class - Start Over(Gaho)",
       "cover": "videothemes/songs_covers/song2.png",
       "masterJsonPath": "videothemes/json/videotheme38.json",
+      "isNewSong": false
+    },
+    "song3": {
+      "title": "Kimchi Club",
+      "title_en": "Kimchi Club",
+      "cover": "videothemes/songs_covers/song3.png",
+      "masterJsonPath": "videothemes/json/videotheme40.json",
       "isNewSong": true
     }
   },

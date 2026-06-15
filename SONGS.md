@@ -28,12 +28,36 @@ ffmpeg -y -i "клип.webm" -c:v libx264 -b:v 620k -pass 2 -vf scale=-2:720 -pr
 
 ### 2. Тайминги строк — karaoke_timer
 
-Тулза: `projects/archive/karaoke/karaoke_timer.pyw`
+Тулза: `projects/tools/karaoke/karaoke_timer.pyw`
 (нужны `pip install python-vlc` + установленный VLC).
 
 Загрузить полный клип, вставить текст песни, по строкам жать `T` (или SET) —
 сохранить JSON: `[{"t": 26.6, "korean": "..."}]` → положить как
 `video/<папка_песни>/karaoke_lyrics.json`.
+
+### 2.1. Нарезка фрагментов-фраз (b1) — Makscut из тайминг-JSON
+
+Если фрагменты ещё не нарезаны (нет готового выхода `approved/` из обычного
+пайплайна Makscut) — нарезаем их прямо из `karaoke_lyrics.json`: каждая строка
+песни = отдельный клип, корейский текст строки → имя файла.
+
+```bash
+cd projects/Makscut
+python make_plan_from_lyrics.py \
+  "../Telegram-Korean-mini-App/video/<папка>/<полный клип>.webm" \
+  "../Telegram-Korean-mini-App/video/<папка>/karaoke_lyrics.json" \
+  [--gap-ms 900] [--lead-ms 150] [--max-ms 7000]
+```
+
+Скрипт строит `cut_plan.json` (старт = метка строки − `lead-ms`, конец = старт
+следующей строки − `gap-ms`, паузы между куплетами режутся по `max-ms`) и сам
+открывает GUI `video_cutter.pyw`. В GUI подкрутить OUT-точки по слуху →
+«Завершить партию». Выход — `Makscut/clips/<стем видео>/approved/`:
+`.webm` в корне + `.mp4` в `mp4/`, имена = корейский текст. Перенести их в
+`video/<папка_песни>/` (это и есть фрагменты для `b1`).
+
+`--gap-ms` — зазор между соседними клипами на таймлайне (чтобы не накладывались);
+больше значение = больше пустота между фразами.
 
 ### 3. Переводы — контекстные, НЕ дословные
 

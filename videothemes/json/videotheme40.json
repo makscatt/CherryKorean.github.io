@@ -1,0 +1,450 @@
+{
+  "isSong": true,
+  "isNewSong": true,
+  "karaoke": {
+    "clip": "video/btunaskimchiclub/BTunaS-Kimchi Club.webm",
+    "clipMp4": "video/btunaskimchiclub/mp4/BTunaS-Kimchi Club.mp4",
+    "lyrics": [
+      {
+        "t": 0.01,
+        "korean": "김치 클럽 모여봐, 마이크 잡고 시작해",
+        "russian": "Кимчи-клуб, собирайтесь — возьмите микрофон и начинайте.",
+        "english": "Kimchi Club, gather around — grab the mic and start."
+      },
+      {
+        "t": 6.67,
+        "korean": "어제보다 한 단어 더, 매일매일 쌓아가",
+        "russian": "Каждый день накапливай хотя бы одно слово больше, чем вчера.",
+        "english": "Build up one more word than yesterday, every day."
+      },
+      {
+        "t": 26.92,
+        "korean": "처음엔 어려워도 포기하지 않으면서",
+        "russian": "Пусть сначала и трудно, не сдавайся.",
+        "english": "Even if it's hard at first, don't give up."
+      },
+      {
+        "t": 30.04,
+        "korean": "한 걸음씩 걷다 보면 길이 점점 보일 거야",
+        "russian": "Если идти шаг за шагом, дорога постепенно станет видна.",
+        "english": "If you keep walking one step at a time, the path will gradually become clear."
+      },
+      {
+        "t": 33.16,
+        "korean": "모르는 게 많아도 부끄러워하지 마",
+        "russian": "Даже если многого не знаешь, не стесняйся.",
+        "english": "Even if you don't know a lot, don't be embarrassed."
+      },
+      {
+        "t": 36.24,
+        "korean": "틀리면서 배우는 거, 그게 바로 우리 방법",
+        "russian": "Учиться, ошибаясь, — вот наш способ.",
+        "english": "We learn by making mistakes — that's our way."
+      },
+      {
+        "t": 39.84,
+        "korean": "할 수 있어요 다",
+        "russian": "Ты всё сможешь",
+        "english": "You can do it, all of it"
+      },
+      {
+        "t": 43.74,
+        "korean": "우리 힘 합쳐가",
+        "russian": "Давайте объединять наши силы.",
+        "english": "Let's join our strength."
+      },
+      {
+        "t": 46.6,
+        "korean": "함께 외쳐봐 와",
+        "russian": "Крикнем вместе, вау!",
+        "english": "Shout together, wow!"
+      },
+      {
+        "t": 50.44,
+        "korean": "화이팅 한 번 더",
+        "russian": "Вперёд, ещё раз",
+        "english": "Fighting, one more time"
+      },
+      {
+        "t": 53.87,
+        "korean": "한국에 가자",
+        "russian": "Поехали в Корею",
+        "english": "Let's go to Korea"
+      },
+      {
+        "t": 56.94,
+        "korean": "바다 넘어가자",
+        "russian": "Давай переберёмся через море.",
+        "english": "Let's go across the sea."
+      },
+      {
+        "t": 60.02,
+        "korean": "함께 꿈꾸자",
+        "russian": "Давай мечтать вместе",
+        "english": "Let's dream together"
+      },
+      {
+        "t": 63.12,
+        "korean": "한국어 공부하자",
+        "russian": "Давай учить корейский",
+        "english": "Let's study Korean"
+      },
+      {
+        "t": 70.64,
+        "korean": "음악 속에 빠지면서 단어가 입에 붙어",
+        "russian": "Погружаясь в музыку, слова сами запоминаются.",
+        "english": "As you get lost in the music, the words stick to your tongue."
+      },
+      {
+        "t": 73.5,
+        "korean": "드라마 한 편 볼수록 귀가 점점 열려가",
+        "russian": "Чем больше смотришь дорам, тем лучше начинает воспринимать слух.",
+        "english": "The more dramas you watch, the more your ears open up."
+      },
+      {
+        "t": 76.62,
+        "korean": "무대가 멀어 보여도 꿈을 향해 달려가",
+        "russian": "Даже если сцена кажется далёкой, беги к своей мечте.",
+        "english": "Even if the stage seems far away, run toward your dream."
+      },
+      {
+        "t": 79.7,
+        "korean": "혼자선 힘들어도 함께라면 멈추지 마",
+        "russian": "Даже если одному тяжело, не останавливайся, если мы вместе",
+        "english": "Even if it's hard alone, don't stop if we're together"
+      },
+      {
+        "t": 83.34,
+        "korean": "길을 걸어봐 봐",
+        "russian": "Попробуй пройтись по дороге.",
+        "english": "Try walking down the road."
+      },
+      {
+        "t": 86.67,
+        "korean": "빛나는 도로 다",
+        "russian": "Это сияющая дорога.",
+        "english": "It's a shining road."
+      },
+      {
+        "t": 90.27,
+        "korean": "멈추지 마시고",
+        "russian": "Не останавливайтесь.",
+        "english": "Don't stop."
+      },
+      {
+        "t": 93.88,
+        "korean": "손잡아 한 번 더",
+        "russian": "Возьми за руку ещё раз.",
+        "english": "Take my hand one more time."
+      },
+      {
+        "t": 97.22,
+        "korean": "한국에 가자",
+        "russian": "Поехали в Корею",
+        "english": "Let's go to Korea"
+      },
+      {
+        "t": 100.04,
+        "korean": "바다 넘어가자",
+        "russian": "Давай переберёмся через море.",
+        "english": "Let's go across the sea."
+      },
+      {
+        "t": 103.36,
+        "korean": "함께 꿈꾸자",
+        "russian": "Давай мечтать вместе",
+        "english": "Let's dream together"
+      },
+      {
+        "t": 106.44,
+        "korean": "한국어 공부하자",
+        "russian": "Давай учить корейский",
+        "english": "Let's study Korean"
+      },
+      {
+        "t": 123.52,
+        "korean": "우리 함께라면 모두 다 이룰 거야",
+        "russian": "Если мы вместе, мы всего добьёмся.",
+        "english": "If we're together, we'll achieve everything."
+      },
+      {
+        "t": 126.84,
+        "korean": "김치 클럽, 오늘도 — 화이팅 한 번 더!",
+        "russian": "Кимчи-клуб — и сегодня тоже, давай ещё раз, вперёд!",
+        "english": "Kimchi Club — today too, one more time, fighting!"
+      },
+      {
+        "t": 129.64,
+        "korean": "우리 함께라면 모두 다 이룰 거야",
+        "russian": "Если мы вместе, мы всего добьёмся.",
+        "english": "If we're together, we'll achieve everything."
+      },
+      {
+        "t": 133.0,
+        "korean": "김치 클럽, 오늘도",
+        "russian": "Кимчи-клуб — и сегодня тоже",
+        "english": "Kimchi Club — today too"
+      },
+      {
+        "t": 135.66,
+        "korean": "화이팅 한 번 더",
+        "russian": "Вперёд, ещё раз",
+        "english": "Fighting, one more time"
+      }
+    ]
+  },
+  "b1": [
+    {
+      "video": "video/btunaskimchiclub/김치 클럽 모여봐_ 마이크 잡고 시작해.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/김치 클럽 모여봐_ 마이크 잡고 시작해.mp4",
+      "korean": "김치 클럽 모여봐, 마이크 잡고 시작해",
+      "russian": "Кимчи-клуб, собирайтесь — возьмите микрофон и начинайте.",
+      "new": true,
+      "english": "Kimchi Club, gather around — grab the mic and start."
+    },
+    {
+      "video": "video/btunaskimchiclub/어제보다 한 단어 더_ 매일매일 쌓아가.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/어제보다 한 단어 더_ 매일매일 쌓아가.mp4",
+      "korean": "어제보다 한 단어 더, 매일매일 쌓아가",
+      "russian": "Каждый день накапливай хотя бы одно слово больше, чем вчера.",
+      "new": true,
+      "english": "Build up one more word than yesterday, every day."
+    },
+    {
+      "video": "video/btunaskimchiclub/처음엔 어려워도 포기하지 않으면서.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/처음엔 어려워도 포기하지 않으면서.mp4",
+      "korean": "처음엔 어려워도 포기하지 않으면서",
+      "russian": "Пусть сначала и трудно, не сдавайся.",
+      "new": true,
+      "english": "Even if it's hard at first, don't give up."
+    },
+    {
+      "video": "video/btunaskimchiclub/한 걸음씩 걷다 보면 길이 점점 보일 거야.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/한 걸음씩 걷다 보면 길이 점점 보일 거야.mp4",
+      "korean": "한 걸음씩 걷다 보면 길이 점점 보일 거야",
+      "russian": "Если идти шаг за шагом, дорога постепенно станет видна.",
+      "new": true,
+      "english": "If you keep walking one step at a time, the path will gradually become clear."
+    },
+    {
+      "video": "video/btunaskimchiclub/모르는 게 많아도 부끄러워하지 마.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/모르는 게 많아도 부끄러워하지 마.mp4",
+      "korean": "모르는 게 많아도 부끄러워하지 마",
+      "russian": "Даже если многого не знаешь, не стесняйся.",
+      "new": true,
+      "english": "Even if you don't know a lot, don't be embarrassed."
+    },
+    {
+      "video": "video/btunaskimchiclub/틀리면서 배우는 거_ 그게 바로 우리 방법.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/틀리면서 배우는 거_ 그게 바로 우리 방법.mp4",
+      "korean": "틀리면서 배우는 거, 그게 바로 우리 방법",
+      "russian": "Учиться, ошибаясь, — вот наш способ.",
+      "new": true,
+      "english": "We learn by making mistakes — that's our way."
+    },
+    {
+      "video": "video/btunaskimchiclub/할 수 있어요 다.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/할 수 있어요 다.mp4",
+      "korean": "할 수 있어요 다",
+      "russian": "Ты всё сможешь",
+      "new": true,
+      "english": "You can do it, all of it"
+    },
+    {
+      "video": "video/btunaskimchiclub/우리 힘 합쳐가.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/우리 힘 합쳐가.mp4",
+      "korean": "우리 힘 합쳐가",
+      "russian": "Давайте объединять наши силы.",
+      "new": true,
+      "english": "Let's join our strength."
+    },
+    {
+      "video": "video/btunaskimchiclub/함께 외쳐봐 와.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/함께 외쳐봐 와.mp4",
+      "korean": "함께 외쳐봐 와",
+      "russian": "Крикнем вместе, вау!",
+      "new": true,
+      "english": "Shout together, wow!"
+    },
+    {
+      "video": "video/btunaskimchiclub/화이팅 한 번 더.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/화이팅 한 번 더.mp4",
+      "korean": "화이팅 한 번 더",
+      "russian": "Вперёд, ещё раз",
+      "new": true,
+      "english": "Fighting, one more time"
+    },
+    {
+      "video": "video/btunaskimchiclub/한국에 가자.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/한국에 가자.mp4",
+      "korean": "한국에 가자",
+      "russian": "Поехали в Корею",
+      "new": true,
+      "english": "Let's go to Korea"
+    },
+    {
+      "video": "video/btunaskimchiclub/바다 넘어가자.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/바다 넘어가자.mp4",
+      "korean": "바다 넘어가자",
+      "russian": "Давай переберёмся через море.",
+      "new": true,
+      "english": "Let's go across the sea."
+    },
+    {
+      "video": "video/btunaskimchiclub/함께 꿈꾸자.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/함께 꿈꾸자.mp4",
+      "korean": "함께 꿈꾸자",
+      "russian": "Давай мечтать вместе",
+      "new": true,
+      "english": "Let's dream together"
+    },
+    {
+      "video": "video/btunaskimchiclub/한국어 공부하자.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/한국어 공부하자.mp4",
+      "korean": "한국어 공부하자",
+      "russian": "Давай учить корейский",
+      "new": true,
+      "english": "Let's study Korean"
+    },
+    {
+      "video": "video/btunaskimchiclub/음악 속에 빠지면서 단어가 입에 붙어.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/음악 속에 빠지면서 단어가 입에 붙어.mp4",
+      "korean": "음악 속에 빠지면서 단어가 입에 붙어",
+      "russian": "Погружаясь в музыку, слова сами запоминаются.",
+      "new": true,
+      "english": "As you get lost in the music, the words stick to your tongue."
+    },
+    {
+      "video": "video/btunaskimchiclub/드라마 한 편 볼수록 귀가 점점 열려가.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/드라마 한 편 볼수록 귀가 점점 열려가.mp4",
+      "korean": "드라마 한 편 볼수록 귀가 점점 열려가",
+      "russian": "Чем больше смотришь дорам, тем лучше начинает воспринимать слух.",
+      "new": true,
+      "english": "The more dramas you watch, the more your ears open up."
+    },
+    {
+      "video": "video/btunaskimchiclub/무대가 멀어 보여도 꿈을 향해 달려가.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/무대가 멀어 보여도 꿈을 향해 달려가.mp4",
+      "korean": "무대가 멀어 보여도 꿈을 향해 달려가",
+      "russian": "Даже если сцена кажется далёкой, беги к своей мечте.",
+      "new": true,
+      "english": "Even if the stage seems far away, run toward your dream."
+    },
+    {
+      "video": "video/btunaskimchiclub/혼자선 힘들어도 함께라면 멈추지 마.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/혼자선 힘들어도 함께라면 멈추지 마.mp4",
+      "korean": "혼자선 힘들어도 함께라면 멈추지 마",
+      "russian": "Даже если одному тяжело, не останавливайся, если мы вместе",
+      "new": true,
+      "english": "Even if it's hard alone, don't stop if we're together"
+    },
+    {
+      "video": "video/btunaskimchiclub/길을 걸어봐 봐.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/길을 걸어봐 봐.mp4",
+      "korean": "길을 걸어봐 봐",
+      "russian": "Попробуй пройтись по дороге.",
+      "new": true,
+      "english": "Try walking down the road."
+    },
+    {
+      "video": "video/btunaskimchiclub/빛나는 도로 다.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/빛나는 도로 다.mp4",
+      "korean": "빛나는 도로 다",
+      "russian": "Это сияющая дорога.",
+      "new": true,
+      "english": "It's a shining road."
+    },
+    {
+      "video": "video/btunaskimchiclub/멈추지 마시고.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/멈추지 마시고.mp4",
+      "korean": "멈추지 마시고",
+      "russian": "Не останавливайтесь.",
+      "new": true,
+      "english": "Don't stop."
+    },
+    {
+      "video": "video/btunaskimchiclub/손잡아 한 번 더.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/손잡아 한 번 더.mp4",
+      "korean": "손잡아 한 번 더",
+      "russian": "Возьми за руку ещё раз.",
+      "new": true,
+      "english": "Take my hand one more time."
+    },
+    {
+      "video": "video/btunaskimchiclub/한국에 가자_1.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/한국에 가자_1.mp4",
+      "korean": "한국에 가자",
+      "russian": "Поехали в Корею",
+      "new": true,
+      "english": "Let's go to Korea"
+    },
+    {
+      "video": "video/btunaskimchiclub/바다 넘어가자_1.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/바다 넘어가자_1.mp4",
+      "korean": "바다 넘어가자",
+      "russian": "Давай переберёмся через море.",
+      "new": true,
+      "english": "Let's go across the sea."
+    },
+    {
+      "video": "video/btunaskimchiclub/함께 꿈꾸자_1.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/함께 꿈꾸자_1.mp4",
+      "korean": "함께 꿈꾸자",
+      "russian": "Давай мечтать вместе",
+      "new": true,
+      "english": "Let's dream together"
+    },
+    {
+      "video": "video/btunaskimchiclub/한국어 공부하자_1.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/한국어 공부하자_1.mp4",
+      "korean": "한국어 공부하자",
+      "russian": "Давай учить корейский",
+      "new": true,
+      "english": "Let's study Korean"
+    },
+    {
+      "video": "video/btunaskimchiclub/우리 함께라면 모두 다 이룰 거야.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/우리 함께라면 모두 다 이룰 거야.mp4",
+      "korean": "우리 함께라면 모두 다 이룰 거야",
+      "russian": "Если мы вместе, мы всего добьёмся.",
+      "new": true,
+      "english": "If we're together, we'll achieve everything."
+    },
+    {
+      "video": "video/btunaskimchiclub/김치 클럽_ 오늘도 _ 화이팅 한 번 더.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/김치 클럽_ 오늘도 _ 화이팅 한 번 더.mp4",
+      "korean": "김치 클럽, 오늘도 — 화이팅 한 번 더!",
+      "russian": "Кимчи-клуб — и сегодня тоже, давай ещё раз, вперёд!",
+      "new": true,
+      "english": "Kimchi Club — today too, one more time, fighting!"
+    },
+    {
+      "video": "video/btunaskimchiclub/우리 함께라면 모두 다 이룰 거야_1.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/우리 함께라면 모두 다 이룰 거야_1.mp4",
+      "korean": "우리 함께라면 모두 다 이룰 거야",
+      "russian": "Если мы вместе, мы всего добьёмся.",
+      "new": true,
+      "english": "If we're together, we'll achieve everything."
+    },
+    {
+      "video": "video/btunaskimchiclub/김치 클럽_ 오늘도.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/김치 클럽_ 오늘도.mp4",
+      "korean": "김치 클럽, 오늘도",
+      "russian": "Кимчи-клуб — и сегодня тоже",
+      "new": true,
+      "english": "Kimchi Club — today too"
+    },
+    {
+      "video": "video/btunaskimchiclub/화이팅 한 번 더_1.webm",
+      "videoMp4": "video/btunaskimchiclub/mp4/화이팅 한 번 더_1.mp4",
+      "korean": "화이팅 한 번 더",
+      "russian": "Вперёд, ещё раз",
+      "new": true,
+      "english": "Fighting, one more time"
+    }
+  ],
+  "b2": [],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}
