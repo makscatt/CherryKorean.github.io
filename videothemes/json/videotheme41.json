@@ -1,0 +1,739 @@
+{
+  "b1": [
+    {
+      "isNew": true,
+      "video": "video/lesson/MMA 다닐 때 힘 조절이 안 된다. 쏘리.webm",
+      "videoMp4": "video/lesson/mp4/MMA 다닐 때 힘 조절이 안 된다. 쏘리.mp4",
+      "korean": "MMA 다닐 때 힘 조절이 안 된다. 쏘리",
+      "russian": "Когда ходишь на MMA, не получается контролировать силу. Извини.",
+      "new": true,
+      "english": "When I go to MMA, I can't control my strength. Sorry."
+    },
+    {
+      "video": "video/lesson/가위에 찔려서 안 죽으면 다행이야.webm",
+      "videoMp4": "video/lesson/mp4/가위에 찔려서 안 죽으면 다행이야.mp4",
+      "korean": "가위에 찔려서 안 죽으면 다행이야",
+      "russian": "Если тебя проткнут ножницами и ты не умрёшь, уже хорошо.",
+      "new": true,
+      "english": "If you get stabbed with scissors and don't die, that's lucky."
+    },
+    {
+      "video": "video/lesson/경험으로 생기는 거야.webm",
+      "videoMp4": "video/lesson/mp4/경험으로 생기는 거야.mp4",
+      "korean": "경험으로 생기는 거야",
+      "russian": "Это приходит с опытом.",
+      "new": true,
+      "english": "It comes with experience."
+    },
+    {
+      "video": "video/lesson/교권 보호국이 대체 뭔데요.webm",
+      "videoMp4": "video/lesson/mp4/교권 보호국이 대체 뭔데요.mp4",
+      "korean": "교권 보호국이 대체 뭔데요?",
+      "russian": "Что вообще такое это управление по защите прав учителей?",
+      "new": true,
+      "english": "What on earth is the Teachers' Rights Protection Bureau?"
+    },
+    {
+      "video": "video/lesson/그 선생이 학생을 무서워하면.webm",
+      "videoMp4": "video/lesson/mp4/그 선생이 학생을 무서워하면.mp4",
+      "korean": "그 선생이 학생을 무서워하면",
+      "russian": "Если тот учитель боится ученика",
+      "new": true,
+      "english": "If that teacher is afraid of the student"
+    },
+    {
+      "video": "video/lesson/그게 지금 선생님한테 할 소리야.webm",
+      "videoMp4": "video/lesson/mp4/그게 지금 선생님한테 할 소리야.mp4",
+      "korean": "그게 지금 선생님한테 할 소리야?",
+      "russian": "Это сейчас вообще уместно говорить учителю?",
+      "new": true,
+      "english": "Is that something you should say to a teacher right now?"
+    },
+    {
+      "video": "video/lesson/그날 이후 학교에서 볼 수 없었다.webm",
+      "videoMp4": "video/lesson/mp4/그날 이후 학교에서 볼 수 없었다.mp4",
+      "korean": "그날 이후 학교에서 볼 수 없었다",
+      "russian": "После того дня его больше не видели в школе.",
+      "new": true,
+      "english": "After that day, he could no longer be seen at school."
+    },
+    {
+      "video": "video/lesson/그래서 학교에 못 갔으며.webm",
+      "videoMp4": "video/lesson/mp4/그래서 학교에 못 갔으며.mp4",
+      "korean": "그래서 학교에 못 갔으며",
+      "russian": "Поэтому я не смог пойти в школу, и...",
+      "new": true,
+      "english": "So I couldn't go to school, and..."
+    },
+    {
+      "video": "video/lesson/그래야 공평한 거야.webm",
+      "videoMp4": "video/lesson/mp4/그래야 공평한 거야.mp4",
+      "korean": "그래야 공평한 거야",
+      "russian": "Только так это будет справедливо.",
+      "new": true,
+      "english": "That's the only fair way."
+    },
+    {
+      "video": "video/lesson/그런 거 아니에요.webm",
+      "videoMp4": "video/lesson/mp4/그런 거 아니에요.mp4",
+      "korean": "그런 거 아니에요",
+      "russian": "Да нет, ничего такого.",
+      "new": true,
+      "english": "No, it's not like that."
+    },
+    {
+      "video": "video/lesson/그런 거라고 걱정하지 마.webm",
+      "videoMp4": "video/lesson/mp4/그런 거라고 걱정하지 마.mp4",
+      "korean": "그런 거라고 걱정하지 마",
+      "russian": "Не переживай, ничего такого нет.",
+      "new": true,
+      "english": "Don't worry, it's nothing like that."
+    },
+    {
+      "video": "video/lesson/그런 걸 대체 왜 만드신 겁니까.webm",
+      "videoMp4": "video/lesson/mp4/그런 걸 대체 왜 만드신 겁니까.mp4",
+      "korean": "그런 걸 대체 왜 만드신 겁니까?",
+      "russian": "Зачем вы вообще это сделали?",
+      "new": true,
+      "english": "Why on earth did you make something like that?"
+    },
+    {
+      "video": "video/lesson/그런 소리 들은 적 없는데.webm",
+      "videoMp4": "video/lesson/mp4/그런 소리 들은 적 없는데.mp4",
+      "korean": "그런 소리 들은 적 없는데",
+      "russian": "Я такого не слышал.",
+      "new": true,
+      "english": "I've never heard that before."
+    },
+    {
+      "video": "video/lesson/그럼 니가 그 짐이라도 평생 지고 살아야겠지.webm",
+      "videoMp4": "video/lesson/mp4/그럼 니가 그 짐이라도 평생 지고 살아야겠지.mp4",
+      "korean": "그럼 니가 그 짐이라도 평생 지고 살아야겠지",
+      "russian": "Тогда тебе, наверное, придётся всю жизнь нести хотя бы этот груз.",
+      "new": true,
+      "english": "Then I guess you'll have to carry that burden for the rest of your life."
+    },
+    {
+      "video": "video/lesson/그럼 다음에 더 맞잖아요.webm",
+      "videoMp4": "video/lesson/mp4/그럼 다음에 더 맞잖아요.mp4",
+      "korean": "그럼 다음에 더 맞잖아요",
+      "russian": "Тогда в следующий раз тебя ещё сильнее побьют.",
+      "new": true,
+      "english": "Then you'll get hit even more next time."
+    },
+    {
+      "video": "video/lesson/그럼 또 사양 안 하지.webm",
+      "videoMp4": "video/lesson/mp4/그럼 또 사양 안 하지.mp4",
+      "korean": "그럼 또 사양 안 하지",
+      "russian": "Тогда я снова не откажусь.",
+      "new": true,
+      "english": "Then I won't refuse again."
+    },
+    {
+      "video": "video/lesson/그리고 그 행동에 대한 책임을 지게 하는 것.webm",
+      "videoMp4": "video/lesson/mp4/그리고 그 행동에 대한 책임을 지게 하는 것.mp4",
+      "korean": "그리고 그 행동에 대한 책임을 지게 하는 것",
+      "russian": "И заставить нести ответственность за этот поступок.",
+      "new": true,
+      "english": "And making them take responsibility for that action."
+    },
+    {
+      "video": "video/lesson/그쪽은 정식 선생도 아닌 것 같은데.webm",
+      "videoMp4": "video/lesson/mp4/그쪽은 정식 선생도 아닌 것 같은데.mp4",
+      "korean": "그쪽은 정식 선생도 아닌 것 같은데",
+      "russian": "Похоже, вы даже не настоящий учитель.",
+      "new": true,
+      "english": "You don't even seem to be a proper teacher."
+    },
+    {
+      "video": "video/lesson/근데 그런 선택을 했어.webm",
+      "videoMp4": "video/lesson/mp4/근데 그런 선택을 했어.mp4",
+      "korean": "근데 그런 선택을 했어",
+      "russian": "Но он сделал такой выбор.",
+      "new": true,
+      "english": "But he made that choice."
+    },
+    {
+      "video": "video/lesson/근데 학생이 걸려까지만 안 되지.webm",
+      "videoMp4": "video/lesson/mp4/근데 학생이 걸려까지만 안 되지.mp4",
+      "korean": "근데 학생이 걸려까지만 안 되지",
+      "russian": "Но нельзя допустить, чтобы пострадал ученик.",
+      "new": true,
+      "english": "But we can't let the student get caught up in it."
+    },
+    {
+      "video": "video/lesson/나 당겨.webm",
+      "videoMp4": "video/lesson/mp4/나 당겨.mp4",
+      "korean": "나, 당겨.",
+      "russian": "Тяни меня.",
+      "new": true,
+      "english": "Pull me."
+    },
+    {
+      "video": "video/lesson/나 오늘 이 학교로 발령 받았는데.webm",
+      "videoMp4": "video/lesson/mp4/나 오늘 이 학교로 발령 받았는데.mp4",
+      "korean": "나 오늘 이 학교로 발령 받았는데.",
+      "russian": "Меня сегодня назначили в эту школу.",
+      "new": true,
+      "english": "I was assigned to this school today."
+    },
+    {
+      "video": "video/lesson/나도 겁나 센 백이수.webm",
+      "videoMp4": "video/lesson/mp4/나도 겁나 센 백이수.mp4",
+      "korean": "나도 겁나 센 백이수.",
+      "russian": "Я тоже — Бэк Ису, у которого очень мощная поддержка.",
+      "new": true,
+      "english": "I'm Baek Isu too, and I’ve got some seriously powerful backing."
+    },
+    {
+      "video": "video/lesson/내가 먹을 거 함부로 하는 걸 못 참아.webm",
+      "videoMp4": "video/lesson/mp4/내가 먹을 거 함부로 하는 걸 못 참아.mp4",
+      "korean": "내가 먹을 거 함부로 하는 걸 못 참아.",
+      "russian": "Я не терплю, когда трогают мою еду.",
+      "new": true,
+      "english": "I can't stand it when someone messes with my food."
+    },
+    {
+      "video": "video/lesson/내가 뭘 그렇게 잘못했는데.webm",
+      "videoMp4": "video/lesson/mp4/내가 뭘 그렇게 잘못했는데.mp4",
+      "korean": "내가 뭘 그렇게 잘못했는데?",
+      "russian": "Что я такого сделал не так?",
+      "new": true,
+      "english": "What exactly did I do so wrong?"
+    },
+    {
+      "video": "video/lesson/너 같은 쓰레기 때문에.webm",
+      "videoMp4": "video/lesson/mp4/너 같은 쓰레기 때문에.mp4",
+      "korean": "너 같은 쓰레기 때문에.",
+      "russian": "Из-за таких отбросов, как ты.",
+      "new": true,
+      "english": "Because of trash like you."
+    },
+    {
+      "video": "video/lesson/너 학생 아니야.webm",
+      "videoMp4": "video/lesson/mp4/너 학생 아니야.mp4",
+      "korean": "너 학생 아니야?",
+      "russian": "Ты не студент?",
+      "new": true,
+      "english": "Aren't you a student?"
+    },
+    {
+      "video": "video/lesson/네 편 내 편이 어디 있나.webm",
+      "videoMp4": "video/lesson/mp4/네 편 내 편이 어디 있나.mp4",
+      "korean": "네 편, 내 편이 어디 있나.",
+      "russian": "Какие тут «ты за меня, я за тебя»?",
+      "new": true,
+      "english": "There’s no such thing as your side and my side."
+    },
+    {
+      "video": "video/lesson/네가 만든 지옥이야.webm",
+      "videoMp4": "video/lesson/mp4/네가 만든 지옥이야.mp4",
+      "korean": "네가 만든 지옥이야.",
+      "russian": "Это ад, который ты создал.",
+      "new": true,
+      "english": "It's the hell you created."
+    },
+    {
+      "video": "video/lesson/누가 맞서 싸우라고 그랬어.webm",
+      "videoMp4": "video/lesson/mp4/누가 맞서 싸우라고 그랬어.mp4",
+      "korean": "누가 맞서 싸우라고 그랬어?",
+      "russian": "Кто сказал тебе сражаться в ответ?",
+      "new": true,
+      "english": "Who told you to fight back?"
+    }
+  ],
+  "b2": [
+    {
+      "video": "video/lesson/니가 눌러야지 인마.webm",
+      "videoMp4": "video/lesson/mp4/니가 눌러야지 인마.mp4",
+      "korean": "니가 눌러야지, 인마.",
+      "russian": "Это ты должен нажать, придурок.",
+      "new": true,
+      "english": "You’re the one who should press it, idiot."
+    },
+    {
+      "video": "video/lesson/니들 진짜 훌륭하다.webm",
+      "videoMp4": "video/lesson/mp4/니들 진짜 훌륭하다.mp4",
+      "korean": "니들 진짜 훌륭하다.",
+      "russian": "Вы, ребята, правда молодцы.",
+      "new": true,
+      "english": "You guys are really great."
+    },
+    {
+      "video": "video/lesson/다행이라고 생각했어요.webm",
+      "videoMp4": "video/lesson/mp4/다행이라고 생각했어요.mp4",
+      "korean": "다행이라고 생각했어요.",
+      "russian": "Я подумал, что это к лучшему.",
+      "new": true,
+      "english": "I thought it was a relief."
+    },
+    {
+      "video": "video/lesson/당신 지금 누군들인 줄 알아.webm",
+      "videoMp4": "video/lesson/mp4/당신 지금 누군들인 줄 알아.mp4",
+      "korean": "당신 지금 누군들인 줄 알아?",
+      "russian": "Вы хоть знаете, кто я такой сейчас?",
+      "new": true,
+      "english": "Do you know who you're dealing with right now?"
+    },
+    {
+      "video": "video/lesson/대석이한테 왜 그렇게까지 했는데.webm",
+      "videoMp4": "video/lesson/mp4/대석이한테 왜 그렇게까지 했는데.mp4",
+      "korean": "대석이한테 왜 그렇게까지 했는데?",
+      "russian": "Почему ты так поступил с Тэсоком?",
+      "new": true,
+      "english": "Why did you go that far with Daeseok?"
+    },
+    {
+      "video": "video/lesson/도대체 왜 나한테 이런 건데.webm",
+      "videoMp4": "video/lesson/mp4/도대체 왜 나한테 이런 건데.mp4",
+      "korean": "도대체 왜 나한테 이런 건데?",
+      "russian": "Да почему ты вообще так со мной?",
+      "new": true,
+      "english": "Why on earth are you doing this to me?"
+    },
+    {
+      "video": "video/lesson/마지막이다.webm",
+      "videoMp4": "video/lesson/mp4/마지막이다.mp4",
+      "korean": "마지막이다.",
+      "russian": "Это последний раз.",
+      "new": true,
+      "english": "This is the last time."
+    },
+    {
+      "video": "video/lesson/말로 해서 듣는 놈은.webm",
+      "videoMp4": "video/lesson/mp4/말로 해서 듣는 놈은.mp4",
+      "korean": "말로 해서 듣는 놈은.",
+      "russian": "Тот, кто понимает только слова...",
+      "new": true,
+      "english": "The kind of guy who only listens when you talk..."
+    },
+    {
+      "video": "video/lesson/모의고사 얼마 안 남았는데.webm",
+      "videoMp4": "video/lesson/mp4/모의고사 얼마 안 남았는데.mp4",
+      "korean": "모의고사 얼마 안 남았는데.",
+      "russian": "До пробного экзамена осталось совсем немного.",
+      "new": true,
+      "english": "There isn't much time left until the mock exam."
+    },
+    {
+      "video": "video/lesson/무서운 게 없나 봅니다.webm",
+      "videoMp4": "video/lesson/mp4/무서운 게 없나 봅니다.mp4",
+      "korean": "무서운 게 없나 봅니다.",
+      "russian": "Похоже, вы ничего не боитесь.",
+      "new": true,
+      "english": "Looks like you’re not afraid of anything."
+    },
+    {
+      "video": "video/lesson/무서워하시는 게 그겁니까.webm",
+      "videoMp4": "video/lesson/mp4/무서워하시는 게 그겁니까.mp4",
+      "korean": "무서워하시는 게 그겁니까?",
+      "russian": "Вы этого боитесь?",
+      "new": true,
+      "english": "Is that what you're afraid of?"
+    },
+    {
+      "video": "video/lesson/무슨 일로 찾아오셨는지 말씀하시죠.webm",
+      "videoMp4": "video/lesson/mp4/무슨 일로 찾아오셨는지 말씀하시죠.mp4",
+      "korean": "무슨 일로 찾아오셨는지 말씀하시죠.",
+      "russian": "Скажите, по какому делу вы пришли.",
+      "new": true,
+      "english": "Please tell me what brings you here."
+    },
+    {
+      "video": "video/lesson/밥 먹고 싶으면 저기 뒤에 가서 줄 서.webm",
+      "videoMp4": "video/lesson/mp4/밥 먹고 싶으면 저기 뒤에 가서 줄 서.mp4",
+      "korean": "밥 먹고 싶으면 저기 뒤에 가서 줄 서.",
+      "russian": "Если хочешь поесть, иди вон туда и встань в очередь.",
+      "new": true,
+      "english": "If you want to eat, go stand in line back there."
+    },
+    {
+      "video": "video/lesson/밥 먹고 싶으면 저기 뒤에 가서 줄 서_1.webm",
+      "videoMp4": "video/lesson/mp4/밥 먹고 싶으면 저기 뒤에 가서 줄 서_1.mp4",
+      "korean": "밥 먹고 싶으면 저기 뒤에 가서 줄 서.",
+      "russian": "Если хочешь поесть, иди вон туда и встань в очередь.",
+      "new": true,
+      "english": "If you want to eat, go stand in line back there."
+    },
+    {
+      "video": "video/lesson/변론 제대로 못하고요.webm",
+      "videoMp4": "video/lesson/mp4/변론 제대로 못하고요.mp4",
+      "korean": "변론 제대로 못하고요.",
+      "russian": "И защиту нормально не могу вести.",
+      "new": true,
+      "english": "And I can't even make a proper defense."
+    },
+    {
+      "video": "video/lesson/변호사가 의뢰인 무서워하면.webm",
+      "videoMp4": "video/lesson/mp4/변호사가 의뢰인 무서워하면.mp4",
+      "korean": "변호사가 의뢰인 무서워하면",
+      "russian": "Если адвокат боится клиента",
+      "new": true,
+      "english": "If a lawyer is afraid of their client"
+    },
+    {
+      "video": "video/lesson/부모님한테는 왜 얘기 안 했어.webm",
+      "videoMp4": "video/lesson/mp4/부모님한테는 왜 얘기 안 했어.mp4",
+      "korean": "부모님한테는 왜 얘기 안 했어?",
+      "russian": "Почему ты не сказал родителям?",
+      "new": true,
+      "english": "Why didn't you tell your parents?"
+    },
+    {
+      "video": "video/lesson/새로 발령받은 선생님이라는데요.webm",
+      "videoMp4": "video/lesson/mp4/새로 발령받은 선생님이라는데요.mp4",
+      "korean": "새로 발령받은 선생님이라는데요.",
+      "russian": "Говорят, это новый назначенный учитель.",
+      "new": true,
+      "english": "They say it's the newly assigned teacher."
+    },
+    {
+      "video": "video/lesson/생각하시는 그런 일은.webm",
+      "videoMp4": "video/lesson/mp4/생각하시는 그런 일은.mp4",
+      "korean": "생각하시는 그런 일은",
+      "russian": "Такого, как вы думаете, не было.",
+      "new": true,
+      "english": "It's not the kind of thing you're thinking of."
+    },
+    {
+      "video": "video/lesson/서 있지 말고 앉요.webm",
+      "videoMp4": "video/lesson/mp4/서 있지 말고 앉요.mp4",
+      "korean": "서 있지 말고 앉아.",
+      "russian": "Не стой, садись.",
+      "new": true,
+      "english": "Don't stand there, sit down."
+    },
+    {
+      "video": "video/lesson/선생님은 말 안 듣는 애들 어떻게 아세요.webm",
+      "videoMp4": "video/lesson/mp4/선생님은 말 안 듣는 애들 어떻게 아세요.mp4",
+      "korean": "선생님은 말 안 듣는 애들 어떻게 아세요?",
+      "russian": "Учитель, откуда вы знаете, какие дети не слушаются?",
+      "new": true,
+      "english": "Teacher, how do you know which kids don't listen?"
+    },
+    {
+      "video": "video/lesson/설마 당신이 한 짓이야.webm",
+      "videoMp4": "video/lesson/mp4/설마 당신이 한 짓이야.mp4",
+      "korean": "설마 당신이 한 짓이야?",
+      "russian": "Неужели это сделал ты?",
+      "new": true,
+      "english": "Don't tell me you did this?"
+    },
+    {
+      "video": "video/lesson/설명을 좀 해주셔야겠어요.webm",
+      "videoMp4": "video/lesson/mp4/설명을 좀 해주셔야겠어요.mp4",
+      "korean": "설명을 좀 해주셔야겠어요.",
+      "russian": "Вам придётся немного объяснить.",
+      "new": true,
+      "english": "You'll have to explain a little."
+    },
+    {
+      "video": "video/lesson/성적 스트레스로 자살했다는데요.webm",
+      "videoMp4": "video/lesson/mp4/성적 스트레스로 자살했다는데요.mp4",
+      "korean": "성적 스트레스로 자살했다는데요.",
+      "russian": "Говорят, он покончил с собой из-за стресса из-за учёбы.",
+      "new": true,
+      "english": "They say he committed suicide due to academic stress."
+    },
+    {
+      "video": "video/lesson/세상엔 좋은 어른도 있어.webm",
+      "videoMp4": "video/lesson/mp4/세상엔 좋은 어른도 있어.mp4",
+      "korean": "세상엔 좋은 어른도 있어.",
+      "russian": "В мире есть и хорошие взрослые.",
+      "new": true,
+      "english": "There are good adults in the world too."
+    },
+    {
+      "video": "video/lesson/수업 좀 잘하세요.webm",
+      "videoMp4": "video/lesson/mp4/수업 좀 잘하세요.mp4",
+      "korean": "수업 좀 잘하세요.",
+      "russian": "Проводите уроки как следует.",
+      "new": true,
+      "english": "Please teach properly."
+    },
+    {
+      "video": "video/lesson/수업하시면 안 될까요.webm",
+      "videoMp4": "video/lesson/mp4/수업하시면 안 될까요.mp4",
+      "korean": "수업하시면 안 될까요?",
+      "russian": "Вы не могли бы провести урок?",
+      "new": true,
+      "english": "Could you teach the class?"
+    },
+    {
+      "video": "video/lesson/수용 있을 때까지 해 인마.webm",
+      "videoMp4": "video/lesson/mp4/수용 있을 때까지 해 인마.mp4",
+      "korean": "수용 있을 때까지 해 인마.",
+      "russian": "Делай, пока не получится, придурок.",
+      "new": true,
+      "english": "Keep at it until you can do it, asshole."
+    },
+    {
+      "video": "video/lesson/쉽게 설명드리면.webm",
+      "videoMp4": "video/lesson/mp4/쉽게 설명드리면.mp4",
+      "korean": "쉽게 설명드리면.",
+      "russian": "Если объяснить просто.",
+      "new": true,
+      "english": "To put it simply."
+    },
+    {
+      "video": "video/lesson/쌤도 개들이랑 똑같거든요.webm",
+      "videoMp4": "video/lesson/mp4/쌤도 개들이랑 똑같거든요.mp4",
+      "korean": "쌤도 개들이랑 똑같거든요.",
+      "russian": "Учителя тоже такие же, как собаки.",
+      "new": true,
+      "english": "Teachers are just the same as dogs."
+    }
+  ],
+  "b3": [
+    {
+      "video": "video/lesson/아무것도 모르면서 그렇게 말하지 마세요.webm",
+      "videoMp4": "video/lesson/mp4/아무것도 모르면서 그렇게 말하지 마세요.mp4",
+      "korean": "아무것도 모르면서 그렇게 말하지 마세요.",
+      "russian": "Не говорите так, не зная ничего.",
+      "new": true,
+      "english": "Don't say that when you don't know anything."
+    },
+    {
+      "video": "video/lesson/아침에 일어나지 못할 정도로 아팠으며.webm",
+      "videoMp4": "video/lesson/mp4/아침에 일어나지 못할 정도로 아팠으며.mp4",
+      "korean": "아침에 일어나지 못할 정도로 아팠으며",
+      "russian": "Я был настолько болен, что не мог встать утром.",
+      "new": true,
+      "english": "I was so sick that I couldn't get up in the morning."
+    },
+    {
+      "video": "video/lesson/앉아_ 시발_ 안 앉아.webm",
+      "videoMp4": "video/lesson/mp4/앉아_ 시발_ 안 앉아.mp4",
+      "korean": "앉아, 시발. 안 앉아?",
+      "russian": "Садись, блядь. Не садишься?",
+      "new": true,
+      "english": "Sit down, damn it. You're not sitting?"
+    },
+    {
+      "video": "video/lesson/알리지 인마.webm",
+      "videoMp4": "video/lesson/mp4/알리지 인마.mp4",
+      "korean": "알리지, 인마.",
+      "russian": "Сообщи, придурок.",
+      "new": true,
+      "english": "Tell them, man."
+    },
+    {
+      "video": "video/lesson/알았어.webm",
+      "videoMp4": "video/lesson/mp4/알았어.mp4",
+      "korean": "알았어.",
+      "russian": "Ладно.",
+      "new": true,
+      "english": "Okay."
+    },
+    {
+      "video": "video/lesson/애를 이렇게 패도 되는 거예요.webm",
+      "videoMp4": "video/lesson/mp4/애를 이렇게 패도 되는 거예요.mp4",
+      "korean": "애를 이렇게 패도 되는 거예요?",
+      "russian": "Разве можно так избивать ребёнка?",
+      "new": true,
+      "english": "Is it okay to beat a kid like this?"
+    },
+    {
+      "video": "video/lesson/야 그거 잘 됐다.webm",
+      "videoMp4": "video/lesson/mp4/야 그거 잘 됐다.mp4",
+      "korean": "야, 그거 잘 됐다.",
+      "russian": "Эй, это хорошо.",
+      "new": true,
+      "english": "Hey, that's good."
+    },
+    {
+      "video": "video/lesson/어른한테 얘기를 해.webm",
+      "videoMp4": "video/lesson/mp4/어른한테 얘기를 해.mp4",
+      "korean": "어른한테 얘기를 해.",
+      "russian": "Поговори со взрослыми.",
+      "new": true,
+      "english": "Talk to an adult."
+    },
+    {
+      "video": "video/lesson/어마어마하게 세잖아요.webm",
+      "videoMp4": "video/lesson/mp4/어마어마하게 세잖아요.mp4",
+      "korean": "어마어마하게 세잖아요.",
+      "russian": "Это же невероятно сильное.",
+      "new": true,
+      "english": "It's incredibly strong."
+    },
+    {
+      "video": "video/lesson/오늘부로 달리기 맹연습한다.webm",
+      "videoMp4": "video/lesson/mp4/오늘부로 달리기 맹연습한다.mp4",
+      "korean": "오늘부로 달리기 맹연습한다.",
+      "russian": "С сегодняшнего дня я буду усиленно тренироваться в беге.",
+      "new": true,
+      "english": "Starting today, I'm going to practice running hard."
+    },
+    {
+      "video": "video/lesson/오늘부로 제가 그 반 담임 맞습니다.webm",
+      "videoMp4": "video/lesson/mp4/오늘부로 제가 그 반 담임 맞습니다.mp4",
+      "korean": "오늘부로 제가 그 반 담임 맞습니다.",
+      "russian": "С сегодняшнего дня я — классный руководитель того класса.",
+      "new": true,
+      "english": "As of today, I am the homeroom teacher of that class."
+    },
+    {
+      "video": "video/lesson/왕따시키고 그래서.webm",
+      "videoMp4": "video/lesson/mp4/왕따시키고 그래서.mp4",
+      "korean": "왕따시키고 그래서",
+      "russian": "Их травили и всё такое.",
+      "new": true,
+      "english": "They bullied them and stuff."
+    },
+    {
+      "video": "video/lesson/의사가 환자 무서워하면.webm",
+      "videoMp4": "video/lesson/mp4/의사가 환자 무서워하면.mp4",
+      "korean": "의사가 환자 무서워하면",
+      "russian": "Если врач боится пациента",
+      "new": true,
+      "english": "If a doctor is afraid of a patient"
+    },
+    {
+      "video": "video/lesson/이 새끼가 보자보자 하니까.webm",
+      "videoMp4": "video/lesson/mp4/이 새끼가 보자보자 하니까.mp4",
+      "korean": "이 새끼가 보자보자 하니까",
+      "russian": "Ты, сукин сын, я уже долго терплю.",
+      "new": true,
+      "english": "You bastard, I've been putting up with you for a while now."
+    },
+    {
+      "video": "video/lesson/이 새끼들 아저씨보다 제가 더 무서운 것 같은데.webm",
+      "videoMp4": "video/lesson/mp4/이 새끼들 아저씨보다 제가 더 무서운 것 같은데.mp4",
+      "korean": "이 새끼들 아저씨보다 제가 더 무서운 것 같은데",
+      "russian": "Похоже, я для вас страшнее, чем этот дядька.",
+      "new": true,
+      "english": "Looks like I'm scarier to you than that guy."
+    },
+    {
+      "video": "video/lesson/이제부터 하루하루가.webm",
+      "videoMp4": "video/lesson/mp4/이제부터 하루하루가.mp4",
+      "korean": "이제부터 하루하루가",
+      "russian": "С этого момента каждый день",
+      "new": true,
+      "english": "From now on, every single day"
+    },
+    {
+      "video": "video/lesson/인강이 훨씬 유익하다.webm",
+      "videoMp4": "video/lesson/mp4/인강이 훨씬 유익하다.mp4",
+      "korean": "인강이 훨씬 유익하다.",
+      "russian": "Онлайн-лекции гораздо полезнее.",
+      "new": true,
+      "english": "Online lectures are much more useful."
+    },
+    {
+      "video": "video/lesson/일어날래야 일어날 수가 없어요.webm",
+      "videoMp4": "video/lesson/mp4/일어날래야 일어날 수가 없어요.mp4",
+      "korean": "일어날래야 일어날 수가 없어요.",
+      "russian": "Я никак не могу встать.",
+      "new": true,
+      "english": "I can't get up no matter what."
+    },
+    {
+      "video": "video/lesson/잠들기 전 늘 기도를 해.webm",
+      "videoMp4": "video/lesson/mp4/잠들기 전 늘 기도를 해.mp4",
+      "korean": "잠들기 전 늘 기도를 해.",
+      "russian": "Перед сном я всегда молюсь.",
+      "new": true,
+      "english": "I always pray before going to sleep."
+    },
+    {
+      "video": "video/lesson/제 전학도 비슷합니다.webm",
+      "videoMp4": "video/lesson/mp4/제 전학도 비슷합니다.mp4",
+      "korean": "제 전학도 비슷합니다.",
+      "russian": "Мой перевод в другую школу тоже похож.",
+      "new": true,
+      "english": "My transfer is similar too."
+    },
+    {
+      "video": "video/lesson/제대로 가르쳐 주겠습니까.webm",
+      "videoMp4": "video/lesson/mp4/제대로 가르쳐 주겠습니까.mp4",
+      "korean": "제대로 가르쳐 주겠습니까?",
+      "russian": "Вы нормально меня научите?",
+      "new": true,
+      "english": "Will you teach me properly?"
+    },
+    {
+      "video": "video/lesson/죽는 것 따위 두렵지 않다.webm",
+      "videoMp4": "video/lesson/mp4/죽는 것 따위 두렵지 않다.mp4",
+      "korean": "죽는 것 따위 두렵지 않다",
+      "russian": "Смерти я не боюсь.",
+      "new": true,
+      "english": "I am not afraid of dying."
+    },
+    {
+      "video": "video/lesson/지금 실수하십니다.webm",
+      "videoMp4": "video/lesson/mp4/지금 실수하십니다.mp4",
+      "korean": "지금 실수하십니다",
+      "russian": "Вы сейчас ошибаетесь.",
+      "new": true,
+      "english": "You're making a mistake right now."
+    },
+    {
+      "video": "video/lesson/지도 잘 하겠습니다.webm",
+      "videoMp4": "video/lesson/mp4/지도 잘 하겠습니다.mp4",
+      "korean": "지도 잘 하겠습니다",
+      "russian": "Я буду хорошо руководить.",
+      "new": true,
+      "english": "I will guide you well."
+    },
+    {
+      "video": "video/lesson/지랄하지 말고 하던 건 아세요.webm",
+      "videoMp4": "video/lesson/mp4/지랄하지 말고 하던 건 아세요.mp4",
+      "korean": "지랄하지 말고 하던 건 아세요",
+      "russian": "Не валяйте дурака и продолжайте делать то, что делали, ладно?",
+      "new": true,
+      "english": "Stop screwing around and keep doing what you were doing, okay?"
+    },
+    {
+      "video": "video/lesson/지아빠 아니면 아무것도 못하는 새끼가.webm",
+      "videoMp4": "video/lesson/mp4/지아빠 아니면 아무것도 못하는 새끼가.mp4",
+      "korean": "지아빠 아니면 아무것도 못하는 새끼가",
+      "russian": "Да ты без своего папаши вообще ничего не можешь, ублюдок.",
+      "new": true,
+      "english": "You can't do anything without your dad, you bastard."
+    },
+    {
+      "video": "video/lesson/지옥 같을 거야.webm",
+      "videoMp4": "video/lesson/mp4/지옥 같을 거야.mp4",
+      "korean": "지옥 같을 거야",
+      "russian": "Это будет как ад.",
+      "new": true,
+      "english": "It'll be like hell."
+    },
+    {
+      "video": "video/lesson/진짜 교육이다.webm",
+      "videoMp4": "video/lesson/mp4/진짜 교육이다.mp4",
+      "korean": "진짜 교육이다",
+      "russian": "Вот это настоящее обучение.",
+      "new": true,
+      "english": "This is real education."
+    },
+    {
+      "video": "video/lesson/청소를 안 하고 봤더라고요.webm",
+      "videoMp4": "video/lesson/mp4/청소를 안 하고 봤더라고요.mp4",
+      "korean": "청소를 안 하고 봤더라고요",
+      "russian": "Я заметил, что уборку не сделали.",
+      "new": true,
+      "english": "I noticed they hadn't cleaned up."
+    },
+    {
+      "video": "video/lesson/패도 됩니다.webm",
+      "videoMp4": "video/lesson/mp4/패도 됩니다.mp4",
+      "korean": "패도 됩니다",
+      "russian": "Можно бить.",
+      "new": true,
+      "english": "You may hit him."
+    },
+    {
+      "video": "video/lesson/학생 하나가 죽어나가도.webm",
+      "videoMp4": "video/lesson/mp4/학생 하나가 죽어나가도.mp4",
+      "korean": "학생 하나가 죽어나가도",
+      "russian": "Даже если погибнет один студент.",
+      "new": true,
+      "english": "Even if one student dies."
+    }
+  ],
+  "b4": [],
+  "b5": []
+}

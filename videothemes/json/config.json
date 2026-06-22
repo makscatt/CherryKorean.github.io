@@ -1137,6 +1137,32 @@
     ],
     "title_en": "Brave New World",
     "totalCount": 81,
+    "hasNew": false
+  },
+  "theme41": {
+    "coverImage": "videothemes/subthemebc/lesson.png",
+    "title": "참교육 - Преподам тебе урок",
+    "masterJsonPath": "videothemes/json/videotheme41.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      }
+    ],
+    "title_en": "Get Schooled",
+    "totalCount": 91,
     "hasNew": true
   }
 }

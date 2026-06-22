@@ -28,7 +28,7 @@ ffmpeg -y -i "клип.webm" -c:v libx264 -b:v 620k -pass 2 -vf scale=-2:720 -pr
 
 ### 2. Тайминги строк — karaoke_timer
 
-Тулза: `projects/tools/karaoke/karaoke_timer.pyw`
+Тулза: `projects/studio/engines/karaoke/karaoke_timer.pyw`
 (нужны `pip install python-vlc` + установленный VLC).
 
 Загрузить полный клип, вставить текст песни, по строкам жать `T` (или SET) —
