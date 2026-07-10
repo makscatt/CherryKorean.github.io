@@ -289,7 +289,8 @@
       "korean": "아니, 난 지금이야",
       "russian": "Нет, я сейчас.",
       "new": true,
-      "english": "No, I'm doing it now."
+      "english": "No, I'm doing it now.",
+      "isNew": true
     },
     {
       "video": "video/kimsec/아니 무슨 고백을 매번 저런 식으로.webm",
