@@ -1178,6 +1178,27 @@
     ],
     "title_en": "Get Schooled",
     "totalCount": 172,
+    "hasNew": false
+  },
+  "theme42": {
+    "coverImage": "videothemes/subthemebc/kimsec.png",
+    "title": "Что не так с секретарём Ким?\n김비서가 왜 그럴까",
+    "masterJsonPath": "videothemes/json/videotheme42.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      }
+    ],
+    "title_en": "What's Wrong with Secretary Kim\n김비서가 왜 그럴까",
+    "totalCount": 70,
     "hasNew": true
   }
 }

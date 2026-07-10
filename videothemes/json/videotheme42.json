@@ -1,0 +1,570 @@
+{
+  "b1": [
+    {
+      "video": "video/kimsec/2초가 눈빛으로 보여주시죠.webm",
+      "videoMp4": "video/kimsec/mp4/2초가 눈빛으로 보여주시죠.mp4",
+      "korean": "2초가 눈빛으로 보여주시죠",
+      "russian": "Покажите это взглядом за 2 секунды.",
+      "new": true,
+      "english": "Show it with your eyes in 2 seconds.",
+      "isNew": true
+    },
+    {
+      "video": "video/kimsec/감기 걸리면 어떡하지.webm",
+      "videoMp4": "video/kimsec/mp4/감기 걸리면 어떡하지.mp4",
+      "korean": "감기 걸리면 어떡하지?",
+      "russian": "А если я простужусь?",
+      "new": true,
+      "english": "What if I catch a cold?"
+    },
+    {
+      "video": "video/kimsec/갑자기 옷을 갈아입으셨구나.webm",
+      "videoMp4": "video/kimsec/mp4/갑자기 옷을 갈아입으셨구나.mp4",
+      "korean": "갑자기 옷을 갈아입으셨구나.",
+      "russian": "Вы вдруг переоделись.",
+      "new": true,
+      "english": "So you suddenly changed clothes."
+    },
+    {
+      "video": "video/kimsec/계속 모르는 척 해주셨으면 좋겠습니다.webm",
+      "videoMp4": "video/kimsec/mp4/계속 모르는 척 해주셨으면 좋겠습니다.mp4",
+      "korean": "계속 모르는 척 해주셨으면 좋겠습니다.",
+      "russian": "Надеюсь, вы и дальше будете делать вид, что не знаете.",
+      "new": true,
+      "english": "I hope you'll keep pretending not to know."
+    },
+    {
+      "video": "video/kimsec/그걸로 점심 때우시는 거예요.webm",
+      "videoMp4": "video/kimsec/mp4/그걸로 점심 때우시는 거예요.mp4",
+      "korean": "그걸로 점심 때우시는 거예요?",
+      "russian": "Вы этим обходитесь на обед?",
+      "new": true,
+      "english": "Is that what you have for lunch?"
+    },
+    {
+      "video": "video/kimsec/그때 기억은 다 잃으셨다는 얘기도 들었습니다.webm",
+      "videoMp4": "video/kimsec/mp4/그때 기억은 다 잃으셨다는 얘기도 들었습니다.mp4",
+      "korean": "그때 기억은 다 잃으셨다는 얘기도 들었습니다.",
+      "russian": "Я также слышал, что вы тогда потеряли все воспоминания.",
+      "new": true,
+      "english": "I also heard that you lost all your memories from that time."
+    },
+    {
+      "video": "video/kimsec/그러니까 라면 달라고.webm",
+      "videoMp4": "video/kimsec/mp4/그러니까 라면 달라고.mp4",
+      "korean": "그러니까 라면 달라고.",
+      "russian": "Я же говорю, дайте мне рамен.",
+      "new": true,
+      "english": "So, give me ramen."
+    },
+    {
+      "video": "video/kimsec/그럼 매너 좋게 가졌으면 좋겠는데.webm",
+      "videoMp4": "video/kimsec/mp4/그럼 매너 좋게 가졌으면 좋겠는데.mp4",
+      "korean": "그럼 매너 좋게 가졌으면 좋겠는데.",
+      "russian": "Тогда хотелось бы, чтобы вы вели себя по-джентльменски.",
+      "new": true,
+      "english": "Then I'd like you to be more courteous."
+    },
+    {
+      "video": "video/kimsec/그럼 이만 들어가 보겠습니다.webm",
+      "videoMp4": "video/kimsec/mp4/그럼 이만 들어가 보겠습니다.mp4",
+      "korean": "그럼 이만 들어가 보겠습니다.",
+      "russian": "Тогда я, пожалуй, пойду.",
+      "new": true,
+      "english": "Then I'll be going now."
+    },
+    {
+      "video": "video/kimsec/그렇다면 너무 뻔해서 흥행은 어렵겠군.webm",
+      "videoMp4": "video/kimsec/mp4/그렇다면 너무 뻔해서 흥행은 어렵겠군.mp4",
+      "korean": "그렇다면 너무 뻔해서 흥행은 어렵겠군.",
+      "russian": "Тогда это слишком банально, и кассового успеха не будет.",
+      "new": true,
+      "english": "Then it's too obvious, so it'll be hard to make a hit."
+    },
+    {
+      "video": "video/kimsec/기억을 잃었다는 건.webm",
+      "videoMp4": "video/kimsec/mp4/기억을 잃었다는 건.mp4",
+      "korean": "기억을 잃었다는 건",
+      "russian": "То, что вы потеряли память...",
+      "new": true,
+      "english": "Losing your memory means..."
+    },
+    {
+      "video": "video/kimsec/김비서와 함께 하겠습니다.webm",
+      "videoMp4": "video/kimsec/mp4/김비서와 함께 하겠습니다.mp4",
+      "korean": "김비서와 함께 하겠습니다.",
+      "russian": "Я буду вместе с секретарём Ким.",
+      "new": true,
+      "english": "I'll be with Secretary Kim."
+    },
+    {
+      "video": "video/kimsec/나 감기 걸리면 어떡하냐고.webm",
+      "videoMp4": "video/kimsec/mp4/나 감기 걸리면 어떡하냐고.mp4",
+      "korean": "나 감기 걸리면 어떡하냐고?",
+      "russian": "А если я простужусь, что тогда?",
+      "new": true,
+      "english": "What if I catch a cold?"
+    },
+    {
+      "video": "video/kimsec/나 오랫동안 찾았다면서요.webm",
+      "videoMp4": "video/kimsec/mp4/나 오랫동안 찾았다면서요.mp4",
+      "korean": "나 오랫동안 찾았다면서요?",
+      "russian": "Говорят, вы долго меня искали?",
+      "new": true,
+      "english": "I heard you've been looking for me for a long time?"
+    },
+    {
+      "video": "video/kimsec/나는 김비서 좋아하고 김비서는 나 좋아하고.webm",
+      "videoMp4": "video/kimsec/mp4/나는 김비서 좋아하고 김비서는 나 좋아하고.mp4",
+      "korean": "나는 김비서 좋아하고 김비서는 나 좋아하고",
+      "russian": "Мне нравится секретарь Ким, а секретарю Ким нравлюсь я.",
+      "new": true,
+      "english": "I like Secretary Kim, and Secretary Kim likes me."
+    },
+    {
+      "video": "video/kimsec/나랑 김비서 같은 사이에 나 쓰는 말이야.webm",
+      "videoMp4": "video/kimsec/mp4/나랑 김비서 같은 사이에 나 쓰는 말이야.mp4",
+      "korean": "나랑 김비서 같은 사이에 나 쓰는 말이야.",
+      "russian": "Так говорят между мной и секретарём Ким.",
+      "new": true,
+      "english": "That's the kind of thing people like me and Secretary Kim say to each other."
+    },
+    {
+      "video": "video/kimsec/나의 진심 어린 고백을.webm",
+      "videoMp4": "video/kimsec/mp4/나의 진심 어린 고백을.mp4",
+      "korean": "나의 진심 어린 고백을",
+      "russian": "Моё искреннее признание...",
+      "new": true,
+      "english": "My sincere confession..."
+    },
+    {
+      "video": "video/kimsec/내가 데려다줬다고요.webm",
+      "videoMp4": "video/kimsec/mp4/내가 데려다줬다고요.mp4",
+      "korean": "내가 데려다줬다고요.",
+      "russian": "Это я вас довёз.",
+      "new": true,
+      "english": "I drove you home."
+    },
+    {
+      "video": "video/kimsec/내가 배고픈 게 비상이야.webm",
+      "videoMp4": "video/kimsec/mp4/내가 배고픈 게 비상이야.mp4",
+      "korean": "내가 배고픈 게 비상이야.",
+      "russian": "То, что я голоден, — это чрезвычайная ситуация.",
+      "new": true,
+      "english": "My being hungry is an emergency."
+    },
+    {
+      "video": "video/kimsec/내가 여기 왜 온 줄 아나_ 김 비서.webm",
+      "videoMp4": "video/kimsec/mp4/내가 여기 왜 온 줄 아나_ 김 비서.mp4",
+      "korean": "내가 여기 왜 온 줄 아나? 김 비서",
+      "russian": "Знаете, зачем я сюда пришёл? Секретарь Ким.",
+      "new": true,
+      "english": "Do you know why I came here? Secretary Kim."
+    },
+    {
+      "video": "video/kimsec/너무 잘나서 견제받는 기분.webm",
+      "videoMp4": "video/kimsec/mp4/너무 잘나서 견제받는 기분.mp4",
+      "korean": "너무 잘나서 견제받는 기분",
+      "russian": "Чувствую, будто меня опасаются из-за того, что я слишком хорош.",
+      "new": true,
+      "english": "I feel like I'm being kept in check because I'm too outstanding."
+    },
+    {
+      "video": "video/kimsec/너무 잘난 사람은 못 버틸 것 같더군.webm",
+      "videoMp4": "video/kimsec/mp4/너무 잘난 사람은 못 버틸 것 같더군.mp4",
+      "korean": "너무 잘난 사람은 못 버틸 것 같더군",
+      "russian": "Думаю, я бы не выдержал рядом с таким уж слишком выдающимся человеком.",
+      "new": true,
+      "english": "I don't think I could stand someone who's too outstanding."
+    },
+    {
+      "video": "video/kimsec/네 그렇게 하시죠.webm",
+      "videoMp4": "video/kimsec/mp4/네 그렇게 하시죠.mp4",
+      "korean": "네, 그렇게 하시죠",
+      "russian": "Да, давайте так и сделаем.",
+      "new": true,
+      "english": "Yes, let's do that."
+    },
+    {
+      "video": "video/kimsec/네 조심히 들어가세요 성현 오빠.webm",
+      "videoMp4": "video/kimsec/mp4/네 조심히 들어가세요 성현 오빠.mp4",
+      "korean": "네, 조심히 들어가세요, 성현 오빠",
+      "russian": "Да, доброй дороги, оппа Сонхён.",
+      "new": true,
+      "english": "Okay, get home safely, Seonghyeon oppa."
+    },
+    {
+      "video": "video/kimsec/네_ 간단하게 샐러드 먹고 오는 길이에요.webm",
+      "videoMp4": "video/kimsec/mp4/네_ 간단하게 샐러드 먹고 오는 길이에요.mp4",
+      "korean": "네, 간단하게 샐러드 먹고 오는 길이에요",
+      "russian": "Да, я поел(а) салат и возвращаюсь.",
+      "new": true,
+      "english": "Yes, I just had a simple salad and I'm on my way back."
+    },
+    {
+      "video": "video/kimsec/네_ 많이 괜찮아졌어요.webm",
+      "videoMp4": "video/kimsec/mp4/네_ 많이 괜찮아졌어요.mp4",
+      "korean": "네, 많이 괜찮아졌어요",
+      "russian": "Да, мне уже намного лучше.",
+      "new": true,
+      "english": "Yes, I'm much better now."
+    },
+    {
+      "video": "video/kimsec/다시 그렇게 부르면 안 되나.webm",
+      "videoMp4": "video/kimsec/mp4/다시 그렇게 부르면 안 되나.mp4",
+      "korean": "다시 그렇게 부르면 안 되나",
+      "russian": "Нельзя снова так меня называть?",
+      "new": true,
+      "english": "Can't you call me that again?"
+    },
+    {
+      "video": "video/kimsec/도움이 되셨으면 좋겠어요.webm",
+      "videoMp4": "video/kimsec/mp4/도움이 되셨으면 좋겠어요.mp4",
+      "korean": "도움이 되셨으면 좋겠어요",
+      "russian": "Надеюсь, это вам поможет.",
+      "new": true,
+      "english": "I hope this helps."
+    },
+    {
+      "video": "video/kimsec/들어갈 필요 없어.webm",
+      "videoMp4": "video/kimsec/mp4/들어갈 필요 없어.mp4",
+      "korean": "들어갈 필요 없어",
+      "russian": "Не нужно заходить.",
+      "new": true,
+      "english": "No need to go in."
+    },
+    {
+      "video": "video/kimsec/막연하게 찾고 싶다는 생각만 했던 것 같은데.webm",
+      "videoMp4": "video/kimsec/mp4/막연하게 찾고 싶다는 생각만 했던 것 같은데.mp4",
+      "korean": "막연하게 찾고 싶다는 생각만 했던 것 같은데",
+      "russian": "Кажется, я лишь смутно думал, что хочу найти это.",
+      "new": true,
+      "english": "I think I only vaguely thought that I wanted to find it."
+    },
+    {
+      "video": "video/kimsec/말 그대로 긴 미소라서 채용한 거야.webm",
+      "videoMp4": "video/kimsec/mp4/말 그대로 긴 미소라서 채용한 거야.mp4",
+      "korean": "말 그대로 긴 미소라서 채용한 거야",
+      "russian": "Я нанял его буквально из-за его длинной улыбки.",
+      "new": true,
+      "english": "I hired him, quite literally, because of his long smile."
+    },
+    {
+      "video": "video/kimsec/뭔데 이게.webm",
+      "videoMp4": "video/kimsec/mp4/뭔데 이게.mp4",
+      "korean": "뭔데 이게",
+      "russian": "Что это такое?",
+      "new": true,
+      "english": "What is this?"
+    },
+    {
+      "video": "video/kimsec/수박 사가지고 펜션으로 들어가던 길이었습니다.webm",
+      "videoMp4": "video/kimsec/mp4/수박 사가지고 펜션으로 들어가던 길이었습니다.mp4",
+      "korean": "수박 사가지고 펜션으로 들어가던 길이었습니다",
+      "russian": "Я как раз шёл в пансионат, купив арбуз.",
+      "new": true,
+      "english": "I was on my way to the pension after buying a watermelon."
+    },
+    {
+      "video": "video/kimsec/스펙이 가장 별로였거든.webm",
+      "videoMp4": "video/kimsec/mp4/스펙이 가장 별로였거든.mp4",
+      "korean": "스펙이 가장 별로였거든",
+      "russian": "Потому что у него были самые слабые характеристики.",
+      "new": true,
+      "english": "Because his qualifications were the worst."
+    },
+    {
+      "video": "video/kimsec/아까 봤어 둘이 만나고 있는 거.webm",
+      "videoMp4": "video/kimsec/mp4/아까 봤어 둘이 만나고 있는 거.mp4",
+      "korean": "아까 봤어, 둘이 만나고 있는 거",
+      "russian": "Я видел(а) вас недавно — вы двое встречаетесь.",
+      "new": true,
+      "english": "I saw you earlier, the two of you are seeing each other."
+    }
+  ],
+  "b2": [
+    {
+      "video": "video/kimsec/아니 난 지금이야.webm",
+      "videoMp4": "video/kimsec/mp4/아니 난 지금이야.mp4",
+      "korean": "아니, 난 지금이야",
+      "russian": "Нет, я сейчас.",
+      "new": true,
+      "english": "No, I'm doing it now."
+    },
+    {
+      "video": "video/kimsec/아니 무슨 고백을 매번 저런 식으로.webm",
+      "videoMp4": "video/kimsec/mp4/아니 무슨 고백을 매번 저런 식으로.mp4",
+      "korean": "아니 무슨 고백을 매번 저런 식으로",
+      "russian": "Да что это за признание такое — каждый раз вот так?",
+      "new": true,
+      "english": "What kind of confession is that, every time like that?"
+    },
+    {
+      "video": "video/kimsec/아니에요 그런 거.webm",
+      "videoMp4": "video/kimsec/mp4/아니에요 그런 거.mp4",
+      "korean": "아니에요, 그런 거",
+      "russian": "Нет, ничего такого.",
+      "new": true,
+      "english": "No, nothing like that."
+    },
+    {
+      "video": "video/kimsec/아직 실감이 잘 안 나요.webm",
+      "videoMp4": "video/kimsec/mp4/아직 실감이 잘 안 나요.mp4",
+      "korean": "아직 실감이 잘 안 나요",
+      "russian": "Пока что всё ещё не до конца верится.",
+      "new": true,
+      "english": "It still doesn't feel real yet."
+    },
+    {
+      "video": "video/kimsec/알고 싶어요 무슨 뜻인지.webm",
+      "videoMp4": "video/kimsec/mp4/알고 싶어요 무슨 뜻인지.mp4",
+      "korean": "알고 싶어요, 무슨 뜻인지",
+      "russian": "Я хочу знать, что это значит.",
+      "new": true,
+      "english": "I want to know what it means."
+    },
+    {
+      "video": "video/kimsec/알고 싶은 것도 많고요.webm",
+      "videoMp4": "video/kimsec/mp4/알고 싶은 것도 많고요.mp4",
+      "korean": "알고 싶은 것도 많고요",
+      "russian": "И мне тоже многое хочется узнать.",
+      "new": true,
+      "english": "I have a lot of things I want to know, too."
+    },
+    {
+      "video": "video/kimsec/애타게 쳤던 오빠를 만난 기분이 어때.webm",
+      "videoMp4": "video/kimsec/mp4/애타게 쳤던 오빠를 만난 기분이 어때.mp4",
+      "korean": "애타게 쳤던 오빠를 만난 기분이 어때?",
+      "russian": "Каково это — встретить старшего брата, которого ты так отчаянно искала?",
+      "new": true,
+      "english": "How does it feel to meet the older brother you were desperately trying to reach?"
+    },
+    {
+      "video": "video/kimsec/양비서 때문이 아니라 김비서 때문에 왔어 나.webm",
+      "videoMp4": "video/kimsec/mp4/양비서 때문이 아니라 김비서 때문에 왔어 나.mp4",
+      "korean": "양비서 때문이 아니라 김비서 때문에 왔어, 나",
+      "russian": "Я пришёл не из-за секретаря Ян, а из-за секретаря Кима.",
+      "new": true,
+      "english": "I came not because of Secretary Yang, but because of Secretary Kim."
+    },
+    {
+      "video": "video/kimsec/어때요_ 뭐 기억나는 거라도.webm",
+      "videoMp4": "video/kimsec/mp4/어때요_ 뭐 기억나는 거라도.mp4",
+      "korean": "어때요? 뭐 기억나는 거라도?",
+      "russian": "Ну как? Что-нибудь вспомнили?",
+      "new": true,
+      "english": "How is it? Do you remember anything at all?"
+    },
+    {
+      "video": "video/kimsec/어제 잘 잤어요.webm",
+      "videoMp4": "video/kimsec/mp4/어제 잘 잤어요.mp4",
+      "korean": "어제 잘 잤어요",
+      "russian": "Я хорошо спал(а) вчера.",
+      "new": true,
+      "english": "I slept well last night."
+    },
+    {
+      "video": "video/kimsec/얼른 가시죠 다들 기다릴 것 같은데.webm",
+      "videoMp4": "video/kimsec/mp4/얼른 가시죠 다들 기다릴 것 같은데.mp4",
+      "korean": "얼른 가시죠. 다들 기다릴 것 같은데",
+      "russian": "Пойдёмте скорее. Кажется, все уже ждут.",
+      "new": true,
+      "english": "Let's hurry and go. I think everyone's waiting."
+    },
+    {
+      "video": "video/kimsec/여기가 이렇게 좁았나.webm",
+      "videoMp4": "video/kimsec/mp4/여기가 이렇게 좁았나.mp4",
+      "korean": "여기가 이렇게 좁았나?",
+      "russian": "Неужели здесь всегда было так тесно?",
+      "new": true,
+      "english": "Was it always this cramped here?"
+    },
+    {
+      "video": "video/kimsec/열심히 하겠습니다. 잘 부탁드립니다.webm",
+      "videoMp4": "video/kimsec/mp4/열심히 하겠습니다. 잘 부탁드립니다.mp4",
+      "korean": "열심히 하겠습니다. 잘 부탁드립니다",
+      "russian": "Я буду стараться. Прошу вас о поддержке.",
+      "new": true,
+      "english": "I’ll do my best. I look forward to working with you."
+    },
+    {
+      "video": "video/kimsec/예전에 나 뭐라고 불렀어요.webm",
+      "videoMp4": "video/kimsec/mp4/예전에 나 뭐라고 불렀어요.mp4",
+      "korean": "예전에 나 뭐라고 불렀어요?",
+      "russian": "Как вы меня раньше называли?",
+      "new": true,
+      "english": "What did you used to call me?"
+    },
+    {
+      "video": "video/kimsec/오늘 저녁 모임 잊지 않으셨죠.webm",
+      "videoMp4": "video/kimsec/mp4/오늘 저녁 모임 잊지 않으셨죠.mp4",
+      "korean": "오늘 저녁 모임 잊지 않으셨죠?",
+      "russian": "Вы же не забыли про сегодняшнюю вечернюю встречу?",
+      "new": true,
+      "english": "You didn’t forget about tonight’s gathering, did you?"
+    },
+    {
+      "video": "video/kimsec/우리 지금 썸 타는 사이 아닌가.webm",
+      "videoMp4": "video/kimsec/mp4/우리 지금 썸 타는 사이 아닌가.mp4",
+      "korean": "우리 지금 썸 타는 사이 아닌가?",
+      "russian": "Разве мы сейчас не на стадии флирта?",
+      "new": true,
+      "english": "Aren’t we kind of seeing each other right now?"
+    },
+    {
+      "video": "video/kimsec/우리 지금 썸 탄 사이 맞잖아.webm",
+      "videoMp4": "video/kimsec/mp4/우리 지금 썸 탄 사이 맞잖아.mp4",
+      "korean": "우리 지금 썸 탄 사이 맞잖아.",
+      "russian": "Мы же сейчас на стадии флирта, верно?",
+      "new": true,
+      "english": "We’re in the middle of a thing, aren’t we?"
+    },
+    {
+      "video": "video/kimsec/우리 지금 썸타는 사이이고.webm",
+      "videoMp4": "video/kimsec/mp4/우리 지금 썸타는 사이이고.mp4",
+      "korean": "우리 지금 썸타는 사이이고",
+      "russian": "Мы сейчас на стадии флирта, и...",
+      "new": true,
+      "english": "We’re currently in a thing, and..."
+    },
+    {
+      "video": "video/kimsec/우리들의 썸 청산.webm",
+      "videoMp4": "video/kimsec/mp4/우리들의 썸 청산.mp4",
+      "korean": "우리들의 썸 청산",
+      "russian": "Покончить с нашим флиртом",
+      "new": true,
+      "english": "Ending our little fling"
+    },
+    {
+      "video": "video/kimsec/이런 분위기_ 이런 상황.webm",
+      "videoMp4": "video/kimsec/mp4/이런 분위기_ 이런 상황.mp4",
+      "korean": "이런 분위기_ 이런 상황",
+      "russian": "Такая атмосфера, такая ситуация",
+      "new": true,
+      "english": "This kind of atmosphere, this kind of situation"
+    },
+    {
+      "video": "video/kimsec/이미 유명랜드가 돼버려서 가볼 수가 없거든요.webm",
+      "videoMp4": "video/kimsec/mp4/이미 유명랜드가 돼버려서 가볼 수가 없거든요.mp4",
+      "korean": "이미 유명랜드가 돼버려서 가볼 수가 없거든요",
+      "russian": "Это уже стало таким популярным местом, что туда даже не сходить.",
+      "new": true,
+      "english": "It’s already become so famous that you can’t even go there anymore."
+    },
+    {
+      "video": "video/kimsec/작가님이 저를 집까지 데려다줬던 기억이 나요.webm",
+      "videoMp4": "video/kimsec/mp4/작가님이 저를 집까지 데려다줬던 기억이 나요.mp4",
+      "korean": "작가님이 저를 집까지 데려다줬던 기억이 나요",
+      "russian": "Я помню, как писатель проводил меня до дома.",
+      "new": true,
+      "english": "I remember the writer giving me a ride home."
+    },
+    {
+      "video": "video/kimsec/잘 모를 수도 있을 것 같아서.webm",
+      "videoMp4": "video/kimsec/mp4/잘 모를 수도 있을 것 같아서.mp4",
+      "korean": "잘 모를 수도 있을 것 같아서",
+      "russian": "Я подумал(а), что вы, возможно, не знаете.",
+      "new": true,
+      "english": "I thought you might not know."
+    },
+    {
+      "video": "video/kimsec/저 괜찮아요.webm",
+      "videoMp4": "video/kimsec/mp4/저 괜찮아요.mp4",
+      "korean": "저 괜찮아요",
+      "russian": "Со мной всё в порядке.",
+      "new": true,
+      "english": "I’m okay."
+    },
+    {
+      "video": "video/kimsec/저도 신기했어요.webm",
+      "videoMp4": "video/kimsec/mp4/저도 신기했어요.mp4",
+      "korean": "저도 신기했어요",
+      "russian": "Мне тоже было удивительно.",
+      "new": true,
+      "english": "I was surprised too."
+    },
+    {
+      "video": "video/kimsec/저를 전부터 아셨던 거예요.webm",
+      "videoMp4": "video/kimsec/mp4/저를 전부터 아셨던 거예요.mp4",
+      "korean": "저를 전부터 아셨던 거예요?",
+      "russian": "Вы знали меня уже давно?",
+      "new": true,
+      "english": "Did you know me from before?"
+    },
+    {
+      "video": "video/kimsec/전 또 무슨 특별한 이유가 있는 줄 알았네요.webm",
+      "videoMp4": "video/kimsec/mp4/전 또 무슨 특별한 이유가 있는 줄 알았네요.mp4",
+      "korean": "전 또 무슨 특별한 이유가 있는 줄 알았네요",
+      "russian": "А я-то думал, что на то есть какая-то особая причина.",
+      "new": true,
+      "english": "I thought there was some special reason for it."
+    },
+    {
+      "video": "video/kimsec/지금 나 한 여자한테 몇 번을 쳐 있는 거야.webm",
+      "videoMp4": "video/kimsec/mp4/지금 나 한 여자한테 몇 번을 쳐 있는 거야.mp4",
+      "korean": "지금 나 한 여자한테 몇 번을 쳐 있는 거야?",
+      "russian": "Сколько раз ты уже меня ударил из-за одной женщины?",
+      "new": true,
+      "english": "How many times are you hitting me over one woman?"
+    },
+    {
+      "video": "video/kimsec/지금 어디 가시는 길이었습니까.webm",
+      "videoMp4": "video/kimsec/mp4/지금 어디 가시는 길이었습니까.mp4",
+      "korean": "지금 어디 가시는 길이었습니까?",
+      "russian": "Куда вы сейчас направлялись?",
+      "new": true,
+      "english": "Where were you headed?"
+    },
+    {
+      "video": "video/kimsec/지금 좋아하는 사람에게 집중하라고.webm",
+      "videoMp4": "video/kimsec/mp4/지금 좋아하는 사람에게 집중하라고.mp4",
+      "korean": "지금 좋아하는 사람에게 집중하라고",
+      "russian": "Сейчас сосредоточься на том, кто тебе нравится.",
+      "new": true,
+      "english": "Focus on the person you like right now."
+    },
+    {
+      "video": "video/kimsec/지금은 아닌 것 같습니다.webm",
+      "videoMp4": "video/kimsec/mp4/지금은 아닌 것 같습니다.mp4",
+      "korean": "지금은 아닌 것 같습니다",
+      "russian": "Похоже, сейчас не время.",
+      "new": true,
+      "english": "I don't think now is the right time."
+    },
+    {
+      "video": "video/kimsec/직접 바래다주지 않아도 됐을 텐데.webm",
+      "videoMp4": "video/kimsec/mp4/직접 바래다주지 않아도 됐을 텐데.mp4",
+      "korean": "직접 바래다주지 않아도 됐을 텐데",
+      "russian": "Не стоило провожать меня лично.",
+      "new": true,
+      "english": "You didn't have to walk me home yourself."
+    },
+    {
+      "video": "video/kimsec/첫사랑 같은 건가.webm",
+      "videoMp4": "video/kimsec/mp4/첫사랑 같은 건가.mp4",
+      "korean": "첫사랑 같은 건가?",
+      "russian": "Что-то вроде первой любви?",
+      "new": true,
+      "english": "Something like a first love?"
+    },
+    {
+      "video": "video/kimsec/추억 속으로 들어가겠다는 건가.webm",
+      "videoMp4": "video/kimsec/mp4/추억 속으로 들어가겠다는 건가.mp4",
+      "korean": "추억 속으로 들어가겠다는 건가?",
+      "russian": "То есть ты хочешь вернуться в воспоминания?",
+      "new": true,
+      "english": "Do you mean you're going back into the memories?"
+    },
+    {
+      "video": "video/kimsec/힘들었다는 거 아닐까요.webm",
+      "videoMp4": "video/kimsec/mp4/힘들었다는 거 아닐까요.mp4",
+      "korean": "힘들었다는 거 아닐까요?",
+      "russian": "Может, это значит, что ему было тяжело?",
+      "new": true,
+      "english": "Maybe it means it was hard?"
+    }
+  ],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}
