@@ -3,3 +3,13 @@
 # Archived unused files
 _archive/
 reports/
+
+# Оригиналы медиа до нормализации громкости (normalize_media.py --backup-dir).
+# Лежат только локально: в git это дубли 2+ ГБ навсегда, а s3cmd sync утащил
+# бы их на CDN. Откат: normalize_media.py <папка> --backup-dir _originals --restore
+_originals/
+
+# Мусор рядом с медиа: сайдкары старых прогонов и брошенные времянки —
+# на CDN им делать нечего (20 .bak в song1 туда уже уехали)
+*.bak
+~tmp~*
