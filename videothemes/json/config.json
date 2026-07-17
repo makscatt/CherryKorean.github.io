@@ -1199,6 +1199,32 @@
     ],
     "title_en": "What's Wrong with Secretary Kim\n김비서가 왜 그럴까",
     "totalCount": 70,
+    "hasNew": false
+  },
+  "theme43": {
+    "coverImage": "videothemes/subthemebc/boyfriend.png",
+    "title": "Парень по запросу\n월간 남친",
+    "masterJsonPath": "videothemes/json/videotheme43.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      }
+    ],
+    "title_en": "Monthly Boyfriend\n월간 남친",
+    "totalCount": 75,
     "hasNew": true
   }
 }
