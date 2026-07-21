@@ -1,0 +1,528 @@
+{
+  "isSong": true,
+  "isNewSong": true,
+  "karaoke": {
+    "clip": "video/staywithme/[도깨비 OST Part 1] 찬열, 펀치 (CHANYEOL, PUNCH) - Stay With Me MV.webm",
+    "clipMp4": "video/staywithme/mp4/[도깨비 OST Part 1] 찬열, 펀치 (CHANYEOL, PUNCH) - Stay With Me MV.mp4",
+    "lyrics": [
+      {
+        "t": 14.44,
+        "korean": "나의 두 눈을 감으면",
+        "russian": "Стоит мне закрыть глаза —",
+        "english": "When I close my eyes,"
+      },
+      {
+        "t": 18.19,
+        "korean": "떠오르는 그 눈동자",
+        "russian": "и всплывают твои глаза",
+        "english": "those eyes of yours rise up before me"
+      },
+      {
+        "t": 22.68,
+        "korean": "자꾸 가슴이 시려서",
+        "russian": "Сердце всё ноет и ноет,",
+        "english": "My heart keeps aching so,"
+      },
+      {
+        "t": 26.18,
+        "korean": "잊혀지길 바랬어",
+        "russian": "и я так хотел тебя забыть",
+        "english": "I wished you'd fade from my mind"
+      },
+      {
+        "t": 30.01,
+        "korean": "꿈이라면 이제 깨어났으면 제발",
+        "russian": "Если это сон — дай мне проснуться, прошу",
+        "english": "If this is a dream, please let me wake up now"
+      },
+      {
+        "t": 37.48,
+        "korean": "정말 네가 나의 운명인 걸까",
+        "russian": "Неужели ты и вправду моя судьба?",
+        "english": "Are you really my destiny?"
+      },
+      {
+        "t": 43.76,
+        "korean": "넌 falling you",
+        "russian": "Ты — и я падаю в тебя",
+        "english": "You — I'm falling for you"
+      },
+      {
+        "t": 47.76,
+        "korean": "운명처럼 너를 falling",
+        "russian": "Словно так суждено — падаю к тебе",
+        "english": "Like it's fate, I'm falling for you"
+      },
+      {
+        "t": 50.01,
+        "korean": "또 나를 부르네 calling",
+        "russian": "Ты снова зовёшь меня, calling",
+        "english": "You're calling me again"
+      },
+      {
+        "t": 51.76,
+        "korean": "헤어 나올 수 없어 제발 hold me",
+        "russian": "Мне не вырваться — прошу, обними меня",
+        "english": "I can't break free — please, hold me"
+      },
+      {
+        "t": 55.51,
+        "korean": "내 인연의 끈이 넌지",
+        "russian": "Ты ли та нить, что связала нас судьбой,",
+        "english": "Are you the thread of fate tying me to you,"
+      },
+      {
+        "t": 57.51,
+        "korean": "기다린 네가 맞는지",
+        "russian": "ты ли тот, кого я ждал",
+        "english": "are you the one I've waited for?"
+      },
+      {
+        "t": 59.27,
+        "korean": "가슴이 먼저 왜 내려앉는지",
+        "russian": "Почему сердце замирает раньше меня?",
+        "english": "Why does my heart sink before I even know?"
+      },
+      {
+        "t": 66.01,
+        "korean": "내 마음속 깊은 곳에",
+        "russian": "В самой глубине моей души —",
+        "english": "Deep down inside my heart,"
+      },
+      {
+        "t": 69.26,
+        "korean": "네가 사는지",
+        "russian": "не ты ли там живёшь?",
+        "english": "is it you who lives there?"
+      },
+      {
+        "t": 73.99,
+        "korean": "내 안에 숨겨왔던 진실",
+        "russian": "Правда, что я прятал внутри",
+        "english": "The truth I'd hidden inside me"
+      },
+      {
+        "t": 77.84,
+        "korean": "나의 두 눈을 감으면",
+        "russian": "Стоит мне закрыть глаза —",
+        "english": "When I close my eyes,"
+      },
+      {
+        "t": 81.84,
+        "korean": "떠오르는 그 눈동자",
+        "russian": "и всплывают твои глаза",
+        "english": "those eyes of yours rise up before me"
+      },
+      {
+        "t": 85.64,
+        "korean": "자꾸 가슴이 시려서",
+        "russian": "Сердце всё ноет и ноет,",
+        "english": "My heart keeps aching so,"
+      },
+      {
+        "t": 89.38,
+        "korean": "잊혀지길 바랬어",
+        "russian": "и я так хотел тебя забыть",
+        "english": "I wished you'd fade from my mind"
+      },
+      {
+        "t": 93.38,
+        "korean": "꿈이라면 이제 깨어났으면 제발",
+        "russian": "Если это сон — дай мне проснуться, прошу",
+        "english": "If this is a dream, please let me wake up now"
+      },
+      {
+        "t": 100.89,
+        "korean": "정말 네가 나의 운명인 걸까",
+        "russian": "Неужели ты и вправду моя судьба?",
+        "english": "Are you really my destiny?"
+      },
+      {
+        "t": 107.14,
+        "korean": "넌 falling you",
+        "russian": "Ты — и я падаю в тебя",
+        "english": "You — I'm falling for you"
+      },
+      {
+        "t": 124.68,
+        "korean": "가슴은 뛰고 있어",
+        "russian": "Сердце колотится,",
+        "english": "My heart is pounding,"
+      },
+      {
+        "t": 126.53,
+        "korean": "여전히 널 보고 있어",
+        "russian": "а я всё смотрю на тебя",
+        "english": "and I'm still watching you"
+      },
+      {
+        "t": 128.43,
+        "korean": "자꾸만 숨이 막혀서",
+        "russian": "Всё время перехватывает дыхание,",
+        "english": "My breath keeps catching,"
+      },
+      {
+        "t": 132.21,
+        "korean": "아직은 멀리에서",
+        "russian": "и пока лишь издалека",
+        "english": "and for now, from afar,"
+      },
+      {
+        "t": 133.97,
+        "korean": "너를 지켜보고 싶어",
+        "russian": "хочу просто смотреть на тебя",
+        "english": "I just want to watch over you"
+      },
+      {
+        "t": 135.97,
+        "korean": "내가 또 왜 이러는지",
+        "russian": "И почему я снова весь такой?",
+        "english": "Why am I like this all over again?"
+      },
+      {
+        "t": 139.9,
+        "korean": "처음 너를 봐쓸 때부터 다르게",
+        "russian": "С той первой встречи всё было иначе —",
+        "english": "From the moment I first saw you, it was different —"
+      },
+      {
+        "t": 141.72,
+        "korean": "운명의 시간은 또 더디게 갔지",
+        "russian": "время судьбы тянулось всё медленней",
+        "english": "the hands of fate kept moving ever slower"
+      },
+      {
+        "t": 143.76,
+        "korean": "내 가슴은 널 향했고",
+        "russian": "а сердце рвалось к тебе,",
+        "english": "and my heart turned toward you,"
+      },
+      {
+        "t": 145.76,
+        "korean": "내 심장은 다시 또 뛰었고",
+        "russian": "и снова билось всё сильней",
+        "english": "and it started beating again"
+      },
+      {
+        "t": 148.04,
+        "korean": "꺼져버리던 희미한 불빛",
+        "russian": "Угасавший слабый огонёк —",
+        "english": "A faint light that was flickering out —"
+      },
+      {
+        "t": 149.8,
+        "korean": "너로 인해 다시 타오르는 눈빛",
+        "russian": "из-за тебя мой взгляд вспыхнул опять",
+        "english": "because of you, my eyes blaze up again"
+      },
+      {
+        "t": 151.72,
+        "korean": "마치 오래전부터 널 사랑한 것 같아",
+        "russian": "Будто я люблю тебя уже давным-давно",
+        "english": "As if I've loved you for the longest time"
+      },
+      {
+        "t": 153.75,
+        "korean": "무언가에 이끌리듯 끌려온 것 같아",
+        "russian": "будто что-то само притянуло меня к тебе",
+        "english": "as if something drew me straight to you"
+      },
+      {
+        "t": 155.32,
+        "korean": "나의 두 눈을 감으면",
+        "russian": "Стоит мне закрыть глаза —",
+        "english": "When I close my eyes,"
+      },
+      {
+        "t": 158.34,
+        "korean": "떠오르는 그 눈동자",
+        "russian": "и всплывают твои глаза",
+        "english": "those eyes of yours rise up before me"
+      },
+      {
+        "t": 162.09,
+        "korean": "자꾸 가슴이 시려서",
+        "russian": "Сердце всё ноет и ноет,",
+        "english": "My heart keeps aching so,"
+      },
+      {
+        "t": 165.84,
+        "korean": "잊혀지길 바랬어",
+        "russian": "и я так хотел тебя забыть",
+        "english": "I wished you'd fade from my mind"
+      },
+      {
+        "t": 170.34,
+        "korean": "꿈이라면 이제 깨어났으면 제발",
+        "russian": "Если это сон — дай мне проснуться, прошу",
+        "english": "If this is a dream, please let me wake up now"
+      },
+      {
+        "t": 178.09,
+        "korean": "정말 네가 나의 운명인걸까",
+        "russian": "Неужели ты и вправду моя судьба?",
+        "english": "Are you really my destiny?"
+      },
+      {
+        "t": 183.34,
+        "korean": "넌 falling you",
+        "russian": "Ты — и я падаю в тебя",
+        "english": "You — I'm falling for you"
+      }
+    ]
+  },
+  "b1": [
+    {
+      "video": "video/staywithme/나의 두 눈을 감으면.webm",
+      "videoMp4": "video/staywithme/mp4/나의 두 눈을 감으면.mp4",
+      "korean": "나의 두 눈을 감으면",
+      "russian": "Стоит мне закрыть глаза —",
+      "new": true,
+      "english": "When I close my eyes,"
+    },
+    {
+      "video": "video/staywithme/떠오르는 그 눈동자.webm",
+      "videoMp4": "video/staywithme/mp4/떠오르는 그 눈동자.mp4",
+      "korean": "떠오르는 그 눈동자",
+      "russian": "и всплывают твои глаза",
+      "new": true,
+      "english": "those eyes of yours rise up before me"
+    },
+    {
+      "video": "video/staywithme/자꾸 가슴이 시려서.webm",
+      "videoMp4": "video/staywithme/mp4/자꾸 가슴이 시려서.mp4",
+      "korean": "자꾸 가슴이 시려서",
+      "russian": "Сердце всё ноет и ноет,",
+      "new": true,
+      "english": "My heart keeps aching so,"
+    },
+    {
+      "video": "video/staywithme/잊혀지길 바랬어.webm",
+      "videoMp4": "video/staywithme/mp4/잊혀지길 바랬어.mp4",
+      "korean": "잊혀지길 바랬어",
+      "russian": "и я так хотел тебя забыть",
+      "new": true,
+      "english": "I wished you'd fade from my mind"
+    },
+    {
+      "video": "video/staywithme/꿈이라면 이제 깨어났으면 제발.webm",
+      "videoMp4": "video/staywithme/mp4/꿈이라면 이제 깨어났으면 제발.mp4",
+      "korean": "꿈이라면 이제 깨어났으면 제발",
+      "russian": "Если это сон — дай мне проснуться, прошу",
+      "new": true,
+      "english": "If this is a dream, please let me wake up now"
+    },
+    {
+      "video": "video/staywithme/정말 네가 나의 운명인 걸까.webm",
+      "videoMp4": "video/staywithme/mp4/정말 네가 나의 운명인 걸까.mp4",
+      "korean": "정말 네가 나의 운명인 걸까",
+      "russian": "Неужели ты и вправду моя судьба?",
+      "new": true,
+      "english": "Are you really my destiny?"
+    },
+    {
+      "video": "video/staywithme/넌 falling you.webm",
+      "videoMp4": "video/staywithme/mp4/넌 falling you.mp4",
+      "korean": "넌 falling you",
+      "russian": "Ты — и я падаю в тебя",
+      "new": true,
+      "english": "You — I'm falling for you"
+    },
+    {
+      "video": "video/staywithme/운명처럼 너를 falling.webm",
+      "videoMp4": "video/staywithme/mp4/운명처럼 너를 falling.mp4",
+      "korean": "운명처럼 너를 falling",
+      "russian": "Словно так суждено — падаю к тебе",
+      "new": true,
+      "english": "Like it's fate, I'm falling for you"
+    },
+    {
+      "video": "video/staywithme/또 나를 부르네 calling.webm",
+      "videoMp4": "video/staywithme/mp4/또 나를 부르네 calling.mp4",
+      "korean": "또 나를 부르네 calling",
+      "russian": "Ты снова зовёшь меня, calling",
+      "new": true,
+      "english": "You're calling me again"
+    },
+    {
+      "video": "video/staywithme/헤어 나올 수 없어 제발 hold me.webm",
+      "videoMp4": "video/staywithme/mp4/헤어 나올 수 없어 제발 hold me.mp4",
+      "korean": "헤어 나올 수 없어 제발 hold me",
+      "russian": "Мне не вырваться — прошу, обними меня",
+      "new": true,
+      "english": "I can't break free — please, hold me"
+    },
+    {
+      "video": "video/staywithme/내 인연의 끈이 넌지.webm",
+      "videoMp4": "video/staywithme/mp4/내 인연의 끈이 넌지.mp4",
+      "korean": "내 인연의 끈이 넌지",
+      "russian": "Ты ли та нить, что связала нас судьбой,",
+      "new": true,
+      "english": "Are you the thread of fate tying me to you,"
+    },
+    {
+      "video": "video/staywithme/기다린 네가 맞는지.webm",
+      "videoMp4": "video/staywithme/mp4/기다린 네가 맞는지.mp4",
+      "korean": "기다린 네가 맞는지",
+      "russian": "ты ли тот, кого я ждал",
+      "new": true,
+      "english": "are you the one I've waited for?"
+    },
+    {
+      "video": "video/staywithme/가슴이 먼저 왜 내려앉는지.webm",
+      "videoMp4": "video/staywithme/mp4/가슴이 먼저 왜 내려앉는지.mp4",
+      "korean": "가슴이 먼저 왜 내려앉는지",
+      "russian": "Почему сердце замирает раньше меня?",
+      "new": true,
+      "english": "Why does my heart sink before I even know?"
+    },
+    {
+      "video": "video/staywithme/내 마음속 깊은 곳에.webm",
+      "videoMp4": "video/staywithme/mp4/내 마음속 깊은 곳에.mp4",
+      "korean": "내 마음속 깊은 곳에",
+      "russian": "В самой глубине моей души —",
+      "new": true,
+      "english": "Deep down inside my heart,"
+    },
+    {
+      "video": "video/staywithme/네가 사는지.webm",
+      "videoMp4": "video/staywithme/mp4/네가 사는지.mp4",
+      "korean": "네가 사는지",
+      "russian": "не ты ли там живёшь?",
+      "new": true,
+      "english": "is it you who lives there?"
+    },
+    {
+      "video": "video/staywithme/내 안에 숨겨왔던 진실.webm",
+      "videoMp4": "video/staywithme/mp4/내 안에 숨겨왔던 진실.mp4",
+      "korean": "내 안에 숨겨왔던 진실",
+      "russian": "Правда, что я прятал внутри",
+      "new": true,
+      "english": "The truth I'd hidden inside me"
+    },
+    {
+      "video": "video/staywithme/가슴은 뛰고 있어.webm",
+      "videoMp4": "video/staywithme/mp4/가슴은 뛰고 있어.mp4",
+      "korean": "가슴은 뛰고 있어",
+      "russian": "Сердце колотится,",
+      "new": true,
+      "english": "My heart is pounding,"
+    },
+    {
+      "video": "video/staywithme/여전히 널 보고 있어.webm",
+      "videoMp4": "video/staywithme/mp4/여전히 널 보고 있어.mp4",
+      "korean": "여전히 널 보고 있어",
+      "russian": "а я всё смотрю на тебя",
+      "new": true,
+      "english": "and I'm still watching you"
+    },
+    {
+      "video": "video/staywithme/자꾸만 숨이 막혀서.webm",
+      "videoMp4": "video/staywithme/mp4/자꾸만 숨이 막혀서.mp4",
+      "korean": "자꾸만 숨이 막혀서",
+      "russian": "Всё время перехватывает дыхание,",
+      "new": true,
+      "english": "My breath keeps catching,"
+    },
+    {
+      "video": "video/staywithme/아직은 멀리에서.webm",
+      "videoMp4": "video/staywithme/mp4/아직은 멀리에서.mp4",
+      "korean": "아직은 멀리에서",
+      "russian": "и пока лишь издалека",
+      "new": true,
+      "english": "and for now, from afar,"
+    },
+    {
+      "video": "video/staywithme/너를 지켜보고 싶어.webm",
+      "videoMp4": "video/staywithme/mp4/너를 지켜보고 싶어.mp4",
+      "korean": "너를 지켜보고 싶어",
+      "russian": "хочу просто смотреть на тебя",
+      "new": true,
+      "english": "I just want to watch over you"
+    },
+    {
+      "video": "video/staywithme/내가 또 왜 이러는지.webm",
+      "videoMp4": "video/staywithme/mp4/내가 또 왜 이러는지.mp4",
+      "korean": "내가 또 왜 이러는지",
+      "russian": "И почему я снова весь такой?",
+      "new": true,
+      "english": "Why am I like this all over again?"
+    },
+    {
+      "video": "video/staywithme/처음 너를 봐쓸 때부터 다르게.webm",
+      "videoMp4": "video/staywithme/mp4/처음 너를 봐쓸 때부터 다르게.mp4",
+      "korean": "처음 너를 봐쓸 때부터 다르게",
+      "russian": "С той первой встречи всё было иначе —",
+      "new": true,
+      "english": "From the moment I first saw you, it was different —"
+    },
+    {
+      "video": "video/staywithme/운명의 시간은 또 더디게.webm",
+      "videoMp4": "video/staywithme/mp4/운명의 시간은 또 더디게.mp4",
+      "korean": "운명의 시간은 또 더디게",
+      "russian": "Время судьбы тянулось всё медленней,",
+      "new": true,
+      "english": "The hands of fate kept moving ever slower,"
+    },
+    {
+      "video": "video/staywithme/갔지 내 가슴은 널 향했고.webm",
+      "videoMp4": "video/staywithme/mp4/갔지 내 가슴은 널 향했고.mp4",
+      "korean": "갔지 내 가슴은 널 향했고",
+      "russian": "тянулось — а сердце рвалось к тебе,",
+      "new": true,
+      "english": "it slowed — and my heart turned toward you,"
+    },
+    {
+      "video": "video/staywithme/내 심장은 다시 또 뛰었고.webm",
+      "videoMp4": "video/staywithme/mp4/내 심장은 다시 또 뛰었고.mp4",
+      "korean": "내 심장은 다시 또 뛰었고",
+      "russian": "и снова билось всё сильней",
+      "new": true,
+      "english": "and it started beating again"
+    },
+    {
+      "video": "video/staywithme/꺼져버리던 희미한 불빛.webm",
+      "videoMp4": "video/staywithme/mp4/꺼져버리던 희미한 불빛.mp4",
+      "korean": "꺼져버리던 희미한 불빛",
+      "russian": "Угасавший слабый огонёк —",
+      "new": true,
+      "english": "A faint light that was flickering out —"
+    },
+    {
+      "video": "video/staywithme/너로 인해 다시 타오르는 눈빛.webm",
+      "videoMp4": "video/staywithme/mp4/너로 인해 다시 타오르는 눈빛.mp4",
+      "korean": "너로 인해 다시 타오르는 눈빛",
+      "russian": "из-за тебя мой взгляд вспыхнул опять",
+      "new": true,
+      "english": "because of you, my eyes blaze up again"
+    },
+    {
+      "video": "video/staywithme/마치 오래전부터 널 사랑한 것 같아.webm",
+      "videoMp4": "video/staywithme/mp4/마치 오래전부터 널 사랑한 것 같아.mp4",
+      "korean": "마치 오래전부터 널 사랑한 것 같아",
+      "russian": "Будто я люблю тебя уже давным-давно",
+      "new": true,
+      "english": "As if I've loved you for the longest time"
+    },
+    {
+      "video": "video/staywithme/무언가에 이끌리듯 끌려온 것 같아.webm",
+      "videoMp4": "video/staywithme/mp4/무언가에 이끌리듯 끌려온 것 같아.mp4",
+      "korean": "무언가에 이끌리듯 끌려온 것 같아",
+      "russian": "будто что-то само притянуло меня к тебе",
+      "new": true,
+      "english": "as if something drew me straight to you"
+    },
+    {
+      "video": "video/staywithme/정말 네가 나의 운명인걸까.webm",
+      "videoMp4": "video/staywithme/mp4/정말 네가 나의 운명인걸까.mp4",
+      "korean": "정말 네가 나의 운명인걸까",
+      "russian": "Неужели ты и вправду моя судьба?",
+      "new": true,
+      "english": "Are you really my destiny?"
+    }
+  ],
+  "b2": [],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}

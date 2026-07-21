@@ -105,6 +105,13 @@
       "title_en": "Kimchi Club",
       "cover": "videothemes/songs_covers/song3.png",
       "masterJsonPath": "videothemes/json/videotheme40.json",
+      "isNewSong": false
+    },
+    "song4": {
+      "title": "Stay With Me (도깨비 OST)",
+      "title_en": "Stay With Me (Goblin OST)",
+      "cover": "videothemes/songs_covers/song4.png",
+      "masterJsonPath": "videothemes/json/videotheme44.json",
       "isNewSong": true
     }
   },

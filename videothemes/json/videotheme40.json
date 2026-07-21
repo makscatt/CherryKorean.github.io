@@ -1,6 +1,6 @@
 {
   "isSong": true,
-  "isNewSong": true,
+  "isNewSong": false,
   "karaoke": {
     "clip": "video/btunaskimchiclub/BTunaS-Kimchi Club.webm",
     "clipMp4": "video/btunaskimchiclub/mp4/BTunaS-Kimchi Club.mp4",
