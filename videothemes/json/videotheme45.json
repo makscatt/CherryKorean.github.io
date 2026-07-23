@@ -240,14 +240,17 @@
    "russian": "А, там сейчас формулировку правят, скоро будет.",
    "new": true,
    "english": "Ah, they're fixing the wording right now, it'll be done soon."
-  },
+  }
+ ],
+ "b2": [
   {
    "video": "video/apartment/이게 무슨 일이야.webm",
    "videoMp4": "video/apartment/mp4/이게 무슨 일이야.mp4",
    "korean": "이게 무슨 일이야?",
    "russian": "Что тут творится?",
    "new": true,
-   "english": "What's going on here?"
+   "english": "What's going on here?",
+   "isNew": true
   },
   {
    "video": "video/apartment/이렇게 큰 돈을 지출을 할 때는.webm",
@@ -482,7 +485,6 @@
    "english": "Mom, dad, grandma, grandpa — something like that."
   }
  ],
- "b2": [],
  "b3": [],
  "b4": [],
  "b5": []
