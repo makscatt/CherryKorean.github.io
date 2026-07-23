@@ -1232,6 +1232,22 @@
     ],
     "title_en": "Monthly Boyfriend\n월간 남친",
     "totalCount": 75,
+    "hasNew": false
+  },
+  "theme44": {
+    "coverImage": "videothemes/subthemebc/apartment.png",
+    "title": "Апартаменты\n아파트",
+    "masterJsonPath": "videothemes/json/videotheme45.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      }
+    ],
+    "title_en": "The Apartment Job\n아파트",
+    "totalCount": 60,
     "hasNew": true
   }
 }

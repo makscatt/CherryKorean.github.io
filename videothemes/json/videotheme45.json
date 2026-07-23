@@ -1,0 +1,489 @@
+{
+ "b1": [
+  {
+   "video": "video/apartment/당연하지.webm",
+   "videoMp4": "video/apartment/mp4/당연하지.mp4",
+   "korean": "당연하지!",
+   "russian": "Разумеется!",
+   "new": true,
+   "english": "Of course!",
+   "isNew": true
+  },
+  {
+   "video": "video/apartment/아파트 팔면 갚아.webm",
+   "videoMp4": "video/apartment/mp4/아파트 팔면 갚아.mp4",
+   "korean": "아파트 팔면 갚아",
+   "russian": "Продашь квартиру — и расплатишься.",
+   "new": true,
+   "english": "Sell the apartment and pay it back."
+  },
+  {
+   "video": "video/apartment/서류는 준비 다 됐지.webm",
+   "videoMp4": "video/apartment/mp4/서류는 준비 다 됐지.mp4",
+   "korean": "서류는 준비 다 됐지?",
+   "russian": "Документы все готовы?",
+   "new": true,
+   "english": "The documents are all ready, right?"
+  },
+  {
+   "video": "video/apartment/조용히 얘기 좀 나누고 싶은데.webm",
+   "videoMp4": "video/apartment/mp4/조용히 얘기 좀 나누고 싶은데.mp4",
+   "korean": "조용히 얘기 좀 나누고 싶은데.",
+   "russian": "Хотел бы поговорить без лишних ушей.",
+   "new": true,
+   "english": "I'd like to have a quiet word."
+  },
+  {
+   "video": "video/apartment/조상 땅까지 찾을 생각을 하시다니.webm",
+   "videoMp4": "video/apartment/mp4/조상 땅까지 찾을 생각을 하시다니.mp4",
+   "korean": "조상 땅까지 찾을 생각을 하시다니.",
+   "russian": "Надо же, вы даже до земли предков решили добраться.",
+   "new": true,
+   "english": "To think you'd even go after your ancestors' land."
+  },
+  {
+   "video": "video/apartment/어째 애랑 눈을 한 번 안 맞추냐.webm",
+   "videoMp4": "video/apartment/mp4/어째 애랑 눈을 한 번 안 맞추냐.mp4",
+   "korean": "어째 애랑 눈을 한 번 안 맞추냐?",
+   "russian": "Ты чего с ребёнком ни разу взглядом не встретишься?",
+   "new": true,
+   "english": "Why won't you make eye contact with the kid even once?"
+  },
+  {
+   "video": "video/apartment/그리는 게 중요한 게 아니야.webm",
+   "videoMp4": "video/apartment/mp4/그리는 게 중요한 게 아니야.mp4",
+   "korean": "그리는 게 중요한 게 아니야.",
+   "russian": "Дело не в том, чтобы рисовать.",
+   "new": true,
+   "english": "It's not about the drawing."
+  },
+  {
+   "video": "video/apartment/마음을 살펴야지_ 마음을.webm",
+   "videoMp4": "video/apartment/mp4/마음을 살펴야지_ 마음을.mp4",
+   "korean": "마음을 살펴야지, 마음을.",
+   "russian": "В душу надо смотреть, в душу.",
+   "new": true,
+   "english": "You've got to look at the heart — the heart."
+  },
+  {
+   "video": "video/apartment/오르막 달리기 제일 잘한다.webm",
+   "videoMp4": "video/apartment/mp4/오르막 달리기 제일 잘한다.mp4",
+   "korean": "오르막 달리기 제일 잘한다",
+   "russian": "В беге в гору ей равных нет.",
+   "new": true,
+   "english": "She's the best at running uphill."
+  },
+  {
+   "video": "video/apartment/아니 너 월급 관리도 언니가 한다며.webm",
+   "videoMp4": "video/apartment/mp4/아니 너 월급 관리도 언니가 한다며.mp4",
+   "korean": "아니 너 월급 관리도 언니가 한다며.",
+   "russian": "Погоди, ты же говорила, что и зарплатой твоей сестра распоряжается.",
+   "new": true,
+   "english": "Wait, you said your older sister even manages your salary."
+  },
+  {
+   "video": "video/apartment/그러니까 받지도 않은 월급을.webm",
+   "videoMp4": "video/apartment/mp4/그러니까 받지도 않은 월급을.mp4",
+   "korean": "그러니까 받지도 않은 월급을",
+   "russian": "Вот и выходит: зарплату, которую ты даже не получала,",
+   "new": true,
+   "english": "So the salary you never even got —"
+  },
+  {
+   "video": "video/apartment/만들어서 줘야 되는 거잖아.webm",
+   "videoMp4": "video/apartment/mp4/만들어서 줘야 되는 거잖아.mp4",
+   "korean": "만들어서 줘야 되는 거잖아.",
+   "russian": "приходится выдумывать и отдавать.",
+   "new": true,
+   "english": "you have to make it up and hand it over."
+  },
+  {
+   "video": "video/apartment/나도 내년에 진짜 꼭.webm",
+   "videoMp4": "video/apartment/mp4/나도 내년에 진짜 꼭.mp4",
+   "korean": "나도 내년에 진짜 꼭",
+   "russian": "Я в следующем году тоже обязательно…",
+   "new": true,
+   "english": "Next year I really will, for sure…"
+  },
+  {
+   "video": "video/apartment/이거 봐_ 이거 봐_ 이거 봐.webm",
+   "videoMp4": "video/apartment/mp4/이거 봐_ 이거 봐_ 이거 봐.mp4",
+   "korean": "이거 봐, 이거 봐, 이거 봐.",
+   "russian": "Смотри, смотри, смотри.",
+   "new": true,
+   "english": "Look, look, look."
+  },
+  {
+   "video": "video/apartment/아 이거 돈이 얼만데.webm",
+   "videoMp4": "video/apartment/mp4/아 이거 돈이 얼만데.mp4",
+   "korean": "아 이거 돈이 얼만데?",
+   "russian": "Да ты знаешь, сколько это стоит?",
+   "new": true,
+   "english": "Hey, do you know how much this costs?"
+  },
+  {
+   "video": "video/apartment/맛있어.webm",
+   "videoMp4": "video/apartment/mp4/맛있어.mp4",
+   "korean": "맛있어",
+   "russian": "Вкусно.",
+   "new": true,
+   "english": "It's good."
+  },
+  {
+   "video": "video/apartment/안 펴야 되는데.webm",
+   "videoMp4": "video/apartment/mp4/안 펴야 되는데.mp4",
+   "korean": "안 펴야 되는데",
+   "russian": "Мне бы не курить…",
+   "new": true,
+   "english": "I really shouldn't smoke…"
+  },
+  {
+   "video": "video/apartment/제가 다녀오겠습니다.webm",
+   "videoMp4": "video/apartment/mp4/제가 다녀오겠습니다.mp4",
+   "korean": "제가 다녀오겠습니다",
+   "russian": "Я отойду ненадолго.",
+   "new": true,
+   "english": "I'll be right back."
+  },
+  {
+   "video": "video/apartment/약은 잘 챙겨 먹고 있죠.webm",
+   "videoMp4": "video/apartment/mp4/약은 잘 챙겨 먹고 있죠.mp4",
+   "korean": "약은 잘 챙겨 먹고 있죠?",
+   "russian": "Лекарства-то принимаете как положено?",
+   "new": true,
+   "english": "You're taking your medicine properly, right?"
+  },
+  {
+   "video": "video/apartment/약 잘 챙겨 먹냐고요.webm",
+   "videoMp4": "video/apartment/mp4/약 잘 챙겨 먹냐고요.mp4",
+   "korean": "약 잘 챙겨 먹냐고요.",
+   "russian": "Я спрашиваю, лекарства нормально принимаешь?",
+   "new": true,
+   "english": "I'm asking — are you taking your medicine?"
+  },
+  {
+   "video": "video/apartment/그 약 안 먹으면 죽는다고.webm",
+   "videoMp4": "video/apartment/mp4/그 약 안 먹으면 죽는다고.mp4",
+   "korean": "그 약 안 먹으면 죽는다고.",
+   "russian": "Без этих лекарств ведь помрёшь.",
+   "new": true,
+   "english": "If you don't take that medicine, you'll die."
+  },
+  {
+   "video": "video/apartment/네가 돈을 그렇게 많이 보내주는데.webm",
+   "videoMp4": "video/apartment/mp4/네가 돈을 그렇게 많이 보내주는데.mp4",
+   "korean": "네가 돈을 그렇게 많이 보내주는데",
+   "russian": "Ты же мне столько денег присылаешь,",
+   "new": true,
+   "english": "You send me so much money,"
+  },
+  {
+   "video": "video/apartment/뭘 그렇게 많이 줘.webm",
+   "videoMp4": "video/apartment/mp4/뭘 그렇게 많이 줘.mp4",
+   "korean": "뭘 그렇게 많이 줘?",
+   "russian": "куда мне столько?",
+   "new": true,
+   "english": "why give me so much?"
+  },
+  {
+   "video": "video/apartment/그래 우리가 뭐 양아치처럼 살 수는 없지.webm",
+   "videoMp4": "video/apartment/mp4/그래 우리가 뭐 양아치처럼 살 수는 없지.mp4",
+   "korean": "그래 우리가 뭐 양아치처럼 살 수는 없지",
+   "russian": "Ну не можем же мы жить как шпана.",
+   "new": true,
+   "english": "Come on, we can't live like thugs."
+  },
+  {
+   "video": "video/apartment/이제 벌만큼 벌었잖아.webm",
+   "videoMp4": "video/apartment/mp4/이제 벌만큼 벌었잖아.mp4",
+   "korean": "이제 벌만큼 벌었잖아.",
+   "russian": "Мы ведь уже своё заработали.",
+   "new": true,
+   "english": "We've earned enough by now."
+  },
+  {
+   "video": "video/apartment/아이들 하고 싶은 거 하게 해주고.webm",
+   "videoMp4": "video/apartment/mp4/아이들 하고 싶은 거 하게 해주고.mp4",
+   "korean": "아이들 하고 싶은 거 하게 해주고",
+   "russian": "Дать детям заниматься тем, чем хотят,",
+   "new": true,
+   "english": "Let the kids do what they want,"
+  },
+  {
+   "video": "video/apartment/난 뭐 하고 싶은 거 없어.webm",
+   "videoMp4": "video/apartment/mp4/난 뭐 하고 싶은 거 없어.mp4",
+   "korean": "난 뭐 하고 싶은 거 없어?",
+   "russian": "а мне что — ничего не хочется?",
+   "new": true,
+   "english": "and what about me — don't I have things I want?"
+  },
+  {
+   "video": "video/apartment/같은 거 없어요 그런 거.webm",
+   "videoMp4": "video/apartment/mp4/같은 거 없어요 그런 거.mp4",
+   "korean": "같은 거 없어요 그런 거",
+   "russian": "Нет у меня такого, ничего такого.",
+   "new": true,
+   "english": "I don't have anything like that."
+  },
+  {
+   "video": "video/apartment/바로 다 갚아.webm",
+   "videoMp4": "video/apartment/mp4/바로 다 갚아.mp4",
+   "korean": "바로 다 갚아!",
+   "russian": "Сразу всё и выплатишь!",
+   "new": true,
+   "english": "Pay it all back at once!"
+  },
+  {
+   "video": "video/apartment/아 그거 지금 문구 수정 중인데 곧 해요.webm",
+   "videoMp4": "video/apartment/mp4/아 그거 지금 문구 수정 중인데 곧 해요.mp4",
+   "korean": "아 그거 지금 문구 수정 중인데 곧 해요",
+   "russian": "А, там сейчас формулировку правят, скоро будет.",
+   "new": true,
+   "english": "Ah, they're fixing the wording right now, it'll be done soon."
+  },
+  {
+   "video": "video/apartment/이게 무슨 일이야.webm",
+   "videoMp4": "video/apartment/mp4/이게 무슨 일이야.mp4",
+   "korean": "이게 무슨 일이야?",
+   "russian": "Что тут творится?",
+   "new": true,
+   "english": "What's going on here?"
+  },
+  {
+   "video": "video/apartment/이렇게 큰 돈을 지출을 할 때는.webm",
+   "videoMp4": "video/apartment/mp4/이렇게 큰 돈을 지출을 할 때는.mp4",
+   "korean": "이렇게 큰 돈을 지출을 할 때는",
+   "russian": "Когда тратишь такие большие деньги,",
+   "new": true,
+   "english": "When you spend this kind of big money,"
+  },
+  {
+   "video": "video/apartment/조심히 돌아가십시오.webm",
+   "videoMp4": "video/apartment/mp4/조심히 돌아가십시오.mp4",
+   "korean": "조심히 돌아가십시오.",
+   "russian": "Счастливо добраться.",
+   "new": true,
+   "english": "Get home safe."
+  },
+  {
+   "video": "video/apartment/그런 놈이 하나 있습니다.webm",
+   "videoMp4": "video/apartment/mp4/그런 놈이 하나 있습니다.mp4",
+   "korean": "그런 놈이 하나 있습니다.",
+   "russian": "Есть один такой типок.",
+   "new": true,
+   "english": "There's one guy like that."
+  },
+  {
+   "video": "video/apartment/연락도 없이 어쩐 일이십니까.webm",
+   "videoMp4": "video/apartment/mp4/연락도 없이 어쩐 일이십니까.mp4",
+   "korean": "연락도 없이 어쩐 일이십니까?",
+   "russian": "Без звонка — какими судьбами?",
+   "new": true,
+   "english": "No call ahead — what brings you here?"
+  },
+  {
+   "video": "video/apartment/우리 박 대표는 못하는 게 없어.webm",
+   "videoMp4": "video/apartment/mp4/우리 박 대표는 못하는 게 없어.mp4",
+   "korean": "우리 박 대표는 못하는 게 없어.",
+   "russian": "Наш директор Пак всё умеет.",
+   "new": true,
+   "english": "Our Director Park can do anything."
+  },
+  {
+   "video": "video/apartment/제가 뭐 실수라도 한 게 있습니까.webm",
+   "videoMp4": "video/apartment/mp4/제가 뭐 실수라도 한 게 있습니까.mp4",
+   "korean": "제가 뭐 실수라도 한 게 있습니까?",
+   "russian": "Я что, в чём-то провинился?",
+   "new": true,
+   "english": "Did I do something wrong?"
+  },
+  {
+   "video": "video/apartment/내가 지금 농담하는 걸로 보여.webm",
+   "videoMp4": "video/apartment/mp4/내가 지금 농담하는 걸로 보여.mp4",
+   "korean": "내가 지금 농담하는 걸로 보여?",
+   "russian": "По-твоему, я сейчас шучу?",
+   "new": true,
+   "english": "Does it look like I'm joking right now?"
+  },
+  {
+   "video": "video/apartment/항상 드시던 거 맞으시죠.webm",
+   "videoMp4": "video/apartment/mp4/항상 드시던 거 맞으시죠.mp4",
+   "korean": "항상 드시던 거 맞으시죠?",
+   "russian": "Вам как обычно, верно?",
+   "new": true,
+   "english": "The usual for you, right?"
+  },
+  {
+   "video": "video/apartment/아빠가 조금 이따가 다시 전화할게.webm",
+   "videoMp4": "video/apartment/mp4/아빠가 조금 이따가 다시 전화할게.mp4",
+   "korean": "아빠가 조금 이따가 다시 전화할게.",
+   "russian": "Папа перезвонит чуть попозже.",
+   "new": true,
+   "english": "Daddy will call you back a little later."
+  },
+  {
+   "video": "video/apartment/저희가 100억이 어디 있습니까.webm",
+   "videoMp4": "video/apartment/mp4/저희가 100억이 어디 있습니까.mp4",
+   "korean": "저희가 100억이 어디 있습니까?",
+   "russian": "Откуда у нас десять миллиардов?",
+   "new": true,
+   "english": "Where would we get ten billion won?"
+  },
+  {
+   "video": "video/apartment/니들은 니들 인생 찾아가.webm",
+   "videoMp4": "video/apartment/mp4/니들은 니들 인생 찾아가.mp4",
+   "korean": "니들은 니들 인생 찾아가.",
+   "russian": "А вы идите, живите своей жизнью.",
+   "new": true,
+   "english": "You go and live your own lives."
+  },
+  {
+   "video": "video/apartment/안녕하세요 검사님.webm",
+   "videoMp4": "video/apartment/mp4/안녕하세요 검사님.mp4",
+   "korean": "안녕하세요 검사님.",
+   "russian": "Здравствуйте, господин прокурор.",
+   "new": true,
+   "english": "Hello, Prosecutor."
+  },
+  {
+   "video": "video/apartment/누구신지.webm",
+   "videoMp4": "video/apartment/mp4/누구신지.mp4",
+   "korean": "누구신지",
+   "russian": "С кем имею честь?",
+   "new": true,
+   "english": "And you are?"
+  },
+  {
+   "video": "video/apartment/요즘 누가 환갑을 챙겨.webm",
+   "videoMp4": "video/apartment/mp4/요즘 누가 환갑을 챙겨.mp4",
+   "korean": "요즘 누가 환갑을 챙겨?",
+   "russian": "Кто сейчас справляет шестидесятилетие?",
+   "new": true,
+   "english": "Who celebrates a 60th birthday these days?"
+  },
+  {
+   "video": "video/apartment/현금 얼마나 들어왔는지 소식 들은 거 있어.webm",
+   "videoMp4": "video/apartment/mp4/현금 얼마나 들어왔는지 소식 들은 거 있어.mp4",
+   "korean": "현금 얼마나 들어왔는지 소식 들은 거 있어?",
+   "russian": "Слыхал, сколько наличкой занесли?",
+   "new": true,
+   "english": "Did you hear how much cash came in?"
+  },
+  {
+   "video": "video/apartment/고마워요 고마워.webm",
+   "videoMp4": "video/apartment/mp4/고마워요 고마워.mp4",
+   "korean": "고마워요 고마워",
+   "russian": "Спасибо, спасибо.",
+   "new": true,
+   "english": "Thank you, thank you."
+  },
+  {
+   "video": "video/apartment/저 여기 돈 받고 일하는 거예요.webm",
+   "videoMp4": "video/apartment/mp4/저 여기 돈 받고 일하는 거예요.mp4",
+   "korean": "저 여기 돈 받고 일하는 거예요.",
+   "russian": "Я вообще-то тут за деньги работаю.",
+   "new": true,
+   "english": "I actually work here for money, you know."
+  },
+  {
+   "video": "video/apartment/이건 유료로 진행해야 하는 건이었죠.webm",
+   "videoMp4": "video/apartment/mp4/이건 유료로 진행해야 하는 건이었죠.mp4",
+   "korean": "이건 유료로 진행해야 하는 건이었죠.",
+   "russian": "А вот это уже должно было идти за плату.",
+   "new": true,
+   "english": "This was something that should've been done for a fee."
+  },
+  {
+   "video": "video/apartment/할머니가 돈이 없으셔가지고.webm",
+   "videoMp4": "video/apartment/mp4/할머니가 돈이 없으셔가지고.mp4",
+   "korean": "할머니가 돈이 없으셔가지고",
+   "russian": "У бабушки денег не было, вот и…",
+   "new": true,
+   "english": "The grandmother had no money, so…"
+  },
+  {
+   "video": "video/apartment/제가 오늘 결혼을 한다고요.webm",
+   "videoMp4": "video/apartment/mp4/제가 오늘 결혼을 한다고요.mp4",
+   "korean": "제가 오늘 결혼을 한다고요?",
+   "russian": "Это у меня сегодня свадьба?",
+   "new": true,
+   "english": "I'm the one getting married today?"
+  },
+  {
+   "video": "video/apartment/그렇다니까 몇 번을 얘기해.webm",
+   "videoMp4": "video/apartment/mp4/그렇다니까 몇 번을 얘기해.mp4",
+   "korean": "그렇다니까 몇 번을 얘기해",
+   "russian": "Да говорю же, сколько раз повторять.",
+   "new": true,
+   "english": "That's what I said — how many times do I have to tell you?"
+  },
+  {
+   "video": "video/apartment/지금 제 기분이 어떤지 아세요.webm",
+   "videoMp4": "video/apartment/mp4/지금 제 기분이 어떤지 아세요.mp4",
+   "korean": "지금 제 기분이 어떤지 아세요?",
+   "russian": "Вы хоть понимаете, каково мне сейчас?",
+   "new": true,
+   "english": "Do you have any idea how I feel right now?"
+  },
+  {
+   "video": "video/apartment/그쪽 기분까지 신경 써야 합니까.webm",
+   "videoMp4": "video/apartment/mp4/그쪽 기분까지 신경 써야 합니까.mp4",
+   "korean": "그쪽 기분까지 신경 써야 합니까?",
+   "russian": "Я ещё и о вашем настроении заботиться должен?",
+   "new": true,
+   "english": "Am I supposed to worry about your feelings too?"
+  },
+  {
+   "video": "video/apartment/제가 법적 종사자로서 한 말씀 드리자면.webm",
+   "videoMp4": "video/apartment/mp4/제가 법적 종사자로서 한 말씀 드리자면.mp4",
+   "korean": "제가 법적 종사자로서 한 말씀 드리자면",
+   "russian": "Скажу как человек при законе:",
+   "new": true,
+   "english": "Speaking as someone in the legal profession —"
+  },
+  {
+   "video": "video/apartment/나 오늘 분위기 너무 좋아요.webm",
+   "videoMp4": "video/apartment/mp4/나 오늘 분위기 너무 좋아요.mp4",
+   "korean": "나 오늘 분위기 너무 좋아요",
+   "russian": "У меня сегодня прям отличное настроение.",
+   "new": true,
+   "english": "I'm in such a good mood today."
+  },
+  {
+   "video": "video/apartment/고마워.webm",
+   "videoMp4": "video/apartment/mp4/고마워.mp4",
+   "korean": "고마워.",
+   "russian": "Спасибо.",
+   "new": true,
+   "english": "Thanks."
+  },
+  {
+   "video": "video/apartment/잘못했어요.webm",
+   "videoMp4": "video/apartment/mp4/잘못했어요.mp4",
+   "korean": "잘못했어요!",
+   "russian": "Простите, я виноват!",
+   "new": true,
+   "english": "I'm sorry, I was wrong!"
+  },
+  {
+   "video": "video/apartment/그럼 얼마나 해 먹을 수 있겠어.webm",
+   "videoMp4": "video/apartment/mp4/그럼 얼마나 해 먹을 수 있겠어.mp4",
+   "korean": "그럼 얼마나 해 먹을 수 있겠어?",
+   "russian": "И сколько тогда можно наварить?",
+   "new": true,
+   "english": "So how much could you skim off then?"
+  },
+  {
+   "video": "video/apartment/엄마 아빠 할머니 할아버지 뭐 그런 거.webm",
+   "videoMp4": "video/apartment/mp4/엄마 아빠 할머니 할아버지 뭐 그런 거.mp4",
+   "korean": "엄마 아빠 할머니 할아버지 뭐 그런 거",
+   "russian": "Мама, папа, бабушка, дедушка — ну, что-то в этом роде.",
+   "new": true,
+   "english": "Mom, dad, grandma, grandpa — something like that."
+  }
+ ],
+ "b2": [],
+ "b3": [],
+ "b4": [],
+ "b5": []
+}
