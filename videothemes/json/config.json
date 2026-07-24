@@ -1249,10 +1249,20 @@
         "name": "2",
         "key": "b2",
         "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      },
+      {
+        "name": "4",
+        "key": "b4",
+        "name_en": "4"
       }
     ],
     "title_en": "The Apartment Job\n아파트",
-    "totalCount": 60,
+    "totalCount": 120,
     "hasNew": true
   }
 }
