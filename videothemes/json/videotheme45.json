@@ -276,6 +276,8 @@
   ],
   "b2": [
     {
+      "drama": "Апартаменты",
+      "episode": "1",
       "video": "video/apartment/이게 무슨 일이야.webm",
       "videoMp4": "video/apartment/mp4/이게 무슨 일이야.mp4",
       "korean": "이게 무슨 일이야?",
@@ -824,6 +826,8 @@
   ],
   "b4": [
     {
+      "drama": "Апартаменты",
+      "episode": "2",
       "video": "video/apartment/저희 변호사들이 일을 참 잘해요.webm",
       "videoMp4": "video/apartment/mp4/저희 변호사들이 일을 참 잘해요.mp4",
       "korean": "저희 변호사들이 일을 참 잘해요.",
