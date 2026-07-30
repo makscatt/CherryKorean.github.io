@@ -236,7 +236,7 @@
       "video": "video/rev/듣기 전에 톡을 보냈어요.webm",
       "videoMp4": "video/rev/mp4/듣기 전에 톡을 보냈어요.mp4",
       "korean": "듣기 전에 톡을 보냈어요.",
-      "russian": "Я отправил(а) сообщение, ещё до того как услышал(а).",
+      "russian": "Я отправила сообщение ещё до того, как услышала.",
       "new": true,
       "english": "I sent a message before I heard."
     }
@@ -536,7 +536,7 @@
       "video": "video/rev/왜 나한테 말 안 했어.webm",
       "videoMp4": "video/rev/mp4/왜 나한테 말 안 했어.mp4",
       "korean": "왜 나한테 말 안 했어?",
-      "russian": "Почему ты мне не сказал(а)?",
+      "russian": "Почему ты мне ничего не говоришь?",
       "new": true,
       "english": "Why didn't you tell me?"
     },
@@ -616,7 +616,7 @@
       "video": "video/rev/잘가요 고생했어.webm",
       "videoMp4": "video/rev/mp4/잘가요 고생했어.mp4",
       "korean": "잘 가요. 고생했어.",
-      "russian": "Пока. Ты хорошо постарался(лась).",
+      "russian": "Пока. Спасибо за работу.",
       "new": true,
       "english": "Take care. You did well."
     },

@@ -496,7 +496,7 @@
       "video": "video/crown/옷은 제가 드라이해서 걸어놨어요.webm",
       "videoMp4": "video/crown/mp4/옷은 제가 드라이해서 걸어놨어요.mp4",
       "korean": "옷은 제가 드라이해서 걸어놨어요.",
-      "russian": "Я вещи в химчистку сдал(а) и уже повесил(а).",
+      "russian": "Вещи я сдала в химчистку и уже повесила.",
       "new": true,
       "english": "I had the clothes dry cleaned and hung them up."
     },
@@ -512,7 +512,7 @@
       "video": "video/crown/원했지.webm",
       "videoMp4": "video/crown/mp4/원했지.mp4",
       "korean": "원했지.",
-      "russian": "Да, я этого хотел(а).",
+      "russian": "Да, этого и хотелось.",
       "new": true,
       "english": "Yeah, I wanted that."
     },
@@ -536,7 +536,7 @@
       "video": "video/crown/이런 거 보면 하나도 안 변했단 말이지.webm",
       "videoMp4": "video/crown/mp4/이런 거 보면 하나도 안 변했단 말이지.mp4",
       "korean": "이런 거 보면 하나도 안 변했단 말이지.",
-      "russian": "Судя по таким вещам, вообще не изменился(ась).",
+      "russian": "Судя по такому, ты совсем не меняешься.",
       "new": true,
       "english": "Seeing this, you haven't changed at all."
     },
@@ -560,7 +560,7 @@
       "video": "video/crown/이틀 못 봤는데 되게 보고 싶더라고.webm",
       "videoMp4": "video/crown/mp4/이틀 못 봤는데 되게 보고 싶더라고.mp4",
       "korean": "이틀 못 봤는데 되게 보고 싶더라고.",
-      "russian": "Всего два дня не видел(а), а так соскучился(лась).",
+      "russian": "Всего два дня не виделись, а я уже скучаю.",
       "new": true,
       "english": "I haven't seen you in two days, and I really missed you."
     },
@@ -608,7 +608,7 @@
       "video": "video/crown/저 맷집 좋아요.webm",
       "videoMp4": "video/crown/mp4/저 맷집 좋아요.mp4",
       "korean": "저 맷집 좋아요.",
-      "russian": "Я выносливый(ая), крепкий орешек.",
+      "russian": "Я удар держу.",
       "new": true,
       "english": "I'm tough, I can take it."
     },

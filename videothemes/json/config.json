@@ -1263,6 +1263,37 @@
     ],
     "title_en": "The Apartment Job\n아파트",
     "totalCount": 120,
+    "hasNew": false
+  },
+  "theme45": {
+    "coverImage": "videothemes/subthemebc/colony.png",
+    "title": "Колония\n군체",
+    "masterJsonPath": "videothemes/json/videotheme46.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      },
+      {
+        "name": "4",
+        "key": "b4",
+        "name_en": "4"
+      }
+    ],
+    "title_en": "Colony\n군체",
+    "totalCount": 115,
     "hasNew": true
   }
 }

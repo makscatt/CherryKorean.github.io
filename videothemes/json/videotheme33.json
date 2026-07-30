@@ -108,7 +108,7 @@
       "video": "video/tomorrow/네 알겠습니다.webm",
       "videoMp4": "video/tomorrow/mp4/네 알겠습니다.mp4",
       "korean": "네, 알겠습니다",
-      "russian": "Да, понял(а)",
+      "russian": "Да, понятно.",
       "new": true,
       "english": "Yes, I understand."
     },
@@ -212,7 +212,7 @@
       "video": "video/tomorrow/중요한 할 말이 있었거든요.webm",
       "videoMp4": "video/tomorrow/mp4/중요한 할 말이 있었거든요.mp4",
       "korean": "중요한 할 말이 있었거든요",
-      "russian": "Я хотел(а) сказать кое‑что важное",
+      "russian": "Мне надо было сказать кое-что важное.",
       "new": true,
       "english": "I had something important to say."
     },
@@ -228,7 +228,7 @@
       "video": "video/tomorrow/할 말이 뭐야.webm",
       "videoMp4": "video/tomorrow/mp4/할 말이 뭐야.mp4",
       "korean": "할 말이 뭐야?",
-      "russian": "Что ты хотел(а) сказать?",
+      "russian": "Так что ты хочешь сказать?",
       "new": true,
       "english": "What did you want to say?"
     },
@@ -236,7 +236,7 @@
       "video": "video/tomorrow/할 말이 있는데.webm",
       "videoMp4": "video/tomorrow/mp4/할 말이 있는데.mp4",
       "korean": "할 말이 있는데…",
-      "russian": "Я хотел(а) кое‑что сказать…",
+      "russian": "Мне надо кое-что сказать…",
       "new": true,
       "english": "I have something to say..."
     }

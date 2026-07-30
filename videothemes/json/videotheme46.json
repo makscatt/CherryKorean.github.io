@@ -1,0 +1,1058 @@
+{
+  "b1": [
+    {
+      "drama": "Колония",
+      "episode": "фильм",
+      "video": "video/colony/11입니다. 말씀하세요.webm",
+      "videoMp4": "video/colony/mp4/11입니다. 말씀하세요.mp4",
+      "korean": "11입니다. 말씀하세요.",
+      "russian": "Одиннадцатый на связи. Говорите.",
+      "new": true,
+      "english": "Unit eleven. Go ahead.",
+      "timing": "01:10",
+      "isNew": true
+    },
+    {
+      "video": "video/colony/실험을 하려고 합니다.webm",
+      "videoMp4": "video/colony/mp4/실험을 하려고 합니다.mp4",
+      "korean": "실험을 하려고 합니다.",
+      "russian": "Мы собираемся провести эксперимент.",
+      "new": true,
+      "english": "We're going to run an experiment.",
+      "timing": "01:20"
+    },
+    {
+      "video": "video/colony/야 너 10분 늦었어.webm",
+      "videoMp4": "video/colony/mp4/야 너 10분 늦었어.mp4",
+      "korean": "야 너 10분 늦었어",
+      "russian": "Эй, ты на десять минут опаздываешь.",
+      "new": true,
+      "english": "Hey, you're ten minutes late.",
+      "timing": "02:20"
+    },
+    {
+      "video": "video/colony/별건 아니고.webm",
+      "videoMp4": "video/colony/mp4/별건 아니고.mp4",
+      "korean": "별건 아니고",
+      "russian": "Да ничего особенного.",
+      "new": true,
+      "english": "It's nothing special.",
+      "timing": "02:24"
+    },
+    {
+      "video": "video/colony/그래 그럴 수 있지.webm",
+      "videoMp4": "video/colony/mp4/그래 그럴 수 있지.mp4",
+      "korean": "그래 그럴 수 있지.",
+      "russian": "Да, бывает.",
+      "new": true,
+      "english": "Yeah, that happens.",
+      "timing": "02:31"
+    },
+    {
+      "video": "video/colony/그래 또 내 잘못이지.webm",
+      "videoMp4": "video/colony/mp4/그래 또 내 잘못이지.mp4",
+      "korean": "그래 또 내 잘못이지",
+      "russian": "Ну да, опять моя вина.",
+      "new": true,
+      "english": "Right, my fault again.",
+      "timing": "03:24"
+    },
+    {
+      "video": "video/colony/진짜 궁금해서 그러는데.webm",
+      "videoMp4": "video/colony/mp4/진짜 궁금해서 그러는데.mp4",
+      "korean": "진짜 궁금해서 그러는데",
+      "russian": "Мне правда просто интересно.",
+      "new": true,
+      "english": "I'm honestly just curious.",
+      "timing": "03:43"
+    },
+    {
+      "video": "video/colony/생각보다 재밌는 사람일 것 같은데 저 사람.webm",
+      "videoMp4": "video/colony/mp4/생각보다 재밌는 사람일 것 같은데 저 사람.mp4",
+      "korean": "생각보다 재밌는 사람일 것 같은데 저 사람.",
+      "russian": "А он, кажется, интереснее, чем выглядит.",
+      "new": true,
+      "english": "That guy seems more interesting than he looks.",
+      "timing": "05:06"
+    },
+    {
+      "video": "video/colony/그렇잖아도 궁금해서 온 거야.webm",
+      "videoMp4": "video/colony/mp4/그렇잖아도 궁금해서 온 거야.mp4",
+      "korean": "그렇잖아도 궁금해서 온 거야.",
+      "russian": "Мне как раз стало любопытно, вот и я здесь.",
+      "new": true,
+      "english": "I came because I was curious anyway.",
+      "timing": "05:19"
+    },
+    {
+      "video": "video/colony/아주 잠시 후에.webm",
+      "videoMp4": "video/colony/mp4/아주 잠시 후에.mp4",
+      "korean": "아주 잠시 후에",
+      "russian": "Совсем скоро.",
+      "new": true,
+      "english": "In just a moment.",
+      "timing": "05:37"
+    },
+    {
+      "video": "video/colony/아니 간만에 휴가라며.webm",
+      "videoMp4": "video/colony/mp4/아니 간만에 휴가라며.mp4",
+      "korean": "아니 간만에 휴가라며",
+      "russian": "Ты же вроде в отпуске впервые за сто лет.",
+      "new": true,
+      "english": "You said it's your first time off in ages.",
+      "timing": "06:33"
+    },
+    {
+      "video": "video/colony/쇼핑하고 하는 거지.webm",
+      "videoMp4": "video/colony/mp4/쇼핑하고 하는 거지.mp4",
+      "korean": "쇼핑하고 하는 거지.",
+      "russian": "Ну там по магазинам походить и всё такое.",
+      "new": true,
+      "english": "You know, do some shopping and all that.",
+      "timing": "06:41"
+    },
+    {
+      "video": "video/colony/밖에서 살아도 되겠어.webm",
+      "videoMp4": "video/colony/mp4/밖에서 살아도 되겠어.mp4",
+      "korean": "밖에서 살아도 되겠어?",
+      "russian": "Ты что, и на улице жить сможешь?",
+      "new": true,
+      "english": "Could you really live outdoors?",
+      "timing": "06:54"
+    },
+    {
+      "video": "video/colony/너무 좋지.webm",
+      "videoMp4": "video/colony/mp4/너무 좋지.mp4",
+      "korean": "너무 좋지!",
+      "russian": "Ещё как здорово!",
+      "new": true,
+      "english": "Sounds great!",
+      "timing": "07:07"
+    },
+    {
+      "video": "video/colony/가면 되지 뭘 그게 뭐라고 그게.webm",
+      "videoMp4": "video/colony/mp4/가면 되지 뭘 그게 뭐라고 그게.mp4",
+      "korean": "가면 되지 뭘 그게 뭐라고 그게?",
+      "russian": "Просто съезди, что тут такого?",
+      "new": true,
+      "english": "Just go — what's the big deal?",
+      "timing": "07:09"
+    },
+    {
+      "video": "video/colony/일단 너 들어가 점심시간 끝날 것 같아.webm",
+      "videoMp4": "video/colony/mp4/일단 너 들어가 점심시간 끝날 것 같아.mp4",
+      "korean": "일단 너 들어가 점심시간 끝날 것 같아",
+      "russian": "Ты пока иди, обед вроде заканчивается.",
+      "new": true,
+      "english": "Head back in for now, the lunch break's almost over.",
+      "timing": "07:14"
+    },
+    {
+      "video": "video/colony/캠핑도 문명이야.webm",
+      "videoMp4": "video/colony/mp4/캠핑도 문명이야.mp4",
+      "korean": "캠핑도 문명이야.",
+      "russian": "Кемпинг — это тоже цивилизация.",
+      "new": true,
+      "english": "Camping is civilization too.",
+      "timing": "07:32"
+    },
+    {
+      "video": "video/colony/안녕. 조심히 가.webm",
+      "videoMp4": "video/colony/mp4/안녕. 조심히 가.mp4",
+      "korean": "안녕. 조심히 가.",
+      "russian": "Пока. Аккуратно доберись.",
+      "new": true,
+      "english": "Bye. Take care on the way.",
+      "timing": "07:39"
+    },
+    {
+      "video": "video/colony/초대해 주셔서 감사합니다.webm",
+      "videoMp4": "video/colony/mp4/초대해 주셔서 감사합니다.mp4",
+      "korean": "초대해 주셔서 감사합니다.",
+      "russian": "Спасибо, что пригласили.",
+      "new": true,
+      "english": "Thank you for inviting me.",
+      "timing": "07:53"
+    },
+    {
+      "video": "video/colony/중요한 전화 같아서.webm",
+      "videoMp4": "video/colony/mp4/중요한 전화 같아서.mp4",
+      "korean": "중요한 전화 같아서",
+      "russian": "Звонок вроде важный был.",
+      "new": true,
+      "english": "It looked like an important call.",
+      "timing": "08:12"
+    },
+    {
+      "video": "video/colony/아까 컨퍼런스 중간에 본 것 같아요.webm",
+      "videoMp4": "video/colony/mp4/아까 컨퍼런스 중간에 본 것 같아요.mp4",
+      "korean": "아까 컨퍼런스 중간에 본 것 같아요.",
+      "russian": "Кажется, мы виделись на конференции.",
+      "new": true,
+      "english": "I think we saw each other at the conference.",
+      "timing": "08:49"
+    },
+    {
+      "video": "video/colony/알겠습니다.webm",
+      "videoMp4": "video/colony/mp4/알겠습니다.mp4",
+      "korean": "알겠습니다.",
+      "russian": "Понятно.",
+      "new": true,
+      "english": "Understood.",
+      "timing": "09:01"
+    },
+    {
+      "video": "video/colony/내 연구가 위대하다며.webm",
+      "videoMp4": "video/colony/mp4/내 연구가 위대하다며.mp4",
+      "korean": "내 연구가 위대하다며",
+      "russian": "Ты же вроде говоришь, что моё исследование великое.",
+      "new": true,
+      "english": "You said my research was great, didn't you?",
+      "timing": "10:27"
+    },
+    {
+      "video": "video/colony/그걸 막으려고 하는 거야.webm",
+      "videoMp4": "video/colony/mp4/그걸 막으려고 하는 거야.mp4",
+      "korean": "그걸 막으려고 하는 거야?",
+      "russian": "Ты пытаешься это остановить?",
+      "new": true,
+      "english": "You're trying to stop it?",
+      "timing": "11:09"
+    },
+    {
+      "video": "video/colony/나랑은 상관없는 일이고.webm",
+      "videoMp4": "video/colony/mp4/나랑은 상관없는 일이고.mp4",
+      "korean": "나랑은 상관없는 일이고",
+      "russian": "Меня это вообще не касается.",
+      "new": true,
+      "english": "It has nothing to do with me.",
+      "timing": "11:24"
+    },
+    {
+      "video": "video/colony/인사할 분위기 아닌 것 같던데.webm",
+      "videoMp4": "video/colony/mp4/인사할 분위기 아닌 것 같던데.mp4",
+      "korean": "인사할 분위기 아닌 것 같던데?",
+      "russian": "Там как-то не до знакомств было, разве нет?",
+      "new": true,
+      "english": "Didn't really seem like the moment to say hello, did it?",
+      "timing": "12:55"
+    },
+    {
+      "video": "video/colony/아 진짜야. 그 전화 받은 분위기 아니었어.webm",
+      "videoMp4": "video/colony/mp4/아 진짜야. 그 전화 받은 분위기 아니었어.mp4",
+      "korean": "아 진짜야. 그 전화 받은 분위기 아니었어.",
+      "russian": "Да правда. По тому звонку было явно не до этого.",
+      "new": true,
+      "english": "No, really. That call wasn't the right moment.",
+      "timing": "13:00"
+    },
+    {
+      "video": "video/colony/여기 컨퍼런스홀이 어디예요.webm",
+      "videoMp4": "video/colony/mp4/여기 컨퍼런스홀이 어디예요.mp4",
+      "korean": "여기 컨퍼런스홀이 어디예요?",
+      "russian": "Скажите, где здесь конференц-зал?",
+      "new": true,
+      "english": "Where's the conference hall here?",
+      "timing": "13:25"
+    }
+  ],
+  "b2": [
+    {
+      "drama": "Колония",
+      "episode": "фильм",
+      "video": "video/colony/아빠 이제 들어갈 거야.webm",
+      "videoMp4": "video/colony/mp4/아빠 이제 들어갈 거야.mp4",
+      "korean": "아빠 이제 들어갈 거야.",
+      "russian": "Пап, я уже домой иду.",
+      "new": true,
+      "english": "Dad, I'm heading home now.",
+      "timing": "14:04",
+      "isNew": true
+    },
+    {
+      "video": "video/colony/서재방 서랍에 있을텐데.webm",
+      "videoMp4": "video/colony/mp4/서재방 서랍에 있을텐데.mp4",
+      "korean": "서재방 서랍에 있을텐데",
+      "russian": "Должно быть в ящике в кабинете.",
+      "new": true,
+      "english": "It should be in the study drawer.",
+      "timing": "14:09"
+    },
+    {
+      "video": "video/colony/아무튼 빨리 들어와. 챙길 거 많아.webm",
+      "videoMp4": "video/colony/mp4/아무튼 빨리 들어와. 챙길 거 많아.mp4",
+      "korean": "아무튼 빨리 들어와. 챙길 거 많아.",
+      "russian": "В общем, приходи скорее. Собирать много.",
+      "new": true,
+      "english": "Anyway, come home soon. There's a lot to pack.",
+      "timing": "14:21"
+    },
+    {
+      "video": "video/colony/뭐 미국으로 가는 거야_ 얼마나.webm",
+      "videoMp4": "video/colony/mp4/뭐 미국으로 가는 거야_ 얼마나.mp4",
+      "korean": "뭐 미국으로 가는 거야? 얼마나?",
+      "russian": "Что, в Америку уезжаешь? На сколько?",
+      "new": true,
+      "english": "What, you're going to the States? For how long?",
+      "timing": "14:42"
+    },
+    {
+      "video": "video/colony/마지막이니까 뭐 하나만 물어보자.webm",
+      "videoMp4": "video/colony/mp4/마지막이니까 뭐 하나만 물어보자.mp4",
+      "korean": "마지막이니까 뭐 하나만 물어보자",
+      "russian": "Раз уж в последний раз — спрошу одно.",
+      "new": true,
+      "english": "Since it's the last time, let me ask you one thing.",
+      "timing": "15:09"
+    },
+    {
+      "video": "video/colony/당신 왜 나랑 결혼했었어.webm",
+      "videoMp4": "video/colony/mp4/당신 왜 나랑 결혼했었어.mp4",
+      "korean": "당신 왜 나랑 결혼했었어?",
+      "russian": "Почему ты вообще на мне женился?",
+      "new": true,
+      "english": "Why did you marry me back then?",
+      "timing": "15:13"
+    },
+    {
+      "video": "video/colony/감당이 안 됐던 거지.webm",
+      "videoMp4": "video/colony/mp4/감당이 안 됐던 거지.mp4",
+      "korean": "감당이 안 됐던 거지.",
+      "russian": "Просто не справлялся.",
+      "new": true,
+      "english": "It was just too much for me.",
+      "timing": "15:39"
+    },
+    {
+      "video": "video/colony/그래서 헤어지자고 한 거야.webm",
+      "videoMp4": "video/colony/mp4/그래서 헤어지자고 한 거야.mp4",
+      "korean": "그래서 헤어지자고 한 거야.",
+      "russian": "Поэтому я и предложил разойтись.",
+      "new": true,
+      "english": "That's why I said let's break up.",
+      "timing": "15:46"
+    },
+    {
+      "video": "video/colony/그렇게 나오니까 너답지 않다.webm",
+      "videoMp4": "video/colony/mp4/그렇게 나오니까 너답지 않다.mp4",
+      "korean": "그렇게 나오니까 너답지 않다",
+      "russian": "Так себя вести — это не ты.",
+      "new": true,
+      "english": "Acting like that isn't like you.",
+      "timing": "15:56"
+    },
+    {
+      "video": "video/colony/다 먹었지.webm",
+      "videoMp4": "video/colony/mp4/다 먹었지.mp4",
+      "korean": "다 먹었지?",
+      "russian": "Всё, доели?",
+      "new": true,
+      "english": "You're done eating, right?",
+      "timing": "16:00"
+    },
+    {
+      "video": "video/colony/세 분이세요_ 네_ 세 명이요.webm",
+      "videoMp4": "video/colony/mp4/세 분이세요_ 네_ 세 명이요.mp4",
+      "korean": "세 분이세요? 네, 세 명이요.",
+      "russian": "Вас трое? — Да, трое.",
+      "new": true,
+      "english": "Is it three of you? — Yes, three.",
+      "timing": "16:29"
+    },
+    {
+      "video": "video/colony/여기서부터 여기까지.webm",
+      "videoMp4": "video/colony/mp4/여기서부터 여기까지.mp4",
+      "korean": "여기서부터 여기까지?",
+      "russian": "Вот отсюда и вот досюда?",
+      "new": true,
+      "english": "From here to here?",
+      "timing": "16:32"
+    },
+    {
+      "video": "video/colony/오늘은 네가 계산하는 거야.webm",
+      "videoMp4": "video/colony/mp4/오늘은 네가 계산하는 거야.mp4",
+      "korean": "오늘은 네가 계산하는 거야",
+      "russian": "Сегодня платишь ты.",
+      "new": true,
+      "english": "You're paying today.",
+      "timing": "16:43"
+    },
+    {
+      "video": "video/colony/아빠 전화 받았어.webm",
+      "videoMp4": "video/colony/mp4/아빠 전화 받았어.mp4",
+      "korean": "아빠 전화 받았어?",
+      "russian": "Тебе папа звонил?",
+      "new": true,
+      "english": "Did Dad call you?",
+      "timing": "29:37"
+    },
+    {
+      "video": "video/colony/아니 그게 무슨 말씀이세요.webm",
+      "videoMp4": "video/colony/mp4/아니 그게 무슨 말씀이세요.mp4",
+      "korean": "아니 그게 무슨 말씀이세요?",
+      "russian": "Нет, вы это о чём вообще?",
+      "new": true,
+      "english": "Wait, what do you mean by that?",
+      "timing": "30:40"
+    },
+    {
+      "video": "video/colony/제가 제가 지금 여기서 몇 시간이나 있었는지 아세요.webm",
+      "videoMp4": "video/colony/mp4/제가 제가 지금 여기서 몇 시간이나 있었는지 아세요.mp4",
+      "korean": "제가 제가 지금 여기서 몇 시간이나 있었는지 아세요?",
+      "russian": "Вы вообще знаете, сколько я тут уже сижу?",
+      "new": true,
+      "english": "Do you have any idea how many hours I've been sitting here?",
+      "timing": "30:43"
+    },
+    {
+      "video": "video/colony/뭐 내가 없지 누가 없냐.webm",
+      "videoMp4": "video/colony/mp4/뭐 내가 없지 누가 없냐.mp4",
+      "korean": "뭐 내가 없지 누가 없냐",
+      "russian": "Ну а кто, если не я?",
+      "new": true,
+      "english": "Well, if not me, then who?",
+      "timing": "31:02"
+    },
+    {
+      "video": "video/colony/캠핑하다고 생각하지 뭐.webm",
+      "videoMp4": "video/colony/mp4/캠핑하다고 생각하지 뭐.mp4",
+      "korean": "캠핑하다고 생각하지 뭐.",
+      "russian": "Да считай, что это кемпинг.",
+      "new": true,
+      "english": "Just think of it as camping.",
+      "timing": "31:04"
+    },
+    {
+      "video": "video/colony/저기요_ 저기.webm",
+      "videoMp4": "video/colony/mp4/저기요_ 저기.mp4",
+      "korean": "저기요, 저기.",
+      "russian": "Извините… эй.",
+      "new": true,
+      "english": "Excuse me… hey.",
+      "timing": "31:14"
+    },
+    {
+      "video": "video/colony/아까 세미나 끝나고.webm",
+      "videoMp4": "video/colony/mp4/아까 세미나 끝나고.mp4",
+      "korean": "아까 세미나 끝나고.",
+      "russian": "Сразу после семинара.",
+      "new": true,
+      "english": "Right after the seminar.",
+      "timing": "32:21"
+    },
+    {
+      "video": "video/colony/아니 그래서 뭐 어쩌자고.webm",
+      "videoMp4": "video/colony/mp4/아니 그래서 뭐 어쩌자고.mp4",
+      "korean": "아니 그래서 뭐 어쩌자고",
+      "russian": "И что теперь предлагаешь?",
+      "new": true,
+      "english": "So what are you suggesting?",
+      "timing": "32:33"
+    },
+    {
+      "video": "video/colony/아니 거기까지 어떻게 가는데요.webm",
+      "videoMp4": "video/colony/mp4/아니 거기까지 어떻게 가는데요.mp4",
+      "korean": "아니 거기까지 어떻게 가는데요?",
+      "russian": "И как мы туда доберёмся?",
+      "new": true,
+      "english": "And how are we supposed to get there?",
+      "timing": "32:38"
+    },
+    {
+      "video": "video/colony/어떻게 잘못된 정보를 입력시키려는 건데요.webm",
+      "videoMp4": "video/colony/mp4/어떻게 잘못된 정보를 입력시키려는 건데요.mp4",
+      "korean": "어떻게 잘못된 정보를 입력시키려는 건데요.",
+      "russian": "И как вы собираетесь ввести ложные данные?",
+      "new": true,
+      "english": "And how do you plan to feed it false data?",
+      "timing": "34:01"
+    },
+    {
+      "video": "video/colony/100_ 실패할 것 같은데.webm",
+      "videoMp4": "video/colony/mp4/100_ 실패할 것 같은데.mp4",
+      "korean": "100% 실패할 것 같은데.",
+      "russian": "По-моему, это стопроцентно провалится.",
+      "new": true,
+      "english": "I think this will fail, guaranteed.",
+      "timing": "34:26"
+    },
+    {
+      "video": "video/colony/그러면 그러지 말고.webm",
+      "videoMp4": "video/colony/mp4/그러면 그러지 말고.mp4",
+      "korean": "그러면 그러지 말고",
+      "russian": "Тогда давай не так.",
+      "new": true,
+      "english": "Then let's not do it that way.",
+      "timing": "34:28"
+    },
+    {
+      "video": "video/colony/내가 간다니까.webm",
+      "videoMp4": "video/colony/mp4/내가 간다니까.mp4",
+      "korean": "내가 간다니까",
+      "russian": "Я же говорю, я пойду.",
+      "new": true,
+      "english": "I told you, I'll go.",
+      "timing": "34:35"
+    },
+    {
+      "video": "video/colony/나이 먹었다고 무시하는 것 같은데.webm",
+      "videoMp4": "video/colony/mp4/나이 먹었다고 무시하는 것 같은데.mp4",
+      "korean": "나이 먹었다고 무시하는 것 같은데",
+      "russian": "Похоже, меня за старика держат.",
+      "new": true,
+      "english": "Feels like you're writing me off because I'm old.",
+      "timing": "34:37"
+    },
+    {
+      "video": "video/colony/그럼 그렇게 한번 해보는 걸로 하고.webm",
+      "videoMp4": "video/colony/mp4/그럼 그렇게 한번 해보는 걸로 하고.mp4",
+      "korean": "그럼 그렇게 한번 해보는 걸로 하고",
+      "russian": "Тогда давайте так и попробуем.",
+      "new": true,
+      "english": "All right, let's try it that way then.",
+      "timing": "46:19"
+    },
+    {
+      "video": "video/colony/연구를 했던 모양이야.webm",
+      "videoMp4": "video/colony/mp4/연구를 했던 모양이야.mp4",
+      "korean": "연구를 했던 모양이야.",
+      "russian": "Похоже, тут вели исследования.",
+      "new": true,
+      "english": "Looks like they were doing research.",
+      "timing": "46:52"
+    }
+  ],
+  "b3": [
+    {
+      "drama": "Колония",
+      "episode": "фильм",
+      "video": "video/colony/몸 관리를 잘하셨나보다.webm",
+      "videoMp4": "video/colony/mp4/몸 관리를 잘하셨나보다.mp4",
+      "korean": "몸 관리를 잘하셨나보다",
+      "russian": "Похоже, за собой хорошо следили.",
+      "new": true,
+      "english": "They must have taken good care of themselves.",
+      "timing": "48:15",
+      "isNew": true
+    },
+    {
+      "video": "video/colony/이쪽으로 와보셔야 할 것 같습니다.webm",
+      "videoMp4": "video/colony/mp4/이쪽으로 와보셔야 할 것 같습니다.mp4",
+      "korean": "이쪽으로 와보셔야 할 것 같습니다.",
+      "russian": "Вам лучше подойти сюда.",
+      "new": true,
+      "english": "I think you'd better come over here.",
+      "timing": "51:03"
+    },
+    {
+      "video": "video/colony/무슨 실험을 한 거야.webm",
+      "videoMp4": "video/colony/mp4/무슨 실험을 한 거야.mp4",
+      "korean": "무슨 실험을 한 거야?",
+      "russian": "Что за эксперимент они провели?",
+      "new": true,
+      "english": "What kind of experiment did they run?",
+      "timing": "51:33"
+    },
+    {
+      "video": "video/colony/이게 메인 카메라들이니까.webm",
+      "videoMp4": "video/colony/mp4/이게 메인 카메라들이니까.mp4",
+      "korean": "이게 메인 카메라들이니까",
+      "russian": "Вот это главные камеры.",
+      "new": true,
+      "english": "These are the main cameras.",
+      "timing": "56:26"
+    },
+    {
+      "video": "video/colony/몸 관리를 아주 잘 하셨나봐요.webm",
+      "videoMp4": "video/colony/mp4/몸 관리를 아주 잘 하셨나봐요.mp4",
+      "korean": "몸 관리를 아주 잘 하셨나봐요",
+      "russian": "Вы, похоже, очень хорошо за собой следили.",
+      "new": true,
+      "english": "You must have taken really good care of yourself.",
+      "timing": "56:46"
+    },
+    {
+      "video": "video/colony/아까 엘리베이터에서 그랬잖아요.webm",
+      "videoMp4": "video/colony/mp4/아까 엘리베이터에서 그랬잖아요.mp4",
+      "korean": "아까 엘리베이터에서 그랬잖아요",
+      "russian": "Вы же сами это в лифте сказали.",
+      "new": true,
+      "english": "You said so yourself in the elevator.",
+      "timing": "56:56"
+    },
+    {
+      "video": "video/colony/사용자들도 똑같이 볼 수 있다는 거예요.webm",
+      "videoMp4": "video/colony/mp4/사용자들도 똑같이 볼 수 있다는 거예요.mp4",
+      "korean": "사용자들도 똑같이 볼 수 있다는 거예요?",
+      "russian": "То есть пользователи видят то же самое?",
+      "new": true,
+      "english": "You mean users can see exactly the same thing?",
+      "timing": "57:18"
+    },
+    {
+      "video": "video/colony/찾았어요.webm",
+      "videoMp4": "video/colony/mp4/찾았어요.mp4",
+      "korean": "찾았어요!",
+      "russian": "Нашлось!",
+      "new": true,
+      "english": "Found it!",
+      "timing": "57:22"
+    },
+    {
+      "video": "video/colony/뭘 찾고 있는 것 같은데요.webm",
+      "videoMp4": "video/colony/mp4/뭘 찾고 있는 것 같은데요.mp4",
+      "korean": "뭘 찾고 있는 것 같은데요?",
+      "russian": "Похоже, они что-то ищут.",
+      "new": true,
+      "english": "Looks like they're searching for something.",
+      "timing": "58:05"
+    },
+    {
+      "video": "video/colony/3층 A동 복도에요.webm",
+      "videoMp4": "video/colony/mp4/3층 A동 복도에요.mp4",
+      "korean": "3층 A동 복도에요",
+      "russian": "Это коридор корпуса А, третий этаж.",
+      "new": true,
+      "english": "It's the third-floor corridor, building A.",
+      "timing": "58:10"
+    },
+    {
+      "video": "video/colony/이놈들이 언제까지 이 상태일까요.webm",
+      "videoMp4": "video/colony/mp4/이놈들이 언제까지 이 상태일까요.mp4",
+      "korean": "이놈들이 언제까지 이 상태일까요?",
+      "russian": "Сколько они ещё пробудут в таком состоянии?",
+      "new": true,
+      "english": "How long will they stay like this?",
+      "timing": "1:00:01"
+    },
+    {
+      "video": "video/colony/저놈들이 정신이 나갔을 때.webm",
+      "videoMp4": "video/colony/mp4/저놈들이 정신이 나갔을 때.mp4",
+      "korean": "저놈들이 정신이 나갔을 때",
+      "russian": "Пока они не в себе…",
+      "new": true,
+      "english": "While they're out of it…",
+      "timing": "1:00:10"
+    },
+    {
+      "video": "video/colony/안전한 길 계속 알려드릴게요.webm",
+      "videoMp4": "video/colony/mp4/안전한 길 계속 알려드릴게요.mp4",
+      "korean": "안전한 길 계속 알려드릴게요.",
+      "russian": "Я буду и дальше подсказывать безопасный путь.",
+      "new": true,
+      "english": "I'll keep telling you the safe route.",
+      "timing": "1:00:20"
+    },
+    {
+      "video": "video/colony/여기에 남겠다고.webm",
+      "videoMp4": "video/colony/mp4/여기에 남겠다고.mp4",
+      "korean": "여기에 남겠다고?",
+      "russian": "Хочешь остаться здесь?",
+      "new": true,
+      "english": "You're saying you'll stay here?",
+      "timing": "1:00:27"
+    },
+    {
+      "video": "video/colony/가서 백신 데리고 다시 와.webm",
+      "videoMp4": "video/colony/mp4/가서 백신 데리고 다시 와.mp4",
+      "korean": "가서 백신 데리고 다시 와.",
+      "russian": "Сходи за вакциной и возвращайся.",
+      "new": true,
+      "english": "Go get the vaccine and come back.",
+      "timing": "1:00:29"
+    },
+    {
+      "video": "video/colony/그때까지 누나가 안전한 길 알려줄게.webm",
+      "videoMp4": "video/colony/mp4/그때까지 누나가 안전한 길 알려줄게.mp4",
+      "korean": "그때까지 누나가 안전한 길 알려줄게.",
+      "russian": "А я до тех пор буду подсказывать безопасный путь.",
+      "new": true,
+      "english": "Until then I'll guide you along a safe route.",
+      "timing": "1:00:30"
+    },
+    {
+      "video": "video/colony/누나 말 들어 이 방법이 제일 안전해.webm",
+      "videoMp4": "video/colony/mp4/누나 말 들어 이 방법이 제일 안전해.mp4",
+      "korean": "누나 말 들어 이 방법이 제일 안전해.",
+      "russian": "Послушай меня, так безопаснее всего.",
+      "new": true,
+      "english": "Listen to me, this is the safest way.",
+      "timing": "1:00:35"
+    },
+    {
+      "video": "video/colony/저놈들이 언제 깨어날지 모르니.webm",
+      "videoMp4": "video/colony/mp4/저놈들이 언제 깨어날지 모르니.mp4",
+      "korean": "저놈들이 언제 깨어날지 모르니?",
+      "russian": "Ты разве не понимаешь, что они в любой момент могут очнуться?",
+      "new": true,
+      "english": "Don't you get it? They could wake up any second.",
+      "timing": "1:00:41"
+    },
+    {
+      "video": "video/colony/안전한 곳으로 이동합시다.webm",
+      "videoMp4": "video/colony/mp4/안전한 곳으로 이동합시다.mp4",
+      "korean": "안전한 곳으로 이동합시다",
+      "russian": "Давайте переберёмся в безопасное место.",
+      "new": true,
+      "english": "Let's move somewhere safe.",
+      "timing": "1:01:35"
+    },
+    {
+      "video": "video/colony/나가는 척만 한 건가.webm",
+      "videoMp4": "video/colony/mp4/나가는 척만 한 건가.mp4",
+      "korean": "나가는 척만 한 건가?",
+      "russian": "Так они только сделали вид, что уходят?",
+      "new": true,
+      "english": "So they only pretended to leave?",
+      "timing": "1:03:26"
+    },
+    {
+      "video": "video/colony/여기서 살아서 나갈 수 있다고 생각하시나봐요.webm",
+      "videoMp4": "video/colony/mp4/여기서 살아서 나갈 수 있다고 생각하시나봐요.mp4",
+      "korean": "여기서 살아서 나갈 수 있다고 생각하시나봐요",
+      "russian": "Вы, похоже, думаете, что отсюда можно выйти живым.",
+      "new": true,
+      "english": "You seem to think it's possible to get out of here alive.",
+      "timing": "1:03:31"
+    },
+    {
+      "video": "video/colony/조종할 수 있다는 얘기잖아.webm",
+      "videoMp4": "video/colony/mp4/조종할 수 있다는 얘기잖아.mp4",
+      "korean": "조종할 수 있다는 얘기잖아",
+      "russian": "Это же значит, что ими можно управлять.",
+      "new": true,
+      "english": "That means they can be controlled.",
+      "timing": "1:03:45"
+    },
+    {
+      "video": "video/colony/이 세상 모두를 위한 거라고.webm",
+      "videoMp4": "video/colony/mp4/이 세상 모두를 위한 거라고.mp4",
+      "korean": "이 세상 모두를 위한 거라고!",
+      "russian": "Это ради всех на этом свете!",
+      "new": true,
+      "english": "This is for everyone in the world!",
+      "timing": "1:08:04"
+    },
+    {
+      "video": "video/colony/살고 싶으면.webm",
+      "videoMp4": "video/colony/mp4/살고 싶으면.mp4",
+      "korean": "살고 싶으면",
+      "russian": "Если хочешь жить…",
+      "new": true,
+      "english": "If you want to live…",
+      "timing": "1:08:11"
+    },
+    {
+      "video": "video/colony/단도직입적으로 물어볼게요.webm",
+      "videoMp4": "video/colony/mp4/단도직입적으로 물어볼게요.mp4",
+      "korean": "단도직입적으로 물어볼게요",
+      "russian": "Спрошу прямо, без обиняков.",
+      "new": true,
+      "english": "I'll ask you straight out.",
+      "timing": "1:12:25"
+    },
+    {
+      "video": "video/colony/그게 무슨 말이에요_ 좀 쉽게 설명해봐요.webm",
+      "videoMp4": "video/colony/mp4/그게 무슨 말이에요_ 좀 쉽게 설명해봐요.mp4",
+      "korean": "그게 무슨 말이에요? 좀 쉽게 설명해봐요.",
+      "russian": "В каком смысле? Объясните попроще.",
+      "new": true,
+      "english": "What does that mean? Explain it more simply.",
+      "timing": "1:12:43"
+    },
+    {
+      "video": "video/colony/왜 또 말이 바뀌시는 거죠.webm",
+      "videoMp4": "video/colony/mp4/왜 또 말이 바뀌시는 거죠.mp4",
+      "korean": "왜 또 말이 바뀌시는 거죠?",
+      "russian": "Почему вы опять говорите другое?",
+      "new": true,
+      "english": "Why are you changing your story again?",
+      "timing": "1:14:01"
+    },
+    {
+      "video": "video/colony/그렇게 하겠습니다.webm",
+      "videoMp4": "video/colony/mp4/그렇게 하겠습니다.mp4",
+      "korean": "그렇게 하겠습니다.",
+      "russian": "Так и сделаю.",
+      "new": true,
+      "english": "I'll do that.",
+      "timing": "1:14:09"
+    },
+    {
+      "video": "video/colony/이렇게 합시다.webm",
+      "videoMp4": "video/colony/mp4/이렇게 합시다.mp4",
+      "korean": "이렇게 합시다.",
+      "russian": "Давайте так.",
+      "new": true,
+      "english": "Let's do it this way.",
+      "timing": "1:14:50"
+    }
+  ],
+  "b4": [
+    {
+      "drama": "Колония",
+      "episode": "фильм",
+      "video": "video/colony/맨 처음 감염된 사람이 누군지 찾아 봅시다.webm",
+      "videoMp4": "video/colony/mp4/맨 처음 감염된 사람이 누군지 찾아 봅시다.mp4",
+      "korean": "맨 처음 감염된 사람이 누군지 찾아 봅시다",
+      "russian": "Давайте выясним, кто заразился первым.",
+      "new": true,
+      "english": "Let's find out who got infected first.",
+      "timing": "1:14:56",
+      "isNew": true
+    },
+    {
+      "video": "video/colony/무슨 얘기하는 거예요.webm",
+      "videoMp4": "video/colony/mp4/무슨 얘기하는 거예요.mp4",
+      "korean": "무슨 얘기하는 거예요?",
+      "russian": "О чём вы говорите?",
+      "new": true,
+      "english": "What are you talking about?",
+      "timing": "1:22:19"
+    },
+    {
+      "video": "video/colony/우리만 두고 가는 거 아니냐고.webm",
+      "videoMp4": "video/colony/mp4/우리만 두고 가는 거 아니냐고.mp4",
+      "korean": "우리만 두고 가는 거 아니냐고",
+      "russian": "Я о том, что он бросит нас тут одних.",
+      "new": true,
+      "english": "I'm saying he's going to leave us here alone.",
+      "timing": "1:23:42"
+    },
+    {
+      "video": "video/colony/어차피 저 사람 아니면 구조대 안 와.webm",
+      "videoMp4": "video/colony/mp4/어차피 저 사람 아니면 구조대 안 와.mp4",
+      "korean": "어차피 저 사람 아니면 구조대 안 와.",
+      "russian": "Всё равно без этого человека спасатели не приедут.",
+      "new": true,
+      "english": "Without that person no rescue team is coming anyway.",
+      "timing": "1:23:46"
+    },
+    {
+      "video": "video/colony/그리고 불필요한 말 하지마.webm",
+      "videoMp4": "video/colony/mp4/그리고 불필요한 말 하지마.mp4",
+      "korean": "그리고 불필요한 말 하지마.",
+      "russian": "И не говори лишнего.",
+      "new": true,
+      "english": "And don't say anything unnecessary.",
+      "timing": "1:23:49"
+    },
+    {
+      "video": "video/colony/저 사람이 다 듣고 있으니까.webm",
+      "videoMp4": "video/colony/mp4/저 사람이 다 듣고 있으니까.mp4",
+      "korean": "저 사람이 다 듣고 있으니까",
+      "russian": "Этот человек всё слышит.",
+      "new": true,
+      "english": "That person hears everything.",
+      "timing": "1:23:51"
+    },
+    {
+      "video": "video/colony/경찰도 죽고 다 죽었는데.webm",
+      "videoMp4": "video/colony/mp4/경찰도 죽고 다 죽었는데.mp4",
+      "korean": "경찰도 죽고 다 죽었는데",
+      "russian": "Полицейские погибли, все погибли…",
+      "new": true,
+      "english": "The police are dead, everyone's dead…",
+      "timing": "1:23:58"
+    },
+    {
+      "video": "video/colony/넌 어떻게 이 상황에서도 그렇게 침착할 수가 있냐.webm",
+      "videoMp4": "video/colony/mp4/넌 어떻게 이 상황에서도 그렇게 침착할 수가 있냐.mp4",
+      "korean": "넌 어떻게 이 상황에서도 그렇게 침착할 수가 있냐?",
+      "russian": "Как ты можешь так спокойно себя вести даже сейчас?",
+      "new": true,
+      "english": "How can you stay this calm even now?",
+      "timing": "1:24:04"
+    },
+    {
+      "video": "video/colony/안전한 곳에 감금되어 있어요.webm",
+      "videoMp4": "video/colony/mp4/안전한 곳에 감금되어 있어요.mp4",
+      "korean": "안전한 곳에 감금되어 있어요.",
+      "russian": "Держат в безопасном месте.",
+      "new": true,
+      "english": "They're being held somewhere safe.",
+      "timing": "1:26:24"
+    },
+    {
+      "video": "video/colony/C동 15층 복도입니다.webm",
+      "videoMp4": "video/colony/mp4/C동 15층 복도입니다.mp4",
+      "korean": "C동 15층 복도입니다.",
+      "russian": "Это коридор корпуса C, пятнадцатый этаж.",
+      "new": true,
+      "english": "It's the 15th-floor corridor, building C.",
+      "timing": "1:26:33"
+    },
+    {
+      "video": "video/colony/그게 지금 나랑 뭔 상관인데.webm",
+      "videoMp4": "video/colony/mp4/그게 지금 나랑 뭔 상관인데.mp4",
+      "korean": "그게 지금 나랑 뭔 상관인데?",
+      "russian": "А мне сейчас какое до этого дело?",
+      "new": true,
+      "english": "What does that have to do with me right now?",
+      "timing": "1:34:38"
+    },
+    {
+      "video": "video/colony/훨씬 더 좋아 보이지 않아요.webm",
+      "videoMp4": "video/colony/mp4/훨씬 더 좋아 보이지 않아요.mp4",
+      "korean": "훨씬 더 좋아 보이지 않아요?",
+      "russian": "Так ведь гораздо лучше выглядит, разве нет?",
+      "new": true,
+      "english": "Doesn't it look much better this way?",
+      "timing": "1:36:23"
+    },
+    {
+      "video": "video/colony/이 초대전 네가 보낸 거지.webm",
+      "videoMp4": "video/colony/mp4/이 초대전 네가 보낸 거지.mp4",
+      "korean": "이 초대전 네가 보낸 거지?",
+      "russian": "Это приглашение на выставку от тебя, да?",
+      "new": true,
+      "english": "You sent this exhibition invitation, didn't you?",
+      "timing": "1:36:29"
+    },
+    {
+      "video": "video/colony/학생들도 동의한 일이야.webm",
+      "videoMp4": "video/colony/mp4/학생들도 동의한 일이야.mp4",
+      "korean": "학생들도 동의한 일이야",
+      "russian": "Студенты тоже на это согласились.",
+      "new": true,
+      "english": "The students agreed to it too.",
+      "timing": "1:37:02"
+    },
+    {
+      "video": "video/colony/이 모든 게 그 일 때문이라고.webm",
+      "videoMp4": "video/colony/mp4/이 모든 게 그 일 때문이라고.mp4",
+      "korean": "이 모든 게 그 일 때문이라고?",
+      "russian": "И всё это из-за того случая?",
+      "new": true,
+      "english": "All of this is because of that?",
+      "timing": "1:37:31"
+    },
+    {
+      "video": "video/colony/우리보다 나은 게 뭐가 있지.webm",
+      "videoMp4": "video/colony/mp4/우리보다 나은 게 뭐가 있지.mp4",
+      "korean": "우리보다 나은 게 뭐가 있지?",
+      "russian": "Чем они лучше нас?",
+      "new": true,
+      "english": "What makes them better than us?",
+      "timing": "1:38:34"
+    },
+    {
+      "video": "video/colony/그럼 저 사람은요.webm",
+      "videoMp4": "video/colony/mp4/그럼 저 사람은요.mp4",
+      "korean": "그럼 저 사람은요?",
+      "russian": "А с этим человеком что?",
+      "new": true,
+      "english": "Then what about that person?",
+      "timing": "1:39:57"
+    },
+    {
+      "video": "video/colony/그냥 저렇게 버려둘 거예요.webm",
+      "videoMp4": "video/colony/mp4/그냥 저렇게 버려둘 거예요.mp4",
+      "korean": "그냥 저렇게 버려둘 거예요?",
+      "russian": "Так и оставим, как есть?",
+      "new": true,
+      "english": "Are we just going to leave it like that?",
+      "timing": "1:40:00"
+    },
+    {
+      "video": "video/colony/총 맞아본 적 있어요.webm",
+      "videoMp4": "video/colony/mp4/총 맞아본 적 있어요.mp4",
+      "korean": "총 맞아본 적 있어요?",
+      "russian": "В вас когда-нибудь стреляли?",
+      "new": true,
+      "english": "Have you ever been shot?",
+      "timing": "1:41:55"
+    },
+    {
+      "video": "video/colony/앞에 봐.webm",
+      "videoMp4": "video/colony/mp4/앞에 봐.mp4",
+      "korean": "앞에 봐",
+      "russian": "Смотри вперёд.",
+      "new": true,
+      "english": "Eyes front.",
+      "timing": "1:41:58"
+    },
+    {
+      "video": "video/colony/저놈들 전부 다 멈출 수 있어요.webm",
+      "videoMp4": "video/colony/mp4/저놈들 전부 다 멈출 수 있어요.mp4",
+      "korean": "저놈들 전부 다 멈출 수 있어요.",
+      "russian": "Их всех можно остановить.",
+      "new": true,
+      "english": "We can stop every one of them.",
+      "timing": "1:42:47"
+    },
+    {
+      "video": "video/colony/안 돼요.webm",
+      "videoMp4": "video/colony/mp4/안 돼요.mp4",
+      "korean": "안 돼요.",
+      "russian": "Нельзя.",
+      "new": true,
+      "english": "No, you can't.",
+      "timing": "1:42:53"
+    },
+    {
+      "video": "video/colony/아니 그게 무슨 소리예요.webm",
+      "videoMp4": "video/colony/mp4/아니 그게 무슨 소리예요.mp4",
+      "korean": "아니 그게 무슨 소리예요?",
+      "russian": "Погодите, вы о чём?",
+      "new": true,
+      "english": "Wait, what are you saying?",
+      "timing": "1:44:14"
+    },
+    {
+      "video": "video/colony/백신을 주기로 한 거예요.webm",
+      "videoMp4": "video/colony/mp4/백신을 주기로 한 거예요.mp4",
+      "korean": "백신을 주기로 한 거예요?",
+      "russian": "Вы согласились отдать вакцину?",
+      "new": true,
+      "english": "You agreed to hand over the vaccine?",
+      "timing": "1:44:26"
+    },
+    {
+      "video": "video/colony/백신이 지금 이리로 오고 있다고.webm",
+      "videoMp4": "video/colony/mp4/백신이 지금 이리로 오고 있다고.mp4",
+      "korean": "백신이 지금 이리로 오고 있다고",
+      "russian": "Вакцину уже везут сюда.",
+      "new": true,
+      "english": "The vaccine is on its way here.",
+      "timing": "1:44:41"
+    },
+    {
+      "video": "video/colony/라이트 깜빡이는 차 보여요.webm",
+      "videoMp4": "video/colony/mp4/라이트 깜빡이는 차 보여요.mp4",
+      "korean": "라이트 깜빡이는 차 보여요?",
+      "russian": "Видите машину с мигающими фарами?",
+      "new": true,
+      "english": "See the car with the flashing lights?",
+      "timing": "1:50:32"
+    },
+    {
+      "video": "video/colony/어떡하죠.webm",
+      "videoMp4": "video/colony/mp4/어떡하죠.mp4",
+      "korean": "어떡하죠?",
+      "russian": "И что теперь делать?",
+      "new": true,
+      "english": "What do we do now?",
+      "timing": "1:57:10"
+    },
+    {
+      "video": "video/colony/걱정 말아요.webm",
+      "videoMp4": "video/colony/mp4/걱정 말아요.mp4",
+      "korean": "걱정 말아요.",
+      "russian": "Не переживайте.",
+      "new": true,
+      "english": "Don't worry.",
+      "timing": "1:57:17"
+    },
+    {
+      "video": "video/colony/미움받을 일 생기면.webm",
+      "videoMp4": "video/colony/mp4/미움받을 일 생기면.mp4",
+      "korean": "미움받을 일 생기면",
+      "russian": "Если случится то, за что тебя возненавидят…",
+      "new": true,
+      "english": "If something happens that makes you hated…",
+      "timing": "1:57:22"
+    }
+  ],
+  "b5": []
+}

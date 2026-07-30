@@ -196,7 +196,7 @@
       "video": "video/kimsec/네_ 간단하게 샐러드 먹고 오는 길이에요.webm",
       "videoMp4": "video/kimsec/mp4/네_ 간단하게 샐러드 먹고 오는 길이에요.mp4",
       "korean": "네, 간단하게 샐러드 먹고 오는 길이에요",
-      "russian": "Да, я поел(а) салат и возвращаюсь.",
+      "russian": "Да, только салат — и уже иду обратно.",
       "new": true,
       "english": "Yes, I just had a simple salad and I'm on my way back."
     },
@@ -276,7 +276,7 @@
       "video": "video/kimsec/아까 봤어 둘이 만나고 있는 거.webm",
       "videoMp4": "video/kimsec/mp4/아까 봤어 둘이 만나고 있는 거.mp4",
       "korean": "아까 봤어, 둘이 만나고 있는 거",
-      "russian": "Я видел(а) вас недавно — вы двое встречаетесь.",
+      "russian": "Я вас недавно видел — вы двое вместе.",
       "new": true,
       "english": "I saw you earlier, the two of you are seeing each other."
     }
@@ -358,7 +358,7 @@
       "video": "video/kimsec/어제 잘 잤어요.webm",
       "videoMp4": "video/kimsec/mp4/어제 잘 잤어요.mp4",
       "korean": "어제 잘 잤어요",
-      "russian": "Я хорошо спал(а) вчера.",
+      "russian": "Вчера хорошо спалось.",
       "new": true,
       "english": "I slept well last night."
     },
@@ -462,7 +462,7 @@
       "video": "video/kimsec/잘 모를 수도 있을 것 같아서.webm",
       "videoMp4": "video/kimsec/mp4/잘 모를 수도 있을 것 같아서.mp4",
       "korean": "잘 모를 수도 있을 것 같아서",
-      "russian": "Я подумал(а), что вы, возможно, не знаете.",
+      "russian": "Мне показалось, вы можете не знать.",
       "new": true,
       "english": "I thought you might not know."
     },
