@@ -1148,7 +1148,7 @@
   },
   "theme41": {
     "coverImage": "videothemes/subthemebc/lesson.png",
-    "title": "참교육 - Преподам тебе урок",
+    "title": "참교육 - Преподам тебе урок (5 серия)",
     "masterJsonPath": "videothemes/json/videotheme41.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -1181,11 +1181,21 @@
         "name": "6",
         "key": "b6",
         "name_en": "6"
+      },
+      {
+        "name": "7 (5 серия)",
+        "key": "b7",
+        "name_en": "7 (ep. 5)"
+      },
+      {
+        "name": "8 (5 серия)",
+        "key": "b8",
+        "name_en": "8 (ep. 5)"
       }
     ],
-    "title_en": "Get Schooled",
-    "totalCount": 172,
-    "hasNew": false
+    "title_en": "Get Schooled (ep. 5)",
+    "totalCount": 232,
+    "hasNew": true
   },
   "theme42": {
     "coverImage": "videothemes/subthemebc/kimsec.png",
@@ -1294,6 +1304,6 @@
     ],
     "title_en": "Colony\n군체",
     "totalCount": 115,
-    "hasNew": true
+    "hasNew": false
   }
 }

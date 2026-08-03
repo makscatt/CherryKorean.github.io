@@ -6,7 +6,8 @@
       "korean": "MMA 다닐 때 힘 조절이 안 된다. 쏘리",
       "russian": "Когда ходишь на MMA, не получается контролировать силу. Извини.",
       "new": true,
-      "english": "When I go to MMA, I can't control my strength. Sorry."
+      "english": "When I go to MMA, I can't control my strength. Sorry.",
+      "isNew": true
     },
     {
       "video": "video/lesson/가위에 찔려서 안 죽으면 다행이야.webm",
@@ -248,7 +249,8 @@
       "korean": "니가 눌러야지, 인마.",
       "russian": "Это ты должен нажать, придурок.",
       "new": true,
-      "english": "You’re the one who should press it, idiot."
+      "english": "You’re the one who should press it, idiot.",
+      "isNew": true
     },
     {
       "video": "video/lesson/니들 진짜 훌륭하다.webm",
@@ -490,7 +492,8 @@
       "korean": "아무것도 모르면서 그렇게 말하지 마세요.",
       "russian": "Не говорите так, не зная ничего.",
       "new": true,
-      "english": "Don't say that when you don't know anything."
+      "english": "Don't say that when you don't know anything.",
+      "isNew": true
     },
     {
       "video": "video/lesson/아침에 일어나지 못할 정도로 아팠으며.webm",
@@ -740,7 +743,8 @@
       "korean": "가서 지랄하고 오세요!",
       "russian": "Идите и устройте там скандал!",
       "new": true,
-      "english": "Go and make a scene there!"
+      "english": "Go and make a scene there!",
+      "isNew": true
     },
     {
       "video": "video/lesson/감독관에게 까불면 죽습니다.webm",
@@ -958,7 +962,8 @@
       "korean": "선생님 새로 오셔서 못 들으셨나보다",
       "russian": "Наверное, вы недавно пришли и не слышали.",
       "new": true,
-      "english": "You must have just arrived and not heard it."
+      "english": "You must have just arrived and not heard it.",
+      "isNew": true
     },
     {
       "video": "video/lesson/선생님들에 대한 불법 촬영 사진과.webm",
@@ -1176,7 +1181,8 @@
       "korean": "우연히 본 게 있어서 그래",
       "russian": "Потому что я кое-что случайно увидел.",
       "new": true,
-      "english": "It's because I happened to see something."
+      "english": "It's because I happened to see something.",
+      "isNew": true
     },
     {
       "video": "video/lesson/이거 교장쌤도 허락하신 건데.webm",
@@ -1385,6 +1391,556 @@
       "russian": "Сдаю мобильный телефон",
       "new": true,
       "english": "Submitting my mobile phone"
+    }
+  ],
+  "b7": [
+    {
+      "drama": "Преподам тебе урок",
+      "episode": "5",
+      "video": "video/lesson/절대 그 사람 용서하지 마.webm",
+      "videoMp4": "video/lesson/mp4/절대 그 사람 용서하지 마.mp4",
+      "korean": "절대 그 사람 용서하지 마.",
+      "russian": "Ни за что не прощай того человека.",
+      "new": true,
+      "english": "Don't ever forgive that person.",
+      "timing": "01:44",
+      "isNew": true
+    },
+    {
+      "video": "video/lesson/시간 거의 다 됐습니다.webm",
+      "videoMp4": "video/lesson/mp4/시간 거의 다 됐습니다.mp4",
+      "korean": "시간 거의 다 됐습니다.",
+      "russian": "Время почти вышло.",
+      "new": true,
+      "english": "Time is almost up.",
+      "timing": "02:33"
+    },
+    {
+      "video": "video/lesson/이제 어떻게 되나요.webm",
+      "videoMp4": "video/lesson/mp4/이제 어떻게 되나요.mp4",
+      "korean": "이제 어떻게 되나요?",
+      "russian": "И что теперь будет?",
+      "new": true,
+      "english": "So what happens now?",
+      "timing": "05:10"
+    },
+    {
+      "video": "video/lesson/치료부터 받으셔야죠.webm",
+      "videoMp4": "video/lesson/mp4/치료부터 받으셔야죠.mp4",
+      "korean": "치료부터 받으셔야죠.",
+      "russian": "Сначала надо пройти лечение.",
+      "new": true,
+      "english": "You need to get treatment first.",
+      "timing": "05:12"
+    },
+    {
+      "video": "video/lesson/그건 걱정 안 하셔도 됩니다.webm",
+      "videoMp4": "video/lesson/mp4/그건 걱정 안 하셔도 됩니다.mp4",
+      "korean": "그건 걱정 안 하셔도 됩니다.",
+      "russian": "Об этом можете не беспокоиться.",
+      "new": true,
+      "english": "You don't have to worry about that.",
+      "timing": "05:45"
+    },
+    {
+      "video": "video/lesson/선생님이 이렇게 힘든 거였어.webm",
+      "videoMp4": "video/lesson/mp4/선생님이 이렇게 힘든 거였어.mp4",
+      "korean": "선생님이 이렇게 힘든 거였어?",
+      "russian": "Оказывается, быть учителем так тяжело?",
+      "new": true,
+      "english": "Is being a teacher this hard?",
+      "timing": "08:30"
+    },
+    {
+      "video": "video/lesson/기분이 좋아요 너무 행복해요.webm",
+      "videoMp4": "video/lesson/mp4/기분이 좋아요 너무 행복해요.mp4",
+      "korean": "기분이 좋아요. 너무 행복해요.",
+      "russian": "У меня хорошее настроение. Мне очень радостно.",
+      "new": true,
+      "english": "I feel good. I'm so happy.",
+      "timing": "09:04"
+    },
+    {
+      "video": "video/lesson/만나서 반가워요.webm",
+      "videoMp4": "video/lesson/mp4/만나서 반가워요.mp4",
+      "korean": "만나서 반가워요.",
+      "russian": "Приятно познакомиться.",
+      "new": true,
+      "english": "Nice to meet you.",
+      "timing": "09:16"
+    },
+    {
+      "video": "video/lesson/8시부터 6시까지예요.webm",
+      "videoMp4": "video/lesson/mp4/8시부터 6시까지예요.mp4",
+      "korean": "8시부터 6시까지예요.",
+      "russian": "С восьми до шести.",
+      "new": true,
+      "english": "It's from eight to six.",
+      "timing": "10:47"
+    },
+    {
+      "video": "video/lesson/조금 걱정이 되는 게 있어서요.webm",
+      "videoMp4": "video/lesson/mp4/조금 걱정이 되는 게 있어서요.mp4",
+      "korean": "조금 걱정이 되는 게 있어서요.",
+      "russian": "Просто есть кое-что, что меня беспокоит.",
+      "new": true,
+      "english": "There's something I'm a little worried about.",
+      "timing": "11:10"
+    },
+    {
+      "video": "video/lesson/그런 생각들지 않게 잘 할게요.webm",
+      "videoMp4": "video/lesson/mp4/그런 생각들지 않게 잘 할게요.mp4",
+      "korean": "그런 생각 들지 않게 잘 할게요.",
+      "russian": "Постараюсь, чтобы таких мыслей у него не возникало.",
+      "new": true,
+      "english": "I'll make sure he doesn't feel that way.",
+      "timing": "11:22"
+    },
+    {
+      "video": "video/lesson/선생님이 다시 알려줄까.webm",
+      "videoMp4": "video/lesson/mp4/선생님이 다시 알려줄까.mp4",
+      "korean": "선생님이 다시 알려줄까?",
+      "russian": "Хочешь, учитель объяснит ещё раз?",
+      "new": true,
+      "english": "Should I explain it to you again?",
+      "timing": "11:52"
+    },
+    {
+      "video": "video/lesson/하지마_ 안 돼_ 그만.webm",
+      "videoMp4": "video/lesson/mp4/하지마_ 안 돼_ 그만.mp4",
+      "korean": "하지마! 안 돼! 그만!",
+      "russian": "Не делай! Нельзя! Прекрати!",
+      "new": true,
+      "english": "Don't! No! Stop!",
+      "timing": "12:28"
+    },
+    {
+      "video": "video/lesson/맨날 밖에만 계시나봐요.webm",
+      "videoMp4": "video/lesson/mp4/맨날 밖에만 계시나봐요.mp4",
+      "korean": "맨날 밖에만 계시나 봐요.",
+      "russian": "Похоже, вы вечно где-то гуляете.",
+      "new": true,
+      "english": "Looks like you're always out somewhere.",
+      "timing": "14:13"
+    },
+    {
+      "video": "video/lesson/제가 왜요_ 전 잘못한 게 없는데요.webm",
+      "videoMp4": "video/lesson/mp4/제가 왜요_ 전 잘못한 게 없는데요.mp4",
+      "korean": "제가 왜요? 전 잘못한 게 없는데요?",
+      "russian": "А я-то почему? Я ведь ничего плохого не сделала.",
+      "new": true,
+      "english": "Why me? I didn't do anything wrong.",
+      "timing": "14:33"
+    },
+    {
+      "video": "video/lesson/무슨 말을 해도 듣지도 않고.webm",
+      "videoMp4": "video/lesson/mp4/무슨 말을 해도 듣지도 않고.mp4",
+      "korean": "무슨 말을 해도 듣지도 않고.",
+      "russian": "Что ни скажи — даже слушать не хотят.",
+      "new": true,
+      "english": "No matter what you say, they don't even listen.",
+      "timing": "14:46"
+    },
+    {
+      "video": "video/lesson/여기서는 친구랑 재밌게 놀아도 돼.webm",
+      "videoMp4": "video/lesson/mp4/여기서는 친구랑 재밌게 놀아도 돼.mp4",
+      "korean": "여기서는 친구랑 재밌게 놀아도 돼.",
+      "russian": "Здесь можно вволю играть с друзьями.",
+      "new": true,
+      "english": "Here you can have fun with your friends.",
+      "timing": "16:58"
+    },
+    {
+      "video": "video/lesson/친구랑 어떻게 지내고 싶어.webm",
+      "videoMp4": "video/lesson/mp4/친구랑 어떻게 지내고 싶어.mp4",
+      "korean": "친구랑 어떻게 지내고 싶어?",
+      "russian": "А как ты хочешь ладить с друзьями?",
+      "new": true,
+      "english": "How do you want to get along with your friends?",
+      "timing": "17:08"
+    },
+    {
+      "video": "video/lesson/재밌게 지내고 싶어요.webm",
+      "videoMp4": "video/lesson/mp4/재밌게 지내고 싶어요.mp4",
+      "korean": "재밌게 지내고 싶어요.",
+      "russian": "Хочу, чтобы было весело.",
+      "new": true,
+      "english": "I want us to have fun together.",
+      "timing": "17:11"
+    },
+    {
+      "video": "video/lesson/이해해주셔서 감사합니다.webm",
+      "videoMp4": "video/lesson/mp4/이해해주셔서 감사합니다.mp4",
+      "korean": "이해해주셔서 감사합니다.",
+      "russian": "Спасибо, что поняли.",
+      "new": true,
+      "english": "Thank you for understanding.",
+      "timing": "19:06"
+    },
+    {
+      "video": "video/lesson/트라우마라도 생김 책임질 거예요.webm",
+      "videoMp4": "video/lesson/mp4/트라우마라도 생김 책임질 거예요.mp4",
+      "korean": "트라우마라도 생기면 책임질 거예요?",
+      "russian": "А если у него останется травма, вы ответите?",
+      "new": true,
+      "english": "If it leaves him traumatized, will you take responsibility?",
+      "timing": "19:51"
+    },
+    {
+      "video": "video/lesson/부탁드릴게요. 제발 진정하세요.webm",
+      "videoMp4": "video/lesson/mp4/부탁드릴게요. 제발 진정하세요.mp4",
+      "korean": "부탁드릴게요. 제발 진정하세요.",
+      "russian": "Прошу вас. Пожалуйста, успокойтесь.",
+      "new": true,
+      "english": "I'm begging you. Please calm down.",
+      "timing": "20:19"
+    },
+    {
+      "video": "video/lesson/동의한 적은 없는데요.webm",
+      "videoMp4": "video/lesson/mp4/동의한 적은 없는데요.mp4",
+      "korean": "동의한 적은 없는데요.",
+      "russian": "Я на это согласия не давала.",
+      "new": true,
+      "english": "I never agreed to that.",
+      "timing": "20:38"
+    },
+    {
+      "video": "video/lesson/지금 애 아빠 불러요.webm",
+      "videoMp4": "video/lesson/mp4/지금 애 아빠 불러요.mp4",
+      "korean": "지금 애 아빠 불러요.",
+      "russian": "Я сейчас же позову отца ребёнка.",
+      "new": true,
+      "english": "I'm calling the kid's father right now.",
+      "timing": "21:39"
+    },
+    {
+      "video": "video/lesson/여보세요.webm",
+      "videoMp4": "video/lesson/mp4/여보세요.mp4",
+      "korean": "여보세요?",
+      "russian": "Алло?",
+      "new": true,
+      "english": "Hello?",
+      "timing": "22:18"
+    },
+    {
+      "video": "video/lesson/아니 왜케 전화를 늦게 받아요.webm",
+      "videoMp4": "video/lesson/mp4/아니 왜케 전화를 늦게 받아요.mp4",
+      "korean": "아니 왜케 전화를 늦게 받아요.",
+      "russian": "Ну почему вы так долго трубку не берёте?",
+      "new": true,
+      "english": "Why do you take so long to answer the phone?",
+      "timing": "22:35"
+    },
+    {
+      "video": "video/lesson/죄송합니다.webm",
+      "videoMp4": "video/lesson/mp4/죄송합니다.mp4",
+      "korean": "죄송합니다.",
+      "russian": "Извините.",
+      "new": true,
+      "english": "I'm sorry.",
+      "timing": "22:42"
+    },
+    {
+      "video": "video/lesson/제가 지금 수업 준비 중이어서요.webm",
+      "videoMp4": "video/lesson/mp4/제가 지금 수업 준비 중이어서요.mp4",
+      "korean": "제가 지금 수업 준비 중이어서요.",
+      "russian": "Я сейчас готовлюсь к уроку.",
+      "new": true,
+      "english": "I'm preparing for class right now.",
+      "timing": "22:51"
+    },
+    {
+      "video": "video/lesson/지금 수업 시간입니다. 나중에.webm",
+      "videoMp4": "video/lesson/mp4/지금 수업 시간입니다. 나중에.mp4",
+      "korean": "지금 수업 시간입니다. 나중에...",
+      "russian": "Сейчас идёт урок. Позже...",
+      "new": true,
+      "english": "Class is in session right now. Later...",
+      "timing": "26:02"
+    },
+    {
+      "video": "video/lesson/하고 싶으면 하세요.webm",
+      "videoMp4": "video/lesson/mp4/하고 싶으면 하세요.mp4",
+      "korean": "하고 싶으면 하세요.",
+      "russian": "Хотите — делайте.",
+      "new": true,
+      "english": "If you want to, go ahead.",
+      "timing": "26:55"
+    }
+  ],
+  "b8": [
+    {
+      "drama": "Преподам тебе урок",
+      "episode": "5",
+      "video": "video/lesson/제가 그만두는 건가요.webm",
+      "videoMp4": "video/lesson/mp4/제가 그만두는 건가요.mp4",
+      "korean": "제가 그만두는 건가요?",
+      "russian": "Так это я должна уволиться?",
+      "new": true,
+      "english": "So I'm the one who has to quit?",
+      "timing": "28:00",
+      "isNew": true
+    },
+    {
+      "video": "video/lesson/그렇게 얘기 못해줘서 미안해요.webm",
+      "videoMp4": "video/lesson/mp4/그렇게 얘기 못해줘서 미안해요.mp4",
+      "korean": "그렇게 얘기 못해줘서 미안해요.",
+      "russian": "Прости, что не смогла им это сказать.",
+      "new": true,
+      "english": "I'm sorry I couldn't tell them that.",
+      "timing": "30:37"
+    },
+    {
+      "video": "video/lesson/상처가 눈에 안 보이니까.webm",
+      "videoMp4": "video/lesson/mp4/상처가 눈에 안 보이니까.mp4",
+      "korean": "상처가 눈에 안 보이니까.",
+      "russian": "Ведь этих ран глазами не видно.",
+      "new": true,
+      "english": "Because the wounds aren't visible.",
+      "timing": "33:03"
+    },
+    {
+      "video": "video/lesson/괜찮으세요.webm",
+      "videoMp4": "video/lesson/mp4/괜찮으세요.mp4",
+      "korean": "괜찮으세요?",
+      "russian": "Вы в порядке?",
+      "new": true,
+      "english": "Are you all right?",
+      "timing": "37:03"
+    },
+    {
+      "video": "video/lesson/나화진이라고 합니다.webm",
+      "videoMp4": "video/lesson/mp4/나화진이라고 합니다.mp4",
+      "korean": "나화진이라고 합니다.",
+      "russian": "Меня зовут На Хваджин.",
+      "new": true,
+      "english": "My name is Na Hwa-jin.",
+      "timing": "37:24"
+    },
+    {
+      "video": "video/lesson/근데 저 정말 깜짝 놀랐습니다.webm",
+      "videoMp4": "video/lesson/mp4/근데 저 정말 깜짝 놀랐습니다.mp4",
+      "korean": "근데 저 정말 깜짝 놀랐습니다.",
+      "russian": "Честно говоря, я был просто поражён.",
+      "new": true,
+      "english": "Honestly, I was really surprised.",
+      "timing": "37:32"
+    },
+    {
+      "video": "video/lesson/그렇게 똑똑해요.webm",
+      "videoMp4": "video/lesson/mp4/그렇게 똑똑해요.mp4",
+      "korean": "그렇게 똑똑해요?",
+      "russian": "Неужели он такой умный?",
+      "new": true,
+      "english": "Is he really that smart?",
+      "timing": "37:35"
+    },
+    {
+      "video": "video/lesson/그냥 쪼끔 했어요.webm",
+      "videoMp4": "video/lesson/mp4/그냥 쪼끔 했어요.mp4",
+      "korean": "그냥 쪼끔 했어요.",
+      "russian": "Да так, чуть-чуть занималась.",
+      "new": true,
+      "english": "I just studied a little.",
+      "timing": "37:52"
+    },
+    {
+      "video": "video/lesson/정말 그래 보이세요.webm",
+      "videoMp4": "video/lesson/mp4/정말 그래 보이세요.mp4",
+      "korean": "정말 그래 보이세요?",
+      "russian": "Вам правда так кажется?",
+      "new": true,
+      "english": "Do you really think so?",
+      "timing": "37:55"
+    },
+    {
+      "video": "video/lesson/어머니 덕분에 제가 좋은 거 배웁니다.webm",
+      "videoMp4": "video/lesson/mp4/어머니 덕분에 제가 좋은 거 배웁니다.mp4",
+      "korean": "어머니 덕분에 제가 좋은 거 배웁니다.",
+      "russian": "Благодаря вам я узнаю полезные вещи.",
+      "new": true,
+      "english": "Thanks to you, I'm learning something valuable.",
+      "timing": "38:08"
+    },
+    {
+      "video": "video/lesson/네 무슨 일이세요.webm",
+      "videoMp4": "video/lesson/mp4/네 무슨 일이세요.mp4",
+      "korean": "네 무슨 일이세요?",
+      "russian": "Да, что случилось?",
+      "new": true,
+      "english": "Yes, what is it?",
+      "timing": "38:29"
+    },
+    {
+      "video": "video/lesson/불러서 깨우시면 되겠네요.webm",
+      "videoMp4": "video/lesson/mp4/불러서 깨우시면 되겠네요.mp4",
+      "korean": "불러서 깨우시면 되겠네요.",
+      "russian": "Значит, достаточно позвать и разбудить.",
+      "new": true,
+      "english": "You can just call his name and wake him up.",
+      "timing": "38:53"
+    },
+    {
+      "video": "video/lesson/어머니 접니다.webm",
+      "videoMp4": "video/lesson/mp4/어머니 접니다.mp4",
+      "korean": "어머니 접니다.",
+      "russian": "Мама, это я.",
+      "new": true,
+      "english": "Mother, it's me.",
+      "timing": "39:31"
+    },
+    {
+      "video": "video/lesson/내가 필요할 때 전화할 테니까 앞으로 전화하지 마세요.webm",
+      "videoMp4": "video/lesson/mp4/내가 필요할 때 전화할 테니까 앞으로 전화하지 마세요.mp4",
+      "korean": "내가 필요할 때 전화할 테니까 앞으로 전화하지 마세요.",
+      "russian": "Когда понадобится, я позвоню сама, а вы больше не звоните.",
+      "new": true,
+      "english": "I'll call you when I need to, so don't call me anymore.",
+      "timing": "41:59"
+    },
+    {
+      "video": "video/lesson/그리고 조심하세요.webm",
+      "videoMp4": "video/lesson/mp4/그리고 조심하세요.mp4",
+      "korean": "그리고 조심하세요.",
+      "russian": "И будьте осторожны.",
+      "new": true,
+      "english": "And you'd better watch out.",
+      "timing": "42:08"
+    },
+    {
+      "video": "video/lesson/정말 제가 잘못했습니다.webm",
+      "videoMp4": "video/lesson/mp4/정말 제가 잘못했습니다.mp4",
+      "korean": "정말 제가 잘못했습니다.",
+      "russian": "Я правда виноват.",
+      "new": true,
+      "english": "I was truly in the wrong.",
+      "timing": "42:55"
+    },
+    {
+      "video": "video/lesson/한 번만 용서해 주십시오.webm",
+      "videoMp4": "video/lesson/mp4/한 번만 용서해 주십시오.mp4",
+      "korean": "한 번만 용서해 주십시오.",
+      "russian": "Простите меня хотя бы один раз.",
+      "new": true,
+      "english": "Please forgive me just this once.",
+      "timing": "42:58"
+    },
+    {
+      "video": "video/lesson/이렇게 찾아오시는 거 불법입니다.webm",
+      "videoMp4": "video/lesson/mp4/이렇게 찾아오시는 거 불법입니다.mp4",
+      "korean": "이렇게 찾아오시는 거 불법입니다.",
+      "russian": "Вот так приходить — это незаконно.",
+      "new": true,
+      "english": "Showing up like this is illegal.",
+      "timing": "45:23"
+    },
+    {
+      "video": "video/lesson/조사를 해보면 알겠죠.webm",
+      "videoMp4": "video/lesson/mp4/조사를 해보면 알겠죠.mp4",
+      "korean": "조사를 해보면 알겠죠?",
+      "russian": "Проведут расследование — и всё выяснится, да?",
+      "new": true,
+      "english": "We'll find out once they investigate, won't we?",
+      "timing": "48:42"
+    },
+    {
+      "video": "video/lesson/법이 그렇거든요.webm",
+      "videoMp4": "video/lesson/mp4/법이 그렇거든요.mp4",
+      "korean": "법이 그렇거든요.",
+      "russian": "Просто закон такой.",
+      "new": true,
+      "english": "That's what the law says.",
+      "timing": "49:05"
+    },
+    {
+      "video": "video/lesson/당신은 하는데 나는 하면 안 돼.webm",
+      "videoMp4": "video/lesson/mp4/당신은 하는데 나는 하면 안 돼.mp4",
+      "korean": "당신은 하는데 나는 하면 안 돼?",
+      "russian": "Тебе, значит, можно, а мне нельзя?",
+      "new": true,
+      "english": "You get to do it, but I can't?",
+      "timing": "51:14"
+    },
+    {
+      "video": "video/lesson/다시 인사드리겠습니다.webm",
+      "videoMp4": "video/lesson/mp4/다시 인사드리겠습니다.mp4",
+      "korean": "다시 인사드리겠습니다.",
+      "russian": "Позвольте представиться заново.",
+      "new": true,
+      "english": "Let me introduce myself again.",
+      "timing": "51:29"
+    },
+    {
+      "video": "video/lesson/내가 뭘 잘못했는데.webm",
+      "videoMp4": "video/lesson/mp4/내가 뭘 잘못했는데.mp4",
+      "korean": "내가 뭘 잘못했는데.",
+      "russian": "И что я такого сделала?",
+      "new": true,
+      "english": "What did I do wrong?",
+      "timing": "51:57"
+    },
+    {
+      "video": "video/lesson/그거 지켜보는 엄마 마음 어떻겠어요.webm",
+      "videoMp4": "video/lesson/mp4/그거 지켜보는 엄마 마음 어떻겠어요.mp4",
+      "korean": "그거 지켜보는 엄마 마음 어떻겠어요?",
+      "russian": "А каково матери на это смотреть?",
+      "new": true,
+      "english": "How do you think a mother feels watching that?",
+      "timing": "52:21"
+    },
+    {
+      "video": "video/lesson/세상 모든 부모가 다 그래.webm",
+      "videoMp4": "video/lesson/mp4/세상 모든 부모가 다 그래.mp4",
+      "korean": "세상 모든 부모가 다 그래.",
+      "russian": "Все родители на свете такие.",
+      "new": true,
+      "english": "Every parent in the world is like that.",
+      "timing": "52:30"
+    },
+    {
+      "video": "video/lesson/마음이 시키는 대로 하라고요.webm",
+      "videoMp4": "video/lesson/mp4/마음이 시키는 대로 하라고요.mp4",
+      "korean": "마음이 시키는 대로 하라고요.",
+      "russian": "Говорю же — делайте так, как велит сердце.",
+      "new": true,
+      "english": "I'm telling you to do what your heart says.",
+      "timing": "53:01"
+    },
+    {
+      "video": "video/lesson/왜 힘들었는데.webm",
+      "videoMp4": "video/lesson/mp4/왜 힘들었는데.mp4",
+      "korean": "왜 힘들었는데?",
+      "russian": "А почему тебе было тяжело?",
+      "new": true,
+      "english": "Why was it so hard for you?",
+      "timing": "53:13"
+    },
+    {
+      "video": "video/lesson/선생님 죄송해요.webm",
+      "videoMp4": "video/lesson/mp4/선생님 죄송해요.mp4",
+      "korean": "선생님 죄송해요.",
+      "russian": "Учитель, простите.",
+      "new": true,
+      "english": "I'm sorry, teacher.",
+      "timing": "53:18"
+    },
+    {
+      "video": "video/lesson/좀 괜찮아졌어.webm",
+      "videoMp4": "video/lesson/mp4/좀 괜찮아졌어.mp4",
+      "korean": "좀 괜찮아졌어?",
+      "russian": "Тебе стало полегче?",
+      "new": true,
+      "english": "Are you feeling a bit better?",
+      "timing": "54:21"
+    },
+    {
+      "video": "video/lesson/선생님을 믿어주세요.webm",
+      "videoMp4": "video/lesson/mp4/선생님을 믿어주세요.mp4",
+      "korean": "선생님을 믿어주세요.",
+      "russian": "Поверьте учителю.",
+      "new": true,
+      "english": "Please trust the teacher.",
+      "timing": "55:16"
     }
   ]
 }
