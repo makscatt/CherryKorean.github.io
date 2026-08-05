@@ -1,0 +1,512 @@
+{
+  "isSong": true,
+  "isNewSong": true,
+  "karaoke": {
+    "clip": "video/geupryu/Seungmin - 급류 (Into The Current).webm",
+    "clipMp4": "video/geupryu/mp4/Seungmin - 급류 (Into The Current).mp4",
+    "lyrics": [
+      {
+        "t": 20.26,
+        "korean": "작은 어항 속에",
+        "russian": "В маленьком аквариуме",
+        "english": "In a small fishbowl"
+      },
+      {
+        "t": 24.7,
+        "korean": "숨 쉬지 않는 꽃들이",
+        "russian": "цветы, которые не дышат,",
+        "english": "flowers that don't breathe"
+      },
+      {
+        "t": 29.56,
+        "korean": "예쁘게 피었지만 향긴 나지 않는",
+        "russian": "красиво распустились, но не пахнут —",
+        "english": "bloomed pretty, but have no scent"
+      },
+      {
+        "t": 34.58,
+        "korean": "너도 나와 같구나",
+        "russian": "ты такой же, как я",
+        "english": "you're just like me"
+      },
+      {
+        "t": 39.34,
+        "korean": "유리 너머 보인",
+        "russian": "то, что видно за стеклом, —",
+        "english": "what shows through the glass"
+      },
+      {
+        "t": 43.88,
+        "korean": "바단 어떤 곳일까?",
+        "russian": "какое оно, море?",
+        "english": "what kind of place is the sea?"
+      },
+      {
+        "t": 49.12,
+        "korean": "수천 번 헤엄쳐 봐도",
+        "russian": "сколько ни плыву, хоть тысячу раз,",
+        "english": "no matter how many thousand times I swim"
+      },
+      {
+        "t": 53.84,
+        "korean": "닿질 않는 내 모습이",
+        "russian": "мне до него так и не доплыть",
+        "english": "I still can't reach it"
+      },
+      {
+        "t": 58.38,
+        "korean": "언제부턴가",
+        "russian": "и с какого-то момента",
+        "english": "and at some point"
+      },
+      {
+        "t": 63.24,
+        "korean": "익숙해진 이곳에 남은 우린",
+        "russian": "мы, что остались в этом привычном месте,",
+        "english": "we who stayed in this place we got used to"
+      },
+      {
+        "t": 67.66,
+        "korean": "지나치게 또, 걱정과 두려움",
+        "russian": "опять слишком много тревоги и страха —",
+        "english": "again, too much worry and fear"
+      },
+      {
+        "t": 72.44,
+        "korean": "모든 게 섞여",
+        "russian": "всё смешалось",
+        "english": "everything blurs together"
+      },
+      {
+        "t": 77.48,
+        "korean": "새로운 먼 곳에 저 파도가 넘실대는 바다에",
+        "russian": "в новую даль, в море, где ходят волны,",
+        "english": "to a new faraway place, to that sea where the waves roll"
+      },
+      {
+        "t": 83.84,
+        "korean": "몸을 맡겨 흘러갈래",
+        "russian": "отдамся течению и поплыву",
+        "english": "I'll let it carry me and drift away"
+      },
+      {
+        "t": 87.2,
+        "korean": "이 작은 공간에 한 발을 내디뎌",
+        "russian": "делаю шаг прочь из этой тесноты",
+        "english": "I take a step out of this small space"
+      },
+      {
+        "t": 92.06,
+        "korean": "반짝이는 드넓은 저 바다로",
+        "russian": "в сверкающее, огромное море",
+        "english": "into that sparkling, endless sea"
+      },
+      {
+        "t": 97.02,
+        "korean": "아무도 찾지 않는 오래된",
+        "russian": "старое, куда никто не заглядывает,",
+        "english": "old, where no one ever comes"
+      },
+      {
+        "t": 100.7,
+        "korean": "이끼만 가득 찬 이 흐린 유리를 넘어",
+        "russian": "мутное стекло, всё во мху, — перешагну через него",
+        "english": "past this cloudy glass, all covered in moss"
+      },
+      {
+        "t": 106.47,
+        "korean": "작은 내 꿈들을 조금 떨어뜨려",
+        "russian": "растеряю по дороге свои маленькие мечты",
+        "english": "dropping a few of my small dreams along the way"
+      },
+      {
+        "t": 111.26,
+        "korean": "이 바다에 스며들어 갈 거야",
+        "russian": "и растворюсь в этом море",
+        "english": "and I'll seep into this sea"
+      },
+      {
+        "t": 127.04,
+        "korean": "어항 속에서 쳐다본 별이",
+        "russian": "звезда, на которую я смотрю из аквариума,",
+        "english": "the star I look up at from inside the fishbowl"
+      },
+      {
+        "t": 129.67,
+        "korean": "어느 날 내게 말을 걸어",
+        "russian": "однажды заговорила со мной:",
+        "english": "one day spoke to me"
+      },
+      {
+        "t": 132.06,
+        "korean": "아이야, 넌 아직 어리고",
+        "russian": "малыш, ты ещё мал,",
+        "english": "child, you're still young"
+      },
+      {
+        "t": 134.16,
+        "korean": "저 바다는 여전히 흘러",
+        "russian": "а море всё течёт",
+        "english": "and that sea keeps flowing"
+      },
+      {
+        "t": 136.49,
+        "korean": "너의 세상은 거기 있지 않아",
+        "russian": "твой мир не там, где ты сейчас",
+        "english": "your world isn't where you are now"
+      },
+      {
+        "t": 138.81,
+        "korean": "네가 올려다본 둥근 하늘만",
+        "russian": "круглое небо, на которое ты смотришь снизу, —",
+        "english": "the round sky you look up at"
+      },
+      {
+        "t": 141.22,
+        "korean": "있는 게 아냐 그곳을 나와서",
+        "russian": "это ещё не всё; выберись оттуда —",
+        "english": "isn't all there is — get out of there"
+      },
+      {
+        "t": 143.31,
+        "korean": "본 하늘은 또 다를걸",
+        "russian": "и небо окажется совсем другим",
+        "english": "and the sky will look different"
+      },
+      {
+        "t": 145.94,
+        "korean": "조금씩 금이 가 점점 물이 빠지고",
+        "russian": "трещина ползёт, вода уходит,",
+        "english": "cracks spread bit by bit, the water drains away"
+      },
+      {
+        "t": 150.83,
+        "korean": "그 사이를 힘껏 부딪쳐 깨질 듯한 벽",
+        "russian": "бьюсь изо всех сил в стену, что вот-вот треснет",
+        "english": "I throw myself at the wall that's about to break"
+      },
+      {
+        "t": 155.75,
+        "korean": "날카롭게 부서진 유리 조각이 조금 박혀도",
+        "russian": "пусть острые осколки и вопьются —",
+        "english": "even if the sharp shards dig into me"
+      },
+      {
+        "t": 160.5,
+        "korean": "괜찮아 이젠 곧이니까",
+        "russian": "ничего, теперь уже скоро",
+        "english": "it's okay — it's almost time"
+      },
+      {
+        "t": 164.31,
+        "korean": "새로운 먼 곳에 저 파도가 넘실대는 바다에",
+        "russian": "в новую даль, в море, где ходят волны,",
+        "english": "to a new faraway place, to that sea where the waves roll"
+      },
+      {
+        "t": 170.25,
+        "korean": "몸을 맡겨 흘러갈래",
+        "russian": "отдамся течению и поплыву",
+        "english": "I'll let it carry me and drift away"
+      },
+      {
+        "t": 173.74,
+        "korean": "이 작은 공간에 한 발을 내디뎌",
+        "russian": "делаю шаг прочь из этой тесноты",
+        "english": "I take a step out of this small space"
+      },
+      {
+        "t": 178.5,
+        "korean": "반짝이는 드넓은 저 바다로",
+        "russian": "в сверкающее, огромное море",
+        "english": "into that sparkling, endless sea"
+      },
+      {
+        "t": 183.46,
+        "korean": "아무도 찾지 않는 오래된",
+        "russian": "старое, куда никто не заглядывает,",
+        "english": "old, where no one ever comes"
+      },
+      {
+        "t": 187.22,
+        "korean": "이끼만 가득 찬 이 흐린 유리를 넘어",
+        "russian": "мутное стекло, всё во мху, — перешагну через него",
+        "english": "past this cloudy glass, all covered in moss"
+      },
+      {
+        "t": 192.77,
+        "korean": "작은 내 꿈들을 조금 떨어뜨려",
+        "russian": "растеряю по дороге свои маленькие мечты",
+        "english": "dropping a few of my small dreams along the way"
+      },
+      {
+        "t": 197.61,
+        "korean": "이 바다에 스며들어 갈 거야",
+        "russian": "и растворюсь в этом море",
+        "english": "and I'll seep into this sea"
+      }
+    ]
+  },
+  "b1": [
+    {
+      "video": "video/geupryu/작은 어항 속에.webm",
+      "videoMp4": "video/geupryu/mp4/작은 어항 속에.mp4",
+      "korean": "작은 어항 속에",
+      "russian": "В маленьком аквариуме",
+      "new": true,
+      "english": "In a small fishbowl"
+    },
+    {
+      "video": "video/geupryu/숨 쉬지 않는 꽃들이.webm",
+      "videoMp4": "video/geupryu/mp4/숨 쉬지 않는 꽃들이.mp4",
+      "korean": "숨 쉬지 않는 꽃들이",
+      "russian": "цветы, которые не дышат,",
+      "new": true,
+      "english": "flowers that don't breathe"
+    },
+    {
+      "video": "video/geupryu/예쁘게 피었지만 향긴 나지 않는.webm",
+      "videoMp4": "video/geupryu/mp4/예쁘게 피었지만 향긴 나지 않는.mp4",
+      "korean": "예쁘게 피었지만 향긴 나지 않는",
+      "russian": "красиво распустились, но не пахнут —",
+      "new": true,
+      "english": "bloomed pretty, but have no scent"
+    },
+    {
+      "video": "video/geupryu/너도 나와 같구나.webm",
+      "videoMp4": "video/geupryu/mp4/너도 나와 같구나.mp4",
+      "korean": "너도 나와 같구나",
+      "russian": "ты такой же, как я",
+      "new": true,
+      "english": "you're just like me"
+    },
+    {
+      "video": "video/geupryu/유리 너머 보인.webm",
+      "videoMp4": "video/geupryu/mp4/유리 너머 보인.mp4",
+      "korean": "유리 너머 보인",
+      "russian": "то, что видно за стеклом, —",
+      "new": true,
+      "english": "what shows through the glass"
+    },
+    {
+      "video": "video/geupryu/바단 어떤 곳일까.webm",
+      "videoMp4": "video/geupryu/mp4/바단 어떤 곳일까.mp4",
+      "korean": "바단 어떤 곳일까?",
+      "russian": "какое оно, море?",
+      "new": true,
+      "english": "what kind of place is the sea?"
+    },
+    {
+      "video": "video/geupryu/수천 번 헤엄쳐 봐도.webm",
+      "videoMp4": "video/geupryu/mp4/수천 번 헤엄쳐 봐도.mp4",
+      "korean": "수천 번 헤엄쳐 봐도",
+      "russian": "сколько ни плыву, хоть тысячу раз,",
+      "new": true,
+      "english": "no matter how many thousand times I swim"
+    },
+    {
+      "video": "video/geupryu/닿질 않는 내 모습이.webm",
+      "videoMp4": "video/geupryu/mp4/닿질 않는 내 모습이.mp4",
+      "korean": "닿질 않는 내 모습이",
+      "russian": "мне до него так и не доплыть",
+      "new": true,
+      "english": "I still can't reach it"
+    },
+    {
+      "video": "video/geupryu/언제부턴가.webm",
+      "videoMp4": "video/geupryu/mp4/언제부턴가.mp4",
+      "korean": "언제부턴가",
+      "russian": "и с какого-то момента",
+      "new": true,
+      "english": "and at some point"
+    },
+    {
+      "video": "video/geupryu/익숙해진 이곳에 남은 우린.webm",
+      "videoMp4": "video/geupryu/mp4/익숙해진 이곳에 남은 우린.mp4",
+      "korean": "익숙해진 이곳에 남은 우린",
+      "russian": "мы, что остались в этом привычном месте,",
+      "new": true,
+      "english": "we who stayed in this place we got used to"
+    },
+    {
+      "video": "video/geupryu/지나치게 또_ 걱정과 두려움.webm",
+      "videoMp4": "video/geupryu/mp4/지나치게 또_ 걱정과 두려움.mp4",
+      "korean": "지나치게 또, 걱정과 두려움",
+      "russian": "опять слишком много тревоги и страха —",
+      "new": true,
+      "english": "again, too much worry and fear"
+    },
+    {
+      "video": "video/geupryu/모든 게 섞여.webm",
+      "videoMp4": "video/geupryu/mp4/모든 게 섞여.mp4",
+      "korean": "모든 게 섞여",
+      "russian": "всё смешалось",
+      "new": true,
+      "english": "everything blurs together"
+    },
+    {
+      "video": "video/geupryu/새로운 먼 곳에 저 파도가 넘실대는 바다에.webm",
+      "videoMp4": "video/geupryu/mp4/새로운 먼 곳에 저 파도가 넘실대는 바다에.mp4",
+      "korean": "새로운 먼 곳에 저 파도가 넘실대는 바다에",
+      "russian": "в новую даль, в море, где ходят волны,",
+      "new": true,
+      "english": "to a new faraway place, to that sea where the waves roll"
+    },
+    {
+      "video": "video/geupryu/몸을 맡겨 흘러갈래.webm",
+      "videoMp4": "video/geupryu/mp4/몸을 맡겨 흘러갈래.mp4",
+      "korean": "몸을 맡겨 흘러갈래",
+      "russian": "отдамся течению и поплыву",
+      "new": true,
+      "english": "I'll let it carry me and drift away"
+    },
+    {
+      "video": "video/geupryu/이 작은 공간에 한 발을 내디뎌.webm",
+      "videoMp4": "video/geupryu/mp4/이 작은 공간에 한 발을 내디뎌.mp4",
+      "korean": "이 작은 공간에 한 발을 내디뎌",
+      "russian": "делаю шаг прочь из этой тесноты",
+      "new": true,
+      "english": "I take a step out of this small space"
+    },
+    {
+      "video": "video/geupryu/반짝이는 드넓은 저 바다로.webm",
+      "videoMp4": "video/geupryu/mp4/반짝이는 드넓은 저 바다로.mp4",
+      "korean": "반짝이는 드넓은 저 바다로",
+      "russian": "в сверкающее, огромное море",
+      "new": true,
+      "english": "into that sparkling, endless sea"
+    },
+    {
+      "video": "video/geupryu/아무도 찾지 않는 오래된.webm",
+      "videoMp4": "video/geupryu/mp4/아무도 찾지 않는 오래된.mp4",
+      "korean": "아무도 찾지 않는 오래된",
+      "russian": "старое, куда никто не заглядывает,",
+      "new": true,
+      "english": "old, where no one ever comes"
+    },
+    {
+      "video": "video/geupryu/이끼만 가득 찬 이 흐린 유리를 넘어.webm",
+      "videoMp4": "video/geupryu/mp4/이끼만 가득 찬 이 흐린 유리를 넘어.mp4",
+      "korean": "이끼만 가득 찬 이 흐린 유리를 넘어",
+      "russian": "мутное стекло, всё во мху, — перешагну через него",
+      "new": true,
+      "english": "past this cloudy glass, all covered in moss"
+    },
+    {
+      "video": "video/geupryu/작은 내 꿈들을 조금 떨어뜨려.webm",
+      "videoMp4": "video/geupryu/mp4/작은 내 꿈들을 조금 떨어뜨려.mp4",
+      "korean": "작은 내 꿈들을 조금 떨어뜨려",
+      "russian": "растеряю по дороге свои маленькие мечты",
+      "new": true,
+      "english": "dropping a few of my small dreams along the way"
+    },
+    {
+      "video": "video/geupryu/이 바다에 스며들어 갈 거야.webm",
+      "videoMp4": "video/geupryu/mp4/이 바다에 스며들어 갈 거야.mp4",
+      "korean": "이 바다에 스며들어 갈 거야",
+      "russian": "и растворюсь в этом море",
+      "new": true,
+      "english": "and I'll seep into this sea"
+    },
+    {
+      "video": "video/geupryu/어항 속에서 쳐다본 별이.webm",
+      "videoMp4": "video/geupryu/mp4/어항 속에서 쳐다본 별이.mp4",
+      "korean": "어항 속에서 쳐다본 별이",
+      "russian": "звезда, на которую я смотрю из аквариума,",
+      "new": true,
+      "english": "the star I look up at from inside the fishbowl"
+    },
+    {
+      "video": "video/geupryu/어느 날 내게 말을 걸어.webm",
+      "videoMp4": "video/geupryu/mp4/어느 날 내게 말을 걸어.mp4",
+      "korean": "어느 날 내게 말을 걸어",
+      "russian": "однажды заговорила со мной:",
+      "new": true,
+      "english": "one day spoke to me"
+    },
+    {
+      "video": "video/geupryu/아이야_ 넌 아직 어리고.webm",
+      "videoMp4": "video/geupryu/mp4/아이야_ 넌 아직 어리고.mp4",
+      "korean": "아이야, 넌 아직 어리고",
+      "russian": "малыш, ты ещё мал,",
+      "new": true,
+      "english": "child, you're still young"
+    },
+    {
+      "video": "video/geupryu/저 바다는 여전히 흘러.webm",
+      "videoMp4": "video/geupryu/mp4/저 바다는 여전히 흘러.mp4",
+      "korean": "저 바다는 여전히 흘러",
+      "russian": "а море всё течёт",
+      "new": true,
+      "english": "and that sea keeps flowing"
+    },
+    {
+      "video": "video/geupryu/너의 세상은 거기 있지 않아.webm",
+      "videoMp4": "video/geupryu/mp4/너의 세상은 거기 있지 않아.mp4",
+      "korean": "너의 세상은 거기 있지 않아",
+      "russian": "твой мир не там, где ты сейчас",
+      "new": true,
+      "english": "your world isn't where you are now"
+    },
+    {
+      "video": "video/geupryu/네가 올려다본 둥근 하늘만.webm",
+      "videoMp4": "video/geupryu/mp4/네가 올려다본 둥근 하늘만.mp4",
+      "korean": "네가 올려다본 둥근 하늘만",
+      "russian": "круглое небо, на которое ты смотришь снизу, —",
+      "new": true,
+      "english": "the round sky you look up at"
+    },
+    {
+      "video": "video/geupryu/있는 게 아냐 그곳을 나와서.webm",
+      "videoMp4": "video/geupryu/mp4/있는 게 아냐 그곳을 나와서.mp4",
+      "korean": "있는 게 아냐 그곳을 나와서",
+      "russian": "это ещё не всё; выберись оттуда —",
+      "new": true,
+      "english": "isn't all there is — get out of there"
+    },
+    {
+      "video": "video/geupryu/본 하늘은 또 다를걸.webm",
+      "videoMp4": "video/geupryu/mp4/본 하늘은 또 다를걸.mp4",
+      "korean": "본 하늘은 또 다를걸",
+      "russian": "и небо окажется совсем другим",
+      "new": true,
+      "english": "and the sky will look different"
+    },
+    {
+      "video": "video/geupryu/조금씩 금이 가 점점 물이 빠지고.webm",
+      "videoMp4": "video/geupryu/mp4/조금씩 금이 가 점점 물이 빠지고.mp4",
+      "korean": "조금씩 금이 가 점점 물이 빠지고",
+      "russian": "трещина ползёт, вода уходит,",
+      "new": true,
+      "english": "cracks spread bit by bit, the water drains away"
+    },
+    {
+      "video": "video/geupryu/그 사이를 힘껏 부딪쳐 깨질 듯한 벽.webm",
+      "videoMp4": "video/geupryu/mp4/그 사이를 힘껏 부딪쳐 깨질 듯한 벽.mp4",
+      "korean": "그 사이를 힘껏 부딪쳐 깨질 듯한 벽",
+      "russian": "бьюсь изо всех сил в стену, что вот-вот треснет",
+      "new": true,
+      "english": "I throw myself at the wall that's about to break"
+    },
+    {
+      "video": "video/geupryu/날카롭게 부서진 유리 조각이 조금 박혀도.webm",
+      "videoMp4": "video/geupryu/mp4/날카롭게 부서진 유리 조각이 조금 박혀도.mp4",
+      "korean": "날카롭게 부서진 유리 조각이 조금 박혀도",
+      "russian": "пусть острые осколки и вопьются —",
+      "new": true,
+      "english": "even if the sharp shards dig into me"
+    },
+    {
+      "video": "video/geupryu/괜찮아 이젠 곧이니까.webm",
+      "videoMp4": "video/geupryu/mp4/괜찮아 이젠 곧이니까.mp4",
+      "korean": "괜찮아 이젠 곧이니까",
+      "russian": "ничего, теперь уже скоро",
+      "new": true,
+      "english": "it's okay — it's almost time"
+    }
+  ],
+  "b2": [],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}

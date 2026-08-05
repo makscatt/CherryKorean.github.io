@@ -112,6 +112,13 @@
       "title_en": "Stay With Me (Goblin OST)",
       "cover": "videothemes/songs_covers/song4.png",
       "masterJsonPath": "videothemes/json/videotheme44.json",
+      "isNewSong": false
+    },
+    "song5": {
+      "title": "급류 (Стремнина)",
+      "title_en": "급류 (Into The Current)",
+      "cover": "videothemes/songs_covers/song5.png",
+      "masterJsonPath": "videothemes/json/videotheme47.json",
       "isNewSong": true
     }
   },

@@ -1,6 +1,6 @@
 {
   "isSong": true,
-  "isNewSong": true,
+  "isNewSong": false,
   "karaoke": {
     "clip": "video/staywithme/[도깨비 OST Part 1] 찬열, 펀치 (CHANYEOL, PUNCH) - Stay With Me MV.webm",
     "clipMp4": "video/staywithme/mp4/[도깨비 OST Part 1] 찬열, 펀치 (CHANYEOL, PUNCH) - Stay With Me MV.mp4",
