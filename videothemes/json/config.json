@@ -115,8 +115,8 @@
       "isNewSong": false
     },
     "song5": {
-      "title": "급류 (Стремнина)",
-      "title_en": "급류 (Into The Current)",
+      "title": "Сынми (SKZ) - 급류(Into The Current)",
+      "title_en": "Seungmin (SKZ) - 급류(Into The Current)",
       "cover": "videothemes/songs_covers/song5.png",
       "masterJsonPath": "videothemes/json/videotheme47.json",
       "isNewSong": true
