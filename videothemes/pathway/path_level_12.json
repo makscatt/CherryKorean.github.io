@@ -25,7 +25,7 @@
       "video": "video/demon/뭐 하는 게 아프잖아.webm",
       "videoMp4": "video/demon/mp4/뭐 하는 게 아프잖아.mp4",
       "korean": "뭐 하는 게 아프잖아?",
-      "transcription": "Мво ханын кэ апычжанха?",
+      "transcription": "Мво ханын кэ апычжана?",
       "russian": "Ты что творишь, больно ведь?"
     },
     {
@@ -111,7 +111,7 @@
       "video": "video/jin/내 말 끊지 말라니까.webm",
       "videoMp4": "video/jin/mp4/내 말 끊지 말라니까.mp4",
       "korean": "내 말 끊지 말라니까",
-      "transcription": "Нэ маль ккынхчи мальраникка",
+      "transcription": "Нэ маль ккынчхи малланикка",
       "russian": "Я же сказала, не перебивай меня"
     },
     {
@@ -183,14 +183,14 @@
       "video": "video/kumiho/담배 보면 안 좋잖아.webm",
       "videoMp4": "video/kumiho/mp4/담배 보면 안 좋잖아.mp4",
       "korean": "담배 보면 안 좋잖아",
-      "transcription": "Тамбэ помён ан чотчанха",
+      "transcription": "Тамбэ помён ан чочана",
       "russian": "Не круто ведь, когда курят"
     },
     {
       "video": "video/reader/대신 저랑 같이 가면.webm",
       "videoMp4": "video/reader/mp4/대신 저랑 같이 가면.mp4",
       "korean": "대신 저랑 같이 가면",
-      "transcription": "Тэщин чораң кати камён",
+      "transcription": "Тэщин чораң качи камён",
       "russian": "Зато если пойдёшь со мной"
     },
     {
@@ -241,7 +241,7 @@
       "video": "video/rev/새 집 보는 날이잖아.webm",
       "videoMp4": "video/rev/mp4/새 집 보는 날이잖아.mp4",
       "korean": "새 집 보는 날이잖아.",
-      "transcription": "Щэ чип понын наричжанха.",
+      "transcription": "Щэ чип понын наричжана.",
       "russian": "Сегодня же день, когда мы смотрим новый дом."
     },
     {
@@ -334,7 +334,7 @@
       "video": "video/squidgame 2/이 사진 올려도 돼요.webm",
       "videoMp4": "video/squidgame 2/mp4/이 사진 올려도 돼요.mp4",
       "korean": "이 사진 올려도 돼요?",
-      "transcription": "И сачжин ольрёдо твэё?",
+      "transcription": "И сачжин оллёдо твэё?",
       "russian": "Можно выложить эту фотку?"
     },
     {
@@ -371,7 +371,7 @@
       "video": "video/evilflower/저 빨리 가란 얘기죠.webm",
       "videoMp4": "video/evilflower/mp4/저 빨리 가란 얘기죠.mp4",
       "korean": "저 빨리 가란 얘기죠?",
-      "transcription": "Чо ппальри каран егичжё?",
+      "transcription": "Чо ппалли каран егичжё?",
       "russian": "Вы хотите сказать, чтобы я быстро ушёл?"
     },
     {
@@ -427,7 +427,7 @@
       "video": "video/hwarang/호기심 많고 잘 웃고.webm",
       "videoMp4": "video/hwarang/mp4/호기심 많고 잘 웃고.mp4",
       "korean": "호기심 많고 잘 웃고",
-      "transcription": "Хогищим манхко чаль утко",
+      "transcription": "Хогищим манко чаль утко",
       "russian": "Любопытный и часто улыбается"
     }
   ]
