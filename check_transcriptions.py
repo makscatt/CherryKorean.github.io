@@ -38,6 +38,11 @@ TAIL = ["", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ"
 
 VOWEL_I = 20  # ㅣ — индекс гласной в наборе, нужен для 구개음화
 
+# i-гласные: перед ними ㅅ/ㅆ в этом проекте пишутся «щ» (시 щи, 없이 опщи)
+I_VOWEL_CYR = {20: ("и",), 2: ("я",), 6: ("ё",), 12: ("ё",), 17: ("ю",),
+               3: ("е", "э"), 7: ("е", "э")}
+I_VOWELS = tuple(I_VOWEL_CYR)
+
 
 def decompose(ch):
     """'음' -> ('ㅇ', vowel_idx, 'ㅁ'); не-хангыль -> None."""
@@ -215,6 +220,14 @@ def check_entry(korean, transcription):
                 bad = next((f for f in syl_frags(a, "ль") if f in t), None)
                 if bad and not any(f in t for f in syl_frags(a, "к")):
                     found.append(("J ㄺ перед не-ㄱ → [ㄱ] (밝다 пакта)", bad))
+
+        # --- L: ㅅ/ㅆ перед i-гласной — всегда «щ», в том числе в связке
+        # (맛있어 мащиссо, 옷이 ощи, 없이 опщи), и «сс» тут тоже не пишем ---
+        if a[2] in ("ㅅ", "ㅆ", "ㅄ", "ㄳ") and lead == "ㅇ" and vowel in I_VOWELS:
+            bad = [c + v for c in ("сс", "с") for v in I_VOWEL_CYR[vowel]]
+            hit = next((x for x in bad if x in t), None)
+            if hit:
+                found.append(("L ㅅ/ㅆ перед i-гласной → «щ» (없이 опщи)", hit))
 
         # --- E: 구개음화 ---
         if a[2] in ("ㄷ", "ㅌ") and lead == "ㅇ" and vowel == VOWEL_I:
