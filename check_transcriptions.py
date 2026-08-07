@@ -98,6 +98,25 @@ CODA_CYR = {
 }
 
 
+# звонкие/мягкие кириллические согласные, которых не бывает после шумного батчима
+VOICED = ("г", "д", "б", "з", "чж", "ж", "в")
+
+# кластерные батчимы: перед согласной звучит ТОЛЬКО одна из двух букв.
+# CLUSTER_WRONG — как выглядит побуквенная запись обеих (없는 «опснын»,
+# 닭살 «тальксаль»), CLUSTER_KEEP — что должно звучать.
+CLUSTER_WRONG = {"ㄳ": "кс", "ㄵ": "нч", "ㄺ": "льк", "ㄻ": "льм", "ㄼ": "льп",
+                 "ㄽ": "льс", "ㄾ": "льт", "ㄿ": "льп", "ㅄ": "пс"}
+CLUSTER_KEEP = {"ㄳ": "к", "ㄵ": "н", "ㄺ": "к", "ㄻ": "м", "ㄼ": "ль",
+                "ㄽ": "ль", "ㄾ": "ль", "ㄿ": "п", "ㅄ": "п"}
+
+
+def syl_frags(a, coda_cyr):
+    """Варианты «начальный + гласная + кода» кириллицей для одного слога."""
+    return [ld + vw + coda_cyr
+            for ld in LEAD_CYR.get(a[0], ("",))
+            for vw in VOWEL_CYR[a[1]]]
+
+
 def walk(obj):
     """Все словари с ключом 'korean' на любой глубине."""
     if isinstance(obj, dict):
@@ -170,6 +189,32 @@ def check_entry(korean, transcription):
                     if cv + "н" in t:
                         found.append(("D 유음화 ㄹ + ㄴ → ㄹㄹ", cv + "н"))
                         break
+
+        # --- G: 경음화 — после шумного батчима не может быть звонкой ---
+        if lead in ("ㄱ", "ㄷ", "ㅂ", "ㅅ", "ㅈ") and coda in ("K", "T", "P"):
+            base = CODA_CYR[coda][0]          # только к/т/п, иначе ловим чужие слоги
+            for frag in syl_frags(a, base):
+                hit = next((frag + v for v in VOICED if frag + v in t), None)
+                if hit:
+                    found.append(("G 경음화 (шумный + ㄱ/ㄷ/ㅂ/ㅅ/ㅈ → напряжённый)",
+                                  hit))
+                    break
+
+        # --- J: 자음군 단순화 — в кластере перед согласной звучит одна ---
+        # исключения: ㅄ/ㄳ + ㅅ (없습니다 [업씀] — «опсс» законно) и
+        # ㄺ + ㄱ (읽고 [일꼬] — звучит именно ㄹ, «илько» законно)
+        skip_j = ((a[2] in ("ㅄ", "ㄳ", "ㄽ") and lead == "ㅅ")
+                  or (a[2] == "ㄺ" and lead == "ㄱ"))
+        if a[2] in CLUSTER_WRONG and lead != "ㅇ" and not skip_j:
+            hit = next((f for f in syl_frags(a, CLUSTER_WRONG[a[2]]) if f in t),
+                       None)
+            if hit:
+                found.append(("J 자음군 단순화 (кластер → одна согласная)", hit))
+            elif a[2] == "ㄺ" and lead != "ㄱ":
+                # 읽다 [익따], 밝다 [박따] — перед не-ㄱ звучит ㄱ, а не ㄹ
+                bad = next((f for f in syl_frags(a, "ль") if f in t), None)
+                if bad and not any(f in t for f in syl_frags(a, "к")):
+                    found.append(("J ㄺ перед не-ㄱ → [ㄱ] (밝다 пакта)", bad))
 
         # --- E: 구개음화 ---
         if a[2] in ("ㄷ", "ㅌ") and lead == "ㅇ" and vowel == VOWEL_I:
