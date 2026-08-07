@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+# Раны деплоя выстраиваются в очередь, а не гоняются за main:
+# иначе автокоммит config.json из CI ловит non-fast-forward и валит выкладку.
+concurrency:
+  group: deploy-yos
+  cancel-in-progress: false
+
 jobs:
   upload:
     runs-on: ubuntu-latest
@@ -25,8 +31,16 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add videothemes/json/config.json
-          git diff --cached --quiet || git commit -m "auto: update config totalCount/hasNew"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: update config totalCount/hasNew"
+            # abort обязателен: без него конфликтный rebase оставит маркеры
+            # конфликта в config.json, и s3cmd зальёт битый файл на CDN.
+            git pull --rebase origin main || git rebase --abort || true
+            # Пуш — только бухгалтерия totalCount/hasNew. Если отклонён,
+            # выкладку не роняем: s3cmd льёт рабочее дерево, где config уже
+            # пересчитан, а счётчики допишет следующий ран.
+            git push || echo "::warning::auto-commit push пропущен (гонка), выкладка продолжается"
+          fi
 
       - name: Install s3cmd
         run: sudo apt-get install -y s3cmd
