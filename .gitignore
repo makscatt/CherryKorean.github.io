@@ -13,3 +13,7 @@ _originals/
 # на CDN им делать нечего (20 .bak в song1 туда уже уехали)
 *.bak
 ~tmp~*
+
+# Байткод локальных скриптов — иначе deploy-miniapp.bat (git add -A) утащит .pyc на CDN
+__pycache__/
+*.pyc
