@@ -1202,7 +1202,7 @@
     ],
     "title_en": "Get Schooled (ep. 5)",
     "totalCount": 232,
-    "hasNew": true
+    "hasNew": false
   },
   "theme42": {
     "coverImage": "videothemes/subthemebc/kimsec.png",
@@ -1312,5 +1312,26 @@
     "title_en": "Colony\n군체",
     "totalCount": 115,
     "hasNew": false
+  },
+  "theme46": {
+    "coverImage": "videothemes/subthemebc/siren.png",
+    "title": "Сирена\n세이렌",
+    "masterJsonPath": "videothemes/json/videotheme48.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      }
+    ],
+    "title_en": "Siren\n세이렌",
+    "totalCount": 50,
+    "hasNew": true
   }
 }
