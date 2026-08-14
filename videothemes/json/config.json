@@ -1332,6 +1332,32 @@
     ],
     "title_en": "Siren\n세이렌",
     "totalCount": 50,
+    "hasNew": false
+  },
+  "theme47": {
+    "coverImage": "videothemes/subthemebc/stickylove.png",
+    "title": "Наша липкая любовь\n이런 엿 같은 사랑",
+    "masterJsonPath": "videothemes/json/videotheme49.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      }
+    ],
+    "title_en": "Our Sticky Love\n이런 엿 같은 사랑",
+    "totalCount": 75,
     "hasNew": true
   }
 }

@@ -1,0 +1,694 @@
+{
+  "b1": [
+    {
+      "drama": "Наша липкая любовь",
+      "episode": "1",
+      "video": "video/stickylove/감동 받으셨죠.webm",
+      "videoMp4": "video/stickylove/mp4/감동 받으셨죠.mp4",
+      "korean": "감동 받으셨죠?",
+      "russian": "Растрогались, да?",
+      "new": true,
+      "english": "That got to you, didn't it?",
+      "timing": "08:39",
+      "isNew": true
+    },
+    {
+      "video": "video/stickylove/결혼을 앞둔 사이다.webm",
+      "videoMp4": "video/stickylove/mp4/결혼을 앞둔 사이다.mp4",
+      "korean": "결혼을 앞둔 사이다?",
+      "russian": "И мы вот-вот должны пожениться?",
+      "new": true,
+      "english": "And we were about to get married?",
+      "timing": "09:29"
+    },
+    {
+      "video": "video/stickylove/그럼 같이 잤을 거 아니에요.webm",
+      "videoMp4": "video/stickylove/mp4/그럼 같이 잤을 거 아니에요.mp4",
+      "korean": "그럼 같이 잤을 거 아니에요.",
+      "russian": "Значит, мы спали вместе, разве нет?",
+      "new": true,
+      "english": "Then we'd have slept together, wouldn't we?",
+      "timing": "23:27"
+    },
+    {
+      "video": "video/stickylove/그럼 우리가 연인인 건.webm",
+      "videoMp4": "video/stickylove/mp4/그럼 우리가 연인인 건.mp4",
+      "korean": "그럼 우리가 연인인 건",
+      "russian": "Тогда то, что мы пара…",
+      "new": true,
+      "english": "So the part about us being a couple…",
+      "timing": "09:57"
+    },
+    {
+      "video": "video/stickylove/그럼 저 이제 어떡해요.webm",
+      "videoMp4": "video/stickylove/mp4/그럼 저 이제 어떡해요.mp4",
+      "korean": "그럼 저 이제 어떡해요?",
+      "russian": "И что мне теперь делать?",
+      "new": true,
+      "english": "So what do I do now?",
+      "timing": "02:49"
+    },
+    {
+      "video": "video/stickylove/그쪽도 내가 좋으니까 같이 살았겠죠.webm",
+      "videoMp4": "video/stickylove/mp4/그쪽도 내가 좋으니까 같이 살았겠죠.mp4",
+      "korean": "그쪽도 내가 좋으니까 같이 살았겠죠?",
+      "russian": "Вы ведь тоже жили со мной, потому что я вам нравилась?",
+      "new": true,
+      "english": "You lived with me because you liked me too, right?",
+      "timing": "48:12"
+    },
+    {
+      "video": "video/stickylove/끈질기게 날 쫓아다녔어.webm",
+      "videoMp4": "video/stickylove/mp4/끈질기게 날 쫓아다녔어.mp4",
+      "korean": "끈질기게 날 쫓아다녔어",
+      "russian": "Ты упорно за мной бегал.",
+      "new": true,
+      "english": "You chased after me relentlessly.",
+      "timing": "25:20"
+    },
+    {
+      "video": "video/stickylove/나 진짜 하나도 못 믿겠는데.webm",
+      "videoMp4": "video/stickylove/mp4/나 진짜 하나도 못 믿겠는데.mp4",
+      "korean": "나 진짜 하나도 못 믿겠는데",
+      "russian": "Я правда ни капли в это не верю.",
+      "new": true,
+      "english": "I really don't believe a word of it.",
+      "timing": "09:45"
+    },
+    {
+      "video": "video/stickylove/나야 하나도 안 무서운데.webm",
+      "videoMp4": "video/stickylove/mp4/나야 하나도 안 무서운데.mp4",
+      "korean": "나야 하나도 안 무서운데?",
+      "russian": "Мне-то совсем не страшно.",
+      "new": true,
+      "english": "Me? I'm not scared at all.",
+      "timing": "47:25"
+    },
+    {
+      "video": "video/stickylove/내가 누군지 모르겠어.webm",
+      "videoMp4": "video/stickylove/mp4/내가 누군지 모르겠어.mp4",
+      "korean": "내가 누군지 모르겠어?",
+      "russian": "Не узнаёшь меня?",
+      "new": true,
+      "english": "You don't know who I am?",
+      "timing": "08:15"
+    },
+    {
+      "video": "video/stickylove/내가 살던 데 가면 뭐라도 생각이 날지.webm",
+      "videoMp4": "video/stickylove/mp4/내가 살던 데 가면 뭐라도 생각이 날지.mp4",
+      "korean": "내가 살던 데 가면 뭐라도 생각이 날지?",
+      "russian": "Может, если попаду туда, где жила, что-то вспомнится?",
+      "new": true,
+      "english": "Maybe something will come back if I go where I used to live?",
+      "timing": "13:50"
+    },
+    {
+      "video": "video/stickylove/내가 이 모든 걸 도저히 못 믿겠으니까.webm",
+      "videoMp4": "video/stickylove/mp4/내가 이 모든 걸 도저히 못 믿겠으니까.mp4",
+      "korean": "내가 이 모든 걸 도저히 못 믿겠으니까.",
+      "russian": "Потому что я никак не могу во всё это поверить.",
+      "new": true,
+      "english": "Because I just can't believe any of this.",
+      "timing": "23:54"
+    },
+    {
+      "video": "video/stickylove/너 대체 무슨 사고를 당한 거지.webm",
+      "videoMp4": "video/stickylove/mp4/너 대체 무슨 사고를 당한 거지.mp4",
+      "korean": "너 대체 무슨 사고를 당한 거지?",
+      "russian": "Что же с тобой всё-таки случилось?",
+      "new": true,
+      "english": "What kind of accident did you even have?",
+      "timing": "45:59"
+    },
+    {
+      "video": "video/stickylove/너는 왜 안했니.webm",
+      "videoMp4": "video/stickylove/mp4/너는 왜 안했니.mp4",
+      "korean": "너는 왜 안했니?",
+      "russian": "А ты почему нет?",
+      "new": true,
+      "english": "Why didn't you?",
+      "timing": "04:03"
+    },
+    {
+      "video": "video/stickylove/너의 핸드폰이라도 있었으면 좋았겠지만.webm",
+      "videoMp4": "video/stickylove/mp4/너의 핸드폰이라도 있었으면 좋았겠지만.mp4",
+      "korean": "너의 핸드폰이라도 있었으면 좋았겠지만",
+      "russian": "Был бы хоть твой телефон — уже легче, но…",
+      "new": true,
+      "english": "It'd help if we at least had your phone, but…",
+      "timing": "10:36"
+    },
+    {
+      "video": "video/stickylove/넌 겉치레를 싫어했어.webm",
+      "videoMp4": "video/stickylove/mp4/넌 겉치레를 싫어했어.mp4",
+      "korean": "넌 겉치레를 싫어했어",
+      "russian": "Ты не любила показухи.",
+      "new": true,
+      "english": "You hated anything for show.",
+      "timing": "23:10"
+    },
+    {
+      "video": "video/stickylove/누구세요_ 라고 물어볼 사람.webm",
+      "videoMp4": "video/stickylove/mp4/누구세요_ 라고 물어볼 사람.mp4",
+      "korean": "누구세요? 라고 물어볼 사람?",
+      "russian": "Есть кто-нибудь, кто спросит: «Кто вы?»",
+      "new": true,
+      "english": "Anyone who'd ask, “Who are you?”",
+      "timing": "01:45"
+    },
+    {
+      "video": "video/stickylove/니 남자친구.webm",
+      "videoMp4": "video/stickylove/mp4/니 남자친구.mp4",
+      "korean": "니 남자친구",
+      "russian": "Твой парень.",
+      "new": true,
+      "english": "Your boyfriend.",
+      "timing": "08:32"
+    },
+    {
+      "video": "video/stickylove/동네에서 본 적 없어요_ 나 여기 살았다는데.webm",
+      "videoMp4": "video/stickylove/mp4/동네에서 본 적 없어요_ 나 여기 살았다는데.mp4",
+      "korean": "동네에서 본 적 없어요? 나 여기 살았다는데?",
+      "russian": "Вы меня тут не видели? Говорят, я здесь жила.",
+      "new": true,
+      "english": "Haven't you seen me around here? They say I lived here.",
+      "timing": "17:26"
+    },
+    {
+      "video": "video/stickylove/드나든 지 한 3년쯤 됐어요.webm",
+      "videoMp4": "video/stickylove/mp4/드나든 지 한 3년쯤 됐어요.mp4",
+      "korean": "드나든 지 한 3년쯤 됐어요",
+      "russian": "Хожу сюда уже года три.",
+      "new": true,
+      "english": "I've been coming here for about three years.",
+      "timing": "28:19"
+    },
+    {
+      "video": "video/stickylove/때려 죽여도 안 맞겄어.webm",
+      "videoMp4": "video/stickylove/mp4/때려 죽여도 안 맞겄어.mp4",
+      "korean": "때려 죽여도 안 맞겄어.",
+      "russian": "Хоть убей, не сходится.",
+      "new": true,
+      "english": "Beat me to death, it still doesn't add up.",
+      "timing": "18:37"
+    },
+    {
+      "video": "video/stickylove/떠나기가 쉽지가 않네.webm",
+      "videoMp4": "video/stickylove/mp4/떠나기가 쉽지가 않네.mp4",
+      "korean": "떠나기가 쉽지가 않네",
+      "russian": "Уехать не так-то просто.",
+      "new": true,
+      "english": "It's not easy to leave.",
+      "timing": "31:16"
+    },
+    {
+      "video": "video/stickylove/마음에 드는 건 단 하나도 없으니까.webm",
+      "videoMp4": "video/stickylove/mp4/마음에 드는 건 단 하나도 없으니까.mp4",
+      "korean": "마음에 드는 건 단 하나도 없으니까",
+      "russian": "Потому что тут нет ни одной вещи, которая мне нравится.",
+      "new": true,
+      "english": "Because there isn't a single thing here I like.",
+      "timing": "23:07"
+    },
+    {
+      "video": "video/stickylove/말도 안 돼.webm",
+      "videoMp4": "video/stickylove/mp4/말도 안 돼.mp4",
+      "korean": "말도 안 돼!",
+      "russian": "Быть такого не может!",
+      "new": true,
+      "english": "No way!",
+      "timing": "14:44"
+    },
+    {
+      "video": "video/stickylove/말씀해보세요 저 사람 눈치 보지 마시고.webm",
+      "videoMp4": "video/stickylove/mp4/말씀해보세요 저 사람 눈치 보지 마시고.mp4",
+      "korean": "말씀해보세요 저 사람 눈치 보지 마시고",
+      "russian": "Говорите, не оглядывайтесь на него.",
+      "new": true,
+      "english": "Go ahead and speak, don't mind him.",
+      "timing": "19:22"
+    }
+  ],
+  "b2": [
+    {
+      "drama": "Наша липкая любовь",
+      "episode": "1",
+      "video": "video/stickylove/맘고생 많았어 얘.webm",
+      "videoMp4": "video/stickylove/mp4/맘고생 많았어 얘.mp4",
+      "korean": "맘고생 많았어 얘",
+      "russian": "Натерпелась ты, бедная.",
+      "new": true,
+      "english": "You've been through so much, sweetie.",
+      "timing": "06:21",
+      "isNew": true
+    },
+    {
+      "video": "video/stickylove/면도도 안 하고.webm",
+      "videoMp4": "video/stickylove/mp4/면도도 안 하고.mp4",
+      "korean": "면도도 안 하고?",
+      "russian": "И даже не бреетесь?",
+      "new": true,
+      "english": "And you don't even shave?",
+      "timing": "11:13"
+    },
+    {
+      "video": "video/stickylove/뭐라고 하셨어요.webm",
+      "videoMp4": "video/stickylove/mp4/뭐라고 하셨어요.mp4",
+      "korean": "뭐라고 하셨어요?",
+      "russian": "Что вы сказали?",
+      "new": true,
+      "english": "What did you say?",
+      "timing": "19:57"
+    },
+    {
+      "video": "video/stickylove/뭐라구요.webm",
+      "videoMp4": "video/stickylove/mp4/뭐라구요.mp4",
+      "korean": "뭐라구요?",
+      "russian": "Что-что?",
+      "new": true,
+      "english": "Excuse me?",
+      "timing": "25:22"
+    },
+    {
+      "video": "video/stickylove/뭐야 어디 보고 얘기하는 거.webm",
+      "videoMp4": "video/stickylove/mp4/뭐야 어디 보고 얘기하는 거.mp4",
+      "korean": "뭐야 어디 보고 얘기하는 거?",
+      "russian": "Ты куда смотришь, когда говоришь?",
+      "new": true,
+      "english": "Hey, where are you looking while you talk?",
+      "timing": "24:19"
+    },
+    {
+      "video": "video/stickylove/삼계탕이야 뭐야.webm",
+      "videoMp4": "video/stickylove/mp4/삼계탕이야 뭐야.mp4",
+      "korean": "삼계탕이야 뭐야?",
+      "russian": "Это самгетан, что ли?",
+      "new": true,
+      "english": "Is this samgyetang or what?",
+      "timing": "22:49"
+    },
+    {
+      "video": "video/stickylove/솔직히 남자친구 아니면.webm",
+      "videoMp4": "video/stickylove/mp4/솔직히 남자친구 아니면.mp4",
+      "korean": "솔직히 남자친구 아니면",
+      "russian": "Честно говоря, если он не парень…",
+      "new": true,
+      "english": "Honestly, unless he's her boyfriend…",
+      "timing": "13:07"
+    },
+    {
+      "video": "video/stickylove/아 뭐야.webm",
+      "videoMp4": "video/stickylove/mp4/아 뭐야.mp4",
+      "korean": "아 뭐야?",
+      "russian": "Да что такое?",
+      "new": true,
+      "english": "What the—?",
+      "timing": "26:29"
+    },
+    {
+      "video": "video/stickylove/아니 그럼 저 남자 말이 다 사실이란 말이야.webm",
+      "videoMp4": "video/stickylove/mp4/아니 그럼 저 남자 말이 다 사실이란 말이야.mp4",
+      "korean": "아니 그럼 저 남자 말이 다 사실이란 말이야?",
+      "russian": "Так что, всё, что говорит этот мужчина, правда?",
+      "new": true,
+      "english": "So everything that guy says is true?",
+      "timing": "13:38"
+    },
+    {
+      "video": "video/stickylove/아니면 꼬치꼬치 캐물어 볼 수도 없다고.webm",
+      "videoMp4": "video/stickylove/mp4/아니면 꼬치꼬치 캐물어 볼 수도 없다고.mp4",
+      "korean": "아니면 꼬치꼬치 캐물어 볼 수도 없다고?",
+      "russian": "Или что, и расспросить толком нельзя?",
+      "new": true,
+      "english": "Or can't I even ask about the details?",
+      "timing": "20:34"
+    },
+    {
+      "video": "video/stickylove/아무것도 기억이 안 나지.webm",
+      "videoMp4": "video/stickylove/mp4/아무것도 기억이 안 나지.mp4",
+      "korean": "아무것도 기억이 안 나지?",
+      "russian": "Совсем ничего не помнишь?",
+      "new": true,
+      "english": "You really don't remember anything?",
+      "timing": "01:27"
+    },
+    {
+      "video": "video/stickylove/아유 서울이 아니라 왜 여기로 가요.webm",
+      "videoMp4": "video/stickylove/mp4/아유 서울이 아니라 왜 여기로 가요.mp4",
+      "korean": "아유 서울이 아니라 왜 여기로 가요",
+      "russian": "Почему мы едем сюда, а не в Сеул?",
+      "new": true,
+      "english": "Why are we going here instead of Seoul?",
+      "timing": "14:40"
+    },
+    {
+      "video": "video/stickylove/안 따라가셔도 돼요.webm",
+      "videoMp4": "video/stickylove/mp4/안 따라가셔도 돼요.mp4",
+      "korean": "안 따라가셔도 돼요",
+      "russian": "Вы не обязаны с ним идти.",
+      "new": true,
+      "english": "You don't have to go with him.",
+      "timing": "13:18"
+    },
+    {
+      "video": "video/stickylove/안 씻고 다녀요.webm",
+      "videoMp4": "video/stickylove/mp4/안 씻고 다녀요.mp4",
+      "korean": "안 씻고 다녀요?",
+      "russian": "Вы что, вообще не умываетесь?",
+      "new": true,
+      "english": "Do you go around without washing up?",
+      "timing": "10:59"
+    },
+    {
+      "video": "video/stickylove/안녕하세요.webm",
+      "videoMp4": "video/stickylove/mp4/안녕하세요.mp4",
+      "korean": "안녕하세요.",
+      "russian": "Здравствуйте.",
+      "new": true,
+      "english": "Hello.",
+      "timing": "07:00"
+    },
+    {
+      "video": "video/stickylove/안녕히 계세요.webm",
+      "videoMp4": "video/stickylove/mp4/안녕히 계세요.mp4",
+      "korean": "안녕히 계세요!",
+      "russian": "До свидания!",
+      "new": true,
+      "english": "Goodbye!",
+      "timing": "27:07"
+    },
+    {
+      "video": "video/stickylove/알기 힘든 거잖아요.webm",
+      "videoMp4": "video/stickylove/mp4/알기 힘든 거잖아요.mp4",
+      "korean": "알기 힘든 거잖아요",
+      "russian": "…такое вряд ли узнаешь.",
+      "new": true,
+      "english": "…that's not something you'd know.",
+      "timing": "13:09"
+    },
+    {
+      "video": "video/stickylove/알다시피 발견됐을 때는 아무것도 없었대.webm",
+      "videoMp4": "video/stickylove/mp4/알다시피 발견됐을 때는 아무것도 없었대.mp4",
+      "korean": "알다시피 발견됐을 때는 아무것도 없었대.",
+      "russian": "Сама знаешь: когда тебя нашли, при тебе ничего не было.",
+      "new": true,
+      "english": "As you know, there was nothing on you when they found you.",
+      "timing": "10:39"
+    },
+    {
+      "video": "video/stickylove/야 너무 걱정하지 말아.webm",
+      "videoMp4": "video/stickylove/mp4/야 너무 걱정하지 말아.mp4",
+      "korean": "야 너무 걱정하지 말아",
+      "russian": "Эй, не переживай ты так.",
+      "new": true,
+      "english": "Hey, don't worry so much.",
+      "timing": "45:18"
+    },
+    {
+      "video": "video/stickylove/얘기 다 끝나셨으면.webm",
+      "videoMp4": "video/stickylove/mp4/얘기 다 끝나셨으면.mp4",
+      "korean": "얘기 다 끝나셨으면",
+      "russian": "Если разговор окончен…",
+      "new": true,
+      "english": "If you're done talking…",
+      "timing": "12:07"
+    },
+    {
+      "video": "video/stickylove/어떻게 하시겠습니까.webm",
+      "videoMp4": "video/stickylove/mp4/어떻게 하시겠습니까.mp4",
+      "korean": "어떻게 하시겠습니까?",
+      "russian": "Так что вы решите?",
+      "new": true,
+      "english": "So what will you do?",
+      "timing": "33:48"
+    },
+    {
+      "video": "video/stickylove/엉덩이의 점.webm",
+      "videoMp4": "video/stickylove/mp4/엉덩이의 점.mp4",
+      "korean": "엉덩이의 점",
+      "russian": "Родинка на ягодице.",
+      "new": true,
+      "english": "The mole on her backside.",
+      "timing": "12:46"
+    },
+    {
+      "video": "video/stickylove/연락을 좀 해줘요.webm",
+      "videoMp4": "video/stickylove/mp4/연락을 좀 해줘요.mp4",
+      "korean": "연락을 좀 해줘요",
+      "russian": "Свяжитесь с ними, пожалуйста.",
+      "new": true,
+      "english": "Please get in touch with them.",
+      "timing": "11:25"
+    },
+    {
+      "video": "video/stickylove/오우 잠깐만 잠깐만.webm",
+      "videoMp4": "video/stickylove/mp4/오우 잠깐만 잠깐만.mp4",
+      "korean": "오우 잠깐만 잠깐만",
+      "russian": "Так, стоп, стоп.",
+      "new": true,
+      "english": "Whoa, wait, wait.",
+      "timing": "14:37"
+    },
+    {
+      "video": "video/stickylove/옷과 신발에도.webm",
+      "videoMp4": "video/stickylove/mp4/옷과 신발에도.mp4",
+      "korean": "옷과 신발에도",
+      "russian": "И на одежде, и на обуви тоже.",
+      "new": true,
+      "english": "On the clothes and the shoes as well.",
+      "timing": "02:30"
+    }
+  ],
+  "b3": [
+    {
+      "drama": "Наша липкая любовь",
+      "episode": "1",
+      "video": "video/stickylove/왜 침대방에 내 물건만 있어요.webm",
+      "videoMp4": "video/stickylove/mp4/왜 침대방에 내 물건만 있어요.mp4",
+      "korean": "왜 침대방에 내 물건만 있어요?",
+      "russian": "Почему в спальне только мои вещи?",
+      "new": true,
+      "english": "Why are only my things in the bedroom?",
+      "timing": "23:23",
+      "isNew": true
+    },
+    {
+      "video": "video/stickylove/우리 2년이나 만났다고 했지.webm",
+      "videoMp4": "video/stickylove/mp4/우리 2년이나 만났다고 했지.mp4",
+      "korean": "우리 2년이나 만났다고 했지?",
+      "russian": "Вы сказали, мы встречались целых два года?",
+      "new": true,
+      "english": "You said we dated for two whole years?",
+      "timing": "48:03"
+    },
+    {
+      "video": "video/stickylove/우리 결혼할 사이였다면서.webm",
+      "videoMp4": "video/stickylove/mp4/우리 결혼할 사이였다면서.mp4",
+      "korean": "우리 결혼할 사이였다면서?",
+      "russian": "Вы же говорили, мы собирались пожениться?",
+      "new": true,
+      "english": "You said we were about to get married, right?",
+      "timing": "23:25"
+    },
+    {
+      "video": "video/stickylove/우리 할머니는 치매야.webm",
+      "videoMp4": "video/stickylove/mp4/우리 할머니는 치매야.mp4",
+      "korean": "우리 할머니는 치매야",
+      "russian": "У нашей бабушки деменция.",
+      "new": true,
+      "english": "Our grandma has dementia.",
+      "timing": "19:59"
+    },
+    {
+      "video": "video/stickylove/우리가 살던 집인거죠.webm",
+      "videoMp4": "video/stickylove/mp4/우리가 살던 집인거죠.mp4",
+      "korean": "우리가 살던 집인거죠",
+      "russian": "Это тот дом, где мы жили?",
+      "new": true,
+      "english": "So this is the house we lived in?",
+      "timing": "20:41"
+    },
+    {
+      "video": "video/stickylove/이 자리는 내 자리 맞구요.webm",
+      "videoMp4": "video/stickylove/mp4/이 자리는 내 자리 맞구요.mp4",
+      "korean": "이 자리는 내 자리 맞구요",
+      "russian": "И место это моё.",
+      "new": true,
+      "english": "And this spot is mine.",
+      "timing": "28:25"
+    },
+    {
+      "video": "video/stickylove/이게 왜 나보면서 짖어요.webm",
+      "videoMp4": "video/stickylove/mp4/이게 왜 나보면서 짖어요.mp4",
+      "korean": "이게 왜 나보면서 짖어요?",
+      "russian": "Почему он на меня лает?",
+      "new": true,
+      "english": "Why is he barking at me?",
+      "timing": "21:17"
+    },
+    {
+      "video": "video/stickylove/이렇게 살아있어서 다행이야.webm",
+      "videoMp4": "video/stickylove/mp4/이렇게 살아있어서 다행이야.mp4",
+      "korean": "이렇게 살아있어서 다행이야",
+      "russian": "Хорошо, что ты жива.",
+      "new": true,
+      "english": "I'm just glad you're alive.",
+      "timing": "10:50"
+    },
+    {
+      "video": "video/stickylove/일단 따라나 가보지 뭐.webm",
+      "videoMp4": "video/stickylove/mp4/일단 따라나 가보지 뭐.mp4",
+      "korean": "일단 따라나 가보지 뭐.",
+      "russian": "Ладно, для начала съезжу с ним.",
+      "new": true,
+      "english": "Fine, I'll just go along for now.",
+      "timing": "13:47"
+    },
+    {
+      "video": "video/stickylove/장태하라고 했죠.webm",
+      "videoMp4": "video/stickylove/mp4/장태하라고 했죠.mp4",
+      "korean": "장태하라고 했죠?",
+      "russian": "Вас зовут Чан Тхэха, верно?",
+      "new": true,
+      "english": "It's Jang Tae-ha, right?",
+      "timing": "23:47"
+    },
+    {
+      "video": "video/stickylove/저 정말 여기서 일했어요.webm",
+      "videoMp4": "video/stickylove/mp4/저 정말 여기서 일했어요.mp4",
+      "korean": "저 정말 여기서 일했어요?",
+      "russian": "Я правда здесь работала?",
+      "new": true,
+      "english": "Did I really work here?",
+      "timing": "19:02"
+    },
+    {
+      "video": "video/stickylove/저_ 선생님 먼저 가겠습니다.webm",
+      "videoMp4": "video/stickylove/mp4/저_ 선생님 먼저 가겠습니다.mp4",
+      "korean": "저, 선생님 먼저 가겠습니다.",
+      "russian": "Я пойду, учитель.",
+      "new": true,
+      "english": "Sir, I'll head out first.",
+      "timing": "27:04"
+    },
+    {
+      "video": "video/stickylove/저건 뭔 캐릭터요.webm",
+      "videoMp4": "video/stickylove/mp4/저건 뭔 캐릭터요.mp4",
+      "korean": "저건 뭔 캐릭터요?",
+      "russian": "А это что за персонаж?",
+      "new": true,
+      "english": "And what's that character about?",
+      "timing": "18:26"
+    },
+    {
+      "video": "video/stickylove/저에 대해 아는 거 있으면 다 얘기해 주세요.webm",
+      "videoMp4": "video/stickylove/mp4/저에 대해 아는 거 있으면 다 얘기해 주세요.mp4",
+      "korean": "저에 대해 아는 거 있으면 다 얘기해 주세요.",
+      "russian": "Расскажите всё, что обо мне знаете.",
+      "new": true,
+      "english": "Tell me everything you know about me.",
+      "timing": "19:16"
+    },
+    {
+      "video": "video/stickylove/정리를 잘 하시네요.webm",
+      "videoMp4": "video/stickylove/mp4/정리를 잘 하시네요.mp4",
+      "korean": "정리를 잘 하시네요.",
+      "russian": "А вы хорошо всё раскладываете по полочкам.",
+      "new": true,
+      "english": "You lay it all out really well.",
+      "timing": "02:47"
+    },
+    {
+      "video": "video/stickylove/정말 아무 기억이 안 나.webm",
+      "videoMp4": "video/stickylove/mp4/정말 아무 기억이 안 나.mp4",
+      "korean": "정말 아무 기억이 안 나?",
+      "russian": "Правда совсем ничего не помнишь?",
+      "new": true,
+      "english": "You really don't remember a thing?",
+      "timing": "08:13"
+    },
+    {
+      "video": "video/stickylove/정확하게 맞췄어요.webm",
+      "videoMp4": "video/stickylove/mp4/정확하게 맞췄어요.mp4",
+      "korean": "정확하게 맞췄어요.",
+      "russian": "Попал в точку.",
+      "new": true,
+      "english": "Got it exactly right.",
+      "timing": "12:45"
+    },
+    {
+      "video": "video/stickylove/제_ 제가 왜 아줌마예요.webm",
+      "videoMp4": "video/stickylove/mp4/제_ 제가 왜 아줌마예요.mp4",
+      "korean": "제, 제가 왜 아줌마예요?",
+      "russian": "П-почему это я тётка?",
+      "new": true,
+      "english": "W-why am I a “ma'am”?",
+      "timing": "20:05"
+    },
+    {
+      "video": "video/stickylove/조금 우는 소리 들리는데.webm",
+      "videoMp4": "video/stickylove/mp4/조금 우는 소리 들리는데.mp4",
+      "korean": "조금 우는 소리 들리는데?",
+      "russian": "Кажется, кто-то тихонько плачет?",
+      "new": true,
+      "english": "I think I hear someone crying?",
+      "timing": "06:27"
+    },
+    {
+      "video": "video/stickylove/죄송해요_ 그러니까.webm",
+      "videoMp4": "video/stickylove/mp4/죄송해요_ 그러니까.mp4",
+      "korean": "죄송해요, 그러니까.",
+      "russian": "Простите, то есть…",
+      "new": true,
+      "english": "Sorry, I mean…",
+      "timing": "02:34"
+    },
+    {
+      "video": "video/stickylove/진짜 잘하시네요.webm",
+      "videoMp4": "video/stickylove/mp4/진짜 잘하시네요.mp4",
+      "korean": "진짜 잘하시네요",
+      "russian": "Правда здорово у вас получается.",
+      "new": true,
+      "english": "You're really good at this.",
+      "timing": "12:00"
+    },
+    {
+      "video": "video/stickylove/처음 보는 나지만 너무 마음에 드는데.webm",
+      "videoMp4": "video/stickylove/mp4/처음 보는 나지만 너무 마음에 드는데.mp4",
+      "korean": "처음 보는 나지만 너무 마음에 드는데",
+      "russian": "Вижу себя впервые, но очень нравлюсь себе.",
+      "new": true,
+      "english": "It's my first time seeing myself, but I really like me.",
+      "timing": "03:57"
+    },
+    {
+      "video": "video/stickylove/퇴원하셔도 됩니다.webm",
+      "videoMp4": "video/stickylove/mp4/퇴원하셔도 됩니다.mp4",
+      "korean": "퇴원하셔도 됩니다",
+      "russian": "…вас можно выписывать.",
+      "new": true,
+      "english": "…you're free to be discharged.",
+      "timing": "12:09"
+    },
+    {
+      "video": "video/stickylove/핸드폰을 잃어버려서 친구들 연락처도 없고.webm",
+      "videoMp4": "video/stickylove/mp4/핸드폰을 잃어버려서 친구들 연락처도 없고.mp4",
+      "korean": "핸드폰을 잃어버려서 친구들 연락처도 없고",
+      "russian": "Телефон потерялся, так что и контактов друзей нет.",
+      "new": true,
+      "english": "The phone is gone, so there aren't any friends' numbers either.",
+      "timing": "11:44"
+    },
+    {
+      "video": "video/stickylove/화장품에 왜 영지버섯이 들어가.webm",
+      "videoMp4": "video/stickylove/mp4/화장품에 왜 영지버섯이 들어가.mp4",
+      "korean": "화장품에 왜 영지버섯이 들어가?",
+      "russian": "Зачем в косметику класть гриб рейши?",
+      "new": true,
+      "english": "Why is there reishi mushroom in cosmetics?",
+      "timing": "22:50"
+    }
+  ],
+  "b4": [],
+  "b5": []
+}
