@@ -1,0 +1,640 @@
+{
+  "isSong": true,
+  "isNewSong": true,
+  "karaoke": {
+    "clip": "video/swim/BTS - Swim (Live in the Studio).webm",
+    "clipMp4": "video/swim/mp4/BTS - Swim (Live in the Studio).mp4",
+    "lyrics": [
+      {
+        "t": 40.8,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 43.48,
+        "korean": "Water falling off your skin",
+        "russian": "Вода стекает с твоей кожи",
+        "english": "Water falling off your skin"
+      },
+      {
+        "t": 46.08,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 48.89,
+        "korean": "I could spend a lifetime watching you",
+        "russian": "Я бы всю жизнь смотрел на тебя",
+        "english": "I could spend a lifetime watching you"
+      },
+      {
+        "t": 51.2,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 53.67,
+        "korean": "This is how it all begins",
+        "russian": "Вот так всё и начинается",
+        "english": "This is how it all begins"
+      },
+      {
+        "t": 56.33,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 58.23,
+        "korean": "I just wanna dive, I just wanna dive",
+        "russian": "Просто хочу нырнуть, просто хочу нырнуть",
+        "english": "I just wanna dive, I just wanna dive"
+      },
+      {
+        "t": 60.96,
+        "korean": "Bad world",
+        "russian": "Злой мир",
+        "english": "Bad world"
+      },
+      {
+        "t": 61.84,
+        "korean": "Gone away, I still wake up in this mad world",
+        "russian": "Всё позади, а я всё просыпаюсь в этом безумном мире",
+        "english": "Gone away, I still wake up in this mad world"
+      },
+      {
+        "t": 64.27,
+        "korean": "Name a place that I could breathe on this map, world",
+        "russian": "Мир, покажи на карте место, где мне дышится",
+        "english": "Name a place that I could breathe on this map, world"
+      },
+      {
+        "t": 66.78,
+        "korean": "Looking like a goody-goody in this bad world, bad world",
+        "russian": "Строю из себя пай-мальчика в этом злом мире, злом мире",
+        "english": "Looking like a goody-goody in this bad world, bad world"
+      },
+      {
+        "t": 70.41,
+        "korean": "Don't know how to act, girl",
+        "russian": "Не знаю, как себя вести, детка",
+        "english": "Don't know how to act, girl"
+      },
+      {
+        "t": 71.84,
+        "korean": "I'm in this deep, tell me, where the hell you at, girl?",
+        "russian": "Я увяз по уши — скажи, где ты вообще, детка?",
+        "english": "I'm in this deep, tell me, where the hell you at, girl?"
+      },
+      {
+        "t": 74.84,
+        "korean": "Oh, you ain't even gotta love me bad, girl",
+        "russian": "Тебе даже не обязательно любить меня без ума, детка",
+        "english": "Oh, you ain't even gotta love me bad, girl"
+      },
+      {
+        "t": 77.4,
+        "korean": "You know that I'm never holdin' back, girl, yeah",
+        "russian": "Ты же знаешь, я никогда не сдерживаюсь, детка, да",
+        "english": "You know that I'm never holdin' back, girl, yeah"
+      },
+      {
+        "t": 81.19,
+        "korean": "So easy, don't make it so hard",
+        "russian": "Всё же просто — не усложняй",
+        "english": "So easy, don't make it so hard"
+      },
+      {
+        "t": 83.93,
+        "korean": "Nights like these, I just wanna get lost",
+        "russian": "В такие ночи просто хочется потеряться",
+        "english": "Nights like these, I just wanna get lost"
+      },
+      {
+        "t": 86.53,
+        "korean": "Right here with the moon and the sharks",
+        "russian": "Прямо здесь, с луной и акулами",
+        "english": "Right here with the moon and the sharks"
+      },
+      {
+        "t": 88.83,
+        "korean": "I ain't gotta think 'bout a thing, baby, I just",
+        "russian": "Мне не надо думать ни о чём, детка, я просто",
+        "english": "I ain't gotta think 'bout a thing, baby, I just"
+      },
+      {
+        "t": 92.0,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 94.36,
+        "korean": "Water falling off your skin",
+        "russian": "Вода стекает с твоей кожи",
+        "english": "Water falling off your skin"
+      },
+      {
+        "t": 97.2,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 99.64,
+        "korean": "I could spend a lifetime watching you",
+        "russian": "Я бы всю жизнь смотрел на тебя",
+        "english": "I could spend a lifetime watching you"
+      },
+      {
+        "t": 102.09,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 104.82,
+        "korean": "This is how it all begins",
+        "russian": "Вот так всё и начинается",
+        "english": "This is how it all begins"
+      },
+      {
+        "t": 107.29,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 109.33,
+        "korean": "I just wanna dive, I just wanna dive",
+        "russian": "Просто хочу нырнуть, просто хочу нырнуть",
+        "english": "I just wanna dive, I just wanna dive"
+      },
+      {
+        "t": 112.02,
+        "korean": "Water, water so deep, water so deep",
+        "russian": "Вода, вода такая глубокая, такая глубокая",
+        "english": "Water, water so deep, water so deep"
+      },
+      {
+        "t": 114.53,
+        "korean": "Take it off the ground, I ain't never getting cold feet",
+        "russian": "Отрываюсь от земли и уже не струшу",
+        "english": "Take it off the ground, I ain't never getting cold feet"
+      },
+      {
+        "t": 117.33,
+        "korean": "Yeah, you know me, yeah, you know me",
+        "russian": "Да, ты знаешь меня, да, ты знаешь меня",
+        "english": "Yeah, you know me, yeah, you know me"
+      },
+      {
+        "t": 119.64,
+        "korean": "Sittin' on the shore, now I'm ready for the whole sea",
+        "russian": "Сидел на берегу — теперь готов на всё море",
+        "english": "Sittin' on the shore, now I'm ready for the whole sea"
+      },
+      {
+        "t": 122.08,
+        "korean": "I can feel the high waves comin'",
+        "russian": "Чувствую, как накатывают большие волны",
+        "english": "I can feel the high waves comin'"
+      },
+      {
+        "t": 124.72,
+        "korean": "Why you run away? You can run in",
+        "russian": "Зачем убегаешь? Можно и вбежать в воду",
+        "english": "Why you run away? You can run in"
+      },
+      {
+        "t": 127.08,
+        "korean": "Salt on my tongue, she's stunnin'",
+        "russian": "Соль на языке, она сногсшибательна",
+        "english": "Salt on my tongue, she's stunnin'"
+      },
+      {
+        "t": 129.73,
+        "korean": "You're the only place that I wanna be, yeah",
+        "russian": "Ты — единственное место, где я хочу быть, да",
+        "english": "You're the only place that I wanna be, yeah"
+      },
+      {
+        "t": 132.83,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 135.41,
+        "korean": "Water falling off your skin",
+        "russian": "Вода стекает с твоей кожи",
+        "english": "Water falling off your skin"
+      },
+      {
+        "t": 138.02,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 140.61,
+        "korean": "I could spend a lifetime watching you",
+        "russian": "Я бы всю жизнь смотрел на тебя",
+        "english": "I could spend a lifetime watching you"
+      },
+      {
+        "t": 143.02,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 145.6,
+        "korean": "This is how it all begins",
+        "russian": "Вот так всё и начинается",
+        "english": "This is how it all begins"
+      },
+      {
+        "t": 148.07,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 150.1,
+        "korean": "I just wanna dive, I just wanna dive",
+        "russian": "Просто хочу нырнуть, просто хочу нырнуть",
+        "english": "I just wanna dive, I just wanna dive"
+      },
+      {
+        "t": 153.29,
+        "korean": "Splash, drift",
+        "russian": "Всплеск, дрейф",
+        "english": "Splash, drift"
+      },
+      {
+        "t": 155.73,
+        "korean": "I make waves with my two fins",
+        "russian": "Я поднимаю волны двумя плавниками",
+        "english": "I make waves with my two fins"
+      },
+      {
+        "t": 158.29,
+        "korean": "Splash, drip",
+        "russian": "Всплеск, капли",
+        "english": "Splash, drip"
+      },
+      {
+        "t": 161.04,
+        "korean": "I just wanna take it across the line",
+        "russian": "Просто хочу уйти за черту",
+        "english": "I just wanna take it across the line"
+      },
+      {
+        "t": 163.83,
+        "korean": "Under here, we don't chase the time",
+        "russian": "Здесь, под водой, мы не гонимся за временем",
+        "english": "Under here, we don't chase the time"
+      },
+      {
+        "t": 166.24,
+        "korean": "Baby, everything can't be so sad",
+        "russian": "Детка, не может же всё быть так грустно",
+        "english": "Baby, everything can't be so sad"
+      },
+      {
+        "t": 169.0,
+        "korean": "Turn my face from the land",
+        "russian": "Отворачиваюсь от берега",
+        "english": "Turn my face from the land"
+      },
+      {
+        "t": 170.69,
+        "korean": "I just wanna dive, I just wanna dive",
+        "russian": "Просто хочу нырнуть, просто хочу нырнуть",
+        "english": "I just wanna dive, I just wanna dive"
+      },
+      {
+        "t": 173.78,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 176.44,
+        "korean": "Water falling off your skin",
+        "russian": "Вода стекает с твоей кожи",
+        "english": "Water falling off your skin"
+      },
+      {
+        "t": 178.87,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 181.37,
+        "korean": "I could spend a lifetime watching you",
+        "russian": "Я бы всю жизнь смотрел на тебя",
+        "english": "I could spend a lifetime watching you"
+      },
+      {
+        "t": 184.06,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 187.16,
+        "korean": "Let it all begin",
+        "russian": "Пусть всё начнётся",
+        "english": "Let it all begin"
+      },
+      {
+        "t": 189.18,
+        "korean": "Swim, swim",
+        "russian": "Плыви, плыви",
+        "english": "Swim, swim"
+      },
+      {
+        "t": 190.94,
+        "korean": "I just wanna dive, I just wanna dive",
+        "russian": "Просто хочу нырнуть, просто хочу нырнуть",
+        "english": "I just wanna dive, I just wanna dive"
+      }
+    ]
+  },
+  "b1": [
+    {
+      "video": "video/swim/Swim_ swim.webm",
+      "videoMp4": "video/swim/mp4/Swim_ swim.mp4",
+      "korean": "Swim, swim",
+      "russian": "Плыви, плыви",
+      "new": true,
+      "english": "Swim, swim"
+    },
+    {
+      "video": "video/swim/Water falling off your skin.webm",
+      "videoMp4": "video/swim/mp4/Water falling off your skin.mp4",
+      "korean": "Water falling off your skin",
+      "russian": "Вода стекает с твоей кожи",
+      "new": true,
+      "english": "Water falling off your skin"
+    },
+    {
+      "video": "video/swim/I could spend a lifetime watching you.webm",
+      "videoMp4": "video/swim/mp4/I could spend a lifetime watching you.mp4",
+      "korean": "I could spend a lifetime watching you",
+      "russian": "Я бы всю жизнь смотрел на тебя",
+      "new": true,
+      "english": "I could spend a lifetime watching you"
+    },
+    {
+      "video": "video/swim/This is how it all begins.webm",
+      "videoMp4": "video/swim/mp4/This is how it all begins.mp4",
+      "korean": "This is how it all begins",
+      "russian": "Вот так всё и начинается",
+      "new": true,
+      "english": "This is how it all begins"
+    },
+    {
+      "video": "video/swim/I just wanna dive_ I just wanna dive.webm",
+      "videoMp4": "video/swim/mp4/I just wanna dive_ I just wanna dive.mp4",
+      "korean": "I just wanna dive, I just wanna dive",
+      "russian": "Просто хочу нырнуть, просто хочу нырнуть",
+      "new": true,
+      "english": "I just wanna dive, I just wanna dive"
+    },
+    {
+      "video": "video/swim/Bad world.webm",
+      "videoMp4": "video/swim/mp4/Bad world.mp4",
+      "korean": "Bad world",
+      "russian": "Злой мир",
+      "new": true,
+      "english": "Bad world"
+    },
+    {
+      "video": "video/swim/Gone away_ I still wake up in this mad world.webm",
+      "videoMp4": "video/swim/mp4/Gone away_ I still wake up in this mad world.mp4",
+      "korean": "Gone away, I still wake up in this mad world",
+      "russian": "Всё позади, а я всё просыпаюсь в этом безумном мире",
+      "new": true,
+      "english": "Gone away, I still wake up in this mad world"
+    },
+    {
+      "video": "video/swim/Name a place that I could breathe on this map_ world.webm",
+      "videoMp4": "video/swim/mp4/Name a place that I could breathe on this map_ world.mp4",
+      "korean": "Name a place that I could breathe on this map, world",
+      "russian": "Мир, покажи на карте место, где мне дышится",
+      "new": true,
+      "english": "Name a place that I could breathe on this map, world"
+    },
+    {
+      "video": "video/swim/Looking like a goody-goody in this bad world_ bad world.webm",
+      "videoMp4": "video/swim/mp4/Looking like a goody-goody in this bad world_ bad world.mp4",
+      "korean": "Looking like a goody-goody in this bad world, bad world",
+      "russian": "Строю из себя пай-мальчика в этом злом мире, злом мире",
+      "new": true,
+      "english": "Looking like a goody-goody in this bad world, bad world"
+    },
+    {
+      "video": "video/swim/Don_t know how to act_ girl.webm",
+      "videoMp4": "video/swim/mp4/Don_t know how to act_ girl.mp4",
+      "korean": "Don't know how to act, girl",
+      "russian": "Не знаю, как себя вести, детка",
+      "new": true,
+      "english": "Don't know how to act, girl"
+    },
+    {
+      "video": "video/swim/I_m in this deep_ tell me_ where the hell you at_ girl.webm",
+      "videoMp4": "video/swim/mp4/I_m in this deep_ tell me_ where the hell you at_ girl.mp4",
+      "korean": "I'm in this deep, tell me, where the hell you at, girl?",
+      "russian": "Я увяз по уши — скажи, где ты вообще, детка?",
+      "new": true,
+      "english": "I'm in this deep, tell me, where the hell you at, girl?"
+    },
+    {
+      "video": "video/swim/Oh_ you ain_t even gotta love me bad_ girl.webm",
+      "videoMp4": "video/swim/mp4/Oh_ you ain_t even gotta love me bad_ girl.mp4",
+      "korean": "Oh, you ain't even gotta love me bad, girl",
+      "russian": "Тебе даже не обязательно любить меня без ума, детка",
+      "new": true,
+      "english": "Oh, you ain't even gotta love me bad, girl"
+    },
+    {
+      "video": "video/swim/You know that I_m never holdin_ back_ girl_ yeah.webm",
+      "videoMp4": "video/swim/mp4/You know that I_m never holdin_ back_ girl_ yeah.mp4",
+      "korean": "You know that I'm never holdin' back, girl, yeah",
+      "russian": "Ты же знаешь, я никогда не сдерживаюсь, детка, да",
+      "new": true,
+      "english": "You know that I'm never holdin' back, girl, yeah"
+    },
+    {
+      "video": "video/swim/So easy_ don_t make it so hard.webm",
+      "videoMp4": "video/swim/mp4/So easy_ don_t make it so hard.mp4",
+      "korean": "So easy, don't make it so hard",
+      "russian": "Всё же просто — не усложняй",
+      "new": true,
+      "english": "So easy, don't make it so hard"
+    },
+    {
+      "video": "video/swim/Nights like these_ I just wanna get lost.webm",
+      "videoMp4": "video/swim/mp4/Nights like these_ I just wanna get lost.mp4",
+      "korean": "Nights like these, I just wanna get lost",
+      "russian": "В такие ночи просто хочется потеряться",
+      "new": true,
+      "english": "Nights like these, I just wanna get lost"
+    },
+    {
+      "video": "video/swim/Right here with the moon and the sharks.webm",
+      "videoMp4": "video/swim/mp4/Right here with the moon and the sharks.mp4",
+      "korean": "Right here with the moon and the sharks",
+      "russian": "Прямо здесь, с луной и акулами",
+      "new": true,
+      "english": "Right here with the moon and the sharks"
+    },
+    {
+      "video": "video/swim/I ain_t gotta think _bout a thing_ baby_ I just.webm",
+      "videoMp4": "video/swim/mp4/I ain_t gotta think _bout a thing_ baby_ I just.mp4",
+      "korean": "I ain't gotta think 'bout a thing, baby, I just",
+      "russian": "Мне не надо думать ни о чём, детка, я просто",
+      "new": true,
+      "english": "I ain't gotta think 'bout a thing, baby, I just"
+    },
+    {
+      "video": "video/swim/Water_ water so deep_ water so deep.webm",
+      "videoMp4": "video/swim/mp4/Water_ water so deep_ water so deep.mp4",
+      "korean": "Water, water so deep, water so deep",
+      "russian": "Вода, вода такая глубокая, такая глубокая",
+      "new": true,
+      "english": "Water, water so deep, water so deep"
+    },
+    {
+      "video": "video/swim/Take it off the ground_ I ain_t never getting cold feet.webm",
+      "videoMp4": "video/swim/mp4/Take it off the ground_ I ain_t never getting cold feet.mp4",
+      "korean": "Take it off the ground, I ain't never getting cold feet",
+      "russian": "Отрываюсь от земли и уже не струшу",
+      "new": true,
+      "english": "Take it off the ground, I ain't never getting cold feet"
+    },
+    {
+      "video": "video/swim/Yeah_ you know me_ yeah_ you know me.webm",
+      "videoMp4": "video/swim/mp4/Yeah_ you know me_ yeah_ you know me.mp4",
+      "korean": "Yeah, you know me, yeah, you know me",
+      "russian": "Да, ты знаешь меня, да, ты знаешь меня",
+      "new": true,
+      "english": "Yeah, you know me, yeah, you know me"
+    },
+    {
+      "video": "video/swim/Sittin_ on the shore_ now I_m ready for the whole sea.webm",
+      "videoMp4": "video/swim/mp4/Sittin_ on the shore_ now I_m ready for the whole sea.mp4",
+      "korean": "Sittin' on the shore, now I'm ready for the whole sea",
+      "russian": "Сидел на берегу — теперь готов на всё море",
+      "new": true,
+      "english": "Sittin' on the shore, now I'm ready for the whole sea"
+    },
+    {
+      "video": "video/swim/I can feel the high waves comin.webm",
+      "videoMp4": "video/swim/mp4/I can feel the high waves comin.mp4",
+      "korean": "I can feel the high waves comin'",
+      "russian": "Чувствую, как накатывают большие волны",
+      "new": true,
+      "english": "I can feel the high waves comin'"
+    },
+    {
+      "video": "video/swim/Why you run away_ You can run in.webm",
+      "videoMp4": "video/swim/mp4/Why you run away_ You can run in.mp4",
+      "korean": "Why you run away? You can run in",
+      "russian": "Зачем убегаешь? Можно и вбежать в воду",
+      "new": true,
+      "english": "Why you run away? You can run in"
+    },
+    {
+      "video": "video/swim/Salt on my tongue_ she_s stunnin.webm",
+      "videoMp4": "video/swim/mp4/Salt on my tongue_ she_s stunnin.mp4",
+      "korean": "Salt on my tongue, she's stunnin'",
+      "russian": "Соль на языке, она сногсшибательна",
+      "new": true,
+      "english": "Salt on my tongue, she's stunnin'"
+    },
+    {
+      "video": "video/swim/You_re the only place that I wanna be_ yeah.webm",
+      "videoMp4": "video/swim/mp4/You_re the only place that I wanna be_ yeah.mp4",
+      "korean": "You're the only place that I wanna be, yeah",
+      "russian": "Ты — единственное место, где я хочу быть, да",
+      "new": true,
+      "english": "You're the only place that I wanna be, yeah"
+    },
+    {
+      "video": "video/swim/Splash_ drift.webm",
+      "videoMp4": "video/swim/mp4/Splash_ drift.mp4",
+      "korean": "Splash, drift",
+      "russian": "Всплеск, дрейф",
+      "new": true,
+      "english": "Splash, drift"
+    },
+    {
+      "video": "video/swim/I make waves with my two fins.webm",
+      "videoMp4": "video/swim/mp4/I make waves with my two fins.mp4",
+      "korean": "I make waves with my two fins",
+      "russian": "Я поднимаю волны двумя плавниками",
+      "new": true,
+      "english": "I make waves with my two fins"
+    },
+    {
+      "video": "video/swim/Splash_ drip.webm",
+      "videoMp4": "video/swim/mp4/Splash_ drip.mp4",
+      "korean": "Splash, drip",
+      "russian": "Всплеск, капли",
+      "new": true,
+      "english": "Splash, drip"
+    },
+    {
+      "video": "video/swim/I just wanna take it across the line.webm",
+      "videoMp4": "video/swim/mp4/I just wanna take it across the line.mp4",
+      "korean": "I just wanna take it across the line",
+      "russian": "Просто хочу уйти за черту",
+      "new": true,
+      "english": "I just wanna take it across the line"
+    },
+    {
+      "video": "video/swim/Under here_ we don_t chase the time.webm",
+      "videoMp4": "video/swim/mp4/Under here_ we don_t chase the time.mp4",
+      "korean": "Under here, we don't chase the time",
+      "russian": "Здесь, под водой, мы не гонимся за временем",
+      "new": true,
+      "english": "Under here, we don't chase the time"
+    },
+    {
+      "video": "video/swim/Baby_ everything can_t be so sad.webm",
+      "videoMp4": "video/swim/mp4/Baby_ everything can_t be so sad.mp4",
+      "korean": "Baby, everything can't be so sad",
+      "russian": "Детка, не может же всё быть так грустно",
+      "new": true,
+      "english": "Baby, everything can't be so sad"
+    },
+    {
+      "video": "video/swim/Turn my face from the land.webm",
+      "videoMp4": "video/swim/mp4/Turn my face from the land.mp4",
+      "korean": "Turn my face from the land",
+      "russian": "Отворачиваюсь от берега",
+      "new": true,
+      "english": "Turn my face from the land"
+    },
+    {
+      "video": "video/swim/Let it all begin.webm",
+      "videoMp4": "video/swim/mp4/Let it all begin.mp4",
+      "korean": "Let it all begin",
+      "russian": "Пусть всё начнётся",
+      "new": true,
+      "english": "Let it all begin"
+    }
+  ],
+  "b2": [],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}

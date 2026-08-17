@@ -1,6 +1,6 @@
 {
   "isSong": true,
-  "isNewSong": true,
+  "isNewSong": false,
   "karaoke": {
     "clip": "video/geupryu/Seungmin - 급류 (Into The Current).webm",
     "clipMp4": "video/geupryu/mp4/Seungmin - 급류 (Into The Current).mp4",

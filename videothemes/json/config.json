@@ -119,6 +119,13 @@
       "title_en": "Seungmin (SKZ) - 급류(Into The Current)",
       "cover": "videothemes/songs_covers/song5.png",
       "masterJsonPath": "videothemes/json/videotheme47.json",
+      "isNewSong": false
+    },
+    "song6": {
+      "title": "BTS - Swim (Плыви)",
+      "title_en": "BTS - Swim",
+      "cover": "videothemes/songs_covers/song6.png",
+      "masterJsonPath": "videothemes/json/videotheme50.json",
       "isNewSong": true
     }
   },
