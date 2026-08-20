@@ -1365,6 +1365,32 @@
     ],
     "title_en": "Our Sticky Love\n이런 엿 같은 사랑",
     "totalCount": 75,
+    "hasNew": false
+  },
+  "theme48": {
+    "coverImage": "videothemes/subthemebc/agentkim.png",
+    "title": "Агент Ким снова в деле\n김부장",
+    "masterJsonPath": "videothemes/json/videotheme51.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      }
+    ],
+    "title_en": "Agent Kim Reactivated\n김부장",
+    "totalCount": 87,
     "hasNew": true
   }
 }
