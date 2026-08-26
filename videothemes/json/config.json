@@ -1391,6 +1391,32 @@
     ],
     "title_en": "Agent Kim Reactivated\n김부장",
     "totalCount": 87,
+    "hasNew": false
+  },
+  "theme49": {
+    "coverImage": "videothemes/subthemebc/alldead.png",
+    "title": "Мы все мертвы\n지금 우리 학교는",
+    "masterJsonPath": "videothemes/json/videotheme52.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      }
+    ],
+    "title_en": "All of Us Are Dead\n지금 우리 학교는",
+    "totalCount": 81,
     "hasNew": true
   }
 }

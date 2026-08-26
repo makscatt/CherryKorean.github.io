@@ -1,0 +1,748 @@
+{
+  "b1": [
+    {
+      "drama": "Мы все мертвы",
+      "episode": "1",
+      "video": "video/alldead/거기 나한테 이상한 주사 넣고.webm",
+      "videoMp4": "video/alldead/mp4/거기 나한테 이상한 주사 넣고.mp4",
+      "korean": "거기 나한테 이상한 주사 넣고",
+      "russian": "Там мне вкололи какой-то странный укол.",
+      "new": true,
+      "english": "They gave me some weird shot there.",
+      "timing": "39:10",
+      "isNew": true
+    },
+    {
+      "video": "video/alldead/경찰에 신고했습니다.webm",
+      "videoMp4": "video/alldead/mp4/경찰에 신고했습니다.mp4",
+      "korean": "경찰에 신고했습니다",
+      "russian": "Я сообщил в полицию.",
+      "new": true,
+      "english": "I reported it to the police.",
+      "timing": "46:18"
+    },
+    {
+      "video": "video/alldead/과학 쌤 원래 천재였다잖아.webm",
+      "videoMp4": "video/alldead/mp4/과학 쌤 원래 천재였다잖아.mp4",
+      "korean": "과학 쌤 원래 천재였다잖아",
+      "russian": "Говорят, учитель по науке вообще-то гений.",
+      "new": true,
+      "english": "They say the science teacher used to be a genius.",
+      "timing": "16:35"
+    },
+    {
+      "video": "video/alldead/괜찮아진 게 하나라도 있냐고.webm",
+      "videoMp4": "video/alldead/mp4/괜찮아진 게 하나라도 있냐고.mp4",
+      "korean": "괜찮아진 게 하나라도 있냐고",
+      "russian": "Я спрашиваю, стало хоть что-то лучше?",
+      "new": true,
+      "english": "I asked, has anything gotten better?",
+      "timing": "04:16"
+    },
+    {
+      "video": "video/alldead/괜찮아진 게 하나라도 있어.webm",
+      "videoMp4": "video/alldead/mp4/괜찮아진 게 하나라도 있어.mp4",
+      "korean": "괜찮아진 게 하나라도 있어?",
+      "russian": "Хоть что-то от этого стало лучше?",
+      "new": true,
+      "english": "Has anything gotten any better?",
+      "timing": "04:10"
+    },
+    {
+      "video": "video/alldead/그거 지워 주기로 했어.webm",
+      "videoMp4": "video/alldead/mp4/그거 지워 주기로 했어.mp4",
+      "korean": "그거 지워 주기로 했어",
+      "russian": "Они пообещали это удалить.",
+      "new": true,
+      "english": "They agreed to delete it.",
+      "timing": "54:23"
+    },
+    {
+      "video": "video/alldead/그래 선생님이 알아보겠어.webm",
+      "videoMp4": "video/alldead/mp4/그래 선생님이 알아보겠어.mp4",
+      "korean": "그래 선생님이 알아보겠어?",
+      "russian": "Ладно, я схожу выясню.",
+      "new": true,
+      "english": "All right, I'll go check on it.",
+      "timing": "37:01"
+    },
+    {
+      "video": "video/alldead/그러니까 내 옆에 오지 마.webm",
+      "videoMp4": "video/alldead/mp4/그러니까 내 옆에 오지 마.mp4",
+      "korean": "그러니까 내 옆에 오지 마",
+      "russian": "Так что не подходи ко мне.",
+      "new": true,
+      "english": "So don't come near me.",
+      "timing": "55:23"
+    },
+    {
+      "video": "video/alldead/그런 적 한 번도 없었는데.webm",
+      "videoMp4": "video/alldead/mp4/그런 적 한 번도 없었는데.mp4",
+      "korean": "그런 적 한 번도 없었는데",
+      "russian": "Такого раньше ни разу не было.",
+      "new": true,
+      "english": "That's never happened before.",
+      "timing": "16:32"
+    },
+    {
+      "video": "video/alldead/그럼 6등급까지는 어떻게든 해 볼게.webm",
+      "videoMp4": "video/alldead/mp4/그럼 6등급까지는 어떻게든 해 볼게.mp4",
+      "korean": "그럼 6등급까지는 어떻게든 해 볼게",
+      "russian": "Ну ладно, до шестой ступени как-нибудь дотяну.",
+      "new": true,
+      "english": "Fine, I'll manage grade six somehow.",
+      "timing": "19:50"
+    },
+    {
+      "video": "video/alldead/그럼 교과서가 틀린 거예요.webm",
+      "videoMp4": "video/alldead/mp4/그럼 교과서가 틀린 거예요.mp4",
+      "korean": "그럼 교과서가 틀린 거예요?",
+      "russian": "То есть в учебнике ошибка?",
+      "new": true,
+      "english": "So the textbook is wrong?",
+      "timing": "34:47"
+    },
+    {
+      "video": "video/alldead/그럼 난 좀비랑 사귈 거야.webm",
+      "videoMp4": "video/alldead/mp4/그럼 난 좀비랑 사귈 거야.mp4",
+      "korean": "그럼 난 좀비랑 사귈 거야",
+      "russian": "Тогда я буду встречаться с зомби.",
+      "new": true,
+      "english": "Then I'll date a zombie.",
+      "timing": "45:00"
+    },
+    {
+      "video": "video/alldead/근데 내가 왜 반장 노릇 해야 돼.webm",
+      "videoMp4": "video/alldead/mp4/근데 내가 왜 반장 노릇 해야 돼.mp4",
+      "korean": "근데 내가 왜 반장 노릇 해야 돼?",
+      "russian": "А с чего это мне быть за старосту?",
+      "new": true,
+      "english": "But why do I have to play class president?",
+      "timing": "50:33"
+    },
+    {
+      "video": "video/alldead/금방 병원에 갈 거야_ 선생님 옆에 있으니까 안심하고.webm",
+      "videoMp4": "video/alldead/mp4/금방 병원에 갈 거야_ 선생님 옆에 있으니까 안심하고.mp4",
+      "korean": "금방 병원에 갈 거야, 선생님 옆에 있으니까 안심하고",
+      "russian": "Сейчас поедем в больницу, я рядом, так что не бойся.",
+      "new": true,
+      "english": "We'll get you to the hospital soon, I'm right here, so don't worry.",
+      "timing": "39:07"
+    },
+    {
+      "video": "video/alldead/꺼지세요.webm",
+      "videoMp4": "video/alldead/mp4/꺼지세요.mp4",
+      "korean": "꺼지세요",
+      "russian": "Отвалите.",
+      "new": true,
+      "english": "Get lost.",
+      "timing": "25:18"
+    },
+    {
+      "video": "video/alldead/나 너희 엄마랑 페친인 거 알지.webm",
+      "videoMp4": "video/alldead/mp4/나 너희 엄마랑 페친인 거 알지.mp4",
+      "korean": "나 너희 엄마랑 페친인 거 알지?",
+      "russian": "Ты же знаешь, я с твоей мамой в друзьях на фейсбуке?",
+      "new": true,
+      "english": "You know I'm Facebook friends with your mom, right?",
+      "timing": "25:59"
+    },
+    {
+      "video": "video/alldead/나 때문에 졸라 못살겠다고.webm",
+      "videoMp4": "video/alldead/mp4/나 때문에 졸라 못살겠다고.mp4",
+      "korean": "나 때문에 졸라 못살겠다고",
+      "russian": "Говоришь, из-за меня жизни никакой?",
+      "new": true,
+      "english": "So you can't stand living because of me?",
+      "timing": "00:31"
+    },
+    {
+      "video": "video/alldead/나 먼저 갈게.webm",
+      "videoMp4": "video/alldead/mp4/나 먼저 갈게.mp4",
+      "korean": "나 먼저 갈게",
+      "russian": "Я пойду.",
+      "new": true,
+      "english": "I'll head out first.",
+      "timing": "07:45"
+    },
+    {
+      "video": "video/alldead/나 이번에 5등급까지 올릴 거라니까.webm",
+      "videoMp4": "video/alldead/mp4/나 이번에 5등급까지 올릴 거라니까.mp4",
+      "korean": "나 이번에 5등급까지 올릴 거라니까?",
+      "russian": "Говорю же, в этот раз подтянусь до пятой ступени!",
+      "new": true,
+      "english": "I told you, this time I'll pull it up to grade five.",
+      "timing": "19:45"
+    },
+    {
+      "video": "video/alldead/나 있잖아.webm",
+      "videoMp4": "video/alldead/mp4/나 있잖아.mp4",
+      "korean": "나 있잖아",
+      "russian": "Слушай...",
+      "new": true,
+      "english": "Hey, you know...",
+      "timing": "48:36"
+    },
+    {
+      "video": "video/alldead/나물 다 먹어 치워야 돼.webm",
+      "videoMp4": "video/alldead/mp4/나물 다 먹어 치워야 돼.mp4",
+      "korean": "나물 다 먹어 치워야 돼",
+      "russian": "Намуль надо доесть до конца.",
+      "new": true,
+      "english": "You have to finish all the namul.",
+      "timing": "19:00"
+    },
+    {
+      "video": "video/alldead/내가 너 한 대라도 때린 적 있어.webm",
+      "videoMp4": "video/alldead/mp4/내가 너 한 대라도 때린 적 있어.mp4",
+      "korean": "내가 너 한 대라도 때린 적 있어?",
+      "russian": "Я тебя хоть раз ударил?",
+      "new": true,
+      "english": "Have I ever laid a hand on you?",
+      "timing": "00:38"
+    },
+    {
+      "video": "video/alldead/내가 다 지울 거야.webm",
+      "videoMp4": "video/alldead/mp4/내가 다 지울 거야.mp4",
+      "korean": "내가 다 지울 거야",
+      "russian": "Я всё удалю.",
+      "new": true,
+      "english": "I'll delete every bit of it.",
+      "timing": "54:34"
+    },
+    {
+      "video": "video/alldead/내가 싸우자고 부르겠냐.webm",
+      "videoMp4": "video/alldead/mp4/내가 싸우자고 부르겠냐.mp4",
+      "korean": "내가 싸우자고 부르겠냐?",
+      "russian": "Стал бы я звать драться?",
+      "new": true,
+      "english": "Would I call you out for a fight?",
+      "timing": "27:16"
+    },
+    {
+      "video": "video/alldead/너 다음 주부터 시험이지.webm",
+      "videoMp4": "video/alldead/mp4/너 다음 주부터 시험이지.mp4",
+      "korean": "너 다음 주부터 시험이지?",
+      "russian": "У тебя же со следующей недели экзамены?",
+      "new": true,
+      "english": "Your exams start next week, right?",
+      "timing": "18:52"
+    },
+    {
+      "video": "video/alldead/너 졸라 섹시하게 나왔어.webm",
+      "videoMp4": "video/alldead/mp4/너 졸라 섹시하게 나왔어.mp4",
+      "korean": "너 졸라 섹시하게 나왔어",
+      "russian": "Ты тут вышла охренеть какая секси.",
+      "new": true,
+      "english": "You came out damn sexy in this.",
+      "timing": "25:53"
+    },
+    {
+      "video": "video/alldead/너 진짜 죽는다.webm",
+      "videoMp4": "video/alldead/mp4/너 진짜 죽는다.mp4",
+      "korean": "너 진짜 죽는다?",
+      "russian": "Ты сейчас у меня получишь!",
+      "new": true,
+      "english": "You're really gonna get it!",
+      "timing": "20:44"
+    }
+  ],
+  "b2": [
+    {
+      "drama": "Мы все мертвы",
+      "episode": "1",
+      "video": "video/alldead/너도 올라올래.webm",
+      "videoMp4": "video/alldead/mp4/너도 올라올래.mp4",
+      "korean": "너도 올라올래?",
+      "russian": "Тоже поднимешься сюда?",
+      "new": true,
+      "english": "Do you want to come up here too?",
+      "timing": "54:10",
+      "isNew": true
+    },
+    {
+      "video": "video/alldead/너무 스트레스 많이 받지 말라고.webm",
+      "videoMp4": "video/alldead/mp4/너무 스트레스 많이 받지 말라고.mp4",
+      "korean": "너무 스트레스 많이 받지 말라고",
+      "russian": "Говорю же, не изводи себя.",
+      "new": true,
+      "english": "I'm telling you, don't stress out so much.",
+      "timing": "19:10"
+    },
+    {
+      "video": "video/alldead/다른 냄새는 다 아는데 그 냄새만 모르는 거야.webm",
+      "videoMp4": "video/alldead/mp4/다른 냄새는 다 아는데 그 냄새만 모르는 거야.mp4",
+      "korean": "다른 냄새는 다 아는데 그 냄새만 모르는 거야",
+      "russian": "Все остальные запахи знает, а этот один — нет.",
+      "new": true,
+      "english": "They know every other smell — just not that one.",
+      "timing": "15:31"
+    },
+    {
+      "video": "video/alldead/다음 주부터 시험이니까 정신 바짝들 좀 차리고.webm",
+      "videoMp4": "video/alldead/mp4/다음 주부터 시험이니까 정신 바짝들 좀 차리고.mp4",
+      "korean": "다음 주부터 시험이니까 정신 바짝들 좀 차리고",
+      "russian": "Со следующей недели экзамены, так что соберитесь.",
+      "new": true,
+      "english": "Exams start next week, so pull yourselves together.",
+      "timing": "29:38"
+    },
+    {
+      "video": "video/alldead/돈이 많건 적건 공부를 잘했건 못했건.webm",
+      "videoMp4": "video/alldead/mp4/돈이 많건 적건 공부를 잘했건 못했건.mp4",
+      "korean": "돈이 많건 적건 공부를 잘했건 못했건",
+      "russian": "Богат или беден, отличник или двоечник.",
+      "new": true,
+      "english": "Rich or poor, good at school or not.",
+      "timing": "19:33"
+    },
+    {
+      "video": "video/alldead/둘 다 수고 많았고.webm",
+      "videoMp4": "video/alldead/mp4/둘 다 수고 많았고.mp4",
+      "korean": "둘 다 수고 많았고",
+      "russian": "Вы оба молодцы, спасибо.",
+      "new": true,
+      "english": "You two did a good job.",
+      "timing": "43:03"
+    },
+    {
+      "video": "video/alldead/맞아요.webm",
+      "videoMp4": "video/alldead/mp4/맞아요.mp4",
+      "korean": "맞아요",
+      "russian": "Точно.",
+      "new": true,
+      "english": "That's right.",
+      "timing": "14:00"
+    },
+    {
+      "video": "video/alldead/무슨 얘기 하는 거야.webm",
+      "videoMp4": "video/alldead/mp4/무슨 얘기 하는 거야.mp4",
+      "korean": "무슨 얘기 하는 거야?",
+      "russian": "О чём это ты?",
+      "new": true,
+      "english": "What are you talking about?",
+      "timing": "57:56"
+    },
+    {
+      "video": "video/alldead/무슨 일 있으면 아빠한테 바로 연락하고.webm",
+      "videoMp4": "video/alldead/mp4/무슨 일 있으면 아빠한테 바로 연락하고.mp4",
+      "korean": "무슨 일 있으면 아빠한테 바로 연락하고",
+      "russian": "Если что случится — сразу звони папе.",
+      "new": true,
+      "english": "If anything happens, call your dad right away.",
+      "timing": "42:34"
+    },
+    {
+      "video": "video/alldead/뭐_ 엄청 심하게 당한 거 같던데.webm",
+      "videoMp4": "video/alldead/mp4/뭐_ 엄청 심하게 당한 거 같던데.mp4",
+      "korean": "뭐, 엄청 심하게 당한 거 같던데?",
+      "russian": "Ну, похоже, досталось очень крепко.",
+      "new": true,
+      "english": "Well, looks like they got hit pretty hard.",
+      "timing": "15:42"
+    },
+    {
+      "video": "video/alldead/뭐야 오늘 오픈 안 하는데.webm",
+      "videoMp4": "video/alldead/mp4/뭐야 오늘 오픈 안 하는데.mp4",
+      "korean": "뭐야 오늘 오픈 안 하는데?",
+      "russian": "Что за дела, сегодня же закрыто?",
+      "new": true,
+      "english": "What? They're not open today?",
+      "timing": "13:07"
+    },
+    {
+      "video": "video/alldead/민수 그 새끼 없어진 게 나 때문이야.webm",
+      "videoMp4": "video/alldead/mp4/민수 그 새끼 없어진 게 나 때문이야.mp4",
+      "korean": "민수 그 새끼 없어진 게 나 때문이야?",
+      "russian": "Это из-за меня тот урод Минсу пропал?",
+      "new": true,
+      "english": "Is it my fault that bastard Min-su disappeared?",
+      "timing": "23:31"
+    },
+    {
+      "video": "video/alldead/밥을 이따위로 먹고 가면 어떡해.webm",
+      "videoMp4": "video/alldead/mp4/밥을 이따위로 먹고 가면 어떡해.mp4",
+      "korean": "밥을 이따위로 먹고 가면 어떡해",
+      "russian": "Ну куда ты, толком не поев?",
+      "new": true,
+      "english": "How can you run off after barely eating?",
+      "timing": "20:23"
+    },
+    {
+      "video": "video/alldead/배 아프니_ 많이 아파.webm",
+      "videoMp4": "video/alldead/mp4/배 아프니_ 많이 아파.mp4",
+      "korean": "배 아프니? 많이 아파?",
+      "russian": "Живот болит? Сильно?",
+      "new": true,
+      "english": "Does your stomach hurt? A lot?",
+      "timing": "38:03"
+    },
+    {
+      "video": "video/alldead/성적이 중요한 게 아니야.webm",
+      "videoMp4": "video/alldead/mp4/성적이 중요한 게 아니야.mp4",
+      "korean": "성적이 중요한 게 아니야",
+      "russian": "Дело не в оценках.",
+      "new": true,
+      "english": "Grades aren't what matter.",
+      "timing": "19:39"
+    },
+    {
+      "video": "video/alldead/솔직하게 얘기해 줘야 돼.webm",
+      "videoMp4": "video/alldead/mp4/솔직하게 얘기해 줘야 돼.mp4",
+      "korean": "솔직하게 얘기해 줘야 돼",
+      "russian": "Только скажи честно.",
+      "new": true,
+      "english": "You have to tell me honestly.",
+      "timing": "14:11"
+    },
+    {
+      "video": "video/alldead/술 졸라 처마셨나 봐.webm",
+      "videoMp4": "video/alldead/mp4/술 졸라 처마셨나 봐.mp4",
+      "korean": "술 졸라 처마셨나 봐",
+      "russian": "Да там просто перепой, походу.",
+      "new": true,
+      "english": "Looks like way too much booze, seriously.",
+      "timing": "51:18"
+    },
+    {
+      "video": "video/alldead/쌤_ 제가 볼게요.webm",
+      "videoMp4": "video/alldead/mp4/쌤_ 제가 볼게요.mp4",
+      "korean": "쌤, 제가 볼게요",
+      "russian": "Учитель, я посмотрю.",
+      "new": true,
+      "english": "Teacher, I'll take a look.",
+      "timing": "37:29"
+    },
+    {
+      "video": "video/alldead/씨발.webm",
+      "videoMp4": "video/alldead/mp4/씨발.mp4",
+      "korean": "씨발",
+      "russian": "Бля.",
+      "new": true,
+      "english": "Fuck.",
+      "timing": "24:00"
+    },
+    {
+      "video": "video/alldead/아_ 무슨 말인데.webm",
+      "videoMp4": "video/alldead/mp4/아_ 무슨 말인데.mp4",
+      "korean": "아, 무슨 말인데?",
+      "russian": "Да о чём речь-то?",
+      "new": true,
+      "english": "Come on, what is it?",
+      "timing": "58:06"
+    },
+    {
+      "video": "video/alldead/아_ 뭐 하냐.webm",
+      "videoMp4": "video/alldead/mp4/아_ 뭐 하냐.mp4",
+      "korean": "아, 뭐 하냐?",
+      "russian": "Эй, ты чего это?",
+      "new": true,
+      "english": "Hey, what are you doing?",
+      "timing": "26:42"
+    },
+    {
+      "video": "video/alldead/아_ 씨발_ 저 거지새끼가 진짜_ 씨.webm",
+      "videoMp4": "video/alldead/mp4/아_ 씨발_ 저 거지새끼가 진짜_ 씨.mp4",
+      "korean": "아, 씨발, 저 거지새끼가 진짜, 씨",
+      "russian": "А, бля, вот же нищий ублюдок, сука.",
+      "new": true,
+      "english": "Ah, fuck, that broke-ass bastard, seriously.",
+      "timing": "22:03"
+    },
+    {
+      "video": "video/alldead/아니 약간 미친 거 같애.webm",
+      "videoMp4": "video/alldead/mp4/아니 약간 미친 거 같애.mp4",
+      "korean": "아니 약간 미친 거 같애",
+      "russian": "Не, по-моему, там крыша поехала.",
+      "new": true,
+      "english": "No, they seem a little out of their mind.",
+      "timing": "41:11"
+    },
+    {
+      "video": "video/alldead/아빠_ 미안해_ 다신 안 그럴게.webm",
+      "videoMp4": "video/alldead/mp4/아빠_ 미안해_ 다신 안 그럴게.mp4",
+      "korean": "아빠, 미안해, 다신 안 그럴게",
+      "russian": "Пап, прости, больше не буду.",
+      "new": true,
+      "english": "Dad, I'm sorry, I won't do it again.",
+      "timing": "03:54"
+    },
+    {
+      "video": "video/alldead/아빠는 꼭 밥 먹을 때 시험 얘기를 해.webm",
+      "videoMp4": "video/alldead/mp4/아빠는 꼭 밥 먹을 때 시험 얘기를 해.mp4",
+      "korean": "아빠는 꼭 밥 먹을 때 시험 얘기를 해",
+      "russian": "Пап, ты обязательно про экзамены заводишь за едой.",
+      "new": true,
+      "english": "Dad, you always bring up exams while we're eating.",
+      "timing": "18:55"
+    },
+    {
+      "video": "video/alldead/아침 준비하다 다쳤다.webm",
+      "videoMp4": "video/alldead/mp4/아침 준비하다 다쳤다.mp4",
+      "korean": "아침 준비하다 다쳤다?",
+      "russian": "Это ты завтрак готовил и поранился?",
+      "new": true,
+      "english": "You got hurt making breakfast?",
+      "timing": "21:12"
+    },
+    {
+      "video": "video/alldead/아침도 못 먹었는데.webm",
+      "videoMp4": "video/alldead/mp4/아침도 못 먹었는데.mp4",
+      "korean": "아침도 못 먹었는데",
+      "russian": "У меня же с утра во рту ни крошки.",
+      "new": true,
+      "english": "I didn't even get to eat breakfast.",
+      "timing": "22:21"
+    }
+  ],
+  "b3": [
+    {
+      "drama": "Мы все мертвы",
+      "episode": "1",
+      "video": "video/alldead/안 내면 진다_ 가위바위보.webm",
+      "videoMp4": "video/alldead/mp4/안 내면 진다_ 가위바위보.mp4",
+      "korean": "안 내면 진다, 가위바위보!",
+      "russian": "Кто не показал — проиграл, камень-ножницы-бумага!",
+      "new": true,
+      "english": "Whoever doesn't throw loses — rock, paper, scissors!",
+      "timing": "20:30",
+      "isNew": true
+    },
+    {
+      "video": "video/alldead/야_ 내가 더 잘 알지 네가 더 잘 아냐.webm",
+      "videoMp4": "video/alldead/mp4/야_ 내가 더 잘 알지 네가 더 잘 아냐.mp4",
+      "korean": "야, 내가 더 잘 알지 네가 더 잘 아냐?",
+      "russian": "Эй, я лучше знаю или ты?",
+      "new": true,
+      "english": "Hey, I know better than you, don't I?",
+      "timing": "12:36"
+    },
+    {
+      "video": "video/alldead/야_ 너 무시하냐.webm",
+      "videoMp4": "video/alldead/mp4/야_ 너 무시하냐.mp4",
+      "korean": "야, 너 무시하냐?",
+      "russian": "Эй, ты меня что, ни во что не ставишь?",
+      "new": true,
+      "english": "Hey, are you looking down on me?",
+      "timing": "16:44"
+    },
+    {
+      "video": "video/alldead/야_ 다쳤다며_ 어디.webm",
+      "videoMp4": "video/alldead/mp4/야_ 다쳤다며_ 어디.mp4",
+      "korean": "야, 다쳤다며, 어디?",
+      "russian": "Эй, говорят, ты поранился — где?",
+      "new": true,
+      "english": "Hey, I heard you got hurt — where?",
+      "timing": "44:25"
+    },
+    {
+      "video": "video/alldead/야_ 얼마나 다쳤는데.webm",
+      "videoMp4": "video/alldead/mp4/야_ 얼마나 다쳤는데.mp4",
+      "korean": "야, 얼마나 다쳤는데?",
+      "russian": "Эй, и сильно тебя?",
+      "new": true,
+      "english": "Hey, how bad is it?",
+      "timing": "44:28"
+    },
+    {
+      "video": "video/alldead/야_ 우리 넷이 더블데이트냐.webm",
+      "videoMp4": "video/alldead/mp4/야_ 우리 넷이 더블데이트냐.mp4",
+      "korean": "야, 우리 넷이 더블데이트냐?",
+      "russian": "Эй, мы что, вчетвером на двойном свидании?",
+      "new": true,
+      "english": "Hey, are the four of us on a double date?",
+      "timing": "13:03"
+    },
+    {
+      "video": "video/alldead/약간 매운맛이고 이거는 아주 매운맛이거든.webm",
+      "videoMp4": "video/alldead/mp4/약간 매운맛이고 이거는 아주 매운맛이거든.mp4",
+      "korean": "약간 매운맛이고 이거는 아주 매운맛이거든?",
+      "russian": "Тот слегка острый, а вот этот — очень острый.",
+      "new": true,
+      "english": "That one's mildly spicy, and this one's super spicy.",
+      "timing": "14:06"
+    },
+    {
+      "video": "video/alldead/양말 신는 걸 병적으로 싫어해 가지고요.webm",
+      "videoMp4": "video/alldead/mp4/양말 신는 걸 병적으로 싫어해 가지고요.mp4",
+      "korean": "양말 신는 걸 병적으로 싫어해 가지고요",
+      "russian": "Потому что носки надевать до ужаса не люблю.",
+      "new": true,
+      "english": "Because I hate wearing socks, almost pathologically.",
+      "timing": "36:14"
+    },
+    {
+      "video": "video/alldead/어딜 도망가.webm",
+      "videoMp4": "video/alldead/mp4/어딜 도망가.mp4",
+      "korean": "어딜 도망가",
+      "russian": "Куда это ты собрался?",
+      "new": true,
+      "english": "Where do you think you're running off to?",
+      "timing": "12:45"
+    },
+    {
+      "video": "video/alldead/에이_ 너희들은 공부해야지.webm",
+      "videoMp4": "video/alldead/mp4/에이_ 너희들은 공부해야지.mp4",
+      "korean": "에이, 너희들은 공부해야지",
+      "russian": "Да ну, вам же учиться надо.",
+      "new": true,
+      "english": "Come on, you kids should be studying.",
+      "timing": "14:24"
+    },
+    {
+      "video": "video/alldead/이 문장 해석해 볼 사람.webm",
+      "videoMp4": "video/alldead/mp4/이 문장 해석해 볼 사람.mp4",
+      "korean": "이 문장 해석해 볼 사람",
+      "russian": "Кто переведёт это предложение?",
+      "new": true,
+      "english": "Who wants to translate this sentence?",
+      "timing": "35:29"
+    },
+    {
+      "video": "video/alldead/이럴 때 한번 도와주면 안 되냐.webm",
+      "videoMp4": "video/alldead/mp4/이럴 때 한번 도와주면 안 되냐.mp4",
+      "korean": "이럴 때 한번 도와주면 안 되냐?",
+      "russian": "Ну что, нельзя разок помочь в такой момент?",
+      "new": true,
+      "english": "Can't you help me out just this once?",
+      "timing": "58:35"
+    },
+    {
+      "video": "video/alldead/이제 와서 혼자 착한 척이야.webm",
+      "videoMp4": "video/alldead/mp4/이제 와서 혼자 착한 척이야.mp4",
+      "korean": "이제 와서 혼자 착한 척이야",
+      "russian": "А теперь один из себя хорошего строишь?",
+      "new": true,
+      "english": "And now you're acting like the good guy?",
+      "timing": "25:16"
+    },
+    {
+      "video": "video/alldead/인터넷에 올린대.webm",
+      "videoMp4": "video/alldead/mp4/인터넷에 올린대.mp4",
+      "korean": "인터넷에 올린대",
+      "russian": "Говорят, выложат в интернет.",
+      "new": true,
+      "english": "They say they'll post it online.",
+      "timing": "54:19"
+    },
+    {
+      "video": "video/alldead/일단 내려와_ 나랑 내려와서 얘기하자.webm",
+      "videoMp4": "video/alldead/mp4/일단 내려와_ 나랑 내려와서 얘기하자.mp4",
+      "korean": "일단 내려와, 나랑 내려와서 얘기하자",
+      "russian": "Сначала спустись, спустись и поговорим.",
+      "new": true,
+      "english": "Just come down, come down and let's talk.",
+      "timing": "54:13"
+    },
+    {
+      "video": "video/alldead/자 그러면.webm",
+      "videoMp4": "video/alldead/mp4/자 그러면.mp4",
+      "korean": "자 그러면",
+      "russian": "Так, тогда...",
+      "new": true,
+      "english": "All right, then...",
+      "timing": "35:43"
+    },
+    {
+      "video": "video/alldead/잘 먹겠습니다.webm",
+      "videoMp4": "video/alldead/mp4/잘 먹겠습니다.mp4",
+      "korean": "잘 먹겠습니다",
+      "russian": "Спасибо за угощение!",
+      "new": true,
+      "english": "Thanks for the food!",
+      "timing": "13:24"
+    },
+    {
+      "video": "video/alldead/잘 먹는 게 제일 이쁘지.webm",
+      "videoMp4": "video/alldead/mp4/잘 먹는 게 제일 이쁘지.mp4",
+      "korean": "잘 먹는 게 제일 이쁘지",
+      "russian": "Когда едят с аппетитом — это и есть самое милое.",
+      "new": true,
+      "english": "Eating well is the prettiest thing there is.",
+      "timing": "13:32"
+    },
+    {
+      "video": "video/alldead/저 많이 먹는 거 아니에요.webm",
+      "videoMp4": "video/alldead/mp4/저 많이 먹는 거 아니에요.mp4",
+      "korean": "저 많이 먹는 거 아니에요",
+      "russian": "Я не так уж много ем.",
+      "new": true,
+      "english": "I don't eat that much.",
+      "timing": "13:30"
+    },
+    {
+      "video": "video/alldead/저번 주에 수업하다 나간 날 있잖아.webm",
+      "videoMp4": "video/alldead/mp4/저번 주에 수업하다 나간 날 있잖아.mp4",
+      "korean": "저번 주에 수업하다 나간 날 있잖아",
+      "russian": "Помнишь, на прошлой неделе он посреди урока ушёл?",
+      "new": true,
+      "english": "Remember last week, when he walked out in the middle of class?",
+      "timing": "15:49"
+    },
+    {
+      "video": "video/alldead/정신 좀 차려.webm",
+      "videoMp4": "video/alldead/mp4/정신 좀 차려.mp4",
+      "korean": "정신 좀 차려",
+      "russian": "Приди в себя.",
+      "new": true,
+      "english": "Snap out of it.",
+      "timing": "25:20"
+    },
+    {
+      "video": "video/alldead/제발 그만 좀 해.webm",
+      "videoMp4": "video/alldead/mp4/제발 그만 좀 해.mp4",
+      "korean": "제발 그만 좀 해!",
+      "russian": "Прекрати уже, прошу!",
+      "new": true,
+      "english": "Please, just stop it!",
+      "timing": "04:49"
+    },
+    {
+      "video": "video/alldead/진짜 너만 알아야 된다.webm",
+      "videoMp4": "video/alldead/mp4/진짜 너만 알아야 된다.mp4",
+      "korean": "진짜 너만 알아야 된다?",
+      "russian": "Только между нами, серьёзно.",
+      "new": true,
+      "english": "Seriously, this stays between us.",
+      "timing": "58:04"
+    },
+    {
+      "video": "video/alldead/진짜라니까.webm",
+      "videoMp4": "video/alldead/mp4/진짜라니까.mp4",
+      "korean": "진짜라니까?",
+      "russian": "Да правда же!",
+      "new": true,
+      "english": "I'm telling you, it's true!",
+      "timing": "40:13"
+    },
+    {
+      "video": "video/alldead/포기하지 마_ 아빠_ 나 할 수 있어.webm",
+      "videoMp4": "video/alldead/mp4/포기하지 마_ 아빠_ 나 할 수 있어.mp4",
+      "korean": "포기하지 마, 아빠, 나 할 수 있어",
+      "russian": "Не сдавайся, пап, я справлюсь.",
+      "new": true,
+      "english": "Don't give up on me, Dad, I can do it.",
+      "timing": "19:13"
+    },
+    {
+      "video": "video/alldead/하지 마.webm",
+      "videoMp4": "video/alldead/mp4/하지 마.mp4",
+      "korean": "하지 마",
+      "russian": "Не надо.",
+      "new": true,
+      "english": "Don't.",
+      "timing": "48:43"
+    },
+    {
+      "video": "video/alldead/희망 같은 거 갖지 마.webm",
+      "videoMp4": "video/alldead/mp4/희망 같은 거 갖지 마.mp4",
+      "korean": "희망 같은 거 갖지 마",
+      "russian": "Не надейся ни на что.",
+      "new": true,
+      "english": "Don't hold on to hope.",
+      "timing": "32:44"
+    }
+  ],
+  "b4": [],
+  "b5": []
+}
