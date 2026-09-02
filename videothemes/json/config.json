@@ -1417,6 +1417,37 @@
     ],
     "title_en": "All of Us Are Dead\n지금 우리 학교는",
     "totalCount": 81,
+    "hasNew": false
+  },
+  "theme50": {
+    "coverImage": "videothemes/subthemebc/pinggyego.png",
+    "title": "Пён У Сок: переезд на новую студию\n핑계고",
+    "masterJsonPath": "videothemes/json/videotheme53.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      },
+      {
+        "name": "4",
+        "key": "b4",
+        "name_en": "4"
+      }
+    ],
+    "title_en": "Byeon Woo-seok: Moving to the New Studio\n핑계고",
+    "totalCount": 91,
     "hasNew": true
   }
 }
