@@ -1421,7 +1421,7 @@
   },
   "theme50": {
     "coverImage": "videothemes/subthemebc/pinggyego.png",
-    "title": "Пён У Сок: переезд на новую студию\n핑계고",
+    "title": "Пён У Сок в шоу 핑계고\nEP.110 — переезд на новую студию",
     "masterJsonPath": "videothemes/json/videotheme53.json",
     "targetPageUrl": "video_list_template.html",
     "blocks": [
@@ -1446,7 +1446,7 @@
         "name_en": "4"
       }
     ],
-    "title_en": "Byeon Woo-seok: Moving to the New Studio\n핑계고",
+    "title_en": "Byeon Woo-seok on 핑계고\nEP.110 — Moving to the New Studio",
     "totalCount": 91,
     "hasNew": true
   }
