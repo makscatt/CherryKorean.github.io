@@ -1448,6 +1448,32 @@
     ],
     "title_en": "Byeon Woo-seok on 핑계고\nEP.110 — Moving to the New Studio",
     "totalCount": 91,
+    "hasNew": false
+  },
+  "theme51": {
+    "coverImage": "videothemes/subthemebc/pachinko.png",
+    "title": "Пачинко\n파친코",
+    "masterJsonPath": "videothemes/json/videotheme54.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      }
+    ],
+    "title_en": "Pachinko\n파친코",
+    "totalCount": 64,
     "hasNew": true
   }
 }
