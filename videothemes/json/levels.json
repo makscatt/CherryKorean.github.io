@@ -34,10 +34,10 @@
         "english": "Meat"
       },
       {
-        "korean": "빵",
-        "transcription": "ппаң",
-        "russian": "Хлеб",
-        "english": "Bread"
+        "korean": "라면",
+        "transcription": "рамён",
+        "russian": "Рамён",
+        "english": "Ramen"
       },
       {
         "korean": "사과",
@@ -206,10 +206,10 @@
         "english": "Speech/Language"
       },
       {
-        "korean": "이것",
-        "transcription": "игот",
-        "russian": "Это",
-        "english": "This"
+        "korean": "여기",
+        "transcription": "ёги",
+        "russian": "Здесь",
+        "english": "Here"
       },
       {
         "korean": "저것",
@@ -508,10 +508,10 @@
         "english": "Pharmacy"
       },
       {
-        "korean": "화장실",
-        "transcription": "хвачаңщиль",
-        "russian": "Туалет",
-        "english": "Restroom"
+        "korean": "도서관",
+        "transcription": "тосогван",
+        "russian": "Библиотека",
+        "english": "Library"
       }
     ],
     "title_en": "Level 7: Places",
@@ -552,10 +552,10 @@
         "english": "Morning"
       },
       {
-        "korean": "밤",
-        "transcription": "пам",
-        "russian": "Ночь",
-        "english": "Night"
+        "korean": "새벽",
+        "transcription": "сэбёк",
+        "russian": "Рассвет",
+        "english": "Dawn"
       },
       {
         "korean": "어제",
@@ -564,10 +564,10 @@
         "english": "Yesterday"
       },
       {
-        "korean": "오후",
-        "transcription": "оху",
-        "russian": "Днем",
-        "english": "Afternoon"
+        "korean": "오전",
+        "transcription": "оджон",
+        "russian": "До полудня",
+        "english": "Morning (AM)"
       },
       {
         "korean": "저녁",
@@ -608,22 +608,22 @@
         "english": "Love"
       },
       {
-        "korean": "행복",
-        "transcription": "хэңбок",
-        "russian": "Счастье",
-        "english": "Happiness"
+        "korean": "자신감",
+        "transcription": "часинкам",
+        "russian": "Уверенность",
+        "english": "Confidence"
       },
       {
-        "korean": "화",
-        "transcription": "хва",
-        "russian": "Гнев",
-        "english": "Anger"
+        "korean": "눈물",
+        "transcription": "нунмуль",
+        "russian": "Слёзы",
+        "english": "Tears"
       },
       {
-        "korean": "겁",
-        "transcription": "коп",
-        "russian": "Страх",
-        "english": "Fear"
+        "korean": "미소",
+        "transcription": "мисо",
+        "russian": "Улыбка",
+        "english": "Smile"
       },
       {
         "korean": "재미",
@@ -650,10 +650,10 @@
         "english": "Worry"
       },
       {
-        "korean": "기분",
-        "transcription": "кибун",
-        "russian": "Настроение",
-        "english": "Mood"
+        "korean": "감동",
+        "transcription": "камдон",
+        "russian": "Восторг",
+        "english": "Deep emotion"
       },
       {
         "korean": "마음",
@@ -688,10 +688,10 @@
         "english": "No way!"
       },
       {
-        "korean": "꿀잼",
-        "transcription": "ккульчэм",
-        "russian": "Угар",
-        "english": "So much fun!"
+        "korean": "먹방",
+        "transcription": "мокпан",
+        "russian": "Мукбан",
+        "english": "Mukbang"
       },
       {
         "korean": "심쿵",
@@ -774,10 +774,10 @@
         "english": "Airplane"
       },
       {
-        "korean": "표",
-        "transcription": "пё",
-        "russian": "Билет",
-        "english": "Ticket"
+        "korean": "오토바이",
+        "transcription": "отобаи",
+        "russian": "Мотоцикл",
+        "english": "Motorcycle"
       },
       {
         "korean": "지하철",
@@ -824,10 +824,10 @@
     },
     "words": [
       {
-        "korean": "방",
-        "transcription": "паң",
-        "russian": "Комната",
-        "english": "Room"
+        "korean": "조식",
+        "transcription": "чосик",
+        "russian": "Завтрак",
+        "english": "Breakfast"
       },
       {
         "korean": "침대",
@@ -836,10 +836,10 @@
         "english": "Bed"
       },
       {
-        "korean": "열쇠",
-        "transcription": "ёльсвэ",
-        "russian": "Ключ",
-        "english": "Key"
+        "korean": "에어컨",
+        "transcription": "эокон",
+        "russian": "Кондиционер",
+        "english": "Air conditioner"
       },
       {
         "korean": "예약",
@@ -866,10 +866,10 @@
         "english": "Towel"
       },
       {
-        "korean": "비누",
-        "transcription": "пину",
-        "russian": "Мыло",
-        "english": "Soap"
+        "korean": "베개",
+        "transcription": "пэгэ",
+        "russian": "Подушка",
+        "english": "Pillow"
       },
       {
         "korean": "로비",
@@ -952,10 +952,10 @@
         "english": "Spring"
       },
       {
-        "korean": "가을",
-        "transcription": "каыль",
-        "russian": "Осень",
-        "english": "Fall"
+        "korean": "안개",
+        "transcription": "анге",
+        "russian": "Туман",
+        "english": "Fog"
       }
     ],
     "title_en": "Level 13: Weather",
@@ -1650,10 +1650,10 @@
         "english": "Window"
       },
       {
-        "korean": "방",
-        "transcription": "паң",
-        "russian": "Комната",
-        "english": "Room"
+        "korean": "소파",
+        "transcription": "сопха",
+        "russian": "Диван",
+        "english": "Sofa"
       },
       {
         "korean": "의자",

@@ -154,11 +154,11 @@
       "russian": "Ударил меня?"
     },
     {
-      "video": "video/marry/나쁜 놈.webm",
-      "videoMp4": "video/marry/mp4/나쁜 놈.mp4",
-      "korean": "나쁜 놈",
-      "transcription": "наппын ном",
-      "russian": "Плохой ублюдок"
+      "video": "video/healer/괜찮습니다.webm",
+      "videoMp4": "video/healer/mp4/괜찮습니다.mp4",
+      "korean": "괜찮습니다",
+      "transcription": "квенчханссымнида",
+      "russian": "Всё в порядке"
     },
     {
       "video": "video/kumiho/내 거야.webm",
@@ -221,11 +221,11 @@
   ],
   "step2_6": [
     {
-      "video": "video/biglig/몇 시야.webm",
-      "videoMp4": "video/biglig/mp4/몇 시야.mp4",
-      "korean": "몇 시야?",
-      "transcription": "мёт щия?",
-      "russian": "Который час?"
+      "video": "video/hvatai/모르는데요.webm",
+      "videoMp4": "video/hvatai/mp4/모르는데요.mp4",
+      "korean": "모르는데요?",
+      "transcription": "морынындэё?",
+      "russian": "Не знаю вас"
     },
     {
       "video": "video/kalmar3/물 마셔.webm",
@@ -462,11 +462,11 @@
       "russian": "Ты дома?"
     },
     {
-      "video": "video/hwarang/그게 뭔데.webm",
-      "videoMp4": "video/hwarang/mp4/그게 뭔데.mp4",
-      "korean": "그게 뭔데?",
-      "transcription": "кыгэ мвондэ?",
-      "russian": "О чем ты?"
+      "video": "video/theglory/왜 이런 거니.webm",
+      "videoMp4": "video/theglory/mp4/왜 이런 거니.mp4",
+      "korean": "왜 이런 거니?",
+      "transcription": "вэ ирон гони?",
+      "russian": "Как это случилось?"
     },
     {
       "video": "video/allkdrama/그러지 마.webm",
@@ -851,11 +851,11 @@
       "russian": "А у меня нет"
     },
     {
-      "video": "video/rusure/내일 하자.webm",
-      "videoMp4": "video/rusure/mp4/내일 하자.mp4",
-      "korean": "내일 하자",
-      "transcription": "нэиль хачжа",
-      "russian": "Давай завтра"
+      "video": "video/parasites/너무 좋아요.webm",
+      "videoMp4": "video/parasites/mp4/너무 좋아요.mp4",
+      "korean": "너무 좋아요",
+      "transcription": "ному чоаё",
+      "russian": "Очень хорошо"
     },
     {
       "video": "video/suga/너무 떨려.webm",
