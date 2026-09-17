@@ -1474,6 +1474,42 @@
     ],
     "title_en": "Pachinko\n파친코",
     "totalCount": 64,
+    "hasNew": false
+  },
+  "theme52": {
+    "coverImage": "videothemes/subthemebc/30days.png",
+    "title": "30 дней\n30일",
+    "masterJsonPath": "videothemes/json/videotheme55.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      },
+      {
+        "name": "4",
+        "key": "b4",
+        "name_en": "4"
+      },
+      {
+        "name": "5",
+        "key": "b5",
+        "name_en": "5"
+      }
+    ],
+    "title_en": "Love Reset\n30일",
+    "totalCount": 125,
     "hasNew": true
   }
 }
