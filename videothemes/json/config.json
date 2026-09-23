@@ -126,6 +126,13 @@
       "title_en": "BTS - Swim",
       "cover": "videothemes/songs_covers/song6.png",
       "masterJsonPath": "videothemes/json/videotheme50.json",
+      "isNewSong": false
+    },
+    "song7": {
+      "title": "HWASA - Good Goodbye",
+      "title_en": "HWASA - Good Goodbye",
+      "cover": "videothemes/songs_covers/song7.png",
+      "masterJsonPath": "videothemes/json/videotheme56.json",
       "isNewSong": true
     }
   },

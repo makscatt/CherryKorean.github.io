@@ -1,6 +1,6 @@
 {
   "isSong": true,
-  "isNewSong": true,
+  "isNewSong": false,
   "karaoke": {
     "clip": "video/swim/BTS - Swim (Live in the Studio).webm",
     "clipMp4": "video/swim/mp4/BTS - Swim (Live in the Studio).mp4",

@@ -1,0 +1,412 @@
+{
+  "isSong": true,
+  "isNewSong": true,
+  "karaoke": {
+    "clip": "video/goodgoodbye/HWASA - Good Goodbye MV.webm",
+    "clipMp4": "video/goodgoodbye/mp4/HWASA - Good Goodbye MV.mp4",
+    "lyrics": [
+      {
+        "t": 4.93,
+        "korean": "나를 그냥 짓밟고 가",
+        "russian": "Просто растопчи меня и иди",
+        "english": "Just trample me and go"
+      },
+      {
+        "t": 9.47,
+        "korean": "괜찮아, 돌아보지 마",
+        "russian": "Ничего, не оглядывайся",
+        "english": "It's fine, don't look back"
+      },
+      {
+        "t": 14.31,
+        "korean": "내가 아파봤자 너만 하겠니?",
+        "russian": "Разве моя боль сравнится с твоей?",
+        "english": "Could my pain ever match yours?"
+      },
+      {
+        "t": 19.4,
+        "korean": "이젠 너를 헤아려봐",
+        "russian": "Теперь попробую понять тебя",
+        "english": "Now let me try to understand you"
+      },
+      {
+        "t": 24.13,
+        "korean": "날 위해 쉬던 그 숨은 잊고",
+        "russian": "Забыв то дыхание, что было ради меня",
+        "english": "Forgetting the breath you took for me"
+      },
+      {
+        "t": 28.78,
+        "korean": "저 위에 널 위해 just kill my ego",
+        "russian": "А там, наверху, ради тебя — just kill my ego",
+        "english": "Up there, for you — just kill my ego"
+      },
+      {
+        "t": 33.72,
+        "korean": "등 돌려 걸어가",
+        "russian": "Повернись спиной и уходи",
+        "english": "Turn your back and walk away"
+      },
+      {
+        "t": 38.23,
+        "korean": "You got it, you got it, yeah",
+        "russian": "Получилось, у тебя получилось, да",
+        "english": "You got it, you got it, yeah"
+      },
+      {
+        "t": 43.12,
+        "korean": "안녕은 우릴 아프게 하지만 우아할 거야",
+        "russian": "Прощание ранит нас, но будет красивым",
+        "english": "Goodbye hurts us, but it will be graceful"
+      },
+      {
+        "t": 53.09,
+        "korean": "나 땅을 치고 후회하도록 넌 크게 웃어줘",
+        "russian": "Смейся громко — так, чтобы мне было о чём жалеть",
+        "english": "Laugh out loud, so I'll be left with regret"
+      },
+      {
+        "t": 60.97,
+        "korean": "Goodby-y-ye (by-ye-ye, ya-ya-ye)",
+        "russian": "Прощай (бай-е-е, я-я-е)",
+        "english": "Goodby-y-ye (by-ye-ye, ya-ya-ye)"
+      },
+      {
+        "t": 81.17,
+        "korean": "후회하도록 goodby-y-ye",
+        "russian": "Чтобы потом жалеть — goodby-y-ye",
+        "english": "So you'll regret it — goodby-y-ye"
+      },
+      {
+        "t": 91.0,
+        "korean": "널 생각한 운율이야",
+        "russian": "Этот ритм — мысли о тебе",
+        "english": "This rhythm is me thinking of you"
+      },
+      {
+        "t": 95.83,
+        "korean": "비로소 느껴지잖아",
+        "russian": "Только сейчас это чувствуется",
+        "english": "Only now can it be felt"
+      },
+      {
+        "t": 100.61,
+        "korean": "눈물은 고이고 찬란하게 빛나",
+        "russian": "Слёзы набегают и сияют ослепительно",
+        "english": "Tears well up and shine radiantly"
+      },
+      {
+        "t": 105.75,
+        "korean": "우린 좋은 안녕 중이야",
+        "russian": "У нас сейчас хорошее прощание",
+        "english": "We're in the middle of a good goodbye"
+      },
+      {
+        "t": 109.65,
+        "korean": "고맙단 말 대신 전할게",
+        "russian": "Передам это вместо слов благодарности",
+        "english": "I'll send this instead of a thank you"
+      },
+      {
+        "t": 115.25,
+        "korean": "Goodbye, good, goodbye, yeah",
+        "russian": "Прощай, хорошее прощай, да",
+        "english": "Goodbye, good, goodbye, yeah"
+      },
+      {
+        "t": 119.84,
+        "korean": "안녕은 우릴 아프게 하지만 우아할 거야",
+        "russian": "Прощание ранит нас, но будет красивым",
+        "english": "Goodbye hurts us, but it will be graceful"
+      },
+      {
+        "t": 129.9,
+        "korean": "나 땅을 치고 후회하도록 넌 크게 웃어줘",
+        "russian": "Смейся громко — так, чтобы мне было о чём жалеть",
+        "english": "Laugh out loud, so I'll be left with regret"
+      },
+      {
+        "t": 137.65,
+        "korean": "Goodby-y-ye (by-ye-ye, ya-ya-ye)",
+        "russian": "Прощай (бай-е-е, я-я-е)",
+        "english": "Goodby-y-ye (by-ye-ye, ya-ya-ye)"
+      },
+      {
+        "t": 158.13,
+        "korean": "세상이 나를 빤히 내려다봐도",
+        "russian": "Даже если мир смотрит на меня свысока",
+        "english": "Even if the world stares down at me"
+      },
+      {
+        "t": 163.15,
+        "korean": "내 편이 돼 줄 사람 하나 없어도",
+        "russian": "Даже если нет ни одного человека на моей стороне",
+        "english": "Even if there's no one to take my side"
+      },
+      {
+        "t": 167.61,
+        "korean": "Don't worry, it's okay",
+        "russian": "Не переживай, всё хорошо",
+        "english": "Don't worry, it's okay"
+      },
+      {
+        "t": 169.75,
+        "korean": "난 내 곁에 있을게",
+        "russian": "Я останусь рядом с собой",
+        "english": "I'll stay by my own side"
+      },
+      {
+        "t": 172.62,
+        "korean": "I'll be on my side instead of you, hoo-hoo",
+        "russian": "Я буду на своей стороне вместо тебя, ху-ху",
+        "english": "I'll be on my side instead of you, hoo-hoo"
+      },
+      {
+        "t": 177.38,
+        "korean": "안녕은 나를 아프게 하지만 울어볼 거야",
+        "russian": "Прощание ранит меня, но я позволю себе поплакать",
+        "english": "Goodbye hurts me, but I'm going to let myself cry"
+      },
+      {
+        "t": 186.96,
+        "korean": "땅을 치고 후회해도 좋아, 우리 이렇게",
+        "russian": "Пусть потом горько жалею — пусть, мы вот так",
+        "english": "Even if I'm left with bitter regret — fine, let's end like this"
+      },
+      {
+        "t": 194.94,
+        "korean": "Goodbye (by-ye-ye, ya-ya-ye)",
+        "russian": "Прощай (бай-е-е, я-я-е)",
+        "english": "Goodbye (by-ye-ye, ya-ya-ye)"
+      },
+      {
+        "t": 215.14,
+        "korean": "후회조차도 goodby-y-ye",
+        "russian": "Даже сожалению — goodby-y-ye",
+        "english": "Even to the regret — goodby-y-ye"
+      }
+    ]
+  },
+  "b1": [
+    {
+      "video": "video/goodgoodbye/나를 그냥 짓밟고 가.webm",
+      "videoMp4": "video/goodgoodbye/mp4/나를 그냥 짓밟고 가.mp4",
+      "korean": "나를 그냥 짓밟고 가",
+      "russian": "Просто растопчи меня и иди",
+      "new": true,
+      "english": "Just trample me and go"
+    },
+    {
+      "video": "video/goodgoodbye/괜찮아_ 돌아보지 마.webm",
+      "videoMp4": "video/goodgoodbye/mp4/괜찮아_ 돌아보지 마.mp4",
+      "korean": "괜찮아, 돌아보지 마",
+      "russian": "Ничего, не оглядывайся",
+      "new": true,
+      "english": "It's fine, don't look back"
+    },
+    {
+      "video": "video/goodgoodbye/내가 아파봤자 너만 하겠니.webm",
+      "videoMp4": "video/goodgoodbye/mp4/내가 아파봤자 너만 하겠니.mp4",
+      "korean": "내가 아파봤자 너만 하겠니?",
+      "russian": "Разве моя боль сравнится с твоей?",
+      "new": true,
+      "english": "Could my pain ever match yours?"
+    },
+    {
+      "video": "video/goodgoodbye/이젠 너를 헤아려봐.webm",
+      "videoMp4": "video/goodgoodbye/mp4/이젠 너를 헤아려봐.mp4",
+      "korean": "이젠 너를 헤아려봐",
+      "russian": "Теперь попробую понять тебя",
+      "new": true,
+      "english": "Now let me try to understand you"
+    },
+    {
+      "video": "video/goodgoodbye/날 위해 쉬던 그 숨은 잊고.webm",
+      "videoMp4": "video/goodgoodbye/mp4/날 위해 쉬던 그 숨은 잊고.mp4",
+      "korean": "날 위해 쉬던 그 숨은 잊고",
+      "russian": "Забыв то дыхание, что было ради меня",
+      "new": true,
+      "english": "Forgetting the breath you took for me"
+    },
+    {
+      "video": "video/goodgoodbye/저 위에 널 위해 just kill my ego.webm",
+      "videoMp4": "video/goodgoodbye/mp4/저 위에 널 위해 just kill my ego.mp4",
+      "korean": "저 위에 널 위해 just kill my ego",
+      "russian": "А там, наверху, ради тебя — just kill my ego",
+      "new": true,
+      "english": "Up there, for you — just kill my ego"
+    },
+    {
+      "video": "video/goodgoodbye/등 돌려 걸어가.webm",
+      "videoMp4": "video/goodgoodbye/mp4/등 돌려 걸어가.mp4",
+      "korean": "등 돌려 걸어가",
+      "russian": "Повернись спиной и уходи",
+      "new": true,
+      "english": "Turn your back and walk away"
+    },
+    {
+      "video": "video/goodgoodbye/You got it_ you got it_ yeah.webm",
+      "videoMp4": "video/goodgoodbye/mp4/You got it_ you got it_ yeah.mp4",
+      "korean": "You got it, you got it, yeah",
+      "russian": "Получилось, у тебя получилось, да",
+      "new": true,
+      "english": "You got it, you got it, yeah"
+    },
+    {
+      "video": "video/goodgoodbye/안녕은 우릴 아프게 하지만 우아할 거야.webm",
+      "videoMp4": "video/goodgoodbye/mp4/안녕은 우릴 아프게 하지만 우아할 거야.mp4",
+      "korean": "안녕은 우릴 아프게 하지만 우아할 거야",
+      "russian": "Прощание ранит нас, но будет красивым",
+      "new": true,
+      "english": "Goodbye hurts us, but it will be graceful"
+    },
+    {
+      "video": "video/goodgoodbye/나 땅을 치고 후회하도록 넌 크게 웃어줘.webm",
+      "videoMp4": "video/goodgoodbye/mp4/나 땅을 치고 후회하도록 넌 크게 웃어줘.mp4",
+      "korean": "나 땅을 치고 후회하도록 넌 크게 웃어줘",
+      "russian": "Смейся громко — так, чтобы мне было о чём жалеть",
+      "new": true,
+      "english": "Laugh out loud, so I'll be left with regret"
+    },
+    {
+      "video": "video/goodgoodbye/Goodby-y-ye _by-ye-ye_ ya-ya-ye.webm",
+      "videoMp4": "video/goodgoodbye/mp4/Goodby-y-ye _by-ye-ye_ ya-ya-ye.mp4",
+      "korean": "Goodby-y-ye (by-ye-ye, ya-ya-ye)",
+      "russian": "Прощай (бай-е-е, я-я-е)",
+      "new": true,
+      "english": "Goodby-y-ye (by-ye-ye, ya-ya-ye)"
+    },
+    {
+      "video": "video/goodgoodbye/후회하도록 goodby-y-ye.webm",
+      "videoMp4": "video/goodgoodbye/mp4/후회하도록 goodby-y-ye.mp4",
+      "korean": "후회하도록 goodby-y-ye",
+      "russian": "Чтобы потом жалеть — goodby-y-ye",
+      "new": true,
+      "english": "So you'll regret it — goodby-y-ye"
+    },
+    {
+      "video": "video/goodgoodbye/널 생각한 운율이야.webm",
+      "videoMp4": "video/goodgoodbye/mp4/널 생각한 운율이야.mp4",
+      "korean": "널 생각한 운율이야",
+      "russian": "Этот ритм — мысли о тебе",
+      "new": true,
+      "english": "This rhythm is me thinking of you"
+    },
+    {
+      "video": "video/goodgoodbye/비로소 느껴지잖아.webm",
+      "videoMp4": "video/goodgoodbye/mp4/비로소 느껴지잖아.mp4",
+      "korean": "비로소 느껴지잖아",
+      "russian": "Только сейчас это чувствуется",
+      "new": true,
+      "english": "Only now can it be felt"
+    },
+    {
+      "video": "video/goodgoodbye/눈물은 고이고 찬란하게 빛나.webm",
+      "videoMp4": "video/goodgoodbye/mp4/눈물은 고이고 찬란하게 빛나.mp4",
+      "korean": "눈물은 고이고 찬란하게 빛나",
+      "russian": "Слёзы набегают и сияют ослепительно",
+      "new": true,
+      "english": "Tears well up and shine radiantly"
+    },
+    {
+      "video": "video/goodgoodbye/우린 좋은 안녕 중이야.webm",
+      "videoMp4": "video/goodgoodbye/mp4/우린 좋은 안녕 중이야.mp4",
+      "korean": "우린 좋은 안녕 중이야",
+      "russian": "У нас сейчас хорошее прощание",
+      "new": true,
+      "english": "We're in the middle of a good goodbye"
+    },
+    {
+      "video": "video/goodgoodbye/고맙단 말 대신 전할게.webm",
+      "videoMp4": "video/goodgoodbye/mp4/고맙단 말 대신 전할게.mp4",
+      "korean": "고맙단 말 대신 전할게",
+      "russian": "Передам это вместо слов благодарности",
+      "new": true,
+      "english": "I'll send this instead of a thank you"
+    },
+    {
+      "video": "video/goodgoodbye/Goodbye_ good_ goodbye_ yeah.webm",
+      "videoMp4": "video/goodgoodbye/mp4/Goodbye_ good_ goodbye_ yeah.mp4",
+      "korean": "Goodbye, good, goodbye, yeah",
+      "russian": "Прощай, хорошее прощай, да",
+      "new": true,
+      "english": "Goodbye, good, goodbye, yeah"
+    },
+    {
+      "video": "video/goodgoodbye/세상이 나를 빤히 내려다봐도.webm",
+      "videoMp4": "video/goodgoodbye/mp4/세상이 나를 빤히 내려다봐도.mp4",
+      "korean": "세상이 나를 빤히 내려다봐도",
+      "russian": "Даже если мир смотрит на меня свысока",
+      "new": true,
+      "english": "Even if the world stares down at me"
+    },
+    {
+      "video": "video/goodgoodbye/내 편이 돼 줄 사람 하나 없어도.webm",
+      "videoMp4": "video/goodgoodbye/mp4/내 편이 돼 줄 사람 하나 없어도.mp4",
+      "korean": "내 편이 돼 줄 사람 하나 없어도",
+      "russian": "Даже если нет ни одного человека на моей стороне",
+      "new": true,
+      "english": "Even if there's no one to take my side"
+    },
+    {
+      "video": "video/goodgoodbye/Don_t worry_ it_s okay.webm",
+      "videoMp4": "video/goodgoodbye/mp4/Don_t worry_ it_s okay.mp4",
+      "korean": "Don't worry, it's okay",
+      "russian": "Не переживай, всё хорошо",
+      "new": true,
+      "english": "Don't worry, it's okay"
+    },
+    {
+      "video": "video/goodgoodbye/난 내 곁에 있을게.webm",
+      "videoMp4": "video/goodgoodbye/mp4/난 내 곁에 있을게.mp4",
+      "korean": "난 내 곁에 있을게",
+      "russian": "Я останусь рядом с собой",
+      "new": true,
+      "english": "I'll stay by my own side"
+    },
+    {
+      "video": "video/goodgoodbye/I_ll be on my side instead of you_ hoo-hoo.webm",
+      "videoMp4": "video/goodgoodbye/mp4/I_ll be on my side instead of you_ hoo-hoo.mp4",
+      "korean": "I'll be on my side instead of you, hoo-hoo",
+      "russian": "Я буду на своей стороне вместо тебя, ху-ху",
+      "new": true,
+      "english": "I'll be on my side instead of you, hoo-hoo"
+    },
+    {
+      "video": "video/goodgoodbye/안녕은 나를 아프게 하지만 울어볼 거야.webm",
+      "videoMp4": "video/goodgoodbye/mp4/안녕은 나를 아프게 하지만 울어볼 거야.mp4",
+      "korean": "안녕은 나를 아프게 하지만 울어볼 거야",
+      "russian": "Прощание ранит меня, но я позволю себе поплакать",
+      "new": true,
+      "english": "Goodbye hurts me, but I'm going to let myself cry"
+    },
+    {
+      "video": "video/goodgoodbye/땅을 치고 후회해도 좋아_ 우리 이렇게.webm",
+      "videoMp4": "video/goodgoodbye/mp4/땅을 치고 후회해도 좋아_ 우리 이렇게.mp4",
+      "korean": "땅을 치고 후회해도 좋아, 우리 이렇게",
+      "russian": "Пусть потом горько жалею — пусть, мы вот так",
+      "new": true,
+      "english": "Even if I'm left with bitter regret — fine, let's end like this"
+    },
+    {
+      "video": "video/goodgoodbye/Goodbye _by-ye-ye_ ya-ya-ye.webm",
+      "videoMp4": "video/goodgoodbye/mp4/Goodbye _by-ye-ye_ ya-ya-ye.mp4",
+      "korean": "Goodbye (by-ye-ye, ya-ya-ye)",
+      "russian": "Прощай (бай-е-е, я-я-е)",
+      "new": true,
+      "english": "Goodbye (by-ye-ye, ya-ya-ye)"
+    },
+    {
+      "video": "video/goodgoodbye/후회조차도 goodby-y-ye.webm",
+      "videoMp4": "video/goodgoodbye/mp4/후회조차도 goodby-y-ye.mp4",
+      "korean": "후회조차도 goodby-y-ye",
+      "russian": "Даже сожалению — goodby-y-ye",
+      "new": true,
+      "english": "Even to the regret — goodby-y-ye"
+    }
+  ],
+  "b2": [],
+  "b3": [],
+  "b4": [],
+  "b5": []
+}
