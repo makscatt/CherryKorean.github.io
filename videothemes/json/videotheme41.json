@@ -1806,7 +1806,8 @@
       "russian": "Я правда виноват.",
       "new": true,
       "english": "I was truly in the wrong.",
-      "timing": "42:55"
+      "timing": "42:55",
+      "group": 1
     },
     {
       "video": "video/lesson/한 번만 용서해 주십시오.webm",
@@ -1815,7 +1816,8 @@
       "russian": "Простите меня хотя бы один раз.",
       "new": true,
       "english": "Please forgive me just this once.",
-      "timing": "42:58"
+      "timing": "42:58",
+      "group": 1
     },
     {
       "video": "video/lesson/이렇게 찾아오시는 거 불법입니다.webm",

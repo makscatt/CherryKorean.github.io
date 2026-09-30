@@ -214,6 +214,15 @@
       "timing": "29:10"
     },
     {
+      "video": "video/pachinko/여기보다 저쪽에 더 오래 살았어.webm",
+      "videoMp4": "video/pachinko/mp4/여기보다 저쪽에 더 오래 살았어.mp4",
+      "korean": "여기보다 저쪽에 더 오래 살았어",
+      "russian": "Там я прожил дольше, чем здесь.",
+      "new": true,
+      "english": "I've lived over there longer than here.",
+      "timing": "29:12"
+    },
+    {
       "video": "video/pachinko/값을 매길 거 같아.webm",
       "videoMp4": "video/pachinko/mp4/값을 매길 거 같아.mp4",
       "korean": "값을 매길 거 같아?",
@@ -331,13 +340,13 @@
       "timing": "11:43"
     },
     {
-      "video": "video/pachinko/다른 선택을 했다면.webm",
-      "videoMp4": "video/pachinko/mp4/다른 선택을 했다면.mp4",
-      "korean": "다른 선택을 했다면",
-      "russian": "Если бы ты выбрала иначе…",
+      "video": "video/pachinko/혹시 아직 남아 있을까 해서.webm",
+      "videoMp4": "video/pachinko/mp4/혹시 아직 남아 있을까 해서.mp4",
+      "korean": "혹시 아직 남아 있을까 해서",
+      "russian": "Думал, вдруг ещё осталось.",
       "new": true,
-      "english": "If you'd made a different choice…",
-      "timing": "12:18"
+      "english": "Hoping it might still be there.",
+      "timing": "41:27"
     },
     {
       "video": "video/pachinko/멍청한 새끼.webm",
@@ -367,6 +376,15 @@
       "timing": "31:38"
     },
     {
+      "video": "video/pachinko/조금 이야기할 수 있을까요.webm",
+      "videoMp4": "video/pachinko/mp4/조금 이야기할 수 있을까요.mp4",
+      "korean": "조금 이야기할 수 있을까요?",
+      "russian": "Можно с вами немного поговорить?",
+      "new": true,
+      "english": "Could we talk for a moment?",
+      "timing": "31:39"
+    },
+    {
       "video": "video/pachinko/비가 와서 좋은 점은 이거밖에 없어.webm",
       "videoMp4": "video/pachinko/mp4/비가 와서 좋은 점은 이거밖에 없어.mp4",
       "korean": "비가 와서 좋은 점은 이거밖에 없어",
@@ -374,24 +392,6 @@
       "new": true,
       "english": "That's the only good thing about rain.",
       "timing": "46:51"
-    },
-    {
-      "video": "video/pachinko/사연 없는 집구석이 어디 있겠니.webm",
-      "videoMp4": "video/pachinko/mp4/사연 없는 집구석이 어디 있겠니.mp4",
-      "korean": "사연 없는 집구석이 어디 있겠니",
-      "russian": "У какой семьи нет своей горькой истории?",
-      "new": true,
-      "english": "What family doesn't have a story like that?",
-      "timing": "34:05"
-    },
-    {
-      "video": "video/pachinko/솔직하게 말해 봐.webm",
-      "videoMp4": "video/pachinko/mp4/솔직하게 말해 봐.mp4",
-      "korean": "솔직하게 말해 봐",
-      "russian": "Скажи честно.",
-      "new": true,
-      "english": "Tell me honestly.",
-      "timing": "12:08"
     }
   ],
   "b3": [
@@ -434,15 +434,6 @@
       "timing": "33:15"
     },
     {
-      "video": "video/pachinko/어떻게 살았을지.webm",
-      "videoMp4": "video/pachinko/mp4/어떻게 살았을지.mp4",
-      "korean": "어떻게 살았을지",
-      "russian": "…как бы ты тогда жила.",
-      "new": true,
-      "english": "…how your life would have turned out.",
-      "timing": "12:21"
-    },
-    {
       "video": "video/pachinko/어머니는 아주 일찍 돌아가셨고.webm",
       "videoMp4": "video/pachinko/mp4/어머니는 아주 일찍 돌아가셨고.mp4",
       "korean": "어머니는 아주 일찍 돌아가셨고",
@@ -461,13 +452,13 @@
       "timing": "11:02"
     },
     {
-      "video": "video/pachinko/여기보다 저쪽에 더 오래 살았어.webm",
-      "videoMp4": "video/pachinko/mp4/여기보다 저쪽에 더 오래 살았어.mp4",
-      "korean": "여기보다 저쪽에 더 오래 살았어",
-      "russian": "Там я прожил дольше, чем здесь.",
+      "video": "video/pachinko/솔직하게 말해 봐.webm",
+      "videoMp4": "video/pachinko/mp4/솔직하게 말해 봐.mp4",
+      "korean": "솔직하게 말해 봐",
+      "russian": "Скажи честно.",
       "new": true,
-      "english": "I've lived over there longer than here.",
-      "timing": "29:12"
+      "english": "Tell me honestly.",
+      "timing": "12:08"
     },
     {
       "video": "video/pachinko/요즘 젊은 사람치곤 한국말 잘하네.webm",
@@ -521,7 +512,28 @@
       "russian": "Ты правда ни разу об этом не думала?",
       "new": true,
       "english": "Have you really never thought about it?",
-      "timing": "12:13"
+      "timing": "12:13",
+      "group": 1
+    },
+    {
+      "video": "video/pachinko/다른 선택을 했다면.webm",
+      "videoMp4": "video/pachinko/mp4/다른 선택을 했다면.mp4",
+      "korean": "다른 선택을 했다면",
+      "russian": "Если бы ты выбрала иначе…",
+      "new": true,
+      "english": "If you'd made a different choice…",
+      "timing": "12:18",
+      "group": 1
+    },
+    {
+      "video": "video/pachinko/어떻게 살았을지.webm",
+      "videoMp4": "video/pachinko/mp4/어떻게 살았을지.mp4",
+      "korean": "어떻게 살았을지",
+      "russian": "…как бы ты тогда жила.",
+      "new": true,
+      "english": "…how your life would have turned out.",
+      "timing": "12:21",
+      "group": 1
     },
     {
       "video": "video/pachinko/제가 먼저 찾아간 거예요.webm",
@@ -533,13 +545,13 @@
       "timing": "31:52"
     },
     {
-      "video": "video/pachinko/조금 이야기할 수 있을까요.webm",
-      "videoMp4": "video/pachinko/mp4/조금 이야기할 수 있을까요.mp4",
-      "korean": "조금 이야기할 수 있을까요?",
-      "russian": "Можно с вами немного поговорить?",
+      "video": "video/pachinko/사연 없는 집구석이 어디 있겠니.webm",
+      "videoMp4": "video/pachinko/mp4/사연 없는 집구석이 어디 있겠니.mp4",
+      "korean": "사연 없는 집구석이 어디 있겠니",
+      "russian": "У какой семьи нет своей горькой истории?",
       "new": true,
-      "english": "Could we talk for a moment?",
-      "timing": "31:39"
+      "english": "What family doesn't have a story like that?",
+      "timing": "34:05"
     },
     {
       "video": "video/pachinko/치워.webm",
@@ -576,15 +588,6 @@
       "new": true,
       "english": "My grandma raised me.",
       "timing": "33:45"
-    },
-    {
-      "video": "video/pachinko/혹시 아직 남아 있을까 해서.webm",
-      "videoMp4": "video/pachinko/mp4/혹시 아직 남아 있을까 해서.mp4",
-      "korean": "혹시 아직 남아 있을까 해서",
-      "russian": "Думал, вдруг ещё осталось.",
-      "new": true,
-      "english": "Hoping it might still be there.",
-      "timing": "41:27"
     }
   ],
   "b4": [],
