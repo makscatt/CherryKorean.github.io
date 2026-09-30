@@ -292,18 +292,7 @@
       "russian": "Богат или беден, отличник или двоечник.",
       "new": true,
       "english": "Rich or poor, good at school or not.",
-      "timing": "19:33",
-      "group": 1
-    },
-    {
-      "video": "video/alldead/성적이 중요한 게 아니야.webm",
-      "videoMp4": "video/alldead/mp4/성적이 중요한 게 아니야.mp4",
-      "korean": "성적이 중요한 게 아니야",
-      "russian": "Дело не в оценках.",
-      "new": true,
-      "english": "Grades aren't what matter.",
-      "timing": "19:39",
-      "group": 1
+      "timing": "19:33"
     },
     {
       "video": "video/alldead/둘 다 수고 많았고.webm",
@@ -385,6 +374,15 @@
       "new": true,
       "english": "Does your stomach hurt? A lot?",
       "timing": "38:03"
+    },
+    {
+      "video": "video/alldead/성적이 중요한 게 아니야.webm",
+      "videoMp4": "video/alldead/mp4/성적이 중요한 게 아니야.mp4",
+      "korean": "성적이 중요한 게 아니야",
+      "russian": "Дело не в оценках.",
+      "new": true,
+      "english": "Grades aren't what matter.",
+      "timing": "19:39"
     },
     {
       "video": "video/alldead/솔직하게 얘기해 줘야 돼.webm",

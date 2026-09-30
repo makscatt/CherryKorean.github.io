@@ -165,13 +165,13 @@
       "timing": "01:46"
     },
     {
-      "video": "video/pinggyego/우석이가 광고하는 거잖아요.webm",
-      "videoMp4": "video/pinggyego/mp4/우석이가 광고하는 거잖아요.mp4",
-      "korean": "우석이가 광고하는 거잖아요",
-      "russian": "Это же Усок рекламирует.",
+      "video": "video/pinggyego/근데 전형적인 완전 깔끔한 원피스가 아니라.webm",
+      "videoMp4": "video/pinggyego/mp4/근데 전형적인 완전 깔끔한 원피스가 아니라.mp4",
+      "korean": "근데 전형적인 완전 깔끔한 원피스가 아니라",
+      "russian": "Но не обычное аккуратное платье, а...",
       "new": true,
-      "english": "That's the one Woo-seok advertises.",
-      "timing": "00:59"
+      "english": "But not your typical neat little dress...",
+      "timing": "42:42"
     },
     {
       "video": "video/pinggyego/근데 형 입 진짜 큰 것 같아요.webm",
@@ -539,28 +539,7 @@
       "russian": "Жутко длинные, и белое...",
       "new": true,
       "english": "Super long, and white...",
-      "timing": "42:39",
-      "group": 1
-    },
-    {
-      "video": "video/pinggyego/원피스 같은 걸 입었는데.webm",
-      "videoMp4": "video/pinggyego/mp4/원피스 같은 걸 입었는데.mp4",
-      "korean": "원피스 같은 걸 입었는데",
-      "russian": "Одета была вроде как в платье.",
-      "new": true,
-      "english": "She was wearing something like a dress.",
-      "timing": "42:40",
-      "group": 1
-    },
-    {
-      "video": "video/pinggyego/근데 전형적인 완전 깔끔한 원피스가 아니라.webm",
-      "videoMp4": "video/pinggyego/mp4/근데 전형적인 완전 깔끔한 원피스가 아니라.mp4",
-      "korean": "근데 전형적인 완전 깔끔한 원피스가 아니라",
-      "russian": "Но не обычное аккуратное платье, а...",
-      "new": true,
-      "english": "But not your typical neat little dress...",
-      "timing": "42:42",
-      "group": 1
+      "timing": "42:39"
     },
     {
       "video": "video/pinggyego/예전에 익숙했는데 사라진 거 뭐 좀.webm",
@@ -624,6 +603,24 @@
       "new": true,
       "english": "We never got to eat that.",
       "timing": "46:04"
+    },
+    {
+      "video": "video/pinggyego/우석이가 광고하는 거잖아요.webm",
+      "videoMp4": "video/pinggyego/mp4/우석이가 광고하는 거잖아요.mp4",
+      "korean": "우석이가 광고하는 거잖아요",
+      "russian": "Это же Усок рекламирует.",
+      "new": true,
+      "english": "That's the one Woo-seok advertises.",
+      "timing": "00:59"
+    },
+    {
+      "video": "video/pinggyego/우석이가 해야 되는 거 아니에요.webm",
+      "videoMp4": "video/pinggyego/mp4/우석이가 해야 되는 거 아니에요.mp4",
+      "korean": "우석이가 해야 되는 거 아니에요",
+      "russian": "Разве не Усок должен это делать?",
+      "new": true,
+      "english": "Shouldn't Woo-seok be doing that?",
+      "timing": "01:03"
     }
   ],
   "b4": [
@@ -639,13 +636,13 @@
       "timing": "45:12"
     },
     {
-      "video": "video/pinggyego/우석이가 해야 되는 거 아니에요.webm",
-      "videoMp4": "video/pinggyego/mp4/우석이가 해야 되는 거 아니에요.mp4",
-      "korean": "우석이가 해야 되는 거 아니에요",
-      "russian": "Разве не Усок должен это делать?",
+      "video": "video/pinggyego/원피스 같은 걸 입었는데.webm",
+      "videoMp4": "video/pinggyego/mp4/원피스 같은 걸 입었는데.mp4",
+      "korean": "원피스 같은 걸 입었는데",
+      "russian": "Одета была вроде как в платье.",
       "new": true,
-      "english": "Shouldn't Woo-seok be doing that?",
-      "timing": "01:03"
+      "english": "She was wearing something like a dress.",
+      "timing": "42:40"
     },
     {
       "video": "video/pinggyego/이거는 진짜 감동이 미쳤어요.webm",
