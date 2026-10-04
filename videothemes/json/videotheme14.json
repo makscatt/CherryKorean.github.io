@@ -52,11 +52,20 @@
   ],
   "b1": [
     {
+      "video": "video/biglig/나는 외출 준비를 할 때.webm",
+      "videoMp4": "video/biglig/mp4/나는 외출 준비를 할 때.mp4",
+      "korean": "나는 외출 준비를 할 때",
+      "russian": "Я когда готовлюсь выйти из дома",
+      "english": "When I'm getting ready to go out,",
+      "group": 1
+    },
+    {
       "video": "video/biglig/화장을 하고 옷을 입는 편이다.webm",
       "videoMp4": "video/biglig/mp4/화장을 하고 옷을 입는 편이다.mp4",
       "korean": "화장을 하고 옷을 입는 편이다",
       "russian": "Наношу косметику и одеваюсь",
-      "english": "I usually put on makeup and get dressed."
+      "english": "I usually put on makeup and get dressed.",
+      "group": 1
     },
     {
       "video": "video/biglig/화장도 고치고.webm",
@@ -182,14 +191,16 @@
       "videoMp4": "video/biglig/mp4/벗을 때는 어떻게 벗어.mp4",
       "korean": "벗을 때는 어떻게 벗어?",
       "russian": "А как раздеваешься?",
-      "english": "How do you take it off?"
+      "english": "How do you take it off?",
+      "group": 2
     },
     {
       "video": "video/biglig/벗을 때 조금 다른데 보여 드려요.webm",
       "videoMp4": "video/biglig/mp4/벗을 때 조금 다른데 보여 드려요.mp4",
       "korean": "벗을 때 조금 다른데 보여 드려요",
       "russian": "Когда раздеваюсь, немного иначе, я покажу",
-      "english": "When I take it off, it's a bit different, I'll show you."
+      "english": "When I take it off, it's a bit different, I'll show you.",
+      "group": 2
     },
     {
       "video": "video/biglig/멀티플레이가 좀 가능하다 하시는.webm",
@@ -218,13 +229,6 @@
       "korean": "남자친구 눈칠 왜케 보세요?",
       "russian": "А чего это вы на реакцию своих парней смотрите?",
       "english": "Why are you paying so much attention to your boyfriend's reactions?"
-    },
-    {
-      "video": "video/biglig/나는 외출 준비를 할 때.webm",
-      "videoMp4": "video/biglig/mp4/나는 외출 준비를 할 때.mp4",
-      "korean": "나는 외출 준비를 할 때",
-      "russian": "Я когда готовлюсь выйти из дома",
-      "english": "When I'm getting ready to go out,"
     },
     {
       "video": "video/biglig/그래서 다 지워졌구나.webm",
@@ -380,14 +384,16 @@
       "videoMp4": "video/biglig/mp4/몇 시야.mp4",
       "korean": "몇 시야?",
       "russian": "Который час?",
-      "english": "What time is it?"
+      "english": "What time is it?",
+      "group": 1
     },
     {
       "video": "video/biglig/아홉 시야.webm",
       "videoMp4": "video/biglig/mp4/아홉 시야.mp4",
       "korean": "아홉 시야",
       "russian": "Девять часов",
-      "english": "It's nine o'clock."
+      "english": "It's nine o'clock.",
+      "group": 1
     },
     {
       "video": "video/biglig/어떻게 미쳤나 봐 시간이 왜 이렇게 빨리가 집에 있으니까.webm",

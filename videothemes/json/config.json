@@ -1516,7 +1516,53 @@
       }
     ],
     "title_en": "Love Reset\n30일",
-    "totalCount": 125,
+    "totalCount": 135,
+    "hasNew": false
+  },
+  "theme53": {
+    "coverImage": "videothemes/subthemebc/shopforkillers.png",
+    "title": "Магазин для убийц 2\n킬러들의 쇼핑몰 2",
+    "masterJsonPath": "videothemes/json/videotheme57.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      },
+      {
+        "name": "4",
+        "key": "b4",
+        "name_en": "4"
+      },
+      {
+        "name": "5",
+        "key": "b5",
+        "name_en": "5"
+      },
+      {
+        "name": "6",
+        "key": "b6",
+        "name_en": "6"
+      },
+      {
+        "name": "7",
+        "key": "b7",
+        "name_en": "7"
+      }
+    ],
+    "title_en": "A Shop for Killers 2\n킬러들의 쇼핑몰 2",
+    "totalCount": 203,
     "hasNew": true
   }
 }

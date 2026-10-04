@@ -105,14 +105,16 @@
       "videoMp4": "video/theglory/mp4/그 꽃은.mp4",
       "korean": "그 꽃은",
       "russian": "Эти цветы",
-      "english": "That flower..."
+      "english": "That flower...",
+      "group": 1
     },
     {
       "video": "video/theglory/밤에만 향기가 나요.webm",
       "videoMp4": "video/theglory/mp4/밤에만 향기가 나요.mp4",
       "korean": "밤에만 향기가 나요",
       "russian": "Только ночью пахнут",
-      "english": "It only smells at night."
+      "english": "It only smells at night.",
+      "group": 1
     },
     {
       "video": "video/theglory/혹시 기억하니.webm",
@@ -189,21 +191,24 @@
       "videoMp4": "video/theglory/mp4/네가 백날 소리 질러도.mp4",
       "korean": "네가 백날 소리 질러도",
       "russian": "Хоть всю жизнь кричи",
-      "english": "Even if you scream forever,"
+      "english": "Even if you scream forever,",
+      "group": 2
     },
     {
       "video": "video/theglory/아무도 몰라.webm",
       "videoMp4": "video/theglory/mp4/아무도 몰라.mp4",
       "korean": "아무도 몰라",
       "russian": "Никто не узнает",
-      "english": "No one will know."
+      "english": "No one will know.",
+      "group": 2
     },
     {
       "video": "video/theglory/아무도 안 와.webm",
       "videoMp4": "video/theglory/mp4/아무도 안 와.mp4",
       "korean": "아무도 안 와",
       "russian": "Никто не придет",
-      "english": "No one is coming."
+      "english": "No one is coming.",
+      "group": 2
     },
     {
       "video": "video/theglory/난 이래도 아무 일이 없고.webm",
@@ -259,17 +264,19 @@
       "videoMp4": "video/theglory/mp4/혼자 힘들면.mp4",
       "korean": "혼자 힘들면",
       "russian": "Если одной трудно",
-      "english": "If it's hard alone,"
-    }
-  ],
-  "b2": [
+      "english": "If it's hard alone,",
+      "group": 3
+    },
     {
       "video": "video/theglory/같이 말해 줄게.webm",
       "videoMp4": "video/theglory/mp4/같이 말해 줄게.mp4",
       "korean": "같이 말해 줄게",
       "russian": "Вместе скажем",
-      "english": "I'll say it with you."
-    },
+      "english": "I'll say it with you.",
+      "group": 3
+    }
+  ],
+  "b2": [
     {
       "video": "video/theglory/누구야.webm",
       "videoMp4": "video/theglory/mp4/누구야.mp4",
@@ -464,7 +471,8 @@
       "korean": "자퇴사유 이거 뭐냐고?",
       "russian": "Спрашиваю, какая причина отчисления?",
       "new": true,
-      "english": "What's the reason for dropping out?"
+      "english": "What's the reason for dropping out?",
+      "group": 1
     },
     {
       "video": "video/theglory/학교 폭력이요.webm",
@@ -472,7 +480,8 @@
       "korean": "학교 폭력이요",
       "russian": "Школьное насилие",
       "new": true,
-      "english": "It's school violence."
+      "english": "It's school violence.",
+      "group": 1
     },
     {
       "video": "video/theglory/뭐가 방관이야.webm",
@@ -754,7 +763,8 @@
       "korean": "차가운 거 주시고",
       "russian": "Дайте что-нибудь холодное",
       "new": true,
-      "english": "Give me something cold."
+      "english": "Give me something cold.",
+      "group": 1
     },
     {
       "video": "video/theglory/제일 진한 거 주세요.webm",
@@ -762,7 +772,8 @@
       "korean": "제일 진한 거 주세요",
       "russian": "Дайте самое крепкое",
       "new": true,
-      "english": "I'll have the strongest one, please."
+      "english": "I'll have the strongest one, please.",
+      "group": 1
     },
     {
       "video": "video/theglory/졸려서요.webm",
@@ -770,7 +781,8 @@
       "korean": "졸려서요",
       "russian": "Потому что в сон клонит",
       "new": true,
-      "english": "I'm just really sleepy."
+      "english": "I'm just really sleepy.",
+      "group": 1
     },
     {
       "video": "video/theglory/예쁠 때 결혼을 하겠지.webm",

@@ -6,7 +6,8 @@
       "korean": "10년이나 지났으니까",
       "russian": "Ведь прошло уже десять лет.",
       "new": true,
-      "english": "Because ten years have already passed."    },
+      "english": "Because ten years have already passed."
+    },
     {
       "video": "video/boyfriend/가지마.webm",
       "videoMp4": "video/boyfriend/mp4/가지마.mp4",
@@ -207,7 +208,8 @@
       "korean": "말 좀 해주지",
       "russian": "Мог бы и сказать.",
       "new": true,
-      "english": "You could’ve said something."    },
+      "english": "You could’ve said something."
+    },
     {
       "video": "video/boyfriend/맞지.webm",
       "videoMp4": "video/boyfriend/mp4/맞지.mp4",
@@ -222,7 +224,17 @@
       "korean": "매번 너무 냉정하신 거 아닌가요",
       "russian": "Вам не кажется, что вы каждый раз слишком холодны?",
       "new": true,
-      "english": "Aren’t you being too cold every time?"
+      "english": "Aren’t you being too cold every time?",
+      "group": 1
+    },
+    {
+      "video": "video/boyfriend/법정에선 냉정한 게 당연하죠.webm",
+      "videoMp4": "video/boyfriend/mp4/법정에선 냉정한 게 당연하죠.mp4",
+      "korean": "법정에선 냉정한 게 당연하죠",
+      "russian": "В суде быть хладнокровным — это естественно.",
+      "new": true,
+      "english": "It’s only natural to be cold in court.",
+      "group": 1
     },
     {
       "video": "video/boyfriend/못 만난다는 거예요.webm",
@@ -271,14 +283,6 @@
       "russian": "Мингию, вы тоже осторожно добирайтесь домой.",
       "new": true,
       "english": "Min-gyu, you get home safely too."
-    },
-    {
-      "video": "video/boyfriend/법정에선 냉정한 게 당연하죠.webm",
-      "videoMp4": "video/boyfriend/mp4/법정에선 냉정한 게 당연하죠.mp4",
-      "korean": "법정에선 냉정한 게 당연하죠",
-      "russian": "В суде быть хладнокровным — это естественно.",
-      "new": true,
-      "english": "It’s only natural to be cold in court."
     },
     {
       "video": "video/boyfriend/서은호랑 다시 만나고 싶어요.webm",
@@ -408,7 +412,8 @@
       "korean": "오늘 즐거웠어요",
       "russian": "Сегодня было здорово.",
       "new": true,
-      "english": "I had a great time today."    },
+      "english": "I had a great time today."
+    },
     {
       "video": "video/boyfriend/오늘도 예외 없이 늦으시나 보네요.webm",
       "videoMp4": "video/boyfriend/mp4/오늘도 예외 없이 늦으시나 보네요.mp4",

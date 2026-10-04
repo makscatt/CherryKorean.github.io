@@ -154,14 +154,16 @@
       "videoMp4": "video/runbts/mp4/이렇게 추억을 같이.mp4",
       "korean": "이렇게 추억을 같이",
       "russian": "Вот так вместе воспоминания...",
-      "english": "Making memories like this together,"
+      "english": "Making memories like this together,",
+      "group": 1
     },
     {
       "video": "video/runbts/만들고 싶습니다.webm",
       "videoMp4": "video/runbts/mp4/만들고 싶습니다.mp4",
       "korean": "만들고 싶습니다",
       "russian": "Хочу создавать",
-      "english": "I want to create."
+      "english": "I want to create.",
+      "group": 1
     },
     {
       "video": "video/runbts/저 알겠어요.webm",
@@ -464,14 +466,16 @@
       "videoMp4": "video/runbts/mp4/저녁에.mp4",
       "korean": "저녁에",
       "russian": "Вечером",
-      "english": "In the evening."
+      "english": "In the evening.",
+      "group": 1
     },
     {
       "video": "video/runbts/뭐 먹을 거예요.webm",
       "videoMp4": "video/runbts/mp4/뭐 먹을 거예요.mp4",
       "korean": "뭐 먹을 거예요?",
       "russian": "Что будешь есть?",
-      "english": "What are you going to eat?"
+      "english": "What are you going to eat?",
+      "group": 1
     }
   ],
   "b3": [
@@ -776,35 +780,40 @@
       "videoMp4": "video/runbts/mp4/지금 여러분들께.mp4",
       "korean": "지금 여러분들께",
       "russian": "Сейчас, для вас",
-      "english": "Right now, to all of you"
+      "english": "Right now, to all of you",
+      "group": 1
     },
     {
       "video": "video/runbts/인사를 다시 한 번 더 크게 말하고 싶습니다.webm",
       "videoMp4": "video/runbts/mp4/인사를 다시 한 번 더 크게 말하고 싶습니다.mp4",
       "korean": "인사를 다시 한 번 더 크게 말하고 싶습니다",
       "russian": "Хочу снова еще сильнее выразить благодарность",
-      "english": "I want to say my greetings one more time, louder."
+      "english": "I want to say my greetings one more time, louder.",
+      "group": 1
     },
     {
       "video": "video/runbts/그리고 마지막으로 한 번 더.webm",
       "videoMp4": "video/runbts/mp4/그리고 마지막으로 한 번 더.mp4",
       "korean": "그리고 마지막으로 한 번 더",
       "russian": "И на последок еще разок",
-      "english": "And finally, one more time."
+      "english": "And finally, one more time.",
+      "group": 2
     },
     {
       "video": "video/runbts/외칠게요.webm",
       "videoMp4": "video/runbts/mp4/외칠게요.mp4",
       "korean": "외칠게요",
       "russian": "Крикнем",
-      "english": "I’ll shout it out."
+      "english": "I’ll shout it out.",
+      "group": 2
     },
     {
       "video": "video/runbts/아미.webm",
       "videoMp4": "video/runbts/mp4/아미.mp4",
       "korean": "아미",
       "russian": "Армиииииии",
-      "english": "Army!"
+      "english": "Army!",
+      "group": 2
     },
     {
       "video": "video/runbts/여러분.webm",
@@ -1301,7 +1310,8 @@
       "korean": "패킹 뭐야?",
       "russian": "Что за Пэкинг?",
       "new": true,
-      "english": "What's packing?"
+      "english": "What's packing?",
+      "group": 1
     },
     {
       "video": "video/runbts/견갑 패킹.webm",
@@ -1309,7 +1319,8 @@
       "korean": "견갑 패킹",
       "russian": "Сведение(Пэкинг) лопаток",
       "new": true,
-      "english": "Shoulder packing."
+      "english": "Shoulder packing.",
+      "group": 1
     },
     {
       "video": "video/runbts/힙업 힙업.webm",

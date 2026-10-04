@@ -72,7 +72,28 @@
       "russian": "В старшей школе — и слушаться перестала.",
       "new": true,
       "english": "She's in high school now and won't listen to a word.",
-      "timing": "34:22"
+      "timing": "34:22",
+      "group": 1
+    },
+    {
+      "video": "video/agentkim/이제 이러다가 시집도 가겠지.webm",
+      "videoMp4": "video/agentkim/mp4/이제 이러다가 시집도 가겠지.mp4",
+      "korean": "이제 이러다가 시집도 가겠지",
+      "russian": "Так и замуж выскочит, наверное.",
+      "new": true,
+      "english": "At this rate she'll go and get married, huh?",
+      "timing": "34:24",
+      "group": 1
+    },
+    {
+      "video": "video/agentkim/그럼 이제 아빠랑 멀어지는 거야.webm",
+      "videoMp4": "video/agentkim/mp4/그럼 이제 아빠랑 멀어지는 거야.mp4",
+      "korean": "그럼 이제 아빠랑 멀어지는 거야",
+      "russian": "И тогда уже от папы отдалится.",
+      "new": true,
+      "english": "And then she'll drift away from her dad.",
+      "timing": "34:28",
+      "group": 1
     },
     {
       "video": "video/agentkim/그니까 니가 걔 체육복을 왜 빌리는데.webm",
@@ -82,15 +103,6 @@
       "new": true,
       "english": "So why are you borrowing her gym clothes?",
       "timing": "42:47"
-    },
-    {
-      "video": "video/agentkim/그럼 이제 아빠랑 멀어지는 거야.webm",
-      "videoMp4": "video/agentkim/mp4/그럼 이제 아빠랑 멀어지는 거야.mp4",
-      "korean": "그럼 이제 아빠랑 멀어지는 거야",
-      "russian": "И тогда уже от папы отдалится.",
-      "new": true,
-      "english": "And then she'll drift away from her dad.",
-      "timing": "34:28"
     },
     {
       "video": "video/agentkim/꼰대인 줄만 알았던 우리 아빠가 이런 센스를.webm",
@@ -108,7 +120,18 @@
       "russian": "Мне так стыдно.",
       "new": true,
       "english": "I'm so embarrassed.",
-      "timing": "53:51"
+      "timing": "53:51",
+      "group": 2
+    },
+    {
+      "video": "video/agentkim/너무 화나고 억울하고 불쌍하다고.webm",
+      "videoMp4": "video/agentkim/mp4/너무 화나고 억울하고 불쌍하다고.mp4",
+      "korean": "너무 화나고 억울하고 불쌍하다고",
+      "russian": "И злость, и обида, и жалость — всё разом.",
+      "new": true,
+      "english": "I'm angry, I feel wronged, and I feel pathetic.",
+      "timing": "53:54",
+      "group": 2
     },
     {
       "video": "video/agentkim/나 방금 배구하고 와서 땀 냄새는 좀 날 거다.webm",
@@ -120,13 +143,13 @@
       "timing": "26:24"
     },
     {
-      "video": "video/agentkim/나 참고 또 참다가 대든 거뿐이야.webm",
-      "videoMp4": "video/agentkim/mp4/나 참고 또 참다가 대든 거뿐이야.mp4",
-      "korean": "나 참고 또 참다가 대든 거뿐이야",
-      "russian": "Я терпела-терпела и просто дала отпор.",
+      "video": "video/agentkim/회식비로 처리해.webm",
+      "videoMp4": "video/agentkim/mp4/회식비로 처리해.mp4",
+      "korean": "회식비로 처리해",
+      "russian": "Проведи как расходы на корпоратив.",
       "new": true,
-      "english": "I put up with it and put up with it — I only stood up to her.",
-      "timing": "50:14"
+      "english": "Put it through as a team-dinner expense.",
+      "timing": "11:22"
     },
     {
       "video": "video/agentkim/난 그래도 지금이 좋아.webm",
@@ -181,15 +204,6 @@
       "new": true,
       "english": "Don't worry too much.",
       "timing": "13:10"
-    },
-    {
-      "video": "video/agentkim/너무 화나고 억울하고 불쌍하다고.webm",
-      "videoMp4": "video/agentkim/mp4/너무 화나고 억울하고 불쌍하다고.mp4",
-      "korean": "너무 화나고 억울하고 불쌍하다고",
-      "russian": "И злость, и обида, и жалость — всё разом.",
-      "new": true,
-      "english": "I'm angry, I feel wronged, and I feel pathetic.",
-      "timing": "53:54"
     },
     {
       "video": "video/agentkim/누구를 기다리게 하는 거야.webm",
@@ -253,15 +267,6 @@
       "new": true,
       "english": "This won't happen again.",
       "timing": "52:49"
-    },
-    {
-      "video": "video/agentkim/다음 분 빨리 오실게요.webm",
-      "videoMp4": "video/agentkim/mp4/다음 분 빨리 오실게요.mp4",
-      "korean": "다음 분 빨리 오실게요",
-      "russian": "Следующий, проходите поскорее.",
-      "new": true,
-      "english": "Next in line, come on up quickly.",
-      "timing": "18:12"
     }
   ],
   "b2": [
@@ -403,13 +408,13 @@
       "timing": "19:24"
     },
     {
-      "video": "video/agentkim/아빠까지 내 편이 아니면.webm",
-      "videoMp4": "video/agentkim/mp4/아빠까지 내 편이 아니면.mp4",
-      "korean": "아빠까지 내 편이 아니면",
-      "russian": "Если даже папа не на моей стороне…",
+      "video": "video/agentkim/학교 후문에서 기다릴게.webm",
+      "videoMp4": "video/agentkim/mp4/학교 후문에서 기다릴게.mp4",
+      "korean": "학교 후문에서 기다릴게",
+      "russian": "Буду ждать у задних ворот школы.",
       "new": true,
-      "english": "If even Dad isn't on my side…",
-      "timing": "54:32"
+      "english": "I'll wait at the school's back gate.",
+      "timing": "57:42"
     },
     {
       "video": "video/agentkim/아빠는 왜 내 말 안 믿어.webm",
@@ -493,13 +498,13 @@
       "timing": "33:10"
     },
     {
-      "video": "video/agentkim/어쩔 수가 없었어요.webm",
-      "videoMp4": "video/agentkim/mp4/어쩔 수가 없었어요.mp4",
-      "korean": "어쩔 수가 없었어요",
-      "russian": "Ничего было не поделать.",
+      "video": "video/agentkim/트렌드에 민감한 사람이거든요.webm",
+      "videoMp4": "video/agentkim/mp4/트렌드에 민감한 사람이거든요.mp4",
+      "korean": "트렌드에 민감한 사람이거든요",
+      "russian": "Она же чутко ловит все тренды.",
       "new": true,
-      "english": "There was nothing I could do.",
-      "timing": "1:01:12"
+      "english": "She's really sensitive to trends.",
+      "timing": "19:02"
     },
     {
       "video": "video/agentkim/에미 없는 냄새.webm",
@@ -540,15 +545,6 @@
       "new": true,
       "english": "We have to leave at six sharp.",
       "timing": "13:29"
-    },
-    {
-      "video": "video/agentkim/연락처 적으라는데.webm",
-      "videoMp4": "video/agentkim/mp4/연락처 적으라는데.mp4",
-      "korean": "연락처 적으라는데",
-      "russian": "и контакты просят записать.",
-      "new": true,
-      "english": "and their number — they want it written down.",
-      "timing": "06:38"
     },
     {
       "video": "video/agentkim/우리 1년에 한 번 뭉치는 날이잖아 오늘.webm",
@@ -611,16 +607,37 @@
       "russian": "У меня же теперь только папа и есть.",
       "new": true,
       "english": "Now I've got no one but Dad.",
-      "timing": "54:29"
+      "timing": "54:29",
+      "group": 1
     },
     {
-      "video": "video/agentkim/이제 이러다가 시집도 가겠지.webm",
-      "videoMp4": "video/agentkim/mp4/이제 이러다가 시집도 가겠지.mp4",
-      "korean": "이제 이러다가 시집도 가겠지",
-      "russian": "Так и замуж выскочит, наверное.",
+      "video": "video/agentkim/아빠까지 내 편이 아니면.webm",
+      "videoMp4": "video/agentkim/mp4/아빠까지 내 편이 아니면.mp4",
+      "korean": "아빠까지 내 편이 아니면",
+      "russian": "Если даже папа не на моей стороне…",
       "new": true,
-      "english": "At this rate she'll go and get married, huh?",
-      "timing": "34:24"
+      "english": "If even Dad isn't on my side…",
+      "timing": "54:32",
+      "group": 1
+    },
+    {
+      "video": "video/agentkim/적어도 아빠 만큼은 날 믿어줬어야지.webm",
+      "videoMp4": "video/agentkim/mp4/적어도 아빠 만큼은 날 믿어줬어야지.mp4",
+      "korean": "적어도 아빠 만큼은 날 믿어줬어야지",
+      "russian": "Уж папа-то должен был мне поверить.",
+      "new": true,
+      "english": "At the very least, Dad should have believed me.",
+      "timing": "54:37",
+      "group": 1
+    },
+    {
+      "video": "video/agentkim/다음 분 빨리 오실게요.webm",
+      "videoMp4": "video/agentkim/mp4/다음 분 빨리 오실게요.mp4",
+      "korean": "다음 분 빨리 오실게요",
+      "russian": "Следующий, проходите поскорее.",
+      "new": true,
+      "english": "Next in line, come on up quickly.",
+      "timing": "18:12"
     },
     {
       "video": "video/agentkim/일어나 김민지.webm",
@@ -641,6 +658,15 @@
       "timing": "50:12"
     },
     {
+      "video": "video/agentkim/나 참고 또 참다가 대든 거뿐이야.webm",
+      "videoMp4": "video/agentkim/mp4/나 참고 또 참다가 대든 거뿐이야.mp4",
+      "korean": "나 참고 또 참다가 대든 거뿐이야",
+      "russian": "Я терпела-терпела и просто дала отпор.",
+      "new": true,
+      "english": "I put up with it and put up with it — I only stood up to her.",
+      "timing": "50:14"
+    },
+    {
       "video": "video/agentkim/저게 미쳤나_ 야 됐어.webm",
       "videoMp4": "video/agentkim/mp4/저게 미쳤나_ 야 됐어.mp4",
       "korean": "저게 미쳤나_ 야 됐어",
@@ -656,16 +682,18 @@
       "russian": "У меня тоже телефон отобрали.",
       "new": true,
       "english": "They took my phone too.",
-      "timing": "1:01:10"
+      "timing": "1:01:10",
+      "group": 2
     },
     {
-      "video": "video/agentkim/적어도 아빠 만큼은 날 믿어줬어야지.webm",
-      "videoMp4": "video/agentkim/mp4/적어도 아빠 만큼은 날 믿어줬어야지.mp4",
-      "korean": "적어도 아빠 만큼은 날 믿어줬어야지",
-      "russian": "Уж папа-то должен был мне поверить.",
+      "video": "video/agentkim/어쩔 수가 없었어요.webm",
+      "videoMp4": "video/agentkim/mp4/어쩔 수가 없었어요.mp4",
+      "korean": "어쩔 수가 없었어요",
+      "russian": "Ничего было не поделать.",
       "new": true,
-      "english": "At the very least, Dad should have believed me.",
-      "timing": "54:37"
+      "english": "There was nothing I could do.",
+      "timing": "1:01:12",
+      "group": 2
     },
     {
       "video": "video/agentkim/전학시키는 거 정도로 넘어갑시다.webm",
@@ -755,7 +783,18 @@
       "russian": "Имя близкого друга",
       "new": true,
       "english": "Your close friend's name",
-      "timing": "06:36"
+      "timing": "06:36",
+      "group": 3
+    },
+    {
+      "video": "video/agentkim/연락처 적으라는데.webm",
+      "videoMp4": "video/agentkim/mp4/연락처 적으라는데.mp4",
+      "korean": "연락처 적으라는데",
+      "russian": "и контакты просят записать.",
+      "new": true,
+      "english": "and their number — they want it written down.",
+      "timing": "06:38",
+      "group": 3
     },
     {
       "video": "video/agentkim/퇴근하는 게 나랑 무슨 상관이야.webm",
@@ -765,33 +804,6 @@
       "new": true,
       "english": "What's it to me when he clocks out?",
       "timing": "31:37"
-    },
-    {
-      "video": "video/agentkim/트렌드에 민감한 사람이거든요.webm",
-      "videoMp4": "video/agentkim/mp4/트렌드에 민감한 사람이거든요.mp4",
-      "korean": "트렌드에 민감한 사람이거든요",
-      "russian": "Она же чутко ловит все тренды.",
-      "new": true,
-      "english": "She's really sensitive to trends.",
-      "timing": "19:02"
-    },
-    {
-      "video": "video/agentkim/학교 후문에서 기다릴게.webm",
-      "videoMp4": "video/agentkim/mp4/학교 후문에서 기다릴게.mp4",
-      "korean": "학교 후문에서 기다릴게",
-      "russian": "Буду ждать у задних ворот школы.",
-      "new": true,
-      "english": "I'll wait at the school's back gate.",
-      "timing": "57:42"
-    },
-    {
-      "video": "video/agentkim/회식비로 처리해.webm",
-      "videoMp4": "video/agentkim/mp4/회식비로 처리해.mp4",
-      "korean": "회식비로 처리해",
-      "russian": "Проведи как расходы на корпоратив.",
-      "new": true,
-      "english": "Put it through as a team-dinner expense.",
-      "timing": "11:22"
     }
   ],
   "b4": [],

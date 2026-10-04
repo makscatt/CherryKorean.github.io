@@ -38,7 +38,17 @@
       "korean": "그 선생이 학생을 무서워하면",
       "russian": "Если тот учитель боится ученика",
       "new": true,
-      "english": "If that teacher is afraid of the student"
+      "english": "If that teacher is afraid of the student",
+      "group": 1
+    },
+    {
+      "video": "video/lesson/제대로 가르쳐 주겠습니까.webm",
+      "videoMp4": "video/lesson/mp4/제대로 가르쳐 주겠습니까.mp4",
+      "korean": "제대로 가르쳐 주겠습니까?",
+      "russian": "разве он сможет нормально учить?",
+      "new": true,
+      "english": "can he teach properly?",
+      "group": 1
     },
     {
       "video": "video/lesson/그게 지금 선생님한테 할 소리야.webm",
@@ -355,20 +365,22 @@
       "english": "If you want to eat, go stand in line back there."
     },
     {
-      "video": "video/lesson/변론 제대로 못하고요.webm",
-      "videoMp4": "video/lesson/mp4/변론 제대로 못하고요.mp4",
-      "korean": "변론 제대로 못하고요.",
-      "russian": "И защиту нормально не могу вести.",
-      "new": true,
-      "english": "And I can't even make a proper defense."
-    },
-    {
       "video": "video/lesson/변호사가 의뢰인 무서워하면.webm",
       "videoMp4": "video/lesson/mp4/변호사가 의뢰인 무서워하면.mp4",
       "korean": "변호사가 의뢰인 무서워하면",
       "russian": "Если адвокат боится клиента",
       "new": true,
-      "english": "If a lawyer is afraid of their client"
+      "english": "If a lawyer is afraid of their client",
+      "group": 1
+    },
+    {
+      "video": "video/lesson/변론 제대로 못하고요.webm",
+      "videoMp4": "video/lesson/mp4/변론 제대로 못하고요.mp4",
+      "korean": "변론 제대로 못하고요.",
+      "russian": "то и защиту нормально вести не может.",
+      "new": true,
+      "english": "they can't defend properly.",
+      "group": 1
     },
     {
       "video": "video/lesson/부모님한테는 왜 얘기 안 했어.webm",
@@ -610,7 +622,17 @@
       "korean": "이제부터 하루하루가",
       "russian": "С этого момента каждый день",
       "new": true,
-      "english": "From now on, every single day"
+      "english": "From now on, every single day",
+      "group": 1
+    },
+    {
+      "video": "video/lesson/지옥 같을 거야.webm",
+      "videoMp4": "video/lesson/mp4/지옥 같을 거야.mp4",
+      "korean": "지옥 같을 거야",
+      "russian": "Это будет как ад.",
+      "new": true,
+      "english": "It'll be like hell.",
+      "group": 1
     },
     {
       "video": "video/lesson/인강이 훨씬 유익하다.webm",
@@ -643,14 +665,6 @@
       "russian": "Мой перевод в другую школу тоже похож.",
       "new": true,
       "english": "My transfer is similar too."
-    },
-    {
-      "video": "video/lesson/제대로 가르쳐 주겠습니까.webm",
-      "videoMp4": "video/lesson/mp4/제대로 가르쳐 주겠습니까.mp4",
-      "korean": "제대로 가르쳐 주겠습니까?",
-      "russian": "Вы нормально меня научите?",
-      "new": true,
-      "english": "Will you teach me properly?"
     },
     {
       "video": "video/lesson/죽는 것 따위 두렵지 않다.webm",
@@ -691,14 +705,6 @@
       "russian": "Да ты без своего папаши вообще ничего не можешь, ублюдок.",
       "new": true,
       "english": "You can't do anything without your dad, you bastard."
-    },
-    {
-      "video": "video/lesson/지옥 같을 거야.webm",
-      "videoMp4": "video/lesson/mp4/지옥 같을 거야.mp4",
-      "korean": "지옥 같을 거야",
-      "russian": "Это будет как ад.",
-      "new": true,
-      "english": "It'll be like hell."
     },
     {
       "video": "video/lesson/진짜 교육이다.webm",
@@ -1806,7 +1812,8 @@
       "russian": "Я правда виноват.",
       "new": true,
       "english": "I was truly in the wrong.",
-      "timing": "42:55"
+      "timing": "42:55",
+      "group": 1
     },
     {
       "video": "video/lesson/한 번만 용서해 주십시오.webm",
@@ -1815,7 +1822,8 @@
       "russian": "Простите меня хотя бы один раз.",
       "new": true,
       "english": "Please forgive me just this once.",
-      "timing": "42:58"
+      "timing": "42:58",
+      "group": 1
     },
     {
       "video": "video/lesson/이렇게 찾아오시는 거 불법입니다.webm",

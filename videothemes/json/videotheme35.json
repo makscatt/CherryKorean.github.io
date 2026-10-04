@@ -46,15 +46,17 @@
       "korean": "고작 이름뿐인 신분을 얻겠다고?",
       "russian": "И всё ради пустого титула?",
       "new": true,
-      "english": "All for a meaningless title?"
+      "english": "All for a meaningless title?",
+      "group": 1
     },
     {
       "video": "video/crown/고작 이름뿐인 신분이 없어 놓친 기회가 수십이라서요.webm",
       "videoMp4": "video/crown/mp4/고작 이름뿐인 신분이 없어 놓친 기회가 수십이라서요.mp4",
       "korean": "고작 이름뿐인 신분이 없어 놓친 기회가 수십이라서요.",
-      "russian": "Я десятки возможностей упустил только потому, что у меня даже формального статуса нет.",
+      "russian": "Из-за того, что у меня не было даже пустого титула, я упустила десятки возможностей.",
       "new": true,
-      "english": "I've missed dozens of opportunities just because I don't even have a formal status."
+      "english": "I've missed dozens of opportunities just because I don't even have a formal status.",
+      "group": 1
     },
     {
       "video": "video/crown/국정 운영은 잘하고 있는 거지.webm",

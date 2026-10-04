@@ -73,14 +73,16 @@
       "videoMp4": "video/vincenco/mp4/동양인을 모욕 한 대가.mp4",
       "korean": "동양인을 모욕한 대가",
       "russian": "За оскорбление азиата",
-      "english": "The price for insulting an Asian."
+      "english": "The price for insulting an Asian.",
+      "group": 1
     },
     {
       "video": "video/vincenco/곧 치르게 될 거야.webm",
       "videoMp4": "video/vincenco/mp4/곧 치르게 될 거야.mp4",
       "korean": "곧 치르게 될 거야",
       "russian": "Скоро поплатишься",
-      "english": "You'll pay for it soon."
+      "english": "You'll pay for it soon.",
+      "group": 1
     },
     {
       "video": "video/vincenco/이 미개한 새끼야.webm",
@@ -157,14 +159,16 @@
       "videoMp4": "video/vincenco/mp4/변호사 때려치우고.mp4",
       "korean": "변호사 때려치우고",
       "russian": "Бросай адвокатуру",
-      "english": "Quit being a lawyer."
+      "english": "Quit being a lawyer.",
+      "group": 2
     },
     {
       "video": "video/vincenco/배우 해 보는 게 어떻겠니.webm",
       "videoMp4": "video/vincenco/mp4/배우 해 보는 게 어떻겠니.mp4",
       "korean": "배우 해 보는 게 어떻겠니?",
       "russian": "Как насчет актерского?",
-      "english": "How about trying acting?"
+      "english": "How about trying acting?",
+      "group": 2
     },
     {
       "video": "video/vincenco/아버지는 저 못 이겨요.webm",
@@ -287,7 +291,8 @@
       "korean": "5년 전에 왔을 때는",
       "russian": "Когда он приезжал 5 лет назад",
       "new": true,
-      "english": "When he came 5 years ago."
+      "english": "When he came 5 years ago.",
+      "group": 3
     },
     {
       "video": "video/vincenco/변호사 신분이었습니다.webm",
@@ -295,7 +300,26 @@
       "korean": "변호사 신분이었습니다",
       "russian": "Был адвокатом",
       "new": true,
-      "english": "I was a lawyer."
+      "english": "I was a lawyer.",
+      "group": 3
+    },
+    {
+      "video": "video/vincenco/잔잔바리가 아닌 마피야 핵심.webm",
+      "videoMp4": "video/vincenco/mp4/잔잔바리가 아닌 마피야 핵심.mp4",
+      "korean": "잔잔바리가 아닌 마피야 핵심",
+      "russian": "Не мелкая сошка, а ключевая фигура мафии",
+      "new": true,
+      "english": "I'm not a small fry anymore, I'm a key player in the mafia.",
+      "group": 3
+    },
+    {
+      "video": "video/vincenco/콘실리에리가 되어 한국에 온 겁니다.webm",
+      "videoMp4": "video/vincenco/mp4/콘실리에리가 되어 한국에 온 겁니다.mp4",
+      "korean": "콘실리에리가 되어 한국에 온 겁니다",
+      "russian": "Стал консильере и приехал в Корею",
+      "new": true,
+      "english": "I became a consigliere and came to Korea.",
+      "group": 3
     },
     {
       "video": "video/vincenco/그런데 이젠.webm",
@@ -307,22 +331,6 @@
     }
   ],
   "b2": [
-    {
-      "video": "video/vincenco/잔잔바리가 아닌 마피야 핵심.webm",
-      "videoMp4": "video/vincenco/mp4/잔잔바리가 아닌 마피야 핵심.mp4",
-      "korean": "잔잔바리가 아닌 마피야 핵심",
-      "russian": "Не мелкая сошка, а ключевая фигура мафии",
-      "new": true,
-      "english": "I'm not a small fry anymore, I'm a key player in the mafia."
-    },
-    {
-      "video": "video/vincenco/콘실리에리가 되어 한국에 온 겁니다.webm",
-      "videoMp4": "video/vincenco/mp4/콘실리에리가 되어 한국에 온 겁니다.mp4",
-      "korean": "콘실리에리가 되어 한국에 온 겁니다",
-      "russian": "Стал консильере и приехал в Корею",
-      "new": true,
-      "english": "I became a consigliere and came to Korea."
-    },
     {
       "video": "video/vincenco/우리 이제 글로벌 타겟입니다.webm",
       "videoMp4": "video/vincenco/mp4/우리 이제 글로벌 타겟입니다.mp4",

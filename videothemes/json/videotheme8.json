@@ -103,14 +103,16 @@
       "videoMp4": "video/weakhero/mp4/실수라고.mp4",
       "korean": "실수라고",
       "russian": "Я ж сказал, что ошибся",
-      "english": "I said it was a mistake."
+      "english": "I said it was a mistake.",
+      "group": 1
     },
     {
       "video": "video/weakhero/실수라는데 뭘 조심하라는 거.webm",
       "videoMp4": "video/weakhero/mp4/실수라는데 뭘 조심하라는 거.mp4",
       "korean": "실수라는데 뭘 조심하라는 거",
       "russian": "Всмысле будь осторожнее, я ж сказал, что ошибся",
-      "english": "What do you mean be careful? I said it was a mistake."
+      "english": "What do you mean be careful? I said it was a mistake.",
+      "group": 1
     },
     {
       "video": "video/weakhero/사람 존나만 좋네.webm",
@@ -377,17 +379,19 @@
       "video": "video/weakhero/내가 비밀도 지켜 주고.webm",
       "videoMp4": "video/weakhero/mp4/내가 비밀도 지켜 주고.mp4",
       "korean": "내가 비밀도 지켜 주고",
-      "russian": "Я сохраню секрет",
+      "russian": "Я и секрет твой храню",
       "new": true,
-      "english": "I'll keep your secret."
+      "english": "I keep your secret",
+      "group": 1
     },
     {
       "video": "video/weakhero/친구도 해 주니까.webm",
       "videoMp4": "video/weakhero/mp4/친구도 해 주니까.mp4",
       "korean": "친구도 해 주니까",
-      "russian": "Потому что мы друзья",
+      "russian": "и дружу с тобой, так что",
       "new": true,
-      "english": "Because we're friends."
+      "english": "and I'm your friend, so",
+      "group": 1
     },
     {
       "video": "video/weakhero/고마우면.webm",
@@ -395,7 +399,8 @@
       "korean": "고마우면",
       "russian": "Если ты благодарен",
       "new": true,
-      "english": "If you're grateful,"
+      "english": "If you're grateful,",
+      "group": 1
     },
     {
       "video": "video/weakhero/내 부탁 좀 들어 줘라.webm",
@@ -403,7 +408,8 @@
       "korean": "내 부탁 좀 들어 줘라",
       "russian": "Выполни мою просьбу",
       "new": true,
-      "english": "Please do me a favor."
+      "english": "Please do me a favor.",
+      "group": 1
     },
     {
       "video": "video/weakhero/얘기 뭐야.webm",

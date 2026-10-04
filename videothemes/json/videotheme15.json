@@ -269,18 +269,20 @@
       "english": "I didn't even ask for your name."
     },
     {
-      "video": "video/lookism/한숨 푹 자고 가거든요.webm",
-      "videoMp4": "video/lookism/mp4/한숨 푹 자고 가거든요.mp4",
-      "korean": "한숨 푹 자고 가거든요",
-      "russian": "Хорошо спит и идёт",
-      "english": "I’ll just take a good nap and then go."
-    },
-    {
       "video": "video/lookism/항상 알바 가기 전에.webm",
       "videoMp4": "video/lookism/mp4/항상 알바 가기 전에.mp4",
       "korean": "항상 알바 가기 전에",
       "russian": "Всегда перед подработкой",
-      "english": "Always before going to my part-time job."
+      "english": "Always before going to my part-time job.",
+      "group": 1
+    },
+    {
+      "video": "video/lookism/한숨 푹 자고 가거든요.webm",
+      "videoMp4": "video/lookism/mp4/한숨 푹 자고 가거든요.mp4",
+      "korean": "한숨 푹 자고 가거든요",
+      "russian": "Хорошо спит и идёт",
+      "english": "I’ll just take a good nap and then go.",
+      "group": 1
     },
     {
       "video": "video/lookism/혹시 우리의 노래 들어 본 적 있어.webm",

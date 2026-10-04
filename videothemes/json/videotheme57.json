@@ -1,0 +1,1949 @@
+{
+  "b1": [
+    {
+      "drama": "Магазин для убийц 2",
+      "episode": "1",
+      "video": "video/shopforkillers/진짜로 있었어.webm",
+      "videoMp4": "video/shopforkillers/mp4/진짜로 있었어.mp4",
+      "korean": "진짜로 있었어",
+      "russian": "И правда есть.",
+      "new": true,
+      "english": "It really exists.",
+      "timing": "01:07",
+      "isNew": true
+    },
+    {
+      "video": "video/shopforkillers/너 언제부터 여기서 나 감시한 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/너 언제부터 여기서 나 감시한 거야.mp4",
+      "korean": "너 언제부터 여기서 나 감시한 거야",
+      "russian": "С каких пор ты здесь за мной следишь?",
+      "new": true,
+      "english": "Since when have you been watching me here?",
+      "timing": "01:11"
+    },
+    {
+      "video": "video/shopforkillers/지금 나 못 죽이면.webm",
+      "videoMp4": "video/shopforkillers/mp4/지금 나 못 죽이면.mp4",
+      "korean": "지금 나 못 죽이면",
+      "russian": "Если сейчас меня не убьёшь…",
+      "new": true,
+      "english": "If you don't kill me now…",
+      "timing": "01:46",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/내가 니 가족.webm",
+      "videoMp4": "video/shopforkillers/mp4/내가 니 가족.mp4",
+      "korean": "내가 니 가족",
+      "russian": "я твою семью,",
+      "new": true,
+      "english": "your family,",
+      "timing": "01:48",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/모든 인간들 다 죽일 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/모든 인간들 다 죽일 거야.mp4",
+      "korean": "모든 인간들 다 죽일 거야",
+      "russian": "…я убью всех до единого.",
+      "new": true,
+      "english": "…I'll kill every last one of them.",
+      "timing": "01:50",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/시간이 없어.webm",
+      "videoMp4": "video/shopforkillers/mp4/시간이 없어.mp4",
+      "korean": "시간이 없어",
+      "russian": "Времени нет.",
+      "new": true,
+      "english": "There's no time.",
+      "timing": "02:07"
+    },
+    {
+      "video": "video/shopforkillers/오늘 나랑 지옥 가자.webm",
+      "videoMp4": "video/shopforkillers/mp4/오늘 나랑 지옥 가자.mp4",
+      "korean": "오늘 나랑 지옥 가자",
+      "russian": "Сегодня пойдёте со мной в ад.",
+      "new": true,
+      "english": "Today you're going to hell with me.",
+      "timing": "02:19"
+    },
+    {
+      "video": "video/shopforkillers/살아 있었구나야.webm",
+      "videoMp4": "video/shopforkillers/mp4/살아 있었구나야.mp4",
+      "korean": "살아 있었구나야",
+      "russian": "Так ты жив!",
+      "new": true,
+      "english": "So you're alive!",
+      "timing": "08:10",
+      "note": "구나야 — северокорейская разговорная манера: частица 야 после 구나 (стандарт: 살아 있었구나)."
+    },
+    {
+      "video": "video/shopforkillers/여기가 목표야.webm",
+      "videoMp4": "video/shopforkillers/mp4/여기가 목표야.mp4",
+      "korean": "여기가 목표야",
+      "russian": "Цель — здесь.",
+      "new": true,
+      "english": "This is the target.",
+      "timing": "10:05"
+    },
+    {
+      "video": "video/shopforkillers/제대로 된 인생을 살 수 없을 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/제대로 된 인생을 살 수 없을 거야.mp4",
+      "korean": "제대로 된 인생을 살 수 없을 거야",
+      "russian": "Нормальной жизни уже не будет.",
+      "new": true,
+      "english": "A normal life just won't happen.",
+      "timing": "11:10"
+    },
+    {
+      "video": "video/shopforkillers/20분입니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/20분입니다.mp4",
+      "korean": "20분입니다",
+      "russian": "Двадцать минут.",
+      "new": true,
+      "english": "Twenty minutes.",
+      "timing": "12:33"
+    },
+    {
+      "video": "video/shopforkillers/나 너무 빡센데.webm",
+      "videoMp4": "video/shopforkillers/mp4/나 너무 빡센데.mp4",
+      "korean": "나 너무 빡센데",
+      "russian": "Это для меня перебор.",
+      "new": true,
+      "english": "That's too much for me.",
+      "timing": "13:26"
+    },
+    {
+      "video": "video/shopforkillers/아까부터 자꾸 궁시렁궁시렁.webm",
+      "videoMp4": "video/shopforkillers/mp4/아까부터 자꾸 궁시렁궁시렁.mp4",
+      "korean": "아까부터 자꾸 궁시렁궁시렁",
+      "russian": "Всё ворчишь и ворчишь.",
+      "new": true,
+      "english": "You keep grumbling and grumbling.",
+      "timing": "13:27"
+    },
+    {
+      "video": "video/shopforkillers/안 그래도 전화를 드리려고 했는데.webm",
+      "videoMp4": "video/shopforkillers/mp4/안 그래도 전화를 드리려고 했는데.mp4",
+      "korean": "안 그래도 전화를 드리려고 했는데",
+      "russian": "Я как раз собирался вам звонить.",
+      "new": true,
+      "english": "I was just about to call you.",
+      "timing": "17:31"
+    },
+    {
+      "video": "video/shopforkillers/놀라지 말고 들어 주십시오.webm",
+      "videoMp4": "video/shopforkillers/mp4/놀라지 말고 들어 주십시오.mp4",
+      "korean": "놀라지 말고 들어 주십시오",
+      "russian": "Э… только не пугайтесь, выслушайте.",
+      "new": true,
+      "english": "Uh… please don't be alarmed, just listen.",
+      "timing": "17:37",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/정진만 씨가.webm",
+      "videoMp4": "video/shopforkillers/mp4/정진만 씨가.mp4",
+      "korean": "정진만 씨가",
+      "russian": "Господин Чон Джинман",
+      "new": true,
+      "english": "Mr. Jeong Jin-man",
+      "timing": "17:39",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/사망하셨습니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/사망하셨습니다.mp4",
+      "korean": "사망하셨습니다",
+      "russian": "скончался.",
+      "new": true,
+      "english": "has passed away.",
+      "timing": "17:41",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/여기까지 얼마나 걸려.webm",
+      "videoMp4": "video/shopforkillers/mp4/여기까지 얼마나 걸려.mp4",
+      "korean": "여기까지 얼마나 걸려",
+      "russian": "Сколько сюда ехать?",
+      "new": true,
+      "english": "How long does it take to get here?",
+      "timing": "18:53"
+    },
+    {
+      "video": "video/shopforkillers/무슨 문제라도 있습니까.webm",
+      "videoMp4": "video/shopforkillers/mp4/무슨 문제라도 있습니까.mp4",
+      "korean": "무슨 문제라도 있습니까",
+      "russian": "Какие-то проблемы?",
+      "new": true,
+      "english": "Is there some problem?",
+      "timing": "24:03"
+    },
+    {
+      "video": "video/shopforkillers/나 좀 잡아 줘.webm",
+      "videoMp4": "video/shopforkillers/mp4/나 좀 잡아 줘.mp4",
+      "korean": "나 좀 잡아 줘",
+      "russian": "Дай руку.",
+      "new": true,
+      "english": "Give me a hand.",
+      "timing": "25:31"
+    },
+    {
+      "video": "video/shopforkillers/지안이 내가 지킬게.webm",
+      "videoMp4": "video/shopforkillers/mp4/지안이 내가 지킬게.mp4",
+      "korean": "지안이 내가 지킬게",
+      "russian": "Джиан я защищу.",
+      "new": true,
+      "english": "I'll protect Jian.",
+      "timing": "28:38"
+    },
+    {
+      "video": "video/shopforkillers/뭐 하나만 확인 좀 할게.webm",
+      "videoMp4": "video/shopforkillers/mp4/뭐 하나만 확인 좀 할게.mp4",
+      "korean": "뭐 하나만 확인 좀 할게",
+      "russian": "Дай-ка одно проверю.",
+      "new": true,
+      "english": "Let me just check one thing.",
+      "timing": "31:38"
+    },
+    {
+      "video": "video/shopforkillers/12시에 야외 사격장 일정 있습니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/12시에 야외 사격장 일정 있습니다.mp4",
+      "korean": "12시에 야외 사격장 일정 있습니다",
+      "russian": "В 12 у него стрельбы на открытом полигоне.",
+      "new": true,
+      "english": "At 12 he has a session at the outdoor range.",
+      "timing": "32:12"
+    },
+    {
+      "video": "video/shopforkillers/오늘 사격장은 어디로 갔다 오셨나.webm",
+      "videoMp4": "video/shopforkillers/mp4/오늘 사격장은 어디로 갔다 오셨나.mp4",
+      "korean": "오늘 사격장은 어디로 갔다 오셨나",
+      "russian": "На какой полигон вы сегодня ездили?",
+      "new": true,
+      "english": "Which firing range did you go to today?",
+      "timing": "32:37"
+    },
+    {
+      "video": "video/shopforkillers/오늘 이미 통과했잖아.webm",
+      "videoMp4": "video/shopforkillers/mp4/오늘 이미 통과했잖아.mp4",
+      "korean": "오늘 이미 통과했잖아",
+      "russian": "Сегодня же уже проходили.",
+      "new": true,
+      "english": "Already went through today.",
+      "timing": "32:57"
+    },
+    {
+      "video": "video/shopforkillers/점검 다 마쳤습니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/점검 다 마쳤습니다.mp4",
+      "korean": "점검 다 마쳤습니다",
+      "russian": "Проверку закончили.",
+      "new": true,
+      "english": "The inspection is complete.",
+      "timing": "40:04"
+    },
+    {
+      "video": "video/shopforkillers/우리 시스템 해킹당한 적 없는지.webm",
+      "videoMp4": "video/shopforkillers/mp4/우리 시스템 해킹당한 적 없는지.mp4",
+      "korean": "우리 시스템 해킹당한 적 없는지",
+      "russian": "…не взламывали ли нашу систему.",
+      "new": true,
+      "english": "…whether our system has been hacked.",
+      "timing": "41:36"
+    },
+    {
+      "video": "video/shopforkillers/여기 위치 노출됐다.webm",
+      "videoMp4": "video/shopforkillers/mp4/여기 위치 노출됐다.mp4",
+      "korean": "여기 위치 노출됐다",
+      "russian": "Место раскрыто.",
+      "new": true,
+      "english": "This location's been exposed.",
+      "timing": "42:35"
+    },
+    {
+      "video": "video/shopforkillers/정말 죽었다고 생각해.webm",
+      "videoMp4": "video/shopforkillers/mp4/정말 죽었다고 생각해.mp4",
+      "korean": "정말 죽었다고 생각해",
+      "russian": "Правда думаешь, что он умер?",
+      "new": true,
+      "english": "Do you really think he's dead?",
+      "timing": "42:53"
+    },
+    {
+      "video": "video/shopforkillers/지금 뭔가 다가오고 있습니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/지금 뭔가 다가오고 있습니다.mp4",
+      "korean": "지금 뭔가 다가오고 있습니다",
+      "russian": "Сейчас что-то приближается.",
+      "new": true,
+      "english": "Something is approaching right now.",
+      "timing": "50:57"
+    },
+    {
+      "video": "video/shopforkillers/진만아_ 다 왔어.webm",
+      "videoMp4": "video/shopforkillers/mp4/진만아_ 다 왔어.mp4",
+      "korean": "진만아, 다 왔어",
+      "russian": "Джинман, приехали.",
+      "new": true,
+      "english": "Jinman, we're here.",
+      "timing": "51:33"
+    }
+  ],
+  "b2": [
+    {
+      "drama": "Магазин для убийц 2",
+      "episode": "2",
+      "video": "video/shopforkillers/그렇게 절차대로 하니까 못 잡지.webm",
+      "videoMp4": "video/shopforkillers/mp4/그렇게 절차대로 하니까 못 잡지.mp4",
+      "korean": "그렇게 절차대로 하니까 못 잡지",
+      "russian": "Вот так, по процедуре, его и не можем поймать.",
+      "new": true,
+      "english": "That's exactly why we can't catch him — by the book.",
+      "timing": "01:07",
+      "isNew": true
+    },
+    {
+      "video": "video/shopforkillers/하지만 너까지 잃을 수 없었어.webm",
+      "videoMp4": "video/shopforkillers/mp4/하지만 너까지 잃을 수 없었어.mp4",
+      "korean": "하지만 너까지 잃을 수 없었어",
+      "russian": "Но потерять ещё и тебя я не мог.",
+      "new": true,
+      "english": "But I couldn't lose you too.",
+      "timing": "03:51"
+    },
+    {
+      "video": "video/shopforkillers/평범한 사연은 아닐 거라 생각했는데.webm",
+      "videoMp4": "video/shopforkillers/mp4/평범한 사연은 아닐 거라 생각했는데.mp4",
+      "korean": "평범한 사연은 아닐 거라 생각했는데",
+      "russian": "Что история непростая, было понятно.",
+      "new": true,
+      "english": "I figured it wasn't an ordinary story.",
+      "timing": "04:00",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/상상 이상이네.webm",
+      "videoMp4": "video/shopforkillers/mp4/상상 이상이네.mp4",
+      "korean": "상상 이상이네",
+      "russian": "Но это за гранью воображения.",
+      "new": true,
+      "english": "But this is beyond anything I imagined.",
+      "timing": "04:06",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/누군가 죽였겠지.webm",
+      "videoMp4": "video/shopforkillers/mp4/누군가 죽였겠지.mp4",
+      "korean": "누군가 죽였겠지",
+      "russian": "Наверное, ими кого-то убили.",
+      "new": true,
+      "english": "They must have killed someone with them.",
+      "timing": "04:23"
+    },
+    {
+      "video": "video/shopforkillers/그 세계 안에서 최선을 다했지만.webm",
+      "videoMp4": "video/shopforkillers/mp4/그 세계 안에서 최선을 다했지만.mp4",
+      "korean": "그 세계 안에서 최선을 다했지만",
+      "russian": "В этом мире я старался как мог, но…",
+      "new": true,
+      "english": "I did my best in that world, but…",
+      "timing": "04:35",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/널 위험에 빠뜨린 건 내 잘못이다.webm",
+      "videoMp4": "video/shopforkillers/mp4/널 위험에 빠뜨린 건 내 잘못이다.mp4",
+      "korean": "널 위험에 빠뜨린 건 내 잘못이다",
+      "russian": "Что ты оказалась в опасности — моя вина.",
+      "new": true,
+      "english": "Putting you in danger is my fault.",
+      "timing": "04:40",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/이제 와서 사과는 필요 없고.webm",
+      "videoMp4": "video/shopforkillers/mp4/이제 와서 사과는 필요 없고.mp4",
+      "korean": "이제 와서 사과는 필요 없고",
+      "russian": "Извинения теперь уже ни к чему.",
+      "new": true,
+      "english": "I don't need an apology now.",
+      "timing": "04:56",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/난 떠날 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/난 떠날 거야.mp4",
+      "korean": "난 떠날 거야",
+      "russian": "Я уйду.",
+      "new": true,
+      "english": "I'm leaving.",
+      "timing": "05:00",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/인정하고 싶지 않겠지만.webm",
+      "videoMp4": "video/shopforkillers/mp4/인정하고 싶지 않겠지만.mp4",
+      "korean": "인정하고 싶지 않겠지만",
+      "russian": "Не хочется это признавать, но…",
+      "new": true,
+      "english": "You may not want to admit it, but…",
+      "timing": "05:12"
+    },
+    {
+      "video": "video/shopforkillers/선택은 어디까지나 내 몫이라고.webm",
+      "videoMp4": "video/shopforkillers/mp4/선택은 어디까지나 내 몫이라고.mp4",
+      "korean": "선택은 어디까지나 내 몫이라고",
+      "russian": "Мол, выбор всё-таки за мной.",
+      "new": true,
+      "english": "That the choice is mine in the end.",
+      "timing": "05:32"
+    },
+    {
+      "video": "video/shopforkillers/이제부터 넌 스스로 살아남아야 해.webm",
+      "videoMp4": "video/shopforkillers/mp4/이제부터 넌 스스로 살아남아야 해.mp4",
+      "korean": "이제부터 넌 스스로 살아남아야 해",
+      "russian": "Дальше тебе придётся выживать самой.",
+      "new": true,
+      "english": "From now on you have to survive on your own.",
+      "timing": "05:52"
+    },
+    {
+      "video": "video/shopforkillers/아린이 니 뭐 바쁜 일 있나.webm",
+      "videoMp4": "video/shopforkillers/mp4/아린이 니 뭐 바쁜 일 있나.mp4",
+      "korean": "아린이 니 뭐 바쁜 일 있나",
+      "russian": "Арин, у тебя что, дела какие срочные?",
+      "new": true,
+      "english": "Arin, you got somewhere to be?",
+      "timing": "11:55",
+      "note": "니 = 너, 있나? — кёнсанская форма вопроса (стандарт: 아린이 너 뭐 바쁜 일 있어?)."
+    },
+    {
+      "video": "video/shopforkillers/천천히들 마치고 오세요.webm",
+      "videoMp4": "video/shopforkillers/mp4/천천히들 마치고 오세요.mp4",
+      "korean": "천천히들 마치고 오세요",
+      "russian": "Заканчивайте не спеша.",
+      "new": true,
+      "english": "Take your time finishing up.",
+      "timing": "12:42"
+    },
+    {
+      "video": "video/shopforkillers/보기로 한 시간이 3시 아니었습니까.webm",
+      "videoMp4": "video/shopforkillers/mp4/보기로 한 시간이 3시 아니었습니까.mp4",
+      "korean": "보기로 한 시간이 3시 아니었습니까",
+      "russian": "Разве мы договаривались не на три?",
+      "new": true,
+      "english": "Weren't we supposed to meet at three?",
+      "timing": "19:47"
+    },
+    {
+      "video": "video/shopforkillers/뭔 소리 하는지 모르겠네.webm",
+      "videoMp4": "video/shopforkillers/mp4/뭔 소리 하는지 모르겠네.mp4",
+      "korean": "뭔 소리 하는지 모르겠네",
+      "russian": "Не понимаю, о чём речь.",
+      "new": true,
+      "english": "I don't know what you're talking about.",
+      "timing": "19:56"
+    },
+    {
+      "video": "video/shopforkillers/2시 반부터 와서 앉아 있었는데.webm",
+      "videoMp4": "video/shopforkillers/mp4/2시 반부터 와서 앉아 있었는데.mp4",
+      "korean": "2시 반부터 와서 앉아 있었는데",
+      "russian": "Я тут с половины третьего сижу.",
+      "new": true,
+      "english": "I've been sitting here since two-thirty.",
+      "timing": "19:58"
+    },
+    {
+      "video": "video/shopforkillers/어떻게 알았을까요.webm",
+      "videoMp4": "video/shopforkillers/mp4/어떻게 알았을까요.mp4",
+      "korean": "어떻게 알았을까요",
+      "russian": "И как он узнал?",
+      "new": true,
+      "english": "How did he find out?",
+      "timing": "21:35"
+    },
+    {
+      "video": "video/shopforkillers/알면 내가 당황했겠어.webm",
+      "videoMp4": "video/shopforkillers/mp4/알면 내가 당황했겠어.mp4",
+      "korean": "알면 내가 당황했겠어",
+      "russian": "Знал бы — разве растерялся бы?",
+      "new": true,
+      "english": "If I knew, would I be this flustered?",
+      "timing": "21:39"
+    },
+    {
+      "video": "video/shopforkillers/오늘 세차하는 날이었네.webm",
+      "videoMp4": "video/shopforkillers/mp4/오늘 세차하는 날이었네.mp4",
+      "korean": "오늘 세차하는 날이었네",
+      "russian": "А, сегодня же день мойки.",
+      "new": true,
+      "english": "Oh, today was car wash day.",
+      "timing": "21:59"
+    },
+    {
+      "video": "video/shopforkillers/웬 소란들이야.webm",
+      "videoMp4": "video/shopforkillers/mp4/웬 소란들이야.mp4",
+      "korean": "웬 소란들이야",
+      "russian": "Что за шум?",
+      "new": true,
+      "english": "What's all this commotion?",
+      "timing": "25:47"
+    },
+    {
+      "video": "video/shopforkillers/다섯 시간 after 5 hours 우리 나가요.webm",
+      "videoMp4": "video/shopforkillers/mp4/다섯 시간 after 5 hours 우리 나가요.mp4",
+      "korean": "다섯 시간 after 5 hours 우리 나가요",
+      "russian": "Через пять часов мы выходим.",
+      "new": true,
+      "english": "In five hours we go out.",
+      "timing": "26:39",
+      "note": "Говорит вперемешку с английским («after 5 hours»): корейская часть — 다섯 시간 후에 우리 나가요."
+    },
+    {
+      "video": "video/shopforkillers/아이고_ 우리 똥강아지.webm",
+      "videoMp4": "video/shopforkillers/mp4/아이고_ 우리 똥강아지.mp4",
+      "korean": "아이고, 우리 똥강아지",
+      "russian": "Ой, наш маленький проказник!",
+      "new": true,
+      "english": "Aww, there's my little rascal!",
+      "timing": "31:49"
+    },
+    {
+      "video": "video/shopforkillers/원래 엄마 마음이라는 게 다 그런 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/원래 엄마 마음이라는 게 다 그런 거야.mp4",
+      "korean": "원래 엄마 마음이라는 게 다 그런 거야",
+      "russian": "Материнское сердце — оно всегда такое.",
+      "new": true,
+      "english": "That's just how a mother's heart is.",
+      "timing": "32:09"
+    },
+    {
+      "video": "video/shopforkillers/네 엄마 살아 있을 때 잘해라.webm",
+      "videoMp4": "video/shopforkillers/mp4/네 엄마 살아 있을 때 잘해라.mp4",
+      "korean": "네 엄마 살아 있을 때 잘해라",
+      "russian": "Цени маму, пока она жива.",
+      "new": true,
+      "english": "Treat your mom well while she's alive.",
+      "timing": "32:32"
+    },
+    {
+      "video": "video/shopforkillers/아_ 저 핸드폰 망가져서요.webm",
+      "videoMp4": "video/shopforkillers/mp4/아_ 저 핸드폰 망가져서요.mp4",
+      "korean": "아, 저 핸드폰 망가져서요",
+      "russian": "У меня телефон сломался.",
+      "new": true,
+      "english": "My phone broke.",
+      "timing": "37:17"
+    },
+    {
+      "video": "video/shopforkillers/부담 갖지 말고 연락 주세요.webm",
+      "videoMp4": "video/shopforkillers/mp4/부담 갖지 말고 연락 주세요.mp4",
+      "korean": "부담 갖지 말고 연락 주세요",
+      "russian": "Не стесняйтесь, звоните.",
+      "new": true,
+      "english": "Don't hesitate to call.",
+      "timing": "38:16"
+    },
+    {
+      "video": "video/shopforkillers/이런 날씨에 여객선 못 뜹니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/이런 날씨에 여객선 못 뜹니다.mp4",
+      "korean": "이런 날씨에 여객선 못 뜹니다",
+      "russian": "В такую погоду паромы не ходят.",
+      "new": true,
+      "english": "Ferries can't sail in this weather.",
+      "timing": "43:24"
+    },
+    {
+      "video": "video/shopforkillers/제 번호 엄청 쉽거든예.webm",
+      "videoMp4": "video/shopforkillers/mp4/제 번호 엄청 쉽거든예.mp4",
+      "korean": "제 번호 엄청 쉽거든예",
+      "russian": "У меня номер очень простой.",
+      "new": true,
+      "english": "My number is really easy.",
+      "timing": "43:56",
+      "note": "쉽거든예 — кёнсанская вежливая частица 예 (стандарт: 쉽거든요)."
+    },
+    {
+      "video": "video/shopforkillers/예_ 알겠십니더.webm",
+      "videoMp4": "video/shopforkillers/mp4/예_ 알겠십니더.mp4",
+      "korean": "예, 알겠십니더",
+      "russian": "Да, понял.",
+      "new": true,
+      "english": "Yes, understood.",
+      "timing": "46:11",
+      "note": "알겠십니더 — кёнсанский вариант 알겠습니다."
+    },
+    {
+      "video": "video/shopforkillers/왜 이렇게 오래 걸려.webm",
+      "videoMp4": "video/shopforkillers/mp4/왜 이렇게 오래 걸려.mp4",
+      "korean": "왜 이렇게 오래 걸려",
+      "russian": "Почему так долго?",
+      "new": true,
+      "english": "Why is it taking so long?",
+      "timing": "47:18"
+    }
+  ],
+  "b3": [
+    {
+      "drama": "Магазин для убийц 2",
+      "episode": "3",
+      "video": "video/shopforkillers/괜찮다잖아요.webm",
+      "videoMp4": "video/shopforkillers/mp4/괜찮다잖아요.mp4",
+      "korean": "괜찮다잖아요",
+      "russian": "Говорят же, что всё нормально.",
+      "new": true,
+      "english": "They said it’s fine.",
+      "timing": "11:32",
+      "isNew": true
+    },
+    {
+      "video": "video/shopforkillers/나 하나도 안 궁금하다고.webm",
+      "videoMp4": "video/shopforkillers/mp4/나 하나도 안 궁금하다고.mp4",
+      "korean": "나 하나도 안 궁금하다고",
+      "russian": "Говорю же, мне ни капли не интересно.",
+      "new": true,
+      "english": "I said I’m not curious at all.",
+      "timing": "11:35",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/예_ 알겠십니더_1.webm",
+      "videoMp4": "video/shopforkillers/mp4/예_ 알겠십니더_1.mp4",
+      "korean": "예, 알겠십니더",
+      "russian": "Да, ясно.",
+      "new": true,
+      "english": "Yes, understood.",
+      "timing": "11:40",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/귀국은 대사관에서 도와드릴 겁니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/귀국은 대사관에서 도와드릴 겁니다.mp4",
+      "korean": "귀국은 대사관에서 도와드릴 겁니다",
+      "russian": "С возвращением на родину вам поможет посольство.",
+      "new": true,
+      "english": "The embassy will help you get back home.",
+      "timing": "17:41"
+    },
+    {
+      "video": "video/shopforkillers/인사를 못 했습니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/인사를 못 했습니다.mp4",
+      "korean": "인사를 못 했습니다",
+      "russian": "Поздороваться так и не получилось.",
+      "new": true,
+      "english": "I didn’t get to say hello.",
+      "timing": "18:49"
+    },
+    {
+      "video": "video/shopforkillers/한국에서든_ 일본에서든.webm",
+      "videoMp4": "video/shopforkillers/mp4/한국에서든_ 일본에서든.mp4",
+      "korean": "한국에서든, 일본에서든",
+      "russian": "Хоть в Корее, хоть в Японии.",
+      "new": true,
+      "english": "Whether in Korea or in Japan.",
+      "timing": "20:38"
+    },
+    {
+      "video": "video/shopforkillers/너희들이야.webm",
+      "videoMp4": "video/shopforkillers/mp4/너희들이야.mp4",
+      "korean": "너희들이야?",
+      "russian": "Это вы?",
+      "new": true,
+      "english": "It’s you guys?",
+      "timing": "22:09"
+    },
+    {
+      "video": "video/shopforkillers/병원에는 꼭 가 봐야 됩니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/병원에는 꼭 가 봐야 됩니다.mp4",
+      "korean": "병원에는 꼭 가 봐야 됩니다",
+      "russian": "В больницу сходить нужно обязательно.",
+      "new": true,
+      "english": "You really need to go to the hospital.",
+      "timing": "29:11"
+    },
+    {
+      "video": "video/shopforkillers/그게 내가 한 일입니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/그게 내가 한 일입니다.mp4",
+      "korean": "그게 내가 한 일입니다",
+      "russian": "Это моих рук дело.",
+      "new": true,
+      "english": "That’s what I did.",
+      "timing": "30:09"
+    },
+    {
+      "video": "video/shopforkillers/이거 마시면서 하세요.webm",
+      "videoMp4": "video/shopforkillers/mp4/이거 마시면서 하세요.mp4",
+      "korean": "이거 마시면서 하세요",
+      "russian": "Вот, попейте, пока работаете.",
+      "new": true,
+      "english": "Have this while you work.",
+      "timing": "31:28"
+    },
+    {
+      "video": "video/shopforkillers/이런 외딴곳에서 출퇴근은 어떻게들 하세요.webm",
+      "videoMp4": "video/shopforkillers/mp4/이런 외딴곳에서 출퇴근은 어떻게들 하세요.mp4",
+      "korean": "이런 외딴곳에서 출퇴근은 어떻게들 하세요?",
+      "russian": "Как вы вообще добираетесь на работу в такую глушь?",
+      "new": true,
+      "english": "How do you all get to work out in the middle of nowhere?",
+      "timing": "31:39"
+    },
+    {
+      "video": "video/shopforkillers/그_ 한 시간마다 셔틀버스가 시내까지 운행해서요.webm",
+      "videoMp4": "video/shopforkillers/mp4/그_ 한 시간마다 셔틀버스가 시내까지 운행해서요.mp4",
+      "korean": "그, 한 시간마다 셔틀버스가 시내까지 운행해서요",
+      "russian": "Ну, каждый час до города ходит шаттл.",
+      "new": true,
+      "english": "Well, there’s a shuttle bus into town every hour.",
+      "timing": "31:42"
+    },
+    {
+      "video": "video/shopforkillers/씨발 새끼가.webm",
+      "videoMp4": "video/shopforkillers/mp4/씨발 새끼가.mp4",
+      "korean": "씨발 새끼가",
+      "russian": "Сукин сын.",
+      "new": true,
+      "english": "Son of a bitch.",
+      "timing": "32:13",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/뭣이여.webm",
+      "videoMp4": "video/shopforkillers/mp4/뭣이여.mp4",
+      "korean": "뭣이여?",
+      "russian": "Чего?!",
+      "new": true,
+      "english": "What?!",
+      "timing": "32:15",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/누구세요.webm",
+      "videoMp4": "video/shopforkillers/mp4/누구세요.mp4",
+      "korean": "누구세요?",
+      "russian": "Вы кто?",
+      "new": true,
+      "english": "Who are you?",
+      "timing": "33:37"
+    },
+    {
+      "video": "video/shopforkillers/정진만도 못 잡고.webm",
+      "videoMp4": "video/shopforkillers/mp4/정진만도 못 잡고.mp4",
+      "korean": "정진만도 못 잡고",
+      "russian": "И Чон Джинмана не поймали.",
+      "new": true,
+      "english": "We didn’t even catch Jeong Jin-man.",
+      "timing": "39:58",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/지옥 가게 생겼네.webm",
+      "videoMp4": "video/shopforkillers/mp4/지옥 가게 생겼네.mp4",
+      "korean": "지옥 가게 생겼네",
+      "russian": "Похоже, прямая дорога в ад.",
+      "new": true,
+      "english": "Looks like it’s straight to hell.",
+      "timing": "40:00",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/지옥에 데리고 갈 수 있겠다.webm",
+      "videoMp4": "video/shopforkillers/mp4/지옥에 데리고 갈 수 있겠다.mp4",
+      "korean": "지옥에 데리고 갈 수 있겠다",
+      "russian": "Смогу утащить его с собой в ад.",
+      "new": true,
+      "english": "I could drag him to hell with me.",
+      "timing": "40:09"
+    },
+    {
+      "video": "video/shopforkillers/オレ_K-POP大好き _орэ_ кей-поп дайсуки.webm",
+      "videoMp4": "video/shopforkillers/mp4/オレ_K-POP大好き _орэ_ кей-поп дайсуки.mp4",
+      "korean": "オレ、K-POP大好き (орэ, кей-поп дайсуки)",
+      "russian": "Я обожаю K-POP.",
+      "new": true,
+      "english": "I love K-pop.",
+      "timing": "40:23",
+      "note": "японский",
+      "lang": "ja"
+    },
+    {
+      "video": "video/shopforkillers/집 앞에 갖다 놓을게요.webm",
+      "videoMp4": "video/shopforkillers/mp4/집 앞에 갖다 놓을게요.mp4",
+      "korean": "집 앞에 갖다 놓을게요",
+      "russian": "Оставлю у вашей двери.",
+      "new": true,
+      "english": "I’ll leave it at your door.",
+      "timing": "42:26"
+    },
+    {
+      "video": "video/shopforkillers/물어봐라_ 내가 다 대꾸해 줄게.webm",
+      "videoMp4": "video/shopforkillers/mp4/물어봐라_ 내가 다 대꾸해 줄게.mp4",
+      "korean": "물어봐라, 내가 다 대꾸해 줄게",
+      "russian": "Спрашивай, я на всё отвечу.",
+      "new": true,
+      "english": "Go ahead and ask, I’ll answer everything.",
+      "timing": "43:34",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/그래_ 물어봐라.webm",
+      "videoMp4": "video/shopforkillers/mp4/그래_ 물어봐라.mp4",
+      "korean": "그래, 물어봐라",
+      "russian": "Давай, спрашивай.",
+      "new": true,
+      "english": "Go on, ask.",
+      "timing": "43:36",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/그래서 맨날 뛰는 거예요.webm",
+      "videoMp4": "video/shopforkillers/mp4/그래서 맨날 뛰는 거예요.mp4",
+      "korean": "그래서 맨날 뛰는 거예요",
+      "russian": "Вот поэтому я каждый день и бегаю.",
+      "new": true,
+      "english": "That’s why I run every day.",
+      "timing": "48:17"
+    },
+    {
+      "video": "video/shopforkillers/나는 삼촌이랑 살면서.webm",
+      "videoMp4": "video/shopforkillers/mp4/나는 삼촌이랑 살면서.mp4",
+      "korean": "나는 삼촌이랑 살면서",
+      "russian": "А я, живя с дядей…",
+      "new": true,
+      "english": "Living with my uncle, I…",
+      "timing": "54:26",
+      "group": 5
+    },
+    {
+      "video": "video/shopforkillers/한 번도.webm",
+      "videoMp4": "video/shopforkillers/mp4/한 번도.mp4",
+      "korean": "한 번도",
+      "russian": "Ни разу",
+      "new": true,
+      "english": "not once",
+      "timing": "54:31",
+      "group": 5
+    },
+    {
+      "video": "video/shopforkillers/사랑받는다는 느낌.webm",
+      "videoMp4": "video/shopforkillers/mp4/사랑받는다는 느낌.mp4",
+      "korean": "사랑받는다는 느낌",
+      "russian": "чувства, что меня любят,",
+      "new": true,
+      "english": "the feeling of being loved —",
+      "timing": "54:34",
+      "group": 5
+    },
+    {
+      "video": "video/shopforkillers/받아 본 적 없어.webm",
+      "videoMp4": "video/shopforkillers/mp4/받아 본 적 없어.mp4",
+      "korean": "받아 본 적 없어",
+      "russian": "не было.",
+      "new": true,
+      "english": "I never had it.",
+      "timing": "54:39",
+      "group": 5
+    },
+    {
+      "video": "video/shopforkillers/그런 느낌 있잖아.webm",
+      "videoMp4": "video/shopforkillers/mp4/그런 느낌 있잖아.mp4",
+      "korean": "그런 느낌 있잖아",
+      "russian": "Ну, знаешь это чувство.",
+      "new": true,
+      "english": "You know that feeling.",
+      "timing": "54:48"
+    },
+    {
+      "video": "video/shopforkillers/그래서 강하게 키우려고 한 건데.webm",
+      "videoMp4": "video/shopforkillers/mp4/그래서 강하게 키우려고 한 건데.mp4",
+      "korean": "그래서 강하게 키우려고 한 건데",
+      "russian": "Потому и растили в строгости.",
+      "new": true,
+      "english": "That’s why the idea was to raise you tough.",
+      "timing": "55:00"
+    },
+    {
+      "video": "video/shopforkillers/처음엔 몰랐는데.webm",
+      "videoMp4": "video/shopforkillers/mp4/처음엔 몰랐는데.mp4",
+      "korean": "처음엔 몰랐는데",
+      "russian": "Поначалу было невдомёк.",
+      "new": true,
+      "english": "I didn’t realize it at first.",
+      "timing": "55:40",
+      "group": 6
+    },
+    {
+      "video": "video/shopforkillers/여기 할머니들 엄청 정이 많으셔.webm",
+      "videoMp4": "video/shopforkillers/mp4/여기 할머니들 엄청 정이 많으셔.mp4",
+      "korean": "여기 할머니들 엄청 정이 많으셔",
+      "russian": "Здешние бабушки такие душевные.",
+      "new": true,
+      "english": "The grannies here are so warm-hearted.",
+      "timing": "55:42",
+      "group": 6
+    },
+    {
+      "video": "video/shopforkillers/사랑받고 있지 않냐고.webm",
+      "videoMp4": "video/shopforkillers/mp4/사랑받고 있지 않냐고.mp4",
+      "korean": "사랑받고 있지 않냐고",
+      "russian": "Мол, тебя ведь любят, разве нет?",
+      "new": true,
+      "english": "Like, aren’t you loved?",
+      "timing": "55:57"
+    },
+    {
+      "video": "video/shopforkillers/우리 총을 빼돌린 놈이.webm",
+      "videoMp4": "video/shopforkillers/mp4/우리 총을 빼돌린 놈이.mp4",
+      "korean": "우리 총을 빼돌린 놈이",
+      "russian": "Тот тип, что увёл наши стволы…",
+      "new": true,
+      "english": "The guy who stole our guns…",
+      "timing": "57:12"
+    },
+    {
+      "video": "video/shopforkillers/몸 숙여서 앞으로 무작정 뛰어.webm",
+      "videoMp4": "video/shopforkillers/mp4/몸 숙여서 앞으로 무작정 뛰어.mp4",
+      "korean": "몸 숙여서 앞으로 무작정 뛰어",
+      "russian": "Пригнись и беги вперёд, не раздумывая.",
+      "new": true,
+      "english": "Keep your head down and just run forward.",
+      "timing": "57:30"
+    }
+  ],
+  "b4": [
+    {
+      "drama": "Магазин для убийц 2",
+      "episode": "4",
+      "video": "video/shopforkillers/우리도 털린 거 같은데.webm",
+      "videoMp4": "video/shopforkillers/mp4/우리도 털린 거 같은데.mp4",
+      "korean": "우리도 털린 거 같은데?",
+      "russian": "Похоже, нас тоже накрыли?",
+      "new": true,
+      "english": "Looks like they got us too?",
+      "timing": "00:39",
+      "isNew": true
+    },
+    {
+      "video": "video/shopforkillers/내 앞에서 걸리적거리지나 마.webm",
+      "videoMp4": "video/shopforkillers/mp4/내 앞에서 걸리적거리지나 마.mp4",
+      "korean": "내 앞에서 걸리적거리지나 마",
+      "russian": "Главное — не путайся у меня под ногами.",
+      "new": true,
+      "english": "Just don’t get in my way.",
+      "timing": "01:49",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/네가 먼저 죽어.webm",
+      "videoMp4": "video/shopforkillers/mp4/네가 먼저 죽어.mp4",
+      "korean": "네가 먼저 죽어",
+      "russian": "первым умрёшь ты.",
+      "new": true,
+      "english": "You'll die first.",
+      "timing": "01:53",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/밤에 수고가 많으십니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/밤에 수고가 많으십니다.mp4",
+      "korean": "밤에 수고가 많으십니다",
+      "russian": "Спасибо, что работаете допоздна.",
+      "new": true,
+      "english": "Thanks for working so late.",
+      "timing": "02:33"
+    },
+    {
+      "video": "video/shopforkillers/베일을 말하는 겁니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/베일을 말하는 겁니다.mp4",
+      "korean": "베일을 말하는 겁니다",
+      "russian": "Я говорю о Бейле.",
+      "new": true,
+      "english": "I'm talking about Bale.",
+      "timing": "06:02"
+    },
+    {
+      "video": "video/shopforkillers/베일은 그냥 사냥개 같은 놈이야.webm",
+      "videoMp4": "video/shopforkillers/mp4/베일은 그냥 사냥개 같은 놈이야.mp4",
+      "korean": "베일은 그냥 사냥개 같은 놈이야",
+      "russian": "Бейл — просто охотничий пёс.",
+      "new": true,
+      "english": "Bale’s just a hunting dog.",
+      "timing": "06:07"
+    },
+    {
+      "video": "video/shopforkillers/그런 게 두려우면.webm",
+      "videoMp4": "video/shopforkillers/mp4/그런 게 두려우면.mp4",
+      "korean": "그런 게 두려우면",
+      "russian": "Если боишься такого…",
+      "new": true,
+      "english": "If you’re afraid of that…",
+      "timing": "07:21",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/이런 일 그만두고 퇴사해야지.webm",
+      "videoMp4": "video/shopforkillers/mp4/이런 일 그만두고 퇴사해야지.mp4",
+      "korean": "이런 일 그만두고 퇴사해야지",
+      "russian": "бросай это дело и увольняйся.",
+      "new": true,
+      "english": "then give this up and quit your job.",
+      "timing": "07:23",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/내가 말했지.webm",
+      "videoMp4": "video/shopforkillers/mp4/내가 말했지.mp4",
+      "korean": "내가 말했지?",
+      "russian": "Я же говорил?",
+      "new": true,
+      "english": "Didn’t I tell you?",
+      "timing": "14:15"
+    },
+    {
+      "video": "video/shopforkillers/여기 지금 녹화되고 있습니까.webm",
+      "videoMp4": "video/shopforkillers/mp4/여기 지금 녹화되고 있습니까.mp4",
+      "korean": "여기 지금 녹화되고 있습니까?",
+      "russian": "Здесь сейчас идёт запись?",
+      "new": true,
+      "english": "Is this being recorded right now?",
+      "timing": "19:47"
+    },
+    {
+      "video": "video/shopforkillers/그럼 몇 시간 후에 큐 작전은 어떡하시려고요.webm",
+      "videoMp4": "video/shopforkillers/mp4/그럼 몇 시간 후에 큐 작전은 어떡하시려고요.mp4",
+      "korean": "그럼 몇 시간 후에 큐 작전은 어떡하시려고요?",
+      "russian": "А как быть с операцией Кью через пару часов?",
+      "new": true,
+      "english": "Then what about Q’s operation in a few hours?",
+      "timing": "20:05"
+    },
+    {
+      "video": "video/shopforkillers/아_ 배고파.webm",
+      "videoMp4": "video/shopforkillers/mp4/아_ 배고파.mp4",
+      "korean": "아, 배고파",
+      "russian": "Ох, есть хочу.",
+      "new": true,
+      "english": "Oh, I'm hungry.",
+      "timing": "20:11"
+    },
+    {
+      "video": "video/shopforkillers/일본에서 오자마자 개죽음이네요.webm",
+      "videoMp4": "video/shopforkillers/mp4/일본에서 오자마자 개죽음이네요.mp4",
+      "korean": "일본에서 오자마자 개죽음이네요",
+      "russian": "Только приехал из Японии — и сдох как собака.",
+      "new": true,
+      "english": "Came from Japan just to die like a dog.",
+      "timing": "20:50"
+    },
+    {
+      "video": "video/shopforkillers/저 남자애 저렇게 그냥 내버려둬도 괜찮을까요.webm",
+      "videoMp4": "video/shopforkillers/mp4/저 남자애 저렇게 그냥 내버려둬도 괜찮을까요.mp4",
+      "korean": "저 남자애 저렇게 그냥 내버려둬도 괜찮을까요?",
+      "russian": "Можно вот так просто оставить этого парня?",
+      "new": true,
+      "english": "Is it really okay to just leave that boy like that?",
+      "timing": "25:09"
+    },
+    {
+      "video": "video/shopforkillers/우리가 지금 이럴 시간이.webm",
+      "videoMp4": "video/shopforkillers/mp4/우리가 지금 이럴 시간이.mp4",
+      "korean": "우리가 지금 이럴 시간이…",
+      "russian": "Нам сейчас не до этого…",
+      "new": true,
+      "english": "We don’t have time for this…",
+      "timing": "26:54"
+    },
+    {
+      "video": "video/shopforkillers/너 최선을 다해서 지켜 준 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/너 최선을 다해서 지켜 준 거야.mp4",
+      "korean": "너 최선을 다해서 지켜 준 거야",
+      "russian": "Он изо всех сил тебя защищал.",
+      "new": true,
+      "english": "He did everything he could to protect you.",
+      "timing": "28:14"
+    },
+    {
+      "video": "video/shopforkillers/알아_ 나도 안다고.webm",
+      "videoMp4": "video/shopforkillers/mp4/알아_ 나도 안다고.mp4",
+      "korean": "알아, 나도 안다고",
+      "russian": "Знаю, я и сама знаю.",
+      "new": true,
+      "english": "I know. I know that.",
+      "timing": "28:16"
+    },
+    {
+      "video": "video/shopforkillers/근데 내가 내 의지대로 산 적은 한 번도 없잖아.webm",
+      "videoMp4": "video/shopforkillers/mp4/근데 내가 내 의지대로 산 적은 한 번도 없잖아.mp4",
+      "korean": "근데 내가 내 의지대로 산 적은 한 번도 없잖아",
+      "russian": "Но я ни разу не жила по своей воле.",
+      "new": true,
+      "english": "But I’ve never once lived by my own choice.",
+      "timing": "28:26"
+    },
+    {
+      "video": "video/shopforkillers/그것도 내가 뭘 한 것도 아니고.webm",
+      "videoMp4": "video/shopforkillers/mp4/그것도 내가 뭘 한 것도 아니고.mp4",
+      "korean": "그것도 내가 뭘 한 것도 아니고",
+      "russian": "И ведь я сама ничего не натворила.",
+      "new": true,
+      "english": "And it’s not like I did anything.",
+      "timing": "28:33",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/다 삼촌이 저지른 과거 때문에.webm",
+      "videoMp4": "video/shopforkillers/mp4/다 삼촌이 저지른 과거 때문에.mp4",
+      "korean": "다 삼촌이 저지른 과거 때문에…",
+      "russian": "Всё из-за дядиного прошлого…",
+      "new": true,
+      "english": "It’s all because of Uncle’s past…",
+      "timing": "28:36",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/그래도 여기 계속 있으면.webm",
+      "videoMp4": "video/shopforkillers/mp4/그래도 여기 계속 있으면.mp4",
+      "korean": "그래도 여기 계속 있으면",
+      "russian": "И всё же, если останешься здесь,",
+      "new": true,
+      "english": "Still, if you stay here,",
+      "timing": "28:43",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/우진이나 다른 주민들 다 위험해지잖아.webm",
+      "videoMp4": "video/shopforkillers/mp4/우진이나 다른 주민들 다 위험해지잖아.mp4",
+      "korean": "우진이나 다른 주민들 다 위험해지잖아",
+      "russian": "Уджин и остальные жители окажутся в опасности.",
+      "new": true,
+      "english": "Woojin and the other residents will all be in danger.",
+      "timing": "28:48",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/잘 들어.webm",
+      "videoMp4": "video/shopforkillers/mp4/잘 들어.mp4",
+      "korean": "잘 들어",
+      "russian": "Слушай внимательно.",
+      "new": true,
+      "english": "Listen carefully.",
+      "timing": "32:01",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/내가 여기서 최대한 시간을 끌 거니까.webm",
+      "videoMp4": "video/shopforkillers/mp4/내가 여기서 최대한 시간을 끌 거니까.mp4",
+      "korean": "내가 여기서 최대한 시간을 끌 거니까",
+      "russian": "Я задержу их тут как можно дольше.",
+      "new": true,
+      "english": "I’ll stall them here as long as I can.",
+      "timing": "32:02",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/넌 우진이랑 부둣가로 먼저 가.webm",
+      "videoMp4": "video/shopforkillers/mp4/넌 우진이랑 부둣가로 먼저 가.mp4",
+      "korean": "넌 우진이랑 부둣가로 먼저 가",
+      "russian": "А ты с У Джином иди к причалу.",
+      "new": true,
+      "english": "You go to the docks with Woojin.",
+      "timing": "32:04",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/거기 JW라고 써진 배가 있어.webm",
+      "videoMp4": "video/shopforkillers/mp4/거기 JW라고 써진 배가 있어.mp4",
+      "korean": "거기 JW라고 써진 배가 있어",
+      "russian": "Там есть лодка с надписью JW.",
+      "new": true,
+      "english": "There's a boat there with JW written on it.",
+      "timing": "32:06",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/걱정 마.webm",
+      "videoMp4": "video/shopforkillers/mp4/걱정 마.mp4",
+      "korean": "걱정 마",
+      "russian": "Не волнуйся.",
+      "new": true,
+      "english": "Don’t worry.",
+      "timing": "32:32"
+    }
+  ],
+  "b5": [
+    {
+      "drama": "Магазин для убийц 2",
+      "episode": "5",
+      "video": "video/shopforkillers/그_ 30분 후에 원장님 회진 있어요.webm",
+      "videoMp4": "video/shopforkillers/mp4/그_ 30분 후에 원장님 회진 있어요.mp4",
+      "korean": "그, 30분 후에 원장님 회진 있어요",
+      "russian": "Через полчаса обход главврача.",
+      "new": true,
+      "english": "The director will be doing rounds in thirty minutes.",
+      "timing": "03:04",
+      "isNew": true
+    },
+    {
+      "video": "video/shopforkillers/새로운 신분증입니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/새로운 신분증입니다.mp4",
+      "korean": "새로운 신분증입니다",
+      "russian": "Ваши новые документы.",
+      "new": true,
+      "english": "Here's your new ID.",
+      "timing": "03:32"
+    },
+    {
+      "video": "video/shopforkillers/그런다고 딱히 달라지는 것도 없고.webm",
+      "videoMp4": "video/shopforkillers/mp4/그런다고 딱히 달라지는 것도 없고.mp4",
+      "korean": "그런다고 딱히 달라지는 것도 없고",
+      "russian": "Это всё равно ничего не изменит.",
+      "new": true,
+      "english": "It won't really change anything anyway.",
+      "timing": "04:04"
+    },
+    {
+      "video": "video/shopforkillers/당장 받아들이기 힘드시겠지만.webm",
+      "videoMp4": "video/shopforkillers/mp4/당장 받아들이기 힘드시겠지만.mp4",
+      "korean": "당장 받아들이기 힘드시겠지만",
+      "russian": "Понимаю, сейчас это трудно принять, но…",
+      "new": true,
+      "english": "I know it's hard to accept right now, but…",
+      "timing": "04:18"
+    },
+    {
+      "video": "video/shopforkillers/배가 암초에 처박혔고.webm",
+      "videoMp4": "video/shopforkillers/mp4/배가 암초에 처박혔고.mp4",
+      "korean": "배가 암초에 처박혔고",
+      "russian": "Лодка налетела на риф,",
+      "new": true,
+      "english": "The boat hit a reef,",
+      "timing": "04:32",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/물이 차 가라앉기 시작했어요.webm",
+      "videoMp4": "video/shopforkillers/mp4/물이 차 가라앉기 시작했어요.mp4",
+      "korean": "물이 차 가라앉기 시작했어요",
+      "russian": "набрала воды и начала тонуть.",
+      "new": true,
+      "english": "took on water and started to sink.",
+      "timing": "04:36",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/눈 떠 보니 병원이었어요.webm",
+      "videoMp4": "video/shopforkillers/mp4/눈 떠 보니 병원이었어요.mp4",
+      "korean": "눈 떠 보니 병원이었어요",
+      "russian": "Открыла глаза — а я уже в больнице.",
+      "new": true,
+      "english": "When I opened my eyes, I was in the hospital.",
+      "timing": "05:08"
+    },
+    {
+      "video": "video/shopforkillers/할머니_ 죄송해요.webm",
+      "videoMp4": "video/shopforkillers/mp4/할머니_ 죄송해요.mp4",
+      "korean": "할머니, 죄송해요",
+      "russian": "Бабушка, простите.",
+      "new": true,
+      "english": "Grandma, I'm sorry.",
+      "timing": "08:27"
+    },
+    {
+      "video": "video/shopforkillers/스스로 탓해 봤자.webm",
+      "videoMp4": "video/shopforkillers/mp4/스스로 탓해 봤자.mp4",
+      "korean": "스스로 탓해 봤자",
+      "russian": "Сколько себя ни вини…",
+      "new": true,
+      "english": "No matter how much you blame yourself…",
+      "timing": "08:50"
+    },
+    {
+      "video": "video/shopforkillers/지금은 힘들겠지만.webm",
+      "videoMp4": "video/shopforkillers/mp4/지금은 힘들겠지만.mp4",
+      "korean": "지금은 힘들겠지만",
+      "russian": "Сейчас тебе тяжело, но…",
+      "new": true,
+      "english": "It's hard right now, but…",
+      "timing": "09:00"
+    },
+    {
+      "video": "video/shopforkillers/많이 힘들고 피곤할 텐데.webm",
+      "videoMp4": "video/shopforkillers/mp4/많이 힘들고 피곤할 텐데.mp4",
+      "korean": "많이 힘들고 피곤할 텐데",
+      "russian": "Ты, наверное, совсем без сил.",
+      "new": true,
+      "english": "You must be worn out.",
+      "timing": "18:07"
+    },
+    {
+      "video": "video/shopforkillers/카메라 같은 거 설치해 놓은 거 아니지.webm",
+      "videoMp4": "video/shopforkillers/mp4/카메라 같은 거 설치해 놓은 거 아니지.mp4",
+      "korean": "카메라 같은 거 설치해 놓은 거 아니지?",
+      "russian": "Камеры тут случайно не понаставил?",
+      "new": true,
+      "english": "You didn't put cameras in here or anything, right?",
+      "timing": "18:25"
+    },
+    {
+      "video": "video/shopforkillers/삼촌 좋으라고 돌아온 거 아니야.webm",
+      "videoMp4": "video/shopforkillers/mp4/삼촌 좋으라고 돌아온 거 아니야.mp4",
+      "korean": "삼촌 좋으라고 돌아온 거 아니야",
+      "russian": "Я вернулась не ради тебя, дядя.",
+      "new": true,
+      "english": "I didn't come back to make you happy, Uncle.",
+      "timing": "18:41"
+    },
+    {
+      "video": "video/shopforkillers/카메라가 원래 있었는데.webm",
+      "videoMp4": "video/shopforkillers/mp4/카메라가 원래 있었는데.mp4",
+      "korean": "카메라가 원래 있었는데",
+      "russian": "Камера там и так стояла,",
+      "new": true,
+      "english": "The camera was already there,",
+      "timing": "19:20"
+    },
+    {
+      "video": "video/shopforkillers/무슨 일이지.webm",
+      "videoMp4": "video/shopforkillers/mp4/무슨 일이지.mp4",
+      "korean": "무슨 일이지?",
+      "russian": "Что такое?",
+      "new": true,
+      "english": "What's going on?",
+      "timing": "23:58"
+    },
+    {
+      "video": "video/shopforkillers/같이 탄 수행원 놈도 그 층에 방이 있는 거 같고.webm",
+      "videoMp4": "video/shopforkillers/mp4/같이 탄 수행원 놈도 그 층에 방이 있는 거 같고.mp4",
+      "korean": "같이 탄 수행원 놈도 그 층에 방이 있는 거 같고",
+      "russian": "Похоже, у её спутника тоже номер на том этаже.",
+      "new": true,
+      "english": "Looks like the guy with her has a room on that floor too.",
+      "timing": "24:09",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/계속 따라붙어서 제거할까요.webm",
+      "videoMp4": "video/shopforkillers/mp4/계속 따라붙어서 제거할까요.mp4",
+      "korean": "계속 따라붙어서 제거할까요?",
+      "russian": "Сесть им на хвост и убрать?",
+      "new": true,
+      "english": "Should I keep tailing them and take them out?",
+      "timing": "24:13",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/방법은 찾아볼 수 있는데.webm",
+      "videoMp4": "video/shopforkillers/mp4/방법은 찾아볼 수 있는데.mp4",
+      "korean": "방법은 찾아볼 수 있는데",
+      "russian": "Способ найти можно…",
+      "new": true,
+      "english": "I could find a way…",
+      "timing": "24:16"
+    },
+    {
+      "video": "video/shopforkillers/내 기억이 맞으면.webm",
+      "videoMp4": "video/shopforkillers/mp4/내 기억이 맞으면.mp4",
+      "korean": "내 기억이 맞으면",
+      "russian": "Если память не подводит,",
+      "new": true,
+      "english": "If I remember right,",
+      "timing": "24:52",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/코드명이 큐일 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/코드명이 큐일 거야.mp4",
+      "korean": "코드명이 큐일 거야",
+      "russian": "её позывной — Кью.",
+      "new": true,
+      "english": "her code name is Q.",
+      "timing": "24:54",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/위험해질 수 있으니까.webm",
+      "videoMp4": "video/shopforkillers/mp4/위험해질 수 있으니까.mp4",
+      "korean": "위험해질 수 있으니까",
+      "russian": "Потому что это может быть опасно.",
+      "new": true,
+      "english": "Because it could get dangerous.",
+      "timing": "25:48"
+    },
+    {
+      "video": "video/shopforkillers/몇 명이나 더 죽으면 끝나는 건데.webm",
+      "videoMp4": "video/shopforkillers/mp4/몇 명이나 더 죽으면 끝나는 건데.mp4",
+      "korean": "몇 명이나 더 죽으면 끝나는 건데?",
+      "russian": "Сколько ещё людей должно умереть, чтобы это кончилось?",
+      "new": true,
+      "english": "How many more people have to die before this ends?",
+      "timing": "26:10"
+    },
+    {
+      "video": "video/shopforkillers/얼마나 많은 사람들이 죽었는지 알아.webm",
+      "videoMp4": "video/shopforkillers/mp4/얼마나 많은 사람들이 죽었는지 알아.mp4",
+      "korean": "얼마나 많은 사람들이 죽었는지 알아?",
+      "russian": "Ты хоть знаешь, сколько людей погибло?",
+      "new": true,
+      "english": "Do you even know how many people died?",
+      "timing": "26:15"
+    },
+    {
+      "video": "video/shopforkillers/민혜 언니도 죽으면 끝나는 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/민혜 언니도 죽으면 끝나는 거야.mp4",
+      "korean": "민혜 언니도 죽으면 끝나는 거야?",
+      "russian": "А если и Минхе погибнет — тогда всё кончится?",
+      "new": true,
+      "english": "And if Minhye dies too, is that when it ends?",
+      "timing": "26:23"
+    },
+    {
+      "video": "video/shopforkillers/여기 있는 사람들의 희생을 막기 위해서.webm",
+      "videoMp4": "video/shopforkillers/mp4/여기 있는 사람들의 희생을 막기 위해서.mp4",
+      "korean": "여기 있는 사람들의 희생을 막기 위해서",
+      "russian": "Чтобы люди здесь не стали жертвами…",
+      "new": true,
+      "english": "To keep the people here from being sacrificed…",
+      "timing": "26:54",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/넌 뭘 할 거지.webm",
+      "videoMp4": "video/shopforkillers/mp4/넌 뭘 할 거지.mp4",
+      "korean": "넌 뭘 할 거지?",
+      "russian": "Что ты сделаешь?",
+      "new": true,
+      "english": "What will you do?",
+      "timing": "26:57",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/뭐든지.webm",
+      "videoMp4": "video/shopforkillers/mp4/뭐든지.mp4",
+      "korean": "뭐든지",
+      "russian": "Всё, что угодно.",
+      "new": true,
+      "english": "Whatever it takes.",
+      "timing": "27:00",
+      "group": 4
+    }
+  ],
+  "b6": [
+    {
+      "drama": "Магазин для убийц 2",
+      "episode": "5",
+      "video": "video/shopforkillers/잘 들어_ 정지안.webm",
+      "videoMp4": "video/shopforkillers/mp4/잘 들어_ 정지안.mp4",
+      "korean": "잘 들어, 정지안",
+      "russian": "Слушай внимательно, Чон Джиан.",
+      "new": true,
+      "english": "Listen carefully, Jeong Jian.",
+      "timing": "27:07",
+      "group": 1,
+      "isNew": true
+    },
+    {
+      "video": "video/shopforkillers/힘없는 협상이 가능하다고 생각해.webm",
+      "videoMp4": "video/shopforkillers/mp4/힘없는 협상이 가능하다고 생각해.mp4",
+      "korean": "힘없는 협상이 가능하다고 생각해?",
+      "russian": "Думаешь, можно договориться, не имея силы?",
+      "new": true,
+      "english": "You think you can negotiate without any power?",
+      "timing": "27:10",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/그런 말을 뱉을 때는.webm",
+      "videoMp4": "video/shopforkillers/mp4/그런 말을 뱉을 때는.mp4",
+      "korean": "그런 말을 뱉을 때는",
+      "russian": "Когда бросаешься такими словами,",
+      "new": true,
+      "english": "When you say something like that,",
+      "timing": "27:13",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/본인의 능력을 증명해야 돼.webm",
+      "videoMp4": "video/shopforkillers/mp4/본인의 능력을 증명해야 돼.mp4",
+      "korean": "본인의 능력을 증명해야 돼",
+      "russian": "нужно доказать, что тебе это по силам.",
+      "new": true,
+      "english": "you have to prove you can back it up.",
+      "timing": "27:15",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/난 너희 아빠랑 친구가 될 사람이거든.webm",
+      "videoMp4": "video/shopforkillers/mp4/난 너희 아빠랑 친구가 될 사람이거든.mp4",
+      "korean": "난 너희 아빠랑 친구가 될 사람이거든",
+      "russian": "Я скоро подружусь с твоим папой.",
+      "new": true,
+      "english": "I'm going to be friends with your dad.",
+      "timing": "28:22"
+    },
+    {
+      "video": "video/shopforkillers/아빠.webm",
+      "videoMp4": "video/shopforkillers/mp4/아빠.mp4",
+      "korean": "아빠!",
+      "russian": "Папа!",
+      "new": true,
+      "english": "Dad!",
+      "timing": "28:57"
+    },
+    {
+      "video": "video/shopforkillers/삼촌한테 들었습니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/삼촌한테 들었습니다.mp4",
+      "korean": "삼촌한테 들었습니다",
+      "russian": "Мне дядя рассказал.",
+      "new": true,
+      "english": "My uncle told me.",
+      "timing": "30:39"
+    },
+    {
+      "video": "video/shopforkillers/그중 하나인 김 선생은 그날 죽었고.webm",
+      "videoMp4": "video/shopforkillers/mp4/그중 하나인 김 선생은 그날 죽었고.mp4",
+      "korean": "그중 하나인 김 선생은 그날 죽었고",
+      "russian": "Один из них, господин Ким, погиб в тот день,",
+      "new": true,
+      "english": "One of them, Mr. Kim, died that day,",
+      "timing": "30:45"
+    },
+    {
+      "video": "video/shopforkillers/이제 남은 건.webm",
+      "videoMp4": "video/shopforkillers/mp4/이제 남은 건.mp4",
+      "korean": "이제 남은 건",
+      "russian": "И теперь остались только…",
+      "new": true,
+      "english": "And now all that's left is…",
+      "timing": "30:49"
+    },
+    {
+      "video": "video/shopforkillers/왜 바빌론이 이제 와서 우리 같은 퇴물들 신상을 터는 건데.webm",
+      "videoMp4": "video/shopforkillers/mp4/왜 바빌론이 이제 와서 우리 같은 퇴물들 신상을 터는 건데.mp4",
+      "korean": "왜 바빌론이 이제 와서 우리 같은 퇴물들 신상을 터는 건데?",
+      "russian": "С чего это Вавилон теперь роется в делах таких отставников, как мы?",
+      "new": true,
+      "english": "Why is Babylon digging into has-beens like us now?",
+      "timing": "32:05"
+    },
+    {
+      "video": "video/shopforkillers/당신도 알잖아.webm",
+      "videoMp4": "video/shopforkillers/mp4/당신도 알잖아.mp4",
+      "korean": "당신도 알잖아",
+      "russian": "Вы же сами знаете.",
+      "new": true,
+      "english": "You know it too.",
+      "timing": "32:10"
+    },
+    {
+      "video": "video/shopforkillers/저 좀 데리러 와 주세요.webm",
+      "videoMp4": "video/shopforkillers/mp4/저 좀 데리러 와 주세요.mp4",
+      "korean": "저 좀 데리러 와 주세요",
+      "russian": "Заберите меня, пожалуйста.",
+      "new": true,
+      "english": "Please come pick me up.",
+      "timing": "33:19"
+    },
+    {
+      "video": "video/shopforkillers/너무 낙심하지 마.webm",
+      "videoMp4": "video/shopforkillers/mp4/너무 낙심하지 마.mp4",
+      "korean": "너무 낙심하지 마",
+      "russian": "Не расстраивайся так.",
+      "new": true,
+      "english": "Don't be too discouraged.",
+      "timing": "33:40"
+    },
+    {
+      "video": "video/shopforkillers/역효과만 났어요.webm",
+      "videoMp4": "video/shopforkillers/mp4/역효과만 났어요.mp4",
+      "korean": "역효과만 났어요",
+      "russian": "Вышло только хуже.",
+      "new": true,
+      "english": "It just backfired.",
+      "timing": "33:50"
+    },
+    {
+      "video": "video/shopforkillers/너희 삼촌이.webm",
+      "videoMp4": "video/shopforkillers/mp4/너희 삼촌이.mp4",
+      "korean": "너희 삼촌이",
+      "russian": "Твой дядя…",
+      "new": true,
+      "english": "Your uncle…",
+      "timing": "33:55"
+    },
+    {
+      "video": "video/shopforkillers/삼촌은 네가 스스로 강해지길 원하지만.webm",
+      "videoMp4": "video/shopforkillers/mp4/삼촌은 네가 스스로 강해지길 원하지만.mp4",
+      "korean": "삼촌은 네가 스스로 강해지길 원하지만",
+      "russian": "Дядя хочет, чтобы ты стала сильной сама,",
+      "new": true,
+      "english": "Your uncle wants you to become strong on your own,",
+      "timing": "34:31",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/자기 같은 사람이 되는 걸 원치 않는 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/자기 같은 사람이 되는 걸 원치 않는 거야.mp4",
+      "korean": "자기 같은 사람이 되는 걸 원치 않는 거야",
+      "russian": "но не хочет, чтобы ты стала такой, как он.",
+      "new": true,
+      "english": "but he doesn't want you to turn out like him.",
+      "timing": "34:34",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/저도 싫어요_ 삼촌같이 되는 거.webm",
+      "videoMp4": "video/shopforkillers/mp4/저도 싫어요_ 삼촌같이 되는 거.mp4",
+      "korean": "저도 싫어요, 삼촌같이 되는 거",
+      "russian": "Я и сама не хочу становиться как дядя.",
+      "new": true,
+      "english": "I don't want to be like my uncle either.",
+      "timing": "34:38",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/나랑 대련을 해 보겠다고.webm",
+      "videoMp4": "video/shopforkillers/mp4/나랑 대련을 해 보겠다고.mp4",
+      "korean": "나랑 대련을 해 보겠다고?",
+      "russian": "Хочешь устроить со мной спарринг?",
+      "new": true,
+      "english": "You want to spar with me?",
+      "timing": "35:11"
+    },
+    {
+      "video": "video/shopforkillers/이거 저 줘도 돼요.webm",
+      "videoMp4": "video/shopforkillers/mp4/이거 저 줘도 돼요.mp4",
+      "korean": "이거 저 줘도 돼요?",
+      "russian": "Вы правда отдаёте его мне?",
+      "new": true,
+      "english": "Are you sure you can give this to me?",
+      "timing": "37:34",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/이제 필요 없어.webm",
+      "videoMp4": "video/shopforkillers/mp4/이제 필요 없어.mp4",
+      "korean": "이제 필요 없어",
+      "russian": "Мне он больше не нужен.",
+      "new": true,
+      "english": "I don't need it anymore.",
+      "timing": "37:38",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/끝까지 가면 뭐가 있는데.webm",
+      "videoMp4": "video/shopforkillers/mp4/끝까지 가면 뭐가 있는데.mp4",
+      "korean": "끝까지 가면 뭐가 있는데?",
+      "russian": "А что в самом конце?",
+      "new": true,
+      "english": "What's at the very end?",
+      "timing": "38:59"
+    },
+    {
+      "video": "video/shopforkillers/거기서 그 쇼핑몰을.webm",
+      "videoMp4": "video/shopforkillers/mp4/거기서 그 쇼핑몰을.mp4",
+      "korean": "거기서 그 쇼핑몰을",
+      "russian": "Оттуда этот торговый центр…",
+      "new": true,
+      "english": "From there, that mall…",
+      "timing": "39:08"
+    },
+    {
+      "video": "video/shopforkillers/난 이제 남들처럼.webm",
+      "videoMp4": "video/shopforkillers/mp4/난 이제 남들처럼.mp4",
+      "korean": "난 이제 남들처럼",
+      "russian": "Неужели мне теперь, как всем,",
+      "new": true,
+      "english": "Will I never be able to, like everyone else,",
+      "timing": "39:59",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/평범한 삶을 살기는 힘든 걸까요.webm",
+      "videoMp4": "video/shopforkillers/mp4/평범한 삶을 살기는 힘든 걸까요.mp4",
+      "korean": "평범한 삶을 살기는 힘든 걸까요?",
+      "russian": "жить обычной жизнью будет трудно?",
+      "new": true,
+      "english": "live a normal life?",
+      "timing": "40:01",
+      "group": 4
+    }
+  ],
+  "b7": [
+    {
+      "drama": "Магазин для убийц 2",
+      "episode": "5",
+      "video": "video/shopforkillers/너한텐 삼촌이 멀쩡하게 살아 있잖아.webm",
+      "videoMp4": "video/shopforkillers/mp4/너한텐 삼촌이 멀쩡하게 살아 있잖아.mp4",
+      "korean": "너한텐 삼촌이 멀쩡하게 살아 있잖아",
+      "russian": "Но у тебя же дядя жив и здоров.",
+      "new": true,
+      "english": "But you've still got your uncle, alive and well.",
+      "timing": "41:00",
+      "group": 1,
+      "isNew": true
+    },
+    {
+      "video": "video/shopforkillers/너 지켜 주려는 사람들도 있고.webm",
+      "videoMp4": "video/shopforkillers/mp4/너 지켜 주려는 사람들도 있고.mp4",
+      "korean": "너 지켜 주려는 사람들도 있고",
+      "russian": "И есть люди, которые хотят тебя защитить.",
+      "new": true,
+      "english": "And there are people who want to protect you.",
+      "timing": "41:05",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/나랑 이렇게 같이 시간도 보내고.webm",
+      "videoMp4": "video/shopforkillers/mp4/나랑 이렇게 같이 시간도 보내고.mp4",
+      "korean": "나랑 이렇게 같이 시간도 보내고",
+      "russian": "Ты вот так проводишь время со мной…",
+      "new": true,
+      "english": "You spend time with me like this…",
+      "timing": "41:12",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/이런 것도 평범한 거 아닐까.webm",
+      "videoMp4": "video/shopforkillers/mp4/이런 것도 평범한 거 아닐까.mp4",
+      "korean": "이런 것도 평범한 거 아닐까?",
+      "russian": "Может, это и есть обычная жизнь?",
+      "new": true,
+      "english": "Maybe this is what normal is?",
+      "timing": "41:19",
+      "group": 1
+    },
+    {
+      "video": "video/shopforkillers/너 방금 방심했어.webm",
+      "videoMp4": "video/shopforkillers/mp4/너 방금 방심했어.mp4",
+      "korean": "너 방금 방심했어",
+      "russian": "Ты сейчас расслабилась.",
+      "new": true,
+      "english": "You let your guard down just now.",
+      "timing": "41:58"
+    },
+    {
+      "video": "video/shopforkillers/정신 똑바로 차려.webm",
+      "videoMp4": "video/shopforkillers/mp4/정신 똑바로 차려.mp4",
+      "korean": "정신 똑바로 차려",
+      "russian": "Соберись.",
+      "new": true,
+      "english": "Stay sharp.",
+      "timing": "42:03"
+    },
+    {
+      "video": "video/shopforkillers/이 시간에 왜 여기 있어_ 근무 안 하고.webm",
+      "videoMp4": "video/shopforkillers/mp4/이 시간에 왜 여기 있어_ 근무 안 하고.mp4",
+      "korean": "이 시간에 왜 여기 있어? 근무 안 하고?",
+      "russian": "Ты чего здесь в такое время? Не на смене?",
+      "new": true,
+      "english": "What are you doing here at this hour? Aren't you on duty?",
+      "timing": "42:27"
+    },
+    {
+      "video": "video/shopforkillers/장난해요.webm",
+      "videoMp4": "video/shopforkillers/mp4/장난해요.mp4",
+      "korean": "장난해요?",
+      "russian": "Вы издеваетесь?",
+      "new": true,
+      "english": "Are you kidding me?",
+      "timing": "46:34"
+    },
+    {
+      "video": "video/shopforkillers/같은 젊은 아가씨가.webm",
+      "videoMp4": "video/shopforkillers/mp4/같은 젊은 아가씨가.mp4",
+      "korean": "같은 젊은 아가씨가",
+      "russian": "…такая молодая девушка",
+      "new": true,
+      "english": "…a young lady like her",
+      "timing": "48:35",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/대표 할 수 있죠.webm",
+      "videoMp4": "video/shopforkillers/mp4/대표 할 수 있죠.mp4",
+      "korean": "대표 할 수 있죠",
+      "russian": "может стать главой компании.",
+      "new": true,
+      "english": "can become head of a company.",
+      "timing": "48:37",
+      "group": 2
+    },
+    {
+      "video": "video/shopforkillers/사과드립니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/사과드립니다.mp4",
+      "korean": "사과드립니다",
+      "russian": "Приношу свои извинения.",
+      "new": true,
+      "english": "I apologize.",
+      "timing": "49:00"
+    },
+    {
+      "video": "video/shopforkillers/아닙니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/아닙니다.mp4",
+      "korean": "아닙니다",
+      "russian": "Ну что вы.",
+      "new": true,
+      "english": "Not at all.",
+      "timing": "49:12"
+    },
+    {
+      "video": "video/shopforkillers/일곱 살에 부모 잃고.webm",
+      "videoMp4": "video/shopforkillers/mp4/일곱 살에 부모 잃고.mp4",
+      "korean": "일곱 살에 부모 잃고",
+      "russian": "В семь лет остаться без родителей,",
+      "new": true,
+      "english": "Losing your parents at seven,",
+      "timing": "49:19",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/삼촌이 진짜 뭐 하는 사람인지 알게 됐잖아요.webm",
+      "videoMp4": "video/shopforkillers/mp4/삼촌이 진짜 뭐 하는 사람인지 알게 됐잖아요.mp4",
+      "korean": "삼촌이 진짜 뭐 하는 사람인지 알게 됐잖아요",
+      "russian": "а потом узнать, чем на самом деле занимается дядя.",
+      "new": true,
+      "english": "then finding out what your uncle really does.",
+      "timing": "49:21",
+      "group": 3
+    },
+    {
+      "video": "video/shopforkillers/조카분이 나오셨습니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/조카분이 나오셨습니다.mp4",
+      "korean": "조카분이 나오셨습니다",
+      "russian": "а пришла его племянница — неловко вышло.",
+      "new": true,
+      "english": "but his niece came instead — how awkward.",
+      "timing": "49:41"
+    },
+    {
+      "video": "video/shopforkillers/이제 제가 대표니까.webm",
+      "videoMp4": "video/shopforkillers/mp4/이제 제가 대표니까.mp4",
+      "korean": "이제 제가 대표니까",
+      "russian": "Теперь представитель — я, так что",
+      "new": true,
+      "english": "Now I'm the one in charge,",
+      "timing": "49:45",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/저랑 얘기 나누시면 됩니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/저랑 얘기 나누시면 됩니다.mp4",
+      "korean": "저랑 얘기 나누시면 됩니다",
+      "russian": "говорите со мной.",
+      "new": true,
+      "english": "so you can talk to me.",
+      "timing": "49:48",
+      "group": 4
+    },
+    {
+      "video": "video/shopforkillers/저 폭탄들은 제 생체 신호에 연결돼 있어요.webm",
+      "videoMp4": "video/shopforkillers/mp4/저 폭탄들은 제 생체 신호에 연결돼 있어요.mp4",
+      "korean": "저 폭탄들은 제 생체 신호에 연결돼 있어요",
+      "russian": "Эти бомбы подключены к моим жизненным показателям.",
+      "new": true,
+      "english": "Those bombs are linked to my vital signs.",
+      "timing": "52:30",
+      "group": 5
+    },
+    {
+      "video": "video/shopforkillers/이 신호가 끊기는 순간 터집니다.webm",
+      "videoMp4": "video/shopforkillers/mp4/이 신호가 끊기는 순간 터집니다.mp4",
+      "korean": "이 신호가 끊기는 순간 터집니다",
+      "russian": "Как только сигнал пропадёт — они взорвутся.",
+      "new": true,
+      "english": "The moment the signal stops, they explode.",
+      "timing": "52:34",
+      "group": 5
+    },
+    {
+      "video": "video/shopforkillers/죽는 게 무섭지 않아요.webm",
+      "videoMp4": "video/shopforkillers/mp4/죽는 게 무섭지 않아요.mp4",
+      "korean": "죽는 게 무섭지 않아요?",
+      "russian": "Вам не страшно умирать?",
+      "new": true,
+      "english": "Aren't you afraid of dying?",
+      "timing": "52:45",
+      "group": 6
+    },
+    {
+      "video": "video/shopforkillers/죽는 건 이제 두렵지 않아요.webm",
+      "videoMp4": "video/shopforkillers/mp4/죽는 건 이제 두렵지 않아요.mp4",
+      "korean": "죽는 건 이제 두렵지 않아요",
+      "russian": "Смерти я больше не боюсь.",
+      "new": true,
+      "english": "I'm not afraid of dying anymore.",
+      "timing": "52:56",
+      "group": 6
+    },
+    {
+      "video": "video/shopforkillers/난 그 섬에서 이미 죽었어야 했으니까.webm",
+      "videoMp4": "video/shopforkillers/mp4/난 그 섬에서 이미 죽었어야 했으니까.mp4",
+      "korean": "난 그 섬에서 이미 죽었어야 했으니까",
+      "russian": "Я ведь должна была умереть ещё на том острове.",
+      "new": true,
+      "english": "Because I should have died on that island already.",
+      "timing": "53:03",
+      "group": 6
+    },
+    {
+      "video": "video/shopforkillers/나 너 때문에 온 거 아니고.webm",
+      "videoMp4": "video/shopforkillers/mp4/나 너 때문에 온 거 아니고.mp4",
+      "korean": "나 너 때문에 온 거 아니고",
+      "russian": "Я пришёл не ради тебя,",
+      "new": true,
+      "english": "I'm not here for you,",
+      "timing": "55:06",
+      "group": 7
+    },
+    {
+      "video": "video/shopforkillers/네 조카한테 약속 못 지켜서 온 거니까.webm",
+      "videoMp4": "video/shopforkillers/mp4/네 조카한테 약속 못 지켜서 온 거니까.mp4",
+      "korean": "네 조카한테 약속 못 지켜서 온 거니까",
+      "russian": "а потому, что не сдержал слово перед твоей племянницей.",
+      "new": true,
+      "english": "I'm here because I broke my promise to your niece.",
+      "timing": "55:08",
+      "group": 7
+    },
+    {
+      "video": "video/shopforkillers/이걸로 그날 빚은 갚은 거야.webm",
+      "videoMp4": "video/shopforkillers/mp4/이걸로 그날 빚은 갚은 거야.mp4",
+      "korean": "이걸로 그날 빚은 갚은 거야",
+      "russian": "Считай, долг за тот день возвращён.",
+      "new": true,
+      "english": "Consider my debt from that day paid.",
+      "timing": "55:11",
+      "group": 7
+    },
+    {
+      "video": "video/shopforkillers/빨리 먹어_ 다 익었어.webm",
+      "videoMp4": "video/shopforkillers/mp4/빨리 먹어_ 다 익었어.mp4",
+      "korean": "빨리 먹어, 다 익었어",
+      "russian": "Ешь быстрее, всё готово.",
+      "new": true,
+      "english": "Eat up, it's done.",
+      "timing": "56:01"
+    },
+    {
+      "video": "video/shopforkillers/코드를 새로 만들어서 전문화하면.webm",
+      "videoMp4": "video/shopforkillers/mp4/코드를 새로 만들어서 전문화하면.mp4",
+      "korean": "코드를 새로 만들어서 전문화하면",
+      "russian": "Если создать новый код под эти задачи,",
+      "new": true,
+      "english": "If we set up a new specialized code,",
+      "timing": "56:28",
+      "group": 8
+    },
+    {
+      "video": "video/shopforkillers/나중에 우리한테 도움이 될 것 같은데.webm",
+      "videoMp4": "video/shopforkillers/mp4/나중에 우리한테 도움이 될 것 같은데.mp4",
+      "korean": "나중에 우리한테 도움이 될 것 같은데…",
+      "russian": "потом нам это очень пригодится…",
+      "new": true,
+      "english": "I think it'll really help us later on…",
+      "timing": "56:31",
+      "group": 8
+    }
+  ]
+}

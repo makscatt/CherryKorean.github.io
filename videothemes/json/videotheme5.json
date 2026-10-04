@@ -203,14 +203,16 @@
       "videoMp4": "video/moon lovers/mp4/끝까지.mp4",
       "korean": "끝까지",
       "russian": "До конца",
-      "english": "Until the end."
+      "english": "Until the end.",
+      "group": 1
     },
     {
       "video": "video/moon lovers/도와줄 것이다.webm",
       "videoMp4": "video/moon lovers/mp4/도와줄 것이다.mp4",
       "korean": "도와줄 것이다",
       "russian": "Буду помогать",
-      "english": "I will help you."
+      "english": "I will help you.",
+      "group": 1
     },
     {
       "video": "video/moon lovers/힘내야지.webm",
@@ -422,14 +424,16 @@
       "videoMp4": "video/moon lovers/mp4/내가 돌아올 때까지.mp4",
       "korean": "내가 돌아올 때까지",
       "russian": "Пока я не вернусь",
-      "english": "Until I come back."
+      "english": "Until I come back.",
+      "group": 1
     },
     {
       "video": "video/moon lovers/다미원에서 꼼짝 말고 기다려.webm",
       "videoMp4": "video/moon lovers/mp4/다미원에서 꼼짝 말고 기다려.mp4",
       "korean": "다미원에서 꼼짝 말고 기다려",
       "russian": "Жди в Дамивоне и не суетись",
-      "english": "Just wait there at Damiyon and don't move."
+      "english": "Just wait there at Damiyon and don't move.",
+      "group": 1
     },
     {
       "video": "video/moon lovers/한국에서 살게 됐다고 좋아하시던 거.webm",
@@ -457,14 +461,16 @@
       "videoMp4": "video/moon lovers/mp4/나와 엮이면 불행해질지도 몰라.mp4",
       "korean": "나와 엮이면 불행해질지도 몰라",
       "russian": "Связавшись со мной, можешь стать несчастной",
-      "english": "You might end up unhappy if you get involved with me."
+      "english": "You might end up unhappy if you get involved with me.",
+      "group": 2
     },
     {
       "video": "video/moon lovers/그래도 놓아 주진 않을 거야.webm",
       "videoMp4": "video/moon lovers/mp4/그래도 놓아 주진 않을 거야.mp4",
       "korean": "그래도 놓아 주진 않을 거야",
       "russian": "Но всё равно я тебя не отпущу",
-      "english": "But I still won't let you go."
+      "english": "But I still won't let you go.",
+      "group": 2
     },
     {
       "video": "video/moon lovers/거짓말이야.webm",
@@ -571,14 +577,16 @@
       "videoMp4": "video/moon lovers/mp4/저쪽에 사람들이.mp4",
       "korean": "저쪽에 사람들이",
       "russian": "Вон там люди",
-      "english": "There are people over there."
+      "english": "There are people over there.",
+      "group": 1
     },
     {
       "video": "video/moon lovers/죽었어요.webm",
       "videoMp4": "video/moon lovers/mp4/죽었어요.mp4",
       "korean": "죽었어요",
       "russian": "Умерли",
-      "english": "They died."
+      "english": "They died.",
+      "group": 1
     },
     {
       "video": "video/moon lovers/그런 말은 마라.webm",
@@ -1001,7 +1009,8 @@
       "korean": "아 내가 왜 맞아야 되는데요?",
       "russian": "А почему это я должна получать удар?",
       "new": true,
-      "english": "Why should I get hit?"
+      "english": "Why should I get hit?",
+      "group": 1
     },
     {
       "video": "video/moon lovers/먼저 실수한 쪽은 황자님인데.webm",
@@ -1009,7 +1018,8 @@
       "korean": "먼저 실수한 쪽은 황자님인데",
       "russian": "Принц ведь первый допустил ошибку",
       "new": true,
-      "english": "The prince was the one who made the first mistake."
+      "english": "The prince was the one who made the first mistake.",
+      "group": 1
     },
     {
       "video": "video/moon lovers/내가 고맙지 그치.webm",
@@ -1071,17 +1081,19 @@
       "video": "video/moon lovers/설마 얘.webm",
       "videoMp4": "video/moon lovers/mp4/설마 얘.mp4",
       "korean": "설마 얘",
-      "russian": "Неужели это он?",
+      "russian": "Неужели этот…",
       "new": true,
-      "english": "No way, is it him?"
+      "english": "No way, did he…",
+      "group": 2
     },
     {
       "video": "video/moon lovers/나한테 반한 거야.webm",
       "videoMp4": "video/moon lovers/mp4/나한테 반한 거야.mp4",
       "korean": "나한테 반한 거야?",
-      "russian": "Ты влюбился в меня?",
+      "russian": "…в меня влюбился?",
       "new": true,
-      "english": "Are you in love with me?"
+      "english": "…fall for me?",
+      "group": 2
     },
     {
       "video": "video/moon lovers/하 웬일이니.webm",

@@ -182,14 +182,16 @@
       "videoMp4": "video/healer/mp4/오백이면.mp4",
       "korean": "오백이면",
       "russian": "Если 500",
-      "english": "If it's 500."
+      "english": "If it's 500.",
+      "group": 1
     },
     {
       "video": "video/healer/나 이백오심 아줌마 이백오십.webm",
       "videoMp4": "video/healer/mp4/나 이백오심 아줌마 이백오십.mp4",
       "korean": "나 이백오십 아줌마 이백오십",
       "russian": "Мне 250, тётушке 250",
-      "english": "I get 250, and the lady gets 250."
+      "english": "I get 250, and the lady gets 250.",
+      "group": 1
     },
     {
       "video": "video/healer/어떤 회사에 다니시는 놈이시냐.webm",
@@ -321,14 +323,16 @@
       "videoMp4": "video/healer/mp4/내가 오늘 니 엄마 대신에.mp4",
       "korean": "내가 오늘 니 엄마 대신에",
       "russian": "Я тебе сегодня вместо мамки твоей",
-      "english": "Today, I'm stepping in for your mom."
+      "english": "Today, I'm stepping in for your mom.",
+      "group": 1
     },
     {
       "video": "video/healer/공중도덕이란 걸 알려 주마.webm",
       "videoMp4": "video/healer/mp4/공중도덕이란 걸 알려 주마.mp4",
       "korean": "공중도덕이란 걸 알려 주마",
       "russian": "Преподам тебе урок поведения",
-      "english": "I'll teach you some manners."
+      "english": "I'll teach you some manners.",
+      "group": 1
     },
     {
       "video": "video/healer/추격전 중입니다.webm",

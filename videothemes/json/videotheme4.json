@@ -332,14 +332,16 @@
       "videoMp4": "video/allkdrama/mp4/밖에 택시 기사님 기다리시니까.mp4",
       "korean": "밖에 택시 기사님 기다리시니까",
       "russian": "На улице ждет таксист, так что...",
-      "english": "The taxi driver is waiting outside."
+      "english": "The taxi driver is waiting outside.",
+      "group": 1
     },
     {
       "video": "video/allkdrama/가서 계산하고 와.webm",
       "videoMp4": "video/allkdrama/mp4/가서 계산하고 와.mp4",
-      "korean": "밖가서 계산하고 와",
+      "korean": "가서 계산하고 와",
       "russian": "Сходи оплати",
-      "english": "Go pay outside and come back."
+      "english": "Go pay and come back.",
+      "group": 1
     },
     {
       "video": "video/allkdrama/좋은 아침이에요.webm",
@@ -1581,7 +1583,8 @@
       "korean": "너무 물지 마세요",
       "russian": "Не кусайтесь сильно",
       "new": true,
-      "english": "Don't bite too hard."
+      "english": "Don't bite too hard.",
+      "group": 1
     },
     {
       "video": "video/tngerines/너무 물면 사고 쳐요.webm",
@@ -1589,7 +1592,8 @@
       "korean": "너무 물면 사고 쳐요",
       "russian": "Если сильно укусить - можно и влипнуть",
       "new": true,
-      "english": "If you bite too hard, you might get in trouble."
+      "english": "If you bite too hard, you might get in trouble.",
+      "group": 1
     },
     {
       "video": "video/tngerines/나도 다 됐고요.webm",

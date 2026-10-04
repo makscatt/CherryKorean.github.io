@@ -432,7 +432,17 @@
       "korean": "좋은 아들 생색은 잠깐이지만",
       "russian": "Показная роль хорошего сына — это ненадолго, но...",
       "new": true,
-      "english": "Putting on the act of a good son is only temporary, but..."
+      "english": "Putting on the act of a good son is only temporary, but...",
+      "group": 1
+    },
+    {
+      "video": "video/wfools/카드값은 아주 오래가는 거 알죠.webm",
+      "videoMp4": "video/wfools/mp4/카드값은 아주 오래가는 거 알죠.mp4",
+      "korean": "카드값은 아주 오래가는 거 알죠?",
+      "russian": "Вы же знаете, что долги по карте тянутся очень долго?",
+      "new": true,
+      "english": "You know that credit card debt lasts a very long time, right?",
+      "group": 1
     },
     {
       "video": "video/wfools/지구가 망한다는 거죠.webm",
@@ -481,14 +491,6 @@
       "russian": "Ну, поездка на семидесятилетие же.",
       "new": true,
       "english": "You know, the 70th-birthday trip."
-    },
-    {
-      "video": "video/wfools/카드값은 아주 오래가는 거 알죠.webm",
-      "videoMp4": "video/wfools/mp4/카드값은 아주 오래가는 거 알죠.mp4",
-      "korean": "카드값은 아주 오래가는 거 알죠?",
-      "russian": "Вы же знаете, что долги по карте тянутся очень долго?",
-      "new": true,
-      "english": "You know that credit card debt lasts a very long time, right?"
     },
     {
       "video": "video/wfools/큰손 식당 손년데.webm",

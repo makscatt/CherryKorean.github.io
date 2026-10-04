@@ -399,7 +399,17 @@
       "korean": "나는 뭐, 오늘 같은 날 술도 못 마셔?",
       "russian": "Я что, даже в такой день не могу выпить?",
       "new": true,
-      "english": "What, I can't even drink on a day like today?"
+      "english": "What, I can't even drink on a day like today?",
+      "group": 1
+    },
+    {
+      "video": "video/deathgame/오늘 같은 날이 무슨 날인데.webm",
+      "videoMp4": "video/deathgame/mp4/오늘 같은 날이 무슨 날인데.mp4",
+      "korean": "오늘 같은 날이 무슨 날인데?",
+      "russian": "Что значит, 'в такой день'?",
+      "new": true,
+      "english": "What kind of day is it today?",
+      "group": 1
     },
     {
       "video": "video/deathgame/난 항상 너한테 짐만 되잖아.webm",
@@ -480,14 +490,6 @@
       "russian": "Похоже, что я не стараюсь?",
       "new": true,
       "english": "Do you think I haven't been trying?"
-    },
-    {
-      "video": "video/deathgame/오늘 같은 날이 무슨 날인데.webm",
-      "videoMp4": "video/deathgame/mp4/오늘 같은 날이 무슨 날인데.mp4",
-      "korean": "오늘 같은 날이 무슨 날인데?",
-      "russian": "Что значит, 'в такой день'?",
-      "new": true,
-      "english": "What kind of day is it today?"
     },
     {
       "video": "video/deathgame/이번 달 면접 잡힌 거 많아서.webm",
@@ -609,7 +611,8 @@
       "korean": "아직도 죽으면 끝이라고 생각해?",
       "russian": "Ты всё ещё думаешь, что смерть — это конец?",
       "new": true,
-      "english": "Do you still think death is the end?"
+      "english": "Do you still think death is the end?",
+      "group": 1
     },
     {
       "video": "video/deathgame/이제부터 시작이야.webm",
@@ -617,7 +620,8 @@
       "korean": "이제부터 시작이야",
       "russian": "С этого момента всё только начинается",
       "new": true,
-      "english": "This is just the beginning."
+      "english": "This is just the beginning.",
+      "group": 1
     },
     {
       "video": "video/deathgame/어디 한번 해 봐.webm",
@@ -649,7 +653,8 @@
       "korean": "내 이름은 박진태",
       "russian": "Меня зовут Пак Чжинтхэ",
       "new": true,
-      "english": "My name is Park Jin-tae."
+      "english": "My name is Park Jin-tae.",
+      "group": 2
     },
     {
       "video": "video/deathgame/서른 세 살이다.webm",
@@ -657,7 +662,8 @@
       "korean": "서른 세 살이다",
       "russian": "Мне тридцать три года",
       "new": true,
-      "english": "I'm thirty-three years old."
+      "english": "I'm thirty-three years old.",
+      "group": 2
     },
     {
       "video": "video/deathgame/그게 신이 주는 기회라고.webm",

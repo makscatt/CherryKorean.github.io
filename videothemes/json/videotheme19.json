@@ -105,14 +105,16 @@
       "videoMp4": "video/ad/mp4/이십만원입니다.mp4",
       "korean": "이십만원입니다",
       "russian": "200 000 вон",
-      "english": "It's 200,000 won."
+      "english": "It's 200,000 won.",
+      "group": 1
     },
     {
       "video": "video/ad/이십만원요.webm",
       "videoMp4": "video/ad/mp4/이십만원요.mp4",
       "korean": "이십만원요?",
       "russian": "200 000 вон?",
-      "english": "200,000 won?"
+      "english": "200,000 won?",
+      "group": 1
     },
     {
       "video": "video/ad/그러지 말고.webm",
@@ -273,14 +275,16 @@
       "videoMp4": "video/ad/mp4/전에 이 방에 살던 사람이 자살했어.mp4",
       "korean": "전에 이 방에 살던 사람이 자살했어",
       "russian": "Человек, что жил тут раньше, покончил с собой",
-      "english": "The person who lived in this room before committed suicide."
+      "english": "The person who lived in this room before committed suicide.",
+      "group": 2
     },
     {
       "video": "video/ad/그 이 방에서 죽은 건 아니고.webm",
       "videoMp4": "video/ad/mp4/그 이 방에서 죽은 건 아니고.mp4",
       "korean": "그 이 방에서 죽은 건 아니고",
       "russian": "Но умер он не в этой комнате",
-      "english": "But he didn't die in this room."
+      "english": "But he didn't die in this room.",
+      "group": 2
     }
   ],
   "b2": [

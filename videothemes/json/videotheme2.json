@@ -131,18 +131,20 @@
       "english": "Don't smoke with that."
     },
     {
-      "video": "video/squid game/아빠 또 혼날 거 같은데.webm",
-      "videoMp4": "video/squid game/mp4/아빠 또 혼날 거 같은데.mp4",
-      "korean": "아빠 또 혼날 거 같은데",
-      "russian": "У папы снова будут неприятности",
-      "english": "Dad's gonna get in trouble again."
-    },
-    {
       "video": "video/squid game/이거 엄마가 보면.webm",
       "videoMp4": "video/squid game/mp4/이거 엄마가 보면.mp4",
       "korean": "이거 엄마가 보면",
       "russian": "Если мама это увидит",
-      "english": "If mom sees this."
+      "english": "If mom sees this.",
+      "group": 1
+    },
+    {
+      "video": "video/squid game/아빠 또 혼날 거 같은데.webm",
+      "videoMp4": "video/squid game/mp4/아빠 또 혼날 거 같은데.mp4",
+      "korean": "아빠 또 혼날 거 같은데",
+      "russian": "У папы снова будут неприятности",
+      "english": "Dad's gonna get in trouble again.",
+      "group": 1
     },
     {
       "video": "video/squid game/근데 난 떡볶이가 훨씬 더 맛있어.webm",

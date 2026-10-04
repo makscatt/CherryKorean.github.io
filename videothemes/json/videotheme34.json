@@ -304,7 +304,17 @@
       "korean": "부모님 집 주소를 말하세요.",
       "russian": "Назовите адрес дома родителей.",
       "new": true,
-      "english": "Please tell me your parents' address."
+      "english": "Please tell me your parents' address.",
+      "group": 1
+    },
+    {
+      "video": "video/rev/서울 마포구 신수로 125 성내빌라 201호.webm",
+      "videoMp4": "video/rev/mp4/서울 마포구 신수로 125 성내빌라 201호.mp4",
+      "korean": "서울 마포구 신수로 백이십오 성내빌라 이백일호",
+      "russian": "Сеул, район Мапо‑гу, Синсу‑ро 125, Соннэ-вилла, квартира 201.",
+      "new": true,
+      "english": "201, Seongnae Villa, 125 Sinsoo-ro, Mapo-gu, Seoul.",
+      "group": 1
     },
     {
       "video": "video/rev/빨리 가 일어나서.webm",
@@ -329,14 +339,6 @@
       "russian": "Сегодня же день, когда мы смотрим новый дом.",
       "new": true,
       "english": "It's the day we see the new house."
-    },
-    {
-      "video": "video/rev/서울 마포구 신수로 125 성내빌라 201호.webm",
-      "videoMp4": "video/rev/mp4/서울 마포구 신수로 125 성내빌라 201호.mp4",
-      "korean": "서울 마포구 신수로 백이십오 성내빌라 이백일호",
-      "russian": "Сеул, район Мапо‑гу, Синсу‑ро 125, Соннэ-вилла, квартира 201.",
-      "new": true,
-      "english": "201, Seongnae Villa, 125 Sinsoo-ro, Mapo-gu, Seoul."
     },
     {
       "video": "video/rev/손소녀 원종.webm",
@@ -432,7 +434,8 @@
       "korean": "약속한 돈을 주세요.",
       "russian": "Отдайте деньги, как и договаривались.",
       "new": true,
-      "english": "Please give me the money we agreed on."
+      "english": "Please give me the money we agreed on.",
+      "group": 2
     },
     {
       "video": "video/rev/약속한 사람은 당신이야.webm",
@@ -440,7 +443,8 @@
       "korean": "약속한 사람은 당신이야.",
       "russian": "Обещал‑то ты.",
       "new": true,
-      "english": "You're the one who made the promise."
+      "english": "You're the one who made the promise.",
+      "group": 2
     },
     {
       "video": "video/rev/어디까지 각오하고 있어요.webm",

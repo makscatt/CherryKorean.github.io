@@ -188,7 +188,16 @@
       "videoMp4": "video/itewon/mp4/제 매니저 명찰 주세요.mp4",
       "korean": "제 매니저 명찰 주세요",
       "russian": "Дайте, пожалуйста, мой бейдж менеджера",
-      "english": "Please give me my manager badge."
+      "english": "Please give me my manager badge.",
+      "group": 1
+    },
+    {
+      "video": "video/itewon/직접 걸어 주세요.webm",
+      "videoMp4": "video/itewon/mp4/직접 걸어 주세요.mp4",
+      "korean": "직접 걸어 주세요",
+      "russian": "Повесьте мне его сами",
+      "english": "Please pin it on me yourself.",
+      "group": 1
     },
     {
       "video": "video/itewon/조심해서 말해.webm",
@@ -196,13 +205,6 @@
       "korean": "조심해서 말해",
       "russian": "Говори осторожно",
       "english": "Be careful how you say it."
-    },
-    {
-      "video": "video/itewon/직접 걸어 주세요.webm",
-      "videoMp4": "video/itewon/mp4/직접 걸어 주세요.mp4",
-      "korean": "직접 걸어 주세요",
-      "russian": "Соедините, пожалуйста, напрямую",
-      "english": "Please connect me directly."
     },
     {
       "video": "video/itewon/찝쩍거리지 마.webm",

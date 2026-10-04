@@ -57,14 +57,16 @@
       "videoMp4": "video/hvatai/mp4/예쁘게 매니큐어 발라 줘야 되겠다.mp4",
       "korean": "예쁘게 매니큐어 발라 줘야 되겠다",
       "russian": "Надо будет ногти красиво накрасить",
-      "english": "I should paint my nails nicely."
+      "english": "I should paint my nails nicely.",
+      "group": 1
     },
     {
       "video": "video/hvatai/너 좋아하는 노란색으로.webm",
       "videoMp4": "video/hvatai/mp4/너 좋아하는 노란색으로.mp4",
       "korean": "너 좋아하는 노란색으로",
       "russian": "В твой любимый желтый цвет",
-      "english": "In your favorite yellow color."
+      "english": "In your favorite yellow color.",
+      "group": 1
     },
     {
       "video": "video/hvatai/우리 산책 나갈까.webm",
@@ -197,14 +199,16 @@
       "videoMp4": "video/hvatai/mp4/다신 이딴 전화하지 마세요.mp4",
       "korean": "다신 이딴 전화하지 마세요",
       "russian": "Никогда больше не звони с такой хернёй",
-      "english": "Don't ever call like this again."
+      "english": "Don't ever call like this again.",
+      "group": 2
     },
     {
       "video": "video/hvatai/방송국 꽉 불질러 버리고 싶으니까.webm",
       "videoMp4": "video/hvatai/mp4/방송국 꽉 불질러 버리고 싶으니까.mp4",
       "korean": "방송국 꽉 불질러 버리고 싶으니까",
       "russian": "Хочется просто сжечь вашу телестудию",
-      "english": "I just want to burn down the broadcasting station."
+      "english": "I just want to burn down the broadcasting station.",
+      "group": 2
     },
     {
       "video": "video/hvatai/정말 죄송합니다.webm",
@@ -228,7 +232,8 @@
       "korean": "이렇게 살아준 것만으로도 다행이라고",
       "russian": "Счастье, что вы вообще живете",
       "new": true,
-      "english": "I'm just glad you're alive."
+      "english": "I'm just glad you're alive.",
+      "group": 3
     },
     {
       "video": "video/hvatai/고맙다고 할 거예요.webm",
@@ -236,7 +241,8 @@
       "korean": "고맙다고 할 거예요",
       "russian": "Хочу поблагодарить вас",
       "new": true,
-      "english": "I’ll thank you."
+      "english": "I’ll thank you.",
+      "group": 3
     },
     {
       "video": "video/hvatai/내일은 비가 온대요.webm",
@@ -244,7 +250,8 @@
       "korean": "내일은 비가 온대요",
       "russian": "Завтра будет дождь",
       "new": true,
-      "english": "It’s supposed to rain tomorrow."
+      "english": "It’s supposed to rain tomorrow.",
+      "group": 4
     },
     {
       "video": "video/hvatai/그 비가 그치길 기다리면서.webm",
@@ -252,7 +259,8 @@
       "korean": "그 비가 그치길 기다리면서",
       "russian": "Подождите пока дождь закончится",
       "new": true,
-      "english": "While waiting for the rain to stop."
+      "english": "While waiting for the rain to stop.",
+      "group": 4
     },
     {
       "video": "video/hvatai/또 살아 봐요.webm",
@@ -260,7 +268,8 @@
       "korean": "또 살아 봐요",
       "russian": "Живите дальше",
       "new": true,
-      "english": "Live on."
+      "english": "Live on.",
+      "group": 4
     },
     {
       "video": "video/hvatai/내가 말했잖아.webm",

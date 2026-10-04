@@ -159,14 +159,16 @@
       "videoMp4": "video/jin/mp4/내가 아까 아주 큰 소리로 말했을 텐데.mp4",
       "korean": "내가 아까 아주 큰 소리로 말했을 텐데",
       "russian": "Я ведь недавно говорил довольно громко",
-      "english": "I must have said it really loudly earlier."
+      "english": "I must have said it really loudly earlier.",
+      "group": 1
     },
     {
       "video": "video/jin/난 램프의 정령 진이라고.webm",
       "videoMp4": "video/jin/mp4/난 램프의 정령 진이라고.mp4",
       "korean": "난 램프의 정령 진이라고",
       "russian": "Я — дух лампы, что зовется Джином",
-      "english": "I'm the genie of the lamp."
+      "english": "I'm the genie of the lamp.",
+      "group": 1
     },
     {
       "video": "video/jin/꺼져.webm",

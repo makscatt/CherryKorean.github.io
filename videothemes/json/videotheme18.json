@@ -56,21 +56,24 @@
       "videoMp4": "video/kumiho/mp4/그나저나 니네 내 물건 못 봤냐.mp4",
       "korean": "그나저나 니네 내 물건 못 봤냐?",
       "russian": "Кстати, вы мои вещи не видели?",
-      "english": "By the way, have you seen my stuff?"
+      "english": "By the way, have you seen my stuff?",
+      "group": 1
     },
     {
       "video": "video/kumiho/조그만 돌덩이 같은 건데.webm",
       "videoMp4": "video/kumiho/mp4/조그만 돌덩이 같은 건데.mp4",
       "korean": "조그만 돌덩이 같은 건데",
       "russian": "Это такая маленькая штука, как камешек",
-      "english": "It's a small thing, like a little rock."
+      "english": "It's a small thing, like a little rock.",
+      "group": 1
     },
     {
       "video": "video/kumiho/나한테 아주 중요한 거거든.webm",
       "videoMp4": "video/kumiho/mp4/나한테 아주 중요한 거거든.mp4",
       "korean": "나한테 아주 중요한 거거든",
       "russian": "Для меня это очень важно",
-      "english": "It's really important to me."
+      "english": "It's really important to me.",
+      "group": 1
     },
     {
       "video": "video/kumiho/구멍 났어.webm",
@@ -161,14 +164,16 @@
       "videoMp4": "video/kumiho/mp4/게다가 죽은 내 동생은.mp4",
       "korean": "게다가 죽은 내 동생은",
       "russian": "К тому же, мой погибший брат...",
-      "english": "And my brother who died..."
+      "english": "And my brother who died...",
+      "group": 2
     },
     {
       "video": "video/kumiho/왜 해비스모커가 됐어.webm",
       "videoMp4": "video/kumiho/mp4/왜 해비스모커가 됐어.mp4",
       "korean": "왜 해비스모커가 됐어?",
       "russian": "Почему он стал заядлым курильщиком?",
-      "english": "Why did he become a heavy smoker?"
+      "english": "Why did he become a heavy smoker?",
+      "group": 2
     },
     {
       "video": "video/kumiho/경성을 누비고 있나.webm",
@@ -367,7 +372,8 @@
       "korean": "담배 안 꺼?",
       "russian": "Сигарету не потушишь?",
       "new": true,
-      "english": "Aren't you going to put out your cigarette?"
+      "english": "Aren't you going to put out your cigarette?",
+      "group": 1
     },
     {
       "video": "video/kumiho/빨리 꺼 빨리 꺼.webm",
@@ -375,7 +381,8 @@
       "korean": "빨리 꺼 빨리 꺼",
       "russian": "Быстрее туши, быстрее туши",
       "new": true,
-      "english": "Put it out quickly, quickly!"
+      "english": "Put it out quickly, quickly!",
+      "group": 1
     },
     {
       "video": "video/kumiho/어디로 가는 열차예요.webm",

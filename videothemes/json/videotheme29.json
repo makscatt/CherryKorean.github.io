@@ -488,11 +488,20 @@
       "english": "It takes after me."
     },
     {
+      "video": "video/suga/잠수 대결을 일반인 친구들하고 같이 해 봤어.webm",
+      "videoMp4": "video/suga/mp4/잠수 대결을 일반인 친구들하고 같이 해 봤어.mp4",
+      "korean": "잠수 대결을 일반인 친구들하고 같이 해 봤어",
+      "russian": "Я попробовал устроить соревнование по нырянию с друзьями",
+      "english": "I tried having a diving competition with my friends.",
+      "group": 1
+    },
+    {
       "video": "video/suga/내가 그 친구들보단 숨 참는 게 두 배 이상이 긴 거야.webm",
       "videoMp4": "video/suga/mp4/내가 그 친구들보단 숨 참는 게 두 배 이상이 긴 거야.mp4",
       "korean": "내가 그 친구들보단 숨 참는 게 두 배 이상이 긴 거야",
       "russian": "У меня задержка дыхания вдвое дольше, чем у тех ребят",
-      "english": "I can hold my breath more than twice as long as those guys."
+      "english": "I can hold my breath more than twice as long as those guys.",
+      "group": 1
     },
     {
       "video": "video/suga/내가 침대 사 줄게 지금 입금해 줄게.webm",
@@ -584,13 +593,6 @@
       "korean": "이거 쉽지 않거든",
       "russian": "Это вообще-то непросто",
       "english": "This isn't easy, you know."
-    },
-    {
-      "video": "video/suga/잠수 대결을 일반인 친구들하고 같이 해 봤어.webm",
-      "videoMp4": "video/suga/mp4/잠수 대결을 일반인 친구들하고 같이 해 봤어.mp4",
-      "korean": "잠수 대결을 일반인 친구들하고 같이 해 봤어",
-      "russian": "Я попробовал устроить соревнование по нырянию с друзьями",
-      "english": "I tried having a diving competition with my friends."
     },
     {
       "video": "video/suga/저도 이게 있어요!.webm",

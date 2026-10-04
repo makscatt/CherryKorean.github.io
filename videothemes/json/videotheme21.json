@@ -63,14 +63,16 @@
       "videoMp4": "video/shef/mp4/난 지금까지 미슐랭 쓰리스타 셰프로 꿈꿨는데.mp4",
       "korean": "난 지금까지 미슐랭 쓰리스타 셰프로 꿈꿨는데",
       "russian": "Я до сих пор мечтала стать шефом Мишлен 3 звезды",
-      "english": "I've dreamed of being a Michelin three-star chef until now."
+      "english": "I've dreamed of being a Michelin three-star chef until now.",
+      "group": 1
     },
     {
       "video": "video/shef/오늘 폭군의 셰프가 되었다.webm",
       "videoMp4": "video/shef/mp4/오늘 폭군의 셰프가 되었다.mp4",
       "korean": "오늘 폭군의 셰프가 되었다",
       "russian": "Сегодня я стала шефом тирана",
-      "english": "I became the tyrant's chef today."
+      "english": "I became the tyrant's chef today.",
+      "group": 1
     },
     {
       "video": "video/shef/결국 나를 죽이려는 거겠지.webm",

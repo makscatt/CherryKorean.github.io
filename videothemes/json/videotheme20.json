@@ -43,7 +43,8 @@
       "korean": "알려 줄까?",
       "russian": "Рассказать?",
       "new": true,
-      "english": "Want me to tell you?"
+      "english": "Want me to tell you?",
+      "group": 1
     },
     {
       "video": "video/evilflower/내가 어떤 사람인지.webm",
@@ -51,7 +52,8 @@
       "korean": "내가 어떤 사람인지?",
       "russian": "Какой я человек?",
       "new": true,
-      "english": "What kind of person am I?"
+      "english": "What kind of person am I?",
+      "group": 1
     },
     {
       "video": "video/evilflower/내가 앞으로 많이 좋아해 줄게.webm",
@@ -83,7 +85,8 @@
       "korean": "나 할머니 무서워",
       "russian": "Мне страшно из-за бабушки",
       "new": true,
-      "english": "I'm scared of grandma."
+      "english": "I'm scared of grandma.",
+      "group": 2
     },
     {
       "video": "video/evilflower/할머니가 왜 무서워.webm",
@@ -91,7 +94,8 @@
       "korean": "할머니가 왜 무서워?",
       "russian": "Почему ты боишься бабушку?",
       "new": true,
-      "english": "Why are you scared of grandma?"
+      "english": "Why are you scared of grandma?",
+      "group": 2
     },
     {
       "video": "video/evilflower/엄마도 무서워하잖아.webm",
@@ -99,7 +103,8 @@
       "korean": "엄마도 무서워하잖아",
       "russian": "Мама тоже ведь боится",
       "new": true,
-      "english": "Mom is scared too."
+      "english": "Mom is scared too.",
+      "group": 2
     },
     {
       "video": "video/evilflower/너네 애한테 인사도 안 가르치니.webm",
@@ -243,7 +248,8 @@
       "korean": "생각보다 멍청한가 봐",
       "russian": "Похоже, ты глупее, чем я думала",
       "new": true,
-      "english": "I guess you're dumber than I thought."
+      "english": "I guess you're dumber than I thought.",
+      "group": 3
     },
     {
       "video": "video/evilflower/네 처 말이야.webm",
@@ -251,7 +257,8 @@
       "korean": "네 처 말이야",
       "russian": "Я про твою жену",
       "new": true,
-      "english": "I'm talking about your wife."
+      "english": "I'm talking about your wife.",
+      "group": 3
     },
     {
       "video": "video/evilflower/너 같이 과거가 구린 애가.webm",
@@ -413,7 +420,8 @@
       "korean": "나한텐 내가 롤 모델이라며",
       "russian": "Ты говорил, что я твой кумир",
       "new": true,
-      "english": "You said I'm your role model."
+      "english": "You said I'm your role model.",
+      "group": 1
     },
     {
       "video": "video/evilflower/2분 다 제 롤 모델이세요.webm",
@@ -421,7 +429,8 @@
       "korean": "2분 다 제 롤 모델이세요",
       "russian": "Вы оба мои кумиры",
       "new": true,
-      "english": "You both are my role models."
+      "english": "You both are my role models.",
+      "group": 1
     },
     {
       "video": "video/evilflower/혹시 모르실까 봐 그러는데.webm",
@@ -863,7 +872,8 @@
       "korean": "차 한잔 할래?",
       "russian": "Хочешь чаю?",
       "new": true,
-      "english": "Want to have some tea?"
+      "english": "Want to have some tea?",
+      "group": 1
     },
     {
       "video": "video/evilflower/마침 좋은 차가 있어서.webm",
@@ -871,7 +881,8 @@
       "korean": "마침 좋은 차가 있어서",
       "russian": "Как раз есть хороший чай",
       "new": true,
-      "english": "I happen to have some good tea."
+      "english": "I happen to have some good tea.",
+      "group": 1
     },
     {
       "video": "video/evilflower/냉정하게 생각해 봐.webm",
@@ -937,7 +948,8 @@
       "korean": "십팔년 전에",
       "russian": "Восемнадцать лет назад",
       "new": true,
-      "english": "Eighteen years ago,"
+      "english": "Eighteen years ago,",
+      "group": 1
     },
     {
       "video": "video/evilflower/살인 사건이 하나 있었어.webm",
@@ -945,7 +957,8 @@
       "korean": "살인 사건이 하나 있었어",
       "russian": "Было одно убийство",
       "new": true,
-      "english": "there was a murder case."
+      "english": "there was a murder case.",
+      "group": 1
     },
     {
       "video": "video/evilflower/그래서.webm",
@@ -1025,7 +1038,8 @@
       "korean": "어떤 게 부작용이 없어요?",
       "russian": "У какого нет побочных эффектов?",
       "new": true,
-      "english": "Which one has no side effects?"
+      "english": "Which one has no side effects?",
+      "group": 2
     },
     {
       "video": "video/evilflower/비타민도 부작용이 있는데.webm",
@@ -1033,7 +1047,8 @@
       "korean": "비타민도 부작용이 있는데",
       "russian": "Даже у витаминов есть побочки",
       "new": true,
-      "english": "Even vitamins have side effects."
+      "english": "Even vitamins have side effects.",
+      "group": 2
     },
     {
       "video": "video/evilflower/알았어.webm",

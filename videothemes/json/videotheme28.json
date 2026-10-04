@@ -12,14 +12,16 @@
       "videoMp4": "video/reader/mp4/우리 여기서 이러지 말고.mp4",
       "korean": "우리 여기서 이러지 말고",
       "russian": "Давай не будем делать это здесь",
-      "english": "Let's not do this here."
+      "english": "Let's not do this here.",
+      "group": 1
     },
     {
       "video": "video/reader/나가서 식사나 같이 해요.webm",
       "videoMp4": "video/reader/mp4/나가서 식사나 같이 해요.mp4",
       "korean": "나가서 식사나 같이 해요",
       "russian": "Давайте выйдем и вместе поедим",
-      "english": "Let's go out and eat together."
+      "english": "Let's go out and eat together.",
+      "group": 1
     },
     {
       "video": "video/reader/저 알바 가야 돼서.webm",
@@ -117,21 +119,24 @@
       "videoMp4": "video/reader/mp4/자 지금 이 순간부터.mp4",
       "korean": "자 지금 이 순간부터",
       "russian": "Итак, начиная с этого момента",
-      "english": "So, from this moment on,"
+      "english": "So, from this moment on,",
+      "group": 2
     },
     {
       "video": "video/reader/모든 인간 여러분들은.webm",
       "videoMp4": "video/reader/mp4/모든 인간 여러분들은.mp4",
       "korean": "모든 인간 여러분들은",
       "russian": "Все вы, люди",
-      "english": "All you humans,"
+      "english": "All you humans,",
+      "group": 2
     },
     {
       "video": "video/reader/시나리오를 부여받게 됩니다.webm",
       "videoMp4": "video/reader/mp4/시나리오를 부여받게 됩니다.mp4",
       "korean": "시나리오를 부여받게 됩니다",
       "russian": "Вы получите сценарий",
-      "english": "will receive a script."
+      "english": "will receive a script.",
+      "group": 2
     },
     {
       "video": "video/reader/혼자 탔어.webm",

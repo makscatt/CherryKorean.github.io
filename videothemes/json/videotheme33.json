@@ -54,7 +54,8 @@
       "korean": "나 지금 회사 다시 들어가 봐야 돼가지고",
       "russian": "Мне сейчас нужно вернуться в офис",
       "new": true,
-      "english": "I need to go back to the office now."
+      "english": "I need to go back to the office now.",
+      "group": 1
     },
     {
       "video": "video/tomorrow/나중에 만나서 다시 얘기해.webm",
@@ -62,7 +63,8 @@
       "korean": "나중에 만나서 다시 얘기해",
       "russian": "Давай потом встретимся и ещё раз всё обсудим",
       "new": true,
-      "english": "Let's meet later and talk again."
+      "english": "Let's meet later and talk again.",
+      "group": 1
     },
     {
       "video": "video/tomorrow/난 없는데.webm",
