@@ -1,0 +1,1023 @@
+{
+  "b1": [
+    {
+      "drama": "Даже победитель в лотерею ходит на работу",
+      "episode": "1",
+      "video": "video/jackpot/커피는 좀 먹고 살자.webm",
+      "videoMp4": "video/jackpot/mp4/커피는 좀 먹고 살자.mp4",
+      "korean": "커피는 좀 먹고 살자",
+      "russian": "Дай хоть кофе выпить.",
+      "new": true,
+      "english": "Let me at least have some coffee.",
+      "timing": "04:32",
+      "isNew": true
+    },
+    {
+      "video": "video/jackpot/빨리 끝내고 일하시죠.webm",
+      "videoMp4": "video/jackpot/mp4/빨리 끝내고 일하시죠.mp4",
+      "korean": "빨리 끝내고 일하시죠",
+      "russian": "Давайте быстро закончим и за работу.",
+      "new": true,
+      "english": "Let's wrap this up quickly and get to work.",
+      "timing": "04:51"
+    },
+    {
+      "video": "video/jackpot/요번은 그냥 넘어가시죠.webm",
+      "videoMp4": "video/jackpot/mp4/요번은 그냥 넘어가시죠.mp4",
+      "korean": "요번은 그냥 넘어가시죠.",
+      "russian": "В этот раз давайте закроем на это глаза.",
+      "new": true,
+      "english": "Let's just let it slide this time.",
+      "timing": "05:12"
+    },
+    {
+      "video": "video/jackpot/오늘 내로 가능할까요.webm",
+      "videoMp4": "video/jackpot/mp4/오늘 내로 가능할까요.mp4",
+      "korean": "오늘 내로 가능할까요?",
+      "russian": "Сегодня успеете?",
+      "new": true,
+      "english": "Can you get it done today?",
+      "timing": "06:12"
+    },
+    {
+      "video": "video/jackpot/힘들면 얘기해요. 도와주려고 하는 거니까.webm",
+      "videoMp4": "video/jackpot/mp4/힘들면 얘기해요. 도와주려고 하는 거니까.mp4",
+      "korean": "힘들면 얘기해요. 도와주려고 하는 거니까.",
+      "russian": "Если тяжело — скажите. Я же помочь хочу.",
+      "new": true,
+      "english": "If it's too much, tell me. I just want to help.",
+      "timing": "06:14",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/아닙니다. 할 수 있습니다.webm",
+      "videoMp4": "video/jackpot/mp4/아닙니다. 할 수 있습니다.mp4",
+      "korean": "아닙니다. 할 수 있습니다.",
+      "russian": "Нет-нет. Я справлюсь.",
+      "new": true,
+      "english": "No, it's fine. I can do it.",
+      "timing": "06:16",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/아니 뭐 우리 그냥 가위바위보 할래.webm",
+      "videoMp4": "video/jackpot/mp4/아니 뭐 우리 그냥 가위바위보 할래.mp4",
+      "korean": "아니 뭐 우리 그냥 가위바위보 할래?",
+      "russian": "Или нам просто сыграть в камень-ножницы-бумагу?",
+      "new": true,
+      "english": "Or should we just play rock-paper-scissors?",
+      "timing": "08:31"
+    },
+    {
+      "video": "video/jackpot/가격이 너무 하이엔드잖아요.webm",
+      "videoMp4": "video/jackpot/mp4/가격이 너무 하이엔드잖아요.mp4",
+      "korean": "가격이 너무 하이엔드잖아요",
+      "russian": "Цены-то у них слишком уж люксовые.",
+      "new": true,
+      "english": "Their prices are way too high-end.",
+      "timing": "08:39"
+    },
+    {
+      "video": "video/jackpot/어려운 브랜드인 건 맞습니다.webm",
+      "videoMp4": "video/jackpot/mp4/어려운 브랜드인 건 맞습니다.mp4",
+      "korean": "어려운 브랜드인 건 맞습니다.",
+      "russian": "Бренд и правда непростой.",
+      "new": true,
+      "english": "It is a tough brand, that's true.",
+      "timing": "08:47"
+    },
+    {
+      "video": "video/jackpot/한국시장 정리한지 얼마 안되는 걸로 아는데요.webm",
+      "videoMp4": "video/jackpot/mp4/한국시장 정리한지 얼마 안되는 걸로 아는데요.mp4",
+      "korean": "한국시장 정리한지 얼마 안되는 걸로 아는데요",
+      "russian": "Насколько знаю, они совсем недавно ушли с корейского рынка.",
+      "new": true,
+      "english": "As far as I know, they pulled out of the Korean market not long ago.",
+      "timing": "08:51"
+    },
+    {
+      "video": "video/jackpot/결과는 똑같지 않을까요.webm",
+      "videoMp4": "video/jackpot/mp4/결과는 똑같지 않을까요.mp4",
+      "korean": "결과는 똑같지 않을까요?",
+      "russian": "Разве результат не будет тем же?",
+      "new": true,
+      "english": "Won't the result be the same?",
+      "timing": "09:00"
+    },
+    {
+      "video": "video/jackpot/처음엔 디자인이 좀 어려웠지.webm",
+      "videoMp4": "video/jackpot/mp4/처음엔 디자인이 좀 어려웠지.mp4",
+      "korean": "처음엔 디자인이 좀 어려웠지",
+      "russian": "Поначалу дизайн был сложноват.",
+      "new": true,
+      "english": "The designs were a bit hard to get at first.",
+      "timing": "09:04"
+    },
+    {
+      "video": "video/jackpot/다들 걱정이 뭔지는 알겠는데.webm",
+      "videoMp4": "video/jackpot/mp4/다들 걱정이 뭔지는 알겠는데.mp4",
+      "korean": "다들 걱정이 뭔지는 알겠는데",
+      "russian": "Понимаю, что вас всех беспокоит, но",
+      "new": true,
+      "english": "I know what you're all worried about, but",
+      "timing": "09:17",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/이거 해야 돼.webm",
+      "videoMp4": "video/jackpot/mp4/이거 해야 돼.mp4",
+      "korean": "이거 해야 돼",
+      "russian": "Это надо сделать.",
+      "new": true,
+      "english": "We have to do this.",
+      "timing": "09:19",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/부장님 지시야.webm",
+      "videoMp4": "video/jackpot/mp4/부장님 지시야.mp4",
+      "korean": "부장님 지시야.",
+      "russian": "Это распоряжение начальника.",
+      "new": true,
+      "english": "It's the director's order.",
+      "timing": "09:21",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/우리 공팀장이 하는 게 어떨까.webm",
+      "videoMp4": "video/jackpot/mp4/우리 공팀장이 하는 게 어떨까.mp4",
+      "korean": "우리 공팀장이 하는 게 어떨까?",
+      "russian": "Может, возьмётся наш тимлид Гон?",
+      "new": true,
+      "english": "How about our Team Leader Gong takes it?",
+      "timing": "09:30"
+    },
+    {
+      "video": "video/jackpot/그런 뜻으로 말씀드린 거 아니고 무슨 뜻이었어요_ 그럼.webm",
+      "videoMp4": "video/jackpot/mp4/그런 뜻으로 말씀드린 거 아니고 무슨 뜻이었어요_ 그럼.mp4",
+      "korean": "그런 뜻으로 말씀드린 거 아니고 무슨 뜻이었어요, 그럼?",
+      "russian": "Если вы не это имели в виду, то что тогда?",
+      "new": true,
+      "english": "If that's not what you meant, then what did you mean?",
+      "timing": "10:49"
+    },
+    {
+      "video": "video/jackpot/브랜드 추려서 넘기기 전에.webm",
+      "videoMp4": "video/jackpot/mp4/브랜드 추려서 넘기기 전에.mp4",
+      "korean": "브랜드 추려서 넘기기 전에",
+      "russian": "Прежде чем отобрать бренды и передать их,",
+      "new": true,
+      "english": "Before you pick out the brands and hand them over,",
+      "timing": "11:00",
+      "group": 3
+    },
+    {
+      "video": "video/jackpot/나한테 먼저 얘기해줄 수 있어.webm",
+      "videoMp4": "video/jackpot/mp4/나한테 먼저 얘기해줄 수 있어.mp4",
+      "korean": "나한테 먼저 얘기해줄 수 있어?",
+      "russian": "можешь сначала сказать мне?",
+      "new": true,
+      "english": "can you talk to me first?",
+      "timing": "11:02",
+      "group": 3
+    },
+    {
+      "video": "video/jackpot/반품인데 사모님 드리세요.webm",
+      "videoMp4": "video/jackpot/mp4/반품인데 사모님 드리세요.mp4",
+      "korean": "반품인데 사모님 드리세요",
+      "russian": "Это возврат, отдайте жене.",
+      "new": true,
+      "english": "It's a return. Give it to your wife.",
+      "timing": "11:23"
+    },
+    {
+      "video": "video/jackpot/우리 김 팀장님 욕심도 많으셔.webm",
+      "videoMp4": "video/jackpot/mp4/우리 김 팀장님 욕심도 많으셔.mp4",
+      "korean": "우리 김 팀장님 욕심도 많으셔",
+      "russian": "Ну и аппетиты у нашего тимлида Кима.",
+      "new": true,
+      "english": "Our Team Leader Kim sure is greedy.",
+      "timing": "11:42"
+    },
+    {
+      "video": "video/jackpot/내가 불안해서 그래.webm",
+      "videoMp4": "video/jackpot/mp4/내가 불안해서 그래.mp4",
+      "korean": "내가 불안해서 그래.",
+      "russian": "Мне просто неспокойно.",
+      "new": true,
+      "english": "I'm just uneasy.",
+      "timing": "11:56"
+    },
+    {
+      "video": "video/jackpot/다들 똥줄이 탔어.webm",
+      "videoMp4": "video/jackpot/mp4/다들 똥줄이 탔어.mp4",
+      "korean": "다들 똥줄이 탔어.",
+      "russian": "Все на нервах.",
+      "new": true,
+      "english": "Everyone's freaking out.",
+      "timing": "12:11"
+    },
+    {
+      "video": "video/jackpot/그렇게 아쉬우면 팀장님도 하나 드려요.webm",
+      "videoMp4": "video/jackpot/mp4/그렇게 아쉬우면 팀장님도 하나 드려요.mp4",
+      "korean": "그렇게 아쉬우면 팀장님도 하나 드려요?",
+      "russian": "Раз вам так жалко — может, и вам один отдать?",
+      "new": true,
+      "english": "If you're that upset, should I give you one too?",
+      "timing": "12:38"
+    },
+    {
+      "video": "video/jackpot/어차피 뺏긴 거 잘 키워주면 좋겠어.webm",
+      "videoMp4": "video/jackpot/mp4/어차피 뺏긴 거 잘 키워주면 좋겠어.mp4",
+      "korean": "어차피 뺏긴 거 잘 키워주면 좋겠어",
+      "russian": "Раз уж всё равно отобрали — пусть хоть хорошо вырастят.",
+      "new": true,
+      "english": "Since they're taken anyway, I hope they raise them well.",
+      "timing": "12:47"
+    },
+    {
+      "video": "video/jackpot/이왕 입양 보낸 거 좋은 부모 만나면 좋잖아요.webm",
+      "videoMp4": "video/jackpot/mp4/이왕 입양 보낸 거 좋은 부모 만나면 좋잖아요.mp4",
+      "korean": "이왕 입양 보낸 거 좋은 부모 만나면 좋잖아요?",
+      "russian": "Раз уж отдали в приёмную семью — хорошо бы, чтобы родители попались хорошие, правда?",
+      "new": true,
+      "english": "If you've given them up for adoption, it's nice if they get good parents, right?",
+      "timing": "12:50"
+    }
+  ],
+  "b2": [
+    {
+      "drama": "Даже победитель в лотерею ходит на работу",
+      "episode": "1",
+      "video": "video/jackpot/너도 그냥 막 뺏기지 말고.webm",
+      "videoMp4": "video/jackpot/mp4/너도 그냥 막 뺏기지 말고.mp4",
+      "korean": "너도 그냥 막 뺏기지 말고",
+      "russian": "И ты не позволяй вот так всё у себя забирать.",
+      "new": true,
+      "english": "And don't just let them take everything from you.",
+      "timing": "12:54",
+      "isNew": true
+    },
+    {
+      "video": "video/jackpot/근데 제가 생각해도.webm",
+      "videoMp4": "video/jackpot/mp4/근데 제가 생각해도.mp4",
+      "korean": "근데 제가 생각해도",
+      "russian": "Хотя, если подумать, даже мне кажется…",
+      "new": true,
+      "english": "But even I think...",
+      "timing": "13:02"
+    },
+    {
+      "video": "video/jackpot/그렇게 고생해서 잘 키워놓으면 또 가져가고.webm",
+      "videoMp4": "video/jackpot/mp4/그렇게 고생해서 잘 키워놓으면 또 가져가고.mp4",
+      "korean": "그렇게 고생해서 잘 키워놓으면 또 가져가고",
+      "russian": "Намучаетесь, вырастите — а их опять забирают.",
+      "new": true,
+      "english": "You work so hard to build them up, and then they take them away again.",
+      "timing": "13:16"
+    },
+    {
+      "video": "video/jackpot/뭐야 그게.webm",
+      "videoMp4": "video/jackpot/mp4/뭐야 그게.mp4",
+      "korean": "뭐야 그게?",
+      "russian": "Это что вообще такое?",
+      "new": true,
+      "english": "What is that?",
+      "timing": "13:19"
+    },
+    {
+      "video": "video/jackpot/네가 생각해도 뭐야 이거.webm",
+      "videoMp4": "video/jackpot/mp4/네가 생각해도 뭐야 이거.mp4",
+      "korean": "네가 생각해도 뭐야 이거?",
+      "russian": "Сам подумай — это что такое?",
+      "new": true,
+      "english": "Seriously, what is this?",
+      "timing": "13:40"
+    },
+    {
+      "video": "video/jackpot/아 저 싸가지 없는 새끼.webm",
+      "videoMp4": "video/jackpot/mp4/아 저 싸가지 없는 새끼.mp4",
+      "korean": "아 저 싸가지 없는 새끼.",
+      "russian": "Вот же наглый засранец.",
+      "new": true,
+      "english": "That rude little punk.",
+      "timing": "13:43"
+    },
+    {
+      "video": "video/jackpot/야 같이 가.webm",
+      "videoMp4": "video/jackpot/mp4/야 같이 가.mp4",
+      "korean": "야 같이 가",
+      "russian": "Эй, подожди, вместе пойдём.",
+      "new": true,
+      "english": "Hey, wait for me.",
+      "timing": "13:45"
+    },
+    {
+      "video": "video/jackpot/고깃집 가시래요.webm",
+      "videoMp4": "video/jackpot/mp4/고깃집 가시래요.mp4",
+      "korean": "고깃집 가시래요?",
+      "russian": "Может, в мясной ресторан?",
+      "new": true,
+      "english": "Shall we go to a barbecue place?",
+      "timing": "14:19"
+    },
+    {
+      "video": "video/jackpot/거기 너무 싸잖아_ 네가 살 건데.webm",
+      "videoMp4": "video/jackpot/mp4/거기 너무 싸잖아_ 네가 살 건데.mp4",
+      "korean": "거기 너무 싸잖아, 네가 살 건데.",
+      "russian": "Там слишком дёшево, платишь-то ты.",
+      "new": true,
+      "english": "That place is too cheap — you're the one paying.",
+      "timing": "14:20",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/아_ 제가 사요.webm",
+      "videoMp4": "video/jackpot/mp4/아_ 제가 사요.mp4",
+      "korean": "아, 제가 사요?",
+      "russian": "А, я плачу?",
+      "new": true,
+      "english": "Oh, I'm paying?",
+      "timing": "14:23",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/팀장님은 같이 안 가시겠어요.webm",
+      "videoMp4": "video/jackpot/mp4/팀장님은 같이 안 가시겠어요.mp4",
+      "korean": "팀장님은 같이 안 가시겠어요?",
+      "russian": "А вы с нами не пойдёте?",
+      "new": true,
+      "english": "Won't you come with us, sir?",
+      "timing": "14:24"
+    },
+    {
+      "video": "video/jackpot/그럼 먼저 퇴근하겠습니다 어.webm",
+      "videoMp4": "video/jackpot/mp4/그럼 먼저 퇴근하겠습니다 어.mp4",
+      "korean": "그럼 먼저 퇴근하겠습니다 어",
+      "russian": "Тогда я, с вашего позволения, домой.",
+      "new": true,
+      "english": "Then I'll head out first.",
+      "timing": "14:30"
+    },
+    {
+      "video": "video/jackpot/그럼 저도 들어가 보겠습니다.webm",
+      "videoMp4": "video/jackpot/mp4/그럼 저도 들어가 보겠습니다.mp4",
+      "korean": "그럼 저도 들어가 보겠습니다",
+      "russian": "Тогда и я пойду.",
+      "new": true,
+      "english": "Then I'll get going too.",
+      "timing": "14:32"
+    },
+    {
+      "video": "video/jackpot/그러면 지혜가 먹고 싶은 걸로 하자.webm",
+      "videoMp4": "video/jackpot/mp4/그러면 지혜가 먹고 싶은 걸로 하자.mp4",
+      "korean": "그러면 지혜가 먹고 싶은 걸로 하자",
+      "russian": "Тогда выберем то, что хочет Чи Хе.",
+      "new": true,
+      "english": "Then let's go with what Ji-hye wants.",
+      "timing": "14:33"
+    },
+    {
+      "video": "video/jackpot/검사는 일단 받았는데요.webm",
+      "videoMp4": "video/jackpot/mp4/검사는 일단 받았는데요.mp4",
+      "korean": "검사는 일단 받았는데요.",
+      "russian": "Обследование он пока прошёл.",
+      "new": true,
+      "english": "He got the tests done for now.",
+      "timing": "15:10",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/근데 그렇게 걱정할 건 아니래요.webm",
+      "videoMp4": "video/jackpot/mp4/근데 그렇게 걱정할 건 아니래요.mp4",
+      "korean": "근데 그렇게 걱정할 건 아니래요",
+      "russian": "Но говорят, особо волноваться не о чем.",
+      "new": true,
+      "english": "But they say it's nothing to worry about.",
+      "timing": "15:13",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/야 그래도 신경 써.webm",
+      "videoMp4": "video/jackpot/mp4/야 그래도 신경 써.mp4",
+      "korean": "야 그래도 신경 써",
+      "russian": "Эй, всё равно будь внимательнее.",
+      "new": true,
+      "english": "Still, keep an eye on it.",
+      "timing": "15:15",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/어르신들 우리랑 달라.webm",
+      "videoMp4": "video/jackpot/mp4/어르신들 우리랑 달라.mp4",
+      "korean": "어르신들 우리랑 달라",
+      "russian": "Старики не такие, как мы.",
+      "new": true,
+      "english": "Older people aren't like us.",
+      "timing": "15:17",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/네_ 알겠습니다.webm",
+      "videoMp4": "video/jackpot/mp4/네_ 알겠습니다.mp4",
+      "korean": "네, 알겠습니다.",
+      "russian": "Да, хорошо.",
+      "new": true,
+      "english": "Okay, I will.",
+      "timing": "15:19",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/감사하면 고기나 구워 탄다.webm",
+      "videoMp4": "video/jackpot/mp4/감사하면 고기나 구워 탄다.mp4",
+      "korean": "감사하면 고기나 구워 탄다",
+      "russian": "Благодарен — так лучше мясо переворачивай, горит.",
+      "new": true,
+      "english": "If you're grateful, flip the meat. It's burning.",
+      "timing": "16:16"
+    },
+    {
+      "video": "video/jackpot/한잔해 한잔해.webm",
+      "videoMp4": "video/jackpot/mp4/한잔해 한잔해.mp4",
+      "korean": "한잔해 한잔해",
+      "russian": "Давай, выпей. Выпей.",
+      "new": true,
+      "english": "Have a drink. Go on, drink.",
+      "timing": "16:20"
+    },
+    {
+      "video": "video/jackpot/좋은 척 하는 거다.webm",
+      "videoMp4": "video/jackpot/mp4/좋은 척 하는 거다.mp4",
+      "korean": "좋은 척 하는 거다",
+      "russian": "Это я только делаю вид, что всё хорошо.",
+      "new": true,
+      "english": "I'm just pretending to be fine.",
+      "timing": "17:35"
+    },
+    {
+      "video": "video/jackpot/약속 있다고.webm",
+      "videoMp4": "video/jackpot/mp4/약속 있다고.mp4",
+      "korean": "약속 있다고.",
+      "russian": "У меня планы, говорю.",
+      "new": true,
+      "english": "I said I have plans.",
+      "timing": "17:47",
+      "group": 3
+    },
+    {
+      "video": "video/jackpot/너 약속 없어.webm",
+      "videoMp4": "video/jackpot/mp4/너 약속 없어.mp4",
+      "korean": "너 약속 없어.",
+      "russian": "Нет у тебя никаких планов.",
+      "new": true,
+      "english": "You don't have any plans.",
+      "timing": "17:50",
+      "group": 3
+    },
+    {
+      "video": "video/jackpot/언니_ 여기 한 병 더요.webm",
+      "videoMp4": "video/jackpot/mp4/언니_ 여기 한 병 더요.mp4",
+      "korean": "언니, 여기 한 병 더요",
+      "russian": "Девушка, нам ещё бутылку!",
+      "new": true,
+      "english": "Excuse me, one more bottle here!",
+      "timing": "18:00"
+    },
+    {
+      "video": "video/jackpot/근데 넌 왜 맨날 혼자냐.webm",
+      "videoMp4": "video/jackpot/mp4/근데 넌 왜 맨날 혼자냐.mp4",
+      "korean": "근데 넌 왜 맨날 혼자냐?",
+      "russian": "А ты чего вечно один?",
+      "new": true,
+      "english": "So why are you always alone?",
+      "timing": "18:12"
+    }
+  ],
+  "b3": [
+    {
+      "drama": "Даже победитель в лотерею ходит на работу",
+      "episode": "1",
+      "video": "video/jackpot/너 뭐 한다고 팀장 달았냐.webm",
+      "videoMp4": "video/jackpot/mp4/너 뭐 한다고 팀장 달았냐.mp4",
+      "korean": "너 뭐 한다고 팀장 달았냐?",
+      "russian": "И зачем ты тогда стал тимлидом?",
+      "new": true,
+      "english": "Then what did you become team leader for?",
+      "timing": "18:51",
+      "isNew": true
+    },
+    {
+      "video": "video/jackpot/회사가 그리는 큰 그림이 있어.webm",
+      "videoMp4": "video/jackpot/mp4/회사가 그리는 큰 그림이 있어.mp4",
+      "korean": "회사가 그리는 큰 그림이 있어",
+      "russian": "У компании свой большой замысел.",
+      "new": true,
+      "english": "The company has a bigger picture in mind.",
+      "timing": "18:55"
+    },
+    {
+      "video": "video/jackpot/회사 그림이야 그렇다 치고.webm",
+      "videoMp4": "video/jackpot/mp4/회사 그림이야 그렇다 치고.mp4",
+      "korean": "회사 그림이야 그렇다 치고",
+      "russian": "Ладно, замысел компании — допустим.",
+      "new": true,
+      "english": "Fine, let's say that's the company's picture.",
+      "timing": "19:02"
+    },
+    {
+      "video": "video/jackpot/수고는 무슨 수고를 또 해.webm",
+      "videoMp4": "video/jackpot/mp4/수고는 무슨 수고를 또 해.mp4",
+      "korean": "수고는 무슨 수고를 또 해",
+      "russian": "Какое там «трудись», куда ещё трудиться?",
+      "new": true,
+      "english": "Work? What work is left?",
+      "timing": "20:12",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/맨날 수고해라 수고해라.webm",
+      "videoMp4": "video/jackpot/mp4/맨날 수고해라 수고해라.mp4",
+      "korean": "맨날 수고해라 수고해라",
+      "russian": "Вечно одно: трудись да трудись.",
+      "new": true,
+      "english": "Always \"work hard, work hard.\"",
+      "timing": "20:14",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/넌 아직도 하루가 남았냐.webm",
+      "videoMp4": "video/jackpot/mp4/넌 아직도 하루가 남았냐.mp4",
+      "korean": "넌 아직도 하루가 남았냐?",
+      "russian": "У тебя что, день ещё не закончился?",
+      "new": true,
+      "english": "Is your day still not over?",
+      "timing": "20:18",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/누구나 이렇게 사는 걸까.webm",
+      "videoMp4": "video/jackpot/mp4/누구나 이렇게 사는 걸까.mp4",
+      "korean": "누구나 이렇게 사는 걸까?",
+      "russian": "Все так живут?",
+      "new": true,
+      "english": "Does everyone live like this?",
+      "timing": "24:10"
+    },
+    {
+      "video": "video/jackpot/조금 더 열심히 하면.webm",
+      "videoMp4": "video/jackpot/mp4/조금 더 열심히 하면.mp4",
+      "korean": "조금 더 열심히 하면",
+      "russian": "Если ещё чуть-чуть постараться,",
+      "new": true,
+      "english": "If I try a little harder,",
+      "timing": "24:14",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/삶은 조금 더 좋아질까.webm",
+      "videoMp4": "video/jackpot/mp4/삶은 조금 더 좋아질까.mp4",
+      "korean": "삶은 조금 더 좋아질까?",
+      "russian": "жизнь станет хоть немного лучше?",
+      "new": true,
+      "english": "will life get a little better?",
+      "timing": "24:16",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/난 무엇을 위해서 그렇게 열심히 살았을까.webm",
+      "videoMp4": "video/jackpot/mp4/난 무엇을 위해서 그렇게 열심히 살았을까.mp4",
+      "korean": "난 무엇을 위해서 그렇게 열심히 살았을까?",
+      "russian": "Ради чего я так старался?",
+      "new": true,
+      "english": "What did I work so hard for?",
+      "timing": "24:22"
+    },
+    {
+      "video": "video/jackpot/셔츠를 하나 잃어버렸네요.webm",
+      "videoMp4": "video/jackpot/mp4/셔츠를 하나 잃어버렸네요.mp4",
+      "korean": "셔츠를 하나 잃어버렸네요",
+      "russian": "Похоже, одна рубашка потерялась.",
+      "new": true,
+      "english": "I seem to have lost one of your shirts.",
+      "timing": "24:54"
+    },
+    {
+      "video": "video/jackpot/출근하는 사람이 왜 이렇게 기운이 없으십니까.webm",
+      "videoMp4": "video/jackpot/mp4/출근하는 사람이 왜 이렇게 기운이 없으십니까.mp4",
+      "korean": "출근하는 사람이 왜 이렇게 기운이 없으십니까?",
+      "russian": "Почему с утра на работе — и уже без сил?",
+      "new": true,
+      "english": "Why so low on energy this morning?",
+      "timing": "25:45"
+    },
+    {
+      "video": "video/jackpot/정말 너무하는 거 아닙니까.webm",
+      "videoMp4": "video/jackpot/mp4/정말 너무하는 거 아닙니까.mp4",
+      "korean": "정말 너무하는 거 아닙니까?",
+      "russian": "Не слишком ли это?",
+      "new": true,
+      "english": "Isn't this really too much?",
+      "timing": "27:12"
+    },
+    {
+      "video": "video/jackpot/우리 거는 우리가 계속 할 수 있게 해줘요.webm",
+      "videoMp4": "video/jackpot/mp4/우리 거는 우리가 계속 할 수 있게 해줘요.mp4",
+      "korean": "우리 거는 우리가 계속 할 수 있게 해줘요.",
+      "russian": "Дайте нам дальше вести своё.",
+      "new": true,
+      "english": "Let us keep working on our own brands.",
+      "timing": "28:05",
+      "group": 3
+    },
+    {
+      "video": "video/jackpot/이거 어려운 부탁 아니잖아요.webm",
+      "videoMp4": "video/jackpot/mp4/이거 어려운 부탁 아니잖아요.mp4",
+      "korean": "이거 어려운 부탁 아니잖아요",
+      "russian": "Это же не такая уж трудная просьба.",
+      "new": true,
+      "english": "It's not a hard thing to ask.",
+      "timing": "28:12",
+      "group": 3
+    },
+    {
+      "video": "video/jackpot/팀장님은 제가 화내는 거 본 적 있으세요.webm",
+      "videoMp4": "video/jackpot/mp4/팀장님은 제가 화내는 거 본 적 있으세요.mp4",
+      "korean": "팀장님은 제가 화내는 거 본 적 있으세요?",
+      "russian": "Вы видели меня когда-нибудь в гневе?",
+      "new": true,
+      "english": "Have you ever seen me get angry?",
+      "timing": "29:26",
+      "group": 4
+    },
+    {
+      "video": "video/jackpot/저 화가 날 때는 화 안 내요.webm",
+      "videoMp4": "video/jackpot/mp4/저 화가 날 때는 화 안 내요.mp4",
+      "korean": "저 화가 날 때는 화 안 내요",
+      "russian": "Когда я злюсь, я не срываюсь.",
+      "new": true,
+      "english": "When I'm angry, I don't lash out.",
+      "timing": "29:34",
+      "group": 4
+    },
+    {
+      "video": "video/jackpot/결국 수습하는 것도 제 몫이잖아요.webm",
+      "videoMp4": "video/jackpot/mp4/결국 수습하는 것도 제 몫이잖아요.mp4",
+      "korean": "결국 수습하는 것도 제 몫이잖아요.",
+      "russian": "Ведь разгребать всё потом всё равно мне.",
+      "new": true,
+      "english": "In the end, I'm the one who has to clean up after.",
+      "timing": "29:38",
+      "group": 4
+    },
+    {
+      "video": "video/jackpot/누가 그런 거 따지고 화를 내냐.webm",
+      "videoMp4": "video/jackpot/mp4/누가 그런 거 따지고 화를 내냐.mp4",
+      "korean": "누가 그런 거 따지고 화를 내냐",
+      "russian": "Кто же это всё взвешивает, когда злится?",
+      "new": true,
+      "english": "Who thinks about that when they're angry?",
+      "timing": "29:42",
+      "group": 5
+    },
+    {
+      "video": "video/jackpot/화나면 그냥 화내는 거지.webm",
+      "videoMp4": "video/jackpot/mp4/화나면 그냥 화내는 거지.mp4",
+      "korean": "화나면 그냥 화내는 거지",
+      "russian": "Злишься — так и злишься, и всё.",
+      "new": true,
+      "english": "When you're mad, you just get mad.",
+      "timing": "29:45",
+      "group": 5
+    },
+    {
+      "video": "video/jackpot/그래서.webm",
+      "videoMp4": "video/jackpot/mp4/그래서.mp4",
+      "korean": "그래서",
+      "russian": "И что?",
+      "new": true,
+      "english": "So?",
+      "timing": "29:50"
+    },
+    {
+      "video": "video/jackpot/그럼 이제 어떻게 하려고.webm",
+      "videoMp4": "video/jackpot/mp4/그럼 이제 어떻게 하려고.mp4",
+      "korean": "그럼 이제 어떻게 하려고?",
+      "russian": "Ну и что теперь собираешься делать?",
+      "new": true,
+      "english": "So what are you going to do now?",
+      "timing": "29:51"
+    },
+    {
+      "video": "video/jackpot/재고해 주시면 감사하겠습니다.webm",
+      "videoMp4": "video/jackpot/mp4/재고해 주시면 감사하겠습니다.mp4",
+      "korean": "재고해 주시면 감사하겠습니다.",
+      "russian": "Буду признателен, если вы пересмотрите решение.",
+      "new": true,
+      "english": "I'd appreciate it if you'd reconsider.",
+      "timing": "30:52"
+    },
+    {
+      "video": "video/jackpot/잘되는 거 계속 잘하는 거는 어렵지 않아.webm",
+      "videoMp4": "video/jackpot/mp4/잘되는 거 계속 잘하는 거는 어렵지 않아.mp4",
+      "korean": "잘되는 거 계속 잘하는 거는 어렵지 않아.",
+      "russian": "Продолжать то, что и так идёт хорошо, — нетрудно.",
+      "new": true,
+      "english": "Keeping something that's going well going isn't hard.",
+      "timing": "32:09",
+      "group": 6
+    },
+    {
+      "video": "video/jackpot/죽어가는 거 살리는 거는 어려워.webm",
+      "videoMp4": "video/jackpot/mp4/죽어가는 거 살리는 거는 어려워.mp4",
+      "korean": "죽어가는 거 살리는 거는 어려워.",
+      "russian": "А вот оживить умирающее — трудно.",
+      "new": true,
+      "english": "Reviving something that's dying is hard.",
+      "timing": "32:18",
+      "group": 6
+    },
+    {
+      "video": "video/jackpot/그건 아무나 못해.webm",
+      "videoMp4": "video/jackpot/mp4/그건 아무나 못해.mp4",
+      "korean": "그건 아무나 못해.",
+      "russian": "Это не каждому дано.",
+      "new": true,
+      "english": "Not just anyone can do that.",
+      "timing": "32:22",
+      "group": 6
+    },
+    {
+      "video": "video/jackpot/내가 널 믿으니까 그런 일을 주는 거야.webm",
+      "videoMp4": "video/jackpot/mp4/내가 널 믿으니까 그런 일을 주는 거야.mp4",
+      "korean": "내가 널 믿으니까 그런 일을 주는 거야.",
+      "russian": "Я тебе такую работу даю, потому что верю в тебя.",
+      "new": true,
+      "english": "I give you that kind of work because I trust you.",
+      "timing": "32:24",
+      "group": 6
+    }
+  ],
+  "b4": [
+    {
+      "drama": "Даже победитель в лотерею ходит на работу",
+      "episode": "1",
+      "video": "video/jackpot/죄송한데 지금 포스기가 안 돼요.webm",
+      "videoMp4": "video/jackpot/mp4/죄송한데 지금 포스기가 안 돼요.mp4",
+      "korean": "죄송한데 지금 포스기가 안 돼요.",
+      "russian": "Извините, у нас сейчас терминал не работает.",
+      "new": true,
+      "english": "Sorry, the card machine isn't working right now.",
+      "timing": "34:34",
+      "group": 1,
+      "isNew": true
+    },
+    {
+      "video": "video/jackpot/뭐 어떻게 할까요_ 그럼.webm",
+      "videoMp4": "video/jackpot/mp4/뭐 어떻게 할까요_ 그럼.mp4",
+      "korean": "뭐 어떻게 할까요, 그럼?",
+      "russian": "Ну и что тогда делать?",
+      "new": true,
+      "english": "Then what should I do?",
+      "timing": "34:36",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/현금 있으세요.webm",
+      "videoMp4": "video/jackpot/mp4/현금 있으세요.mp4",
+      "korean": "현금 있으세요?",
+      "russian": "Наличные есть?",
+      "new": true,
+      "english": "Do you have cash?",
+      "timing": "34:39",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/만 원 받았습니다.webm",
+      "videoMp4": "video/jackpot/mp4/만 원 받았습니다.mp4",
+      "korean": "만 원 받았습니다.",
+      "russian": "Десять тысяч вон, принято.",
+      "new": true,
+      "english": "Ten thousand won, received.",
+      "timing": "34:47",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/지금 잔돈이 없어요.webm",
+      "videoMp4": "video/jackpot/mp4/지금 잔돈이 없어요.mp4",
+      "korean": "지금 잔돈이 없어요.",
+      "russian": "Сейчас сдачи нет.",
+      "new": true,
+      "english": "I don't have change right now.",
+      "timing": "34:56",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/다음에 올게요.webm",
+      "videoMp4": "video/jackpot/mp4/다음에 올게요.mp4",
+      "korean": "다음에 올게요.",
+      "russian": "Зайду в другой раз.",
+      "new": true,
+      "english": "I'll come back another time.",
+      "timing": "34:58",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/로또 하나 하시겠어요.webm",
+      "videoMp4": "video/jackpot/mp4/로또 하나 하시겠어요.mp4",
+      "korean": "로또 하나 하시겠어요?",
+      "russian": "Может, возьмёте лотерейный билет?",
+      "new": true,
+      "english": "Would you like a lottery ticket?",
+      "timing": "35:03",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/맥주 5천 원_ 로또 5천 원 하면 딱 만 원인데.webm",
+      "videoMp4": "video/jackpot/mp4/맥주 5천 원_ 로또 5천 원 하면 딱 만 원인데.mp4",
+      "korean": "맥주 5천 원, 로또 5천 원 하면 딱 만 원인데.",
+      "russian": "Пиво — пять тысяч, лотерея — пять тысяч, как раз десять тысяч выходит.",
+      "new": true,
+      "english": "Beer's 5,000 won, a lottery ticket's 5,000 — that makes exactly 10,000.",
+      "timing": "35:07",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/네_ 하나 주세요_ 그러면.webm",
+      "videoMp4": "video/jackpot/mp4/네_ 하나 주세요_ 그러면.mp4",
+      "korean": "네, 하나 주세요, 그러면.",
+      "russian": "Да, тогда дайте один.",
+      "new": true,
+      "english": "Okay, give me one, then.",
+      "timing": "35:13",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/네_ 여기 있습니다.webm",
+      "videoMp4": "video/jackpot/mp4/네_ 여기 있습니다.mp4",
+      "korean": "네, 여기 있습니다.",
+      "russian": "Вот, пожалуйста.",
+      "new": true,
+      "english": "Here you go.",
+      "timing": "35:31",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/봉투는 안 주시나요.webm",
+      "videoMp4": "video/jackpot/mp4/봉투는 안 주시나요.mp4",
+      "korean": "봉투는 안 주시나요?",
+      "russian": "А пакет не дадите?",
+      "new": true,
+      "english": "Don't I get a bag?",
+      "timing": "35:40",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/봉투값 100원 안 주셨는데요.webm",
+      "videoMp4": "video/jackpot/mp4/봉투값 100원 안 주셨는데요.mp4",
+      "korean": "봉투값 100원 안 주셨는데요.",
+      "russian": "Вы же за пакет 100 вон не заплатили.",
+      "new": true,
+      "english": "You didn't pay the 100 won for the bag.",
+      "timing": "35:43",
+      "group": 1
+    },
+    {
+      "video": "video/jackpot/네 지금 먹고 있어요.webm",
+      "videoMp4": "video/jackpot/mp4/네 지금 먹고 있어요.mp4",
+      "korean": "네 지금 먹고 있어요",
+      "russian": "Да, вот сейчас ем.",
+      "new": true,
+      "english": "Yes, I'm eating right now.",
+      "timing": "36:34"
+    },
+    {
+      "video": "video/jackpot/반찬 좀 보내줄까.webm",
+      "videoMp4": "video/jackpot/mp4/반찬 좀 보내줄까.mp4",
+      "korean": "반찬 좀 보내줄까?",
+      "russian": "Прислать тебе закусок к рису?",
+      "new": true,
+      "english": "Should I send you some side dishes?",
+      "timing": "36:38"
+    },
+    {
+      "video": "video/jackpot/지난번에 보내주신 거 아직 많아요. 괜찮아요.webm",
+      "videoMp4": "video/jackpot/mp4/지난번에 보내주신 거 아직 많아요. 괜찮아요.mp4",
+      "korean": "지난번에 보내주신 거 아직 많아요. 괜찮아요.",
+      "russian": "С прошлого раза ещё много осталось. Не надо.",
+      "new": true,
+      "english": "There's still plenty left from last time. I'm fine.",
+      "timing": "36:40"
+    },
+    {
+      "video": "video/jackpot/그 보내준 지가 언젠데.webm",
+      "videoMp4": "video/jackpot/mp4/그 보내준 지가 언젠데.mp4",
+      "korean": "그 보내준 지가 언젠데?",
+      "russian": "Да когда это было-то?",
+      "new": true,
+      "english": "That was ages ago!",
+      "timing": "36:43"
+    },
+    {
+      "video": "video/jackpot/반찬 필요하면 말하래.webm",
+      "videoMp4": "video/jackpot/mp4/반찬 필요하면 말하래.mp4",
+      "korean": "반찬 필요하면 말하래.",
+      "russian": "Если закуски нужны — скажи.",
+      "new": true,
+      "english": "If you need side dishes, tell me.",
+      "timing": "36:48"
+    },
+    {
+      "video": "video/jackpot/필요하면 말씀드릴게요.webm",
+      "videoMp4": "video/jackpot/mp4/필요하면 말씀드릴게요.mp4",
+      "korean": "필요하면 말씀드릴게요",
+      "russian": "Если понадобится — скажу.",
+      "new": true,
+      "english": "I'll let you know if I need any.",
+      "timing": "36:50"
+    },
+    {
+      "video": "video/jackpot/내가 니한테 말하지 말랬는데.webm",
+      "videoMp4": "video/jackpot/mp4/내가 니한테 말하지 말랬는데.mp4",
+      "korean": "내가 니한테 말하지 말랬는데",
+      "russian": "Я же просил тебе не рассказывать.",
+      "new": true,
+      "english": "I told her not to tell you.",
+      "timing": "38:03"
+    },
+    {
+      "video": "video/jackpot/그냥 달라고 해. 뭘 맨날 빌리기는 빌려.webm",
+      "videoMp4": "video/jackpot/mp4/그냥 달라고 해. 뭘 맨날 빌리기는 빌려.mp4",
+      "korean": "그냥 달라고 해. 뭘 맨날 빌리기는 빌려.",
+      "russian": "Просто попроси. Что ты вечно «в долг» да «в долг».",
+      "new": true,
+      "english": "Just ask for it. Why do you always say 'borrow'?",
+      "timing": "38:23"
+    },
+    {
+      "video": "video/jackpot/그게 내가 진짜 줘야지.webm",
+      "videoMp4": "video/jackpot/mp4/그게 내가 진짜 줘야지.mp4",
+      "korean": "그게 내가 진짜 줘야지",
+      "russian": "Да нет, я правда должен отдать.",
+      "new": true,
+      "english": "No, I really should pay you back.",
+      "timing": "38:27"
+    },
+    {
+      "video": "video/jackpot/나 사실 돈 없어.webm",
+      "videoMp4": "video/jackpot/mp4/나 사실 돈 없어.mp4",
+      "korean": "나 사실 돈 없어",
+      "russian": "У меня на самом деле денег нет.",
+      "new": true,
+      "english": "Honestly, I don't have any money.",
+      "timing": "38:34"
+    },
+    {
+      "video": "video/jackpot/숨만 쉬어도 나가는 돈이 얼만 줄 알아.webm",
+      "videoMp4": "video/jackpot/mp4/숨만 쉬어도 나가는 돈이 얼만 줄 알아.mp4",
+      "korean": "숨만 쉬어도 나가는 돈이 얼만 줄 알아?",
+      "russian": "Знаешь, сколько уходит, даже если просто дышать?",
+      "new": true,
+      "english": "Do you know how much it costs just to breathe?",
+      "timing": "38:37"
+    },
+    {
+      "video": "video/jackpot/지금 넣을게.webm",
+      "videoMp4": "video/jackpot/mp4/지금 넣을게.mp4",
+      "korean": "지금 넣을게.",
+      "russian": "Сейчас переведу.",
+      "new": true,
+      "english": "I'll send it now.",
+      "timing": "38:55"
+    },
+    {
+      "video": "video/jackpot/지금 들어가면 내일 죽어요.webm",
+      "videoMp4": "video/jackpot/mp4/지금 들어가면 내일 죽어요.mp4",
+      "korean": "지금 들어가면 내일 죽어요.",
+      "russian": "Если сейчас уйду домой — завтра мне конец.",
+      "new": true,
+      "english": "If I go home now, I'm dead tomorrow.",
+      "timing": "42:52"
+    },
+    {
+      "video": "video/jackpot/적당히 마무리하고 들어가.webm",
+      "videoMp4": "video/jackpot/mp4/적당히 마무리하고 들어가.mp4",
+      "korean": "적당히 마무리하고 들어가.",
+      "russian": "Закругляйся и иди домой.",
+      "new": true,
+      "english": "Wrap it up and head home.",
+      "timing": "42:58",
+      "group": 2
+    },
+    {
+      "video": "video/jackpot/들어가세요.webm",
+      "videoMp4": "video/jackpot/mp4/들어가세요.mp4",
+      "korean": "들어가세요",
+      "russian": "Хорошего вечера.",
+      "new": true,
+      "english": "Have a good night.",
+      "timing": "43:00",
+      "group": 2
+    }
+  ],
+  "b5": []
+}
