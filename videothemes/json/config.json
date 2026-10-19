@@ -1594,6 +1594,57 @@
     ],
     "title_en": "The Ordinary Jackpot\n로또 1등도 출근합니다",
     "totalCount": 106,
+    "hasNew": false
+  },
+  "theme55": {
+    "coverImage": "videothemes/subthemebc/loveother.png",
+    "title": "Любовь, но не с тобой\n너 말고 다른 연애",
+    "masterJsonPath": "videothemes/json/videotheme59.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      },
+      {
+        "name": "4",
+        "key": "b4",
+        "name_en": "4"
+      },
+      {
+        "name": "5",
+        "key": "b5",
+        "name_en": "5"
+      },
+      {
+        "name": "6",
+        "key": "b6",
+        "name_en": "6"
+      },
+      {
+        "name": "7",
+        "key": "b7",
+        "name_en": "7"
+      },
+      {
+        "name": "8",
+        "key": "b8",
+        "name_en": "8"
+      }
+    ],
+    "title_en": "A Love Other Than Yours\n너 말고 다른 연애",
+    "totalCount": 229,
     "hasNew": true
   }
 }
