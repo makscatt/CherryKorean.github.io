@@ -219,7 +219,9 @@
     ],
     "totalCount": 217,
     "hasNew": false,
-    "title_en": "BTS"
+    "title_en": "BTS",
+    "name": "BTS",
+    "name_en": "BTS"
   },
   "theme2": {
     "coverImage": "videothemes/subthemebc/squidgamebackground.png",
@@ -245,7 +247,9 @@
     ],
     "totalCount": 92,
     "hasNew": false,
-    "title_en": "Squid Game 1, 2"
+    "title_en": "Squid Game 1, 2",
+    "name": "Игра в кальмара 1,2",
+    "name_en": "Squid Game 1, 2"
   },
   "theme3": {
     "coverImage": "videothemes/subthemebc/healerbackground.png",
@@ -271,7 +275,9 @@
     ],
     "totalCount": 74,
     "hasNew": false,
-    "title_en": "Healer"
+    "title_en": "Healer",
+    "name": "Хилер",
+    "name_en": "Healer"
   },
   "theme4": {
     "coverImage": "videothemes/subthemebc/allkdrama.png",
@@ -322,7 +328,9 @@
     ],
     "totalCount": 225,
     "hasNew": false,
-    "title_en": "Clips from Various Dramas & Shows"
+    "title_en": "Clips from Various Dramas & Shows",
+    "name": "Отрывки из разных Дорам и Шоу",
+    "name_en": "Clips from Various Dramas & Shows"
   },
   "theme5": {
     "coverImage": "videothemes/subthemebc/moonlovers.png",
@@ -363,7 +371,9 @@
     ],
     "totalCount": 161,
     "hasNew": false,
-    "title_en": "Moon Lovers: Scarlet Heart Ryeo"
+    "title_en": "Moon Lovers: Scarlet Heart Ryeo",
+    "name": "Алые сердца Корё",
+    "name_en": "Moon Lovers: Scarlet Heart Ryeo"
   },
   "theme6": {
     "coverImage": "videothemes/subthemebc/hwaran.png",
@@ -404,7 +414,9 @@
     ],
     "totalCount": 154,
     "hasNew": false,
-    "title_en": "Hwarang"
+    "title_en": "Hwarang",
+    "name": "Отряд Хваран",
+    "name_en": "Hwarang"
   },
   "theme7": {
     "coverImage": "videothemes/subthemebc/vin.png",
@@ -430,7 +442,9 @@
     ],
     "totalCount": 75,
     "hasNew": false,
-    "title_en": "Vincenzo"
+    "title_en": "Vincenzo",
+    "name": "Винченцо",
+    "name_en": "Vincenzo"
   },
   "theme8": {
     "coverImage": "videothemes/subthemebc/weakherobackground.png",
@@ -466,7 +480,9 @@
     ],
     "totalCount": 128,
     "hasNew": false,
-    "title_en": "Weak Hero Class — Seasons 1, 2"
+    "title_en": "Weak Hero Class — Seasons 1, 2",
+    "name": "Слабый герой 1,2 сезоны",
+    "name_en": "Weak Hero Class — Seasons 1, 2"
   },
   "theme9": {
     "coverImage": "videothemes/subthemebc/ije.png",
@@ -497,7 +513,9 @@
     ],
     "totalCount": 86,
     "hasNew": false,
-    "title_en": "Death's Game"
+    "title_en": "Death's Game",
+    "name": "Идже скоро умрет",
+    "name_en": "Death's Game"
   },
   "theme10": {
     "coverImage": "videothemes/subthemebc/bloodhounds.png",
@@ -523,7 +541,9 @@
     ],
     "totalCount": 77,
     "hasNew": false,
-    "title_en": "Bloodhounds"
+    "title_en": "Bloodhounds",
+    "name": "Словно гончие",
+    "name_en": "Bloodhounds"
   },
   "theme11": {
     "coverImage": "videothemes/subthemebc/glory.png",
@@ -554,7 +574,9 @@
     ],
     "totalCount": 103,
     "hasNew": false,
-    "title_en": "The Glory"
+    "title_en": "The Glory",
+    "name": "Слава",
+    "name_en": "The Glory"
   },
   "theme12": {
     "coverImage": "videothemes/subthemebc/killershop.png",
@@ -575,7 +597,9 @@
     ],
     "totalCount": 34,
     "hasNew": false,
-    "title_en": "A Shop for Killers"
+    "title_en": "A Shop for Killers",
+    "name": "Магазин для убийц",
+    "name_en": "A Shop for Killers"
   },
   "theme13": {
     "coverImage": "videothemes/subthemebc/hvatai.png",
@@ -606,7 +630,9 @@
     ],
     "totalCount": 100,
     "hasNew": false,
-    "title_en": "Lovely Runner"
+    "title_en": "Lovely Runner",
+    "name": "Хватай Сон Дже и Беги",
+    "name_en": "Lovely Runner"
   },
   "theme14": {
     "coverImage": "videothemes/subthemebc/biglig.png",
@@ -632,7 +658,9 @@
     ],
     "totalCount": 56,
     "hasNew": false,
-    "title_en": "Comedy Big League"
+    "title_en": "Comedy Big League",
+    "name": "Комеди Биг Лига",
+    "name_en": "Comedy Big League"
   },
   "theme15": {
     "coverImage": "videothemes/subthemebc/lookism.png",
@@ -653,7 +681,9 @@
     ],
     "totalCount": 41,
     "hasNew": false,
-    "title_en": "Lookism"
+    "title_en": "Lookism",
+    "name": "Лукизм",
+    "name_en": "Lookism"
   },
   "theme16": {
     "coverImage": "videothemes/subthemebc/kalmar3.png",
@@ -674,7 +704,9 @@
     ],
     "totalCount": 39,
     "hasNew": false,
-    "title_en": "Squid Game 3"
+    "title_en": "Squid Game 3",
+    "name": "Игра в кальмара 3",
+    "name_en": "Squid Game 3"
   },
   "theme17": {
     "coverImage": "videothemes/subthemebc/demon.png",
@@ -695,7 +727,9 @@
     ],
     "totalCount": 41,
     "hasNew": false,
-    "title_en": "My Demon"
+    "title_en": "My Demon",
+    "name": "Мой Демон",
+    "name_en": "My Demon"
   },
   "theme18": {
     "coverImage": "videothemes/subthemebc/kumiho.png",
@@ -726,7 +760,9 @@
     ],
     "totalCount": 93,
     "hasNew": false,
-    "title_en": "Tale of the Nine-Tailed 1938"
+    "title_en": "Tale of the Nine-Tailed 1938",
+    "name": "История 9-хвостого лиса 1938",
+    "name_en": "Tale of the Nine-Tailed 1938"
   },
   "theme19": {
     "coverImage": "videothemes/subthemebc/ad.png",
@@ -752,7 +788,9 @@
     ],
     "totalCount": 68,
     "hasNew": false,
-    "title_en": "Strangers from Hell"
+    "title_en": "Strangers from Hell",
+    "name": "Незнакомцы из АДА",
+    "name_en": "Strangers from Hell"
   },
   "theme20": {
     "coverImage": "videothemes/subthemebc/evilflower.png",
@@ -788,7 +826,9 @@
     ],
     "totalCount": 147,
     "hasNew": false,
-    "title_en": "Flower of Evil"
+    "title_en": "Flower of Evil",
+    "name": "Цветок Зла",
+    "name_en": "Flower of Evil"
   },
   "theme21": {
     "coverImage": "videothemes/subthemebc/shef.png",
@@ -819,7 +859,9 @@
     ],
     "totalCount": 102,
     "hasNew": false,
-    "title_en": "The Tyrant's Chef"
+    "title_en": "The Tyrant's Chef",
+    "name": "Шеф-Повар Тирана",
+    "name_en": "The Tyrant's Chef"
   },
   "theme22": {
     "coverImage": "videothemes/subthemebc/jin.png",
@@ -840,7 +882,9 @@
     ],
     "totalCount": 61,
     "hasNew": false,
-    "title_en": "All Your Wishes Will Come True"
+    "title_en": "All Your Wishes Will Come True",
+    "name": "Все твои желания исполнятся",
+    "name_en": "All Your Wishes Will Come True"
   },
   "theme23": {
     "coverImage": "videothemes/subthemebc/landking.png",
@@ -861,7 +905,9 @@
     ],
     "totalCount": 62,
     "hasNew": false,
-    "title_en": "King the Land"
+    "title_en": "King the Land",
+    "name": "Король земли",
+    "name_en": "King the Land"
   },
   "theme24": {
     "coverImage": "videothemes/subthemebc/lis.png",
@@ -877,7 +923,9 @@
     ],
     "totalCount": 36,
     "hasNew": false,
-    "title_en": "Tale of the Nine-Tailed"
+    "title_en": "Tale of the Nine-Tailed",
+    "name": "История 9-хвостого Лиса",
+    "name_en": "Tale of the Nine-Tailed"
   },
   "theme25": {
     "coverImage": "videothemes/subthemebc/marry.png",
@@ -893,7 +941,9 @@
     ],
     "totalCount": 40,
     "hasNew": false,
-    "title_en": "Marry Me"
+    "title_en": "Marry Me",
+    "name": "Женись на мне",
+    "name_en": "Marry Me"
   },
   "theme26": {
     "coverImage": "videothemes/subthemebc/tafun.png",
@@ -909,7 +959,9 @@
     ],
     "totalCount": 35,
     "hasNew": false,
-    "title_en": "Typhoon Company"
+    "title_en": "Typhoon Company",
+    "name": "Босс компании Тайфун",
+    "name_en": "Typhoon Company"
   },
   "theme27": {
     "coverImage": "videothemes/subthemebc/rusure.png",
@@ -930,7 +982,9 @@
     ],
     "totalCount": 45,
     "hasNew": false,
-    "title_en": "Are You Sure?!"
+    "title_en": "Are You Sure?!",
+    "name": "Ты уверен?",
+    "name_en": "Are You Sure?!"
   },
   "theme28": {
     "coverImage": "videothemes/subthemebc/reader.png",
@@ -946,7 +1000,9 @@
     ],
     "totalCount": 30,
     "hasNew": false,
-    "title_en": "Omniscient Reader"
+    "title_en": "Omniscient Reader",
+    "name": "Всеведущий читатель",
+    "name_en": "Omniscient Reader"
   },
   "theme29": {
     "coverImage": "videothemes/subthemebc/suga.png",
@@ -992,7 +1048,9 @@
     ],
     "totalCount": 215,
     "hasNew": false,
-    "title_en": "SUCHWITA (Suga's Show)"
+    "title_en": "SUCHWITA (Suga's Show)",
+    "name": "ШуЧиТа Шоу Шуги",
+    "name_en": "SUCHWITA (Suga's Show)"
   },
   "theme30": {
     "coverImage": "videothemes/subthemebc/apl.png",
@@ -1018,7 +1076,9 @@
     ],
     "totalCount": 78,
     "hasNew": false,
-    "title_en": "Crash Landing on You"
+    "title_en": "Crash Landing on You",
+    "name": "Аварийная посадка Любви",
+    "name_en": "Crash Landing on You"
   },
   "theme31": {
     "coverImage": "videothemes/subthemebc/2521.png",
@@ -1034,7 +1094,9 @@
     ],
     "totalCount": 33,
     "hasNew": false,
-    "title_en": "Twenty-Five Twenty-One"
+    "title_en": "Twenty-Five Twenty-One",
+    "name": "25/21",
+    "name_en": "Twenty-Five Twenty-One"
   },
   "theme32": {
     "coverImage": "videothemes/subthemebc/itewon.png",
@@ -1050,7 +1112,9 @@
     ],
     "totalCount": 32,
     "hasNew": false,
-    "title_en": "Itaewon Class"
+    "title_en": "Itaewon Class",
+    "name": "Итевон класс",
+    "name_en": "Itaewon Class"
   },
   "theme33": {
     "coverImage": "videothemes/subthemebc/tomorrow.png",
@@ -1066,7 +1130,9 @@
     ],
     "totalCount": 30,
     "hasNew": false,
-    "title_en": "Tomorrow"
+    "title_en": "Tomorrow",
+    "name": "Завтра обязательно",
+    "name_en": "Tomorrow"
   },
   "theme34": {
     "coverImage": "videothemes/subthemebc/rev.png",
@@ -1092,7 +1158,9 @@
     ],
     "totalCount": 86,
     "hasNew": false,
-    "title_en": "Revolver"
+    "title_en": "Revolver",
+    "name": "Револьвер",
+    "name_en": "Revolver"
   },
   "theme35": {
     "coverImage": "videothemes/subthemebc/crown.png",
@@ -1118,7 +1186,9 @@
     ],
     "totalCount": 87,
     "hasNew": false,
-    "title_en": "The Prince's 21st-Century Wife"
+    "title_en": "The Prince's 21st-Century Wife",
+    "name": "Жена принца 21 века",
+    "name_en": "The Prince's 21st-Century Wife"
   },
   "theme37": {
     "coverImage": "videothemes/subthemebc/wfools.png",
@@ -1139,7 +1209,9 @@
     ],
     "totalCount": 66,
     "hasNew": false,
-    "title_en": "WonderFools"
+    "title_en": "WonderFools",
+    "name": "ЧудоДураки",
+    "name_en": "WonderFools"
   },
   "theme39": {
     "coverImage": "videothemes/subthemebc/world.png",
@@ -1165,7 +1237,9 @@
     ],
     "title_en": "Brave New World",
     "totalCount": 81,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Дивный новый мир",
+    "name_en": "Brave New World"
   },
   "theme41": {
     "coverImage": "videothemes/subthemebc/lesson.png",
@@ -1216,7 +1290,9 @@
     ],
     "title_en": "Get Schooled (ep. 5)",
     "totalCount": 232,
-    "hasNew": false
+    "hasNew": false,
+    "name": "참교육 - Преподам тебе урок (5 серия)",
+    "name_en": "Get Schooled (ep. 5)"
   },
   "theme42": {
     "coverImage": "videothemes/subthemebc/kimsec.png",
@@ -1237,7 +1313,9 @@
     ],
     "title_en": "What's Wrong with Secretary Kim\n김비서가 왜 그럴까",
     "totalCount": 70,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Что не так с секретарём Ким?\n김비서가 왜 그럴까",
+    "name_en": "What's Wrong with Secretary Kim\n김비서가 왜 그럴까"
   },
   "theme43": {
     "coverImage": "videothemes/subthemebc/boyfriend.png",
@@ -1263,7 +1341,9 @@
     ],
     "title_en": "Monthly Boyfriend\n월간 남친",
     "totalCount": 75,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Парень по запросу\n월간 남친",
+    "name_en": "Monthly Boyfriend\n월간 남친"
   },
   "theme44": {
     "coverImage": "videothemes/subthemebc/apartment.png",
@@ -1294,7 +1374,9 @@
     ],
     "title_en": "The Apartment Job\n아파트",
     "totalCount": 120,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Апартаменты\n아파트",
+    "name_en": "The Apartment Job\n아파트"
   },
   "theme45": {
     "coverImage": "videothemes/subthemebc/colony.png",
@@ -1325,7 +1407,9 @@
     ],
     "title_en": "Colony\n군체",
     "totalCount": 115,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Колония\n군체",
+    "name_en": "Colony\n군체"
   },
   "theme46": {
     "coverImage": "videothemes/subthemebc/siren.png",
@@ -1346,7 +1430,9 @@
     ],
     "title_en": "Siren\n세이렌",
     "totalCount": 50,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Сирена\n세이렌",
+    "name_en": "Siren\n세이렌"
   },
   "theme47": {
     "coverImage": "videothemes/subthemebc/stickylove.png",
@@ -1372,7 +1458,9 @@
     ],
     "title_en": "Our Sticky Love\n이런 엿 같은 사랑",
     "totalCount": 75,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Наша липкая любовь\n이런 엿 같은 사랑",
+    "name_en": "Our Sticky Love\n이런 엿 같은 사랑"
   },
   "theme48": {
     "coverImage": "videothemes/subthemebc/agentkim.png",
@@ -1398,7 +1486,9 @@
     ],
     "title_en": "Agent Kim Reactivated\n김부장",
     "totalCount": 87,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Агент Ким снова в деле\n김부장",
+    "name_en": "Agent Kim Reactivated\n김부장"
   },
   "theme49": {
     "coverImage": "videothemes/subthemebc/alldead.png",
@@ -1424,7 +1514,9 @@
     ],
     "title_en": "All of Us Are Dead\n지금 우리 학교는",
     "totalCount": 81,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Мы все мертвы\n지금 우리 학교는",
+    "name_en": "All of Us Are Dead\n지금 우리 학교는"
   },
   "theme50": {
     "coverImage": "videothemes/subthemebc/pinggyego.png",
@@ -1455,7 +1547,9 @@
     ],
     "title_en": "Byeon Woo-seok on 핑계고\nEP.110 — Moving to the New Studio",
     "totalCount": 91,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Пён У Сок в шоу 핑계고\nEP.110 — переезд на новую студию",
+    "name_en": "Byeon Woo-seok on 핑계고\nEP.110 — Moving to the New Studio"
   },
   "theme51": {
     "coverImage": "videothemes/subthemebc/pachinko.png",
@@ -1481,7 +1575,9 @@
     ],
     "title_en": "Pachinko\n파친코",
     "totalCount": 64,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Пачинко\n파친코",
+    "name_en": "Pachinko\n파친코"
   },
   "theme52": {
     "coverImage": "videothemes/subthemebc/30days.png",
@@ -1517,7 +1613,9 @@
     ],
     "title_en": "Love Reset\n30일",
     "totalCount": 135,
-    "hasNew": false
+    "hasNew": false,
+    "name": "30 дней\n30일",
+    "name_en": "Love Reset\n30일"
   },
   "theme53": {
     "coverImage": "videothemes/subthemebc/shopforkillers.png",
@@ -1563,7 +1661,9 @@
     ],
     "title_en": "A Shop for Killers 2\n킬러들의 쇼핑몰 2",
     "totalCount": 203,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Магазин для убийц 2\n킬러들의 쇼핑몰 2",
+    "name_en": "A Shop for Killers 2\n킬러들의 쇼핑몰 2"
   },
   "theme54": {
     "coverImage": "videothemes/subthemebc/jackpot.png",
@@ -1594,7 +1694,9 @@
     ],
     "title_en": "The Ordinary Jackpot\n로또 1등도 출근합니다",
     "totalCount": 106,
-    "hasNew": false
+    "hasNew": false,
+    "name": "Даже победитель в лотерею ходит на работу\n로또 1등도 출근합니다",
+    "name_en": "The Ordinary Jackpot\n로또 1등도 출근합니다"
   },
   "theme55": {
     "coverImage": "videothemes/subthemebc/loveother.png",
@@ -1645,6 +1747,8 @@
     ],
     "title_en": "A Love Other Than Yours\n너 말고 다른 연애",
     "totalCount": 229,
-    "hasNew": true
+    "hasNew": true,
+    "name": "Любовь, но не с тобой\n너 말고 다른 연애",
+    "name_en": "A Love Other Than Yours\n너 말고 다른 연애"
   }
 }

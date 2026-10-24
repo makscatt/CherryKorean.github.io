@@ -79,6 +79,16 @@ def rebuild_config(root_arg=None):
             continue
 
         total_themes += 1
+
+        # name = название дорамы (его читает рассылка kimchi: подпись блока по кнопке
+        # из бота). Нет name — берём из title; name_en — из title_en, иначе обложка
+        # темы у EN (pickName(…, 'name') раньше 'title') покажет русское название.
+        for field, src in (("name", "title"), ("name_en", "title_en")):
+            if not entry.get(field) and entry.get(src):
+                entry[field] = entry[src]
+                print(f"  ✏️  {key}: {field} ← {src}")
+                updated += 1
+
         master_path = entry.get("masterJsonPath", "")
 
         # Ищем файл: сначала по masterJsonPath от repo_root, потом в json_dir
