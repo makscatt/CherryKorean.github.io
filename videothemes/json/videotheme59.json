@@ -10,8 +10,7 @@
       "new": true,
       "english": "It's my first time here, so...",
       "timing": "00:55",
-      "group": 1,
-      "isNew": true
+      "group": 1
     },
     {
       "video": "video/loveother/뭐가 제일 유명해요.webm",
@@ -302,8 +301,7 @@
       "russian": "Что, правда пожениться предлагаешь?",
       "new": true,
       "english": "So you're saying we should actually get married?",
-      "timing": "19:39",
-      "isNew": true
+      "timing": "19:39"
     },
     {
       "video": "video/loveother/아_ 물론 뭐 영화를 찍고 있긴 한데.webm",
@@ -590,8 +588,7 @@
       "russian": "Не позорьте меня",
       "new": true,
       "english": "Don't embarrass me.",
-      "timing": "42:33",
-      "isNew": true
+      "timing": "42:33"
     },
     {
       "video": "video/loveother/어어_ 싫어요.webm",
@@ -884,8 +881,7 @@
       "russian": "Ты же знаешь, что у меня на сердце.",
       "new": true,
       "english": "You know what I mean, how I feel.",
-      "timing": "48:38",
-      "isNew": true
+      "timing": "48:38"
     },
     {
       "video": "video/loveother/너 이제 나 봐도 떨리지 않지.webm",
@@ -1177,8 +1173,7 @@
       "russian": "Ну зачем опять об этом!",
       "new": true,
       "english": "Why do you keep bringing that up!",
-      "timing": "01:25",
-      "isNew": true
+      "timing": "01:25"
     },
     {
       "video": "video/loveother/앞으로 잘해.webm",
@@ -1449,8 +1444,7 @@
       "russian": "Не заблуждайтесь",
       "new": true,
       "english": "Don't get the wrong idea.",
-      "timing": "18:26",
-      "isNew": true
+      "timing": "18:26"
     },
     {
       "video": "video/loveother/다시 만날 일 없다고.webm",
@@ -1694,8 +1688,7 @@
       "new": true,
       "english": "You shouldn't be alone.",
       "timing": "33:22",
-      "group": 1,
-      "isNew": true
+      "group": 1
     },
     {
       "video": "video/loveother/귀신 나오기로 유명하거든요.webm",
@@ -1946,8 +1939,7 @@
       "new": true,
       "english": "The passion we had back then,",
       "timing": "54:45",
-      "group": 1,
-      "isNew": true
+      "group": 1
     },
     {
       "video": "video/loveother/대체 어디로 간 걸까.webm",
