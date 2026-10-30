@@ -1743,10 +1743,25 @@
         "name": "8",
         "key": "b8",
         "name_en": "8"
+      },
+      {
+        "name": "9",
+        "key": "b9",
+        "name_en": "9"
+      },
+      {
+        "name": "10",
+        "key": "b10",
+        "name_en": "10"
+      },
+      {
+        "name": "11",
+        "key": "b11",
+        "name_en": "11"
       }
     ],
     "title_en": "A Love Other Than Yours\n너 말고 다른 연애",
-    "totalCount": 229,
+    "totalCount": 306,
     "hasNew": true,
     "name": "Любовь, но не с тобой\n너 말고 다른 연애",
     "name_en": "A Love Other Than Yours\n너 말고 다른 연애"
