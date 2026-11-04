@@ -1762,8 +1762,36 @@
     ],
     "title_en": "A Love Other Than Yours\n너 말고 다른 연애",
     "totalCount": 306,
-    "hasNew": true,
+    "hasNew": false,
     "name": "Любовь, но не с тобой\n너 말고 다른 연애",
     "name_en": "A Love Other Than Yours\n너 말고 다른 연애"
+  },
+  "theme56": {
+    "coverImage": "videothemes/subthemebc/bongsoon.png",
+    "title": "Силачка До Бон Сун\n힘쎈여자 도봉순",
+    "masterJsonPath": "videothemes/json/videotheme60.json",
+    "targetPageUrl": "video_list_template.html",
+    "blocks": [
+      {
+        "name": "1",
+        "key": "b1",
+        "name_en": "1"
+      },
+      {
+        "name": "2",
+        "key": "b2",
+        "name_en": "2"
+      },
+      {
+        "name": "3",
+        "key": "b3",
+        "name_en": "3"
+      }
+    ],
+    "title_en": "Strong Girl Bong-soon\n힘쎈여자 도봉순",
+    "totalCount": 79,
+    "hasNew": true,
+    "name": "Силачка До Бон Сун\n힘쎈여자 도봉순",
+    "name_en": "Strong Girl Bong-soon\n힘쎈여자 도봉순"
   }
 }
