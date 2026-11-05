@@ -57,6 +57,8 @@
   ],
   "b1": [
     {
+      "season": "1",
+      "episode": "1",
       "video": "video/weakhero/잘했어 시윤.webm",
       "videoMp4": "video/weakhero/mp4/잘했어 시윤.mp4",
       "korean": "잘했어 시윤",
@@ -306,6 +308,8 @@
   ],
   "b2": [
     {
+      "season": "1",
+      "episode": "1",
       "video": "video/weakhero/새로 전학생이 왔다.webm",
       "videoMp4": "video/weakhero/mp4/새로 전학생이 왔다.mp4",
       "korean": "새로 전학생이 왔다",
@@ -470,6 +474,8 @@
   ],
   "b3": [
     {
+      "season": "2",
+      "episode": "1",
       "video": "video/weakhero2/선생님.webm",
       "videoMp4": "video/weakhero2/mp4/선생님.mp4",
       "korean": "선생님",
@@ -752,6 +758,8 @@
   ],
   "b4": [
     {
+      "season": "2",
+      "episode": "4",
       "video": "video/weakhero2/감사합니다.webm",
       "videoMp4": "video/weakhero2/mp4/감사합니다.mp4",
       "korean": "감사합니다",

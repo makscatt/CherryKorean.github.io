@@ -54,6 +54,7 @@
   ],
   "b1": [
     {
+      "season": "1",
       "video": "video/squid game/저 뭐냐.webm",
       "videoMp4": "video/squid game/mp4/저 뭐냐.mp4",
       "korean": "저 뭐냐",
@@ -359,6 +360,7 @@
   ],
   "b2": [
     {
+      "season": "2",
       "video": "video/squidgame 2/널 찾아낼 거야.webm",
       "videoMp4": "video/squidgame 2/mp4/널 찾아낼 거야.mp4",
       "korean": "널 찾아낼 거야",
