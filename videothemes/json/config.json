@@ -184,7 +184,9 @@
       {
         "name": "Разное 1",
         "key": "b1",
-        "name_en": "Misc 1"
+        "name_en": "Misc 1",
+        "label": "iHeartRadio: Лас-Вегас 2026",
+        "label_en": "iHeartRadio: Las Vegas 2026"
       },
       {
         "name": "Разное 2",
@@ -202,23 +204,43 @@
         "name_en": "Misc 4"
       },
       {
-        "name": "J-hope",
+        "name": "Разное 5",
         "key": "b5",
+        "name_en": "Misc 5"
+      },
+      {
+        "name": "J-hope",
+        "key": "b6",
         "name_en": "J-Hope"
       },
       {
         "name": "Аэро-Йога-1",
-        "key": "b6",
+        "key": "b7",
         "name_en": "Aero Yoga 1"
       },
       {
         "name": "Аэро-Йога-2",
-        "key": "b7",
+        "key": "b8",
         "name_en": "Aero Yoga 2"
+      },
+      {
+        "name": "ARIRANG Тур: Гоян",
+        "key": "b9",
+        "name_en": "ARIRANG Tour: Goyang"
+      },
+      {
+        "name": "ARIRANG Тур: Европа 1",
+        "key": "b10",
+        "name_en": "ARIRANG Tour: Europe 1"
+      },
+      {
+        "name": "ARIRANG Тур: Европа 2",
+        "key": "b11",
+        "name_en": "ARIRANG Tour: Europe 2"
       }
     ],
-    "totalCount": 217,
-    "hasNew": false,
+    "totalCount": 288,
+    "hasNew": true,
     "title_en": "BTS",
     "name": "BTS",
     "name_en": "BTS"
@@ -1790,7 +1812,7 @@
     ],
     "title_en": "Strong Girl Bong-soon\n힘쎈여자 도봉순",
     "totalCount": 79,
-    "hasNew": true,
+    "hasNew": false,
     "name": "Силачка До Бон Сун\n힘쎈여자 도봉순",
     "name_en": "Strong Girl Bong-soon\n힘쎈여자 도봉순"
   }

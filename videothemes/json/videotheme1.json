@@ -52,6 +52,101 @@
   ],
   "b1": [
     {
+      "drama": "BTS",
+      "video": "video/runbts/그리고 엘베 타고 올라가면은.webm",
+      "videoMp4": "video/runbts/mp4/그리고 엘베 타고 올라가면은.mp4",
+      "korean": "그리고 엘베 타고 올라가면은...",
+      "russian": "А потом, когда поднимемся на лифте…",
+      "new": true,
+      "english": "And then, once we take the elevator up...",
+      "timing": "00:02"
+    },
+    {
+      "video": "video/runbts/뭐 나가는 거는 다 같이 나가되.webm",
+      "videoMp4": "video/runbts/mp4/뭐 나가는 거는 다 같이 나가되.mp4",
+      "korean": "뭐 나가는 거는 다 같이 나가되",
+      "russian": "Выходим все вместе, но",
+      "new": true,
+      "english": "We all go out together, but",
+      "timing": "00:22"
+    },
+    {
+      "video": "video/runbts/그래서 남준이가 뭔가 하고 나오는 게.webm",
+      "videoMp4": "video/runbts/mp4/그래서 남준이가 뭔가 하고 나오는 게.mp4",
+      "korean": "그래서 남준이가 뭔가 하고 나오는 게",
+      "russian": "Так что когда Намджун что-то делает и выходит —",
+      "new": true,
+      "english": "So Namjoon doing something and coming out",
+      "timing": "02:17",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/되게 비주얼적으로 되게 너무 복잡해질 수도 있다.webm",
+      "videoMp4": "video/runbts/mp4/되게 비주얼적으로 되게 너무 복잡해질 수도 있다.mp4",
+      "korean": "되게 비주얼적으로 되게 너무 복잡해질 수도 있다",
+      "russian": "визуально может получиться слишком уж сумбурно",
+      "new": true,
+      "english": "could look way too busy visually",
+      "timing": "02:21",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/일반 시작.webm",
+      "videoMp4": "video/runbts/mp4/일반 시작.mp4",
+      "korean": "일반 시작?",
+      "russian": "Обычный старт?",
+      "new": true,
+      "english": "Regular start?",
+      "timing": "03:28"
+    },
+    {
+      "video": "video/runbts/소리 너무 잘 들리고.webm",
+      "videoMp4": "video/runbts/mp4/소리 너무 잘 들리고.mp4",
+      "korean": "소리 너무 잘 들리고~",
+      "russian": "Звук слышно отлично~",
+      "new": true,
+      "english": "The sound comes through great~",
+      "timing": "05:13"
+    },
+    {
+      "video": "video/runbts/자 빨리 올라오세요.webm",
+      "videoMp4": "video/runbts/mp4/자 빨리 올라오세요.mp4",
+      "korean": "자 빨리 올라오세요!",
+      "russian": "Так, поднимайтесь скорее!",
+      "new": true,
+      "english": "Okay, come on up, quick!",
+      "timing": "05:20"
+    },
+    {
+      "video": "video/runbts/아 그럼 안 돼 그래 하지 마.webm",
+      "videoMp4": "video/runbts/mp4/아 그럼 안 돼 그래 하지 마.mp4",
+      "korean": "아 그럼 안 돼 그래 하지 마",
+      "russian": "А, тогда не пойдёт. — Ну и не надо.",
+      "new": true,
+      "english": "Oh, then no way. — Fine, don't.",
+      "timing": "06:50"
+    },
+    {
+      "video": "video/runbts/근데 이게 지금 너무 멋있어.webm",
+      "videoMp4": "video/runbts/mp4/근데 이게 지금 너무 멋있어.mp4",
+      "korean": "근데 이게 지금 너무 멋있어",
+      "russian": "Но это сейчас выглядит очень круто",
+      "new": true,
+      "english": "But this looks really cool right now.",
+      "timing": "07:43"
+    },
+    {
+      "video": "video/runbts/동대문 가면 이런 형들 많았거든요.webm",
+      "videoMp4": "video/runbts/mp4/동대문 가면 이런 형들 많았거든요.mp4",
+      "korean": "동대문 가면 이런 형들 많았거든요",
+      "russian": "Если пойти в Тондэмун, там таких ребят было полно",
+      "new": true,
+      "english": "If you went to Dongdaemun, there were lots of guys like this.",
+      "timing": "10:04"
+    }
+  ],
+  "b2": [
+    {
       "video": "video/runbts/숨이 잘 안 죽나 봐.webm",
       "videoMp4": "video/runbts/mp4/숨이 잘 안 죽나 봐.mp4",
       "korean": "숨이 잘 안 죽나 봐",
@@ -264,7 +359,7 @@
       "english": "Our car is shining."
     }
   ],
-  "b2": [
+  "b3": [
     {
       "video": "video/runbts/어때요.webm",
       "videoMp4": "video/runbts/mp4/어때요.mp4",
@@ -478,7 +573,7 @@
       "group": 1
     }
   ],
-  "b3": [
+  "b4": [
     {
       "video": "video/runbts/저랑 같이.webm",
       "videoMp4": "video/runbts/mp4/저랑 같이.mp4",
@@ -649,7 +744,7 @@
     },
     {
       "video": "video/runbts/갖고 싶은 것.webm",
-      "videoMp4": "video/runbts/mp4/갖고 싶은 것..?.mp4",
+      "videoMp4": "video/runbts/mp4/갖고 싶은 것.mp4",
       "korean": "갖고 싶은 것..?",
       "russian": "Чего хочешь?",
       "english": "What do you want?"
@@ -690,7 +785,7 @@
       "english": "That's really unique, huh?"
     }
   ],
-  "b4": [
+  "b5": [
     {
       "video": "video/runbts/파프리카.webm",
       "videoMp4": "video/runbts/mp4/파프리카.mp4",
@@ -851,7 +946,7 @@
       "english": "It smells so good."
     }
   ],
-  "b5": [
+  "b6": [
     {
       "video": "video/runbts/거의 샌드위치만큼 유명해요.webm",
       "videoMp4": "video/runbts/mp4/거의 샌드위치만큼 유명해요.mp4",
@@ -1098,7 +1193,7 @@
       "english": "When I came here before..."
     }
   ],
-  "b6": [
+  "b7": [
     {
       "video": "video/runbts/설마 이거 보라 색깔 맞춘 거예요.webm",
       "videoMp4": "video/runbts/mp4/설마 이거 보라 색깔 맞춘 거예요.mp4",
@@ -1331,7 +1426,7 @@
       "english": "Hip up, hip up."
     }
   ],
-  "b7": [
+  "b8": [
     {
       "video": "video/runbts/브릿지다 브릿지.webm",
       "videoMp4": "video/runbts/mp4/브릿지다 브릿지.mp4",
@@ -1579,6 +1674,588 @@
       "russian": "В смысле, это не летучая мышь?",
       "new": true,
       "english": "Why isn't this a bat?"
+    }
+  ],
+  "b9": [
+    {
+      "isNew": true,
+      "drama": "BTS",
+      "video": "video/runbts/가마 그거 하는 거 있잖아요.webm",
+      "videoMp4": "video/runbts/mp4/가마 그거 하는 거 있잖아요.mp4",
+      "korean": "가마 그거 하는 거 있잖아요",
+      "russian": "Ну, знаете, вот это — с паланкином",
+      "new": true,
+      "english": "You know, that palanquin thing",
+      "timing": "02:44"
+    },
+    {
+      "video": "video/runbts/나 _Hooligan_이 너무 멋있던데.webm",
+      "videoMp4": "video/runbts/mp4/나 _Hooligan_이 너무 멋있던데.mp4",
+      "korean": "나 'Hooligan'이 너무 멋있던데?",
+      "russian": "По-моему, «Hooligan» вышел очень круто",
+      "new": true,
+      "english": "I thought 'Hooligan' looked so cool.",
+      "timing": "03:13"
+    },
+    {
+      "video": "video/runbts/멋있을 것 같아.webm",
+      "videoMp4": "video/runbts/mp4/멋있을 것 같아.mp4",
+      "korean": "멋있을 것 같아",
+      "russian": "Думаю, будет круто",
+      "new": true,
+      "english": "I think it'll look cool.",
+      "timing": "03:14"
+    },
+    {
+      "video": "video/runbts/_불타__ _Fire_ 뭐 이런 것들 좀.webm",
+      "videoMp4": "video/runbts/mp4/_불타__ _Fire_ 뭐 이런 것들 좀.mp4",
+      "korean": "'불타', 'Fire' 뭐 이런 것들 좀",
+      "russian": "Ну, «Пылает», «Fire» — вот такие",
+      "new": true,
+      "english": "Stuff like 'Burning,' 'Fire'...",
+      "timing": "05:44"
+    },
+    {
+      "video": "video/runbts/확실하게 놀 때는 진짜.webm",
+      "videoMp4": "video/runbts/mp4/확실하게 놀 때는 진짜.mp4",
+      "korean": "확실하게 놀 때는 진짜",
+      "russian": "Когда уж отрываемся — то прямо по-настоящему",
+      "new": true,
+      "english": "When we go all out, we really...",
+      "timing": "05:47"
+    },
+    {
+      "video": "video/runbts/거슬렸던 건 없는데.webm",
+      "videoMp4": "video/runbts/mp4/거슬렸던 건 없는데.mp4",
+      "korean": "거슬렸던 건 없는데",
+      "russian": "Ничего не мешало,",
+      "new": true,
+      "english": "Nothing bothered me,",
+      "timing": "05:57"
+    },
+    {
+      "video": "video/runbts/야 태형아 비 많이 온대.webm",
+      "videoMp4": "video/runbts/mp4/야 태형아 비 많이 온대.mp4",
+      "korean": "야 태형아 비 많이 온대",
+      "russian": "Эй, Тэхён, говорят, будет сильный дождь",
+      "new": true,
+      "english": "Hey Taehyung, they say it's going to rain a lot.",
+      "timing": "07:22"
+    },
+    {
+      "video": "video/runbts/사실 진짜 약간 조금이라도 걸어다니면 갑자기.webm",
+      "videoMp4": "video/runbts/mp4/사실 진짜 약간 조금이라도 걸어다니면 갑자기.mp4",
+      "korean": "사실 진짜 약간 조금이라도 걸어다니면 갑자기",
+      "russian": "Вообще-то, если хоть чуть-чуть просто ходить, то сразу",
+      "new": true,
+      "english": "Honestly, if we walk around even a little, suddenly",
+      "timing": "09:39"
+    },
+    {
+      "video": "video/runbts/우리가 딱 칠 것만 치고.webm",
+      "videoMp4": "video/runbts/mp4/우리가 딱 칠 것만 치고.mp4",
+      "korean": "우리가 딱 칠 것만 치고",
+      "russian": "Делаем ровно то, что нужно, и",
+      "new": true,
+      "english": "We hit just what we need to hit, and",
+      "timing": "12:32"
+    },
+    {
+      "video": "video/runbts/처음 멘트대로 그냥 우리 인사 없이 하고.webm",
+      "videoMp4": "video/runbts/mp4/처음 멘트대로 그냥 우리 인사 없이 하고.mp4",
+      "korean": "처음 멘트대로 그냥 우리 인사 없이 하고",
+      "russian": "Говорим по вступительному тексту, просто без приветствия,",
+      "new": true,
+      "english": "Let's follow the opening script, just without the greeting,",
+      "timing": "12:38"
+    },
+    {
+      "video": "video/runbts/그리고 이제 아젠다가 계속 이렇게 바뀌는데.webm",
+      "videoMp4": "video/runbts/mp4/그리고 이제 아젠다가 계속 이렇게 바뀌는데.mp4",
+      "korean": "그리고 이제 아젠다가 계속 이렇게 바뀌는데",
+      "russian": "И ещё программа вот так всё время меняется,",
+      "new": true,
+      "english": "And the agenda keeps changing like this,",
+      "timing": "12:48",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/그 사이에 마가 너무 뜬다_ 그래서.webm",
+      "videoMp4": "video/runbts/mp4/그 사이에 마가 너무 뜬다_ 그래서.mp4",
+      "korean": "그 사이에 마가 너무 뜬다, 그래서",
+      "russian": "а в промежутках слишком провисает, поэтому",
+      "new": true,
+      "english": "and there's too much dead air in between, so",
+      "timing": "12:51",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/이게 그래서 나는 대본이 있다고 해가지고 우리가 대본대로 하지도 않고.webm",
+      "videoMp4": "video/runbts/mp4/이게 그래서 나는 대본이 있다고 해가지고 우리가 대본대로 하지도 않고.mp4",
+      "korean": "이게 그래서 나는 대본이 있다고 해가지고 우리가 대본대로 하지도 않고",
+      "russian": "Так вот, я считаю: пусть сценарий и есть, мы по нему всё равно не идём,",
+      "new": true,
+      "english": "So, I mean, even if we have a script, we don't follow it anyway,",
+      "timing": "13:04"
+    },
+    {
+      "video": "video/runbts/형 얘기하는데 또.webm",
+      "videoMp4": "video/runbts/mp4/형 얘기하는데 또.mp4",
+      "korean": "형 얘기하는데 또",
+      "russian": "Хён говорит, а тут опять",
+      "new": true,
+      "english": "Hyung's talking, and then again",
+      "timing": "17:14"
+    },
+    {
+      "video": "video/runbts/그냥 비가 오고 있는 거예요 뒤에서는.webm",
+      "videoMp4": "video/runbts/mp4/그냥 비가 오고 있는 거예요 뒤에서는.mp4",
+      "korean": "그냥 비가 오고 있는 거예요 뒤에서는",
+      "russian": "Просто позади нас идёт дождь",
+      "new": true,
+      "english": "It's just raining behind us.",
+      "timing": "17:36"
+    },
+    {
+      "video": "video/runbts/어 똑같이 할 거고_ 어제.webm",
+      "videoMp4": "video/runbts/mp4/어 똑같이 할 거고_ 어제.mp4",
+      "korean": "어 똑같이 할 거고, 어제",
+      "russian": "Ага, так же и сделаем, вчера…",
+      "new": true,
+      "english": "Yeah, we'll do the same, yesterday...",
+      "timing": "17:47",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/어제처럼 내가 볼 때는 인트로 때 살짝씩.webm",
+      "videoMp4": "video/runbts/mp4/어제처럼 내가 볼 때는 인트로 때 살짝씩.mp4",
+      "korean": "어제처럼 내가 볼 때는 인트로 때 살짝씩",
+      "russian": "как вчера. По-моему, на интро понемногу",
+      "new": true,
+      "english": "like yesterday. I think during the intro, a little",
+      "timing": "17:49",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/좀 이렇게 해주면서 가는 게 더 좋았던 것 같기도 해.webm",
+      "videoMp4": "video/runbts/mp4/좀 이렇게 해주면서 가는 게 더 좋았던 것 같기도 해.mp4",
+      "korean": "좀 이렇게 해주면서 가는 게 더 좋았던 것 같기도 해",
+      "russian": "делать вот так по ходу — кажется, было даже лучше",
+      "new": true,
+      "english": "it might've been better to keep doing a bit like this",
+      "timing": "17:52",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/좀 좀 뛰어가는 게 중간부터.webm",
+      "videoMp4": "video/runbts/mp4/좀 좀 뛰어가는 게 중간부터.mp4",
+      "korean": "좀 좀 뛰어가는 게 중간부터",
+      "russian": "немного пробежаться — с середины",
+      "new": true,
+      "english": "running a bit — from the middle",
+      "timing": "17:56",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/이거 뭐예요_ 그 결정들 뭐예요.webm",
+      "videoMp4": "video/runbts/mp4/이거 뭐예요_ 그 결정들 뭐예요.mp4",
+      "korean": "이거 뭐예요? 그 결정들 뭐예요?",
+      "russian": "Что это? Что это за кристаллики?",
+      "new": true,
+      "english": "What is this? What are those crystals?",
+      "timing": "19:10"
+    }
+  ],
+  "b10": [
+    {
+      "isNew": true,
+      "drama": "BTS",
+      "video": "video/runbts/밥부터.webm",
+      "videoMp4": "video/runbts/mp4/밥부터.mp4",
+      "korean": "밥부터",
+      "russian": "Сначала еда",
+      "new": true,
+      "english": "Food first",
+      "timing": "00:23"
+    },
+    {
+      "video": "video/runbts/뭐가 맛있는지 모르니까.webm",
+      "videoMp4": "video/runbts/mp4/뭐가 맛있는지 모르니까.mp4",
+      "korean": "뭐가 맛있는지 모르니까",
+      "russian": "Неизвестно же, что тут вкусное, так что",
+      "new": true,
+      "english": "since I don't know what's good",
+      "timing": "00:32",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/물어보자 야_ 뭐라고.webm",
+      "videoMp4": "video/runbts/mp4/물어보자 야_ 뭐라고.mp4",
+      "korean": "물어보자 야, 뭐라고?",
+      "russian": "давай спросим. Эй, что говорит?",
+      "new": true,
+      "english": "let's ask. Hey, what's it say?",
+      "timing": "00:35",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/더운 데서 하면 조금이라도 더 빠지지 않을까.webm",
+      "videoMp4": "video/runbts/mp4/더운 데서 하면 조금이라도 더 빠지지 않을까.mp4",
+      "korean": "더운 데서 하면 조금이라도 더 빠지지 않을까?",
+      "russian": "Если выступать в жару, разве не похудеешь хоть чуть больше?",
+      "new": true,
+      "english": "If we perform in the heat, wouldn't we lose a bit more?",
+      "timing": "00:38",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/봐봐요_ 그니까.webm",
+      "videoMp4": "video/runbts/mp4/봐봐요_ 그니까.mp4",
+      "korean": "봐봐요, 그니까",
+      "russian": "Вот видите, я же говорю",
+      "new": true,
+      "english": "See? Told you.",
+      "timing": "01:07"
+    },
+    {
+      "video": "video/runbts/이게 조각 케이크처럼 나뉘어 있어서.webm",
+      "videoMp4": "video/runbts/mp4/이게 조각 케이크처럼 나뉘어 있어서.mp4",
+      "korean": "이게 조각 케이크처럼 나뉘어 있어서",
+      "russian": "Он разделён, как торт на кусочки, так что",
+      "new": true,
+      "english": "It's divided into slices like a cake, so",
+      "timing": "01:26",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/깊게 찔러넣어서 먹는 거야.webm",
+      "videoMp4": "video/runbts/mp4/깊게 찔러넣어서 먹는 거야.mp4",
+      "korean": "깊게 찔러넣어서 먹는 거야",
+      "russian": "глубоко втыкаешь — и ешь",
+      "new": true,
+      "english": "you dig in deep and eat it",
+      "timing": "01:28",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/그리고 여기 안쪽은.webm",
+      "videoMp4": "video/runbts/mp4/그리고 여기 안쪽은.mp4",
+      "korean": "그리고 여기 안쪽은",
+      "russian": "А вот внутри здесь…",
+      "new": true,
+      "english": "And the inside here...",
+      "timing": "01:30",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/일반 치즈 케이크... 여보세요.webm",
+      "videoMp4": "video/runbts/mp4/일반 치즈 케이크... 여보세요.mp4",
+      "korean": "일반 치즈 케이크... 여보세요",
+      "russian": "Обычный чизкейк… Алло?",
+      "new": true,
+      "english": "Regular cheesecake... Hello?",
+      "timing": "01:32",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/일반 치즈 케이크가 아니라.webm",
+      "videoMp4": "video/runbts/mp4/일반 치즈 케이크가 아니라.mp4",
+      "korean": "일반 치즈 케이크가 아니라",
+      "russian": "Это не обычный чизкейк,",
+      "new": true,
+      "english": "It's not regular cheesecake,",
+      "timing": "01:34",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/안에 약간 좀 말랑말랑하게 돼 있어요.webm",
+      "videoMp4": "video/runbts/mp4/안에 약간 좀 말랑말랑하게 돼 있어요.mp4",
+      "korean": "안에 약간 좀 말랑말랑하게 돼 있어요",
+      "russian": "внутри он такой мягонький",
+      "new": true,
+      "english": "the inside is kind of soft",
+      "timing": "01:37",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/거의 뭐 난리 났어.webm",
+      "videoMp4": "video/runbts/mp4/거의 뭐 난리 났어.mp4",
+      "korean": "거의 뭐 난리 났어",
+      "russian": "Тут уже просто безумие",
+      "new": true,
+      "english": "It's basically gone wild.",
+      "timing": "02:21"
+    },
+    {
+      "video": "video/runbts/오늘 진짜 심히.webm",
+      "videoMp4": "video/runbts/mp4/오늘 진짜 심히.mp4",
+      "korean": "오늘 진짜 심히",
+      "russian": "Сегодня, прямо всерьёз,",
+      "new": true,
+      "english": "Today, I seriously",
+      "timing": "02:23"
+    },
+    {
+      "video": "video/runbts/엄청난 공연이 될 거라는 걸 예상해 본다.webm",
+      "videoMp4": "video/runbts/mp4/엄청난 공연이 될 거라는 걸 예상해 본다.mp4",
+      "korean": "엄청난 공연이 될 거라는 걸 예상해 본다",
+      "russian": "предсказываю: будет потрясающий концерт",
+      "new": true,
+      "english": "predict it'll be an incredible show",
+      "timing": "02:26"
+    },
+    {
+      "video": "video/runbts/왜 이렇게 못됐냐 너는.webm",
+      "videoMp4": "video/runbts/mp4/왜 이렇게 못됐냐 너는.mp4",
+      "korean": "왜 이렇게 못됐냐 너는!",
+      "russian": "Ну почему ты такой вредный!",
+      "new": true,
+      "english": "Why are you so mean!",
+      "timing": "04:16"
+    },
+    {
+      "video": "video/runbts/죄책감이 든다.webm",
+      "videoMp4": "video/runbts/mp4/죄책감이 든다.mp4",
+      "korean": "죄책감이 든다",
+      "russian": "Даже как-то совестно",
+      "new": true,
+      "english": "I feel guilty.",
+      "timing": "10:09"
+    },
+    {
+      "video": "video/runbts/들어갈 수 없습니다.webm",
+      "videoMp4": "video/runbts/mp4/들어갈 수 없습니다.mp4",
+      "korean": "들어갈 수 없습니다",
+      "russian": "Входить нельзя",
+      "new": true,
+      "english": "You can't go in.",
+      "timing": "10:59"
+    },
+    {
+      "video": "video/runbts/아 배고파 죽겠는데 진짜.webm",
+      "videoMp4": "video/runbts/mp4/아 배고파 죽겠는데 진짜.mp4",
+      "korean": "아 배고파 죽겠는데 진짜",
+      "russian": "Да я с голоду умираю, честно",
+      "new": true,
+      "english": "Ugh, I'm seriously starving.",
+      "timing": "11:00"
+    },
+    {
+      "video": "video/runbts/만약 여유가 되면은.webm",
+      "videoMp4": "video/runbts/mp4/만약 여유가 되면은.mp4",
+      "korean": "만약 여유가 되면은",
+      "russian": "Если будет время,",
+      "new": true,
+      "english": "If we have time,",
+      "timing": "11:26"
+    },
+    {
+      "video": "video/runbts/진짜 나 한 번도 안 먹어봤어.webm",
+      "videoMp4": "video/runbts/mp4/진짜 나 한 번도 안 먹어봤어.mp4",
+      "korean": "진짜 나 한 번도 안 먹어봤어",
+      "russian": "Правда, мне ни разу не доводилось его пробовать",
+      "new": true,
+      "english": "I've honestly never tried it once.",
+      "timing": "15:03"
+    }
+  ],
+  "b11": [
+    {
+      "isNew": true,
+      "drama": "BTS",
+      "video": "video/runbts/거기서 뮌헨까지가 차 타고 세 시간이야_ 그래가지고.webm",
+      "videoMp4": "video/runbts/mp4/거기서 뮌헨까지가 차 타고 세 시간이야_ 그래가지고.mp4",
+      "korean": "거기서 뮌헨까지가 차 타고 세 시간이야, 그래가지고",
+      "russian": "Оттуда до Мюнхена три часа на машине, вот и",
+      "new": true,
+      "english": "From there it's a three-hour drive to Munich, so",
+      "timing": "15:37"
+    },
+    {
+      "video": "video/runbts/이번 투어는 형이 제일 즐기고 있는 것 같은데.webm",
+      "videoMp4": "video/runbts/mp4/이번 투어는 형이 제일 즐기고 있는 것 같은데.mp4",
+      "korean": "이번 투어는 형이 제일 즐기고 있는 것 같은데?",
+      "russian": "Кажется, в этом туре ты кайфуешь больше всех?",
+      "new": true,
+      "english": "Looks like you're enjoying this tour the most?",
+      "timing": "15:43"
+    },
+    {
+      "video": "video/runbts/어_ 나 간만에 여행해서 좋은데.webm",
+      "videoMp4": "video/runbts/mp4/어_ 나 간만에 여행해서 좋은데.mp4",
+      "korean": "어, 나 간만에 여행해서 좋은데?",
+      "russian": "Ага, впервые за долгое время путешествую — нравится",
+      "new": true,
+      "english": "Yeah, it's nice traveling after so long.",
+      "timing": "15:45"
+    },
+    {
+      "video": "video/runbts/내가 따로 시간 내서는 절대 안 갈 것 같아가지고 그냥 온 김에 가는 거지.webm",
+      "videoMp4": "video/runbts/mp4/내가 따로 시간 내서는 절대 안 갈 것 같아가지고 그냥 온 김에 가는 거지.mp4",
+      "korean": "내가 따로 시간 내서는 절대 안 갈 것 같아가지고 그냥 온 김에 가는 거지",
+      "russian": "Специально время на это никогда не найду, вот и еду, раз уж здесь",
+      "new": true,
+      "english": "I'd never make separate time for it, so I'm just going while I'm here.",
+      "timing": "15:54"
+    },
+    {
+      "video": "video/runbts/우리 영국에서 다 준다고 하지 않았나.webm",
+      "videoMp4": "video/runbts/mp4/우리 영국에서 다 준다고 하지 않았나.mp4",
+      "korean": "우리 영국에서 다 준다고 하지 않았나?",
+      "russian": "Разве нам не говорили, что в Англии всем раздадут?",
+      "new": true,
+      "english": "Didn't they say they'd give us all one in the UK?",
+      "timing": "16:55"
+    },
+    {
+      "video": "video/runbts/저 오늘 공연이에요_ 이제 곧 들어가요.webm",
+      "videoMp4": "video/runbts/mp4/저 오늘 공연이에요_ 이제 곧 들어가요.mp4",
+      "korean": "저 오늘 공연이에요, 이제 곧 들어가요",
+      "russian": "У меня сегодня концерт, скоро выхожу",
+      "new": true,
+      "english": "I have a show today, I'm going in soon.",
+      "timing": "18:50"
+    },
+    {
+      "video": "video/runbts/왜 맞는 말을 하는 거야.webm",
+      "videoMp4": "video/runbts/mp4/왜 맞는 말을 하는 거야.mp4",
+      "korean": "왜 맞는 말을 하는 거야?",
+      "russian": "Зачем ты говоришь правду?",
+      "new": true,
+      "english": "Why are you saying the truth?",
+      "timing": "23:47"
+    },
+    {
+      "video": "video/runbts/난 또 어쩐 일로 남준이가 날 치나 했다.webm",
+      "videoMp4": "video/runbts/mp4/난 또 어쩐 일로 남준이가 날 치나 했다.mp4",
+      "korean": "난 또 어쩐 일로 남준이가 날 치나 했다",
+      "russian": "А я ещё думаю: чего это вдруг Намджун меня хлопает",
+      "new": true,
+      "english": "And I was wondering why on earth Namjoon was hitting me.",
+      "timing": "26:29"
+    },
+    {
+      "video": "video/runbts/한 입만 더 먹어볼게요.webm",
+      "videoMp4": "video/runbts/mp4/한 입만 더 먹어볼게요.mp4",
+      "korean": "한 입만 더 먹어볼게요",
+      "russian": "Попробую ещё один кусочек",
+      "new": true,
+      "english": "I'll have just one more bite.",
+      "timing": "29:33"
+    },
+    {
+      "video": "video/runbts/뭐 비빔밥.webm",
+      "videoMp4": "video/runbts/mp4/뭐 비빔밥.mp4",
+      "korean": "뭐 비빔밥?",
+      "russian": "Что, пибимпап?",
+      "new": true,
+      "english": "What, bibimbap?",
+      "timing": "29:37"
+    },
+    {
+      "video": "video/runbts/정국아 내 것도 만들어 줘.webm",
+      "videoMp4": "video/runbts/mp4/정국아 내 것도 만들어 줘.mp4",
+      "korean": "정국아 내 것도 만들어 줘",
+      "russian": "Чонгук, сделай и мне",
+      "new": true,
+      "english": "Jungkook, make me one too.",
+      "timing": "29:43",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/아 빨리.webm",
+      "videoMp4": "video/runbts/mp4/아 빨리.mp4",
+      "korean": "아 빨리",
+      "russian": "Ну быстрее",
+      "new": true,
+      "english": "Come on, hurry.",
+      "timing": "29:46",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/아 시간 없어.webm",
+      "videoMp4": "video/runbts/mp4/아 시간 없어.mp4",
+      "korean": "아 시간 없어",
+      "russian": "Ой, времени нет",
+      "new": true,
+      "english": "Ugh, there's no time.",
+      "timing": "29:47",
+      "group": 1
+    },
+    {
+      "video": "video/runbts/야 고추장 어디 있어.webm",
+      "videoMp4": "video/runbts/mp4/야 고추장 어디 있어.mp4",
+      "korean": "야 고추장 어디 있어?",
+      "russian": "Эй, где перцовая паста?",
+      "new": true,
+      "english": "Hey, where's the gochujang?",
+      "timing": "29:55"
+    },
+    {
+      "video": "video/runbts/정국이가 이 케이터링 주인이야.webm",
+      "videoMp4": "video/runbts/mp4/정국이가 이 케이터링 주인이야.mp4",
+      "korean": "정국이가 이 케이터링 주인이야?",
+      "russian": "Чонгук что, хозяин этого кейтеринга?",
+      "new": true,
+      "english": "Is Jungkook the owner of this catering?",
+      "timing": "30:04"
+    },
+    {
+      "video": "video/runbts/이게 잘 비벼진 거야.webm",
+      "videoMp4": "video/runbts/mp4/이게 잘 비벼진 거야.mp4",
+      "korean": "이게 잘 비벼진 거야?",
+      "russian": "Это хорошо перемешано?",
+      "new": true,
+      "english": "Is this mixed well?",
+      "timing": "30:20"
+    },
+    {
+      "video": "video/runbts/정국아 나 이거 마들렌 하나 먹어도 돼.webm",
+      "videoMp4": "video/runbts/mp4/정국아 나 이거 마들렌 하나 먹어도 돼.mp4",
+      "korean": "정국아 나 이거 마들렌 하나 먹어도 돼?",
+      "russian": "Чонгук, можно мне одну мадленку?",
+      "new": true,
+      "english": "Jungkook, can I have one of these madeleines?",
+      "timing": "30:26"
+    },
+    {
+      "video": "video/runbts/즐거웠습니다.webm",
+      "videoMp4": "video/runbts/mp4/즐거웠습니다.mp4",
+      "korean": "즐거웠습니다",
+      "russian": "Было весело",
+      "new": true,
+      "english": "It was fun.",
+      "timing": "30:37"
+    },
+    {
+      "video": "video/runbts/야 요새 석청 아무도 안 먹어서 홉이 외로워 해.webm",
+      "videoMp4": "video/runbts/mp4/야 요새 석청 아무도 안 먹어서 홉이 외로워 해.mp4",
+      "korean": "야 요새 석청 아무도 안 먹어서 홉이 외로워 해",
+      "russian": "Слушай, сейчас никто не ест дикий мёд, вот Хоби и одиноко",
+      "new": true,
+      "english": "Hey, nobody eats the rock honey these days, so Hobi's lonely.",
+      "timing": "32:35",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/그래서 이번 투어에.webm",
+      "videoMp4": "video/runbts/mp4/그래서 이번 투어에.mp4",
+      "korean": "그래서 이번 투어에",
+      "russian": "Поэтому в этом туре",
+      "new": true,
+      "english": "So on this tour",
+      "timing": "32:39",
+      "group": 2
+    },
+    {
+      "video": "video/runbts/저 조그마한 통이 마르질 않더라고요.webm",
+      "videoMp4": "video/runbts/mp4/저 조그마한 통이 마르질 않더라고요.mp4",
+      "korean": "저 조그마한 통이 마르질 않더라고요",
+      "russian": "эта маленькая баночка всё никак не кончается",
+      "new": true,
+      "english": "that little jar just never runs out",
+      "timing": "32:41",
+      "group": 2
     }
   ]
 }
