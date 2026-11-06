@@ -226,17 +226,29 @@
       {
         "name": "ARIRANG Тур: Гоян",
         "key": "b9",
-        "name_en": "ARIRANG Tour: Goyang"
+        "name_en": "ARIRANG Tour: Goyang",
+        "chip": {
+          "bg": "#ffffff",
+          "color": "#e9002a"
+        }
       },
       {
         "name": "ARIRANG Тур: Европа 1",
         "key": "b10",
-        "name_en": "ARIRANG Tour: Europe 1"
+        "name_en": "ARIRANG Tour: Europe 1",
+        "chip": {
+          "bg": "#ffffff",
+          "color": "#e9002a"
+        }
       },
       {
         "name": "ARIRANG Тур: Европа 2",
         "key": "b11",
-        "name_en": "ARIRANG Tour: Europe 2"
+        "name_en": "ARIRANG Tour: Europe 2",
+        "chip": {
+          "bg": "#ffffff",
+          "color": "#e9002a"
+        }
       }
     ],
     "totalCount": 288,
