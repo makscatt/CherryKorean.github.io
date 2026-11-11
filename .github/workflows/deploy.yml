@@ -42,10 +42,11 @@ jobs:
             git push || echo "::warning::auto-commit push пропущен (гонка), выкладка продолжается"
           fi
 
-      # update обязателен: индекс пакетов в образе раннера устаревает, install без
-      # него упал (ран ea31f94, 11.11.2026 — заливка не началась).
+      # pipx, не apt: 11.11.2026 apt на раннере сначала уронил шаг (ран ea31f94), потом
+      # повис на нём (a274282) — заливка не начиналась. pipx в образе раннера есть.
       - name: Install s3cmd
-        run: sudo apt-get update -qq && sudo apt-get install -y s3cmd
+        timeout-minutes: 5
+        run: pipx install s3cmd
 
       - name: Configure s3cmd
         run: |
