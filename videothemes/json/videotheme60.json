@@ -759,6 +759,900 @@
       "timing": "1:08:55"
     }
   ],
-  "b4": [],
-  "b5": []
+  "b4": [
+    {
+      "drama": "Силачка До Бон Сун",
+      "episode": "2",
+      "video": "video/bongsoon/우리 둘만 내 스케줄 알아야 될 것 같아.webm",
+      "videoMp4": "video/bongsoon/mp4/우리 둘만 내 스케줄 알아야 될 것 같아.mp4",
+      "korean": "우리 둘만 내 스케줄 알아야 될 것 같아",
+      "russian": "Похоже, моё расписание должны знать только мы двое.",
+      "new": true,
+      "english": "I think only the two of us should know my schedule.",
+      "timing": "03:02",
+      "isNew": true
+    },
+    {
+      "video": "video/bongsoon/지금 장난하십니까.webm",
+      "videoMp4": "video/bongsoon/mp4/지금 장난하십니까.mp4",
+      "korean": "지금 장난하십니까?",
+      "russian": "Вы что, издеваетесь?",
+      "new": true,
+      "english": "Are you kidding me?",
+      "timing": "03:42"
+    },
+    {
+      "video": "video/bongsoon/대표님은 원수질 일 많이 하고 사셨습니까.webm",
+      "videoMp4": "video/bongsoon/mp4/대표님은 원수질 일 많이 하고 사셨습니까.mp4",
+      "korean": "대표님은 원수질 일 많이 하고 사셨습니까?",
+      "russian": "Вы что, в жизни много врагов себе нажили?",
+      "new": true,
+      "english": "Have you done a lot of things to make enemies, sir?",
+      "timing": "03:49"
+    },
+    {
+      "video": "video/bongsoon/경찰은 왜 싫어하십니까.webm",
+      "videoMp4": "video/bongsoon/mp4/경찰은 왜 싫어하십니까.mp4",
+      "korean": "경찰은 왜 싫어하십니까?",
+      "russian": "А почему вы не любите полицию?",
+      "new": true,
+      "english": "Why don't you like the police?",
+      "timing": "03:58",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/넌 뭐 좋아하냐.webm",
+      "videoMp4": "video/bongsoon/mp4/넌 뭐 좋아하냐.mp4",
+      "korean": "넌 뭐 좋아하냐?",
+      "russian": "А ты что, любишь?",
+      "new": true,
+      "english": "What, you like them?",
+      "timing": "03:59",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/내 경고를 무시하지 마.webm",
+      "videoMp4": "video/bongsoon/mp4/내 경고를 무시하지 마.mp4",
+      "korean": "내 경고를 무시하지 마",
+      "russian": "Не игнорируй моё предупреждение.",
+      "new": true,
+      "english": "Don't ignore my warning.",
+      "timing": "04:27",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/앞으로 어떤 일이 일어날지 기대해.webm",
+      "videoMp4": "video/bongsoon/mp4/앞으로 어떤 일이 일어날지 기대해.mp4",
+      "korean": "앞으로 어떤 일이 일어날지 기대해",
+      "russian": "Ну, жди, что теперь будет.",
+      "new": true,
+      "english": "Look forward to what happens next.",
+      "timing": "04:28",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/언제부터 이런 전화를 받으셨습니까.webm",
+      "videoMp4": "video/bongsoon/mp4/언제부터 이런 전화를 받으셨습니까.mp4",
+      "korean": "언제부터 이런 전화를 받으셨습니까?",
+      "russian": "С каких пор вам приходят такие звонки?",
+      "new": true,
+      "english": "Since when have you been getting these calls?",
+      "timing": "04:34",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/나 오늘 놀 거야 기분 나빠서 일 못 하겠어.webm",
+      "videoMp4": "video/bongsoon/mp4/나 오늘 놀 거야 기분 나빠서 일 못 하겠어.mp4",
+      "korean": "나 오늘 놀 거야 기분 나빠서 일 못 하겠어",
+      "russian": "Сегодня я отдыхаю. Настроение плохое, работать не могу.",
+      "new": true,
+      "english": "I'm taking the day off. I'm in a bad mood, I can't work.",
+      "timing": "04:48"
+    },
+    {
+      "video": "video/bongsoon/아_ 그럼 제가 다 따라다녀야 되는 겁니까.webm",
+      "videoMp4": "video/bongsoon/mp4/아_ 그럼 제가 다 따라다녀야 되는 겁니까.mp4",
+      "korean": "아, 그럼 제가 다 따라다녀야 되는 겁니까?",
+      "russian": "А, так мне что, везде за вами ходить?",
+      "new": true,
+      "english": "So I have to follow you around everywhere?",
+      "timing": "05:22"
+    },
+    {
+      "video": "video/bongsoon/아유_ 당연하지 그걸 말이라고 하십니까.webm",
+      "videoMp4": "video/bongsoon/mp4/아유_ 당연하지 그걸 말이라고 하십니까.mp4",
+      "korean": "아유, 당연하지 그걸 말이라고 하십니까?",
+      "russian": "Ну ещё бы! И вы ещё спрашиваете?",
+      "new": true,
+      "english": "Well, obviously. Is that even a question?",
+      "timing": "05:25"
+    },
+    {
+      "video": "video/bongsoon/아니_ 그럼 저_ 저더러 죽으라고요.webm",
+      "videoMp4": "video/bongsoon/mp4/아니_ 그럼 저_ 저더러 죽으라고요.mp4",
+      "korean": "아니, 그럼 저, 저더러 죽으라고요?",
+      "russian": "Так что, мне, мне умирать, что ли?",
+      "new": true,
+      "english": "So you're telling me to die?",
+      "timing": "05:48"
+    },
+    {
+      "video": "video/bongsoon/어떡하면 좋아요.webm",
+      "videoMp4": "video/bongsoon/mp4/어떡하면 좋아요.mp4",
+      "korean": "어떡하면 좋아요?",
+      "russian": "И что же теперь делать?",
+      "new": true,
+      "english": "What can anyone do now?",
+      "timing": "07:35"
+    },
+    {
+      "video": "video/bongsoon/저 좀 잠깐 봐요.webm",
+      "videoMp4": "video/bongsoon/mp4/저 좀 잠깐 봐요.mp4",
+      "korean": "저 좀 잠깐 봐요",
+      "russian": "Можно вас на минутку?",
+      "new": true,
+      "english": "Can I see you for a moment?",
+      "timing": "08:24"
+    },
+    {
+      "video": "video/bongsoon/너무 내 것만 샀네.webm",
+      "videoMp4": "video/bongsoon/mp4/너무 내 것만 샀네.mp4",
+      "korean": "너무 내 것만 샀네",
+      "russian": "Чё-то дофига я себе накупил.",
+      "new": true,
+      "english": "I bought way too much for myself.",
+      "timing": "10:59"
+    },
+    {
+      "video": "video/bongsoon/아_ 진짜 괜찮다는데 왜 그러십니까.webm",
+      "videoMp4": "video/bongsoon/mp4/아_ 진짜 괜찮다는데 왜 그러십니까.mp4",
+      "korean": "아, 진짜 괜찮다는데 왜 그러십니까?",
+      "russian": "Я же говорю, не надо, ну чего вы?",
+      "new": true,
+      "english": "I told you I'm fine, really. Why insist?",
+      "timing": "11:08"
+    },
+    {
+      "video": "video/bongsoon/12시요.webm",
+      "videoMp4": "video/bongsoon/mp4/12시요.mp4",
+      "korean": "12시요?",
+      "russian": "На двенадцать?",
+      "new": true,
+      "english": "Twelve o'clock?",
+      "timing": "11:55"
+    },
+    {
+      "video": "video/bongsoon/서명 좀 받았어.webm",
+      "videoMp4": "video/bongsoon/mp4/서명 좀 받았어.mp4",
+      "korean": "서명 좀 받았어?",
+      "russian": "Подписи удалось собрать?",
+      "new": true,
+      "english": "Did you get any signatures?",
+      "timing": "14:09"
+    },
+    {
+      "video": "video/bongsoon/아니 땐 굴뚝에 연기 안 나네.webm",
+      "videoMp4": "video/bongsoon/mp4/아니 땐 굴뚝에 연기 안 나네.mp4",
+      "korean": "아니 땐 굴뚝에 연기 안 나네",
+      "russian": "Да уж, нет дыма без огня.",
+      "new": true,
+      "english": "Well, there's no smoke without fire.",
+      "timing": "17:15"
+    },
+    {
+      "video": "video/bongsoon/예쁘면 뭐 하냐.webm",
+      "videoMp4": "video/bongsoon/mp4/예쁘면 뭐 하냐.mp4",
+      "korean": "예쁘면 뭐 하냐?",
+      "russian": "Что толку, что я красивая?",
+      "new": true,
+      "english": "What's the point of being pretty?",
+      "timing": "17:53"
+    },
+    {
+      "video": "video/bongsoon/걔는 왜 정이 안 떨어지냐.webm",
+      "videoMp4": "video/bongsoon/mp4/걔는 왜 정이 안 떨어지냐.mp4",
+      "korean": "걔는 왜 정이 안 떨어지냐?",
+      "russian": "Ну почему он мне никак не разонравится?",
+      "new": true,
+      "english": "Why can't I get over him?",
+      "timing": "18:00"
+    },
+    {
+      "video": "video/bongsoon/너_ 아까 가게 같이 온 남자 혹시 너네 회사 사장이냐.webm",
+      "videoMp4": "video/bongsoon/mp4/너_ 아까 가게 같이 온 남자 혹시 너네 회사 사장이냐.mp4",
+      "korean": "너, 아까 가게 같이 온 남자 혹시 너네 회사 사장이냐?",
+      "russian": "Слушай, тот мужчина, с которым ты сегодня заходила в магазин, — это случайно не твой начальник?",
+      "new": true,
+      "english": "Hey, the guy who came to the shop with you earlier — is he your company's boss, by any chance?",
+      "timing": "18:40"
+    },
+    {
+      "video": "video/bongsoon/이건 하늘이 너한테 준 로또야.webm",
+      "videoMp4": "video/bongsoon/mp4/이건 하늘이 너한테 준 로또야.mp4",
+      "korean": "이건 하늘이 너한테 준 로또야",
+      "russian": "Это тебе небеса лотерейный билет послали.",
+      "new": true,
+      "english": "This is a lottery ticket from heaven.",
+      "timing": "18:59"
+    }
+  ],
+  "b5": [
+    {
+      "drama": "Силачка До Бон Сун",
+      "episode": "2",
+      "video": "video/bongsoon/남자를 좋아한단 말이야.webm",
+      "videoMp4": "video/bongsoon/mp4/남자를 좋아한단 말이야.mp4",
+      "korean": "남자를 좋아한단 말이야?",
+      "russian": "Так ему что, мужчины нравятся?",
+      "new": true,
+      "english": "You mean he likes men?",
+      "timing": "19:12",
+      "isNew": true
+    },
+    {
+      "video": "video/bongsoon/조금만 늦었으면 살리기 힘들었을 거예요.webm",
+      "videoMp4": "video/bongsoon/mp4/조금만 늦었으면 살리기 힘들었을 거예요.mp4",
+      "korean": "조금만 늦었으면 살리기 힘들었을 거예요",
+      "russian": "Опоздай вы чуть-чуть — спасти было бы уже трудно.",
+      "new": true,
+      "english": "If you'd been a little later, it would have been hard to save her.",
+      "timing": "23:17"
+    },
+    {
+      "video": "video/bongsoon/달리 뭐_ 특별히 기억나는 건 없어요.webm",
+      "videoMp4": "video/bongsoon/mp4/달리 뭐_ 특별히 기억나는 건 없어요.mp4",
+      "korean": "달리 뭐, 특별히 기억나는 건 없어요?",
+      "russian": "А больше ничего особенного не помните?",
+      "new": true,
+      "english": "Is there anything else you specifically remember?",
+      "timing": "24:55"
+    },
+    {
+      "video": "video/bongsoon/진짜 어떻게 여자한테 그럴 수가 있냐.webm",
+      "videoMp4": "video/bongsoon/mp4/진짜 어떻게 여자한테 그럴 수가 있냐.mp4",
+      "korean": "진짜 어떻게 여자한테 그럴 수가 있냐?",
+      "russian": "Ну как можно так с женщиной?",
+      "new": true,
+      "english": "How could anyone do that to a woman?",
+      "timing": "25:42"
+    },
+    {
+      "video": "video/bongsoon/요즘에 이 동네 사고가 많이 나 가져.webm",
+      "videoMp4": "video/bongsoon/mp4/요즘에 이 동네 사고가 많이 나 가져.mp4",
+      "korean": "요즘에 이 동네 사고가 많이 나 가져",
+      "russian": "В последнее время в этом районе много происшествий,",
+      "new": true,
+      "english": "There have been lots of incidents around here lately, so",
+      "timing": "26:21",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/경찰차 진짜 많이 다니거든요.webm",
+      "videoMp4": "video/bongsoon/mp4/경찰차 진짜 많이 다니거든요.mp4",
+      "korean": "경찰차 진짜 많이 다니거든요?",
+      "russian": "полицейские машины тут прямо постоянно ездят.",
+      "new": true,
+      "english": "police cars really drive around a lot, you know?",
+      "timing": "26:23",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/오늘은 그냥 일찍 집에 들어가지.webm",
+      "videoMp4": "video/bongsoon/mp4/오늘은 그냥 일찍 집에 들어가지.mp4",
+      "korean": "오늘은 그냥 일찍 집에 들어가지?",
+      "russian": "Может, сегодня пораньше домой пойдёте?",
+      "new": true,
+      "english": "Why don't you just go home early today?",
+      "timing": "26:25",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/너나 집에 가.webm",
+      "videoMp4": "video/bongsoon/mp4/너나 집에 가.mp4",
+      "korean": "너나 집에 가",
+      "russian": "Сама иди домой.",
+      "new": true,
+      "english": "You go home.",
+      "timing": "26:27",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/겁대가리 없이 남의 우정 문제에 개입하고 있어.webm",
+      "videoMp4": "video/bongsoon/mp4/겁대가리 없이 남의 우정 문제에 개입하고 있어.mp4",
+      "korean": "겁대가리 없이 남의 우정 문제에 개입하고 있어",
+      "russian": "Ни капли страха — лезет в чужие дружеские разборки.",
+      "new": true,
+      "english": "Not scared at all, butting into other people's friendship business.",
+      "timing": "26:28",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/이거 누나 전화번호거든.webm",
+      "videoMp4": "video/bongsoon/mp4/이거 누나 전화번호거든.mp4",
+      "korean": "이거 누나 전화번호거든",
+      "russian": "Это мой номер телефона.",
+      "new": true,
+      "english": "This is my number.",
+      "timing": "27:47",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/앞으로 얘들이 또 괴롭히면 누나한테 전화해_ 알았지_ 네.webm",
+      "videoMp4": "video/bongsoon/mp4/앞으로 얘들이 또 괴롭히면 누나한테 전화해_ 알았지_ 네.mp4",
+      "korean": "앞으로 얘들이 또 괴롭히면 누나한테 전화해, 알았지? 네",
+      "russian": "Если эти опять будут доставать — звони мне, понял? — Да.",
+      "new": true,
+      "english": "If these guys bother you again, call me, okay? — Okay.",
+      "timing": "27:49",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/그리고.webm",
+      "videoMp4": "video/bongsoon/mp4/그리고.mp4",
+      "korean": "그리고",
+      "russian": "И ещё.",
+      "new": true,
+      "english": "And also,",
+      "timing": "27:54",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/누나가 살아 보니까 고졸은 좀 빡세다.webm",
+      "videoMp4": "video/bongsoon/mp4/누나가 살아 보니까 고졸은 좀 빡세다.mp4",
+      "korean": "누나가 살아 보니까 고졸은 좀 빡세다",
+      "russian": "По своему опыту скажу: только со школой — тяжко.",
+      "new": true,
+      "english": "From my experience, life with just a high school diploma is pretty rough.",
+      "timing": "27:56",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/치료가 잘 안 되더라고요.webm",
+      "videoMp4": "video/bongsoon/mp4/치료가 잘 안 되더라고요.mp4",
+      "korean": "치료가 잘 안 되더라고요",
+      "russian": "Оказывается, лечится плохо.",
+      "new": true,
+      "english": "Turns out it's hard to treat.",
+      "timing": "32:29"
+    },
+    {
+      "video": "video/bongsoon/너 여기 웬일이야.webm",
+      "videoMp4": "video/bongsoon/mp4/너 여기 웬일이야.mp4",
+      "korean": "너 여기 웬일이야?",
+      "russian": "А ты что тут делаешь?",
+      "new": true,
+      "english": "What are you doing here?",
+      "timing": "34:47"
+    },
+    {
+      "video": "video/bongsoon/그 여자 괜찮을까.webm",
+      "videoMp4": "video/bongsoon/mp4/그 여자 괜찮을까.mp4",
+      "korean": "그 여자 괜찮을까?",
+      "russian": "Интересно, та женщина в порядке?",
+      "new": true,
+      "english": "I wonder if that woman is okay.",
+      "timing": "44:03"
+    },
+    {
+      "video": "video/bongsoon/설마 죽이진 않겠지.webm",
+      "videoMp4": "video/bongsoon/mp4/설마 죽이진 않겠지.mp4",
+      "korean": "설마 죽이진 않겠지?",
+      "russian": "Не убьют же её, в самом деле?",
+      "new": true,
+      "english": "They wouldn't kill her, would they?",
+      "timing": "44:06"
+    },
+    {
+      "video": "video/bongsoon/죽일 거였으면 그렇게 데려가진 않았을 거 아니야.webm",
+      "videoMp4": "video/bongsoon/mp4/죽일 거였으면 그렇게 데려가진 않았을 거 아니야.mp4",
+      "korean": "죽일 거였으면 그렇게 데려가진 않았을 거 아니야",
+      "russian": "Если б хотели убить, не стали бы её так увозить.",
+      "new": true,
+      "english": "If they meant to kill her, they wouldn't have taken her like that.",
+      "timing": "44:09",
+      "group": 3
+    },
+    {
+      "video": "video/bongsoon/힘이 있어도.webm",
+      "videoMp4": "video/bongsoon/mp4/힘이 있어도.mp4",
+      "korean": "힘이 있어도",
+      "russian": "Хоть сила у меня и есть,",
+      "new": true,
+      "english": "Even with all my strength,",
+      "timing": "44:20",
+      "group": 3
+    },
+    {
+      "video": "video/bongsoon/이럴 땐 아무 소용이 없다_1.webm",
+      "videoMp4": "video/bongsoon/mp4/이럴 땐 아무 소용이 없다_1.mp4",
+      "korean": "이럴 땐 아무 소용이 없다",
+      "russian": "в такие моменты от неё никакого толку.",
+      "new": true,
+      "english": "it's no use at times like this.",
+      "timing": "44:23",
+      "group": 3
+    },
+    {
+      "video": "video/bongsoon/도와줄 방법이 없을까_ 봉기야.webm",
+      "videoMp4": "video/bongsoon/mp4/도와줄 방법이 없을까_ 봉기야.mp4",
+      "korean": "도와줄 방법이 없을까, 봉기야?",
+      "russian": "Неужели никак не помочь, Бонги?",
+      "new": true,
+      "english": "Isn't there any way to help, Bong-gi?",
+      "timing": "44:32",
+      "group": 3
+    },
+    {
+      "video": "video/bongsoon/왜 하나는 죽이고.webm",
+      "videoMp4": "video/bongsoon/mp4/왜 하나는 죽이고.mp4",
+      "korean": "왜 하나는 죽이고",
+      "russian": "Почему одну убили, а…",
+      "new": true,
+      "english": "Why kill one, and…",
+      "timing": "46:11"
+    }
+  ],
+  "b6": [
+    {
+      "drama": "Силачка До Бон Сун",
+      "episode": "2",
+      "video": "video/bongsoon/어떻게 그렇게 잘 아십니까.webm",
+      "videoMp4": "video/bongsoon/mp4/어떻게 그렇게 잘 아십니까.mp4",
+      "korean": "어떻게 그렇게 잘 아십니까?",
+      "russian": "Откуда вы так хорошо знаете?",
+      "new": true,
+      "english": "How do you know so well?",
+      "timing": "47:10",
+      "group": 1,
+      "isNew": true
+    },
+    {
+      "video": "video/bongsoon/마치 범인처럼.webm",
+      "videoMp4": "video/bongsoon/mp4/마치 범인처럼.mp4",
+      "korean": "마치 범인처럼",
+      "russian": "Прямо как преступник.",
+      "new": true,
+      "english": "Like you're the culprit.",
+      "timing": "47:12",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/내가 어릴 때 꿈이.webm",
+      "videoMp4": "video/bongsoon/mp4/내가 어릴 때 꿈이.mp4",
+      "korean": "내가 어릴 때 꿈이",
+      "russian": "Моя детская мечта —",
+      "new": true,
+      "english": "My childhood dream",
+      "timing": "47:15",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/범인이었거든.webm",
+      "videoMp4": "video/bongsoon/mp4/범인이었거든.mp4",
+      "korean": "범인이었거든",
+      "russian": "быть преступником.",
+      "new": true,
+      "english": "was to be a criminal.",
+      "timing": "47:19",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/야_ 그러다 네가 잘못되면 네가 책임질래.webm",
+      "videoMp4": "video/bongsoon/mp4/야_ 그러다 네가 잘못되면 네가 책임질래.mp4",
+      "korean": "야, 그러다 네가 잘못되면 네가 책임질래?",
+      "russian": "Слушай, а если с тобой что-то случится — ты за это отвечать будешь?",
+      "new": true,
+      "english": "Hey, and if something happens to you, are you going to take responsibility?",
+      "timing": "47:53"
+    },
+    {
+      "video": "video/bongsoon/지금 어디야_ 글로 보낼게.webm",
+      "videoMp4": "video/bongsoon/mp4/지금 어디야_ 글로 보낼게.mp4",
+      "korean": "지금 어디야? 글로 보낼게",
+      "russian": "Ты сейчас где? Пришлю туда.",
+      "new": true,
+      "english": "Where are you now? I'll send him over.",
+      "timing": "47:58",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/국두야_ 나 취직했어.webm",
+      "videoMp4": "video/bongsoon/mp4/국두야_ 나 취직했어.mp4",
+      "korean": "국두야, 나 취직했어",
+      "russian": "Гукту, я на работу устроилась.",
+      "new": true,
+      "english": "Guk-doo, I got a job.",
+      "timing": "47:59",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/아니야_ 막 여기저기 쏘다녀.webm",
+      "videoMp4": "video/bongsoon/mp4/아니야_ 막 여기저기 쏘다녀.mp4",
+      "korean": "아니야, 막 여기저기 쏘다녀",
+      "russian": "Не-а, мотаюсь туда-сюда.",
+      "new": true,
+      "english": "Nope, I run around all over the place.",
+      "timing": "48:08",
+      "group": 3
+    },
+    {
+      "video": "video/bongsoon/우리 대표님이 워낙 바쁘시거든.webm",
+      "videoMp4": "video/bongsoon/mp4/우리 대표님이 워낙 바쁘시거든.mp4",
+      "korean": "우리 대표님이 워낙 바쁘시거든",
+      "russian": "Наш директор, знаешь ли, очень занятой.",
+      "new": true,
+      "english": "My boss is a very busy man, you know.",
+      "timing": "48:10",
+      "group": 3
+    },
+    {
+      "video": "video/bongsoon/그 사람 도착하면 나랑 통화하게 해 줘.webm",
+      "videoMp4": "video/bongsoon/mp4/그 사람 도착하면 나랑 통화하게 해 줘.mp4",
+      "korean": "그 사람 도착하면 나랑 통화하게 해 줘",
+      "russian": "Как он приедет — дай мне с ним поговорить.",
+      "new": true,
+      "english": "When he gets there, put him on the phone with me.",
+      "timing": "48:16"
+    },
+    {
+      "video": "video/bongsoon/경찰 싫어하신다면서요.webm",
+      "videoMp4": "video/bongsoon/mp4/경찰 싫어하신다면서요.mp4",
+      "korean": "경찰 싫어하신다면서요?",
+      "russian": "Вы же говорили, что не любите полицию?",
+      "new": true,
+      "english": "I thought you said you hated the police?",
+      "timing": "49:20"
+    },
+    {
+      "video": "video/bongsoon/아직 안 붙었다고 제가 말씀드렸잖아요.webm",
+      "videoMp4": "video/bongsoon/mp4/아직 안 붙었다고 제가 말씀드렸잖아요.mp4",
+      "korean": "아직 안 붙었다고 제가 말씀드렸잖아요",
+      "russian": "Я же говорю: ещё не сросся.",
+      "new": true,
+      "english": "I told you, it hasn't healed yet.",
+      "timing": "51:04"
+    },
+    {
+      "video": "video/bongsoon/왜 우리나라 말에 이런 표현이 있지.webm",
+      "videoMp4": "video/bongsoon/mp4/왜 우리나라 말에 이런 표현이 있지.mp4",
+      "korean": "왜 우리나라 말에 이런 표현이 있지?",
+      "russian": "Помнишь, у нас в языке есть такое выражение?",
+      "new": true,
+      "english": "You know there's this expression in Korean?",
+      "timing": "51:19",
+      "note": "왜 здесь не «почему», а разговорное «ну / знаешь», которым начинают фразу: «есть же у нас в языке такое выражение»"
+    },
+    {
+      "video": "video/bongsoon/화장실.webm",
+      "videoMp4": "video/bongsoon/mp4/화장실.mp4",
+      "korean": "화장실",
+      "russian": "В туалет.",
+      "new": true,
+      "english": "To the restroom.",
+      "timing": "54:16"
+    },
+    {
+      "video": "video/bongsoon/모자 쓰면 유괴범이고 마스크 쓰면 다 강도인 줄 아니.webm",
+      "videoMp4": "video/bongsoon/mp4/모자 쓰면 유괴범이고 마스크 쓰면 다 강도인 줄 아니.mp4",
+      "korean": "모자 쓰면 유괴범이고 마스크 쓰면 다 강도인 줄 아니?",
+      "russian": "Думаешь, раз в кепке — значит похититель, а в маске — грабитель?",
+      "new": true,
+      "english": "You think anyone in a cap is a kidnapper and anyone in a mask is a robber?",
+      "timing": "55:43"
+    },
+    {
+      "video": "video/bongsoon/제가 제 할 일을 못 한 겁니다.webm",
+      "videoMp4": "video/bongsoon/mp4/제가 제 할 일을 못 한 겁니다.mp4",
+      "korean": "제가 제 할 일을 못 한 겁니다",
+      "russian": "Я не справилась со своей работой.",
+      "new": true,
+      "english": "I failed to do my job.",
+      "timing": "56:17"
+    },
+    {
+      "video": "video/bongsoon/칼을 쓸 줄 몰랐어.webm",
+      "videoMp4": "video/bongsoon/mp4/칼을 쓸 줄 몰랐어.mp4",
+      "korean": "칼을 쓸 줄 몰랐어",
+      "russian": "Кто знал, что он пустит в ход нож.",
+      "new": true,
+      "english": "I didn't think he'd use a knife.",
+      "timing": "56:21"
+    },
+    {
+      "video": "video/bongsoon/생각보다 위험해졌어.webm",
+      "videoMp4": "video/bongsoon/mp4/생각보다 위험해졌어.mp4",
+      "korean": "생각보다 위험해졌어",
+      "russian": "Стало опаснее, чем казалось.",
+      "new": true,
+      "english": "It's gotten more dangerous than I thought.",
+      "timing": "56:28"
+    },
+    {
+      "video": "video/bongsoon/제가 대표님 지켜드릴게요.webm",
+      "videoMp4": "video/bongsoon/mp4/제가 대표님 지켜드릴게요.mp4",
+      "korean": "제가 대표님 지켜드릴게요",
+      "russian": "Я вас защищу.",
+      "new": true,
+      "english": "I'll protect you, sir.",
+      "timing": "56:40",
+      "group": 4
+    },
+    {
+      "video": "video/bongsoon/위험해.webm",
+      "videoMp4": "video/bongsoon/mp4/위험해.mp4",
+      "korean": "위험해",
+      "russian": "Это опасно.",
+      "new": true,
+      "english": "It's dangerous.",
+      "timing": "56:41",
+      "group": 4
+    },
+    {
+      "video": "video/bongsoon/네가 칼에 찔릴 수도 있었잖아.webm",
+      "videoMp4": "video/bongsoon/mp4/네가 칼에 찔릴 수도 있었잖아.mp4",
+      "korean": "네가 칼에 찔릴 수도 있었잖아?",
+      "russian": "Тебя ведь могли ножом пырнуть!",
+      "new": true,
+      "english": "You could have been stabbed!",
+      "timing": "56:42"
+    },
+    {
+      "video": "video/bongsoon/전혀 짚이는 사람이 없으세요.webm",
+      "videoMp4": "video/bongsoon/mp4/전혀 짚이는 사람이 없으세요.mp4",
+      "korean": "전혀 짚이는 사람이 없으세요?",
+      "russian": "Совсем никого не подозреваете?",
+      "new": true,
+      "english": "Is there no one at all you suspect?",
+      "timing": "56:50"
+    },
+    {
+      "video": "video/bongsoon/나한테는 우리 엄마 말고.webm",
+      "videoMp4": "video/bongsoon/mp4/나한테는 우리 엄마 말고.mp4",
+      "korean": "나한테는 우리 엄마 말고",
+      "russian": "У меня, кроме моей мамы,",
+      "new": true,
+      "english": "Apart from my own mom,",
+      "timing": "57:13"
+    },
+    {
+      "video": "video/bongsoon/자기 요새 너무 바빠서 정신없었지.webm",
+      "videoMp4": "video/bongsoon/mp4/자기 요새 너무 바빠서 정신없었지.mp4",
+      "korean": "자기 요새 너무 바빠서 정신없었지?",
+      "russian": "Милый, ты последнее время совсем замотался, да?",
+      "new": true,
+      "english": "Babe, you've been so busy lately, it's been crazy, right?",
+      "timing": "59:09"
+    }
+  ],
+  "b7": [
+    {
+      "drama": "Силачка До Бон Сун",
+      "episode": "2",
+      "video": "video/bongsoon/그나저나 잠도 못 잤겠네.webm",
+      "videoMp4": "video/bongsoon/mp4/그나저나 잠도 못 잤겠네.mp4",
+      "korean": "그나저나 잠도 못 잤겠네?",
+      "russian": "Ты ведь, наверное, и не спал совсем?",
+      "new": true,
+      "english": "Anyway, you probably didn't even get any sleep, huh?",
+      "timing": "59:26",
+      "isNew": true
+    },
+    {
+      "video": "video/bongsoon/빨리 밥만 먹고 먼저 들어가서 눈 좀 붙여.webm",
+      "videoMp4": "video/bongsoon/mp4/빨리 밥만 먹고 먼저 들어가서 눈 좀 붙여.mp4",
+      "korean": "빨리 밥만 먹고 먼저 들어가서 눈 좀 붙여",
+      "russian": "Быстро поешь, иди домой пораньше и поспи.",
+      "new": true,
+      "english": "Just eat quickly and go home first to get some sleep.",
+      "timing": "59:29",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/어젯밤 당직이었잖아.webm",
+      "videoMp4": "video/bongsoon/mp4/어젯밤 당직이었잖아.mp4",
+      "korean": "어젯밤 당직이었잖아",
+      "russian": "Ты же ночью дежурил.",
+      "new": true,
+      "english": "You were on duty last night.",
+      "timing": "59:32",
+      "group": 1
+    },
+    {
+      "video": "video/bongsoon/오늘 나랑 같이 있어.webm",
+      "videoMp4": "video/bongsoon/mp4/오늘 나랑 같이 있어.mp4",
+      "korean": "오늘 나랑 같이 있어",
+      "russian": "Побудь сегодня со мной.",
+      "new": true,
+      "english": "Stay with me tonight.",
+      "timing": "59:50",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/제가 왜 대표님 집에 가서 지냅니까_ 전 싫습니다.webm",
+      "videoMp4": "video/bongsoon/mp4/제가 왜 대표님 집에 가서 지냅니까_ 전 싫습니다.mp4",
+      "korean": "제가 왜 대표님 집에 가서 지냅니까? 전 싫습니다",
+      "russian": "С чего это я буду жить у вас дома? Не хочу.",
+      "new": true,
+      "english": "Why would I stay at your place? No way.",
+      "timing": "1:00:15",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/내 말이 지금 그 말이야. 내가 위험에 빠졌잖아.webm",
+      "videoMp4": "video/bongsoon/mp4/내 말이 지금 그 말이야. 내가 위험에 빠졌잖아.mp4",
+      "korean": "내 말이 지금 그 말이야. 내가 위험에 빠졌잖아.",
+      "russian": "Вот и я о том же. Я же в опасности.",
+      "new": true,
+      "english": "That's exactly what I'm saying. I'm in danger.",
+      "timing": "1:00:56",
+      "group": 2
+    },
+    {
+      "video": "video/bongsoon/무슨 기대 말씀입니까.webm",
+      "videoMp4": "video/bongsoon/mp4/무슨 기대 말씀입니까.mp4",
+      "korean": "무슨 기대 말씀입니까?",
+      "russian": "Это вы о каких ожиданиях?",
+      "new": true,
+      "english": "What hopes are you talking about?",
+      "timing": "1:00:07"
+    },
+    {
+      "video": "video/bongsoon/아_ 우리 집에서 같이 자자.webm",
+      "videoMp4": "video/bongsoon/mp4/아_ 우리 집에서 같이 자자.mp4",
+      "korean": "아, 우리 집에서 같이 자자",
+      "russian": "Ну давай ночевать у меня.",
+      "new": true,
+      "english": "Aw, come on, let's sleep at my place.",
+      "timing": "1:01:05"
+    },
+    {
+      "video": "video/bongsoon/그리고_ 저희 집 되게 보수적이거든요.webm",
+      "videoMp4": "video/bongsoon/mp4/그리고_ 저희 집 되게 보수적이거든요.mp4",
+      "korean": "그리고, 저희 집 되게 보수적이거든요?",
+      "russian": "И вообще, у меня семья очень строгих взглядов.",
+      "new": true,
+      "english": "Besides, my family is really conservative, you know.",
+      "timing": "1:01:14"
+    },
+    {
+      "video": "video/bongsoon/너 혼자 좋아하지_ 그 경찰.webm",
+      "videoMp4": "video/bongsoon/mp4/너 혼자 좋아하지_ 그 경찰.mp4",
+      "korean": "너 혼자 좋아하지, 그 경찰?",
+      "russian": "Нравится он только тебе, да, этот полицейский?",
+      "new": true,
+      "english": "You're the only one who likes him, right? That cop?",
+      "timing": "1:01:48"
+    },
+    {
+      "video": "video/bongsoon/관심이 없던 여자라도 다른 남자가 찜하면.webm",
+      "videoMp4": "video/bongsoon/mp4/관심이 없던 여자라도 다른 남자가 찜하면.mp4",
+      "korean": "관심이 없던 여자라도 다른 남자가 찜하면",
+      "russian": "Даже если девушка была неинтересна, стоит другому мужчине положить на неё глаз,",
+      "new": true,
+      "english": "Even if a guy wasn't interested in a girl, once another guy claims her,",
+      "timing": "1:01:58",
+      "group": 3
+    },
+    {
+      "video": "video/bongsoon/_어_ 저게 뭐지__ 이렇게 다르게 보이는 그런 게 있어.webm",
+      "videoMp4": "video/bongsoon/mp4/_어_ 저게 뭐지__ 이렇게 다르게 보이는 그런 게 있어.mp4",
+      "korean": "'어, 저게 뭐지?' 이렇게 다르게 보이는 그런 게 있어",
+      "russian": "и бывает такое: «О, а это что?» — и она уже видится по-другому.",
+      "new": true,
+      "english": "it's like, \"Huh, what's that?\" — and she suddenly looks different.",
+      "timing": "1:02:00",
+      "group": 3
+    },
+    {
+      "video": "video/bongsoon/오늘 나랑 같이 있어_1.webm",
+      "videoMp4": "video/bongsoon/mp4/오늘 나랑 같이 있어_1.mp4",
+      "korean": "오늘 나랑 같이 있어",
+      "russian": "Побудь сегодня со мной.",
+      "new": true,
+      "english": "Stay with me tonight.",
+      "timing": "1:02:10"
+    },
+    {
+      "video": "video/bongsoon/오늘은 혼자 있기 싫어서 그래.webm",
+      "videoMp4": "video/bongsoon/mp4/오늘은 혼자 있기 싫어서 그래.mp4",
+      "korean": "오늘은 혼자 있기 싫어서 그래",
+      "russian": "Просто сегодня не хочу быть один.",
+      "new": true,
+      "english": "I just don't want to be alone tonight.",
+      "timing": "1:02:13"
+    },
+    {
+      "video": "video/bongsoon/아_ 알았어요_ 알았어.webm",
+      "videoMp4": "video/bongsoon/mp4/아_ 알았어요_ 알았어.mp4",
+      "korean": "아, 알았어요, 알았어",
+      "russian": "Ладно, ладно, хорошо.",
+      "new": true,
+      "english": "Okay, okay, fine.",
+      "timing": "1:02:15"
+    },
+    {
+      "video": "video/bongsoon/어제 그 아저씨 우리 아빠예요.webm",
+      "videoMp4": "video/bongsoon/mp4/어제 그 아저씨 우리 아빠예요.mp4",
+      "korean": "어제 그 아저씨 우리 아빠예요",
+      "russian": "Тот дядечка вчера — мой папа.",
+      "new": true,
+      "english": "That man yesterday was my dad.",
+      "timing": "1:03:29"
+    },
+    {
+      "video": "video/bongsoon/뭐 하러 해요_ 괜히.webm",
+      "videoMp4": "video/bongsoon/mp4/뭐 하러 해요_ 괜히.mp4",
+      "korean": "뭐 하러 해요, 괜히?",
+      "russian": "Зачем зря говорить?",
+      "new": true,
+      "english": "Why would I, for no reason?",
+      "timing": "1:03:38"
+    },
+    {
+      "video": "video/bongsoon/야_ 근데 기분 되게 이상하다.webm",
+      "videoMp4": "video/bongsoon/mp4/야_ 근데 기분 되게 이상하다.mp4",
+      "korean": "야, 근데 기분 되게 이상하다",
+      "russian": "Слушай, а ощущение какое-то странное.",
+      "new": true,
+      "english": "Hey, this feels really weird though.",
+      "timing": "1:03:52",
+      "group": 4
+    },
+    {
+      "video": "video/bongsoon/여자랑 밤에 단둘이 라면 나눠 먹으니까.webm",
+      "videoMp4": "video/bongsoon/mp4/여자랑 밤에 단둘이 라면 나눠 먹으니까.mp4",
+      "korean": "여자랑 밤에 단둘이 라면 나눠 먹으니까",
+      "russian": "ночью наедине с девушкой есть рамён на двоих.",
+      "new": true,
+      "english": "sharing ramyeon with a girl, just the two of us, at night.",
+      "timing": "1:03:54",
+      "group": 4
+    },
+    {
+      "video": "video/bongsoon/그럼 뭐_ 남자랑 먹어야 된다는 뜻입니까.webm",
+      "videoMp4": "video/bongsoon/mp4/그럼 뭐_ 남자랑 먹어야 된다는 뜻입니까.mp4",
+      "korean": "그럼 뭐, 남자랑 먹어야 된다는 뜻입니까?",
+      "russian": "А что, по-вашему, надо с мужчиной есть?",
+      "new": true,
+      "english": "So what, you mean you should be eating it with a man?",
+      "timing": "1:03:57",
+      "group": 4
+    },
+    {
+      "video": "video/bongsoon/너 연애는 해 봤어.webm",
+      "videoMp4": "video/bongsoon/mp4/너 연애는 해 봤어.mp4",
+      "korean": "너 연애는 해 봤어?",
+      "russian": "Ты хоть встречалась с кем-нибудь?",
+      "new": true,
+      "english": "Have you ever even dated?",
+      "timing": "1:04:02"
+    },
+    {
+      "video": "video/bongsoon/어디 다 큰 여자애가 혼자 사는 남자 집에서 밤을 보낸다는 거야.webm",
+      "videoMp4": "video/bongsoon/mp4/어디 다 큰 여자애가 혼자 사는 남자 집에서 밤을 보낸다는 거야.mp4",
+      "korean": "어디 다 큰 여자애가 혼자 사는 남자 집에서 밤을 보낸다는 거야?",
+      "russian": "Это где ж видано, чтоб взрослая девушка ночевала у одинокого мужчины?",
+      "new": true,
+      "english": "Since when does a grown girl spend the night at a single man's place?",
+      "timing": "1:05:18"
+    },
+    {
+      "video": "video/bongsoon/난 데려가겠습니다.webm",
+      "videoMp4": "video/bongsoon/mp4/난 데려가겠습니다.mp4",
+      "korean": "난 데려가겠습니다",
+      "russian": "А я её заберу.",
+      "new": true,
+      "english": "I'm taking her with me.",
+      "timing": "1:05:42"
+    },
+    {
+      "video": "video/bongsoon/혼자 있을 수 있겠어요.webm",
+      "videoMp4": "video/bongsoon/mp4/혼자 있을 수 있겠어요.mp4",
+      "korean": "혼자 있을 수 있겠어요?",
+      "russian": "Сможете побыть один?",
+      "new": true,
+      "english": "Will you be okay alone?",
+      "timing": "1:06:49"
+    }
+  ]
 }

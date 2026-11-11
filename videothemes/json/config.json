@@ -252,7 +252,7 @@
       }
     ],
     "totalCount": 288,
-    "hasNew": true,
+    "hasNew": false,
     "title_en": "BTS",
     "name": "BTS",
     "name_en": "BTS"
@@ -1820,11 +1820,31 @@
         "name": "3",
         "key": "b3",
         "name_en": "3"
+      },
+      {
+        "name": "4",
+        "key": "b4",
+        "name_en": "4"
+      },
+      {
+        "name": "5",
+        "key": "b5",
+        "name_en": "5"
+      },
+      {
+        "name": "6",
+        "key": "b6",
+        "name_en": "6"
+      },
+      {
+        "name": "7",
+        "key": "b7",
+        "name_en": "7"
       }
     ],
     "title_en": "Strong Girl Bong-soon\n힘쎈여자 도봉순",
-    "totalCount": 79,
-    "hasNew": false,
+    "totalCount": 172,
+    "hasNew": true,
     "name": "Силачка До Бон Сун\n힘쎈여자 도봉순",
     "name_en": "Strong Girl Bong-soon\n힘쎈여자 도봉순"
   }
