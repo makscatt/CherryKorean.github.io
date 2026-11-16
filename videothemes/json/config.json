@@ -1792,11 +1792,41 @@
         "name": "11",
         "key": "b11",
         "name_en": "11"
+      },
+      {
+        "name": "12",
+        "key": "b12",
+        "name_en": "12"
+      },
+      {
+        "name": "13",
+        "key": "b13",
+        "name_en": "13"
+      },
+      {
+        "name": "14",
+        "key": "b14",
+        "name_en": "14"
+      },
+      {
+        "name": "15",
+        "key": "b15",
+        "name_en": "15"
+      },
+      {
+        "name": "16",
+        "key": "b16",
+        "name_en": "16"
+      },
+      {
+        "name": "17",
+        "key": "b17",
+        "name_en": "17"
       }
     ],
     "title_en": "A Love Other Than Yours\n너 말고 다른 연애",
-    "totalCount": 306,
-    "hasNew": false,
+    "totalCount": 459,
+    "hasNew": true,
     "name": "Любовь, но не с тобой\n너 말고 다른 연애",
     "name_en": "A Love Other Than Yours\n너 말고 다른 연애"
   },
@@ -1844,7 +1874,7 @@
     ],
     "title_en": "Strong Girl Bong-soon\n힘쎈여자 도봉순",
     "totalCount": 172,
-    "hasNew": true,
+    "hasNew": false,
     "name": "Силачка До Бон Сун\n힘쎈여자 도봉순",
     "name_en": "Strong Girl Bong-soon\n힘쎈여자 도봉순"
   }

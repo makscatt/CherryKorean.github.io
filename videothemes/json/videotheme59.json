@@ -2946,5 +2946,1520 @@
       "english": "I'll make you tteokbokki, just wait a bit.",
       "timing": "59:25"
     }
+  ],
+  "b12": [
+    {
+      "drama": "Любовь, но не с тобой",
+      "episode": "4",
+      "video": "video/loveother/놀이터 어때_ 한동안 안 갔잖아.webm",
+      "videoMp4": "video/loveother/mp4/놀이터 어때_ 한동안 안 갔잖아.mp4",
+      "korean": "놀이터 어때? 한동안 안 갔잖아",
+      "russian": "Может, на детскую площадку? Мы там давно не были.",
+      "new": true,
+      "english": "How about the playground? We haven't been there in a while.",
+      "timing": "01:35",
+      "isNew": true
+    },
+    {
+      "video": "video/loveother/내가 모르는 줄 알았어.webm",
+      "videoMp4": "video/loveother/mp4/내가 모르는 줄 알았어.mp4",
+      "korean": "내가 모르는 줄 알았어",
+      "russian": "Думал, я не знаю?",
+      "new": true,
+      "english": "You thought I didn't know?",
+      "timing": "03:15",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/나 다 알았어_ 아홉 살 때부터.webm",
+      "videoMp4": "video/loveother/mp4/나 다 알았어_ 아홉 살 때부터.mp4",
+      "korean": "나 다 알았어, 아홉 살 때부터",
+      "russian": "Я всё знала, с девяти лет.",
+      "new": true,
+      "english": "I knew everything, since I was nine.",
+      "timing": "03:17",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/그러니까 수아야_ 그게.webm",
+      "videoMp4": "video/loveother/mp4/그러니까 수아야_ 그게.mp4",
+      "korean": "그러니까 수아야, 그게…",
+      "russian": "Суа, понимаешь, это…",
+      "new": true,
+      "english": "Su-a, you see, it's…",
+      "timing": "03:23",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/그래도 아빠.webm",
+      "videoMp4": "video/loveother/mp4/그래도 아빠.mp4",
+      "korean": "그래도 아빠",
+      "russian": "Но всё-таки, пап,",
+      "new": true,
+      "english": "But still, Dad,",
+      "timing": "03:24",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/내 친구 아빠랑은 아니지.webm",
+      "videoMp4": "video/loveother/mp4/내 친구 아빠랑은 아니지.mp4",
+      "korean": "내 친구 아빠랑은 아니지",
+      "russian": "не с папой моего друга.",
+      "new": true,
+      "english": "not with my friend's dad.",
+      "timing": "03:26",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/세상 사람들이 다 아빠를 욕했으면 좋겠어.webm",
+      "videoMp4": "video/loveother/mp4/세상 사람들이 다 아빠를 욕했으면 좋겠어.mp4",
+      "korean": "세상 사람들이 다 아빠를 욕했으면 좋겠어",
+      "russian": "Хочу, чтобы все люди на свете тебя проклинали.",
+      "new": true,
+      "english": "I want the whole world to curse you, Dad.",
+      "timing": "03:40"
+    },
+    {
+      "video": "video/loveother/10년 좋아했던 여자애한테 차여 가지고.webm",
+      "videoMp4": "video/loveother/mp4/10년 좋아했던 여자애한테 차여 가지고.mp4",
+      "korean": "10년 좋아했던 여자애한테 차여 가지고",
+      "russian": "Меня отшила девушка, которую я любил десять лет, вот я и",
+      "new": true,
+      "english": "I got turned down by a girl I'd liked for ten years, so I",
+      "timing": "06:14",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/도망 왔어요.webm",
+      "videoMp4": "video/loveother/mp4/도망 왔어요.mp4",
+      "korean": "도망 왔어요",
+      "russian": "сбежал сюда.",
+      "new": true,
+      "english": "ran away here.",
+      "timing": "06:17",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/걔 계속 보는 게 힘들어 가지고.webm",
+      "videoMp4": "video/loveother/mp4/걔 계속 보는 게 힘들어 가지고.mp4",
+      "korean": "걔 계속 보는 게 힘들어 가지고",
+      "russian": "Было тяжело всё время её видеть,",
+      "new": true,
+      "english": "It was hard to keep seeing her,",
+      "timing": "06:21",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/그래서 최대한 멀리멀리.webm",
+      "videoMp4": "video/loveother/mp4/그래서 최대한 멀리멀리.mp4",
+      "korean": "그래서 최대한 멀리멀리",
+      "russian": "поэтому — как можно дальше:",
+      "new": true,
+      "english": "so I went as far away as I could:",
+      "timing": "06:24",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/처음에 충주에서 한 달.webm",
+      "videoMp4": "video/loveother/mp4/처음에 충주에서 한 달.mp4",
+      "korean": "처음에 충주에서 한 달",
+      "russian": "сначала месяц в Чхунджу,",
+      "new": true,
+      "english": "first a month in Chungju,",
+      "timing": "06:27",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/순천_ 남원_ 보성.webm",
+      "videoMp4": "video/loveother/mp4/순천_ 남원_ 보성.mp4",
+      "korean": "순천, 남원, 보성",
+      "russian": "Сунчхон, Намвон, Посон,",
+      "new": true,
+      "english": "Suncheon, Namwon, Boseong,",
+      "timing": "06:32",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/그리고 정신 차려 보니까.webm",
+      "videoMp4": "video/loveother/mp4/그리고 정신 차려 보니까.mp4",
+      "korean": "그리고 정신 차려 보니까",
+      "russian": "а когда очнулся,",
+      "new": true,
+      "english": "and when I came to my senses,",
+      "timing": "06:34",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/여기 땅끝이더라고요.webm",
+      "videoMp4": "video/loveother/mp4/여기 땅끝이더라고요.mp4",
+      "korean": "여기 땅끝이더라고요",
+      "russian": "оказалось — я здесь, на самом краю земли.",
+      "new": true,
+      "english": "I was here, at Land's End.",
+      "timing": "06:37",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/뉴스 모니터해야 돼요.webm",
+      "videoMp4": "video/loveother/mp4/뉴스 모니터해야 돼요.mp4",
+      "korean": "뉴스 모니터해야 돼요",
+      "russian": "Мне нужно следить за новостями.",
+      "new": true,
+      "english": "I need to monitor the news.",
+      "timing": "07:00"
+    },
+    {
+      "video": "video/loveother/안 된다고 분명히 얘기했다.webm",
+      "videoMp4": "video/loveother/mp4/안 된다고 분명히 얘기했다.mp4",
+      "korean": "안 된다고 분명히 얘기했다",
+      "russian": "Я же ясно сказала: нельзя.",
+      "new": true,
+      "english": "I told you clearly it's not allowed.",
+      "timing": "07:02"
+    },
+    {
+      "video": "video/loveother/아빠 때문이 아니라.webm",
+      "videoMp4": "video/loveother/mp4/아빠 때문이 아니라.mp4",
+      "korean": "아빠 때문이 아니라",
+      "russian": "Это не из-за папы, а…",
+      "new": true,
+      "english": "It's not because of Dad, but…",
+      "timing": "07:05"
+    },
+    {
+      "video": "video/loveother/너 나 진짜 끝까지 모르는 척하려고 그랬냐.webm",
+      "videoMp4": "video/loveother/mp4/너 나 진짜 끝까지 모르는 척하려고 그랬냐.mp4",
+      "korean": "너 나 진짜 끝까지 모르는 척하려고 그랬냐?",
+      "russian": "Ты что, правда собиралась до конца делать вид, что меня не знаешь?",
+      "new": true,
+      "english": "Were you really going to pretend you didn't know me until the end?",
+      "timing": "11:23",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/네.webm",
+      "videoMp4": "video/loveother/mp4/네.mp4",
+      "korean": "네",
+      "russian": "Да.",
+      "new": true,
+      "english": "Yes.",
+      "timing": "11:25",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/뭐_ 네.webm",
+      "videoMp4": "video/loveother/mp4/뭐_ 네.mp4",
+      "korean": "뭐? 네?",
+      "russian": "Что? «Да»?",
+      "new": true,
+      "english": "What? \"Yes\"?",
+      "timing": "11:26",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/시간도 많이 지났고.webm",
+      "videoMp4": "video/loveother/mp4/시간도 많이 지났고.mp4",
+      "korean": "시간도 많이 지났고",
+      "russian": "Времени прошло много,",
+      "new": true,
+      "english": "A lot of time has passed,",
+      "timing": "11:26",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/회사는 공적인 공간이니까요.webm",
+      "videoMp4": "video/loveother/mp4/회사는 공적인 공간이니까요.mp4",
+      "korean": "회사는 공적인 공간이니까요",
+      "russian": "а компания — место официальное,",
+      "new": true,
+      "english": "and the company is a professional space,",
+      "timing": "11:28",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/굳이 아는 척할 필요 없다 생각했어요.webm",
+      "videoMp4": "video/loveother/mp4/굳이 아는 척할 필요 없다 생각했어요.mp4",
+      "korean": "굳이 아는 척할 필요 없다 생각했어요",
+      "russian": "вот я и подумала, что незачем показывать, что мы знакомы.",
+      "new": true,
+      "english": "so I thought there was no need to act like we knew each other.",
+      "timing": "11:36",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/그럼 끝까지 모르는 척하든가.webm",
+      "videoMp4": "video/loveother/mp4/그럼 끝까지 모르는 척하든가.mp4",
+      "korean": "그럼 끝까지 모르는 척하든가",
+      "russian": "Тогда уж и делала бы вид до конца.",
+      "new": true,
+      "english": "Then you should've kept pretending till the end.",
+      "timing": "11:42",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/왜 갑자기 나타난 건데.webm",
+      "videoMp4": "video/loveother/mp4/왜 갑자기 나타난 건데.mp4",
+      "korean": "왜 갑자기 나타난 건데?",
+      "russian": "Зачем ты вдруг объявилась?",
+      "new": true,
+      "english": "Why did you suddenly show up?",
+      "timing": "11:43",
+      "group": 4
+    }
+  ],
+  "b13": [
+    {
+      "drama": "Любовь, но не с тобой",
+      "episode": "4",
+      "video": "video/loveother/아니_ 그러니까 그런 노력을 뭐 하러 하냐고_ 그거 누가 알아준다고.webm",
+      "videoMp4": "video/loveother/mp4/아니_ 그러니까 그런 노력을 뭐 하러 하냐고_ 그거 누가 알아준다고.mp4",
+      "korean": "아니, 그러니까 그런 노력을 뭐 하러 하냐고, 그거 누가 알아준다고",
+      "russian": "Нет, я о том, зачем так стараться? Кто это вообще оценит?",
+      "new": true,
+      "english": "No, I mean, why go to all that effort? Who's even going to notice?",
+      "timing": "13:50",
+      "group": 1,
+      "isNew": true
+    },
+    {
+      "video": "video/loveother/테스트 때는 진공실링에 문제 없다고 하지 않았나요.webm",
+      "videoMp4": "video/loveother/mp4/테스트 때는 진공실링에 문제 없다고 하지 않았나요.mp4",
+      "korean": "테스트 때는 진공실링에 문제 없다고 하지 않았나요?",
+      "russian": "Но на тестах же говорили, что с вакуумной запайкой проблем нет?",
+      "new": true,
+      "english": "Didn't they say the vacuum sealing was fine during testing?",
+      "timing": "13:54",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/저는 약속 있어서 식사 두 분이 하세요_ 네.webm",
+      "videoMp4": "video/loveother/mp4/저는 약속 있어서 식사 두 분이 하세요_ 네.mp4",
+      "korean": "저는 약속 있어서 식사 두 분이 하세요, 네",
+      "russian": "У меня встреча, так что поешьте вдвоём, ладно?",
+      "new": true,
+      "english": "I have plans, so you two go eat, okay?",
+      "timing": "14:22"
+    },
+    {
+      "video": "video/loveother/나 그렇게 사회성 없지 않다.webm",
+      "videoMp4": "video/loveother/mp4/나 그렇게 사회성 없지 않다.mp4",
+      "korean": "나 그렇게 사회성 없지 않다?",
+      "russian": "Не так уж у меня плохо с тактом, между прочим.",
+      "new": true,
+      "english": "I'm not that socially clueless, you know.",
+      "timing": "14:38"
+    },
+    {
+      "video": "video/loveother/미도가 합의안에 사인을 안 해.webm",
+      "videoMp4": "video/loveother/mp4/미도가 합의안에 사인을 안 해.mp4",
+      "korean": "미도가 합의안에 사인을 안 해",
+      "russian": "Мидо не подписывает мировое соглашение,",
+      "new": true,
+      "english": "Mi-do won't sign the settlement,",
+      "timing": "14:40",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/그래서 내가 많이 힘들어.webm",
+      "videoMp4": "video/loveother/mp4/그래서 내가 많이 힘들어.mp4",
+      "korean": "그래서 내가 많이 힘들어",
+      "russian": "и мне из-за этого очень тяжело.",
+      "new": true,
+      "english": "and it's making things really hard for me.",
+      "timing": "14:42",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/이러다 진짜 기사 나고 재판까지 가겠어.webm",
+      "videoMp4": "video/loveother/mp4/이러다 진짜 기사 나고 재판까지 가겠어.mp4",
+      "korean": "이러다 진짜 기사 나고 재판까지 가겠어",
+      "russian": "Так и до статей в прессе дойдёт, и до суда.",
+      "new": true,
+      "english": "At this rate, it'll hit the news and go to court.",
+      "timing": "14:52"
+    },
+    {
+      "video": "video/loveother/지금 상황이 얼마나 안 좋은지 알아.webm",
+      "videoMp4": "video/loveother/mp4/지금 상황이 얼마나 안 좋은지 알아.mp4",
+      "korean": "지금 상황이 얼마나 안 좋은지 알아?",
+      "russian": "Ты знаешь, насколько сейчас всё плохо?",
+      "new": true,
+      "english": "Do you know how bad things are right now?",
+      "timing": "15:01"
+    },
+    {
+      "video": "video/loveother/상황이 안 좋은데도 저러는 거면.webm",
+      "videoMp4": "video/loveother/mp4/상황이 안 좋은데도 저러는 거면.mp4",
+      "korean": "상황이 안 좋은데도 저러는 거면",
+      "russian": "Если она так себя ведёт, хоть всё и плохо,",
+      "new": true,
+      "english": "If she's acting like that even though things are bad,",
+      "timing": "15:04",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/분명히 이유 있는 거야.webm",
+      "videoMp4": "video/loveother/mp4/분명히 이유 있는 거야.mp4",
+      "korean": "분명히 이유 있는 거야",
+      "russian": "значит, точно есть причина.",
+      "new": true,
+      "english": "there must be a reason.",
+      "timing": "15:06",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/이미도 좀 감정적이긴 해도.webm",
+      "videoMp4": "video/loveother/mp4/이미도 좀 감정적이긴 해도.mp4",
+      "korean": "이미도 좀 감정적이긴 해도",
+      "russian": "Ли Мидо, конечно, эмоциональная,",
+      "new": true,
+      "english": "Lee Mi-do may be a bit emotional,",
+      "timing": "15:08",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/영화에 관해선.webm",
+      "videoMp4": "video/loveother/mp4/영화에 관해선.mp4",
+      "korean": "영화에 관해선",
+      "russian": "но в том, что касается кино,",
+      "new": true,
+      "english": "but when it comes to film,",
+      "timing": "15:10",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/신념이랄까.webm",
+      "videoMp4": "video/loveother/mp4/신념이랄까.mp4",
+      "korean": "신념이랄까?",
+      "russian": "у неё, как бы сказать, убеждения,",
+      "new": true,
+      "english": "she has, let's say, convictions,",
+      "timing": "15:12",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/가치관.webm",
+      "videoMp4": "video/loveother/mp4/가치관.mp4",
+      "korean": "가치관",
+      "russian": "ценности —",
+      "new": true,
+      "english": "values —",
+      "timing": "15:14",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/그런 게 확실한 편이거든.webm",
+      "videoMp4": "video/loveother/mp4/그런 게 확실한 편이거든.mp4",
+      "korean": "그런 게 확실한 편이거든",
+      "russian": "с этим у неё всё чётко.",
+      "new": true,
+      "english": "she's pretty firm about that stuff.",
+      "timing": "15:16",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/재판 가면 보통 얼마나 드냐.webm",
+      "videoMp4": "video/loveother/mp4/재판 가면 보통 얼마나 드냐.mp4",
+      "korean": "재판 가면 보통 얼마나 드냐?",
+      "russian": "Если дойдёт до суда, сколько это обычно стоит?",
+      "new": true,
+      "english": "If it goes to court, how much does it usually cost?",
+      "timing": "15:25",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/내가 적금 나올 게 한두 개 있거든.webm",
+      "videoMp4": "video/loveother/mp4/내가 적금 나올 게 한두 개 있거든.mp4",
+      "korean": "내가 적금 나올 게 한두 개 있거든?",
+      "russian": "У меня как раз пара вкладов скоро закрывается.",
+      "new": true,
+      "english": "I've got a savings deposit or two maturing soon.",
+      "timing": "15:28",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/첫 번째가 제일 낫긴 한데.webm",
+      "videoMp4": "video/loveother/mp4/첫 번째가 제일 낫긴 한데.mp4",
+      "korean": "첫 번째가 제일 낫긴 한데",
+      "russian": "Первый вариант лучше всего, но",
+      "new": true,
+      "english": "The first one's the best, but",
+      "timing": "16:33",
+      "group": 5
+    },
+    {
+      "video": "video/loveother/10시라 너무 일러_ 너네 친척들 양양에서 오시는데.webm",
+      "videoMp4": "video/loveother/mp4/10시라 너무 일러_ 너네 친척들 양양에서 오시는데.mp4",
+      "korean": "10시라 너무 일러, 너네 친척들 양양에서 오시는데",
+      "russian": "в 10 — слишком рано, твои родственники же едут из Янъяна.",
+      "new": true,
+      "english": "10 o'clock is too early — your relatives are coming from Yangyang.",
+      "timing": "16:35",
+      "group": 5
+    },
+    {
+      "video": "video/loveother/나 친척들 안 부를 거야.webm",
+      "videoMp4": "video/loveother/mp4/나 친척들 안 부를 거야.mp4",
+      "korean": "나 친척들 안 부를 거야",
+      "russian": "Я не буду звать родственников.",
+      "new": true,
+      "english": "I'm not inviting my relatives.",
+      "timing": "16:38",
+      "group": 5
+    },
+    {
+      "video": "video/loveother/왜.webm",
+      "videoMp4": "video/loveother/mp4/왜.mp4",
+      "korean": "왜?",
+      "russian": "Почему?",
+      "new": true,
+      "english": "Why?",
+      "timing": "16:54"
+    },
+    {
+      "video": "video/loveother/너 어울리지 않게 나 배려하지 마라.webm",
+      "videoMp4": "video/loveother/mp4/너 어울리지 않게 나 배려하지 마라.mp4",
+      "korean": "너 어울리지 않게 나 배려하지 마라",
+      "russian": "Не надо со мной деликатничать, тебе это не идёт.",
+      "new": true,
+      "english": "Don't go being considerate of me. It's not like you.",
+      "timing": "16:57"
+    },
+    {
+      "video": "video/loveother/뭐야_1.webm",
+      "videoMp4": "video/loveother/mp4/뭐야_1.mp4",
+      "korean": "뭐야?",
+      "russian": "Что это?",
+      "new": true,
+      "english": "What is it?",
+      "timing": "17:28"
+    },
+    {
+      "video": "video/loveother/나 미술 그렇게 관둔 거 가끔 후회해.webm",
+      "videoMp4": "video/loveother/mp4/나 미술 그렇게 관둔 거 가끔 후회해.mp4",
+      "korean": "나 미술 그렇게 관둔 거 가끔 후회해",
+      "russian": "Я иногда жалею, что вот так бросил рисовать.",
+      "new": true,
+      "english": "Sometimes I regret quitting art like that.",
+      "timing": "18:16"
+    }
+  ],
+  "b14": [
+    {
+      "drama": "Любовь, но не с тобой",
+      "episode": "4",
+      "video": "video/loveother/그땐 왜 그렇게 극단적이었나 모르겠다.webm",
+      "videoMp4": "video/loveother/mp4/그땐 왜 그렇게 극단적이었나 모르겠다.mp4",
+      "korean": "그땐 왜 그렇게 극단적이었나 모르겠다",
+      "russian": "Не понимаю, почему тогда был таким категоричным.",
+      "new": true,
+      "english": "I don't know why I was so extreme back then.",
+      "timing": "20:32",
+      "group": 1,
+      "isNew": true
+    },
+    {
+      "video": "video/loveother/그림 한 점 남기는 게 뭐 그리 대단하다고.webm",
+      "videoMp4": "video/loveother/mp4/그림 한 점 남기는 게 뭐 그리 대단하다고.mp4",
+      "korean": "그림 한 점 남기는 게 뭐 그리 대단하다고",
+      "russian": "Подумаешь — оставить после себя одну картину.",
+      "new": true,
+      "english": "As if leaving behind a single painting was such a big deal.",
+      "timing": "20:36",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/웃기지.webm",
+      "videoMp4": "video/loveother/mp4/웃기지.mp4",
+      "korean": "웃기지?",
+      "russian": "Смешно, да?",
+      "new": true,
+      "english": "Funny, right?",
+      "timing": "20:40",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/하나도 안 웃겨.webm",
+      "videoMp4": "video/loveother/mp4/하나도 안 웃겨.mp4",
+      "korean": "하나도 안 웃겨",
+      "russian": "Ни капли не смешно.",
+      "new": true,
+      "english": "It's not funny at all.",
+      "timing": "20:44"
+    },
+    {
+      "video": "video/loveother/너 화났나.webm",
+      "videoMp4": "video/loveother/mp4/너 화났나.mp4",
+      "korean": "너 화났나?",
+      "russian": "Ты что, злишься?",
+      "new": true,
+      "english": "Are you mad?",
+      "timing": "20:50"
+    },
+    {
+      "video": "video/loveother/그림 다시 그리고 싶어.webm",
+      "videoMp4": "video/loveother/mp4/그림 다시 그리고 싶어.mp4",
+      "korean": "그림 다시 그리고 싶어?",
+      "russian": "Хочешь снова рисовать?",
+      "new": true,
+      "english": "Do you want to paint again?",
+      "timing": "20:53"
+    },
+    {
+      "video": "video/loveother/넌 상황이나 환경 때문에.webm",
+      "videoMp4": "video/loveother/mp4/넌 상황이나 환경 때문에.mp4",
+      "korean": "넌 상황이나 환경 때문에",
+      "russian": "Ты из-за обстоятельств или окружения",
+      "new": true,
+      "english": "Because of circumstances or your environment,",
+      "timing": "21:15",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/좋아하는 거 포기하지 말고.webm",
+      "videoMp4": "video/loveother/mp4/좋아하는 거 포기하지 말고.mp4",
+      "korean": "좋아하는 거 포기하지 말고",
+      "russian": "не бросай то, что любишь,",
+      "new": true,
+      "english": "don't give up what you love —",
+      "timing": "21:19",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/너 좋아하는 거 하면서 살아.webm",
+      "videoMp4": "video/loveother/mp4/너 좋아하는 거 하면서 살아.mp4",
+      "korean": "너 좋아하는 거 하면서 살아",
+      "russian": "живи и занимайся тем, что любишь.",
+      "new": true,
+      "english": "live doing what you love.",
+      "timing": "21:25",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/넌 그게 어울려.webm",
+      "videoMp4": "video/loveother/mp4/넌 그게 어울려.mp4",
+      "korean": "넌 그게 어울려",
+      "russian": "Тебе это идёт.",
+      "new": true,
+      "english": "That suits you.",
+      "timing": "21:28",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/올해는 상영관이 꽉 찼다 그래서.webm",
+      "videoMp4": "video/loveother/mp4/올해는 상영관이 꽉 찼다 그래서.mp4",
+      "korean": "올해는 상영관이 꽉 찼다 그래서",
+      "russian": "В этом году, сказали, все залы заняты, вот и…",
+      "new": true,
+      "english": "They said the theater was fully booked this year, so…",
+      "timing": "22:20",
+      "note": "찼다 그래서 — разговорное стяжение 찼다고 해서 «сказали, что заполнено, поэтому»."
+    },
+    {
+      "video": "video/loveother/너 서울아트시네마에서 프러포즈받는 게 꿈이었잖아.webm",
+      "videoMp4": "video/loveother/mp4/너 서울아트시네마에서 프러포즈받는 게 꿈이었잖아.mp4",
+      "korean": "너 서울아트시네마에서 프러포즈받는 게 꿈이었잖아",
+      "russian": "Ты же мечтала, чтобы тебе сделали предложение в «Сеул Арт Синема».",
+      "new": true,
+      "english": "You always dreamed of being proposed to at Seoul Art Cinema.",
+      "timing": "22:25"
+    },
+    {
+      "video": "video/loveother/아무래도 이미도 감독 죽은 것 같아.webm",
+      "videoMp4": "video/loveother/mp4/아무래도 이미도 감독 죽은 것 같아.mp4",
+      "korean": "아무래도 이미도 감독 죽은 것 같아",
+      "russian": "Похоже, режиссёр Ли Мидо умерла.",
+      "new": true,
+      "english": "I think Director Lee Mi-do might be dead.",
+      "timing": "25:02"
+    },
+    {
+      "video": "video/loveother/내 문자_ 전화를 다 씹었다.webm",
+      "videoMp4": "video/loveother/mp4/내 문자_ 전화를 다 씹었다.mp4",
+      "korean": "내 문자, 전화를 다 씹었다?",
+      "russian": "Значит, на все мои сообщения и звонки забила?",
+      "new": true,
+      "english": "So she ignored all my texts and calls?",
+      "timing": "25:17",
+      "note": "씹다 здесь сленг «игнорировать, не отвечать» (문자를 씹다), а не «жевать»."
+    },
+    {
+      "video": "video/loveother/왜_ 자신 없어.webm",
+      "videoMp4": "video/loveother/mp4/왜_ 자신 없어.mp4",
+      "korean": "왜? 자신 없어?",
+      "russian": "Что? Не уверен в себе?",
+      "new": true,
+      "english": "Why? Not confident?",
+      "timing": "27:50"
+    },
+    {
+      "video": "video/loveother/궁금하네.webm",
+      "videoMp4": "video/loveother/mp4/궁금하네.mp4",
+      "korean": "궁금하네",
+      "russian": "Любопытно,",
+      "new": true,
+      "english": "I'm curious",
+      "timing": "27:56",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/며칠 만에 마음이 갑자기 바뀐 이유가.webm",
+      "videoMp4": "video/loveother/mp4/며칠 만에 마음이 갑자기 바뀐 이유가.mp4",
+      "korean": "며칠 만에 마음이 갑자기 바뀐 이유가",
+      "russian": "почему за несколько дней вы вдруг передумали.",
+      "new": true,
+      "english": "why you suddenly changed your mind in just a few days.",
+      "timing": "27:58",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/뭔가 있는데.webm",
+      "videoMp4": "video/loveother/mp4/뭔가 있는데.mp4",
+      "korean": "뭔가 있는데",
+      "russian": "Что-то тут есть,",
+      "new": true,
+      "english": "There's something",
+      "timing": "28:03",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/숨기는 게.webm",
+      "videoMp4": "video/loveother/mp4/숨기는 게.mp4",
+      "korean": "숨기는 게",
+      "russian": "что вы скрываете.",
+      "new": true,
+      "english": "you're hiding.",
+      "timing": "28:05",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/자신 없다는 소리를 그렇게 하니.webm",
+      "videoMp4": "video/loveother/mp4/자신 없다는 소리를 그렇게 하니.mp4",
+      "korean": "자신 없다는 소리를 그렇게 하니?",
+      "russian": "Это так ты признаёшься, что не уверен?",
+      "new": true,
+      "english": "Is that your way of saying you're not confident?",
+      "timing": "28:07",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/설마 또 남자친구.webm",
+      "videoMp4": "video/loveother/mp4/설마 또 남자친구.mp4",
+      "korean": "설마 또 남자친구?",
+      "russian": "Неужели опять парень?",
+      "new": true,
+      "english": "Don't tell me — the boyfriend again?",
+      "timing": "28:09",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/맞구나_ 남자친구.webm",
+      "videoMp4": "video/loveother/mp4/맞구나_ 남자친구.mp4",
+      "korean": "맞구나, 남자친구",
+      "russian": "Значит, так и есть — парень.",
+      "new": true,
+      "english": "So I was right. The boyfriend.",
+      "timing": "28:14",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/남자친구가 영화감독 아니면 결혼 안 해 준대요.webm",
+      "videoMp4": "video/loveother/mp4/남자친구가 영화감독 아니면 결혼 안 해 준대요.mp4",
+      "korean": "남자친구가 영화감독 아니면 결혼 안 해 준대요?",
+      "russian": "Парень сказал: не будете режиссёром — не женится?",
+      "new": true,
+      "english": "Your boyfriend says he won't marry you unless you're a film director?",
+      "timing": "28:17",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/뭐_ 싫대요.webm",
+      "videoMp4": "video/loveother/mp4/뭐_ 싫대요.mp4",
+      "korean": "뭐, 싫대요?",
+      "russian": "Что, он не хочет?",
+      "new": true,
+      "english": "What, he doesn't want to?",
+      "timing": "28:20",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/걔가 아니라 내가.webm",
+      "videoMp4": "video/loveother/mp4/걔가 아니라 내가.mp4",
+      "korean": "걔가 아니라 내가",
+      "russian": "Не он, а я.",
+      "new": true,
+      "english": "Not him. Me.",
+      "timing": "28:21",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/내가 싫대.webm",
+      "videoMp4": "video/loveother/mp4/내가 싫대.mp4",
+      "korean": "내가 싫대.",
+      "russian": "Это я не хочу.",
+      "new": true,
+      "english": "I'm the one who doesn't want to.",
+      "timing": "28:24",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/이런 초라한 꼴로 걔한테 짐 되는 거.webm",
+      "videoMp4": "video/loveother/mp4/이런 초라한 꼴로 걔한테 짐 되는 거.mp4",
+      "korean": "이런 초라한 꼴로 걔한테 짐 되는 거",
+      "russian": "В таком жалком виде быть ему обузой —",
+      "new": true,
+      "english": "Being a burden to him, looking this pathetic —",
+      "timing": "28:28",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/내가 싫대_1.webm",
+      "videoMp4": "video/loveother/mp4/내가 싫대_1.mp4",
+      "korean": "내가 싫대",
+      "russian": "вот чего я не хочу.",
+      "new": true,
+      "english": "that's what I don't want.",
+      "timing": "28:31",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/그래서 내가 나한테 져 보려고.webm",
+      "videoMp4": "video/loveother/mp4/그래서 내가 나한테 져 보려고.mp4",
+      "korean": "그래서 내가 나한테 져 보려고",
+      "russian": "Так что попробую проиграть самой себе.",
+      "new": true,
+      "english": "So I'll try losing to myself.",
+      "timing": "28:34",
+      "group": 4
+    }
+  ],
+  "b15": [
+    {
+      "drama": "Любовь, но не с тобой",
+      "episode": "4",
+      "video": "video/loveother/그건 감독님이 풀어야 돼요.webm",
+      "videoMp4": "video/loveother/mp4/그건 감독님이 풀어야 돼요.mp4",
+      "korean": "그건 감독님이 풀어야 돼요",
+      "russian": "А вот это уже вам, режиссёр, придётся распутывать.",
+      "new": true,
+      "english": "That's something you'll have to untangle yourself, Director.",
+      "timing": "28:48",
+      "isNew": true
+    },
+    {
+      "video": "video/loveother/각오하고 오셨죠.webm",
+      "videoMp4": "video/loveother/mp4/각오하고 오셨죠.mp4",
+      "korean": "각오하고 오셨죠?",
+      "russian": "Вы ведь морально готовы, да?",
+      "new": true,
+      "english": "You came prepared, right?",
+      "timing": "29:46"
+    },
+    {
+      "video": "video/loveother/다루기 힘든 분이라.webm",
+      "videoMp4": "video/loveother/mp4/다루기 힘든 분이라.mp4",
+      "korean": "다루기 힘든 분이라",
+      "russian": "С ней очень непросто:",
+      "new": true,
+      "english": "She's a difficult person to handle —",
+      "timing": "29:50",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/소리 지를 수도 있고.webm",
+      "videoMp4": "video/loveother/mp4/소리 지를 수도 있고.mp4",
+      "korean": "소리 지를 수도 있고",
+      "russian": "может накричать,",
+      "new": true,
+      "english": "she might yell,",
+      "timing": "29:53",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/심하면 폭력까지 쓰셔서요.webm",
+      "videoMp4": "video/loveother/mp4/심하면 폭력까지 쓰셔서요.mp4",
+      "korean": "심하면 폭력까지 쓰셔서요",
+      "russian": "а бывает, и руки распускает.",
+      "new": true,
+      "english": "and at worst, she even gets violent.",
+      "timing": "29:55",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/그런 일 일어나지 않도록.webm",
+      "videoMp4": "video/loveother/mp4/그런 일 일어나지 않도록.mp4",
+      "korean": "그런 일 일어나지 않도록",
+      "russian": "Чтобы до такого не дошло,",
+      "new": true,
+      "english": "So that doesn't happen,",
+      "timing": "30:00",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/제가 대화로 잘 해결해 볼게요.webm",
+      "videoMp4": "video/loveother/mp4/제가 대화로 잘 해결해 볼게요.mp4",
+      "korean": "제가 대화로 잘 해결해 볼게요",
+      "russian": "я постараюсь решить всё разговором.",
+      "new": true,
+      "english": "I'll try to sort it out by talking.",
+      "timing": "30:01",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/대화가 되지 않는 분이라서요.webm",
+      "videoMp4": "video/loveother/mp4/대화가 되지 않는 분이라서요.mp4",
+      "korean": "대화가 되지 않는 분이라서요",
+      "russian": "С ней невозможно разговаривать.",
+      "new": true,
+      "english": "She's not someone you can reason with.",
+      "timing": "30:04",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/그거는 그렇지만_ 네.webm",
+      "videoMp4": "video/loveother/mp4/그거는 그렇지만_ 네.mp4",
+      "korean": "그거는 그렇지만, 네",
+      "russian": "Это так, но… ладно.",
+      "new": true,
+      "english": "That's true, but… okay.",
+      "timing": "30:07",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/지금 혹시 면접 보는 건가요.webm",
+      "videoMp4": "video/loveother/mp4/지금 혹시 면접 보는 건가요.mp4",
+      "korean": "지금 혹시 면접 보는 건가요?",
+      "russian": "Это что, сейчас собеседование?",
+      "new": true,
+      "english": "Wait, is this an interview right now?",
+      "timing": "30:20"
+    },
+    {
+      "video": "video/loveother/아니요_ 저는 기자가 아니라.webm",
+      "videoMp4": "video/loveother/mp4/아니요_ 저는 기자가 아니라.mp4",
+      "korean": "아니요, 저는 기자가 아니라",
+      "russian": "Нет, я не журналист, я…",
+      "new": true,
+      "english": "No, I'm not a reporter, I'm…",
+      "timing": "30:35"
+    },
+    {
+      "video": "video/loveother/저 알 것 같아요.webm",
+      "videoMp4": "video/loveother/mp4/저 알 것 같아요.mp4",
+      "korean": "저 알 것 같아요",
+      "russian": "Кажется, я понимаю.",
+      "new": true,
+      "english": "I think I get it.",
+      "timing": "31:59"
+    },
+    {
+      "video": "video/loveother/네_ 제가 바로 확인해 볼게요.webm",
+      "videoMp4": "video/loveother/mp4/네_ 제가 바로 확인해 볼게요.mp4",
+      "korean": "네, 제가 바로 확인해 볼게요",
+      "russian": "Да, сейчас же проверю.",
+      "new": true,
+      "english": "Yes, I'll check right away.",
+      "timing": "32:41"
+    },
+    {
+      "video": "video/loveother/대답해 주세요_ 맞아요.webm",
+      "videoMp4": "video/loveother/mp4/대답해 주세요_ 맞아요.mp4",
+      "korean": "대답해 주세요, 맞아요?",
+      "russian": "Ответьте: так ведь?",
+      "new": true,
+      "english": "Answer me — am I right?",
+      "timing": "33:08"
+    },
+    {
+      "video": "video/loveother/일부러 답장 안 한 거 맞는데.webm",
+      "videoMp4": "video/loveother/mp4/일부러 답장 안 한 거 맞는데.mp4",
+      "korean": "일부러 답장 안 한 거 맞는데?",
+      "russian": "Так я и правда не отвечал нарочно.",
+      "new": true,
+      "english": "But I didn't reply on purpose, though.",
+      "timing": "33:45"
+    },
+    {
+      "video": "video/loveother/문자보단 이렇게.webm",
+      "videoMp4": "video/loveother/mp4/문자보단 이렇게.mp4",
+      "korean": "문자보단 이렇게",
+      "russian": "Не сообщением, а вот так,",
+      "new": true,
+      "english": "Rather than by text, like this —",
+      "timing": "33:52",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/이렇게 얼굴 보고 얘기하는 게 그나마 예의인 것 같아서.webm",
+      "videoMp4": "video/loveother/mp4/이렇게 얼굴 보고 얘기하는 게 그나마 예의인 것 같아서.mp4",
+      "korean": "이렇게 얼굴 보고 얘기하는 게 그나마 예의인 것 같아서",
+      "russian": "лицом к лицу — так хоть как-то вежливее.",
+      "new": true,
+      "english": "talking face to face seemed like the least I could do.",
+      "timing": "33:54",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/나 그 일 못 할 것 같다.webm",
+      "videoMp4": "video/loveother/mp4/나 그 일 못 할 것 같다.mp4",
+      "korean": "나 그 일 못 할 것 같다",
+      "russian": "Похоже, я не смогу взяться за это дело.",
+      "new": true,
+      "english": "I don't think I can do that job.",
+      "timing": "34:00",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/갑자기 하기 싫어졌달까.webm",
+      "videoMp4": "video/loveother/mp4/갑자기 하기 싫어졌달까.mp4",
+      "korean": "갑자기 하기 싫어졌달까?",
+      "russian": "Скажем так: вдруг расхотелось?",
+      "new": true,
+      "english": "Let's just say I suddenly didn't feel like it?",
+      "timing": "34:18"
+    },
+    {
+      "video": "video/loveother/솔직히 그날은 한번 해 볼까.webm",
+      "videoMp4": "video/loveother/mp4/솔직히 그날은 한번 해 볼까.mp4",
+      "korean": "솔직히 그날은 한번 해 볼까",
+      "russian": "Честно, в тот день думал: может, попробовать?",
+      "new": true,
+      "english": "Honestly, that day I thought, maybe I should give it a shot —",
+      "timing": "34:24",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/정의감 뿜뿜했었는데.webm",
+      "videoMp4": "video/loveother/mp4/정의감 뿜뿜했었는데.mp4",
+      "korean": "정의감 뿜뿜했었는데",
+      "russian": "чувство справедливости прямо бурлило",
+      "new": true,
+      "english": "I was bursting with a sense of justice,",
+      "timing": "34:26",
+      "group": 3,
+      "note": "뿜뿜 — звукоподражательный сленг «бьёт ключом, через край» (от 뿜다), 뿜뿜하다 — разговорный глагол."
+    },
+    {
+      "video": "video/loveother/다시 생각해 보니까.webm",
+      "videoMp4": "video/loveother/mp4/다시 생각해 보니까.mp4",
+      "korean": "다시 생각해 보니까",
+      "russian": "а подумал ещё раз —",
+      "new": true,
+      "english": "but when I thought it over again,",
+      "timing": "34:31",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/무섭더라고.webm",
+      "videoMp4": "video/loveother/mp4/무섭더라고.mp4",
+      "korean": "무섭더라고",
+      "russian": "и стало страшно.",
+      "new": true,
+      "english": "it scared me.",
+      "timing": "34:36",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/현실은 소년 만화가 아니잖아.webm",
+      "videoMp4": "video/loveother/mp4/현실은 소년 만화가 아니잖아.mp4",
+      "korean": "현실은 소년 만화가 아니잖아",
+      "russian": "Жизнь ведь не манга для мальчишек.",
+      "new": true,
+      "english": "Real life isn't a shonen manga.",
+      "timing": "34:41",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/_한자와 나오키_ 아니잖아.webm",
+      "videoMp4": "video/loveother/mp4/_한자와 나오키_ 아니잖아.mp4",
+      "korean": "'한자와 나오키' 아니잖아",
+      "russian": "Это тебе не «Ханзава Наоки».",
+      "new": true,
+      "english": "It's not 'Hanzawa Naoki'.",
+      "timing": "34:45",
+      "group": 3
+    }
+  ],
+  "b16": [
+    {
+      "drama": "Любовь, но не с тобой",
+      "episode": "4",
+      "video": "video/loveother/너 내 꿈이 뭔 줄 아냐.webm",
+      "videoMp4": "video/loveother/mp4/너 내 꿈이 뭔 줄 아냐.mp4",
+      "korean": "너 내 꿈이 뭔 줄 아냐?",
+      "russian": "Знаешь, какая у меня мечта?",
+      "new": true,
+      "english": "You know what my dream is?",
+      "timing": "34:51",
+      "group": 1,
+      "isNew": true
+    },
+    {
+      "video": "video/loveother/육십까지 만년 부장으로 버티다가.webm",
+      "videoMp4": "video/loveother/mp4/육십까지 만년 부장으로 버티다가.mp4",
+      "korean": "육십까지 만년 부장으로 버티다가",
+      "russian": "Дотянуть до шестидесяти вечным начальником отдела",
+      "new": true,
+      "english": "To hang on as a lifelong department head until sixty",
+      "timing": "34:55",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/정년퇴직하는 거야.webm",
+      "videoMp4": "video/loveother/mp4/정년퇴직하는 거야.mp4",
+      "korean": "정년퇴직하는 거야",
+      "russian": "и уйти на пенсию.",
+      "new": true,
+      "english": "and then retire.",
+      "timing": "34:58",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/되게 짜치고 볼품없지.webm",
+      "videoMp4": "video/loveother/mp4/되게 짜치고 볼품없지.mp4",
+      "korean": "되게 짜치고 볼품없지?",
+      "russian": "Мелко и убого, да?",
+      "new": true,
+      "english": "Pretty lame and pathetic, huh?",
+      "timing": "35:02",
+      "group": 1,
+      "note": "짜치다 — сленг «убогий, дешёвый, позорный»; в словарной норме слова нет, разбирать как разговорное прилагательное."
+    },
+    {
+      "video": "video/loveother/근데.webm",
+      "videoMp4": "video/loveother/mp4/근데.mp4",
+      "korean": "근데",
+      "russian": "Но",
+      "new": true,
+      "english": "But",
+      "timing": "35:07",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/그게 내 꿈이야.webm",
+      "videoMp4": "video/loveother/mp4/그게 내 꿈이야.mp4",
+      "korean": "그게 내 꿈이야",
+      "russian": "это моя мечта.",
+      "new": true,
+      "english": "that's my dream.",
+      "timing": "35:10",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/그러니까 나 좀 그만 흔들어라.webm",
+      "videoMp4": "video/loveother/mp4/그러니까 나 좀 그만 흔들어라.mp4",
+      "korean": "그러니까 나 좀 그만 흔들어라",
+      "russian": "Так что хватит меня раскачивать,",
+      "new": true,
+      "english": "So stop shaking me up,",
+      "timing": "35:13",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/인마.webm",
+      "videoMp4": "video/loveother/mp4/인마.mp4",
+      "korean": "인마",
+      "russian": "малая.",
+      "new": true,
+      "english": "kid.",
+      "timing": "35:17",
+      "group": 1,
+      "note": "인마 — стяжение 이놈아 «эй ты, балда»; грубовато-дружеское обращение."
+    },
+    {
+      "video": "video/loveother/됐어_ 기다릴게요.webm",
+      "videoMp4": "video/loveother/mp4/됐어_ 기다릴게요.mp4",
+      "korean": "됐어, 기다릴게요",
+      "russian": "Да ладно, я подожду.",
+      "new": true,
+      "english": "Forget it, I'll wait.",
+      "timing": "36:28"
+    },
+    {
+      "video": "video/loveother/어떻게 된 일인지 설명해.webm",
+      "videoMp4": "video/loveother/mp4/어떻게 된 일인지 설명해.mp4",
+      "korean": "어떻게 된 일인지 설명해",
+      "russian": "Объясни, что случилось.",
+      "new": true,
+      "english": "Explain what happened.",
+      "timing": "39:10"
+    },
+    {
+      "video": "video/loveother/뭐 이런 건가.webm",
+      "videoMp4": "video/loveother/mp4/뭐 이런 건가.mp4",
+      "korean": "뭐 이런 건가?",
+      "russian": "Что-то в этом роде?",
+      "new": true,
+      "english": "Something like that?",
+      "timing": "39:57"
+    },
+    {
+      "video": "video/loveother/어쩔 수 없죠.webm",
+      "videoMp4": "video/loveother/mp4/어쩔 수 없죠.mp4",
+      "korean": "어쩔 수 없죠",
+      "russian": "Что ж, ничего не поделаешь,",
+      "new": true,
+      "english": "Well, it can't be helped —",
+      "timing": "39:59",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/제가 대신 해 드리는 수밖에.webm",
+      "videoMp4": "video/loveother/mp4/제가 대신 해 드리는 수밖에.mp4",
+      "korean": "제가 대신 해 드리는 수밖에",
+      "russian": "придётся мне сделать это за вас.",
+      "new": true,
+      "english": "I'll just have to do it for you.",
+      "timing": "40:02",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/넌 애가 이렇게 겁이 없냐.webm",
+      "videoMp4": "video/loveother/mp4/넌 애가 이렇게 겁이 없냐.mp4",
+      "korean": "넌 애가 이렇게 겁이 없냐?",
+      "russian": "Ты чего такая бесстрашная?",
+      "new": true,
+      "english": "How can you be so fearless?",
+      "timing": "43:14",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/너 아까 내가 그냥 갔으면 어쩌려고 그랬어.webm",
+      "videoMp4": "video/loveother/mp4/너 아까 내가 그냥 갔으면 어쩌려고 그랬어.mp4",
+      "korean": "너 아까 내가 그냥 갔으면 어쩌려고 그랬어?",
+      "russian": "А если бы я тогда просто ушёл, что бы ты делала?",
+      "new": true,
+      "english": "What would you have done if I'd just left earlier?",
+      "timing": "43:17",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/목청이 터져라 구해 달라고 소리를 질러야지 너 바보야.webm",
+      "videoMp4": "video/loveother/mp4/목청이 터져라 구해 달라고 소리를 질러야지 너 바보야.mp4",
+      "korean": "목청이 터져라 구해 달라고 소리를 질러야지 너 바보야?",
+      "russian": "Надо было во всё горло кричать о помощи, ты что, дурочка?",
+      "new": true,
+      "english": "You should've screamed for help at the top of your lungs — are you stupid?",
+      "timing": "43:20",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/그러는 대리님은요.webm",
+      "videoMp4": "video/loveother/mp4/그러는 대리님은요.mp4",
+      "korean": "그러는 대리님은요?",
+      "russian": "А вы сами?",
+      "new": true,
+      "english": "And what about you?",
+      "timing": "43:23",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/제가 아주 이기적이라 아주 미안하게 됐네요.webm",
+      "videoMp4": "video/loveother/mp4/제가 아주 이기적이라 아주 미안하게 됐네요.mp4",
+      "korean": "제가 아주 이기적이라 아주 미안하게 됐네요",
+      "russian": "Ах, простите, что я такая эгоистка.",
+      "new": true,
+      "english": "So sorry for being so selfish.",
+      "timing": "43:46"
+    },
+    {
+      "video": "video/loveother/일단 지금은 없을 것 같아요.webm",
+      "videoMp4": "video/loveother/mp4/일단 지금은 없을 것 같아요.mp4",
+      "korean": "일단 지금은 없을 것 같아요",
+      "russian": "Пока, кажется, нет.",
+      "new": true,
+      "english": "For now, I don't think so.",
+      "timing": "44:03"
+    },
+    {
+      "video": "video/loveother/저 이제 이거 안 좋아해요.webm",
+      "videoMp4": "video/loveother/mp4/저 이제 이거 안 좋아해요.mp4",
+      "korean": "저 이제 이거 안 좋아해요",
+      "russian": "Я это больше не люблю.",
+      "new": true,
+      "english": "I don't like this anymore.",
+      "timing": "44:36"
+    },
+    {
+      "video": "video/loveother/저 회복 탄력성 좋아요.webm",
+      "videoMp4": "video/loveother/mp4/저 회복 탄력성 좋아요.mp4",
+      "korean": "저 회복 탄력성 좋아요",
+      "russian": "У меня хорошая стрессоустойчивость.",
+      "new": true,
+      "english": "I have good resilience.",
+      "timing": "44:58",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/지난번에 검사했는데 상위 10_ 안에 들었어요.webm",
+      "videoMp4": "video/loveother/mp4/지난번에 검사했는데 상위 10_ 안에 들었어요.mp4",
+      "korean": "지난번에 검사했는데 상위 10% 안에 들었어요",
+      "russian": "Проходила тест в прошлый раз — попала в топ-10 %.",
+      "new": true,
+      "english": "I took a test last time and was in the top 10%.",
+      "timing": "45:00",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/그리고 저.webm",
+      "videoMp4": "video/loveother/mp4/그리고 저.mp4",
+      "korean": "그리고 저",
+      "russian": "И ещё, я",
+      "new": true,
+      "english": "And also, I've",
+      "timing": "45:07",
+      "group": 4
+    },
+    {
+      "video": "video/loveother/초등학교 때부터 왕따 출신이에요.webm",
+      "videoMp4": "video/loveother/mp4/초등학교 때부터 왕따 출신이에요.mp4",
+      "korean": "초등학교 때부터 왕따 출신이에요",
+      "russian": "с начальной школы была изгоем.",
+      "new": true,
+      "english": "been an outcast since elementary school.",
+      "timing": "45:08",
+      "group": 4
+    }
+  ],
+  "b17": [
+    {
+      "drama": "Любовь, но не с тобой",
+      "episode": "4",
+      "video": "video/loveother/나도 적당히 모른 척할 테니까 그만하라고.webm",
+      "videoMp4": "video/loveother/mp4/나도 적당히 모른 척할 테니까 그만하라고.mp4",
+      "korean": "나도 적당히 모른 척할 테니까 그만하라고",
+      "russian": "Я тоже сделаю вид, что ничего не знаю, так что хватит.",
+      "new": true,
+      "english": "I'll pretend I don't know either, so stop it.",
+      "timing": "45:26",
+      "group": 1,
+      "isNew": true
+    },
+    {
+      "video": "video/loveother/너 아까 범인 얼굴 봤다 그랬지.webm",
+      "videoMp4": "video/loveother/mp4/너 아까 범인 얼굴 봤다 그랬지.mp4",
+      "korean": "너 아까 범인 얼굴 봤다 그랬지?",
+      "russian": "Ты же сказала, что видела лицо преступника?",
+      "new": true,
+      "english": "You said you saw the culprit's face earlier, right?",
+      "timing": "45:32",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/마스크 벗은 것도 봤어.webm",
+      "videoMp4": "video/loveother/mp4/마스크 벗은 것도 봤어.mp4",
+      "korean": "마스크 벗은 것도 봤어?",
+      "russian": "И без маски видела?",
+      "new": true,
+      "english": "Did you see him without the mask too?",
+      "timing": "45:35",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/어떻게 생겼는지 기억나는 대로 말해.webm",
+      "videoMp4": "video/loveother/mp4/어떻게 생겼는지 기억나는 대로 말해.mp4",
+      "korean": "어떻게 생겼는지 기억나는 대로 말해",
+      "russian": "Расскажи, как он выглядел, — всё, что помнишь,",
+      "new": true,
+      "english": "Tell me what he looked like, as much as you remember —",
+      "timing": "45:38",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/특히 특징 위주로.webm",
+      "videoMp4": "video/loveother/mp4/특히 특징 위주로.mp4",
+      "korean": "특히 특징 위주로",
+      "russian": "особенно приметы.",
+      "new": true,
+      "english": "especially any distinguishing features.",
+      "timing": "45:41",
+      "group": 1
+    },
+    {
+      "video": "video/loveother/나가서.webm",
+      "videoMp4": "video/loveother/mp4/나가서.mp4",
+      "korean": "나가서",
+      "russian": "Выйдем отсюда.",
+      "new": true,
+      "english": "Let's take this outside.",
+      "timing": "48:03"
+    },
+    {
+      "video": "video/loveother/근데 네가 다 망쳤어.webm",
+      "videoMp4": "video/loveother/mp4/근데 네가 다 망쳤어.mp4",
+      "korean": "근데 네가 다 망쳤어",
+      "russian": "А из-за тебя всё пошло насмарку.",
+      "new": true,
+      "english": "But you ruined everything.",
+      "timing": "48:07"
+    },
+    {
+      "video": "video/loveother/싫어할 거야.webm",
+      "videoMp4": "video/loveother/mp4/싫어할 거야.mp4",
+      "korean": "싫어할 거야",
+      "russian": "Ему это не понравится.",
+      "new": true,
+      "english": "He'll hate it.",
+      "timing": "50:03"
+    },
+    {
+      "video": "video/loveother/멋있어요.webm",
+      "videoMp4": "video/loveother/mp4/멋있어요.mp4",
+      "korean": "멋있어요",
+      "russian": "Это круто.",
+      "new": true,
+      "english": "It's cool.",
+      "timing": "51:10"
+    },
+    {
+      "video": "video/loveother/나 왜 여기 있어.webm",
+      "videoMp4": "video/loveother/mp4/나 왜 여기 있어.mp4",
+      "korean": "나 왜 여기 있어?",
+      "russian": "Почему я здесь?",
+      "new": true,
+      "english": "Why am I here?",
+      "timing": "56:01"
+    },
+    {
+      "video": "video/loveother/일단 전화부터 받죠.webm",
+      "videoMp4": "video/loveother/mp4/일단 전화부터 받죠.mp4",
+      "korean": "일단 전화부터 받죠",
+      "russian": "Сначала ответьте на звонок.",
+      "new": true,
+      "english": "Answer the phone first.",
+      "timing": "56:04"
+    },
+    {
+      "video": "video/loveother/아무래도 감독님 남자친구 같은데.webm",
+      "videoMp4": "video/loveother/mp4/아무래도 감독님 남자친구 같은데.mp4",
+      "korean": "아무래도 감독님 남자친구 같은데",
+      "russian": "Похоже, это ваш парень, режиссёр.",
+      "new": true,
+      "english": "Looks like it's your boyfriend, Director.",
+      "timing": "56:07"
+    },
+    {
+      "video": "video/loveother/첫눈 오는데 나 진짜 안 볼 거야.webm",
+      "videoMp4": "video/loveother/mp4/첫눈 오는데 나 진짜 안 볼 거야.mp4",
+      "korean": "첫눈 오는데 나 진짜 안 볼 거야?",
+      "russian": "Первый снег идёт, а ты правда не хочешь меня видеть?",
+      "new": true,
+      "english": "It's the first snow — are you really not going to see me?",
+      "timing": "57:01"
+    },
+    {
+      "video": "video/loveother/미안해_1.webm",
+      "videoMp4": "video/loveother/mp4/미안해_1.mp4",
+      "korean": "미안해",
+      "russian": "Прости,",
+      "new": true,
+      "english": "I'm sorry,",
+      "timing": "57:04",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/잘못했다고.webm",
+      "videoMp4": "video/loveother/mp4/잘못했다고.mp4",
+      "korean": "잘못했다고",
+      "russian": "говорю же, я был неправ.",
+      "new": true,
+      "english": "I said I was wrong.",
+      "timing": "57:07",
+      "group": 2
+    },
+    {
+      "video": "video/loveother/안 나가면 잘리는데.webm",
+      "videoMp4": "video/loveother/mp4/안 나가면 잘리는데.mp4",
+      "korean": "안 나가면 잘리는데?",
+      "russian": "Не выйду — уволят.",
+      "new": true,
+      "english": "If I don't go, I'll get fired.",
+      "timing": "57:42"
+    },
+    {
+      "video": "video/loveother/나 10일 휴가도 간신히 받은 거야.webm",
+      "videoMp4": "video/loveother/mp4/나 10일 휴가도 간신히 받은 거야.mp4",
+      "korean": "나 10일 휴가도 간신히 받은 거야",
+      "russian": "Я и десять дней отпуска еле выбил.",
+      "new": true,
+      "english": "I barely managed to get ten days off as it is.",
+      "timing": "57:47"
+    },
+    {
+      "video": "video/loveother/진짜 막 때려 버리고 싶은데.webm",
+      "videoMp4": "video/loveother/mp4/진짜 막 때려 버리고 싶은데.mp4",
+      "korean": "진짜 막 때려 버리고 싶은데",
+      "russian": "Так и хочется тебе врезать,",
+      "new": true,
+      "english": "I really want to just hit you,",
+      "timing": "57:54",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/그럴 수 없어서 너무 화가 나.webm",
+      "videoMp4": "video/loveother/mp4/그럴 수 없어서 너무 화가 나.mp4",
+      "korean": "그럴 수 없어서 너무 화가 나",
+      "russian": "но нельзя, и от этого я так злюсь.",
+      "new": true,
+      "english": "but I can't, and that makes me so angry.",
+      "timing": "57:57",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/미안해_2.webm",
+      "videoMp4": "video/loveother/mp4/미안해_2.mp4",
+      "korean": "미안해",
+      "russian": "Прости.",
+      "new": true,
+      "english": "I'm sorry.",
+      "timing": "58:02",
+      "group": 3
+    },
+    {
+      "video": "video/loveother/많이 아팠지.webm",
+      "videoMp4": "video/loveother/mp4/많이 아팠지.mp4",
+      "korean": "많이 아팠지?",
+      "russian": "Очень больно было?",
+      "new": true,
+      "english": "It hurt a lot, didn't it?",
+      "timing": "58:19"
+    },
+    {
+      "video": "video/loveother/겁나 아프더라.webm",
+      "videoMp4": "video/loveother/mp4/겁나 아프더라.mp4",
+      "korean": "겁나 아프더라",
+      "russian": "Чертовски больно было.",
+      "new": true,
+      "english": "It hurt like hell.",
+      "timing": "58:27",
+      "note": "겁나 — разговорный усилитель «жутко, очень» (как 엄청), а не «бояться»."
+    },
+    {
+      "video": "video/loveother/다른 데_ 다른 데 아픈 데는.webm",
+      "videoMp4": "video/loveother/mp4/다른 데_ 다른 데 아픈 데는.mp4",
+      "korean": "다른 데, 다른 데 아픈 데는?",
+      "russian": "А где-нибудь ещё, ещё где-то болит?",
+      "new": true,
+      "english": "Anywhere else? Does anything else hurt?",
+      "timing": "58:32"
+    },
+    {
+      "video": "video/loveother/왜 그랬어.webm",
+      "videoMp4": "video/loveother/mp4/왜 그랬어.mp4",
+      "korean": "왜 그랬어",
+      "russian": "Зачем ты так?",
+      "new": true,
+      "english": "Why did you do it?",
+      "timing": "59:05"
+    },
+    {
+      "video": "video/loveother/나 아무 상관 없으니까.webm",
+      "videoMp4": "video/loveother/mp4/나 아무 상관 없으니까.mp4",
+      "korean": "나 아무 상관 없으니까",
+      "russian": "Мне до этого нет никакого дела.",
+      "new": true,
+      "english": "Because I couldn't care less.",
+      "timing": "59:52"
+    }
   ]
 }
